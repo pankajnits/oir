@@ -1,0 +1,85 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[XFER_COMPLEX_LAYER_1]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM LAYER family=COMPLEX use=TICKET: layer bound START, HMAC'd Q, attached PATH.
+
+##### ID XFER_COMPLEX_LAYER_1 #####
+QUESTION (token-HMAC'd):
+E8751bcb8ddce Eab28a87b6f97 Eb7eb02fc13ca E4ebc136e5a8e E21a3633fdff8 E981c3b988857 Ea7514b834348?
+
+PATH_QUERY
+START E21a3633fdff8
+R1 Ed193bf0d84dc
+R2 Ef663074ad611
+R3 E6cea73bd5e5f
+Execute path; return final tail only.
+
+CONTEXT:
+TABLE hop1
+| Eafff211d7230 | Ed193bf0d84dc |
+| --- | --- |
+| E21a3633fdff8 | Ee4cfe77b4dc7 |
+| Eec4c3e86803b | E3c8fb3ed2953 |
+| E068596ca2752 | Ec0d49ef8bcb3 |
+| Edc8df9c02ceb | Ef2e9af4dc88d |
+
+TABLE hop2
+| E654e4f271f40 | Ef663074ad611 |
+| --- | --- |
+| Ee4cfe77b4dc7 | E91f7e4ed5006 |
+| E3c8fb3ed2953 | Ecbe88550191f |
+| Ec0d49ef8bcb3 | Ed28ec3e30625 |
+| Ef2e9af4dc88d | E7b26109c5028 |
+
+TABLE hop3
+| E2c8787d26efe | E6cea73bd5e5f |
+| --- | --- |
+| E91f7e4ed5006 | Eac73f02c9155 |
+| Ecbe88550191f | E7e00c9b35ffa |
+| Ed28ec3e30625 | Ea0d83eed7fb6 |
+| E7b26109c5028 | Ea2cb4485c8bc |
+
+JSON
+{
+  "use_case": "Edb5883c7a447",
+  "graph": {
+    "E21a3633fdff8": {
+      "Ed193bf0d84dc": "Ee4cfe77b4dc7"
+    },
+    "Ee4cfe77b4dc7": {
+      "Ef663074ad611": "E91f7e4ed5006"
+    },
+    "E91f7e4ed5006": {
+      "E6cea73bd5e5f": "Eac73f02c9155"
+    },
+    "Eec4c3e86803b": {
+      "Ed193bf0d84dc": "E3c8fb3ed2953"
+    },
+    "E3c8fb3ed2953": {
+      "Ef663074ad611": "Ecbe88550191f"
+    },
+    "Ecbe88550191f": {
+      "E6cea73bd5e5f": "E7e00c9b35ffa"
+    },
+    "E068596ca2752": {
+      "Ed193bf0d84dc": "Ec0d49ef8bcb3"
+    },
+    "Ec0d49ef8bcb3": {
+      "Ef663074ad611": "Ed28ec3e30625"
+    },
+    "Ed28ec3e30625": {
+      "E6cea73bd5e5f": "Ea0d83eed7fb6"
+    },
+    "Edc8df9c02ceb": {
+      "Ed193bf0d84dc": "Ef2e9af4dc88d"
+    },
+    "Ef2e9af4dc88d": {
+      "Ef663074ad611": "E7b26109c5028"
+    },
+    "E7b26109c5028": {
+      "E6cea73bd5e5f": "Ea2cb4485c8bc"
+    }
+  },
+  "notes": "E7058020773d5 E21a3633fdff8: Ebc0755a5f5fb Ef91355cfd6e9 Edc9b13e2c6d9 Ec099a7eb8b8c Ebacc9258d993 Eb7eb02fc13ca E07bd500caee3, E64ef88d4007d E8b120fad3fcd E8ace79712f58 Ee30055fbdca7 Eaf31c5423289"
+}

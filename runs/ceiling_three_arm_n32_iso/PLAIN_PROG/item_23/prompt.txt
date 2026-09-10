@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_23 #####
+PATH_QUERY
+START Lucian_Grainge
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Lucian_Grainge | works_at | Universal_Music_Group
+Universal_Music_Group | headquartered_in | Broadway
+DecoyCo_Universal_Music_Group | headquartered_in | DecoyHQ_Broadway
+Universal_Music_Group | owned_by | Hold_Universal_Music_Group
+Hold_Universal_Music_Group | meta_of | Universal_Music_Group
+Universal_Music_Group | partner_of | Partner_Universal_Music_Group
+Partner_Universal_Music_Group | meta_of | Universal_Music_Group
+Decoy_DecoyCo_Universal_Music_Group | works_at | DecoyCo_Universal_Music_Group

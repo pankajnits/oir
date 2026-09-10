@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_114 #####
+QUESTION:
+Where did William Killigrew (1606–1695)'s father graduate from?
+
+CONTEXT:
+Eugene C. Pulliam | place of death | Arizona
+Eugene S. Pulliam | father | Eugene C. Pulliam
+William Killigrew | father | Robert Killigrew
+Bolko III of Münsterberg | date of death | 13 June 1410
+Euphemia of Münsterberg | father | Bolko III of Münsterberg
+decoy_mid_114 | educated at | House
+William Killigrew | decoy_link_114 | decoy_mid_114
+Robert Killigrew | educated at | CF_TAIL_114_House

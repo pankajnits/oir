@@ -1,0 +1,395 @@
+{
+  "model": "auto",
+  "n": 6,
+  "summary": {
+    "SAME_TRAP": {
+      "score": "6/6",
+      "wilson": {
+        "k": 6,
+        "n": 6,
+        "acc": 1.0,
+        "ci95": [
+          0.6097,
+          1.0
+        ],
+        "display": "6/6 [0.61,1.00]"
+      },
+      "iso": true,
+      "gold": 6,
+      "trap": 0,
+      "early_stop": 0,
+      "unknown": 0,
+      "missing": 0,
+      "other": 0
+    },
+    "CROSS_TRAP": {
+      "score": "0/6",
+      "wilson": {
+        "k": 0,
+        "n": 6,
+        "acc": 0.0,
+        "ci95": [
+          0.0,
+          0.3903
+        ],
+        "display": "0/6 [0.00,0.39]"
+      },
+      "iso": true,
+      "gold": 0,
+      "trap": 0,
+      "early_stop": 0,
+      "unknown": 6,
+      "missing": 0,
+      "other": 0
+    },
+    "DEMO_0_TRAP": {
+      "score": "0/6",
+      "wilson": {
+        "k": 0,
+        "n": 6,
+        "acc": 0.0,
+        "ci95": [
+          0.0,
+          0.3903
+        ],
+        "display": "0/6 [0.00,0.39]"
+      },
+      "iso": true,
+      "gold": 0,
+      "trap": 0,
+      "early_stop": 0,
+      "unknown": 6,
+      "missing": 0,
+      "other": 0
+    },
+    "PATH": {
+      "score": "6/6",
+      "wilson": {
+        "k": 6,
+        "n": 6,
+        "acc": 1.0,
+        "ci95": [
+          0.6097,
+          1.0
+        ],
+        "display": "6/6 [0.61,1.00]"
+      },
+      "iso": false,
+      "gold": 6,
+      "trap": 0,
+      "early_stop": 0,
+      "unknown": 0,
+      "missing": 0,
+      "other": 0
+    }
+  },
+  "nonclaim": "Asymmetric trap (gold noisier). SAME success is relation-token binding, not G-Rev1. DEMO_0 / SAME / CROSS are one quiz per file.",
+  "rows": [
+    {
+      "arm": "SAME_TRAP",
+      "i": 0,
+      "id": "H3T_SAME_TRAP_0",
+      "gold": "Ee30c4a1be9db",
+      "trap": "E4c8524b1bae3",
+      "early": "E1601b151d25e",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_0/prompt.txt",
+      "pred": "Ee30c4a1be9db",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 1,
+      "id": "H3T_SAME_TRAP_1",
+      "gold": "E9f06286fbae6",
+      "trap": "Ee4bcc3419d1e",
+      "early": "E874b6e2b8add",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_1/prompt.txt",
+      "pred": "E9f06286fbae6",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 2,
+      "id": "H3T_SAME_TRAP_2",
+      "gold": "E9e03af439092",
+      "trap": "Eaf74980676d8",
+      "early": "Ee6728cae114a",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_2/prompt.txt",
+      "pred": "E9e03af439092",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 3,
+      "id": "H3T_SAME_TRAP_3",
+      "gold": "E796f602abb84",
+      "trap": "E56ff32e93645",
+      "early": "Eefe0aa070d6c",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_3/prompt.txt",
+      "pred": "E796f602abb84",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 4,
+      "id": "H3T_SAME_TRAP_4",
+      "gold": "Ec2b2634dd958",
+      "trap": "E98c021ec713b",
+      "early": "E83e6078b4edd",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_4/prompt.txt",
+      "pred": "Ec2b2634dd958",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 5,
+      "id": "H3T_SAME_TRAP_5",
+      "gold": "E5419cde1781a",
+      "trap": "Eef286d61708d",
+      "early": "Eed15d3aa9c72",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_5/prompt.txt",
+      "pred": "E5419cde1781a",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 0,
+      "id": "H3T_CROSS_TRAP_0",
+      "gold": "Ef81f4613933a",
+      "trap": "E08c8e2ecabec",
+      "early": "E4015f9070a93",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_0/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 1,
+      "id": "H3T_CROSS_TRAP_1",
+      "gold": "E086c2c8cd563",
+      "trap": "E6b6d89954860",
+      "early": "E54f379eaf0a5",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_1/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 2,
+      "id": "H3T_CROSS_TRAP_2",
+      "gold": "Ef1e65b308b2d",
+      "trap": "E432cd7633366",
+      "early": "Ebb513c55d790",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_2/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 3,
+      "id": "H3T_CROSS_TRAP_3",
+      "gold": "Eb03465e5fa32",
+      "trap": "Efe6301031880",
+      "early": "Ebc8c993d5f64",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_3/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 4,
+      "id": "H3T_CROSS_TRAP_4",
+      "gold": "Efc3bc6a3ba92",
+      "trap": "Eca37483e1f83",
+      "early": "E2a329294910b",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_4/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 5,
+      "id": "H3T_CROSS_TRAP_5",
+      "gold": "E894ac1e7f3fa",
+      "trap": "E44db9cd08088",
+      "early": "Ed22116fa1985",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_5/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 0,
+      "id": "H3T_DEMO_0_TRAP_0",
+      "gold": "Ee30c4a1be9db",
+      "trap": "E4c8524b1bae3",
+      "early": "E1601b151d25e",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_0/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 1,
+      "id": "H3T_DEMO_0_TRAP_1",
+      "gold": "E9f06286fbae6",
+      "trap": "Ee4bcc3419d1e",
+      "early": "E874b6e2b8add",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_1/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 2,
+      "id": "H3T_DEMO_0_TRAP_2",
+      "gold": "E9e03af439092",
+      "trap": "Eaf74980676d8",
+      "early": "Ee6728cae114a",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_2/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 3,
+      "id": "H3T_DEMO_0_TRAP_3",
+      "gold": "E796f602abb84",
+      "trap": "E56ff32e93645",
+      "early": "Eefe0aa070d6c",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_3/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 4,
+      "id": "H3T_DEMO_0_TRAP_4",
+      "gold": "Ec2b2634dd958",
+      "trap": "E98c021ec713b",
+      "early": "E83e6078b4edd",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_4/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 5,
+      "id": "H3T_DEMO_0_TRAP_5",
+      "gold": "E5419cde1781a",
+      "trap": "Eef286d61708d",
+      "early": "Eed15d3aa9c72",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_5/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "PATH",
+      "i": 0,
+      "id": "H3T_PATH_0",
+      "gold": "Ee30c4a1be9db",
+      "trap": "E4c8524b1bae3",
+      "early": "E1601b151d25e",
+      "iso": false,
+      "pred": "Ee30c4a1be9db",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 1,
+      "id": "H3T_PATH_1",
+      "gold": "E9f06286fbae6",
+      "trap": "Ee4bcc3419d1e",
+      "early": "E874b6e2b8add",
+      "iso": false,
+      "pred": "E9f06286fbae6",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 2,
+      "id": "H3T_PATH_2",
+      "gold": "E9e03af439092",
+      "trap": "Eaf74980676d8",
+      "early": "Ee6728cae114a",
+      "iso": false,
+      "pred": "E9e03af439092",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 3,
+      "id": "H3T_PATH_3",
+      "gold": "E796f602abb84",
+      "trap": "E56ff32e93645",
+      "early": "Eefe0aa070d6c",
+      "iso": false,
+      "pred": "E796f602abb84",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 4,
+      "id": "H3T_PATH_4",
+      "gold": "Ec2b2634dd958",
+      "trap": "E98c021ec713b",
+      "early": "E83e6078b4edd",
+      "iso": false,
+      "pred": "Ec2b2634dd958",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 5,
+      "id": "H3T_PATH_5",
+      "gold": "E5419cde1781a",
+      "trap": "Eef286d61708d",
+      "early": "Eed15d3aa9c72",
+      "iso": false,
+      "pred": "E5419cde1781a",
+      "kind": "gold",
+      "ok": true
+    }
+  ]
+}

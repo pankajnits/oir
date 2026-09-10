@@ -1,0 +1,56 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[LAYER_LAYER_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM LAYER: layer bound the name to START, HMAC'd the question, attached JOIN. No plaintext names.
+
+##### ID LAYER_LAYER_4 #####
+QUESTION (token-HMAC'd):
+E78e42afe23eb E031a7f3adb12 E0cf2325181a5 E32d40b2f4f06 E93eb79cb9445 Eac43b204669b?
+
+JOIN_QUERY
+START Eac43b204669b
+In array E72802dfcdc1f, match Ef37f9d8d3e1f = START, take E65e368e7ca6e.
+In array Ed64fecc8d5d6, match Ef37f9d8d3e1f = that employer, take E7d8199f4c805.E32d40b2f4f06.
+Return that atom.
+
+CONTEXT:
+{
+  "E72802dfcdc1f": [
+    {
+      "Ef37f9d8d3e1f": "Eac43b204669b",
+      "E65e368e7ca6e": "Ee15da227de1b"
+    },
+    {
+      "Ef37f9d8d3e1f": "Eb7f98c98a6c8",
+      "E65e368e7ca6e": "E383eefe02cdf"
+    },
+    {
+      "Ef37f9d8d3e1f": "E29d25303a8f5",
+      "E65e368e7ca6e": "E56ac06157b64"
+    }
+  ],
+  "Ed64fecc8d5d6": [
+    {
+      "Ef37f9d8d3e1f": "Ee15da227de1b",
+      "E7d8199f4c805": {
+        "E32d40b2f4f06": "E127744411900",
+        "E8c71284e5a4f": "E50b7740806cb"
+      }
+    },
+    {
+      "Ef37f9d8d3e1f": "E56ac06157b64",
+      "E7d8199f4c805": {
+        "E8c71284e5a4f": "E64b5437ff3e6",
+        "E32d40b2f4f06": "E5ee0dec86866"
+      }
+    },
+    {
+      "Ef37f9d8d3e1f": "E383eefe02cdf",
+      "E7d8199f4c805": {
+        "E32d40b2f4f06": "Ef3274ae98c4a",
+        "E8c71284e5a4f": "E1213ad98b0dc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM TAB_PROG: two city columns; JOIN returns city_primary. Answer EVERY ID.
+
+JOIN returns city_primary, not city_secondary. Output the sealed city_primary only.
+
+
+##### ID FD_TAB_PROG_0 #####
+JOIN_QUERY
+START E070db7f9be4b
+JOIN people.company = companies.company
+RETURN companies.city_primary
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Eb51c4008fb63 | E1f210d606f06 |
+| E070db7f9be4b | E1ff0d6b1ca97 |
+| Eedaab8d49de3 | E28091ae235f3 |
+
+TABLE companies
+| company | city_primary | city_secondary |
+| --- | --- | --- |
+| E1ff0d6b1ca97 | E9df4d8ea2ce3 | E0dd1bf8cfd25 |
+| E28091ae235f3 | E6b896407f3eb | E30c7111def93 |
+| E1f210d606f06 | E0dd1bf8cfd25 | Edaafd7ab3b5a |
+
+##### ID FD_TAB_PROG_1 #####
+JOIN_QUERY
+START Eee9db6823892
+JOIN people.company = companies.company
+RETURN companies.city_primary
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| E8704c42e6279 | Efcdb34c54c36 |
+| E9d82fd58dd2f | E0fe8baea683f |
+| Eee9db6823892 | Eb98f7ba7f0b9 |
+
+TABLE companies
+| company | city_primary | city_secondary |
+| --- | --- | --- |
+| Efcdb34c54c36 | Eec33eceba03d | Edaafd7ab3b5a |
+| E0fe8baea683f | E4d44aea74e4d | Ec0cbce79c203 |
+| Eb98f7ba7f0b9 | E6a80f6ee4a41 | Eec33eceba03d |
+
+##### ID FD_TAB_PROG_2 #####
+JOIN_QUERY
+START E520e59d75d16
+JOIN people.company = companies.company
+RETURN companies.city_primary
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Ed93835c2e2a9 | E5c22f29251dd |
+| Ee8ceb6d9148e | E21ac3691d11f |
+| E520e59d75d16 | E37448d929d1d |
+
+TABLE companies
+| company | city_primary | city_secondary |
+| --- | --- | --- |
+| E5c22f29251dd | E9b1babed97ec | E72afe609c44b |
+| E21ac3691d11f | Eb74f1545434b | Ee7d9a3ef7177 |
+| E37448d929d1d | Ef53504c65b99 | E9b1babed97ec |
+
+##### ID FD_TAB_PROG_3 #####
+JOIN_QUERY
+START E3642c609f152
+JOIN people.company = companies.company
+RETURN companies.city_primary
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| E3642c609f152 | Ee02e5d430e00 |
+| E35971172665c | E60230da0fea9 |
+| E98cfc5d666f6 | Ef7cfc8cbb0f2 |
+
+TABLE companies
+| company | city_primary | city_secondary |
+| --- | --- | --- |
+| Ef7cfc8cbb0f2 | E6f047bb96e7d | E5f8153dbfb4f |
+| E60230da0fea9 | Ea2c95161db06 | E72afe609c44b |
+| Ee02e5d430e00 | Ef92bb8008bf4 | Ea2c95161db06 |
+
+##### ID FD_TAB_PROG_4 #####
+JOIN_QUERY
+START E361a0e672eec
+JOIN people.company = companies.company
+RETURN companies.city_primary
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| E7f28c6be139c | Ee5b101b61b49 |
+| E361a0e672eec | E1a34d56a5c68 |
+| E0d3f7ff1b24b | E36597c0bba2a |
+
+TABLE companies
+| company | city_primary | city_secondary |
+| --- | --- | --- |
+| E36597c0bba2a | Ef34153f5a129 | E5f8153dbfb4f |
+| E1a34d56a5c68 | E3893fc594140 | Ef34153f5a129 |
+| Ee5b101b61b49 | E8f23ca38d174 | Edaafd7ab3b5a |
+
+##### ID FD_TAB_PROG_5 #####
+JOIN_QUERY
+START E838e3317aad3
+JOIN people.company = companies.company
+RETURN companies.city_primary
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| E838e3317aad3 | E4f505259084b |
+| E7bd00aec89cf | E35c6044cad26 |
+| Ea15386cbce1e | E054f8bc2e5e4 |
+
+TABLE companies
+| company | city_primary | city_secondary |
+| --- | --- | --- |
+| E35c6044cad26 | Ec2026ed14e2f | E30c7111def93 |
+| E4f505259084b | E30831f61de2e | Ec2026ed14e2f |
+| E054f8bc2e5e4 | E7ca803432f5a | E30c7111def93 |
+

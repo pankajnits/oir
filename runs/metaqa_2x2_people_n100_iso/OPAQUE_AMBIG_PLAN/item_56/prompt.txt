@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_56]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_56 #####
+QUESTION:
+Who directed a movie that Stanley Holloway starred in?
+
+PATH_QUERY
+START Stanley Holloway
+R1 E24e584fe08d0
+R2 Efd12ad766063
+Execute path; return final tail only.
+
+CONTEXT:
+Stanley Holloway | E24e584fe08d0 | The Titfield Thunderbolt
+The Titfield Thunderbolt | Efd12ad766063 | Charles Crichton
+The Titfield Thunderbolt | E3e384f9b6af1 | T.E.B. Clarke

@@ -1,0 +1,125 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <token_or_UNKNOWN>
+Answer EVERY ID. If two actions appear, use the note that names the queried ID.
+
+3-hop English Q + plaintext graph/notes.
+
+##### ID FU_HOP_PLAIN_0 #####
+QUESTION:
+Which venue sits the judge on docket Docket_0?
+
+CONTEXT:
+Judge_0_X | sits_in | Venue_0_X
+Matter_0_X | before_judge | Judge_0_X
+Docket_0 | filed_as | Matter_0
+Docket_0_X | filed_as | Matter_0_X
+Judge_0 | sits_in | Venue_0
+Matter_0 | before_judge | Judge_0
+
+NOTES:
+Docket_0 discovery overdue. Recommended_action file_motion_to_compel. Do not settle_without_prejudice. Docket_0_X is a nuisance claim. Recommended_action settle_without_prejudice.
+
+##### ID FU_HOP_PLAIN_1 #####
+QUESTION:
+Which region does the owner of commit sha_1abc page?
+
+CONTEXT:
+eng_1_X | pages | region_1_X
+svc_1_X | owned_by | eng_1_X
+eng_1 | pages | region_1
+sha_1abc_X | touches | svc_1_X
+sha_1abc | touches | svc_1
+svc_1 | owned_by | eng_1
+
+NOTES:
+Commit sha_1abc changes authz. Recommended_action hold_release. Tests red. sha_1abc_X is a docs typo. Recommended_action ship_now.
+
+##### ID FU_HOP_PLAIN_2 #####
+QUESTION:
+Which zone is the owner of arn_2 in?
+
+CONTEXT:
+acct_2 | owned_by | owner_2
+arn_2_X | in_account | acct_2_X
+acct_2_X | owned_by | owner_2_X
+arn_2 | in_account | acct_2
+owner_2 | in_zone | zone_2
+owner_2_X | in_zone | zone_2_X
+
+NOTES:
+Resource arn_2 public bucket. Recommended_action rotate_keys. arn_2_X is retired. Recommended_action ignore_finding.
+
+##### ID FU_HOP_PLAIN_3 #####
+QUESTION:
+Which clinic saw the clinician for patient pat_3?
+
+CONTEXT:
+enc_3 | seen_by | md_3
+enc_3_X | seen_by | md_3_X
+md_3_X | clinic_in | clinic_3_X
+pat_3_X | had_enc | enc_3_X
+md_3 | clinic_in | clinic_3
+pat_3 | had_enc | enc_3
+
+NOTES:
+Patient pat_3 rising creatinine. Recommended_action repeat_labs_48h. pat_3_X is well. Recommended_action discharge_home.
+
+##### ID FU_HOP_PLAIN_4 #####
+QUESTION:
+Which venue sits the judge on docket Docket_4?
+
+CONTEXT:
+Judge_4_X | sits_in | Venue_4_X
+Docket_4_X | filed_as | Matter_4_X
+Matter_4_X | before_judge | Judge_4_X
+Matter_4 | before_judge | Judge_4
+Judge_4 | sits_in | Venue_4
+Docket_4 | filed_as | Matter_4
+
+NOTES:
+Docket_4 discovery overdue. Recommended_action file_motion_to_compel. Do not settle_without_prejudice. Docket_4_X is a nuisance claim. Recommended_action settle_without_prejudice.
+
+##### ID FU_HOP_PLAIN_5 #####
+QUESTION:
+Which region does the owner of commit sha_5abc page?
+
+CONTEXT:
+sha_5abc | touches | svc_5
+svc_5_X | owned_by | eng_5_X
+eng_5_X | pages | region_5_X
+eng_5 | pages | region_5
+sha_5abc_X | touches | svc_5_X
+svc_5 | owned_by | eng_5
+
+NOTES:
+Commit sha_5abc changes authz. Recommended_action hold_release. Tests red. sha_5abc_X is a docs typo. Recommended_action ship_now.
+
+##### ID FU_HOP_PLAIN_6 #####
+QUESTION:
+Which zone is the owner of arn_6 in?
+
+CONTEXT:
+owner_6_X | in_zone | zone_6_X
+arn_6 | in_account | acct_6
+acct_6_X | owned_by | owner_6_X
+owner_6 | in_zone | zone_6
+acct_6 | owned_by | owner_6
+arn_6_X | in_account | acct_6_X
+
+NOTES:
+Resource arn_6 public bucket. Recommended_action rotate_keys. arn_6_X is retired. Recommended_action ignore_finding.
+
+##### ID FU_HOP_PLAIN_7 #####
+QUESTION:
+Which clinic saw the clinician for patient pat_7?
+
+CONTEXT:
+md_7_X | clinic_in | clinic_7_X
+enc_7_X | seen_by | md_7_X
+enc_7 | seen_by | md_7
+md_7 | clinic_in | clinic_7
+pat_7 | had_enc | enc_7
+pat_7_X | had_enc | enc_7_X
+
+NOTES:
+Patient pat_7 rising creatinine. Recommended_action repeat_labs_48h. pat_7_X is well. Recommended_action discharge_home.

@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_6]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_6 #####
+QUESTION:
+What city is the headquarters of the company led by Bob_Iger?
+
+PATH_QUERY
+START Bob_Iger
+R1 E0b87dba3ca83
+R2 Efbef4e9e2b7d
+Execute path; return final tail only.
+
+CONTEXT:
+Bob_Iger | E0b87dba3ca83 | The_Walt_Disney_Company
+The_Walt_Disney_Company | Efbef4e9e2b7d | Burbank
+Bob_Iger | E3548238f76ef | Cogent_Communications
+Cogent_Communications | Eef5d2cd148c3 | Washington_DC
+Bob_Iger | E413a6ebb7853 | Kansas_City_Southern
+Kansas_City_Southern | E936142b2a72b | Kansas_City
+Bob_Iger | E0820d086df0d | Lacoste_SA
+Lacoste_SA | E25fabb7cd232 | Paris
+Bob_Iger | E6c314de4f7c2 | Israel_Railways
+Israel_Railways | E6a9bb2b3a16e | Lod_Railway_Station

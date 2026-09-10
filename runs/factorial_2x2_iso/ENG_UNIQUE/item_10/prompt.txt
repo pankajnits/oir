@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_ENG_UNIQUE_10]: <city_or_UNKNOWN>
+ARM ENG_UNIQUE: English relations; one 2-hop from start.
+##### ID F22_ENG_UNIQUE_10 #####
+QUESTION:
+What city is the headquarters of the company led by David_Green?
+
+CONTEXT:
+David_Green | works_at | Hobby_Lobby
+Hobby_Lobby | headquartered_in | Oklahoma_City
+Stuart_Parker | works_at | USAA
+USAA | headquartered_in | San_Antonio

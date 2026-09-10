@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_196 #####
+QUESTION:
+Where did Carlos Bee's father die?
+
+CONTEXT:
+Guido Fubini | place of birth | Venice
+Ameena Begum | spouse | Inayat Khan
+Inayat Khan | country of citizenship | Indian
+Carlos Bee | decoy_link_196 | decoy_mid_196
+Hamilton P. Bee | place of death | CF_TAIL_196_SanAntonio
+Dr. Eugene G. Fubini | father | Guido Fubini
+decoy_mid_196 | place of death | San Antonio
+Carlos Bee | father | Hamilton P. Bee

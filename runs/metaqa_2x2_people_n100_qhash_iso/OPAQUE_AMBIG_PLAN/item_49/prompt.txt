@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_49]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_49 #####
+QUESTION:
+Who Ede8ca85633e1 a E7d336c62b2c1 E25b40a43b653 [Mark Wahlberg] E8d6c37b01ed7 Eb3b90a121fde?
+
+PATH_QUERY
+START Mark Wahlberg
+R1 E50c9f0fd5df8
+R2 E9624752d4ce3
+Execute path; return final tail only.
+
+CONTEXT:
+Mark Wahlberg | E50c9f0fd5df8 | The Perfect Storm
+The Perfect Storm | E9624752d4ce3 | Wolfgang Petersen
+The Perfect Storm | Ed7da7c3e0ef5 | Sebastian Junger

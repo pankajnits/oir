@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_140 #####
+QUESTION:
+Where was the place of death of the director of film Dixie Dugan (Film)?
+
+CONTEXT:
+decoy_mid_140 | place of death | Hollywood
+Otto Brower | place of death | CF_TAIL_140_Hollywood
+Theudebert I | date of death | 548
+Dixie Dugan | director | Otto Brower
+1913 Massacre | performer | Woody Guthrie
+Woody Guthrie | cause of death | Huntington's disease
+Dixie Dugan | decoy_link_140 | decoy_mid_140
+Deuteria | spouse | Theudebert I

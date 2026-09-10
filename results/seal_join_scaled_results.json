@@ -1,0 +1,153 @@
+{
+  "n_cases": 48,
+  "rates": {
+    "plain": 1.0,
+    "handles": 1.0,
+    "nohint": 0.0
+  },
+  "counts": {
+    "plain": {
+      "pass": 16,
+      "total": 16
+    },
+    "handles": {
+      "pass": 16,
+      "total": 16
+    },
+    "nohint": {
+      "pass": 0,
+      "total": 16
+    }
+  },
+  "handles_twin_pairs_both_correct": "8/8",
+  "rows_fail": [
+    {
+      "id": "G00_A_nohint",
+      "mode": "nohint",
+      "twin": "A",
+      "expect": "DeltaVille",
+      "got": "Acme",
+      "pass": false
+    },
+    {
+      "id": "G00_B_nohint",
+      "mode": "nohint",
+      "twin": "B",
+      "expect": "Meadow",
+      "got": "QuarkInc",
+      "pass": false
+    },
+    {
+      "id": "G01_A_nohint",
+      "mode": "nohint",
+      "twin": "A",
+      "expect": "Cedar",
+      "got": "Orbital",
+      "pass": false
+    },
+    {
+      "id": "G01_B_nohint",
+      "mode": "nohint",
+      "twin": "B",
+      "expect": "CityX",
+      "got": "RidgeTech",
+      "pass": false
+    },
+    {
+      "id": "G02_A_nohint",
+      "mode": "nohint",
+      "twin": "A",
+      "expect": "Meadow",
+      "got": "QuarkInc",
+      "pass": false
+    },
+    {
+      "id": "G02_B_nohint",
+      "mode": "nohint",
+      "twin": "B",
+      "expect": "Pinnacle",
+      "got": "NovaLtd",
+      "pass": false
+    },
+    {
+      "id": "G03_A_nohint",
+      "mode": "nohint",
+      "twin": "A",
+      "expect": "Cedar",
+      "got": "Orbital",
+      "pass": false
+    },
+    {
+      "id": "G03_B_nohint",
+      "mode": "nohint",
+      "twin": "B",
+      "expect": "Oakport",
+      "got": "SummitAI",
+      "pass": false
+    },
+    {
+      "id": "G04_A_nohint",
+      "mode": "nohint",
+      "twin": "A",
+      "expect": "CityX",
+      "got": "NovaLtd",
+      "pass": false
+    },
+    {
+      "id": "G04_B_nohint",
+      "mode": "nohint",
+      "twin": "B",
+      "expect": "DeltaVille",
+      "got": "Acme",
+      "pass": false
+    },
+    {
+      "id": "G05_A_nohint",
+      "mode": "nohint",
+      "twin": "A",
+      "expect": "CityX",
+      "got": "SummitAI",
+      "pass": false
+    },
+    {
+      "id": "G05_B_nohint",
+      "mode": "nohint",
+      "twin": "B",
+      "expect": "Pinnacle",
+      "got": "Orbital",
+      "pass": false
+    },
+    {
+      "id": "G06_A_nohint",
+      "mode": "nohint",
+      "twin": "A",
+      "expect": "CityY",
+      "got": "RidgeTech",
+      "pass": false
+    },
+    {
+      "id": "G06_B_nohint",
+      "mode": "nohint",
+      "twin": "B",
+      "expect": "DeltaVille",
+      "got": "SummitAI",
+      "pass": false
+    },
+    {
+      "id": "G07_A_nohint",
+      "mode": "nohint",
+      "twin": "A",
+      "expect": "DeltaVille",
+      "got": "Orbital",
+      "pass": false
+    },
+    {
+      "id": "G07_B_nohint",
+      "mode": "nohint",
+      "twin": "B",
+      "expect": "Cedar",
+      "got": "NovaLtd",
+      "pass": false
+    }
+  ]
+}

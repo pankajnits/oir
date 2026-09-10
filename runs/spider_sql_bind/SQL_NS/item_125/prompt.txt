@@ -1,0 +1,40 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_125]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_125 #####
+DB: program_share
+SCHEMA (English name → sealed sqlite identifier):
+program = E09a0e529962c
+Program_ID = E5eae9098e838
+Name = E0429050da262
+Origin = Efdfcaca2b152
+Launch = E30cbae6b9888
+Owner = E11c7aa12651d
+channel = E9422c5c44ea1
+Channel_ID = Eedca9ff138a7
+Share_in_percent = E536ed2891935
+Rating_in_percent = Ed3cdfbbdf127
+broadcast = E93ac0ecf23fd
+Time_of_day = Ec31afd38c646
+broadcast_share = E27811c9278c5
+Date = Ecc9e61b3b7be
+
+program(Program_ID, Name, Origin, Launch, Owner)
+channel(Channel_ID, Name, Owner, Share_in_percent, Rating_in_percent)
+broadcast(Channel_ID, Program_ID, Time_of_day)
+broadcast_share(Channel_ID, Program_ID, Date, Share_in_percent)
+
+QUESTION:
+Find the names of programs that are never broadcasted in the morning.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

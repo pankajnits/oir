@@ -1,0 +1,63 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM H2_DEMO_4: hop=2; 4 sealed demos; one quiz; no PATH.
+
+Learn the mapping from DEMOs (same encoding, novel seals).
+Answer the QUIZ the same way. No English relation names. No PATH.
+
+DEMO 0:
+START E2cea9caa7c7e
+CONTEXT:
+E02f19c1c0fcc | E2aa09665b56e | E2cea9caa7c7e
+E33fe02344f67 | E3ab23a2c7023 | Ecbd02e101e03
+E2cea9caa7c7e | E2015ed2c3440 | E33fe02344f67
+E33fe02344f67 | E012504e5dfe3 | Eef712aa91659
+E2cea9caa7c7e | E5503bf8a53dd | E02f19c1c0fcc
+Ecbd02e101e03 | E63bce04b455b | E33fe02344f67
+ANSWER_SEALED: Eef712aa91659
+
+DEMO 1:
+START E7c6e91605bd9
+CONTEXT:
+E59f4bc22e686 | E012504e5dfe3 | Ee574cb6c9c44
+E1181c7da6ab4 | E9dcbddedfa1b | E7c6e91605bd9
+E7c6e91605bd9 | Eaa5e6fcd4df7 | E1181c7da6ab4
+E59f4bc22e686 | E386b4430a6f4 | E1b1be7caa4ce
+E1b1be7caa4ce | E883573e0fa0e | E59f4bc22e686
+E7c6e91605bd9 | E2015ed2c3440 | E59f4bc22e686
+ANSWER_SEALED: Ee574cb6c9c44
+
+DEMO 2:
+START E0a2e35a16b54
+CONTEXT:
+E662b839e1bbd | Ebe614e446384 | Eb46c857e4339
+Eb46c857e4339 | E012504e5dfe3 | Eec95e4557aaa
+E49511f107d58 | E99c32d3b8ada | E0a2e35a16b54
+Eb46c857e4339 | Ea4874850f73a | E662b839e1bbd
+E0a2e35a16b54 | E2015ed2c3440 | Eb46c857e4339
+E0a2e35a16b54 | E647b64f5c6a1 | E49511f107d58
+ANSWER_SEALED: Eec95e4557aaa
+
+DEMO 3:
+START Eb120e0627545
+CONTEXT:
+Eb120e0627545 | Ecd8c67a49829 | Effa41081642f
+Eefdf8a433444 | Eeaeb326ae3b9 | Ef78892e34220
+Ef78892e34220 | Eb36af52104d9 | Eefdf8a433444
+Ef78892e34220 | E012504e5dfe3 | E45a5e00e1c2a
+Eb120e0627545 | E2015ed2c3440 | Ef78892e34220
+Effa41081642f | E151bce9d8389 | Eb120e0627545
+ANSWER_SEALED: E45a5e00e1c2a
+
+--- QUIZ ---
+##### ID HI_H2_D4_3 #####
+START E1a17b5f8e0ff
+CONTEXT:
+E1a17b5f8e0ff | E20c51f27e34d | E2c5183a5218e
+E40792af7cb6e | Ec961a39c7e9a | Ea3bf30dcadff
+Ea3bf30dcadff | E012504e5dfe3 | Eeac8ab9a38a1
+E2c5183a5218e | E0a9bc284188a | E1a17b5f8e0ff
+Ea3bf30dcadff | E93dab9069b4f | E40792af7cb6e
+E1a17b5f8e0ff | E2015ed2c3440 | Ea3bf30dcadff
+

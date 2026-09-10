@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_87]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_87 #####
+QUESTION:
+Who directed a movie that Patrick Bergin starred in?
+
+PATH_QUERY
+START Patrick Bergin
+R1 E3ca12be41465
+R2 Ef88956213d4a
+Execute path; return final tail only.
+
+CONTEXT:
+Patrick Bergin | E3ca12be41465 | Highway to Hell
+Highway to Hell | Ef88956213d4a | Ate de Jong
+Highway to Hell | E7fdd24779d5f | Brian Helgeland

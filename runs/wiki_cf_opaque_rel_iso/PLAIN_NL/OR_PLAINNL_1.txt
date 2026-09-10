@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_1 #####
+QUESTION:
+When did John V, Prince Of Anhalt-Zerbst's father die?
+
+CONTEXT:
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ronnie Rocket | director | David Lynch
+John V of Anhalt-Zerbst | decoy_link_1 | decoy_mid_1
+David Lynch | place of birth | Missoula, Montana
+decoy_mid_1 | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ernest I, Prince of Anhalt-Dessau | date of death | CF_TAIL_1_12June1516

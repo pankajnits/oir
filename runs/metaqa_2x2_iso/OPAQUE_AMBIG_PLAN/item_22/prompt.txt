@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_22]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_22 #####
+QUESTION:
+What is the genre of a movie directed by Yosuke Fujita?
+
+PATH_QUERY
+START Yosuke Fujita
+R1 E238ab92c79b5
+R2 Ecc7359ce08e2
+Execute path; return final tail only.
+
+CONTEXT:
+Yosuke Fujita | E238ab92c79b5 | Fine, Totally Fine
+Fine, Totally Fine | Ecc7359ce08e2 | Comedy
+Fine, Totally Fine | E544174df38ff | Japanese

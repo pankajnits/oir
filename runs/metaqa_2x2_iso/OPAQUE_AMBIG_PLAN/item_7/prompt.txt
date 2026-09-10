@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_7]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_7 #####
+QUESTION:
+What is the genre of a movie directed by Roar Uthaug?
+
+PATH_QUERY
+START Roar Uthaug
+R1 E5464bfce83d6
+R2 Eb65832138100
+Execute path; return final tail only.
+
+CONTEXT:
+Roar Uthaug | E5464bfce83d6 | Cold Prey
+Cold Prey | Eb65832138100 | Horror
+Cold Prey | Ed5f47eaaf0e4 | Norwegian

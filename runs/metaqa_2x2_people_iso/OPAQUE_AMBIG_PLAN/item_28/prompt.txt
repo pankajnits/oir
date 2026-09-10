@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_28]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_28 #####
+QUESTION:
+Who directed a movie that Dennis Quaid starred in?
+
+PATH_QUERY
+START Dennis Quaid
+R1 E34d4e1bc995b
+R2 Ef46b5408ccb7
+Execute path; return final tail only.
+
+CONTEXT:
+Dennis Quaid | E34d4e1bc995b | The Express
+The Express | Ef46b5408ccb7 | Gary Fleder
+The Express | E7a2a915814c0 | Charles Leavitt

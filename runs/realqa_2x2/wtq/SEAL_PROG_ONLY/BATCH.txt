@@ -1,0 +1,162 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM WTQ/SEAL_PROG: sealed table + LOOKUP over seals.
+
+##### ID WTQ_SEALPROG_0 #####
+SEALED_DSL
+ROW Ef4c59989eaa7
+COL E86986d743a4f
+RETURN LOOKUP(ROW, COL)
+Execute exact triple match in CONTEXT.
+
+CONTEXT:
+| E8690407b41eb | Eb2ab07706565 | E643f40dce181 | E3febd9a7f57e | E86986d743a4f | E465a97ce0d48 |
+| --- | --- | --- | --- | --- | --- |
+| Ef4c59989eaa7 | E0062123a1d1c | Eaa7343fcb055 | Ecb800fb899d9 | E27e2a69d0533 | E8483d8d6577a |
+| E523d5075bbca | Eba1110c275d8 | E11fc59c1887f | E9d718fa91579 | E4a0e496138c9 | E4a0e496138c9 |
+| E011bea45627f | Ea407be49ac74 | E51aa3052376c | E2bd30ffbda69 | E4a0e496138c9 | E4a0e496138c9 |
+| Ee76a35739f5f | Ee23842fc00ea | Eb2b439632f30 | E938e45143582 | E4a0e496138c9 | E4a0e496138c9 |
+| E08e0240a68d0 | Ed846bab2d1ac | Ebafa3f17d6d3 | Ed55afef4ce55 | E4a0e496138c9 | E4a0e496138c9 |
+| E447dee9b5ac7 | E3bf191a2e6fc | E37874fe6ba2f | E624555da2cd6 | E51aa3052376c | E264e97d8be41 |
+| E234a50fc4dda | Ef5725e6bc212 | E171969865c70 | Ecb800fb899d9 | E4be9e1c33c4a | Eb40fd0fffeb8 |
+| E07ddbada3787 | Eb14cfe5b0f0a | E4be9e1c33c4a | Efa0a0c7026f3 | E4a0e496138c9 | Eb40fd0fffeb8 |
+| Ee39048210257 | Eed0704c0823c | E0fe2affbf90e | Eecaba9a0c7b8 | E4a0e496138c9 | E4a0e496138c9 |
+
+##### ID WTQ_SEALPROG_1 #####
+SEALED_DSL
+ROW Ef4c59989eaa7
+COL E63d7fd0a0593
+RETURN LOOKUP(ROW, COL)
+Execute exact triple match in CONTEXT.
+
+CONTEXT:
+| E8690407b41eb | Eff2f25ecc3a5 | E8999b5f57c31 | E331573ff6669 | E63d7fd0a0593 |
+| --- | --- | --- | --- | --- |
+| Ef4c59989eaa7 | E2b0fc0a571ee | E2d2b90e98f43 | E4a0e496138c9 | E48e5aa51d29e |
+| E523d5075bbca | E170d157fbd9e | Eb598c1c2a50e | E38599311066f | E0504a63a505d |
+| E011bea45627f | Efb38f5ce5472 | E4a3c8e91b8ff | E4a0e496138c9 | E43dcb666d4eb |
+| Ee76a35739f5f | E5621fa90d5be | E69e03116a22f | E4a0e496138c9 | E43dcb666d4eb |
+| E08e0240a68d0 | E170d157fbd9e | Ec916debbf1e3 | Eddca748380cc | Ea69a115e5367 |
+| E447dee9b5ac7 | Ef7182bd5f95c | E6d014d07d903 | E6da9ca5d9c52 | E6501f09bc40c |
+
+##### ID WTQ_SEALPROG_2 #####
+SEALED_DSL
+ROW E447dee9b5ac7
+COL E8999b5f57c31
+RETURN LOOKUP(ROW, COL)
+Execute exact triple match in CONTEXT.
+
+CONTEXT:
+| E8690407b41eb | Ed43af65bf030 | E8999b5f57c31 | E755d7921a9d3 |
+| --- | --- | --- | --- |
+| Ef4c59989eaa7 | Ea85be5344e6c | E0725194690f5 | E8d6d26e5dd24 |
+| E523d5075bbca | E004bf879d5ab | Ed34b9c6a4774 | E89810e51716f |
+| E011bea45627f | Edcc31f29667c | Ea995a7c55448 | Eddb6bd1002e3 |
+| Ee76a35739f5f | E0dd6f3ff2ba7 | E4f81aad067db | E51f29b55d6c4 |
+| E08e0240a68d0 | Ef3ee1873b370 | E2174a2f6c20f | E6a1c84d64cc9 |
+| E447dee9b5ac7 | Ed5214833829c | E5d667b54f520 | E3224bbb1e65e |
+| E234a50fc4dda | E3de8efa36732 | Ee1f801bc7e75 | E716d00f45f71 |
+| E07ddbada3787 | Ed6ca6880c388 | Ed2cf3dd9d567 | Ef98a1c50ce2b |
+
+##### ID WTQ_SEALPROG_3 #####
+SEALED_DSL
+ROW E07ddbada3787
+COL E8e5324e10e51
+RETURN LOOKUP(ROW, COL)
+Execute exact triple match in CONTEXT.
+
+CONTEXT:
+| E8690407b41eb | E9c21ba53f07a | E8e5324e10e51 | E0c18d146a075 | Edecb89aec5a8 | E76e6f18001d6 |
+| --- | --- | --- | --- | --- | --- |
+| Ef4c59989eaa7 | E0062123a1d1c | E816ce22f54e9 | E107de496233f | Eacbaaa48a9d5 | E798955515c66 |
+| E523d5075bbca | Eba1110c275d8 | E7d740c126f1f | Eba6d6469d222 | E7b2f08885132 | Ebb3a69865620 |
+| E011bea45627f | Ea407be49ac74 | E135270bd1d63 | Efda82c0eb74c | Ee108ba64eb17 | E545990029fff |
+| Ee76a35739f5f | Ee23842fc00ea | E9c8d9a6d0474 | Ee608858732bd | Ec810cbefeeff | E205ab9037a6d |
+| E08e0240a68d0 | Ed846bab2d1ac | Ee1e3dce9eeb6 | E01dc0c5d37d7 | E7512972d38b7 | E756c3dedf891 |
+| E447dee9b5ac7 | E9d613eb8e4fc | Ee74ec95cee9b | E5458248ca749 | Ed49155d94f3d | E166f9da975c8 |
+| E234a50fc4dda | E9d613eb8e4fc | Eaee0763f8bd3 | E5458248ca749 | E82c680e2a560 | E613c8464b47c |
+| E07ddbada3787 | Eb14cfe5b0f0a | E6ab2875bda75 | Eb4a6a8f44e08 | E2ea3f93464db | Ebb3a69865620 |
+| Ee39048210257 | Efacbaed27420 | Ea48591dc8a54 | Ec8534e7cd6de | E438b6dee1e4d | E028bb619b58d |
+| Ebb4e49237298 | Efacbaed27420 | Ea64456fb6b3e | Ec8534e7cd6de | Ef605cc128e3a | E8b5c97c2c969 |
+
+##### ID WTQ_SEALPROG_4 #####
+SEALED_DSL
+ROW Ef4c59989eaa7
+COL E2ff5106aceb6
+RETURN LOOKUP(ROW, COL)
+Execute exact triple match in CONTEXT.
+
+CONTEXT:
+| E8690407b41eb | E2ff5106aceb6 | E718cb10e0d95 | Ead73fb5c16a1 | E9c3f0091f759 | Ea44840cdaefa |
+| --- | --- | --- | --- | --- | --- |
+| Ef4c59989eaa7 | E5ba0e5c9f141 | Eb081cc5ee8c5 | E783a98b78a44 | E783a98b78a44 | Ec8dace02e56d |
+| E523d5075bbca | E57fc2f77b0fa | E6b17d171e9a2 | Ec8b4bb7dffb2 | E3ce172a3a8f4 | E461f2560d8d5 |
+| E011bea45627f | E8f22a891dd13 | Ef1ce52c294ac | E031f38e59398 | Ee6fd849e55f9 | E9d40b982c14e |
+| Ee76a35739f5f | Ed428d2a592d7 | E6143a4ec9dd8 | Ebffbeed44f80 | Ec253658e94bc | E4c217b054eaf |
+| E08e0240a68d0 | Ef33f5ca0dcfb | E68e7bc5c91ff | E79ba60f4915c | E29e4f18032c0 | Ed9125a2afe58 |
+| E447dee9b5ac7 | Eceb99864077f | E2ed4a0cf6fe0 | E29e4f18032c0 | Ef47d8f294f67 | Ed9125a2afe58 |
+| E234a50fc4dda | Eabcf3f9924e1 | E97c52d1f7ab9 | Ef47d8f294f67 | Ef47d8f294f67 | E6dffa0124b5c |
+| E07ddbada3787 | Efb20dcf4cc25 | E8993f76c6d4b | Ec8dfece6aad2 | E5fc539d6f104 | E4e84be60b32f |
+
+##### ID WTQ_SEALPROG_5 #####
+SEALED_DSL
+ROW Ef4c59989eaa7
+COL E815d721d5cc6
+RETURN LOOKUP(ROW, COL)
+Execute exact triple match in CONTEXT.
+
+CONTEXT:
+| E8690407b41eb | E723be128dbab | E815d721d5cc6 | Ecbf540e7cfcf | E034770b0fd76 | Ee2f7272cc569 |
+| --- | --- | --- | --- | --- | --- |
+| Ef4c59989eaa7 | E6e288231db7b | E564f165b9177 | Ea814e507c4a5 | Ee608858732bd | E92c80432a721 |
+| E523d5075bbca | E944a10ec5207 | Eb3ba1013a9f4 | E80da701b661d | E24d975ddc92f | E0062123a1d1c |
+| E011bea45627f | E7ce93ecfe74b | E02c1a96b4a91 | Efdca6cb79eb5 | Eda19c6393f29 | Eba1110c275d8 |
+| Ee76a35739f5f | E242120afe368 | E994e589db855 | E77c416a08e82 | E412a4be84567 | Ea407be49ac74 |
+| E08e0240a68d0 | E668ffb362d5d | Ea6d51ba6629b | E2b1fbeea8b67 | Efda82c0eb74c | Ee23842fc00ea |
+| E447dee9b5ac7 | E9162facb8f0c | Eaffc30801e9b | E8493256788cf | Eb6a1271764ea | Ed846bab2d1ac |
+| E234a50fc4dda | E08f895951774 | E9af0de9001b9 | E65070d3fb0d0 | Eba6d6469d222 | E3bf191a2e6fc |
+| E07ddbada3787 | Ecbd28ed8b439 | E0bf19c9452c8 | Ed5ec49b3bdef | Eae5debd4c1b3 | Ef5725e6bc212 |
+| Ee39048210257 | E228e30492b37 | E26d5e9f782f2 | Ebf2c5fbfcaa2 | E5b9f16c2ca71 | Eb14cfe5b0f0a |
+| Ebb4e49237298 | E416e618f1dbb | E404eb4da88be | E107de496233f | E9eb1af77a3df | Eed0704c0823c |
+
+##### ID WTQ_SEALPROG_6 #####
+SEALED_DSL
+ROW Ee76a35739f5f
+COL Ec101abd87f44
+RETURN LOOKUP(ROW, COL)
+Execute exact triple match in CONTEXT.
+
+CONTEXT:
+| E8690407b41eb | E6da78a739f36 | Ec101abd87f44 | E8999b5f57c31 | E2d063973a595 |
+| --- | --- | --- | --- | --- |
+| Ef4c59989eaa7 | Ec9367f4767cd | E6d9fb44cbfa6 | Ec9367f4767cd | Ea9d916adb9bb |
+| E523d5075bbca | E350c92a0e3e8 | E6ad63f4941cd | E350c92a0e3e8 | E8ff83bc5368b |
+| E011bea45627f | E75ebf73cc565 | E8609c24ed385 | E75ebf73cc565 | E040eb9acf135 |
+| Ee76a35739f5f | E75ebf73cc565 | E16022e4176c5 | E75ebf73cc565 | Ec8dfece6aad2 |
+| E08e0240a68d0 | Edc35ab02ada3 | E93091efcc97d | Edc35ab02ada3 | E206d381e2f2b |
+| E447dee9b5ac7 | Edf635aaae9d6 | E85396f40372c | Edf635aaae9d6 | E8ff83bc5368b |
+| E234a50fc4dda | E977f79a8d0dd | E8e310e3f02fe | E9c37f2fc9a67 | Eedbbe5c904a9 |
+| E07ddbada3787 | E879a095c0abd | E7567e8a5e082 | E879a095c0abd | E958c35fa801d |
+
+##### ID WTQ_SEALPROG_7 #####
+SEALED_DSL
+ROW Ebb4e49237298
+COL E8d8f225872c6
+RETURN LOOKUP(ROW, COL)
+Execute exact triple match in CONTEXT.
+
+CONTEXT:
+| E8690407b41eb | E8d8f225872c6 | E019df12a5e05 | Ed80ae15b4e19 | Ed43af65bf030 |
+| --- | --- | --- | --- | --- |
+| Ef4c59989eaa7 | E736a34db28ae | E623fde347f50 | E92a38bd5051d | E2748ab28ee68 |
+| E523d5075bbca | Ebc5fcb056bc8 | E623fde347f50 | E92a38bd5051d | Ed555f9ec997c |
+| E011bea45627f | E0ccfa9889410 | E623fde347f50 | E92a38bd5051d | Ea8aabeef390b |
+| Ee76a35739f5f | E4553b9b11896 | E623fde347f50 | E92a38bd5051d | E4ac480737f09 |
+| E08e0240a68d0 | E5fc111c9594d | E623fde347f50 | E92a38bd5051d | Ebd0eb7db07b8 |
+| E447dee9b5ac7 | E90304a7d70a1 | E1ceb309e3085 | E92a38bd5051d | E3fe861112ea1 |
+| E234a50fc4dda | Ef6d8ff01739d | E1ceb309e3085 | E92a38bd5051d | E43a5a85df249 |
+| E07ddbada3787 | Ec5977aabbe3c | E623fde347f50 | E92a38bd5051d | Ec9a6291cb6da |
+| Ee39048210257 | E7e6c34070e96 | E623fde347f50 | E92a38bd5051d | E36e397ffc86d |
+| Ebb4e49237298 | E5c6ccf6a9a7a | E623fde347f50 | E92a38bd5051d | E7c66d9afd24d |

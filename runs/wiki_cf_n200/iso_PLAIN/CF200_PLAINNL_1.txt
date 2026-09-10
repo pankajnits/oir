@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_1 #####
+QUESTION:
+Where did Janusz Różycki's father die?
+
+CONTEXT:
+Kaikhosro, Prince of Mukhrani | place of death | Ottoman Empire
+decoy_mid_1 | place of death | Mediterranean Sea
+Janusz Różycki | father | Jerzy Różycki
+Leofric, Earl of Mercia | place of burial | Coventry
+Ælfgar | father | Leofric, Earl of Mercia
+Jerzy Różycki | place of death | CF_TAIL_1_Mediterranea
+Domentius III of Georgia | father | Kaikhosro, Prince of Mukhrani
+Janusz Różycki | decoy_link_1 | decoy_mid_1

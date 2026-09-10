@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_173 #####
+QUESTION:
+Where did Jewel Taylor's husband study at?
+
+CONTEXT:
+Jewel Taylor | decoy_link_173 | decoy_mid_173
+Andy Warhol | country of citizenship | American
+Philipp, 10th Prince of Hohenlohe-Langenburg | father | Kraft, Prince of Hohenlohe-Langenburg
+Kraft, Prince of Hohenlohe-Langenburg | date of birth | 25 June 1935
+Jewel Taylor | spouse | Charles Taylor
+Beauty No. 1 | director | Andy Warhol
+decoy_mid_173 | educated at | Bentley College
+Charles Taylor | educated at | CF_TAIL_173_BentleyColle

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_5 #####
+QUESTION:
+Where was the director of film Thomas Jefferson (Film) born?
+
+CONTEXT:
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Thomas Jefferson | director | Ken Burns
+Beat Girl | director | Edmond T. Gréville
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Ken Burns | place of birth | CF_TAIL_5_Brooklyn
+decoy_mid_5 | place of birth | Brooklyn
+Edmond T. Gréville | place of death | Nice
+Thomas Jefferson | decoy_link_5 | decoy_mid_5

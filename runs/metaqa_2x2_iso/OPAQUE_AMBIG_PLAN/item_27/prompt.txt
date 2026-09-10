@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_27]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_27 #####
+QUESTION:
+What is the genre of a movie directed by Serge Korber?
+
+PATH_QUERY
+START Serge Korber
+R1 E8100d022e6d9
+R2 E3dd5a27227f1
+Execute path; return final tail only.
+
+CONTEXT:
+Serge Korber | E8100d022e6d9 | Perched on a Tree
+Perched on a Tree | E3dd5a27227f1 | Comedy
+Perched on a Tree | Ede4e0d43e712 | French

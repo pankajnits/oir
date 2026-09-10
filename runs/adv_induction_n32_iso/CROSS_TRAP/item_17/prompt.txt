@@ -1,0 +1,56 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM CROSS_TRAP: demos schemaA; quiz dual-path; gold uses NOVEL seals (asymmetric)
+
+Learn the mapping from DEMOs (same encoding).
+Answer the QUIZ the same way. No English relation names. No PATH.
+If ambiguous, UNKNOWN.
+
+DEMO 0:
+START Eecd15e3ea6a6
+CONTEXT:
+Eecd15e3ea6a6 | Ef09ef52bcb3c | Edf06f9cd5d37
+Eecd15e3ea6a6 | E0995a541103d | Eaefd1a107646
+Eaefd1a107646 | E0458ae94bcaf | E7c69e2b3d0c9
+Edf06f9cd5d37 | E90c9555ae88b | Eecd15e3ea6a6
+ANSWER_SEALED: E7c69e2b3d0c9
+
+DEMO 1:
+START E4f7b8fcdec3d
+CONTEXT:
+E4f7b8fcdec3d | E0995a541103d | Ef43a9e412f71
+Ef43a9e412f71 | E0458ae94bcaf | Eacf35a129345
+E9a3184d4fc8c | E42b0a141184e | E4f7b8fcdec3d
+E4f7b8fcdec3d | E6e02ab16e317 | E9a3184d4fc8c
+ANSWER_SEALED: Eacf35a129345
+
+DEMO 2:
+START E7a81e1d4b0eb
+CONTEXT:
+E7a81e1d4b0eb | E8faa6153a321 | E7448defc24ec
+E7a81e1d4b0eb | E0995a541103d | Ecc726daf27b7
+E7448defc24ec | E7ccace838bb4 | E7a81e1d4b0eb
+Ecc726daf27b7 | E0458ae94bcaf | E6921ca5630bf
+ANSWER_SEALED: E6921ca5630bf
+
+DEMO 3:
+START E04ce05e1054e
+CONTEXT:
+E6d08db7a7955 | E0458ae94bcaf | Ed49678144e76
+E04ce05e1054e | E6aff214d5a29 | E7a10cee149d4
+E7a10cee149d4 | Eea730aff416e | E04ce05e1054e
+E04ce05e1054e | E0995a541103d | E6d08db7a7955
+ANSWER_SEALED: Ed49678144e76
+
+--- QUIZ ---
+##### ID ADV32_CROSS_TRAP_17 #####
+START E40ce363794d6
+CONTEXT:
+Eda845e0d5e9d | Ed00ac6718796 | Ec84a9ca1e68d
+E319013049f8a | E124473cb0cc8 | E4a1db64aeb9c
+E40ce363794d6 | Ebf4f95561136 | E319013049f8a
+E319013049f8a | E0b9191085800 | E97268ee3c42c
+E40ce363794d6 | E93411af979d2 | Eda845e0d5e9d
+E97268ee3c42c | E5d03dbb9ee98 | E319013049f8a
+

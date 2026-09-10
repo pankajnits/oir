@@ -1,0 +1,148 @@
+{
+  "note": "gold 2-hop listed second",
+  "summary": {
+    "wiki_hashed_rev": {
+      "gold": 4,
+      "decoy": 0,
+      "unknown": 0,
+      "other": 0,
+      "n": 4
+    },
+    "oo_rev": {
+      "gold": 0,
+      "decoy": 4,
+      "unknown": 0,
+      "other": 0,
+      "n": 4
+    },
+    "wd_rev": {
+      "gold": 3,
+      "decoy": 1,
+      "unknown": 0,
+      "other": 0,
+      "n": 4
+    }
+  },
+  "rows": [
+    {
+      "suite": "wiki_hashed_rev",
+      "i": 0,
+      "id": "MQA100B_OPAQUE_AMBIG_0",
+      "pred": "Ken Kwapis",
+      "gold": "Ken Kwapis",
+      "decoy": "Bill Bryson",
+      "kind": "gold",
+      "sec": 6.1
+    },
+    {
+      "suite": "wiki_hashed_rev",
+      "i": 1,
+      "id": "MQA100B_OPAQUE_AMBIG_1",
+      "pred": "Roger Spottiswoode",
+      "gold": "Roger Spottiswoode",
+      "decoy": "Christopher Robbins",
+      "kind": "gold",
+      "sec": 11.2
+    },
+    {
+      "suite": "wiki_hashed_rev",
+      "i": 2,
+      "id": "MQA100B_OPAQUE_AMBIG_2",
+      "pred": "Michael Greenspan",
+      "gold": "Michael Greenspan",
+      "decoy": "Christopher Dodd",
+      "kind": "gold",
+      "sec": 3.5
+    },
+    {
+      "suite": "wiki_hashed_rev",
+      "i": 3,
+      "id": "MQA100B_OPAQUE_AMBIG_3",
+      "pred": "John Madden",
+      "gold": "John Madden",
+      "decoy": "David Henry Hwang",
+      "kind": "gold",
+      "sec": 3.5
+    },
+    {
+      "suite": "oo_rev",
+      "i": 0,
+      "id": "ER22_OO_AMBIG_0",
+      "pred": "Ed2a0d4bfbfb7",
+      "gold": "E06fc29a21ac0",
+      "decoy": "Ed2a0d4bfbfb7",
+      "kind": "decoy",
+      "sec": 6.3
+    },
+    {
+      "suite": "oo_rev",
+      "i": 1,
+      "id": "ER22_OO_AMBIG_1",
+      "pred": "E757aec47da2c",
+      "gold": "E93d7dcb33f0a",
+      "decoy": "E757aec47da2c",
+      "kind": "decoy",
+      "sec": 4.0
+    },
+    {
+      "suite": "oo_rev",
+      "i": 2,
+      "id": "ER22_OO_AMBIG_2",
+      "pred": "E2911a2a59e1b",
+      "gold": "Ea229eed7fa98",
+      "decoy": "E2911a2a59e1b",
+      "kind": "decoy",
+      "sec": 4.7
+    },
+    {
+      "suite": "oo_rev",
+      "i": 3,
+      "id": "ER22_OO_AMBIG_3",
+      "pred": "E36bb08e42963",
+      "gold": "Eb74f3534ee2b",
+      "decoy": "E36bb08e42963",
+      "kind": "decoy",
+      "sec": 3.7
+    },
+    {
+      "suite": "wd_rev",
+      "i": 0,
+      "id": "F22_OPAQUE_AMBIG_0",
+      "pred": "Burbank",
+      "gold": "Burbank",
+      "decoy": "Kansas_City",
+      "kind": "gold",
+      "sec": 1.1
+    },
+    {
+      "suite": "wd_rev",
+      "i": 1,
+      "id": "F22_OPAQUE_AMBIG_1",
+      "pred": "Kansas_City",
+      "gold": "Kansas_City",
+      "decoy": "Broadway",
+      "kind": "gold",
+      "sec": 0.9
+    },
+    {
+      "suite": "wd_rev",
+      "i": 3,
+      "id": "F22_OPAQUE_AMBIG_3",
+      "pred": "Warsaw",
+      "gold": "NRK_Marienlyst",
+      "decoy": "Warsaw",
+      "kind": "decoy",
+      "sec": 1.2
+    },
+    {
+      "suite": "wd_rev",
+      "i": 4,
+      "id": "F22_OPAQUE_AMBIG_4",
+      "pred": "Warsaw",
+      "gold": "Warsaw",
+      "decoy": "Stockholm",
+      "kind": "gold",
+      "sec": 1.7
+    }
+  ]
+}

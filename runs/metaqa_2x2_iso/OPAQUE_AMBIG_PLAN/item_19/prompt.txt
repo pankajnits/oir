@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_19]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_19 #####
+QUESTION:
+What is the genre of a movie directed by Josef von Sternberg?
+
+PATH_QUERY
+START Josef von Sternberg
+R1 E968610a5c3af
+R2 E198dfbda17fc
+Execute path; return final tail only.
+
+CONTEXT:
+Josef von Sternberg | E968610a5c3af | The Blue Angel
+The Blue Angel | E198dfbda17fc | Drama
+The Blue Angel | E5a025aac5b4e | English, German

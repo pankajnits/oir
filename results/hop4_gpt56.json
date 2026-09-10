@@ -1,0 +1,295 @@
+{
+  "model": "gpt56",
+  "summary": {
+    "CYCLE": {
+      "score": "6/6",
+      "wilson": {
+        "k": 6,
+        "n": 6,
+        "acc": 1.0,
+        "ci95": [
+          0.6097,
+          1.0
+        ],
+        "display": "6/6 [0.61,1.00]"
+      },
+      "gold": 6,
+      "early2": 0,
+      "early3": 0,
+      "unknown": 0,
+      "missing": 0,
+      "other": 0
+    },
+    "DEMO_0": {
+      "score": "1/6",
+      "wilson": {
+        "k": 1,
+        "n": 6,
+        "acc": 0.1667,
+        "ci95": [
+          0.0301,
+          0.5635
+        ],
+        "display": "1/6 [0.03,0.56]"
+      },
+      "gold": 1,
+      "early2": 0,
+      "early3": 0,
+      "unknown": 5,
+      "missing": 0,
+      "other": 0
+    },
+    "PATH": {
+      "score": "6/6",
+      "wilson": {
+        "k": 6,
+        "n": 6,
+        "acc": 1.0,
+        "ci95": [
+          0.6097,
+          1.0
+        ],
+        "display": "6/6 [0.61,1.00]"
+      },
+      "gold": 6,
+      "early2": 0,
+      "early3": 0,
+      "unknown": 0,
+      "missing": 0,
+      "other": 0
+    }
+  },
+  "nonclaim": "2-hop demos \u2192 4-hop is elicitation, not G-Rev1. CYCLE/DEMO_0 isolated.",
+  "rows": [
+    {
+      "arm": "CYCLE",
+      "i": 0,
+      "id": "H4_CYCLE_0",
+      "gold": "E05eac52e176f",
+      "early2": "Ed1dc4b5e840b",
+      "early3": "E15a10f8d4947",
+      "iso": true,
+      "path": "runs/hop4/CYCLE/item_0/prompt.txt",
+      "pred": "E05eac52e176f",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "CYCLE",
+      "i": 1,
+      "id": "H4_CYCLE_1",
+      "gold": "Eecf0c5b529e6",
+      "early2": "Ecb20f8b03a67",
+      "early3": "Ea74e3861de46",
+      "iso": true,
+      "path": "runs/hop4/CYCLE/item_1/prompt.txt",
+      "pred": "Eecf0c5b529e6",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "CYCLE",
+      "i": 2,
+      "id": "H4_CYCLE_2",
+      "gold": "E94e09d537f4f",
+      "early2": "E4e4133a80993",
+      "early3": "E18583220c10a",
+      "iso": true,
+      "path": "runs/hop4/CYCLE/item_2/prompt.txt",
+      "pred": "E94e09d537f4f",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "CYCLE",
+      "i": 3,
+      "id": "H4_CYCLE_3",
+      "gold": "E54e4ced4003f",
+      "early2": "E10eb55147dc9",
+      "early3": "E61732673bd62",
+      "iso": true,
+      "path": "runs/hop4/CYCLE/item_3/prompt.txt",
+      "pred": "E54e4ced4003f",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "CYCLE",
+      "i": 4,
+      "id": "H4_CYCLE_4",
+      "gold": "E2d7fce71b14d",
+      "early2": "E7fa8d5ba7e7f",
+      "early3": "Efeb477fe8342",
+      "iso": true,
+      "path": "runs/hop4/CYCLE/item_4/prompt.txt",
+      "pred": "E2d7fce71b14d",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "CYCLE",
+      "i": 5,
+      "id": "H4_CYCLE_5",
+      "gold": "E3761f75b895f",
+      "early2": "E31cc5e73a781",
+      "early3": "Eb102cf555ec8",
+      "iso": true,
+      "path": "runs/hop4/CYCLE/item_5/prompt.txt",
+      "pred": "E3761f75b895f",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 0,
+      "id": "H4_DEMO_0_0",
+      "gold": "E05eac52e176f",
+      "early2": "Ed1dc4b5e840b",
+      "early3": "E15a10f8d4947",
+      "iso": true,
+      "path": "runs/hop4/DEMO_0/item_0/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 1,
+      "id": "H4_DEMO_0_1",
+      "gold": "Eecf0c5b529e6",
+      "early2": "Ecb20f8b03a67",
+      "early3": "Ea74e3861de46",
+      "iso": true,
+      "path": "runs/hop4/DEMO_0/item_1/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 2,
+      "id": "H4_DEMO_0_2",
+      "gold": "E94e09d537f4f",
+      "early2": "E4e4133a80993",
+      "early3": "E18583220c10a",
+      "iso": true,
+      "path": "runs/hop4/DEMO_0/item_2/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 3,
+      "id": "H4_DEMO_0_3",
+      "gold": "E54e4ced4003f",
+      "early2": "E10eb55147dc9",
+      "early3": "E61732673bd62",
+      "iso": true,
+      "path": "runs/hop4/DEMO_0/item_3/prompt.txt",
+      "pred": "E54e4ced4003f",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 4,
+      "id": "H4_DEMO_0_4",
+      "gold": "E2d7fce71b14d",
+      "early2": "E7fa8d5ba7e7f",
+      "early3": "Efeb477fe8342",
+      "iso": true,
+      "path": "runs/hop4/DEMO_0/item_4/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 5,
+      "id": "H4_DEMO_0_5",
+      "gold": "E3761f75b895f",
+      "early2": "E31cc5e73a781",
+      "early3": "Eb102cf555ec8",
+      "iso": true,
+      "path": "runs/hop4/DEMO_0/item_5/prompt.txt",
+      "pred": "UNKNOWN",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "PATH",
+      "i": 0,
+      "id": "H4_PATH_0",
+      "gold": "E05eac52e176f",
+      "early2": "Ed1dc4b5e840b",
+      "early3": "E15a10f8d4947",
+      "iso": false,
+      "pred": "E05eac52e176f",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 1,
+      "id": "H4_PATH_1",
+      "gold": "Eecf0c5b529e6",
+      "early2": "Ecb20f8b03a67",
+      "early3": "Ea74e3861de46",
+      "iso": false,
+      "pred": "Eecf0c5b529e6",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 2,
+      "id": "H4_PATH_2",
+      "gold": "E94e09d537f4f",
+      "early2": "E4e4133a80993",
+      "early3": "E18583220c10a",
+      "iso": false,
+      "pred": "E94e09d537f4f",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 3,
+      "id": "H4_PATH_3",
+      "gold": "E54e4ced4003f",
+      "early2": "E10eb55147dc9",
+      "early3": "E61732673bd62",
+      "iso": false,
+      "pred": "E54e4ced4003f",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 4,
+      "id": "H4_PATH_4",
+      "gold": "E2d7fce71b14d",
+      "early2": "E7fa8d5ba7e7f",
+      "early3": "Efeb477fe8342",
+      "iso": false,
+      "pred": "E2d7fce71b14d",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "PATH",
+      "i": 5,
+      "id": "H4_PATH_5",
+      "gold": "E3761f75b895f",
+      "early2": "E31cc5e73a781",
+      "early3": "Eb102cf555ec8",
+      "iso": false,
+      "pred": "E3761f75b895f",
+      "kind": "gold",
+      "ok": true
+    }
+  ],
+  "openai_model": "gpt-5.6-sol",
+  "protocol_note": "free-form OpenAI chat.completions"
+}

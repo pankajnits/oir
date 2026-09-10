@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_160 #####
+QUESTION:
+What nationality is Bati Del Wambara's father?
+
+CONTEXT:
+Bati del Wambara | father | Mahfuz
+Manhunt in the City | composer | Bruno Nicolai
+Mahfuz | country of citizenship | CF_TAIL_160_Somali
+decoy_mid_160 | country of citizenship | Somali
+Sybil Bianca Giuliett Eysenck | spouse | Hans Eysenck
+Bati del Wambara | decoy_link_160 | decoy_mid_160
+Hans Eysenck | employer | King's College London
+Bruno Nicolai | place of death | Rome

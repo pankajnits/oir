@@ -1,0 +1,401 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <token_or_UNKNOWN>
+Answer EVERY ID.
+
+ARM JSON/PLAIN_PROG: readable JSON + JOIN program.
+
+##### ID DOM_JSON_PLAIN_0 #####
+JOIN_QUERY
+START person=Bob_Iger
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Bob_Iger": {
+      "company": "The_Walt_Disney_Company"
+    },
+    "Beata_KozowskaChya": {
+      "company": "Powszechny_Zakad_Ubezpiecze"
+    },
+    "Keith_Creel": {
+      "company": "Canadian_Pacific_Kansas_City"
+    }
+  },
+  "companies": {
+    "The_Walt_Disney_Company": {
+      "hq_city": "Burbank"
+    },
+    "Powszechny_Zakad_Ubezpiecze": {
+      "hq_city": "Warsaw"
+    },
+    "Canadian_Pacific_Kansas_City": {
+      "hq_city": "Calgary"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_1 #####
+JOIN_QUERY
+START person=Lucian_Grainge
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Lucian_Grainge": {
+      "company": "Universal_Music_Group"
+    },
+    "Steve_Weed": {
+      "company": "WaveDivision_Holdings_LLC"
+    },
+    "Catherine_Tait": {
+      "company": "Canadian_Broadcasting_Corporation"
+    }
+  },
+  "companies": {
+    "Universal_Music_Group": {
+      "hq_city": "Broadway"
+    },
+    "WaveDivision_Holdings_LLC": {
+      "hq_city": "New_Jersey"
+    },
+    "Canadian_Broadcasting_Corporation": {
+      "hq_city": "Ottawa"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_2 #####
+JOIN_QUERY
+START person=Roy_O_Disney
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Roy_O_Disney": {
+      "company": "The_Walt_Disney_Company"
+    },
+    "Hubert_Joly": {
+      "company": "Best_Buy"
+    },
+    "Topi_Manner": {
+      "company": "Elisa"
+    }
+  },
+  "companies": {
+    "The_Walt_Disney_Company": {
+      "hq_city": "Burbank"
+    },
+    "Best_Buy": {
+      "hq_city": "Richfield"
+    },
+    "Elisa": {
+      "hq_city": "Helsinki"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_3 #####
+JOIN_QUERY
+START person=Landon_H_Rowland
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Landon_H_Rowland": {
+      "company": "Kansas_City_Southern"
+    },
+    "David_Simon": {
+      "company": "Simon_Property_Group"
+    },
+    "Tom_Buhrow": {
+      "company": "Westdeutscher_Rundfunk"
+    }
+  },
+  "companies": {
+    "Kansas_City_Southern": {
+      "hq_city": "Kansas_City"
+    },
+    "Simon_Property_Group": {
+      "hq_city": "Simon_Property_Group_Headquarters"
+    },
+    "Westdeutscher_Rundfunk": {
+      "hq_city": "Cologne"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_4 #####
+JOIN_QUERY
+START person=Stuart_Parker
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Stuart_Parker": {
+      "company": "USAA"
+    },
+    "Kentaro_Okuda": {
+      "company": "Nomura_Holdings"
+    },
+    "Luigi_Ferraris": {
+      "company": "Ferrovie_dello_Stato_Italiane"
+    }
+  },
+  "companies": {
+    "USAA": {
+      "hq_city": "San_Antonio"
+    },
+    "Nomura_Holdings": {
+      "hq_city": "Tokyo"
+    },
+    "Ferrovie_dello_Stato_Italiane": {
+      "hq_city": "Rome"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_5 #####
+JOIN_QUERY
+START person=Kristin_Lian
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Kristin_Lian": {
+      "company": "Hafslund_Kraft"
+    },
+    "Jakub_Strnad": {
+      "company": "Allianz_pojiovna"
+    },
+    "Moshe_Zana": {
+      "company": "Israel_Railways"
+    }
+  },
+  "companies": {
+    "Hafslund_Kraft": {
+      "hq_city": "Oslo"
+    },
+    "Allianz_pojiovna": {
+      "hq_city": "Prague"
+    },
+    "Israel_Railways": {
+      "hq_city": "Lod_Railway_Station"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_6 #####
+JOIN_QUERY
+START person=Thomas_S_Carter
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Thomas_S_Carter": {
+      "company": "Kansas_City_Southern"
+    },
+    "Dara_Khosrowshahi": {
+      "company": "Uber"
+    },
+    "Eric_Vallat": {
+      "company": "Lacoste_SA"
+    }
+  },
+  "companies": {
+    "Kansas_City_Southern": {
+      "hq_city": "Kansas_City"
+    },
+    "Uber": {
+      "hq_city": "San_Francisco"
+    },
+    "Lacoste_SA": {
+      "hq_city": "Paris"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_7 #####
+JOIN_QUERY
+START person=Bob_Chapek
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Bob_Chapek": {
+      "company": "The_Walt_Disney_Company"
+    },
+    "Beata_KozowskaChya": {
+      "company": "Powszechny_Zakad_Ubezpiecze"
+    },
+    "Giancarlo_Nicosanti_Monterastelli": {
+      "company": "Unieuro"
+    }
+  },
+  "companies": {
+    "The_Walt_Disney_Company": {
+      "hq_city": "Burbank"
+    },
+    "Powszechny_Zakad_Ubezpiecze": {
+      "hq_city": "Warsaw"
+    },
+    "Unieuro": {
+      "hq_city": "Forl"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_8 #####
+JOIN_QUERY
+START person=Hans_Vestberg
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Hans_Vestberg": {
+      "company": "Verizon"
+    },
+    "Leonor_Fresnel_Loree": {
+      "company": "Kansas_City_Southern"
+    },
+    "Achim_Wei": {
+      "company": "Ionos"
+    }
+  },
+  "companies": {
+    "Verizon": {
+      "hq_city": "Philadelphia"
+    },
+    "Kansas_City_Southern": {
+      "hq_city": "Kansas_City"
+    },
+    "Ionos": {
+      "hq_city": "Montabaur"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_9 #####
+JOIN_QUERY
+START person=Luka_Mucic
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Luka_Mucic": {
+      "company": "Vonovia"
+    },
+    "David_Lagerholm": {
+      "company": "Storstockholms_Lokaltrafik"
+    },
+    "Harvey_C_Couch": {
+      "company": "Kansas_City_Southern"
+    }
+  },
+  "companies": {
+    "Vonovia": {
+      "hq_city": "Bochum"
+    },
+    "Storstockholms_Lokaltrafik": {
+      "hq_city": "Stockholm"
+    },
+    "Kansas_City_Southern": {
+      "hq_city": "Kansas_City"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_10 #####
+JOIN_QUERY
+START person=Mario_Greco
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "Mario_Greco": {
+      "company": "Zurich_Insurance_Group"
+    },
+    "John_K_Martin_Jr": {
+      "company": "Turner_Broadcasting_System"
+    },
+    "Anne_Lagercrantz": {
+      "company": "Sveriges_Television"
+    }
+  },
+  "companies": {
+    "Zurich_Insurance_Group": {
+      "hq_city": "Zurich"
+    },
+    "Turner_Broadcasting_System": {
+      "hq_city": "CNN_Center"
+    },
+    "Sveriges_Television": {
+      "hq_city": "Stockholm"
+    }
+  }
+}
+
+##### ID DOM_JSON_PLAIN_11 #####
+JOIN_QUERY
+START person=William_N_Deramus_III
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+{
+  "people": {
+    "William_N_Deramus_III": {
+      "company": "Kansas_City_Southern"
+    },
+    "Beata_KozowskaChya": {
+      "company": "Powszechny_Zakad_Ubezpiecze"
+    },
+    "David_Lagerholm": {
+      "company": "Storstockholms_Lokaltrafik"
+    }
+  },
+  "companies": {
+    "Kansas_City_Southern": {
+      "hq_city": "Kansas_City"
+    },
+    "Powszechny_Zakad_Ubezpiecze": {
+      "hq_city": "Warsaw"
+    },
+    "Storstockholms_Lokaltrafik": {
+      "hq_city": "Stockholm"
+    }
+  }
+}

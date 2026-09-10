@@ -1,0 +1,542 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT tables only. No decrypt.
+Format: ANSWER_SEALED[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID.
+
+ARM GOLD_SQL: gold Spider SQL with sealed literals + sealed cells (ceiling).
+
+##### ID SP_GOLDSQL_0 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID GROUP BY t2.Employee_ID ORDER BY count(*) DESC LIMIT E586bfd1f1b30
+
+CONTEXT:
+TABLE employee
+| Employee_ID | Name | Age | City |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | E145afaf21d5a | Ed91694033b21 | E13c2a71ede3a |
+| E176c9aec8378 | E0e253980eb26 | E452282e77589 | E5c4e486c03cb |
+| E676da243c2ad | E28f32f5d8629 | E566cc911b056 | E13c2a71ede3a |
+| Ee59115218fb1 | Ed3afeb4d27ce | E1a3b61ff8bd1 | E13c2a71ede3a |
+| Ef4283bbc5944 | Eeaca58bfb61e | E452282e77589 | E14942104bc11 |
+| E0a94d9ed04f4 | E31ae3cd410b1 | E8b6d538f328e | E8d910df2c3ac |
+| E04249afccd81 | E5c9046090a72 | E452282e77589 | E5c4e486c03cb |
+| Ea9e24d8a290b | Ed5bb141e3804 | E3da4231dee0e | E14942104bc11 |
+| E1c1cd4f9030f | E7e85a75733f3 | E196506bff30f | E5c4e486c03cb |
+| E4889837f24d8 | E573878f2ced5 | Eb53b7a9a4ff1 | Eb9c6a4d83fbb |
+
+TABLE shop
+| Shop_ID | Name | Location | District | Number_products | Manager_name |
+| --- | --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | Ecbeec41afc79 | E43eb2ca64db9 | E03955a269245 | Ee69d7545209b | Ea7cd425988ab |
+| E176c9aec8378 | Ed241b1fb7846 | Eba14f374d6ba | E34eb1db10e17 | Eb014f12d6210 | E165c8f5a9e93 |
+| E676da243c2ad | Eead0e76991d5 | E057c3128a11d | E15cb6d84764c | E38fdef475943 | Ed40880f228f5 |
+| Ee59115218fb1 | E50ddcdec5066 | E8ba9899957f7 | Ebbe799d11328 | Ea4afa0201236 | E5b3b377fd4d5 |
+| Ef4283bbc5944 | Ec907f49aea23 | E0e3a6f189ef8 | E5a8fee7f9406 | E025d7a8a265c | Ecac32dd7ef90 |
+| E0a94d9ed04f4 | E9d579cc51bf0 | E71f586062382 | E8d5d35cdd1dc | Eaad88543a8bd | E92e83db88899 |
+| E04249afccd81 | E18d62f2ba6df | E9e0295751155 | Ec45ea5b3d5c4 | E863c1bc15d19 | E1ce81fc2d2c1 |
+| Ea9e24d8a290b | Ef31c44e0f1d9 | E537ce15e9b5d | E5136605700bf | Ebcc04acdac25 | E05dca9dbcad3 |
+| E1c1cd4f9030f | E320932fa6f88 | E6967b3942838 | E6d358238d5c1 | Ea4e3450853c2 | E9c463d252ae2 |
+
+TABLE hiring
+| Shop_ID | Employee_ID | Start_from | Is_full_time |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | E586bfd1f1b30 | E49b69a89c672 | E49115070b44f |
+| E586bfd1f1b30 | E176c9aec8378 | E088bd2e9a2d8 | E49115070b44f |
+| Ea9e24d8a290b | E676da243c2ad | E7ce7a94f846b | Edf84db9bb7e9 |
+| Ee59115218fb1 | Ee59115218fb1 | E890372f13520 | E49115070b44f |
+| Ef4283bbc5944 | Ef4283bbc5944 | E47d3b41f934b | E49115070b44f |
+| E176c9aec8378 | E0a94d9ed04f4 | E6b9f52c00ca0 | Edf84db9bb7e9 |
+| E0a94d9ed04f4 | E04249afccd81 | Efaa219a1f6a1 | E49115070b44f |
+
+TABLE evaluation
+| Employee_ID | Year_awarded | Bonus |
+| --- | --- | --- |
+| E586bfd1f1b30 | E7ce7a94f846b | E74259d73caa0 |
+| E176c9aec8378 | E86ceda5aeafe | E734d2ad09f03 |
+| E586bfd1f1b30 | Ea78a211f7edf | Ecc4f725b9ab2 |
+| Ee59115218fb1 | Ea22829bec626 | E734d2ad09f03 |
+| E04249afccd81 | E09b3d7bf081d | E734d2ad09f03 |
+| E4889837f24d8 | Ea78a211f7edf | E8f97dbc2832f |
+
+##### ID SP_GOLDSQL_1 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID ORDER BY t2.bonus DESC LIMIT E586bfd1f1b30
+
+CONTEXT:
+TABLE employee
+| Employee_ID | Name | Age | City |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | E145afaf21d5a | Ed91694033b21 | E13c2a71ede3a |
+| E176c9aec8378 | E0e253980eb26 | E452282e77589 | E5c4e486c03cb |
+| E676da243c2ad | E28f32f5d8629 | E566cc911b056 | E13c2a71ede3a |
+| Ee59115218fb1 | Ed3afeb4d27ce | E1a3b61ff8bd1 | E13c2a71ede3a |
+| Ef4283bbc5944 | Eeaca58bfb61e | E452282e77589 | E14942104bc11 |
+| E0a94d9ed04f4 | E31ae3cd410b1 | E8b6d538f328e | E8d910df2c3ac |
+| E04249afccd81 | E5c9046090a72 | E452282e77589 | E5c4e486c03cb |
+| Ea9e24d8a290b | Ed5bb141e3804 | E3da4231dee0e | E14942104bc11 |
+| E1c1cd4f9030f | E7e85a75733f3 | E196506bff30f | E5c4e486c03cb |
+| E4889837f24d8 | E573878f2ced5 | Eb53b7a9a4ff1 | Eb9c6a4d83fbb |
+
+TABLE shop
+| Shop_ID | Name | Location | District | Number_products | Manager_name |
+| --- | --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | Ecbeec41afc79 | E43eb2ca64db9 | E03955a269245 | Ee69d7545209b | Ea7cd425988ab |
+| E176c9aec8378 | Ed241b1fb7846 | Eba14f374d6ba | E34eb1db10e17 | Eb014f12d6210 | E165c8f5a9e93 |
+| E676da243c2ad | Eead0e76991d5 | E057c3128a11d | E15cb6d84764c | E38fdef475943 | Ed40880f228f5 |
+| Ee59115218fb1 | E50ddcdec5066 | E8ba9899957f7 | Ebbe799d11328 | Ea4afa0201236 | E5b3b377fd4d5 |
+| Ef4283bbc5944 | Ec907f49aea23 | E0e3a6f189ef8 | E5a8fee7f9406 | E025d7a8a265c | Ecac32dd7ef90 |
+| E0a94d9ed04f4 | E9d579cc51bf0 | E71f586062382 | E8d5d35cdd1dc | Eaad88543a8bd | E92e83db88899 |
+| E04249afccd81 | E18d62f2ba6df | E9e0295751155 | Ec45ea5b3d5c4 | E863c1bc15d19 | E1ce81fc2d2c1 |
+| Ea9e24d8a290b | Ef31c44e0f1d9 | E537ce15e9b5d | E5136605700bf | Ebcc04acdac25 | E05dca9dbcad3 |
+| E1c1cd4f9030f | E320932fa6f88 | E6967b3942838 | E6d358238d5c1 | Ea4e3450853c2 | E9c463d252ae2 |
+
+TABLE hiring
+| Shop_ID | Employee_ID | Start_from | Is_full_time |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | E586bfd1f1b30 | E49b69a89c672 | E49115070b44f |
+| E586bfd1f1b30 | E176c9aec8378 | E088bd2e9a2d8 | E49115070b44f |
+| Ea9e24d8a290b | E676da243c2ad | E7ce7a94f846b | Edf84db9bb7e9 |
+| Ee59115218fb1 | Ee59115218fb1 | E890372f13520 | E49115070b44f |
+| Ef4283bbc5944 | Ef4283bbc5944 | E47d3b41f934b | E49115070b44f |
+| E176c9aec8378 | E0a94d9ed04f4 | E6b9f52c00ca0 | Edf84db9bb7e9 |
+| E0a94d9ed04f4 | E04249afccd81 | Efaa219a1f6a1 | E49115070b44f |
+
+TABLE evaluation
+| Employee_ID | Year_awarded | Bonus |
+| --- | --- | --- |
+| E586bfd1f1b30 | E7ce7a94f846b | E74259d73caa0 |
+| E176c9aec8378 | E86ceda5aeafe | E734d2ad09f03 |
+| E586bfd1f1b30 | Ea78a211f7edf | Ecc4f725b9ab2 |
+| Ee59115218fb1 | Ea22829bec626 | E734d2ad09f03 |
+| E04249afccd81 | E09b3d7bf081d | E734d2ad09f03 |
+| E4889837f24d8 | Ea78a211f7edf | E8f97dbc2832f |
+
+##### ID SP_GOLDSQL_2 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT t2.name FROM hiring AS t1 JOIN shop AS t2 ON t1.shop_id  =  t2.shop_id GROUP BY t1.shop_id ORDER BY count(*) DESC LIMIT E586bfd1f1b30
+
+CONTEXT:
+TABLE employee
+| Employee_ID | Name | Age | City |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | E145afaf21d5a | Ed91694033b21 | E13c2a71ede3a |
+| E176c9aec8378 | E0e253980eb26 | E452282e77589 | E5c4e486c03cb |
+| E676da243c2ad | E28f32f5d8629 | E566cc911b056 | E13c2a71ede3a |
+| Ee59115218fb1 | Ed3afeb4d27ce | E1a3b61ff8bd1 | E13c2a71ede3a |
+| Ef4283bbc5944 | Eeaca58bfb61e | E452282e77589 | E14942104bc11 |
+| E0a94d9ed04f4 | E31ae3cd410b1 | E8b6d538f328e | E8d910df2c3ac |
+| E04249afccd81 | E5c9046090a72 | E452282e77589 | E5c4e486c03cb |
+| Ea9e24d8a290b | Ed5bb141e3804 | E3da4231dee0e | E14942104bc11 |
+| E1c1cd4f9030f | E7e85a75733f3 | E196506bff30f | E5c4e486c03cb |
+| E4889837f24d8 | E573878f2ced5 | Eb53b7a9a4ff1 | Eb9c6a4d83fbb |
+
+TABLE shop
+| Shop_ID | Name | Location | District | Number_products | Manager_name |
+| --- | --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | Ecbeec41afc79 | E43eb2ca64db9 | E03955a269245 | Ee69d7545209b | Ea7cd425988ab |
+| E176c9aec8378 | Ed241b1fb7846 | Eba14f374d6ba | E34eb1db10e17 | Eb014f12d6210 | E165c8f5a9e93 |
+| E676da243c2ad | Eead0e76991d5 | E057c3128a11d | E15cb6d84764c | E38fdef475943 | Ed40880f228f5 |
+| Ee59115218fb1 | E50ddcdec5066 | E8ba9899957f7 | Ebbe799d11328 | Ea4afa0201236 | E5b3b377fd4d5 |
+| Ef4283bbc5944 | Ec907f49aea23 | E0e3a6f189ef8 | E5a8fee7f9406 | E025d7a8a265c | Ecac32dd7ef90 |
+| E0a94d9ed04f4 | E9d579cc51bf0 | E71f586062382 | E8d5d35cdd1dc | Eaad88543a8bd | E92e83db88899 |
+| E04249afccd81 | E18d62f2ba6df | E9e0295751155 | Ec45ea5b3d5c4 | E863c1bc15d19 | E1ce81fc2d2c1 |
+| Ea9e24d8a290b | Ef31c44e0f1d9 | E537ce15e9b5d | E5136605700bf | Ebcc04acdac25 | E05dca9dbcad3 |
+| E1c1cd4f9030f | E320932fa6f88 | E6967b3942838 | E6d358238d5c1 | Ea4e3450853c2 | E9c463d252ae2 |
+
+TABLE hiring
+| Shop_ID | Employee_ID | Start_from | Is_full_time |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | E586bfd1f1b30 | E49b69a89c672 | E49115070b44f |
+| E586bfd1f1b30 | E176c9aec8378 | E088bd2e9a2d8 | E49115070b44f |
+| Ea9e24d8a290b | E676da243c2ad | E7ce7a94f846b | Edf84db9bb7e9 |
+| Ee59115218fb1 | Ee59115218fb1 | E890372f13520 | E49115070b44f |
+| Ef4283bbc5944 | Ef4283bbc5944 | E47d3b41f934b | E49115070b44f |
+| E176c9aec8378 | E0a94d9ed04f4 | E6b9f52c00ca0 | Edf84db9bb7e9 |
+| E0a94d9ed04f4 | E04249afccd81 | Efaa219a1f6a1 | E49115070b44f |
+
+TABLE evaluation
+| Employee_ID | Year_awarded | Bonus |
+| --- | --- | --- |
+| E586bfd1f1b30 | E7ce7a94f846b | E74259d73caa0 |
+| E176c9aec8378 | E86ceda5aeafe | E734d2ad09f03 |
+| E586bfd1f1b30 | Ea78a211f7edf | Ecc4f725b9ab2 |
+| Ee59115218fb1 | Ea22829bec626 | E734d2ad09f03 |
+| E04249afccd81 | E09b3d7bf081d | E734d2ad09f03 |
+| E4889837f24d8 | Ea78a211f7edf | E8f97dbc2832f |
+
+##### ID SP_GOLDSQL_3 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT T2.Name FROM course_arrange AS T1 JOIN teacher AS T2 ON T1.Teacher_ID  =  T2.Teacher_ID GROUP BY T2.Name HAVING COUNT(*)  >=  E176c9aec8378
+
+CONTEXT:
+TABLE course
+| Course_ID | Staring_Date | Course |
+| --- | --- | --- |
+| E586bfd1f1b30 | E5add9040ddad | Ef55859348e95 |
+| E176c9aec8378 | E840f8c90912b | E7e857d344aa6 |
+| E676da243c2ad | Ee1db80a3651a | Ec889731e1313 |
+| Ee59115218fb1 | E4f98067eef84 | E93a1afef92ab |
+| Ef4283bbc5944 | E97f41da82263 | Eb07b3161c4de |
+| E0a94d9ed04f4 | Edde8528c818f | E031bb13eae3d |
+| E04249afccd81 | Ec7573d56053e | Ea862ec50ee81 |
+| Ea9e24d8a290b | Edcf8a1d61c87 | E6294b7086ab1 |
+| E1c1cd4f9030f | E3edbfa5d2edf | Ee57b4122ff46 |
+| E4889837f24d8 | E4cc4d91dbe06 | E15e353b7134d |
+
+TABLE teacher
+| Teacher_ID | Name | Age | Hometown |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | Ea81e1a5d79f0 | E196506bff30f | E9cbfb23c9e1a |
+| E176c9aec8378 | E6139b52b2db9 | E452282e77589 | E3ce8469e6fee |
+| E676da243c2ad | Ef22d6ee9cfa2 | Ed22175c20dd0 | E0c8430c49594 |
+| Ee59115218fb1 | E2ea487afe471 | E3c7695bb1cdb | Ec7fe5f55d88e |
+| Ef4283bbc5944 | E28a1538f9f61 | Ee260780b3497 | Ea098a8c6cf5e |
+| E0a94d9ed04f4 | E87e945b52098 | Ed4982acd85b2 | E0fae9769881f |
+| E04249afccd81 | E6e9c0000de96 | E018ef697c69c | E49b1c4410032 |
+
+TABLE course_arrange
+| Course_ID | Teacher_ID | Grade |
+| --- | --- | --- |
+| E176c9aec8378 | Ef4283bbc5944 | E586bfd1f1b30 |
+| E176c9aec8378 | E676da243c2ad | E676da243c2ad |
+| E676da243c2ad | E176c9aec8378 | Ef4283bbc5944 |
+| Ee59115218fb1 | E0a94d9ed04f4 | E04249afccd81 |
+| Ef4283bbc5944 | E0a94d9ed04f4 | E586bfd1f1b30 |
+| E4889837f24d8 | E04249afccd81 | Ee59115218fb1 |
+
+##### ID SP_GOLDSQL_4 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT sum(t2.Total_spent) FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id WHERE t1.Level_of_membership  =  E586bfd1f1b30
+
+CONTEXT:
+TABLE museum
+| Museum_ID | Name | Num_of_Staff | Open_Year |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | Eded0b7a250a2 | E2a2cb3b82e1f | E8ef50100146c |
+| E176c9aec8378 | Eb9ffef5bcd35 | Ef8579db7ed0b | E890372f13520 |
+| E676da243c2ad | E04640a8e862f | E82a24a9f53d4 | E6b9f52c00ca0 |
+| Ee59115218fb1 | Eb9c612f67ae2 | E87249f8d5e1c | E7ce7a94f846b |
+| Ef4283bbc5944 | E4ff2dcaba941 | Effed803ed766 | Efaa219a1f6a1 |
+| E0a94d9ed04f4 | E8ee15f33e1f0 | Effed803ed766 | Efaa219a1f6a1 |
+| E04249afccd81 | E2ec3e0184943 | Ed373ccd3b77d | E6b9f52c00ca0 |
+| Ea9e24d8a290b | Ee0e1aa87ce2c | E49b1b1f99180 | E49b69a89c672 |
+
+TABLE visitor
+| ID | Name | Level_of_membership | Age |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | E7cb172cf665f | Ea9e24d8a290b | E5a168b49f595 |
+| E176c9aec8378 | E6751347311e0 | Ef4283bbc5944 | E8b6d538f328e |
+| E676da243c2ad | E1356f1c6833e | E586bfd1f1b30 | Ea6114c1d2d5a |
+| Ee59115218fb1 | E03109d8a80c0 | E176c9aec8378 | Ef7c8f117704a |
+| Ef4283bbc5944 | E808d75dbf5f4 | E0a94d9ed04f4 | Eb53b7a9a4ff1 |
+| E0a94d9ed04f4 | Ea87459a8b333 | E586bfd1f1b30 | Ef8579db7ed0b |
+
+TABLE visit
+| Museum_ID | visitor_ID | Num_of_Ticket | Total_spent |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | Ef4283bbc5944 | Ebd4a2194fe57 | E8477ad4d99ff |
+| E176c9aec8378 | Ef4283bbc5944 | Ee59115218fb1 | E8a9c4304620b |
+| Ee59115218fb1 | E676da243c2ad | E4889837f24d8 | E65e971da1b25 |
+| E176c9aec8378 | E676da243c2ad | E2bcf75c626c4 | Eed31dbd88d16 |
+| Ee59115218fb1 | E0a94d9ed04f4 | E676da243c2ad | E831e6805e9a0 |
+| Ea9e24d8a290b | E0a94d9ed04f4 | E176c9aec8378 | Ef29c1a5e50ad |
+
+##### ID SP_GOLDSQL_5 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT t1.name FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id JOIN museum AS t3 ON t3.Museum_ID  =  t2.Museum_ID WHERE t3.open_year  <  E49b69a89c672 INTERSECT SELECT t1.name FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id JOIN museum AS t3 ON t3.Museum_ID  =  t2.Museum_ID WHERE t3.open_year  >  E7ce7a94f846b
+
+CONTEXT:
+TABLE museum
+| Museum_ID | Name | Num_of_Staff | Open_Year |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | Eded0b7a250a2 | E2a2cb3b82e1f | E8ef50100146c |
+| E176c9aec8378 | Eb9ffef5bcd35 | Ef8579db7ed0b | E890372f13520 |
+| E676da243c2ad | E04640a8e862f | E82a24a9f53d4 | E6b9f52c00ca0 |
+| Ee59115218fb1 | Eb9c612f67ae2 | E87249f8d5e1c | E7ce7a94f846b |
+| Ef4283bbc5944 | E4ff2dcaba941 | Effed803ed766 | Efaa219a1f6a1 |
+| E0a94d9ed04f4 | E8ee15f33e1f0 | Effed803ed766 | Efaa219a1f6a1 |
+| E04249afccd81 | E2ec3e0184943 | Ed373ccd3b77d | E6b9f52c00ca0 |
+| Ea9e24d8a290b | Ee0e1aa87ce2c | E49b1b1f99180 | E49b69a89c672 |
+
+TABLE visitor
+| ID | Name | Level_of_membership | Age |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | E7cb172cf665f | Ea9e24d8a290b | E5a168b49f595 |
+| E176c9aec8378 | E6751347311e0 | Ef4283bbc5944 | E8b6d538f328e |
+| E676da243c2ad | E1356f1c6833e | E586bfd1f1b30 | Ea6114c1d2d5a |
+| Ee59115218fb1 | E03109d8a80c0 | E176c9aec8378 | Ef7c8f117704a |
+| Ef4283bbc5944 | E808d75dbf5f4 | E0a94d9ed04f4 | Eb53b7a9a4ff1 |
+| E0a94d9ed04f4 | Ea87459a8b333 | E586bfd1f1b30 | Ef8579db7ed0b |
+
+TABLE visit
+| Museum_ID | visitor_ID | Num_of_Ticket | Total_spent |
+| --- | --- | --- | --- |
+| E586bfd1f1b30 | Ef4283bbc5944 | Ebd4a2194fe57 | E8477ad4d99ff |
+| E176c9aec8378 | Ef4283bbc5944 | Ee59115218fb1 | E8a9c4304620b |
+| Ee59115218fb1 | E676da243c2ad | E4889837f24d8 | E65e971da1b25 |
+| E176c9aec8378 | E676da243c2ad | E2bcf75c626c4 | Eed31dbd88d16 |
+| Ee59115218fb1 | E0a94d9ed04f4 | E676da243c2ad | E831e6805e9a0 |
+| Ea9e24d8a290b | E0a94d9ed04f4 | E176c9aec8378 | Ef29c1a5e50ad |
+
+##### ID SP_GOLDSQL_6 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT T1.Birth_Date FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Earnings ASC LIMIT E586bfd1f1b30
+
+CONTEXT:
+TABLE poker_player
+| Poker_Player_ID | People_ID | Final_Table_Made | Best_Finish | Money_Rank | Earnings |
+| --- | --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | E586bfd1f1b30 | Eb31e20842f48 | Ebd4db710f807 | E228392832e72 | E4c90c6a0224f |
+| E176c9aec8378 | E176c9aec8378 | E8c2f758f2d5b | E6fcfb5bac992 | Ecca5e029d5f1 | E0c54870ca188 |
+| E676da243c2ad | Ef4283bbc5944 | E704a04012884 | Ebd4db710f807 | Eca1c530d0ee5 | Ebd302b2c21e7 |
+| Ee59115218fb1 | E0a94d9ed04f4 | E5fae91e8caf7 | E6fcfb5bac992 | E763b481dd26e | Eefd75ccf6aac |
+| Ef4283bbc5944 | E04249afccd81 | Ea3adc0bd9e29 | E539e12e184ba | Edde0edc08d20 | E04ef9a6f42fe |
+
+TABLE people
+| People_ID | Nationality | Name | Birth_Date | Height |
+| --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | Ed8cdde56fc01 | E9029db195968 | E80a3a8eaed66 | Ec25df9bbead3 |
+| E176c9aec8378 | E37f65b9d05c0 | E658b05b4fb54 | E9415ec8c79e0 | E8104ca6ddc91 |
+| E676da243c2ad | Ed8cdde56fc01 | E13354e657052 | E3449b0332dff | Ead6cf128cfaf |
+| Ee59115218fb1 | Ed8cdde56fc01 | E17778f856128 | Eff1c448d2e3b | Ea406fdb20f94 |
+| Ef4283bbc5944 | Ed8cdde56fc01 | E36ad77edfc59 | Ef08f17509d68 | E7fd55a528781 |
+| E0a94d9ed04f4 | Ed8cdde56fc01 | E556e2ba2aa98 | Ecb1963fad23e | Ee7c928e23cf4 |
+| E04249afccd81 | Ed8cdde56fc01 | E1ea5fa9e9168 | E976c281160cf | E226001fd93c6 |
+
+##### ID SP_GOLDSQL_7 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT T2.Money_Rank FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Height DESC LIMIT E586bfd1f1b30
+
+CONTEXT:
+TABLE poker_player
+| Poker_Player_ID | People_ID | Final_Table_Made | Best_Finish | Money_Rank | Earnings |
+| --- | --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | E586bfd1f1b30 | Eb31e20842f48 | Ebd4db710f807 | E228392832e72 | E4c90c6a0224f |
+| E176c9aec8378 | E176c9aec8378 | E8c2f758f2d5b | E6fcfb5bac992 | Ecca5e029d5f1 | E0c54870ca188 |
+| E676da243c2ad | Ef4283bbc5944 | E704a04012884 | Ebd4db710f807 | Eca1c530d0ee5 | Ebd302b2c21e7 |
+| Ee59115218fb1 | E0a94d9ed04f4 | E5fae91e8caf7 | E6fcfb5bac992 | E763b481dd26e | Eefd75ccf6aac |
+| Ef4283bbc5944 | E04249afccd81 | Ea3adc0bd9e29 | E539e12e184ba | Edde0edc08d20 | E04ef9a6f42fe |
+
+TABLE people
+| People_ID | Nationality | Name | Birth_Date | Height |
+| --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | Ed8cdde56fc01 | E9029db195968 | E80a3a8eaed66 | Ec25df9bbead3 |
+| E176c9aec8378 | E37f65b9d05c0 | E658b05b4fb54 | E9415ec8c79e0 | E8104ca6ddc91 |
+| E676da243c2ad | Ed8cdde56fc01 | E13354e657052 | E3449b0332dff | Ead6cf128cfaf |
+| Ee59115218fb1 | Ed8cdde56fc01 | E17778f856128 | Eff1c448d2e3b | Ea406fdb20f94 |
+| Ef4283bbc5944 | Ed8cdde56fc01 | E36ad77edfc59 | Ef08f17509d68 | E7fd55a528781 |
+| E0a94d9ed04f4 | Ed8cdde56fc01 | E556e2ba2aa98 | Ecb1963fad23e | Ee7c928e23cf4 |
+| E04249afccd81 | Ed8cdde56fc01 | E1ea5fa9e9168 | E976c281160cf | E226001fd93c6 |
+
+##### ID SP_GOLDSQL_8 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT avg(T2.Earnings) FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Height  >  E480cd0b91a62
+
+CONTEXT:
+TABLE poker_player
+| Poker_Player_ID | People_ID | Final_Table_Made | Best_Finish | Money_Rank | Earnings |
+| --- | --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | E586bfd1f1b30 | Eb31e20842f48 | Ebd4db710f807 | E228392832e72 | E4c90c6a0224f |
+| E176c9aec8378 | E176c9aec8378 | E8c2f758f2d5b | E6fcfb5bac992 | Ecca5e029d5f1 | E0c54870ca188 |
+| E676da243c2ad | Ef4283bbc5944 | E704a04012884 | Ebd4db710f807 | Eca1c530d0ee5 | Ebd302b2c21e7 |
+| Ee59115218fb1 | E0a94d9ed04f4 | E5fae91e8caf7 | E6fcfb5bac992 | E763b481dd26e | Eefd75ccf6aac |
+| Ef4283bbc5944 | E04249afccd81 | Ea3adc0bd9e29 | E539e12e184ba | Edde0edc08d20 | E04ef9a6f42fe |
+
+TABLE people
+| People_ID | Nationality | Name | Birth_Date | Height |
+| --- | --- | --- | --- | --- |
+| E586bfd1f1b30 | Ed8cdde56fc01 | E9029db195968 | E80a3a8eaed66 | Ec25df9bbead3 |
+| E176c9aec8378 | E37f65b9d05c0 | E658b05b4fb54 | E9415ec8c79e0 | E8104ca6ddc91 |
+| E676da243c2ad | Ed8cdde56fc01 | E13354e657052 | E3449b0332dff | Ead6cf128cfaf |
+| Ee59115218fb1 | Ed8cdde56fc01 | E17778f856128 | Eff1c448d2e3b | Ea406fdb20f94 |
+| Ef4283bbc5944 | Ed8cdde56fc01 | E36ad77edfc59 | Ef08f17509d68 | E7fd55a528781 |
+| E0a94d9ed04f4 | Ed8cdde56fc01 | E556e2ba2aa98 | Ecb1963fad23e | Ee7c928e23cf4 |
+| E04249afccd81 | Ed8cdde56fc01 | E1ea5fa9e9168 | E976c281160cf | E226001fd93c6 |
+
+##### ID SP_GOLDSQL_9 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id ORDER BY count(*) DESC LIMIT E586bfd1f1b30
+
+CONTEXT:
+TABLE Highschooler
+| ID | name | grade |
+| --- | --- | --- |
+| E9704886a825a | Ee985164fd599 | E1c1cd4f9030f |
+| E033905452bf4 | Ead41c293f444 | E1c1cd4f9030f |
+| E27bfc0e5c39f | E36cd273abff4 | E1c1cd4f9030f |
+| Eb29bf6d980bb | E6d0087564a09 | E1c1cd4f9030f |
+| E5a189554b55d | E0284f1957b6e | E4889837f24d8 |
+| E34e89af65a31 | E3005664bac57 | E4889837f24d8 |
+| E9dd271346541 | Ef9bcb7b22f42 | E4889837f24d8 |
+| E09d40793688b | E8c745ca4b02a | E4889837f24d8 |
+| E53fda0c38d2e | Ee8b886356506 | Ed8608a2568a8 |
+| E680eb42e20f6 | Ef71eeb5e643a | Ed8608a2568a8 |
+| Ec31354610652 | Ead41c293f444 | Ed8608a2568a8 |
+| Eca03781a39a1 | Ecbd79d055ebb | Ed8608a2568a8 |
+| E63c5511d1eb8 | Ee985164fd599 | E49b1b1f99180 |
+| E45ec0f349e6e | Ebc4403e9eb89 | E49b1b1f99180 |
+| E4d850bc7f71a | E2a83e2fd5589 | E49b1b1f99180 |
+| Ebdb5e808f6d5 | E125ff86937b7 | E49b1b1f99180 |
+
+TABLE Friend
+| student_id | friend_id |
+| --- | --- |
+| E9704886a825a | E27bfc0e5c39f |
+| E9704886a825a | E033905452bf4 |
+| E033905452bf4 | Eb29bf6d980bb |
+| E27bfc0e5c39f | E53fda0c38d2e |
+| Eb29bf6d980bb | E53fda0c38d2e |
+| E033905452bf4 | E34e89af65a31 |
+| E34e89af65a31 | E9dd271346541 |
+| E34e89af65a31 | E680eb42e20f6 |
+| E34e89af65a31 | E63c5511d1eb8 |
+| E9dd271346541 | E5a189554b55d |
+| E9dd271346541 | E09d40793688b |
+| E5a189554b55d | E09d40793688b |
+| E53fda0c38d2e | Ec31354610652 |
+| E53fda0c38d2e | Eca03781a39a1 |
+| Ec31354610652 | Eca03781a39a1 |
+| Eca03781a39a1 | E4d850bc7f71a |
+| E680eb42e20f6 | E4d850bc7f71a |
+| E4d850bc7f71a | E63c5511d1eb8 |
+| E63c5511d1eb8 | Ebdb5e808f6d5 |
+| Ebdb5e808f6d5 | E45ec0f349e6e |
+
+TABLE Likes
+| student_id | liked_id |
+| --- | --- |
+| E033905452bf4 | Eb29bf6d980bb |
+| Eb29bf6d980bb | E033905452bf4 |
+| E34e89af65a31 | Eb29bf6d980bb |
+| Ec31354610652 | E53fda0c38d2e |
+| E53fda0c38d2e | E9dd271346541 |
+| E09d40793688b | E9dd271346541 |
+| E680eb42e20f6 | E63c5511d1eb8 |
+| Eca03781a39a1 | E4d850bc7f71a |
+| E4d850bc7f71a | Eca03781a39a1 |
+| E45ec0f349e6e | E5a189554b55d |
+
+##### ID SP_GOLDSQL_10 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id HAVING count(*)  >=  E676da243c2ad
+
+CONTEXT:
+TABLE Highschooler
+| ID | name | grade |
+| --- | --- | --- |
+| E9704886a825a | Ee985164fd599 | E1c1cd4f9030f |
+| E033905452bf4 | Ead41c293f444 | E1c1cd4f9030f |
+| E27bfc0e5c39f | E36cd273abff4 | E1c1cd4f9030f |
+| Eb29bf6d980bb | E6d0087564a09 | E1c1cd4f9030f |
+| E5a189554b55d | E0284f1957b6e | E4889837f24d8 |
+| E34e89af65a31 | E3005664bac57 | E4889837f24d8 |
+| E9dd271346541 | Ef9bcb7b22f42 | E4889837f24d8 |
+| E09d40793688b | E8c745ca4b02a | E4889837f24d8 |
+| E53fda0c38d2e | Ee8b886356506 | Ed8608a2568a8 |
+| E680eb42e20f6 | Ef71eeb5e643a | Ed8608a2568a8 |
+| Ec31354610652 | Ead41c293f444 | Ed8608a2568a8 |
+| Eca03781a39a1 | Ecbd79d055ebb | Ed8608a2568a8 |
+| E63c5511d1eb8 | Ee985164fd599 | E49b1b1f99180 |
+| E45ec0f349e6e | Ebc4403e9eb89 | E49b1b1f99180 |
+| E4d850bc7f71a | E2a83e2fd5589 | E49b1b1f99180 |
+| Ebdb5e808f6d5 | E125ff86937b7 | E49b1b1f99180 |
+
+TABLE Friend
+| student_id | friend_id |
+| --- | --- |
+| E9704886a825a | E27bfc0e5c39f |
+| E9704886a825a | E033905452bf4 |
+| E033905452bf4 | Eb29bf6d980bb |
+| E27bfc0e5c39f | E53fda0c38d2e |
+| Eb29bf6d980bb | E53fda0c38d2e |
+| E033905452bf4 | E34e89af65a31 |
+| E34e89af65a31 | E9dd271346541 |
+| E34e89af65a31 | E680eb42e20f6 |
+| E34e89af65a31 | E63c5511d1eb8 |
+| E9dd271346541 | E5a189554b55d |
+| E9dd271346541 | E09d40793688b |
+| E5a189554b55d | E09d40793688b |
+| E53fda0c38d2e | Ec31354610652 |
+| E53fda0c38d2e | Eca03781a39a1 |
+| Ec31354610652 | Eca03781a39a1 |
+| Eca03781a39a1 | E4d850bc7f71a |
+| E680eb42e20f6 | E4d850bc7f71a |
+| E4d850bc7f71a | E63c5511d1eb8 |
+| E63c5511d1eb8 | Ebdb5e808f6d5 |
+| Ebdb5e808f6d5 | E45ec0f349e6e |
+
+TABLE Likes
+| student_id | liked_id |
+| --- | --- |
+| E033905452bf4 | Eb29bf6d980bb |
+| Eb29bf6d980bb | E033905452bf4 |
+| E34e89af65a31 | Eb29bf6d980bb |
+| Ec31354610652 | E53fda0c38d2e |
+| E53fda0c38d2e | E9dd271346541 |
+| E09d40793688b | E9dd271346541 |
+| E680eb42e20f6 | E63c5511d1eb8 |
+| Eca03781a39a1 | E4d850bc7f71a |
+| E4d850bc7f71a | Eca03781a39a1 |
+| E45ec0f349e6e | E5a189554b55d |
+
+##### ID SP_GOLDSQL_11 #####
+Execute this SQL over CONTEXT (cells are sealed):
+SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id JOIN Highschooler AS T3 ON T1.friend_id  =  T3.id WHERE T2.name  =  "Kyle"
+
+CONTEXT:
+TABLE Highschooler
+| ID | name | grade |
+| --- | --- | --- |
+| E9704886a825a | Ee985164fd599 | E1c1cd4f9030f |
+| E033905452bf4 | Ead41c293f444 | E1c1cd4f9030f |
+| E27bfc0e5c39f | E36cd273abff4 | E1c1cd4f9030f |
+| Eb29bf6d980bb | E6d0087564a09 | E1c1cd4f9030f |
+| E5a189554b55d | E0284f1957b6e | E4889837f24d8 |
+| E34e89af65a31 | E3005664bac57 | E4889837f24d8 |
+| E9dd271346541 | Ef9bcb7b22f42 | E4889837f24d8 |
+| E09d40793688b | E8c745ca4b02a | E4889837f24d8 |
+| E53fda0c38d2e | Ee8b886356506 | Ed8608a2568a8 |
+| E680eb42e20f6 | Ef71eeb5e643a | Ed8608a2568a8 |
+| Ec31354610652 | Ead41c293f444 | Ed8608a2568a8 |
+| Eca03781a39a1 | Ecbd79d055ebb | Ed8608a2568a8 |
+| E63c5511d1eb8 | Ee985164fd599 | E49b1b1f99180 |
+| E45ec0f349e6e | Ebc4403e9eb89 | E49b1b1f99180 |
+| E4d850bc7f71a | E2a83e2fd5589 | E49b1b1f99180 |
+| Ebdb5e808f6d5 | E125ff86937b7 | E49b1b1f99180 |
+
+TABLE Friend
+| student_id | friend_id |
+| --- | --- |
+| E9704886a825a | E27bfc0e5c39f |
+| E9704886a825a | E033905452bf4 |
+| E033905452bf4 | Eb29bf6d980bb |
+| E27bfc0e5c39f | E53fda0c38d2e |
+| Eb29bf6d980bb | E53fda0c38d2e |
+| E033905452bf4 | E34e89af65a31 |
+| E34e89af65a31 | E9dd271346541 |
+| E34e89af65a31 | E680eb42e20f6 |
+| E34e89af65a31 | E63c5511d1eb8 |
+| E9dd271346541 | E5a189554b55d |
+| E9dd271346541 | E09d40793688b |
+| E5a189554b55d | E09d40793688b |
+| E53fda0c38d2e | Ec31354610652 |
+| E53fda0c38d2e | Eca03781a39a1 |
+| Ec31354610652 | Eca03781a39a1 |
+| Eca03781a39a1 | E4d850bc7f71a |
+| E680eb42e20f6 | E4d850bc7f71a |
+| E4d850bc7f71a | E63c5511d1eb8 |
+| E63c5511d1eb8 | Ebdb5e808f6d5 |
+| Ebdb5e808f6d5 | E45ec0f349e6e |
+
+TABLE Likes
+| student_id | liked_id |
+| --- | --- |
+| E033905452bf4 | Eb29bf6d980bb |
+| Eb29bf6d980bb | E033905452bf4 |
+| E34e89af65a31 | Eb29bf6d980bb |
+| Ec31354610652 | E53fda0c38d2e |
+| E53fda0c38d2e | E9dd271346541 |
+| E09d40793688b | E9dd271346541 |
+| E680eb42e20f6 | E63c5511d1eb8 |
+| Eca03781a39a1 | E4d850bc7f71a |
+| E4d850bc7f71a | Eca03781a39a1 |
+| E45ec0f349e6e | E5a189554b55d |

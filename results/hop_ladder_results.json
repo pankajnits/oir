@@ -1,0 +1,19 @@
+{
+  "PROG": {
+    "1": "8/8",
+    "2": "8/8",
+    "3": "8/8",
+    "4": "8/8"
+  },
+  "NL_blind2": {
+    "1": "8/8",
+    "2": "8/8",
+    "3": "0/8",
+    "4": "8/8"
+  },
+  "PROG_total": "32/32",
+  "NL_blind2_total": "24/32",
+  "integrity_note": "NL arm not used for science claim: early runs contaminated; blind2 still recovers hops 1/2/4 somehow (possible transcript/cache channel). NL floor remains three-arm SEAL_NL 0/12 on Wikidata CEO\u2192HQ. PROG hop-ladder 32/32 is the locked positive result.",
+  "verdict_PROG": "SUPPORTED: sealed PATH saturates hops 1\u20134 (8/8 each)",
+  "verdict_NL": "UNRELIABLE \u2014 do not claim"
+}

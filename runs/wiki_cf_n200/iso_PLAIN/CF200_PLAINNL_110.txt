@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_110 #####
+QUESTION:
+Who is the spouse of the director of film Beyond Glory?
+
+CONTEXT:
+Beyond Glory | director | John Farrow
+José Bohr | country of citizenship | Chilean
+John Farrow | spouse | CF_TAIL_110_MaureenOSull
+Una luz en mi camino | director | José Bohr
+A Kiss on the Nose | director | Laura Neri
+decoy_mid_110 | spouse | Maureen O'Sullivan
+Beyond Glory | decoy_link_110 | decoy_mid_110
+Laura Neri | country of citizenship | Greek

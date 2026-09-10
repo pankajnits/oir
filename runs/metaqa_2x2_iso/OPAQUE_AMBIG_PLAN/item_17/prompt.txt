@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_17]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_17 #####
+QUESTION:
+What is the genre of a movie directed by René Clément?
+
+PATH_QUERY
+START René Clément
+R1 E06b96479d0a1
+R2 E9b5c6a4b5237
+Execute path; return final tail only.
+
+CONTEXT:
+René Clément | E06b96479d0a1 | Forbidden Games
+Forbidden Games | E9b5c6a4b5237 | Drama, War
+Forbidden Games | E4bd2dc5e592f | French

@@ -1,0 +1,59 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[OIRJ_ISO_RULE_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM ISO_RULE: same σ + English equality rule. Does not name country. No JOIN.
+
+##### ID OIRJ_ISO_RULE_4 #####
+QUESTION (token-HMAC'd):
+E1c76768124ad E9bac59542c34 E4c76edf017d9 Ef5bf4adadfd9 Ef1cd05cae7cd Ec427730d29e3?
+
+PROTOCOL (English; do not decrypt):
+- QUESTION and CONTEXT use the same encoding.
+- Identical tokens are the same entity or the same field (equality, not English).
+- START is a QUESTION token that also appears as an id value in CONTEXT.
+- The asked field is a QUESTION token that also appears as a JSON key.
+- Walk CONTEXT by token equality. Return one sealed value.
+- If more than one reading is possible, UNKNOWN.
+No JOIN is given. Field names are not listed in English.
+
+CONTEXT:
+{
+  "E65c2f9efa4d7": [
+    {
+      "Eaa7216dcc24d": "Ec427730d29e3",
+      "Ed25118f3d31f": "Eb40d95d1d7df"
+    },
+    {
+      "Eaa7216dcc24d": "E214fd9f9a36b",
+      "Ed25118f3d31f": "Eef2c4e4025f8"
+    },
+    {
+      "Eaa7216dcc24d": "E38b70cc41f8e",
+      "Ed25118f3d31f": "E3b26495b728a"
+    }
+  ],
+  "E979911a4828b": [
+    {
+      "Eaa7216dcc24d": "E3b26495b728a",
+      "E850cced00dcd": {
+        "E8942e4ba16ab": "Eccef22c35707",
+        "Ef5bf4adadfd9": "E34eef7957f0d"
+      }
+    },
+    {
+      "Eaa7216dcc24d": "Eb40d95d1d7df",
+      "E850cced00dcd": {
+        "Ef5bf4adadfd9": "E2b15e70be691",
+        "E8942e4ba16ab": "Ee3bf2691415a"
+      }
+    },
+    {
+      "Eaa7216dcc24d": "Eef2c4e4025f8",
+      "E850cced00dcd": {
+        "Ef5bf4adadfd9": "Eeefda34d61fb",
+        "E8942e4ba16ab": "Ea5114da495e1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_95]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_95 #####
+QUESTION:
+Who E564a744d2254 a E10cd41903ed8 E5a8903f6be38 [Melvyn Douglas] Ef450e5efe9ed Ee877b88c30ed?
+
+PATH_QUERY
+START Melvyn Douglas
+R1 E11a5f49c0e80
+R2 E623cfc31181b
+Execute path; return final tail only.
+
+CONTEXT:
+Melvyn Douglas | E11a5f49c0e80 | A Woman's Secret
+A Woman's Secret | E623cfc31181b | Nicholas Ray
+A Woman's Secret | Eb939bc36cb1f | Vicki Baum

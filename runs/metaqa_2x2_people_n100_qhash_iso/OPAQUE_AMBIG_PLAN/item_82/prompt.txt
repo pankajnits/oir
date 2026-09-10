@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_82]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_82 #####
+QUESTION:
+Who E0d1e578aa057 a E9bf0953cd996 Eaf26769c3217 [Doris Day] E69a90c39d57d E223313aa238a?
+
+PATH_QUERY
+START Doris Day
+R1 E1efbae4b347b
+R2 E63572b11f7e4
+Execute path; return final tail only.
+
+CONTEXT:
+Doris Day | E1efbae4b347b | Starlift
+Starlift | E63572b11f7e4 | Roy Del Ruth
+Starlift | Ebbffded2faf3 | John D. Klorer

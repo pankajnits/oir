@@ -1,0 +1,21 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of E1339a22657e4? City seal only.
+
+CONTEXT:
+E1339a22657e4 | Ee889910fd8b7 | E63c74cfd4381
+E5a53d5c64baa | Ee889910fd8b7 | E785f9a8d0205
+E63c74cfd4381 | E970dff4c4b45 | E93fbf5ae6716
+E785f9a8d0205 | E970dff4c4b45 | Ec0e09ecd8942
+E63c74cfd4381 | Ead6e40106380 | E62645832cf30
+E785f9a8d0205 | Ead6e40106380 | E25b81a645b6f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

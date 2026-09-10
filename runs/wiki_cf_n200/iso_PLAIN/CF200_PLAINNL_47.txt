@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_47 #####
+QUESTION:
+Where did the director of film Cry Wolf (1947 Film) die?
+
+CONTEXT:
+Cry Wolf | decoy_link_47 | decoy_mid_47
+Peter Godfrey | place of death | CF_TAIL_47_Hollywood
+decoy_mid_47 | place of death | Hollywood
+Scott Sidney | place of birth | London
+Charley's Aunt | director | Scott Sidney
+Blues metropolitano | director | Salvatore Piscicelli
+Cry Wolf | director | Peter Godfrey
+Salvatore Piscicelli | place of birth | Pomigliano d'Arco

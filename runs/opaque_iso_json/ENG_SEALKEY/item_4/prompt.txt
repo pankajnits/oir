@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[OIRJ_ENG_SEALKEY_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM ENG_SEALKEY: English Q (word country); namespaced sealed keys. No JOIN.
+
+##### ID OIRJ_ENG_SEALKEY_4 #####
+QUESTION (token-HMAC'd):
+What is the country of Ec427730d29e3?
+
+
+CONTEXT:
+{
+  "E46865a4032d5": [
+    {
+      "E9b1f4d6cc343": "Ec427730d29e3",
+      "E6e960f1a1030": "Eb40d95d1d7df"
+    },
+    {
+      "E9b1f4d6cc343": "E214fd9f9a36b",
+      "E6e960f1a1030": "Eef2c4e4025f8"
+    },
+    {
+      "E9b1f4d6cc343": "E38b70cc41f8e",
+      "E6e960f1a1030": "E3b26495b728a"
+    }
+  ],
+  "E424092e7019f": [
+    {
+      "E9b1f4d6cc343": "E3b26495b728a",
+      "E35f3e6c33577": {
+        "Ee3e918cea5c0": "Eccef22c35707",
+        "E16c24f01080b": "E34eef7957f0d"
+      }
+    },
+    {
+      "E9b1f4d6cc343": "Eb40d95d1d7df",
+      "E35f3e6c33577": {
+        "E16c24f01080b": "E2b15e70be691",
+        "Ee3e918cea5c0": "Ee3bf2691415a"
+      }
+    },
+    {
+      "E9b1f4d6cc343": "Eef2c4e4025f8",
+      "E35f3e6c33577": {
+        "E16c24f01080b": "Eeefda34d61fb",
+        "Ee3e918cea5c0": "Ea5114da495e1"
+      }
+    }
+  ]
+}

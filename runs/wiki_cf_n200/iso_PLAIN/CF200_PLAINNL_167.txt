@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_167 #####
+QUESTION:
+Where was the director of film Le Glaive Et La Balance born?
+
+CONTEXT:
+Krantikaal | director | Sekhar Das
+Le glaive et la balance | director | André Cayatte
+Sheikha Hind bint Hamad Al-Thani | mother | Moza bint Nasser
+André Cayatte | place of birth | CF_TAIL_167_Carcassonne
+decoy_mid_167 | place of birth | Carcassonne
+Moza bint Nasser | place of birth | Al Khor
+Le glaive et la balance | decoy_link_167 | decoy_mid_167
+Sekhar Das | country of citizenship | Indian

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_2]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_2 #####
+QUESTION:
+Who E6b777807b165 a E85588d294e46 E36f5fdd4ecad [Adrien Brody] E2aa4fd48f88f E478116c72e15?
+
+PATH_QUERY
+START Adrien Brody
+R1 Ebd3231140b63
+R2 E4e9713d089d3
+Execute path; return final tail only.
+
+CONTEXT:
+Adrien Brody | Ebd3231140b63 | Wrecked
+Wrecked | E4e9713d089d3 | Michael Greenspan
+Wrecked | E349ccfc763dd | Christopher Dodd

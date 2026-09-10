@@ -1,0 +1,1568 @@
+{
+  "bench": "SEAL-Bench-Real query-form factorial",
+  "n_quiz": 24,
+  "router_bound": {
+    "PROG": "24/24",
+    "PROG_TWIN": "24/24"
+  },
+  "table1": {
+    "NL": {
+      "score": "5/24",
+      "company_stops": 0,
+      "unknown": 0,
+      "twin_flips": null,
+      "mid_correct": null
+    },
+    "SCAFFOLD": {
+      "score": "12/24",
+      "company_stops": 0,
+      "unknown": 12,
+      "twin_flips": null,
+      "mid_correct": "12/24"
+    },
+    "STRUCT": {
+      "score": "23/24",
+      "company_stops": 0,
+      "unknown": 0,
+      "twin_flips": null,
+      "mid_correct": null
+    },
+    "DEMO": {
+      "score": "24/24",
+      "company_stops": 0,
+      "unknown": 0,
+      "twin_flips": null,
+      "mid_correct": null
+    },
+    "PROG": {
+      "score": "24/24",
+      "company_stops": 0,
+      "unknown": 0,
+      "twin_flips": null,
+      "mid_correct": null
+    },
+    "PROG_TWIN": {
+      "score": "24/24",
+      "company_stops": 0,
+      "unknown": 0,
+      "twin_flips": "24/24",
+      "mid_correct": null
+    }
+  },
+  "models": {
+    "composer": {
+      "NL": {
+        "form": "NL",
+        "score": "5/24",
+        "n_correct": 5,
+        "n": 24,
+        "company_stops": 0,
+        "unknown": 0,
+        "twin_flips": null,
+        "mid_correct": null,
+        "detail": [
+          {
+            "id": "FAC_NL_0",
+            "ok": true,
+            "pred": "E2b5403f17592",
+            "expect": "E2b5403f17592",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Giancarlo_Nicosanti_Monterastelli"
+          },
+          {
+            "id": "FAC_NL_1",
+            "ok": false,
+            "pred": "E64ec19b2a6b6",
+            "expect": "Eef5d6ddfe291",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Kentaro_Okuda"
+          },
+          {
+            "id": "FAC_NL_2",
+            "ok": false,
+            "pred": "E1c5c923249f1",
+            "expect": "Ef03791f39915",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Hans_Vestberg"
+          },
+          {
+            "id": "FAC_NL_3",
+            "ok": false,
+            "pred": "E8cccfe1eecd7",
+            "expect": "Eaa44a66360d2",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Lucian_Grainge"
+          },
+          {
+            "id": "FAC_NL_4",
+            "ok": false,
+            "pred": "E08e11e5256d9",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Tom_Salomon"
+          },
+          {
+            "id": "FAC_NL_5",
+            "ok": false,
+            "pred": "Ecca763f54dab",
+            "expect": "Eaf3908de2123",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Luka_Mucic"
+          },
+          {
+            "id": "FAC_NL_6",
+            "ok": false,
+            "pred": "E026b9d380f67",
+            "expect": "Ecc87b1df73ca",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "JeanFranois_van_Boxmeer"
+          },
+          {
+            "id": "FAC_NL_7",
+            "ok": false,
+            "pred": "E8ffcdf9ded7e",
+            "expect": "E48f402067f3f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Simon"
+          },
+          {
+            "id": "FAC_NL_8",
+            "ok": true,
+            "pred": "E6273e345f877",
+            "expect": "E6273e345f877",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Richard_Gordon_Handover"
+          },
+          {
+            "id": "FAC_NL_9",
+            "ok": false,
+            "pred": "Ed03cd4435429",
+            "expect": "Eb59ebffbe838",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Mike_Sievert"
+          },
+          {
+            "id": "FAC_NL_10",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Sergio_Ermotti"
+          },
+          {
+            "id": "FAC_NL_11",
+            "ok": false,
+            "pred": "E054b5cce2171",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Jakub_Duslek"
+          },
+          {
+            "id": "FAC_NL_12",
+            "ok": false,
+            "pred": "Ef15ae7039930",
+            "expect": "E17212629d02b",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_J_Wright"
+          },
+          {
+            "id": "FAC_NL_13",
+            "ok": false,
+            "pred": "E66cf5ee0d6a6",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Jakub_Strnad"
+          },
+          {
+            "id": "FAC_NL_14",
+            "ok": false,
+            "pred": "E29599c912194",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "William_N_Deramus_III"
+          },
+          {
+            "id": "FAC_NL_15",
+            "ok": false,
+            "pred": "Eb8f3a33d6d74",
+            "expect": "E1afbb60e6258",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Hayk_Yesayan"
+          },
+          {
+            "id": "FAC_NL_16",
+            "ok": false,
+            "pred": "E75e59999e701",
+            "expect": "Ef800a0283365",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Catherine_Tait"
+          },
+          {
+            "id": "FAC_NL_17",
+            "ok": false,
+            "pred": "E17822c94f647",
+            "expect": "E1c015c42d94d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Keith_Creel"
+          },
+          {
+            "id": "FAC_NL_18",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Charles_E_Johnston"
+          },
+          {
+            "id": "FAC_NL_19",
+            "ok": false,
+            "pred": "Ec78138310d18",
+            "expect": "E4a4892c0ae2d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Steve_Weed"
+          },
+          {
+            "id": "FAC_NL_20",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Mario_Greco"
+          },
+          {
+            "id": "FAC_NL_21",
+            "ok": false,
+            "pred": "E61892db91867",
+            "expect": "E151af29436b1",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Zaslav"
+          },
+          {
+            "id": "FAC_NL_22",
+            "ok": false,
+            "pred": "E64d054bca357",
+            "expect": "E094a8b9c1a0a",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Green"
+          },
+          {
+            "id": "FAC_NL_23",
+            "ok": false,
+            "pred": "E5a9a807b1241",
+            "expect": "Ecaff59394688",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Eric_Vallat"
+          }
+        ]
+      },
+      "SCAFFOLD": {
+        "form": "SCAFFOLD",
+        "score": "12/24",
+        "n_correct": 12,
+        "n": 24,
+        "company_stops": 0,
+        "unknown": 12,
+        "twin_flips": null,
+        "mid_correct": "12/24",
+        "detail": [
+          {
+            "id": "FAC_SCAFFOLD_0",
+            "ok": true,
+            "pred": "E2b5403f17592",
+            "expect": "E2b5403f17592",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "Giancarlo_Nicosanti_Monterastelli"
+          },
+          {
+            "id": "FAC_SCAFFOLD_1",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "Eef5d6ddfe291",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Kentaro_Okuda"
+          },
+          {
+            "id": "FAC_SCAFFOLD_2",
+            "ok": true,
+            "pred": "Ef03791f39915",
+            "expect": "Ef03791f39915",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "Hans_Vestberg"
+          },
+          {
+            "id": "FAC_SCAFFOLD_3",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "Eaa44a66360d2",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Lucian_Grainge"
+          },
+          {
+            "id": "FAC_SCAFFOLD_4",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "Tom_Salomon"
+          },
+          {
+            "id": "FAC_SCAFFOLD_5",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "Eaf3908de2123",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Luka_Mucic"
+          },
+          {
+            "id": "FAC_SCAFFOLD_6",
+            "ok": true,
+            "pred": "Ecc87b1df73ca",
+            "expect": "Ecc87b1df73ca",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "JeanFranois_van_Boxmeer"
+          },
+          {
+            "id": "FAC_SCAFFOLD_7",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E48f402067f3f",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "David_Simon"
+          },
+          {
+            "id": "FAC_SCAFFOLD_8",
+            "ok": true,
+            "pred": "E6273e345f877",
+            "expect": "E6273e345f877",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "Richard_Gordon_Handover"
+          },
+          {
+            "id": "FAC_SCAFFOLD_9",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "Eb59ebffbe838",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Mike_Sievert"
+          },
+          {
+            "id": "FAC_SCAFFOLD_10",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "Sergio_Ermotti"
+          },
+          {
+            "id": "FAC_SCAFFOLD_11",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Jakub_Duslek"
+          },
+          {
+            "id": "FAC_SCAFFOLD_12",
+            "ok": true,
+            "pred": "E17212629d02b",
+            "expect": "E17212629d02b",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "David_J_Wright"
+          },
+          {
+            "id": "FAC_SCAFFOLD_13",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Jakub_Strnad"
+          },
+          {
+            "id": "FAC_SCAFFOLD_14",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "William_N_Deramus_III"
+          },
+          {
+            "id": "FAC_SCAFFOLD_15",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E1afbb60e6258",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Hayk_Yesayan"
+          },
+          {
+            "id": "FAC_SCAFFOLD_16",
+            "ok": true,
+            "pred": "Ef800a0283365",
+            "expect": "Ef800a0283365",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "Catherine_Tait"
+          },
+          {
+            "id": "FAC_SCAFFOLD_17",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E1c015c42d94d",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Keith_Creel"
+          },
+          {
+            "id": "FAC_SCAFFOLD_18",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "Charles_E_Johnston"
+          },
+          {
+            "id": "FAC_SCAFFOLD_19",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E4a4892c0ae2d",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Steve_Weed"
+          },
+          {
+            "id": "FAC_SCAFFOLD_20",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "Mario_Greco"
+          },
+          {
+            "id": "FAC_SCAFFOLD_21",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E151af29436b1",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "David_Zaslav"
+          },
+          {
+            "id": "FAC_SCAFFOLD_22",
+            "ok": true,
+            "pred": "E094a8b9c1a0a",
+            "expect": "E094a8b9c1a0a",
+            "company_stop": false,
+            "mid_ok": true,
+            "twin_flip": null,
+            "person": "David_Green"
+          },
+          {
+            "id": "FAC_SCAFFOLD_23",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "Ecaff59394688",
+            "company_stop": false,
+            "mid_ok": false,
+            "twin_flip": null,
+            "person": "Eric_Vallat"
+          }
+        ]
+      },
+      "STRUCT": {
+        "form": "STRUCT",
+        "score": "23/24",
+        "n_correct": 23,
+        "n": 24,
+        "company_stops": 0,
+        "unknown": 0,
+        "twin_flips": null,
+        "mid_correct": null,
+        "detail": [
+          {
+            "id": "FAC_STRUCT_0",
+            "ok": true,
+            "pred": "E2b5403f17592",
+            "expect": "E2b5403f17592",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Giancarlo_Nicosanti_Monterastelli"
+          },
+          {
+            "id": "FAC_STRUCT_1",
+            "ok": true,
+            "pred": "Eef5d6ddfe291",
+            "expect": "Eef5d6ddfe291",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Kentaro_Okuda"
+          },
+          {
+            "id": "FAC_STRUCT_2",
+            "ok": false,
+            "pred": "Efe92f9f81026",
+            "expect": "Ef03791f39915",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Hans_Vestberg"
+          },
+          {
+            "id": "FAC_STRUCT_3",
+            "ok": true,
+            "pred": "Eaa44a66360d2",
+            "expect": "Eaa44a66360d2",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Lucian_Grainge"
+          },
+          {
+            "id": "FAC_STRUCT_4",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Tom_Salomon"
+          },
+          {
+            "id": "FAC_STRUCT_5",
+            "ok": true,
+            "pred": "Eaf3908de2123",
+            "expect": "Eaf3908de2123",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Luka_Mucic"
+          },
+          {
+            "id": "FAC_STRUCT_6",
+            "ok": true,
+            "pred": "Ecc87b1df73ca",
+            "expect": "Ecc87b1df73ca",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "JeanFranois_van_Boxmeer"
+          },
+          {
+            "id": "FAC_STRUCT_7",
+            "ok": true,
+            "pred": "E48f402067f3f",
+            "expect": "E48f402067f3f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Simon"
+          },
+          {
+            "id": "FAC_STRUCT_8",
+            "ok": true,
+            "pred": "E6273e345f877",
+            "expect": "E6273e345f877",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Richard_Gordon_Handover"
+          },
+          {
+            "id": "FAC_STRUCT_9",
+            "ok": true,
+            "pred": "Eb59ebffbe838",
+            "expect": "Eb59ebffbe838",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Mike_Sievert"
+          },
+          {
+            "id": "FAC_STRUCT_10",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Sergio_Ermotti"
+          },
+          {
+            "id": "FAC_STRUCT_11",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Jakub_Duslek"
+          },
+          {
+            "id": "FAC_STRUCT_12",
+            "ok": true,
+            "pred": "E17212629d02b",
+            "expect": "E17212629d02b",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_J_Wright"
+          },
+          {
+            "id": "FAC_STRUCT_13",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Jakub_Strnad"
+          },
+          {
+            "id": "FAC_STRUCT_14",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "William_N_Deramus_III"
+          },
+          {
+            "id": "FAC_STRUCT_15",
+            "ok": true,
+            "pred": "E1afbb60e6258",
+            "expect": "E1afbb60e6258",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Hayk_Yesayan"
+          },
+          {
+            "id": "FAC_STRUCT_16",
+            "ok": true,
+            "pred": "Ef800a0283365",
+            "expect": "Ef800a0283365",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Catherine_Tait"
+          },
+          {
+            "id": "FAC_STRUCT_17",
+            "ok": true,
+            "pred": "E1c015c42d94d",
+            "expect": "E1c015c42d94d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Keith_Creel"
+          },
+          {
+            "id": "FAC_STRUCT_18",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Charles_E_Johnston"
+          },
+          {
+            "id": "FAC_STRUCT_19",
+            "ok": true,
+            "pred": "E4a4892c0ae2d",
+            "expect": "E4a4892c0ae2d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Steve_Weed"
+          },
+          {
+            "id": "FAC_STRUCT_20",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Mario_Greco"
+          },
+          {
+            "id": "FAC_STRUCT_21",
+            "ok": true,
+            "pred": "E151af29436b1",
+            "expect": "E151af29436b1",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Zaslav"
+          },
+          {
+            "id": "FAC_STRUCT_22",
+            "ok": true,
+            "pred": "E094a8b9c1a0a",
+            "expect": "E094a8b9c1a0a",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Green"
+          },
+          {
+            "id": "FAC_STRUCT_23",
+            "ok": true,
+            "pred": "Ecaff59394688",
+            "expect": "Ecaff59394688",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Eric_Vallat"
+          }
+        ]
+      },
+      "DEMO": {
+        "form": "DEMO",
+        "score": "24/24",
+        "n_correct": 24,
+        "n": 24,
+        "company_stops": 0,
+        "unknown": 0,
+        "twin_flips": null,
+        "mid_correct": null,
+        "detail": [
+          {
+            "id": "FAC_DEMO_0",
+            "ok": true,
+            "pred": "E2b5403f17592",
+            "expect": "E2b5403f17592",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Giancarlo_Nicosanti_Monterastelli"
+          },
+          {
+            "id": "FAC_DEMO_1",
+            "ok": true,
+            "pred": "Eef5d6ddfe291",
+            "expect": "Eef5d6ddfe291",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Kentaro_Okuda"
+          },
+          {
+            "id": "FAC_DEMO_2",
+            "ok": true,
+            "pred": "Ef03791f39915",
+            "expect": "Ef03791f39915",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Hans_Vestberg"
+          },
+          {
+            "id": "FAC_DEMO_3",
+            "ok": true,
+            "pred": "Eaa44a66360d2",
+            "expect": "Eaa44a66360d2",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Lucian_Grainge"
+          },
+          {
+            "id": "FAC_DEMO_4",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Tom_Salomon"
+          },
+          {
+            "id": "FAC_DEMO_5",
+            "ok": true,
+            "pred": "Eaf3908de2123",
+            "expect": "Eaf3908de2123",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Luka_Mucic"
+          },
+          {
+            "id": "FAC_DEMO_6",
+            "ok": true,
+            "pred": "Ecc87b1df73ca",
+            "expect": "Ecc87b1df73ca",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "JeanFranois_van_Boxmeer"
+          },
+          {
+            "id": "FAC_DEMO_7",
+            "ok": true,
+            "pred": "E48f402067f3f",
+            "expect": "E48f402067f3f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Simon"
+          },
+          {
+            "id": "FAC_DEMO_8",
+            "ok": true,
+            "pred": "E6273e345f877",
+            "expect": "E6273e345f877",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Richard_Gordon_Handover"
+          },
+          {
+            "id": "FAC_DEMO_9",
+            "ok": true,
+            "pred": "Eb59ebffbe838",
+            "expect": "Eb59ebffbe838",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Mike_Sievert"
+          },
+          {
+            "id": "FAC_DEMO_10",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Sergio_Ermotti"
+          },
+          {
+            "id": "FAC_DEMO_11",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Jakub_Duslek"
+          },
+          {
+            "id": "FAC_DEMO_12",
+            "ok": true,
+            "pred": "E17212629d02b",
+            "expect": "E17212629d02b",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_J_Wright"
+          },
+          {
+            "id": "FAC_DEMO_13",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Jakub_Strnad"
+          },
+          {
+            "id": "FAC_DEMO_14",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "William_N_Deramus_III"
+          },
+          {
+            "id": "FAC_DEMO_15",
+            "ok": true,
+            "pred": "E1afbb60e6258",
+            "expect": "E1afbb60e6258",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Hayk_Yesayan"
+          },
+          {
+            "id": "FAC_DEMO_16",
+            "ok": true,
+            "pred": "Ef800a0283365",
+            "expect": "Ef800a0283365",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Catherine_Tait"
+          },
+          {
+            "id": "FAC_DEMO_17",
+            "ok": true,
+            "pred": "E1c015c42d94d",
+            "expect": "E1c015c42d94d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Keith_Creel"
+          },
+          {
+            "id": "FAC_DEMO_18",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Charles_E_Johnston"
+          },
+          {
+            "id": "FAC_DEMO_19",
+            "ok": true,
+            "pred": "E4a4892c0ae2d",
+            "expect": "E4a4892c0ae2d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Steve_Weed"
+          },
+          {
+            "id": "FAC_DEMO_20",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Mario_Greco"
+          },
+          {
+            "id": "FAC_DEMO_21",
+            "ok": true,
+            "pred": "E151af29436b1",
+            "expect": "E151af29436b1",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Zaslav"
+          },
+          {
+            "id": "FAC_DEMO_22",
+            "ok": true,
+            "pred": "E094a8b9c1a0a",
+            "expect": "E094a8b9c1a0a",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Green"
+          },
+          {
+            "id": "FAC_DEMO_23",
+            "ok": true,
+            "pred": "Ecaff59394688",
+            "expect": "Ecaff59394688",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Eric_Vallat"
+          }
+        ]
+      },
+      "PROG": {
+        "form": "PROG",
+        "score": "24/24",
+        "n_correct": 24,
+        "n": 24,
+        "company_stops": 0,
+        "unknown": 0,
+        "twin_flips": null,
+        "mid_correct": null,
+        "detail": [
+          {
+            "id": "FAC_PROG_0",
+            "ok": true,
+            "pred": "E2b5403f17592",
+            "expect": "E2b5403f17592",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Giancarlo_Nicosanti_Monterastelli"
+          },
+          {
+            "id": "FAC_PROG_1",
+            "ok": true,
+            "pred": "Eef5d6ddfe291",
+            "expect": "Eef5d6ddfe291",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Kentaro_Okuda"
+          },
+          {
+            "id": "FAC_PROG_2",
+            "ok": true,
+            "pred": "Ef03791f39915",
+            "expect": "Ef03791f39915",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Hans_Vestberg"
+          },
+          {
+            "id": "FAC_PROG_3",
+            "ok": true,
+            "pred": "Eaa44a66360d2",
+            "expect": "Eaa44a66360d2",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Lucian_Grainge"
+          },
+          {
+            "id": "FAC_PROG_4",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Tom_Salomon"
+          },
+          {
+            "id": "FAC_PROG_5",
+            "ok": true,
+            "pred": "Eaf3908de2123",
+            "expect": "Eaf3908de2123",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Luka_Mucic"
+          },
+          {
+            "id": "FAC_PROG_6",
+            "ok": true,
+            "pred": "Ecc87b1df73ca",
+            "expect": "Ecc87b1df73ca",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "JeanFranois_van_Boxmeer"
+          },
+          {
+            "id": "FAC_PROG_7",
+            "ok": true,
+            "pred": "E48f402067f3f",
+            "expect": "E48f402067f3f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Simon"
+          },
+          {
+            "id": "FAC_PROG_8",
+            "ok": true,
+            "pred": "E6273e345f877",
+            "expect": "E6273e345f877",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Richard_Gordon_Handover"
+          },
+          {
+            "id": "FAC_PROG_9",
+            "ok": true,
+            "pred": "Eb59ebffbe838",
+            "expect": "Eb59ebffbe838",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Mike_Sievert"
+          },
+          {
+            "id": "FAC_PROG_10",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Sergio_Ermotti"
+          },
+          {
+            "id": "FAC_PROG_11",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Jakub_Duslek"
+          },
+          {
+            "id": "FAC_PROG_12",
+            "ok": true,
+            "pred": "E17212629d02b",
+            "expect": "E17212629d02b",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_J_Wright"
+          },
+          {
+            "id": "FAC_PROG_13",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Jakub_Strnad"
+          },
+          {
+            "id": "FAC_PROG_14",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "William_N_Deramus_III"
+          },
+          {
+            "id": "FAC_PROG_15",
+            "ok": true,
+            "pred": "E1afbb60e6258",
+            "expect": "E1afbb60e6258",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Hayk_Yesayan"
+          },
+          {
+            "id": "FAC_PROG_16",
+            "ok": true,
+            "pred": "Ef800a0283365",
+            "expect": "Ef800a0283365",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Catherine_Tait"
+          },
+          {
+            "id": "FAC_PROG_17",
+            "ok": true,
+            "pred": "E1c015c42d94d",
+            "expect": "E1c015c42d94d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Keith_Creel"
+          },
+          {
+            "id": "FAC_PROG_18",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Charles_E_Johnston"
+          },
+          {
+            "id": "FAC_PROG_19",
+            "ok": true,
+            "pred": "E4a4892c0ae2d",
+            "expect": "E4a4892c0ae2d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Steve_Weed"
+          },
+          {
+            "id": "FAC_PROG_20",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Mario_Greco"
+          },
+          {
+            "id": "FAC_PROG_21",
+            "ok": true,
+            "pred": "E151af29436b1",
+            "expect": "E151af29436b1",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Zaslav"
+          },
+          {
+            "id": "FAC_PROG_22",
+            "ok": true,
+            "pred": "E094a8b9c1a0a",
+            "expect": "E094a8b9c1a0a",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "David_Green"
+          },
+          {
+            "id": "FAC_PROG_23",
+            "ok": true,
+            "pred": "Ecaff59394688",
+            "expect": "Ecaff59394688",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": null,
+            "person": "Eric_Vallat"
+          }
+        ]
+      },
+      "PROG_TWIN": {
+        "form": "PROG_TWIN",
+        "score": "24/24",
+        "n_correct": 24,
+        "n": 24,
+        "company_stops": 0,
+        "unknown": 0,
+        "twin_flips": "24/24",
+        "mid_correct": null,
+        "detail": [
+          {
+            "id": "FAC_TWIN_0",
+            "ok": true,
+            "pred": "E833ec8d8ab9f",
+            "expect": "E833ec8d8ab9f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Giancarlo_Nicosanti_Monterastelli"
+          },
+          {
+            "id": "FAC_TWIN_1",
+            "ok": true,
+            "pred": "Eb80f825d93a4",
+            "expect": "Eb80f825d93a4",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Kentaro_Okuda"
+          },
+          {
+            "id": "FAC_TWIN_2",
+            "ok": true,
+            "pred": "Efe92f9f81026",
+            "expect": "Efe92f9f81026",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Hans_Vestberg"
+          },
+          {
+            "id": "FAC_TWIN_3",
+            "ok": true,
+            "pred": "Ef2122f67d480",
+            "expect": "Ef2122f67d480",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Lucian_Grainge"
+          },
+          {
+            "id": "FAC_TWIN_4",
+            "ok": true,
+            "pred": "Eaf3908de2123",
+            "expect": "Eaf3908de2123",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Tom_Salomon"
+          },
+          {
+            "id": "FAC_TWIN_5",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Luka_Mucic"
+          },
+          {
+            "id": "FAC_TWIN_6",
+            "ok": true,
+            "pred": "E4466ee1940c1",
+            "expect": "E4466ee1940c1",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "JeanFranois_van_Boxmeer"
+          },
+          {
+            "id": "FAC_TWIN_7",
+            "ok": true,
+            "pred": "E094a8b9c1a0a",
+            "expect": "E094a8b9c1a0a",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "David_Simon"
+          },
+          {
+            "id": "FAC_TWIN_8",
+            "ok": true,
+            "pred": "E0d6a73344a1c",
+            "expect": "E0d6a73344a1c",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Richard_Gordon_Handover"
+          },
+          {
+            "id": "FAC_TWIN_9",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Mike_Sievert"
+          },
+          {
+            "id": "FAC_TWIN_10",
+            "ok": true,
+            "pred": "E31a5f6c6de19",
+            "expect": "E31a5f6c6de19",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Sergio_Ermotti"
+          },
+          {
+            "id": "FAC_TWIN_11",
+            "ok": true,
+            "pred": "E094a8b9c1a0a",
+            "expect": "E094a8b9c1a0a",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Jakub_Duslek"
+          },
+          {
+            "id": "FAC_TWIN_12",
+            "ok": true,
+            "pred": "E1305661e9a85",
+            "expect": "E1305661e9a85",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "David_J_Wright"
+          },
+          {
+            "id": "FAC_TWIN_13",
+            "ok": true,
+            "pred": "E151af29436b1",
+            "expect": "E151af29436b1",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Jakub_Strnad"
+          },
+          {
+            "id": "FAC_TWIN_14",
+            "ok": true,
+            "pred": "Eef5d6ddfe291",
+            "expect": "Eef5d6ddfe291",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "William_N_Deramus_III"
+          },
+          {
+            "id": "FAC_TWIN_15",
+            "ok": true,
+            "pred": "Ea967c810da4d",
+            "expect": "Ea967c810da4d",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Hayk_Yesayan"
+          },
+          {
+            "id": "FAC_TWIN_16",
+            "ok": true,
+            "pred": "E4466ee1940c1",
+            "expect": "E4466ee1940c1",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Catherine_Tait"
+          },
+          {
+            "id": "FAC_TWIN_17",
+            "ok": true,
+            "pred": "Ecf3042467e73",
+            "expect": "Ecf3042467e73",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Keith_Creel"
+          },
+          {
+            "id": "FAC_TWIN_18",
+            "ok": true,
+            "pred": "Ecc87b1df73ca",
+            "expect": "Ecc87b1df73ca",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Charles_E_Johnston"
+          },
+          {
+            "id": "FAC_TWIN_19",
+            "ok": true,
+            "pred": "Eb80f825d93a4",
+            "expect": "Eb80f825d93a4",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Steve_Weed"
+          },
+          {
+            "id": "FAC_TWIN_20",
+            "ok": true,
+            "pred": "E5da1def6ac4f",
+            "expect": "E5da1def6ac4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Mario_Greco"
+          },
+          {
+            "id": "FAC_TWIN_21",
+            "ok": true,
+            "pred": "E0d6a73344a1c",
+            "expect": "E0d6a73344a1c",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "David_Zaslav"
+          },
+          {
+            "id": "FAC_TWIN_22",
+            "ok": true,
+            "pred": "E9a177466ee4f",
+            "expect": "E9a177466ee4f",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "David_Green"
+          },
+          {
+            "id": "FAC_TWIN_23",
+            "ok": true,
+            "pred": "E694a0d379788",
+            "expect": "E694a0d379788",
+            "company_stop": false,
+            "mid_ok": null,
+            "twin_flip": true,
+            "person": "Eric_Vallat"
+          }
+        ]
+      }
+    }
+  }
+}

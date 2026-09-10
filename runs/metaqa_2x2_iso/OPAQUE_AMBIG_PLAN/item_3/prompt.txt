@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_3]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_3 #####
+QUESTION:
+What is the genre of a movie directed by Wanuri Kahiu?
+
+PATH_QUERY
+START Wanuri Kahiu
+R1 Ea17a1043232e
+R2 E4a22ddf28bbc
+Execute path; return final tail only.
+
+CONTEXT:
+Wanuri Kahiu | Ea17a1043232e | Pumzi
+Pumzi | E4a22ddf28bbc | Short
+Pumzi | Ee3f3c4caa6da | English

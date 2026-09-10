@@ -1,0 +1,79 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[XFER_COMPLEX_NOBIND_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NOBIND family=COMPLEX use=TICKET: Q HMAC'd as typed. No PATH.
+
+##### ID XFER_COMPLEX_NOBIND_4 #####
+QUESTION (token-HMAC'd):
+E1b14ca7bd103 E4bbe46229b75 Eb364ecda4c7e E982f0d834798 E45d9ce63d161 E514c1700ab52 Eaaba4e176c4b?
+
+
+CONTEXT:
+TABLE hop1
+| E53a5e8d3eb5b | E744f7f715c28 |
+| --- | --- |
+| E45d9ce63d161 | E08eea2faafc9 |
+| E177e18e6b6a0 | E07b29d76c925 |
+| Ec57c2f1faa98 | Ef9e5150e3e06 |
+| E3c3d1f18ce27 | E20b92ce9c2f8 |
+
+TABLE hop2
+| E690b6e8ce662 | Ea782280fedb9 |
+| --- | --- |
+| E08eea2faafc9 | E62d0109e9a3b |
+| E07b29d76c925 | E240a962def61 |
+| Ef9e5150e3e06 | E1337391c9e28 |
+| E20b92ce9c2f8 | E1329a9c277f6 |
+
+TABLE hop3
+| Ecadbb913dcde | E64f920d507e8 |
+| --- | --- |
+| E62d0109e9a3b | Ea4a41263a8c4 |
+| E240a962def61 | E6dc4d75603a9 |
+| E1337391c9e28 | E78ba0b73e87f |
+| E1329a9c277f6 | E6cc80e10f3d9 |
+
+JSON
+{
+  "use_case": "Ec9441474e3e8",
+  "graph": {
+    "E45d9ce63d161": {
+      "E744f7f715c28": "E08eea2faafc9"
+    },
+    "E08eea2faafc9": {
+      "Ea782280fedb9": "E62d0109e9a3b"
+    },
+    "E62d0109e9a3b": {
+      "E64f920d507e8": "Ea4a41263a8c4"
+    },
+    "E177e18e6b6a0": {
+      "E744f7f715c28": "E07b29d76c925"
+    },
+    "E07b29d76c925": {
+      "Ea782280fedb9": "E240a962def61"
+    },
+    "E240a962def61": {
+      "E64f920d507e8": "E6dc4d75603a9"
+    },
+    "Ec57c2f1faa98": {
+      "E744f7f715c28": "Ef9e5150e3e06"
+    },
+    "Ef9e5150e3e06": {
+      "Ea782280fedb9": "E1337391c9e28"
+    },
+    "E1337391c9e28": {
+      "E64f920d507e8": "E78ba0b73e87f"
+    },
+    "E3c3d1f18ce27": {
+      "E744f7f715c28": "E20b92ce9c2f8"
+    },
+    "E20b92ce9c2f8": {
+      "Ea782280fedb9": "E1329a9c277f6"
+    },
+    "E1329a9c277f6": {
+      "E64f920d507e8": "E6cc80e10f3d9"
+    }
+  },
+  "notes": "E237a467b803b E45d9ce63d161: E214112aeaa3a E7fd0c6bdb6a5 E900b0dfeca9c E964fbb931513 E9dd0d6e8c21b Eb364ecda4c7e Edd05804f086e, E899f2472c441 E270c32919716 Eb52a1222ba20 Ea6f1820b4da5 Eb40067bdd5d1"
+}

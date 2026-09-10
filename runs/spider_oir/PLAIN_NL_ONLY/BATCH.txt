@@ -1,0 +1,542 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT tables only. No decrypt.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID.
+
+ARM PLAIN_NL: Spider human question + plaintext sqlite dump. Return the execution answer.
+
+##### ID SP_PLAINNL_0 #####
+QUESTION:
+find the name of employee who was awarded the most times in the evaluation.
+
+CONTEXT:
+TABLE employee
+| Employee_ID | Name | Age | City |
+| --- | --- | --- | --- |
+| 1 | George Chuter | 23 | Bristol |
+| 2 | Lee Mears | 29 | Bath |
+| 3 | Mark Regan | 43 | Bristol |
+| 4 | Jason Hobson | 30 | Bristol |
+| 5 | Tim Payne | 29 | Wasps |
+| 6 | Andrew Sheridan | 28 | Sale |
+| 7 | Matt Stevens | 29 | Bath |
+| 8 | Phil Vickery | 40 | Wasps |
+| 9 | Steve Borthwick | 32 | Bath |
+| 10 | Louis Deacon | 36 | Leicester |
+
+TABLE shop
+| Shop_ID | Name | Location | District | Number_products | Manager_name |
+| --- | --- | --- | --- | --- | --- |
+| 1 | FC Haka | Valkeakoski | Tehtaan kenttä | 3516 | Olli Huttunen |
+| 2 | HJK | Helsinki | Finnair Stadium | 10770 | Antti Muurinen |
+| 3 | FC Honka | Espoo | Tapiolan Urheilupuisto | 6000 | Mika Lehkosuo |
+| 4 | FC Inter | Turku | Veritas Stadion | 10000 | Job Dragtsma |
+| 5 | FF Jaro | Jakobstad | Jakobstads Centralplan | 5000 | Mika Laurikainen |
+| 6 | FC KooTeePee | Kotka | Arto Tolsa Areena | 4780 | Tommi Kautonen |
+| 7 | KuPS | Kuopio | Magnum Areena | 3500 | Kai Nyyssönen |
+| 8 | FC Lahti | Lahti | Lahden Stadion | 15000 | Ilkka Mäkelä |
+| 9 | IFK Mariehamn | Mariehamn | Wiklöf Holding Arena | 1600 | Pekka Lyyski |
+
+TABLE hiring
+| Shop_ID | Employee_ID | Start_from | Is_full_time |
+| --- | --- | --- | --- |
+| 1 | 1 | 2009 | T |
+| 1 | 2 | 2003 | T |
+| 8 | 3 | 2011 | F |
+| 4 | 4 | 2012 | T |
+| 5 | 5 | 2013 | T |
+| 2 | 6 | 2010 | F |
+| 6 | 7 | 2008 | T |
+
+TABLE evaluation
+| Employee_ID | Year_awarded | Bonus |
+| --- | --- | --- |
+| 1 | 2011 | 3000.0 |
+| 2 | 2015 | 3200.0 |
+| 1 | 2016 | 2900.0 |
+| 4 | 2017 | 3200.0 |
+| 7 | 2018 | 3200.0 |
+| 10 | 2016 | 4000.0 |
+
+##### ID SP_PLAINNL_1 #####
+QUESTION:
+Find the name of the employee who got the highest one time bonus.
+
+CONTEXT:
+TABLE employee
+| Employee_ID | Name | Age | City |
+| --- | --- | --- | --- |
+| 1 | George Chuter | 23 | Bristol |
+| 2 | Lee Mears | 29 | Bath |
+| 3 | Mark Regan | 43 | Bristol |
+| 4 | Jason Hobson | 30 | Bristol |
+| 5 | Tim Payne | 29 | Wasps |
+| 6 | Andrew Sheridan | 28 | Sale |
+| 7 | Matt Stevens | 29 | Bath |
+| 8 | Phil Vickery | 40 | Wasps |
+| 9 | Steve Borthwick | 32 | Bath |
+| 10 | Louis Deacon | 36 | Leicester |
+
+TABLE shop
+| Shop_ID | Name | Location | District | Number_products | Manager_name |
+| --- | --- | --- | --- | --- | --- |
+| 1 | FC Haka | Valkeakoski | Tehtaan kenttä | 3516 | Olli Huttunen |
+| 2 | HJK | Helsinki | Finnair Stadium | 10770 | Antti Muurinen |
+| 3 | FC Honka | Espoo | Tapiolan Urheilupuisto | 6000 | Mika Lehkosuo |
+| 4 | FC Inter | Turku | Veritas Stadion | 10000 | Job Dragtsma |
+| 5 | FF Jaro | Jakobstad | Jakobstads Centralplan | 5000 | Mika Laurikainen |
+| 6 | FC KooTeePee | Kotka | Arto Tolsa Areena | 4780 | Tommi Kautonen |
+| 7 | KuPS | Kuopio | Magnum Areena | 3500 | Kai Nyyssönen |
+| 8 | FC Lahti | Lahti | Lahden Stadion | 15000 | Ilkka Mäkelä |
+| 9 | IFK Mariehamn | Mariehamn | Wiklöf Holding Arena | 1600 | Pekka Lyyski |
+
+TABLE hiring
+| Shop_ID | Employee_ID | Start_from | Is_full_time |
+| --- | --- | --- | --- |
+| 1 | 1 | 2009 | T |
+| 1 | 2 | 2003 | T |
+| 8 | 3 | 2011 | F |
+| 4 | 4 | 2012 | T |
+| 5 | 5 | 2013 | T |
+| 2 | 6 | 2010 | F |
+| 6 | 7 | 2008 | T |
+
+TABLE evaluation
+| Employee_ID | Year_awarded | Bonus |
+| --- | --- | --- |
+| 1 | 2011 | 3000.0 |
+| 2 | 2015 | 3200.0 |
+| 1 | 2016 | 2900.0 |
+| 4 | 2017 | 3200.0 |
+| 7 | 2018 | 3200.0 |
+| 10 | 2016 | 4000.0 |
+
+##### ID SP_PLAINNL_2 #####
+QUESTION:
+What is the name of the shop that is hiring the largest number of employees?
+
+CONTEXT:
+TABLE employee
+| Employee_ID | Name | Age | City |
+| --- | --- | --- | --- |
+| 1 | George Chuter | 23 | Bristol |
+| 2 | Lee Mears | 29 | Bath |
+| 3 | Mark Regan | 43 | Bristol |
+| 4 | Jason Hobson | 30 | Bristol |
+| 5 | Tim Payne | 29 | Wasps |
+| 6 | Andrew Sheridan | 28 | Sale |
+| 7 | Matt Stevens | 29 | Bath |
+| 8 | Phil Vickery | 40 | Wasps |
+| 9 | Steve Borthwick | 32 | Bath |
+| 10 | Louis Deacon | 36 | Leicester |
+
+TABLE shop
+| Shop_ID | Name | Location | District | Number_products | Manager_name |
+| --- | --- | --- | --- | --- | --- |
+| 1 | FC Haka | Valkeakoski | Tehtaan kenttä | 3516 | Olli Huttunen |
+| 2 | HJK | Helsinki | Finnair Stadium | 10770 | Antti Muurinen |
+| 3 | FC Honka | Espoo | Tapiolan Urheilupuisto | 6000 | Mika Lehkosuo |
+| 4 | FC Inter | Turku | Veritas Stadion | 10000 | Job Dragtsma |
+| 5 | FF Jaro | Jakobstad | Jakobstads Centralplan | 5000 | Mika Laurikainen |
+| 6 | FC KooTeePee | Kotka | Arto Tolsa Areena | 4780 | Tommi Kautonen |
+| 7 | KuPS | Kuopio | Magnum Areena | 3500 | Kai Nyyssönen |
+| 8 | FC Lahti | Lahti | Lahden Stadion | 15000 | Ilkka Mäkelä |
+| 9 | IFK Mariehamn | Mariehamn | Wiklöf Holding Arena | 1600 | Pekka Lyyski |
+
+TABLE hiring
+| Shop_ID | Employee_ID | Start_from | Is_full_time |
+| --- | --- | --- | --- |
+| 1 | 1 | 2009 | T |
+| 1 | 2 | 2003 | T |
+| 8 | 3 | 2011 | F |
+| 4 | 4 | 2012 | T |
+| 5 | 5 | 2013 | T |
+| 2 | 6 | 2010 | F |
+| 6 | 7 | 2008 | T |
+
+TABLE evaluation
+| Employee_ID | Year_awarded | Bonus |
+| --- | --- | --- |
+| 1 | 2011 | 3000.0 |
+| 2 | 2015 | 3200.0 |
+| 1 | 2016 | 2900.0 |
+| 4 | 2017 | 3200.0 |
+| 7 | 2018 | 3200.0 |
+| 10 | 2016 | 4000.0 |
+
+##### ID SP_PLAINNL_3 #####
+QUESTION:
+Show names of teachers that teach at least two courses.
+
+CONTEXT:
+TABLE course
+| Course_ID | Staring_Date | Course |
+| --- | --- | --- |
+| 1 | 5 May | Language Arts |
+| 2 | 6 May | Math |
+| 3 | 7 May | Science |
+| 4 | 9 May | History |
+| 5 | 10 May | Bible |
+| 6 | 11 May | Geography |
+| 7 | 13 May | Sports |
+| 8 | 14 May | French |
+| 9 | 15 May | Health |
+| 10 | 17 May | Music |
+
+TABLE teacher
+| Teacher_ID | Name | Age | Hometown |
+| --- | --- | --- | --- |
+| 1 | Joseph Huts | 32 | Blackrod Urban District |
+| 2 | Gustaaf Deloor | 29 | Bolton County Borough |
+| 3 | Vicente Carretero | 26 | Farnworth Municipal Borough |
+| 4 | John Deloor | 33 | Horwich Urban District |
+| 5 | Kearsley Brown | 45 | Kearsley Urban District |
+| 6 | Anne Walker | 41 | Little Lever Urban District |
+| 7 | Lucy Wong | 39 | Turton Urban District |
+
+TABLE course_arrange
+| Course_ID | Teacher_ID | Grade |
+| --- | --- | --- |
+| 2 | 5 | 1 |
+| 2 | 3 | 3 |
+| 3 | 2 | 5 |
+| 4 | 6 | 7 |
+| 5 | 6 | 1 |
+| 10 | 7 | 4 |
+
+##### ID SP_PLAINNL_4 #####
+QUESTION:
+What is the total ticket expense of the visitors whose membership level is 1?
+
+CONTEXT:
+TABLE museum
+| Museum_ID | Name | Num_of_Staff | Open_Year |
+| --- | --- | --- | --- |
+| 1 | Plaza Museum | 62 | 2000 |
+| 2 | Capital Plaza Museum | 25 | 2012 |
+| 3 | Jefferson Development Museum | 18 | 2010 |
+| 4 | Willow Grande Museum | 17 | 2011 |
+| 5 | RiverPark Museum | 16 | 2008 |
+| 6 | Place Tower Museum | 16 | 2008 |
+| 7 | Central City District Residential Museum | 15 | 2010 |
+| 8 | ZirMed Gateway Museum | 12 | 2009 |
+
+TABLE visitor
+| ID | Name | Level_of_membership | Age |
+| --- | --- | --- | --- |
+| 1 | Gonzalo Higuaín  | 8 | 35 |
+| 2 | Guti Midfielder | 5 | 28 |
+| 3 | Arjen Robben | 1 | 27 |
+| 4 | Raúl Brown | 2 | 56 |
+| 5 | Fernando Gago | 6 | 36 |
+| 6 | Rafael van der Vaart | 1 | 25 |
+
+TABLE visit
+| Museum_ID | visitor_ID | Num_of_Ticket | Total_spent |
+| --- | --- | --- | --- |
+| 1 | 5 | 20 | 320.14 |
+| 2 | 5 | 4 | 89.98 |
+| 4 | 3 | 10 | 320.44 |
+| 2 | 3 | 24 | 209.98 |
+| 4 | 6 | 3 | 20.44 |
+| 8 | 6 | 2 | 19.98 |
+
+##### ID SP_PLAINNL_5 #####
+QUESTION:
+What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?
+
+CONTEXT:
+TABLE museum
+| Museum_ID | Name | Num_of_Staff | Open_Year |
+| --- | --- | --- | --- |
+| 1 | Plaza Museum | 62 | 2000 |
+| 2 | Capital Plaza Museum | 25 | 2012 |
+| 3 | Jefferson Development Museum | 18 | 2010 |
+| 4 | Willow Grande Museum | 17 | 2011 |
+| 5 | RiverPark Museum | 16 | 2008 |
+| 6 | Place Tower Museum | 16 | 2008 |
+| 7 | Central City District Residential Museum | 15 | 2010 |
+| 8 | ZirMed Gateway Museum | 12 | 2009 |
+
+TABLE visitor
+| ID | Name | Level_of_membership | Age |
+| --- | --- | --- | --- |
+| 1 | Gonzalo Higuaín  | 8 | 35 |
+| 2 | Guti Midfielder | 5 | 28 |
+| 3 | Arjen Robben | 1 | 27 |
+| 4 | Raúl Brown | 2 | 56 |
+| 5 | Fernando Gago | 6 | 36 |
+| 6 | Rafael van der Vaart | 1 | 25 |
+
+TABLE visit
+| Museum_ID | visitor_ID | Num_of_Ticket | Total_spent |
+| --- | --- | --- | --- |
+| 1 | 5 | 20 | 320.14 |
+| 2 | 5 | 4 | 89.98 |
+| 4 | 3 | 10 | 320.44 |
+| 2 | 3 | 24 | 209.98 |
+| 4 | 6 | 3 | 20.44 |
+| 8 | 6 | 2 | 19.98 |
+
+##### ID SP_PLAINNL_6 #####
+QUESTION:
+What is the birth date of the poker player with the lowest earnings?
+
+CONTEXT:
+TABLE poker_player
+| Poker_Player_ID | People_ID | Final_Table_Made | Best_Finish | Money_Rank | Earnings |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 42.0 | 1.0 | 68.0 | 476090.0 |
+| 2 | 2 | 10.0 | 2.0 | 141.0 | 189233.0 |
+| 3 | 5 | 21.0 | 1.0 | 166.0 | 104871.0 |
+| 4 | 6 | 19.0 | 2.0 | 58.0 | 596462.0 |
+| 5 | 7 | 26.0 | 3.0 | 154.0 | 142800.0 |
+
+TABLE people
+| People_ID | Nationality | Name | Birth_Date | Height |
+| --- | --- | --- | --- | --- |
+| 1 | Russia | Aleksey Ostapenko | May 26, 1986 | 207.0 |
+| 2 | Bulgaria | Teodor Salparov | August 16, 1982 | 182.0 |
+| 3 | Russia | Roman Bragin | April 17, 1987 | 187.0 |
+| 4 | Russia | Sergey Grankin | January 22, 1987 | 193.0 |
+| 5 | Russia | Yevgeni Sivozhelez | August 8, 1986 | 196.0 |
+| 6 | Russia | Maksim Botin | July 14, 1983 | 194.0 |
+| 7 | Russia | Semen Poltavskiy | February 8, 1981 | 205.0 |
+
+##### ID SP_PLAINNL_7 #####
+QUESTION:
+What is the money rank of the tallest poker player?
+
+CONTEXT:
+TABLE poker_player
+| Poker_Player_ID | People_ID | Final_Table_Made | Best_Finish | Money_Rank | Earnings |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 42.0 | 1.0 | 68.0 | 476090.0 |
+| 2 | 2 | 10.0 | 2.0 | 141.0 | 189233.0 |
+| 3 | 5 | 21.0 | 1.0 | 166.0 | 104871.0 |
+| 4 | 6 | 19.0 | 2.0 | 58.0 | 596462.0 |
+| 5 | 7 | 26.0 | 3.0 | 154.0 | 142800.0 |
+
+TABLE people
+| People_ID | Nationality | Name | Birth_Date | Height |
+| --- | --- | --- | --- | --- |
+| 1 | Russia | Aleksey Ostapenko | May 26, 1986 | 207.0 |
+| 2 | Bulgaria | Teodor Salparov | August 16, 1982 | 182.0 |
+| 3 | Russia | Roman Bragin | April 17, 1987 | 187.0 |
+| 4 | Russia | Sergey Grankin | January 22, 1987 | 193.0 |
+| 5 | Russia | Yevgeni Sivozhelez | August 8, 1986 | 196.0 |
+| 6 | Russia | Maksim Botin | July 14, 1983 | 194.0 |
+| 7 | Russia | Semen Poltavskiy | February 8, 1981 | 205.0 |
+
+##### ID SP_PLAINNL_8 #####
+QUESTION:
+What is the average earnings of poker players with height higher than 200?
+
+CONTEXT:
+TABLE poker_player
+| Poker_Player_ID | People_ID | Final_Table_Made | Best_Finish | Money_Rank | Earnings |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 42.0 | 1.0 | 68.0 | 476090.0 |
+| 2 | 2 | 10.0 | 2.0 | 141.0 | 189233.0 |
+| 3 | 5 | 21.0 | 1.0 | 166.0 | 104871.0 |
+| 4 | 6 | 19.0 | 2.0 | 58.0 | 596462.0 |
+| 5 | 7 | 26.0 | 3.0 | 154.0 | 142800.0 |
+
+TABLE people
+| People_ID | Nationality | Name | Birth_Date | Height |
+| --- | --- | --- | --- | --- |
+| 1 | Russia | Aleksey Ostapenko | May 26, 1986 | 207.0 |
+| 2 | Bulgaria | Teodor Salparov | August 16, 1982 | 182.0 |
+| 3 | Russia | Roman Bragin | April 17, 1987 | 187.0 |
+| 4 | Russia | Sergey Grankin | January 22, 1987 | 193.0 |
+| 5 | Russia | Yevgeni Sivozhelez | August 8, 1986 | 196.0 |
+| 6 | Russia | Maksim Botin | July 14, 1983 | 194.0 |
+| 7 | Russia | Semen Poltavskiy | February 8, 1981 | 205.0 |
+
+##### ID SP_PLAINNL_9 #####
+QUESTION:
+What is the name of the high schooler who has the greatest number of friends?
+
+CONTEXT:
+TABLE Highschooler
+| ID | name | grade |
+| --- | --- | --- |
+| 1510 | Jordan | 9 |
+| 1689 | Gabriel | 9 |
+| 1381 | Tiffany | 9 |
+| 1709 | Cassandra | 9 |
+| 1101 | Haley | 10 |
+| 1782 | Andrew | 10 |
+| 1468 | Kris | 10 |
+| 1641 | Brittany | 10 |
+| 1247 | Alexis | 11 |
+| 1316 | Austin | 11 |
+| 1911 | Gabriel | 11 |
+| 1501 | Jessica | 11 |
+| 1304 | Jordan | 12 |
+| 1025 | John | 12 |
+| 1934 | Kyle | 12 |
+| 1661 | Logan | 12 |
+
+TABLE Friend
+| student_id | friend_id |
+| --- | --- |
+| 1510 | 1381 |
+| 1510 | 1689 |
+| 1689 | 1709 |
+| 1381 | 1247 |
+| 1709 | 1247 |
+| 1689 | 1782 |
+| 1782 | 1468 |
+| 1782 | 1316 |
+| 1782 | 1304 |
+| 1468 | 1101 |
+| 1468 | 1641 |
+| 1101 | 1641 |
+| 1247 | 1911 |
+| 1247 | 1501 |
+| 1911 | 1501 |
+| 1501 | 1934 |
+| 1316 | 1934 |
+| 1934 | 1304 |
+| 1304 | 1661 |
+| 1661 | 1025 |
+
+TABLE Likes
+| student_id | liked_id |
+| --- | --- |
+| 1689 | 1709 |
+| 1709 | 1689 |
+| 1782 | 1709 |
+| 1911 | 1247 |
+| 1247 | 1468 |
+| 1641 | 1468 |
+| 1316 | 1304 |
+| 1501 | 1934 |
+| 1934 | 1501 |
+| 1025 | 1101 |
+
+##### ID SP_PLAINNL_10 #####
+QUESTION:
+Show the names of high schoolers who have at least 3 friends.
+
+CONTEXT:
+TABLE Highschooler
+| ID | name | grade |
+| --- | --- | --- |
+| 1510 | Jordan | 9 |
+| 1689 | Gabriel | 9 |
+| 1381 | Tiffany | 9 |
+| 1709 | Cassandra | 9 |
+| 1101 | Haley | 10 |
+| 1782 | Andrew | 10 |
+| 1468 | Kris | 10 |
+| 1641 | Brittany | 10 |
+| 1247 | Alexis | 11 |
+| 1316 | Austin | 11 |
+| 1911 | Gabriel | 11 |
+| 1501 | Jessica | 11 |
+| 1304 | Jordan | 12 |
+| 1025 | John | 12 |
+| 1934 | Kyle | 12 |
+| 1661 | Logan | 12 |
+
+TABLE Friend
+| student_id | friend_id |
+| --- | --- |
+| 1510 | 1381 |
+| 1510 | 1689 |
+| 1689 | 1709 |
+| 1381 | 1247 |
+| 1709 | 1247 |
+| 1689 | 1782 |
+| 1782 | 1468 |
+| 1782 | 1316 |
+| 1782 | 1304 |
+| 1468 | 1101 |
+| 1468 | 1641 |
+| 1101 | 1641 |
+| 1247 | 1911 |
+| 1247 | 1501 |
+| 1911 | 1501 |
+| 1501 | 1934 |
+| 1316 | 1934 |
+| 1934 | 1304 |
+| 1304 | 1661 |
+| 1661 | 1025 |
+
+TABLE Likes
+| student_id | liked_id |
+| --- | --- |
+| 1689 | 1709 |
+| 1709 | 1689 |
+| 1782 | 1709 |
+| 1911 | 1247 |
+| 1247 | 1468 |
+| 1641 | 1468 |
+| 1316 | 1304 |
+| 1501 | 1934 |
+| 1934 | 1501 |
+| 1025 | 1101 |
+
+##### ID SP_PLAINNL_11 #####
+QUESTION:
+Show the names of all of the high schooler Kyle's friends.
+
+CONTEXT:
+TABLE Highschooler
+| ID | name | grade |
+| --- | --- | --- |
+| 1510 | Jordan | 9 |
+| 1689 | Gabriel | 9 |
+| 1381 | Tiffany | 9 |
+| 1709 | Cassandra | 9 |
+| 1101 | Haley | 10 |
+| 1782 | Andrew | 10 |
+| 1468 | Kris | 10 |
+| 1641 | Brittany | 10 |
+| 1247 | Alexis | 11 |
+| 1316 | Austin | 11 |
+| 1911 | Gabriel | 11 |
+| 1501 | Jessica | 11 |
+| 1304 | Jordan | 12 |
+| 1025 | John | 12 |
+| 1934 | Kyle | 12 |
+| 1661 | Logan | 12 |
+
+TABLE Friend
+| student_id | friend_id |
+| --- | --- |
+| 1510 | 1381 |
+| 1510 | 1689 |
+| 1689 | 1709 |
+| 1381 | 1247 |
+| 1709 | 1247 |
+| 1689 | 1782 |
+| 1782 | 1468 |
+| 1782 | 1316 |
+| 1782 | 1304 |
+| 1468 | 1101 |
+| 1468 | 1641 |
+| 1101 | 1641 |
+| 1247 | 1911 |
+| 1247 | 1501 |
+| 1911 | 1501 |
+| 1501 | 1934 |
+| 1316 | 1934 |
+| 1934 | 1304 |
+| 1304 | 1661 |
+| 1661 | 1025 |
+
+TABLE Likes
+| student_id | liked_id |
+| --- | --- |
+| 1689 | 1709 |
+| 1709 | 1689 |
+| 1782 | 1709 |
+| 1911 | 1247 |
+| 1247 | 1468 |
+| 1641 | 1468 |
+| 1316 | 1304 |
+| 1501 | 1934 |
+| 1934 | 1501 |
+| 1025 | 1101 |

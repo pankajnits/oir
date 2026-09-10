@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_35]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_35 #####
+QUESTION:
+Who directed a movie that Denzel Washington starred in?
+
+PATH_QUERY
+START Denzel Washington
+R1 E37aec9d4f6c4
+R2 E080ad69391a4
+Execute path; return final tail only.
+
+CONTEXT:
+Denzel Washington | E37aec9d4f6c4 | The Bone Collector
+The Bone Collector | E080ad69391a4 | Phillip Noyce
+The Bone Collector | E5c2b60058f88 | Jeffery Deaver

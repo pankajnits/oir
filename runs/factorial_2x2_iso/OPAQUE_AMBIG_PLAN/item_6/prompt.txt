@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_6]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_6 #####
+QUESTION:
+What city is the headquarters of the company led by Bob_Iger?
+
+PATH_QUERY
+START Bob_Iger
+R1 E640845ad6c36
+R2 Ef6e69a3880dd
+Execute path; return final tail only.
+
+CONTEXT:
+Bob_Iger | E640845ad6c36 | The_Walt_Disney_Company
+The_Walt_Disney_Company | Ef6e69a3880dd | Burbank
+Bob_Iger | E09fedf5c6604 | UBS
+UBS | E662010bbe610 | Zurich

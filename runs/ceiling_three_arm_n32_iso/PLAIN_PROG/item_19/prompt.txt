@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_19 #####
+PATH_QUERY
+START Tom_Buhrow
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Tom_Buhrow | works_at | Westdeutscher_Rundfunk
+Westdeutscher_Rundfunk | headquartered_in | Cologne
+DecoyCo_Westdeutscher_Rundfunk | headquartered_in | DecoyHQ_Cologne
+Westdeutscher_Rundfunk | owned_by | Hold_Westdeutscher_Rundfunk
+Hold_Westdeutscher_Rundfunk | meta_of | Westdeutscher_Rundfunk
+Westdeutscher_Rundfunk | partner_of | Partner_Westdeutscher_Rundfunk
+Partner_Westdeutscher_Rundfunk | meta_of | Westdeutscher_Rundfunk
+Decoy_DecoyCo_Westdeutscher_Rundfunk | works_at | DecoyCo_Westdeutscher_Rundfunk

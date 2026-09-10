@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_182 #####
+QUESTION:
+Where was the place of death of the director of film Harrison And Barrison?
+
+CONTEXT:
+Harrison and Barrison | director | Alexander Korda
+Harrison and Barrison | decoy_link_182 | decoy_mid_182
+Constantine Doukas Komnenos Palaiologos | mother | Anna of Hungary
+Sir Robert Drury | country of citizenship | England
+decoy_mid_182 | place of death | London
+Anna of Hungary | place of death | Constantinople
+William Drury | father | Sir Robert Drury
+Alexander Korda | place of death | CF_TAIL_182_London

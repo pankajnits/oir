@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[<id>]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+ARM SQL_COL_LEG: same HMAC columns + English→column legend. Write ONE query; we execute it.
+
+##### ID FD3_SQL_COL_LEG_4 #####
+COL_LEGEND (English name → sealed column):
+emp_id = E3e1101a4aa98
+org_id = E2ae79a5059a8
+city_id = E68e488048fad
+country = Eb2fedf950f81
+
+SCHEMA:
+employees(E3e1101a4aa98 TEXT, E2ae79a5059a8 TEXT)
+orgs(E2ae79a5059a8 TEXT, E68e488048fad TEXT)
+cities(E68e488048fad TEXT, Eb2fedf950f81 TEXT)
+
+QUESTION:
+Return the country of the employee whose emp_id is E4a2ea9f5ae1e.
+

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_2]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_2 #####
+QUESTION:
+What is the genre of a movie directed by Rituparno Ghosh?
+
+PATH_QUERY
+START Rituparno Ghosh
+R1 Eec2a63e3555d
+R2 Efbdfe92e6a08
+Execute path; return final tail only.
+
+CONTEXT:
+Rituparno Ghosh | Eec2a63e3555d | Raincoat
+Raincoat | Efbdfe92e6a08 | Drama
+Raincoat | E2cce6dd12743 | Hindi

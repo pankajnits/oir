@@ -1,0 +1,85 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[XFER_COMPLEX_LAYER_5]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM LAYER family=COMPLEX use=ONCALL: layer bound START, HMAC'd Q, attached PATH.
+
+##### ID XFER_COMPLEX_LAYER_5 #####
+QUESTION (token-HMAC'd):
+Eb6c11f876442 E382fe7b2eb98 E595f61f7fa8b Ef5748e15bebb E8adb1fe7385f Ebce75a2cefc1 E5664c5aeb1eb E25c07e72f687 Ef3f5a8ef0726?
+
+PATH_QUERY
+START E25c07e72f687
+R1 Eafd98fe0728f
+R2 E375cc12c3f01
+R3 Ef214b5970536
+Execute path; return final tail only.
+
+CONTEXT:
+TABLE hop1
+| E9fd3d46607ad | Eafd98fe0728f |
+| --- | --- |
+| E25c07e72f687 | E3610c0f1b234 |
+| Ed600776fccf0 | E30a6cddd2573 |
+| Ecb7be1ed6028 | E2bc8f47ae8dd |
+| E1337e755adfd | E3e01c5de4f68 |
+
+TABLE hop2
+| Ea9fa4592db11 | E375cc12c3f01 |
+| --- | --- |
+| E3610c0f1b234 | E47d5c0eb0c75 |
+| E30a6cddd2573 | Ef8aa2adceadb |
+| E2bc8f47ae8dd | E0ffdf9caedf4 |
+| E3e01c5de4f68 | E6010f2922828 |
+
+TABLE hop3
+| Ed636f3c0c59d | Ef214b5970536 |
+| --- | --- |
+| E47d5c0eb0c75 | E5a319cceb5dc |
+| Ef8aa2adceadb | E2bb22eae415f |
+| E0ffdf9caedf4 | E151ff4954b52 |
+| E6010f2922828 | Eb59a1bbee38f |
+
+JSON
+{
+  "use_case": "E209ce24fc86e",
+  "graph": {
+    "E25c07e72f687": {
+      "Eafd98fe0728f": "E3610c0f1b234"
+    },
+    "E3610c0f1b234": {
+      "E375cc12c3f01": "E47d5c0eb0c75"
+    },
+    "E47d5c0eb0c75": {
+      "Ef214b5970536": "E5a319cceb5dc"
+    },
+    "Ed600776fccf0": {
+      "Eafd98fe0728f": "E30a6cddd2573"
+    },
+    "E30a6cddd2573": {
+      "E375cc12c3f01": "Ef8aa2adceadb"
+    },
+    "Ef8aa2adceadb": {
+      "Ef214b5970536": "E2bb22eae415f"
+    },
+    "Ecb7be1ed6028": {
+      "Eafd98fe0728f": "E2bc8f47ae8dd"
+    },
+    "E2bc8f47ae8dd": {
+      "E375cc12c3f01": "E0ffdf9caedf4"
+    },
+    "E0ffdf9caedf4": {
+      "Ef214b5970536": "E151ff4954b52"
+    },
+    "E1337e755adfd": {
+      "Eafd98fe0728f": "E3e01c5de4f68"
+    },
+    "E3e01c5de4f68": {
+      "E375cc12c3f01": "E6010f2922828"
+    },
+    "E6010f2922828": {
+      "Ef214b5970536": "Eb59a1bbee38f"
+    }
+  },
+  "notes": "Ed7d6c37b8d93 E25c07e72f687 E687930421b59 E18ebe06590aa E9517d881e595 E787365e88245 E8301070270db E1268d5efe3e0, E7e4155d80f25 E10d5455ac483 E905268092017 E09e6331cd8ac E22730b3f1450"
+}

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_113 #####
+QUESTION:
+Where was the father of Alexandre Grimaldi-Coste born?
+
+CONTEXT:
+Said bin Sultan | place of death | Muscat
+Alexandre Grimaldi-Coste | father | Albert II
+Emily Ruete | father | Said bin Sultan
+Alexandre Grimaldi-Coste | decoy_link_113 | decoy_mid_113
+Catherine & Co. | director | Michel Boisrond
+Albert II | place of birth | CF_TAIL_113_PrincesPalac
+decoy_mid_113 | place of birth | Prince's Palace of Monaco
+Michel Boisrond | place of death | La Celle-Saint-Cloud

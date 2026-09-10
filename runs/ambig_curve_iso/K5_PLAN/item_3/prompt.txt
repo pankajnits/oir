@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_3]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_3 #####
+QUESTION:
+What city is the headquarters of the company led by Vibeke_Frst_Haugen?
+
+PATH_QUERY
+START Vibeke_Frst_Haugen
+R1 Ecf1427c93eb7
+R2 Ee7bd3b109959
+Execute path; return final tail only.
+
+CONTEXT:
+Vibeke_Frst_Haugen | Ecf1427c93eb7 | Norwegian_Broadcasting_Corporation
+Norwegian_Broadcasting_Corporation | Ee7bd3b109959 | NRK_Marienlyst
+Vibeke_Frst_Haugen | E53f6a2041e88 | Cogent_Communications
+Cogent_Communications | Ef116e97db076 | Washington_DC
+Vibeke_Frst_Haugen | Eeb6f89cf1c08 | Kansas_City_Southern
+Kansas_City_Southern | Ed93ecbbee2e1 | Kansas_City
+Vibeke_Frst_Haugen | E74d7f6384aa7 | Lacoste_SA
+Lacoste_SA | E05c209cae343 | Paris
+Vibeke_Frst_Haugen | E4be48fc57e47 | Israel_Railways
+Israel_Railways | E87be22b5c059 | Lod_Railway_Station

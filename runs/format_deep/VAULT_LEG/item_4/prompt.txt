@@ -1,0 +1,40 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM VAULT_LEG: same vault JSON + name→token legend. English QUESTION. No JOIN.
+
+##### ID FD_VAULT_LEG_4 #####
+LEGEND (plaintext name → vault token):
+William N Deramus Jr = vault:v1:E361a0e672eec
+
+QUESTION:
+Where is the headquarters city of the company associated with William N Deramus Jr?
+Return the vault token for that city.
+
+CONTEXT:
+{
+  "people": {
+    "vault:v1:E361a0e672eec": {
+      "company": "vault:v1:E1a34d56a5c68"
+    },
+    "vault:v1:E0d3f7ff1b24b": {
+      "company": "vault:v1:E36597c0bba2a"
+    },
+    "vault:v1:E7f28c6be139c": {
+      "company": "vault:v1:Ee5b101b61b49"
+    }
+  },
+  "companies": {
+    "vault:v1:E1a34d56a5c68": {
+      "hq_city": "vault:v1:E3893fc594140"
+    },
+    "vault:v1:E36597c0bba2a": {
+      "hq_city": "vault:v1:Ef34153f5a129"
+    },
+    "vault:v1:Ee5b101b61b49": {
+      "hq_city": "vault:v1:E8f23ca38d174"
+    }
+  }
+}
+

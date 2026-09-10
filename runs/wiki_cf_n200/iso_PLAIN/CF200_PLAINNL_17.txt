@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_17 #####
+QUESTION:
+Where was the place of death of the founder of Western Auto?
+
+CONTEXT:
+Otto III | place of death | Brandenburg an der Havel
+The Charming Young Lady | composer | Ralph Benatzky
+Western Auto | founded by | George Pepperdine
+decoy_mid_17 | place of death | California
+Western Auto | decoy_link_17 | decoy_mid_17
+George Pepperdine | place of death | CF_TAIL_17_California
+Ralph Benatzky | place of birth | Moravské Budějovice
+Beatrice of Bohemia | spouse | Otto III

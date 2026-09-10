@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_163 #####
+QUESTION:
+Where was the place of death of Flóra Majthényi's husband?
+
+CONTEXT:
+Hannes Holm | place of birth | Lidingö
+Kálmán Tóth | place of death | CF_TAIL_163_Budapest
+A Man Called Ove | director | Hannes Holm
+Svein-Erik Bjerkrheim | spouse | Susann Goksør Bjerkrheim
+decoy_mid_163 | place of death | Budapest
+Flóra Majthényi | decoy_link_163 | decoy_mid_163
+Susann Goksør Bjerkrheim | educated at | Norwegian School of Sport Sciences
+Flóra Majthényi | spouse | Kálmán Tóth

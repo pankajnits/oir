@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_57]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_57 #####
+QUESTION:
+Who E4c5555822e8b a Ee2466770c247 E7ef331651cab [Liam Cunningham] E6c26e0b6958f E76faf607bb00?
+
+PATH_QUERY
+START Liam Cunningham
+R1 Ee3d21ed48a4c
+R2 E4262d1b4290d
+Execute path; return final tail only.
+
+CONTEXT:
+Liam Cunningham | Ee3d21ed48a4c | A Little Princess
+A Little Princess | E4262d1b4290d | Alfonso Cuarón
+A Little Princess | E3e7551cae4cc | Frances Hodgson Burnett

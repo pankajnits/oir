@@ -1,0 +1,260 @@
+{
+  "model": "gpt-5.6-sol",
+  "note": "Scout only. Iso/encoding-space hints; no gold name; no which-edge legend. wiki_unhashed is Condition A English verbs (directed/starred). Locked Condition A without this hint on the same 6 items was 6/6.",
+  "summary": {
+    "wiki_hashed": {
+      "gold": 6,
+      "decoy": 0,
+      "unknown": 0,
+      "other": 0,
+      "error": 0,
+      "n": 6
+    },
+    "wiki_unhashed": {
+      "gold": 6,
+      "decoy": 0,
+      "unknown": 0,
+      "other": 0,
+      "error": 0,
+      "n": 6
+    },
+    "wd_unhashed_q": {
+      "gold": 4,
+      "decoy": 0,
+      "unknown": 0,
+      "other": 0,
+      "error": 0,
+      "n": 4
+    },
+    "oo_hashed_graph": {
+      "gold": 4,
+      "decoy": 0,
+      "unknown": 0,
+      "other": 0,
+      "error": 0,
+      "n": 4
+    }
+  },
+  "rows": [
+    {
+      "suite": "wiki_hashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 0,
+      "id": "MQA100B_OPAQUE_AMBIG_0",
+      "pred": "Ken Kwapis",
+      "gold": "Ken Kwapis",
+      "decoy": "Bill Bryson",
+      "kind": "gold",
+      "sec": 5.3
+    },
+    {
+      "suite": "wiki_hashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 1,
+      "id": "MQA100B_OPAQUE_AMBIG_1",
+      "pred": "Roger Spottiswoode",
+      "gold": "Roger Spottiswoode",
+      "decoy": "Christopher Robbins",
+      "kind": "gold",
+      "sec": 5.3
+    },
+    {
+      "suite": "wiki_hashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 2,
+      "id": "MQA100B_OPAQUE_AMBIG_2",
+      "pred": "Michael Greenspan",
+      "gold": "Michael Greenspan",
+      "decoy": "Christopher Dodd",
+      "kind": "gold",
+      "sec": 6.2
+    },
+    {
+      "suite": "wiki_hashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 3,
+      "id": "MQA100B_OPAQUE_AMBIG_3",
+      "pred": "John Madden",
+      "gold": "John Madden",
+      "decoy": "David Henry Hwang",
+      "kind": "gold",
+      "sec": 9.2
+    },
+    {
+      "suite": "wiki_hashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 4,
+      "id": "MQA100B_OPAQUE_AMBIG_4",
+      "pred": "Dennis Hopper",
+      "gold": "Dennis Hopper",
+      "decoy": "Charles Williams",
+      "kind": "gold",
+      "sec": 3.8
+    },
+    {
+      "suite": "wiki_hashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 5,
+      "id": "MQA100B_OPAQUE_AMBIG_5",
+      "pred": "Bernard Knowles",
+      "gold": "Bernard Knowles",
+      "decoy": "Osbert Sitwell",
+      "kind": "gold",
+      "sec": 3.0
+    },
+    {
+      "suite": "wiki_unhashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 0,
+      "id": "MQA100_OPAQUE_AMBIG_0",
+      "pred": "Ken Kwapis",
+      "gold": "Ken Kwapis",
+      "decoy": "Bill Bryson",
+      "kind": "gold",
+      "sec": 1.2
+    },
+    {
+      "suite": "wiki_unhashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 1,
+      "id": "MQA100_OPAQUE_AMBIG_1",
+      "pred": "Roger Spottiswoode",
+      "gold": "Roger Spottiswoode",
+      "decoy": "Christopher Robbins",
+      "kind": "gold",
+      "sec": 1.3
+    },
+    {
+      "suite": "wiki_unhashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 2,
+      "id": "MQA100_OPAQUE_AMBIG_2",
+      "pred": "Michael Greenspan",
+      "gold": "Michael Greenspan",
+      "decoy": "Christopher Dodd",
+      "kind": "gold",
+      "sec": 2.1
+    },
+    {
+      "suite": "wiki_unhashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 3,
+      "id": "MQA100_OPAQUE_AMBIG_3",
+      "pred": "John Madden",
+      "gold": "John Madden",
+      "decoy": "David Henry Hwang",
+      "kind": "gold",
+      "sec": 1.2
+    },
+    {
+      "suite": "wiki_unhashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 4,
+      "id": "MQA100_OPAQUE_AMBIG_4",
+      "pred": "Dennis Hopper",
+      "gold": "Dennis Hopper",
+      "decoy": "Charles Williams",
+      "kind": "gold",
+      "sec": 1.2
+    },
+    {
+      "suite": "wiki_unhashed",
+      "arm": "OPAQUE_AMBIG",
+      "i": 5,
+      "id": "MQA100_OPAQUE_AMBIG_5",
+      "pred": "Bernard Knowles",
+      "gold": "Bernard Knowles",
+      "decoy": "Osbert Sitwell",
+      "kind": "gold",
+      "sec": 1.4
+    },
+    {
+      "suite": "wd_unhashed_q",
+      "arm": "OPAQUE_AMBIG",
+      "i": 0,
+      "id": "F22_OPAQUE_AMBIG_0",
+      "pred": "Burbank",
+      "gold": "Burbank",
+      "decoy": "Kansas_City",
+      "kind": "gold",
+      "sec": 1.3
+    },
+    {
+      "suite": "wd_unhashed_q",
+      "arm": "OPAQUE_AMBIG",
+      "i": 1,
+      "id": "F22_OPAQUE_AMBIG_1",
+      "pred": "Kansas_City",
+      "gold": "Kansas_City",
+      "decoy": "Broadway",
+      "kind": "gold",
+      "sec": 1.2
+    },
+    {
+      "suite": "wd_unhashed_q",
+      "arm": "OPAQUE_AMBIG",
+      "i": 3,
+      "id": "F22_OPAQUE_AMBIG_3",
+      "pred": "NRK_Marienlyst",
+      "gold": "NRK_Marienlyst",
+      "decoy": "Warsaw",
+      "kind": "gold",
+      "sec": 6.9
+    },
+    {
+      "suite": "wd_unhashed_q",
+      "arm": "OPAQUE_AMBIG",
+      "i": 4,
+      "id": "F22_OPAQUE_AMBIG_4",
+      "pred": "Warsaw",
+      "gold": "Warsaw",
+      "decoy": "Stockholm",
+      "kind": "gold",
+      "sec": 1.1
+    },
+    {
+      "suite": "oo_hashed_graph",
+      "arm": "OO_AMBIG",
+      "i": 0,
+      "id": "ER22_OO_AMBIG_0",
+      "pred": "E06fc29a21ac0",
+      "gold": "E06fc29a21ac0",
+      "decoy": "Ed2a0d4bfbfb7",
+      "kind": "gold",
+      "sec": 6.0
+    },
+    {
+      "suite": "oo_hashed_graph",
+      "arm": "OO_AMBIG",
+      "i": 1,
+      "id": "ER22_OO_AMBIG_1",
+      "pred": "E93d7dcb33f0a",
+      "gold": "E93d7dcb33f0a",
+      "decoy": "E757aec47da2c",
+      "kind": "gold",
+      "sec": 3.9
+    },
+    {
+      "suite": "oo_hashed_graph",
+      "arm": "OO_AMBIG",
+      "i": 2,
+      "id": "ER22_OO_AMBIG_2",
+      "pred": "Ea229eed7fa98",
+      "gold": "Ea229eed7fa98",
+      "decoy": "E2911a2a59e1b",
+      "kind": "gold",
+      "sec": 4.8
+    },
+    {
+      "suite": "oo_hashed_graph",
+      "arm": "OO_AMBIG",
+      "i": 3,
+      "id": "ER22_OO_AMBIG_3",
+      "pred": "Eb74f3534ee2b",
+      "gold": "Eb74f3534ee2b",
+      "decoy": "E36bb08e42963",
+      "kind": "gold",
+      "sec": 4.7
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_74]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_74 #####
+QUESTION:
+Who directed a movie that Peter Cushing starred in?
+
+PATH_QUERY
+START Peter Cushing
+R1 E63467316f9e6
+R2 E6aba27a6c7e3
+Execute path; return final tail only.
+
+CONTEXT:
+Peter Cushing | E63467316f9e6 | The Abominable Snowman
+The Abominable Snowman | E6aba27a6c7e3 | Val Guest
+The Abominable Snowman | E19554bdad90c | Nigel Kneale

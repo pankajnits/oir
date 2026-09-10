@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM JSON3_NL: nested sealed JSON. No JOIN. One quiz. Start token is in CONTEXT.
+
+##### ID FD_JSON3_NL_3 #####
+START E3642c609f152
+From START, return the nested country atom.
+
+CONTEXT:
+{
+  "employees": [
+    {
+      "id": "E3642c609f152",
+      "employer": "Ee02e5d430e00"
+    },
+    {
+      "id": "E98cfc5d666f6",
+      "employer": "Ef7cfc8cbb0f2"
+    },
+    {
+      "id": "E35971172665c",
+      "employer": "E60230da0fea9"
+    }
+  ],
+  "orgs": [
+    {
+      "id": "Ee02e5d430e00",
+      "hq": {
+        "city": "Ef92bb8008bf4",
+        "country": "E5f8153dbfb4f"
+      }
+    },
+    {
+      "id": "E60230da0fea9",
+      "hq": {
+        "city": "Ea2c95161db06",
+        "country": "E72afe609c44b"
+      }
+    },
+    {
+      "id": "Ef7cfc8cbb0f2",
+      "hq": {
+        "city": "E6f047bb96e7d",
+        "country": "E5f8153dbfb4f"
+      }
+    }
+  ]
+}
+

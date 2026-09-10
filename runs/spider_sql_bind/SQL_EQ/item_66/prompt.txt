@@ -1,0 +1,41 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_66]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_66 #####
+DB: film_rank
+SCHEMA (English name → sealed sqlite identifier):
+film = Efd47f6546f30
+Film_ID = E4d463fcdf8ec
+Title = E5837f39ed1bf
+Studio = E8aeba91c438e
+Director = E4e92177b045a
+Gross_in_dollar = E4218610ce66d
+market = E251f2afeb3e3
+Market_ID = E12697f0d7b86
+Country = E52cf64716100
+Number_cities = Eae0b5c3c1c44
+film_market_estimation = Ec3f538cc0a01
+Estimation_ID = E713cd96ae05a
+Low_Estimate = Eb779b0be2b9e
+High_Estimate = Ef0acffc906ce
+Type = E84aceaf13f12
+Year = Ee4f0ba8ea8bd
+
+film(Film_ID, Title, Studio, Director, Gross_in_dollar)
+market(Market_ID, Country, Number_cities)
+film_market_estimation(Estimation_ID, Low_Estimate, High_Estimate, Film_ID, Type, Market_ID, Year)
+
+QUESTION:
+What is the average Eae0b5c3c1c44 of Eae0b5c3c1c44 of markets with low Ec3f538cc0a01 Ec3f538cc0a01 Ef0acffc906ce bigger than 10000?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_0 #####
+QUESTION:
+Who is the mother of the director of film Polish-Russian War (Film)?
+
+CONTEXT:
+Xawery Żuławski | mother | CF_TAIL_0_MagorzataBra
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Polish-Russian War | director | Xawery Żuławski
+decoy_mid_0 | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Polish-Russian War | decoy_link_0 | decoy_mid_0

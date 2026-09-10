@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_24]: <sql>
+
+DB: storm_record
+SCHEMA:
+storm(Storm_ID, Name, Dates_active, Max_speed, Damage_millions_USD, Number_Deaths)
+region(Region_id, Region_code, Region_name)
+affected_region(Region_id, Storm_ID, Number_city_affected)
+QUESTION:
+What are the names of the storms that affected both the regions of Afghanistan and Albania?

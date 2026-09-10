@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_53]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_53 #####
+QUESTION:
+Who directed a movie that Michael Keaton starred in?
+
+PATH_QUERY
+START Michael Keaton
+R1 E6eadf68256b0
+R2 Ea8a92ff315f5
+Execute path; return final tail only.
+
+CONTEXT:
+Michael Keaton | E6eadf68256b0 | Mr. Mom
+Mr. Mom | Ea8a92ff315f5 | Stan Dragoti
+Mr. Mom | E36cd0c1f18d0 | John Hughes

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_21]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_21 #####
+QUESTION:
+What is the genre of a movie directed by Guillem Morales?
+
+PATH_QUERY
+START Guillem Morales
+R1 Eccc0336e356c
+R2 E971987e856d5
+Execute path; return final tail only.
+
+CONTEXT:
+Guillem Morales | Eccc0336e356c | Julia's Eyes
+Julia's Eyes | E971987e856d5 | Horror
+Julia's Eyes | E453350722730 | Spanish

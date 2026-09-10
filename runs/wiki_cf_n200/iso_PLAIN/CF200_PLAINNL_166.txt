@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_166 #####
+QUESTION:
+What nationality is Haydar Mirza Safavi's father?
+
+CONTEXT:
+Sommer i Palma | performer | Nora Brockstedt
+decoy_mid_166 | country of citizenship | Safavid Empire
+Ronald G. Wanek | date of birth | 1941
+Tahmasp I | country of citizenship | CF_TAIL_166_SafavidEmpir
+Haydar Mirza Safavi | father | Tahmasp I
+Nora Brockstedt | cause of death | illness
+Haydar Mirza Safavi | decoy_link_166 | decoy_mid_166
+Todd Ronald Wanek | father | Ronald G. Wanek

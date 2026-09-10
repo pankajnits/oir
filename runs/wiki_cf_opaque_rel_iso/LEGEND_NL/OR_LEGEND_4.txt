@@ -1,0 +1,23 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM LEGEND_NL: English rel → sealed rel map + span-sealed Q. No PATH.
+
+##### ID OR_LEGEND_4 #####
+LEGEND
+father = E92f2c86b3f72
+place of birth = E8cc8dacea1d9
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Where was the father of E847a118d5847 born?
+
+CONTEXT:
+E847a118d5847 | E92f2c86b3f72 | E677618e53d37
+E8f2b2070ed85 | E0b35ff5b0c7b | E357dbaa808e0
+E677618e53d37 | E8cc8dacea1d9 | E8c948e05c1d0
+E67a5a60549a5 | E19650717cd28 | E8487aaa7e176
+E8487aaa7e176 | E2be8513bf682 | E03a8b7e18a9e
+E356c466d450d | E8cc8dacea1d9 | Ef5f01b8820ea
+E357dbaa808e0 | E8cc8dacea1d9 | E395da38200d1
+E847a118d5847 | Ee3ceff0cf2de | E356c466d450d

@@ -1,0 +1,474 @@
+{
+  "by_batch": {
+    "FINQA_NL": {
+      "score": "0/20",
+      "n": 20,
+      "detail": [
+        {
+          "id": "FQ_NL_0",
+          "ok": false,
+          "pred": "-416",
+          "expect": 416.0,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_NL_1",
+          "ok": false,
+          "pred": "5120",
+          "expect": 0.26319,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_NL_2",
+          "ok": false,
+          "pred": "496",
+          "expect": 0.10573,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_NL_3",
+          "ok": false,
+          "pred": "360",
+          "expect": 198.0,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_NL_4",
+          "ok": false,
+          "pred": "0.6",
+          "expect": 91.66667,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_NL_5",
+          "ok": false,
+          "pred": "3004055",
+          "expect": 386797189.66,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_NL_6",
+          "ok": false,
+          "pred": "2",
+          "expect": 0.28448,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_NL_7",
+          "ok": false,
+          "pred": "1.6",
+          "expect": 1.25,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_NL_8",
+          "ok": false,
+          "pred": "3.2",
+          "expect": 0.0967,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_NL_9",
+          "ok": false,
+          "pred": "149",
+          "expect": 0.07692,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_NL_10",
+          "ok": false,
+          "pred": "0",
+          "expect": 0.96071,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_NL_11",
+          "ok": false,
+          "pred": "4",
+          "expect": 965.635,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_NL_12",
+          "ok": false,
+          "pred": "508",
+          "expect": 159.33333,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_NL_13",
+          "ok": false,
+          "pred": "328.4",
+          "expect": 498.9,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_NL_14",
+          "ok": false,
+          "pred": "45",
+          "expect": 329.5,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_NL_15",
+          "ok": false,
+          "pred": "21.19",
+          "expect": 0.91251,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_NL_16",
+          "ok": false,
+          "pred": "10.78",
+          "expect": -31.86,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_NL_17",
+          "ok": false,
+          "pred": "139.9",
+          "expect": 1.43416,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_NL_18",
+          "ok": false,
+          "pred": "0",
+          "expect": 0.1613,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_NL_19",
+          "ok": false,
+          "pred": "1768",
+          "expect": 16086.33333,
+          "stratum": "L1_single_op"
+        }
+      ]
+    },
+    "FINQA_PROG": {
+      "score": "19/20",
+      "n": 20,
+      "detail": [
+        {
+          "id": "FQ_PROG_0",
+          "ok": true,
+          "pred": "416",
+          "expect": 416.0,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_PROG_1",
+          "ok": true,
+          "pred": "0.2631875270679948",
+          "expect": 0.26319,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_PROG_2",
+          "ok": true,
+          "pred": "0.10573122529644269",
+          "expect": 0.10573,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_PROG_3",
+          "ok": true,
+          "pred": "198",
+          "expect": 198.0,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_PROG_4",
+          "ok": true,
+          "pred": "91.66666666666667",
+          "expect": 91.66667,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_PROG_5",
+          "ok": true,
+          "pred": "386797189.66",
+          "expect": 386797189.66,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_PROG_6",
+          "ok": true,
+          "pred": "0.2844827586206897",
+          "expect": 0.28448,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_PROG_7",
+          "ok": true,
+          "pred": "1.25",
+          "expect": 1.25,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_PROG_8",
+          "ok": true,
+          "pred": "0.0967022067939499",
+          "expect": 0.0967,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_PROG_9",
+          "ok": true,
+          "pred": "0.07692307692307682",
+          "expect": 0.07692,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_PROG_10",
+          "ok": true,
+          "pred": "0.9607061351234347",
+          "expect": 0.96071,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_PROG_11",
+          "ok": true,
+          "pred": "965.635",
+          "expect": 965.635,
+          "stratum": "L2_two_op"
+        },
+        {
+          "id": "FQ_PROG_12",
+          "ok": true,
+          "pred": "159.33333333333334",
+          "expect": 159.33333,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_PROG_13",
+          "ok": true,
+          "pred": "498.9",
+          "expect": 498.9,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_PROG_14",
+          "ok": true,
+          "pred": "329.5",
+          "expect": 329.5,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_PROG_15",
+          "ok": true,
+          "pred": "0.9125112965504981",
+          "expect": 0.91251,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_PROG_16",
+          "ok": true,
+          "pred": "-31.86",
+          "expect": -31.86,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_PROG_17",
+          "ok": true,
+          "pred": "1.4341590612777164",
+          "expect": 1.43416,
+          "stratum": "L3plus_compose"
+        },
+        {
+          "id": "FQ_PROG_18",
+          "ok": true,
+          "pred": "0.16130346232179227",
+          "expect": 0.1613,
+          "stratum": "L1_single_op"
+        },
+        {
+          "id": "FQ_PROG_19",
+          "ok": false,
+          "pred": "1739",
+          "expect": 16086.33333,
+          "stratum": "L1_single_op"
+        }
+      ]
+    },
+    "WTQ_NL": {
+      "score": "0/20",
+      "n": 20,
+      "detail": [
+        {
+          "id": "WTQ_NL_0",
+          "ok": false,
+          "pred": "Eefbc73bff415",
+          "expect": "E582a9256db72",
+          "stratum": "lookup_filter",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_1",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Eed4c97c731be",
+          "stratum": "lookup_filter",
+          "in_ctx": false
+        },
+        {
+          "id": "WTQ_NL_2",
+          "ok": false,
+          "pred": "Ecac742c00920",
+          "expect": "Eac0f69ce90f7",
+          "stratum": "lookup_filter",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_3",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E6dec90f4d12f",
+          "stratum": "lookup_filter",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_4",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E5da86e18546c",
+          "stratum": "lookup_filter",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_5",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E5c93a1e69d00",
+          "stratum": "compare",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_6",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Eb2aaebe4b35c",
+          "stratum": "compare",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_7",
+          "ok": false,
+          "pred": "E0166ee6ad5ee",
+          "expect": "Ed6874762ce0e",
+          "stratum": "compare",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_8",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E2e26e4bdfe6a",
+          "stratum": "compare",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_9",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ef71d895796ec",
+          "stratum": "compare",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_10",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E01d7dcdb4d7a",
+          "stratum": "aggregate",
+          "in_ctx": false
+        },
+        {
+          "id": "WTQ_NL_11",
+          "ok": false,
+          "pred": "E90511509e992",
+          "expect": "E6dec90f4d12f",
+          "stratum": "aggregate",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_12",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E96b2422552d8",
+          "stratum": "aggregate",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_13",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E5fb240f99a2d",
+          "stratum": "aggregate",
+          "in_ctx": false
+        },
+        {
+          "id": "WTQ_NL_14",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E6dec90f4d12f",
+          "stratum": "aggregate",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_15",
+          "ok": false,
+          "pred": "E46621e0c2b7c",
+          "expect": "E60d1aa8e4693",
+          "stratum": "compose",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_16",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ec2c70387b0ce",
+          "stratum": "compose",
+          "in_ctx": true
+        },
+        {
+          "id": "WTQ_NL_17",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ebe86de51514f",
+          "stratum": "compose",
+          "in_ctx": false
+        },
+        {
+          "id": "WTQ_NL_18",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ec5a50d9db120",
+          "stratum": "compose",
+          "in_ctx": false
+        },
+        {
+          "id": "WTQ_NL_19",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E502e5d3f45da",
+          "stratum": "compose",
+          "in_ctx": true
+        }
+      ]
+    }
+  },
+  "by_stratum": {
+    "FINQA_NL:L1_single_op": "0/8",
+    "FINQA_NL:L2_two_op": "0/6",
+    "FINQA_NL:L3plus_compose": "0/6",
+    "FINQA_PROG:L1_single_op": "7/8",
+    "FINQA_PROG:L2_two_op": "6/6",
+    "FINQA_PROG:L3plus_compose": "6/6",
+    "WTQ_NL:lookup_filter": "0/5",
+    "WTQ_NL:compare": "0/5",
+    "WTQ_NL:aggregate": "0/5",
+    "WTQ_NL:compose": "0/5"
+  }
+}

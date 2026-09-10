@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_51]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_51 #####
+QUESTION:
+Who E5f394b74cd65 a Ef862c9509e6a Eed34d982a5ad [Meryl Streep] E65cdc8a0b173 E0df8a87a755f?
+
+PATH_QUERY
+START Meryl Streep
+R1 Eee4a8cb95e2d
+R2 E0e13a4840d9c
+Execute path; return final tail only.
+
+CONTEXT:
+Meryl Streep | Eee4a8cb95e2d | The Seduction of Joe Tynan
+The Seduction of Joe Tynan | E0e13a4840d9c | Jerry Schatzberg
+The Seduction of Joe Tynan | E784b54bdc0e7 | Alan Alda

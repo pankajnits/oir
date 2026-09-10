@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_7 #####
+QUESTION:
+Where was the place of death of the director of film Beat Girl?
+
+CONTEXT:
+William Black | date of death | 1983
+decoy_mid_7 | place of death | Nice
+Eric Mueller | country of citizenship | United States
+Jean Martin | spouse | William Black
+Beat Girl | decoy_link_7 | decoy_mid_7
+Edmond T. Gréville | place of death | CF_TAIL_7_Nice
+World and Time Enough | director | Eric Mueller
+Beat Girl | director | Edmond T. Gréville

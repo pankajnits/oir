@@ -1,0 +1,20 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM MODEL_PLAN: write PATH from English Q + opaque-rel graph. No gold PATH, no legend.
+
+##### ID OR_MODELPLAN_5 #####
+Write a PATH_QUERY using CONTEXT tokens only (no gold PATH). Then the sealed tail.
+QUESTION:
+Where was the director of film E8f2b2070ed85 (Film) born?
+
+CONTEXT:
+E67a5a60549a5 | E19650717cd28 | E8487aaa7e176
+E8f2b2070ed85 | E0b35ff5b0c7b | E357dbaa808e0
+E39b363452474 | E0b35ff5b0c7b | E152bdad4ef41
+E8487aaa7e176 | E2be8513bf682 | E03a8b7e18a9e
+E357dbaa808e0 | E8cc8dacea1d9 | Eba979aba7147
+Ecf1bb03becae | E8cc8dacea1d9 | E395da38200d1
+E152bdad4ef41 | E257520c171fb | Ebe057ec7ff4e
+E8f2b2070ed85 | E966b4aebf519 | Ecf1bb03becae

@@ -1,0 +1,1162 @@
+{
+  "model": "gpt56",
+  "n": 32,
+  "protocol": "isolation",
+  "start_in_question": true,
+  "source": "WikiMovies kb (MetaQA movie graph); same-type person tails",
+  "summary": {
+    "ENG_UNIQUE": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "ENG_AMBIG": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_UNIQUE": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_AMBIG": {
+      "score": "17/32",
+      "unknown": 15,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_AMBIG_PLAN": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_0",
+      "gold": "Ken Kwapis",
+      "pred": "Ken Kwapis",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_1",
+      "gold": "Roger Spottiswoode",
+      "pred": "Roger Spottiswoode",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_2",
+      "gold": "Michael Greenspan",
+      "pred": "Michael Greenspan",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_3",
+      "gold": "John Madden",
+      "pred": "John Madden",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_4",
+      "gold": "Dennis Hopper",
+      "pred": "Dennis Hopper",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_5",
+      "gold": "Bernard Knowles",
+      "pred": "Bernard Knowles",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_6",
+      "gold": "Victor Halperin",
+      "pred": "Victor Halperin",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_7",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_8",
+      "gold": "John Ford",
+      "pred": "John Ford",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_9",
+      "gold": "Kevin Lima",
+      "pred": "Kevin Lima",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_10",
+      "gold": "Robert Altman",
+      "pred": "Robert Altman",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_11",
+      "gold": "David McNally",
+      "pred": "David McNally",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_12",
+      "gold": "Antonia Bird",
+      "pred": "Antonia Bird",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_13",
+      "gold": "Mark Rydell",
+      "pred": "Mark Rydell",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_14",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_15",
+      "gold": "Lewis Allen",
+      "pred": "Lewis Allen",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_16",
+      "gold": "Mervyn LeRoy",
+      "pred": "Mervyn LeRoy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_17",
+      "gold": "Joe Dante",
+      "pred": "Joe Dante",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_18",
+      "gold": "Robert Aldrich",
+      "pred": "Robert Aldrich",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_19",
+      "gold": "Henry Koster",
+      "pred": "Henry Koster",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_20",
+      "gold": "Mark Robson",
+      "pred": "Mark Robson",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_21",
+      "gold": "Roger Michell",
+      "pred": "Roger Michell",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_22",
+      "gold": "Robert De Niro",
+      "pred": "Robert De Niro",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_23",
+      "gold": "Doug Liman",
+      "pred": "Doug Liman",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_24",
+      "gold": "J. Lee Thompson",
+      "pred": "J. Lee Thompson",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_25",
+      "gold": "Sam Peckinpah",
+      "pred": "Sam Peckinpah",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_26",
+      "gold": "Howard Hawks",
+      "pred": "Howard Hawks",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_27",
+      "gold": "Daniel Grou",
+      "pred": "Daniel Grou",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_28",
+      "gold": "Gary Fleder",
+      "pred": "Gary Fleder",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_29",
+      "gold": "Henry King",
+      "pred": "Henry King",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_30",
+      "gold": "Mark Pellington",
+      "pred": "Mark Pellington",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA2_ENG_UNIQUE_31",
+      "gold": "Mark Levin",
+      "pred": "Mark Levin",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_0",
+      "gold": "Ken Kwapis",
+      "pred": "Ken Kwapis",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_1",
+      "gold": "Roger Spottiswoode",
+      "pred": "Roger Spottiswoode",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_2",
+      "gold": "Michael Greenspan",
+      "pred": "Michael Greenspan",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_3",
+      "gold": "John Madden",
+      "pred": "John Madden",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_4",
+      "gold": "Dennis Hopper",
+      "pred": "Dennis Hopper",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_5",
+      "gold": "Bernard Knowles",
+      "pred": "Bernard Knowles",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_6",
+      "gold": "Victor Halperin",
+      "pred": "Victor Halperin",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_7",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_8",
+      "gold": "John Ford",
+      "pred": "John Ford",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_9",
+      "gold": "Kevin Lima",
+      "pred": "Kevin Lima",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_10",
+      "gold": "Robert Altman",
+      "pred": "Robert Altman",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_11",
+      "gold": "David McNally",
+      "pred": "David McNally",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_12",
+      "gold": "Antonia Bird",
+      "pred": "Antonia Bird",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_13",
+      "gold": "Mark Rydell",
+      "pred": "Mark Rydell",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_14",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_15",
+      "gold": "Lewis Allen",
+      "pred": "Lewis Allen",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_16",
+      "gold": "Mervyn LeRoy",
+      "pred": "Mervyn LeRoy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_17",
+      "gold": "Joe Dante",
+      "pred": "Joe Dante",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_18",
+      "gold": "Robert Aldrich",
+      "pred": "Robert Aldrich",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_19",
+      "gold": "Henry Koster",
+      "pred": "Henry Koster",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_20",
+      "gold": "Mark Robson",
+      "pred": "Mark Robson",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_21",
+      "gold": "Roger Michell",
+      "pred": "Roger Michell",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_22",
+      "gold": "Robert De Niro",
+      "pred": "Robert De Niro",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_23",
+      "gold": "Doug Liman",
+      "pred": "Doug Liman",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_24",
+      "gold": "J. Lee Thompson",
+      "pred": "J. Lee Thompson",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_25",
+      "gold": "Sam Peckinpah",
+      "pred": "Sam Peckinpah",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_26",
+      "gold": "Howard Hawks",
+      "pred": "Howard Hawks",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_27",
+      "gold": "Daniel Grou",
+      "pred": "Daniel Grou",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_28",
+      "gold": "Gary Fleder",
+      "pred": "Gary Fleder",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_29",
+      "gold": "Henry King",
+      "pred": "Henry King",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_30",
+      "gold": "Mark Pellington",
+      "pred": "Mark Pellington",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA2_ENG_AMBIG_31",
+      "gold": "Mark Levin",
+      "pred": "Mark Levin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_0",
+      "gold": "Ken Kwapis",
+      "pred": "Ken Kwapis",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_1",
+      "gold": "Roger Spottiswoode",
+      "pred": "Roger Spottiswoode",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_2",
+      "gold": "Michael Greenspan",
+      "pred": "Michael Greenspan",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_3",
+      "gold": "John Madden",
+      "pred": "John Madden",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_4",
+      "gold": "Dennis Hopper",
+      "pred": "Dennis Hopper",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_5",
+      "gold": "Bernard Knowles",
+      "pred": "Bernard Knowles",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_6",
+      "gold": "Victor Halperin",
+      "pred": "Victor Halperin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_7",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_8",
+      "gold": "John Ford",
+      "pred": "John Ford",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_9",
+      "gold": "Kevin Lima",
+      "pred": "Kevin Lima",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_10",
+      "gold": "Robert Altman",
+      "pred": "Robert Altman",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_11",
+      "gold": "David McNally",
+      "pred": "David McNally",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_12",
+      "gold": "Antonia Bird",
+      "pred": "Antonia Bird",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_13",
+      "gold": "Mark Rydell",
+      "pred": "Mark Rydell",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_14",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_15",
+      "gold": "Lewis Allen",
+      "pred": "Lewis Allen",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_16",
+      "gold": "Mervyn LeRoy",
+      "pred": "Mervyn LeRoy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_17",
+      "gold": "Joe Dante",
+      "pred": "Joe Dante",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_18",
+      "gold": "Robert Aldrich",
+      "pred": "Robert Aldrich",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_19",
+      "gold": "Henry Koster",
+      "pred": "Henry Koster",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_20",
+      "gold": "Mark Robson",
+      "pred": "Mark Robson",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_21",
+      "gold": "Roger Michell",
+      "pred": "Roger Michell",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_22",
+      "gold": "Robert De Niro",
+      "pred": "Robert De Niro",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_23",
+      "gold": "Doug Liman",
+      "pred": "Doug Liman",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_24",
+      "gold": "J. Lee Thompson",
+      "pred": "J. Lee Thompson",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_25",
+      "gold": "Sam Peckinpah",
+      "pred": "Sam Peckinpah",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_26",
+      "gold": "Howard Hawks",
+      "pred": "Howard Hawks",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_27",
+      "gold": "Daniel Grou",
+      "pred": "Daniel Grou",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_28",
+      "gold": "Gary Fleder",
+      "pred": "Gary Fleder",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_29",
+      "gold": "Henry King",
+      "pred": "Henry King",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_30",
+      "gold": "Mark Pellington",
+      "pred": "Mark Pellington",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA2_OPAQUE_UNIQUE_31",
+      "gold": "Mark Levin",
+      "pred": "Mark Levin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_0",
+      "gold": "Ken Kwapis",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_1",
+      "gold": "Roger Spottiswoode",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_2",
+      "gold": "Michael Greenspan",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_3",
+      "gold": "John Madden",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_4",
+      "gold": "Dennis Hopper",
+      "pred": "Dennis Hopper",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_5",
+      "gold": "Bernard Knowles",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_6",
+      "gold": "Victor Halperin",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_7",
+      "gold": "Fred Zinnemann",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_8",
+      "gold": "John Ford",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_9",
+      "gold": "Kevin Lima",
+      "pred": "Kevin Lima",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_10",
+      "gold": "Robert Altman",
+      "pred": "Robert Altman",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_11",
+      "gold": "David McNally",
+      "pred": "David McNally",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_12",
+      "gold": "Antonia Bird",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_13",
+      "gold": "Mark Rydell",
+      "pred": "Mark Rydell",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_14",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_15",
+      "gold": "Lewis Allen",
+      "pred": "Lewis Allen",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_16",
+      "gold": "Mervyn LeRoy",
+      "pred": "Mervyn LeRoy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_17",
+      "gold": "Joe Dante",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_18",
+      "gold": "Robert Aldrich",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_19",
+      "gold": "Henry Koster",
+      "pred": "Henry Koster",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_20",
+      "gold": "Mark Robson",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_21",
+      "gold": "Roger Michell",
+      "pred": "Roger Michell",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_22",
+      "gold": "Robert De Niro",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_23",
+      "gold": "Doug Liman",
+      "pred": "Doug Liman",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_24",
+      "gold": "J. Lee Thompson",
+      "pred": "J. Lee Thompson",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_25",
+      "gold": "Sam Peckinpah",
+      "pred": "Sam Peckinpah",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_26",
+      "gold": "Howard Hawks",
+      "pred": "Howard Hawks",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_27",
+      "gold": "Daniel Grou",
+      "pred": "Daniel Grou",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_28",
+      "gold": "Gary Fleder",
+      "pred": "Gary Fleder",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_29",
+      "gold": "Henry King",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_30",
+      "gold": "Mark Pellington",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA2_OPAQUE_AMBIG_31",
+      "gold": "Mark Levin",
+      "pred": "Mark Levin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_0",
+      "gold": "Ken Kwapis",
+      "pred": "Ken Kwapis",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_1",
+      "gold": "Roger Spottiswoode",
+      "pred": "Roger Spottiswoode",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_2",
+      "gold": "Michael Greenspan",
+      "pred": "Michael Greenspan",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_3",
+      "gold": "John Madden",
+      "pred": "John Madden",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_4",
+      "gold": "Dennis Hopper",
+      "pred": "Dennis Hopper",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_5",
+      "gold": "Bernard Knowles",
+      "pred": "Bernard Knowles",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_6",
+      "gold": "Victor Halperin",
+      "pred": "Victor Halperin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_7",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_8",
+      "gold": "John Ford",
+      "pred": "John Ford",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_9",
+      "gold": "Kevin Lima",
+      "pred": "Kevin Lima",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_10",
+      "gold": "Robert Altman",
+      "pred": "Robert Altman",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_11",
+      "gold": "David McNally",
+      "pred": "David McNally",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_12",
+      "gold": "Antonia Bird",
+      "pred": "Antonia Bird",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_13",
+      "gold": "Mark Rydell",
+      "pred": "Mark Rydell",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_14",
+      "gold": "Fred Zinnemann",
+      "pred": "Fred Zinnemann",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_15",
+      "gold": "Lewis Allen",
+      "pred": "Lewis Allen",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_16",
+      "gold": "Mervyn LeRoy",
+      "pred": "Mervyn LeRoy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_17",
+      "gold": "Joe Dante",
+      "pred": "Joe Dante",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_18",
+      "gold": "Robert Aldrich",
+      "pred": "Robert Aldrich",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_19",
+      "gold": "Henry Koster",
+      "pred": "Henry Koster",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_20",
+      "gold": "Mark Robson",
+      "pred": "Mark Robson",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_21",
+      "gold": "Roger Michell",
+      "pred": "Roger Michell",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_22",
+      "gold": "Robert De Niro",
+      "pred": "Robert De Niro",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_23",
+      "gold": "Doug Liman",
+      "pred": "Doug Liman",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_24",
+      "gold": "J. Lee Thompson",
+      "pred": "J. Lee Thompson",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_25",
+      "gold": "Sam Peckinpah",
+      "pred": "Sam Peckinpah",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_26",
+      "gold": "Howard Hawks",
+      "pred": "Howard Hawks",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_27",
+      "gold": "Daniel Grou",
+      "pred": "Daniel Grou",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_28",
+      "gold": "Gary Fleder",
+      "pred": "Gary Fleder",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_29",
+      "gold": "Henry King",
+      "pred": "Henry King",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_30",
+      "gold": "Mark Pellington",
+      "pred": "Mark Pellington",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA2_OPAQUE_AMBIG_PLAN_31",
+      "gold": "Mark Levin",
+      "pred": "Mark Levin",
+      "ok": true
+    }
+  ],
+  "reply_dir": "results/metaqa_2x2_people_iso_harness_replies_gpt56"
+}

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_11 #####
+PATH_QUERY
+START Robert_E_Sanchez
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Robert_E_Sanchez | works_at | Ryder
+Ryder | headquartered_in | Coral_Gables
+DecoyCo_Ryder | headquartered_in | DecoyHQ_Coral_Gables
+Ryder | owned_by | Hold_Ryder
+Hold_Ryder | meta_of | Ryder
+Ryder | partner_of | Partner_Ryder
+Partner_Ryder | meta_of | Ryder
+Decoy_DecoyCo_Ryder | works_at | DecoyCo_Ryder

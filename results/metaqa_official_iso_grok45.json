@@ -1,0 +1,932 @@
+{
+  "model": "grok45",
+  "n": 32,
+  "protocol": "isolation",
+  "start_in_question": true,
+  "source": "WikiMovies kb + published MetaQA 2-hop templates (not 14k test leaderboard)",
+  "summary": {
+    "PLAIN": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_REL_QENG": {
+      "score": "15/32",
+      "unknown": 14,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_REL_QHASH": {
+      "score": "14/32",
+      "unknown": 18,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_REL_QHASH_PLAN": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_0",
+      "gold": "Fritz Lang",
+      "pred": "Fritz Lang",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_1",
+      "gold": "Robert Aldrich",
+      "pred": "Robert Aldrich",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_2",
+      "gold": "Antonio Banderas",
+      "pred": "Antonio Banderas",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_3",
+      "gold": "Robert De Niro",
+      "pred": "Robert De Niro",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_4",
+      "gold": "Michael Lehmann",
+      "pred": "Michael Lehmann",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_5",
+      "gold": "Marcel Camus",
+      "pred": "Marcel Camus",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_6",
+      "gold": "Peter Templeman",
+      "pred": "Peter Templeman",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_7",
+      "gold": "Charles Sturridge",
+      "pred": "Charles Sturridge",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_8",
+      "gold": "Gregg Champion",
+      "pred": "Gregg Champion",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_9",
+      "gold": "David Mirkin",
+      "pred": "David Mirkin",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_10",
+      "gold": "Lloyd Bacon",
+      "pred": "Lloyd Bacon",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_11",
+      "gold": "Frank Perry",
+      "pred": "Frank Perry",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_12",
+      "gold": "Sam Wood",
+      "pred": "Sam Wood",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_13",
+      "gold": "Arthur Hiller",
+      "pred": "Arthur Hiller",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_14",
+      "gold": "John Boorman",
+      "pred": "John Boorman",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_15",
+      "gold": "Edwin L. Marin",
+      "pred": "Edwin L. Marin",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_16",
+      "gold": "Dominic Sena",
+      "pred": "Dominic Sena",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_17",
+      "gold": "Robert Lewis",
+      "pred": "Robert Lewis",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_18",
+      "gold": "Ken Loach",
+      "pred": "Ken Loach",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_19",
+      "gold": "Robert Ellis Miller",
+      "pred": "Robert Ellis Miller",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_20",
+      "gold": "Menhaj Huda",
+      "pred": "Menhaj Huda",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_21",
+      "gold": "Richard Linklater",
+      "pred": "Richard Linklater",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_22",
+      "gold": "George Sidney",
+      "pred": "George Sidney",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_23",
+      "gold": "Andrew Davis",
+      "pred": "Andrew Davis",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_24",
+      "gold": "Shawn Levy",
+      "pred": "Shawn Levy",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_25",
+      "gold": "Wesley Ruggles",
+      "pred": "Wesley Ruggles",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_26",
+      "gold": "John Duigan",
+      "pred": "John Duigan",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_27",
+      "gold": "Jean Renoir",
+      "pred": "Jean Renoir",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_28",
+      "gold": "Archie Mayo",
+      "pred": "Archie Mayo",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_29",
+      "gold": "Bruce W. Smith",
+      "pred": "Bruce W. Smith",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_30",
+      "gold": "Arthur Lubin",
+      "pred": "Arthur Lubin",
+      "ok": true
+    },
+    {
+      "arm": "PLAIN",
+      "id": "MQO_PLAIN_31",
+      "gold": "Ken Olin",
+      "pred": "Ken Olin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_0",
+      "gold": "Fritz Lang",
+      "pred": "Fritz Lang",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_1",
+      "gold": "Robert Aldrich",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_2",
+      "gold": "Antonio Banderas",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_3",
+      "gold": "Robert De Niro",
+      "pred": "Robert De Niro",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_4",
+      "gold": "Michael Lehmann",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_5",
+      "gold": "Marcel Camus",
+      "pred": "Marcel Camus",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_6",
+      "gold": "Peter Templeman",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_7",
+      "gold": "Charles Sturridge",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_8",
+      "gold": "Gregg Champion",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_9",
+      "gold": "David Mirkin",
+      "pred": "David Mirkin, Stephen Mazur",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_10",
+      "gold": "Lloyd Bacon",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_11",
+      "gold": "Frank Perry",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_12",
+      "gold": "Sam Wood",
+      "pred": "Sam Wood",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_13",
+      "gold": "Arthur Hiller",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_14",
+      "gold": "John Boorman",
+      "pred": "John Boorman; Andrew Davies",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_15",
+      "gold": "Edwin L. Marin",
+      "pred": "Edwin L. Marin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_16",
+      "gold": "Dominic Sena",
+      "pred": "Dominic Sena",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_17",
+      "gold": "Robert Lewis",
+      "pred": "Robert Lewis",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_18",
+      "gold": "Ken Loach",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_19",
+      "gold": "Robert Ellis Miller",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_20",
+      "gold": "Menhaj Huda",
+      "pred": "Menhaj Huda",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_21",
+      "gold": "Richard Linklater",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_22",
+      "gold": "George Sidney",
+      "pred": "George Sidney",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_23",
+      "gold": "Andrew Davis",
+      "pred": "Andrew Davis",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_24",
+      "gold": "Shawn Levy",
+      "pred": "Shawn Levy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_25",
+      "gold": "Wesley Ruggles",
+      "pred": "Wesley Ruggles",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_26",
+      "gold": "John Duigan",
+      "pred": "John Duigan",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_27",
+      "gold": "Jean Renoir",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_28",
+      "gold": "Archie Mayo",
+      "pred": "Archie Mayo",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_29",
+      "gold": "Bruce W. Smith",
+      "pred": "Bruce W. Smith, Reginald Hudlin",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_30",
+      "gold": "Arthur Lubin",
+      "pred": "Arthur Lubin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QENG",
+      "id": "MQO_OPAQUE_REL_QENG_31",
+      "gold": "Ken Olin",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_0",
+      "gold": "Fritz Lang",
+      "pred": "Fritz Lang",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_1",
+      "gold": "Robert Aldrich",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_2",
+      "gold": "Antonio Banderas",
+      "pred": "Antonio Banderas",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_3",
+      "gold": "Robert De Niro",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_4",
+      "gold": "Michael Lehmann",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_5",
+      "gold": "Marcel Camus",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_6",
+      "gold": "Peter Templeman",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_7",
+      "gold": "Charles Sturridge",
+      "pred": "Charles Sturridge",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_8",
+      "gold": "Gregg Champion",
+      "pred": "Gregg Champion",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_9",
+      "gold": "David Mirkin",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_10",
+      "gold": "Lloyd Bacon",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_11",
+      "gold": "Frank Perry",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_12",
+      "gold": "Sam Wood",
+      "pred": "Sam Wood",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_13",
+      "gold": "Arthur Hiller",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_14",
+      "gold": "John Boorman",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_15",
+      "gold": "Edwin L. Marin",
+      "pred": "Edwin L. Marin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_16",
+      "gold": "Dominic Sena",
+      "pred": "Dominic Sena",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_17",
+      "gold": "Robert Lewis",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_18",
+      "gold": "Ken Loach",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_19",
+      "gold": "Robert Ellis Miller",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_20",
+      "gold": "Menhaj Huda",
+      "pred": "Menhaj Huda",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_21",
+      "gold": "Richard Linklater",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_22",
+      "gold": "George Sidney",
+      "pred": "George Sidney",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_23",
+      "gold": "Andrew Davis",
+      "pred": "Andrew Davis",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_24",
+      "gold": "Shawn Levy",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_25",
+      "gold": "Wesley Ruggles",
+      "pred": "Wesley Ruggles",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_26",
+      "gold": "John Duigan",
+      "pred": "John Duigan",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_27",
+      "gold": "Jean Renoir",
+      "pred": "Jean Renoir",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_28",
+      "gold": "Archie Mayo",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_29",
+      "gold": "Bruce W. Smith",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_30",
+      "gold": "Arthur Lubin",
+      "pred": "Arthur Lubin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH",
+      "id": "MQO_OPAQUE_REL_QHASH_31",
+      "gold": "Ken Olin",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_0",
+      "gold": "Fritz Lang",
+      "pred": "Fritz Lang",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_1",
+      "gold": "Robert Aldrich",
+      "pred": "Robert Aldrich",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_2",
+      "gold": "Antonio Banderas",
+      "pred": "Antonio Banderas",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_3",
+      "gold": "Robert De Niro",
+      "pred": "Robert De Niro",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_4",
+      "gold": "Michael Lehmann",
+      "pred": "Michael Lehmann",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_5",
+      "gold": "Marcel Camus",
+      "pred": "Marcel Camus",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_6",
+      "gold": "Peter Templeman",
+      "pred": "Peter Templeman",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_7",
+      "gold": "Charles Sturridge",
+      "pred": "Charles Sturridge",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_8",
+      "gold": "Gregg Champion",
+      "pred": "Gregg Champion",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_9",
+      "gold": "David Mirkin",
+      "pred": "David Mirkin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_10",
+      "gold": "Lloyd Bacon",
+      "pred": "Lloyd Bacon",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_11",
+      "gold": "Frank Perry",
+      "pred": "Frank Perry",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_12",
+      "gold": "Sam Wood",
+      "pred": "Sam Wood",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_13",
+      "gold": "Arthur Hiller",
+      "pred": "Arthur Hiller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_14",
+      "gold": "John Boorman",
+      "pred": "John Boorman",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_15",
+      "gold": "Edwin L. Marin",
+      "pred": "Edwin L. Marin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_16",
+      "gold": "Dominic Sena",
+      "pred": "Dominic Sena",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_17",
+      "gold": "Robert Lewis",
+      "pred": "Robert Lewis",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_18",
+      "gold": "Ken Loach",
+      "pred": "Ken Loach",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_19",
+      "gold": "Robert Ellis Miller",
+      "pred": "Robert Ellis Miller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_20",
+      "gold": "Menhaj Huda",
+      "pred": "Menhaj Huda",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_21",
+      "gold": "Richard Linklater",
+      "pred": "Richard Linklater",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_22",
+      "gold": "George Sidney",
+      "pred": "George Sidney",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_23",
+      "gold": "Andrew Davis",
+      "pred": "Andrew Davis",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_24",
+      "gold": "Shawn Levy",
+      "pred": "Shawn Levy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_25",
+      "gold": "Wesley Ruggles",
+      "pred": "Wesley Ruggles",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_26",
+      "gold": "John Duigan",
+      "pred": "John Duigan",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_27",
+      "gold": "Jean Renoir",
+      "pred": "Jean Renoir",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_28",
+      "gold": "Archie Mayo",
+      "pred": "Archie Mayo",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_29",
+      "gold": "Bruce W. Smith",
+      "pred": "Bruce W. Smith",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_30",
+      "gold": "Arthur Lubin",
+      "pred": "Arthur Lubin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_REL_QHASH_PLAN",
+      "id": "MQO_OPAQUE_REL_QHASH_PLAN_31",
+      "gold": "Ken Olin",
+      "pred": "Ken Olin",
+      "ok": true
+    }
+  ],
+  "reply_dir": "results/metaqa_official_iso_harness_replies_grok45"
+}

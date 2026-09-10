@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_18]: <sql>
+
+DB: loan_1
+SCHEMA:
+bank(branch_ID, bname, no_of_customers, city, state)
+customer(cust_ID, cust_name, acc_type, acc_bal, no_of_loans, credit_score, branch_ID, state)
+loan(loan_ID, loan_type, cust_ID, branch_ID, amount)
+QUESTION:
+Find the name of bank branch that provided the greatest total amount of loans to customers with credit score is less than 100.

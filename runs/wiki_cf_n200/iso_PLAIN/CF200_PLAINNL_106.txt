@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_106 #####
+QUESTION:
+What is the place of birth of the composer of film Naayudamma?
+
+CONTEXT:
+Christopher Columbus – The Enigma | director | Manoel de Oliveira
+Ramiro II of Aragon | father | Sancho Ramírez
+decoy_mid_106 | place of birth | Tamil
+Sancho Ramírez | date of death | 1094
+Naayudamma | composer | Deva
+Naayudamma | decoy_link_106 | decoy_mid_106
+Deva | place of birth | CF_TAIL_106_Tamil
+Manoel de Oliveira | place of birth | Porto

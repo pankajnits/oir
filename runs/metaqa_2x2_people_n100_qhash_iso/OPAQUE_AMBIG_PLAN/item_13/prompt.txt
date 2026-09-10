@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_13]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_13 #####
+QUESTION:
+Who E9aaa881e4473 a Ee234cde910c9 E61701c3dfc31 [Steve McQueen] Eb969b10e1aad E867446eb4f79?
+
+PATH_QUERY
+START Steve McQueen
+R1 Eed715f9ab16e
+R2 E2e41127cff9c
+Execute path; return final tail only.
+
+CONTEXT:
+Steve McQueen | Eed715f9ab16e | The Reivers
+The Reivers | E2e41127cff9c | Mark Rydell
+The Reivers | E9706346797f6 | William Faulkner

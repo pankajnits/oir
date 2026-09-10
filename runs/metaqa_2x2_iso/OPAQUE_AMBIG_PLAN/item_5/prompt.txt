@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_5]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_5 #####
+QUESTION:
+What is the genre of a movie directed by Olivier Megaton?
+
+PATH_QUERY
+START Olivier Megaton
+R1 E67ee17dba483
+R2 Eb1ed8619b3ca
+Execute path; return final tail only.
+
+CONTEXT:
+Olivier Megaton | E67ee17dba483 | Taken 3
+Taken 3 | Eb1ed8619b3ca | Action, Thriller
+Taken 3 | E04a8321d24d6 | English

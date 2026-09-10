@@ -1,0 +1,307 @@
+MODEL UNDER TEST. No tools. Answer EVERY ID.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID RGC_G0_A_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 Eda58b08a9a8a E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+Eda58b08a9a8a | E4b2ee8dc85f4 | E8fd919fc77a8
+Ece99a6b7354e | E4b2ee8dc85f4 | Ecdc237e762f1
+E65e036b14b8e | E4b2ee8dc85f4 | E8fd919fc77a8
+E65e036b14b8e | Ec9f90012c3a2 | Ece99a6b7354e
+E8fd919fc77a8 | E2e3b51092b49 | E5becf103cd1b
+Ecdc237e762f1 | E2e3b51092b49 | E3e80dad89f47
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G0_B_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 Eda58b08a9a8a E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+Eda58b08a9a8a | E4b2ee8dc85f4 | Ecdc237e762f1
+Ece99a6b7354e | E4b2ee8dc85f4 | Ecdc237e762f1
+E65e036b14b8e | E4b2ee8dc85f4 | E8fd919fc77a8
+E65e036b14b8e | Ec9f90012c3a2 | Ece99a6b7354e
+E8fd919fc77a8 | E2e3b51092b49 | E5becf103cd1b
+Ecdc237e762f1 | E2e3b51092b49 | E3e80dad89f47
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G1_A_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E535b7b1c19bb E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E535b7b1c19bb | E4b2ee8dc85f4 | E65109eb4ac25
+E39e670696a78 | E4b2ee8dc85f4 | Ea424c0366c1f
+Ee2b17cb3d7f9 | E4b2ee8dc85f4 | E65109eb4ac25
+Ee2b17cb3d7f9 | Ec9f90012c3a2 | E39e670696a78
+E65109eb4ac25 | E2e3b51092b49 | E219c93732db5
+Ea424c0366c1f | E2e3b51092b49 | E0b8b3cc7d72f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G1_B_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E535b7b1c19bb E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E535b7b1c19bb | E4b2ee8dc85f4 | Ea424c0366c1f
+E39e670696a78 | E4b2ee8dc85f4 | Ea424c0366c1f
+Ee2b17cb3d7f9 | E4b2ee8dc85f4 | E65109eb4ac25
+Ee2b17cb3d7f9 | Ec9f90012c3a2 | E39e670696a78
+E65109eb4ac25 | E2e3b51092b49 | E219c93732db5
+Ea424c0366c1f | E2e3b51092b49 | E0b8b3cc7d72f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G2_A_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E45f3f36c3cb8 E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E45f3f36c3cb8 | E4b2ee8dc85f4 | E6b73f93e6e1a
+Ec2e0c61942dc | E4b2ee8dc85f4 | E81474fd94b83
+E33e7bfdec17e | E4b2ee8dc85f4 | E6b73f93e6e1a
+E33e7bfdec17e | Ec9f90012c3a2 | Ec2e0c61942dc
+E6b73f93e6e1a | E2e3b51092b49 | Ead53ea3bf8d2
+E81474fd94b83 | E2e3b51092b49 | Eaa4954b2e9c9
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G2_B_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E45f3f36c3cb8 E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E45f3f36c3cb8 | E4b2ee8dc85f4 | E81474fd94b83
+Ec2e0c61942dc | E4b2ee8dc85f4 | E81474fd94b83
+E33e7bfdec17e | E4b2ee8dc85f4 | E6b73f93e6e1a
+E33e7bfdec17e | Ec9f90012c3a2 | Ec2e0c61942dc
+E6b73f93e6e1a | E2e3b51092b49 | Ead53ea3bf8d2
+E81474fd94b83 | E2e3b51092b49 | Eaa4954b2e9c9
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G3_A_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E175c5cbdfe61 E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E175c5cbdfe61 | E4b2ee8dc85f4 | Eec42276f8260
+E5c9023387519 | E4b2ee8dc85f4 | E9858a1e6fc4d
+E8ed86120f5b2 | E4b2ee8dc85f4 | Eec42276f8260
+E8ed86120f5b2 | Ec9f90012c3a2 | E5c9023387519
+Eec42276f8260 | E2e3b51092b49 | Ef097a782be74
+E9858a1e6fc4d | E2e3b51092b49 | E6627d6c40434
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G3_B_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E175c5cbdfe61 E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E175c5cbdfe61 | E4b2ee8dc85f4 | E9858a1e6fc4d
+E5c9023387519 | E4b2ee8dc85f4 | E9858a1e6fc4d
+E8ed86120f5b2 | E4b2ee8dc85f4 | Eec42276f8260
+E8ed86120f5b2 | Ec9f90012c3a2 | E5c9023387519
+Eec42276f8260 | E2e3b51092b49 | Ef097a782be74
+E9858a1e6fc4d | E2e3b51092b49 | E6627d6c40434
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G4_A_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E639641803a33 E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E639641803a33 | E4b2ee8dc85f4 | E737262d02efa
+E4024ecabdfb5 | E4b2ee8dc85f4 | Ef8e7e3a1b255
+Ea450a31e4a61 | E4b2ee8dc85f4 | E737262d02efa
+Ea450a31e4a61 | Ec9f90012c3a2 | E4024ecabdfb5
+E737262d02efa | E2e3b51092b49 | Ea3a508505b7e
+Ef8e7e3a1b255 | E2e3b51092b49 | E9fa3e1e8c8b5
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G4_B_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E639641803a33 E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E639641803a33 | E4b2ee8dc85f4 | Ef8e7e3a1b255
+E4024ecabdfb5 | E4b2ee8dc85f4 | Ef8e7e3a1b255
+Ea450a31e4a61 | E4b2ee8dc85f4 | E737262d02efa
+Ea450a31e4a61 | Ec9f90012c3a2 | E4024ecabdfb5
+E737262d02efa | E2e3b51092b49 | Ea3a508505b7e
+Ef8e7e3a1b255 | E2e3b51092b49 | E9fa3e1e8c8b5
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G5_A_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 Ee16271510ebb E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+Ee16271510ebb | E4b2ee8dc85f4 | E5dece8130169
+Ec22760d27196 | E4b2ee8dc85f4 | Eca72f36afa99
+Ee9da36150632 | E4b2ee8dc85f4 | E5dece8130169
+Ee9da36150632 | Ec9f90012c3a2 | Ec22760d27196
+E5dece8130169 | E2e3b51092b49 | Ef8d6659256c2
+Eca72f36afa99 | E2e3b51092b49 | Eb0eea9067eff
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G5_B_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 Ee16271510ebb E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+Ee16271510ebb | E4b2ee8dc85f4 | Eca72f36afa99
+Ec22760d27196 | E4b2ee8dc85f4 | Eca72f36afa99
+Ee9da36150632 | E4b2ee8dc85f4 | E5dece8130169
+Ee9da36150632 | Ec9f90012c3a2 | Ec22760d27196
+E5dece8130169 | E2e3b51092b49 | Ef8d6659256c2
+Eca72f36afa99 | E2e3b51092b49 | Eb0eea9067eff
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G6_A_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E76b881cfbb53 E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E76b881cfbb53 | E4b2ee8dc85f4 | Ec0af2162979b
+E91a0486cd633 | E4b2ee8dc85f4 | E8c5024f0d762
+E5a6c2588d47a | E4b2ee8dc85f4 | Ec0af2162979b
+E5a6c2588d47a | Ec9f90012c3a2 | E91a0486cd633
+Ec0af2162979b | E2e3b51092b49 | E57307fcc859c
+E8c5024f0d762 | E2e3b51092b49 | E964d1a30f325
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G6_B_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E76b881cfbb53 E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E76b881cfbb53 | E4b2ee8dc85f4 | E8c5024f0d762
+E91a0486cd633 | E4b2ee8dc85f4 | E8c5024f0d762
+E5a6c2588d47a | E4b2ee8dc85f4 | Ec0af2162979b
+E5a6c2588d47a | Ec9f90012c3a2 | E91a0486cd633
+Ec0af2162979b | E2e3b51092b49 | E57307fcc859c
+E8c5024f0d762 | E2e3b51092b49 | E964d1a30f325
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G7_A_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E299bb7984c0d E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E299bb7984c0d | E4b2ee8dc85f4 | Ec69a5d94e9da
+Ef52d270953b1 | E4b2ee8dc85f4 | Ed6a020abc6b4
+Eb3608c7db7c4 | E4b2ee8dc85f4 | Ec69a5d94e9da
+Eb3608c7db7c4 | Ec9f90012c3a2 | Ef52d270953b1
+Ec69a5d94e9da | E2e3b51092b49 | E7cc960b9631e
+Ed6a020abc6b4 | E2e3b51092b49 | Ef524ce1b9140
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G7_B_none #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+No handles. Sealed triples only. City seal or UNKNOWN.
+
+QUESTION:
+E03e0fc58c76d E35e5c4e07fd7 E01e7e8cdd1d3 Ecf591c8f3060 Ef1a5f40fa639 E01b0ddb1c157 E299bb7984c0d E4b2ee8dc85f4? E2e0a840e2d3c Ec5b7b761429b.
+
+CONTEXT:
+E299bb7984c0d | E4b2ee8dc85f4 | Ed6a020abc6b4
+Ef52d270953b1 | E4b2ee8dc85f4 | Ed6a020abc6b4
+Eb3608c7db7c4 | E4b2ee8dc85f4 | Ec69a5d94e9da
+Eb3608c7db7c4 | Ec9f90012c3a2 | Ef52d270953b1
+Ec69a5d94e9da | E2e3b51092b49 | E7cc960b9631e
+Ed6a020abc6b4 | E2e3b51092b49 | Ef524ce1b9140
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+

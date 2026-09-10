@@ -1,0 +1,70 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_SMALL_META_5]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM META: sealed Q+values; bilingual schema; English protocol (encoding + isomorphism + how to use). No JOIN.
+
+##### ID SLL_SMALL_META_5 #####
+QUESTION (token-HMAC'd):
+E8e080e1668b8 Eb37d1b545e8a E4cdc02c51ad8 E99fcd9045efe E701903e9417d Eb9d6488fb37a?
+
+PROTOCOL (English; this is the only readable instruction):
+- QUESTION is encoded. Do not try to read English from those tokens.
+- CONTEXT keys and values are encoded the same way.
+- Isomorphism: identical tokens are the same entity or the same field.
+  Matching tokens is equality, not decryption.
+- KEY_SCHEMA below is bilingual: English meaning = sealed key token.
+- How to use: one QUESTION token is also an employee id in CONTEXT; that is START.
+  The encoded question asks for that person's country (not city).
+  Use the schema names (employees, id, employer, orgs, hq, country) and token
+  equality to walk CONTEXT. Return one sealed atom. No JOIN/PATH is given.
+
+KEY_SCHEMA (English name → sealed JSON key):
+  employees = E14148397e21b
+  orgs = E8248a9f7d787
+  id = E044aadf399e5
+  employer = E722e28cb2027
+  hq = Efab56b2d000d
+  city = Eed5c12c20649
+  country = Ed892dd91be7b
+
+CONTEXT:
+{
+  "E14148397e21b": [
+    {
+      "E044aadf399e5": "Ed3d66805fd91",
+      "E722e28cb2027": "Ed5cd06c224f9"
+    },
+    {
+      "E044aadf399e5": "Ea57fa1815f40",
+      "E722e28cb2027": "E56b535c52a88"
+    },
+    {
+      "E044aadf399e5": "Eb9d6488fb37a",
+      "E722e28cb2027": "Eeea981c62be8"
+    }
+  ],
+  "E8248a9f7d787": [
+    {
+      "E044aadf399e5": "Eeea981c62be8",
+      "Efab56b2d000d": {
+        "Eed5c12c20649": "E4d6d884bf654",
+        "Ed892dd91be7b": "E79d3a93ed6c8"
+      }
+    },
+    {
+      "E044aadf399e5": "Ed5cd06c224f9",
+      "Efab56b2d000d": {
+        "Ed892dd91be7b": "E0388f8097047",
+        "Eed5c12c20649": "Ef02335aae7b6"
+      }
+    },
+    {
+      "E044aadf399e5": "E56b535c52a88",
+      "Efab56b2d000d": {
+        "Ed892dd91be7b": "E67daf5a13c90",
+        "Eed5c12c20649": "E62f663151dea"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_53]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_53 #####
+DB: match_season
+SCHEMA (English name → sealed sqlite identifier):
+country = E8803eaef7b73
+Country_id = Eb5b6fb0c85c9
+Country_name = E7fe14ce7b33d
+Capital = E3297c7e50d2e
+Official_native_language = E36177530e9d8
+team = Ec58e219763b4
+Team_id = E0c7bcf5813bf
+Name = E02d40551c6d0
+match_season = Ea5607b2ec6f4
+Season = Ebcac0eff1633
+Player = E005131bf5b58
+Position = E2e95f1761f0a
+Country = Ef03150b2fb0f
+Team = E399d0e0a7de1
+Draft_Pick_Number = Ea06291d991ca
+Draft_Class = Ea224f88e04d1
+College = E4a0ecf174fbe
+player = E6c80cedde88d
+Player_ID = E6d78b8ec3172
+Years_Played = E44e56a74894e
+Total_WL = Efed4ce56575d
+Singles_WL = E2b90ea4dce01
+Doubles_WL = Ebb65a9bf1c69
+
+country(Country_id, Country_name, Capital, Official_native_language)
+team(Team_id, Name)
+match_season(Season, Player, Position, Country, Team, Draft_Pick_Number, Draft_Class, College)
+player(Player_ID, Player, Years_Played, Total_WL, Singles_WL, Doubles_WL, Team)
+
+QUESTION:
+How many distinct colleges are associated with players from the E5c255002b892 with E4ad251bab7bc "Columbus Crew".
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

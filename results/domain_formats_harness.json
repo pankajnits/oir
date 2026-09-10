@@ -1,0 +1,159 @@
+{
+  "n": 12,
+  "seed": 20260813,
+  "suite": "domain_formats",
+  "paths": {
+    "TABLE_PLAIN_PROG": "runs/domain_formats/TABLE_PLAIN_PROG_ONLY/BATCH.txt",
+    "TABLE_SEAL_PROG": "runs/domain_formats/TABLE_SEAL_PROG_ONLY/BATCH.txt",
+    "TABLE_SEAL_NL": "runs/domain_formats/TABLE_SEAL_NL_ONLY/BATCH.txt",
+    "TABLE_SEAL_BOTH": "runs/domain_formats/TABLE_SEAL_BOTH_ONLY/BATCH.txt",
+    "JSON_PLAIN_PROG": "runs/domain_formats/JSON_PLAIN_PROG_ONLY/BATCH.txt",
+    "JSON_SEAL_PROG": "runs/domain_formats/JSON_SEAL_PROG_ONLY/BATCH.txt",
+    "JSON_SEAL_NL": "runs/domain_formats/JSON_SEAL_NL_ONLY/BATCH.txt",
+    "JSON_SEAL_BOTH": "runs/domain_formats/JSON_SEAL_BOTH_ONLY/BATCH.txt",
+    "VAULT_MILD": "runs/domain_formats/VAULT_MILD_ONLY/BATCH.txt",
+    "VAULT_STRICT_PROG": "runs/domain_formats/VAULT_STRICT_PROG_ONLY/BATCH.txt",
+    "VAULT_STRICT_NL": "runs/domain_formats/VAULT_STRICT_NL_ONLY/BATCH.txt",
+    "VAULT_STRICT_BOTH": "runs/domain_formats/VAULT_STRICT_BOTH_ONLY/BATCH.txt"
+  },
+  "cases": [
+    {
+      "i": 0,
+      "person": "Bob_Iger",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect_plain": "Burbank",
+      "expect_seal": "E38991d8565fc",
+      "person_seal": "E38daae229352",
+      "company_seal": "E5b1923a5564b"
+    },
+    {
+      "i": 1,
+      "person": "Lucian_Grainge",
+      "company": "Universal_Music_Group",
+      "hq": "Broadway",
+      "expect_plain": "Broadway",
+      "expect_seal": "E53bf3b0197dc",
+      "person_seal": "Ec862c7864f1e",
+      "company_seal": "E5648ca467b71"
+    },
+    {
+      "i": 2,
+      "person": "Roy_O_Disney",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect_plain": "Burbank",
+      "expect_seal": "E38991d8565fc",
+      "person_seal": "E915f1ae896c3",
+      "company_seal": "E5b1923a5564b"
+    },
+    {
+      "i": 3,
+      "person": "Landon_H_Rowland",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect_plain": "Kansas_City",
+      "expect_seal": "E5ee83207c12e",
+      "person_seal": "E6fb8b4ba248b",
+      "company_seal": "Eb27b6add03d4"
+    },
+    {
+      "i": 4,
+      "person": "Stuart_Parker",
+      "company": "USAA",
+      "hq": "San_Antonio",
+      "expect_plain": "San_Antonio",
+      "expect_seal": "E7a96dde51ba9",
+      "person_seal": "E627db7d0fb06",
+      "company_seal": "E348aa416d535"
+    },
+    {
+      "i": 5,
+      "person": "Kristin_Lian",
+      "company": "Hafslund_Kraft",
+      "hq": "Oslo",
+      "expect_plain": "Oslo",
+      "expect_seal": "Ec95bcddd0abe",
+      "person_seal": "E4b6a5b8332be",
+      "company_seal": "E3eaa24ec4827"
+    },
+    {
+      "i": 6,
+      "person": "Thomas_S_Carter",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect_plain": "Kansas_City",
+      "expect_seal": "E5ee83207c12e",
+      "person_seal": "E271c672c7e1c",
+      "company_seal": "Eb27b6add03d4"
+    },
+    {
+      "i": 7,
+      "person": "Bob_Chapek",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect_plain": "Burbank",
+      "expect_seal": "E38991d8565fc",
+      "person_seal": "E19688b766e7e",
+      "company_seal": "E5b1923a5564b"
+    },
+    {
+      "i": 8,
+      "person": "Hans_Vestberg",
+      "company": "Verizon",
+      "hq": "Philadelphia",
+      "expect_plain": "Philadelphia",
+      "expect_seal": "Efbcb189852b1",
+      "person_seal": "E23312912aa0e",
+      "company_seal": "E00fed7b6181f"
+    },
+    {
+      "i": 9,
+      "person": "Luka_Mucic",
+      "company": "Vonovia",
+      "hq": "Bochum",
+      "expect_plain": "Bochum",
+      "expect_seal": "E1371102a8522",
+      "person_seal": "E48b51d1d7bde",
+      "company_seal": "Ef3468e201cbb"
+    },
+    {
+      "i": 10,
+      "person": "Mario_Greco",
+      "company": "Zurich_Insurance_Group",
+      "hq": "Zurich",
+      "expect_plain": "Zurich",
+      "expect_seal": "E3de9412cb2c1",
+      "person_seal": "Eb3597926c200",
+      "company_seal": "Eaf75bd221309"
+    },
+    {
+      "i": 11,
+      "person": "William_N_Deramus_III",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect_plain": "Kansas_City",
+      "expect_seal": "E5ee83207c12e",
+      "person_seal": "E15147aee6fb9",
+      "company_seal": "Eb27b6add03d4"
+    }
+  ],
+  "sealrouter_ceiling": "12/12",
+  "what_is_sealed": {
+    "TABLE_PLAIN_PROG": "nothing",
+    "TABLE_SEAL_PROG": "headers + all cells",
+    "TABLE_SEAL_NL": "headers + cells + question tokens",
+    "TABLE_SEAL_BOTH": "headers + cells + question tokens + JOIN program",
+    "JSON_PLAIN_PROG": "nothing",
+    "JSON_SEAL_PROG": "object keys + values",
+    "JSON_SEAL_NL": "keys + values + question tokens",
+    "JSON_SEAL_BOTH": "keys + values + question tokens + JOIN program",
+    "VAULT_MILD": "entity values only; keys readable",
+    "VAULT_STRICT_PROG": "keys + values",
+    "VAULT_STRICT_NL": "keys + values + question tokens",
+    "VAULT_STRICT_BOTH": "keys + values + question tokens + JOIN program"
+  },
+  "what_is_asked": "2-hop person\u2192company\u2192hq_city",
+  "what_is_checked": "exact plaintext HQ (PLAIN) or HMAC seal of HQ (sealed arms)",
+  "claim": "Dissociation transfers across surface formats: PLAIN_PROG\u2248SEAL_PROG\u226bSEAL_NL on tables and JSON; SEAL_BOTH (sealed NL + PROG) tests whether PROG restores when the English question is also sealed; VAULT_MILD is the milder industrial pattern."
+}

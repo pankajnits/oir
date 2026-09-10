@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_8]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_8 #####
+QUESTION:
+Who Ed1d978353f8a a Ed061ab5e3460 Ebe68217cdad3 [Gene Tierney] E14a19a280a37 E3a063aa73cea?
+
+PATH_QUERY
+START Gene Tierney
+R1 E6ba692ad6f3a
+R2 E4106d81be823
+Execute path; return final tail only.
+
+CONTEXT:
+Gene Tierney | E6ba692ad6f3a | Tobacco Road
+Tobacco Road | E4106d81be823 | John Ford
+Tobacco Road | E0f36569ff428 | Erskine Caldwell

@@ -1,0 +1,179 @@
+MODEL UNDER TEST. No tools. Read ONLY this file. Answer EVERY ID.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID EOC_G0_A_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of E0ac77f510b81? City seal only.
+
+CONTEXT:
+E0ac77f510b81 | Ee889910fd8b7 | Ec21bd1452cf9
+Ec02aac75d947 | Ee889910fd8b7 | Ec37c1f36827b
+Ec21bd1452cf9 | E970dff4c4b45 | E306d76911d87
+Ec37c1f36827b | E970dff4c4b45 | Ed6d3f0c49cb0
+Ec21bd1452cf9 | Ead6e40106380 | E62ade93f0fd7
+Ec37c1f36827b | Ead6e40106380 | E6bd42f833976
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID EOC_G0_B_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of E0ac77f510b81? City seal only.
+
+CONTEXT:
+E0ac77f510b81 | Ee889910fd8b7 | Ec37c1f36827b
+Ec02aac75d947 | Ee889910fd8b7 | Ec37c1f36827b
+Ec21bd1452cf9 | E970dff4c4b45 | E306d76911d87
+Ec37c1f36827b | E970dff4c4b45 | Ed6d3f0c49cb0
+Ec21bd1452cf9 | Ead6e40106380 | E62ade93f0fd7
+Ec37c1f36827b | Ead6e40106380 | E6bd42f833976
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID EOC_G1_A_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of E1339a22657e4? City seal only.
+
+CONTEXT:
+E1339a22657e4 | Ee889910fd8b7 | E63c74cfd4381
+E5a53d5c64baa | Ee889910fd8b7 | E785f9a8d0205
+E63c74cfd4381 | E970dff4c4b45 | E93fbf5ae6716
+E785f9a8d0205 | E970dff4c4b45 | Ec0e09ecd8942
+E63c74cfd4381 | Ead6e40106380 | E62645832cf30
+E785f9a8d0205 | Ead6e40106380 | E25b81a645b6f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID EOC_G1_B_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of E1339a22657e4? City seal only.
+
+CONTEXT:
+E1339a22657e4 | Ee889910fd8b7 | E785f9a8d0205
+E5a53d5c64baa | Ee889910fd8b7 | E785f9a8d0205
+E63c74cfd4381 | E970dff4c4b45 | E93fbf5ae6716
+E785f9a8d0205 | E970dff4c4b45 | Ec0e09ecd8942
+E63c74cfd4381 | Ead6e40106380 | E62645832cf30
+E785f9a8d0205 | Ead6e40106380 | E25b81a645b6f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID EOC_G2_A_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of Ea4537fb96c6d? City seal only.
+
+CONTEXT:
+Ea4537fb96c6d | Ee889910fd8b7 | E554d1d1e7cef
+E65dac477cc80 | Ee889910fd8b7 | E14b142a283e9
+E554d1d1e7cef | E970dff4c4b45 | E54ea2c7c53ef
+E14b142a283e9 | E970dff4c4b45 | E16a2ba0e6016
+E554d1d1e7cef | Ead6e40106380 | E58bb6b477746
+E14b142a283e9 | Ead6e40106380 | E92fc7f0c86c2
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID EOC_G2_B_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of Ea4537fb96c6d? City seal only.
+
+CONTEXT:
+Ea4537fb96c6d | Ee889910fd8b7 | E14b142a283e9
+E65dac477cc80 | Ee889910fd8b7 | E14b142a283e9
+E554d1d1e7cef | E970dff4c4b45 | E54ea2c7c53ef
+E14b142a283e9 | E970dff4c4b45 | E16a2ba0e6016
+E554d1d1e7cef | Ead6e40106380 | E58bb6b477746
+E14b142a283e9 | Ead6e40106380 | E92fc7f0c86c2
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID EOC_G3_A_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of E7bdcd7b86383? City seal only.
+
+CONTEXT:
+E7bdcd7b86383 | Ee889910fd8b7 | Ed9b2db8be330
+Ebe3bce106281 | Ee889910fd8b7 | E3ef506737674
+Ed9b2db8be330 | E970dff4c4b45 | E595456b40bbc
+E3ef506737674 | E970dff4c4b45 | E16846db80167
+Ed9b2db8be330 | Ead6e40106380 | E5757ae000d89
+E3ef506737674 | Ead6e40106380 | Efa03ee49bbca
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID EOC_G3_B_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+employer_rel=Ee889910fd8b7
+city_rel=Ead6e40106380
+Join person-employer_rel→co ; co-city_rel→city. Ignore other relations.
+
+QUESTION:
+What city is associated with the employer of E7bdcd7b86383? City seal only.
+
+CONTEXT:
+E7bdcd7b86383 | Ee889910fd8b7 | E3ef506737674
+Ebe3bce106281 | Ee889910fd8b7 | E3ef506737674
+Ed9b2db8be330 | E970dff4c4b45 | E595456b40bbc
+E3ef506737674 | E970dff4c4b45 | E16846db80167
+Ed9b2db8be330 | Ead6e40106380 | E5757ae000d89
+E3ef506737674 | Ead6e40106380 | Efa03ee49bbca
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+

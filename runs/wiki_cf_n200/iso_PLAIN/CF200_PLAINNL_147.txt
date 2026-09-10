@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_147 #####
+QUESTION:
+Where was the director of film Love In The Ring born?
+
+CONTEXT:
+Reinhold Schünzel | place of birth | CF_TAIL_147_Hamburg
+decoy_mid_147 | place of birth | Hamburg
+John Lennon | place of birth | Liverpool
+Well Well Well | performer | John Lennon
+Love in the Ring | director | Reinhold Schünzel
+Love in the Ring | decoy_link_147 | decoy_mid_147
+Home Fries | director | Dean Parisot
+Dean Parisot | educated at | Tisch

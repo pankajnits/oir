@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_12]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_12 #####
+QUESTION:
+What city is the headquarters of the company led by Achim_Wei?
+
+PATH_QUERY
+START Achim_Wei
+R1 E27c7a2b64fac
+R2 E33781390144c
+Execute path; return final tail only.
+
+CONTEXT:
+Achim_Wei | E27c7a2b64fac | Ionos
+Ionos | E33781390144c | Montabaur
+Achim_Wei | E0327682c3e90 | Sveriges_Television
+Sveriges_Television | E447cf1b8c99e | Stockholm

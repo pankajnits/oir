@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_60]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_60 #####
+QUESTION:
+Who directed a movie that Drew Barrymore starred in?
+
+PATH_QUERY
+START Drew Barrymore
+R1 E608cb713c896
+R2 E63fc24bbc6e4
+Execute path; return final tail only.
+
+CONTEXT:
+Drew Barrymore | E608cb713c896 | Boys on the Side
+Boys on the Side | E63fc24bbc6e4 | Herbert Ross
+Boys on the Side | E0f2649f688ec | Don Roos

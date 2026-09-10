@@ -1,0 +1,608 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <token_or_UNKNOWN>
+Answer EVERY ID.
+
+3-hop PATH over readable tables+JSON (HR/TICKET/ONCALL).
+
+##### ID CX3_PLAIN_0 #####
+USE HR
+PATH_QUERY
+START Walt_Disney
+R1 in_dept
+R2 at_site
+R3 in_city
+Execute 3-hop; return final tail.
+
+CONTEXT:
+TABLE hop1
+| src | in_dept |
+| --- | --- |
+| Walt_Disney | Dept_0_0 |
+| Stephen_A_Schwarzman | Dept_0_1 |
+| Harvey_C_Couch | Dept_0_2 |
+| Roberto_Rinaudo | Dept_0_0 |
+
+TABLE hop2
+| mid | at_site |
+| --- | --- |
+| Dept_0_0 | Site_0_0 |
+| Dept_0_1 | Site_0_1 |
+| Dept_0_2 | Site_0_2 |
+| Dept_0_0 | Site_0_0 |
+
+TABLE hop3
+| tail | in_city |
+| --- | --- |
+| Site_0_0 | Burbank |
+| Site_0_1 | New_York_City |
+| Site_0_2 | Kansas_City |
+| Site_0_0 | Burbank |
+
+JSON
+{
+  "use_case": "HR",
+  "graph": {
+    "Walt_Disney": {
+      "in_dept": "Dept_0_0"
+    },
+    "Dept_0_0": {
+      "at_site": "Site_0_0"
+    },
+    "Site_0_0": {
+      "in_city": "Burbank"
+    },
+    "Stephen_A_Schwarzman": {
+      "in_dept": "Dept_0_1"
+    },
+    "Dept_0_1": {
+      "at_site": "Site_0_1"
+    },
+    "Site_0_1": {
+      "in_city": "New_York_City"
+    },
+    "Harvey_C_Couch": {
+      "in_dept": "Dept_0_2"
+    },
+    "Dept_0_2": {
+      "at_site": "Site_0_2"
+    },
+    "Site_0_2": {
+      "in_city": "Kansas_City"
+    },
+    "Roberto_Rinaudo": {
+      "in_dept": "Dept_0_0"
+    }
+  },
+  "notes": "Walt_Disney access review: if badge_fail occurs twice, freeze_badge and page_site_security. Do not email the password. Recommended_action freeze_badge."
+}
+
+##### ID CX3_PLAIN_1 #####
+USE TICKET
+PATH_QUERY
+START TCK_5
+R1 opened_by
+R2 billed_to
+R3 in_region
+Execute 3-hop; return final tail.
+
+CONTEXT:
+TABLE hop1
+| src | opened_by |
+| --- | --- |
+| TCK_5 | William_N_Deramus_Jr |
+| TCK_5_1 | Freddy_Heineken |
+| TCK_5_2 | Frank_Love |
+| TCK_5_3 | Hector_Grisi |
+
+TABLE hop2
+| mid | billed_to |
+| --- | --- |
+| William_N_Deramus_Jr | Acct_5 |
+| Freddy_Heineken | Acct_5_1 |
+| Frank_Love | Acct_5_2 |
+| Hector_Grisi | Acct_5_3 |
+
+TABLE hop3
+| tail | in_region |
+| --- | --- |
+| Acct_5 | Kansas_City |
+| Acct_5_1 | Amsterdam |
+| Acct_5_2 | Oklahoma_City |
+| Acct_5_3 | Santander |
+
+JSON
+{
+  "use_case": "TICKET",
+  "graph": {
+    "TCK_5": {
+      "opened_by": "William_N_Deramus_Jr"
+    },
+    "William_N_Deramus_Jr": {
+      "billed_to": "Acct_5"
+    },
+    "Acct_5": {
+      "in_region": "Kansas_City"
+    },
+    "TCK_5_1": {
+      "opened_by": "Freddy_Heineken"
+    },
+    "Freddy_Heineken": {
+      "billed_to": "Acct_5_1"
+    },
+    "Acct_5_1": {
+      "in_region": "Amsterdam"
+    },
+    "TCK_5_2": {
+      "opened_by": "Frank_Love"
+    },
+    "Frank_Love": {
+      "billed_to": "Acct_5_2"
+    },
+    "Acct_5_2": {
+      "in_region": "Oklahoma_City"
+    },
+    "TCK_5_3": {
+      "opened_by": "Hector_Grisi"
+    },
+    "Hector_Grisi": {
+      "billed_to": "Acct_5_3"
+    },
+    "Acct_5_3": {
+      "in_region": "Santander"
+    }
+  },
+  "notes": "Ticket TCK_5: customer reports billing_outage. If severity is sev1, page_oncall and open_war_room. Recommended_action page_oncall."
+}
+
+##### ID CX3_PLAIN_2 #####
+USE ONCALL
+PATH_QUERY
+START svc_Kansas_City_Southern
+R1 owned_by
+R2 on_team
+R3 based_in
+Execute 3-hop; return final tail.
+
+CONTEXT:
+TABLE hop1
+| src | owned_by |
+| --- | --- |
+| svc_Kansas_City_Southern | Charles_E_Johnston |
+| svc_Globcal_International | David_J_Wright |
+| svc_Storstockholms_Lokaltrafik | David_Lagerholm |
+| svc_Kansas_City_Southern | George_W_Edwards |
+
+TABLE hop2
+| mid | on_team |
+| --- | --- |
+| Charles_E_Johnston | Team_10 |
+| David_J_Wright | Team_10_1 |
+| David_Lagerholm | Team_10_2 |
+| George_W_Edwards | Team_10_3 |
+
+TABLE hop3
+| tail | based_in |
+| --- | --- |
+| Team_10 | Kansas_City |
+| Team_10_1 | Richmond |
+| Team_10_2 | Stockholm |
+| Team_10_3 | Kansas_City |
+
+JSON
+{
+  "use_case": "ONCALL",
+  "graph": {
+    "svc_Kansas_City_Southern": {
+      "owned_by": "George_W_Edwards"
+    },
+    "Charles_E_Johnston": {
+      "on_team": "Team_10"
+    },
+    "Team_10": {
+      "based_in": "Kansas_City"
+    },
+    "svc_Globcal_International": {
+      "owned_by": "David_J_Wright"
+    },
+    "David_J_Wright": {
+      "on_team": "Team_10_1"
+    },
+    "Team_10_1": {
+      "based_in": "Richmond"
+    },
+    "svc_Storstockholms_Lokaltrafik": {
+      "owned_by": "David_Lagerholm"
+    },
+    "David_Lagerholm": {
+      "on_team": "Team_10_2"
+    },
+    "Team_10_2": {
+      "based_in": "Stockholm"
+    },
+    "George_W_Edwards": {
+      "on_team": "Team_10_3"
+    },
+    "Team_10_3": {
+      "based_in": "Kansas_City"
+    }
+  },
+  "notes": "Service svc_Kansas_City_Southern paging. If error_budget_burn exceeds 2 percent, declare_incident and page_secondary. Recommended_action declare_incident."
+}
+
+##### ID CX3_PLAIN_3 #####
+USE HR
+PATH_QUERY
+START James_Holanda
+R1 in_dept
+R2 at_site
+R3 in_city
+Execute 3-hop; return final tail.
+
+CONTEXT:
+TABLE hop1
+| src | in_dept |
+| --- | --- |
+| James_Holanda | Dept_15_0 |
+| David_Zaslav | Dept_15_1 |
+| Leonor_Fresnel_Loree | Dept_15_2 |
+| Mike_Sievert | Dept_15_0 |
+
+TABLE hop2
+| mid | at_site |
+| --- | --- |
+| Dept_15_0 | Site_15_0 |
+| Dept_15_1 | Site_15_1 |
+| Dept_15_2 | Site_15_2 |
+| Dept_15_0 | Site_15_0 |
+
+TABLE hop3
+| tail | in_city |
+| --- | --- |
+| Site_15_0 | New_Jersey |
+| Site_15_1 | New_York_City |
+| Site_15_2 | Kansas_City |
+| Site_15_0 | New_Jersey |
+
+JSON
+{
+  "use_case": "HR",
+  "graph": {
+    "James_Holanda": {
+      "in_dept": "Dept_15_0"
+    },
+    "Dept_15_0": {
+      "at_site": "Site_15_0"
+    },
+    "Site_15_0": {
+      "in_city": "New_Jersey"
+    },
+    "David_Zaslav": {
+      "in_dept": "Dept_15_1"
+    },
+    "Dept_15_1": {
+      "at_site": "Site_15_1"
+    },
+    "Site_15_1": {
+      "in_city": "New_York_City"
+    },
+    "Leonor_Fresnel_Loree": {
+      "in_dept": "Dept_15_2"
+    },
+    "Dept_15_2": {
+      "at_site": "Site_15_2"
+    },
+    "Site_15_2": {
+      "in_city": "Kansas_City"
+    },
+    "Mike_Sievert": {
+      "in_dept": "Dept_15_0"
+    }
+  },
+  "notes": "James_Holanda access review: if badge_fail occurs twice, freeze_badge and page_site_security. Do not email the password. Recommended_action freeze_badge."
+}
+
+##### ID CX3_PLAIN_4 #####
+USE TICKET
+PATH_QUERY
+START TCK_20
+R1 opened_by
+R2 billed_to
+R3 in_region
+Execute 3-hop; return final tail.
+
+CONTEXT:
+TABLE hop1
+| src | opened_by |
+| --- | --- |
+| TCK_20 | Anne_Lagercrantz |
+| TCK_20_1 | Mark_T_Bertolini |
+| TCK_20_2 | David_Schaeffer |
+| TCK_20_3 | Kentaro_Okuda |
+
+TABLE hop2
+| mid | billed_to |
+| --- | --- |
+| Anne_Lagercrantz | Acct_20 |
+| Mark_T_Bertolini | Acct_20_1 |
+| David_Schaeffer | Acct_20_2 |
+| Kentaro_Okuda | Acct_20_3 |
+
+TABLE hop3
+| tail | in_region |
+| --- | --- |
+| Acct_20 | Stockholm |
+| Acct_20_1 | Hartford |
+| Acct_20_2 | Washington_DC |
+| Acct_20_3 | Tokyo |
+
+JSON
+{
+  "use_case": "TICKET",
+  "graph": {
+    "TCK_20": {
+      "opened_by": "Anne_Lagercrantz"
+    },
+    "Anne_Lagercrantz": {
+      "billed_to": "Acct_20"
+    },
+    "Acct_20": {
+      "in_region": "Stockholm"
+    },
+    "TCK_20_1": {
+      "opened_by": "Mark_T_Bertolini"
+    },
+    "Mark_T_Bertolini": {
+      "billed_to": "Acct_20_1"
+    },
+    "Acct_20_1": {
+      "in_region": "Hartford"
+    },
+    "TCK_20_2": {
+      "opened_by": "David_Schaeffer"
+    },
+    "David_Schaeffer": {
+      "billed_to": "Acct_20_2"
+    },
+    "Acct_20_2": {
+      "in_region": "Washington_DC"
+    },
+    "TCK_20_3": {
+      "opened_by": "Kentaro_Okuda"
+    },
+    "Kentaro_Okuda": {
+      "billed_to": "Acct_20_3"
+    },
+    "Acct_20_3": {
+      "in_region": "Tokyo"
+    }
+  },
+  "notes": "Ticket TCK_20: customer reports billing_outage. If severity is sev1, page_oncall and open_war_room. Recommended_action page_oncall."
+}
+
+##### ID CX3_PLAIN_5 #####
+USE ONCALL
+PATH_QUERY
+START svc_Hobby_Lobby
+R1 owned_by
+R2 on_team
+R3 based_in
+Execute 3-hop; return final tail.
+
+CONTEXT:
+TABLE hop1
+| src | owned_by |
+| --- | --- |
+| svc_Hobby_Lobby | David_Green |
+| svc_Ryder | Robert_E_Sanchez |
+| svc_Best_Buy | Hubert_Joly |
+| svc_Heineken_International | JeanFranois_van_Boxmeer |
+
+TABLE hop2
+| mid | on_team |
+| --- | --- |
+| David_Green | Team_25 |
+| Robert_E_Sanchez | Team_25_1 |
+| Hubert_Joly | Team_25_2 |
+| JeanFranois_van_Boxmeer | Team_25_3 |
+
+TABLE hop3
+| tail | based_in |
+| --- | --- |
+| Team_25 | Oklahoma_City |
+| Team_25_1 | Coral_Gables |
+| Team_25_2 | Richfield |
+| Team_25_3 | Amsterdam |
+
+JSON
+{
+  "use_case": "ONCALL",
+  "graph": {
+    "svc_Hobby_Lobby": {
+      "owned_by": "David_Green"
+    },
+    "David_Green": {
+      "on_team": "Team_25"
+    },
+    "Team_25": {
+      "based_in": "Oklahoma_City"
+    },
+    "svc_Ryder": {
+      "owned_by": "Robert_E_Sanchez"
+    },
+    "Robert_E_Sanchez": {
+      "on_team": "Team_25_1"
+    },
+    "Team_25_1": {
+      "based_in": "Coral_Gables"
+    },
+    "svc_Best_Buy": {
+      "owned_by": "Hubert_Joly"
+    },
+    "Hubert_Joly": {
+      "on_team": "Team_25_2"
+    },
+    "Team_25_2": {
+      "based_in": "Richfield"
+    },
+    "svc_Heineken_International": {
+      "owned_by": "JeanFranois_van_Boxmeer"
+    },
+    "JeanFranois_van_Boxmeer": {
+      "on_team": "Team_25_3"
+    },
+    "Team_25_3": {
+      "based_in": "Amsterdam"
+    }
+  },
+  "notes": "Service svc_Hobby_Lobby paging. If error_budget_burn exceeds 2 percent, declare_incident and page_secondary. Recommended_action declare_incident."
+}
+
+##### ID CX3_PLAIN_6 #####
+USE HR
+PATH_QUERY
+START Sergio_Ermotti
+R1 in_dept
+R2 at_site
+R3 in_city
+Execute 3-hop; return final tail.
+
+CONTEXT:
+TABLE hop1
+| src | in_dept |
+| --- | --- |
+| Sergio_Ermotti | Dept_30_0 |
+| Pedro_Azagra_Blzquez | Dept_30_1 |
+| Achim_Wei | Dept_30_2 |
+| Tom_Buhrow | Dept_30_0 |
+
+TABLE hop2
+| mid | at_site |
+| --- | --- |
+| Dept_30_0 | Site_30_0 |
+| Dept_30_1 | Site_30_1 |
+| Dept_30_2 | Site_30_2 |
+| Dept_30_0 | Site_30_0 |
+
+TABLE hop3
+| tail | in_city |
+| --- | --- |
+| Site_30_0 | Zurich |
+| Site_30_1 | Bilbao |
+| Site_30_2 | Montabaur |
+| Site_30_0 | Zurich |
+
+JSON
+{
+  "use_case": "HR",
+  "graph": {
+    "Sergio_Ermotti": {
+      "in_dept": "Dept_30_0"
+    },
+    "Dept_30_0": {
+      "at_site": "Site_30_0"
+    },
+    "Site_30_0": {
+      "in_city": "Zurich"
+    },
+    "Pedro_Azagra_Blzquez": {
+      "in_dept": "Dept_30_1"
+    },
+    "Dept_30_1": {
+      "at_site": "Site_30_1"
+    },
+    "Site_30_1": {
+      "in_city": "Bilbao"
+    },
+    "Achim_Wei": {
+      "in_dept": "Dept_30_2"
+    },
+    "Dept_30_2": {
+      "at_site": "Site_30_2"
+    },
+    "Site_30_2": {
+      "in_city": "Montabaur"
+    },
+    "Tom_Buhrow": {
+      "in_dept": "Dept_30_0"
+    }
+  },
+  "notes": "Sergio_Ermotti access review: if badge_fail occurs twice, freeze_badge and page_site_security. Do not email the password. Recommended_action freeze_badge."
+}
+
+##### ID CX3_PLAIN_7 #####
+USE TICKET
+PATH_QUERY
+START TCK_35
+R1 opened_by
+R2 billed_to
+R3 in_region
+Execute 3-hop; return final tail.
+
+CONTEXT:
+TABLE hop1
+| src | opened_by |
+| --- | --- |
+| TCK_35 | Luigi_Ferraris |
+| TCK_35_1 | Stacey_Snider |
+| TCK_35_2 | Keith_Creel |
+| TCK_35_3 | Richard_Gordon_Handover |
+
+TABLE hop2
+| mid | billed_to |
+| --- | --- |
+| Luigi_Ferraris | Acct_35 |
+| Stacey_Snider | Acct_35_1 |
+| Keith_Creel | Acct_35_2 |
+| Richard_Gordon_Handover | Acct_35_3 |
+
+TABLE hop3
+| tail | in_region |
+| --- | --- |
+| Acct_35 | Rome |
+| Acct_35_1 | Fox_Plaza |
+| Acct_35_2 | Calgary |
+| Acct_35_3 | Swindon |
+
+JSON
+{
+  "use_case": "TICKET",
+  "graph": {
+    "TCK_35": {
+      "opened_by": "Luigi_Ferraris"
+    },
+    "Luigi_Ferraris": {
+      "billed_to": "Acct_35"
+    },
+    "Acct_35": {
+      "in_region": "Rome"
+    },
+    "TCK_35_1": {
+      "opened_by": "Stacey_Snider"
+    },
+    "Stacey_Snider": {
+      "billed_to": "Acct_35_1"
+    },
+    "Acct_35_1": {
+      "in_region": "Fox_Plaza"
+    },
+    "TCK_35_2": {
+      "opened_by": "Keith_Creel"
+    },
+    "Keith_Creel": {
+      "billed_to": "Acct_35_2"
+    },
+    "Acct_35_2": {
+      "in_region": "Calgary"
+    },
+    "TCK_35_3": {
+      "opened_by": "Richard_Gordon_Handover"
+    },
+    "Richard_Gordon_Handover": {
+      "billed_to": "Acct_35_3"
+    },
+    "Acct_35_3": {
+      "in_region": "Swindon"
+    }
+  },
+  "notes": "Ticket TCK_35: customer reports billing_outage. If severity is sev1, page_oncall and open_war_room. Recommended_action page_oncall."
+}

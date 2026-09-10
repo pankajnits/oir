@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_188 #####
+QUESTION:
+What nationality is the director of film Yeh Gulistan Hamara?
+
+CONTEXT:
+Atma Ram | country of citizenship | CF_TAIL_188_Afghanistan
+Beatrix (Beatrice) of Berg | spouse | Rupert I, Elector Palatine
+Rupert I, Elector Palatine | place of death | Neustadt an der Weinstraße
+Gracia Querejeta | father | Elías Querejeta
+Yeh Gulistan Hamara | director | Atma Ram
+decoy_mid_188 | country of citizenship | Afghanistan
+Yeh Gulistan Hamara | decoy_link_188 | decoy_mid_188
+Robert Rylands' Last Journey | director | Gracia Querejeta

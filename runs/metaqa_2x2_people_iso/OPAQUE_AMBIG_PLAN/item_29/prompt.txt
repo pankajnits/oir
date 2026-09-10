@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_29]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_29 #####
+QUESTION:
+Who directed a movie that Gene Tierney starred in?
+
+PATH_QUERY
+START Gene Tierney
+R1 Eff566c5d68c8
+R2 E0e6db7f9c6a8
+Execute path; return final tail only.
+
+CONTEXT:
+Gene Tierney | Eff566c5d68c8 | A Bell for Adano
+A Bell for Adano | E0e6db7f9c6a8 | Henry King
+A Bell for Adano | E9efbb7aeebe8 | John Hersey

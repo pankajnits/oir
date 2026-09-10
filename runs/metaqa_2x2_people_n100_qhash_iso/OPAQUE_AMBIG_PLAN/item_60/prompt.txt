@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_60]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_60 #####
+QUESTION:
+Who Ec965b4ced419 a E3ab28d26ffbc E51c2bbd7843b [Drew Barrymore] E93cb3f8acff8 E3f2f37f14b10?
+
+PATH_QUERY
+START Drew Barrymore
+R1 Eaa87e2dce518
+R2 E1afc6cc0f503
+Execute path; return final tail only.
+
+CONTEXT:
+Drew Barrymore | Eaa87e2dce518 | Boys on the Side
+Boys on the Side | E1afc6cc0f503 | Herbert Ross
+Boys on the Side | Ef077d237c8cb | Don Roos

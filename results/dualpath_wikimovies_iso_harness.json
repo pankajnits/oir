@@ -1,0 +1,930 @@
+{
+  "n": 32,
+  "seed": 20260821,
+  "protocol": "isolation",
+  "source": "data/metaqa/oir_2hop_people_n32.json",
+  "source_public": "WikiMovies / MetaQA movie KB (director vs writer, same freeze as 2x2)",
+  "keys": "per-item HMAC on entities and relations; demos share the item key",
+  "start_in_question": true,
+  "arms": {
+    "MATCHED": {
+      "ids": [
+        "DPWM_MATCHED_0",
+        "DPWM_MATCHED_1",
+        "DPWM_MATCHED_2",
+        "DPWM_MATCHED_3",
+        "DPWM_MATCHED_4",
+        "DPWM_MATCHED_5",
+        "DPWM_MATCHED_6",
+        "DPWM_MATCHED_7",
+        "DPWM_MATCHED_8",
+        "DPWM_MATCHED_9",
+        "DPWM_MATCHED_10",
+        "DPWM_MATCHED_11",
+        "DPWM_MATCHED_12",
+        "DPWM_MATCHED_13",
+        "DPWM_MATCHED_14",
+        "DPWM_MATCHED_15",
+        "DPWM_MATCHED_16",
+        "DPWM_MATCHED_17",
+        "DPWM_MATCHED_18",
+        "DPWM_MATCHED_19",
+        "DPWM_MATCHED_20",
+        "DPWM_MATCHED_21",
+        "DPWM_MATCHED_22",
+        "DPWM_MATCHED_23",
+        "DPWM_MATCHED_24",
+        "DPWM_MATCHED_25",
+        "DPWM_MATCHED_26",
+        "DPWM_MATCHED_27",
+        "DPWM_MATCHED_28",
+        "DPWM_MATCHED_29",
+        "DPWM_MATCHED_30",
+        "DPWM_MATCHED_31"
+      ],
+      "item_paths": [
+        "runs/dualpath_wikimovies_iso/MATCHED/item_0/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_1/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_2/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_3/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_4/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_5/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_6/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_7/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_8/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_9/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_10/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_11/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_12/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_13/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_14/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_15/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_16/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_17/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_18/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_19/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_20/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_21/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_22/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_23/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_24/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_25/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_26/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_27/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_28/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_29/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_30/prompt.txt",
+        "runs/dualpath_wikimovies_iso/MATCHED/item_31/prompt.txt"
+      ],
+      "sealed_answer": true
+    },
+    "NOVEL": {
+      "ids": [
+        "DPWM_NOVEL_0",
+        "DPWM_NOVEL_1",
+        "DPWM_NOVEL_2",
+        "DPWM_NOVEL_3",
+        "DPWM_NOVEL_4",
+        "DPWM_NOVEL_5",
+        "DPWM_NOVEL_6",
+        "DPWM_NOVEL_7",
+        "DPWM_NOVEL_8",
+        "DPWM_NOVEL_9",
+        "DPWM_NOVEL_10",
+        "DPWM_NOVEL_11",
+        "DPWM_NOVEL_12",
+        "DPWM_NOVEL_13",
+        "DPWM_NOVEL_14",
+        "DPWM_NOVEL_15",
+        "DPWM_NOVEL_16",
+        "DPWM_NOVEL_17",
+        "DPWM_NOVEL_18",
+        "DPWM_NOVEL_19",
+        "DPWM_NOVEL_20",
+        "DPWM_NOVEL_21",
+        "DPWM_NOVEL_22",
+        "DPWM_NOVEL_23",
+        "DPWM_NOVEL_24",
+        "DPWM_NOVEL_25",
+        "DPWM_NOVEL_26",
+        "DPWM_NOVEL_27",
+        "DPWM_NOVEL_28",
+        "DPWM_NOVEL_29",
+        "DPWM_NOVEL_30",
+        "DPWM_NOVEL_31"
+      ],
+      "item_paths": [
+        "runs/dualpath_wikimovies_iso/NOVEL/item_0/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_1/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_2/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_3/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_4/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_5/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_6/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_7/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_8/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_9/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_10/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_11/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_12/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_13/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_14/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_15/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_16/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_17/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_18/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_19/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_20/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_21/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_22/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_23/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_24/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_25/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_26/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_27/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_28/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_29/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_30/prompt.txt",
+        "runs/dualpath_wikimovies_iso/NOVEL/item_31/prompt.txt"
+      ],
+      "sealed_answer": true
+    },
+    "PLAN": {
+      "ids": [
+        "DPWM_PLAN_0",
+        "DPWM_PLAN_1",
+        "DPWM_PLAN_2",
+        "DPWM_PLAN_3",
+        "DPWM_PLAN_4",
+        "DPWM_PLAN_5",
+        "DPWM_PLAN_6",
+        "DPWM_PLAN_7",
+        "DPWM_PLAN_8",
+        "DPWM_PLAN_9",
+        "DPWM_PLAN_10",
+        "DPWM_PLAN_11",
+        "DPWM_PLAN_12",
+        "DPWM_PLAN_13",
+        "DPWM_PLAN_14",
+        "DPWM_PLAN_15",
+        "DPWM_PLAN_16",
+        "DPWM_PLAN_17",
+        "DPWM_PLAN_18",
+        "DPWM_PLAN_19",
+        "DPWM_PLAN_20",
+        "DPWM_PLAN_21",
+        "DPWM_PLAN_22",
+        "DPWM_PLAN_23",
+        "DPWM_PLAN_24",
+        "DPWM_PLAN_25",
+        "DPWM_PLAN_26",
+        "DPWM_PLAN_27",
+        "DPWM_PLAN_28",
+        "DPWM_PLAN_29",
+        "DPWM_PLAN_30",
+        "DPWM_PLAN_31"
+      ],
+      "item_paths": [
+        "runs/dualpath_wikimovies_iso/PLAN/item_0/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_1/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_2/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_3/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_4/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_5/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_6/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_7/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_8/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_9/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_10/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_11/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_12/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_13/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_14/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_15/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_16/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_17/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_18/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_19/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_20/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_21/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_22/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_23/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_24/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_25/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_26/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_27/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_28/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_29/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_30/prompt.txt",
+        "runs/dualpath_wikimovies_iso/PLAN/item_31/prompt.txt"
+      ],
+      "sealed_answer": true
+    }
+  },
+  "cases": [
+    {
+      "i": 0,
+      "actor": "Robert Redford",
+      "movie": "A Walk in the Woods",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_0",
+        "NOVEL": "DPWM_NOVEL_0",
+        "PLAN": "DPWM_PLAN_0"
+      },
+      "gold": "Efa64f24da138",
+      "decoy_hq": "Ecf6822563038",
+      "golds": {
+        "MATCHED": "Efa64f24da138",
+        "NOVEL": "Efa64f24da138",
+        "PLAN": "Efa64f24da138"
+      },
+      "decoys": {
+        "MATCHED": "Ecf6822563038",
+        "NOVEL": "Ecf6822563038",
+        "PLAN": "Ecf6822563038"
+      }
+    },
+    {
+      "i": 1,
+      "actor": "Robert Downey Jr.",
+      "movie": "Air America",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_1",
+        "NOVEL": "DPWM_NOVEL_1",
+        "PLAN": "DPWM_PLAN_1"
+      },
+      "gold": "E70a3ead50803",
+      "decoy_hq": "E575410416825",
+      "golds": {
+        "MATCHED": "E70a3ead50803",
+        "NOVEL": "E70a3ead50803",
+        "PLAN": "E70a3ead50803"
+      },
+      "decoys": {
+        "MATCHED": "E575410416825",
+        "NOVEL": "E575410416825",
+        "PLAN": "E575410416825"
+      }
+    },
+    {
+      "i": 2,
+      "actor": "Adrien Brody",
+      "movie": "Wrecked",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_2",
+        "NOVEL": "DPWM_NOVEL_2",
+        "PLAN": "DPWM_PLAN_2"
+      },
+      "gold": "Efb6eaabfc775",
+      "decoy_hq": "E36c1dac49e36",
+      "golds": {
+        "MATCHED": "Efb6eaabfc775",
+        "NOVEL": "Efb6eaabfc775",
+        "PLAN": "Efb6eaabfc775"
+      },
+      "decoys": {
+        "MATCHED": "E36c1dac49e36",
+        "NOVEL": "E36c1dac49e36",
+        "PLAN": "E36c1dac49e36"
+      }
+    },
+    {
+      "i": 3,
+      "actor": "Matt Dillon",
+      "movie": "Golden Gate",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_3",
+        "NOVEL": "DPWM_NOVEL_3",
+        "PLAN": "DPWM_PLAN_3"
+      },
+      "gold": "Ee87028f6d48f",
+      "decoy_hq": "E550c8635c966",
+      "golds": {
+        "MATCHED": "Ee87028f6d48f",
+        "NOVEL": "Ee87028f6d48f",
+        "PLAN": "Ee87028f6d48f"
+      },
+      "decoys": {
+        "MATCHED": "E550c8635c966",
+        "NOVEL": "E550c8635c966",
+        "PLAN": "E550c8635c966"
+      }
+    },
+    {
+      "i": 4,
+      "actor": "Jennifer Connelly",
+      "movie": "The Hot Spot",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_4",
+        "NOVEL": "DPWM_NOVEL_4",
+        "PLAN": "DPWM_PLAN_4"
+      },
+      "gold": "E8a9774b38647",
+      "decoy_hq": "Ef69634a3b03e",
+      "golds": {
+        "MATCHED": "E8a9774b38647",
+        "NOVEL": "E8a9774b38647",
+        "PLAN": "E8a9774b38647"
+      },
+      "decoys": {
+        "MATCHED": "Ef69634a3b03e",
+        "NOVEL": "Ef69634a3b03e",
+        "PLAN": "Ef69634a3b03e"
+      }
+    },
+    {
+      "i": 5,
+      "actor": "James Mason",
+      "movie": "A Place of One's Own",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_5",
+        "NOVEL": "DPWM_NOVEL_5",
+        "PLAN": "DPWM_PLAN_5"
+      },
+      "gold": "E38ef550871c3",
+      "decoy_hq": "E51204ef95261",
+      "golds": {
+        "MATCHED": "E38ef550871c3",
+        "NOVEL": "E38ef550871c3",
+        "PLAN": "E38ef550871c3"
+      },
+      "decoys": {
+        "MATCHED": "E51204ef95261",
+        "NOVEL": "E51204ef95261",
+        "PLAN": "E51204ef95261"
+      }
+    },
+    {
+      "i": 6,
+      "actor": "Madge Bellamy",
+      "movie": "White Zombie",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_6",
+        "NOVEL": "DPWM_NOVEL_6",
+        "PLAN": "DPWM_PLAN_6"
+      },
+      "gold": "Ebe1b2992761c",
+      "decoy_hq": "E766dc54f95da",
+      "golds": {
+        "MATCHED": "Ebe1b2992761c",
+        "NOVEL": "Ebe1b2992761c",
+        "PLAN": "Ebe1b2992761c"
+      },
+      "decoys": {
+        "MATCHED": "E766dc54f95da",
+        "NOVEL": "E766dc54f95da",
+        "PLAN": "E766dc54f95da"
+      }
+    },
+    {
+      "i": 7,
+      "actor": "Paul Scofield",
+      "movie": "A Man for All Seasons",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_7",
+        "NOVEL": "DPWM_NOVEL_7",
+        "PLAN": "DPWM_PLAN_7"
+      },
+      "gold": "Eed2f41f1e5d0",
+      "decoy_hq": "E7bb4472c4dd5",
+      "golds": {
+        "MATCHED": "Eed2f41f1e5d0",
+        "NOVEL": "Eed2f41f1e5d0",
+        "PLAN": "Eed2f41f1e5d0"
+      },
+      "decoys": {
+        "MATCHED": "E7bb4472c4dd5",
+        "NOVEL": "E7bb4472c4dd5",
+        "PLAN": "E7bb4472c4dd5"
+      }
+    },
+    {
+      "i": 8,
+      "actor": "Gene Tierney",
+      "movie": "Tobacco Road",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_8",
+        "NOVEL": "DPWM_NOVEL_8",
+        "PLAN": "DPWM_PLAN_8"
+      },
+      "gold": "E9a14ef6b2762",
+      "decoy_hq": "E03aeb5e9c58a",
+      "golds": {
+        "MATCHED": "E9a14ef6b2762",
+        "NOVEL": "E9a14ef6b2762",
+        "PLAN": "E9a14ef6b2762"
+      },
+      "decoys": {
+        "MATCHED": "E03aeb5e9c58a",
+        "NOVEL": "E03aeb5e9c58a",
+        "PLAN": "E03aeb5e9c58a"
+      }
+    },
+    {
+      "i": 9,
+      "actor": "Amy Adams",
+      "movie": "Enchanted",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_9",
+        "NOVEL": "DPWM_NOVEL_9",
+        "PLAN": "DPWM_PLAN_9"
+      },
+      "gold": "E2abae1fe8e3f",
+      "decoy_hq": "E9fbab6866fa0",
+      "golds": {
+        "MATCHED": "E2abae1fe8e3f",
+        "NOVEL": "E2abae1fe8e3f",
+        "PLAN": "E2abae1fe8e3f"
+      },
+      "decoys": {
+        "MATCHED": "E9fbab6866fa0",
+        "NOVEL": "E9fbab6866fa0",
+        "PLAN": "E9fbab6866fa0"
+      }
+    },
+    {
+      "i": 10,
+      "actor": "Kim Basinger",
+      "movie": "Fool for Love",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_10",
+        "NOVEL": "DPWM_NOVEL_10",
+        "PLAN": "DPWM_PLAN_10"
+      },
+      "gold": "E72f9a817102a",
+      "decoy_hq": "E8be03dad5a03",
+      "golds": {
+        "MATCHED": "E72f9a817102a",
+        "NOVEL": "E72f9a817102a",
+        "PLAN": "E72f9a817102a"
+      },
+      "decoys": {
+        "MATCHED": "E8be03dad5a03",
+        "NOVEL": "E8be03dad5a03",
+        "PLAN": "E8be03dad5a03"
+      }
+    },
+    {
+      "i": 11,
+      "actor": "Piper Perabo",
+      "movie": "Coyote Ugly",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_11",
+        "NOVEL": "DPWM_NOVEL_11",
+        "PLAN": "DPWM_PLAN_11"
+      },
+      "gold": "E47895bab92f8",
+      "decoy_hq": "E34545f7564f8",
+      "golds": {
+        "MATCHED": "E47895bab92f8",
+        "NOVEL": "E47895bab92f8",
+        "PLAN": "E47895bab92f8"
+      },
+      "decoys": {
+        "MATCHED": "E34545f7564f8",
+        "NOVEL": "E34545f7564f8",
+        "PLAN": "E34545f7564f8"
+      }
+    },
+    {
+      "i": 12,
+      "actor": "Guy Pearce",
+      "movie": "Ravenous",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_12",
+        "NOVEL": "DPWM_NOVEL_12",
+        "PLAN": "DPWM_PLAN_12"
+      },
+      "gold": "Eaa207929a8be",
+      "decoy_hq": "Eada66786fad8",
+      "golds": {
+        "MATCHED": "Eaa207929a8be",
+        "NOVEL": "Eaa207929a8be",
+        "PLAN": "Eaa207929a8be"
+      },
+      "decoys": {
+        "MATCHED": "Eada66786fad8",
+        "NOVEL": "Eada66786fad8",
+        "PLAN": "Eada66786fad8"
+      }
+    },
+    {
+      "i": 13,
+      "actor": "Steve McQueen",
+      "movie": "The Reivers",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_13",
+        "NOVEL": "DPWM_NOVEL_13",
+        "PLAN": "DPWM_PLAN_13"
+      },
+      "gold": "E391508a65e88",
+      "decoy_hq": "E4af86d1fdd25",
+      "golds": {
+        "MATCHED": "E391508a65e88",
+        "NOVEL": "E391508a65e88",
+        "PLAN": "E391508a65e88"
+      },
+      "decoys": {
+        "MATCHED": "E4af86d1fdd25",
+        "NOVEL": "E4af86d1fdd25",
+        "PLAN": "E4af86d1fdd25"
+      }
+    },
+    {
+      "i": 14,
+      "actor": "Marlon Brando",
+      "movie": "The Men",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_14",
+        "NOVEL": "DPWM_NOVEL_14",
+        "PLAN": "DPWM_PLAN_14"
+      },
+      "gold": "E78e0a49f2f18",
+      "decoy_hq": "Eea87b6b8a903",
+      "golds": {
+        "MATCHED": "E78e0a49f2f18",
+        "NOVEL": "E78e0a49f2f18",
+        "PLAN": "E78e0a49f2f18"
+      },
+      "decoys": {
+        "MATCHED": "Eea87b6b8a903",
+        "NOVEL": "Eea87b6b8a903",
+        "PLAN": "Eea87b6b8a903"
+      }
+    },
+    {
+      "i": 15,
+      "actor": "Ray Milland",
+      "movie": "The Uninvited",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_15",
+        "NOVEL": "DPWM_NOVEL_15",
+        "PLAN": "DPWM_PLAN_15"
+      },
+      "gold": "E1aa566741b3a",
+      "decoy_hq": "E3e622647f7ea",
+      "golds": {
+        "MATCHED": "E1aa566741b3a",
+        "NOVEL": "E1aa566741b3a",
+        "PLAN": "E1aa566741b3a"
+      },
+      "decoys": {
+        "MATCHED": "E3e622647f7ea",
+        "NOVEL": "E3e622647f7ea",
+        "PLAN": "E3e622647f7ea"
+      }
+    },
+    {
+      "i": 16,
+      "actor": "Joan Blondell",
+      "movie": "Big City Blues",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_16",
+        "NOVEL": "DPWM_NOVEL_16",
+        "PLAN": "DPWM_PLAN_16"
+      },
+      "gold": "E2042d9b9e506",
+      "decoy_hq": "Ee84e87f9252b",
+      "golds": {
+        "MATCHED": "E2042d9b9e506",
+        "NOVEL": "E2042d9b9e506",
+        "PLAN": "E2042d9b9e506"
+      },
+      "decoys": {
+        "MATCHED": "Ee84e87f9252b",
+        "NOVEL": "Ee84e87f9252b",
+        "PLAN": "Ee84e87f9252b"
+      }
+    },
+    {
+      "i": 17,
+      "actor": "John Goodman",
+      "movie": "Matinee",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_17",
+        "NOVEL": "DPWM_NOVEL_17",
+        "PLAN": "DPWM_PLAN_17"
+      },
+      "gold": "E66c3cb2a88fa",
+      "decoy_hq": "E211c0fa351bd",
+      "golds": {
+        "MATCHED": "E66c3cb2a88fa",
+        "NOVEL": "E66c3cb2a88fa",
+        "PLAN": "E66c3cb2a88fa"
+      },
+      "decoys": {
+        "MATCHED": "E211c0fa351bd",
+        "NOVEL": "E211c0fa351bd",
+        "PLAN": "E211c0fa351bd"
+      }
+    },
+    {
+      "i": 18,
+      "actor": "Burt Lancaster",
+      "movie": "Ulzana's Raid",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_18",
+        "NOVEL": "DPWM_NOVEL_18",
+        "PLAN": "DPWM_PLAN_18"
+      },
+      "gold": "E8e8755de39f1",
+      "decoy_hq": "E130f2d04bc1e",
+      "golds": {
+        "MATCHED": "E8e8755de39f1",
+        "NOVEL": "E8e8755de39f1",
+        "PLAN": "E8e8755de39f1"
+      },
+      "decoys": {
+        "MATCHED": "E130f2d04bc1e",
+        "NOVEL": "E130f2d04bc1e",
+        "PLAN": "E130f2d04bc1e"
+      }
+    },
+    {
+      "i": 19,
+      "actor": "James Stewart",
+      "movie": "No Highway in the Sky",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_19",
+        "NOVEL": "DPWM_NOVEL_19",
+        "PLAN": "DPWM_PLAN_19"
+      },
+      "gold": "Ec874ffdc6f8d",
+      "decoy_hq": "E4cc3aeed433c",
+      "golds": {
+        "MATCHED": "Ec874ffdc6f8d",
+        "NOVEL": "Ec874ffdc6f8d",
+        "PLAN": "Ec874ffdc6f8d"
+      },
+      "decoys": {
+        "MATCHED": "E4cc3aeed433c",
+        "NOVEL": "E4cc3aeed433c",
+        "PLAN": "E4cc3aeed433c"
+      }
+    },
+    {
+      "i": 20,
+      "actor": "Boris Karloff",
+      "movie": "Isle of the Dead",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_20",
+        "NOVEL": "DPWM_NOVEL_20",
+        "PLAN": "DPWM_PLAN_20"
+      },
+      "gold": "Ee42ac8a2600a",
+      "decoy_hq": "E4123d06d1ff9",
+      "golds": {
+        "MATCHED": "Ee42ac8a2600a",
+        "NOVEL": "Ee42ac8a2600a",
+        "PLAN": "Ee42ac8a2600a"
+      },
+      "decoys": {
+        "MATCHED": "E4123d06d1ff9",
+        "NOVEL": "E4123d06d1ff9",
+        "PLAN": "E4123d06d1ff9"
+      }
+    },
+    {
+      "i": 21,
+      "actor": "Peter O'Toole",
+      "movie": "Venus",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_21",
+        "NOVEL": "DPWM_NOVEL_21",
+        "PLAN": "DPWM_PLAN_21"
+      },
+      "gold": "Eae8c0942932e",
+      "decoy_hq": "E25cfd99c4d7b",
+      "golds": {
+        "MATCHED": "Eae8c0942932e",
+        "NOVEL": "Eae8c0942932e",
+        "PLAN": "Eae8c0942932e"
+      },
+      "decoys": {
+        "MATCHED": "E25cfd99c4d7b",
+        "NOVEL": "E25cfd99c4d7b",
+        "PLAN": "E25cfd99c4d7b"
+      }
+    },
+    {
+      "i": 22,
+      "actor": "Matt Damon",
+      "movie": "The Good Shepherd",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_22",
+        "NOVEL": "DPWM_NOVEL_22",
+        "PLAN": "DPWM_PLAN_22"
+      },
+      "gold": "Eecbf870e3a4c",
+      "decoy_hq": "Ec339009a4549",
+      "golds": {
+        "MATCHED": "Eecbf870e3a4c",
+        "NOVEL": "Eecbf870e3a4c",
+        "PLAN": "Eecbf870e3a4c"
+      },
+      "decoys": {
+        "MATCHED": "Ec339009a4549",
+        "NOVEL": "Ec339009a4549",
+        "PLAN": "Ec339009a4549"
+      }
+    },
+    {
+      "i": 23,
+      "actor": "Katie Holmes",
+      "movie": "Go",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_23",
+        "NOVEL": "DPWM_NOVEL_23",
+        "PLAN": "DPWM_PLAN_23"
+      },
+      "gold": "Edd6a7c4b774f",
+      "decoy_hq": "E085073155e7a",
+      "golds": {
+        "MATCHED": "Edd6a7c4b774f",
+        "NOVEL": "Edd6a7c4b774f",
+        "PLAN": "Edd6a7c4b774f"
+      },
+      "decoys": {
+        "MATCHED": "E085073155e7a",
+        "NOVEL": "E085073155e7a",
+        "PLAN": "E085073155e7a"
+      }
+    },
+    {
+      "i": 24,
+      "actor": "John Mills",
+      "movie": "Ice Cold in Alex",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_24",
+        "NOVEL": "DPWM_NOVEL_24",
+        "PLAN": "DPWM_PLAN_24"
+      },
+      "gold": "Ed56bf79d8c87",
+      "decoy_hq": "E8f8e163571cd",
+      "golds": {
+        "MATCHED": "Ed56bf79d8c87",
+        "NOVEL": "Ed56bf79d8c87",
+        "PLAN": "Ed56bf79d8c87"
+      },
+      "decoys": {
+        "MATCHED": "E8f8e163571cd",
+        "NOVEL": "E8f8e163571cd",
+        "PLAN": "E8f8e163571cd"
+      }
+    },
+    {
+      "i": 25,
+      "actor": "John Hurt",
+      "movie": "The Osterman Weekend",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_25",
+        "NOVEL": "DPWM_NOVEL_25",
+        "PLAN": "DPWM_PLAN_25"
+      },
+      "gold": "E981094ca5286",
+      "decoy_hq": "Efb93850bc5e7",
+      "golds": {
+        "MATCHED": "E981094ca5286",
+        "NOVEL": "E981094ca5286",
+        "PLAN": "E981094ca5286"
+      },
+      "decoys": {
+        "MATCHED": "Efb93850bc5e7",
+        "NOVEL": "Efb93850bc5e7",
+        "PLAN": "Efb93850bc5e7"
+      }
+    },
+    {
+      "i": 26,
+      "actor": "Jack Hawkins",
+      "movie": "Land of the Pharaohs",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_26",
+        "NOVEL": "DPWM_NOVEL_26",
+        "PLAN": "DPWM_PLAN_26"
+      },
+      "gold": "E612f88ec09d3",
+      "decoy_hq": "E420688485d33",
+      "golds": {
+        "MATCHED": "E612f88ec09d3",
+        "NOVEL": "E612f88ec09d3",
+        "PLAN": "E612f88ec09d3"
+      },
+      "decoys": {
+        "MATCHED": "E420688485d33",
+        "NOVEL": "E420688485d33",
+        "PLAN": "E420688485d33"
+      }
+    },
+    {
+      "i": 27,
+      "actor": "Claude Legault",
+      "movie": "7 Days",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_27",
+        "NOVEL": "DPWM_NOVEL_27",
+        "PLAN": "DPWM_PLAN_27"
+      },
+      "gold": "E6e289b8f0807",
+      "decoy_hq": "E81f371290262",
+      "golds": {
+        "MATCHED": "E6e289b8f0807",
+        "NOVEL": "E6e289b8f0807",
+        "PLAN": "E6e289b8f0807"
+      },
+      "decoys": {
+        "MATCHED": "E81f371290262",
+        "NOVEL": "E81f371290262",
+        "PLAN": "E81f371290262"
+      }
+    },
+    {
+      "i": 28,
+      "actor": "Dennis Quaid",
+      "movie": "The Express",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_28",
+        "NOVEL": "DPWM_NOVEL_28",
+        "PLAN": "DPWM_PLAN_28"
+      },
+      "gold": "Ea84d04febe0a",
+      "decoy_hq": "Ec58b6a4eea29",
+      "golds": {
+        "MATCHED": "Ea84d04febe0a",
+        "NOVEL": "Ea84d04febe0a",
+        "PLAN": "Ea84d04febe0a"
+      },
+      "decoys": {
+        "MATCHED": "Ec58b6a4eea29",
+        "NOVEL": "Ec58b6a4eea29",
+        "PLAN": "Ec58b6a4eea29"
+      }
+    },
+    {
+      "i": 29,
+      "actor": "Gene Tierney",
+      "movie": "A Bell for Adano",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_29",
+        "NOVEL": "DPWM_NOVEL_29",
+        "PLAN": "DPWM_PLAN_29"
+      },
+      "gold": "E2fb196c89511",
+      "decoy_hq": "E07c8bd83462b",
+      "golds": {
+        "MATCHED": "E2fb196c89511",
+        "NOVEL": "E2fb196c89511",
+        "PLAN": "E2fb196c89511"
+      },
+      "decoys": {
+        "MATCHED": "E07c8bd83462b",
+        "NOVEL": "E07c8bd83462b",
+        "PLAN": "E07c8bd83462b"
+      }
+    },
+    {
+      "i": 30,
+      "actor": "Jeff Bridges",
+      "movie": "Arlington Road",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_30",
+        "NOVEL": "DPWM_NOVEL_30",
+        "PLAN": "DPWM_PLAN_30"
+      },
+      "gold": "E5536f1eeeb88",
+      "decoy_hq": "Ead66d9b24d8c",
+      "golds": {
+        "MATCHED": "E5536f1eeeb88",
+        "NOVEL": "E5536f1eeeb88",
+        "PLAN": "E5536f1eeeb88"
+      },
+      "decoys": {
+        "MATCHED": "Ead66d9b24d8c",
+        "NOVEL": "Ead66d9b24d8c",
+        "PLAN": "Ead66d9b24d8c"
+      }
+    },
+    {
+      "i": 31,
+      "actor": "Josh Hutcherson",
+      "movie": "Little Manhattan",
+      "ids": {
+        "MATCHED": "DPWM_MATCHED_31",
+        "NOVEL": "DPWM_NOVEL_31",
+        "PLAN": "DPWM_PLAN_31"
+      },
+      "gold": "E01e95e3b2ae1",
+      "decoy_hq": "E9d6df932577b",
+      "golds": {
+        "MATCHED": "E01e95e3b2ae1",
+        "NOVEL": "E01e95e3b2ae1",
+        "PLAN": "E01e95e3b2ae1"
+      },
+      "decoys": {
+        "MATCHED": "E9d6df932577b",
+        "NOVEL": "E9d6df932577b",
+        "PLAN": "E9d6df932577b"
+      }
+    }
+  ]
+}

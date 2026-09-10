@@ -1,0 +1,1615 @@
+{
+  "source": "Spider train+dev JOIN, 1-cell sqlite gold, cells<=250",
+  "license": "CC-BY-SA-4.0 (Spider)",
+  "seed": 20260813,
+  "n": 200,
+  "max_cells": 250,
+  "skipped": {
+    "cells": 1028,
+    "exec": 446,
+    "dup": 0,
+    "nodb": 0
+  },
+  "items": [
+    {
+      "db_id": "small_bank_1",
+      "question": "Find the checking balance of the accounts whose savings balance is higher than the average savings balance.",
+      "query": "SELECT T2.balance FROM accounts AS T1 JOIN checking AS T2 ON T1.custid  =  T2.custid WHERE T1.name IN (SELECT T1.name FROM accounts AS T1 JOIN savings AS T2 ON T1.custid  =  T2.custid WHERE T2.balance  >  (SELECT avg(balance) FROM savings))",
+      "gold": "2000.0",
+      "cells": 40,
+      "split": "train"
+    },
+    {
+      "db_id": "department_management",
+      "question": "List the states where both the secretary of 'Treasury' department and the secretary of 'Homeland Security' were born.",
+      "query": "SELECT T3.born_state FROM department AS T1 JOIN management AS T2 ON T1.department_id  =  T2.department_id JOIN head AS T3 ON T2.head_id  =  T3.head_id WHERE T1.name  =  'Treasury' INTERSECT SELECT T3.born_state FROM department AS T1 JOIN management AS T2 ON T1.department_id  =  T2.department_id JOIN head AS T3 ON T2.head_id  =  T3.head_id WHERE T1.name  =  'Homeland Security'",
+      "gold": "California",
+      "cells": 145,
+      "split": "train"
+    },
+    {
+      "db_id": "music_4",
+      "question": "What are the famous titles of artists who have not only had volumes that spent more than 2 weeks on top but also volumes that spent less than 2 weeks on top?",
+      "query": "SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T2.Weeks_on_Top  >  2 INTERSECT SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T2.Weeks_on_Top  <  2",
+      "gold": "Bergen 1996",
+      "cells": 149,
+      "split": "train"
+    },
+    {
+      "db_id": "network_2",
+      "question": "What are the different names of friends who are younger than the average age for a friend?",
+      "query": "SELECT DISTINCT T2.name FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.friend WHERE T1.age  <  (SELECT avg(age) FROM person)",
+      "gold": "Zach",
+      "cells": 32,
+      "split": "train"
+    },
+    {
+      "db_id": "customer_complaints",
+      "question": "Find the emails of customers who has filed a complaints of the product with the most complaints.",
+      "query": "SELECT t1.email_address FROM customers AS t1 JOIN complaints AS t2 ON t1.customer_id  =  t2.customer_id GROUP BY t1.customer_id ORDER BY count(*) LIMIT 1",
+      "gold": "hsteuber@example.org",
+      "cells": 246,
+      "split": "train"
+    },
+    {
+      "db_id": "gymnast",
+      "question": "What is the most common hometown of gymnasts?",
+      "query": "SELECT T2.Hometown FROM gymnast AS T1 JOIN people AS T2 ON T1.Gymnast_ID  =  T2.People_ID GROUP BY T2.Hometown ORDER BY COUNT(*) DESC LIMIT 1",
+      "gold": "Santo Domingo",
+      "cells": 106,
+      "split": "train"
+    },
+    {
+      "db_id": "music_2",
+      "question": "What are the types of vocals used in the song \"Demon Kitty Rag\"?",
+      "query": "SELECT count(*) FROM vocals AS T1 JOIN songs AS T2 ON T1.songid  =  T2.songid WHERE title  =  \"Demon Kitty Rag\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "department_management",
+      "question": "What are the distinct creation years of the departments managed by a secretary born in state 'Alabama'?",
+      "query": "SELECT DISTINCT T1.creation FROM department AS T1 JOIN management AS T2 ON T1.department_id  =  T2.department_id JOIN head AS T3 ON T2.head_id  =  T3.head_id WHERE T3.born_state  =  'Alabama'",
+      "gold": "1903",
+      "cells": 145,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Find the number of papers published by authors from the institution \"Tokohu University\".",
+      "query": "SELECT count(DISTINCT t1.title) FROM papers AS t1 JOIN authorship AS t2 ON t1.paperid  =  t2.paperid JOIN inst AS t3 ON t2.instid  =  t3.instid WHERE t3.name  =  \"Tokohu University\"",
+      "gold": "0",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "museum_visit",
+      "question": "What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?",
+      "query": "SELECT t1.name FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id JOIN museum AS t3 ON t3.Museum_ID  =  t2.Museum_ID WHERE t3.open_year  <  2009 INTERSECT SELECT t1.name FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id JOIN museum AS t3 ON t3.Museum_ID  =  t2.Museum_ID WHERE t3.open_year  >  2011",
+      "gold": "Fernando Gago",
+      "cells": 80,
+      "split": "dev"
+    },
+    {
+      "db_id": "program_share",
+      "question": "Which program is broadcast most frequently? Give me the program name.",
+      "query": "SELECT t1.name FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id GROUP BY t2.program_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "Toonmax",
+      "cells": 144,
+      "split": "train"
+    },
+    {
+      "db_id": "climbing",
+      "question": "Show the height of the mountain climbed by the climber with the maximum points.",
+      "query": "SELECT T2.Height FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID ORDER BY T1.Points DESC LIMIT 1",
+      "gold": "5895.0",
+      "cells": 102,
+      "split": "train"
+    },
+    {
+      "db_id": "city_record",
+      "question": "Find the city that hosted the most events.",
+      "query": "SELECT T1.city FROM city AS T1 JOIN hosting_city AS T2 ON T1.city_id  =  T2.host_city GROUP BY T2.host_city ORDER BY count(*) DESC LIMIT 1",
+      "gold": "Nanjing ( Jiangsu )",
+      "cells": 228,
+      "split": "train"
+    },
+    {
+      "db_id": "gymnast",
+      "question": "Give the hometowns from which two or more gymnasts are from.",
+      "query": "SELECT T2.Hometown FROM gymnast AS T1 JOIN people AS T2 ON T1.Gymnast_ID  =  T2.People_ID GROUP BY T2.Hometown HAVING COUNT(*)  >=  2",
+      "gold": "Santo Domingo",
+      "cells": 106,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Which author has written the most papers? Find his or her last name.",
+      "query": "SELECT t1.lname FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid GROUP BY t1.fname ,  t1.lname ORDER BY count(*) DESC LIMIT 1",
+      "gold": "Hinze",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "match_season",
+      "question": "Count the number of different colleges that players who play for Columbus Crew are from.",
+      "query": "SELECT count(DISTINCT T1.College) FROM match_season AS T1 JOIN team AS T2 ON T1.Team  =  T2.Team_id WHERE T2.Name  =  \"Columbus Crew\"",
+      "gold": "1",
+      "cells": 242,
+      "split": "train"
+    },
+    {
+      "db_id": "employee_hire_evaluation",
+      "question": "What is the name of the shop that is hiring the largest number of employees?",
+      "query": "SELECT t2.name FROM hiring AS t1 JOIN shop AS t2 ON t1.shop_id  =  t2.shop_id GROUP BY t1.shop_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "FC Haka",
+      "cells": 140,
+      "split": "dev"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "How many papers have \"Atsushi Ohori\" published?",
+      "query": "SELECT count(*) FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid WHERE  t1.fname  =  \"Atsushi\" AND t1.lname  =  \"Ohori\"",
+      "gold": "1",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "Find the name of bank branch that provided the greatest total amount of loans to customers with credit score is less than 100.",
+      "query": "SELECT T2.bname FROM loan AS T1 JOIN bank AS T2 ON T1.branch_id  =  T2.branch_id JOIN customer AS T3 ON T1.cust_id  =  T3.cust_id WHERE T3.credit_score  <  100 GROUP BY T2.bname ORDER BY sum(T1.amount) DESC LIMIT 1",
+      "gold": "downtown",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "music_1",
+      "question": "What is the average rating of songs produced by female artists?",
+      "query": "SELECT avg(T2.rating) FROM artist AS T1 JOIN song AS T2 ON T1.artist_name  =  T2.artist_name WHERE T1.gender  =  \"Female\"",
+      "gold": "7.333333333333333",
+      "cells": 126,
+      "split": "train"
+    },
+    {
+      "db_id": "train_station",
+      "question": "What are the names of the stations which serve both \"Ananthapuri Express\" and \"Guruvayur Express\" trains?",
+      "query": "SELECT T2.name FROM train_station AS T1 JOIN station AS T2 ON T1.station_id  =  T2.station_id JOIN train AS T3 ON T3.train_id  =  T1.train_id WHERE T3.Name  =  \"Ananthapuri Express\" INTERSECT SELECT T2.name FROM train_station AS T1 JOIN station AS T2 ON T1.station_id  =  T2.station_id JOIN train AS T3 ON T3.train_id  =  T1.train_id WHERE T3.Name  =  \"Guruvayur Express\"",
+      "gold": "London Waterloo",
+      "cells": 162,
+      "split": "train"
+    },
+    {
+      "db_id": "city_record",
+      "question": "In February, which city marks the highest temperature?",
+      "query": "SELECT T1.city FROM city AS T1 JOIN temperature AS T2 ON T1.city_id  =  T2.city_id ORDER BY T2.Feb DESC LIMIT 1",
+      "gold": "Suzhou ( Jiangsu )",
+      "cells": 228,
+      "split": "train"
+    },
+    {
+      "db_id": "scientist_1",
+      "question": "Find the total hours of the projects that scientists named Michael Rogers or Carol Smith are assigned to.",
+      "query": "SELECT sum(T2.hours) FROM assignedto AS T1 JOIN projects AS T2 ON T1.project  =  T2.code JOIN scientists AS T3 ON T1.scientist  =  T3.SSN WHERE T3.name  =  'Michael Rogers' OR T3.name  =  'Carol Smith'",
+      "gold": "6702",
+      "cells": 90,
+      "split": "train"
+    },
+    {
+      "db_id": "shop_membership",
+      "question": "How many total pounds were purchased in the year 2018 at all London branches?",
+      "query": "SELECT sum(total_pounds) FROM purchase AS T1 JOIN branch AS T2 ON T1.branch_id  =  T2.branch_id WHERE T2.city  =  'London' AND T1.year  =  2018",
+      "gold": "3531.59",
+      "cells": 154,
+      "split": "train"
+    },
+    {
+      "db_id": "storm_record",
+      "question": "What are the names of the storms that affected both the regions of Afghanistan and Albania?",
+      "query": "SELECT T3.Name FROM affected_region AS T1 JOIN region AS T2 ON T1.region_id  =  T2.region_id JOIN storm AS T3 ON T1.storm_id  =  T3.storm_id WHERE T2.Region_name  =  'Afghanistan' INTERSECT SELECT T3.Name FROM affected_region AS T1 JOIN region AS T2 ON T1.region_id  =  T2.region_id JOIN storm AS T3 ON T1.storm_id  =  T3.storm_id WHERE T2.Region_name  =  'Albania'",
+      "gold": "One",
+      "cells": 117,
+      "split": "train"
+    },
+    {
+      "db_id": "city_record",
+      "question": "Which city has hosted the most events?",
+      "query": "SELECT T1.city FROM city AS T1 JOIN hosting_city AS T2 ON T1.city_id  =  T2.host_city GROUP BY T2.host_city ORDER BY count(*) DESC LIMIT 1",
+      "gold": "Nanjing ( Jiangsu )",
+      "cells": 228,
+      "split": "train"
+    },
+    {
+      "db_id": "movie_1",
+      "question": "What are the names of all directors whose movies have been reviewed by Sarah Martinez?",
+      "query": "SELECT DISTINCT T2.director FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID JOIN Reviewer AS T3 ON T1.rID  =  T3.rID WHERE T3.name  =  'Sarah Martinez'",
+      "gold": "Victor Fleming",
+      "cells": 104,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Find the titles of papers whose first author is affiliated with an institution in the country \"Japan\" and has last name \"Ohori\"?",
+      "query": "SELECT t3.title FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid JOIN inst AS t4 ON t2.instid  =  t4.instid WHERE t4.country  =  \"Japan\" AND t2.authorder  =  1 AND t1.lname  =  \"Ohori\"",
+      "gold": "Making Standard ML a Practical Database Programming Language",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "What is the average number of hours spent practicing for students who got rejected?",
+      "query": "SELECT avg(T1.HS) FROM player AS T1 JOIN tryout AS T2 ON T1.pID  =  T2.pID WHERE T2.decision  =  'no'",
+      "gold": "925.0",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "small_bank_1",
+      "question": "Find the name of account that has the lowest total checking and saving balance.",
+      "query": "SELECT T1.name FROM accounts AS T1 JOIN checking AS T2 ON T1.custid  =  T2.custid JOIN savings AS T3 ON T1.custid  =  T3.custid ORDER BY T2.balance + T3.balance LIMIT 1",
+      "gold": "Porter",
+      "cells": 40,
+      "split": "train"
+    },
+    {
+      "db_id": "music_2",
+      "question": "Find the number of songs in all the studio albums.",
+      "query": "SELECT count(DISTINCT T3.title) FROM albums AS T1 JOIN tracklists AS T2 ON T1.aid  =  T2.albumid JOIN songs AS T3 ON T2.songid  =  T3.songid WHERE t1.type  =  \"Studio\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "network_1",
+      "question": "Count the number of friends Kyle has.",
+      "query": "SELECT count(*) FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id WHERE T2.name  =  \"Kyle\"",
+      "gold": "1",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "network_2",
+      "question": "Who has a friend that is from new york city?",
+      "query": "SELECT T2.name FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.friend WHERE T1.city  =  'new york city'",
+      "gold": "Zach",
+      "cells": 32,
+      "split": "train"
+    },
+    {
+      "db_id": "device",
+      "question": "Show the name of the shop that have the largest quantity of devices in stock.",
+      "query": "SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY SUM(T1.quantity) DESC LIMIT 1",
+      "gold": "Dinas Device",
+      "cells": 120,
+      "split": "train"
+    },
+    {
+      "db_id": "customer_complaints",
+      "question": "Return the phone number of the customer who filed the complaint that was raised most recently.",
+      "query": "SELECT t1.phone_number FROM customers AS t1 JOIN complaints AS t2 ON t1.customer_id  =  t2.customer_id ORDER BY t2.date_complaint_raised DESC LIMIT 1",
+      "gold": "+38(3)9011433816",
+      "cells": 246,
+      "split": "train"
+    },
+    {
+      "db_id": "music_2",
+      "question": "How many different instruments are used in the song \"Badlands\"?",
+      "query": "SELECT count(DISTINCT instrument) FROM instruments AS T1 JOIN songs AS T2 ON T1.songid  =  T2.songid WHERE title  =  \"Badlands\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "browser_web",
+      "question": "What is the name of the browser that became compatible with the accelerator 'CProxy' after year 1998 ?",
+      "query": "SELECT T1.name FROM browser AS T1 JOIN accelerator_compatible_browser AS T2 ON T1.id  =  T2.browser_id JOIN web_client_accelerator AS T3 ON T2.accelerator_id  =  T3.id WHERE T3.name  =  'CProxy' AND T2.compatible_since_year  >  1998",
+      "gold": "Opera",
+      "cells": 134,
+      "split": "train"
+    },
+    {
+      "db_id": "network_1",
+      "question": "What are the names of high schoolers who have 3 or more friends?",
+      "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id HAVING count(*)  >=  3",
+      "gold": "Andrew",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "customer_complaints",
+      "question": "Find the last name of the staff member who processed the complaint of the cheapest product.",
+      "query": "SELECT t1.last_name FROM staff AS t1 JOIN complaints AS t2 ON t1.staff_id  =  t2.staff_id JOIN products AS t3 ON t2.product_id  =  t3.product_id ORDER BY t3.product_price LIMIT 1",
+      "gold": "Boehm",
+      "cells": 246,
+      "split": "train"
+    },
+    {
+      "db_id": "customer_complaints",
+      "question": "What is the last name of the staff member in charge of the complaint on the product with the lowest price?",
+      "query": "SELECT t1.last_name FROM staff AS t1 JOIN complaints AS t2 ON t1.staff_id  =  t2.staff_id JOIN products AS t3 ON t2.product_id  =  t3.product_id ORDER BY t3.product_price LIMIT 1",
+      "gold": "Boehm",
+      "cells": 246,
+      "split": "train"
+    },
+    {
+      "db_id": "body_builder",
+      "question": "What is the average total score of body builders with height bigger than 200?",
+      "query": "SELECT avg(T1.Total) FROM body_builder AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID WHERE T2.Height  >  200",
+      "gold": "292.5",
+      "cells": 61,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "Find the name of customers who have loans of both Mortgages and Auto.",
+      "query": "SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE loan_type  =  'Mortgages' INTERSECT SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE loan_type  =  'Auto'",
+      "gold": "Mary",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "program_share",
+      "question": "what are the names of the channels that broadcast in both morning and night?",
+      "query": "SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Morning' INTERSECT SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Night'",
+      "gold": "CCTV-1",
+      "cells": 144,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "What is the total amount of money loaned by banks in New York state?",
+      "query": "SELECT sum(T2.amount) FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id WHERE T1.state  =  'New York'",
+      "gold": "7050",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "school_finance",
+      "question": "How many donors have endowment for school named \"Glenn\"?",
+      "query": "SELECT count(DISTINCT T1.donator_name) FROM endowment AS T1 JOIN school AS T2 ON T1.school_id  =  T2.school_id WHERE T2.school_name  =  \"Glenn\"",
+      "gold": "3",
+      "cells": 164,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "Find the name of the tryout players who are from the college with largest size.",
+      "query": "SELECT T2.pName FROM  tryout AS T1 JOIN player AS T2 ON T1.pID  =  T2.pID WHERE T1.cName  =  (SELECT cName FROM college ORDER BY enr DESC LIMIT 1)",
+      "gold": "Charles",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "Which colleges do the tryout players whose name starts with letter D go to?",
+      "query": "SELECT T1.cName FROM  tryout AS T1 JOIN player AS T2 ON T1.pID  =  T2.pID WHERE T2.pName LIKE 'D%'",
+      "gold": "ASU",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "What are the papers published under the institution \"Indiana University\"?",
+      "query": "SELECT DISTINCT t1.title FROM papers AS t1 JOIN authorship AS t2 ON t1.paperid  =  t2.paperid JOIN inst AS t3 ON t2.instid  =  t3.instid WHERE t3.name  =  \"Indiana University\"",
+      "gold": "An Equivalence-Preserving CPS Translation via Multi-Language Semantics",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "school_bus",
+      "question": "find the name of driver who is driving the school bus with the longest working history.",
+      "query": "SELECT t1.name FROM driver AS t1 JOIN school_bus AS t2 ON t1.driver_id  =  t2.driver_id ORDER BY years_working DESC LIMIT 1",
+      "gold": "Henry Genga",
+      "cells": 115,
+      "split": "train"
+    },
+    {
+      "db_id": "party_host",
+      "question": "Show the locations of parties with hosts older than 50.",
+      "query": "SELECT T3.Location FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID WHERE T2.Age  >  50",
+      "gold": "Heineken Music Hall Amsterdam",
+      "cells": 106,
+      "split": "train"
+    },
+    {
+      "db_id": "film_rank",
+      "question": "What is the average number of cities of markets with low film market estimate bigger than 10000?",
+      "query": "SELECT avg(T2.Number_cities) FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID WHERE T1.Low_Estimate  >  10000",
+      "gold": "209.0",
+      "cells": 146,
+      "split": "train"
+    },
+    {
+      "db_id": "candidate_poll",
+      "question": "which gender got the highest average uncertain ratio.",
+      "query": "SELECT t1.sex FROM people AS t1 JOIN candidate AS t2 ON t1.people_id  =  t2.people_id GROUP BY t1.sex ORDER BY avg(t2.unsure_rate) DESC LIMIT 1",
+      "gold": "F",
+      "cells": 102,
+      "split": "train"
+    },
+    {
+      "db_id": "medicine_enzyme_interaction",
+      "question": "What is the interaction type of the enzyme named 'ALA synthase' and the medicine named 'Aripiprazole'?",
+      "query": "SELECT T1.interaction_type FROM medicine_enzyme_interaction AS T1 JOIN medicine AS T2 ON T1.medicine_id  =  T2.id JOIN enzyme AS T3 ON T1.enzyme_id  =  T3.id WHERE T3.name  =  'ALA synthase' AND T2.name  =  'Aripiprazole'",
+      "gold": "inhibitor",
+      "cells": 197,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "How many papers are written by authors from the institution \"University of Pennsylvania\"?",
+      "query": "SELECT count(DISTINCT t1.title) FROM papers AS t1 JOIN authorship AS t2 ON t1.paperid  =  t2.paperid JOIN inst AS t3 ON t2.instid  =  t3.instid WHERE t3.name  =  \"University of Pennsylvania\"",
+      "gold": "1",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Find all the papers published by \"Aaron Turon\".",
+      "query": "SELECT t3.title FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid WHERE  t1.fname  =  \"Aaron\" AND t1.lname  =  \"Turon\"",
+      "gold": "Functional Pearl: Modular Rollback through Control Logging",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "store_product",
+      "question": "What are the names of the districts that have both mall and village store style shops?",
+      "query": "SELECT t3.District_name FROM store AS t1 JOIN store_district AS t2 ON t1.store_id  =  t2.store_id JOIN district AS t3 ON t2.district_id  =  t3.district_id WHERE t1.Type  =  \"City Mall\" INTERSECT SELECT t3.District_name FROM store AS t1 JOIN store_district AS t2 ON t1.store_id  =  t2.store_id JOIN district AS t3 ON t2.district_id  =  t3.district_id WHERE t1.Type  =  \"Village Store\"",
+      "gold": "Khanewal District",
+      "cells": 187,
+      "split": "train"
+    },
+    {
+      "db_id": "aircraft",
+      "question": "Please show the names of aircrafts associated with airport with name \"London Gatwick\".",
+      "query": "SELECT T1.Aircraft FROM aircraft AS T1 JOIN airport_aircraft AS T2 ON T1.Aircraft_ID  =  T2.Aircraft_ID JOIN airport AS T3 ON T2.Airport_ID  =  T3.Airport_ID WHERE T3.Airport_Name  =  \"London Gatwick\"",
+      "gold": "Robinson R-22",
+      "cells": 217,
+      "split": "train"
+    },
+    {
+      "db_id": "insurance_fnol",
+      "question": "How many policies are listed for the customer named \"Dayana Robel\"?",
+      "query": "SELECT count(*) FROM customers AS t1 JOIN customers_policies AS t2 ON t1.customer_id  =  t2.customer_id WHERE t1.customer_name  =  \"Dayana Robel\"",
+      "gold": "2",
+      "cells": 237,
+      "split": "train"
+    },
+    {
+      "db_id": "scientist_1",
+      "question": "What is the sum of hours for projects that scientists with the name Michael Rogers or Carol Smith are assigned to?",
+      "query": "SELECT sum(T2.hours) FROM assignedto AS T1 JOIN projects AS T2 ON T1.project  =  T2.code JOIN scientists AS T3 ON T1.scientist  =  T3.SSN WHERE T3.name  =  'Michael Rogers' OR T3.name  =  'Carol Smith'",
+      "gold": "6702",
+      "cells": 90,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Which papers have \"Stephanie Weirich\" as an author?",
+      "query": "SELECT t3.title FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid WHERE t1.fname  =  \"Stephanie\" AND t1.lname  =  \"Weirich\"",
+      "gold": "Binders Unbound",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "workshop_paper",
+      "question": "Show the result of the submission with the highest score.",
+      "query": "SELECT T1.Result FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID ORDER BY T2.Scores DESC LIMIT 1",
+      "gold": "Rejected",
+      "cells": 82,
+      "split": "train"
+    },
+    {
+      "db_id": "match_season",
+      "question": "Count the number of different official languages corresponding to countries that players who play Defender are from.",
+      "query": "SELECT count(DISTINCT T1.Official_native_language) FROM country AS T1 JOIN match_season AS T2 ON T1.Country_id  =  T2.Country WHERE T2.Position  =  \"Defender\"",
+      "gold": "2",
+      "cells": 242,
+      "split": "train"
+    },
+    {
+      "db_id": "candidate_poll",
+      "question": "What is the sex of the candidate who had the highest unsure rate?",
+      "query": "SELECT t1.sex FROM people AS t1 JOIN candidate AS t2 ON t1.people_id  =  t2.people_id GROUP BY t1.sex ORDER BY avg(t2.unsure_rate) DESC LIMIT 1",
+      "gold": "F",
+      "cells": 102,
+      "split": "train"
+    },
+    {
+      "db_id": "network_1",
+      "question": "What is the average grade of students who have friends?",
+      "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+      "gold": "10.428571428571429",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "insurance_fnol",
+      "question": "Count the total number of policies used by the customer named \"Dayana Robel\".",
+      "query": "SELECT count(*) FROM customers AS t1 JOIN customers_policies AS t2 ON t1.customer_id  =  t2.customer_id WHERE t1.customer_name  =  \"Dayana Robel\"",
+      "gold": "2",
+      "cells": 237,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Find the papers which have \"Olin Shivers\" as an author.",
+      "query": "SELECT t3.title FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid WHERE t1.fname  =  \"Olin\" AND t1.lname  =  \"Shivers\"",
+      "gold": "Functional Pearl: Modular Rollback through Control Logging",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "local_govt_mdm",
+      "question": "What are the register ids of electoral registries that have the cross reference source system code 'Electoral' or 'Tax'?",
+      "query": "SELECT T1.electoral_register_id FROM Electoral_Register AS T1 JOIN CMI_Cross_References AS T2 ON T1.cmi_cross_ref_id  =  T2.cmi_cross_ref_id WHERE T2.source_system_code  =  'Electoral' OR T2.source_system_code  =  'Tax'",
+      "gold": "8",
+      "cells": 131,
+      "split": "train"
+    },
+    {
+      "db_id": "musical",
+      "question": "Show names of musicals which have at least three actors.",
+      "query": "SELECT T2.Name FROM actor AS T1 JOIN musical AS T2 ON T1.Musical_ID  =  T2.Musical_ID GROUP BY T1.Musical_ID HAVING COUNT(*)  >=  3",
+      "gold": "The Book of Mormon",
+      "cells": 103,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "Which colleges does each player with a name that starts with the letter D  who tried out go to?",
+      "query": "SELECT T1.cName FROM  tryout AS T1 JOIN player AS T2 ON T1.pID  =  T2.pID WHERE T2.pName LIKE 'D%'",
+      "gold": "ASU",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "Find the name of customer who has the highest amount of loans.",
+      "query": "SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name ORDER BY sum(T2.amount) DESC LIMIT 1",
+      "gold": "Mary",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Which papers were written by authors from the institution \"Google\"?",
+      "query": "SELECT DISTINCT t1.title FROM papers AS t1 JOIN authorship AS t2 ON t1.paperid  =  t2.paperid JOIN inst AS t3 ON t2.instid  =  t3.instid WHERE t3.name  =  \"Google\"",
+      "gold": "An Equivalence-Preserving CPS Translation via Multi-Language Semantics",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "customer_complaints",
+      "question": "Which products has been complained by the customer who has filed least amount of complaints?",
+      "query": "SELECT DISTINCT t1.product_name FROM products AS t1 JOIN complaints AS t2 ON t1.product_id  =  t2.product_id JOIN customers AS t3 GROUP BY t3.customer_id ORDER BY count(*) LIMIT 1",
+      "gold": "Chocolate",
+      "cells": 246,
+      "split": "train"
+    },
+    {
+      "db_id": "network_2",
+      "question": "What are the ages of all of Zach's friends who are in the longest relationship?",
+      "query": "SELECT T1.age FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.friend WHERE T2.name =  'Zach' AND T2.year  =  (SELECT max(YEAR) FROM PersonFriend WHERE name =  'Zach')",
+      "gold": "26",
+      "cells": 32,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "What is the count of states with college students playing in the mid position but not as goalies?",
+      "query": "SELECT COUNT(*) FROM (SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'mid' EXCEPT SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'goalie')",
+      "gold": "1",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "movie_1",
+      "question": "What are the names of all reviewers that have given 3 or 4 stars for reviews?",
+      "query": "SELECT T2.name FROM Rating AS T1 JOIN Reviewer AS T2 ON T1.rID  =  T2.rID WHERE T1.stars  =  3 INTERSECT SELECT T2.name FROM Rating AS T1 JOIN Reviewer AS T2 ON T1.rID  =  T2.rID WHERE T1.stars  =  4",
+      "gold": "Chris Jackson",
+      "cells": 104,
+      "split": "train"
+    },
+    {
+      "db_id": "program_share",
+      "question": "Which channels broadcast both in the morning and at night? Give me the channel names.",
+      "query": "SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Morning' INTERSECT SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Night'",
+      "gold": "CCTV-1",
+      "cells": 144,
+      "split": "train"
+    },
+    {
+      "db_id": "store_product",
+      "question": "Find the names of districts where have both city mall and village store type stores.",
+      "query": "SELECT t3.District_name FROM store AS t1 JOIN store_district AS t2 ON t1.store_id  =  t2.store_id JOIN district AS t3 ON t2.district_id  =  t3.district_id WHERE t1.Type  =  \"City Mall\" INTERSECT SELECT t3.District_name FROM store AS t1 JOIN store_district AS t2 ON t1.store_id  =  t2.store_id JOIN district AS t3 ON t2.district_id  =  t3.district_id WHERE t1.Type  =  \"Village Store\"",
+      "gold": "Khanewal District",
+      "cells": 187,
+      "split": "train"
+    },
+    {
+      "db_id": "movie_1",
+      "question": "What are the names of all movies that received 3 or 4 stars?",
+      "query": "SELECT T2.title FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID WHERE T1.stars  =  3 INTERSECT SELECT T2.title FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID WHERE T1.stars  =  4",
+      "gold": "Gone with the Wind",
+      "cells": 104,
+      "split": "train"
+    },
+    {
+      "db_id": "news_report",
+      "question": "Show the names of journalists that have reported more than one event.",
+      "query": "SELECT T3.Name FROM news_report AS T1 JOIN event AS T2 ON T1.Event_ID  =  T2.Event_ID JOIN journalist AS T3 ON T1.journalist_ID  =  T3.journalist_ID GROUP BY T3.Name HAVING COUNT(*)  >  1",
+      "gold": "Jackie Waring",
+      "cells": 101,
+      "split": "train"
+    },
+    {
+      "db_id": "party_people",
+      "question": "Count the number of Annual Meeting events that took place in the region of the United Kingdom.",
+      "query": "SELECT count(*) FROM region AS t1 JOIN party AS t2 ON t1.region_id  =  t2.region_id JOIN party_events AS t3 ON t2.party_id  =  t3.party_id WHERE t1.region_name  =  \"United Kingdom\" AND t3.Event_Name  =  \"Annaual Meeting\"",
+      "gold": "2",
+      "cells": 152,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "What is the name of the customer who has greatest total loan amount?",
+      "query": "SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name ORDER BY sum(T2.amount) DESC LIMIT 1",
+      "gold": "Mary",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "manufacturer",
+      "question": "Find the name of the company that produces both furnitures with less than 6 components and furnitures with more than 10 components.",
+      "query": "SELECT t3.name FROM furniture AS t1 JOIN furniture_manufacte AS t2 ON t1.Furniture_ID  =  t2.Furniture_ID JOIN manufacturer AS t3 ON t2.manufacturer_id  =  t3.manufacturer_id WHERE t1.num_of_component  <  6 INTERSECT SELECT t3.name FROM furniture AS t1 JOIN furniture_manufacte AS t2 ON t1.Furniture_ID  =  t2.Furniture_ID JOIN manufacturer AS t3 ON t2.manufacturer_id  =  t3.manufacturer_id WHERE t1.num_of_component  >  10",
+      "gold": "Tomorrow",
+      "cells": 78,
+      "split": "train"
+    },
+    {
+      "db_id": "epinions_1",
+      "question": "Find the name of the user who gave the highest rating.",
+      "query": "SELECT T1.name FROM useracct AS T1 JOIN review AS T2 ON T1.u_id  =  T2.u_id ORDER BY T2.rating DESC LIMIT 1",
+      "gold": "Helen",
+      "cells": 92,
+      "split": "train"
+    },
+    {
+      "db_id": "poker_player",
+      "question": "Give average earnings of poker players who are taller than 200.",
+      "query": "SELECT avg(T2.Earnings) FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Height  >  200",
+      "gold": "309445.0",
+      "cells": 65,
+      "split": "dev"
+    },
+    {
+      "db_id": "musical",
+      "question": "What are the names of musicals who have at 3 or more actors?",
+      "query": "SELECT T2.Name FROM actor AS T1 JOIN musical AS T2 ON T1.Musical_ID  =  T2.Musical_ID GROUP BY T1.Musical_ID HAVING COUNT(*)  >=  3",
+      "gold": "The Book of Mormon",
+      "cells": 103,
+      "split": "train"
+    },
+    {
+      "db_id": "insurance_fnol",
+      "question": "What is the effective date of the claim that has the largest amount of total settlement?",
+      "query": "SELECT t1.Effective_Date FROM claims AS t1 JOIN settlements AS t2 ON t1.claim_id  =  t2.claim_id GROUP BY t1.claim_id ORDER BY sum(t2.settlement_amount) DESC LIMIT 1",
+      "gold": "2009-02-11",
+      "cells": 237,
+      "split": "train"
+    },
+    {
+      "db_id": "gymnast",
+      "question": "Return the hometown that is most common among gymnasts.",
+      "query": "SELECT T2.Hometown FROM gymnast AS T1 JOIN people AS T2 ON T1.Gymnast_ID  =  T2.People_ID GROUP BY T2.Hometown ORDER BY COUNT(*) DESC LIMIT 1",
+      "gold": "Santo Domingo",
+      "cells": 106,
+      "split": "train"
+    },
+    {
+      "db_id": "insurance_fnol",
+      "question": "Which services have been used more than twice in first notification of loss? Return the service name.",
+      "query": "SELECT t2.service_name FROM first_notification_of_loss AS t1 JOIN services AS t2 ON t1.service_id  =  t2.service_id GROUP BY t1.service_id HAVING count(*)  >  2",
+      "gold": "New policy application",
+      "cells": 237,
+      "split": "train"
+    },
+    {
+      "db_id": "election",
+      "question": "Show the name of the party that has the most delegates.",
+      "query": "SELECT T2.Party FROM election AS T1 JOIN party AS T2 ON T1.Party  =  T2.Party_ID GROUP BY T1.Party ORDER BY COUNT(*) DESC LIMIT 1",
+      "gold": "Democratic",
+      "cells": 132,
+      "split": "train"
+    },
+    {
+      "db_id": "journal_committee",
+      "question": "What is the average sales of the journals that have an editor whose work type is 'Photo'?",
+      "query": "SELECT avg(T1.sales) FROM journal AS T1 JOIN journal_committee AS T2 ON T1.journal_ID  =  T2.journal_ID WHERE T2.work_type  =  'Photo'",
+      "gold": "4660.25",
+      "cells": 112,
+      "split": "train"
+    },
+    {
+      "db_id": "device",
+      "question": "Show the name of the shop that has the most kind of devices in stock.",
+      "query": "SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY COUNT(*) DESC LIMIT 1",
+      "gold": "Dinas Device",
+      "cells": 120,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "What is the name of the bank branch that has lent the greatest amount?",
+      "query": "SELECT T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id GROUP BY T1.bname ORDER BY sum(T2.amount) DESC LIMIT 1",
+      "gold": "broadway",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "perpetrator",
+      "question": "What is the name of the perpetrator with the biggest weight.",
+      "query": "SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Weight DESC LIMIT 1",
+      "gold": "Tyrone Brayan",
+      "cells": 95,
+      "split": "train"
+    },
+    {
+      "db_id": "network_2",
+      "question": "Who has friends that are younger than the average age?",
+      "query": "SELECT DISTINCT T2.name FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.friend WHERE T1.age  <  (SELECT avg(age) FROM person)",
+      "gold": "Zach",
+      "cells": 32,
+      "split": "train"
+    },
+    {
+      "db_id": "phone_1",
+      "question": "List the name of the phone model launched in year 2002 and with the highest RAM size.",
+      "query": "SELECT T2.Hardware_Model_name FROM chip_model AS T1 JOIN phone AS T2 ON T1.Model_name  =  T2.chip_model WHERE T1.Launch_year = 2002 ORDER BY T1.RAM_MiB DESC LIMIT 1;",
+      "gold": "XPERIA T, XPERIA J",
+      "cells": 203,
+      "split": "train"
+    },
+    {
+      "db_id": "music_4",
+      "question": "What are the issue dates of volumes associated with the artist aged 23 or younger?",
+      "query": "SELECT Issue_Date FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.age  <=  23",
+      "gold": "6 June",
+      "cells": 149,
+      "split": "train"
+    },
+    {
+      "db_id": "manufactory_1",
+      "question": "Find number of products which Sony does not make.",
+      "query": "SELECT count(DISTINCT name) FROM products WHERE name NOT IN (SELECT T1.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T2.name  =  'Sony')",
+      "gold": "9",
+      "cells": 74,
+      "split": "train"
+    },
+    {
+      "db_id": "gymnast",
+      "question": "Return the total points of the gymnast with the lowest age.",
+      "query": "SELECT T1.Total_Points FROM gymnast AS T1 JOIN people AS T2 ON T1.Gymnast_ID  =  T2.People_ID ORDER BY T2.Age ASC LIMIT 1",
+      "gold": "57.649",
+      "cells": 106,
+      "split": "train"
+    },
+    {
+      "db_id": "medicine_enzyme_interaction",
+      "question": "What are the names of enzymes in the medicine named 'Amisulpride' that can serve as an 'inhibitor'?",
+      "query": "SELECT T1.name FROM enzyme AS T1 JOIN medicine_enzyme_interaction AS T2 ON T1.id  =  T2.enzyme_id JOIN medicine AS T3 ON T2.medicine_id  =  T3.id WHERE T3.name  =  'Amisulpride' AND T2.interaction_type  =  'inhibitor'",
+      "gold": "ALA synthase",
+      "cells": 197,
+      "split": "train"
+    },
+    {
+      "db_id": "epinions_1",
+      "question": "Find the name of the user who gives the most reviews.",
+      "query": "SELECT T1.name FROM useracct AS T1 JOIN review AS T2 ON T1.u_id  =  T2.u_id GROUP BY T2.u_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "Mark",
+      "cells": 92,
+      "split": "train"
+    },
+    {
+      "db_id": "entrepreneur",
+      "question": "What is the name of the entrepreneur with the greatest weight?",
+      "query": "SELECT T2.Name FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Weight DESC LIMIT 1",
+      "gold": "Goran Fiorentini",
+      "cells": 70,
+      "split": "train"
+    },
+    {
+      "db_id": "party_host",
+      "question": "Which parties have hosts of age above 50? Give me the party locations.",
+      "query": "SELECT T3.Location FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID WHERE T2.Age  >  50",
+      "gold": "Heineken Music Hall Amsterdam",
+      "cells": 106,
+      "split": "train"
+    },
+    {
+      "db_id": "music_2",
+      "question": "How many different songs have shared vocals?",
+      "query": "SELECT count(DISTINCT title) FROM vocals AS T1 JOIN songs AS T2 ON T1.songid  =  T2.songid WHERE TYPE  =  \"shared\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "architecture",
+      "question": "What are the distinct types of mills that are built by American or Canadian architects?",
+      "query": "SELECT DISTINCT T1.type FROM mill AS T1 JOIN architect AS t2 ON T1.architect_id  =  T2.id WHERE T2.nationality  =  'American' OR T2.nationality  =  'Canadian'",
+      "gold": "Grondzeiler",
+      "cells": 152,
+      "split": "train"
+    },
+    {
+      "db_id": "program_share",
+      "question": "Find the name of the program that is broadcast most frequently.",
+      "query": "SELECT t1.name FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id GROUP BY t2.program_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "Toonmax",
+      "cells": 144,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Find papers whose second author has last name \"Turon\" and is affiliated with an institution in the country \"USA\".",
+      "query": "SELECT t3.title FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid JOIN inst AS t4 ON t2.instid  =  t4.instid WHERE t4.country  =  \"USA\" AND t2.authorder  =  2 AND t1.lname  =  \"Turon\"",
+      "gold": "Functional Pearl: Modular Rollback through Control Logging",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "network_1",
+      "question": "Show the names of all of the high schooler Kyle's friends.",
+      "query": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id JOIN Highschooler AS T3 ON T1.friend_id  =  T3.id WHERE T2.name  =  \"Kyle\"",
+      "gold": "Jordan",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "music_1",
+      "question": "How many songs, on average, are sung by a female artist?",
+      "query": "SELECT avg(T2.rating) FROM artist AS T1 JOIN song AS T2 ON T1.artist_name  =  T2.artist_name WHERE T1.gender  =  \"Female\"",
+      "gold": "7.333333333333333",
+      "cells": 126,
+      "split": "train"
+    },
+    {
+      "db_id": "employee_hire_evaluation",
+      "question": "Find the name of the employee who got the highest one time bonus.",
+      "query": "SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID ORDER BY t2.bonus DESC LIMIT 1",
+      "gold": "Louis Deacon",
+      "cells": 140,
+      "split": "dev"
+    },
+    {
+      "db_id": "music_2",
+      "question": "How many vocal types are used in the song \"Le Pop\"?",
+      "query": "SELECT count(*) FROM vocals AS T1 JOIN songs AS T2 ON T1.songid  =  T2.songid WHERE title  =  \"Le Pop\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "party_host",
+      "question": "Which parties have more than 20 hosts? Give me the host names for these parties.",
+      "query": "SELECT T2.Name FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID WHERE T3.Number_of_hosts  >  20",
+      "gold": "Ed Davis",
+      "cells": 106,
+      "split": "train"
+    },
+    {
+      "db_id": "shop_membership",
+      "question": "What is the sum of total pounds of purchase in year 2018 for all branches in London?",
+      "query": "SELECT sum(total_pounds) FROM purchase AS T1 JOIN branch AS T2 ON T1.branch_id  =  T2.branch_id WHERE T2.city  =  'London' AND T1.year  =  2018",
+      "gold": "3531.59",
+      "cells": 154,
+      "split": "train"
+    },
+    {
+      "db_id": "customer_complaints",
+      "question": "Return the names of products that have had complaints filed by the customer who has filed the fewest complaints.",
+      "query": "SELECT DISTINCT t1.product_name FROM products AS t1 JOIN complaints AS t2 ON t1.product_id  =  t2.product_id JOIN customers AS t3 GROUP BY t3.customer_id ORDER BY count(*) LIMIT 1",
+      "gold": "Chocolate",
+      "cells": 246,
+      "split": "train"
+    },
+    {
+      "db_id": "protein_institute",
+      "question": "How many proteins are associated with an institution founded after 1880 or an institution with type \"Private\"?",
+      "query": "SELECT count(*) FROM institution AS T1 JOIN protein AS T2 ON T1.institution_id  =  T2.institution_id WHERE T1.founded  >  1880 OR T1.type  =  'Private'",
+      "gold": "5",
+      "cells": 182,
+      "split": "train"
+    },
+    {
+      "db_id": "election_representative",
+      "question": "What is the party of the representative that has the smallest number of votes.",
+      "query": "SELECT T2.Party FROM election AS T1 JOIN representative AS T2 ON T1.Representative_ID  =  T2.Representative_ID ORDER BY votes ASC LIMIT 1",
+      "gold": "Republican",
+      "cells": 70,
+      "split": "train"
+    },
+    {
+      "db_id": "employee_hire_evaluation",
+      "question": "Which employee received the most awards in evaluations? Give me the employee name.",
+      "query": "SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID GROUP BY t2.Employee_ID ORDER BY count(*) DESC LIMIT 1",
+      "gold": "George Chuter",
+      "cells": 140,
+      "split": "dev"
+    },
+    {
+      "db_id": "network_2",
+      "question": "How many friends does Dan have?",
+      "query": "SELECT count(T2.friend) FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.name WHERE T1.name  =  'Dan'",
+      "gold": "0",
+      "cells": 32,
+      "split": "train"
+    },
+    {
+      "db_id": "storm_record",
+      "question": "What are the names of the storms that affected Denmark?",
+      "query": "SELECT T3.name FROM affected_region AS T1 JOIN region AS T2 ON T1.region_id  =  T2.region_id JOIN storm AS T3 ON T1.storm_id  =  T3.storm_id WHERE T2.region_name  =  'Denmark'",
+      "gold": "Five",
+      "cells": 117,
+      "split": "train"
+    },
+    {
+      "db_id": "sports_competition",
+      "question": "What are the names of the clubs that have players in the position of \"Right Wing\"?",
+      "query": "SELECT T1.name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T2.Position  =  \"Right Wing\"",
+      "gold": "BK Slide",
+      "cells": 248,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "What are the names of all the states with college students playing in the mid position but no goalies?",
+      "query": "SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'mid' EXCEPT SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'goalie'",
+      "gold": "OK",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "climbing",
+      "question": "What is the height of the mountain climbined by the climbing who had the most points?",
+      "query": "SELECT T2.Height FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID ORDER BY T1.Points DESC LIMIT 1",
+      "gold": "5895.0",
+      "cells": 102,
+      "split": "train"
+    },
+    {
+      "db_id": "small_bank_1",
+      "question": "What is the savings balance of the account belonging to the customer with the highest checking balance?",
+      "query": "SELECT T3.balance FROM accounts AS T1 JOIN checking AS T2 ON T1.custid  =  T2.custid JOIN savings AS T3 ON T1.custid  =  T3.custid ORDER BY T2.balance DESC LIMIT 1",
+      "gold": "200000.0",
+      "cells": 40,
+      "split": "train"
+    },
+    {
+      "db_id": "movie_1",
+      "question": "What are the names of reviewers who had rated 3 star and 4 star?",
+      "query": "SELECT T2.name FROM Rating AS T1 JOIN Reviewer AS T2 ON T1.rID  =  T2.rID WHERE T1.stars  =  3 INTERSECT SELECT T2.name FROM Rating AS T1 JOIN Reviewer AS T2 ON T1.rID  =  T2.rID WHERE T1.stars  =  4",
+      "gold": "Chris Jackson",
+      "cells": 104,
+      "split": "train"
+    },
+    {
+      "db_id": "workshop_paper",
+      "question": "Which submission received the highest score in acceptance result. Show me the result.",
+      "query": "SELECT T1.Result FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID ORDER BY T2.Scores DESC LIMIT 1",
+      "gold": "Rejected",
+      "cells": 82,
+      "split": "train"
+    },
+    {
+      "db_id": "city_record",
+      "question": "Which city has the highest temperature in February?",
+      "query": "SELECT T1.city FROM city AS T1 JOIN temperature AS T2 ON T1.city_id  =  T2.city_id ORDER BY T2.Feb DESC LIMIT 1",
+      "gold": "Suzhou ( Jiangsu )",
+      "cells": 228,
+      "split": "train"
+    },
+    {
+      "db_id": "storm_record",
+      "question": "What are the names of regions that were affected by the storm in which the most people died?",
+      "query": "SELECT T2.region_name FROM affected_region AS T1 JOIN region AS T2 ON T1.region_id  =  T2.region_id JOIN storm AS T3 ON T1.storm_id  =  T3.storm_id ORDER BY T3.Number_Deaths DESC LIMIT 1",
+      "gold": "Algeria",
+      "cells": 117,
+      "split": "train"
+    },
+    {
+      "db_id": "network_1",
+      "question": "Find the average grade of all students who have some friends.",
+      "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+      "gold": "10.428571428571429",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "network_1",
+      "question": "Return the names of friends of the high school student Kyle.",
+      "query": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id JOIN Highschooler AS T3 ON T1.friend_id  =  T3.id WHERE T2.name  =  \"Kyle\"",
+      "gold": "Jordan",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "perpetrator",
+      "question": "Show the date of the tallest perpetrator.",
+      "query": "SELECT T2.Date FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Height DESC LIMIT 1",
+      "gold": "05.21 May 21",
+      "cells": 95,
+      "split": "train"
+    },
+    {
+      "db_id": "network_2",
+      "question": "What is the age of the friend of Zach with longest year relationship?",
+      "query": "SELECT T1.age FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.friend WHERE T2.name =  'Zach' AND T2.year  =  (SELECT max(YEAR) FROM PersonFriend WHERE name =  'Zach')",
+      "gold": "26",
+      "cells": 32,
+      "split": "train"
+    },
+    {
+      "db_id": "small_bank_1",
+      "question": "What are the balances of checking accounts belonging to people with savings balances greater than the average savings balance?",
+      "query": "SELECT T2.balance FROM accounts AS T1 JOIN checking AS T2 ON T1.custid  =  T2.custid WHERE T1.name IN (SELECT T1.name FROM accounts AS T1 JOIN savings AS T2 ON T1.custid  =  T2.custid WHERE T2.balance  >  (SELECT avg(balance) FROM savings))",
+      "gold": "2000.0",
+      "cells": 40,
+      "split": "train"
+    },
+    {
+      "db_id": "election",
+      "question": "Which parties have delegates in both the \"Appropriations\" committee and the \"Economic Matters\" committee?",
+      "query": "SELECT T2.Party FROM election AS T1 JOIN party AS T2 ON T1.Party  =  T2.Party_ID WHERE T1.Committee  =  \"Appropriations\" INTERSECT SELECT T2.Party FROM election AS T1 JOIN party AS T2 ON T1.Party  =  T2.Party_ID WHERE T1.Committee  =  \"Economic Matters\"",
+      "gold": "Democratic",
+      "cells": 132,
+      "split": "train"
+    },
+    {
+      "db_id": "insurance_fnol",
+      "question": "Find the name of services that have been used for more than 2 times in first notification of loss.",
+      "query": "SELECT t2.service_name FROM first_notification_of_loss AS t1 JOIN services AS t2 ON t1.service_id  =  t2.service_id GROUP BY t1.service_id HAVING count(*)  >  2",
+      "gold": "New policy application",
+      "cells": 237,
+      "split": "train"
+    },
+    {
+      "db_id": "program_share",
+      "question": "Which programs are never broadcasted in the morning? Give me the names of the programs.",
+      "query": "SELECT name FROM program EXCEPT SELECT t1.name FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id WHERE t2.Time_of_day  =  \"Morning\"",
+      "gold": "Youman",
+      "cells": 144,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "In which state is the college that Charles attends?",
+      "query": "SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName JOIN player AS T3 ON T2.pID  =  T3.pID WHERE T3.pName  =  'Charles'",
+      "gold": "OK",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "body_builder",
+      "question": "What are the total scores of the body builders whose birthday contains the string \"January\" ?",
+      "query": "SELECT T1.total FROM body_builder AS T1 JOIN people AS T2 ON T1.people_id  =  T2.people_id WHERE T2.Birth_Date LIKE \"%January%\";",
+      "gold": "317.5",
+      "cells": 61,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "What are the states of the colleges where students who tried out for the striker position attend?",
+      "query": "SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'striker'",
+      "gold": "FL",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "small_bank_1",
+      "question": "Find the name of accounts whose checking balance is higher than corresponding saving balance.",
+      "query": "SELECT T1.name FROM accounts AS T1 JOIN checking AS T2 ON T1.custid  =  T2.custid JOIN savings AS T3 ON T1.custid  =  T3.custid WHERE T2.balance  >  T3.balance",
+      "gold": "Weeks",
+      "cells": 40,
+      "split": "train"
+    },
+    {
+      "db_id": "ship_1",
+      "question": "What is the name of the ship that is commanded by the youngest captain?",
+      "query": "SELECT t1.name FROM ship AS t1 JOIN captain AS t2 ON t1.ship_id  =  t2.ship_id ORDER BY t2.age LIMIT 1",
+      "gold": "HMS Destiny",
+      "cells": 96,
+      "split": "train"
+    },
+    {
+      "db_id": "poker_player",
+      "question": "Return the money rank of the poker player with the greatest height.",
+      "query": "SELECT T2.Money_Rank FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Height DESC LIMIT 1",
+      "gold": "68.0",
+      "cells": 65,
+      "split": "dev"
+    },
+    {
+      "db_id": "music_1",
+      "question": "What is the average song duration for the songs that are in mp3 format and whose resolution below 800?",
+      "query": "SELECT avg(T1.duration) FROM files AS T1 JOIN song AS T2 ON T1.f_id  =  T2.f_id WHERE T1.formats  =  \"mp3\" AND T2.resolution   <  800",
+      "gold": "3.0",
+      "cells": 126,
+      "split": "train"
+    },
+    {
+      "db_id": "network_1",
+      "question": "Return the number of likes that the high schooler named Kyle has.",
+      "query": "SELECT count(*) FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id WHERE T2.name  =  \"Kyle\"",
+      "gold": "1",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "network_1",
+      "question": "Show the names of high schoolers who have at least 3 friends.",
+      "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id HAVING count(*)  >=  3",
+      "gold": "Andrew",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "match_season",
+      "question": "How many distinct official languages are there among countries of players whose positions are defenders.",
+      "query": "SELECT count(DISTINCT T1.Official_native_language) FROM country AS T1 JOIN match_season AS T2 ON T1.Country_id  =  T2.Country WHERE T2.Position  =  \"Defender\"",
+      "gold": "2",
+      "cells": 242,
+      "split": "train"
+    },
+    {
+      "db_id": "film_rank",
+      "question": "Return the title of the film with the highest high estimate?",
+      "query": "SELECT t1.title FROM film AS T1 JOIN film_market_estimation AS T2  ON T1.Film_ID  =  T2.Film_ID ORDER BY high_estimate DESC LIMIT 1",
+      "gold": "ET the Extra-Terrestrial",
+      "cells": 146,
+      "split": "train"
+    },
+    {
+      "db_id": "theme_gallery",
+      "question": "Count the number of exhibitions that have had an attendnance of over 100 or a ticket prices under 10.",
+      "query": "SELECT count(*) FROM exhibition_record AS T1 JOIN exhibition AS T2 ON T1.exhibition_id  =  T2.exhibition_id WHERE T1.attendance  >  100 OR T2.ticket_price  <  10",
+      "gold": "13",
+      "cells": 104,
+      "split": "train"
+    },
+    {
+      "db_id": "music_2",
+      "question": "How many instruments does the song \"Le Pop\" use?",
+      "query": "SELECT count(DISTINCT instrument) FROM instruments AS T1 JOIN songs AS T2 ON T1.songid  =  T2.songid WHERE title  =  \"Le Pop\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "music_2",
+      "question": "How many different instruments does the musician with the last name \"Heilo\" use?",
+      "query": "SELECT count(DISTINCT instrument) FROM instruments AS T1 JOIN Band AS T2 ON T1.bandmateid  =  T2.id WHERE T2.lastname  =  \"Heilo\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Find all the papers published by the institution \"Google\".",
+      "query": "SELECT DISTINCT t1.title FROM papers AS t1 JOIN authorship AS t2 ON t1.paperid  =  t2.paperid JOIN inst AS t3 ON t2.instid  =  t3.instid WHERE t3.name  =  \"Google\"",
+      "gold": "An Equivalence-Preserving CPS Translation via Multi-Language Semantics",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "party_people",
+      "question": "Return the name of the party with the most members.",
+      "query": "SELECT T2.party_name FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "3",
+      "cells": 152,
+      "split": "train"
+    },
+    {
+      "db_id": "match_season",
+      "question": "What are the names of countries that have both players with position forward and players with position defender?",
+      "query": "SELECT T1.Country_name FROM country AS T1 JOIN match_season AS T2 ON T1.Country_id  =  T2.Country WHERE T2.Position  =  \"Forward\" INTERSECT SELECT T1.Country_name FROM country AS T1 JOIN match_season AS T2 ON T1.Country_id  =  T2.Country WHERE T2.Position  =  \"Defender\"",
+      "gold": "United States",
+      "cells": 242,
+      "split": "train"
+    },
+    {
+      "db_id": "protein_institute",
+      "question": "How many proteins are associated with an institution in a building with at least 20 floors?",
+      "query": "SELECT count(*) FROM institution AS T1 JOIN protein AS T2 ON T1.institution_id  =  T2.institution_id JOIN building AS T3 ON T3.building_id  =  T1.building_id WHERE T3.floors  >=  20",
+      "gold": "2",
+      "cells": 182,
+      "split": "train"
+    },
+    {
+      "db_id": "cinema",
+      "question": "Show director with the largest number of show times in total.",
+      "query": "SELECT T2.directed_by FROM schedule AS T1 JOIN film AS T2 ON T1.film_id  =  T2.film_id GROUP BY T2.directed_by ORDER BY sum(T1.show_times_per_day) DESC LIMIT 1",
+      "gold": "Bill Schreiner",
+      "cells": 120,
+      "split": "train"
+    },
+    {
+      "db_id": "shop_membership",
+      "question": "What are the total purchases for members rated at level 6?",
+      "query": "SELECT count(*) FROM purchase AS T1 JOIN member AS T2 ON T1.member_id  =  T2.member_id WHERE T2.level  =  6",
+      "gold": "7",
+      "cells": 154,
+      "split": "train"
+    },
+    {
+      "db_id": "entrepreneur",
+      "question": "Which company was started by the entrepreneur with the greatest height?",
+      "query": "SELECT T1.Company FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Height DESC LIMIT 1",
+      "gold": "Elizabeth Galton Ltd",
+      "cells": 70,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "Find the name of bank branch that provided the greatest total amount of loans.",
+      "query": "SELECT T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id GROUP BY T1.bname ORDER BY sum(T2.amount) DESC LIMIT 1",
+      "gold": "broadway",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "match_season",
+      "question": "How many distinct colleges are associated with players from the team with name \"Columbus Crew\".",
+      "query": "SELECT count(DISTINCT T1.College) FROM match_season AS T1 JOIN team AS T2 ON T1.Team  =  T2.Team_id WHERE T2.Name  =  \"Columbus Crew\"",
+      "gold": "1",
+      "cells": 242,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "What is the name of the bank branch that has lended the largest total amount in loans, specifically to customers with credit scores below 100?",
+      "query": "SELECT T2.bname FROM loan AS T1 JOIN bank AS T2 ON T1.branch_id  =  T2.branch_id JOIN customer AS T3 ON T1.cust_id  =  T3.cust_id WHERE T3.credit_score  <  100 GROUP BY T2.bname ORDER BY sum(T1.amount) DESC LIMIT 1",
+      "gold": "downtown",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "local_govt_in_alabama",
+      "question": "How many events had participants whose details had the substring 'Dr.'",
+      "query": "SELECT count(*) FROM participants AS T1 JOIN Participants_in_Events AS T2 ON T1.Participant_ID  =  T2.Participant_ID WHERE T1.participant_details LIKE '%Dr.%'",
+      "gold": "1",
+      "cells": 134,
+      "split": "train"
+    },
+    {
+      "db_id": "course_teach",
+      "question": "What are the names of the teachers who teach at least two courses?",
+      "query": "SELECT T2.Name FROM course_arrange AS T1 JOIN teacher AS T2 ON T1.Teacher_ID  =  T2.Teacher_ID GROUP BY T2.Name HAVING COUNT(*)  >=  2",
+      "gold": "Anne Walker",
+      "cells": 76,
+      "split": "dev"
+    },
+    {
+      "db_id": "cre_Docs_and_Epenses",
+      "question": "What is the project detail for the project with document \"King Book\"?",
+      "query": "SELECT T1.project_details FROM Projects AS T1 JOIN Documents AS T2 ON T1.project_id  =  T2.project_id WHERE T2.document_name  =  \"King Book\"",
+      "gold": "Human Resource project",
+      "cells": 215,
+      "split": "train"
+    },
+    {
+      "db_id": "medicine_enzyme_interaction",
+      "question": "What is the type of interaction for the enzyme named 'ALA synthase' and the medicine named 'Aripiprazole'?",
+      "query": "SELECT T1.interaction_type FROM medicine_enzyme_interaction AS T1 JOIN medicine AS T2 ON T1.medicine_id  =  T2.id JOIN enzyme AS T3 ON T1.enzyme_id  =  T3.id WHERE T3.name  =  'ALA synthase' AND T2.name  =  'Aripiprazole'",
+      "gold": "inhibitor",
+      "cells": 197,
+      "split": "train"
+    },
+    {
+      "db_id": "film_rank",
+      "question": "Give the average number of cities within markets that had a low market estimation larger than 10000?",
+      "query": "SELECT avg(T2.Number_cities) FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID WHERE T1.Low_Estimate  >  10000",
+      "gold": "209.0",
+      "cells": 146,
+      "split": "train"
+    },
+    {
+      "db_id": "movie_1",
+      "question": "What are the names of movies that get 3 star and 4 star?",
+      "query": "SELECT T2.title FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID WHERE T1.stars  =  3 INTERSECT SELECT T2.title FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID WHERE T1.stars  =  4",
+      "gold": "Gone with the Wind",
+      "cells": 104,
+      "split": "train"
+    },
+    {
+      "db_id": "match_season",
+      "question": "Which players are from Indonesia?",
+      "query": "SELECT T2.Player FROM country AS T1 JOIN match_season AS T2 ON T1.Country_id  =  T2.Country WHERE T1.Country_name  =  \"Indonesia\"",
+      "gold": "Damani Ralph Category:Articles with hCards",
+      "cells": 242,
+      "split": "train"
+    },
+    {
+      "db_id": "network_2",
+      "question": "What are the names of all of Bob's friends?",
+      "query": "SELECT T1.name FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.name WHERE T2.friend  =  'Bob'",
+      "gold": "Alice",
+      "cells": 32,
+      "split": "train"
+    },
+    {
+      "db_id": "store_product",
+      "question": "What city is the headquarter of the store Blackville?",
+      "query": "SELECT t3.headquartered_city FROM store AS t1 JOIN store_district AS t2 ON t1.store_id  =  t2.store_id JOIN district AS t3 ON t2.district_id  =  t3.district_id WHERE t1.store_name  =  \"Blackville\"",
+      "gold": "Bhakkar City",
+      "cells": 187,
+      "split": "train"
+    },
+    {
+      "db_id": "soccer_2",
+      "question": "Find the names of states that have some college students playing in goalie and mid positions.",
+      "query": "SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'goalie' INTERSECT SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'mid'",
+      "gold": "LA",
+      "cells": 60,
+      "split": "train"
+    },
+    {
+      "db_id": "candidate_poll",
+      "question": "What are the names of all female candidates in alphabetical order (sex is F)?",
+      "query": "SELECT t1.name FROM people AS t1 JOIN candidate AS t2 ON t1.people_id  =  t2.people_id WHERE t1.sex  =  'F' ORDER BY t1.name",
+      "gold": "Stéphane Antiga",
+      "cells": 102,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Find the name of the organization that has published the largest number of papers.",
+      "query": "SELECT t1.name FROM inst AS t1 JOIN authorship AS t2 ON t1.instid  =  t2.instid JOIN papers AS t3 ON t2.paperid  =  t3.paperid GROUP BY t1.name ORDER BY count(*) DESC LIMIT 1",
+      "gold": "University of Oxford",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "customer_complaints",
+      "question": "What is the last name of the staff who has handled the first ever complaint?",
+      "query": "SELECT t1.last_name FROM staff AS t1 JOIN complaints AS t2 ON t1.staff_id  =  t2.staff_id ORDER BY t2.date_complaint_raised LIMIT 1",
+      "gold": "Lynch",
+      "cells": 246,
+      "split": "train"
+    },
+    {
+      "db_id": "city_record",
+      "question": "What is the host year of city \"Taizhou ( Zhejiang )\"?",
+      "query": "SELECT T2.year FROM city AS T1 JOIN hosting_city AS T2 ON T1.city_id  =  T2.host_city WHERE T1.city  =  \"Taizhou ( Zhejiang )\"",
+      "gold": "2012",
+      "cells": 228,
+      "split": "train"
+    },
+    {
+      "db_id": "entertainment_awards",
+      "question": "Show distinct types of artworks that are nominated in festivals in 2007.",
+      "query": "SELECT DISTINCT T2.Type FROM nomination AS T1 JOIN artwork AS T2 ON T1.Artwork_ID  =  T2.Artwork_ID JOIN festival_detail AS T3 ON T1.Festival_ID  =  T3.Festival_ID WHERE T3.Year  =  2007",
+      "gold": "Program Music/Variety Show",
+      "cells": 75,
+      "split": "train"
+    },
+    {
+      "db_id": "party_host",
+      "question": "Show the host names for parties with number of hosts greater than 20.",
+      "query": "SELECT T2.Name FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID WHERE T3.Number_of_hosts  >  20",
+      "gold": "Ed Davis",
+      "cells": 106,
+      "split": "train"
+    },
+    {
+      "db_id": "customer_complaints",
+      "question": "What is the phone number of the customer who has filed the most recent complaint?",
+      "query": "SELECT t1.phone_number FROM customers AS t1 JOIN complaints AS t2 ON t1.customer_id  =  t2.customer_id ORDER BY t2.date_complaint_raised DESC LIMIT 1",
+      "gold": "+38(3)9011433816",
+      "cells": 246,
+      "split": "train"
+    },
+    {
+      "db_id": "storm_record",
+      "question": "Return the names of the regions affected by storms that had a death count of at least 10.",
+      "query": "SELECT T2.region_name FROM affected_region AS T1 JOIN region AS T2 ON T1.region_id  =  T2.region_id JOIN storm AS T3 ON T1.storm_id  =  T3.storm_id WHERE T3.number_deaths  >=  10",
+      "gold": "Algeria",
+      "cells": 117,
+      "split": "train"
+    },
+    {
+      "db_id": "film_rank",
+      "question": "Who are the different directors of films which had market estimation in 1995?",
+      "query": "SELECT DISTINCT T1.Director FROM film AS T1 JOIN film_market_estimation AS T2 ON T1.Film_ID  =  T2.Film_ID WHERE T2.Year  =  1995",
+      "gold": "Steven Spielberg",
+      "cells": 146,
+      "split": "train"
+    },
+    {
+      "db_id": "film_rank",
+      "question": "Show the distinct director of films with market estimation in the year of 1995.",
+      "query": "SELECT DISTINCT T1.Director FROM film AS T1 JOIN film_market_estimation AS T2 ON T1.Film_ID  =  T2.Film_ID WHERE T2.Year  =  1995",
+      "gold": "Steven Spielberg",
+      "cells": 146,
+      "split": "train"
+    },
+    {
+      "db_id": "network_1",
+      "question": "Give the name of the student with the most likes.",
+      "query": "SELECT T2.name FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "John",
+      "cells": 108,
+      "split": "dev"
+    },
+    {
+      "db_id": "network_2",
+      "question": "What are the names of the people who are older 40 but no friends under age 30?",
+      "query": "SELECT T1.name FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.name WHERE T2.friend IN (SELECT name FROM Person WHERE age  >  40) EXCEPT SELECT T1.name FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.name WHERE T2.friend IN (SELECT name FROM Person WHERE age  <  30)",
+      "gold": "Bob",
+      "cells": 32,
+      "split": "train"
+    },
+    {
+      "db_id": "epinions_1",
+      "question": "Find the name of the source user with the highest average trust score.",
+      "query": "SELECT T1.name FROM useracct AS T1 JOIN trust AS T2 ON T1.u_id  =  T2.source_u_id GROUP BY T2.source_u_id ORDER BY avg(trust) DESC LIMIT 1",
+      "gold": "Terry",
+      "cells": 92,
+      "split": "train"
+    },
+    {
+      "db_id": "music_1",
+      "question": "What is the average duration of songs that have mp3 format and resolution below 800?",
+      "query": "SELECT avg(T1.duration) FROM files AS T1 JOIN song AS T2 ON T1.f_id  =  T2.f_id WHERE T1.formats  =  \"mp3\" AND T2.resolution   <  800",
+      "gold": "3.0",
+      "cells": 126,
+      "split": "train"
+    },
+    {
+      "db_id": "loan_1",
+      "question": "What are the names of customers who have a loan of more than 3000 in amount?",
+      "query": "SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE amount  >  3000",
+      "gold": "Owen",
+      "cells": 59,
+      "split": "train"
+    },
+    {
+      "db_id": "election",
+      "question": "What are the names of parties that have both delegates on \"Appropriations\" committee and",
+      "query": "SELECT T2.Party FROM election AS T1 JOIN party AS T2 ON T1.Party  =  T2.Party_ID WHERE T1.Committee  =  \"Appropriations\" INTERSECT SELECT T2.Party FROM election AS T1 JOIN party AS T2 ON T1.Party  =  T2.Party_ID WHERE T1.Committee  =  \"Economic Matters\"",
+      "gold": "Democratic",
+      "cells": 132,
+      "split": "train"
+    },
+    {
+      "db_id": "music_2",
+      "question": "How many instruments does the song \"Badlands\" use?",
+      "query": "SELECT count(DISTINCT instrument) FROM instruments AS T1 JOIN songs AS T2 ON T1.songid  =  T2.songid WHERE title  =  \"Badlands\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "music_2",
+      "question": "Find the number of vocal types used in song \"Le Pop\"",
+      "query": "SELECT count(*) FROM vocals AS T1 JOIN songs AS T2 ON T1.songid  =  T2.songid WHERE title  =  \"Le Pop\"",
+      "gold": "0",
+      "cells": 0,
+      "split": "train"
+    },
+    {
+      "db_id": "movie_1",
+      "question": "Find the names of all directors whose movies are rated by Sarah Martinez.",
+      "query": "SELECT DISTINCT T2.director FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID JOIN Reviewer AS T3 ON T1.rID  =  T3.rID WHERE T3.name  =  'Sarah Martinez'",
+      "gold": "Victor Fleming",
+      "cells": 104,
+      "split": "train"
+    },
+    {
+      "db_id": "aircraft",
+      "question": "What are the names of all the aircrafts associated with London Gatwick airport?",
+      "query": "SELECT T1.Aircraft FROM aircraft AS T1 JOIN airport_aircraft AS T2 ON T1.Aircraft_ID  =  T2.Aircraft_ID JOIN airport AS T3 ON T2.Airport_ID  =  T3.Airport_ID WHERE T3.Airport_Name  =  \"London Gatwick\"",
+      "gold": "Robinson R-22",
+      "cells": 217,
+      "split": "train"
+    },
+    {
+      "db_id": "swimming",
+      "question": "Find the names of stadiums that the most swimmers have been to.",
+      "query": "SELECT t3.name FROM record AS t1 JOIN event AS t2 ON t1.event_id  =  t2.id JOIN stadium AS t3 ON t3.id  =  t2.stadium_id GROUP BY t2.stadium_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "Gazprom Arena",
+      "cells": 224,
+      "split": "train"
+    },
+    {
+      "db_id": "program_share",
+      "question": "Find the names of programs that are never broadcasted in the morning.",
+      "query": "SELECT name FROM program EXCEPT SELECT t1.name FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id WHERE t2.Time_of_day  =  \"Morning\"",
+      "gold": "Youman",
+      "cells": 144,
+      "split": "train"
+    },
+    {
+      "db_id": "icfp_1",
+      "question": "Find the number of papers published by the institution \"University of Pennsylvania\".",
+      "query": "SELECT count(DISTINCT t1.title) FROM papers AS t1 JOIN authorship AS t2 ON t1.paperid  =  t2.paperid JOIN inst AS t3 ON t2.instid  =  t3.instid WHERE t3.name  =  \"University of Pennsylvania\"",
+      "gold": "1",
+      "cells": 133,
+      "split": "train"
+    },
+    {
+      "db_id": "entrepreneur",
+      "question": "Return the name of the heaviest entrepreneur.",
+      "query": "SELECT T2.Name FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Weight DESC LIMIT 1",
+      "gold": "Goran Fiorentini",
+      "cells": 70,
+      "split": "train"
+    },
+    {
+      "db_id": "decoration_competition",
+      "question": "Show the names of members that have a rank in round higher than 3.",
+      "query": "SELECT T1.Name FROM member AS T1 JOIN round AS T2 ON T1.Member_ID  =  T2.Member_ID WHERE T2.Rank_in_Round  >  3",
+      "gold": "Tom Weiskopf",
+      "cells": 84,
+      "split": "train"
+    },
+    {
+      "db_id": "theme_gallery",
+      "question": "How many exhibitions have a attendance more than 100 or have a ticket price below 10?",
+      "query": "SELECT count(*) FROM exhibition_record AS T1 JOIN exhibition AS T2 ON T1.exhibition_id  =  T2.exhibition_id WHERE T1.attendance  >  100 OR T2.ticket_price  <  10",
+      "gold": "13",
+      "cells": 104,
+      "split": "train"
+    },
+    {
+      "db_id": "store_product",
+      "question": "Which city is the headquarter of the store named \"Blackville\" in?",
+      "query": "SELECT t3.headquartered_city FROM store AS t1 JOIN store_district AS t2 ON t1.store_id  =  t2.store_id JOIN district AS t3 ON t2.district_id  =  t3.district_id WHERE t1.store_name  =  \"Blackville\"",
+      "gold": "Bhakkar City",
+      "cells": 187,
+      "split": "train"
+    },
+    {
+      "db_id": "small_bank_1",
+      "question": "What is the total balance of savings accounts not belonging to someone with the name Brown?",
+      "query": "SELECT sum(T2.balance) FROM accounts AS T1 JOIN savings AS T2 ON T1.custid  =  T2.custid WHERE T1.name != 'Brown'",
+      "gold": "1000310299.0",
+      "cells": 40,
+      "split": "train"
+    },
+    {
+      "db_id": "insurance_fnol",
+      "question": "Find the claim that has the largest total settlement amount. Return the effective date of the claim.",
+      "query": "SELECT t1.Effective_Date FROM claims AS t1 JOIN settlements AS t2 ON t1.claim_id  =  t2.claim_id GROUP BY t1.claim_id ORDER BY sum(t2.settlement_amount) DESC LIMIT 1",
+      "gold": "2009-02-11",
+      "cells": 237,
+      "split": "train"
+    },
+    {
+      "db_id": "browser_web",
+      "question": "When did the web accelerator 'CACHEbox' and browser 'Internet Explorer' become compatible?",
+      "query": "SELECT T1.compatible_since_year FROM accelerator_compatible_browser AS T1 JOIN browser AS T2 ON T1.browser_id  =  T2.id JOIN web_client_accelerator AS T3 ON T1.accelerator_id  =  T3.id WHERE T3.name  =  'CACHEbox' AND T2.name  =  'Internet Explorer'",
+      "gold": "1995",
+      "cells": 134,
+      "split": "train"
+    },
+    {
+      "db_id": "election",
+      "question": "How many distinct delegates are from counties with population larger than 50000?",
+      "query": "SELECT count(DISTINCT T2.Delegate) FROM county AS T1 JOIN election AS T2 ON T1.County_id  =  T2.District WHERE T1.Population  >  50000",
+      "gold": "5",
+      "cells": 132,
+      "split": "train"
+    },
+    {
+      "db_id": "workshop_paper",
+      "question": "Show the authors who have submissions to more than one workshop.",
+      "query": "SELECT T2.Author FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID GROUP BY T2.Author HAVING COUNT(DISTINCT T1.workshop_id)  >  1",
+      "gold": "Sammy Green",
+      "cells": 82,
+      "split": "train"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_150 #####
+QUESTION:
+Where did the director of film The Uninvited Guest (1923 Film) die?
+
+CONTEXT:
+The Uninvited Guest | decoy_link_150 | decoy_mid_150
+Shapur I | father | Ardashir I
+Ardashir I | place of birth | Istakhr
+Luis Vélez de Guevara | place of birth | Écija
+Juan Crisóstomo Vélez de Guevara | father | Luis Vélez de Guevara
+The Uninvited Guest | director | George Dewhurst
+George Dewhurst | place of death | CF_TAIL_150_London
+decoy_mid_150 | place of death | London

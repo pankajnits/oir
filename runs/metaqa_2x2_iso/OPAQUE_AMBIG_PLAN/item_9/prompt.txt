@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_9]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_9 #####
+QUESTION:
+What is the genre of a movie directed by Hiroshi Nishitani?
+
+PATH_QUERY
+START Hiroshi Nishitani
+R1 Ede77aad9518a
+R2 Ee517b029eb7f
+Execute path; return final tail only.
+
+CONTEXT:
+Hiroshi Nishitani | Ede77aad9518a | Suspect X
+Suspect X | Ee517b029eb7f | Drama, Mystery
+Suspect X | E7e0a0127bd6e | Japanese

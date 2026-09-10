@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_83]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_83 #####
+QUESTION:
+Who directed a movie that Talia Shire starred in?
+
+PATH_QUERY
+START Talia Shire
+R1 Eccd40ace6bef
+R2 Eec2a4e74ae8c
+Execute path; return final tail only.
+
+CONTEXT:
+Talia Shire | Eccd40ace6bef | Prophecy
+Prophecy | Eec2a4e74ae8c | John Frankenheimer
+Prophecy | Ec23f476f51ee | David Seltzer

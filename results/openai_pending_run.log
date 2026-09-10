@@ -1,0 +1,37 @@
+model gpt-5.6-sol suites ['xfer_nobind', 'hop4', 'excel']
+XFER_COMPLEX_NOBIND_0 4.1s -> UNKNOWN
+XFER_COMPLEX_NOBIND_1 5.1s -> Eac73f02c9155
+XFER_COMPLEX_NOBIND_2 3.8s -> Eaa0b4b7407cf
+XFER_COMPLEX_NOBIND_3 4.4s -> UNKNOWN
+XFER_COMPLEX_NOBIND_4 3.2s -> Ea4a41263a8c4
+XFER_COMPLEX_NOBIND_5 4.2s -> E5a319cceb5dc
+XFER_REAL_NOBIND_0 5.0s -> UNKNOWN
+XFER_REAL_NOBIND_1 7.3s -> UNKNOWN
+XFER_REAL_NOBIND_2 4.0s -> UNKNOWN
+XFER_REAL_NOBIND_3 4.2s -> UNKNOWN
+XFER_REAL_NOBIND_4 6.6s -> UNKNOWN
+XFER_REAL_NOBIND_5 6.5s -> UNKNOWN
+H4_DEMO_0_0 4.4s -> UNKNOWN
+H4_DEMO_0_1 5.6s -> UNKNOWN
+H4_DEMO_0_2 5.9s -> UNKNOWN
+H4_DEMO_0_3 6.7s -> E54e4ced4003f
+H4_DEMO_0_4 5.8s -> UNKNOWN
+H4_DEMO_0_5 5.0s -> UNKNOWN
+PATH batch 5.4s -> 6 answers
+excel WIKI_NL 7.9s -> 16 answers
+excel WIKI_PROG 7.0s -> 16 answers
+excel OD500_NL 9.0s -> 16 answers
+excel OD500_PROG 6.3s -> 16 answers
+done
+model gpt-5.6-sol suites ['finqa_wtq']
+start FQ_NL (~90275 tok)...
+FQ_NL 90.3s -> 0 answers
+start FQ_PROG (~89872 tok)...
+FQ_PROG 8.4s -> 8 answers
+start FQ_FOLLOW (~89925 tok)...
+FQ_FOLLOW 7.6s -> 4 answers
+start WTQ_NL (~89743 tok)...
+WTQ_NL 69.8s -> 6 answers
+start WTQ_DSL (~89656 tok)...
+WTQ_DSL 7.1s -> 0 answers
+done

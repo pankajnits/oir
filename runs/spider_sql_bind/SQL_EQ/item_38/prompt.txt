@@ -1,0 +1,50 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_38]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_38 #####
+DB: insurance_fnol
+SCHEMA (English name → sealed sqlite identifier):
+Customers = Ef51dd477c850
+Customer_ID = Ec95408cd4a52
+Customer_name = E561fa6dddece
+Services = E927c5eb7d96b
+Service_ID = E5f5aee0be9c0
+Service_name = E58cf145a8e9e
+Available_Policies = E1e1743e98a0e
+Policy_ID = E32dfe9a64553
+policy_type_code = Edac808af7e75
+Customer_Phone = E1c71ea825868
+Customers_Policies = E990986f7de1b
+Date_Opened = Eb87b90504d07
+Date_Closed = Ee1482ae664cb
+First_Notification_of_Loss = E2fab37a28a59
+FNOL_ID = Ea67129954289
+Claims = E21602487d5a1
+Claim_ID = Ebff4f90392e6
+Effective_Date = E0244c86ff3c8
+Settlements = Ed3e7472c4e57
+Settlement_ID = Ec32b23c73760
+Settlement_Amount = Edc2e8b08a20f
+
+Customers(Customer_ID, Customer_name)
+Services(Service_ID, Service_name)
+Available_Policies(Policy_ID, policy_type_code, Customer_Phone)
+Customers_Policies(Customer_ID, Policy_ID, Date_Opened, Date_Closed)
+First_Notification_of_Loss(FNOL_ID, Customer_ID, Policy_ID, Service_ID)
+Claims(Claim_ID, FNOL_ID, Effective_Date)
+Settlements(Settlement_ID, Claim_ID, Effective_Date, Settlement_Amount)
+
+QUESTION:
+Count the total number of E1e1743e98a0e used by the E1c71ea825868 named "Dayana Robel".
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

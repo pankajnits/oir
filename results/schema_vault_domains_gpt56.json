@@ -1,0 +1,662 @@
+{
+  "model": "gpt56",
+  "n": 12,
+  "summary": {
+    "MILD_PROG": {
+      "score": "12/12",
+      "missing": 0,
+      "wilson": {
+        "k": 12,
+        "n": 12,
+        "acc": 1.0,
+        "ci95": [
+          0.7575,
+          1.0
+        ],
+        "display": "12/12 [0.76,1.00]"
+      }
+    },
+    "MILD_NL": {
+      "score": "12/12",
+      "missing": 0,
+      "wilson": {
+        "k": 12,
+        "n": 12,
+        "acc": 1.0,
+        "ci95": [
+          0.7575,
+          1.0
+        ],
+        "display": "12/12 [0.76,1.00]"
+      }
+    },
+    "STRICT_PROG": {
+      "score": "12/12",
+      "missing": 0,
+      "wilson": {
+        "k": 12,
+        "n": 12,
+        "acc": 1.0,
+        "ci95": [
+          0.7575,
+          1.0
+        ],
+        "display": "12/12 [0.76,1.00]"
+      }
+    },
+    "STRICT_NL": {
+      "score": "12/12",
+      "missing": 0,
+      "wilson": {
+        "k": 12,
+        "n": 12,
+        "acc": 1.0,
+        "ci95": [
+          0.7575,
+          1.0
+        ],
+        "display": "12/12 [0.76,1.00]"
+      }
+    }
+  },
+  "by_domain": {
+    "EHR": {
+      "MILD_PROG": "4/4",
+      "MILD_NL": "4/4",
+      "STRICT_PROG": "4/4",
+      "STRICT_NL": "4/4"
+    },
+    "LEDGER": {
+      "MILD_PROG": "4/4",
+      "MILD_NL": "4/4",
+      "STRICT_PROG": "4/4",
+      "STRICT_NL": "4/4"
+    },
+    "SBOM": {
+      "MILD_PROG": "4/4",
+      "MILD_NL": "4/4",
+      "STRICT_PROG": "4/4",
+      "STRICT_NL": "4/4"
+    }
+  },
+  "verdict": "MILD_PROG 12/12; MILD_NL 12/12; STRICT_PROG 12/12; STRICT_NL 12/12. Hyphenated instance IDs (pat-1000, acct-4000, GHSA-*) survive EntitySeal.text and appear in STRICT_NL questions \u2014 copy-and-walk, not sealed-English. Not G-Rev1. Not privacy.",
+  "nonclaim": "Not HIPAA/AML/privacy solved. EHR/ledger rows are synthetic. OSV CVE golds are public facts; sealing is a capability control. Not G-Rev1 (gold JOIN in PROG arms).",
+  "rows": [
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_0",
+      "domain": "EHR",
+      "gold": "E7cd5665b4f4e",
+      "pred": "E7cd5665b4f4e",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_1",
+      "domain": "EHR",
+      "gold": "E3d6290904d79",
+      "pred": "E3d6290904d79",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_2",
+      "domain": "EHR",
+      "gold": "Ef5082ceb5aeb",
+      "pred": "Ef5082ceb5aeb",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_3",
+      "domain": "EHR",
+      "gold": "E37fd1f491387",
+      "pred": "E37fd1f491387",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_4",
+      "domain": "LEDGER",
+      "gold": "E7b4c7e4b4635",
+      "pred": "E7b4c7e4b4635",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_5",
+      "domain": "LEDGER",
+      "gold": "E94e3486d6741",
+      "pred": "E94e3486d6741",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_6",
+      "domain": "LEDGER",
+      "gold": "Eb0b4b1734d0c",
+      "pred": "Eb0b4b1734d0c",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_7",
+      "domain": "LEDGER",
+      "gold": "E34a97b7a44cd",
+      "pred": "E34a97b7a44cd",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_8",
+      "domain": "SBOM",
+      "gold": "E237fcc92ea57",
+      "pred": "E237fcc92ea57",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_9",
+      "domain": "SBOM",
+      "gold": "E9c2663af7077",
+      "pred": "E9c2663af7077",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_10",
+      "domain": "SBOM",
+      "gold": "E213e795c01d7",
+      "pred": "E213e795c01d7",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "MILD_PROG",
+      "id": "SV_MILDPROG_11",
+      "domain": "SBOM",
+      "gold": "Ed5c97a66f927",
+      "pred": "Ed5c97a66f927",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_0",
+      "domain": "EHR",
+      "gold": "E7cd5665b4f4e",
+      "pred": "E7cd5665b4f4e",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_1",
+      "domain": "EHR",
+      "gold": "E3d6290904d79",
+      "pred": "E3d6290904d79",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_2",
+      "domain": "EHR",
+      "gold": "Ef5082ceb5aeb",
+      "pred": "Ef5082ceb5aeb",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_3",
+      "domain": "EHR",
+      "gold": "E37fd1f491387",
+      "pred": "E37fd1f491387",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_4",
+      "domain": "LEDGER",
+      "gold": "E7b4c7e4b4635",
+      "pred": "E7b4c7e4b4635",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_5",
+      "domain": "LEDGER",
+      "gold": "E94e3486d6741",
+      "pred": "E94e3486d6741",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_6",
+      "domain": "LEDGER",
+      "gold": "Eb0b4b1734d0c",
+      "pred": "Eb0b4b1734d0c",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_7",
+      "domain": "LEDGER",
+      "gold": "E34a97b7a44cd",
+      "pred": "E34a97b7a44cd",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_8",
+      "domain": "SBOM",
+      "gold": "E237fcc92ea57",
+      "pred": "E237fcc92ea57",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_9",
+      "domain": "SBOM",
+      "gold": "E9c2663af7077",
+      "pred": "E9c2663af7077",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_10",
+      "domain": "SBOM",
+      "gold": "E213e795c01d7",
+      "pred": "E213e795c01d7",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SV_MILDNL_11",
+      "domain": "SBOM",
+      "gold": "Ed5c97a66f927",
+      "pred": "Ed5c97a66f927",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_0",
+      "domain": "EHR",
+      "gold": "E7cd5665b4f4e",
+      "pred": "E7cd5665b4f4e",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_1",
+      "domain": "EHR",
+      "gold": "E3d6290904d79",
+      "pred": "E3d6290904d79",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_2",
+      "domain": "EHR",
+      "gold": "Ef5082ceb5aeb",
+      "pred": "Ef5082ceb5aeb",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_3",
+      "domain": "EHR",
+      "gold": "E37fd1f491387",
+      "pred": "E37fd1f491387",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_4",
+      "domain": "LEDGER",
+      "gold": "E7b4c7e4b4635",
+      "pred": "E7b4c7e4b4635",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_5",
+      "domain": "LEDGER",
+      "gold": "E94e3486d6741",
+      "pred": "E94e3486d6741",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_6",
+      "domain": "LEDGER",
+      "gold": "Eb0b4b1734d0c",
+      "pred": "Eb0b4b1734d0c",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_7",
+      "domain": "LEDGER",
+      "gold": "E34a97b7a44cd",
+      "pred": "E34a97b7a44cd",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_8",
+      "domain": "SBOM",
+      "gold": "E237fcc92ea57",
+      "pred": "E237fcc92ea57",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_9",
+      "domain": "SBOM",
+      "gold": "E9c2663af7077",
+      "pred": "E9c2663af7077",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_10",
+      "domain": "SBOM",
+      "gold": "E213e795c01d7",
+      "pred": "E213e795c01d7",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "STRICT_PROG",
+      "id": "SV_STRICTPROG_11",
+      "domain": "SBOM",
+      "gold": "Ed5c97a66f927",
+      "pred": "Ed5c97a66f927",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_0",
+      "domain": "EHR",
+      "gold": "E7cd5665b4f4e",
+      "pred": "E7cd5665b4f4e",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_1",
+      "domain": "EHR",
+      "gold": "E3d6290904d79",
+      "pred": "E3d6290904d79",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_2",
+      "domain": "EHR",
+      "gold": "Ef5082ceb5aeb",
+      "pred": "Ef5082ceb5aeb",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_3",
+      "domain": "EHR",
+      "gold": "E37fd1f491387",
+      "pred": "E37fd1f491387",
+      "ok": true,
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_4",
+      "domain": "LEDGER",
+      "gold": "E7b4c7e4b4635",
+      "pred": "E7b4c7e4b4635",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_5",
+      "domain": "LEDGER",
+      "gold": "E94e3486d6741",
+      "pred": "E94e3486d6741",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_6",
+      "domain": "LEDGER",
+      "gold": "Eb0b4b1734d0c",
+      "pred": "Eb0b4b1734d0c",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_7",
+      "domain": "LEDGER",
+      "gold": "E34a97b7a44cd",
+      "pred": "E34a97b7a44cd",
+      "ok": true,
+      "keys": [
+        "account_id",
+        "txn_id"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_8",
+      "domain": "SBOM",
+      "gold": "E237fcc92ea57",
+      "pred": "E237fcc92ea57",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_9",
+      "domain": "SBOM",
+      "gold": "E9c2663af7077",
+      "pred": "E9c2663af7077",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_10",
+      "domain": "SBOM",
+      "gold": "E213e795c01d7",
+      "pred": "E213e795c01d7",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    },
+    {
+      "arm": "STRICT_NL",
+      "id": "SV_STRICTNL_11",
+      "domain": "SBOM",
+      "gold": "Ed5c97a66f927",
+      "pred": "Ed5c97a66f927",
+      "ok": true,
+      "keys": [
+        "ghsa_id",
+        "package"
+      ]
+    }
+  ]
+}

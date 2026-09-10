@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_3]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_3 #####
+QUESTION:
+What city is the headquarters of the company led by Vibeke_Frst_Haugen?
+
+PATH_QUERY
+START Vibeke_Frst_Haugen
+R1 E98bc4d65fcbc
+R2 E6d0cb52358e5
+Execute path; return final tail only.
+
+CONTEXT:
+Vibeke_Frst_Haugen | E98bc4d65fcbc | Norwegian_Broadcasting_Corporation
+Norwegian_Broadcasting_Corporation | E6d0cb52358e5 | NRK_Marienlyst
+Vibeke_Frst_Haugen | Ed51a6fe0c149 | Polish_State_Railways
+Polish_State_Railways | Ebe40b198401b | Warsaw

@@ -1,0 +1,78 @@
+{
+  "n": 6,
+  "suite": "grev2_decoy_mut",
+  "seed": 20260814,
+  "arms": {
+    "DECOY_MUT": {
+      "n": 6,
+      "ids": [
+        "GREV2_DECOY_0",
+        "GREV2_DECOY_1",
+        "GREV2_DECOY_2",
+        "GREV2_DECOY_3",
+        "GREV2_DECOY_4",
+        "GREV2_DECOY_5"
+      ],
+      "item_paths": [
+        "runs/grev2_decoy_mut/item_0/prompt.txt",
+        "runs/grev2_decoy_mut/item_1/prompt.txt",
+        "runs/grev2_decoy_mut/item_2/prompt.txt",
+        "runs/grev2_decoy_mut/item_3/prompt.txt",
+        "runs/grev2_decoy_mut/item_4/prompt.txt",
+        "runs/grev2_decoy_mut/item_5/prompt.txt"
+      ],
+      "iso": true
+    }
+  },
+  "cases": [
+    {
+      "arm": "DECOY_MUT",
+      "i": 0,
+      "id": "GREV2_DECOY_0",
+      "gold": "E610542dbc3c0",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_0/prompt.txt"
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 1,
+      "id": "GREV2_DECOY_1",
+      "gold": "Ea7760e4d2116",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_1/prompt.txt"
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 2,
+      "id": "GREV2_DECOY_2",
+      "gold": "E2c8e49d4a5f0",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_2/prompt.txt"
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 3,
+      "id": "GREV2_DECOY_3",
+      "gold": "Ea7083a5c199a",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_3/prompt.txt"
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 4,
+      "id": "GREV2_DECOY_4",
+      "gold": "Ed761b15723ec",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_4/prompt.txt"
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 5,
+      "id": "GREV2_DECOY_5",
+      "gold": "E9d1a7ae1fdcc",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_5/prompt.txt"
+    }
+  ],
+  "nonclaim": "PATH+SINK_TYPE given. Not G-Rev1. Type-only fails on these items."
+}

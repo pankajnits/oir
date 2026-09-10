@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_10 #####
+QUESTION:
+Who is the spouse of the director of film Eden And After?
+
+CONTEXT:
+decoy_mid_10 | spouse | Catherine Robbe-Grillet
+Polish-Russian War | director | Xawery Żuławski
+Stefan Nemanja | place of death | Hilandar
+Xawery Żuławski | mother | Małgorzata Braunek
+Eden and After | decoy_link_10 | decoy_mid_10
+Anastasia of Serbia | spouse | Stefan Nemanja
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | CF_TAIL_10_CatherineRob

@@ -1,0 +1,168 @@
+{
+  "model": "gpt56",
+  "summary": {
+    "ABSTRACT": {
+      "score": "5/6",
+      "gold": 5,
+      "unknown": 1,
+      "trap": 0,
+      "other": 0,
+      "missing": 0
+    },
+    "TWO_REL": {
+      "score": "5/6",
+      "gold": 5,
+      "unknown": 1,
+      "trap": 0,
+      "other": 0,
+      "missing": 0
+    }
+  },
+  "nonclaim": "Sealed Q + in-message hints. TWO_REL trap is mentor country. Not JOIN. Not confidentiality.",
+  "rows": [
+    {
+      "arm": "ABSTRACT",
+      "i": 0,
+      "id": "OHR_ABSTRACT_0",
+      "gold": "E362914b20850",
+      "trap": "E9512e4822cbb",
+      "start": "E5798f82ab89b",
+      "app_q": "What is the country of the employer of John K Martin Jr?",
+      "iso": true,
+      "pred": "E362914b20850",
+      "kind": "gold"
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 0,
+      "id": "OHR_TWO_REL_0",
+      "gold": "E362914b20850",
+      "trap": "E9512e4822cbb",
+      "start": "E5798f82ab89b",
+      "app_q": "What is the country of the employer of John K Martin Jr?",
+      "iso": true,
+      "pred": "E362914b20850",
+      "kind": "gold"
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 1,
+      "id": "OHR_ABSTRACT_1",
+      "gold": "Efcd13307bfaa",
+      "trap": "E910ffb27db2f",
+      "start": "E1fe76d3854ba",
+      "app_q": "What is the country of the employer of Michal Krapinec?",
+      "iso": true,
+      "pred": "Efcd13307bfaa",
+      "kind": "gold"
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 1,
+      "id": "OHR_TWO_REL_1",
+      "gold": "Efcd13307bfaa",
+      "trap": "E910ffb27db2f",
+      "start": "E1fe76d3854ba",
+      "app_q": "What is the country of the employer of Michal Krapinec?",
+      "iso": true,
+      "pred": "Efcd13307bfaa",
+      "kind": "gold"
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 2,
+      "id": "OHR_ABSTRACT_2",
+      "gold": "E943b7ef9e718",
+      "trap": "E9ebe7b552bbf",
+      "start": "E10e6db27a2ba",
+      "app_q": "What is the country of the employer of Keith Creel?",
+      "iso": true,
+      "pred": "E943b7ef9e718",
+      "kind": "gold"
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 2,
+      "id": "OHR_TWO_REL_2",
+      "gold": "E943b7ef9e718",
+      "trap": "E9ebe7b552bbf",
+      "start": "E10e6db27a2ba",
+      "app_q": "What is the country of the employer of Keith Creel?",
+      "iso": true,
+      "pred": "E943b7ef9e718",
+      "kind": "gold"
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 3,
+      "id": "OHR_ABSTRACT_3",
+      "gold": "E637a02ef29ec",
+      "trap": "Ef556644f50fd",
+      "start": "E9d5d1b3fb9ac",
+      "app_q": "What is the country of the employer of Stephen A Schwarzman?",
+      "iso": true,
+      "pred": "UNKNOWN",
+      "kind": "unknown"
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 3,
+      "id": "OHR_TWO_REL_3",
+      "gold": "E637a02ef29ec",
+      "trap": "Ef556644f50fd",
+      "start": "E9d5d1b3fb9ac",
+      "app_q": "What is the country of the employer of Stephen A Schwarzman?",
+      "iso": true,
+      "pred": "UNKNOWN",
+      "kind": "unknown"
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 4,
+      "id": "OHR_ABSTRACT_4",
+      "gold": "E8e981fbac141",
+      "trap": "E2048372384e5",
+      "start": "E08b76ee2e270",
+      "app_q": "What is the country of the employer of Topi Manner?",
+      "iso": true,
+      "pred": "E8e981fbac141",
+      "kind": "gold"
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 4,
+      "id": "OHR_TWO_REL_4",
+      "gold": "E8e981fbac141",
+      "trap": "E2048372384e5",
+      "start": "E08b76ee2e270",
+      "app_q": "What is the country of the employer of Topi Manner?",
+      "iso": true,
+      "pred": "E8e981fbac141",
+      "kind": "gold"
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 5,
+      "id": "OHR_ABSTRACT_5",
+      "gold": "Eac26f6afd03f",
+      "trap": "E759bde67d82a",
+      "start": "E03b2bcb0ba83",
+      "app_q": "What is the country of the employer of Jakub Strnad?",
+      "iso": true,
+      "pred": "Eac26f6afd03f",
+      "kind": "gold"
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 5,
+      "id": "OHR_TWO_REL_5",
+      "gold": "Eac26f6afd03f",
+      "trap": "E759bde67d82a",
+      "start": "E03b2bcb0ba83",
+      "app_q": "What is the country of the employer of Jakub Strnad?",
+      "iso": true,
+      "pred": "Eac26f6afd03f",
+      "kind": "gold"
+    }
+  ]
+}

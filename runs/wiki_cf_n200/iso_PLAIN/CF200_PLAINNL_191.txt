@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_191 #####
+QUESTION:
+When did John Cecil, 6Th Earl Of Exeter's father die?
+
+CONTEXT:
+John Cecil, 5th Earl of Exeter | date of death | CF_TAIL_191_29August1700
+Justine Tsiranana | date of death | 1999
+decoy_mid_191 | date of death | 29 August 1700
+Gillies MacKinnon | educated at | National Film and Television School
+Ruffine Tsiranana | mother | Justine Tsiranana
+John Cecil, 6th Earl of Exeter | decoy_link_191 | decoy_mid_191
+John Cecil, 6th Earl of Exeter | father | John Cecil, 5th Earl of Exeter
+A Simple Twist of Fate | director | Gillies MacKinnon

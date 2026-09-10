@@ -1,0 +1,142 @@
+{
+  "hypothesis": "Model can induce relation roles from IDs alone",
+  "n": 12,
+  "rev": {
+    "Eb29114fecfce": "works_at",
+    "E87ab71425b5c": "located_in",
+    "E9fc9e2130b21": "owned_by",
+    "E1c957dd0b4a0": "partner_of",
+    "E018691aa4610": "Alice2",
+    "E3248e657b548": "Acme2",
+    "Eff9cd8d35c23": "Bob2",
+    "E6a6dfc0a2041": "Beta2",
+    "Ef3531250f2e5": "Hold2",
+    "Ea293449e66d0": "HoldB2",
+    "E5d9159639379": "CityX2",
+    "Efd544f1bab5a": "CityY2",
+    "Ee72bee6936f8": "Part2",
+    "E60f2ffa751c2": "PartB2",
+    "Ec2ae8e9d2ae1": "Alice3",
+    "Efde876a4a1d3": "Acme3",
+    "Effe48fd474a0": "Bob3",
+    "Ebb4cdfa4ae1c": "Beta3",
+    "Ed1dc799f2985": "Hold3",
+    "E74e614c5e275": "HoldB3",
+    "E002cbeaa57ae": "CityX3",
+    "Ec15cdadb3bcd": "CityY3",
+    "E4ff66d185c50": "Part3",
+    "E23eb46e5c821": "PartB3",
+    "E7ef38c4486f9": "Alice0",
+    "Eb526c503832a": "Acme0",
+    "E98b7449b21b8": "Bob0",
+    "E7b252a9e6403": "Beta0",
+    "E1cfd637e8349": "Hold0",
+    "E6fad6023d6c4": "HoldB0",
+    "E3d4e49168406": "CityX0",
+    "Eca0332c3339f": "CityY0",
+    "E839189a83ae1": "Part0",
+    "Ee96ed555ecfb": "PartB0",
+    "E135212867f35": "Alice1",
+    "Ed49eae31d276": "Acme1",
+    "E41173e32c400": "Bob1",
+    "E6ca727d889f1": "Beta1",
+    "E2501ffce8c2d": "Hold1",
+    "E4cb9cca82065": "HoldB1",
+    "Ed9a0030603e5": "CityX1",
+    "Ef9a840cdcb75": "CityY1",
+    "Ed7377d513ad4": "Part1",
+    "E57579dc7c21d": "PartB1"
+  },
+  "cases": [
+    {
+      "id": "VAL_ZS_G2_A",
+      "cond": "zero_shot",
+      "expect_sealed": "E5d9159639379",
+      "expect_plain": "CityX2",
+      "hold": "Ef3531250f2e5"
+    },
+    {
+      "id": "VAL_ZS_G2_B",
+      "cond": "zero_shot",
+      "expect_sealed": "Efd544f1bab5a",
+      "expect_plain": "CityY2",
+      "hold": "Ea293449e66d0"
+    },
+    {
+      "id": "VAL_ZS_G3_A",
+      "cond": "zero_shot",
+      "expect_sealed": "E002cbeaa57ae",
+      "expect_plain": "CityX3",
+      "hold": "Ed1dc799f2985"
+    },
+    {
+      "id": "VAL_ZS_G3_B",
+      "cond": "zero_shot",
+      "expect_sealed": "Ec15cdadb3bcd",
+      "expect_plain": "CityY3",
+      "hold": "E74e614c5e275"
+    },
+    {
+      "id": "VAL_FS_G2_A",
+      "cond": "few_shot",
+      "expect_sealed": "E5d9159639379",
+      "expect_plain": "CityX2",
+      "hold": "Ef3531250f2e5"
+    },
+    {
+      "id": "VAL_FS_G2_B",
+      "cond": "few_shot",
+      "expect_sealed": "Efd544f1bab5a",
+      "expect_plain": "CityY2",
+      "hold": "Ea293449e66d0"
+    },
+    {
+      "id": "VAL_FS_G3_A",
+      "cond": "few_shot",
+      "expect_sealed": "E002cbeaa57ae",
+      "expect_plain": "CityX3",
+      "hold": "Ed1dc799f2985"
+    },
+    {
+      "id": "VAL_FS_G3_B",
+      "cond": "few_shot",
+      "expect_sealed": "Ec15cdadb3bcd",
+      "expect_plain": "CityY3",
+      "hold": "E74e614c5e275"
+    },
+    {
+      "id": "VAL_FH_G2_A",
+      "cond": "few_shot_handles",
+      "expect_sealed": "E5d9159639379",
+      "expect_plain": "CityX2",
+      "hold": "Ef3531250f2e5"
+    },
+    {
+      "id": "VAL_FH_G2_B",
+      "cond": "few_shot_handles",
+      "expect_sealed": "Efd544f1bab5a",
+      "expect_plain": "CityY2",
+      "hold": "Ea293449e66d0"
+    },
+    {
+      "id": "VAL_FH_G3_A",
+      "cond": "few_shot_handles",
+      "expect_sealed": "E002cbeaa57ae",
+      "expect_plain": "CityX3",
+      "hold": "Ed1dc799f2985"
+    },
+    {
+      "id": "VAL_FH_G3_B",
+      "cond": "few_shot_handles",
+      "expect_sealed": "Ec15cdadb3bcd",
+      "expect_plain": "CityY3",
+      "hold": "E74e614c5e275"
+    }
+  ],
+  "shared_relation_seals": {
+    "works_at": "Eb29114fecfce",
+    "located_in": "E87ab71425b5c",
+    "owned_by": "E9fc9e2130b21",
+    "partner_of": "E1c957dd0b4a0"
+  }
+}

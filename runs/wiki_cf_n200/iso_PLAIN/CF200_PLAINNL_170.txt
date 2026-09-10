@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_170 #####
+QUESTION:
+Where was the place of death of the director of film Basta Guardarla?
+
+CONTEXT:
+Johan Jacobsen | spouse | Annelise Hovmand
+Basta guardarla | decoy_link_170 | decoy_mid_170
+Princess Alexandra Therese Marie of Anhalt | spouse | Sizzo, Prince of Schwarzburg
+Luciano Salce | place of death | CF_TAIL_170_Rome
+Sizzo, Prince of Schwarzburg | place of birth | Rudolstadt
+Basta guardarla | director | Luciano Salce
+Min kone er uskyldig | director | Johan Jacobsen
+decoy_mid_170 | place of death | Rome

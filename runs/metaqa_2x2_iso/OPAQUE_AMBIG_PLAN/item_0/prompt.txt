@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_0]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_0 #####
+QUESTION:
+What is the genre of a movie directed by Lewis Teague?
+
+PATH_QUERY
+START Lewis Teague
+R1 E5deb70f68721
+R2 E9f51b9cb2169
+Execute path; return final tail only.
+
+CONTEXT:
+Lewis Teague | E5deb70f68721 | Collision Course
+Collision Course | E9f51b9cb2169 | Comedy, Action
+Collision Course | Ec708eb26f2a9 | Japanese

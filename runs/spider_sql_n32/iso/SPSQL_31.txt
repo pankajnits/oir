@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_31]: <sql>
+
+DB: network_1
+SCHEMA:
+Highschooler(ID, name, grade)
+Friend(student_id, friend_id)
+Likes(student_id, liked_id)
+QUESTION:
+Count the number of friends Kyle has.

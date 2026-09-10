@@ -1,0 +1,36 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_113]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_113 #####
+DB: movie_1
+SCHEMA (English name → sealed sqlite identifier):
+Movie = E60f2f9484d56
+mID = Ec92c31f3c33f
+title = E3d90b78ffe97
+year = E864be01d6dbc
+director = Ec918d9a4c8c6
+Reviewer = E0ec51507d1f4
+rID = Ea686f1d8a15d
+name = E36c5a313a062
+Rating = E84260de3cf94
+stars = Efa859e44c798
+ratingDate = Ee6836d73c208
+
+Movie(mID, title, year, director)
+Reviewer(rID, name)
+Rating(rID, mID, stars, ratingDate)
+
+QUESTION:
+What are the names of reviewers who had rated 3 star and 4 star?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

@@ -1,0 +1,38 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_88]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_88 #####
+DB: storm_record
+SCHEMA (English name → sealed sqlite identifier):
+storm = Ebf173f483818
+Storm_ID = Ef4dea799c245
+Name = E44b3a788a397
+Dates_active = Ee7618d9a9fa7
+Max_speed = Ec6a2e608f2cd
+Damage_millions_USD = Ee1a5a71561f1
+Number_Deaths = Eb4a3f2a75ea1
+region = E5884d734432a
+Region_id = E6f12c19857f4
+Region_code = Ebf8b2b66e4af
+Region_name = E5d5166804c00
+affected_region = Ebf13788db383
+Number_city_affected = Ec42be8fd01ef
+
+storm(Storm_ID, Name, Dates_active, Max_speed, Damage_millions_USD, Number_Deaths)
+region(Region_id, Region_code, Region_name)
+affected_region(Region_id, Storm_ID, Number_city_affected)
+
+QUESTION:
+What are the names of regions that were E7eb9c3007aa3 by the E60386589fd83 in which the most people died?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

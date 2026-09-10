@@ -1,0 +1,745 @@
+{
+  "n": 32,
+  "seed": 20260821,
+  "protocol": "isolation",
+  "source": "WikiMovies kb + published MetaQA 2-hop templates (not 14k test leaderboard)",
+  "source_public": "data/metaqa/wiki_entities_kb.txt",
+  "keys": "per-item HMAC on relation atoms; entities English; start in q",
+  "start_in_question": true,
+  "arms": {
+    "PLAIN": {
+      "ids": [
+        "MQO_PLAIN_0",
+        "MQO_PLAIN_1",
+        "MQO_PLAIN_2",
+        "MQO_PLAIN_3",
+        "MQO_PLAIN_4",
+        "MQO_PLAIN_5",
+        "MQO_PLAIN_6",
+        "MQO_PLAIN_7",
+        "MQO_PLAIN_8",
+        "MQO_PLAIN_9",
+        "MQO_PLAIN_10",
+        "MQO_PLAIN_11",
+        "MQO_PLAIN_12",
+        "MQO_PLAIN_13",
+        "MQO_PLAIN_14",
+        "MQO_PLAIN_15",
+        "MQO_PLAIN_16",
+        "MQO_PLAIN_17",
+        "MQO_PLAIN_18",
+        "MQO_PLAIN_19",
+        "MQO_PLAIN_20",
+        "MQO_PLAIN_21",
+        "MQO_PLAIN_22",
+        "MQO_PLAIN_23",
+        "MQO_PLAIN_24",
+        "MQO_PLAIN_25",
+        "MQO_PLAIN_26",
+        "MQO_PLAIN_27",
+        "MQO_PLAIN_28",
+        "MQO_PLAIN_29",
+        "MQO_PLAIN_30",
+        "MQO_PLAIN_31"
+      ],
+      "item_paths": [
+        "runs/metaqa_official_iso/PLAIN/item_0/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_1/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_2/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_3/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_4/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_5/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_6/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_7/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_8/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_9/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_10/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_11/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_12/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_13/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_14/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_15/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_16/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_17/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_18/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_19/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_20/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_21/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_22/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_23/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_24/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_25/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_26/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_27/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_28/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_29/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_30/prompt.txt",
+        "runs/metaqa_official_iso/PLAIN/item_31/prompt.txt"
+      ],
+      "sealed_answer": false
+    },
+    "OPAQUE_REL_QENG": {
+      "ids": [
+        "MQO_OPAQUE_REL_QENG_0",
+        "MQO_OPAQUE_REL_QENG_1",
+        "MQO_OPAQUE_REL_QENG_2",
+        "MQO_OPAQUE_REL_QENG_3",
+        "MQO_OPAQUE_REL_QENG_4",
+        "MQO_OPAQUE_REL_QENG_5",
+        "MQO_OPAQUE_REL_QENG_6",
+        "MQO_OPAQUE_REL_QENG_7",
+        "MQO_OPAQUE_REL_QENG_8",
+        "MQO_OPAQUE_REL_QENG_9",
+        "MQO_OPAQUE_REL_QENG_10",
+        "MQO_OPAQUE_REL_QENG_11",
+        "MQO_OPAQUE_REL_QENG_12",
+        "MQO_OPAQUE_REL_QENG_13",
+        "MQO_OPAQUE_REL_QENG_14",
+        "MQO_OPAQUE_REL_QENG_15",
+        "MQO_OPAQUE_REL_QENG_16",
+        "MQO_OPAQUE_REL_QENG_17",
+        "MQO_OPAQUE_REL_QENG_18",
+        "MQO_OPAQUE_REL_QENG_19",
+        "MQO_OPAQUE_REL_QENG_20",
+        "MQO_OPAQUE_REL_QENG_21",
+        "MQO_OPAQUE_REL_QENG_22",
+        "MQO_OPAQUE_REL_QENG_23",
+        "MQO_OPAQUE_REL_QENG_24",
+        "MQO_OPAQUE_REL_QENG_25",
+        "MQO_OPAQUE_REL_QENG_26",
+        "MQO_OPAQUE_REL_QENG_27",
+        "MQO_OPAQUE_REL_QENG_28",
+        "MQO_OPAQUE_REL_QENG_29",
+        "MQO_OPAQUE_REL_QENG_30",
+        "MQO_OPAQUE_REL_QENG_31"
+      ],
+      "item_paths": [
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_0/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_1/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_2/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_3/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_4/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_5/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_6/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_7/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_8/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_9/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_10/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_11/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_12/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_13/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_14/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_15/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_16/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_17/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_18/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_19/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_20/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_21/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_22/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_23/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_24/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_25/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_26/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_27/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_28/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_29/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_30/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_31/prompt.txt"
+      ],
+      "sealed_answer": false
+    },
+    "OPAQUE_REL_QHASH": {
+      "ids": [
+        "MQO_OPAQUE_REL_QHASH_0",
+        "MQO_OPAQUE_REL_QHASH_1",
+        "MQO_OPAQUE_REL_QHASH_2",
+        "MQO_OPAQUE_REL_QHASH_3",
+        "MQO_OPAQUE_REL_QHASH_4",
+        "MQO_OPAQUE_REL_QHASH_5",
+        "MQO_OPAQUE_REL_QHASH_6",
+        "MQO_OPAQUE_REL_QHASH_7",
+        "MQO_OPAQUE_REL_QHASH_8",
+        "MQO_OPAQUE_REL_QHASH_9",
+        "MQO_OPAQUE_REL_QHASH_10",
+        "MQO_OPAQUE_REL_QHASH_11",
+        "MQO_OPAQUE_REL_QHASH_12",
+        "MQO_OPAQUE_REL_QHASH_13",
+        "MQO_OPAQUE_REL_QHASH_14",
+        "MQO_OPAQUE_REL_QHASH_15",
+        "MQO_OPAQUE_REL_QHASH_16",
+        "MQO_OPAQUE_REL_QHASH_17",
+        "MQO_OPAQUE_REL_QHASH_18",
+        "MQO_OPAQUE_REL_QHASH_19",
+        "MQO_OPAQUE_REL_QHASH_20",
+        "MQO_OPAQUE_REL_QHASH_21",
+        "MQO_OPAQUE_REL_QHASH_22",
+        "MQO_OPAQUE_REL_QHASH_23",
+        "MQO_OPAQUE_REL_QHASH_24",
+        "MQO_OPAQUE_REL_QHASH_25",
+        "MQO_OPAQUE_REL_QHASH_26",
+        "MQO_OPAQUE_REL_QHASH_27",
+        "MQO_OPAQUE_REL_QHASH_28",
+        "MQO_OPAQUE_REL_QHASH_29",
+        "MQO_OPAQUE_REL_QHASH_30",
+        "MQO_OPAQUE_REL_QHASH_31"
+      ],
+      "item_paths": [
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_0/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_1/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_2/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_3/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_4/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_5/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_6/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_7/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_8/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_9/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_10/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_11/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_12/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_13/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_14/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_15/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_16/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_17/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_18/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_19/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_20/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_21/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_22/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_23/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_24/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_25/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_26/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_27/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_28/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_29/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_30/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_31/prompt.txt"
+      ],
+      "sealed_answer": false
+    },
+    "OPAQUE_REL_QHASH_PLAN": {
+      "ids": [
+        "MQO_OPAQUE_REL_QHASH_PLAN_0",
+        "MQO_OPAQUE_REL_QHASH_PLAN_1",
+        "MQO_OPAQUE_REL_QHASH_PLAN_2",
+        "MQO_OPAQUE_REL_QHASH_PLAN_3",
+        "MQO_OPAQUE_REL_QHASH_PLAN_4",
+        "MQO_OPAQUE_REL_QHASH_PLAN_5",
+        "MQO_OPAQUE_REL_QHASH_PLAN_6",
+        "MQO_OPAQUE_REL_QHASH_PLAN_7",
+        "MQO_OPAQUE_REL_QHASH_PLAN_8",
+        "MQO_OPAQUE_REL_QHASH_PLAN_9",
+        "MQO_OPAQUE_REL_QHASH_PLAN_10",
+        "MQO_OPAQUE_REL_QHASH_PLAN_11",
+        "MQO_OPAQUE_REL_QHASH_PLAN_12",
+        "MQO_OPAQUE_REL_QHASH_PLAN_13",
+        "MQO_OPAQUE_REL_QHASH_PLAN_14",
+        "MQO_OPAQUE_REL_QHASH_PLAN_15",
+        "MQO_OPAQUE_REL_QHASH_PLAN_16",
+        "MQO_OPAQUE_REL_QHASH_PLAN_17",
+        "MQO_OPAQUE_REL_QHASH_PLAN_18",
+        "MQO_OPAQUE_REL_QHASH_PLAN_19",
+        "MQO_OPAQUE_REL_QHASH_PLAN_20",
+        "MQO_OPAQUE_REL_QHASH_PLAN_21",
+        "MQO_OPAQUE_REL_QHASH_PLAN_22",
+        "MQO_OPAQUE_REL_QHASH_PLAN_23",
+        "MQO_OPAQUE_REL_QHASH_PLAN_24",
+        "MQO_OPAQUE_REL_QHASH_PLAN_25",
+        "MQO_OPAQUE_REL_QHASH_PLAN_26",
+        "MQO_OPAQUE_REL_QHASH_PLAN_27",
+        "MQO_OPAQUE_REL_QHASH_PLAN_28",
+        "MQO_OPAQUE_REL_QHASH_PLAN_29",
+        "MQO_OPAQUE_REL_QHASH_PLAN_30",
+        "MQO_OPAQUE_REL_QHASH_PLAN_31"
+      ],
+      "item_paths": [
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_0/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_1/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_2/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_3/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_4/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_5/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_6/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_7/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_8/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_9/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_10/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_11/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_12/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_13/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_14/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_15/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_16/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_17/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_18/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_19/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_20/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_21/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_22/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_23/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_24/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_25/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_26/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_27/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_28/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_29/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_30/prompt.txt",
+        "runs/metaqa_official_iso/OPAQUE_REL_QHASH_PLAN/item_31/prompt.txt"
+      ],
+      "sealed_answer": false
+    }
+  },
+  "cases": [
+    {
+      "i": 0,
+      "kind": "director_of_actor",
+      "start": "Glenn Ford",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_0",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_0",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_0",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_0"
+      },
+      "gold": "Fritz Lang",
+      "decoy_hq": "Sydney Boehm",
+      "q": "who directed the movies starred by [Glenn Ford]"
+    },
+    {
+      "i": 1,
+      "kind": "director_of_actor",
+      "start": "Ralph Meeker",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_1",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_1",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_1",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_1"
+      },
+      "gold": "Robert Aldrich",
+      "decoy_hq": "A.I. Bezzerides",
+      "q": "who directed the movies starred by [Ralph Meeker]"
+    },
+    {
+      "i": 2,
+      "kind": "director_of_actor",
+      "start": "Melanie Griffith",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_2",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_2",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_2",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_2"
+      },
+      "gold": "Antonio Banderas",
+      "decoy_hq": "Mark Childress",
+      "q": "who directed the movies starred by [Melanie Griffith]"
+    },
+    {
+      "i": 3,
+      "kind": "director_of_actor",
+      "start": "Matt Damon",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_3",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_3",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_3",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_3"
+      },
+      "gold": "Robert De Niro",
+      "decoy_hq": "Eric Roth",
+      "q": "who directed the movies starred by [Matt Damon]"
+    },
+    {
+      "i": 4,
+      "kind": "director_of_actor",
+      "start": "Winona Ryder",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_4",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_4",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_4",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_4"
+      },
+      "gold": "Michael Lehmann",
+      "decoy_hq": "Daniel Waters",
+      "q": "who directed the movies starred by [Winona Ryder]"
+    },
+    {
+      "i": 5,
+      "kind": "director_of_actor",
+      "start": "Breno Mello",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_5",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_5",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_5",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_5"
+      },
+      "gold": "Marcel Camus",
+      "decoy_hq": "Vinicius de Moraes",
+      "q": "who directed the movies starred by [Breno Mello]"
+    },
+    {
+      "i": 6,
+      "kind": "director_of_actor",
+      "start": "Sarah Snook",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_6",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_6",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_6",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_6"
+      },
+      "gold": "Peter Templeman",
+      "decoy_hq": "Michael Lucas",
+      "q": "who directed the movies starred by [Sarah Snook]"
+    },
+    {
+      "i": 7,
+      "kind": "director_of_actor",
+      "start": "Helena Bonham Carter",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_7",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_7",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_7",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_7"
+      },
+      "gold": "Charles Sturridge",
+      "decoy_hq": "Tim Sullivan",
+      "q": "who directed the movies starred by [Helena Bonham Carter]"
+    },
+    {
+      "i": 8,
+      "kind": "director_of_actor",
+      "start": "Tammy Blanchard",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_8",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_8",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_8",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_8"
+      },
+      "gold": "Gregg Champion",
+      "decoy_hq": "Teena Booth",
+      "q": "who directed the movies starred by [Tammy Blanchard]"
+    },
+    {
+      "i": 9,
+      "kind": "director_of_actor",
+      "start": "Sigourney Weaver",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_9",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_9",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_9",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_9"
+      },
+      "gold": "David Mirkin",
+      "decoy_hq": "Stephen Mazur",
+      "q": "who directed the movies starred by [Sigourney Weaver]"
+    },
+    {
+      "i": 10,
+      "kind": "director_of_actor",
+      "start": "Joan Blondell",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_10",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_10",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_10",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_10"
+      },
+      "gold": "Lloyd Bacon",
+      "decoy_hq": "Richard Maibaum",
+      "q": "who directed the movies starred by [Joan Blondell]"
+    },
+    {
+      "i": 11,
+      "kind": "director_of_actor",
+      "start": "Frank Langella",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_11",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_11",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_11",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_11"
+      },
+      "gold": "Frank Perry",
+      "decoy_hq": "Eleanor Perry",
+      "q": "who directed the movies starred by [Frank Langella]"
+    },
+    {
+      "i": 12,
+      "kind": "director_of_actor",
+      "start": "Frank Morgan",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_12",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_12",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_12",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_12"
+      },
+      "gold": "Sam Wood",
+      "decoy_hq": "Nunnally Johnson",
+      "q": "who directed the movies starred by [Frank Morgan]"
+    },
+    {
+      "i": 13,
+      "kind": "director_of_actor",
+      "start": "Mary Steenburgen",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_13",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_13",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_13",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_13"
+      },
+      "gold": "Arthur Hiller",
+      "decoy_hq": "Bernard Slade",
+      "q": "who directed the movies starred by [Mary Steenburgen]"
+    },
+    {
+      "i": 14,
+      "kind": "director_of_actor",
+      "start": "Geoffrey Rush",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_14",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_14",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_14",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_14"
+      },
+      "gold": "John Boorman",
+      "decoy_hq": "Andrew Davies",
+      "q": "who directed the movies starred by [Geoffrey Rush]"
+    },
+    {
+      "i": 15,
+      "kind": "director_of_actor",
+      "start": "Reginald Owen",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_15",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_15",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_15",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_15"
+      },
+      "gold": "Edwin L. Marin",
+      "decoy_hq": "Arthur Conan Doyle",
+      "q": "who directed the movies starred by [Reginald Owen]"
+    },
+    {
+      "i": 16,
+      "kind": "director_of_actor",
+      "start": "Nicolas Cage",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_16",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_16",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_16",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_16"
+      },
+      "gold": "Dominic Sena",
+      "decoy_hq": "Bragi F. Schut",
+      "q": "who directed the movies starred by [Nicolas Cage]"
+    },
+    {
+      "i": 17,
+      "kind": "director_of_actor",
+      "start": "Donald O'Connor",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_17",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_17",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_17",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_17"
+      },
+      "gold": "Robert Lewis",
+      "decoy_hq": "Guy Bolton",
+      "q": "who directed the movies starred by [Donald O'Connor]"
+    },
+    {
+      "i": 18,
+      "kind": "director_of_actor",
+      "start": "Anna Cropper",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_18",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_18",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_18",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_18"
+      },
+      "gold": "Ken Loach",
+      "decoy_hq": "David Mercer",
+      "q": "who directed the movies starred by [Anna Cropper]"
+    },
+    {
+      "i": 19,
+      "kind": "director_of_actor",
+      "start": "Kelly McGillis",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_19",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_19",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_19",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_19"
+      },
+      "gold": "Robert Ellis Miller",
+      "decoy_hq": "Julius J. Epstein",
+      "q": "who directed the movies starred by [Kelly McGillis]"
+    },
+    {
+      "i": 20,
+      "kind": "director_of_actor",
+      "start": "Noel Clarke",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_20",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_20",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_20",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_20"
+      },
+      "gold": "Menhaj Huda",
+      "decoy_hq": "Noel Clarke",
+      "q": "who directed the movies starred by [Noel Clarke]"
+    },
+    {
+      "i": 21,
+      "kind": "director_of_actor",
+      "start": "Ethan Hawke",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_21",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_21",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_21",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_21"
+      },
+      "gold": "Richard Linklater",
+      "decoy_hq": "Stephen Belber",
+      "q": "who directed the movies starred by [Ethan Hawke]"
+    },
+    {
+      "i": 22,
+      "kind": "director_of_actor",
+      "start": "Spencer Tracy",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_22",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_22",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_22",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_22"
+      },
+      "gold": "George Sidney",
+      "decoy_hq": "Sinclair Lewis",
+      "q": "who directed the movies starred by [Spencer Tracy]"
+    },
+    {
+      "i": 23,
+      "kind": "director_of_actor",
+      "start": "Steven Seagal",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_23",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_23",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_23",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_23"
+      },
+      "gold": "Andrew Davis",
+      "decoy_hq": "Steven Seagal",
+      "q": "who directed the movies starred by [Steven Seagal]"
+    },
+    {
+      "i": 24,
+      "kind": "director_of_actor",
+      "start": "Owen Wilson",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_24",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_24",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_24",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_24"
+      },
+      "gold": "Shawn Levy",
+      "decoy_hq": "Jared Stern",
+      "q": "who directed the movies starred by [Owen Wilson]"
+    },
+    {
+      "i": 25,
+      "kind": "director_of_actor",
+      "start": "Keenan Wynn",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_25",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_25",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_25",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_25"
+      },
+      "gold": "Wesley Ruggles",
+      "decoy_hq": "Marion Hargrove",
+      "q": "who directed the movies starred by [Keenan Wynn]"
+    },
+    {
+      "i": 26,
+      "kind": "director_of_actor",
+      "start": "Sam Rockwell",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_26",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_26",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_26",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_26"
+      },
+      "gold": "John Duigan",
+      "decoy_hq": "Naomi Wallace",
+      "q": "who directed the movies starred by [Sam Rockwell]"
+    },
+    {
+      "i": 27,
+      "kind": "director_of_actor",
+      "start": "Michel Simon",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_27",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_27",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_27",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_27"
+      },
+      "gold": "Jean Renoir",
+      "decoy_hq": "Ren\u00e9 Fauchois",
+      "q": "who directed the movies starred by [Michel Simon]"
+    },
+    {
+      "i": 28,
+      "kind": "director_of_actor",
+      "start": "John Barrymore",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_28",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_28",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_28",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_28"
+      },
+      "gold": "Archie Mayo",
+      "decoy_hq": "J. Grubb Alexander",
+      "q": "who directed the movies starred by [John Barrymore]"
+    },
+    {
+      "i": 29,
+      "kind": "director_of_actor",
+      "start": "Faizon Love",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_29",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_29",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_29",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_29"
+      },
+      "gold": "Bruce W. Smith",
+      "decoy_hq": "Reginald Hudlin",
+      "q": "who directed the movies starred by [Faizon Love]"
+    },
+    {
+      "i": 30,
+      "kind": "director_of_actor",
+      "start": "Claude Rains",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_30",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_30",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_30",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_30"
+      },
+      "gold": "Arthur Lubin",
+      "decoy_hq": "Gaston Leroux",
+      "q": "who directed the movies starred by [Claude Rains]"
+    },
+    {
+      "i": 31,
+      "kind": "director_of_actor",
+      "start": "William McNamara",
+      "ids": {
+        "PLAIN": "MQO_PLAIN_31",
+        "OPAQUE_REL_QENG": "MQO_OPAQUE_REL_QENG_31",
+        "OPAQUE_REL_QHASH": "MQO_OPAQUE_REL_QHASH_31",
+        "OPAQUE_REL_QHASH_PLAN": "MQO_OPAQUE_REL_QHASH_PLAN_31"
+      },
+      "gold": "Ken Olin",
+      "decoy_hq": "James Duff",
+      "q": "who directed the movies starred by [William McNamara]"
+    }
+  ]
+}

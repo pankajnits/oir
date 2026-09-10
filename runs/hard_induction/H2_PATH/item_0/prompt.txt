@@ -1,0 +1,22 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM H2_PATH: gold PATH ceiling hop=2.
+
+Follow PATH over sealed CONTEXT. Output final sealed atom only.
+
+##### ID HI_H2_PATH_0 #####
+PATH_QUERY
+START E018acec40d66
+R1 E2015ed2c3440
+R2 E012504e5dfe3
+Execute path; return final tail only.
+
+CONTEXT:
+Eac0f51af4649 | E012504e5dfe3 | E8790297823ed
+E018acec40d66 | E2015ed2c3440 | Eac0f51af4649
+E23dbc470c1ad | E2b10ab6bd718 | Eac0f51af4649
+Eac0f51af4649 | E82575c60383a | E23dbc470c1ad
+Ed4775a607292 | E8e1361738c88 | E018acec40d66
+E018acec40d66 | E9239e808191b | Ed4775a607292
+

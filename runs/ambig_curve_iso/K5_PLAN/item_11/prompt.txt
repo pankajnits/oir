@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_11]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_11 #####
+QUESTION:
+What city is the headquarters of the company led by Stuart_Parker?
+
+PATH_QUERY
+START Stuart_Parker
+R1 Ec28530a0cec0
+R2 E9e494a22d13e
+Execute path; return final tail only.
+
+CONTEXT:
+Stuart_Parker | Ec28530a0cec0 | USAA
+USAA | E9e494a22d13e | San_Antonio
+Stuart_Parker | E85493b07e5f6 | Cogent_Communications
+Cogent_Communications | Edfce8355338a | Washington_DC
+Stuart_Parker | E0eae70b406d5 | Kansas_City_Southern
+Kansas_City_Southern | E95f69fbbfd8a | Kansas_City
+Stuart_Parker | E6fb7fca1157b | Lacoste_SA
+Lacoste_SA | Efd99b0b7acd7 | Paris
+Stuart_Parker | E22084baba525 | Israel_Railways
+Israel_Railways | Ecb50c48242af | Lod_Railway_Station

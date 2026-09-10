@@ -1,0 +1,22 @@
+{
+  "rel_grounding": {
+    "opaque_rel": {
+      "pass": "16/16",
+      "mid": "0/16"
+    },
+    "plain_relcol": {
+      "pass": "16/16",
+      "mid": "0/16"
+    },
+    "schema_only": {
+      "pass": "16/16",
+      "mid": "0/16"
+    },
+    "none": {
+      "pass": "16/16",
+      "mid": "0/16"
+    }
+  },
+  "claude_phs_rel_only": "16/16",
+  "scrutiny": "RGC none/schema_only unexpectedly 16/16 \u2014 likely structural uniqueness: after works_at (cribbed from sealed question token), companies have only located_in out-edges. Conflicts with PHS none 0/16 mid-company (prompt-sensitive). Need multi-out-edge confound from company nodes."
+}

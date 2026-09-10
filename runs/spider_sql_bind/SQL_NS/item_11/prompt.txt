@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_11]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_11 #####
+DB: music_2
+SCHEMA (English name → sealed sqlite identifier):
+Songs = E366cc464ddd4
+SongId = Ee0fc3553a605
+Title = E549fce26de3e
+Albums = E984cc821e362
+AId = Ea76baa6853a5
+Year = E0a2ceaab0042
+Label = E0151d3411939
+Type = E430cc3029e49
+Band = Ea26c338e34ee
+Id = E100ac2767297
+Firstname = E8ad4d7aa8255
+Lastname = E4605ab42c652
+Instruments = Ee43aa8c41362
+BandmateId = Ecab1373d29d8
+Instrument = E5215d2ad2211
+Performance = E9aef24870fc3
+Bandmate = E8f486abfd29e
+StagePosition = E378e02a801d9
+Tracklists = E5c3f8ee8d471
+AlbumId = Eca0164e540d9
+Position = Eaba806ee98c8
+Vocals = E4c6c06629591
+
+Songs(SongId, Title)
+Albums(AId, Title, Year, Label, Type)
+Band(Id, Firstname, Lastname)
+Instruments(SongId, BandmateId, Instrument)
+Performance(SongId, Bandmate, StagePosition)
+Tracklists(AlbumId, Position, SongId)
+Vocals(SongId, Bandmate, Type)
+
+QUESTION:
+How many E4dbf271c14fc does the song "Le Pop" use?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_30]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_30 #####
+QUESTION:
+What city is the headquarters of the company led by Mark_T_Bertolini?
+
+PATH_QUERY
+START Mark_T_Bertolini
+R1 E7fe072221e03
+R2 E8bdb1deafe45
+Execute path; return final tail only.
+
+CONTEXT:
+Mark_T_Bertolini | E7fe072221e03 | Aetna
+Aetna | E8bdb1deafe45 | Hartford
+Mark_T_Bertolini | E84465a89f996 | Israel_Railways
+Israel_Railways | Eda12bd641c77 | Lod_Railway_Station

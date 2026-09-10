@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_115 #####
+QUESTION:
+Which country Aleksander Koniecpolski (1620–1659)'s father is from?
+
+CONTEXT:
+William de Warenne, 2nd Earl of Surrey | father | William de Warenne, 1st Earl of Surrey
+Dušan Hanák | place of birth | Bratislava
+Aleksander Koniecpolski | decoy_link_115 | decoy_mid_115
+Stanisław Koniecpolski | country of citizenship | CF_TAIL_115_PolishLithua
+Aleksander Koniecpolski | father | Stanisław Koniecpolski
+decoy_mid_115 | country of citizenship | Polish-Lithuanian Commonwealth
+I Love, You Love | director | Dušan Hanák
+William de Warenne, 1st Earl of Surrey | place of death | Lewes

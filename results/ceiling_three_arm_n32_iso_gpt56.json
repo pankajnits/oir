@@ -1,0 +1,797 @@
+{
+  "model": "gpt56",
+  "n": 32,
+  "protocol": "isolation",
+  "keys": "per-item HMAC",
+  "summary": {
+    "PLAIN_PROG": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "company_stop": "0/32"
+    },
+    "SEAL_PROG": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "company_stop": "0/32"
+    },
+    "SEAL_NL": {
+      "score": "0/32",
+      "unknown": 32,
+      "missing": 0,
+      "company_stop": "0/32"
+    }
+  },
+  "rows": [
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_0",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_1",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_2",
+      "gold": "Philadelphia",
+      "pred": "Philadelphia",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_3",
+      "gold": "London",
+      "pred": "London",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_4",
+      "gold": "VodafoneCampus",
+      "pred": "VodafoneCampus",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_5",
+      "gold": "Montabaur",
+      "pred": "Montabaur",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_6",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_7",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_8",
+      "gold": "Swindon",
+      "pred": "Swindon",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_9",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_10",
+      "gold": "Richfield",
+      "pred": "Richfield",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_11",
+      "gold": "Coral_Gables",
+      "pred": "Coral_Gables",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_12",
+      "gold": "Bellevue",
+      "pred": "Bellevue",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_13",
+      "gold": "Rome",
+      "pred": "Rome",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_14",
+      "gold": "Yerevan",
+      "pred": "Yerevan",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_15",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_16",
+      "gold": "Hartford",
+      "pred": "Hartford",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_17",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_18",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_19",
+      "gold": "Cologne",
+      "pred": "Cologne",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_20",
+      "gold": "Chesapeake",
+      "pred": "Chesapeake",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_21",
+      "gold": "Mountain_View",
+      "pred": "Mountain_View",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_22",
+      "gold": "Fox_Plaza",
+      "pred": "Fox_Plaza",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_23",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_24",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_25",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_26",
+      "gold": "Richmond",
+      "pred": "Richmond",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_27",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_28",
+      "gold": "Paris",
+      "pred": "Paris",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_29",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_30",
+      "gold": "Prague",
+      "pred": "Prague",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "PLAIN_PROG",
+      "id": "CEIL32_PLAIN_31",
+      "gold": "New_Jersey",
+      "pred": "New_Jersey",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_0",
+      "gold": "Eaeb10c5b80e3",
+      "pred": "Eaeb10c5b80e3",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_1",
+      "gold": "E7afc2f8f16e2",
+      "pred": "E7afc2f8f16e2",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_2",
+      "gold": "Ea10a50cbacec",
+      "pred": "Ea10a50cbacec",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_3",
+      "gold": "E7b2c83f57be9",
+      "pred": "E7b2c83f57be9",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_4",
+      "gold": "E58c4b7cfe6e5",
+      "pred": "E58c4b7cfe6e5",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_5",
+      "gold": "Ec80be37bea13",
+      "pred": "Ec80be37bea13",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_6",
+      "gold": "E79c91fbc3873",
+      "pred": "E79c91fbc3873",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_7",
+      "gold": "E25cb1996a6c5",
+      "pred": "E25cb1996a6c5",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_8",
+      "gold": "E4d5052be688f",
+      "pred": "E4d5052be688f",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_9",
+      "gold": "E01ba9b48b128",
+      "pred": "E01ba9b48b128",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_10",
+      "gold": "Ec62b4ed417bd",
+      "pred": "Ec62b4ed417bd",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_11",
+      "gold": "Ee2b527664dc4",
+      "pred": "Ee2b527664dc4",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_12",
+      "gold": "Ed69c70bee544",
+      "pred": "Ed69c70bee544",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_13",
+      "gold": "Eadc905453a92",
+      "pred": "Eadc905453a92",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_14",
+      "gold": "E36719ccb97ab",
+      "pred": "E36719ccb97ab",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_15",
+      "gold": "E6015201ca5e9",
+      "pred": "E6015201ca5e9",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_16",
+      "gold": "E3cc61fb19713",
+      "pred": "E3cc61fb19713",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_17",
+      "gold": "E4c57a450dfa1",
+      "pred": "E4c57a450dfa1",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_18",
+      "gold": "E689e72443c24",
+      "pred": "E689e72443c24",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_19",
+      "gold": "E4b51790dafcb",
+      "pred": "E4b51790dafcb",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_20",
+      "gold": "E8f16807184df",
+      "pred": "E8f16807184df",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_21",
+      "gold": "Eae6999e77422",
+      "pred": "Eae6999e77422",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_22",
+      "gold": "Ea66f0087ba76",
+      "pred": "Ea66f0087ba76",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_23",
+      "gold": "E6e1b16374c8b",
+      "pred": "E6e1b16374c8b",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_24",
+      "gold": "Eec2b1fc80567",
+      "pred": "Eec2b1fc80567",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_25",
+      "gold": "E3dcf56ad41de",
+      "pred": "E3dcf56ad41de",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_26",
+      "gold": "E33dba86baee6",
+      "pred": "E33dba86baee6",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_27",
+      "gold": "E3ce3e1786df3",
+      "pred": "E3ce3e1786df3",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_28",
+      "gold": "Eeae7bc6ed3a7",
+      "pred": "Eeae7bc6ed3a7",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_29",
+      "gold": "Edf4d375298a4",
+      "pred": "Edf4d375298a4",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_30",
+      "gold": "E813f69a24b6f",
+      "pred": "E813f69a24b6f",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "CEIL32_SEALPROG_31",
+      "gold": "Eab3774868b03",
+      "pred": "Eab3774868b03",
+      "ok": true,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_0",
+      "gold": "Eaeb10c5b80e3",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_1",
+      "gold": "E7afc2f8f16e2",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_2",
+      "gold": "Ea10a50cbacec",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_3",
+      "gold": "E7b2c83f57be9",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_4",
+      "gold": "E58c4b7cfe6e5",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_5",
+      "gold": "Ec80be37bea13",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_6",
+      "gold": "E79c91fbc3873",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_7",
+      "gold": "E25cb1996a6c5",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_8",
+      "gold": "E4d5052be688f",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_9",
+      "gold": "E01ba9b48b128",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_10",
+      "gold": "Ec62b4ed417bd",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_11",
+      "gold": "Ee2b527664dc4",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_12",
+      "gold": "Ed69c70bee544",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_13",
+      "gold": "Eadc905453a92",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_14",
+      "gold": "E36719ccb97ab",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_15",
+      "gold": "E6015201ca5e9",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_16",
+      "gold": "E3cc61fb19713",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_17",
+      "gold": "E4c57a450dfa1",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_18",
+      "gold": "E689e72443c24",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_19",
+      "gold": "E4b51790dafcb",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_20",
+      "gold": "E8f16807184df",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_21",
+      "gold": "Eae6999e77422",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_22",
+      "gold": "Ea66f0087ba76",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_23",
+      "gold": "E6e1b16374c8b",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_24",
+      "gold": "Eec2b1fc80567",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_25",
+      "gold": "E3dcf56ad41de",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_26",
+      "gold": "E33dba86baee6",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_27",
+      "gold": "E3ce3e1786df3",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_28",
+      "gold": "Eeae7bc6ed3a7",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_29",
+      "gold": "Edf4d375298a4",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_30",
+      "gold": "E813f69a24b6f",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    },
+    {
+      "arm": "SEAL_NL",
+      "id": "CEIL32_SEALNL_31",
+      "gold": "Eab3774868b03",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "company_stop": false
+    }
+  ],
+  "reply_dir": "results/ceiling_n32_iso_replies_gpt56"
+}

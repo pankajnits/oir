@@ -1,0 +1,19 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Ee16271510ebb works_at? City only.
+
+CONTEXT:
+Ee16271510ebb | works_at | Eca72f36afa99
+Ec22760d27196 | works_at | Eca72f36afa99
+Ee9da36150632 | works_at | E5dece8130169
+Ee9da36150632 | reports_to | Ec22760d27196
+E5dece8130169 | located_in | Ef8d6659256c2
+Eca72f36afa99 | located_in | Eb0eea9067eff
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

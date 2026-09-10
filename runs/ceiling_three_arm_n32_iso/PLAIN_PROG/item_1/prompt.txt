@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_1 #####
+PATH_QUERY
+START Anne_Lagercrantz
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Anne_Lagercrantz | works_at | Sveriges_Television
+Sveriges_Television | headquartered_in | Stockholm
+DecoyCo_Sveriges_Television | headquartered_in | DecoyHQ_Stockholm
+Sveriges_Television | owned_by | Hold_Sveriges_Television
+Hold_Sveriges_Television | meta_of | Sveriges_Television
+Sveriges_Television | partner_of | Partner_Sveriges_Television
+Partner_Sveriges_Television | meta_of | Sveriges_Television
+Decoy_DecoyCo_Sveriges_Television | works_at | DecoyCo_Sveriges_Television

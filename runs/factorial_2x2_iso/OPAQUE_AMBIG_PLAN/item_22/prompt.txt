@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_22]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_22 #####
+QUESTION:
+What city is the headquarters of the company led by Robert_E_Sanchez?
+
+PATH_QUERY
+START Robert_E_Sanchez
+R1 E96b64c448529
+R2 Ea6a3441c7c2d
+Execute path; return final tail only.
+
+CONTEXT:
+Robert_E_Sanchez | E96b64c448529 | Ryder
+Ryder | Ea6a3441c7c2d | Coral_Gables
+Robert_E_Sanchez | E3121f3cc3cb4 | Vonovia
+Vonovia | Ed7de534426d0 | Bochum

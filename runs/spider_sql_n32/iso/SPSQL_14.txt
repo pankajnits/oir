@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_14]: <sql>
+
+DB: icfp_1
+SCHEMA:
+Inst(instID, name, country)
+Authors(authID, lname, fname)
+Papers(paperID, title)
+Authorship(authID, instID, paperID, authOrder)
+QUESTION:
+Which author has written the most papers? Find his or her last name.

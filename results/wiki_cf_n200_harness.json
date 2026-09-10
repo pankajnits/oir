@@ -1,0 +1,1416 @@
+{
+  "n": 200,
+  "suite": "wiki_cf_n200",
+  "shard_size": 50,
+  "paths": {
+    "shard0": "runs/wiki_cf_n200/PLAIN_NL_SHARD0/BATCH.txt",
+    "shard1": "runs/wiki_cf_n200/PLAIN_NL_SHARD1/BATCH.txt",
+    "shard2": "runs/wiki_cf_n200/PLAIN_NL_SHARD2/BATCH.txt",
+    "shard3": "runs/wiki_cf_n200/PLAIN_NL_SHARD3/BATCH.txt"
+  },
+  "iso_dir": "runs/wiki_cf_n200/iso_PLAIN",
+  "cases": [
+    {
+      "i": 0,
+      "id": "CF200_PLAINNL_0",
+      "question": "What is the place of birth of the director of film Angus (Film)?",
+      "expect_plain": "CF_TAIL_0_Illinois",
+      "wiki_answer": "Illinois"
+    },
+    {
+      "i": 1,
+      "id": "CF200_PLAINNL_1",
+      "question": "Where did Janusz Różycki's father die?",
+      "expect_plain": "CF_TAIL_1_Mediterranea",
+      "wiki_answer": "Mediterranean Sea"
+    },
+    {
+      "i": 2,
+      "id": "CF200_PLAINNL_2",
+      "question": "When is Charles Iii, Prince Of Monaco's mother's birthday?",
+      "expect_plain": "CF_TAIL_2_18July1793",
+      "wiki_answer": "18 July 1793"
+    },
+    {
+      "i": 3,
+      "id": "CF200_PLAINNL_3",
+      "question": "Which country the director of film Batman: The Dark Knight Returns (Film) is from?",
+      "expect_plain": "CF_TAIL_3_American",
+      "wiki_answer": "American"
+    },
+    {
+      "i": 4,
+      "id": "CF200_PLAINNL_4",
+      "question": "Where was the father of Fergus Mac Fogartaig born?",
+      "expect_plain": "CF_TAIL_4_Irish",
+      "wiki_answer": "Irish"
+    },
+    {
+      "i": 5,
+      "id": "CF200_PLAINNL_5",
+      "question": "What is the place of birth of Atang De La Rama's husband?",
+      "expect_plain": "CF_TAIL_5_Hagonoy",
+      "wiki_answer": "Hagonoy"
+    },
+    {
+      "i": 6,
+      "id": "CF200_PLAINNL_6",
+      "question": "Where did the director of film The Steps (Film) graduate from?",
+      "expect_plain": "CF_TAIL_6_CanadianFilm",
+      "wiki_answer": "Canadian Film Centre"
+    },
+    {
+      "i": 7,
+      "id": "CF200_PLAINNL_7",
+      "question": "When did Natalia Alexeievna (Wilhelmina Louisa Of Hesse-Darmstadt)'s mother die?",
+      "expect_plain": "CF_TAIL_7_30March1774",
+      "wiki_answer": "30 March 1774"
+    },
+    {
+      "i": 8,
+      "id": "CF200_PLAINNL_8",
+      "question": "What is the place of birth of the director of film Les Assassins Du Dimanche?",
+      "expect_plain": "CF_TAIL_8_Paris",
+      "wiki_answer": "Paris"
+    },
+    {
+      "i": 9,
+      "id": "CF200_PLAINNL_9",
+      "question": "When is Max Von Der Groeben's mother's birthday?",
+      "expect_plain": "CF_TAIL_9_25March1957",
+      "wiki_answer": "25 March 1957"
+    },
+    {
+      "i": 10,
+      "id": "CF200_PLAINNL_10",
+      "question": "Where was the place of burial of the director of film Fear And Trembling (Film)?",
+      "expect_plain": "CF_TAIL_10_PreLachaiseC",
+      "wiki_answer": "Père Lachaise Cemetery"
+    },
+    {
+      "i": 11,
+      "id": "CF200_PLAINNL_11",
+      "question": "Where was the place of death of the composer of song They Can'T Take That Away From Me?",
+      "expect_plain": "CF_TAIL_11_Hollywood",
+      "wiki_answer": "Hollywood"
+    },
+    {
+      "i": 12,
+      "id": "CF200_PLAINNL_12",
+      "question": "What is the place of birth of the director of film Ruben Blades Is Not My Name?",
+      "expect_plain": "CF_TAIL_12_Panam",
+      "wiki_answer": "Panamá"
+    },
+    {
+      "i": 13,
+      "id": "CF200_PLAINNL_13",
+      "question": "What is the place of birth of the director of film The Watermelon Woman?",
+      "expect_plain": "CF_TAIL_13_Liberian",
+      "wiki_answer": "Liberian"
+    },
+    {
+      "i": 14,
+      "id": "CF200_PLAINNL_14",
+      "question": "Where did Mary Bethune Abbott's husband die?",
+      "expect_plain": "CF_TAIL_14_Montreal",
+      "wiki_answer": "Montreal"
+    },
+    {
+      "i": 15,
+      "id": "CF200_PLAINNL_15",
+      "question": "Which award the performer of song Constantemente Mía got?",
+      "expect_plain": "CF_TAIL_15_SanremoMusic",
+      "wiki_answer": "Sanremo Music Festival"
+    },
+    {
+      "i": 16,
+      "id": "CF200_PLAINNL_16",
+      "question": "Where did Sylvia Burka's husband die?",
+      "expect_plain": "CF_TAIL_16_Toronto",
+      "wiki_answer": "Toronto"
+    },
+    {
+      "i": 17,
+      "id": "CF200_PLAINNL_17",
+      "question": "Where was the place of death of the founder of Western Auto?",
+      "expect_plain": "CF_TAIL_17_California",
+      "wiki_answer": "California"
+    },
+    {
+      "i": 18,
+      "id": "CF200_PLAINNL_18",
+      "question": "Where did Sir Richard Butler Of Polestown's father die?",
+      "expect_plain": "CF_TAIL_18_Gowran",
+      "wiki_answer": "Gowran"
+    },
+    {
+      "i": 19,
+      "id": "CF200_PLAINNL_19",
+      "question": "What is the place of birth of Frank Wartenberg's wife?",
+      "expect_plain": "CF_TAIL_19_Prenzlau",
+      "wiki_answer": "Prenzlau"
+    },
+    {
+      "i": 20,
+      "id": "CF200_PLAINNL_20",
+      "question": "When did Philipp, Duke Of Saxe-Merseburg-Lauchstädt's father die?",
+      "expect_plain": "CF_TAIL_20_18October169",
+      "wiki_answer": "18 October 1691"
+    },
+    {
+      "i": 21,
+      "id": "CF200_PLAINNL_21",
+      "question": "What nationality is Abdallah Ibn Abd Al-Malik's father?",
+      "expect_plain": "CF_TAIL_21_Peninsula",
+      "wiki_answer": "Peninsula"
+    },
+    {
+      "i": 22,
+      "id": "CF200_PLAINNL_22",
+      "question": "What is the place of birth of the director of film Sins Of Desire?",
+      "expect_plain": "CF_TAIL_22_NewYork",
+      "wiki_answer": "New York"
+    },
+    {
+      "i": 23,
+      "id": "CF200_PLAINNL_23",
+      "question": "What is the place of birth of the director of film Nightwatching?",
+      "expect_plain": "CF_TAIL_23_NewportWales",
+      "wiki_answer": "Newport, Wales"
+    },
+    {
+      "i": 24,
+      "id": "CF200_PLAINNL_24",
+      "question": "What is the date of birth of Frederick Of Liege's father?",
+      "expect_plain": "CF_TAIL_24_1027",
+      "wiki_answer": "1027"
+    },
+    {
+      "i": 25,
+      "id": "CF200_PLAINNL_25",
+      "question": "What is the place of birth of the director of film Marianela (1940 Film)?",
+      "expect_plain": "CF_TAIL_25_Madrid",
+      "wiki_answer": "Madrid"
+    },
+    {
+      "i": 26,
+      "id": "CF200_PLAINNL_26",
+      "question": "Where was the place of burial of Thomas Mason (1770–1800)'s father?",
+      "expect_plain": "CF_TAIL_26_Virginia",
+      "wiki_answer": "Virginia"
+    },
+    {
+      "i": 27,
+      "id": "CF200_PLAINNL_27",
+      "question": "Where did Constantine Palaiologos (Son Of Andronikos Ii)'s mother die?",
+      "expect_plain": "CF_TAIL_27_Constantinop",
+      "wiki_answer": "Constantinople"
+    },
+    {
+      "i": 28,
+      "id": "CF200_PLAINNL_28",
+      "question": "Where does the director of film Shock Treatment (1964 Film) work at?",
+      "expect_plain": "CF_TAIL_28_SanDiegoStat",
+      "wiki_answer": "San Diego State University"
+    },
+    {
+      "i": 29,
+      "id": "CF200_PLAINNL_29",
+      "question": "Where was the father of Thorvald Eiriksson born?",
+      "expect_plain": "CF_TAIL_29_Norway",
+      "wiki_answer": "Norway"
+    },
+    {
+      "i": 30,
+      "id": "CF200_PLAINNL_30",
+      "question": "When is Flavius Justus's father's birthday?",
+      "expect_plain": "CF_TAIL_30_37",
+      "wiki_answer": "37"
+    },
+    {
+      "i": 31,
+      "id": "CF200_PLAINNL_31",
+      "question": "Where did the director of film 13 Fighting Men die?",
+      "expect_plain": "CF_TAIL_31_PalmSpringsC",
+      "wiki_answer": "Palm Springs, California"
+    },
+    {
+      "i": 32,
+      "id": "CF200_PLAINNL_32",
+      "question": "Where was the father of Stephan Henrik Barratt-Due born?",
+      "expect_plain": "CF_TAIL_32_SaintPaulMin",
+      "wiki_answer": "Saint Paul, Minnesota"
+    },
+    {
+      "i": 33,
+      "id": "CF200_PLAINNL_33",
+      "question": "What is the place of birth of the director of film Letter To The King?",
+      "expect_plain": "CF_TAIL_33_Kurdish",
+      "wiki_answer": "Kurdish"
+    },
+    {
+      "i": 34,
+      "id": "CF200_PLAINNL_34",
+      "question": "Where did Washington Shirley, 2Nd Earl Ferrers's father study?",
+      "expect_plain": "CF_TAIL_34_ChristChurch",
+      "wiki_answer": "Christ Church"
+    },
+    {
+      "i": 35,
+      "id": "CF200_PLAINNL_35",
+      "question": "What nationality is Gheorghe Remenco's mother?",
+      "expect_plain": "CF_TAIL_35_Romania",
+      "wiki_answer": "Romania"
+    },
+    {
+      "i": 36,
+      "id": "CF200_PLAINNL_36",
+      "question": "When did the composer of film Through A Glass Darkly (Film) die?",
+      "expect_plain": "CF_TAIL_36_28July1750",
+      "wiki_answer": "28 July 1750"
+    },
+    {
+      "i": 37,
+      "id": "CF200_PLAINNL_37",
+      "question": "What nationality is Dalfi D'Alvernha's father?",
+      "expect_plain": "CF_TAIL_37_France",
+      "wiki_answer": "France"
+    },
+    {
+      "i": 38,
+      "id": "CF200_PLAINNL_38",
+      "question": "Where did the director of film The Lantern (Film) die?",
+      "expect_plain": "CF_TAIL_38_HamburgGerma",
+      "wiki_answer": "Hamburg, Germany"
+    },
+    {
+      "i": 39,
+      "id": "CF200_PLAINNL_39",
+      "question": "What is the cause of death of director of film Love On The Ground?",
+      "expect_plain": "CF_TAIL_39_Alzheimer",
+      "wiki_answer": "Alzheimer"
+    },
+    {
+      "i": 40,
+      "id": "CF200_PLAINNL_40",
+      "question": "What is the date of birth of the director of film Night Of The Twelve?",
+      "expect_plain": "CF_TAIL_40_1October1895",
+      "wiki_answer": "1 October 1895"
+    },
+    {
+      "i": 41,
+      "id": "CF200_PLAINNL_41",
+      "question": "What is the place of birth of John Tzelepes Komnenos's father?",
+      "expect_plain": "CF_TAIL_41_Constantinop",
+      "wiki_answer": "Constantinople"
+    },
+    {
+      "i": 42,
+      "id": "CF200_PLAINNL_42",
+      "question": "Which award the director of film The Dream Is Alive earned?",
+      "expect_plain": "CF_TAIL_42_MemberoftheO",
+      "wiki_answer": "Member of the Order of Canada"
+    },
+    {
+      "i": 43,
+      "id": "CF200_PLAINNL_43",
+      "question": "Where was the place of death of Topa Inca Yupanqui's father?",
+      "expect_plain": "CF_TAIL_43_Cusco",
+      "wiki_answer": "Cusco"
+    },
+    {
+      "i": 44,
+      "id": "CF200_PLAINNL_44",
+      "question": "Where was the director of film The Wonderful Land Of Oz born?",
+      "expect_plain": "CF_TAIL_44_BakersfieldC",
+      "wiki_answer": "Bakersfield, California"
+    },
+    {
+      "i": 45,
+      "id": "CF200_PLAINNL_45",
+      "question": "Where did the director of film Man Detained graduate from?",
+      "expect_plain": "CF_TAIL_45_ChurchersCol",
+      "wiki_answer": "Churcher's College"
+    },
+    {
+      "i": 46,
+      "id": "CF200_PLAINNL_46",
+      "question": "Which country the director of film Mrs. Gibbons' Boys (Film) is from?",
+      "expect_plain": "CF_TAIL_46_French",
+      "wiki_answer": "French"
+    },
+    {
+      "i": 47,
+      "id": "CF200_PLAINNL_47",
+      "question": "Where did the director of film Cry Wolf (1947 Film) die?",
+      "expect_plain": "CF_TAIL_47_Hollywood",
+      "wiki_answer": "Hollywood"
+    },
+    {
+      "i": 48,
+      "id": "CF200_PLAINNL_48",
+      "question": "What is the place of birth of Maria Laskarina's husband?",
+      "expect_plain": "CF_TAIL_48_Transylvania",
+      "wiki_answer": "Transylvania"
+    },
+    {
+      "i": 49,
+      "id": "CF200_PLAINNL_49",
+      "question": "What is the place of birth of the founder of Faculté Libre De Médecines Naturelles Et D'Ethnomédecine?",
+      "expect_plain": "CF_TAIL_49_Sedan",
+      "wiki_answer": "Sedan"
+    },
+    {
+      "i": 50,
+      "id": "CF200_PLAINNL_50",
+      "question": "Where did the director of film The Fruit Hunters study?",
+      "expect_plain": "CF_TAIL_50_ConcordiaUni",
+      "wiki_answer": "Concordia University"
+    },
+    {
+      "i": 51,
+      "id": "CF200_PLAINNL_51",
+      "question": "Where was the keyboardist of Xyz (English Band) born?",
+      "expect_plain": "CF_TAIL_51_KingsburyLon",
+      "wiki_answer": "Kingsbury, London"
+    },
+    {
+      "i": 52,
+      "id": "CF200_PLAINNL_52",
+      "question": "Where did Ermengarde Of Tuscany's mother die?",
+      "expect_plain": "CF_TAIL_52_Lucca",
+      "wiki_answer": "Lucca"
+    },
+    {
+      "i": 53,
+      "id": "CF200_PLAINNL_53",
+      "question": "Where was the father of Deneys Reitz born?",
+      "expect_plain": "CF_TAIL_53_Swellendam",
+      "wiki_answer": "Swellendam"
+    },
+    {
+      "i": 54,
+      "id": "CF200_PLAINNL_54",
+      "question": "Who is the child of the director of film His Royal Highness (1932 Film)?",
+      "expect_plain": "CF_TAIL_54_FrancisWilli",
+      "wiki_answer": "Francis William Thring"
+    },
+    {
+      "i": 55,
+      "id": "CF200_PLAINNL_55",
+      "question": "Where was the founder of magazine Track & Field News born?",
+      "expect_plain": "CF_TAIL_55_SanDiego",
+      "wiki_answer": "San Diego"
+    },
+    {
+      "i": 56,
+      "id": "CF200_PLAINNL_56",
+      "question": "Where was the place of death of the director of film The Men Around Lucy?",
+      "expect_plain": "CF_TAIL_56_London",
+      "wiki_answer": "London"
+    },
+    {
+      "i": 57,
+      "id": "CF200_PLAINNL_57",
+      "question": "Which country Jochi's mother is from?",
+      "expect_plain": "CF_TAIL_57_MongolEmpire",
+      "wiki_answer": "Mongol Empire"
+    },
+    {
+      "i": 58,
+      "id": "CF200_PLAINNL_58",
+      "question": "Where was the place of death of Walram, Count Of Sponheim-Kreuznach's father?",
+      "expect_plain": "CF_TAIL_58_Kastellaun",
+      "wiki_answer": "Kastellaun"
+    },
+    {
+      "i": 59,
+      "id": "CF200_PLAINNL_59",
+      "question": "Who is the child of the director of film Love Affair (Unreleased Film)?",
+      "expect_plain": "CF_TAIL_59_AliaBhatt",
+      "wiki_answer": "Alia Bhatt"
+    },
+    {
+      "i": 60,
+      "id": "CF200_PLAINNL_60",
+      "question": "Who is the spouse of the director of film Fetters (Film)?",
+      "expect_plain": "CF_TAIL_60_AlenaMihulov",
+      "wiki_answer": "Alena Mihulová"
+    },
+    {
+      "i": 61,
+      "id": "CF200_PLAINNL_61",
+      "question": "Where was the place of burial of Khafra's father?",
+      "expect_plain": "CF_TAIL_61_GreatPyramid",
+      "wiki_answer": "Great Pyramid of Giza"
+    },
+    {
+      "i": 62,
+      "id": "CF200_PLAINNL_62",
+      "question": "Who is the spouse of the director of film The Ear?",
+      "expect_plain": "CF_TAIL_62_AlenaMihulov",
+      "wiki_answer": "Alena Mihulová"
+    },
+    {
+      "i": 63,
+      "id": "CF200_PLAINNL_63",
+      "question": "Where was the director of film Mad Youth born?",
+      "expect_plain": "CF_TAIL_63_Chattanooga",
+      "wiki_answer": "Chattanooga"
+    },
+    {
+      "i": 64,
+      "id": "CF200_PLAINNL_64",
+      "question": "Which country the director of film All I Wanna Do (2011 Film) is from?",
+      "expect_plain": "CF_TAIL_64_Ecuadorian",
+      "wiki_answer": "Ecuadorian"
+    },
+    {
+      "i": 65,
+      "id": "CF200_PLAINNL_65",
+      "question": "What nationality is the creator of Road Tasted?",
+      "expect_plain": "CF_TAIL_65_Australian",
+      "wiki_answer": "Australian"
+    },
+    {
+      "i": 66,
+      "id": "CF200_PLAINNL_66",
+      "question": "What is the date of death of Edsel Ford Ii's father?",
+      "expect_plain": "CF_TAIL_66_September291",
+      "wiki_answer": "September 29, 1987"
+    },
+    {
+      "i": 67,
+      "id": "CF200_PLAINNL_67",
+      "question": "What nationality is the director of film Galapagos (1955 Film)?",
+      "expect_plain": "CF_TAIL_67_Norwegian",
+      "wiki_answer": "Norwegian"
+    },
+    {
+      "i": 68,
+      "id": "CF200_PLAINNL_68",
+      "question": "What is the place of birth of the director of film Under The Boardwalk (Film)?",
+      "expect_plain": "CF_TAIL_68_AlpineTexas",
+      "wiki_answer": "Alpine, Texas"
+    },
+    {
+      "i": 69,
+      "id": "CF200_PLAINNL_69",
+      "question": "Where does the director of film Cursed For Gold work at?",
+      "expect_plain": "CF_TAIL_69_Institutdtud",
+      "wiki_answer": "Institut d'études politiques de Paris"
+    },
+    {
+      "i": 70,
+      "id": "CF200_PLAINNL_70",
+      "question": "What is the place of birth of Thomas Mason (1770–1800)'s father?",
+      "expect_plain": "CF_TAIL_70_Fairfax",
+      "wiki_answer": "Fairfax"
+    },
+    {
+      "i": 71,
+      "id": "CF200_PLAINNL_71",
+      "question": "Which country the performer of song Who I Was Born To Be is from?",
+      "expect_plain": "CF_TAIL_71_UnitedKingdo",
+      "wiki_answer": "United Kingdom"
+    },
+    {
+      "i": 72,
+      "id": "CF200_PLAINNL_72",
+      "question": "What is the place of birth of Ratna Malla's father?",
+      "expect_plain": "CF_TAIL_72_Nepal",
+      "wiki_answer": "Nepal"
+    },
+    {
+      "i": 73,
+      "id": "CF200_PLAINNL_73",
+      "question": "Where did the director of film Der Schuß Durchs Fenster die?",
+      "expect_plain": "CF_TAIL_73_Weende",
+      "wiki_answer": "Weende"
+    },
+    {
+      "i": 74,
+      "id": "CF200_PLAINNL_74",
+      "question": "What is the place of birth of the performer of song Don'T Let Me Down (Leona Lewis Song)?",
+      "expect_plain": "CF_TAIL_74_London",
+      "wiki_answer": "London"
+    },
+    {
+      "i": 75,
+      "id": "CF200_PLAINNL_75",
+      "question": "What is the place of birth of the director of film 911 Nightmare?",
+      "expect_plain": "CF_TAIL_75_American",
+      "wiki_answer": "American"
+    },
+    {
+      "i": 76,
+      "id": "CF200_PLAINNL_76",
+      "question": "Where was the place of death of Temulin's father?",
+      "expect_plain": "CF_TAIL_76_KhamagMongol",
+      "wiki_answer": "Khamag Mongol"
+    },
+    {
+      "i": 77,
+      "id": "CF200_PLAINNL_77",
+      "question": "Where was the father of Emily Eavis born?",
+      "expect_plain": "CF_TAIL_77_PiltonSomers",
+      "wiki_answer": "Pilton, Somerset"
+    },
+    {
+      "i": 78,
+      "id": "CF200_PLAINNL_78",
+      "question": "What nationality is the director of film The Wrecking Crew (2000 Film)?",
+      "expect_plain": "CF_TAIL_78_America",
+      "wiki_answer": "America"
+    },
+    {
+      "i": 79,
+      "id": "CF200_PLAINNL_79",
+      "question": "What nationality is the director of film The Masked Rider (1916 Film)?",
+      "expect_plain": "CF_TAIL_79_UnitedStates",
+      "wiki_answer": "United States"
+    },
+    {
+      "i": 80,
+      "id": "CF200_PLAINNL_80",
+      "question": "Where was the place of death of Amaury De Montfort (Died 1241)'s father?",
+      "expect_plain": "CF_TAIL_80_Toulouse",
+      "wiki_answer": "Toulouse"
+    },
+    {
+      "i": 81,
+      "id": "CF200_PLAINNL_81",
+      "question": "Who is the spouse of the performer of song Forever Everyday?",
+      "expect_plain": "CF_TAIL_81_FrankLiddell",
+      "wiki_answer": "Frank Liddell"
+    },
+    {
+      "i": 82,
+      "id": "CF200_PLAINNL_82",
+      "question": "Who is the father of the composer of song I Am The World?",
+      "expect_plain": "CF_TAIL_82_HughGibb",
+      "wiki_answer": "Hugh Gibb"
+    },
+    {
+      "i": 83,
+      "id": "CF200_PLAINNL_83",
+      "question": "Where did the director of film Slaves (Film) die?",
+      "expect_plain": "CF_TAIL_83_NewYork",
+      "wiki_answer": "New York"
+    },
+    {
+      "i": 84,
+      "id": "CF200_PLAINNL_84",
+      "question": "Where did Muawwaz Ibn Amr's father die?",
+      "expect_plain": "CF_TAIL_84_BattleofUhud",
+      "wiki_answer": "Battle of Uhud"
+    },
+    {
+      "i": 85,
+      "id": "CF200_PLAINNL_85",
+      "question": "Which country Aleksandra Marianna Wiesiołowska's father is from?",
+      "expect_plain": "CF_TAIL_85_PolishLithua",
+      "wiki_answer": "Polish–Lithuanian Commonwealth"
+    },
+    {
+      "i": 86,
+      "id": "CF200_PLAINNL_86",
+      "question": "Where did Judith Of Swabia's mother die?",
+      "expect_plain": "CF_TAIL_86_Roman",
+      "wiki_answer": "Roman"
+    },
+    {
+      "i": 87,
+      "id": "CF200_PLAINNL_87",
+      "question": "Who is the spouse of the director of film One, But A Lion!?",
+      "expect_plain": "CF_TAIL_87_KarinMolande",
+      "wiki_answer": "Karin Molander"
+    },
+    {
+      "i": 88,
+      "id": "CF200_PLAINNL_88",
+      "question": "Who is the mother of the director of film Zoolander?",
+      "expect_plain": "CF_TAIL_88_MearaStiller",
+      "wiki_answer": "Meara Stiller"
+    },
+    {
+      "i": 89,
+      "id": "CF200_PLAINNL_89",
+      "question": "What is the place of birth of the director of film Tokyo.Sora?",
+      "expect_plain": "CF_TAIL_89_date",
+      "wiki_answer": "Ōdate"
+    },
+    {
+      "i": 90,
+      "id": "CF200_PLAINNL_90",
+      "question": "Where did the director of film Shelley (Film) study?",
+      "expect_plain": "CF_TAIL_90_NationalFilm",
+      "wiki_answer": "National Film School of Denmark"
+    },
+    {
+      "i": 91,
+      "id": "CF200_PLAINNL_91",
+      "question": "What is the cause of death of performer of song Just Playing (Dreams)?",
+      "expect_plain": "CF_TAIL_91_drivebyshoot",
+      "wiki_answer": "drive-by shooting"
+    },
+    {
+      "i": 92,
+      "id": "CF200_PLAINNL_92",
+      "question": "When was Ebba Busch Thor's husband born?",
+      "expect_plain": "CF_TAIL_92_21February19",
+      "wiki_answer": "21 February 1986"
+    },
+    {
+      "i": 93,
+      "id": "CF200_PLAINNL_93",
+      "question": "Where was the father of Marie Of Lusignan, Queen Of Aragon born?",
+      "expect_plain": "CF_TAIL_93_Antioch",
+      "wiki_answer": "Antioch"
+    },
+    {
+      "i": 94,
+      "id": "CF200_PLAINNL_94",
+      "question": "What is the place of birth of the director of film The Rain Of Sorrow?",
+      "expect_plain": "CF_TAIL_94_Shanghai",
+      "wiki_answer": "Shanghai"
+    },
+    {
+      "i": 95,
+      "id": "CF200_PLAINNL_95",
+      "question": "Where was the father of Princess Isabella Of Bavaria born?",
+      "expect_plain": "CF_TAIL_95_Munich",
+      "wiki_answer": "Munich"
+    },
+    {
+      "i": 96,
+      "id": "CF200_PLAINNL_96",
+      "question": "What is the place of birth of the director of film Joanna Francesa?",
+      "expect_plain": "CF_TAIL_96_Macei",
+      "wiki_answer": "Maceió"
+    },
+    {
+      "i": 97,
+      "id": "CF200_PLAINNL_97",
+      "question": "What nationality is the director of film Truly Human?",
+      "expect_plain": "CF_TAIL_97_Swedish",
+      "wiki_answer": "Swedish"
+    },
+    {
+      "i": 98,
+      "id": "CF200_PLAINNL_98",
+      "question": "Where did Setepenre (Princess)'s father die?",
+      "expect_plain": "CF_TAIL_98_Akhetaten",
+      "wiki_answer": "Akhetaten"
+    },
+    {
+      "i": 99,
+      "id": "CF200_PLAINNL_99",
+      "question": "What is the place of birth of the director of film Dayere Zangi?",
+      "expect_plain": "CF_TAIL_99_Tehran",
+      "wiki_answer": "Tehran"
+    },
+    {
+      "i": 100,
+      "id": "CF200_PLAINNL_100",
+      "question": "Where was the father of Dionysius Vossius born?",
+      "expect_plain": "CF_TAIL_100_Heidelberg",
+      "wiki_answer": "Heidelberg"
+    },
+    {
+      "i": 101,
+      "id": "CF200_PLAINNL_101",
+      "question": "Where does George Charles Wallich's father work at?",
+      "expect_plain": "CF_TAIL_101_CalcuttaBota",
+      "wiki_answer": "Calcutta Botanical Garden"
+    },
+    {
+      "i": 102,
+      "id": "CF200_PLAINNL_102",
+      "question": "Where was the husband of Nagammai born?",
+      "expect_plain": "CF_TAIL_102_Erode",
+      "wiki_answer": "Erode"
+    },
+    {
+      "i": 103,
+      "id": "CF200_PLAINNL_103",
+      "question": "What is the place of birth of the director of film True North Trilogy?",
+      "expect_plain": "CF_TAIL_103_RedBank",
+      "wiki_answer": "Red Bank"
+    },
+    {
+      "i": 104,
+      "id": "CF200_PLAINNL_104",
+      "question": "Where did Louis Of Nassau's mother die?",
+      "expect_plain": "CF_TAIL_104_Dillenburg",
+      "wiki_answer": "Dillenburg"
+    },
+    {
+      "i": 105,
+      "id": "CF200_PLAINNL_105",
+      "question": "When did Ludwig Gruno Of Hesse-Homburg's father die?",
+      "expect_plain": "CF_TAIL_105_8June1746",
+      "wiki_answer": "8 June 1746"
+    },
+    {
+      "i": 106,
+      "id": "CF200_PLAINNL_106",
+      "question": "What is the place of birth of the composer of film Naayudamma?",
+      "expect_plain": "CF_TAIL_106_Tamil",
+      "wiki_answer": "Tamil"
+    },
+    {
+      "i": 107,
+      "id": "CF200_PLAINNL_107",
+      "question": "Where was the place of death of Ashraf Hotak's father?",
+      "expect_plain": "CF_TAIL_107_Kandahar",
+      "wiki_answer": "Kandahar"
+    },
+    {
+      "i": 108,
+      "id": "CF200_PLAINNL_108",
+      "question": "What is the place of birth of the director of film El Complejo De Felipe?",
+      "expect_plain": "CF_TAIL_108_CoronelPring",
+      "wiki_answer": "Coronel Pringles"
+    },
+    {
+      "i": 109,
+      "id": "CF200_PLAINNL_109",
+      "question": "Where was the husband of Christiane Kubrick born?",
+      "expect_plain": "CF_TAIL_109_Bronx",
+      "wiki_answer": "Bronx"
+    },
+    {
+      "i": 110,
+      "id": "CF200_PLAINNL_110",
+      "question": "Who is the spouse of the director of film Beyond Glory?",
+      "expect_plain": "CF_TAIL_110_MaureenOSull",
+      "wiki_answer": "Maureen O'Sullivan"
+    },
+    {
+      "i": 111,
+      "id": "CF200_PLAINNL_111",
+      "question": "Which country the director of film I Live On Danger is from?",
+      "expect_plain": "CF_TAIL_111_America",
+      "wiki_answer": "America"
+    },
+    {
+      "i": 112,
+      "id": "CF200_PLAINNL_112",
+      "question": "Where was the director of film Incubus Hq Live born?",
+      "expect_plain": "CF_TAIL_112_NewYork",
+      "wiki_answer": "New York"
+    },
+    {
+      "i": 113,
+      "id": "CF200_PLAINNL_113",
+      "question": "Where was the father of Alexandre Grimaldi-Coste born?",
+      "expect_plain": "CF_TAIL_113_PrincesPalac",
+      "wiki_answer": "Prince's Palace of Monaco"
+    },
+    {
+      "i": 114,
+      "id": "CF200_PLAINNL_114",
+      "question": "Where did William Killigrew (1606–1695)'s father graduate from?",
+      "expect_plain": "CF_TAIL_114_House",
+      "wiki_answer": "House"
+    },
+    {
+      "i": 115,
+      "id": "CF200_PLAINNL_115",
+      "question": "Which country Aleksander Koniecpolski (1620–1659)'s father is from?",
+      "expect_plain": "CF_TAIL_115_PolishLithua",
+      "wiki_answer": "Polish-Lithuanian Commonwealth"
+    },
+    {
+      "i": 116,
+      "id": "CF200_PLAINNL_116",
+      "question": "What is the place of birth of the director of film Aashiq (2001 Film)?",
+      "expect_plain": "CF_TAIL_116_Gujarati",
+      "wiki_answer": "Gujarati"
+    },
+    {
+      "i": 117,
+      "id": "CF200_PLAINNL_117",
+      "question": "Where was the director of film The Iron Man (Serial) born?",
+      "expect_plain": "CF_TAIL_117_TrippCountyS",
+      "wiki_answer": "Tripp County, South Dakota"
+    },
+    {
+      "i": 118,
+      "id": "CF200_PLAINNL_118",
+      "question": "When did Joanna Of Aragon, Countess Of Foix's mother die?",
+      "expect_plain": "CF_TAIL_118_23October137",
+      "wiki_answer": "23 October 1378"
+    },
+    {
+      "i": 119,
+      "id": "CF200_PLAINNL_119",
+      "question": "Why did the director of film The Obsessed Of Catule die?",
+      "expect_plain": "CF_TAIL_119_stroke",
+      "wiki_answer": "stroke"
+    },
+    {
+      "i": 120,
+      "id": "CF200_PLAINNL_120",
+      "question": "Where was the place of death of the performer of song White Squall (Song)?",
+      "expect_plain": "CF_TAIL_120_GreaterCinci",
+      "wiki_answer": "Greater Cincinnati Airport"
+    },
+    {
+      "i": 121,
+      "id": "CF200_PLAINNL_121",
+      "question": "Where was the place of death of the director of film Gitano (1970 Film)?",
+      "expect_plain": "CF_TAIL_121_BuenosAires",
+      "wiki_answer": "Buenos Aires"
+    },
+    {
+      "i": 122,
+      "id": "CF200_PLAINNL_122",
+      "question": "Where was the director of film Lightning Romance born?",
+      "expect_plain": "CF_TAIL_122_OklahomaCity",
+      "wiki_answer": "Oklahoma City, Oklahoma"
+    },
+    {
+      "i": 123,
+      "id": "CF200_PLAINNL_123",
+      "question": "Where was the place of death of Seraphina Sforza's husband?",
+      "expect_plain": "CF_TAIL_123_Pesaro",
+      "wiki_answer": "Pesaro"
+    },
+    {
+      "i": 124,
+      "id": "CF200_PLAINNL_124",
+      "question": "What is the date of death of Joseph Martin (1726–1776)'s father?",
+      "expect_plain": "CF_TAIL_124_1767",
+      "wiki_answer": "1767"
+    },
+    {
+      "i": 125,
+      "id": "CF200_PLAINNL_125",
+      "question": "What nationality is the director of film The Return (2006 Film)?",
+      "expect_plain": "CF_TAIL_125_British",
+      "wiki_answer": "British"
+    },
+    {
+      "i": 126,
+      "id": "CF200_PLAINNL_126",
+      "question": "What nationality is the director of film El Día Que Me Quieras (1935 Film)?",
+      "expect_plain": "CF_TAIL_126_American",
+      "wiki_answer": "American"
+    },
+    {
+      "i": 127,
+      "id": "CF200_PLAINNL_127",
+      "question": "What nationality is the director of film Armless?",
+      "expect_plain": "CF_TAIL_127_UnitedStates",
+      "wiki_answer": "United States"
+    },
+    {
+      "i": 128,
+      "id": "CF200_PLAINNL_128",
+      "question": "What is the place of birth of the director of film Must Love Dogs?",
+      "expect_plain": "CF_TAIL_128_Brooklyn",
+      "wiki_answer": "Brooklyn"
+    },
+    {
+      "i": 129,
+      "id": "CF200_PLAINNL_129",
+      "question": "Who is the spouse of the director of film Cross Country Cruise?",
+      "expect_plain": "CF_TAIL_129_OnaMunson",
+      "wiki_answer": "Ona Munson"
+    },
+    {
+      "i": 130,
+      "id": "CF200_PLAINNL_130",
+      "question": "What nationality is the composer of song When You Were Mine (Prince Song)?",
+      "expect_plain": "CF_TAIL_130_American",
+      "wiki_answer": "American"
+    },
+    {
+      "i": 131,
+      "id": "CF200_PLAINNL_131",
+      "question": "Where was the performer of song Old Money (Lana Del Rey Song) born?",
+      "expect_plain": "CF_TAIL_131_NewYork",
+      "wiki_answer": "New York"
+    },
+    {
+      "i": 132,
+      "id": "CF200_PLAINNL_132",
+      "question": "Which country the performer of song The Desert Is In Your Heart is from?",
+      "expect_plain": "CF_TAIL_132_UnitedKingdo",
+      "wiki_answer": "United Kingdom"
+    },
+    {
+      "i": 133,
+      "id": "CF200_PLAINNL_133",
+      "question": "Which country Nathalie Santer-Bjørndalen's husband is from?",
+      "expect_plain": "CF_TAIL_133_Norwegian",
+      "wiki_answer": "Norwegian"
+    },
+    {
+      "i": 134,
+      "id": "CF200_PLAINNL_134",
+      "question": "What is the place of birth of Lisa Dahlkvist's father?",
+      "expect_plain": "CF_TAIL_134_Mockfjrd",
+      "wiki_answer": "Mockfjärd"
+    },
+    {
+      "i": 135,
+      "id": "CF200_PLAINNL_135",
+      "question": "What is the place of birth of Johnny De Mol's mother?",
+      "expect_plain": "CF_TAIL_135_Amsterdam",
+      "wiki_answer": "Amsterdam"
+    },
+    {
+      "i": 136,
+      "id": "CF200_PLAINNL_136",
+      "question": "What nationality of the company that manufactured Bottle Caps (Candy)?",
+      "expect_plain": "CF_TAIL_136_Swiss",
+      "wiki_answer": "Swiss"
+    },
+    {
+      "i": 137,
+      "id": "CF200_PLAINNL_137",
+      "question": "Where was the place of death of the director of film Ducháček Will Fix It?",
+      "expect_plain": "CF_TAIL_137_HamburgGerma",
+      "wiki_answer": "Hamburg, Germany"
+    },
+    {
+      "i": 138,
+      "id": "CF200_PLAINNL_138",
+      "question": "Where did the director of film Hraběnka Z Podskalí die?",
+      "expect_plain": "CF_TAIL_138_HamburgGerma",
+      "wiki_answer": "Hamburg, Germany"
+    },
+    {
+      "i": 139,
+      "id": "CF200_PLAINNL_139",
+      "question": "Where did the composer of film Pepo (Film) die?",
+      "expect_plain": "CF_TAIL_139_Moscow",
+      "wiki_answer": "Moscow"
+    },
+    {
+      "i": 140,
+      "id": "CF200_PLAINNL_140",
+      "question": "Where was the place of death of the director of film Dixie Dugan (Film)?",
+      "expect_plain": "CF_TAIL_140_Hollywood",
+      "wiki_answer": "Hollywood"
+    },
+    {
+      "i": 141,
+      "id": "CF200_PLAINNL_141",
+      "question": "Where was the director of film Invasion (2014 Film) born?",
+      "expect_plain": "CF_TAIL_141_Panam",
+      "wiki_answer": "Panamá"
+    },
+    {
+      "i": 142,
+      "id": "CF200_PLAINNL_142",
+      "question": "Where was the director of film A Winter Of Cyclists born?",
+      "expect_plain": "CF_TAIL_142_Irish",
+      "wiki_answer": "Irish"
+    },
+    {
+      "i": 143,
+      "id": "CF200_PLAINNL_143",
+      "question": "Where does the director of film Thieves (1996 Film) work at?",
+      "expect_plain": "CF_TAIL_143_Cahiersducin",
+      "wiki_answer": "Cahiers du cinéma"
+    },
+    {
+      "i": 144,
+      "id": "CF200_PLAINNL_144",
+      "question": "Which country the director of film Chill Factor (Film) is from?",
+      "expect_plain": "CF_TAIL_144_Irish",
+      "wiki_answer": "Irish"
+    },
+    {
+      "i": 145,
+      "id": "CF200_PLAINNL_145",
+      "question": "Where does the founder of Les Films Du Losange work at?",
+      "expect_plain": "CF_TAIL_145_Cahiersducin",
+      "wiki_answer": "Cahiers du cinéma"
+    },
+    {
+      "i": 146,
+      "id": "CF200_PLAINNL_146",
+      "question": "Where was the place of death of the director of film Legend Of Love?",
+      "expect_plain": "CF_TAIL_146_Rome",
+      "wiki_answer": "Rome"
+    },
+    {
+      "i": 147,
+      "id": "CF200_PLAINNL_147",
+      "question": "Where was the director of film Love In The Ring born?",
+      "expect_plain": "CF_TAIL_147_Hamburg",
+      "wiki_answer": "Hamburg"
+    },
+    {
+      "i": 148,
+      "id": "CF200_PLAINNL_148",
+      "question": "What is the place of birth of Ray Hutchison's wife?",
+      "expect_plain": "CF_TAIL_148_GalvestonTex",
+      "wiki_answer": "Galveston, Texas"
+    },
+    {
+      "i": 149,
+      "id": "CF200_PLAINNL_149",
+      "question": "Who is the father of the director of film Snake In The Eagle'S Shadow?",
+      "expect_plain": "CF_TAIL_149_YuenSiutien",
+      "wiki_answer": "Yuen Siu-tien"
+    },
+    {
+      "i": 150,
+      "id": "CF200_PLAINNL_150",
+      "question": "Where did the director of film The Uninvited Guest (1923 Film) die?",
+      "expect_plain": "CF_TAIL_150_London",
+      "wiki_answer": "London"
+    },
+    {
+      "i": 151,
+      "id": "CF200_PLAINNL_151",
+      "question": "Where was the husband of Katherine De Stafford born?",
+      "expect_plain": "CF_TAIL_151_English",
+      "wiki_answer": "English"
+    },
+    {
+      "i": 152,
+      "id": "CF200_PLAINNL_152",
+      "question": "What is the place of birth of Agnes I, Abbess Of Quedlinburg's father?",
+      "expect_plain": "CF_TAIL_152_Poland",
+      "wiki_answer": "Poland"
+    },
+    {
+      "i": 153,
+      "id": "CF200_PLAINNL_153",
+      "question": "What is the place of birth of Elijah Blue Allman's father?",
+      "expect_plain": "CF_TAIL_153_NashvilleTen",
+      "wiki_answer": "Nashville, Tennessee"
+    },
+    {
+      "i": 154,
+      "id": "CF200_PLAINNL_154",
+      "question": "Where was the place of death of Crato, Count Of Nassau-Saarbrücken's father?",
+      "expect_plain": "CF_TAIL_154_Metz",
+      "wiki_answer": "Metz"
+    },
+    {
+      "i": 155,
+      "id": "CF200_PLAINNL_155",
+      "question": "Where was the place of burial of Nebetah's mother?",
+      "expect_plain": "CF_TAIL_155_KV35",
+      "wiki_answer": "KV35"
+    },
+    {
+      "i": 156,
+      "id": "CF200_PLAINNL_156",
+      "question": "Which country the director of film Desire Inc. is from?",
+      "expect_plain": "CF_TAIL_156_US",
+      "wiki_answer": "US"
+    },
+    {
+      "i": 157,
+      "id": "CF200_PLAINNL_157",
+      "question": "Where was the place of death of the director of film On Their Own?",
+      "expect_plain": "CF_TAIL_157_Hollywood",
+      "wiki_answer": "Hollywood"
+    },
+    {
+      "i": 158,
+      "id": "CF200_PLAINNL_158",
+      "question": "Who is the father of the founder of Tibiyo Takangwane?",
+      "expect_plain": "CF_TAIL_158_NgwaneV",
+      "wiki_answer": "Ngwane V"
+    },
+    {
+      "i": 159,
+      "id": "CF200_PLAINNL_159",
+      "question": "Where does the director of film Six Figures (Film) work at?",
+      "expect_plain": "CF_TAIL_159_NationalFilm",
+      "wiki_answer": "National Film Board of Canada"
+    },
+    {
+      "i": 160,
+      "id": "CF200_PLAINNL_160",
+      "question": "What nationality is Bati Del Wambara's father?",
+      "expect_plain": "CF_TAIL_160_Somali",
+      "wiki_answer": "Somali"
+    },
+    {
+      "i": 161,
+      "id": "CF200_PLAINNL_161",
+      "question": "Where was the place of death of Isabella Of Aragon, Queen Of Germany's father?",
+      "expect_plain": "CF_TAIL_161_Barcelona",
+      "wiki_answer": "Barcelona"
+    },
+    {
+      "i": 162,
+      "id": "CF200_PLAINNL_162",
+      "question": "Why did the director of film The Merry Widow (1925 Film) die?",
+      "expect_plain": "CF_TAIL_162_cancer",
+      "wiki_answer": "cancer"
+    },
+    {
+      "i": 163,
+      "id": "CF200_PLAINNL_163",
+      "question": "Where was the place of death of Flóra Majthényi's husband?",
+      "expect_plain": "CF_TAIL_163_Budapest",
+      "wiki_answer": "Budapest"
+    },
+    {
+      "i": 164,
+      "id": "CF200_PLAINNL_164",
+      "question": "Where was the place of burial of Yakov Dzhugashvili's mother?",
+      "expect_plain": "CF_TAIL_164_Tiflis",
+      "wiki_answer": "Tiflis"
+    },
+    {
+      "i": 165,
+      "id": "CF200_PLAINNL_165",
+      "question": "Where did Wenceslaus Of Krosno's father die?",
+      "expect_plain": "CF_TAIL_165_Szprotawa",
+      "wiki_answer": "Szprotawa"
+    },
+    {
+      "i": 166,
+      "id": "CF200_PLAINNL_166",
+      "question": "What nationality is Haydar Mirza Safavi's father?",
+      "expect_plain": "CF_TAIL_166_SafavidEmpir",
+      "wiki_answer": "Safavid Empire"
+    },
+    {
+      "i": 167,
+      "id": "CF200_PLAINNL_167",
+      "question": "Where was the director of film Le Glaive Et La Balance born?",
+      "expect_plain": "CF_TAIL_167_Carcassonne",
+      "wiki_answer": "Carcassonne"
+    },
+    {
+      "i": 168,
+      "id": "CF200_PLAINNL_168",
+      "question": "What is the date of death of Jean Noël Destréhan's father?",
+      "expect_plain": "CF_TAIL_168_26February17",
+      "wiki_answer": "26 February 1765"
+    },
+    {
+      "i": 169,
+      "id": "CF200_PLAINNL_169",
+      "question": "What is the place of birth of Princess Raiyah Bint Hussein's father?",
+      "expect_plain": "CF_TAIL_169_Amman",
+      "wiki_answer": "Amman"
+    },
+    {
+      "i": 170,
+      "id": "CF200_PLAINNL_170",
+      "question": "Where was the place of death of the director of film Basta Guardarla?",
+      "expect_plain": "CF_TAIL_170_Rome",
+      "wiki_answer": "Rome"
+    },
+    {
+      "i": 171,
+      "id": "CF200_PLAINNL_171",
+      "question": "What is the place of birth of the director of film Across The Great Divide (Film)?",
+      "expect_plain": "CF_TAIL_171_British",
+      "wiki_answer": "British"
+    },
+    {
+      "i": 172,
+      "id": "CF200_PLAINNL_172",
+      "question": "Who is the spouse of the director of film Married And In Love?",
+      "expect_plain": "CF_TAIL_172_MaureenOSull",
+      "wiki_answer": "Maureen O'Sullivan"
+    },
+    {
+      "i": 173,
+      "id": "CF200_PLAINNL_173",
+      "question": "Where did Jewel Taylor's husband study at?",
+      "expect_plain": "CF_TAIL_173_BentleyColle",
+      "wiki_answer": "Bentley College"
+    },
+    {
+      "i": 174,
+      "id": "CF200_PLAINNL_174",
+      "question": "Who is the spouse of the performer of song Missing My Baby?",
+      "expect_plain": "CF_TAIL_174_ChrisPrez",
+      "wiki_answer": "Chris Pérez"
+    },
+    {
+      "i": 175,
+      "id": "CF200_PLAINNL_175",
+      "question": "Where was the director of film Pretty Smart born?",
+      "expect_plain": "CF_TAIL_175_Greek",
+      "wiki_answer": "Greek"
+    },
+    {
+      "i": 176,
+      "id": "CF200_PLAINNL_176",
+      "question": "Where was the place of death of Elisabeth Of Moravia's mother?",
+      "expect_plain": "CF_TAIL_176_Brno",
+      "wiki_answer": "Brno"
+    },
+    {
+      "i": 177,
+      "id": "CF200_PLAINNL_177",
+      "question": "When is Jean-Baptiste Colbert, Marquis De Seignelay's father's birthday?",
+      "expect_plain": "CF_TAIL_177_29August1619",
+      "wiki_answer": "29 August 1619"
+    },
+    {
+      "i": 178,
+      "id": "CF200_PLAINNL_178",
+      "question": "What is the place of birth of the composer of song Vem Vet?",
+      "expect_plain": "CF_TAIL_178_Stockholm",
+      "wiki_answer": "Stockholm"
+    },
+    {
+      "i": 179,
+      "id": "CF200_PLAINNL_179",
+      "question": "What nationality is the composer of song Replay (Tamta Song)?",
+      "expect_plain": "CF_TAIL_179_Sweden",
+      "wiki_answer": "Sweden"
+    },
+    {
+      "i": 180,
+      "id": "CF200_PLAINNL_180",
+      "question": "Which country Marcus (Son Of Basiliscus)'s mother is from?",
+      "expect_plain": "CF_TAIL_180_ByzantineEmp",
+      "wiki_answer": "Byzantine Empire"
+    },
+    {
+      "i": 181,
+      "id": "CF200_PLAINNL_181",
+      "question": "When did William Louis, Prince Of Anhalt-Harzgerode's father die?",
+      "expect_plain": "CF_TAIL_181_30June1670",
+      "wiki_answer": "30 June 1670"
+    },
+    {
+      "i": 182,
+      "id": "CF200_PLAINNL_182",
+      "question": "Where was the place of death of the director of film Harrison And Barrison?",
+      "expect_plain": "CF_TAIL_182_London",
+      "wiki_answer": "London"
+    },
+    {
+      "i": 183,
+      "id": "CF200_PLAINNL_183",
+      "question": "What is the date of death of Bernhard Albrecht Of Limburg And Bronckhorst's father?",
+      "expect_plain": "CF_TAIL_183_7August1621",
+      "wiki_answer": "7 August 1621"
+    },
+    {
+      "i": 184,
+      "id": "CF200_PLAINNL_184",
+      "question": "Where was the place of death of Thomas E. Noell's father?",
+      "expect_plain": "CF_TAIL_184_Washington",
+      "wiki_answer": "Washington"
+    },
+    {
+      "i": 185,
+      "id": "CF200_PLAINNL_185",
+      "question": "What is the date of birth of Richard Marshal, 3Rd Earl Of Pembroke's father?",
+      "expect_plain": "CF_TAIL_185_1146",
+      "wiki_answer": "1146"
+    },
+    {
+      "i": 186,
+      "id": "CF200_PLAINNL_186",
+      "question": "What is the place of birth of Alexandru Darie's father?",
+      "expect_plain": "CF_TAIL_186_Soroca",
+      "wiki_answer": "Soroca"
+    },
+    {
+      "i": 187,
+      "id": "CF200_PLAINNL_187",
+      "question": "Where was the place of burial of Donika Kastrioti's husband?",
+      "expect_plain": "CF_TAIL_187_Lezh",
+      "wiki_answer": "Lezhë"
+    },
+    {
+      "i": 188,
+      "id": "CF200_PLAINNL_188",
+      "question": "What nationality is the director of film Yeh Gulistan Hamara?",
+      "expect_plain": "CF_TAIL_188_Afghanistan",
+      "wiki_answer": "Afghanistan"
+    },
+    {
+      "i": 189,
+      "id": "CF200_PLAINNL_189",
+      "question": "Where was the director of film Scarlet Seas born?",
+      "expect_plain": "CF_TAIL_189_NewYork",
+      "wiki_answer": "New York"
+    },
+    {
+      "i": 190,
+      "id": "CF200_PLAINNL_190",
+      "question": "Where does the director of film Man At Bath work at?",
+      "expect_plain": "CF_TAIL_190_Cahiersducin",
+      "wiki_answer": "Cahiers du cinéma"
+    },
+    {
+      "i": 191,
+      "id": "CF200_PLAINNL_191",
+      "question": "When did John Cecil, 6Th Earl Of Exeter's father die?",
+      "expect_plain": "CF_TAIL_191_29August1700",
+      "wiki_answer": "29 August 1700"
+    },
+    {
+      "i": 192,
+      "id": "CF200_PLAINNL_192",
+      "question": "Who is the father of the performer of song Still (Tim Mcgraw Song)?",
+      "expect_plain": "CF_TAIL_192_TugMcGraw",
+      "wiki_answer": "Tug McGraw"
+    },
+    {
+      "i": 193,
+      "id": "CF200_PLAINNL_193",
+      "question": "Where did Thomas Wodehouse's father graduate from?",
+      "expect_plain": "CF_TAIL_193_TrinityColle",
+      "wiki_answer": "Trinity College"
+    },
+    {
+      "i": 194,
+      "id": "CF200_PLAINNL_194",
+      "question": "What is the date of birth of the director of film Man-Trap?",
+      "expect_plain": "CF_TAIL_194_September101",
+      "wiki_answer": "September 10, 1915"
+    },
+    {
+      "i": 195,
+      "id": "CF200_PLAINNL_195",
+      "question": "What is the date of death of Andrew, Duke Of Slavonia's father?",
+      "expect_plain": "CF_TAIL_195_6August1272",
+      "wiki_answer": "6 August 1272"
+    },
+    {
+      "i": 196,
+      "id": "CF200_PLAINNL_196",
+      "question": "Where did Carlos Bee's father die?",
+      "expect_plain": "CF_TAIL_196_SanAntonio",
+      "wiki_answer": "San Antonio"
+    },
+    {
+      "i": 197,
+      "id": "CF200_PLAINNL_197",
+      "question": "Where did the director of film Bunty Aur Babli graduate from?",
+      "expect_plain": "CF_TAIL_197_LawrenceScho",
+      "wiki_answer": "Lawrence School, Sanawar"
+    },
+    {
+      "i": 198,
+      "id": "CF200_PLAINNL_198",
+      "question": "Where did the founder of university Seton Hall University die?",
+      "expect_plain": "CF_TAIL_198_Newark",
+      "wiki_answer": "Newark"
+    },
+    {
+      "i": 199,
+      "id": "CF200_PLAINNL_199",
+      "question": "When did Sporus's wife die?",
+      "expect_plain": "CF_TAIL_199_9June68",
+      "wiki_answer": "9 June 68"
+    }
+  ],
+  "falsifier": "PLAIN_NL == original Wikipedia answer → parametric cheat",
+  "nonclaim": "Not G-Rev1. English rels readable. Scale of CF PLAIN_NL."
+}

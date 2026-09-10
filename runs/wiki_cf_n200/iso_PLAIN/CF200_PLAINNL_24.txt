@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_24 #####
+QUESTION:
+What is the date of birth of Frederick Of Liege's father?
+
+CONTEXT:
+Albert III, Count of Namur | date of birth | CF_TAIL_24_1027
+Bernard VII, Count of Armagnac | place of birth | Paris
+A String of Pearls | composer | Jerry Gray
+Bonne of Armagnac | father | Bernard VII, Count of Armagnac
+Jerry Gray | place of death | Dallas
+decoy_mid_24 | date of birth | 1027
+Frederick was Bishop of Liege | father | Albert III, Count of Namur
+Frederick was Bishop of Liege | decoy_link_24 | decoy_mid_24

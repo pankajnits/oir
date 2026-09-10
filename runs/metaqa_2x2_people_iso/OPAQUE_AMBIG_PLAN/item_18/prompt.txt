@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_18]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_18 #####
+QUESTION:
+Who directed a movie that Burt Lancaster starred in?
+
+PATH_QUERY
+START Burt Lancaster
+R1 E9c4ef35c1cfb
+R2 Ea0880da83a6e
+Execute path; return final tail only.
+
+CONTEXT:
+Burt Lancaster | E9c4ef35c1cfb | Ulzana's Raid
+Ulzana's Raid | Ea0880da83a6e | Robert Aldrich
+Ulzana's Raid | Eab1853018b63 | Alan Sharp

@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_31]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_31 #####
+QUESTION:
+What city is the headquarters of the company led by Moshe_Zana?
+
+PATH_QUERY
+START Moshe_Zana
+R1 E76550ca2e823
+R2 E58ae8cf2cea8
+Execute path; return final tail only.
+
+CONTEXT:
+Moshe_Zana | E76550ca2e823 | Israel_Railways
+Israel_Railways | E58ae8cf2cea8 | Lod_Railway_Station
+Moshe_Zana | Ee11d286c6b22 | Cogent_Communications
+Cogent_Communications | Ee46b6f55360b | Washington_DC
+Moshe_Zana | E26f22f657b2f | Kansas_City_Southern
+Kansas_City_Southern | Ee0e866414bf8 | Kansas_City
+Moshe_Zana | Ea2e8777a3adf | Lacoste_SA
+Lacoste_SA | Ed20b7e36c8fa | Paris
+Moshe_Zana | E35d2ec9603a7 | Aetna
+Aetna | E020d8e0bd730 | Hartford

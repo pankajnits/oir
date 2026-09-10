@@ -1,0 +1,902 @@
+{
+  "seed": 20260821,
+  "n": 32,
+  "items": [
+    {
+      "kind": "director_of_actor",
+      "start": "Glenn Ford",
+      "q": "who directed the movies starred by [Glenn Ford]",
+      "gold": "Fritz Lang",
+      "edges": [
+        [
+          "Glenn Ford",
+          "starred_in",
+          "The Big Heat"
+        ],
+        [
+          "The Big Heat",
+          "directed_by",
+          "Fritz Lang"
+        ],
+        [
+          "The Big Heat",
+          "written_by",
+          "Sydney Boehm"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Sydney Boehm"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Ralph Meeker",
+      "q": "who directed the movies starred by [Ralph Meeker]",
+      "gold": "Robert Aldrich",
+      "edges": [
+        [
+          "Ralph Meeker",
+          "starred_in",
+          "Kiss Me Deadly"
+        ],
+        [
+          "Kiss Me Deadly",
+          "directed_by",
+          "Robert Aldrich"
+        ],
+        [
+          "Kiss Me Deadly",
+          "written_by",
+          "A.I. Bezzerides"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "A.I. Bezzerides"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Melanie Griffith",
+      "q": "who directed the movies starred by [Melanie Griffith]",
+      "gold": "Antonio Banderas",
+      "edges": [
+        [
+          "Melanie Griffith",
+          "starred_in",
+          "Crazy in Alabama"
+        ],
+        [
+          "Crazy in Alabama",
+          "directed_by",
+          "Antonio Banderas"
+        ],
+        [
+          "Crazy in Alabama",
+          "written_by",
+          "Mark Childress"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Mark Childress"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Matt Damon",
+      "q": "who directed the movies starred by [Matt Damon]",
+      "gold": "Robert De Niro",
+      "edges": [
+        [
+          "Matt Damon",
+          "starred_in",
+          "The Good Shepherd"
+        ],
+        [
+          "The Good Shepherd",
+          "directed_by",
+          "Robert De Niro"
+        ],
+        [
+          "The Good Shepherd",
+          "written_by",
+          "Eric Roth"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Eric Roth"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Winona Ryder",
+      "q": "who directed the movies starred by [Winona Ryder]",
+      "gold": "Michael Lehmann",
+      "edges": [
+        [
+          "Winona Ryder",
+          "starred_in",
+          "Heathers"
+        ],
+        [
+          "Heathers",
+          "directed_by",
+          "Michael Lehmann"
+        ],
+        [
+          "Heathers",
+          "written_by",
+          "Daniel Waters"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Daniel Waters"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Breno Mello",
+      "q": "who directed the movies starred by [Breno Mello]",
+      "gold": "Marcel Camus",
+      "edges": [
+        [
+          "Breno Mello",
+          "starred_in",
+          "Black Orpheus"
+        ],
+        [
+          "Black Orpheus",
+          "directed_by",
+          "Marcel Camus"
+        ],
+        [
+          "Black Orpheus",
+          "written_by",
+          "Vinicius de Moraes"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Vinicius de Moraes"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Sarah Snook",
+      "q": "who directed the movies starred by [Sarah Snook]",
+      "gold": "Peter Templeman",
+      "edges": [
+        [
+          "Sarah Snook",
+          "starred_in",
+          "Not Suitable for Children"
+        ],
+        [
+          "Not Suitable for Children",
+          "directed_by",
+          "Peter Templeman"
+        ],
+        [
+          "Not Suitable for Children",
+          "written_by",
+          "Michael Lucas"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Michael Lucas"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Helena Bonham Carter",
+      "q": "who directed the movies starred by [Helena Bonham Carter]",
+      "gold": "Charles Sturridge",
+      "edges": [
+        [
+          "Helena Bonham Carter",
+          "starred_in",
+          "Where Angels Fear to Tread"
+        ],
+        [
+          "Where Angels Fear to Tread",
+          "directed_by",
+          "Charles Sturridge"
+        ],
+        [
+          "Where Angels Fear to Tread",
+          "written_by",
+          "Tim Sullivan"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Tim Sullivan"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Tammy Blanchard",
+      "q": "who directed the movies starred by [Tammy Blanchard]",
+      "gold": "Gregg Champion",
+      "edges": [
+        [
+          "Tammy Blanchard",
+          "starred_in",
+          "Amish Grace"
+        ],
+        [
+          "Amish Grace",
+          "directed_by",
+          "Gregg Champion"
+        ],
+        [
+          "Amish Grace",
+          "written_by",
+          "Teena Booth"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Teena Booth"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Sigourney Weaver",
+      "q": "who directed the movies starred by [Sigourney Weaver]",
+      "gold": "David Mirkin",
+      "edges": [
+        [
+          "Sigourney Weaver",
+          "starred_in",
+          "Heartbreakers"
+        ],
+        [
+          "Heartbreakers",
+          "directed_by",
+          "David Mirkin"
+        ],
+        [
+          "Heartbreakers",
+          "written_by",
+          "Stephen Mazur"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Stephen Mazur"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Joan Blondell",
+      "q": "who directed the movies starred by [Joan Blondell]",
+      "gold": "Lloyd Bacon",
+      "edges": [
+        [
+          "Joan Blondell",
+          "starred_in",
+          "Gold Diggers of 1937"
+        ],
+        [
+          "Gold Diggers of 1937",
+          "directed_by",
+          "Lloyd Bacon"
+        ],
+        [
+          "Gold Diggers of 1937",
+          "written_by",
+          "Richard Maibaum"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Richard Maibaum"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Frank Langella",
+      "q": "who directed the movies starred by [Frank Langella]",
+      "gold": "Frank Perry",
+      "edges": [
+        [
+          "Frank Langella",
+          "starred_in",
+          "Diary of a Mad Housewife"
+        ],
+        [
+          "Diary of a Mad Housewife",
+          "directed_by",
+          "Frank Perry"
+        ],
+        [
+          "Diary of a Mad Housewife",
+          "written_by",
+          "Eleanor Perry"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Eleanor Perry"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Frank Morgan",
+      "q": "who directed the movies starred by [Frank Morgan]",
+      "gold": "Sam Wood",
+      "edges": [
+        [
+          "Frank Morgan",
+          "starred_in",
+          "Casanova Brown"
+        ],
+        [
+          "Casanova Brown",
+          "directed_by",
+          "Sam Wood"
+        ],
+        [
+          "Casanova Brown",
+          "written_by",
+          "Nunnally Johnson"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Nunnally Johnson"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Mary Steenburgen",
+      "q": "who directed the movies starred by [Mary Steenburgen]",
+      "gold": "Arthur Hiller",
+      "edges": [
+        [
+          "Mary Steenburgen",
+          "starred_in",
+          "Romantic Comedy"
+        ],
+        [
+          "Romantic Comedy",
+          "directed_by",
+          "Arthur Hiller"
+        ],
+        [
+          "Romantic Comedy",
+          "written_by",
+          "Bernard Slade"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Bernard Slade"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Geoffrey Rush",
+      "q": "who directed the movies starred by [Geoffrey Rush]",
+      "gold": "John Boorman",
+      "edges": [
+        [
+          "Geoffrey Rush",
+          "starred_in",
+          "The Tailor of Panama"
+        ],
+        [
+          "The Tailor of Panama",
+          "directed_by",
+          "John Boorman"
+        ],
+        [
+          "The Tailor of Panama",
+          "written_by",
+          "Andrew Davies"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Andrew Davies"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Reginald Owen",
+      "q": "who directed the movies starred by [Reginald Owen]",
+      "gold": "Edwin L. Marin",
+      "edges": [
+        [
+          "Reginald Owen",
+          "starred_in",
+          "A Study in Scarlet"
+        ],
+        [
+          "A Study in Scarlet",
+          "directed_by",
+          "Edwin L. Marin"
+        ],
+        [
+          "A Study in Scarlet",
+          "written_by",
+          "Arthur Conan Doyle"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Arthur Conan Doyle"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Nicolas Cage",
+      "q": "who directed the movies starred by [Nicolas Cage]",
+      "gold": "Dominic Sena",
+      "edges": [
+        [
+          "Nicolas Cage",
+          "starred_in",
+          "Season of the Witch"
+        ],
+        [
+          "Season of the Witch",
+          "directed_by",
+          "Dominic Sena"
+        ],
+        [
+          "Season of the Witch",
+          "written_by",
+          "Bragi F. Schut"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Bragi F. Schut"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Donald O'Connor",
+      "q": "who directed the movies starred by [Donald O'Connor]",
+      "gold": "Robert Lewis",
+      "edges": [
+        [
+          "Donald O'Connor",
+          "starred_in",
+          "Anything Goes"
+        ],
+        [
+          "Anything Goes",
+          "directed_by",
+          "Robert Lewis"
+        ],
+        [
+          "Anything Goes",
+          "written_by",
+          "Guy Bolton"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Guy Bolton"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Anna Cropper",
+      "q": "who directed the movies starred by [Anna Cropper]",
+      "gold": "Ken Loach",
+      "edges": [
+        [
+          "Anna Cropper",
+          "starred_in",
+          "In Two Minds"
+        ],
+        [
+          "In Two Minds",
+          "directed_by",
+          "Ken Loach"
+        ],
+        [
+          "In Two Minds",
+          "written_by",
+          "David Mercer"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "David Mercer"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Kelly McGillis",
+      "q": "who directed the movies starred by [Kelly McGillis]",
+      "gold": "Robert Ellis Miller",
+      "edges": [
+        [
+          "Kelly McGillis",
+          "starred_in",
+          "Reuben, Reuben"
+        ],
+        [
+          "Reuben, Reuben",
+          "directed_by",
+          "Robert Ellis Miller"
+        ],
+        [
+          "Reuben, Reuben",
+          "written_by",
+          "Julius J. Epstein"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Julius J. Epstein"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Noel Clarke",
+      "q": "who directed the movies starred by [Noel Clarke]",
+      "gold": "Menhaj Huda",
+      "edges": [
+        [
+          "Noel Clarke",
+          "starred_in",
+          "Kidulthood"
+        ],
+        [
+          "Kidulthood",
+          "directed_by",
+          "Menhaj Huda"
+        ],
+        [
+          "Kidulthood",
+          "written_by",
+          "Noel Clarke"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Noel Clarke"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Ethan Hawke",
+      "q": "who directed the movies starred by [Ethan Hawke]",
+      "gold": "Richard Linklater",
+      "edges": [
+        [
+          "Ethan Hawke",
+          "starred_in",
+          "Tape"
+        ],
+        [
+          "Tape",
+          "directed_by",
+          "Richard Linklater"
+        ],
+        [
+          "Tape",
+          "written_by",
+          "Stephen Belber"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Stephen Belber"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Spencer Tracy",
+      "q": "who directed the movies starred by [Spencer Tracy]",
+      "gold": "George Sidney",
+      "edges": [
+        [
+          "Spencer Tracy",
+          "starred_in",
+          "Cass Timberlane"
+        ],
+        [
+          "Cass Timberlane",
+          "directed_by",
+          "George Sidney"
+        ],
+        [
+          "Cass Timberlane",
+          "written_by",
+          "Sinclair Lewis"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Sinclair Lewis"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Steven Seagal",
+      "q": "who directed the movies starred by [Steven Seagal]",
+      "gold": "Andrew Davis",
+      "edges": [
+        [
+          "Steven Seagal",
+          "starred_in",
+          "Above the Law"
+        ],
+        [
+          "Above the Law",
+          "directed_by",
+          "Andrew Davis"
+        ],
+        [
+          "Above the Law",
+          "written_by",
+          "Steven Seagal"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Steven Seagal"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Owen Wilson",
+      "q": "who directed the movies starred by [Owen Wilson]",
+      "gold": "Shawn Levy",
+      "edges": [
+        [
+          "Owen Wilson",
+          "starred_in",
+          "The Internship"
+        ],
+        [
+          "The Internship",
+          "directed_by",
+          "Shawn Levy"
+        ],
+        [
+          "The Internship",
+          "written_by",
+          "Jared Stern"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Jared Stern"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Keenan Wynn",
+      "q": "who directed the movies starred by [Keenan Wynn]",
+      "gold": "Wesley Ruggles",
+      "edges": [
+        [
+          "Keenan Wynn",
+          "starred_in",
+          "See Here, Private Hargrove"
+        ],
+        [
+          "See Here, Private Hargrove",
+          "directed_by",
+          "Wesley Ruggles"
+        ],
+        [
+          "See Here, Private Hargrove",
+          "written_by",
+          "Marion Hargrove"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Marion Hargrove"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Sam Rockwell",
+      "q": "who directed the movies starred by [Sam Rockwell]",
+      "gold": "John Duigan",
+      "edges": [
+        [
+          "Sam Rockwell",
+          "starred_in",
+          "Lawn Dogs"
+        ],
+        [
+          "Lawn Dogs",
+          "directed_by",
+          "John Duigan"
+        ],
+        [
+          "Lawn Dogs",
+          "written_by",
+          "Naomi Wallace"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Naomi Wallace"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Michel Simon",
+      "q": "who directed the movies starred by [Michel Simon]",
+      "gold": "Jean Renoir",
+      "edges": [
+        [
+          "Michel Simon",
+          "starred_in",
+          "Boudu Saved from Drowning"
+        ],
+        [
+          "Boudu Saved from Drowning",
+          "directed_by",
+          "Jean Renoir"
+        ],
+        [
+          "Boudu Saved from Drowning",
+          "written_by",
+          "Ren\u00e9 Fauchois"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Ren\u00e9 Fauchois"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "John Barrymore",
+      "q": "who directed the movies starred by [John Barrymore]",
+      "gold": "Archie Mayo",
+      "edges": [
+        [
+          "John Barrymore",
+          "starred_in",
+          "Svengali"
+        ],
+        [
+          "Svengali",
+          "directed_by",
+          "Archie Mayo"
+        ],
+        [
+          "Svengali",
+          "written_by",
+          "J. Grubb Alexander"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "J. Grubb Alexander"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Faizon Love",
+      "q": "who directed the movies starred by [Faizon Love]",
+      "gold": "Bruce W. Smith",
+      "edges": [
+        [
+          "Faizon Love",
+          "starred_in",
+          "B\u00e9b\u00e9's Kids"
+        ],
+        [
+          "B\u00e9b\u00e9's Kids",
+          "directed_by",
+          "Bruce W. Smith"
+        ],
+        [
+          "B\u00e9b\u00e9's Kids",
+          "written_by",
+          "Reginald Hudlin"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Reginald Hudlin"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "Claude Rains",
+      "q": "who directed the movies starred by [Claude Rains]",
+      "gold": "Arthur Lubin",
+      "edges": [
+        [
+          "Claude Rains",
+          "starred_in",
+          "Phantom of the Opera"
+        ],
+        [
+          "Phantom of the Opera",
+          "directed_by",
+          "Arthur Lubin"
+        ],
+        [
+          "Phantom of the Opera",
+          "written_by",
+          "Gaston Leroux"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "Gaston Leroux"
+    },
+    {
+      "kind": "director_of_actor",
+      "start": "William McNamara",
+      "q": "who directed the movies starred by [William McNamara]",
+      "gold": "Ken Olin",
+      "edges": [
+        [
+          "William McNamara",
+          "starred_in",
+          "Doing Time on Maple Drive"
+        ],
+        [
+          "Doing Time on Maple Drive",
+          "directed_by",
+          "Ken Olin"
+        ],
+        [
+          "Doing Time on Maple Drive",
+          "written_by",
+          "James Duff"
+        ]
+      ],
+      "gold_rels": [
+        "starred_in",
+        "directed_by"
+      ],
+      "decoy": "James Duff"
+    }
+  ]
+}

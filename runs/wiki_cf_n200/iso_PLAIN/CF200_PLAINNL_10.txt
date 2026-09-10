@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_10 #####
+QUESTION:
+Where was the place of burial of the director of film Fear And Trembling (Film)?
+
+CONTEXT:
+Personalized Medicine | publisher | Future Medicine
+decoy_mid_10 | place of burial | Père Lachaise Cemetery
+Suicide Commandos | director | Camillo Bazzoni
+Fear and Trembling | director | Alain Corneau
+Future Medicine | country | United Kingdom
+Fear and Trembling | decoy_link_10 | decoy_mid_10
+Camillo Bazzoni | place of birth | Salsomaggiore Terme
+Alain Corneau | place of burial | CF_TAIL_10_PreLachaiseC

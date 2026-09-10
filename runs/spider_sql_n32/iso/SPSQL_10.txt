@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_10]: <sql>
+
+DB: program_share
+SCHEMA:
+program(Program_ID, Name, Origin, Launch, Owner)
+channel(Channel_ID, Name, Owner, Share_in_percent, Rating_in_percent)
+broadcast(Channel_ID, Program_ID, Time_of_day)
+broadcast_share(Channel_ID, Program_ID, Date, Share_in_percent)
+QUESTION:
+Which program is broadcast most frequently? Give me the program name.

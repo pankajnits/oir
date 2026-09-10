@@ -1,0 +1,323 @@
+MODEL UNDER TEST. No tools. Answer EVERY ID.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID RGC_G0_A_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Eda58b08a9a8a works_at? City only.
+
+CONTEXT:
+Eda58b08a9a8a | works_at | E8fd919fc77a8
+Ece99a6b7354e | works_at | Ecdc237e762f1
+E65e036b14b8e | works_at | E8fd919fc77a8
+E65e036b14b8e | reports_to | Ece99a6b7354e
+E8fd919fc77a8 | located_in | E5becf103cd1b
+Ecdc237e762f1 | located_in | E3e80dad89f47
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G0_B_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Eda58b08a9a8a works_at? City only.
+
+CONTEXT:
+Eda58b08a9a8a | works_at | Ecdc237e762f1
+Ece99a6b7354e | works_at | Ecdc237e762f1
+E65e036b14b8e | works_at | E8fd919fc77a8
+E65e036b14b8e | reports_to | Ece99a6b7354e
+E8fd919fc77a8 | located_in | E5becf103cd1b
+Ecdc237e762f1 | located_in | E3e80dad89f47
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G1_A_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E535b7b1c19bb works_at? City only.
+
+CONTEXT:
+E535b7b1c19bb | works_at | E65109eb4ac25
+E39e670696a78 | works_at | Ea424c0366c1f
+Ee2b17cb3d7f9 | works_at | E65109eb4ac25
+Ee2b17cb3d7f9 | reports_to | E39e670696a78
+E65109eb4ac25 | located_in | E219c93732db5
+Ea424c0366c1f | located_in | E0b8b3cc7d72f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G1_B_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E535b7b1c19bb works_at? City only.
+
+CONTEXT:
+E535b7b1c19bb | works_at | Ea424c0366c1f
+E39e670696a78 | works_at | Ea424c0366c1f
+Ee2b17cb3d7f9 | works_at | E65109eb4ac25
+Ee2b17cb3d7f9 | reports_to | E39e670696a78
+E65109eb4ac25 | located_in | E219c93732db5
+Ea424c0366c1f | located_in | E0b8b3cc7d72f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G2_A_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E45f3f36c3cb8 works_at? City only.
+
+CONTEXT:
+E45f3f36c3cb8 | works_at | E6b73f93e6e1a
+Ec2e0c61942dc | works_at | E81474fd94b83
+E33e7bfdec17e | works_at | E6b73f93e6e1a
+E33e7bfdec17e | reports_to | Ec2e0c61942dc
+E6b73f93e6e1a | located_in | Ead53ea3bf8d2
+E81474fd94b83 | located_in | Eaa4954b2e9c9
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G2_B_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E45f3f36c3cb8 works_at? City only.
+
+CONTEXT:
+E45f3f36c3cb8 | works_at | E81474fd94b83
+Ec2e0c61942dc | works_at | E81474fd94b83
+E33e7bfdec17e | works_at | E6b73f93e6e1a
+E33e7bfdec17e | reports_to | Ec2e0c61942dc
+E6b73f93e6e1a | located_in | Ead53ea3bf8d2
+E81474fd94b83 | located_in | Eaa4954b2e9c9
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G3_A_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E175c5cbdfe61 works_at? City only.
+
+CONTEXT:
+E175c5cbdfe61 | works_at | Eec42276f8260
+E5c9023387519 | works_at | E9858a1e6fc4d
+E8ed86120f5b2 | works_at | Eec42276f8260
+E8ed86120f5b2 | reports_to | E5c9023387519
+Eec42276f8260 | located_in | Ef097a782be74
+E9858a1e6fc4d | located_in | E6627d6c40434
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G3_B_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E175c5cbdfe61 works_at? City only.
+
+CONTEXT:
+E175c5cbdfe61 | works_at | E9858a1e6fc4d
+E5c9023387519 | works_at | E9858a1e6fc4d
+E8ed86120f5b2 | works_at | Eec42276f8260
+E8ed86120f5b2 | reports_to | E5c9023387519
+Eec42276f8260 | located_in | Ef097a782be74
+E9858a1e6fc4d | located_in | E6627d6c40434
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G4_A_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E639641803a33 works_at? City only.
+
+CONTEXT:
+E639641803a33 | works_at | E737262d02efa
+E4024ecabdfb5 | works_at | Ef8e7e3a1b255
+Ea450a31e4a61 | works_at | E737262d02efa
+Ea450a31e4a61 | reports_to | E4024ecabdfb5
+E737262d02efa | located_in | Ea3a508505b7e
+Ef8e7e3a1b255 | located_in | E9fa3e1e8c8b5
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G4_B_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E639641803a33 works_at? City only.
+
+CONTEXT:
+E639641803a33 | works_at | Ef8e7e3a1b255
+E4024ecabdfb5 | works_at | Ef8e7e3a1b255
+Ea450a31e4a61 | works_at | E737262d02efa
+Ea450a31e4a61 | reports_to | E4024ecabdfb5
+E737262d02efa | located_in | Ea3a508505b7e
+Ef8e7e3a1b255 | located_in | E9fa3e1e8c8b5
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G5_A_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Ee16271510ebb works_at? City only.
+
+CONTEXT:
+Ee16271510ebb | works_at | E5dece8130169
+Ec22760d27196 | works_at | Eca72f36afa99
+Ee9da36150632 | works_at | E5dece8130169
+Ee9da36150632 | reports_to | Ec22760d27196
+E5dece8130169 | located_in | Ef8d6659256c2
+Eca72f36afa99 | located_in | Eb0eea9067eff
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G5_B_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Ee16271510ebb works_at? City only.
+
+CONTEXT:
+Ee16271510ebb | works_at | Eca72f36afa99
+Ec22760d27196 | works_at | Eca72f36afa99
+Ee9da36150632 | works_at | E5dece8130169
+Ee9da36150632 | reports_to | Ec22760d27196
+E5dece8130169 | located_in | Ef8d6659256c2
+Eca72f36afa99 | located_in | Eb0eea9067eff
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G6_A_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E76b881cfbb53 works_at? City only.
+
+CONTEXT:
+E76b881cfbb53 | works_at | Ec0af2162979b
+E91a0486cd633 | works_at | E8c5024f0d762
+E5a6c2588d47a | works_at | Ec0af2162979b
+E5a6c2588d47a | reports_to | E91a0486cd633
+Ec0af2162979b | located_in | E57307fcc859c
+E8c5024f0d762 | located_in | E964d1a30f325
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G6_B_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E76b881cfbb53 works_at? City only.
+
+CONTEXT:
+E76b881cfbb53 | works_at | E8c5024f0d762
+E91a0486cd633 | works_at | E8c5024f0d762
+E5a6c2588d47a | works_at | Ec0af2162979b
+E5a6c2588d47a | reports_to | E91a0486cd633
+Ec0af2162979b | located_in | E57307fcc859c
+E8c5024f0d762 | located_in | E964d1a30f325
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G7_A_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E299bb7984c0d works_at? City only.
+
+CONTEXT:
+E299bb7984c0d | works_at | Ec69a5d94e9da
+Ef52d270953b1 | works_at | Ed6a020abc6b4
+Eb3608c7db7c4 | works_at | Ec69a5d94e9da
+Eb3608c7db7c4 | reports_to | Ef52d270953b1
+Ec69a5d94e9da | located_in | E7cc960b9631e
+Ed6a020abc6b4 | located_in | Ef524ce1b9140
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID RGC_G7_B_plain_relcol #####
+OPAQUE JOIN — no decryption of entities. Same entity ⇒ same seal.
+Entities are sealed; relation names in the middle column are English.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E299bb7984c0d works_at? City only.
+
+CONTEXT:
+E299bb7984c0d | works_at | Ed6a020abc6b4
+Ef52d270953b1 | works_at | Ed6a020abc6b4
+Eb3608c7db7c4 | works_at | Ec69a5d94e9da
+Eb3608c7db7c4 | reports_to | Ef52d270953b1
+Ec69a5d94e9da | located_in | E7cc960b9631e
+Ed6a020abc6b4 | located_in | Ef524ce1b9140
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+

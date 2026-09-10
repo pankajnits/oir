@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_176 #####
+QUESTION:
+Where was the place of death of Elisabeth Of Moravia's mother?
+
+CONTEXT:
+Funny Games U.S. | director | Michael Haneke
+Margaret of Opava | place of death | CF_TAIL_176_Brno
+Mate Meštrović | father | Ivan Meštrović
+Ivan Meštrović | educated at | Academy of Fine Arts Vienna
+decoy_mid_176 | place of death | Brno
+Elizabeth of Moravia | decoy_link_176 | decoy_mid_176
+Elizabeth of Moravia | mother | Margaret of Opava
+Michael Haneke | country of citizenship | Austrian

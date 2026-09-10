@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_135 #####
+QUESTION:
+What is the place of birth of Johnny De Mol's mother?
+
+CONTEXT:
+John Carel "Johnny" de Mol | mother | Willeke Alberti
+James Stewart, Duke of Rothesay | mother | Margaret Tudor
+Margaret Tudor | country of citizenship | English
+John Carel "Johnny" de Mol | decoy_link_135 | decoy_mid_135
+Joyce E. Bernal | country of citizenship | Philippines
+Kailangan Ko'y Ikaw | director | Joyce E. Bernal
+decoy_mid_135 | place of birth | Amsterdam
+Willeke Alberti | place of birth | CF_TAIL_135_Amsterdam

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_100 #####
+QUESTION:
+Where was the father of Dionysius Vossius born?
+
+CONTEXT:
+Deeyah Khan | country of citizenship | Norwegian
+John Michael Kohler | place of death | Sheboygan
+Gerardus Vossius | place of birth | CF_TAIL_100_Heidelberg
+decoy_mid_100 | place of birth | Heidelberg
+Dionies Vos | father | Gerardus Vossius
+Dionies Vos | decoy_link_100 | decoy_mid_100
+Walter Jodok Kohler, Sr. | father | John Michael Kohler
+Islam's Non-Believers | director | Deeyah Khan

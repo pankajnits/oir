@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_184 #####
+QUESTION:
+Where was the place of death of Thomas E. Noell's father?
+
+CONTEXT:
+Yuen Woo-ping | father | Yuen Siu-tien
+Steve Rasnic Tem | place of birth | Jonesville
+Thomas Estes Noell | father | John William Noell
+Melanie Tem | spouse | Steve Rasnic Tem
+John William Noell | place of death | CF_TAIL_184_Washington
+decoy_mid_184 | place of death | Washington
+Thomas Estes Noell | decoy_link_184 | decoy_mid_184
+True Legend | director | Yuen Woo-ping

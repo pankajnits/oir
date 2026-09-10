@@ -1,0 +1,113 @@
+{
+  "n": 8,
+  "seed": 20260813,
+  "suite": "use_case_complex",
+  "paths": {
+    "CX3_PLAIN_PROG": "runs/use_case_complex/CX3_PLAIN_PROG_ONLY/BATCH.txt",
+    "CX3_SEAL_PROG": "runs/use_case_complex/CX3_SEAL_PROG_ONLY/BATCH.txt",
+    "CX3_SEAL_NL": "runs/use_case_complex/CX3_SEAL_NL_ONLY/BATCH.txt",
+    "CX3_SEAL_BOTH": "runs/use_case_complex/CX3_SEAL_BOTH_ONLY/BATCH.txt",
+    "COUNT_PROG": "runs/use_case_complex/COUNT_PROG_ONLY/BATCH.txt",
+    "COUNT_NL": "runs/use_case_complex/COUNT_NL_ONLY/BATCH.txt",
+    "SUBJ_NL": "runs/use_case_complex/SUBJ_NL_ONLY/BATCH.txt",
+    "SUBJ_PROG": "runs/use_case_complex/SUBJ_PROG_ONLY/BATCH.txt"
+  },
+  "cases": [
+    {
+      "i": 0,
+      "use": "HR",
+      "start": "Walt_Disney",
+      "end": "Burbank",
+      "expect_plain": "Burbank",
+      "expect_seal": "E536468dfed39",
+      "expect_count": 2,
+      "expect_action": "freeze_badge",
+      "expect_action_seal": "Ef92fc5a2ccc8"
+    },
+    {
+      "i": 1,
+      "use": "TICKET",
+      "start": "TCK_5",
+      "end": "Kansas_City",
+      "expect_plain": "Kansas_City",
+      "expect_seal": "E28eab463d016",
+      "expect_count": 1,
+      "expect_action": "page_oncall",
+      "expect_action_seal": "E3dc014881991"
+    },
+    {
+      "i": 2,
+      "use": "ONCALL",
+      "start": "svc_Kansas_City_Southern",
+      "end": "Kansas_City",
+      "expect_plain": "Kansas_City",
+      "expect_seal": "E28eab463d016",
+      "expect_count": 2,
+      "expect_action": "declare_incident",
+      "expect_action_seal": "E41587391b659"
+    },
+    {
+      "i": 3,
+      "use": "HR",
+      "start": "James_Holanda",
+      "end": "New_Jersey",
+      "expect_plain": "New_Jersey",
+      "expect_seal": "Ec87055a5ed03",
+      "expect_count": 2,
+      "expect_action": "freeze_badge",
+      "expect_action_seal": "Ef92fc5a2ccc8"
+    },
+    {
+      "i": 4,
+      "use": "TICKET",
+      "start": "TCK_20",
+      "end": "Stockholm",
+      "expect_plain": "Stockholm",
+      "expect_seal": "E4444d54d3e85",
+      "expect_count": 1,
+      "expect_action": "page_oncall",
+      "expect_action_seal": "E3dc014881991"
+    },
+    {
+      "i": 5,
+      "use": "ONCALL",
+      "start": "svc_Hobby_Lobby",
+      "end": "Oklahoma_City",
+      "expect_plain": "Oklahoma_City",
+      "expect_seal": "E06531c79933b",
+      "expect_count": 1,
+      "expect_action": "declare_incident",
+      "expect_action_seal": "E41587391b659"
+    },
+    {
+      "i": 6,
+      "use": "HR",
+      "start": "Sergio_Ermotti",
+      "end": "Zurich",
+      "expect_plain": "Zurich",
+      "expect_seal": "E48bc846f491f",
+      "expect_count": 2,
+      "expect_action": "freeze_badge",
+      "expect_action_seal": "Ef92fc5a2ccc8"
+    },
+    {
+      "i": 7,
+      "use": "TICKET",
+      "start": "TCK_35",
+      "end": "Rome",
+      "expect_plain": "Rome",
+      "expect_seal": "Ea0243c4fdd12",
+      "expect_count": 1,
+      "expect_action": "page_oncall",
+      "expect_action_seal": "E3dc014881991"
+    }
+  ],
+  "what": {
+    "data": "3 tables + nested JSON + notes; 3-hop HR/TICKET/ONCALL",
+    "complex_q": "3-hop path and COUNT of shared city/region",
+    "subjective": "recommended_action in incident notes",
+    "check_3hop": "exact city/region (plain) or HMAC seal",
+    "check_count": "integer",
+    "check_subj": "HMAC seal of action token"
+  }
+}

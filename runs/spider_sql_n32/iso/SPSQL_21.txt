@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_21]: <sql>
+
+DB: city_record
+SCHEMA:
+city(City_ID, City, Hanzi, Hanyu_Pinyin, Regional_Population, GDP)
+match(Match_ID, Date, Venue, Score, Result, Competition)
+temperature(City_ID, Jan, Feb, Mar, Apr, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+hosting_city(Year, Match_ID, Host_City)
+QUESTION:
+In February, which city marks the highest temperature?

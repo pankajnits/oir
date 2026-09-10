@@ -1,0 +1,14 @@
+{
+  "tool": "SealProbe",
+  "probe": {
+    "name": "twin_multiset",
+    "ok": true,
+    "detail": {
+      "bag_equal": true,
+      "diff_a": {},
+      "diff_b": {},
+      "interpretation": "Bags match \u2014 strong control that answer flip is wiring-only."
+    }
+  },
+  "harness_node_bag_equal": true
+}

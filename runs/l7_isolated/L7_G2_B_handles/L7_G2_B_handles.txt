@@ -1,0 +1,25 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+=== QUIZ ===
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=Edb640541688d
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d Edb640541688d? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+Eac08daec7ae5 | E82092b423f2e | E66b981d7aef9
+E44b5ae36c276 | E82092b423f2e | E66b981d7aef9
+Ecd006f011ea2 | E82092b423f2e | E66b981d7aef9
+E611d427afb44 | E82092b423f2e | E0dd08443db4e
+E66b981d7aef9 | E02e95dbce28d | E5d206cc8acf1
+E0dd08443db4e | E02e95dbce28d | Edb640541688d
+E019f891e5633 | E82092b423f2e | E61bae5415676
+E61bae5415676 | E02e95dbce28d | E38fb4005e243
+E66b981d7aef9 | E6c0aa1e2c6a7 | E637fd8018be8
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)

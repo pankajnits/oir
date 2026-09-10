@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_89]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_89 #####
+QUESTION:
+Who directed a movie that Charlton Heston starred in?
+
+PATH_QUERY
+START Charlton Heston
+R1 Ed1a61af949b1
+R2 E387d87b905bc
+Execute path; return final tail only.
+
+CONTEXT:
+Charlton Heston | Ed1a61af949b1 | Soylent Green
+Soylent Green | E387d87b905bc | Richard Fleischer
+Soylent Green | Eb73abba00d67 | Harry Harrison

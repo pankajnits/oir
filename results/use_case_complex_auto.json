@@ -1,0 +1,553 @@
+{
+  "model": "auto",
+  "n": 8,
+  "summary": {
+    "CX3_PLAIN_PROG": {
+      "score": "8/8",
+      "missing": 0
+    },
+    "CX3_SEAL_PROG": {
+      "score": "8/8",
+      "missing": 0
+    },
+    "CX3_SEAL_NL": {
+      "score": "8/8",
+      "missing": 0
+    },
+    "CX3_SEAL_BOTH": {
+      "score": "8/8",
+      "missing": 0
+    },
+    "COUNT_PROG": {
+      "score": "8/8",
+      "missing": 0
+    },
+    "COUNT_NL": {
+      "score": "7/8",
+      "missing": 0
+    },
+    "SUBJ_PROG": {
+      "score": "0/8",
+      "missing": 0
+    },
+    "SUBJ_NL": {
+      "score": "0/8",
+      "missing": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "CX3_PLAIN_PROG",
+      "id": "CX3_PLAIN_0",
+      "use": "HR",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "CX3_PLAIN_PROG",
+      "id": "CX3_PLAIN_1",
+      "use": "TICKET",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "CX3_PLAIN_PROG",
+      "id": "CX3_PLAIN_2",
+      "use": "ONCALL",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "CX3_PLAIN_PROG",
+      "id": "CX3_PLAIN_3",
+      "use": "HR",
+      "gold": "New_Jersey",
+      "pred": "New_Jersey",
+      "ok": true
+    },
+    {
+      "arm": "CX3_PLAIN_PROG",
+      "id": "CX3_PLAIN_4",
+      "use": "TICKET",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "CX3_PLAIN_PROG",
+      "id": "CX3_PLAIN_5",
+      "use": "ONCALL",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "CX3_PLAIN_PROG",
+      "id": "CX3_PLAIN_6",
+      "use": "HR",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true
+    },
+    {
+      "arm": "CX3_PLAIN_PROG",
+      "id": "CX3_PLAIN_7",
+      "use": "TICKET",
+      "gold": "Rome",
+      "pred": "Rome",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_PROG",
+      "id": "CX3_SEALPROG_0",
+      "use": "HR",
+      "gold": "E536468dfed39",
+      "pred": "E536468dfed39",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_PROG",
+      "id": "CX3_SEALPROG_1",
+      "use": "TICKET",
+      "gold": "E28eab463d016",
+      "pred": "E28eab463d016",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_PROG",
+      "id": "CX3_SEALPROG_2",
+      "use": "ONCALL",
+      "gold": "E28eab463d016",
+      "pred": "E28eab463d016",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_PROG",
+      "id": "CX3_SEALPROG_3",
+      "use": "HR",
+      "gold": "Ec87055a5ed03",
+      "pred": "Ec87055a5ed03",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_PROG",
+      "id": "CX3_SEALPROG_4",
+      "use": "TICKET",
+      "gold": "E4444d54d3e85",
+      "pred": "E4444d54d3e85",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_PROG",
+      "id": "CX3_SEALPROG_5",
+      "use": "ONCALL",
+      "gold": "E06531c79933b",
+      "pred": "E06531c79933b",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_PROG",
+      "id": "CX3_SEALPROG_6",
+      "use": "HR",
+      "gold": "E48bc846f491f",
+      "pred": "E48bc846f491f",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_PROG",
+      "id": "CX3_SEALPROG_7",
+      "use": "TICKET",
+      "gold": "Ea0243c4fdd12",
+      "pred": "Ea0243c4fdd12",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_NL",
+      "id": "CX3_SEALNL_0",
+      "use": "HR",
+      "gold": "E536468dfed39",
+      "pred": "E536468dfed39",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_NL",
+      "id": "CX3_SEALNL_1",
+      "use": "TICKET",
+      "gold": "E28eab463d016",
+      "pred": "E28eab463d016",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_NL",
+      "id": "CX3_SEALNL_2",
+      "use": "ONCALL",
+      "gold": "E28eab463d016",
+      "pred": "E28eab463d016",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_NL",
+      "id": "CX3_SEALNL_3",
+      "use": "HR",
+      "gold": "Ec87055a5ed03",
+      "pred": "Ec87055a5ed03",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_NL",
+      "id": "CX3_SEALNL_4",
+      "use": "TICKET",
+      "gold": "E4444d54d3e85",
+      "pred": "E4444d54d3e85",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_NL",
+      "id": "CX3_SEALNL_5",
+      "use": "ONCALL",
+      "gold": "E06531c79933b",
+      "pred": "E06531c79933b",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_NL",
+      "id": "CX3_SEALNL_6",
+      "use": "HR",
+      "gold": "E48bc846f491f",
+      "pred": "E48bc846f491f",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_NL",
+      "id": "CX3_SEALNL_7",
+      "use": "TICKET",
+      "gold": "Ea0243c4fdd12",
+      "pred": "Ea0243c4fdd12",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_BOTH",
+      "id": "CX3_SEALBOTH_0",
+      "use": "HR",
+      "gold": "E536468dfed39",
+      "pred": "E536468dfed39",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_BOTH",
+      "id": "CX3_SEALBOTH_1",
+      "use": "TICKET",
+      "gold": "E28eab463d016",
+      "pred": "E28eab463d016",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_BOTH",
+      "id": "CX3_SEALBOTH_2",
+      "use": "ONCALL",
+      "gold": "E28eab463d016",
+      "pred": "E28eab463d016",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_BOTH",
+      "id": "CX3_SEALBOTH_3",
+      "use": "HR",
+      "gold": "Ec87055a5ed03",
+      "pred": "Ec87055a5ed03",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_BOTH",
+      "id": "CX3_SEALBOTH_4",
+      "use": "TICKET",
+      "gold": "E4444d54d3e85",
+      "pred": "E4444d54d3e85",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_BOTH",
+      "id": "CX3_SEALBOTH_5",
+      "use": "ONCALL",
+      "gold": "E06531c79933b",
+      "pred": "E06531c79933b",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_BOTH",
+      "id": "CX3_SEALBOTH_6",
+      "use": "HR",
+      "gold": "E48bc846f491f",
+      "pred": "E48bc846f491f",
+      "ok": true
+    },
+    {
+      "arm": "CX3_SEAL_BOTH",
+      "id": "CX3_SEALBOTH_7",
+      "use": "TICKET",
+      "gold": "Ea0243c4fdd12",
+      "pred": "Ea0243c4fdd12",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_PROG",
+      "id": "CXCOUNT_PROG_0",
+      "use": "HR",
+      "gold": "2",
+      "pred": "2",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_PROG",
+      "id": "CXCOUNT_PROG_1",
+      "use": "TICKET",
+      "gold": "1",
+      "pred": "1",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_PROG",
+      "id": "CXCOUNT_PROG_2",
+      "use": "ONCALL",
+      "gold": "2",
+      "pred": "2",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_PROG",
+      "id": "CXCOUNT_PROG_3",
+      "use": "HR",
+      "gold": "2",
+      "pred": "2",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_PROG",
+      "id": "CXCOUNT_PROG_4",
+      "use": "TICKET",
+      "gold": "1",
+      "pred": "1",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_PROG",
+      "id": "CXCOUNT_PROG_5",
+      "use": "ONCALL",
+      "gold": "1",
+      "pred": "1",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_PROG",
+      "id": "CXCOUNT_PROG_6",
+      "use": "HR",
+      "gold": "2",
+      "pred": "2",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_PROG",
+      "id": "CXCOUNT_PROG_7",
+      "use": "TICKET",
+      "gold": "1",
+      "pred": "1",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_NL",
+      "id": "CXCOUNT_NL_0",
+      "use": "HR",
+      "gold": "2",
+      "pred": "2",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_NL",
+      "id": "CXCOUNT_NL_1",
+      "use": "TICKET",
+      "gold": "1",
+      "pred": "1",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_NL",
+      "id": "CXCOUNT_NL_2",
+      "use": "ONCALL",
+      "gold": "2",
+      "pred": "1",
+      "ok": false
+    },
+    {
+      "arm": "COUNT_NL",
+      "id": "CXCOUNT_NL_3",
+      "use": "HR",
+      "gold": "2",
+      "pred": "2",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_NL",
+      "id": "CXCOUNT_NL_4",
+      "use": "TICKET",
+      "gold": "1",
+      "pred": "1",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_NL",
+      "id": "CXCOUNT_NL_5",
+      "use": "ONCALL",
+      "gold": "1",
+      "pred": "1",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_NL",
+      "id": "CXCOUNT_NL_6",
+      "use": "HR",
+      "gold": "2",
+      "pred": "2",
+      "ok": true
+    },
+    {
+      "arm": "COUNT_NL",
+      "id": "CXCOUNT_NL_7",
+      "use": "TICKET",
+      "gold": "1",
+      "pred": "1",
+      "ok": true
+    },
+    {
+      "arm": "SUBJ_PROG",
+      "id": "CXSUBJ_PROG_0",
+      "use": "HR",
+      "gold": "Ef92fc5a2ccc8",
+      "pred": "E4a4b889b8b16",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_PROG",
+      "id": "CXSUBJ_PROG_1",
+      "use": "TICKET",
+      "gold": "E3dc014881991",
+      "pred": "E7df44a33edce",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_PROG",
+      "id": "CXSUBJ_PROG_2",
+      "use": "ONCALL",
+      "gold": "E41587391b659",
+      "pred": "E8d4894ce2845",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_PROG",
+      "id": "CXSUBJ_PROG_3",
+      "use": "HR",
+      "gold": "Ef92fc5a2ccc8",
+      "pred": "E4a4b889b8b16",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_PROG",
+      "id": "CXSUBJ_PROG_4",
+      "use": "TICKET",
+      "gold": "E3dc014881991",
+      "pred": "E7df44a33edce",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_PROG",
+      "id": "CXSUBJ_PROG_5",
+      "use": "ONCALL",
+      "gold": "E41587391b659",
+      "pred": "E8d4894ce2845",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_PROG",
+      "id": "CXSUBJ_PROG_6",
+      "use": "HR",
+      "gold": "Ef92fc5a2ccc8",
+      "pred": "E4a4b889b8b16",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_PROG",
+      "id": "CXSUBJ_PROG_7",
+      "use": "TICKET",
+      "gold": "E3dc014881991",
+      "pred": "E7df44a33edce",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_NL",
+      "id": "CXSUBJ_NL_0",
+      "use": "HR",
+      "gold": "Ef92fc5a2ccc8",
+      "pred": "E536468dfed39",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_NL",
+      "id": "CXSUBJ_NL_1",
+      "use": "TICKET",
+      "gold": "E3dc014881991",
+      "pred": "E28eab463d016",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_NL",
+      "id": "CXSUBJ_NL_2",
+      "use": "ONCALL",
+      "gold": "E41587391b659",
+      "pred": "E28eab463d016",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_NL",
+      "id": "CXSUBJ_NL_3",
+      "use": "HR",
+      "gold": "Ef92fc5a2ccc8",
+      "pred": "Ec87055a5ed03",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_NL",
+      "id": "CXSUBJ_NL_4",
+      "use": "TICKET",
+      "gold": "E3dc014881991",
+      "pred": "E4444d54d3e85",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_NL",
+      "id": "CXSUBJ_NL_5",
+      "use": "ONCALL",
+      "gold": "E41587391b659",
+      "pred": "E06531c79933b",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_NL",
+      "id": "CXSUBJ_NL_6",
+      "use": "HR",
+      "gold": "Ef92fc5a2ccc8",
+      "pred": "E48bc846f491f",
+      "ok": false
+    },
+    {
+      "arm": "SUBJ_NL",
+      "id": "CXSUBJ_NL_7",
+      "use": "TICKET",
+      "gold": "E3dc014881991",
+      "pred": "Ea0243c4fdd12",
+      "ok": false
+    }
+  ],
+  "reply_dir": "results/cx_replies_auto"
+}

@@ -1,0 +1,67 @@
+{
+  "benchmark": "SEAL-Join",
+  "rows": [
+    {
+      "id": "SJ_plain_A",
+      "mode": "plain",
+      "twin": "A",
+      "expected": "CityX",
+      "got": "CityX",
+      "got_seal": null,
+      "pass": true
+    },
+    {
+      "id": "SJ_plain_B",
+      "mode": "plain",
+      "twin": "B",
+      "expected": "CityY",
+      "got": "CityY",
+      "got_seal": null,
+      "pass": true
+    },
+    {
+      "id": "SJ_sealed_free_A",
+      "mode": "sealed_free",
+      "twin": "A",
+      "expected": "CityX",
+      "got": "CityX",
+      "got_seal": "Ec71de67166d8",
+      "pass": true
+    },
+    {
+      "id": "SJ_sealed_free_B",
+      "mode": "sealed_free",
+      "twin": "B",
+      "expected": "CityY",
+      "got": "CityY",
+      "got_seal": "E0c347949830b",
+      "pass": true
+    },
+    {
+      "id": "SJ_sealed_nohint_A",
+      "mode": "sealed_nohint",
+      "twin": "A",
+      "expected": "CityX",
+      "got": "Acme",
+      "got_seal": "Ec2d505c84b67",
+      "pass": false
+    },
+    {
+      "id": "SJ_sealed_nohint_B",
+      "mode": "sealed_nohint",
+      "twin": "B",
+      "expected": "CityY",
+      "got": "BetaCorp",
+      "got_seal": "Ee71d634f5fcd",
+      "pass": false
+    }
+  ],
+  "summary": {
+    "plaintext_ceiling": true,
+    "sealed_join_with_relation_handles": true,
+    "sealed_join_nohint": false,
+    "counterfactual_twins_discriminated": true
+  },
+  "takeaway": "With entity seals + explicit relation/entity handles for join steps, model correctly answers BOTH counterfactual twins (CityX vs CityY). Without handles (nohint), join fails. This is stronger than KV copy: requires following edges under isomorphism.",
+  "paper_claim_upgrade": "OIR is not limited to KV string-find: under entity-isomorphic seals and explicit join scaffolding (opaque handles for Alice/works_at/located_in), LLMs execute conjunctive path queries and discriminate counterfactual graph twins."
+}

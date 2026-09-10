@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_75 #####
+QUESTION:
+What is the place of birth of the director of film 911 Nightmare?
+
+CONTEXT:
+Merle Haggard | place of birth | Bakersfield
+decoy_mid_75 | place of birth | American
+Charles Sackville-West, 6th Earl De La Warr | father | George Sackville-West
+Dispatch | director | Craig Moss
+Dispatch | decoy_link_75 | decoy_mid_75
+George Sackville-West | date of death | 23 February 1869
+Craig Moss | place of birth | CF_TAIL_75_American
+Today I Started Loving You Again | performer | Merle Haggard

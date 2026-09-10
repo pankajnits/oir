@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_25]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_25 #####
+QUESTION:
+What city is the headquarters of the company led by Raymond_Watson?
+
+PATH_QUERY
+START Raymond_Watson
+R1 E5c3c452d0042
+R2 Eefc11ee68a3c
+Execute path; return final tail only.
+
+CONTEXT:
+Raymond_Watson | E5c3c452d0042 | The_Walt_Disney_Company
+The_Walt_Disney_Company | Eefc11ee68a3c | Burbank
+Raymond_Watson | E42e7963947d9 | 20th_Century_Studios
+20th_Century_Studios | E1d45add42c78 | Fox_Plaza

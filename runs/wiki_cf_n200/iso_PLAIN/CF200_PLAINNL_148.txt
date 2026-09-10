@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_148 #####
+QUESTION:
+What is the place of birth of Ray Hutchison's wife?
+
+CONTEXT:
+Mark Burnett | country of citizenship | British
+Kay Bailey Hutchison | place of birth | CF_TAIL_148_GalvestonTex
+Ray Hutchison | spouse | Kay Bailey Hutchison
+decoy_mid_148 | place of birth | Galveston, Texas
+Pepin the Hunchback | father | Charlemagne
+Ray Hutchison | decoy_link_148 | decoy_mid_148
+Expedition Impossible | creator | Mark Burnett
+Charlemagne | place of birth | Frankish Kingdom

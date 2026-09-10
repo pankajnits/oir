@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_89 #####
+QUESTION:
+What is the place of birth of the director of film Tokyo.Sora?
+
+CONTEXT:
+Tokyo.sora | director | Hiroshi Ishikawa
+Frederick Michael, Count Palatine of Zweibrücken | mother | Caroline of Nassau-Saarbrücken
+Hiroshi Ishikawa | place of birth | CF_TAIL_89_date
+Cornelia Emilian | spouse | Ștefan Emilian
+decoy_mid_89 | place of birth | Ōdate
+Tokyo.sora | decoy_link_89 | decoy_mid_89
+Ștefan Emilian | place of birth | Cluj County
+Caroline of Nassau-Saarbrücken | date of birth | 12 August 1704

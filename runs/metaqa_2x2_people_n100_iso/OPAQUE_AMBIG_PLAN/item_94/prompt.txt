@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_94]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_94 #####
+QUESTION:
+Who directed a movie that Dominique Sanda starred in?
+
+PATH_QUERY
+START Dominique Sanda
+R1 E3927c175258c
+R2 Edce4a9c1229c
+Execute path; return final tail only.
+
+CONTEXT:
+Dominique Sanda | E3927c175258c | A Gentle Woman
+A Gentle Woman | Edce4a9c1229c | Robert Bresson
+A Gentle Woman | E90971473df53 | Fyodor Dostoevsky

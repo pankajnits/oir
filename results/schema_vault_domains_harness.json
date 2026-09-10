@@ -1,0 +1,266 @@
+{
+  "n": 12,
+  "seed": 20260813,
+  "suite": "schema_vault_domains",
+  "domains": [
+    "EHR",
+    "LEDGER",
+    "SBOM"
+  ],
+  "prediction": "MILD_PROG \u2248 STRICT_PROG \u226b STRICT_NL; MILD_NL tests whether readable schema is enough without JOIN",
+  "nonclaim": "Not HIPAA/AML/privacy solved. EHR/ledger rows are synthetic. OSV CVE golds are public facts; sealing is a capability control. Not G-Rev1 (gold JOIN in PROG arms).",
+  "paths": {
+    "MILD_PROG": "runs/schema_vault_domains/MILD_PROG_ONLY/BATCH.txt",
+    "MILD_NL": "runs/schema_vault_domains/MILD_NL_ONLY/BATCH.txt",
+    "STRICT_PROG": "runs/schema_vault_domains/STRICT_PROG_ONLY/BATCH.txt",
+    "STRICT_NL": "runs/schema_vault_domains/STRICT_NL_ONLY/BATCH.txt"
+  },
+  "cases": [
+    {
+      "i": 0,
+      "domain": "EHR",
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ],
+      "gold": "SNOMED-390000",
+      "expect_seal": "E7cd5665b4f4e",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_0",
+        "MILD_NL": "SV_MILDNL_0",
+        "STRICT_PROG": "SV_STRICTPROG_0",
+        "STRICT_NL": "SV_STRICTNL_0"
+      },
+      "schema": "FHIR-shaped synthetic Patient/Encounter/Condition (not real PHI)",
+      "question": "What is the condition_code for patient pat-1000 on encounter_date 2024-03-10? Use both keys; other encounters for this patient must not be used.",
+      "source_id": null,
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 1,
+      "domain": "EHR",
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ],
+      "gold": "SNOMED-390001",
+      "expect_seal": "E3d6290904d79",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_1",
+        "MILD_NL": "SV_MILDNL_1",
+        "STRICT_PROG": "SV_STRICTPROG_1",
+        "STRICT_NL": "SV_STRICTNL_1"
+      },
+      "schema": "FHIR-shaped synthetic Patient/Encounter/Condition (not real PHI)",
+      "question": "What is the condition_code for patient pat-1001 on encounter_date 2024-03-11? Use both keys; other encounters for this patient must not be used.",
+      "source_id": null,
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 2,
+      "domain": "EHR",
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ],
+      "gold": "SNOMED-390002",
+      "expect_seal": "Ef5082ceb5aeb",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_2",
+        "MILD_NL": "SV_MILDNL_2",
+        "STRICT_PROG": "SV_STRICTPROG_2",
+        "STRICT_NL": "SV_STRICTNL_2"
+      },
+      "schema": "FHIR-shaped synthetic Patient/Encounter/Condition (not real PHI)",
+      "question": "What is the condition_code for patient pat-1002 on encounter_date 2024-03-12? Use both keys; other encounters for this patient must not be used.",
+      "source_id": null,
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 3,
+      "domain": "EHR",
+      "keys": [
+        "patient_id",
+        "encounter_date"
+      ],
+      "gold": "SNOMED-390003",
+      "expect_seal": "E37fd1f491387",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_3",
+        "MILD_NL": "SV_MILDNL_3",
+        "STRICT_PROG": "SV_STRICTPROG_3",
+        "STRICT_NL": "SV_STRICTNL_3"
+      },
+      "schema": "FHIR-shaped synthetic Patient/Encounter/Condition (not real PHI)",
+      "question": "What is the condition_code for patient pat-1003 on encounter_date 2024-03-13? Use both keys; other encounters for this patient must not be used.",
+      "source_id": null,
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 4,
+      "domain": "LEDGER",
+      "keys": [
+        "account_id",
+        "txn_id"
+      ],
+      "gold": "MCC-city-0",
+      "expect_seal": "E7b4c7e4b4635",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_4",
+        "MILD_NL": "SV_MILDNL_4",
+        "STRICT_PROG": "SV_STRICTPROG_4",
+        "STRICT_NL": "SV_STRICTNL_4"
+      },
+      "schema": "AML-shaped account/transaction/merchant (synthetic)",
+      "question": "What is the merchant_city for account acct-4000 and txn txn-5000? Both keys required; other txns on this account are distractors.",
+      "source_id": null,
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 5,
+      "domain": "LEDGER",
+      "keys": [
+        "account_id",
+        "txn_id"
+      ],
+      "gold": "MCC-city-1",
+      "expect_seal": "E94e3486d6741",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_5",
+        "MILD_NL": "SV_MILDNL_5",
+        "STRICT_PROG": "SV_STRICTPROG_5",
+        "STRICT_NL": "SV_STRICTNL_5"
+      },
+      "schema": "AML-shaped account/transaction/merchant (synthetic)",
+      "question": "What is the merchant_city for account acct-4001 and txn txn-5001? Both keys required; other txns on this account are distractors.",
+      "source_id": null,
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 6,
+      "domain": "LEDGER",
+      "keys": [
+        "account_id",
+        "txn_id"
+      ],
+      "gold": "MCC-city-2",
+      "expect_seal": "Eb0b4b1734d0c",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_6",
+        "MILD_NL": "SV_MILDNL_6",
+        "STRICT_PROG": "SV_STRICTPROG_6",
+        "STRICT_NL": "SV_STRICTNL_6"
+      },
+      "schema": "AML-shaped account/transaction/merchant (synthetic)",
+      "question": "What is the merchant_city for account acct-4002 and txn txn-5002? Both keys required; other txns on this account are distractors.",
+      "source_id": null,
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 7,
+      "domain": "LEDGER",
+      "keys": [
+        "account_id",
+        "txn_id"
+      ],
+      "gold": "MCC-city-3",
+      "expect_seal": "E34a97b7a44cd",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_7",
+        "MILD_NL": "SV_MILDNL_7",
+        "STRICT_PROG": "SV_STRICTPROG_7",
+        "STRICT_NL": "SV_STRICTNL_7"
+      },
+      "schema": "AML-shaped account/transaction/merchant (synthetic)",
+      "question": "What is the merchant_city for account acct-4003 and txn txn-5003? Both keys required; other txns on this account are distractors.",
+      "source_id": null,
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 8,
+      "domain": "SBOM",
+      "keys": [
+        "ghsa_id",
+        "package"
+      ],
+      "gold": "CVE-2020-28500",
+      "expect_seal": "E237fcc92ea57",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_8",
+        "MILD_NL": "SV_MILDNL_8",
+        "STRICT_PROG": "SV_STRICTPROG_8",
+        "STRICT_NL": "SV_STRICTNL_8"
+      },
+      "schema": "OSV.dev advisory JSON flattened (CC-BY-4.0); gold CVE is dataset fact",
+      "question": "What cve_alias is recorded for advisory GHSA-29mw-wpgm-hmr9 affecting package lodash? Both keys required.",
+      "source_id": "GHSA-29mw-wpgm-hmr9",
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 9,
+      "domain": "SBOM",
+      "keys": [
+        "ghsa_id",
+        "package"
+      ],
+      "gold": "CVE-2019-10906",
+      "expect_seal": "E9c2663af7077",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_9",
+        "MILD_NL": "SV_MILDNL_9",
+        "STRICT_PROG": "SV_STRICTPROG_9",
+        "STRICT_NL": "SV_STRICTNL_9"
+      },
+      "schema": "OSV.dev advisory JSON flattened (CC-BY-4.0); gold CVE is dataset fact",
+      "question": "What cve_alias is recorded for advisory GHSA-462w-v97r-4m45 affecting package jinja2? Both keys required.",
+      "source_id": "GHSA-462w-v97r-4m45",
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 10,
+      "domain": "SBOM",
+      "keys": [
+        "ghsa_id",
+        "package"
+      ],
+      "gold": "CVE-2014-1830",
+      "expect_seal": "E213e795c01d7",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_10",
+        "MILD_NL": "SV_MILDNL_10",
+        "STRICT_PROG": "SV_STRICTPROG_10",
+        "STRICT_NL": "SV_STRICTNL_10"
+      },
+      "schema": "OSV.dev advisory JSON flattened (CC-BY-4.0); gold CVE is dataset fact",
+      "question": "What cve_alias is recorded for advisory GHSA-652x-xj99-gmcc affecting package requests? Both keys required.",
+      "source_id": "GHSA-652x-xj99-gmcc",
+      "gold_is_first_return_row": false
+    },
+    {
+      "i": 11,
+      "domain": "SBOM",
+      "keys": [
+        "ghsa_id",
+        "package"
+      ],
+      "gold": "CVE-2024-47081",
+      "expect_seal": "Ed5c97a66f927",
+      "ids": {
+        "MILD_PROG": "SV_MILDPROG_11",
+        "MILD_NL": "SV_MILDNL_11",
+        "STRICT_PROG": "SV_STRICTPROG_11",
+        "STRICT_NL": "SV_STRICTNL_11"
+      },
+      "schema": "OSV.dev advisory JSON flattened (CC-BY-4.0); gold CVE is dataset fact",
+      "question": "What cve_alias is recorded for advisory GHSA-9hjg-9r4m-mvj7 affecting package requests? Both keys required.",
+      "source_id": "GHSA-9hjg-9r4m-mvj7",
+      "gold_is_first_return_row": false
+    }
+  ],
+  "what_is_sealed": {
+    "MILD_*": "cell values / instance IDs; column names readable",
+    "STRICT_*": "headers + cells; STRICT_NL also token-HMACs the question"
+  },
+  "what_is_asked": "composite-key 2-table joins (2 keys required; distractor rows share one key)",
+  "what_is_checked": "HMAC of gold cell (condition_code / merchant_city / cve_alias)"
+}

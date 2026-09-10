@@ -1,0 +1,111 @@
+{
+  "model": "auto",
+  "summary": {
+    "SAME_RENAME": {
+      "score": "6/6",
+      "wilson": {
+        "k": 6,
+        "n": 6,
+        "acc": 1.0,
+        "ci95": [
+          0.6097,
+          1.0
+        ],
+        "display": "6/6 [0.61,1.00]"
+      },
+      "gold": 6,
+      "trap": 0,
+      "unknown": 0,
+      "missing": 0,
+      "other": 0
+    }
+  },
+  "golds_all_differ": true,
+  "nonclaim": "\u03c3\u2032 elicitation. Not G-Rev1. Golds must differ from hop3_bal SAME.",
+  "rows": [
+    {
+      "arm": "SAME_RENAME",
+      "i": 0,
+      "id": "H3R_SAME_0",
+      "gold": "E734901ec06e0",
+      "gold_sigma": "E78e4d45b1753",
+      "trap": "Ec59ac1a271c5",
+      "early": "E3791c4e4d069",
+      "iso": true,
+      "path": "runs/hop3_rename/SAME/item_0/prompt.txt",
+      "pred": "E734901ec06e0",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_RENAME",
+      "i": 1,
+      "id": "H3R_SAME_1",
+      "gold": "E23a2549acadc",
+      "gold_sigma": "Ee564428716f6",
+      "trap": "E08a87aea2a73",
+      "early": "Ebf35c4bd8c42",
+      "iso": true,
+      "path": "runs/hop3_rename/SAME/item_1/prompt.txt",
+      "pred": "E23a2549acadc",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_RENAME",
+      "i": 2,
+      "id": "H3R_SAME_2",
+      "gold": "E558e03b14489",
+      "gold_sigma": "E1f8fa1cfd964",
+      "trap": "E2a61d4c36451",
+      "early": "E1216da9c8c0e",
+      "iso": true,
+      "path": "runs/hop3_rename/SAME/item_2/prompt.txt",
+      "pred": "E558e03b14489",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_RENAME",
+      "i": 3,
+      "id": "H3R_SAME_3",
+      "gold": "Efbe7fc07da59",
+      "gold_sigma": "E228784839f48",
+      "trap": "Ec4d253535938",
+      "early": "Ea01cc8e05c6f",
+      "iso": true,
+      "path": "runs/hop3_rename/SAME/item_3/prompt.txt",
+      "pred": "Efbe7fc07da59",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_RENAME",
+      "i": 4,
+      "id": "H3R_SAME_4",
+      "gold": "E58dc71a2dcb2",
+      "gold_sigma": "E01c998febff3",
+      "trap": "Eaceaa8cf0827",
+      "early": "Ee676f36ec9ae",
+      "iso": true,
+      "path": "runs/hop3_rename/SAME/item_4/prompt.txt",
+      "pred": "E58dc71a2dcb2",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "SAME_RENAME",
+      "i": 5,
+      "id": "H3R_SAME_5",
+      "gold": "E3cd42ba65d46",
+      "gold_sigma": "Eb5d293ca45c5",
+      "trap": "Ee5c40d152abf",
+      "early": "Eeffbd88eb50e",
+      "iso": true,
+      "path": "runs/hop3_rename/SAME/item_5/prompt.txt",
+      "pred": "E3cd42ba65d46",
+      "kind": "gold",
+      "ok": true
+    }
+  ]
+}

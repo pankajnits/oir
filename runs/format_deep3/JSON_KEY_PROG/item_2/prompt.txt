@@ -1,0 +1,54 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM JSON_KEY_PROG: nested JSON; keys AND values sealed; JOIN names the sealed keys. One quiz.
+
+##### ID FD3_JSON_KEY_PROG_2 #####
+JOIN_QUERY
+START Ecf003d65511e
+In array E9ede64de6c6b, match Eddc513f32ca9 = START, take E4223fbe49889.
+In array E34a414b78b8e, match Eddc513f32ca9 = that employer, take Eb753ca416d68.E40e4eda039dd.
+Return that atom.
+
+CONTEXT:
+{
+  "E9ede64de6c6b": [
+    {
+      "Eddc513f32ca9": "E99cbf66b7208",
+      "E4223fbe49889": "Ef5c61022e30b"
+    },
+    {
+      "Eddc513f32ca9": "Ecf003d65511e",
+      "E4223fbe49889": "Ec52e336479f9"
+    },
+    {
+      "Eddc513f32ca9": "Ed669a228e739",
+      "E4223fbe49889": "E90d9211098ed"
+    }
+  ],
+  "E34a414b78b8e": [
+    {
+      "Eddc513f32ca9": "E90d9211098ed",
+      "Eb753ca416d68": {
+        "E88bb97e873bf": "Efdb644f517d4",
+        "E40e4eda039dd": "E86dc3a194b37"
+      }
+    },
+    {
+      "Eddc513f32ca9": "Ef5c61022e30b",
+      "Eb753ca416d68": {
+        "E88bb97e873bf": "E297462617c33",
+        "E40e4eda039dd": "E1736c27588c3"
+      }
+    },
+    {
+      "Eddc513f32ca9": "Ec52e336479f9",
+      "Eb753ca416d68": {
+        "E88bb97e873bf": "E85f4f72c3529",
+        "E40e4eda039dd": "E86dc3a194b37"
+      }
+    }
+  ]
+}
+

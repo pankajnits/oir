@@ -1,0 +1,24 @@
+{
+  "corpus_chars": 552,
+  "char_hmac": {
+    "freq_identifies_e": true,
+    "crib_coverage": 0.764,
+    "confidentiality_survives_script": false
+  },
+  "word_hmac": {
+    "top_word": "Vault",
+    "zipf_function_word_top": false,
+    "crib_token_coverage": 0.333,
+    "confidentiality_survives_script": true,
+    "note": "Word HMAC still leaks via Zipf + known-plaintext codebook recovery"
+  },
+  "indexed_entity": {
+    "top_entity": "Vault",
+    "crib_token_coverage": 0.333,
+    "unique_entities": 64,
+    "confidentiality_survives_script": false,
+    "note": "Indexed/entity seals resist monoalphabetic letter attack but known-plaintext still recovers entity codebook",
+    "better_than_char_monoalphabetic": true
+  },
+  "paper_sentence": "Deterministic seals enable referential retrieval but are not confidential against script adversaries with a short crib; per-char seals additionally collapse to monoalphabetic frequency attacks."
+}

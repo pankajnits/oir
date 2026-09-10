@@ -1,0 +1,217 @@
+{
+  "model": "gpt56",
+  "openai_model": "gpt-5.6-sol",
+  "context_tokens_est": 89285,
+  "n_tables": 414,
+  "summary": {
+    "FQ_NL": "0/8",
+    "FQ_PROG": "8/8",
+    "FQ_FOLLOW": "4/4",
+    "WTQ_NL": "1/6",
+    "WTQ_DSL": "6/6"
+  },
+  "by_form": {
+    "FQ_NL": {
+      "score": "0/8",
+      "ok": 0,
+      "n": 8,
+      "missing": 0,
+      "detail": [
+        {
+          "id": "RCV_FQ_NL_0",
+          "ok": false,
+          "pred": "176.23"
+        },
+        {
+          "id": "RCV_FQ_NL_1",
+          "ok": false,
+          "pred": "8.85"
+        },
+        {
+          "id": "RCV_FQ_NL_2",
+          "ok": false,
+          "pred": "295"
+        },
+        {
+          "id": "RCV_FQ_NL_3",
+          "ok": false,
+          "pred": "273"
+        },
+        {
+          "id": "RCV_FQ_NL_4",
+          "ok": false,
+          "pred": "62"
+        },
+        {
+          "id": "RCV_FQ_NL_5",
+          "ok": false,
+          "pred": "1689.53"
+        },
+        {
+          "id": "RCV_FQ_NL_6",
+          "ok": false,
+          "pred": "229.89"
+        },
+        {
+          "id": "RCV_FQ_NL_7",
+          "ok": false,
+          "pred": "67.16"
+        }
+      ]
+    },
+    "FQ_PROG": {
+      "score": "8/8",
+      "ok": 8,
+      "n": 8,
+      "missing": 0,
+      "detail": [
+        {
+          "id": "RCV_FQ_PROG_0",
+          "ok": true,
+          "pred": "117.12"
+        },
+        {
+          "id": "RCV_FQ_PROG_1",
+          "ok": true,
+          "pred": "0.045"
+        },
+        {
+          "id": "RCV_FQ_PROG_2",
+          "ok": true,
+          "pred": "0.6425120773"
+        },
+        {
+          "id": "RCV_FQ_PROG_3",
+          "ok": true,
+          "pred": "89"
+        },
+        {
+          "id": "RCV_FQ_PROG_4",
+          "ok": true,
+          "pred": "131"
+        },
+        {
+          "id": "RCV_FQ_PROG_5",
+          "ok": true,
+          "pred": "59.04"
+        },
+        {
+          "id": "RCV_FQ_PROG_6",
+          "ok": true,
+          "pred": "59.5066666667"
+        },
+        {
+          "id": "RCV_FQ_PROG_7",
+          "ok": true,
+          "pred": "80.13"
+        }
+      ]
+    },
+    "FQ_FOLLOW": {
+      "score": "4/4",
+      "ok": 4,
+      "n": 4,
+      "missing": 0,
+      "detail": [
+        {
+          "id": "RCV_FQ_FOLLOW_0",
+          "ok": true,
+          "pred": "117.12"
+        },
+        {
+          "id": "RCV_FQ_FOLLOW_1",
+          "ok": true,
+          "pred": "0.045"
+        },
+        {
+          "id": "RCV_FQ_FOLLOW_2",
+          "ok": true,
+          "pred": "0.6425120773"
+        },
+        {
+          "id": "RCV_FQ_FOLLOW_3",
+          "ok": true,
+          "pred": "89"
+        }
+      ]
+    },
+    "WTQ_NL": {
+      "score": "1/6",
+      "ok": 1,
+      "n": 6,
+      "missing": 0,
+      "detail": [
+        {
+          "id": "RCV_WTQ_NL_0",
+          "ok": false,
+          "pred": "E48a23ab12256"
+        },
+        {
+          "id": "RCV_WTQ_NL_1",
+          "ok": false,
+          "pred": "E076b14cf7e28"
+        },
+        {
+          "id": "RCV_WTQ_NL_2",
+          "ok": false,
+          "pred": "E979d21892619"
+        },
+        {
+          "id": "RCV_WTQ_NL_3",
+          "ok": true,
+          "pred": "E67718bd90b12"
+        },
+        {
+          "id": "RCV_WTQ_NL_4",
+          "ok": false,
+          "pred": "Eeaed1350ef93"
+        },
+        {
+          "id": "RCV_WTQ_NL_5",
+          "ok": false,
+          "pred": "E6456cb51594a"
+        }
+      ]
+    },
+    "WTQ_DSL": {
+      "score": "6/6",
+      "ok": 6,
+      "n": 6,
+      "missing": 0,
+      "detail": [
+        {
+          "id": "RCV_WTQ_DSL_0",
+          "ok": true,
+          "pred": "E15e71c4b1538"
+        },
+        {
+          "id": "RCV_WTQ_DSL_1",
+          "ok": true,
+          "pred": "E09f1e2e67fc1"
+        },
+        {
+          "id": "RCV_WTQ_DSL_2",
+          "ok": true,
+          "pred": "E4bb5e0bf8559"
+        },
+        {
+          "id": "RCV_WTQ_DSL_3",
+          "ok": true,
+          "pred": "E67718bd90b12"
+        },
+        {
+          "id": "RCV_WTQ_DSL_4",
+          "ok": true,
+          "pred": "Ed61ba40d1a8f"
+        },
+        {
+          "id": "RCV_WTQ_DSL_5",
+          "ok": true,
+          "pred": "E2b57d757405f"
+        }
+      ]
+    }
+  },
+  "claim": "Cross-verify: real complex FinQA/WTQ questions in large sealed real-table CONTEXT; research binders vs sealed NL.",
+  "note": "FQ_NL first call empty; retried with explicit ANSWER_NUM instruction. WTQ_DSL bare seals remapped in order."
+}

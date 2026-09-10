@@ -1,0 +1,27 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM PATH_TYPED_SINK: follow PATH; final node must have the SINK_TYPE edge. One quiz.
+
+##### ID GREV2_DECOY_5 #####
+PATH_TYPED_SINK
+START Ee30986b57ffc
+R1 E12413edd5a06
+R2 E5992a0eaed6a
+SINK_TYPE E4ba255589eaa E9b87a160ada3
+Execute path; final node must have typed sink edge; return final sealed atom only.
+
+CONTEXT:
+E66b567950492 | E5992a0eaed6a | E9d1a7ae1fdcc
+E9d1a7ae1fdcc | E4ba255589eaa | E9b87a160ada3
+Ee30986b57ffc | E12413edd5a06 | E68d2b698bdeb
+E7ab2a6fd4d3a | E4ba255589eaa | E9b87a160ada3
+Ee30986b57ffc | E036a81e5b04b | E3eacb6b831c7
+E66b567950492 | E5992a0eaed6a | Ed1ff77e2798e
+E66b567950492 | E5992a0eaed6a | E75adaa2a3a47
+Ee30986b57ffc | E12413edd5a06 | E66b567950492
+Ee30986b57ffc | E014d2a24d654 | E649b9d2d2105
+Ee30986b57ffc | E12413edd5a06 | Ef03340d3ab20
+E00d2de030309 | E4ba255589eaa | E9b87a160ada3
+

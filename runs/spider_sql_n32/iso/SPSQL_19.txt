@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_19]: <sql>
+
+DB: music_1
+SCHEMA:
+genre(g_name, rating, most_popular_in)
+artist(artist_name, country, gender, preferred_genre)
+files(f_id, artist_name, file_size, duration, formats)
+song(song_name, artist_name, country, f_id, genre_is, rating, languages, releasedate, resolution)
+QUESTION:
+What is the average rating of songs produced by female artists?

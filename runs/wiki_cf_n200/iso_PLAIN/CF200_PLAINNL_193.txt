@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_193 #####
+QUESTION:
+Where did Thomas Wodehouse's father graduate from?
+
+CONTEXT:
+Thomas Wodehouse | father | Sir Philip Wodehouse, 1st Baronet
+Voices | director | Kevin Billington
+Kevin Billington | spouse | Rachel Billington
+Piauí | editor | João Moreira Salles
+Thomas Wodehouse | decoy_link_193 | decoy_mid_193
+decoy_mid_193 | educated at | Trinity College
+Sir Philip Wodehouse, 1st Baronet | educated at | CF_TAIL_193_TrinityColle
+João Moreira Salles | place of birth | Rio de Janeiro

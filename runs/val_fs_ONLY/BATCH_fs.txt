@@ -1,0 +1,125 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+All tokens are opaque IDs. Same ID = same entity/relation across demos and quiz.
+
+Relation seals are SHARED across demos. Induce which middle seals are the 2-hop path from demos.
+
+No English relation names. No handles.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+=== DEMOS ===
+
+DEMO:
+SUBJECT E7ef38c4486f9
+Return the 2-hop city seal (employer then city-rel). One seal only.
+
+CONTEXT:
+E7ef38c4486f9 | Eb29114fecfce | Eb526c503832a
+E98b7449b21b8 | Eb29114fecfce | E7b252a9e6403
+Eb526c503832a | E9fc9e2130b21 | E1cfd637e8349
+E7b252a9e6403 | E9fc9e2130b21 | E6fad6023d6c4
+Eb526c503832a | E87ab71425b5c | E3d4e49168406
+E7b252a9e6403 | E87ab71425b5c | Eca0332c3339f
+Eb526c503832a | E1c957dd0b4a0 | E839189a83ae1
+E7b252a9e6403 | E1c957dd0b4a0 | Ee96ed555ecfb
+
+ANSWER_SEALED: E3d4e49168406
+
+
+DEMO:
+SUBJECT E7ef38c4486f9
+Return the 2-hop city seal (employer then city-rel). One seal only.
+
+CONTEXT:
+E7ef38c4486f9 | Eb29114fecfce | E7b252a9e6403
+E98b7449b21b8 | Eb29114fecfce | E7b252a9e6403
+Eb526c503832a | E9fc9e2130b21 | E1cfd637e8349
+E7b252a9e6403 | E9fc9e2130b21 | E6fad6023d6c4
+Eb526c503832a | E87ab71425b5c | E3d4e49168406
+E7b252a9e6403 | E87ab71425b5c | Eca0332c3339f
+Eb526c503832a | E1c957dd0b4a0 | E839189a83ae1
+E7b252a9e6403 | E1c957dd0b4a0 | Ee96ed555ecfb
+
+ANSWER_SEALED: Eca0332c3339f
+
+
+DEMO:
+SUBJECT E135212867f35
+Return the 2-hop city seal (employer then city-rel). One seal only.
+
+CONTEXT:
+E135212867f35 | Eb29114fecfce | Ed49eae31d276
+E41173e32c400 | Eb29114fecfce | E6ca727d889f1
+Ed49eae31d276 | E9fc9e2130b21 | E2501ffce8c2d
+E6ca727d889f1 | E9fc9e2130b21 | E4cb9cca82065
+Ed49eae31d276 | E87ab71425b5c | Ed9a0030603e5
+E6ca727d889f1 | E87ab71425b5c | Ef9a840cdcb75
+Ed49eae31d276 | E1c957dd0b4a0 | Ed7377d513ad4
+E6ca727d889f1 | E1c957dd0b4a0 | E57579dc7c21d
+
+ANSWER_SEALED: Ed9a0030603e5
+
+
+
+=== QUIZ ===
+
+
+##### ID VAL_FS_G2_A #####
+SUBJECT E018691aa4610
+Return the 2-hop city seal (same path type as demos). One seal or UNKNOWN.
+
+CONTEXT:
+E018691aa4610 | Eb29114fecfce | E3248e657b548
+Eff9cd8d35c23 | Eb29114fecfce | E6a6dfc0a2041
+E3248e657b548 | E9fc9e2130b21 | Ef3531250f2e5
+E6a6dfc0a2041 | E9fc9e2130b21 | Ea293449e66d0
+E3248e657b548 | E87ab71425b5c | E5d9159639379
+E6a6dfc0a2041 | E87ab71425b5c | Efd544f1bab5a
+E3248e657b548 | E1c957dd0b4a0 | Ee72bee6936f8
+E6a6dfc0a2041 | E1c957dd0b4a0 | E60f2ffa751c2
+
+
+##### ID VAL_FS_G2_B #####
+SUBJECT E018691aa4610
+Return the 2-hop city seal (same path type as demos). One seal or UNKNOWN.
+
+CONTEXT:
+E018691aa4610 | Eb29114fecfce | E6a6dfc0a2041
+Eff9cd8d35c23 | Eb29114fecfce | E6a6dfc0a2041
+E3248e657b548 | E9fc9e2130b21 | Ef3531250f2e5
+E6a6dfc0a2041 | E9fc9e2130b21 | Ea293449e66d0
+E3248e657b548 | E87ab71425b5c | E5d9159639379
+E6a6dfc0a2041 | E87ab71425b5c | Efd544f1bab5a
+E3248e657b548 | E1c957dd0b4a0 | Ee72bee6936f8
+E6a6dfc0a2041 | E1c957dd0b4a0 | E60f2ffa751c2
+
+
+##### ID VAL_FS_G3_A #####
+SUBJECT Ec2ae8e9d2ae1
+Return the 2-hop city seal (same path type as demos). One seal or UNKNOWN.
+
+CONTEXT:
+Ec2ae8e9d2ae1 | Eb29114fecfce | Efde876a4a1d3
+Effe48fd474a0 | Eb29114fecfce | Ebb4cdfa4ae1c
+Efde876a4a1d3 | E9fc9e2130b21 | Ed1dc799f2985
+Ebb4cdfa4ae1c | E9fc9e2130b21 | E74e614c5e275
+Efde876a4a1d3 | E87ab71425b5c | E002cbeaa57ae
+Ebb4cdfa4ae1c | E87ab71425b5c | Ec15cdadb3bcd
+Efde876a4a1d3 | E1c957dd0b4a0 | E4ff66d185c50
+Ebb4cdfa4ae1c | E1c957dd0b4a0 | E23eb46e5c821
+
+
+##### ID VAL_FS_G3_B #####
+SUBJECT Ec2ae8e9d2ae1
+Return the 2-hop city seal (same path type as demos). One seal or UNKNOWN.
+
+CONTEXT:
+Ec2ae8e9d2ae1 | Eb29114fecfce | Ebb4cdfa4ae1c
+Effe48fd474a0 | Eb29114fecfce | Ebb4cdfa4ae1c
+Efde876a4a1d3 | E9fc9e2130b21 | Ed1dc799f2985
+Ebb4cdfa4ae1c | E9fc9e2130b21 | E74e614c5e275
+Efde876a4a1d3 | E87ab71425b5c | E002cbeaa57ae
+Ebb4cdfa4ae1c | E87ab71425b5c | Ec15cdadb3bcd
+Efde876a4a1d3 | E1c957dd0b4a0 | E4ff66d185c50
+Ebb4cdfa4ae1c | E1c957dd0b4a0 | E23eb46e5c821

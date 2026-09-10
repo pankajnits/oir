@@ -1,0 +1,1465 @@
+{
+  "n": 12,
+  "models_ollama": [
+    "qwen3.5:latest",
+    "reecdev/tiny3.5:500m"
+  ],
+  "rel_aliases": {
+    "works_at": [
+      "works_at",
+      "employs",
+      "employer_of",
+      "works_for",
+      "employed_by"
+    ],
+    "headquartered_in": [
+      "headquartered_in",
+      "hq_in",
+      "based_in",
+      "located_in_city",
+      "head_office_in"
+    ]
+  },
+  "paths": {
+    "RAW_NL": "runs/planner_local/RAW_NL_ONLY/BATCH.txt",
+    "CTX_ALIAS": "runs/planner_local/CTX_ALIAS_ONLY/BATCH.txt",
+    "DET_PROG": "runs/planner_local/DET_PROG_ONLY/BATCH.txt",
+    "LOCAL_PROG": "runs/planner_local/LOCAL_PROG_ONLY/BATCH.txt",
+    "ALIAS_DECOYFIRST": "runs/planner_local/ALIAS_DECOYFIRST_ONLY/BATCH.txt",
+    "ALIAS_UNDERSCORE": "runs/planner_local/ALIAS_UNDERSCORE_ONLY/BATCH.txt",
+    "ALIAS_SHUFFLE": "runs/planner_local/ALIAS_SHUFFLE_ONLY/BATCH.txt"
+  },
+  "cases": [
+    {
+      "id": "PL_RAW_0",
+      "form": "RAW_NL",
+      "expect": "E06776f214bf9",
+      "company_seal": "E506a78fdc5cc",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "hq": "Prague",
+      "q": "Where is the headquarters of the company that Jakub Strnad works for?"
+    },
+    {
+      "id": "PL_ALIAS_0",
+      "form": "CTX_ALIAS",
+      "expect": "E06776f214bf9",
+      "company_seal": "E506a78fdc5cc",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Jakub Strnad based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_0",
+      "form": "DET_PROG",
+      "expect": "E06776f214bf9",
+      "company_seal": "E506a78fdc5cc",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "hq": "Prague"
+    },
+    {
+      "id": "PL_LOCAL_0",
+      "form": "LOCAL_PROG",
+      "expect": "E06776f214bf9",
+      "company_seal": "E506a78fdc5cc",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "hq": "Prague",
+      "plan": {
+        "start": "Jakub_Strnad",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_1",
+      "form": "RAW_NL",
+      "expect": "E84f8964e7f49",
+      "company_seal": "Eacb32514272a",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "hq": "Chesapeake",
+      "q": "Where is the headquarters of the company that Macon Foscue Brock Jr works for?"
+    },
+    {
+      "id": "PL_ALIAS_1",
+      "form": "CTX_ALIAS",
+      "expect": "E84f8964e7f49",
+      "company_seal": "Eacb32514272a",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "hq": "Chesapeake",
+      "q": "In which city is the organization that employs Macon Foscue Brock Jr based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_1",
+      "form": "DET_PROG",
+      "expect": "E84f8964e7f49",
+      "company_seal": "Eacb32514272a",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "hq": "Chesapeake"
+    },
+    {
+      "id": "PL_LOCAL_1",
+      "form": "LOCAL_PROG",
+      "expect": "E84f8964e7f49",
+      "company_seal": "Eacb32514272a",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "hq": "Chesapeake",
+      "plan": {
+        "start": "Macon_Foscue_Brock_Jr",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_2",
+      "form": "RAW_NL",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City",
+      "q": "Where is the headquarters of the company that Landon H Rowland works for?"
+    },
+    {
+      "id": "PL_ALIAS_2",
+      "form": "CTX_ALIAS",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City",
+      "q": "In which city is the organization that employs Landon H Rowland based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_2",
+      "form": "DET_PROG",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City"
+    },
+    {
+      "id": "PL_LOCAL_2",
+      "form": "LOCAL_PROG",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City",
+      "plan": {
+        "start": "Landon_H_Rowland",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_3",
+      "form": "RAW_NL",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "hq": "Burbank",
+      "q": "Where is the headquarters of the company that Bob Chapek works for?"
+    },
+    {
+      "id": "PL_ALIAS_3",
+      "form": "CTX_ALIAS",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "hq": "Burbank",
+      "q": "In which city is the organization that employs Bob Chapek based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_3",
+      "form": "DET_PROG",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "hq": "Burbank"
+    },
+    {
+      "id": "PL_LOCAL_3",
+      "form": "LOCAL_PROG",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "hq": "Burbank",
+      "plan": {
+        "start": "Bob_Chapek",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_4",
+      "form": "RAW_NL",
+      "expect": "E06776f214bf9",
+      "company_seal": "E5f86bf02b1ee",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "hq": "Prague",
+      "q": "Where is the headquarters of the company that Jakub Duslek works for?"
+    },
+    {
+      "id": "PL_ALIAS_4",
+      "form": "CTX_ALIAS",
+      "expect": "E06776f214bf9",
+      "company_seal": "E5f86bf02b1ee",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Jakub Duslek based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_4",
+      "form": "DET_PROG",
+      "expect": "E06776f214bf9",
+      "company_seal": "E5f86bf02b1ee",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "hq": "Prague"
+    },
+    {
+      "id": "PL_LOCAL_4",
+      "form": "LOCAL_PROG",
+      "expect": "E06776f214bf9",
+      "company_seal": "E5f86bf02b1ee",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "hq": "Prague",
+      "plan": {
+        "start": "Jakub_Duslek",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_5",
+      "form": "RAW_NL",
+      "expect": "Eece23d984975",
+      "company_seal": "Ec162bdc334a8",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "hq": "Richfield",
+      "q": "Where is the headquarters of the company that Hubert Joly works for?"
+    },
+    {
+      "id": "PL_ALIAS_5",
+      "form": "CTX_ALIAS",
+      "expect": "Eece23d984975",
+      "company_seal": "Ec162bdc334a8",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "hq": "Richfield",
+      "q": "In which city is the organization that employs Hubert Joly based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_5",
+      "form": "DET_PROG",
+      "expect": "Eece23d984975",
+      "company_seal": "Ec162bdc334a8",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "hq": "Richfield"
+    },
+    {
+      "id": "PL_LOCAL_5",
+      "form": "LOCAL_PROG",
+      "expect": "Eece23d984975",
+      "company_seal": "Ec162bdc334a8",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "hq": "Richfield",
+      "plan": {
+        "start": "Hubert_Joly",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_6",
+      "form": "RAW_NL",
+      "expect": "Efa283d62c9a5",
+      "company_seal": "Edf256ac5bdb9",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "hq": "Cologne",
+      "q": "Where is the headquarters of the company that Tom Buhrow works for?"
+    },
+    {
+      "id": "PL_ALIAS_6",
+      "form": "CTX_ALIAS",
+      "expect": "Efa283d62c9a5",
+      "company_seal": "Edf256ac5bdb9",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "hq": "Cologne",
+      "q": "In which city is the organization that employs Tom Buhrow based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_6",
+      "form": "DET_PROG",
+      "expect": "Efa283d62c9a5",
+      "company_seal": "Edf256ac5bdb9",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "hq": "Cologne"
+    },
+    {
+      "id": "PL_LOCAL_6",
+      "form": "LOCAL_PROG",
+      "expect": "Efa283d62c9a5",
+      "company_seal": "Edf256ac5bdb9",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "hq": "Cologne",
+      "plan": {
+        "start": "Tom_Buhrow",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_7",
+      "form": "RAW_NL",
+      "expect": "E06776f214bf9",
+      "company_seal": "E735a868690fe",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "hq": "Prague",
+      "q": "Where is the headquarters of the company that Michal Krapinec works for?"
+    },
+    {
+      "id": "PL_ALIAS_7",
+      "form": "CTX_ALIAS",
+      "expect": "E06776f214bf9",
+      "company_seal": "E735a868690fe",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Michal Krapinec based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_7",
+      "form": "DET_PROG",
+      "expect": "E06776f214bf9",
+      "company_seal": "E735a868690fe",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "hq": "Prague"
+    },
+    {
+      "id": "PL_LOCAL_7",
+      "form": "LOCAL_PROG",
+      "expect": "E06776f214bf9",
+      "company_seal": "E735a868690fe",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "hq": "Prague",
+      "plan": {
+        "start": "Michal_Krapinec",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_8",
+      "form": "RAW_NL",
+      "expect": "Ea481894526ec",
+      "company_seal": "E96d3dac96cf0",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "hq": "Ottawa",
+      "q": "Where is the headquarters of the company that Catherine Tait works for?"
+    },
+    {
+      "id": "PL_ALIAS_8",
+      "form": "CTX_ALIAS",
+      "expect": "Ea481894526ec",
+      "company_seal": "E96d3dac96cf0",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "hq": "Ottawa",
+      "q": "In which city is the organization that employs Catherine Tait based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_8",
+      "form": "DET_PROG",
+      "expect": "Ea481894526ec",
+      "company_seal": "E96d3dac96cf0",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "hq": "Ottawa"
+    },
+    {
+      "id": "PL_LOCAL_8",
+      "form": "LOCAL_PROG",
+      "expect": "Ea481894526ec",
+      "company_seal": "E96d3dac96cf0",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "hq": "Ottawa",
+      "plan": {
+        "start": "Catherine_Tait",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_9",
+      "form": "RAW_NL",
+      "expect": "Ececba0ac75d9",
+      "company_seal": "E957f6764ac0b",
+      "i": 9,
+      "person": "Achim_Wei",
+      "hq": "Montabaur",
+      "q": "Where is the headquarters of the company that Achim Wei works for?"
+    },
+    {
+      "id": "PL_ALIAS_9",
+      "form": "CTX_ALIAS",
+      "expect": "Ececba0ac75d9",
+      "company_seal": "E957f6764ac0b",
+      "i": 9,
+      "person": "Achim_Wei",
+      "hq": "Montabaur",
+      "q": "In which city is the organization that employs Achim Wei based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_9",
+      "form": "DET_PROG",
+      "expect": "Ececba0ac75d9",
+      "company_seal": "E957f6764ac0b",
+      "i": 9,
+      "person": "Achim_Wei",
+      "hq": "Montabaur"
+    },
+    {
+      "id": "PL_LOCAL_9",
+      "form": "LOCAL_PROG",
+      "expect": "Ececba0ac75d9",
+      "company_seal": "E957f6764ac0b",
+      "i": 9,
+      "person": "Achim_Wei",
+      "hq": "Montabaur",
+      "plan": {
+        "start": "Achim_Wei",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_10",
+      "form": "RAW_NL",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 10,
+      "person": "Walt_Disney",
+      "hq": "Burbank",
+      "q": "Where is the headquarters of the company that Walt Disney works for?"
+    },
+    {
+      "id": "PL_ALIAS_10",
+      "form": "CTX_ALIAS",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 10,
+      "person": "Walt_Disney",
+      "hq": "Burbank",
+      "q": "In which city is the organization that employs Walt Disney based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_10",
+      "form": "DET_PROG",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 10,
+      "person": "Walt_Disney",
+      "hq": "Burbank"
+    },
+    {
+      "id": "PL_LOCAL_10",
+      "form": "LOCAL_PROG",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 10,
+      "person": "Walt_Disney",
+      "hq": "Burbank",
+      "plan": {
+        "start": "Walt_Disney",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_RAW_11",
+      "form": "RAW_NL",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "hq": "Kansas_City",
+      "q": "Where is the headquarters of the company that William N Deramus IV works for?"
+    },
+    {
+      "id": "PL_ALIAS_11",
+      "form": "CTX_ALIAS",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "hq": "Kansas_City",
+      "q": "In which city is the organization that employs William N Deramus IV based_in?",
+      "note": "Q uses employs + based_in; C has alias edges"
+    },
+    {
+      "id": "PL_DET_11",
+      "form": "DET_PROG",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "hq": "Kansas_City"
+    },
+    {
+      "id": "PL_LOCAL_11",
+      "form": "LOCAL_PROG",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "hq": "Kansas_City",
+      "plan": {
+        "start": "William_N_Deramus_IV",
+        "r1": "works_at",
+        "r2": "headquartered_in",
+        "ok": true
+      },
+      "model": "qwen3.5:latest"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_0",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "E06776f214bf9",
+      "company_seal": "E506a78fdc5cc",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Jakub Strnad based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_1",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "E84f8964e7f49",
+      "company_seal": "Eacb32514272a",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "hq": "Chesapeake",
+      "q": "In which city is the organization that employs Macon Foscue Brock Jr based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_2",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City",
+      "q": "In which city is the organization that employs Landon H Rowland based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_3",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "hq": "Burbank",
+      "q": "In which city is the organization that employs Bob Chapek based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_4",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "E06776f214bf9",
+      "company_seal": "E5f86bf02b1ee",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Jakub Duslek based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_5",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "Eece23d984975",
+      "company_seal": "Ec162bdc334a8",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "hq": "Richfield",
+      "q": "In which city is the organization that employs Hubert Joly based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_6",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "Efa283d62c9a5",
+      "company_seal": "Edf256ac5bdb9",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "hq": "Cologne",
+      "q": "In which city is the organization that employs Tom Buhrow based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_7",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "E06776f214bf9",
+      "company_seal": "E735a868690fe",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Michal Krapinec based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_8",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "Ea481894526ec",
+      "company_seal": "E96d3dac96cf0",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "hq": "Ottawa",
+      "q": "In which city is the organization that employs Catherine Tait based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_9",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "Ececba0ac75d9",
+      "company_seal": "E957f6764ac0b",
+      "i": 9,
+      "person": "Achim_Wei",
+      "hq": "Montabaur",
+      "q": "In which city is the organization that employs Achim Wei based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_10",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 10,
+      "person": "Walt_Disney",
+      "hq": "Burbank",
+      "q": "In which city is the organization that employs Walt Disney based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_DECOYFIRST_11",
+      "form": "ALIAS_DECOYFIRST",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "hq": "Kansas_City",
+      "q": "In which city is the organization that employs William N Deramus IV based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_0",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "E06776f214bf9",
+      "company_seal": "E506a78fdc5cc",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Jakub_Strnad based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_1",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "E84f8964e7f49",
+      "company_seal": "Eacb32514272a",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "hq": "Chesapeake",
+      "q": "In which city is the organization that employs Macon_Foscue_Brock_Jr based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_2",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City",
+      "q": "In which city is the organization that employs Landon_H_Rowland based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_3",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "hq": "Burbank",
+      "q": "In which city is the organization that employs Bob_Chapek based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_4",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "E06776f214bf9",
+      "company_seal": "E5f86bf02b1ee",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Jakub_Duslek based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_5",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "Eece23d984975",
+      "company_seal": "Ec162bdc334a8",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "hq": "Richfield",
+      "q": "In which city is the organization that employs Hubert_Joly based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_6",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "Efa283d62c9a5",
+      "company_seal": "Edf256ac5bdb9",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "hq": "Cologne",
+      "q": "In which city is the organization that employs Tom_Buhrow based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_7",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "E06776f214bf9",
+      "company_seal": "E735a868690fe",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Michal_Krapinec based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_8",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "Ea481894526ec",
+      "company_seal": "E96d3dac96cf0",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "hq": "Ottawa",
+      "q": "In which city is the organization that employs Catherine_Tait based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_9",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "Ececba0ac75d9",
+      "company_seal": "E957f6764ac0b",
+      "i": 9,
+      "person": "Achim_Wei",
+      "hq": "Montabaur",
+      "q": "In which city is the organization that employs Achim_Wei based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_10",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 10,
+      "person": "Walt_Disney",
+      "hq": "Burbank",
+      "q": "In which city is the organization that employs Walt_Disney based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_UNDERSCORE_11",
+      "form": "ALIAS_UNDERSCORE",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "hq": "Kansas_City",
+      "q": "In which city is the organization that employs William_N_Deramus_IV based_in?",
+      "edge_order": "decoy_first"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_0",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "E06776f214bf9",
+      "company_seal": "E506a78fdc5cc",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Jakub_Strnad based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_1",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "E84f8964e7f49",
+      "company_seal": "Eacb32514272a",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "hq": "Chesapeake",
+      "q": "In which city is the organization that employs Macon_Foscue_Brock_Jr based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_2",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City",
+      "q": "In which city is the organization that employs Landon_H_Rowland based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_3",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "hq": "Burbank",
+      "q": "In which city is the organization that employs Bob_Chapek based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_4",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "E06776f214bf9",
+      "company_seal": "E5f86bf02b1ee",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Jakub_Duslek based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_5",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "Eece23d984975",
+      "company_seal": "Ec162bdc334a8",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "hq": "Richfield",
+      "q": "In which city is the organization that employs Hubert_Joly based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_6",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "Efa283d62c9a5",
+      "company_seal": "Edf256ac5bdb9",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "hq": "Cologne",
+      "q": "In which city is the organization that employs Tom_Buhrow based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_7",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "E06776f214bf9",
+      "company_seal": "E735a868690fe",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "hq": "Prague",
+      "q": "In which city is the organization that employs Michal_Krapinec based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_8",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "Ea481894526ec",
+      "company_seal": "E96d3dac96cf0",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "hq": "Ottawa",
+      "q": "In which city is the organization that employs Catherine_Tait based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_9",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "Ececba0ac75d9",
+      "company_seal": "E957f6764ac0b",
+      "i": 9,
+      "person": "Achim_Wei",
+      "hq": "Montabaur",
+      "q": "In which city is the organization that employs Achim_Wei based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_10",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "E2e409c8a42f1",
+      "company_seal": "E00ea12754e9a",
+      "i": 10,
+      "person": "Walt_Disney",
+      "hq": "Burbank",
+      "q": "In which city is the organization that employs Walt_Disney based_in?",
+      "edge_order": "shuffle"
+    },
+    {
+      "id": "PL_ALIAS_SHUFFLE_11",
+      "form": "ALIAS_SHUFFLE",
+      "expect": "E5158d993b495",
+      "company_seal": "E79716c1b6f6a",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "hq": "Kansas_City",
+      "q": "In which city is the organization that employs William_N_Deramus_IV based_in?",
+      "edge_order": "shuffle"
+    }
+  ],
+  "router_scores": {
+    "DET_COMPILER": {
+      "score": "12/12",
+      "ok": 12,
+      "n": 12
+    },
+    "CTX_ALIAS_ROUTER_NAIVE": {
+      "score": "0/0",
+      "ok": 0,
+      "n": 0
+    }
+  },
+  "local_planner": {
+    "qwen3.5:latest": {
+      "compile_acc": "12/12",
+      "router_acc": "12/12",
+      "detail": [
+        {
+          "i": 0,
+          "person": "Jakub_Strnad",
+          "plan": {
+            "ok": true,
+            "start": "Jakub_Strnad",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Jakub_Strnad\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 47.33
+          },
+          "router_ok": true
+        },
+        {
+          "i": 1,
+          "person": "Macon_Foscue_Brock_Jr",
+          "plan": {
+            "ok": true,
+            "start": "Macon_Foscue_Brock_Jr",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Macon_Foscue_Brock_Jr\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 22.37
+          },
+          "router_ok": true
+        },
+        {
+          "i": 2,
+          "person": "Landon_H_Rowland",
+          "plan": {
+            "ok": true,
+            "start": "Landon_H_Rowland",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Landon_H_Rowland\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 32.97
+          },
+          "router_ok": true
+        },
+        {
+          "i": 3,
+          "person": "Bob_Chapek",
+          "plan": {
+            "ok": true,
+            "start": "Bob_Chapek",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Bob_Chapek\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 10.48
+          },
+          "router_ok": true
+        },
+        {
+          "i": 4,
+          "person": "Jakub_Duslek",
+          "plan": {
+            "ok": true,
+            "start": "Jakub_Duslek",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Jakub_Duslek\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 16.54
+          },
+          "router_ok": true
+        },
+        {
+          "i": 5,
+          "person": "Hubert_Joly",
+          "plan": {
+            "ok": true,
+            "start": "Hubert_Joly",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Hubert_Joly\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 20.89
+          },
+          "router_ok": true
+        },
+        {
+          "i": 6,
+          "person": "Tom_Buhrow",
+          "plan": {
+            "ok": true,
+            "start": "Tom_Buhrow",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Tom_Buhrow\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 25.08
+          },
+          "router_ok": true
+        },
+        {
+          "i": 7,
+          "person": "Michal_Krapinec",
+          "plan": {
+            "ok": true,
+            "start": "Michal_Krapinec",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Michal_Krapinec\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 29.49
+          },
+          "router_ok": true
+        },
+        {
+          "i": 8,
+          "person": "Catherine_Tait",
+          "plan": {
+            "ok": true,
+            "start": "Catherine_Tait",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Catherine_Tait\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 9.62
+          },
+          "router_ok": true
+        },
+        {
+          "i": 9,
+          "person": "Achim_Wei",
+          "plan": {
+            "ok": true,
+            "start": "Achim_Wei",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Achim_Wei\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 365.3
+          },
+          "router_ok": true
+        },
+        {
+          "i": 10,
+          "person": "Walt_Disney",
+          "plan": {
+            "ok": true,
+            "start": "Walt_Disney",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"Walt_Disney\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 8.27
+          },
+          "router_ok": true
+        },
+        {
+          "i": 11,
+          "person": "William_N_Deramus_IV",
+          "plan": {
+            "ok": true,
+            "start": "William_N_Deramus_IV",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\"start\":\"William_N_Deramus_IV\",\"r1\":\"works_at\",\"r2\":\"headquartered_in\"}",
+            "reason": "ok",
+            "latency_s": 23.45
+          },
+          "router_ok": true
+        }
+      ]
+    },
+    "reecdev/tiny3.5:500m": {
+      "compile_acc": "3/12",
+      "router_acc": "3/12",
+      "detail": [
+        {
+          "i": 0,
+          "person": "Jakub_Strnad",
+          "plan": {
+            "ok": true,
+            "start": "Jakub_Strnad",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\n       \"start\": \"Jakub_Strnad\",\n       \"r1\": \"works_at\",\n       \"r2\": \"headquartered_in\"\n   }",
+            "reason": "ok",
+            "latency_s": 11.93
+          },
+          "router_ok": true
+        },
+        {
+          "i": 1,
+          "person": "Macon_Foscue_Brock_Jr",
+          "plan": {
+            "ok": false,
+            "start": "Macon_Foscue_Brock_Jr",
+            "r1": "headquartered_in",
+            "r2": "",
+            "raw": "{\"start\":\"Macon_Foscue_Brock_Jr\",\"r1\":\"headquartered_in\"}",
+            "reason": "schema_miss",
+            "latency_s": 3.62
+          },
+          "router_ok": false
+        },
+        {
+          "i": 2,
+          "person": "Landon_H_Rowland",
+          "plan": {
+            "ok": true,
+            "start": "Landon_H_Rowland",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\n        \"start\": \"Landon_H_Rowland\",\n        \"r1\": \"works_at\",\n        \"r2\": \"headquartered_in\"\n    }",
+            "reason": "ok",
+            "latency_s": 2.49
+          },
+          "router_ok": true
+        },
+        {
+          "i": 3,
+          "person": "Bob_Chapek",
+          "plan": {
+            "ok": false,
+            "start": "Bob_Chapek",
+            "r1": "headquarters_in",
+            "r2": "xyz",
+            "raw": "{\n  \"start\": \"Bob_Chapek\",\n  \"r1\": \"headquarters_in\",\n  \"r2\": \"xyz\"\n}",
+            "reason": "schema_miss",
+            "latency_s": 4.31
+          },
+          "router_ok": false
+        },
+        {
+          "i": 4,
+          "person": "Jakub_Duslek",
+          "plan": {
+            "ok": false,
+            "reason": "bad_json",
+            "raw": "{\"start\": 'jakub_duslek', 'r1': 'work\u001b[5D\u001b[K\n'works_at', 'r2': 'headquarters_in'}",
+            "latency_s": 3.15
+          },
+          "router_ok": false
+        },
+        {
+          "i": 5,
+          "person": "Hubert_Joly",
+          "plan": {
+            "ok": false,
+            "reason": "bad_json",
+            "raw": "{\n      \"start\": Hubert_Joly,\n      \"r1\": \"works_at\",\n      \"r2\": \"headquartered_in\"\n    }",
+            "latency_s": 4.25
+          },
+          "router_ok": false
+        },
+        {
+          "i": 6,
+          "person": "Tom_Buhrow",
+          "plan": {
+            "ok": false,
+            "start": "Tom_Buhrow",
+            "r1": "headquarters_in",
+            "r2": "company",
+            "raw": "{\n    \"start\": \"Tom Buhrow\",\n    \"r1\": \"headquarters_in\",\n    \"r2\": \"company\"\n}",
+            "reason": "schema_miss",
+            "latency_s": 2.0
+          },
+          "router_ok": false
+        },
+        {
+          "i": 7,
+          "person": "Michal_Krapinec",
+          "plan": {
+            "ok": true,
+            "start": "Michal_Krapinec",
+            "r1": "works_at",
+            "r2": "headquartered_in",
+            "raw": "{\n  \"start\": \"Michal_Krapinec\",\n  \"r1\": \"works_at\",\n  \"r2\": \"headquartered_in\"\n}",
+            "reason": "ok",
+            "latency_s": 3.12
+          },
+          "router_ok": true
+        },
+        {
+          "i": 8,
+          "person": "Catherine_Tait",
+          "plan": {
+            "ok": false,
+            "start": "",
+            "r1": "",
+            "r2": "",
+            "raw": "{\"id\":\"some_company_id\"}",
+            "reason": "schema_miss",
+            "latency_s": 3.31
+          },
+          "router_ok": false
+        },
+        {
+          "i": 9,
+          "person": "Achim_Wei",
+          "plan": {
+            "ok": false,
+            "reason": "bad_json",
+            "raw": "{\"start\": ...}",
+            "latency_s": 4.92
+          },
+          "router_ok": false
+        },
+        {
+          "i": 10,
+          "person": "Walt_Disney",
+          "plan": {
+            "ok": false,
+            "reason": "bad_json",
+            "raw": "{\n    \"start\":\"Walt_Disney\",\n    \"r1\":\"partners_with\",\"r2\":[\"Apple\"],\n    \"r3\":\"located_in\", // The answer is implied here. Let's add location as\u001b[2D\u001b[K\nas per constraints.\n}",
+            "latency_s": 3.66
+          },
+          "router_ok": false
+        },
+        {
+          "i": 11,
+          "person": "William_N_Deramus_IV",
+          "plan": {
+            "ok": false,
+            "reason": "bad_json",
+            "raw": "{\n  \"start\": \"William_N_Deramus_IV\",\n  \"r1\": null, // No location provided as no business exists at him (headqua\u001b[8D\u001b[K\n(headquarters/office)\n  \"r2\": \"Metamorphosis\"\n}",
+            "latency_s": 2.33
+          },
+          "router_ok": false
+        }
+      ]
+    }
+  },
+  "claim": "Best enrichment under opacity = compile to PATH (local SLM or deterministic), not synonym paraphrase; CTX alias is schema-linking ablation.",
+  "rev": {
+    "E7b4335505139": "Jakub_Strnad",
+    "E99acde16618f": "works_at",
+    "E506a78fdc5cc": "Allianz_pojiovna",
+    "E9b41669dfd2b": "headquartered_in",
+    "E06776f214bf9": "Prague",
+    "E4ea1d67b859e": "DecoyCo_Allianz_pojiovna",
+    "Eca6df3e4693d": "DecoyHQ_Prague",
+    "Ea0a9e1461766": "owned_by",
+    "E60287e7aef7b": "Hold_Allianz_pojiovna",
+    "E8e11c95a7e5c": "meta_of",
+    "E03f1e86aa849": "partner_of",
+    "Ebcac79ac1b5b": "Partner_Allianz_pojiovna",
+    "Ea461ce327e28": "Decoy_DecoyCo_Allianz_pojiovna",
+    "E7a63c46ad2d3": "Where",
+    "Ee5de80a91255": "is",
+    "Ec12974439ed9": "the",
+    "E8985ec395baf": "headquarters",
+    "E60ba425b070a": "of",
+    "E7acba742b993": "company",
+    "E65653bc0e536": "that",
+    "E887ccb018649": "Jakub",
+    "Ef62b0de373ae": "Strnad",
+    "E63e5eea95ca4": "works",
+    "Ec5e8a188293a": "for",
+    "E780428f9986b": "employs",
+    "E117f9b8c1468": "employer_of",
+    "Eb2b4bf627f3e": "works_for",
+    "E16dd3553a507": "employed_by",
+    "Eca58a6aeac0b": "hq_in",
+    "E594d4dcb7871": "based_in",
+    "E9ca3b3af8022": "located_in_city",
+    "Ee4ad2e9b2e43": "head_office_in",
+    "E23720fb218f6": "In",
+    "E6fb6cc25f36c": "which",
+    "Eb0daa66bd34f": "city",
+    "Ebfb96c509e6e": "organization",
+    "Ef9d752340c21": "Macon_Foscue_Brock_Jr",
+    "Eacb32514272a": "Dollar_Tree",
+    "E84f8964e7f49": "Chesapeake",
+    "E69f01093070c": "DecoyCo_Dollar_Tree",
+    "Eccbbef32c615": "DecoyHQ_Chesapeake",
+    "E069907c7c479": "Hold_Dollar_Tree",
+    "E6e672cc4efb8": "Partner_Dollar_Tree",
+    "Efaf5c62d7e7a": "Decoy_DecoyCo_Dollar_Tree",
+    "Eaa6ea132070c": "Macon",
+    "Eb9779a9fc689": "Foscue",
+    "E301c26bd8750": "Brock",
+    "Eebcb187afb45": "Jr",
+    "E3005b2b46e58": "Landon_H_Rowland",
+    "E79716c1b6f6a": "Kansas_City_Southern",
+    "E5158d993b495": "Kansas_City",
+    "E5c9d45c603dc": "DecoyCo_Kansas_City_Southern",
+    "E994115664433": "DecoyHQ_Kansas_City",
+    "E8514346cca3b": "Hold_Kansas_City_Southern",
+    "E3e4cdff6e73a": "Partner_Kansas_City_Southern",
+    "E263d33d6d7da": "Decoy_DecoyCo_Kansas_City_Southern",
+    "E2e5d927280b1": "Landon",
+    "E43960ddff99d": "H",
+    "E8a552048bdd0": "Rowland",
+    "E6d48812e5235": "Bob_Chapek",
+    "E00ea12754e9a": "The_Walt_Disney_Company",
+    "E2e409c8a42f1": "Burbank",
+    "E86987ec3eb91": "DecoyCo_The_Walt_Disney_Company",
+    "E6077e208df13": "DecoyHQ_Burbank",
+    "E904257fd4f1c": "Hold_The_Walt_Disney_Company",
+    "Ec26b3d04d145": "Partner_The_Walt_Disney_Company",
+    "E3c392be15175": "Decoy_DecoyCo_The_Walt_Disney_Company",
+    "Ecd88677a77ce": "Bob",
+    "E56e3be32f37d": "Chapek",
+    "E53f3125f7af8": "Jakub_Duslek",
+    "E5f86bf02b1ee": "UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "E2abac671d9b9": "DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "Ea72befaf3c1e": "Hold_UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "E218452b61b92": "Partner_UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "Efccde1b044d4": "Decoy_DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "E1e747e30bbc0": "Duslek",
+    "Ed01eb9d64b27": "Hubert_Joly",
+    "Ec162bdc334a8": "Best_Buy",
+    "Eece23d984975": "Richfield",
+    "Ee07a64c0b1ae": "DecoyCo_Best_Buy",
+    "E199e3bc6b694": "DecoyHQ_Richfield",
+    "E0b06383fb324": "Hold_Best_Buy",
+    "E8c3ca5e4ce86": "Partner_Best_Buy",
+    "Ef82c9459fb14": "Decoy_DecoyCo_Best_Buy",
+    "E80e5d4964266": "Hubert",
+    "E398aa7e83455": "Joly",
+    "Ebbaf871d9402": "Tom_Buhrow",
+    "Edf256ac5bdb9": "Westdeutscher_Rundfunk",
+    "Efa283d62c9a5": "Cologne",
+    "E0af23d4fe32a": "DecoyCo_Westdeutscher_Rundfunk",
+    "Eb5571c47d715": "DecoyHQ_Cologne",
+    "Ec78f5d04eb20": "Hold_Westdeutscher_Rundfunk",
+    "Eb65d9fd09b96": "Partner_Westdeutscher_Rundfunk",
+    "Eb5e853d0e233": "Decoy_DecoyCo_Westdeutscher_Rundfunk",
+    "E2546e4d26f7d": "Tom",
+    "Edd32ebcf0a6a": "Buhrow",
+    "Eaaa399e8ccf2": "Michal_Krapinec",
+    "E735a868690fe": "esk_drhy",
+    "E464b3da1b3af": "DecoyCo_esk_drhy",
+    "Ebd28281b316d": "Hold_esk_drhy",
+    "Efa4761956652": "Partner_esk_drhy",
+    "E400beab07d1a": "Decoy_DecoyCo_esk_drhy",
+    "Ecefb1a554cda": "Michal",
+    "E90789d7f7696": "Krapinec",
+    "E2ad51466b025": "Catherine_Tait",
+    "E96d3dac96cf0": "Canadian_Broadcasting_Corporation",
+    "Ea481894526ec": "Ottawa",
+    "Eb0e33fe6d37c": "DecoyCo_Canadian_Broadcasting_Corporation",
+    "Ee69beae40c10": "DecoyHQ_Ottawa",
+    "E86a7d5fe5f96": "Hold_Canadian_Broadcasting_Corporation",
+    "Ed3b9c3f26208": "Partner_Canadian_Broadcasting_Corporation",
+    "Eac04d6b8cc8f": "Decoy_DecoyCo_Canadian_Broadcasting_Corporation",
+    "Efa2c9a89411e": "Catherine",
+    "E0ab05956a487": "Tait",
+    "Eae51210f283a": "Achim_Wei",
+    "E957f6764ac0b": "Ionos",
+    "Ececba0ac75d9": "Montabaur",
+    "E646c49913bd6": "DecoyCo_Ionos",
+    "E132138d2e426": "DecoyHQ_Montabaur",
+    "E36e5b78bf977": "Hold_Ionos",
+    "Ef0cbb6e29324": "Partner_Ionos",
+    "Ebe4c5e91fd35": "Decoy_DecoyCo_Ionos",
+    "E00784be6a59d": "Achim",
+    "E433c15f08c8e": "Wei",
+    "E99bf581a22bb": "Walt_Disney",
+    "Ea8976b5662e4": "Walt",
+    "E69e04fbcd78e": "Disney",
+    "E905966655c49": "William_N_Deramus_IV",
+    "Ea2341e2262f1": "William",
+    "E3582135ce350": "N",
+    "E927aab990f9f": "Deramus",
+    "E2b61ee293b2b": "IV"
+  },
+  "confound_note": "ALIAS_DECOYFIRST tests file-order; UNDERSCORE/SHUFFLE test true binding"
+}

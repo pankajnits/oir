@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_4]: <sql>
+
+DB: customer_complaints
+SCHEMA:
+Staff(staff_id, gender, first_name, last_name, email_address, phone_number)
+Customers(customer_id, customer_type_code, address_line_1, address_line_2, town_city, state, email_address, phone_number)
+Products(product_id, parent_product_id, product_category_code, date_product_first_available, date_product_discontinued, product_name, product_description, product_price)
+Complaints(complaint_id, product_id, customer_id, complaint_outcome_code, complaint_status_code, complaint_type_code, date_complaint_raised, date_complaint_closed, staff_id)
+QUESTION:
+Find the emails of customers who has filed a complaints of the product with the most complaints.

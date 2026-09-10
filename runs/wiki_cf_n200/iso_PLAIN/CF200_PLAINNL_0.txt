@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_0 #####
+QUESTION:
+What is the place of birth of the director of film Angus (Film)?
+
+CONTEXT:
+Kosala Devi | spouse | Bimbisara
+El Protegido | director | Leopoldo Torre Nilsson
+Leopoldo Torre Nilsson | father | Leopoldo Torres Ríos
+Bimbisara | place of death | Rajgir
+decoy_mid_0 | place of birth | Illinois
+Angus | director | Patrick Read Johnson
+Patrick Read Johnson | place of birth | CF_TAIL_0_Illinois
+Angus | decoy_link_0 | decoy_mid_0

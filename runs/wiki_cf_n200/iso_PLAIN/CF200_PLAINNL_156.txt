@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_156 #####
+QUESTION:
+Which country the director of film Desire Inc. is from?
+
+CONTEXT:
+Desire Inc. | director | Lynn Hershman
+Yuen Woo-ping | father | Yuen Siu-tien
+Alan | date of death | 1234
+Lynn Hershman | country of citizenship | CF_TAIL_156_US
+Thomas of Galloway | father | Alan
+Drunken Tai Chi | director | Yuen Woo-ping
+Desire Inc. | decoy_link_156 | decoy_mid_156
+decoy_mid_156 | country of citizenship | US

@@ -1,0 +1,71 @@
+{
+  "iteration": "2.1",
+  "rows": [
+    {
+      "id": "P21_stepA_find_opener",
+      "expect_pass": true,
+      "expected": "Dr Elias Vorn",
+      "unsealed": "D",
+      "verdict": "FAIL(D)",
+      "ok": false
+    },
+    {
+      "id": "P21_stepB_phrase_after_bridge",
+      "expect_pass": true,
+      "expected": "amber lattice seven",
+      "unsealed": "amber lattice seven",
+      "verdict": "SOFT_TYPO",
+      "ok": false
+    },
+    {
+      "id": "P21_two_subgoal_one_reply",
+      "expect_pass": false,
+      "expected": "amber lattice seven",
+      "unsealed": "amber lattice seven",
+      "verdict": "UNEXPECTED_PASS",
+      "ok": true
+    },
+    {
+      "id": "P21_prose_marked_direct",
+      "expect_pass": true,
+      "expected": "amber lattice seven",
+      "unsealed": "amber lattice seven",
+      "verdict": "PASS",
+      "ok": true
+    },
+    {
+      "id": "P21_prose_marked_multihop",
+      "expect_pass": false,
+      "expected": "amber lattice seven",
+      "unsealed": "NG-2201-ALPHA",
+      "verdict": "WRONG(NG-2201-ALPHA)",
+      "ok": false
+    },
+    {
+      "id": "P21_mismatch_minimal_prompt",
+      "expect_pass": false,
+      "expected": null,
+      "unsealed": null,
+      "verdict": "PASS_REJECT",
+      "ok": true
+    }
+  ],
+  "findings": [
+    "Scaffolded two-subgoal prompt with sealed key IDs \u2192 UNEXPECTED PASS on multi-hop phrase.",
+    "StepA direct key oddly truncated to one token \u2014 reliability issue; re-run needed.",
+    "StepB nearly correct but first seal typo (p vs s) \u2014 copy noise under long prompts.",
+    "KEY/VALUE/END marked context restores prose-direct OIR.",
+    "Marked multi-hop still fails (returned decoy catalog).",
+    "Minimal-prompt mismatch still UNKNOWN (FP not inevitable).",
+    "StepA replication with anti-truncation instruction \u2192 PASS (Dr Elias Vorn)."
+  ],
+  "paper_implication": "OIR multi-hop is not categorically impossible: when hop structure is given as sealed subgoals (explicit key seals in instructions), model can retrieve final value. Free-form sealed NL hops fail. This bounds the capability: structure-following in seal space > open relational reasoning in seal space.",
+  "replication": {
+    "P21_stepA_find_opener_rerun": {
+      "reply": "ANSWER_SEALED: sb0fb se125 \u00b7 s5164 sdf7e s621a sf64c s138f \u00b7 sc52e se346 se125 s9266",
+      "unsealed": "Dr Elias Vorn",
+      "verdict": "PASS",
+      "note": "Explicit anti-truncation instruction fixed StepA \u2014 truncation is prompt-sensitive reliability issue"
+    }
+  }
+}

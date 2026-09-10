@@ -1,0 +1,79 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[XFER_COMPLEX_LAYER_3]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM LAYER family=COMPLEX use=HR: layer bound START, HMAC'd Q, attached PATH.
+
+##### ID XFER_COMPLEX_LAYER_3 #####
+QUESTION (token-HMAC'd):
+Ebf5408358d01 E5dea689938b5 E68d7f9488222 E823e5886cf54 E9f8f722bee6b E4df5f4767f76 E823e5886cf54 Ee7ec58987b97 E4df5f4767f76 E3feb26539b94 E2d23b72a80d4?
+
+PATH_QUERY
+START E3feb26539b94
+R1 Ec6d1e1e8cbc2
+R2 E1dcd42e444bb
+R3 Ea9fba5a418f0
+Execute path; return final tail only.
+
+CONTEXT:
+TABLE hop1
+| Ec3a1c7a2b257 | Ec6d1e1e8cbc2 |
+| --- | --- |
+| E3feb26539b94 | E19048bcbafad |
+| Ec92eb67f88e5 | E9e3dace5808b |
+| E243389f23257 | Ea76432b12f80 |
+| Eda95030c26e8 | E19048bcbafad |
+
+TABLE hop2
+| Eeb525eaf6945 | E1dcd42e444bb |
+| --- | --- |
+| E19048bcbafad | E25aa4482b18a |
+| E9e3dace5808b | Ef38acd1b69ce |
+| Ea76432b12f80 | E3b9a27c51cb3 |
+| E19048bcbafad | E25aa4482b18a |
+
+TABLE hop3
+| E8b060351ae05 | Ea9fba5a418f0 |
+| --- | --- |
+| E25aa4482b18a | E70369e58e4ea |
+| Ef38acd1b69ce | E1965211cd948 |
+| E3b9a27c51cb3 | E4af35dc8a751 |
+| E25aa4482b18a | E70369e58e4ea |
+
+JSON
+{
+  "use_case": "Ee0c5d0e78576",
+  "graph": {
+    "E3feb26539b94": {
+      "Ec6d1e1e8cbc2": "E19048bcbafad"
+    },
+    "E19048bcbafad": {
+      "E1dcd42e444bb": "E25aa4482b18a"
+    },
+    "E25aa4482b18a": {
+      "Ea9fba5a418f0": "E70369e58e4ea"
+    },
+    "Ec92eb67f88e5": {
+      "Ec6d1e1e8cbc2": "E9e3dace5808b"
+    },
+    "E9e3dace5808b": {
+      "E1dcd42e444bb": "Ef38acd1b69ce"
+    },
+    "Ef38acd1b69ce": {
+      "Ea9fba5a418f0": "E1965211cd948"
+    },
+    "E243389f23257": {
+      "Ec6d1e1e8cbc2": "Ea76432b12f80"
+    },
+    "Ea76432b12f80": {
+      "E1dcd42e444bb": "E3b9a27c51cb3"
+    },
+    "E3b9a27c51cb3": {
+      "Ea9fba5a418f0": "E4af35dc8a751"
+    },
+    "Eda95030c26e8": {
+      "Ec6d1e1e8cbc2": "E19048bcbafad"
+    }
+  },
+  "notes": "E3feb26539b94 E7cd59239355a E132aa1cd0297: Efc999fa144bf E54ba361ddbfd E53461ff2d75c E743058cab938, E39f6da918036 E9794650b23a7 E8ec9bade8337 E9aadf550fb03 E0ffe81e3f64b E70c14cc32cbc E823e5886cf54 E79c9e42f21ca E5415fca2a353 Ef54967d2ae81"
+}

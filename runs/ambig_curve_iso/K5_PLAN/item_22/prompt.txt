@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_22]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_22 #####
+QUESTION:
+What city is the headquarters of the company led by Robert_E_Sanchez?
+
+PATH_QUERY
+START Robert_E_Sanchez
+R1 Ec24e780f9981
+R2 E23400c425c83
+Execute path; return final tail only.
+
+CONTEXT:
+Robert_E_Sanchez | Ec24e780f9981 | Ryder
+Ryder | E23400c425c83 | Coral_Gables
+Robert_E_Sanchez | Ef033c4d83892 | Cogent_Communications
+Cogent_Communications | E0941a57a4c0a | Washington_DC
+Robert_E_Sanchez | Eeebfd6d5f088 | Kansas_City_Southern
+Kansas_City_Southern | E805d910ab22e | Kansas_City
+Robert_E_Sanchez | E77c7144a4c5b | Lacoste_SA
+Lacoste_SA | E23e1a36fcd09 | Paris
+Robert_E_Sanchez | E8841375d0d87 | Israel_Railways
+Israel_Railways | E72aec8a7259c | Lod_Railway_Station

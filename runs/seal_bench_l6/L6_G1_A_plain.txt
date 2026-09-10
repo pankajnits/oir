@@ -1,0 +1,14 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice1 works_at, but ONLY if that city is NOT the city where Bob1's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice1 | works_at | Acme1
+Bob1 | works_at | Beta1
+Carol1 | works_at | Acme1
+Carol1 | reports_to | Bob1
+Acme1 | located_in | CityX1
+Beta1 | located_in | CityY1

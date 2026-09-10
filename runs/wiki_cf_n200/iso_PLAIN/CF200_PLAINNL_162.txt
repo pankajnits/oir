@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_162 #####
+QUESTION:
+Why did the director of film The Merry Widow (1925 Film) die?
+
+CONTEXT:
+The Merry Widow | director | Erich von Stroheim
+Erich von Stroheim | cause of death | CF_TAIL_162_cancer
+The Merry Widow | decoy_link_162 | decoy_mid_162
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Kilippattu | director | Raghavan
+Raghavan | child | Jishnu
+La Belle captive | director | Alain Robbe-Grillet
+decoy_mid_162 | cause of death | cancer

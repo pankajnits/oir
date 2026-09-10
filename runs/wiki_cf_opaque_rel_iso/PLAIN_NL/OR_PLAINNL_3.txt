@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_3 #####
+QUESTION:
+Where was the director of film Ronnie Rocket born?
+
+CONTEXT:
+Ioan S. Nenițescu | place of birth | Galați
+Ken Burns | place of birth | Brooklyn
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+David Lynch | place of birth | CF_TAIL_3_MissoulaMont
+Ronnie Rocket | decoy_link_3 | decoy_mid_3
+Thomas Jefferson | director | Ken Burns
+Ronnie Rocket | director | David Lynch
+decoy_mid_3 | place of birth | Missoula, Montana

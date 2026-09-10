@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_ENG_AMBIG_0]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F22_ENG_AMBIG_0 #####
+QUESTION:
+What city is the headquarters of the company led by Michael_Eisner?
+
+CONTEXT:
+Michael_Eisner | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+Michael_Eisner | partner_of | Kansas_City_Southern
+Kansas_City_Southern | located_in | Kansas_City

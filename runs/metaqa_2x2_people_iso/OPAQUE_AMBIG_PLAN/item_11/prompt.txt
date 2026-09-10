@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_11]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_11 #####
+QUESTION:
+Who directed a movie that Piper Perabo starred in?
+
+PATH_QUERY
+START Piper Perabo
+R1 E44263a170544
+R2 E4f185fb229e9
+Execute path; return final tail only.
+
+CONTEXT:
+Piper Perabo | E44263a170544 | Coyote Ugly
+Coyote Ugly | E4f185fb229e9 | David McNally
+Coyote Ugly | E56352ed0a543 | Gina Wendkos

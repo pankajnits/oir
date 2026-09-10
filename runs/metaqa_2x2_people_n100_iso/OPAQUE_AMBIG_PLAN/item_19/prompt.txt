@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_19]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_19 #####
+QUESTION:
+Who directed a movie that James Stewart starred in?
+
+PATH_QUERY
+START James Stewart
+R1 E32969a661fa6
+R2 Eb948fba97209
+Execute path; return final tail only.
+
+CONTEXT:
+James Stewart | E32969a661fa6 | No Highway in the Sky
+No Highway in the Sky | Eb948fba97209 | Henry Koster
+No Highway in the Sky | Eb3da498d7a25 | Nevil Shute

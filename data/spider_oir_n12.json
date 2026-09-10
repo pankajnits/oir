@@ -1,0 +1,433 @@
+{
+  "source": "Spider dev CC-BY-SA-4.0",
+  "n": 12,
+  "items": [
+    {
+      "db_id": "employee_hire_evaluation",
+      "question": "find the name of employee who was awarded the most times in the evaluation.",
+      "query": "SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID GROUP BY t2.Employee_ID ORDER BY count(*) DESC LIMIT 1",
+      "gold": "George Chuter",
+      "cells": 140,
+      "tables": {
+        "employee": {
+          "cols": [
+            "Employee_ID",
+            "Name",
+            "Age",
+            "City"
+          ],
+          "n": 10
+        },
+        "shop": {
+          "cols": [
+            "Shop_ID",
+            "Name",
+            "Location",
+            "District",
+            "Number_products",
+            "Manager_name"
+          ],
+          "n": 9
+        },
+        "hiring": {
+          "cols": [
+            "Shop_ID",
+            "Employee_ID",
+            "Start_from",
+            "Is_full_time"
+          ],
+          "n": 7
+        },
+        "evaluation": {
+          "cols": [
+            "Employee_ID",
+            "Year_awarded",
+            "Bonus"
+          ],
+          "n": 6
+        }
+      }
+    },
+    {
+      "db_id": "employee_hire_evaluation",
+      "question": "Find the name of the employee who got the highest one time bonus.",
+      "query": "SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID ORDER BY t2.bonus DESC LIMIT 1",
+      "gold": "Louis Deacon",
+      "cells": 140,
+      "tables": {
+        "employee": {
+          "cols": [
+            "Employee_ID",
+            "Name",
+            "Age",
+            "City"
+          ],
+          "n": 10
+        },
+        "shop": {
+          "cols": [
+            "Shop_ID",
+            "Name",
+            "Location",
+            "District",
+            "Number_products",
+            "Manager_name"
+          ],
+          "n": 9
+        },
+        "hiring": {
+          "cols": [
+            "Shop_ID",
+            "Employee_ID",
+            "Start_from",
+            "Is_full_time"
+          ],
+          "n": 7
+        },
+        "evaluation": {
+          "cols": [
+            "Employee_ID",
+            "Year_awarded",
+            "Bonus"
+          ],
+          "n": 6
+        }
+      }
+    },
+    {
+      "db_id": "employee_hire_evaluation",
+      "question": "What is the name of the shop that is hiring the largest number of employees?",
+      "query": "SELECT t2.name FROM hiring AS t1 JOIN shop AS t2 ON t1.shop_id  =  t2.shop_id GROUP BY t1.shop_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "FC Haka",
+      "cells": 140,
+      "tables": {
+        "employee": {
+          "cols": [
+            "Employee_ID",
+            "Name",
+            "Age",
+            "City"
+          ],
+          "n": 10
+        },
+        "shop": {
+          "cols": [
+            "Shop_ID",
+            "Name",
+            "Location",
+            "District",
+            "Number_products",
+            "Manager_name"
+          ],
+          "n": 9
+        },
+        "hiring": {
+          "cols": [
+            "Shop_ID",
+            "Employee_ID",
+            "Start_from",
+            "Is_full_time"
+          ],
+          "n": 7
+        },
+        "evaluation": {
+          "cols": [
+            "Employee_ID",
+            "Year_awarded",
+            "Bonus"
+          ],
+          "n": 6
+        }
+      }
+    },
+    {
+      "db_id": "course_teach",
+      "question": "Show names of teachers that teach at least two courses.",
+      "query": "SELECT T2.Name FROM course_arrange AS T1 JOIN teacher AS T2 ON T1.Teacher_ID  =  T2.Teacher_ID GROUP BY T2.Name HAVING COUNT(*)  >=  2",
+      "gold": "Anne Walker",
+      "cells": 76,
+      "tables": {
+        "course": {
+          "cols": [
+            "Course_ID",
+            "Staring_Date",
+            "Course"
+          ],
+          "n": 10
+        },
+        "teacher": {
+          "cols": [
+            "Teacher_ID",
+            "Name",
+            "Age",
+            "Hometown"
+          ],
+          "n": 7
+        },
+        "course_arrange": {
+          "cols": [
+            "Course_ID",
+            "Teacher_ID",
+            "Grade"
+          ],
+          "n": 6
+        }
+      }
+    },
+    {
+      "db_id": "museum_visit",
+      "question": "What is the total ticket expense of the visitors whose membership level is 1?",
+      "query": "SELECT sum(t2.Total_spent) FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id WHERE t1.Level_of_membership  =  1",
+      "gold": "570.84",
+      "cells": 80,
+      "tables": {
+        "museum": {
+          "cols": [
+            "Museum_ID",
+            "Name",
+            "Num_of_Staff",
+            "Open_Year"
+          ],
+          "n": 8
+        },
+        "visitor": {
+          "cols": [
+            "ID",
+            "Name",
+            "Level_of_membership",
+            "Age"
+          ],
+          "n": 6
+        },
+        "visit": {
+          "cols": [
+            "Museum_ID",
+            "visitor_ID",
+            "Num_of_Ticket",
+            "Total_spent"
+          ],
+          "n": 6
+        }
+      }
+    },
+    {
+      "db_id": "museum_visit",
+      "question": "What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?",
+      "query": "SELECT t1.name FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id JOIN museum AS t3 ON t3.Museum_ID  =  t2.Museum_ID WHERE t3.open_year  <  2009 INTERSECT SELECT t1.name FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id JOIN museum AS t3 ON t3.Museum_ID  =  t2.Museum_ID WHERE t3.open_year  >  2011",
+      "gold": "Fernando Gago",
+      "cells": 80,
+      "tables": {
+        "museum": {
+          "cols": [
+            "Museum_ID",
+            "Name",
+            "Num_of_Staff",
+            "Open_Year"
+          ],
+          "n": 8
+        },
+        "visitor": {
+          "cols": [
+            "ID",
+            "Name",
+            "Level_of_membership",
+            "Age"
+          ],
+          "n": 6
+        },
+        "visit": {
+          "cols": [
+            "Museum_ID",
+            "visitor_ID",
+            "Num_of_Ticket",
+            "Total_spent"
+          ],
+          "n": 6
+        }
+      }
+    },
+    {
+      "db_id": "poker_player",
+      "question": "What is the birth date of the poker player with the lowest earnings?",
+      "query": "SELECT T1.Birth_Date FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Earnings ASC LIMIT 1",
+      "gold": "August 8, 1986",
+      "cells": 65,
+      "tables": {
+        "poker_player": {
+          "cols": [
+            "Poker_Player_ID",
+            "People_ID",
+            "Final_Table_Made",
+            "Best_Finish",
+            "Money_Rank",
+            "Earnings"
+          ],
+          "n": 5
+        },
+        "people": {
+          "cols": [
+            "People_ID",
+            "Nationality",
+            "Name",
+            "Birth_Date",
+            "Height"
+          ],
+          "n": 7
+        }
+      }
+    },
+    {
+      "db_id": "poker_player",
+      "question": "What is the money rank of the tallest poker player?",
+      "query": "SELECT T2.Money_Rank FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Height DESC LIMIT 1",
+      "gold": "68.0",
+      "cells": 65,
+      "tables": {
+        "poker_player": {
+          "cols": [
+            "Poker_Player_ID",
+            "People_ID",
+            "Final_Table_Made",
+            "Best_Finish",
+            "Money_Rank",
+            "Earnings"
+          ],
+          "n": 5
+        },
+        "people": {
+          "cols": [
+            "People_ID",
+            "Nationality",
+            "Name",
+            "Birth_Date",
+            "Height"
+          ],
+          "n": 7
+        }
+      }
+    },
+    {
+      "db_id": "poker_player",
+      "question": "What is the average earnings of poker players with height higher than 200?",
+      "query": "SELECT avg(T2.Earnings) FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Height  >  200",
+      "gold": "309445.0",
+      "cells": 65,
+      "tables": {
+        "poker_player": {
+          "cols": [
+            "Poker_Player_ID",
+            "People_ID",
+            "Final_Table_Made",
+            "Best_Finish",
+            "Money_Rank",
+            "Earnings"
+          ],
+          "n": 5
+        },
+        "people": {
+          "cols": [
+            "People_ID",
+            "Nationality",
+            "Name",
+            "Birth_Date",
+            "Height"
+          ],
+          "n": 7
+        }
+      }
+    },
+    {
+      "db_id": "network_1",
+      "question": "What is the name of the high schooler who has the greatest number of friends?",
+      "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id ORDER BY count(*) DESC LIMIT 1",
+      "gold": "Andrew",
+      "cells": 108,
+      "tables": {
+        "Highschooler": {
+          "cols": [
+            "ID",
+            "name",
+            "grade"
+          ],
+          "n": 16
+        },
+        "Friend": {
+          "cols": [
+            "student_id",
+            "friend_id"
+          ],
+          "n": 20
+        },
+        "Likes": {
+          "cols": [
+            "student_id",
+            "liked_id"
+          ],
+          "n": 10
+        }
+      }
+    },
+    {
+      "db_id": "network_1",
+      "question": "Show the names of high schoolers who have at least 3 friends.",
+      "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id HAVING count(*)  >=  3",
+      "gold": "Andrew",
+      "cells": 108,
+      "tables": {
+        "Highschooler": {
+          "cols": [
+            "ID",
+            "name",
+            "grade"
+          ],
+          "n": 16
+        },
+        "Friend": {
+          "cols": [
+            "student_id",
+            "friend_id"
+          ],
+          "n": 20
+        },
+        "Likes": {
+          "cols": [
+            "student_id",
+            "liked_id"
+          ],
+          "n": 10
+        }
+      }
+    },
+    {
+      "db_id": "network_1",
+      "question": "Show the names of all of the high schooler Kyle's friends.",
+      "query": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id JOIN Highschooler AS T3 ON T1.friend_id  =  T3.id WHERE T2.name  =  \"Kyle\"",
+      "gold": "Jordan",
+      "cells": 108,
+      "tables": {
+        "Highschooler": {
+          "cols": [
+            "ID",
+            "name",
+            "grade"
+          ],
+          "n": 16
+        },
+        "Friend": {
+          "cols": [
+            "student_id",
+            "friend_id"
+          ],
+          "n": 20
+        },
+        "Likes": {
+          "cols": [
+            "student_id",
+            "liked_id"
+          ],
+          "n": 10
+        }
+      }
+    }
+  ]
+}

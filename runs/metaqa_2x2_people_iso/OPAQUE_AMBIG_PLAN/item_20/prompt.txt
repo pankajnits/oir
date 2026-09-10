@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_20]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_20 #####
+QUESTION:
+Who directed a movie that Boris Karloff starred in?
+
+PATH_QUERY
+START Boris Karloff
+R1 E2a9fedbe5cea
+R2 E39e34fb41382
+Execute path; return final tail only.
+
+CONTEXT:
+Boris Karloff | E2a9fedbe5cea | Isle of the Dead
+Isle of the Dead | E39e34fb41382 | Mark Robson
+Isle of the Dead | Edda309c92882 | Ardel Wray

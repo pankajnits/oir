@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_5]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_5 #####
+QUESTION:
+What city is the headquarters of the company led by David_Lagerholm?
+
+PATH_QUERY
+START David_Lagerholm
+R1 E5ae5363a8dec
+R2 Ebac1d1a7213c
+Execute path; return final tail only.
+
+CONTEXT:
+David_Lagerholm | E5ae5363a8dec | Storstockholms_Lokaltrafik
+Storstockholms_Lokaltrafik | Ebac1d1a7213c | Stockholm
+David_Lagerholm | E2f4c79a38979 | The_Walt_Disney_Company
+The_Walt_Disney_Company | Ec21a85363c14 | Burbank

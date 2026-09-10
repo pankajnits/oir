@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_55 #####
+QUESTION:
+Where was the founder of magazine Track & Field News born?
+
+CONTEXT:
+Normande | director | Gilles Carle
+Gilles Carle | cause of death | Parkinson's disease
+Bert Nelson | place of birth | CF_TAIL_55_SanDiego
+The Price of Everything | director | Nathaniel Kahn
+Track & Field News | decoy_link_55 | decoy_mid_55
+Track & Field News | founded by | Bert Nelson
+Nathaniel Kahn | educated at | Yale
+decoy_mid_55 | place of birth | San Diego

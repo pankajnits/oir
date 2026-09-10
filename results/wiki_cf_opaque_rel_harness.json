@@ -1,0 +1,354 @@
+{
+  "n": 12,
+  "suite": "wiki_cf_opaque_rel",
+  "paths": {
+    "PLAIN_NL": "runs/wiki_cf_opaque_rel/PLAIN_NL_ONLY/BATCH.txt",
+    "SPAN_NL": "runs/wiki_cf_opaque_rel/SPAN_NL_ONLY/BATCH.txt",
+    "SEAL_PROG": "runs/wiki_cf_opaque_rel/SEAL_PROG_ONLY/BATCH.txt",
+    "LEGEND_NL": "runs/wiki_cf_opaque_rel/LEGEND_NL_ONLY/BATCH.txt",
+    "MODEL_PLAN": "runs/wiki_cf_opaque_rel/MODEL_PLAN_ONLY/BATCH.txt"
+  },
+  "cases": [
+    {
+      "i": 0,
+      "wiki_id": "8813f87c0bdd11eba7f7acde48001122",
+      "question": "Who is the mother of the director of film Polish-Russian War (Film)?",
+      "wiki_answer": "Małgorzata Braunek",
+      "cf_gold": "CF_TAIL_0_MagorzataBra",
+      "expect_plain": "CF_TAIL_0_MagorzataBra",
+      "expect_seal": "Ed1d21ff0869e",
+      "wiki_seal": "E6123d32ac8a1",
+      "start": "Polish-Russian War",
+      "rels": [
+        "director",
+        "mother"
+      ],
+      "rel_seals": [
+        "E0b35ff5b0c7b",
+        "Eaf559b7721d5"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_0",
+        "SPAN_NL": "OR_SPANNL_0",
+        "SEAL_PROG": "OR_SEALPROG_0",
+        "LEGEND_NL": "OR_LEGEND_0",
+        "MODEL_PLAN": "OR_MODELPLAN_0"
+      }
+    },
+    {
+      "i": 1,
+      "wiki_id": "e2a3bf2a0bdd11eba7f7acde48001122",
+      "question": "When did John V, Prince Of Anhalt-Zerbst's father die?",
+      "wiki_answer": "12 June 1516",
+      "cf_gold": "CF_TAIL_1_12June1516",
+      "expect_plain": "CF_TAIL_1_12June1516",
+      "expect_seal": "E0e5de48666c1",
+      "wiki_seal": "Eb677dbecc633",
+      "start": "John V of Anhalt-Zerbst",
+      "rels": [
+        "father",
+        "date of death"
+      ],
+      "rel_seals": [
+        "E92f2c86b3f72",
+        "Eb001700916b5"
+      ],
+      "start_seal_in_span_q": false,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_1",
+        "SPAN_NL": "OR_SPANNL_1",
+        "SEAL_PROG": "OR_SEALPROG_1",
+        "LEGEND_NL": "OR_LEGEND_1",
+        "MODEL_PLAN": "OR_MODELPLAN_1"
+      }
+    },
+    {
+      "i": 2,
+      "wiki_id": "0cd3bdea0bde11eba7f7acde48001122",
+      "question": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?",
+      "wiki_answer": "Myanmar Motion Picture Academy Awards",
+      "cf_gold": "CF_TAIL_2_MyanmarMotio",
+      "expect_plain": "CF_TAIL_2_MyanmarMotio",
+      "expect_seal": "E9df979069b70",
+      "wiki_seal": "E14d03ba79cee",
+      "start": "Wearing Velvet Slippers under a Golden Umbrella",
+      "rels": [
+        "director",
+        "award received"
+      ],
+      "rel_seals": [
+        "E0b35ff5b0c7b",
+        "E1e3bfd18ce20"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_2",
+        "SPAN_NL": "OR_SPANNL_2",
+        "SEAL_PROG": "OR_SEALPROG_2",
+        "LEGEND_NL": "OR_LEGEND_2",
+        "MODEL_PLAN": "OR_MODELPLAN_2"
+      }
+    },
+    {
+      "i": 3,
+      "wiki_id": "f9dcb4a60bda11eba7f7acde48001122",
+      "question": "Where was the director of film Ronnie Rocket born?",
+      "wiki_answer": "Missoula, Montana",
+      "cf_gold": "CF_TAIL_3_MissoulaMont",
+      "expect_plain": "CF_TAIL_3_MissoulaMont",
+      "expect_seal": "Efe3f82eef721",
+      "wiki_seal": "E2793fa0af2d1",
+      "start": "Ronnie Rocket",
+      "rels": [
+        "director",
+        "place of birth"
+      ],
+      "rel_seals": [
+        "E0b35ff5b0c7b",
+        "E8cc8dacea1d9"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_3",
+        "SPAN_NL": "OR_SPANNL_3",
+        "SEAL_PROG": "OR_SEALPROG_3",
+        "LEGEND_NL": "OR_LEGEND_3",
+        "MODEL_PLAN": "OR_MODELPLAN_3"
+      }
+    },
+    {
+      "i": 4,
+      "wiki_id": "019bed300bde11eba7f7acde48001122",
+      "question": "Where was the father of Ștefan I. Nenițescu born?",
+      "wiki_answer": "Galați",
+      "cf_gold": "CF_TAIL_4_Galai",
+      "expect_plain": "CF_TAIL_4_Galai",
+      "expect_seal": "E8c948e05c1d0",
+      "wiki_seal": "Ef5f01b8820ea",
+      "start": "Ștefan I. Nenițescu",
+      "rels": [
+        "father",
+        "place of birth"
+      ],
+      "rel_seals": [
+        "E92f2c86b3f72",
+        "E8cc8dacea1d9"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_4",
+        "SPAN_NL": "OR_SPANNL_4",
+        "SEAL_PROG": "OR_SEALPROG_4",
+        "LEGEND_NL": "OR_LEGEND_4",
+        "MODEL_PLAN": "OR_MODELPLAN_4"
+      }
+    },
+    {
+      "i": 5,
+      "wiki_id": "464cfa460bd911eba7f7acde48001122",
+      "question": "Where was the director of film Thomas Jefferson (Film) born?",
+      "wiki_answer": "Brooklyn",
+      "cf_gold": "CF_TAIL_5_Brooklyn",
+      "expect_plain": "CF_TAIL_5_Brooklyn",
+      "expect_seal": "Eba979aba7147",
+      "wiki_seal": "E395da38200d1",
+      "start": "Thomas Jefferson",
+      "rels": [
+        "director",
+        "place of birth"
+      ],
+      "rel_seals": [
+        "E0b35ff5b0c7b",
+        "E8cc8dacea1d9"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_5",
+        "SPAN_NL": "OR_SPANNL_5",
+        "SEAL_PROG": "OR_SEALPROG_5",
+        "LEGEND_NL": "OR_LEGEND_5",
+        "MODEL_PLAN": "OR_MODELPLAN_5"
+      }
+    },
+    {
+      "i": 6,
+      "wiki_id": "c05e16a40bdd11eba7f7acde48001122",
+      "question": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?",
+      "wiki_answer": "stroke",
+      "cf_gold": "CF_TAIL_6_stroke",
+      "expect_plain": "CF_TAIL_6_stroke",
+      "expect_seal": "E77f4f9ea71b8",
+      "wiki_seal": "E03a8b7e18a9e",
+      "start": "Grand Duke Kirill Vladimirovich of Russia",
+      "rels": [
+        "spouse",
+        "cause of death"
+      ],
+      "rel_seals": [
+        "E19650717cd28",
+        "E2be8513bf682"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_6",
+        "SPAN_NL": "OR_SPANNL_6",
+        "SEAL_PROG": "OR_SEALPROG_6",
+        "LEGEND_NL": "OR_LEGEND_6",
+        "MODEL_PLAN": "OR_MODELPLAN_6"
+      }
+    },
+    {
+      "i": 7,
+      "wiki_id": "2935f1640bda11eba7f7acde48001122",
+      "question": "Where was the place of death of the director of film Beat Girl?",
+      "wiki_answer": "Nice",
+      "cf_gold": "CF_TAIL_7_Nice",
+      "expect_plain": "CF_TAIL_7_Nice",
+      "expect_seal": "Eb03723ba4d5e",
+      "wiki_seal": "Ebe057ec7ff4e",
+      "start": "Beat Girl",
+      "rels": [
+        "director",
+        "place of death"
+      ],
+      "rel_seals": [
+        "E0b35ff5b0c7b",
+        "E257520c171fb"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_7",
+        "SPAN_NL": "OR_SPANNL_7",
+        "SEAL_PROG": "OR_SEALPROG_7",
+        "LEGEND_NL": "OR_LEGEND_7",
+        "MODEL_PLAN": "OR_MODELPLAN_7"
+      }
+    },
+    {
+      "i": 8,
+      "wiki_id": "dfe93efe0bdd11eba7f7acde48001122",
+      "question": "When did Jean Martin (Singer)'s husband die?",
+      "wiki_answer": "1983",
+      "cf_gold": "CF_TAIL_8_1983",
+      "expect_plain": "CF_TAIL_8_1983",
+      "expect_seal": "E214cb8d51c53",
+      "wiki_seal": "Ed02558bd289f",
+      "start": "Jean Martin",
+      "rels": [
+        "spouse",
+        "date of death"
+      ],
+      "rel_seals": [
+        "E19650717cd28",
+        "Eb001700916b5"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_8",
+        "SPAN_NL": "OR_SPANNL_8",
+        "SEAL_PROG": "OR_SEALPROG_8",
+        "LEGEND_NL": "OR_LEGEND_8",
+        "MODEL_PLAN": "OR_MODELPLAN_8"
+      }
+    },
+    {
+      "i": 9,
+      "wiki_id": "2207e9060bda11eba7f7acde48001122",
+      "question": "What nationality is the director of film World And Time Enough?",
+      "wiki_answer": "United States",
+      "cf_gold": "CF_TAIL_9_UnitedStates",
+      "expect_plain": "CF_TAIL_9_UnitedStates",
+      "expect_seal": "E571ef2ac9c9c",
+      "wiki_seal": "E4f2cbd3f9f3b",
+      "start": "World and Time Enough",
+      "rels": [
+        "director",
+        "country of citizenship"
+      ],
+      "rel_seals": [
+        "E0b35ff5b0c7b",
+        "E00994e72c067"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_9",
+        "SPAN_NL": "OR_SPANNL_9",
+        "SEAL_PROG": "OR_SEALPROG_9",
+        "LEGEND_NL": "OR_LEGEND_9",
+        "MODEL_PLAN": "OR_MODELPLAN_9"
+      }
+    },
+    {
+      "i": 10,
+      "wiki_id": "a9cc5f240bdb11eba7f7acde48001122",
+      "question": "Who is the spouse of the director of film Eden And After?",
+      "wiki_answer": "Catherine Robbe-Grillet",
+      "cf_gold": "CF_TAIL_10_CatherineRob",
+      "expect_plain": "CF_TAIL_10_CatherineRob",
+      "expect_seal": "Ebf87c49a1dc5",
+      "wiki_seal": "E3fb39a15ac07",
+      "start": "Eden and After",
+      "rels": [
+        "director",
+        "spouse"
+      ],
+      "rel_seals": [
+        "E0b35ff5b0c7b",
+        "E19650717cd28"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_10",
+        "SPAN_NL": "OR_SPANNL_10",
+        "SEAL_PROG": "OR_SEALPROG_10",
+        "LEGEND_NL": "OR_LEGEND_10",
+        "MODEL_PLAN": "OR_MODELPLAN_10"
+      }
+    },
+    {
+      "i": 11,
+      "wiki_id": "6ebe05740bde11eba7f7acde48001122",
+      "question": "Where was the place of death of Anastasia Of Serbia's husband?",
+      "wiki_answer": "Hilandar",
+      "cf_gold": "CF_TAIL_11_Hilandar",
+      "expect_plain": "CF_TAIL_11_Hilandar",
+      "expect_seal": "E621f4cd32323",
+      "wiki_seal": "Eafb6840dec0f",
+      "start": "Anastasia of Serbia",
+      "rels": [
+        "spouse",
+        "place of death"
+      ],
+      "rel_seals": [
+        "E19650717cd28",
+        "E257520c171fb"
+      ],
+      "start_seal_in_span_q": true,
+      "rel_seal_in_span_q": false,
+      "ids": {
+        "PLAIN_NL": "OR_PLAINNL_11",
+        "SPAN_NL": "OR_SPANNL_11",
+        "SEAL_PROG": "OR_SEALPROG_11",
+        "LEGEND_NL": "OR_LEGEND_11",
+        "MODEL_PLAN": "OR_MODELPLAN_11"
+      }
+    }
+  ],
+  "start_seal_in_span_q": "11/12",
+  "rel_seal_in_span_q": "0/12",
+  "sealrouter_ceiling": "12/12",
+  "hypothesis": "SPAN_NL collapses when relations are opaque; LEGEND/PATH restore. Not G-Rev1.",
+  "nonclaim": "Not G-Rev1. MODEL_PLAN without lexicon is expected to fail or leak."
+}

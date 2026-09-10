@@ -1,0 +1,20 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+English plan only (no seal bindings):
+Find the subject's works_at company, then that company's located_in city.
+All atoms in CONTEXT are opaque seals. City seal or UNKNOWN.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E20014ba4ff23 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E20014ba4ff23 | Eeefe043a56eb | E7e6c2bc7a257
+E96e9c1083287 | Eeefe043a56eb | E7e6c2bc7a257
+E3712093bba64 | Eeefe043a56eb | Ed6e7774c8cc2
+E3712093bba64 | Efb8ae31a6d8d | E96e9c1083287
+Ed6e7774c8cc2 | Eedba6d115135 | E535b92de2d44
+E7e6c2bc7a257 | Eedba6d115135 | Ee22a72036e38
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

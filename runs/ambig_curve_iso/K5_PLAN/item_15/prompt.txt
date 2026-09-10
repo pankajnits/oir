@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_15]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_15 #####
+QUESTION:
+What city is the headquarters of the company led by David_J_Wright?
+
+PATH_QUERY
+START David_J_Wright
+R1 E3c9dd13905b0
+R2 E04a3addf5de9
+Execute path; return final tail only.
+
+CONTEXT:
+David_J_Wright | E3c9dd13905b0 | Globcal_International
+Globcal_International | E04a3addf5de9 | Richmond
+David_J_Wright | Edf907323dd74 | Cogent_Communications
+Cogent_Communications | Ee1944e4d11c1 | Washington_DC
+David_J_Wright | E2ff5be142faa | Kansas_City_Southern
+Kansas_City_Southern | E3555c9314654 | Kansas_City
+David_J_Wright | E24448b2c129b | Lacoste_SA
+Lacoste_SA | Edc8a73d5b264 | Paris
+David_J_Wright | Ee37432643e1e | Israel_Railways
+Israel_Railways | Eab650806d098 | Lod_Railway_Station

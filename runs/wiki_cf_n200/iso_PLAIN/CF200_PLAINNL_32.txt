@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_32 #####
+QUESTION:
+Where was the father of Stephan Henrik Barratt-Due born?
+
+CONTEXT:
+decoy_mid_32 | place of birth | Saint Paul, Minnesota
+The Den | director | Zachary Donohue
+Henrik Adam Due | place of birth | CF_TAIL_32_SaintPaulMin
+Stephan Henrik Barratt-Due | father | Henrik Adam Due
+Cass | director | Jon S. Baird
+Zachary Donohue | place of birth | Madison
+Stephan Henrik Barratt-Due | decoy_link_32 | decoy_mid_32
+Jon S. Baird | date of birth | 1972

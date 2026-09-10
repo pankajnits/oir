@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_29]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_29 #####
+QUESTION:
+What is the genre of a movie directed by Claude Berri?
+
+PATH_QUERY
+START Claude Berri
+R1 E73fcd395a2d0
+R2 E35af0065a9c2
+Execute path; return final tail only.
+
+CONTEXT:
+Claude Berri | E73fcd395a2d0 | Uranus
+Uranus | E35af0065a9c2 | Drama, Comedy
+Uranus | Ea1818a8843d4 | French

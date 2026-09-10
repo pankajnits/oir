@@ -1,0 +1,22 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM PATH_TRAP: gold PATH on dual-path graph.
+
+Follow PATH over sealed CONTEXT. Output final sealed atom only.
+
+##### ID ADV32_PATH_TRAP_30 #####
+PATH_QUERY
+START Ed79f4a70a103
+R1 E0995a541103d
+R2 E0458ae94bcaf
+Execute path; return final tail only.
+
+CONTEXT:
+Ed79f4a70a103 | E992e2a579172 | Ebfd57dca4df2
+E23fde07f3dc4 | E87e35516cf37 | Ee68c633c673c
+E23fde07f3dc4 | E0458ae94bcaf | E860a71c0e0f3
+Ebfd57dca4df2 | E8119b7b82b95 | Eac789a44f715
+Ed79f4a70a103 | E0995a541103d | E23fde07f3dc4
+Ee68c633c673c | Eee34bd53d0a6 | E23fde07f3dc4
+

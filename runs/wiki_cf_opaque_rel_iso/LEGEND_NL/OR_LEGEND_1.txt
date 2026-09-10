@@ -1,0 +1,23 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM LEGEND_NL: English rel → sealed rel map + span-sealed Q. No PATH.
+
+##### ID OR_LEGEND_1 #####
+LEGEND
+father = E92f2c86b3f72
+date of death = Eb001700916b5
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+When did John V, Prince Of Anhalt-Zerbst's father die?
+
+CONTEXT:
+E6dc9c4c91695 | E92f2c86b3f72 | E8756de2b1505
+E7d561a532ecc | E0b35ff5b0c7b | E374fe773ddc8
+E6dc9c4c91695 | Eade4b81dd70e | E531191c3f087
+E374fe773ddc8 | E8cc8dacea1d9 | E2793fa0af2d1
+E531191c3f087 | Eb001700916b5 | Eb677dbecc633
+Ea1cfaa5587cc | E0b35ff5b0c7b | Efec52669257d
+Efec52669257d | E1e3bfd18ce20 | E14d03ba79cee
+E8756de2b1505 | Eb001700916b5 | E0e5de48666c1

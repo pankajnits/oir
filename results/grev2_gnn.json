@@ -1,0 +1,226 @@
+{
+  "claim": "Autograd MP with hard PATH adjacency vs GNN that must bind PATH rel embeddings. Sequence Transformer (grev2_transformer.py) collapsed to ln(3). Ablations: test-time PATH drop / type drop; train without PATH (not G-Rev1).",
+  "torch_mp_holdout": {
+    "nn": "200/200",
+    "typed_sink": "200/200",
+    "unique": "0/200",
+    "type_only": "0/200",
+    "n": 200,
+    "nn_k": 200
+  },
+  "soft_gnn_holdout": {
+    "nn": "200/200",
+    "typed_sink": "200/200",
+    "unique": "0/200",
+    "type_only": "0/200",
+    "n": 200,
+    "nn_k": 200
+  },
+  "torch_mp_ood_h3": {
+    "nn": "100/100",
+    "typed_sink": "100/100",
+    "unique": "0/100",
+    "type_only": "0/100",
+    "n": 100,
+    "nn_k": 100
+  },
+  "soft_gnn_ood_h3": {
+    "nn": "100/100",
+    "typed_sink": "100/100",
+    "unique": "0/100",
+    "type_only": "0/100",
+    "n": 100,
+    "nn_k": 100
+  },
+  "gnn_test_drop_path": "101/200",
+  "gnn_test_drop_type": "109/200",
+  "gnn_train_no_path": "101/200",
+  "history_mp": [
+    {
+      "epoch": 0,
+      "loss": 1.4580018700115265,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 1,
+      "loss": 0.839368378359174,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 2,
+      "loss": 0.687484085559845,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 3,
+      "loss": 0.5660360720422533,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 4,
+      "loss": 0.4689893949599493,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 5,
+      "loss": 0.3917023799722157,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 6,
+      "loss": 0.33010815202243743,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 7,
+      "loss": 0.28080739530306015,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 8,
+      "loss": 0.24107604887750414,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 9,
+      "loss": 0.20878979421797253,
+      "train400": "400/400",
+      "holdout": "200/200"
+    }
+  ],
+  "history_gnn": [
+    {
+      "epoch": 0,
+      "loss": 1.4247967004776,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 1,
+      "loss": 0.8358693699988108,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 2,
+      "loss": 0.6856512029965719,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 3,
+      "loss": 0.5646588395512293,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 4,
+      "loss": 0.4678444502845643,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 5,
+      "loss": 0.39071870370516704,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 6,
+      "loss": 0.3292526574361892,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 7,
+      "loss": 0.280058949712723,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 8,
+      "loss": 0.24041822647291516,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 9,
+      "loss": 0.20820900868801845,
+      "train400": "400/400",
+      "holdout": "200/200"
+    }
+  ],
+  "history_gnn_no_path": [
+    {
+      "epoch": 0,
+      "loss": 2.3232715508294484,
+      "train400": "209/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 1,
+      "loss": 2.0915724814884245,
+      "train400": "196/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 2,
+      "loss": 1.920404801293025,
+      "train400": "218/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 3,
+      "loss": 1.7791247084027244,
+      "train400": "199/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 4,
+      "loss": 1.6639401307181707,
+      "train400": "206/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 5,
+      "loss": 1.5709497758320399,
+      "train400": "217/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 6,
+      "loss": 1.4961943834547013,
+      "train400": "204/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 7,
+      "loss": 1.436066814831325,
+      "train400": "206/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 8,
+      "loss": 1.387510441598438,
+      "train400": "175/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 9,
+      "loss": 1.3480505016114976,
+      "train400": "184/400",
+      "holdout": "101/200"
+    }
+  ],
+  "transformer_holdout": "101/200 (ln3 collapse; see grev2_transformer.json)",
+  "nonclaim": "PATH+SINK_TYPE given. Not G-Rev1. Tiny CPU nets, not 1.5B SFT."
+}

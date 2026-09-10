@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_81]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_81 #####
+QUESTION:
+Who Eac6767bac366 a E5840d817bbcc E4b83108ac019 [Leonardo DiCaprio] Ee3ade9cf1bb4 E6f4ed8c24175?
+
+PATH_QUERY
+START Leonardo DiCaprio
+R1 E80f6cbe3f124
+R2 E383d3552f6b1
+Execute path; return final tail only.
+
+CONTEXT:
+Leonardo DiCaprio | E80f6cbe3f124 | The Basketball Diaries
+The Basketball Diaries | E383d3552f6b1 | Scott Kalvert
+The Basketball Diaries | E174c551f1a89 | Jim Carroll

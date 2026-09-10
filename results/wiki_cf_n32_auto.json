@@ -1,0 +1,247 @@
+{
+  "model": "auto",
+  "n": 32,
+  "summary": {
+    "score": "32/32",
+    "wiki_leak": "0/32",
+    "missing": 0,
+    "wilson": {
+      "k": 32,
+      "n": 32,
+      "acc": 1.0,
+      "ci95": [
+        0.8928,
+        1.0
+      ],
+      "display": "32/32 [0.89,1.00]"
+    }
+  },
+  "falsifier": "PLAIN_NL == original Wikipedia answer → parametric cheat",
+  "nonclaim": "Not G-Rev1. Scale check of CF PLAIN_NL. English rels still readable.",
+  "rows": [
+    {
+      "id": "CF32_PLAINNL_0",
+      "pred": "CF_TAIL_0_Illinois",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of the director of film Angus (Film)?"
+    },
+    {
+      "id": "CF32_PLAINNL_1",
+      "pred": "CF_TAIL_1_Mediterranea",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where did Janusz Różycki's father die?"
+    },
+    {
+      "id": "CF32_PLAINNL_2",
+      "pred": "CF_TAIL_2_18July1793",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When is Charles Iii, Prince Of Monaco's mother's birthday?"
+    },
+    {
+      "id": "CF32_PLAINNL_3",
+      "pred": "CF_TAIL_3_American",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Which country the director of film Batman: The Dark Knight Returns (Film) is from?"
+    },
+    {
+      "id": "CF32_PLAINNL_4",
+      "pred": "CF_TAIL_4_Irish",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the father of Fergus Mac Fogartaig born?"
+    },
+    {
+      "id": "CF32_PLAINNL_5",
+      "pred": "CF_TAIL_5_Hagonoy",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of Atang De La Rama's husband?"
+    },
+    {
+      "id": "CF32_PLAINNL_6",
+      "pred": "CF_TAIL_6_CanadianFilm",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where did the director of film The Steps (Film) graduate from?"
+    },
+    {
+      "id": "CF32_PLAINNL_7",
+      "pred": "CF_TAIL_7_30March1774",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When did Natalia Alexeievna (Wilhelmina Louisa Of Hesse-Darmstadt)'s mother die?"
+    },
+    {
+      "id": "CF32_PLAINNL_8",
+      "pred": "CF_TAIL_8_Paris",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of the director of film Les Assassins Du Dimanche?"
+    },
+    {
+      "id": "CF32_PLAINNL_9",
+      "pred": "CF_TAIL_9_25March1957",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When is Max Von Der Groeben's mother's birthday?"
+    },
+    {
+      "id": "CF32_PLAINNL_10",
+      "pred": "CF_TAIL_10_PreLachaiseC",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the place of burial of the director of film Fear And Trembling (Film)?"
+    },
+    {
+      "id": "CF32_PLAINNL_11",
+      "pred": "CF_TAIL_11_Hollywood",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the place of death of the composer of song They Can'T Take That Away From Me?"
+    },
+    {
+      "id": "CF32_PLAINNL_12",
+      "pred": "CF_TAIL_12_Panam",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of the director of film Ruben Blades Is Not My Name?"
+    },
+    {
+      "id": "CF32_PLAINNL_13",
+      "pred": "CF_TAIL_13_Liberian",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of the director of film The Watermelon Woman?"
+    },
+    {
+      "id": "CF32_PLAINNL_14",
+      "pred": "CF_TAIL_14_Montreal",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where did Mary Bethune Abbott's husband die?"
+    },
+    {
+      "id": "CF32_PLAINNL_15",
+      "pred": "CF_TAIL_15_SanremoMusic",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Which award the performer of song Constantemente Mía got?"
+    },
+    {
+      "id": "CF32_PLAINNL_16",
+      "pred": "CF_TAIL_16_Toronto",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where did Sylvia Burka's husband die?"
+    },
+    {
+      "id": "CF32_PLAINNL_17",
+      "pred": "CF_TAIL_17_California",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the place of death of the founder of Western Auto?"
+    },
+    {
+      "id": "CF32_PLAINNL_18",
+      "pred": "CF_TAIL_18_Gowran",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where did Sir Richard Butler Of Polestown's father die?"
+    },
+    {
+      "id": "CF32_PLAINNL_19",
+      "pred": "CF_TAIL_19_Prenzlau",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of Frank Wartenberg's wife?"
+    },
+    {
+      "id": "CF32_PLAINNL_20",
+      "pred": "CF_TAIL_20_18October169",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When did Philipp, Duke Of Saxe-Merseburg-Lauchstädt's father die?"
+    },
+    {
+      "id": "CF32_PLAINNL_21",
+      "pred": "CF_TAIL_21_Peninsula",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What nationality is Abdallah Ibn Abd Al-Malik's father?"
+    },
+    {
+      "id": "CF32_PLAINNL_22",
+      "pred": "CF_TAIL_22_NewYork",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of the director of film Sins Of Desire?"
+    },
+    {
+      "id": "CF32_PLAINNL_23",
+      "pred": "CF_TAIL_23_NewportWales",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of the director of film Nightwatching?"
+    },
+    {
+      "id": "CF32_PLAINNL_24",
+      "pred": "CF_TAIL_24_1027",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the date of birth of Frederick Of Liege's father?"
+    },
+    {
+      "id": "CF32_PLAINNL_25",
+      "pred": "CF_TAIL_25_Madrid",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the place of birth of the director of film Marianela (1940 Film)?"
+    },
+    {
+      "id": "CF32_PLAINNL_26",
+      "pred": "CF_TAIL_26_Virginia",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the place of burial of Thomas Mason (1770–1800)'s father?"
+    },
+    {
+      "id": "CF32_PLAINNL_27",
+      "pred": "CF_TAIL_27_Constantinop",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where did Constantine Palaiologos (Son Of Andronikos Ii)'s mother die?"
+    },
+    {
+      "id": "CF32_PLAINNL_28",
+      "pred": "CF_TAIL_28_SanDiegoStat",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where does the director of film Shock Treatment (1964 Film) work at?"
+    },
+    {
+      "id": "CF32_PLAINNL_29",
+      "pred": "CF_TAIL_29_Norway",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the father of Thorvald Eiriksson born?"
+    },
+    {
+      "id": "CF32_PLAINNL_30",
+      "pred": "CF_TAIL_30_37",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When is Flavius Justus's father's birthday?"
+    },
+    {
+      "id": "CF32_PLAINNL_31",
+      "pred": "CF_TAIL_31_PalmSpringsC",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where did the director of film 13 Fighting Men die?"
+    }
+  ]
+}

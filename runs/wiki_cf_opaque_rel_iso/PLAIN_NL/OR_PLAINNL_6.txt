@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_6 #####
+QUESTION:
+Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?
+
+CONTEXT:
+William Black | date of death | 1983
+decoy_mid_6 | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Jean Martin | spouse | William Black
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | CF_TAIL_6_stroke
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Grand Duke Kirill Vladimirovich of Russia | decoy_link_6 | decoy_mid_6
+Edmond T. Gréville | place of death | Nice

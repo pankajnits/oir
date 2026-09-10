@@ -1,0 +1,39 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_26]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_26 #####
+DB: epinions_1
+SCHEMA (English name → sealed sqlite identifier):
+item = E468e60626f05
+i_id = E1e0c6972c908
+title = E3eecb89a6cb3
+review = E18c108a0f91a
+a_id = E1a1804d5f7ca
+u_id = Ee6eb3a387283
+rating = Ef466833f00a2
+rank = Ef085a5087b4d
+useracct = E0047b21bccc9
+name = E03886e8300fd
+trust = E2df4feb79362
+source_u_id = Eca3def66f469
+target_u_id = E628d1ae4d39b
+
+item(i_id, title)
+review(a_id, u_id, i_id, rating, rank)
+useracct(u_id, name)
+trust(source_u_id, target_u_id, trust)
+
+QUESTION:
+Find the E3248b0187096 of the user who gives the most reviews.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_57]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_57 #####
+QUESTION:
+Who directed a movie that Liam Cunningham starred in?
+
+PATH_QUERY
+START Liam Cunningham
+R1 E1f4ca816968b
+R2 E2861701ec22f
+Execute path; return final tail only.
+
+CONTEXT:
+Liam Cunningham | E1f4ca816968b | A Little Princess
+A Little Princess | E2861701ec22f | Alfonso Cuarón
+A Little Princess | Ea195944d6202 | Frances Hodgson Burnett

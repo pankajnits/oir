@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_112 #####
+QUESTION:
+Where was the director of film Incubus Hq Live born?
+
+CONTEXT:
+decoy_mid_112 | place of birth | New York
+Donna Summer | place of death | Naples
+Incubus HQ Live | decoy_link_112 | decoy_mid_112
+Incubus HQ Live | director | Marc Scarpa
+Orhan | place of birth | Söğüt
+Murad I | father | Orhan
+Brooklyn Sudano | mother | Donna Summer
+Marc Scarpa | place of birth | CF_TAIL_112_NewYork

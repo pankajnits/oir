@@ -1,0 +1,1655 @@
+{
+  "claim": "Isolation n=32 adversarial traps: SAME vs CROSS under asymmetric and balanced noise; PATH ceiling. Multi-model iso MUT.",
+  "version": 1,
+  "seed": 20260819,
+  "key_tag": "oir-adv-n32-iso-v1",
+  "n_quiz": 32,
+  "n": 32,
+  "cases": [
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 0,
+      "id": "ADV32_SAME_TRAP_0",
+      "gold": "E39889c89ee24",
+      "trap": "E9cac6930bde8"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 1,
+      "id": "ADV32_SAME_TRAP_1",
+      "gold": "E74b245e94b1b",
+      "trap": "E61f7f703a592"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 2,
+      "id": "ADV32_SAME_TRAP_2",
+      "gold": "E1ff91a33f995",
+      "trap": "E6409760c9c88"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 3,
+      "id": "ADV32_SAME_TRAP_3",
+      "gold": "Ebb6cf70f6ac2",
+      "trap": "E9b41a89cdbff"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 4,
+      "id": "ADV32_SAME_TRAP_4",
+      "gold": "E64f6197c3e82",
+      "trap": "Efb62b40b9e78"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 5,
+      "id": "ADV32_SAME_TRAP_5",
+      "gold": "E3721da091cfa",
+      "trap": "Edfda907685b4"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 6,
+      "id": "ADV32_SAME_TRAP_6",
+      "gold": "E114918fd7257",
+      "trap": "E3834b0d47cda"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 7,
+      "id": "ADV32_SAME_TRAP_7",
+      "gold": "Edae216afa9c0",
+      "trap": "E7414815f6d78"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 8,
+      "id": "ADV32_SAME_TRAP_8",
+      "gold": "E19ffe8ae098c",
+      "trap": "E2afa83029e3e"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 9,
+      "id": "ADV32_SAME_TRAP_9",
+      "gold": "Eeb055374a257",
+      "trap": "E1c4f3afdd357"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 10,
+      "id": "ADV32_SAME_TRAP_10",
+      "gold": "Efd8e85f9dfa0",
+      "trap": "E7c771d15394b"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 11,
+      "id": "ADV32_SAME_TRAP_11",
+      "gold": "E3cb53bddde6c",
+      "trap": "E9f913371d461"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 12,
+      "id": "ADV32_SAME_TRAP_12",
+      "gold": "E4700081fcecf",
+      "trap": "Ee4f3dfd24e5e"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 13,
+      "id": "ADV32_SAME_TRAP_13",
+      "gold": "E5ef245e0115b",
+      "trap": "E4c8058886405"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 14,
+      "id": "ADV32_SAME_TRAP_14",
+      "gold": "Ee0a5bd625b84",
+      "trap": "E2d67c4cf1e5f"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 15,
+      "id": "ADV32_SAME_TRAP_15",
+      "gold": "E7a1c6eec20c8",
+      "trap": "E5f0c04a291d0"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 16,
+      "id": "ADV32_SAME_TRAP_16",
+      "gold": "E604c2fe36356",
+      "trap": "E63e8cd3337eb"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 17,
+      "id": "ADV32_SAME_TRAP_17",
+      "gold": "E880cfbd96bb4",
+      "trap": "E12753000dfe8"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 18,
+      "id": "ADV32_SAME_TRAP_18",
+      "gold": "E9fafe7f492a6",
+      "trap": "Eb9000925c16b"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 19,
+      "id": "ADV32_SAME_TRAP_19",
+      "gold": "E074dfd293dd0",
+      "trap": "E54eab4c392cb"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 20,
+      "id": "ADV32_SAME_TRAP_20",
+      "gold": "E21b55bfab772",
+      "trap": "Ecf85dea88d50"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 21,
+      "id": "ADV32_SAME_TRAP_21",
+      "gold": "E25fa0296affd",
+      "trap": "Ec3d81330309b"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 22,
+      "id": "ADV32_SAME_TRAP_22",
+      "gold": "E20f2a55ffc90",
+      "trap": "E029eb9e86871"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 23,
+      "id": "ADV32_SAME_TRAP_23",
+      "gold": "E354449f708db",
+      "trap": "Ebf0ccf04ae81"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 24,
+      "id": "ADV32_SAME_TRAP_24",
+      "gold": "E5436892b2219",
+      "trap": "E107131769004"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 25,
+      "id": "ADV32_SAME_TRAP_25",
+      "gold": "Eae4f098cb921",
+      "trap": "E5aef62538e77"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 26,
+      "id": "ADV32_SAME_TRAP_26",
+      "gold": "Ecea64c884a5e",
+      "trap": "E1e883e312e30"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 27,
+      "id": "ADV32_SAME_TRAP_27",
+      "gold": "E5499a201510a",
+      "trap": "Efeaa47a4b236"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 28,
+      "id": "ADV32_SAME_TRAP_28",
+      "gold": "E3557c2b300de",
+      "trap": "Ecbf57138d256"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 29,
+      "id": "ADV32_SAME_TRAP_29",
+      "gold": "E6f7213eb5623",
+      "trap": "Ed30f04e42805"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 30,
+      "id": "ADV32_SAME_TRAP_30",
+      "gold": "E87639337ce46",
+      "trap": "E8584f0a66099"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 31,
+      "id": "ADV32_SAME_TRAP_31",
+      "gold": "E1081139195a8",
+      "trap": "Ea2370bce27e2"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 0,
+      "id": "ADV32_CROSS_TRAP_0",
+      "gold": "Eabed53dfc681",
+      "trap": "Eefaff4fedc91"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 1,
+      "id": "ADV32_CROSS_TRAP_1",
+      "gold": "E2084f934b0c4",
+      "trap": "E5e3aa2f8606c"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 2,
+      "id": "ADV32_CROSS_TRAP_2",
+      "gold": "Eb94c11c975d8",
+      "trap": "E412d1aabe297"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 3,
+      "id": "ADV32_CROSS_TRAP_3",
+      "gold": "E2a466372fef6",
+      "trap": "E7ceae538a118"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 4,
+      "id": "ADV32_CROSS_TRAP_4",
+      "gold": "Ec0d8d8cb716b",
+      "trap": "E7e88072e6f43"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 5,
+      "id": "ADV32_CROSS_TRAP_5",
+      "gold": "Ed06449ba29cb",
+      "trap": "Ed919115e24f5"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 6,
+      "id": "ADV32_CROSS_TRAP_6",
+      "gold": "E502118896134",
+      "trap": "E6b82532fe719"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 7,
+      "id": "ADV32_CROSS_TRAP_7",
+      "gold": "E071504481b5d",
+      "trap": "E2ec920c3bafe"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 8,
+      "id": "ADV32_CROSS_TRAP_8",
+      "gold": "E4ff905ecd9dc",
+      "trap": "E36da94e86049"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 9,
+      "id": "ADV32_CROSS_TRAP_9",
+      "gold": "E9ae65949787f",
+      "trap": "Eec4a4fc98d54"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 10,
+      "id": "ADV32_CROSS_TRAP_10",
+      "gold": "Eeed9393958cd",
+      "trap": "Ec567c7f32d33"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 11,
+      "id": "ADV32_CROSS_TRAP_11",
+      "gold": "E594b7aed1c15",
+      "trap": "E49111be54a29"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 12,
+      "id": "ADV32_CROSS_TRAP_12",
+      "gold": "E98d7800b2bff",
+      "trap": "Ed294ff77186c"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 13,
+      "id": "ADV32_CROSS_TRAP_13",
+      "gold": "E142fd7cf715d",
+      "trap": "E36a35557821b"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 14,
+      "id": "ADV32_CROSS_TRAP_14",
+      "gold": "E3978442f9c23",
+      "trap": "Ea21a25e62ceb"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 15,
+      "id": "ADV32_CROSS_TRAP_15",
+      "gold": "E4f332ca840e0",
+      "trap": "E2f0f9602dfd1"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 16,
+      "id": "ADV32_CROSS_TRAP_16",
+      "gold": "E16a042410d20",
+      "trap": "E7a12055575eb"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 17,
+      "id": "ADV32_CROSS_TRAP_17",
+      "gold": "E4a1db64aeb9c",
+      "trap": "Ec84a9ca1e68d"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 18,
+      "id": "ADV32_CROSS_TRAP_18",
+      "gold": "Ecd8209b34f70",
+      "trap": "Ed8986320e3df"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 19,
+      "id": "ADV32_CROSS_TRAP_19",
+      "gold": "E4bca77e6cf40",
+      "trap": "Ed3ff4ee46546"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 20,
+      "id": "ADV32_CROSS_TRAP_20",
+      "gold": "E73a36af3c777",
+      "trap": "E2b9215fba1c6"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 21,
+      "id": "ADV32_CROSS_TRAP_21",
+      "gold": "E5daceea75161",
+      "trap": "E7619bf14b26c"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 22,
+      "id": "ADV32_CROSS_TRAP_22",
+      "gold": "E7136d587f5f0",
+      "trap": "E06d466b3fa7e"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 23,
+      "id": "ADV32_CROSS_TRAP_23",
+      "gold": "E841dbae6d4fa",
+      "trap": "Ee1eee4224d70"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 24,
+      "id": "ADV32_CROSS_TRAP_24",
+      "gold": "E5c771e7fac13",
+      "trap": "E50f40c614ae8"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 25,
+      "id": "ADV32_CROSS_TRAP_25",
+      "gold": "E0732cb5800c4",
+      "trap": "E3c5de398c085"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 26,
+      "id": "ADV32_CROSS_TRAP_26",
+      "gold": "E82e1b22bdb3b",
+      "trap": "Ee6b35f1038d8"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 27,
+      "id": "ADV32_CROSS_TRAP_27",
+      "gold": "Efe20aa07a0c7",
+      "trap": "Eab41c8d63a19"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 28,
+      "id": "ADV32_CROSS_TRAP_28",
+      "gold": "E62a6f89e12e8",
+      "trap": "Ec24c145dd8b7"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 29,
+      "id": "ADV32_CROSS_TRAP_29",
+      "gold": "E07546db4b39c",
+      "trap": "E373423179c54"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 30,
+      "id": "ADV32_CROSS_TRAP_30",
+      "gold": "Ecd6a4434c6e3",
+      "trap": "Ecccd208be182"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 31,
+      "id": "ADV32_CROSS_TRAP_31",
+      "gold": "E0cb0ca576557",
+      "trap": "E84ebacad38d2"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 0,
+      "id": "ADV32_SAME_BALANCED_0",
+      "gold": "E61e62255d357",
+      "trap": "E142841ad7338"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 1,
+      "id": "ADV32_SAME_BALANCED_1",
+      "gold": "Ebed3285b03a5",
+      "trap": "Ed8959fde0adb"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 2,
+      "id": "ADV32_SAME_BALANCED_2",
+      "gold": "E4b5b1ac32764",
+      "trap": "E6fb462ceba78"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 3,
+      "id": "ADV32_SAME_BALANCED_3",
+      "gold": "E57585567c2f3",
+      "trap": "E9037da05aaff"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 4,
+      "id": "ADV32_SAME_BALANCED_4",
+      "gold": "Eb7df84dbc5d2",
+      "trap": "E95476f071f97"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 5,
+      "id": "ADV32_SAME_BALANCED_5",
+      "gold": "Ec390874e1097",
+      "trap": "Ebb007d6037ed"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 6,
+      "id": "ADV32_SAME_BALANCED_6",
+      "gold": "Efe01e3dc59ca",
+      "trap": "E1d99d6eb686c"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 7,
+      "id": "ADV32_SAME_BALANCED_7",
+      "gold": "Efb9b001fc900",
+      "trap": "E1b29b185e63c"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 8,
+      "id": "ADV32_SAME_BALANCED_8",
+      "gold": "Eb8b74155a006",
+      "trap": "Ea66aad9cb3f1"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 9,
+      "id": "ADV32_SAME_BALANCED_9",
+      "gold": "Eb1857031c685",
+      "trap": "E167ece731b43"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 10,
+      "id": "ADV32_SAME_BALANCED_10",
+      "gold": "E5b5d477f2a9d",
+      "trap": "Eb96b6092e3d0"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 11,
+      "id": "ADV32_SAME_BALANCED_11",
+      "gold": "E5b6a39ea7940",
+      "trap": "Ec59a65e451af"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 12,
+      "id": "ADV32_SAME_BALANCED_12",
+      "gold": "Ee6c6f9b163a7",
+      "trap": "Ef8ff0b347e57"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 13,
+      "id": "ADV32_SAME_BALANCED_13",
+      "gold": "E54220fc23931",
+      "trap": "E8998b4895602"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 14,
+      "id": "ADV32_SAME_BALANCED_14",
+      "gold": "E1202c1d8763d",
+      "trap": "Ea9d787a6dc16"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 15,
+      "id": "ADV32_SAME_BALANCED_15",
+      "gold": "E8752d44f6e8d",
+      "trap": "E837dba3aaa03"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 16,
+      "id": "ADV32_SAME_BALANCED_16",
+      "gold": "E2a2ff4125792",
+      "trap": "Eac846580742b"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 17,
+      "id": "ADV32_SAME_BALANCED_17",
+      "gold": "E38a9a7111b72",
+      "trap": "Ee6866cac5814"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 18,
+      "id": "ADV32_SAME_BALANCED_18",
+      "gold": "Ec2b3f283b115",
+      "trap": "E6d32c99e5873"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 19,
+      "id": "ADV32_SAME_BALANCED_19",
+      "gold": "E791f86c23760",
+      "trap": "E002682e19567"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 20,
+      "id": "ADV32_SAME_BALANCED_20",
+      "gold": "Ec97414d1af7f",
+      "trap": "E4734e707fe69"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 21,
+      "id": "ADV32_SAME_BALANCED_21",
+      "gold": "Ea05d05b2a549",
+      "trap": "Ecf690aeec43f"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 22,
+      "id": "ADV32_SAME_BALANCED_22",
+      "gold": "E4e1b05ed1d2f",
+      "trap": "E7d9e3c596432"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 23,
+      "id": "ADV32_SAME_BALANCED_23",
+      "gold": "Ec8e156f0382d",
+      "trap": "Eb9127c4be718"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 24,
+      "id": "ADV32_SAME_BALANCED_24",
+      "gold": "Ea653702fe78c",
+      "trap": "Edc97e9ebf8c7"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 25,
+      "id": "ADV32_SAME_BALANCED_25",
+      "gold": "E866ef701a5c7",
+      "trap": "Ed2d7933dcb03"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 26,
+      "id": "ADV32_SAME_BALANCED_26",
+      "gold": "Ea65bcd69ace0",
+      "trap": "E9742dbb3b4e9"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 27,
+      "id": "ADV32_SAME_BALANCED_27",
+      "gold": "E952a2b2b9389",
+      "trap": "E17dbb498d69d"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 28,
+      "id": "ADV32_SAME_BALANCED_28",
+      "gold": "E61f1501210b0",
+      "trap": "E152ef282f9d1"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 29,
+      "id": "ADV32_SAME_BALANCED_29",
+      "gold": "E7e245edf4172",
+      "trap": "E798458828aa0"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 30,
+      "id": "ADV32_SAME_BALANCED_30",
+      "gold": "Eca39f177fed5",
+      "trap": "Ea1fbdf65ebe7"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 31,
+      "id": "ADV32_SAME_BALANCED_31",
+      "gold": "E2cd52c17f362",
+      "trap": "Eba1012f2a302"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 0,
+      "id": "ADV32_CROSS_BALANCED_0",
+      "gold": "Ed7bed7f9b47e",
+      "trap": "Ede0c83aed35d"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 1,
+      "id": "ADV32_CROSS_BALANCED_1",
+      "gold": "E5a16d29f4b88",
+      "trap": "E32d0551018dd"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 2,
+      "id": "ADV32_CROSS_BALANCED_2",
+      "gold": "E5d916eac0413",
+      "trap": "E4a68013d2e35"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 3,
+      "id": "ADV32_CROSS_BALANCED_3",
+      "gold": "Ef0c90bfc6e7d",
+      "trap": "Ee3bdb1e0199f"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 4,
+      "id": "ADV32_CROSS_BALANCED_4",
+      "gold": "Eb4d4d771c8dd",
+      "trap": "E027360e0a6f5"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 5,
+      "id": "ADV32_CROSS_BALANCED_5",
+      "gold": "E89466a235077",
+      "trap": "Ec579334e908f"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 6,
+      "id": "ADV32_CROSS_BALANCED_6",
+      "gold": "E50d9731383be",
+      "trap": "E2b737bc6fcd7"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 7,
+      "id": "ADV32_CROSS_BALANCED_7",
+      "gold": "E18ac065ff4e8",
+      "trap": "Eec7ad0145bf0"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 8,
+      "id": "ADV32_CROSS_BALANCED_8",
+      "gold": "E5c8051b8bd3f",
+      "trap": "Ede0217d3a0d4"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 9,
+      "id": "ADV32_CROSS_BALANCED_9",
+      "gold": "E02dfe293939d",
+      "trap": "Eee34835747be"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 10,
+      "id": "ADV32_CROSS_BALANCED_10",
+      "gold": "E23da7a7fa5b5",
+      "trap": "E6a040eb8eb30"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 11,
+      "id": "ADV32_CROSS_BALANCED_11",
+      "gold": "E855952bb1dc7",
+      "trap": "E0b694b8a21b7"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 12,
+      "id": "ADV32_CROSS_BALANCED_12",
+      "gold": "Ee0a3b3e62515",
+      "trap": "Ef8d42bd2bc88"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 13,
+      "id": "ADV32_CROSS_BALANCED_13",
+      "gold": "E4c186c11235c",
+      "trap": "E018dc90f9c7d"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 14,
+      "id": "ADV32_CROSS_BALANCED_14",
+      "gold": "Eb0d89be431e6",
+      "trap": "E0922ecb5840b"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 15,
+      "id": "ADV32_CROSS_BALANCED_15",
+      "gold": "Efb595d226026",
+      "trap": "Ed6bffc5df07a"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 16,
+      "id": "ADV32_CROSS_BALANCED_16",
+      "gold": "E475f856d3802",
+      "trap": "E43836d53be30"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 17,
+      "id": "ADV32_CROSS_BALANCED_17",
+      "gold": "E404940a43c13",
+      "trap": "Ed9b33d6c4c2e"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 18,
+      "id": "ADV32_CROSS_BALANCED_18",
+      "gold": "E338f35f22049",
+      "trap": "E6394637586f8"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 19,
+      "id": "ADV32_CROSS_BALANCED_19",
+      "gold": "E01e9ce9065e3",
+      "trap": "E72fe615851c1"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 20,
+      "id": "ADV32_CROSS_BALANCED_20",
+      "gold": "E4c549eed3959",
+      "trap": "Ec96a67c4d2a0"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 21,
+      "id": "ADV32_CROSS_BALANCED_21",
+      "gold": "Ea9d54c3e525c",
+      "trap": "Edb261b05af5c"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 22,
+      "id": "ADV32_CROSS_BALANCED_22",
+      "gold": "E133eee96dbaa",
+      "trap": "Ed09c6023f5fa"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 23,
+      "id": "ADV32_CROSS_BALANCED_23",
+      "gold": "Eeb7300d42e77",
+      "trap": "E0cad224d043c"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 24,
+      "id": "ADV32_CROSS_BALANCED_24",
+      "gold": "E554527053e66",
+      "trap": "E6c3a73bb1b6b"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 25,
+      "id": "ADV32_CROSS_BALANCED_25",
+      "gold": "Ef175c690084d",
+      "trap": "E1342c813849b"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 26,
+      "id": "ADV32_CROSS_BALANCED_26",
+      "gold": "Ebafb9a6a288f",
+      "trap": "E740dda6d22e5"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 27,
+      "id": "ADV32_CROSS_BALANCED_27",
+      "gold": "Ec38df417d99f",
+      "trap": "E433f4047879c"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 28,
+      "id": "ADV32_CROSS_BALANCED_28",
+      "gold": "E37a314600f58",
+      "trap": "E09db9c7024d9"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 29,
+      "id": "ADV32_CROSS_BALANCED_29",
+      "gold": "E35982564968d",
+      "trap": "E8e860707c594"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 30,
+      "id": "ADV32_CROSS_BALANCED_30",
+      "gold": "E71d7dc35dea3",
+      "trap": "E7c2568e32e65"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 31,
+      "id": "ADV32_CROSS_BALANCED_31",
+      "gold": "E7a4c8f27fc34",
+      "trap": "E5b47d4dd2bb4"
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 0,
+      "id": "ADV32_PATH_TRAP_0",
+      "gold": "E957a5cd8f02f",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 1,
+      "id": "ADV32_PATH_TRAP_1",
+      "gold": "Efe5c6ed42cd4",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 2,
+      "id": "ADV32_PATH_TRAP_2",
+      "gold": "E3014b81a06f4",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 3,
+      "id": "ADV32_PATH_TRAP_3",
+      "gold": "E1a74aa4cee6e",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 4,
+      "id": "ADV32_PATH_TRAP_4",
+      "gold": "Ece50f2832079",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 5,
+      "id": "ADV32_PATH_TRAP_5",
+      "gold": "E8b20b1aa1153",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 6,
+      "id": "ADV32_PATH_TRAP_6",
+      "gold": "Ed991ff413e90",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 7,
+      "id": "ADV32_PATH_TRAP_7",
+      "gold": "Eccc0a45e4dc0",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 8,
+      "id": "ADV32_PATH_TRAP_8",
+      "gold": "Ef8795d64ac12",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 9,
+      "id": "ADV32_PATH_TRAP_9",
+      "gold": "E80bc231f3cd3",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 10,
+      "id": "ADV32_PATH_TRAP_10",
+      "gold": "E51ebb3ef3ee8",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 11,
+      "id": "ADV32_PATH_TRAP_11",
+      "gold": "E330e7573eb60",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 12,
+      "id": "ADV32_PATH_TRAP_12",
+      "gold": "E3fe382426dd3",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 13,
+      "id": "ADV32_PATH_TRAP_13",
+      "gold": "E51a211052534",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 14,
+      "id": "ADV32_PATH_TRAP_14",
+      "gold": "Ef0613a2e65f4",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 15,
+      "id": "ADV32_PATH_TRAP_15",
+      "gold": "E0c91ca81c938",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 16,
+      "id": "ADV32_PATH_TRAP_16",
+      "gold": "E716f49601270",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 17,
+      "id": "ADV32_PATH_TRAP_17",
+      "gold": "Edbbeb310bc77",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 18,
+      "id": "ADV32_PATH_TRAP_18",
+      "gold": "Edc17f851c04a",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 19,
+      "id": "ADV32_PATH_TRAP_19",
+      "gold": "E6516ed3054eb",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 20,
+      "id": "ADV32_PATH_TRAP_20",
+      "gold": "E194e8068e761",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 21,
+      "id": "ADV32_PATH_TRAP_21",
+      "gold": "Eab002bd9b67c",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 22,
+      "id": "ADV32_PATH_TRAP_22",
+      "gold": "E70877bd7b2af",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 23,
+      "id": "ADV32_PATH_TRAP_23",
+      "gold": "E2c8ba1915ade",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 24,
+      "id": "ADV32_PATH_TRAP_24",
+      "gold": "Eb7a902530bbe",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 25,
+      "id": "ADV32_PATH_TRAP_25",
+      "gold": "Ece778f3f6c22",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 26,
+      "id": "ADV32_PATH_TRAP_26",
+      "gold": "Eea26f62bc39b",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 27,
+      "id": "ADV32_PATH_TRAP_27",
+      "gold": "E8b0673b32164",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 28,
+      "id": "ADV32_PATH_TRAP_28",
+      "gold": "E16cbcef713f2",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 29,
+      "id": "ADV32_PATH_TRAP_29",
+      "gold": "E807db80679d6",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 30,
+      "id": "ADV32_PATH_TRAP_30",
+      "gold": "E860a71c0e0f3",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 31,
+      "id": "ADV32_PATH_TRAP_31",
+      "gold": "E8e2d5b582ae5",
+      "trap": null
+    }
+  ],
+  "arms": {
+    "SAME_TRAP": {
+      "label": "demos schemaA; quiz dual-path; gold uses schemaA seals (asymmetric noise)",
+      "kind": "trap_same",
+      "ids": [
+        "ADV32_SAME_TRAP_0",
+        "ADV32_SAME_TRAP_1",
+        "ADV32_SAME_TRAP_2",
+        "ADV32_SAME_TRAP_3",
+        "ADV32_SAME_TRAP_4",
+        "ADV32_SAME_TRAP_5",
+        "ADV32_SAME_TRAP_6",
+        "ADV32_SAME_TRAP_7",
+        "ADV32_SAME_TRAP_8",
+        "ADV32_SAME_TRAP_9",
+        "ADV32_SAME_TRAP_10",
+        "ADV32_SAME_TRAP_11",
+        "ADV32_SAME_TRAP_12",
+        "ADV32_SAME_TRAP_13",
+        "ADV32_SAME_TRAP_14",
+        "ADV32_SAME_TRAP_15",
+        "ADV32_SAME_TRAP_16",
+        "ADV32_SAME_TRAP_17",
+        "ADV32_SAME_TRAP_18",
+        "ADV32_SAME_TRAP_19",
+        "ADV32_SAME_TRAP_20",
+        "ADV32_SAME_TRAP_21",
+        "ADV32_SAME_TRAP_22",
+        "ADV32_SAME_TRAP_23",
+        "ADV32_SAME_TRAP_24",
+        "ADV32_SAME_TRAP_25",
+        "ADV32_SAME_TRAP_26",
+        "ADV32_SAME_TRAP_27",
+        "ADV32_SAME_TRAP_28",
+        "ADV32_SAME_TRAP_29",
+        "ADV32_SAME_TRAP_30",
+        "ADV32_SAME_TRAP_31"
+      ],
+      "item_paths": [
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_0/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_1/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_2/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_3/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_4/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_5/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_6/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_7/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_8/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_9/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_10/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_11/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_12/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_13/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_14/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_15/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_16/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_17/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_18/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_19/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_20/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_21/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_22/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_23/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_24/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_25/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_26/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_27/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_28/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_29/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_30/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_TRAP/item_31/prompt.txt"
+      ]
+    },
+    "CROSS_TRAP": {
+      "label": "demos schemaA; quiz dual-path; gold uses NOVEL seals (asymmetric)",
+      "kind": "trap_cross",
+      "ids": [
+        "ADV32_CROSS_TRAP_0",
+        "ADV32_CROSS_TRAP_1",
+        "ADV32_CROSS_TRAP_2",
+        "ADV32_CROSS_TRAP_3",
+        "ADV32_CROSS_TRAP_4",
+        "ADV32_CROSS_TRAP_5",
+        "ADV32_CROSS_TRAP_6",
+        "ADV32_CROSS_TRAP_7",
+        "ADV32_CROSS_TRAP_8",
+        "ADV32_CROSS_TRAP_9",
+        "ADV32_CROSS_TRAP_10",
+        "ADV32_CROSS_TRAP_11",
+        "ADV32_CROSS_TRAP_12",
+        "ADV32_CROSS_TRAP_13",
+        "ADV32_CROSS_TRAP_14",
+        "ADV32_CROSS_TRAP_15",
+        "ADV32_CROSS_TRAP_16",
+        "ADV32_CROSS_TRAP_17",
+        "ADV32_CROSS_TRAP_18",
+        "ADV32_CROSS_TRAP_19",
+        "ADV32_CROSS_TRAP_20",
+        "ADV32_CROSS_TRAP_21",
+        "ADV32_CROSS_TRAP_22",
+        "ADV32_CROSS_TRAP_23",
+        "ADV32_CROSS_TRAP_24",
+        "ADV32_CROSS_TRAP_25",
+        "ADV32_CROSS_TRAP_26",
+        "ADV32_CROSS_TRAP_27",
+        "ADV32_CROSS_TRAP_28",
+        "ADV32_CROSS_TRAP_29",
+        "ADV32_CROSS_TRAP_30",
+        "ADV32_CROSS_TRAP_31"
+      ],
+      "item_paths": [
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_0/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_1/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_2/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_3/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_4/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_5/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_6/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_7/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_8/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_9/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_10/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_11/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_12/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_13/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_14/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_15/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_16/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_17/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_18/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_19/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_20/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_21/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_22/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_23/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_24/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_25/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_26/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_27/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_28/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_29/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_30/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_TRAP/item_31/prompt.txt"
+      ]
+    },
+    "SAME_BALANCED": {
+      "label": "SAME seals; dual-path with SYMMETRIC noise",
+      "kind": "trap_same_balanced",
+      "ids": [
+        "ADV32_SAME_BALANCED_0",
+        "ADV32_SAME_BALANCED_1",
+        "ADV32_SAME_BALANCED_2",
+        "ADV32_SAME_BALANCED_3",
+        "ADV32_SAME_BALANCED_4",
+        "ADV32_SAME_BALANCED_5",
+        "ADV32_SAME_BALANCED_6",
+        "ADV32_SAME_BALANCED_7",
+        "ADV32_SAME_BALANCED_8",
+        "ADV32_SAME_BALANCED_9",
+        "ADV32_SAME_BALANCED_10",
+        "ADV32_SAME_BALANCED_11",
+        "ADV32_SAME_BALANCED_12",
+        "ADV32_SAME_BALANCED_13",
+        "ADV32_SAME_BALANCED_14",
+        "ADV32_SAME_BALANCED_15",
+        "ADV32_SAME_BALANCED_16",
+        "ADV32_SAME_BALANCED_17",
+        "ADV32_SAME_BALANCED_18",
+        "ADV32_SAME_BALANCED_19",
+        "ADV32_SAME_BALANCED_20",
+        "ADV32_SAME_BALANCED_21",
+        "ADV32_SAME_BALANCED_22",
+        "ADV32_SAME_BALANCED_23",
+        "ADV32_SAME_BALANCED_24",
+        "ADV32_SAME_BALANCED_25",
+        "ADV32_SAME_BALANCED_26",
+        "ADV32_SAME_BALANCED_27",
+        "ADV32_SAME_BALANCED_28",
+        "ADV32_SAME_BALANCED_29",
+        "ADV32_SAME_BALANCED_30",
+        "ADV32_SAME_BALANCED_31"
+      ],
+      "item_paths": [
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_0/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_1/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_2/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_3/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_4/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_5/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_6/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_7/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_8/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_9/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_10/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_11/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_12/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_13/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_14/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_15/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_16/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_17/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_18/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_19/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_20/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_21/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_22/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_23/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_24/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_25/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_26/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_27/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_28/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_29/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_30/prompt.txt",
+        "runs/adv_induction_n32_iso/SAME_BALANCED/item_31/prompt.txt"
+      ]
+    },
+    "CROSS_BALANCED": {
+      "label": "CROSS novel seals; dual-path with SYMMETRIC noise",
+      "kind": "trap_cross_balanced",
+      "ids": [
+        "ADV32_CROSS_BALANCED_0",
+        "ADV32_CROSS_BALANCED_1",
+        "ADV32_CROSS_BALANCED_2",
+        "ADV32_CROSS_BALANCED_3",
+        "ADV32_CROSS_BALANCED_4",
+        "ADV32_CROSS_BALANCED_5",
+        "ADV32_CROSS_BALANCED_6",
+        "ADV32_CROSS_BALANCED_7",
+        "ADV32_CROSS_BALANCED_8",
+        "ADV32_CROSS_BALANCED_9",
+        "ADV32_CROSS_BALANCED_10",
+        "ADV32_CROSS_BALANCED_11",
+        "ADV32_CROSS_BALANCED_12",
+        "ADV32_CROSS_BALANCED_13",
+        "ADV32_CROSS_BALANCED_14",
+        "ADV32_CROSS_BALANCED_15",
+        "ADV32_CROSS_BALANCED_16",
+        "ADV32_CROSS_BALANCED_17",
+        "ADV32_CROSS_BALANCED_18",
+        "ADV32_CROSS_BALANCED_19",
+        "ADV32_CROSS_BALANCED_20",
+        "ADV32_CROSS_BALANCED_21",
+        "ADV32_CROSS_BALANCED_22",
+        "ADV32_CROSS_BALANCED_23",
+        "ADV32_CROSS_BALANCED_24",
+        "ADV32_CROSS_BALANCED_25",
+        "ADV32_CROSS_BALANCED_26",
+        "ADV32_CROSS_BALANCED_27",
+        "ADV32_CROSS_BALANCED_28",
+        "ADV32_CROSS_BALANCED_29",
+        "ADV32_CROSS_BALANCED_30",
+        "ADV32_CROSS_BALANCED_31"
+      ],
+      "item_paths": [
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_0/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_1/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_2/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_3/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_4/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_5/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_6/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_7/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_8/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_9/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_10/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_11/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_12/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_13/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_14/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_15/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_16/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_17/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_18/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_19/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_20/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_21/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_22/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_23/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_24/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_25/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_26/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_27/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_28/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_29/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_30/prompt.txt",
+        "runs/adv_induction_n32_iso/CROSS_BALANCED/item_31/prompt.txt"
+      ]
+    },
+    "PATH_TRAP": {
+      "label": "PATH ceiling on trap graphs",
+      "kind": "path",
+      "ids": [
+        "ADV32_PATH_TRAP_0",
+        "ADV32_PATH_TRAP_1",
+        "ADV32_PATH_TRAP_2",
+        "ADV32_PATH_TRAP_3",
+        "ADV32_PATH_TRAP_4",
+        "ADV32_PATH_TRAP_5",
+        "ADV32_PATH_TRAP_6",
+        "ADV32_PATH_TRAP_7",
+        "ADV32_PATH_TRAP_8",
+        "ADV32_PATH_TRAP_9",
+        "ADV32_PATH_TRAP_10",
+        "ADV32_PATH_TRAP_11",
+        "ADV32_PATH_TRAP_12",
+        "ADV32_PATH_TRAP_13",
+        "ADV32_PATH_TRAP_14",
+        "ADV32_PATH_TRAP_15",
+        "ADV32_PATH_TRAP_16",
+        "ADV32_PATH_TRAP_17",
+        "ADV32_PATH_TRAP_18",
+        "ADV32_PATH_TRAP_19",
+        "ADV32_PATH_TRAP_20",
+        "ADV32_PATH_TRAP_21",
+        "ADV32_PATH_TRAP_22",
+        "ADV32_PATH_TRAP_23",
+        "ADV32_PATH_TRAP_24",
+        "ADV32_PATH_TRAP_25",
+        "ADV32_PATH_TRAP_26",
+        "ADV32_PATH_TRAP_27",
+        "ADV32_PATH_TRAP_28",
+        "ADV32_PATH_TRAP_29",
+        "ADV32_PATH_TRAP_30",
+        "ADV32_PATH_TRAP_31"
+      ],
+      "item_paths": [
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_0/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_1/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_2/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_3/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_4/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_5/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_6/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_7/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_8/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_9/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_10/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_11/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_12/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_13/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_14/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_15/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_16/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_17/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_18/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_19/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_20/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_21/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_22/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_23/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_24/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_25/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_26/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_27/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_28/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_29/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_30/prompt.txt",
+        "runs/adv_induction_n32_iso/PATH_TRAP/item_31/prompt.txt"
+      ]
+    }
+  },
+  "protocol": "one quiz per file; gold in harness only; isolation MUT",
+  "note": "Does not replace locked n=6 adv_induction_harness.json or batched n=24",
+  "paper": "paper/ADV_INDUCTION.md"
+}

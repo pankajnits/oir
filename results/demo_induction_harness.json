@@ -1,0 +1,286 @@
+{
+  "claim": "Demo-only induction under opacity (v2): one-quiz-per-file; no English hop wording on DEMO arms; measure how many sealed demos restore 2-hop.",
+  "version": 2,
+  "seed": 20260729,
+  "n_quiz": 8,
+  "ks": [
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "key_tag": "oir-demo-induction-v2",
+  "rel_seals": {
+    "works_at": "E52139c3202c8",
+    "headquartered_in": "E7746fff2bd73"
+  },
+  "demo_people": [
+    "Stacey_Snider",
+    "Macon_Foscue_Brock_Jr",
+    "JeanFranois_van_Boxmeer",
+    "Thomas_S_Carter",
+    "Pedro_Azagra_Blzquez",
+    "Luigi_Ferraris",
+    "Beata_KozowskaChya",
+    "Bob_Iger"
+  ],
+  "quiz_people": [
+    "Freddy_Heineken",
+    "Lucian_Grainge",
+    "Achim_Wei",
+    "David_Lagerholm",
+    "Keith_Creel",
+    "John_K_Martin_Jr",
+    "Hans_Vestberg",
+    "William_N_Deramus_Jr"
+  ],
+  "cases": [
+    {
+      "i": 0,
+      "person": "Freddy_Heineken",
+      "hq": "Amsterdam",
+      "company": "Heineken_International",
+      "gold": "E25de5e9ed41b",
+      "start": "Eac984bf19098"
+    },
+    {
+      "i": 1,
+      "person": "Lucian_Grainge",
+      "hq": "Broadway",
+      "company": "Universal_Music_Group",
+      "gold": "E38dce175e91d",
+      "start": "Eff3e3959d777"
+    },
+    {
+      "i": 2,
+      "person": "Achim_Wei",
+      "hq": "Montabaur",
+      "company": "Ionos",
+      "gold": "Ed73399a7ee2f",
+      "start": "E18bcda19fde9"
+    },
+    {
+      "i": 3,
+      "person": "David_Lagerholm",
+      "hq": "Stockholm",
+      "company": "Storstockholms_Lokaltrafik",
+      "gold": "E65c97ab9e2a6",
+      "start": "Ea1d4e72a60be"
+    },
+    {
+      "i": 4,
+      "person": "Keith_Creel",
+      "hq": "Calgary",
+      "company": "Canadian_Pacific_Kansas_City",
+      "gold": "E247b2b202490",
+      "start": "E8d57a06a9bc9"
+    },
+    {
+      "i": 5,
+      "person": "John_K_Martin_Jr",
+      "hq": "CNN_Center",
+      "company": "Turner_Broadcasting_System",
+      "gold": "E3064f422c03b",
+      "start": "E04748686eb48"
+    },
+    {
+      "i": 6,
+      "person": "Hans_Vestberg",
+      "hq": "Philadelphia",
+      "company": "Verizon",
+      "gold": "E7d4b4f08318c",
+      "start": "E902067325290"
+    },
+    {
+      "i": 7,
+      "person": "William_N_Deramus_Jr",
+      "hq": "Kansas_City",
+      "company": "Kansas_City_Southern",
+      "gold": "E060d365f89af",
+      "start": "E7fbbbf4c7037"
+    }
+  ],
+  "arms": {
+    "DEMO_0": {
+      "n_demo": 0,
+      "n_quiz": 8,
+      "ids": [
+        "DI_DEMO0_0",
+        "DI_DEMO0_1",
+        "DI_DEMO0_2",
+        "DI_DEMO0_3",
+        "DI_DEMO0_4",
+        "DI_DEMO0_5",
+        "DI_DEMO0_6",
+        "DI_DEMO0_7"
+      ],
+      "item_paths": [
+        "runs/demo_induction/DEMO_0_ONLY/item_0/prompt.txt",
+        "runs/demo_induction/DEMO_0_ONLY/item_1/prompt.txt",
+        "runs/demo_induction/DEMO_0_ONLY/item_2/prompt.txt",
+        "runs/demo_induction/DEMO_0_ONLY/item_3/prompt.txt",
+        "runs/demo_induction/DEMO_0_ONLY/item_4/prompt.txt",
+        "runs/demo_induction/DEMO_0_ONLY/item_5/prompt.txt",
+        "runs/demo_induction/DEMO_0_ONLY/item_6/prompt.txt",
+        "runs/demo_induction/DEMO_0_ONLY/item_7/prompt.txt"
+      ],
+      "protocol": "one_quiz_per_file"
+    },
+    "DEMO_1": {
+      "n_demo": 1,
+      "n_quiz": 8,
+      "ids": [
+        "DI_DEMO1_0",
+        "DI_DEMO1_1",
+        "DI_DEMO1_2",
+        "DI_DEMO1_3",
+        "DI_DEMO1_4",
+        "DI_DEMO1_5",
+        "DI_DEMO1_6",
+        "DI_DEMO1_7"
+      ],
+      "item_paths": [
+        "runs/demo_induction/DEMO_1_ONLY/item_0/prompt.txt",
+        "runs/demo_induction/DEMO_1_ONLY/item_1/prompt.txt",
+        "runs/demo_induction/DEMO_1_ONLY/item_2/prompt.txt",
+        "runs/demo_induction/DEMO_1_ONLY/item_3/prompt.txt",
+        "runs/demo_induction/DEMO_1_ONLY/item_4/prompt.txt",
+        "runs/demo_induction/DEMO_1_ONLY/item_5/prompt.txt",
+        "runs/demo_induction/DEMO_1_ONLY/item_6/prompt.txt",
+        "runs/demo_induction/DEMO_1_ONLY/item_7/prompt.txt"
+      ],
+      "protocol": "one_quiz_per_file"
+    },
+    "DEMO_2": {
+      "n_demo": 2,
+      "n_quiz": 8,
+      "ids": [
+        "DI_DEMO2_0",
+        "DI_DEMO2_1",
+        "DI_DEMO2_2",
+        "DI_DEMO2_3",
+        "DI_DEMO2_4",
+        "DI_DEMO2_5",
+        "DI_DEMO2_6",
+        "DI_DEMO2_7"
+      ],
+      "item_paths": [
+        "runs/demo_induction/DEMO_2_ONLY/item_0/prompt.txt",
+        "runs/demo_induction/DEMO_2_ONLY/item_1/prompt.txt",
+        "runs/demo_induction/DEMO_2_ONLY/item_2/prompt.txt",
+        "runs/demo_induction/DEMO_2_ONLY/item_3/prompt.txt",
+        "runs/demo_induction/DEMO_2_ONLY/item_4/prompt.txt",
+        "runs/demo_induction/DEMO_2_ONLY/item_5/prompt.txt",
+        "runs/demo_induction/DEMO_2_ONLY/item_6/prompt.txt",
+        "runs/demo_induction/DEMO_2_ONLY/item_7/prompt.txt"
+      ],
+      "protocol": "one_quiz_per_file"
+    },
+    "DEMO_4": {
+      "n_demo": 4,
+      "n_quiz": 8,
+      "ids": [
+        "DI_DEMO4_0",
+        "DI_DEMO4_1",
+        "DI_DEMO4_2",
+        "DI_DEMO4_3",
+        "DI_DEMO4_4",
+        "DI_DEMO4_5",
+        "DI_DEMO4_6",
+        "DI_DEMO4_7"
+      ],
+      "item_paths": [
+        "runs/demo_induction/DEMO_4_ONLY/item_0/prompt.txt",
+        "runs/demo_induction/DEMO_4_ONLY/item_1/prompt.txt",
+        "runs/demo_induction/DEMO_4_ONLY/item_2/prompt.txt",
+        "runs/demo_induction/DEMO_4_ONLY/item_3/prompt.txt",
+        "runs/demo_induction/DEMO_4_ONLY/item_4/prompt.txt",
+        "runs/demo_induction/DEMO_4_ONLY/item_5/prompt.txt",
+        "runs/demo_induction/DEMO_4_ONLY/item_6/prompt.txt",
+        "runs/demo_induction/DEMO_4_ONLY/item_7/prompt.txt"
+      ],
+      "protocol": "one_quiz_per_file"
+    },
+    "DEMO_8": {
+      "n_demo": 8,
+      "n_quiz": 8,
+      "ids": [
+        "DI_DEMO8_0",
+        "DI_DEMO8_1",
+        "DI_DEMO8_2",
+        "DI_DEMO8_3",
+        "DI_DEMO8_4",
+        "DI_DEMO8_5",
+        "DI_DEMO8_6",
+        "DI_DEMO8_7"
+      ],
+      "item_paths": [
+        "runs/demo_induction/DEMO_8_ONLY/item_0/prompt.txt",
+        "runs/demo_induction/DEMO_8_ONLY/item_1/prompt.txt",
+        "runs/demo_induction/DEMO_8_ONLY/item_2/prompt.txt",
+        "runs/demo_induction/DEMO_8_ONLY/item_3/prompt.txt",
+        "runs/demo_induction/DEMO_8_ONLY/item_4/prompt.txt",
+        "runs/demo_induction/DEMO_8_ONLY/item_5/prompt.txt",
+        "runs/demo_induction/DEMO_8_ONLY/item_6/prompt.txt",
+        "runs/demo_induction/DEMO_8_ONLY/item_7/prompt.txt"
+      ],
+      "protocol": "one_quiz_per_file"
+    },
+    "LEGEND": {
+      "n_demo": 0,
+      "n_quiz": 8,
+      "ids": [
+        "DI_LEGEND_0",
+        "DI_LEGEND_1",
+        "DI_LEGEND_2",
+        "DI_LEGEND_3",
+        "DI_LEGEND_4",
+        "DI_LEGEND_5",
+        "DI_LEGEND_6",
+        "DI_LEGEND_7"
+      ],
+      "item_paths": [
+        "runs/demo_induction/LEGEND_ONLY/item_0/prompt.txt",
+        "runs/demo_induction/LEGEND_ONLY/item_1/prompt.txt",
+        "runs/demo_induction/LEGEND_ONLY/item_2/prompt.txt",
+        "runs/demo_induction/LEGEND_ONLY/item_3/prompt.txt",
+        "runs/demo_induction/LEGEND_ONLY/item_4/prompt.txt",
+        "runs/demo_induction/LEGEND_ONLY/item_5/prompt.txt",
+        "runs/demo_induction/LEGEND_ONLY/item_6/prompt.txt",
+        "runs/demo_induction/LEGEND_ONLY/item_7/prompt.txt"
+      ],
+      "protocol": "one_quiz_per_file"
+    },
+    "PATH": {
+      "n_demo": 0,
+      "n_quiz": 8,
+      "ids": [
+        "DI_PATH_0",
+        "DI_PATH_1",
+        "DI_PATH_2",
+        "DI_PATH_3",
+        "DI_PATH_4",
+        "DI_PATH_5",
+        "DI_PATH_6",
+        "DI_PATH_7"
+      ],
+      "item_paths": [
+        "runs/demo_induction/PATH_ONLY/item_0/prompt.txt",
+        "runs/demo_induction/PATH_ONLY/item_1/prompt.txt",
+        "runs/demo_induction/PATH_ONLY/item_2/prompt.txt",
+        "runs/demo_induction/PATH_ONLY/item_3/prompt.txt",
+        "runs/demo_induction/PATH_ONLY/item_4/prompt.txt",
+        "runs/demo_induction/PATH_ONLY/item_5/prompt.txt",
+        "runs/demo_induction/PATH_ONLY/item_6/prompt.txt",
+        "runs/demo_induction/PATH_ONLY/item_7/prompt.txt"
+      ],
+      "protocol": "one_quiz_per_file"
+    }
+  },
+  "protocol": "v2: one quiz per file; edge shuffle; no English two-hop on DEMO; demos disjoint from quiz; v1 batch+two-hop discarded as confound",
+  "v1_discard": {
+    "reason": "DEMO_0 8/8 via within-batch isomorphic induction + English two-hop leak",
+    "action": "do not cite v1 scores"
+  }
+}

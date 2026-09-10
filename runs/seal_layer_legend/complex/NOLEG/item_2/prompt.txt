@@ -1,0 +1,79 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_CX_NOLEG_2]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NOLEG family=COMPLEX use=ONCALL: bound START, HMAC Q. No schema. No PATH.
+
+##### ID SLL_CX_NOLEG_2 #####
+QUESTION (token-HMAC'd):
+E27d333033b6c E77289095a67b E95c013efd819 Eea145288666e E852158d56af7 Eecc3deb809e0 Ed60b47663dcd Eeb6c29675fba E417f90e20511?
+
+
+CONTEXT:
+TABLE hop1
+| E99e6a2988766 | Ecda9da6cff6a |
+| --- | --- |
+| Eeb6c29675fba | E86a1f3cc8340 |
+| Ec63b14da40fb | E0b31d3aa0f00 |
+| Ee4177087b0ad | Ee079ee8f70e1 |
+| E94dd0bf4639f | Ee8bd12f42b24 |
+
+TABLE hop2
+| E5c24d98c43ca | E2dfaa5f72e1a |
+| --- | --- |
+| E86a1f3cc8340 | Ed9ed303083ff |
+| E0b31d3aa0f00 | Ededd043e0712 |
+| Ee079ee8f70e1 | Eebd910245d54 |
+| Ee8bd12f42b24 | E73efa4f4ae21 |
+
+TABLE hop3
+| Efec456f196c2 | E33517cb5dc6b |
+| --- | --- |
+| Ed9ed303083ff | Efb2dfa388bc7 |
+| Ededd043e0712 | E7a159e6c07b0 |
+| Eebd910245d54 | Eb82e35902f26 |
+| E73efa4f4ae21 | E4104f185f5b6 |
+
+JSON
+{
+  "use_case": "Ed0bcf48443fd",
+  "graph": {
+    "Eeb6c29675fba": {
+      "Ecda9da6cff6a": "E86a1f3cc8340"
+    },
+    "E86a1f3cc8340": {
+      "E2dfaa5f72e1a": "Ed9ed303083ff"
+    },
+    "Ed9ed303083ff": {
+      "E33517cb5dc6b": "Efb2dfa388bc7"
+    },
+    "Ec63b14da40fb": {
+      "Ecda9da6cff6a": "E0b31d3aa0f00"
+    },
+    "E0b31d3aa0f00": {
+      "E2dfaa5f72e1a": "Ededd043e0712"
+    },
+    "Ededd043e0712": {
+      "E33517cb5dc6b": "E7a159e6c07b0"
+    },
+    "Ee4177087b0ad": {
+      "Ecda9da6cff6a": "Ee079ee8f70e1"
+    },
+    "Ee079ee8f70e1": {
+      "E2dfaa5f72e1a": "Eebd910245d54"
+    },
+    "Eebd910245d54": {
+      "E33517cb5dc6b": "Eb82e35902f26"
+    },
+    "E94dd0bf4639f": {
+      "Ecda9da6cff6a": "Ee8bd12f42b24"
+    },
+    "Ee8bd12f42b24": {
+      "E2dfaa5f72e1a": "E73efa4f4ae21"
+    },
+    "E73efa4f4ae21": {
+      "E33517cb5dc6b": "E4104f185f5b6"
+    }
+  },
+  "notes": "Ec5e96c971ad2 Eeb6c29675fba E558f379873be Edd8880f3e7ba E04b9013dca7e E53f54bb19e25 Eed79fcbd06b7 E37e7194b249e, Ec1a40ce7fdc3 Ed9a43a3a5233 Ef8c6242d6111 E12ebf30b7ee2 Eca182bc48130"
+}

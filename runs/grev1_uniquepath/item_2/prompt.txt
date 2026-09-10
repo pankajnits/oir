@@ -1,0 +1,78 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[GREV1_UP_2]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM UNIQUE_PATH: unique 3-hop from START. Entities and relations sealed. No PATH. No legend. One quiz.
+
+##### ID GREV1_UP_2 #####
+QUESTION:
+E285ced0d3e1e Ec21d18ecf802 E79918d6bb83c E77b938ef7411 Ec60a0b31e1de E44b971f7dc85 E1edb4e5711ce Ef8b9fddfb64b E8a3fb311f904? Ef8b9fddfb64b
+
+CONTEXT:
+TABLE hop1
+| E3c14be92a278 | E8592cc8a0e83 |
+| --- | --- |
+| Ef8b9fddfb64b | E6fef3e3c85de |
+| E23be85b7566a | E615a94dcbb0c |
+| Edd0fd2688847 | Ec04dc8658cd2 |
+| E4eb41b13e2bd | E410f022c4c32 |
+
+TABLE hop2
+| E56be056e0bc0 | E75a38e76db71 |
+| --- | --- |
+| E6fef3e3c85de | E7ef437b10c87 |
+| E615a94dcbb0c | Ef00d45cc3390 |
+| Ec04dc8658cd2 | E97d8aff6e3c9 |
+| E410f022c4c32 | E04f8c5787cea |
+
+TABLE hop3
+| Ea663fbfb818e | E2417670bbd17 |
+| --- | --- |
+| E7ef437b10c87 | E4b6fc339bce4 |
+| Ef00d45cc3390 | E7791c5f99401 |
+| E97d8aff6e3c9 | Ef38fb2fe9782 |
+| E04f8c5787cea | Eb94f6639e633 |
+
+JSON
+{
+  "use_case": "Ed465bcc739c9",
+  "graph": {
+    "Ef8b9fddfb64b": {
+      "E8592cc8a0e83": "E6fef3e3c85de"
+    },
+    "E6fef3e3c85de": {
+      "E75a38e76db71": "E7ef437b10c87"
+    },
+    "E7ef437b10c87": {
+      "E2417670bbd17": "E4b6fc339bce4"
+    },
+    "E23be85b7566a": {
+      "E8592cc8a0e83": "E615a94dcbb0c"
+    },
+    "E615a94dcbb0c": {
+      "E75a38e76db71": "Ef00d45cc3390"
+    },
+    "Ef00d45cc3390": {
+      "E2417670bbd17": "E7791c5f99401"
+    },
+    "Edd0fd2688847": {
+      "E8592cc8a0e83": "Ec04dc8658cd2"
+    },
+    "Ec04dc8658cd2": {
+      "E75a38e76db71": "E97d8aff6e3c9"
+    },
+    "E97d8aff6e3c9": {
+      "E2417670bbd17": "Ef38fb2fe9782"
+    },
+    "E4eb41b13e2bd": {
+      "E8592cc8a0e83": "E410f022c4c32"
+    },
+    "E410f022c4c32": {
+      "E75a38e76db71": "E04f8c5787cea"
+    },
+    "E04f8c5787cea": {
+      "E2417670bbd17": "Eb94f6639e633"
+    }
+  },
+  "notes": "Eea7fcc2e1d48 Ef8b9fddfb64b Ea7709b06db0b E3006194dc226 E02c587b8385c Eb7ab5b80d287 E72280ec050d8 Ebb9be4852016, E19119416c882 E89ebdd80bcaf E0f10b6d6a9b7 Ea6032ddfe552 E2bacfeabbf0f"
+}

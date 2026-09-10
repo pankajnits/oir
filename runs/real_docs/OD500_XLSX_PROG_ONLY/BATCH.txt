@@ -1,0 +1,313 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+Context was extracted from a real Excel workbook then sealed.
+
+Same encoding on question and context. No external world knowledge.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+REAL EXCEL [OD500_XLSX] sealed PATH_QUERY.
+
+
+##### ID XD_OD500_XLSX_PROG_0 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START E82421c7581fc
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E584796795838 | E13b6a6de4800 | Ed76640f90533
+Ee32e4561c828 | E03abaf9f3fb6 | Ed7d752dc214e
+E1f4a1ed4f550 | E6d36e03d5fec | E09035e642653
+E584796795838 | E39018828632c | Ea77bac7db55b
+E584796795838 | E0ecd6d42284b | E1f4a1ed4f550
+Ed7d752dc214e | E13b6a6de4800 | E30809dad4d6b
+Ea77bac7db55b | E6d36e03d5fec | Eff549e2ddbfd
+E82421c7581fc | E03abaf9f3fb6 | E584796795838
+
+
+##### ID XD_OD500_XLSX_PROG_1 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START E305e39ae0917
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E12a0643714cf | E39018828632c | E1ad132bf816e
+Eac900de89475 | E6d36e03d5fec | E7d3a8e085a27
+E305e39ae0917 | E03abaf9f3fb6 | E12a0643714cf
+E183e4e05077d | E03abaf9f3fb6 | E3031595230ba
+E1ad132bf816e | E6d36e03d5fec | E2642db154c1e
+E12a0643714cf | E13b6a6de4800 | E2007c220c4e3
+E12a0643714cf | E0ecd6d42284b | Eac900de89475
+E3031595230ba | E13b6a6de4800 | E30809dad4d6b
+
+
+##### ID XD_OD500_XLSX_PROG_2 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START E18c517a46203
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E742c27d577a7 | E6d36e03d5fec | E491fdb72b928
+Eb8690bfce3ed | E6d36e03d5fec | E068c9aaeaf8a
+E18c517a46203 | E03abaf9f3fb6 | Eec0df0645a91
+Eec0df0645a91 | E39018828632c | E742c27d577a7
+Eb72adc4e2a25 | E03abaf9f3fb6 | E12a0643714cf
+E12a0643714cf | E13b6a6de4800 | E2007c220c4e3
+Eec0df0645a91 | E13b6a6de4800 | E942ae08cbe95
+Eec0df0645a91 | E0ecd6d42284b | Eb8690bfce3ed
+
+
+##### ID XD_OD500_XLSX_PROG_3 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START E0f334460b68f
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Ea5150504d872 | E13b6a6de4800 | Ed5e57ea8fdca
+Ed7d752dc214e | E39018828632c | Ed51818c8722e
+Ee1da7fc1ac13 | E6d36e03d5fec | Ed9c4300a86db
+E515cf586c5f1 | E03abaf9f3fb6 | Ea5150504d872
+Ed7d752dc214e | E13b6a6de4800 | E30809dad4d6b
+E0f334460b68f | E03abaf9f3fb6 | Ed7d752dc214e
+Ed51818c8722e | E6d36e03d5fec | E2d020d901199
+Ed7d752dc214e | E0ecd6d42284b | Ee1da7fc1ac13
+
+
+##### ID XD_OD500_XLSX_PROG_4 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START E6af50ce6cbc9
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E5be36d866ed4 | E03abaf9f3fb6 | E96377944c31f
+E8af86018e4b2 | E6d36e03d5fec | Ecf981229c12d
+E4cdc208327ab | E6d36e03d5fec | E4f30b0114092
+E29cc20578a56 | E39018828632c | E4cdc208327ab
+E29cc20578a56 | E0ecd6d42284b | E8af86018e4b2
+E96377944c31f | E13b6a6de4800 | E942ae08cbe95
+E29cc20578a56 | E13b6a6de4800 | E40c940c08e90
+E6af50ce6cbc9 | E03abaf9f3fb6 | E29cc20578a56
+
+
+##### ID XD_OD500_XLSX_PROG_5 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ee4dab811a494
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Ef7fd7ed9f657 | E13b6a6de4800 | E132f5f9e5102
+E8043bdb02c91 | E6d36e03d5fec | Ef92dbd6487f9
+Ef7fd7ed9f657 | E0ecd6d42284b | E8043bdb02c91
+Eae1aaf16780b | E13b6a6de4800 | Ee4b207f8cc6e
+E9eea678cb1b9 | E6d36e03d5fec | E17b316276806
+Ee4dab811a494 | E03abaf9f3fb6 | Ef7fd7ed9f657
+Eccd97b2db3a9 | E03abaf9f3fb6 | Eae1aaf16780b
+Ef7fd7ed9f657 | E39018828632c | E9eea678cb1b9
+
+
+##### ID XD_OD500_XLSX_PROG_6 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ef7a78035c9a7
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E96377944c31f | E13b6a6de4800 | E942ae08cbe95
+Eec0df0645a91 | E13b6a6de4800 | E942ae08cbe95
+E96377944c31f | E39018828632c | E17642aa4ea64
+Ef7a78035c9a7 | E03abaf9f3fb6 | E96377944c31f
+E96377944c31f | E0ecd6d42284b | Eeaf789dcd1b7
+E17642aa4ea64 | E6d36e03d5fec | Ed56eb19287aa
+E107db91edbe7 | E03abaf9f3fb6 | Eec0df0645a91
+Eeaf789dcd1b7 | E6d36e03d5fec | E36e7ef681883
+
+
+##### ID XD_OD500_XLSX_PROG_7 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ee2862314f765
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E1d4add9a7d40 | E13b6a6de4800 | Ee665d118267a
+Ee2862314f765 | E03abaf9f3fb6 | E1d4add9a7d40
+E1bf8a80c3099 | E6d36e03d5fec | E17a5b21ad093
+Ef7fd7ed9f657 | E13b6a6de4800 | E132f5f9e5102
+E34efd2884bea | E03abaf9f3fb6 | Ef7fd7ed9f657
+E1d4add9a7d40 | E39018828632c | E1bf8a80c3099
+E1d4add9a7d40 | E0ecd6d42284b | E072bdb9f8b9d
+E072bdb9f8b9d | E6d36e03d5fec | Ec703809977dd
+
+
+##### ID XD_OD500_XLSX_PROG_8 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ef7bc6eb2eaac
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Ee32e4561c828 | E03abaf9f3fb6 | Ed7d752dc214e
+E98ce5065fd68 | E13b6a6de4800 | E3b80422e50d8
+E98ce5065fd68 | E0ecd6d42284b | E47338e7c376a
+Ed7d752dc214e | E13b6a6de4800 | E30809dad4d6b
+Ed99d1b5d4e83 | E6d36e03d5fec | E8f0dea94073e
+E98ce5065fd68 | E39018828632c | Ed99d1b5d4e83
+E47338e7c376a | E6d36e03d5fec | Ebf06773cb6d2
+Ef7bc6eb2eaac | E03abaf9f3fb6 | E98ce5065fd68
+
+
+##### ID XD_OD500_XLSX_PROG_9 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ebf78ff8fe03f
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Ebf78ff8fe03f | E03abaf9f3fb6 | E2ada5a3c1636
+E2ada5a3c1636 | E13b6a6de4800 | Edb6e25b7462c
+E98ce5065fd68 | E13b6a6de4800 | E3b80422e50d8
+Eaf8690cccf2c | E6d36e03d5fec | E4672451916ee
+E5a0c66c6748b | E03abaf9f3fb6 | E98ce5065fd68
+E2ada5a3c1636 | E0ecd6d42284b | E5d66d7b0ca60
+E5d66d7b0ca60 | E6d36e03d5fec | E5ac3f66f4b89
+E2ada5a3c1636 | E39018828632c | Eaf8690cccf2c
+
+
+##### ID XD_OD500_XLSX_PROG_10 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START E5a219826e415
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E0654341d7b20 | E0ecd6d42284b | E11687f210ccc
+E5a219826e415 | E03abaf9f3fb6 | E0654341d7b20
+E8d5fb85f1e8c | E03abaf9f3fb6 | E48f8abefba93
+E48f8abefba93 | E13b6a6de4800 | E333013965c98
+E11687f210ccc | E6d36e03d5fec | Ea878af678cfe
+E0654341d7b20 | E13b6a6de4800 | E61d7a5bdaae9
+E0654341d7b20 | E39018828632c | E1c17bf0e49bf
+E1c17bf0e49bf | E6d36e03d5fec | E44b4523efa73
+
+
+##### ID XD_OD500_XLSX_PROG_11 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ed1b208e33ee3
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E5a0c66c6748b | E03abaf9f3fb6 | E98ce5065fd68
+E57b0bda9dd30 | E6d36e03d5fec | E0cc38c3a72ea
+Ea5150504d872 | E13b6a6de4800 | Ed5e57ea8fdca
+E98ce5065fd68 | E13b6a6de4800 | E3b80422e50d8
+Ea5150504d872 | E0ecd6d42284b | E57b0bda9dd30
+Ed4505ea1f703 | E6d36e03d5fec | E0d736ac07618
+Ea5150504d872 | E39018828632c | Ed4505ea1f703
+Ed1b208e33ee3 | E03abaf9f3fb6 | Ea5150504d872
+
+
+##### ID XD_OD500_XLSX_PROG_12 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START E88508153d1ab
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E515cf586c5f1 | E03abaf9f3fb6 | Ea5150504d872
+E48f8abefba93 | E39018828632c | Ec0be535d184d
+E48f8abefba93 | E0ecd6d42284b | E273b87c0f836
+Ea5150504d872 | E13b6a6de4800 | Ed5e57ea8fdca
+E273b87c0f836 | E6d36e03d5fec | E91b75058262f
+Ec0be535d184d | E6d36e03d5fec | Efd92f88d91ae
+E48f8abefba93 | E13b6a6de4800 | E333013965c98
+E88508153d1ab | E03abaf9f3fb6 | E48f8abefba93
+
+
+##### ID XD_OD500_XLSX_PROG_13 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ea515e909c65b
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E2ebf96427100 | E6d36e03d5fec | E3b0dc344f0c2
+E7bc09758e6a3 | E6d36e03d5fec | Ee91c5f631a53
+Ea515e909c65b | E03abaf9f3fb6 | Ea761ef87969f
+Ea761ef87969f | E13b6a6de4800 | E6cfefa2db8ee
+Ef7fd7ed9f657 | E13b6a6de4800 | E132f5f9e5102
+E34efd2884bea | E03abaf9f3fb6 | Ef7fd7ed9f657
+Ea761ef87969f | E0ecd6d42284b | E2ebf96427100
+Ea761ef87969f | E39018828632c | E7bc09758e6a3
+
+
+##### ID XD_OD500_XLSX_PROG_14 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ec3ee79a739c4
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E3031595230ba | E39018828632c | Eae0c348bb89e
+E0654341d7b20 | E13b6a6de4800 | E61d7a5bdaae9
+Ec3ee79a739c4 | E03abaf9f3fb6 | E3031595230ba
+E3031595230ba | E13b6a6de4800 | E30809dad4d6b
+E2319019d0df8 | E6d36e03d5fec | Ee83df474c7f8
+Eae0c348bb89e | E6d36e03d5fec | E60583c58215f
+E3031595230ba | E0ecd6d42284b | E2319019d0df8
+E07527f0932c5 | E03abaf9f3fb6 | E0654341d7b20
+
+
+##### ID XD_OD500_XLSX_PROG_15 #####
+SOURCE: opendata500_staff.xlsx
+PATH_QUERY
+START Ef2e54e36aa91
+R1 E03abaf9f3fb6
+R2 E13b6a6de4800
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E229432cf03c5 | E6d36e03d5fec | E3940a2ae04f9
+Eae1aaf16780b | E0ecd6d42284b | E229432cf03c5
+E0654341d7b20 | E13b6a6de4800 | E61d7a5bdaae9
+Eae1aaf16780b | E39018828632c | E37555aba142e
+E07527f0932c5 | E03abaf9f3fb6 | E0654341d7b20
+Ef2e54e36aa91 | E03abaf9f3fb6 | Eae1aaf16780b
+Eae1aaf16780b | E13b6a6de4800 | Ee4b207f8cc6e
+E37555aba142e | E6d36e03d5fec | Ec074c33aeffb

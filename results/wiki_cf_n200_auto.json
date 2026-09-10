@@ -1,0 +1,1223 @@
+{
+  "model": "auto",
+  "n": 200,
+  "summary": {
+    "score": "200/200",
+    "wiki_leak": "0/200",
+    "missing": 0,
+    "wilson": {
+      "k": 200,
+      "n": 200,
+      "acc": 1.0,
+      "ci95": [
+        0.9812,
+        1.0
+      ],
+      "display": "200/200 [0.98,1.00]"
+    }
+  },
+  "falsifier": "PLAIN_NL == original Wikipedia answer → parametric cheat",
+  "nonclaim": "Not G-Rev1. English rels readable. Scale of CF PLAIN_NL.",
+  "rows": [
+    {
+      "id": "CF200_PLAINNL_0",
+      "pred": "CF_TAIL_0_Illinois",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_1",
+      "pred": "CF_TAIL_1_Mediterranea",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_2",
+      "pred": "CF_TAIL_2_18July1793",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_3",
+      "pred": "CF_TAIL_3_American",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_4",
+      "pred": "CF_TAIL_4_Irish",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_5",
+      "pred": "CF_TAIL_5_Hagonoy",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_6",
+      "pred": "CF_TAIL_6_CanadianFilm",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_7",
+      "pred": "CF_TAIL_7_30March1774",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_8",
+      "pred": "CF_TAIL_8_Paris",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_9",
+      "pred": "CF_TAIL_9_25March1957",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_10",
+      "pred": "CF_TAIL_10_PreLachaiseC",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_11",
+      "pred": "CF_TAIL_11_Hollywood",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_12",
+      "pred": "CF_TAIL_12_Panam",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_13",
+      "pred": "CF_TAIL_13_Liberian",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_14",
+      "pred": "CF_TAIL_14_Montreal",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_15",
+      "pred": "CF_TAIL_15_SanremoMusic",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_16",
+      "pred": "CF_TAIL_16_Toronto",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_17",
+      "pred": "CF_TAIL_17_California",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_18",
+      "pred": "CF_TAIL_18_Gowran",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_19",
+      "pred": "CF_TAIL_19_Prenzlau",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_20",
+      "pred": "CF_TAIL_20_18October169",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_21",
+      "pred": "CF_TAIL_21_Peninsula",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_22",
+      "pred": "CF_TAIL_22_NewYork",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_23",
+      "pred": "CF_TAIL_23_NewportWales",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_24",
+      "pred": "CF_TAIL_24_1027",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_25",
+      "pred": "CF_TAIL_25_Madrid",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_26",
+      "pred": "CF_TAIL_26_Virginia",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_27",
+      "pred": "CF_TAIL_27_Constantinop",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_28",
+      "pred": "CF_TAIL_28_SanDiegoStat",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_29",
+      "pred": "CF_TAIL_29_Norway",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_30",
+      "pred": "CF_TAIL_30_37",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_31",
+      "pred": "CF_TAIL_31_PalmSpringsC",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_32",
+      "pred": "CF_TAIL_32_SaintPaulMin",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_33",
+      "pred": "CF_TAIL_33_Kurdish",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_34",
+      "pred": "CF_TAIL_34_ChristChurch",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_35",
+      "pred": "CF_TAIL_35_Romania",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_36",
+      "pred": "CF_TAIL_36_28July1750",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_37",
+      "pred": "CF_TAIL_37_France",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_38",
+      "pred": "CF_TAIL_38_HamburgGerma",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_39",
+      "pred": "CF_TAIL_39_Alzheimer",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_40",
+      "pred": "CF_TAIL_40_1October1895",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_41",
+      "pred": "CF_TAIL_41_Constantinop",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_42",
+      "pred": "CF_TAIL_42_MemberoftheO",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_43",
+      "pred": "CF_TAIL_43_Cusco",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_44",
+      "pred": "CF_TAIL_44_BakersfieldC",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_45",
+      "pred": "CF_TAIL_45_ChurchersCol",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_46",
+      "pred": "CF_TAIL_46_French",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_47",
+      "pred": "CF_TAIL_47_Hollywood",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_48",
+      "pred": "CF_TAIL_48_Transylvania",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_49",
+      "pred": "CF_TAIL_49_Sedan",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_50",
+      "pred": "CF_TAIL_50_ConcordiaUni",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_51",
+      "pred": "CF_TAIL_51_KingsburyLon",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_52",
+      "pred": "CF_TAIL_52_Lucca",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_53",
+      "pred": "CF_TAIL_53_Swellendam",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_54",
+      "pred": "CF_TAIL_54_FrancisWilli",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_55",
+      "pred": "CF_TAIL_55_SanDiego",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_56",
+      "pred": "CF_TAIL_56_London",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_57",
+      "pred": "CF_TAIL_57_MongolEmpire",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_58",
+      "pred": "CF_TAIL_58_Kastellaun",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_59",
+      "pred": "CF_TAIL_59_AliaBhatt",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_60",
+      "pred": "CF_TAIL_60_AlenaMihulov",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_61",
+      "pred": "CF_TAIL_61_GreatPyramid",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_62",
+      "pred": "CF_TAIL_62_AlenaMihulov",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_63",
+      "pred": "CF_TAIL_63_Chattanooga",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_64",
+      "pred": "CF_TAIL_64_Ecuadorian",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_65",
+      "pred": "CF_TAIL_65_Australian",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_66",
+      "pred": "CF_TAIL_66_September291",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_67",
+      "pred": "CF_TAIL_67_Norwegian",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_68",
+      "pred": "CF_TAIL_68_AlpineTexas",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_69",
+      "pred": "CF_TAIL_69_Institutdtud",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_70",
+      "pred": "CF_TAIL_70_Fairfax",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_71",
+      "pred": "CF_TAIL_71_UnitedKingdo",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_72",
+      "pred": "CF_TAIL_72_Nepal",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_73",
+      "pred": "CF_TAIL_73_Weende",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_74",
+      "pred": "CF_TAIL_74_London",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_75",
+      "pred": "CF_TAIL_75_American",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_76",
+      "pred": "CF_TAIL_76_KhamagMongol",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_77",
+      "pred": "CF_TAIL_77_PiltonSomers",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_78",
+      "pred": "CF_TAIL_78_America",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_79",
+      "pred": "CF_TAIL_79_UnitedStates",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_80",
+      "pred": "CF_TAIL_80_Toulouse",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_81",
+      "pred": "CF_TAIL_81_FrankLiddell",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_82",
+      "pred": "CF_TAIL_82_HughGibb",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_83",
+      "pred": "CF_TAIL_83_NewYork",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_84",
+      "pred": "CF_TAIL_84_BattleofUhud",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_85",
+      "pred": "CF_TAIL_85_PolishLithua",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_86",
+      "pred": "CF_TAIL_86_Roman",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_87",
+      "pred": "CF_TAIL_87_KarinMolande",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_88",
+      "pred": "CF_TAIL_88_MearaStiller",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_89",
+      "pred": "CF_TAIL_89_date",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_90",
+      "pred": "CF_TAIL_90_NationalFilm",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_91",
+      "pred": "CF_TAIL_91_drivebyshoot",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_92",
+      "pred": "CF_TAIL_92_21February19",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_93",
+      "pred": "CF_TAIL_93_Antioch",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_94",
+      "pred": "CF_TAIL_94_Shanghai",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_95",
+      "pred": "CF_TAIL_95_Munich",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_96",
+      "pred": "CF_TAIL_96_Macei",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_97",
+      "pred": "CF_TAIL_97_Swedish",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_98",
+      "pred": "CF_TAIL_98_Akhetaten",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_99",
+      "pred": "CF_TAIL_99_Tehran",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_100",
+      "pred": "CF_TAIL_100_Heidelberg",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_101",
+      "pred": "CF_TAIL_101_CalcuttaBota",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_102",
+      "pred": "CF_TAIL_102_Erode",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_103",
+      "pred": "CF_TAIL_103_RedBank",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_104",
+      "pred": "CF_TAIL_104_Dillenburg",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_105",
+      "pred": "CF_TAIL_105_8June1746",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_106",
+      "pred": "CF_TAIL_106_Tamil",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_107",
+      "pred": "CF_TAIL_107_Kandahar",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_108",
+      "pred": "CF_TAIL_108_CoronelPring",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_109",
+      "pred": "CF_TAIL_109_Bronx",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_110",
+      "pred": "CF_TAIL_110_MaureenOSull",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_111",
+      "pred": "CF_TAIL_111_America",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_112",
+      "pred": "CF_TAIL_112_NewYork",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_113",
+      "pred": "CF_TAIL_113_PrincesPalac",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_114",
+      "pred": "CF_TAIL_114_House",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_115",
+      "pred": "CF_TAIL_115_PolishLithua",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_116",
+      "pred": "CF_TAIL_116_Gujarati",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_117",
+      "pred": "CF_TAIL_117_TrippCountyS",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_118",
+      "pred": "CF_TAIL_118_23October137",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_119",
+      "pred": "CF_TAIL_119_stroke",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_120",
+      "pred": "CF_TAIL_120_GreaterCinci",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_121",
+      "pred": "CF_TAIL_121_BuenosAires",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_122",
+      "pred": "CF_TAIL_122_OklahomaCity",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_123",
+      "pred": "CF_TAIL_123_Pesaro",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_124",
+      "pred": "CF_TAIL_124_1767",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_125",
+      "pred": "CF_TAIL_125_British",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_126",
+      "pred": "CF_TAIL_126_American",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_127",
+      "pred": "CF_TAIL_127_UnitedStates",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_128",
+      "pred": "CF_TAIL_128_Brooklyn",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_129",
+      "pred": "CF_TAIL_129_OnaMunson",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_130",
+      "pred": "CF_TAIL_130_American",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_131",
+      "pred": "CF_TAIL_131_NewYork",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_132",
+      "pred": "CF_TAIL_132_UnitedKingdo",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_133",
+      "pred": "CF_TAIL_133_Norwegian",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_134",
+      "pred": "CF_TAIL_134_Mockfjrd",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_135",
+      "pred": "CF_TAIL_135_Amsterdam",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_136",
+      "pred": "CF_TAIL_136_Swiss",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_137",
+      "pred": "CF_TAIL_137_HamburgGerma",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_138",
+      "pred": "CF_TAIL_138_HamburgGerma",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_139",
+      "pred": "CF_TAIL_139_Moscow",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_140",
+      "pred": "CF_TAIL_140_Hollywood",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_141",
+      "pred": "CF_TAIL_141_Panam",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_142",
+      "pred": "CF_TAIL_142_Irish",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_143",
+      "pred": "CF_TAIL_143_Cahiersducin",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_144",
+      "pred": "CF_TAIL_144_Irish",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_145",
+      "pred": "CF_TAIL_145_Cahiersducin",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_146",
+      "pred": "CF_TAIL_146_Rome",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_147",
+      "pred": "CF_TAIL_147_Hamburg",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_148",
+      "pred": "CF_TAIL_148_GalvestonTex",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_149",
+      "pred": "CF_TAIL_149_YuenSiutien",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_150",
+      "pred": "CF_TAIL_150_London",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_151",
+      "pred": "CF_TAIL_151_English",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_152",
+      "pred": "CF_TAIL_152_Poland",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_153",
+      "pred": "CF_TAIL_153_NashvilleTen",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_154",
+      "pred": "CF_TAIL_154_Metz",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_155",
+      "pred": "CF_TAIL_155_KV35",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_156",
+      "pred": "CF_TAIL_156_US",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_157",
+      "pred": "CF_TAIL_157_Hollywood",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_158",
+      "pred": "CF_TAIL_158_NgwaneV",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_159",
+      "pred": "CF_TAIL_159_NationalFilm",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_160",
+      "pred": "CF_TAIL_160_Somali",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_161",
+      "pred": "CF_TAIL_161_Barcelona",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_162",
+      "pred": "CF_TAIL_162_cancer",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_163",
+      "pred": "CF_TAIL_163_Budapest",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_164",
+      "pred": "CF_TAIL_164_Tiflis",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_165",
+      "pred": "CF_TAIL_165_Szprotawa",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_166",
+      "pred": "CF_TAIL_166_SafavidEmpir",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_167",
+      "pred": "CF_TAIL_167_Carcassonne",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_168",
+      "pred": "CF_TAIL_168_26February17",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_169",
+      "pred": "CF_TAIL_169_Amman",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_170",
+      "pred": "CF_TAIL_170_Rome",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_171",
+      "pred": "CF_TAIL_171_British",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_172",
+      "pred": "CF_TAIL_172_MaureenOSull",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_173",
+      "pred": "CF_TAIL_173_BentleyColle",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_174",
+      "pred": "CF_TAIL_174_ChrisPrez",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_175",
+      "pred": "CF_TAIL_175_Greek",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_176",
+      "pred": "CF_TAIL_176_Brno",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_177",
+      "pred": "CF_TAIL_177_29August1619",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_178",
+      "pred": "CF_TAIL_178_Stockholm",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_179",
+      "pred": "CF_TAIL_179_Sweden",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_180",
+      "pred": "CF_TAIL_180_ByzantineEmp",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_181",
+      "pred": "CF_TAIL_181_30June1670",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_182",
+      "pred": "CF_TAIL_182_London",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_183",
+      "pred": "CF_TAIL_183_7August1621",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_184",
+      "pred": "CF_TAIL_184_Washington",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_185",
+      "pred": "CF_TAIL_185_1146",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_186",
+      "pred": "CF_TAIL_186_Soroca",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_187",
+      "pred": "CF_TAIL_187_Lezh",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_188",
+      "pred": "CF_TAIL_188_Afghanistan",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_189",
+      "pred": "CF_TAIL_189_NewYork",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_190",
+      "pred": "CF_TAIL_190_Cahiersducin",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_191",
+      "pred": "CF_TAIL_191_29August1700",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_192",
+      "pred": "CF_TAIL_192_TugMcGraw",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_193",
+      "pred": "CF_TAIL_193_TrinityColle",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_194",
+      "pred": "CF_TAIL_194_September101",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_195",
+      "pred": "CF_TAIL_195_6August1272",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_196",
+      "pred": "CF_TAIL_196_SanAntonio",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_197",
+      "pred": "CF_TAIL_197_LawrenceScho",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_198",
+      "pred": "CF_TAIL_198_Newark",
+      "ok": true,
+      "wiki_leak": false
+    },
+    {
+      "id": "CF200_PLAINNL_199",
+      "pred": "CF_TAIL_199_9June68",
+      "ok": true,
+      "wiki_leak": false
+    }
+  ]
+}

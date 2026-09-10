@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_17]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_17 #####
+QUESTION:
+Who directed a movie that John Goodman starred in?
+
+PATH_QUERY
+START John Goodman
+R1 Ec32c759c7b62
+R2 E28f29e39c733
+Execute path; return final tail only.
+
+CONTEXT:
+John Goodman | Ec32c759c7b62 | Matinee
+Matinee | E28f29e39c733 | Joe Dante
+Matinee | Ee06e05ccd8c0 | Jerico

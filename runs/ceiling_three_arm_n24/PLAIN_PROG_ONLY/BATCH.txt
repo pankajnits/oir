@@ -1,0 +1,412 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL24_PLAIN_0 #####
+PATH_QUERY
+START Raymond_Watson
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Raymond_Watson | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company
+
+##### ID CEIL24_PLAIN_1 #####
+PATH_QUERY
+START Leonor_Fresnel_Loree
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Leonor_Fresnel_Loree | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEIL24_PLAIN_2 #####
+PATH_QUERY
+START Mike_Sievert
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mike_Sievert | works_at | TMobile_US
+TMobile_US | headquartered_in | Bellevue
+DecoyCo_TMobile_US | headquartered_in | DecoyHQ_Bellevue
+TMobile_US | owned_by | Hold_TMobile_US
+Hold_TMobile_US | meta_of | TMobile_US
+TMobile_US | partner_of | Partner_TMobile_US
+Partner_TMobile_US | meta_of | TMobile_US
+Decoy_DecoyCo_TMobile_US | works_at | DecoyCo_TMobile_US
+
+##### ID CEIL24_PLAIN_3 #####
+PATH_QUERY
+START Giancarlo_Nicosanti_Monterastelli
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Giancarlo_Nicosanti_Monterastelli | works_at | Unieuro
+Unieuro | headquartered_in | Forl
+DecoyCo_Unieuro | headquartered_in | DecoyHQ_Forl
+Unieuro | owned_by | Hold_Unieuro
+Hold_Unieuro | meta_of | Unieuro
+Unieuro | partner_of | Partner_Unieuro
+Partner_Unieuro | meta_of | Unieuro
+Decoy_DecoyCo_Unieuro | works_at | DecoyCo_Unieuro
+
+##### ID CEIL24_PLAIN_4 #####
+PATH_QUERY
+START Landon_H_Rowland
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Landon_H_Rowland | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEIL24_PLAIN_5 #####
+PATH_QUERY
+START Robert_E_Sanchez
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Robert_E_Sanchez | works_at | Ryder
+Ryder | headquartered_in | Coral_Gables
+DecoyCo_Ryder | headquartered_in | DecoyHQ_Coral_Gables
+Ryder | owned_by | Hold_Ryder
+Hold_Ryder | meta_of | Ryder
+Ryder | partner_of | Partner_Ryder
+Partner_Ryder | meta_of | Ryder
+Decoy_DecoyCo_Ryder | works_at | DecoyCo_Ryder
+
+##### ID CEIL24_PLAIN_6 #####
+PATH_QUERY
+START Beata_KozowskaChya
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Beata_KozowskaChya | works_at | Powszechny_Zakad_Ubezpiecze
+Powszechny_Zakad_Ubezpiecze | headquartered_in | Warsaw
+DecoyCo_Powszechny_Zakad_Ubezpiecze | headquartered_in | DecoyHQ_Warsaw
+Powszechny_Zakad_Ubezpiecze | owned_by | Hold_Powszechny_Zakad_Ubezpiecze
+Hold_Powszechny_Zakad_Ubezpiecze | meta_of | Powszechny_Zakad_Ubezpiecze
+Powszechny_Zakad_Ubezpiecze | partner_of | Partner_Powszechny_Zakad_Ubezpiecze
+Partner_Powszechny_Zakad_Ubezpiecze | meta_of | Powszechny_Zakad_Ubezpiecze
+Decoy_DecoyCo_Powszechny_Zakad_Ubezpiecze | works_at | DecoyCo_Powszechny_Zakad_Ubezpiecze
+
+##### ID CEIL24_PLAIN_7 #####
+PATH_QUERY
+START Keith_Creel
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Keith_Creel | works_at | Canadian_Pacific_Kansas_City
+Canadian_Pacific_Kansas_City | headquartered_in | Calgary
+DecoyCo_Canadian_Pacific_Kansas_City | headquartered_in | DecoyHQ_Calgary
+Canadian_Pacific_Kansas_City | owned_by | Hold_Canadian_Pacific_Kansas_City
+Hold_Canadian_Pacific_Kansas_City | meta_of | Canadian_Pacific_Kansas_City
+Canadian_Pacific_Kansas_City | partner_of | Partner_Canadian_Pacific_Kansas_City
+Partner_Canadian_Pacific_Kansas_City | meta_of | Canadian_Pacific_Kansas_City
+Decoy_DecoyCo_Canadian_Pacific_Kansas_City | works_at | DecoyCo_Canadian_Pacific_Kansas_City
+
+##### ID CEIL24_PLAIN_8 #####
+PATH_QUERY
+START Roy_O_Disney
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Roy_O_Disney | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company
+
+##### ID CEIL24_PLAIN_9 #####
+PATH_QUERY
+START Manuel_Bartlett_Daz
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Manuel_Bartlett_Daz | works_at | Comisin_Federal_de_Electricidad
+Comisin_Federal_de_Electricidad | headquartered_in | Mexico_City
+DecoyCo_Comisin_Federal_de_Electricidad | headquartered_in | DecoyHQ_Mexico_City
+Comisin_Federal_de_Electricidad | owned_by | Hold_Comisin_Federal_de_Electricidad
+Hold_Comisin_Federal_de_Electricidad | meta_of | Comisin_Federal_de_Electricidad
+Comisin_Federal_de_Electricidad | partner_of | Partner_Comisin_Federal_de_Electricidad
+Partner_Comisin_Federal_de_Electricidad | meta_of | Comisin_Federal_de_Electricidad
+Decoy_DecoyCo_Comisin_Federal_de_Electricidad | works_at | DecoyCo_Comisin_Federal_de_Electricidad
+
+##### ID CEIL24_PLAIN_10 #####
+PATH_QUERY
+START David_Zaslav
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+David_Zaslav | works_at | Warner_Bros_Discovery
+Warner_Bros_Discovery | headquartered_in | New_York_City
+DecoyCo_Warner_Bros_Discovery | headquartered_in | DecoyHQ_New_York_City
+Warner_Bros_Discovery | owned_by | Hold_Warner_Bros_Discovery
+Hold_Warner_Bros_Discovery | meta_of | Warner_Bros_Discovery
+Warner_Bros_Discovery | partner_of | Partner_Warner_Bros_Discovery
+Partner_Warner_Bros_Discovery | meta_of | Warner_Bros_Discovery
+Decoy_DecoyCo_Warner_Bros_Discovery | works_at | DecoyCo_Warner_Bros_Discovery
+
+##### ID CEIL24_PLAIN_11 #####
+PATH_QUERY
+START Roberto_Rinaudo
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Roberto_Rinaudo | works_at | Q847141
+Q847141 | headquartered_in | Paris
+DecoyCo_Q847141 | headquartered_in | DecoyHQ_Paris
+Q847141 | owned_by | Hold_Q847141
+Hold_Q847141 | meta_of | Q847141
+Q847141 | partner_of | Partner_Q847141
+Partner_Q847141 | meta_of | Q847141
+Decoy_DecoyCo_Q847141 | works_at | DecoyCo_Q847141
+
+##### ID CEIL24_PLAIN_12 #####
+PATH_QUERY
+START Thomas_S_Carter
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Thomas_S_Carter | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEIL24_PLAIN_13 #####
+PATH_QUERY
+START Moshe_Zana
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Moshe_Zana | works_at | Israel_Railways
+Israel_Railways | headquartered_in | Lod_Railway_Station
+DecoyCo_Israel_Railways | headquartered_in | DecoyHQ_Lod_Railway_Station
+Israel_Railways | owned_by | Hold_Israel_Railways
+Hold_Israel_Railways | meta_of | Israel_Railways
+Israel_Railways | partner_of | Partner_Israel_Railways
+Partner_Israel_Railways | meta_of | Israel_Railways
+Decoy_DecoyCo_Israel_Railways | works_at | DecoyCo_Israel_Railways
+
+##### ID CEIL24_PLAIN_14 #####
+PATH_QUERY
+START George_W_Edwards
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+George_W_Edwards | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEIL24_PLAIN_15 #####
+PATH_QUERY
+START Pedro_Azagra_Blzquez
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Pedro_Azagra_Blzquez | works_at | Iberdrola
+Iberdrola | headquartered_in | Bilbao
+DecoyCo_Iberdrola | headquartered_in | DecoyHQ_Bilbao
+Iberdrola | owned_by | Hold_Iberdrola
+Hold_Iberdrola | meta_of | Iberdrola
+Iberdrola | partner_of | Partner_Iberdrola
+Partner_Iberdrola | meta_of | Iberdrola
+Decoy_DecoyCo_Iberdrola | works_at | DecoyCo_Iberdrola
+
+##### ID CEIL24_PLAIN_16 #####
+PATH_QUERY
+START Charles_E_Johnston
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Charles_E_Johnston | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEIL24_PLAIN_17 #####
+PATH_QUERY
+START Steve_Weed
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Steve_Weed | works_at | WaveDivision_Holdings_LLC
+WaveDivision_Holdings_LLC | headquartered_in | New_Jersey
+DecoyCo_WaveDivision_Holdings_LLC | headquartered_in | DecoyHQ_New_Jersey
+WaveDivision_Holdings_LLC | owned_by | Hold_WaveDivision_Holdings_LLC
+Hold_WaveDivision_Holdings_LLC | meta_of | WaveDivision_Holdings_LLC
+WaveDivision_Holdings_LLC | partner_of | Partner_WaveDivision_Holdings_LLC
+Partner_WaveDivision_Holdings_LLC | meta_of | WaveDivision_Holdings_LLC
+Decoy_DecoyCo_WaveDivision_Holdings_LLC | works_at | DecoyCo_WaveDivision_Holdings_LLC
+
+##### ID CEIL24_PLAIN_18 #####
+PATH_QUERY
+START Zaydenn_Harrington
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Zaydenn_Harrington | works_at | Carziqo
+Carziqo | headquartered_in | London
+DecoyCo_Carziqo | headquartered_in | DecoyHQ_London
+Carziqo | owned_by | Hold_Carziqo
+Hold_Carziqo | meta_of | Carziqo
+Carziqo | partner_of | Partner_Carziqo
+Partner_Carziqo | meta_of | Carziqo
+Decoy_DecoyCo_Carziqo | works_at | DecoyCo_Carziqo
+
+##### ID CEIL24_PLAIN_19 #####
+PATH_QUERY
+START Michal_Krapinec
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Michal_Krapinec | works_at | esk_drhy
+esk_drhy | headquartered_in | Prague
+DecoyCo_esk_drhy | headquartered_in | DecoyHQ_Prague
+esk_drhy | owned_by | Hold_esk_drhy
+Hold_esk_drhy | meta_of | esk_drhy
+esk_drhy | partner_of | Partner_esk_drhy
+Partner_esk_drhy | meta_of | esk_drhy
+Decoy_DecoyCo_esk_drhy | works_at | DecoyCo_esk_drhy
+
+##### ID CEIL24_PLAIN_20 #####
+PATH_QUERY
+START Frank_Love
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Frank_Love | works_at | Loves_Travel_Stops__Country_Stores
+Loves_Travel_Stops__Country_Stores | headquartered_in | Oklahoma_City
+DecoyCo_Loves_Travel_Stops__Country_Stores | headquartered_in | DecoyHQ_Oklahoma_City
+Loves_Travel_Stops__Country_Stores | owned_by | Hold_Loves_Travel_Stops__Country_Stores
+Hold_Loves_Travel_Stops__Country_Stores | meta_of | Loves_Travel_Stops__Country_Stores
+Loves_Travel_Stops__Country_Stores | partner_of | Partner_Loves_Travel_Stops__Country_Stores
+Partner_Loves_Travel_Stops__Country_Stores | meta_of | Loves_Travel_Stops__Country_Stores
+Decoy_DecoyCo_Loves_Travel_Stops__Country_Stores | works_at | DecoyCo_Loves_Travel_Stops__Country_Stores
+
+##### ID CEIL24_PLAIN_21 #####
+PATH_QUERY
+START Michael_Eisner
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Michael_Eisner | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company
+
+##### ID CEIL24_PLAIN_22 #####
+PATH_QUERY
+START Samuel_W_Fordyce
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Samuel_W_Fordyce | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEIL24_PLAIN_23 #####
+PATH_QUERY
+START Anne_Lagercrantz
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Anne_Lagercrantz | works_at | Sveriges_Television
+Sveriges_Television | headquartered_in | Stockholm
+DecoyCo_Sveriges_Television | headquartered_in | DecoyHQ_Stockholm
+Sveriges_Television | owned_by | Hold_Sveriges_Television
+Hold_Sveriges_Television | meta_of | Sveriges_Television
+Sveriges_Television | partner_of | Partner_Sveriges_Television
+Partner_Sveriges_Television | meta_of | Sveriges_Television
+Decoy_DecoyCo_Sveriges_Television | works_at | DecoyCo_Sveriges_Television

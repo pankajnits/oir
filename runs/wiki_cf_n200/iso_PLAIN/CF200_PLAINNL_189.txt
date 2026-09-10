@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_189 #####
+QUESTION:
+Where was the director of film Scarlet Seas born?
+
+CONTEXT:
+Scarlet Seas | decoy_link_189 | decoy_mid_189
+Aleksander Dominik Lubomirski | mother | Teofila Ludwika Zasławska
+Heinrich von Cocceji | place of birth | Bremen
+decoy_mid_189 | place of birth | New York
+John Francis Dillon | place of birth | CF_TAIL_189_NewYork
+Teofila Ludwika Zasławska | country of citizenship | Polish-Lithuanian Commonwealth
+Samuel Freiherr von Cocceji | father | Heinrich von Cocceji
+Scarlet Seas | director | John Francis Dillon

@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_SMALL_NOLEG_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NOLEG: layer bound START, HMAC'd Q, HMAC'd JSON keys+values. No schema. No JOIN.
+
+##### ID SLL_SMALL_NOLEG_4 #####
+QUESTION (token-HMAC'd):
+Eb77f0761fb25 Ee332c5c51d9f E999034c3c331 E6a00703ce8dc E33fc78281210 E78190dfb28ee?
+
+
+CONTEXT:
+{
+  "E834122f39ef1": [
+    {
+      "E3dcd26402e12": "E78190dfb28ee",
+      "E4814bf29c206": "Eca8d5a0ccd35"
+    },
+    {
+      "E3dcd26402e12": "E1d802a2c088b",
+      "E4814bf29c206": "E021d30abb0e4"
+    },
+    {
+      "E3dcd26402e12": "E74f45b158ebe",
+      "E4814bf29c206": "Eb0778c81c588"
+    }
+  ],
+  "Eae2cc5e48c5a": [
+    {
+      "E3dcd26402e12": "E021d30abb0e4",
+      "E9c33996711ec": {
+        "E121dd7c2d835": "E65d15f49856f",
+        "E9e76c5c2f5ce": "E11317504800f"
+      }
+    },
+    {
+      "E3dcd26402e12": "Eca8d5a0ccd35",
+      "E9c33996711ec": {
+        "E9e76c5c2f5ce": "E860d003f64cf",
+        "E121dd7c2d835": "E65d15f49856f"
+      }
+    },
+    {
+      "E3dcd26402e12": "Eb0778c81c588",
+      "E9c33996711ec": {
+        "E9e76c5c2f5ce": "E2a08c35f2da1",
+        "E121dd7c2d835": "E4cda500f35bd"
+      }
+    }
+  ]
+}

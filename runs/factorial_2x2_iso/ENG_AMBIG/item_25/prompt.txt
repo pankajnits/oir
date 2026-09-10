@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_ENG_AMBIG_25]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F22_ENG_AMBIG_25 #####
+QUESTION:
+What city is the headquarters of the company led by Raymond_Watson?
+
+CONTEXT:
+Raymond_Watson | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+Raymond_Watson | partner_of | 20th_Century_Studios
+20th_Century_Studios | located_in | Fox_Plaza

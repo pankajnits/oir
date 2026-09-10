@@ -1,0 +1,163 @@
+{
+  "executor": "QKEW",
+  "nonclaim": "Symbolic equality-join inducer, not an LLM, not G-Rev1-NONE, not confidentiality. No gold PATH.",
+  "locked_iso_n6": {
+    "QKEY": {
+      "score": "6/6",
+      "unknown": 0,
+      "wilson": {
+        "k": 6,
+        "n": 6,
+        "acc": 1.0,
+        "ci95": [
+          0.6097,
+          1.0
+        ],
+        "display": "6/6 [0.61,1.00]"
+      }
+    },
+    "NONE": {
+      "score": "0/6",
+      "unknown": 6,
+      "wilson": {
+        "k": 0,
+        "n": 6,
+        "acc": 0.0,
+        "ci95": [
+          0.0,
+          0.3903
+        ],
+        "display": "0/6 [0.00,0.39]"
+      }
+    }
+  },
+  "novel_hmac_n200": {
+    "n": 200,
+    "QKEY_novel_hmac": {
+      "score": "200/200",
+      "trap": 0,
+      "wilson": {
+        "k": 200,
+        "n": 200,
+        "acc": 1.0,
+        "ci95": [
+          0.9812,
+          1.0
+        ],
+        "display": "200/200 [0.98,1.00]"
+      }
+    },
+    "NONE_novel_hmac": {
+      "score": "0/200",
+      "note": "should be 0 \u2014 no ATTR in Q",
+      "wilson": {
+        "k": 0,
+        "n": 200,
+        "acc": 0.0,
+        "ci95": [
+          0.0,
+          0.0188
+        ],
+        "display": "0/200 [0.00,0.02]"
+      }
+    }
+  },
+  "rows": [
+    {
+      "arm": "QKEY",
+      "id": "GREV1_QKEY_0",
+      "pred": "Edb2d4c3ffaae",
+      "gold": "Edb2d4c3ffaae",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "NONE",
+      "id": "GREV1_NONE_0",
+      "pred": "UNKNOWN",
+      "gold": "Edb2d4c3ffaae",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "QKEY",
+      "id": "GREV1_QKEY_1",
+      "pred": "E7912e7706f6a",
+      "gold": "E7912e7706f6a",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "NONE",
+      "id": "GREV1_NONE_1",
+      "pred": "UNKNOWN",
+      "gold": "E7912e7706f6a",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "QKEY",
+      "id": "GREV1_QKEY_2",
+      "pred": "Ee77f23f5c785",
+      "gold": "Ee77f23f5c785",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "NONE",
+      "id": "GREV1_NONE_2",
+      "pred": "UNKNOWN",
+      "gold": "Ee77f23f5c785",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "QKEY",
+      "id": "GREV1_QKEY_3",
+      "pred": "Ece526e834198",
+      "gold": "Ece526e834198",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "NONE",
+      "id": "GREV1_NONE_3",
+      "pred": "UNKNOWN",
+      "gold": "Ece526e834198",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "QKEY",
+      "id": "GREV1_QKEY_4",
+      "pred": "E7912e7706f6a",
+      "gold": "E7912e7706f6a",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "NONE",
+      "id": "GREV1_NONE_4",
+      "pred": "UNKNOWN",
+      "gold": "E7912e7706f6a",
+      "kind": "unknown",
+      "ok": false
+    },
+    {
+      "arm": "QKEY",
+      "id": "GREV1_QKEY_5",
+      "pred": "Ebd6442406bc8",
+      "gold": "Ebd6442406bc8",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "NONE",
+      "id": "GREV1_NONE_5",
+      "pred": "UNKNOWN",
+      "gold": "Ebd6442406bc8",
+      "kind": "unknown",
+      "ok": false
+    }
+  ]
+}

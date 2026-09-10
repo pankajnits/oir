@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_79 #####
+QUESTION:
+What nationality is the director of film The Masked Rider (1916 Film)?
+
+CONTEXT:
+Kathy Griffin | educated at | Lee Strasberg Theatre and Film Institute
+Charles Hutchison | place of birth | Pittsburgh, Pennsylvania
+Fred J. Balshofer | country of citizenship | CF_TAIL_79_UnitedStates
+decoy_mid_79 | country of citizenship | United States
+I'll Say It | performer | Kathy Griffin
+Out with the Tide | director | Charles Hutchison
+The Masked Rider | director | Fred J. Balshofer
+The Masked Rider | decoy_link_79 | decoy_mid_79

@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_22]: <sql>
+
+DB: scientist_1
+SCHEMA:
+Scientists(SSN, Name)
+Projects(Code, Name, Hours)
+AssignedTo(Scientist, Project)
+QUESTION:
+Find the total hours of the projects that scientists named Michael Rogers or Carol Smith are assigned to.

@@ -1,0 +1,30 @@
+{
+  "partial_scaled": {
+    "full": {
+      "pass": "16/16",
+      "intermediate": "0/16",
+      "twin_pairs": "8/8"
+    },
+    "rel_only": {
+      "pass": "16/16",
+      "intermediate": "0/16",
+      "twin_pairs": "8/8"
+    },
+    "person_only": {
+      "pass": "0/16",
+      "intermediate": "16/16",
+      "twin_pairs": "0/8"
+    },
+    "none": {
+      "pass": "0/16",
+      "intermediate": "16/16",
+      "twin_pairs": "0/8"
+    }
+  },
+  "l6": {
+    "plain": "8/8",
+    "handles": "8/8"
+  },
+  "finding": "Scaled: full=rel_only=16/16; person_only=none=0/16 all intermediate companies (twins still differ by company). L6 negation binder 8/8 plain and handles.",
+  "scrutiny_note": "Unlike pilot none collapse, scaled none discriminates twins at company level but still fails city hop \u2014 stronger evidence of systematic one-hop truncation without relation handles."
+}

@@ -1,0 +1,317 @@
+{
+  "n": 6,
+  "suite": "hop3_trap",
+  "seed": 20260814,
+  "arms": {
+    "SAME_TRAP": {
+      "n": 6,
+      "ids": [
+        "H3T_SAME_TRAP_0",
+        "H3T_SAME_TRAP_1",
+        "H3T_SAME_TRAP_2",
+        "H3T_SAME_TRAP_3",
+        "H3T_SAME_TRAP_4",
+        "H3T_SAME_TRAP_5"
+      ],
+      "item_paths": [
+        "runs/hop3_trap/SAME_TRAP/item_0/prompt.txt",
+        "runs/hop3_trap/SAME_TRAP/item_1/prompt.txt",
+        "runs/hop3_trap/SAME_TRAP/item_2/prompt.txt",
+        "runs/hop3_trap/SAME_TRAP/item_3/prompt.txt",
+        "runs/hop3_trap/SAME_TRAP/item_4/prompt.txt",
+        "runs/hop3_trap/SAME_TRAP/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "CROSS_TRAP": {
+      "n": 6,
+      "ids": [
+        "H3T_CROSS_TRAP_0",
+        "H3T_CROSS_TRAP_1",
+        "H3T_CROSS_TRAP_2",
+        "H3T_CROSS_TRAP_3",
+        "H3T_CROSS_TRAP_4",
+        "H3T_CROSS_TRAP_5"
+      ],
+      "item_paths": [
+        "runs/hop3_trap/CROSS_TRAP/item_0/prompt.txt",
+        "runs/hop3_trap/CROSS_TRAP/item_1/prompt.txt",
+        "runs/hop3_trap/CROSS_TRAP/item_2/prompt.txt",
+        "runs/hop3_trap/CROSS_TRAP/item_3/prompt.txt",
+        "runs/hop3_trap/CROSS_TRAP/item_4/prompt.txt",
+        "runs/hop3_trap/CROSS_TRAP/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "DEMO_0_TRAP": {
+      "n": 6,
+      "ids": [
+        "H3T_DEMO_0_TRAP_0",
+        "H3T_DEMO_0_TRAP_1",
+        "H3T_DEMO_0_TRAP_2",
+        "H3T_DEMO_0_TRAP_3",
+        "H3T_DEMO_0_TRAP_4",
+        "H3T_DEMO_0_TRAP_5"
+      ],
+      "item_paths": [
+        "runs/hop3_trap/DEMO_0_TRAP/item_0/prompt.txt",
+        "runs/hop3_trap/DEMO_0_TRAP/item_1/prompt.txt",
+        "runs/hop3_trap/DEMO_0_TRAP/item_2/prompt.txt",
+        "runs/hop3_trap/DEMO_0_TRAP/item_3/prompt.txt",
+        "runs/hop3_trap/DEMO_0_TRAP/item_4/prompt.txt",
+        "runs/hop3_trap/DEMO_0_TRAP/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "PATH": {
+      "n": 6,
+      "ids": [
+        "H3T_PATH_0",
+        "H3T_PATH_1",
+        "H3T_PATH_2",
+        "H3T_PATH_3",
+        "H3T_PATH_4",
+        "H3T_PATH_5"
+      ],
+      "batch": "runs/hop3_trap/PATH_BATCH/BATCH.txt",
+      "iso": false
+    }
+  },
+  "cases": [
+    {
+      "arm": "SAME_TRAP",
+      "i": 0,
+      "id": "H3T_SAME_TRAP_0",
+      "gold": "Ee30c4a1be9db",
+      "trap": "E4c8524b1bae3",
+      "early": "E1601b151d25e",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_0/prompt.txt"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 1,
+      "id": "H3T_SAME_TRAP_1",
+      "gold": "E9f06286fbae6",
+      "trap": "Ee4bcc3419d1e",
+      "early": "E874b6e2b8add",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_1/prompt.txt"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 2,
+      "id": "H3T_SAME_TRAP_2",
+      "gold": "E9e03af439092",
+      "trap": "Eaf74980676d8",
+      "early": "Ee6728cae114a",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_2/prompt.txt"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 3,
+      "id": "H3T_SAME_TRAP_3",
+      "gold": "E796f602abb84",
+      "trap": "E56ff32e93645",
+      "early": "Eefe0aa070d6c",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_3/prompt.txt"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 4,
+      "id": "H3T_SAME_TRAP_4",
+      "gold": "Ec2b2634dd958",
+      "trap": "E98c021ec713b",
+      "early": "E83e6078b4edd",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_4/prompt.txt"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 5,
+      "id": "H3T_SAME_TRAP_5",
+      "gold": "E5419cde1781a",
+      "trap": "Eef286d61708d",
+      "early": "Eed15d3aa9c72",
+      "iso": true,
+      "path": "runs/hop3_trap/SAME_TRAP/item_5/prompt.txt"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 0,
+      "id": "H3T_CROSS_TRAP_0",
+      "gold": "Ef81f4613933a",
+      "trap": "E08c8e2ecabec",
+      "early": "E4015f9070a93",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_0/prompt.txt"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 1,
+      "id": "H3T_CROSS_TRAP_1",
+      "gold": "E086c2c8cd563",
+      "trap": "E6b6d89954860",
+      "early": "E54f379eaf0a5",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_1/prompt.txt"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 2,
+      "id": "H3T_CROSS_TRAP_2",
+      "gold": "Ef1e65b308b2d",
+      "trap": "E432cd7633366",
+      "early": "Ebb513c55d790",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_2/prompt.txt"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 3,
+      "id": "H3T_CROSS_TRAP_3",
+      "gold": "Eb03465e5fa32",
+      "trap": "Efe6301031880",
+      "early": "Ebc8c993d5f64",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_3/prompt.txt"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 4,
+      "id": "H3T_CROSS_TRAP_4",
+      "gold": "Efc3bc6a3ba92",
+      "trap": "Eca37483e1f83",
+      "early": "E2a329294910b",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_4/prompt.txt"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 5,
+      "id": "H3T_CROSS_TRAP_5",
+      "gold": "E894ac1e7f3fa",
+      "trap": "E44db9cd08088",
+      "early": "Ed22116fa1985",
+      "iso": true,
+      "path": "runs/hop3_trap/CROSS_TRAP/item_5/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 0,
+      "id": "H3T_DEMO_0_TRAP_0",
+      "gold": "Ee30c4a1be9db",
+      "trap": "E4c8524b1bae3",
+      "early": "E1601b151d25e",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_0/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 1,
+      "id": "H3T_DEMO_0_TRAP_1",
+      "gold": "E9f06286fbae6",
+      "trap": "Ee4bcc3419d1e",
+      "early": "E874b6e2b8add",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_1/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 2,
+      "id": "H3T_DEMO_0_TRAP_2",
+      "gold": "E9e03af439092",
+      "trap": "Eaf74980676d8",
+      "early": "Ee6728cae114a",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_2/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 3,
+      "id": "H3T_DEMO_0_TRAP_3",
+      "gold": "E796f602abb84",
+      "trap": "E56ff32e93645",
+      "early": "Eefe0aa070d6c",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_3/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 4,
+      "id": "H3T_DEMO_0_TRAP_4",
+      "gold": "Ec2b2634dd958",
+      "trap": "E98c021ec713b",
+      "early": "E83e6078b4edd",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_4/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_TRAP",
+      "i": 5,
+      "id": "H3T_DEMO_0_TRAP_5",
+      "gold": "E5419cde1781a",
+      "trap": "Eef286d61708d",
+      "early": "Eed15d3aa9c72",
+      "iso": true,
+      "path": "runs/hop3_trap/DEMO_0_TRAP/item_5/prompt.txt"
+    },
+    {
+      "arm": "PATH",
+      "i": 0,
+      "id": "H3T_PATH_0",
+      "gold": "Ee30c4a1be9db",
+      "trap": "E4c8524b1bae3",
+      "early": "E1601b151d25e",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 1,
+      "id": "H3T_PATH_1",
+      "gold": "E9f06286fbae6",
+      "trap": "Ee4bcc3419d1e",
+      "early": "E874b6e2b8add",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 2,
+      "id": "H3T_PATH_2",
+      "gold": "E9e03af439092",
+      "trap": "Eaf74980676d8",
+      "early": "Ee6728cae114a",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 3,
+      "id": "H3T_PATH_3",
+      "gold": "E796f602abb84",
+      "trap": "E56ff32e93645",
+      "early": "Eefe0aa070d6c",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 4,
+      "id": "H3T_PATH_4",
+      "gold": "Ec2b2634dd958",
+      "trap": "E98c021ec713b",
+      "early": "E83e6078b4edd",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 5,
+      "id": "H3T_PATH_5",
+      "gold": "E5419cde1781a",
+      "trap": "Eef286d61708d",
+      "early": "Eed15d3aa9c72",
+      "iso": false
+    }
+  ],
+  "nonclaim": "Asymmetric trap (gold noisier). SAME success is relation-token binding, not G-Rev1. DEMO_0 / SAME / CROSS are one quiz per file."
+}

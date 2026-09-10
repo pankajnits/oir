@@ -1,0 +1,73 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_CX_NOLEG_0]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NOLEG family=COMPLEX use=HR: bound START, HMAC Q. No schema. No PATH.
+
+##### ID SLL_CX_NOLEG_0 #####
+QUESTION (token-HMAC'd):
+Eb609abfa0b76 E9fa8a6e3d461 E65271764a226 E28d0e273cd5c E8b18ff7bbba2 E8aa630fd6280 E28d0e273cd5c Efe6df97a44d1 E8aa630fd6280 E6cbe0b889cbc E57c523b80c34?
+
+
+CONTEXT:
+TABLE hop1
+| E3f37f1d57809 | E96c0af4f706d |
+| --- | --- |
+| E6cbe0b889cbc | E0919038e5c30 |
+| E4200c2667c35 | E122ec6476d6a |
+| Ece2458855517 | Ed2270f221725 |
+| E11c40d064a1a | E0919038e5c30 |
+
+TABLE hop2
+| E7af4d8a6cbe8 | E01195f242bd9 |
+| --- | --- |
+| E0919038e5c30 | E5e7a1a788a01 |
+| E122ec6476d6a | E954de3fda0d1 |
+| Ed2270f221725 | Ee81f1064d817 |
+| E0919038e5c30 | E5e7a1a788a01 |
+
+TABLE hop3
+| E4ccd71dc2815 | Ee4dfab675123 |
+| --- | --- |
+| E5e7a1a788a01 | E2f1834b9a393 |
+| E954de3fda0d1 | E61042388e5ec |
+| Ee81f1064d817 | E0b43419e8377 |
+| E5e7a1a788a01 | E2f1834b9a393 |
+
+JSON
+{
+  "use_case": "E83d652ce2e78",
+  "graph": {
+    "E6cbe0b889cbc": {
+      "E96c0af4f706d": "E0919038e5c30"
+    },
+    "E0919038e5c30": {
+      "E01195f242bd9": "E5e7a1a788a01"
+    },
+    "E5e7a1a788a01": {
+      "Ee4dfab675123": "E2f1834b9a393"
+    },
+    "E4200c2667c35": {
+      "E96c0af4f706d": "E122ec6476d6a"
+    },
+    "E122ec6476d6a": {
+      "E01195f242bd9": "E954de3fda0d1"
+    },
+    "E954de3fda0d1": {
+      "Ee4dfab675123": "E61042388e5ec"
+    },
+    "Ece2458855517": {
+      "E96c0af4f706d": "Ed2270f221725"
+    },
+    "Ed2270f221725": {
+      "E01195f242bd9": "Ee81f1064d817"
+    },
+    "Ee81f1064d817": {
+      "Ee4dfab675123": "E0b43419e8377"
+    },
+    "E11c40d064a1a": {
+      "E96c0af4f706d": "E0919038e5c30"
+    }
+  },
+  "notes": "E6cbe0b889cbc Ef4e9f6f0e005 Ee582f25bd3c8: Ecd0c7be2d6dd E991860889947 Ebef9724ead2e E405d83943ee8, E4e5a0dc6256b E8ba6b262c2ea E61b081fdeaca E8ea8a35a3b19 E716e1e59e89e E2c9bf0adc36b E28d0e273cd5c E4cf917437786 E40aa6162a41f Ec6e06aa6b93e"
+}

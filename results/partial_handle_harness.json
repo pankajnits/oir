@@ -1,0 +1,98 @@
+{
+  "benchmark": "partial_handle_ablation",
+  "hypothesis": "relation handles are necessary/sufficient scaffold for 2-hop OIR join",
+  "rev": {
+    "E528d03971bdb": "Alice",
+    "E30fca715080c": "works_at",
+    "Eff0684ad3168": "Acme",
+    "E8ee2a5aa36c4": "Bob",
+    "Eba1f7b5a9bb3": "BetaCorp",
+    "Ef2c0867aa6a5": "Carol",
+    "E87504a92b4fa": "reports_to",
+    "Edc41f5b09a53": "located_in",
+    "E7b67f0d6abfb": "CityX",
+    "Ea9b56be7655c": "CityY",
+    "E39e638cc6324": "Where",
+    "Ea346d0907a84": "is",
+    "E1e2de581ca3a": "the",
+    "Ecf055189f158": "company",
+    "E998ff620841e": "located",
+    "E584dd298819c": "that",
+    "Ecc3c64512546": "City",
+    "E037fd8dc7967": "only"
+  },
+  "cases": [
+    {
+      "id": "PH_A_full",
+      "twin": "A",
+      "ablation": "full",
+      "expect_plain": "CityX",
+      "expect_sealed": "E7b67f0d6abfb",
+      "intermediate_company_seal": "Eff0684ad3168",
+      "payload": "runs/partial_handles/PH_A_full.txt"
+    },
+    {
+      "id": "PH_A_rel_only",
+      "twin": "A",
+      "ablation": "rel_only",
+      "expect_plain": "CityX",
+      "expect_sealed": "E7b67f0d6abfb",
+      "intermediate_company_seal": "Eff0684ad3168",
+      "payload": "runs/partial_handles/PH_A_rel_only.txt"
+    },
+    {
+      "id": "PH_A_person_only",
+      "twin": "A",
+      "ablation": "person_only",
+      "expect_plain": "CityX",
+      "expect_sealed": "E7b67f0d6abfb",
+      "intermediate_company_seal": "Eff0684ad3168",
+      "payload": "runs/partial_handles/PH_A_person_only.txt"
+    },
+    {
+      "id": "PH_A_none",
+      "twin": "A",
+      "ablation": "none",
+      "expect_plain": "CityX",
+      "expect_sealed": "E7b67f0d6abfb",
+      "intermediate_company_seal": "Eff0684ad3168",
+      "payload": "runs/partial_handles/PH_A_none.txt"
+    },
+    {
+      "id": "PH_B_full",
+      "twin": "B",
+      "ablation": "full",
+      "expect_plain": "CityY",
+      "expect_sealed": "Ea9b56be7655c",
+      "intermediate_company_seal": "Eba1f7b5a9bb3",
+      "payload": "runs/partial_handles/PH_B_full.txt"
+    },
+    {
+      "id": "PH_B_rel_only",
+      "twin": "B",
+      "ablation": "rel_only",
+      "expect_plain": "CityY",
+      "expect_sealed": "Ea9b56be7655c",
+      "intermediate_company_seal": "Eba1f7b5a9bb3",
+      "payload": "runs/partial_handles/PH_B_rel_only.txt"
+    },
+    {
+      "id": "PH_B_person_only",
+      "twin": "B",
+      "ablation": "person_only",
+      "expect_plain": "CityY",
+      "expect_sealed": "Ea9b56be7655c",
+      "intermediate_company_seal": "Eba1f7b5a9bb3",
+      "payload": "runs/partial_handles/PH_B_person_only.txt"
+    },
+    {
+      "id": "PH_B_none",
+      "twin": "B",
+      "ablation": "none",
+      "expect_plain": "CityY",
+      "expect_sealed": "Ea9b56be7655c",
+      "intermediate_company_seal": "Eba1f7b5a9bb3",
+      "payload": "runs/partial_handles/PH_B_none.txt"
+    }
+  ]
+}

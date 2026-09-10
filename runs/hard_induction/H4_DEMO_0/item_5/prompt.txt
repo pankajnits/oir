@@ -1,0 +1,25 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM H4_DEMO_0: hop=4; 0 sealed demos; one quiz; no PATH.
+
+No demos. No path. No relation names.
+From START, output the sealed answer atom using only CONTEXT.
+If more than one reading is possible, output UNKNOWN.
+
+##### ID HI_H4_D0_5 #####
+START Edb9719d6b998
+CONTEXT:
+E7eb46942d33d | E9c84fc740017 | Eb2a6521ed908
+E67b1899b8931 | Ed1b97f4463f6 | E465039133183
+E1c8c093c0ffd | E44977bca94d7 | E7eb46942d33d
+Edfba4c32698a | Edb707aa585fe | Ed7c3d83cedc4
+E465039133183 | E52de569044a5 | E7eb46942d33d
+Edb9719d6b998 | E355cc76ceb7d | Ed7c3d83cedc4
+Ee9c9e492bb9e | E9c0f1498700f | Edb9719d6b998
+Edb9719d6b998 | E9900b9b16c25 | Ee9c9e492bb9e
+E7eb46942d33d | E9b8793254a99 | E1c8c093c0ffd
+Ed7c3d83cedc4 | E0c0b9d042598 | E465039133183
+E465039133183 | E1ca470674ec2 | E67b1899b8931
+Ed7c3d83cedc4 | E4ccd58325ae5 | Edfba4c32698a
+

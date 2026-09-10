@@ -1,0 +1,140 @@
+{
+  "claim": "Prompt-local MP without can_reach DFS. v2 holdout is type-unique (type-only saturates). Typed-decoy generator: false typed nodes off-path, so type-only fails; walker+type required.",
+  "v2_holdout_type_unique": {
+    "mp": "200/200",
+    "typed_sink": "200/200",
+    "unique": "0/200",
+    "type_only": "200/200",
+    "n": 200,
+    "mp_k": 200,
+    "type_only_k": 200
+  },
+  "typed_decoy_holdout": {
+    "mp": "200/200",
+    "typed_sink": "200/200",
+    "unique": "0/200",
+    "type_only": "0/200",
+    "n": 200,
+    "mp_k": 200,
+    "type_only_k": 0
+  },
+  "typed_decoy_holdout_mp_no_type": {
+    "mp": "88/200",
+    "typed_sink": "200/200",
+    "unique": "0/200",
+    "type_only": "0/200",
+    "n": 200,
+    "mp_k": 88,
+    "type_only_k": 0
+  },
+  "typed_decoy_ood_h3": {
+    "mp": "100/100",
+    "typed_sink": "100/100",
+    "unique": "0/100",
+    "type_only": "0/100",
+    "n": 100,
+    "mp_k": 100,
+    "type_only_k": 0
+  },
+  "history_mp": [
+    {
+      "epoch": 0,
+      "loss": 0.32203990224568685,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 1,
+      "loss": 0.007284625545332968,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 2,
+      "loss": 0.004289977526068986,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 3,
+      "loss": 0.0030532214548252036,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 4,
+      "loss": 0.002372509331555464,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 5,
+      "loss": 0.0019408225164192923,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 6,
+      "loss": 0.001642413858555645,
+      "train400": "400/400",
+      "holdout": "200/200"
+    },
+    {
+      "epoch": 7,
+      "loss": 0.0014237358809289764,
+      "train400": "400/400",
+      "holdout": "200/200"
+    }
+  ],
+  "history_mp_no_type": [
+    {
+      "epoch": 0,
+      "loss": 1.3578389625458767,
+      "train400": "195/400",
+      "holdout": "88/200"
+    },
+    {
+      "epoch": 1,
+      "loss": 1.0991842672783527,
+      "train400": "195/400",
+      "holdout": "88/200"
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0989195198475417,
+      "train400": "195/400",
+      "holdout": "88/200"
+    },
+    {
+      "epoch": 3,
+      "loss": 1.098824675771043,
+      "train400": "195/400",
+      "holdout": "88/200"
+    },
+    {
+      "epoch": 4,
+      "loss": 1.0987753760536896,
+      "train400": "195/400",
+      "holdout": "88/200"
+    },
+    {
+      "epoch": 5,
+      "loss": 1.0987450514363586,
+      "train400": "195/400",
+      "holdout": "88/200"
+    },
+    {
+      "epoch": 6,
+      "loss": 1.0987244700872862,
+      "train400": "195/400",
+      "holdout": "88/200"
+    },
+    {
+      "epoch": 7,
+      "loss": 1.0987095635651423,
+      "train400": "195/400",
+      "holdout": "88/200"
+    }
+  ],
+  "nonclaim": "PATH+SINK_TYPE given. Not G-Rev1. Not a Transformer SFT."
+}

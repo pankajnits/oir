@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_6]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_6 #####
+QUESTION:
+Who E246765e1e008 a E994b7210565c Eef7011cd6209 [Madge Bellamy] E2c23523cee8f Eb723627dc0a6?
+
+PATH_QUERY
+START Madge Bellamy
+R1 E0c6f0b0c578a
+R2 E004aed2bf09e
+Execute path; return final tail only.
+
+CONTEXT:
+Madge Bellamy | E0c6f0b0c578a | White Zombie
+White Zombie | E004aed2bf09e | Victor Halperin
+White Zombie | Ec8fde8784bc4 | Garnett Weston

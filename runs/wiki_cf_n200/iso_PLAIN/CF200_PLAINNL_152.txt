@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_152 #####
+QUESTION:
+What is the place of birth of Agnes I, Abbess Of Quedlinburg's father?
+
+CONTEXT:
+Charles Swickard | country of citizenship | German
+Otto II, Count of Guelders | father | Gerard III, Count of Guelders
+Agnes I, Abbess of Quedlinburg | decoy_link_152 | decoy_mid_152
+Władysław I Herman | place of birth | CF_TAIL_152_Poland
+The Spender | director | Charles Swickard
+Gerard III, Count of Guelders | date of death | 22 October 1229
+decoy_mid_152 | place of birth | Poland
+Agnes I, Abbess of Quedlinburg | father | Władysław I Herman

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_47]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_47 #####
+QUESTION:
+Who E292f06075795 a Eea81927e7b01 Eb05d52cd5a8b [Morgan Freeman] E817939940888 Ed20f377c4dc6?
+
+PATH_QUERY
+START Morgan Freeman
+R1 Ee8faab457aa1
+R2 E3a2020d5f2db
+Execute path; return final tail only.
+
+CONTEXT:
+Morgan Freeman | Ee8faab457aa1 | The Magic of Belle Isle
+The Magic of Belle Isle | E3a2020d5f2db | Rob Reiner
+The Magic of Belle Isle | E39b1450af53f | Guy Thomas

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_4]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_4 #####
+QUESTION:
+What city is the headquarters of the company led by Krzysztof_Mamiski?
+
+PATH_QUERY
+START Krzysztof_Mamiski
+R1 Ef54c5ba8296c
+R2 E0f4d0aa981e9
+Execute path; return final tail only.
+
+CONTEXT:
+Krzysztof_Mamiski | Ef54c5ba8296c | Polish_State_Railways
+Polish_State_Railways | E0f4d0aa981e9 | Warsaw
+Krzysztof_Mamiski | E82766487bb9b | Storstockholms_Lokaltrafik
+Storstockholms_Lokaltrafik | E0b48ac010952 | Stockholm

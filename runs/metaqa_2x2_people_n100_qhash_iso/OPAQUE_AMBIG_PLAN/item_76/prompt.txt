@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_76]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_76 #####
+QUESTION:
+Who Ea071e78222f3 a Ed6a067a4f971 E1cd9b0df031b [William Powell] E73199cbcc919 Edabb2630e7fd?
+
+PATH_QUERY
+START William Powell
+R1 Ecd720e5610f8
+R2 E80f4e9269e7e
+Execute path; return final tail only.
+
+CONTEXT:
+William Powell | Ecd720e5610f8 | Lawyer Man
+Lawyer Man | E80f4e9269e7e | William Dieterle
+Lawyer Man | Ebbf75630a959 | Max Trell

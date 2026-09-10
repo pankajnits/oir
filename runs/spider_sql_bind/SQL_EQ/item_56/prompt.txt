@@ -1,0 +1,50 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_56]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_56 #####
+DB: insurance_fnol
+SCHEMA (English name → sealed sqlite identifier):
+Customers = E8ec8f7294dc0
+Customer_ID = Ecdbd3897df36
+Customer_name = Ef259370a47dc
+Services = E89fd95f522d7
+Service_ID = E4b016eef349c
+Service_name = Ef45440b16eb5
+Available_Policies = E607b05403d68
+Policy_ID = E1b977ffa19f9
+policy_type_code = Ef9badf5bdf92
+Customer_Phone = Ee266a0017d3c
+Customers_Policies = Efca306f99b73
+Date_Opened = E3714eabe8ee8
+Date_Closed = E7375a9e70798
+First_Notification_of_Loss = Ed25fbf18d8b1
+FNOL_ID = E22fe7a0a867a
+Claims = E4066810aa37c
+Claim_ID = Ecdc3a28ee415
+Effective_Date = Ef7b5c7d5db01
+Settlements = E3d24e8657ddb
+Settlement_ID = Ed42bc7f0e59d
+Settlement_Amount = Ea825a0ddae7c
+
+Customers(Customer_ID, Customer_name)
+Services(Service_ID, Service_name)
+Available_Policies(Policy_ID, policy_type_code, Customer_Phone)
+Customers_Policies(Customer_ID, Policy_ID, Date_Opened, Date_Closed)
+First_Notification_of_Loss(FNOL_ID, Customer_ID, Policy_ID, Service_ID)
+Claims(Claim_ID, FNOL_ID, Effective_Date)
+Settlements(Settlement_ID, Claim_ID, Effective_Date, Settlement_Amount)
+
+QUESTION:
+Which E89fd95f522d7 have been used more than twice in Ed25fbf18d8b1? Return the Ef45440b16eb5 Ef259370a47dc.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

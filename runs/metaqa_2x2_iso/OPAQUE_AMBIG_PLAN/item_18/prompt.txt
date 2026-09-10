@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_18]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_18 #####
+QUESTION:
+What is the genre of a movie directed by Juan López Moctezuma?
+
+PATH_QUERY
+START Juan López Moctezuma
+R1 E8c627a54eff9
+R2 Ea6c73e0aac1c
+Execute path; return final tail only.
+
+CONTEXT:
+Juan López Moctezuma | E8c627a54eff9 | Alucarda
+Alucarda | Ea6c73e0aac1c | Horror
+Alucarda | E600c40d5c164 | English

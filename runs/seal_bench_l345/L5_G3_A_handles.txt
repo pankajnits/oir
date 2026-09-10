@@ -1,0 +1,19 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=Ec963e8c08b8a B=E5f3977e6444d
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a Ec963e8c08b8a Eda7c8ec543ca E5f3977e6444d E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+Ec963e8c08b8a | E8830785bf19e | E7db0306ac86c
+E5f3977e6444d | E8830785bf19e | Ef8a036eb062f
+E7db0306ac86c | E3e7182d58c91 | Eaf75d3b3e345
+Ef8a036eb062f | E3e7182d58c91 | Eaf75d3b3e345
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

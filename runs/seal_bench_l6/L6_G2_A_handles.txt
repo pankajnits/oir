@@ -1,0 +1,21 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption.
+Handles:
+A=E1a8a60b07503 B=E61e928b88549
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 E1a8a60b07503 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 E61e928b88549'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+E1a8a60b07503 | E8fc04ee41435 | Eaed1dbfc3e95
+E61e928b88549 | E8fc04ee41435 | Ea4d54084f2ac
+Ea6e32cfc998a | E8fc04ee41435 | Eaed1dbfc3e95
+Ea6e32cfc998a | E4f76b32980e2 | E61e928b88549
+Eaed1dbfc3e95 | E23cdad3cb53c | E59d4d4f020c7
+Ea4d54084f2ac | E23cdad3cb53c | Eb5f525098b39
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

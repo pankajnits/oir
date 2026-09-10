@@ -1,0 +1,129 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+Same encoding on question and context. Opaque IDs. Same ID = same thing.
+
+No external knowledge. Answer from CONTEXT only.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+Structural rule only (language-free intent).
+
+
+##### ID REAL_STRUCT_0 #####
+SUBJECT Eadb2489d0e4c
+From SUBJECT follow exactly two edges to a node that never appears as a LEFT/head column entry. Return that end seal or UNKNOWN.
+
+CONTEXT:
+Eadb2489d0e4c | Ee8956805d4ec | E2ec9cd1665ee
+E2ec9cd1665ee | Ecc419031069b | E72d81aea35f8
+Ecf9146679a5f | Ecc419031069b | Ef558fa179354
+E2ec9cd1665ee | Eb2d28ad48186 | Ea45a027a4ecd
+Ea45a027a4ecd | E624543373c1f | E8bf62324ea7e
+E2ec9cd1665ee | Ee2fa86e30bd0 | E0bc90e125e1b
+E0bc90e125e1b | E624543373c1f | E1b1709a741cb
+E969f3e55def1 | Ee8956805d4ec | Ecf9146679a5f
+
+
+##### ID REAL_STRUCT_1 #####
+SUBJECT E86d076a2d0aa
+From SUBJECT follow exactly two edges to a node that never appears as a LEFT/head column entry. Return that end seal or UNKNOWN.
+
+CONTEXT:
+E86d076a2d0aa | Ee8956805d4ec | E6af1315566f4
+E6af1315566f4 | Ecc419031069b | E67ba03bc63eb
+Edd0c6a0a5d16 | Ecc419031069b | E1d63d541dab0
+E6af1315566f4 | Eb2d28ad48186 | E770d483df69a
+E770d483df69a | E624543373c1f | E88c2953039d8
+E6af1315566f4 | Ee2fa86e30bd0 | Eedc051e87ae3
+Eedc051e87ae3 | E624543373c1f | E1cd4ceb9a66d
+E2b6c2cda95c3 | Ee8956805d4ec | Edd0c6a0a5d16
+
+
+##### ID REAL_STRUCT_2 #####
+SUBJECT Ebd67e2d5fce9
+From SUBJECT follow exactly two edges to a node that never appears as a LEFT/head column entry. Return that end seal or UNKNOWN.
+
+CONTEXT:
+Ebd67e2d5fce9 | Ee8956805d4ec | E8747017c2fac
+E8747017c2fac | Ecc419031069b | E0e524b94058b
+E3faa1ef51a8d | Ecc419031069b | Ed085ec0b22ae
+E8747017c2fac | Eb2d28ad48186 | E6a979d959564
+E6a979d959564 | E624543373c1f | Efe832e59d841
+E8747017c2fac | Ee2fa86e30bd0 | E829524adf180
+E829524adf180 | E624543373c1f | E7c9a6f878520
+Eec0a2917bed2 | Ee8956805d4ec | E3faa1ef51a8d
+
+
+##### ID REAL_STRUCT_3 #####
+SUBJECT E01c0278460e9
+From SUBJECT follow exactly two edges to a node that never appears as a LEFT/head column entry. Return that end seal or UNKNOWN.
+
+CONTEXT:
+E01c0278460e9 | Ee8956805d4ec | E6f3d70288712
+E6f3d70288712 | Ecc419031069b | E9a0c8e236627
+E84c2eebead3d | Ecc419031069b | Ed085ec0b22ae
+E6f3d70288712 | Eb2d28ad48186 | E929da13e510b
+E929da13e510b | E624543373c1f | E387830c6c0af
+E6f3d70288712 | Ee2fa86e30bd0 | Eb13914f7b592
+Eb13914f7b592 | E624543373c1f | E37394d2b2ba5
+E0228c25acf44 | Ee8956805d4ec | E84c2eebead3d
+
+
+##### ID REAL_STRUCT_4 #####
+SUBJECT Ec00e1829e5e8
+From SUBJECT follow exactly two edges to a node that never appears as a LEFT/head column entry. Return that end seal or UNKNOWN.
+
+CONTEXT:
+Ec00e1829e5e8 | Ee8956805d4ec | E94b735f8f187
+E94b735f8f187 | Ecc419031069b | E248b1d10f4f4
+Ea04dc49c0986 | Ecc419031069b | Ee57b10aca51a
+E94b735f8f187 | Eb2d28ad48186 | E512e0ede2038
+E512e0ede2038 | E624543373c1f | E3ca051d6e5d4
+E94b735f8f187 | Ee2fa86e30bd0 | Ef8f254f04678
+Ef8f254f04678 | E624543373c1f | Ee3dc96a3ecff
+E1460cfb9c65f | Ee8956805d4ec | Ea04dc49c0986
+
+
+##### ID REAL_STRUCT_5 #####
+SUBJECT E461d19273efb
+From SUBJECT follow exactly two edges to a node that never appears as a LEFT/head column entry. Return that end seal or UNKNOWN.
+
+CONTEXT:
+E461d19273efb | Ee8956805d4ec | Ecf9146679a5f
+Ecf9146679a5f | Ecc419031069b | Ef558fa179354
+E6f3d70288712 | Ecc419031069b | E9a0c8e236627
+Ecf9146679a5f | Eb2d28ad48186 | Eb10243006a1d
+Eb10243006a1d | E624543373c1f | E6da6e0d0d534
+Ecf9146679a5f | Ee2fa86e30bd0 | E484eda44910a
+E484eda44910a | E624543373c1f | Eef35155369e5
+Eb26385028baf | Ee8956805d4ec | E6f3d70288712
+
+
+##### ID REAL_STRUCT_6 #####
+SUBJECT Ed84424453d0a
+From SUBJECT follow exactly two edges to a node that never appears as a LEFT/head column entry. Return that end seal or UNKNOWN.
+
+CONTEXT:
+Ed84424453d0a | Ee8956805d4ec | E3faa1ef51a8d
+E3faa1ef51a8d | Ecc419031069b | Ed085ec0b22ae
+E6f3d70288712 | Ecc419031069b | E9a0c8e236627
+E3faa1ef51a8d | Eb2d28ad48186 | E1d4d730ab66b
+E1d4d730ab66b | E624543373c1f | E43c41cc79f20
+E3faa1ef51a8d | Ee2fa86e30bd0 | E82291c1d9b7f
+E82291c1d9b7f | E624543373c1f | E07aac2dbb270
+Eb85dc0d0966d | Ee8956805d4ec | E6f3d70288712
+
+
+##### ID REAL_STRUCT_7 #####
+SUBJECT Edf1fd7254459
+From SUBJECT follow exactly two edges to a node that never appears as a LEFT/head column entry. Return that end seal or UNKNOWN.
+
+CONTEXT:
+Edf1fd7254459 | Ee8956805d4ec | E198d13b802e2
+E198d13b802e2 | Ecc419031069b | E207a55634d78
+E62c5c498bc7b | Ecc419031069b | E3919e9d58a50
+E198d13b802e2 | Eb2d28ad48186 | Ebc508fcc489b
+Ebc508fcc489b | E624543373c1f | Edce463c7edc6
+E198d13b802e2 | Ee2fa86e30bd0 | Edda70a26169b
+Edda70a26169b | E624543373c1f | E868cc7d13a55
+Ed3bab78ccd9d | Ee8956805d4ec | E62c5c498bc7b

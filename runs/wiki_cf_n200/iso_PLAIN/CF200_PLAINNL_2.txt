@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_2 #####
+QUESTION:
+When is Charles Iii, Prince Of Monaco's mother's birthday?
+
+CONTEXT:
+Charles III, Prince of Monaco | mother | Maria Caroline Gibert de Lametz
+Charles III, Prince of Monaco | decoy_link_2 | decoy_mid_2
+Sidonie of Poděbrady | mother | Kunigunde of Sternberg
+decoy_mid_2 | date of birth | 18 July 1793
+Robert Adetuyi | place of birth | Sudbury, Ontario
+Kunigunde of Sternberg | place of birth | Konopiště
+Trouble Sleeping | director | Robert Adetuyi
+Maria Caroline Gibert de Lametz | date of birth | CF_TAIL_2_18July1793

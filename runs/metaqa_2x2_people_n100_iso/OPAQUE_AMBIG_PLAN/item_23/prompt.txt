@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_23]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_23 #####
+QUESTION:
+Who directed a movie that Katie Holmes starred in?
+
+PATH_QUERY
+START Katie Holmes
+R1 Ed7dd1abf1812
+R2 E34f3e68b6bb1
+Execute path; return final tail only.
+
+CONTEXT:
+Katie Holmes | Ed7dd1abf1812 | Go
+Go | E34f3e68b6bb1 | Doug Liman
+Go | E8605c18e7cdf | John August

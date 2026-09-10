@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_139 #####
+QUESTION:
+Where did the composer of film Pepo (Film) die?
+
+CONTEXT:
+Pepo | decoy_link_139 | decoy_mid_139
+Olivier Baroux | date of birth | 5 January 1964
+Aram Khachaturian | place of death | CF_TAIL_139_Moscow
+decoy_mid_139 | place of death | Moscow
+Eduardo Frei Montalva | place of birth | Santiago
+Pepo | composer | Aram Khachaturian
+Eduardo Alfredo Juan Bernardo Frei Ruiz-Tagle | father | Eduardo Frei Montalva
+Les Tuche 2 | director | Olivier Baroux

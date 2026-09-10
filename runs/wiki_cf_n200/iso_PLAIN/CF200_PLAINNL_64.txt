@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_64 #####
+QUESTION:
+Which country the director of film All I Wanna Do (2011 Film) is from?
+
+CONTEXT:
+Helmut Käutner | place of birth | Düsseldorf
+decoy_mid_64 | country of citizenship | Ecuadorian
+Michelle Medina | country of citizenship | CF_TAIL_64_Ecuadorian
+D'Angelo | place of birth | Richmond
+The Captain from Köpenick | director | Helmut Käutner
+Really Love | performer | D'Angelo
+All I Wanna Do | decoy_link_64 | decoy_mid_64
+All I Wanna Do | director | Michelle Medina

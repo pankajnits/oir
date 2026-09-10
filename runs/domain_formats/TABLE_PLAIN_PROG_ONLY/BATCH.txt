@@ -1,0 +1,269 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <token_or_UNKNOWN>
+Answer EVERY ID.
+
+ARM TABLE/PLAIN_PROG: readable markdown tables + JOIN program.
+
+##### ID DOM_TABLE_PLAIN_0 #####
+JOIN_QUERY
+START person=Bob_Iger
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Beata_KozowskaChya | Powszechny_Zakad_Ubezpiecze |
+| Keith_Creel | Canadian_Pacific_Kansas_City |
+| Bob_Iger | The_Walt_Disney_Company |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Powszechny_Zakad_Ubezpiecze | Warsaw |
+| Canadian_Pacific_Kansas_City | Calgary |
+| The_Walt_Disney_Company | Burbank |
+
+##### ID DOM_TABLE_PLAIN_1 #####
+JOIN_QUERY
+START person=Lucian_Grainge
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Catherine_Tait | Canadian_Broadcasting_Corporation |
+| Lucian_Grainge | Universal_Music_Group |
+| Steve_Weed | WaveDivision_Holdings_LLC |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Universal_Music_Group | Broadway |
+| WaveDivision_Holdings_LLC | New_Jersey |
+| Canadian_Broadcasting_Corporation | Ottawa |
+
+##### ID DOM_TABLE_PLAIN_2 #####
+JOIN_QUERY
+START person=Roy_O_Disney
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Topi_Manner | Elisa |
+| Hubert_Joly | Best_Buy |
+| Roy_O_Disney | The_Walt_Disney_Company |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Elisa | Helsinki |
+| The_Walt_Disney_Company | Burbank |
+| Best_Buy | Richfield |
+
+##### ID DOM_TABLE_PLAIN_3 #####
+JOIN_QUERY
+START person=Landon_H_Rowland
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| David_Simon | Simon_Property_Group |
+| Tom_Buhrow | Westdeutscher_Rundfunk |
+| Landon_H_Rowland | Kansas_City_Southern |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Simon_Property_Group | Simon_Property_Group_Headquarters |
+| Westdeutscher_Rundfunk | Cologne |
+| Kansas_City_Southern | Kansas_City |
+
+##### ID DOM_TABLE_PLAIN_4 #####
+JOIN_QUERY
+START person=Stuart_Parker
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Kentaro_Okuda | Nomura_Holdings |
+| Luigi_Ferraris | Ferrovie_dello_Stato_Italiane |
+| Stuart_Parker | USAA |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| USAA | San_Antonio |
+| Nomura_Holdings | Tokyo |
+| Ferrovie_dello_Stato_Italiane | Rome |
+
+##### ID DOM_TABLE_PLAIN_5 #####
+JOIN_QUERY
+START person=Kristin_Lian
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Moshe_Zana | Israel_Railways |
+| Jakub_Strnad | Allianz_pojiovna |
+| Kristin_Lian | Hafslund_Kraft |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Israel_Railways | Lod_Railway_Station |
+| Allianz_pojiovna | Prague |
+| Hafslund_Kraft | Oslo |
+
+##### ID DOM_TABLE_PLAIN_6 #####
+JOIN_QUERY
+START person=Thomas_S_Carter
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Eric_Vallat | Lacoste_SA |
+| Thomas_S_Carter | Kansas_City_Southern |
+| Dara_Khosrowshahi | Uber |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Kansas_City_Southern | Kansas_City |
+| Uber | San_Francisco |
+| Lacoste_SA | Paris |
+
+##### ID DOM_TABLE_PLAIN_7 #####
+JOIN_QUERY
+START person=Bob_Chapek
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Beata_KozowskaChya | Powszechny_Zakad_Ubezpiecze |
+| Giancarlo_Nicosanti_Monterastelli | Unieuro |
+| Bob_Chapek | The_Walt_Disney_Company |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| The_Walt_Disney_Company | Burbank |
+| Unieuro | Forl |
+| Powszechny_Zakad_Ubezpiecze | Warsaw |
+
+##### ID DOM_TABLE_PLAIN_8 #####
+JOIN_QUERY
+START person=Hans_Vestberg
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Hans_Vestberg | Verizon |
+| Leonor_Fresnel_Loree | Kansas_City_Southern |
+| Achim_Wei | Ionos |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Kansas_City_Southern | Kansas_City |
+| Verizon | Philadelphia |
+| Ionos | Montabaur |
+
+##### ID DOM_TABLE_PLAIN_9 #####
+JOIN_QUERY
+START person=Luka_Mucic
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| David_Lagerholm | Storstockholms_Lokaltrafik |
+| Luka_Mucic | Vonovia |
+| Harvey_C_Couch | Kansas_City_Southern |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Storstockholms_Lokaltrafik | Stockholm |
+| Vonovia | Bochum |
+| Kansas_City_Southern | Kansas_City |
+
+##### ID DOM_TABLE_PLAIN_10 #####
+JOIN_QUERY
+START person=Mario_Greco
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| Anne_Lagercrantz | Sveriges_Television |
+| John_K_Martin_Jr | Turner_Broadcasting_System |
+| Mario_Greco | Zurich_Insurance_Group |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Turner_Broadcasting_System | CNN_Center |
+| Zurich_Insurance_Group | Zurich |
+| Sveriges_Television | Stockholm |
+
+##### ID DOM_TABLE_PLAIN_11 #####
+JOIN_QUERY
+START person=William_N_Deramus_III
+R1 company
+R2 hq_city
+Join people.company = companies.company; return hq_city.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| David_Lagerholm | Storstockholms_Lokaltrafik |
+| Beata_KozowskaChya | Powszechny_Zakad_Ubezpiecze |
+| William_N_Deramus_III | Kansas_City_Southern |
+
+TABLE companies
+| company | hq_city |
+| --- | --- |
+| Powszechny_Zakad_Ubezpiecze | Warsaw |
+| Storstockholms_Lokaltrafik | Stockholm |
+| Kansas_City_Southern | Kansas_City |

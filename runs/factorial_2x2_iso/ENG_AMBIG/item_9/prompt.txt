@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_ENG_AMBIG_9]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F22_ENG_AMBIG_9 #####
+QUESTION:
+What city is the headquarters of the company led by Steve_Weed?
+
+CONTEXT:
+Steve_Weed | works_at | WaveDivision_Holdings_LLC
+WaveDivision_Holdings_LLC | headquartered_in | New_Jersey
+Steve_Weed | partner_of | Hobby_Lobby
+Hobby_Lobby | located_in | Oklahoma_City

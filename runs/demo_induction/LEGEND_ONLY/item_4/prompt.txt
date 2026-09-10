@@ -1,0 +1,22 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM LEGEND: English relation-role legend + sealed graph; one item.
+
+##### ID DI_LEGEND_4 #####
+START E8d57a06a9bc9
+LEGEND (relation roles only — entities stay sealed):
+  E52139c3202c8 = employment edge (person → company)
+  E7746fff2bd73 = headquarters edge (company → city)
+Follow E52139c3202c8 then E7746fff2bd73 from START.
+
+CONTEXT:
+E983ef20cd6df | E52139c3202c8 | E3211ded8c2cd
+E8d57a06a9bc9 | E52139c3202c8 | Ea02abedfc657
+Ea02abedfc657 | E7746fff2bd73 | E247b2b202490
+E5e572136ad1d | E932ffa426291 | Ea02abedfc657
+E3211ded8c2cd | E7746fff2bd73 | E20453e06de5c
+Ea02abedfc657 | E858849c62adb | E5e572136ad1d
+Ea02abedfc657 | E2e6e5420ef6e | Ed662ea2ec0e2
+Ed662ea2ec0e2 | E932ffa426291 | Ea02abedfc657
+

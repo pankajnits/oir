@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_31 #####
+QUESTION:
+Where did the director of film 13 Fighting Men die?
+
+CONTEXT:
+René Clair | date of death | 15 March 1981
+Herbert Henry Dow | educated at | Case
+Harry W. Gerstad | place of death | CF_TAIL_31_PalmSpringsC
+Alden B. Dow | father | Herbert Henry Dow
+13 Fighting Men | decoy_link_31 | decoy_mid_31
+13 Fighting Men | director | Harry W. Gerstad
+decoy_mid_31 | place of death | Palm Springs, California
+Break the News | director | René Clair

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_22 #####
+QUESTION:
+What is the place of birth of the director of film Sins Of Desire?
+
+CONTEXT:
+William Dear | place of birth | Toronto, Ontario
+Timerider: The Adventure of Lyle Swann | director | William Dear
+One Bourbon, One Scotch, One Beer | performer | Amos Milburn
+Sins of Desire | decoy_link_22 | decoy_mid_22
+decoy_mid_22 | place of birth | New York
+Sins of Desire | director | Jim Wynorski
+Amos Milburn | place of death | Houston, Texas
+Jim Wynorski | place of birth | CF_TAIL_22_NewYork

@@ -1,0 +1,705 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL shard 3 (n=50). CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_150 #####
+QUESTION:
+Where did the director of film The Uninvited Guest (1923 Film) die?
+
+CONTEXT:
+The Uninvited Guest | decoy_link_150 | decoy_mid_150
+Shapur I | father | Ardashir I
+Ardashir I | place of birth | Istakhr
+Luis Vélez de Guevara | place of birth | Écija
+Juan Crisóstomo Vélez de Guevara | father | Luis Vélez de Guevara
+The Uninvited Guest | director | George Dewhurst
+George Dewhurst | place of death | CF_TAIL_150_London
+decoy_mid_150 | place of death | London
+
+##### ID CF200_PLAINNL_151 #####
+QUESTION:
+Where was the husband of Katherine De Stafford born?
+
+CONTEXT:
+Katherine de Stafford | spouse | Michael de la Pole, 2nd Earl of Suffolk
+Žika Mitrović | country of citizenship | Serbian
+decoy_mid_151 | place of birth | English
+Katherine de Stafford | decoy_link_151 | decoy_mid_151
+Michael de la Pole, 2nd Earl of Suffolk | place of birth | CF_TAIL_151_English
+Diego de Benavides, 8th Count of Santisteban | date of death | March 19, 1666
+Francisco IV de Benavides | father | Diego de Benavides, 8th Count of Santisteban
+Thundering Mountains | director | Žika Mitrović
+
+##### ID CF200_PLAINNL_152 #####
+QUESTION:
+What is the place of birth of Agnes I, Abbess Of Quedlinburg's father?
+
+CONTEXT:
+Charles Swickard | country of citizenship | German
+Otto II, Count of Guelders | father | Gerard III, Count of Guelders
+Agnes I, Abbess of Quedlinburg | decoy_link_152 | decoy_mid_152
+Władysław I Herman | place of birth | CF_TAIL_152_Poland
+The Spender | director | Charles Swickard
+Gerard III, Count of Guelders | date of death | 22 October 1229
+decoy_mid_152 | place of birth | Poland
+Agnes I, Abbess of Quedlinburg | father | Władysław I Herman
+
+##### ID CF200_PLAINNL_153 #####
+QUESTION:
+What is the place of birth of Elijah Blue Allman's father?
+
+CONTEXT:
+decoy_mid_153 | place of birth | Nashville, Tennessee
+Gregg Allman | place of birth | CF_TAIL_153_NashvilleTen
+Louise Linton | spouse | Steven Mnuchin
+Sophie of Saxe-Lauenburg | date of death | 9 September 1473
+Elijah Blue Allman | father | Gregg Allman
+Gerhard VII, Duke of Jülich-Berg | spouse | Sophie of Saxe-Lauenburg
+Steven Mnuchin | employer | Goldman
+Elijah Blue Allman | decoy_link_153 | decoy_mid_153
+
+##### ID CF200_PLAINNL_154 #####
+QUESTION:
+Where was the place of death of Crato, Count Of Nassau-Saarbrücken's father?
+
+CONTEXT:
+Juris Podnieks | date of death | June 23, 1992
+Vai viegli būt jaunam? | director | Juris Podnieks
+Majestic Hotel Cellars | director | Richard Pottier
+Crato, Count of Nassau-Saarbrücken | father | William Louis of Nassau-Saarbrücken
+decoy_mid_154 | place of death | Metz
+William Louis of Nassau-Saarbrücken | place of death | CF_TAIL_154_Metz
+Richard Pottier | place of death | Le Plessis-Bouchard
+Crato, Count of Nassau-Saarbrücken | decoy_link_154 | decoy_mid_154
+
+##### ID CF200_PLAINNL_155 #####
+QUESTION:
+Where was the place of burial of Nebetah's mother?
+
+CONTEXT:
+decoy_mid_155 | place of burial | KV35
+Hussein of Jordan | place of birth | Amman
+John of Lencastre, 1st Duke of Aveiro | place of death | Coimbra
+Tiye | place of burial | CF_TAIL_155_KV35
+Nebetah | decoy_link_155 | decoy_mid_155
+Nebetah | mother | Tiye
+Princess Raiyah bint Hussein | father | Hussein of Jordan
+George of Lencastre, 2nd Duke of Aveiro | father | John of Lencastre, 1st Duke of Aveiro
+
+##### ID CF200_PLAINNL_156 #####
+QUESTION:
+Which country the director of film Desire Inc. is from?
+
+CONTEXT:
+Desire Inc. | director | Lynn Hershman
+Yuen Woo-ping | father | Yuen Siu-tien
+Alan | date of death | 1234
+Lynn Hershman | country of citizenship | CF_TAIL_156_US
+Thomas of Galloway | father | Alan
+Drunken Tai Chi | director | Yuen Woo-ping
+Desire Inc. | decoy_link_156 | decoy_mid_156
+decoy_mid_156 | country of citizenship | US
+
+##### ID CF200_PLAINNL_157 #####
+QUESTION:
+Where was the place of death of the director of film On Their Own?
+
+CONTEXT:
+decoy_mid_157 | place of death | Hollywood
+The Story of Molly X | director | Crane Wilbur
+On Their Own | decoy_link_157 | decoy_mid_157
+Otto Brower | place of death | CF_TAIL_157_Hollywood
+Henry Scott, 1st Earl of Deloraine | father | James Scott, 1st Duke of Monmouth
+On Their Own | director | Otto Brower
+James Scott, 1st Duke of Monmouth | country of citizenship | English
+Crane Wilbur | place of birth | Athens
+
+##### ID CF200_PLAINNL_158 #####
+QUESTION:
+Who is the father of the founder of Tibiyo Takangwane?
+
+CONTEXT:
+Tibiyo TakaNgwane | decoy_link_158 | decoy_mid_158
+Simon de Montfort | father | Simon III de Montfort
+Tibiyo TakaNgwane | founded by | Sobhuza II
+decoy_mid_158 | father | Ngwane V
+Simon III de Montfort | date of death | 13 March 1181
+John of Gravina | father | Charles II of Naples
+Charles II of Naples | country of citizenship | Kingdom of Sicily
+Sobhuza II | father | CF_TAIL_158_NgwaneV
+
+##### ID CF200_PLAINNL_159 #####
+QUESTION:
+Where does the director of film Six Figures (Film) work at?
+
+CONTEXT:
+Yeshaq I | place of death | Ethiopia
+decoy_mid_159 | employer | National Film Board of Canada
+Fisher Stevens | award received | Academy Award for Best Documentary Feature
+Six Figures | director | David Christensen
+Six Figures | decoy_link_159 | decoy_mid_159
+Just a Kiss | director | Fisher Stevens
+David Christensen | employer | CF_TAIL_159_NationalFilm
+Andreyas | father | Yeshaq I
+
+##### ID CF200_PLAINNL_160 #####
+QUESTION:
+What nationality is Bati Del Wambara's father?
+
+CONTEXT:
+Bati del Wambara | father | Mahfuz
+Manhunt in the City | composer | Bruno Nicolai
+Mahfuz | country of citizenship | CF_TAIL_160_Somali
+decoy_mid_160 | country of citizenship | Somali
+Sybil Bianca Giuliett Eysenck | spouse | Hans Eysenck
+Bati del Wambara | decoy_link_160 | decoy_mid_160
+Hans Eysenck | employer | King's College London
+Bruno Nicolai | place of death | Rome
+
+##### ID CF200_PLAINNL_161 #####
+QUESTION:
+Where was the place of death of Isabella Of Aragon, Queen Of Germany's father?
+
+CONTEXT:
+Deacon Chiu | date of death | 17 March 2015
+Larry Kent | place of birth | Johannesburg, South Africa
+Far East Consortium International Limited | founded by | Deacon Chiu
+James II of Aragon | place of death | CF_TAIL_161_Barcelona
+She Who Must Burn | director | Larry Kent
+decoy_mid_161 | place of death | Barcelona
+Isabella of Aragon | father | James II of Aragon
+Isabella of Aragon | decoy_link_161 | decoy_mid_161
+
+##### ID CF200_PLAINNL_162 #####
+QUESTION:
+Why did the director of film The Merry Widow (1925 Film) die?
+
+CONTEXT:
+The Merry Widow | director | Erich von Stroheim
+Erich von Stroheim | cause of death | CF_TAIL_162_cancer
+The Merry Widow | decoy_link_162 | decoy_mid_162
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Kilippattu | director | Raghavan
+Raghavan | child | Jishnu
+La Belle captive | director | Alain Robbe-Grillet
+decoy_mid_162 | cause of death | cancer
+
+##### ID CF200_PLAINNL_163 #####
+QUESTION:
+Where was the place of death of Flóra Majthényi's husband?
+
+CONTEXT:
+Hannes Holm | place of birth | Lidingö
+Kálmán Tóth | place of death | CF_TAIL_163_Budapest
+A Man Called Ove | director | Hannes Holm
+Svein-Erik Bjerkrheim | spouse | Susann Goksør Bjerkrheim
+decoy_mid_163 | place of death | Budapest
+Flóra Majthényi | decoy_link_163 | decoy_mid_163
+Susann Goksør Bjerkrheim | educated at | Norwegian School of Sport Sciences
+Flóra Majthényi | spouse | Kálmán Tóth
+
+##### ID CF200_PLAINNL_164 #####
+QUESTION:
+Where was the place of burial of Yakov Dzhugashvili's mother?
+
+CONTEXT:
+Kato Svanidze | place of burial | CF_TAIL_164_Tiflis
+Yakov Iosifovich Dzhugashvili | decoy_link_164 | decoy_mid_164
+decoy_mid_164 | place of burial | Tiflis
+Yakov Iosifovich Dzhugashvili | mother | Kato Svanidze
+Francis Baring, 3rd Baron Ashburton | date of death | 6 September 1868
+Alexander Hugh Baring, 4th Baron Ashburton | father | Francis Baring, 3rd Baron Ashburton
+Luigi Zampa | place of death | Rome
+Hospitals: The White Mafia | director | Luigi Zampa
+
+##### ID CF200_PLAINNL_165 #####
+QUESTION:
+Where did Wenceslaus Of Krosno's father die?
+
+CONTEXT:
+Armin, Prince of Lippe | father | Leopold IV, Prince of Lippe
+Henry VIII the Sparrow | place of death | CF_TAIL_165_Szprotawa
+Leopold IV, Prince of Lippe | date of death | 30 December 1949
+decoy_mid_165 | place of death | Szprotawa
+Crane Wilbur | place of birth | Athens
+Wenceslaus of Krosno | father | Henry VIII the Sparrow
+Inside the Walls of Folsom Prison | director | Crane Wilbur
+Wenceslaus of Krosno | decoy_link_165 | decoy_mid_165
+
+##### ID CF200_PLAINNL_166 #####
+QUESTION:
+What nationality is Haydar Mirza Safavi's father?
+
+CONTEXT:
+Sommer i Palma | performer | Nora Brockstedt
+decoy_mid_166 | country of citizenship | Safavid Empire
+Ronald G. Wanek | date of birth | 1941
+Tahmasp I | country of citizenship | CF_TAIL_166_SafavidEmpir
+Haydar Mirza Safavi | father | Tahmasp I
+Nora Brockstedt | cause of death | illness
+Haydar Mirza Safavi | decoy_link_166 | decoy_mid_166
+Todd Ronald Wanek | father | Ronald G. Wanek
+
+##### ID CF200_PLAINNL_167 #####
+QUESTION:
+Where was the director of film Le Glaive Et La Balance born?
+
+CONTEXT:
+Krantikaal | director | Sekhar Das
+Le glaive et la balance | director | André Cayatte
+Sheikha Hind bint Hamad Al-Thani | mother | Moza bint Nasser
+André Cayatte | place of birth | CF_TAIL_167_Carcassonne
+decoy_mid_167 | place of birth | Carcassonne
+Moza bint Nasser | place of birth | Al Khor
+Le glaive et la balance | decoy_link_167 | decoy_mid_167
+Sekhar Das | country of citizenship | Indian
+
+##### ID CF200_PLAINNL_168 #####
+QUESTION:
+What is the date of death of Jean Noël Destréhan's father?
+
+CONTEXT:
+Willem de Sitter | date of birth | 6 May 1872
+Jean-Noël Destréhan | father | Jean Baptiste d'Estrehan
+Ulbo de Sitter | father | Willem de Sitter
+Jean-Noël Destréhan | decoy_link_168 | decoy_mid_168
+Edward Wingfield, 2nd Viscount Powerscourt | father | Richard Wingfield, 1st Viscount Powerscourt
+decoy_mid_168 | date of death | 26 February 1765
+Jean Baptiste d'Estrehan | date of death | CF_TAIL_168_26February17
+Richard Wingfield, 1st Viscount Powerscourt | date of death | 21 October 1751
+
+##### ID CF200_PLAINNL_169 #####
+QUESTION:
+What is the place of birth of Princess Raiyah Bint Hussein's father?
+
+CONTEXT:
+Princess Raiyah bint Hussein | father | Hussein of Jordan
+Princess Raiyah bint Hussein | decoy_link_169 | decoy_mid_169
+decoy_mid_169 | place of birth | Amman
+Torrid Zone | director | William Keighley
+William Keighley | place of death | New York
+Hussein of Jordan | place of birth | CF_TAIL_169_Amman
+Horace Seymour | father | Lord Hugh Seymour
+Lord Hugh Seymour | country of citizenship | Great Britain
+
+##### ID CF200_PLAINNL_170 #####
+QUESTION:
+Where was the place of death of the director of film Basta Guardarla?
+
+CONTEXT:
+Johan Jacobsen | spouse | Annelise Hovmand
+Basta guardarla | decoy_link_170 | decoy_mid_170
+Princess Alexandra Therese Marie of Anhalt | spouse | Sizzo, Prince of Schwarzburg
+Luciano Salce | place of death | CF_TAIL_170_Rome
+Sizzo, Prince of Schwarzburg | place of birth | Rudolstadt
+Basta guardarla | director | Luciano Salce
+Min kone er uskyldig | director | Johan Jacobsen
+decoy_mid_170 | place of death | Rome
+
+##### ID CF200_PLAINNL_171 #####
+QUESTION:
+What is the place of birth of the director of film Across The Great Divide (Film)?
+
+CONTEXT:
+The Happy Ending | director | Millard Webb
+Euphoria | performer | Usher
+Usher | place of birth | Dallas
+Stewart Raffill | place of birth | CF_TAIL_171_British
+Across the Great Divide | decoy_link_171 | decoy_mid_171
+Across the Great Divide | director | Stewart Raffill
+decoy_mid_171 | place of birth | British
+Millard Webb | spouse | Mary Eaton
+
+##### ID CF200_PLAINNL_172 #####
+QUESTION:
+Who is the spouse of the director of film Married And In Love?
+
+CONTEXT:
+decoy_mid_172 | spouse | Maureen O'Sullivan
+Marek Sobieski | place of burial | Lublin
+Married and in Love | director | John Farrow
+John Farrow | spouse | CF_TAIL_172_MaureenOSull
+"Heart Attack | performer | Enrique Iglesias
+Married and in Love | decoy_link_172 | decoy_mid_172
+Enrique Iglesias | country of citizenship | Spanish
+Aleksandra Marianna Wiesiołowska | father | Marek Sobieski
+
+##### ID CF200_PLAINNL_173 #####
+QUESTION:
+Where did Jewel Taylor's husband study at?
+
+CONTEXT:
+Jewel Taylor | decoy_link_173 | decoy_mid_173
+Andy Warhol | country of citizenship | American
+Philipp, 10th Prince of Hohenlohe-Langenburg | father | Kraft, Prince of Hohenlohe-Langenburg
+Kraft, Prince of Hohenlohe-Langenburg | date of birth | 25 June 1935
+Jewel Taylor | spouse | Charles Taylor
+Beauty No. 1 | director | Andy Warhol
+decoy_mid_173 | educated at | Bentley College
+Charles Taylor | educated at | CF_TAIL_173_BentleyColle
+
+##### ID CF200_PLAINNL_174 #####
+QUESTION:
+Who is the spouse of the performer of song Missing My Baby?
+
+CONTEXT:
+Selena | spouse | CF_TAIL_174_ChrisPrez
+Missing My Baby | performer | Selena
+Alf Landon | place of death | Topeka
+decoy_mid_174 | spouse | Chris Pérez
+Missing My Baby | decoy_link_174 | decoy_mid_174
+David Ogilvy, 11th Earl of Airlie | place of birth | Florence, Italy
+Nancy Landon Kassebaum | father | Alf Landon
+David Ogilvy, 12th Earl of Airlie | father | David Ogilvy, 11th Earl of Airlie
+
+##### ID CF200_PLAINNL_175 #####
+QUESTION:
+Where was the director of film Pretty Smart born?
+
+CONTEXT:
+Pretty Smart | director | Dimitri Logothetis
+decoy_mid_175 | place of birth | Greek
+Come Closer | performer | Eddie Rambeau
+Marcus Julius Gessius Bassianus | father | Marcus Julius Gessius Marcianus
+Pretty Smart | decoy_link_175 | decoy_mid_175
+Marcus Julius Gessius Marcianus | date of death | 218
+Dimitri Logothetis | place of birth | CF_TAIL_175_Greek
+Eddie Rambeau | place of birth | Hazleton, Pennsylvania
+
+##### ID CF200_PLAINNL_176 #####
+QUESTION:
+Where was the place of death of Elisabeth Of Moravia's mother?
+
+CONTEXT:
+Funny Games U.S. | director | Michael Haneke
+Margaret of Opava | place of death | CF_TAIL_176_Brno
+Mate Meštrović | father | Ivan Meštrović
+Ivan Meštrović | educated at | Academy of Fine Arts Vienna
+decoy_mid_176 | place of death | Brno
+Elizabeth of Moravia | decoy_link_176 | decoy_mid_176
+Elizabeth of Moravia | mother | Margaret of Opava
+Michael Haneke | country of citizenship | Austrian
+
+##### ID CF200_PLAINNL_177 #####
+QUESTION:
+When is Jean-Baptiste Colbert, Marquis De Seignelay's father's birthday?
+
+CONTEXT:
+Jean-Baptiste Antoine Colbert, Marquis de Seignelay | father | Jean-Baptiste Colbert
+decoy_mid_177 | date of birth | 29 August 1619
+Jean-Baptiste Antoine Colbert, Marquis de Seignelay | decoy_link_177 | decoy_mid_177
+Jean-Baptiste Colbert | date of birth | CF_TAIL_177_29August1619
+Jim Wynorski | place of birth | New York
+Charles University | country | Czech Republic
+The Return of Swamp Thing | director | Jim Wynorski
+Prague Papers on the History of International Relations | publisher | Charles University
+
+##### ID CF200_PLAINNL_178 #####
+QUESTION:
+What is the place of birth of the composer of song Vem Vet?
+
+CONTEXT:
+Vem vet | decoy_link_178 | decoy_mid_178
+Thomas Henty | father | Tommy Cooper
+Lisa Ekdahl | place of birth | CF_TAIL_178_Stockholm
+Tommy Cooper | date of death | 15 April 1984
+Hello My Dear Wrong Number | director | Priyadarshan
+Priyadarshan | country of citizenship | India
+Vem vet | composer | Lisa Ekdahl
+decoy_mid_178 | place of birth | Stockholm
+
+##### ID CF200_PLAINNL_179 #####
+QUESTION:
+What nationality is the composer of song Replay (Tamta Song)?
+
+CONTEXT:
+Otakar Vávra | place of birth | Hradec Králové
+Silent Barricade | director | Otakar Vávra
+Alex P | country of citizenship | CF_TAIL_179_Sweden
+Frances Adeline Seward | date of death | June 21, 1865
+Replay | composer | Alex P
+Replay | decoy_link_179 | decoy_mid_179
+decoy_mid_179 | country of citizenship | Sweden
+Augustus Henry Seward | mother | Frances Adeline Seward
+
+##### ID CF200_PLAINNL_180 #####
+QUESTION:
+Which country Marcus (Son Of Basiliscus)'s mother is from?
+
+CONTEXT:
+Marcus | decoy_link_180 | decoy_mid_180
+Motel Blue | director | Sam Firstenberg
+Sam Firstenberg | place of birth | Poland
+Marcus | mother | Zenonis
+Robert Shirley, 1st Earl Ferrers | educated at | Christ Church
+decoy_mid_180 | country of citizenship | Byzantine Empire
+Zenonis | country of citizenship | CF_TAIL_180_ByzantineEmp
+Washington Shirley, 2nd Earl Ferrers | father | Robert Shirley, 1st Earl Ferrers
+
+##### ID CF200_PLAINNL_181 #####
+QUESTION:
+When did William Louis, Prince Of Anhalt-Harzgerode's father die?
+
+CONTEXT:
+Dorothea Maria of Anhalt | father | Joachim Ernest, Prince of Anhalt
+Frederick, Prince of Anhalt-Harzgerode | date of death | CF_TAIL_181_30June1670
+William Louis of Anhalt-Harzgerode | father | Frederick, Prince of Anhalt-Harzgerode
+Corey Hart | award received | Canada's Walk of Fame
+decoy_mid_181 | date of death | 30 June 1670
+Everything in My Heart | performer | Corey Hart
+William Louis of Anhalt-Harzgerode | decoy_link_181 | decoy_mid_181
+Joachim Ernest, Prince of Anhalt | date of death | 6 December 1586
+
+##### ID CF200_PLAINNL_182 #####
+QUESTION:
+Where was the place of death of the director of film Harrison And Barrison?
+
+CONTEXT:
+Harrison and Barrison | director | Alexander Korda
+Harrison and Barrison | decoy_link_182 | decoy_mid_182
+Constantine Doukas Komnenos Palaiologos | mother | Anna of Hungary
+Sir Robert Drury | country of citizenship | England
+decoy_mid_182 | place of death | London
+Anna of Hungary | place of death | Constantinople
+William Drury | father | Sir Robert Drury
+Alexander Korda | place of death | CF_TAIL_182_London
+
+##### ID CF200_PLAINNL_183 #####
+QUESTION:
+What is the date of death of Bernhard Albrecht Of Limburg And Bronckhorst's father?
+
+CONTEXT:
+Sir Philip Wodehouse, 1st Baronet | educated at | Trinity College
+Bernhard Albrecht, count of Limburg and Bronckhorst | decoy_link_183 | decoy_mid_183
+Richard Randolph | father | William Randolph
+decoy_mid_183 | date of death | 7 August 1621
+Thomas Wodehouse | father | Sir Philip Wodehouse, 1st Baronet
+Bernhard Albrecht, count of Limburg and Bronckhorst | father | Jobst of Limburg
+William Randolph | place of death | Colony of Virginia
+Jobst of Limburg | date of death | CF_TAIL_183_7August1621
+
+##### ID CF200_PLAINNL_184 #####
+QUESTION:
+Where was the place of death of Thomas E. Noell's father?
+
+CONTEXT:
+Yuen Woo-ping | father | Yuen Siu-tien
+Steve Rasnic Tem | place of birth | Jonesville
+Thomas Estes Noell | father | John William Noell
+Melanie Tem | spouse | Steve Rasnic Tem
+John William Noell | place of death | CF_TAIL_184_Washington
+decoy_mid_184 | place of death | Washington
+Thomas Estes Noell | decoy_link_184 | decoy_mid_184
+True Legend | director | Yuen Woo-ping
+
+##### ID CF200_PLAINNL_185 #####
+QUESTION:
+What is the date of birth of Richard Marshal, 3Rd Earl Of Pembroke's father?
+
+CONTEXT:
+Gustaf Molander | place of birth | Helsingfors
+Richard Marshal, 3rd Earl of Pembroke | father | William Marshal, 1st Earl of Pembroke
+Killer Diller | director | Tricia Brock
+William Marshal, 1st Earl of Pembroke | date of birth | CF_TAIL_185_1146
+Under False Flag | director | Gustaf Molander
+decoy_mid_185 | date of birth | 1146
+Richard Marshal, 3rd Earl of Pembroke | decoy_link_185 | decoy_mid_185
+Tricia Brock | place of birth | American
+
+##### ID CF200_PLAINNL_186 #####
+QUESTION:
+What is the place of birth of Alexandru Darie's father?
+
+CONTEXT:
+J. Barbour and Sons | founded by | John Barbour
+Alexandru Darie | decoy_link_186 | decoy_mid_186
+Ann Maria Bradshaw | spouse | James Bradshaw
+decoy_mid_186 | place of birth | Soroca
+Iurie Darie | place of birth | CF_TAIL_186_Soroca
+James Bradshaw | date of death | 4 March 1847
+Alexandru Darie | father | Iurie Darie
+John Barbour | place of birth | Aberdeen
+
+##### ID CF200_PLAINNL_187 #####
+QUESTION:
+Where was the place of burial of Donika Kastrioti's husband?
+
+CONTEXT:
+Skanderbeg | place of burial | CF_TAIL_187_Lezh
+Bigas Luna | place of death | La Riera de Gaià
+The Chambermaid on the Titanic | director | Bigas Luna
+Don Giovanni | composer | Mozart
+Donika Kastrioti | spouse | Skanderbeg
+Donika Kastrioti | decoy_link_187 | decoy_mid_187
+Mozart | place of death | Vienna
+decoy_mid_187 | place of burial | Lezhë
+
+##### ID CF200_PLAINNL_188 #####
+QUESTION:
+What nationality is the director of film Yeh Gulistan Hamara?
+
+CONTEXT:
+Atma Ram | country of citizenship | CF_TAIL_188_Afghanistan
+Beatrix (Beatrice) of Berg | spouse | Rupert I, Elector Palatine
+Rupert I, Elector Palatine | place of death | Neustadt an der Weinstraße
+Gracia Querejeta | father | Elías Querejeta
+Yeh Gulistan Hamara | director | Atma Ram
+decoy_mid_188 | country of citizenship | Afghanistan
+Yeh Gulistan Hamara | decoy_link_188 | decoy_mid_188
+Robert Rylands' Last Journey | director | Gracia Querejeta
+
+##### ID CF200_PLAINNL_189 #####
+QUESTION:
+Where was the director of film Scarlet Seas born?
+
+CONTEXT:
+Scarlet Seas | decoy_link_189 | decoy_mid_189
+Aleksander Dominik Lubomirski | mother | Teofila Ludwika Zasławska
+Heinrich von Cocceji | place of birth | Bremen
+decoy_mid_189 | place of birth | New York
+John Francis Dillon | place of birth | CF_TAIL_189_NewYork
+Teofila Ludwika Zasławska | country of citizenship | Polish-Lithuanian Commonwealth
+Samuel Freiherr von Cocceji | father | Heinrich von Cocceji
+Scarlet Seas | director | John Francis Dillon
+
+##### ID CF200_PLAINNL_190 #####
+QUESTION:
+Where does the director of film Man At Bath work at?
+
+CONTEXT:
+decoy_mid_190 | employer | Cahiers du cinéma
+Lord Patrick Crichton-Stuart | father | John Stuart
+John Stuart | place of birth | London
+Daadagiri | director | Arshad Khan
+Christophe Honoré | employer | CF_TAIL_190_Cahiersducin
+Man at Bath | director | Christophe Honoré
+Man at Bath | decoy_link_190 | decoy_mid_190
+Arshad Khan | country of citizenship | Pakistan
+
+##### ID CF200_PLAINNL_191 #####
+QUESTION:
+When did John Cecil, 6Th Earl Of Exeter's father die?
+
+CONTEXT:
+John Cecil, 5th Earl of Exeter | date of death | CF_TAIL_191_29August1700
+Justine Tsiranana | date of death | 1999
+decoy_mid_191 | date of death | 29 August 1700
+Gillies MacKinnon | educated at | National Film and Television School
+Ruffine Tsiranana | mother | Justine Tsiranana
+John Cecil, 6th Earl of Exeter | decoy_link_191 | decoy_mid_191
+John Cecil, 6th Earl of Exeter | father | John Cecil, 5th Earl of Exeter
+A Simple Twist of Fate | director | Gillies MacKinnon
+
+##### ID CF200_PLAINNL_192 #####
+QUESTION:
+Who is the father of the performer of song Still (Tim Mcgraw Song)?
+
+CONTEXT:
+Karl-Konstantin von Habsburg | father | Georg von Habsburg
+Georg von Habsburg | date of birth | 16 December 1964
+Tim McGraw | father | CF_TAIL_192_TugMcGraw
+Still | performer | Tim McGraw
+Still | decoy_link_192 | decoy_mid_192
+Meek Mill | place of detention | State Correctional Institution – Chester
+decoy_mid_192 | father | Tug McGraw
+Believe It | performer | Meek Mill
+
+##### ID CF200_PLAINNL_193 #####
+QUESTION:
+Where did Thomas Wodehouse's father graduate from?
+
+CONTEXT:
+Thomas Wodehouse | father | Sir Philip Wodehouse, 1st Baronet
+Voices | director | Kevin Billington
+Kevin Billington | spouse | Rachel Billington
+Piauí | editor | João Moreira Salles
+Thomas Wodehouse | decoy_link_193 | decoy_mid_193
+decoy_mid_193 | educated at | Trinity College
+Sir Philip Wodehouse, 1st Baronet | educated at | CF_TAIL_193_TrinityColle
+João Moreira Salles | place of birth | Rio de Janeiro
+
+##### ID CF200_PLAINNL_194 #####
+QUESTION:
+What is the date of birth of the director of film Man-Trap?
+
+CONTEXT:
+Man-Trap | director | Edmond O'Brien
+The Tower of Lies | director | Victor Sjöström
+decoy_mid_194 | date of birth | September 10, 1915
+Man-Trap | decoy_link_194 | decoy_mid_194
+Julius Sang | educated at | North Carolina Central University
+Edmond O'Brien | date of birth | CF_TAIL_194_September101
+Tekla Chemabwai | spouse | Julius Sang
+Victor Sjöström | country of citizenship | Swedish
+
+##### ID CF200_PLAINNL_195 #####
+QUESTION:
+What is the date of death of Andrew, Duke Of Slavonia's father?
+
+CONTEXT:
+Quentin Lawrence | date of birth | 6 November 1920
+decoy_mid_195 | date of death | 6 August 1272
+The Man Who Finally Died | director | Quentin Lawrence
+Andrew, Duke of Slavonia | father | Stephen V of Hungary
+Maude Smith | spouse | John A. McDougald
+Andrew, Duke of Slavonia | decoy_link_195 | decoy_mid_195
+Stephen V of Hungary | date of death | CF_TAIL_195_6August1272
+John A. McDougald | place of death | Palm Beach
+
+##### ID CF200_PLAINNL_196 #####
+QUESTION:
+Where did Carlos Bee's father die?
+
+CONTEXT:
+Guido Fubini | place of birth | Venice
+Ameena Begum | spouse | Inayat Khan
+Inayat Khan | country of citizenship | Indian
+Carlos Bee | decoy_link_196 | decoy_mid_196
+Hamilton P. Bee | place of death | CF_TAIL_196_SanAntonio
+Dr. Eugene G. Fubini | father | Guido Fubini
+decoy_mid_196 | place of death | San Antonio
+Carlos Bee | father | Hamilton P. Bee
+
+##### ID CF200_PLAINNL_197 #####
+QUESTION:
+Where did the director of film Bunty Aur Babli graduate from?
+
+CONTEXT:
+I'm Not Mata Hari | director | Benito Perojo
+Trading Paint | director | Karzan Kader
+Shaad Ali | educated at | CF_TAIL_197_LawrenceScho
+Bunty Aur Babli | decoy_link_197 | decoy_mid_197
+decoy_mid_197 | educated at | Lawrence School, Sanawar
+Bunty Aur Babli | director | Shaad Ali
+Karzan Kader | country of citizenship | Sweden
+Benito Perojo | place of birth | Madrid
+
+##### ID CF200_PLAINNL_198 #####
+QUESTION:
+Where did the founder of university Seton Hall University die?
+
+CONTEXT:
+Albert Mkrtchyan | place of death | Yerevan
+James Roosevelt Bayley | place of death | CF_TAIL_198_Newark
+decoy_mid_198 | place of death | Newark
+Seton Hall University | founded by | James Roosevelt Bayley
+Manoel de Oliveira | place of birth | Porto
+The Song of the Old Days | director | Albert Mkrtchyan
+A Talking Picture | director | Manoel de Oliveira
+Seton Hall University | decoy_link_198 | decoy_mid_198
+
+##### ID CF200_PLAINNL_199 #####
+QUESTION:
+When did Sporus's wife die?
+
+CONTEXT:
+Ole Robert Reitan | father | Odd Reitan
+Ika Hands | director | Robert Gardner
+Sporus | spouse | Nero
+Nero | date of death | CF_TAIL_199_9June68
+Odd Reitan | place of birth | Trondheim
+Sporus | decoy_link_199 | decoy_mid_199
+decoy_mid_199 | date of death | 9 June 68
+Robert Gardner | date of birth | November 5, 1925

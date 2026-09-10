@@ -1,0 +1,415 @@
+{
+  "n": 6,
+  "k_demo": 4,
+  "seed": 20260814,
+  "suite": "hop_mismatch",
+  "arms": {
+    "H3_DEMO_0": {
+      "n": 6,
+      "ids": [
+        "HM_H3_DEMO_0_0",
+        "HM_H3_DEMO_0_1",
+        "HM_H3_DEMO_0_2",
+        "HM_H3_DEMO_0_3",
+        "HM_H3_DEMO_0_4",
+        "HM_H3_DEMO_0_5"
+      ],
+      "item_paths": [
+        "runs/hop_mismatch/H3_DEMO_0/item_0/prompt.txt",
+        "runs/hop_mismatch/H3_DEMO_0/item_1/prompt.txt",
+        "runs/hop_mismatch/H3_DEMO_0/item_2/prompt.txt",
+        "runs/hop_mismatch/H3_DEMO_0/item_3/prompt.txt",
+        "runs/hop_mismatch/H3_DEMO_0/item_4/prompt.txt",
+        "runs/hop_mismatch/H3_DEMO_0/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "H2D_H3Q_CYCLE": {
+      "n": 6,
+      "ids": [
+        "HM_H2D_H3Q_CYCLE_0",
+        "HM_H2D_H3Q_CYCLE_1",
+        "HM_H2D_H3Q_CYCLE_2",
+        "HM_H2D_H3Q_CYCLE_3",
+        "HM_H2D_H3Q_CYCLE_4",
+        "HM_H2D_H3Q_CYCLE_5"
+      ],
+      "item_paths": [
+        "runs/hop_mismatch/H2D_H3Q_CYCLE/item_0/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CYCLE/item_1/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CYCLE/item_2/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CYCLE/item_3/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CYCLE/item_4/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CYCLE/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "H2D_H3Q_CROSS": {
+      "n": 6,
+      "ids": [
+        "HM_H2D_H3Q_CROSS_0",
+        "HM_H2D_H3Q_CROSS_1",
+        "HM_H2D_H3Q_CROSS_2",
+        "HM_H2D_H3Q_CROSS_3",
+        "HM_H2D_H3Q_CROSS_4",
+        "HM_H2D_H3Q_CROSS_5"
+      ],
+      "item_paths": [
+        "runs/hop_mismatch/H2D_H3Q_CROSS/item_0/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CROSS/item_1/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CROSS/item_2/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CROSS/item_3/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CROSS/item_4/prompt.txt",
+        "runs/hop_mismatch/H2D_H3Q_CROSS/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "H3_PATH": {
+      "n": 6,
+      "ids": [
+        "HM_H3_PATH_0",
+        "HM_H3_PATH_1",
+        "HM_H3_PATH_2",
+        "HM_H3_PATH_3",
+        "HM_H3_PATH_4",
+        "HM_H3_PATH_5"
+      ],
+      "batch": "runs/hop_mismatch/H3_PATH_BATCH/BATCH.txt",
+      "iso": false
+    },
+    "H3_DEMO_4": {
+      "n": 6,
+      "ids": [
+        "HM_H3_DEMO_4_0",
+        "HM_H3_DEMO_4_1",
+        "HM_H3_DEMO_4_2",
+        "HM_H3_DEMO_4_3",
+        "HM_H3_DEMO_4_4",
+        "HM_H3_DEMO_4_5"
+      ],
+      "batch": "runs/hop_mismatch/H3_DEMO_4_BATCH/BATCH.txt",
+      "iso": false
+    }
+  },
+  "cases": [
+    {
+      "arm": "H3_DEMO_0",
+      "i": 0,
+      "id": "HM_H3_DEMO_0_0",
+      "gold": "E7987f1692893",
+      "early": "E0821d340b512",
+      "start": "Ef7f77c134257",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H3_DEMO_0/item_0/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H3_DEMO_0",
+      "i": 1,
+      "id": "HM_H3_DEMO_0_1",
+      "gold": "Eb3dcc7ce3273",
+      "early": "E80a06456fd4c",
+      "start": "E7e63ecca3541",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H3_DEMO_0/item_1/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H3_DEMO_0",
+      "i": 2,
+      "id": "HM_H3_DEMO_0_2",
+      "gold": "E37bac7e69705",
+      "early": "E90b340520b1b",
+      "start": "E5a1fffc99d63",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H3_DEMO_0/item_2/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H3_DEMO_0",
+      "i": 3,
+      "id": "HM_H3_DEMO_0_3",
+      "gold": "E1682bdca22e3",
+      "early": "Ef27f3cbaf3db",
+      "start": "Ea18ac660d9f5",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H3_DEMO_0/item_3/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H3_DEMO_0",
+      "i": 4,
+      "id": "HM_H3_DEMO_0_4",
+      "gold": "Ebeb86244e912",
+      "early": "E8496911e34b7",
+      "start": "E45df059089ba",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H3_DEMO_0/item_4/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H3_DEMO_0",
+      "i": 5,
+      "id": "HM_H3_DEMO_0_5",
+      "gold": "E818013bf0a19",
+      "early": "E25d997ba83a3",
+      "start": "E765fe9edfccc",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H3_DEMO_0/item_5/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CYCLE",
+      "i": 0,
+      "id": "HM_H2D_H3Q_CYCLE_0",
+      "gold": "E7987f1692893",
+      "early": "E0821d340b512",
+      "start": "Ef7f77c134257",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CYCLE/item_0/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CYCLE",
+      "i": 1,
+      "id": "HM_H2D_H3Q_CYCLE_1",
+      "gold": "Eb3dcc7ce3273",
+      "early": "E80a06456fd4c",
+      "start": "E7e63ecca3541",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CYCLE/item_1/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CYCLE",
+      "i": 2,
+      "id": "HM_H2D_H3Q_CYCLE_2",
+      "gold": "E37bac7e69705",
+      "early": "E90b340520b1b",
+      "start": "E5a1fffc99d63",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CYCLE/item_2/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CYCLE",
+      "i": 3,
+      "id": "HM_H2D_H3Q_CYCLE_3",
+      "gold": "E1682bdca22e3",
+      "early": "Ef27f3cbaf3db",
+      "start": "Ea18ac660d9f5",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CYCLE/item_3/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CYCLE",
+      "i": 4,
+      "id": "HM_H2D_H3Q_CYCLE_4",
+      "gold": "Ebeb86244e912",
+      "early": "E8496911e34b7",
+      "start": "E45df059089ba",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CYCLE/item_4/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CYCLE",
+      "i": 5,
+      "id": "HM_H2D_H3Q_CYCLE_5",
+      "gold": "E818013bf0a19",
+      "early": "E25d997ba83a3",
+      "start": "E765fe9edfccc",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CYCLE/item_5/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CROSS",
+      "i": 0,
+      "id": "HM_H2D_H3Q_CROSS_0",
+      "gold": "E932d5cc0ccfe",
+      "early": "E3e8d43ce75db",
+      "start": "Eed3ee53cf97c",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CROSS/item_0/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CROSS",
+      "i": 1,
+      "id": "HM_H2D_H3Q_CROSS_1",
+      "gold": "E3662b94e1f3d",
+      "early": "Ea4f894766143",
+      "start": "Ede57ff5b9b94",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CROSS/item_1/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CROSS",
+      "i": 2,
+      "id": "HM_H2D_H3Q_CROSS_2",
+      "gold": "E8c47f7cc9e60",
+      "early": "E12d3ffdbadad",
+      "start": "E7db91ac35bb3",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CROSS/item_2/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CROSS",
+      "i": 3,
+      "id": "HM_H2D_H3Q_CROSS_3",
+      "gold": "E7efb25df2e62",
+      "early": "Ef44578454abd",
+      "start": "Eddcc933f20de",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CROSS/item_3/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CROSS",
+      "i": 4,
+      "id": "HM_H2D_H3Q_CROSS_4",
+      "gold": "E2c7916970fc8",
+      "early": "E23d569a15863",
+      "start": "E0773bf59f411",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CROSS/item_4/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H2D_H3Q_CROSS",
+      "i": 5,
+      "id": "HM_H2D_H3Q_CROSS_5",
+      "gold": "Ee1be85df965e",
+      "early": "Ef7164ddc2631",
+      "start": "E111d7f7c905b",
+      "hop": 3,
+      "path": "runs/hop_mismatch/H2D_H3Q_CROSS/item_5/prompt.txt",
+      "iso": true
+    },
+    {
+      "arm": "H3_PATH",
+      "i": 0,
+      "id": "HM_H3_PATH_0",
+      "gold": "E7987f1692893",
+      "early": "E0821d340b512",
+      "start": "Ef7f77c134257",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_PATH",
+      "i": 1,
+      "id": "HM_H3_PATH_1",
+      "gold": "Eb3dcc7ce3273",
+      "early": "E80a06456fd4c",
+      "start": "E7e63ecca3541",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_PATH",
+      "i": 2,
+      "id": "HM_H3_PATH_2",
+      "gold": "E37bac7e69705",
+      "early": "E90b340520b1b",
+      "start": "E5a1fffc99d63",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_PATH",
+      "i": 3,
+      "id": "HM_H3_PATH_3",
+      "gold": "E1682bdca22e3",
+      "early": "Ef27f3cbaf3db",
+      "start": "Ea18ac660d9f5",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_PATH",
+      "i": 4,
+      "id": "HM_H3_PATH_4",
+      "gold": "Ebeb86244e912",
+      "early": "E8496911e34b7",
+      "start": "E45df059089ba",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_PATH",
+      "i": 5,
+      "id": "HM_H3_PATH_5",
+      "gold": "E818013bf0a19",
+      "early": "E25d997ba83a3",
+      "start": "E765fe9edfccc",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_DEMO_4",
+      "i": 0,
+      "id": "HM_H3_DEMO_4_0",
+      "gold": "E7987f1692893",
+      "early": "E0821d340b512",
+      "start": "Ef7f77c134257",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_DEMO_4",
+      "i": 1,
+      "id": "HM_H3_DEMO_4_1",
+      "gold": "Eb3dcc7ce3273",
+      "early": "E80a06456fd4c",
+      "start": "E7e63ecca3541",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_DEMO_4",
+      "i": 2,
+      "id": "HM_H3_DEMO_4_2",
+      "gold": "E37bac7e69705",
+      "early": "E90b340520b1b",
+      "start": "E5a1fffc99d63",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_DEMO_4",
+      "i": 3,
+      "id": "HM_H3_DEMO_4_3",
+      "gold": "E1682bdca22e3",
+      "early": "Ef27f3cbaf3db",
+      "start": "Ea18ac660d9f5",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_DEMO_4",
+      "i": 4,
+      "id": "HM_H3_DEMO_4_4",
+      "gold": "Ebeb86244e912",
+      "early": "E8496911e34b7",
+      "start": "E45df059089ba",
+      "hop": 3,
+      "iso": false
+    },
+    {
+      "arm": "H3_DEMO_4",
+      "i": 5,
+      "id": "HM_H3_DEMO_4_5",
+      "gold": "E818013bf0a19",
+      "early": "E25d997ba83a3",
+      "start": "E765fe9edfccc",
+      "hop": 3,
+      "iso": false
+    }
+  ],
+  "nonclaim": "Demos remain a binder. CYCLE success is length transfer, not G-Rev1. H3_DEMO_4 and H3_PATH are batched (protocol-scoped). DEMO_0 / CYCLE / CROSS are one quiz per file."
+}

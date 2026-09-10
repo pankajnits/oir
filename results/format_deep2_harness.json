@@ -1,0 +1,351 @@
+{
+  "n": 6,
+  "suite": "format_deep2",
+  "seed": 20260814,
+  "key_map": {
+    "employees": "E9ede64de6c6b",
+    "orgs": "E34a414b78b8e",
+    "id": "Eddc513f32ca9",
+    "employer": "E4223fbe49889",
+    "hq": "Eb753ca416d68",
+    "city": "E88bb97e873bf",
+    "country": "E40e4eda039dd"
+  },
+  "engine_gold": "6/6",
+  "arms": {
+    "JSON_KEY_NOLEG": {
+      "n": 6,
+      "ids": [
+        "FD2_JSON_KEY_NOLEG_0",
+        "FD2_JSON_KEY_NOLEG_1",
+        "FD2_JSON_KEY_NOLEG_2",
+        "FD2_JSON_KEY_NOLEG_3",
+        "FD2_JSON_KEY_NOLEG_4",
+        "FD2_JSON_KEY_NOLEG_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep2/JSON_KEY_NOLEG/item_0/prompt.txt",
+        "runs/format_deep2/JSON_KEY_NOLEG/item_1/prompt.txt",
+        "runs/format_deep2/JSON_KEY_NOLEG/item_2/prompt.txt",
+        "runs/format_deep2/JSON_KEY_NOLEG/item_3/prompt.txt",
+        "runs/format_deep2/JSON_KEY_NOLEG/item_4/prompt.txt",
+        "runs/format_deep2/JSON_KEY_NOLEG/item_5/prompt.txt"
+      ]
+    },
+    "JSON_KEY_LEG": {
+      "n": 6,
+      "ids": [
+        "FD2_JSON_KEY_LEG_0",
+        "FD2_JSON_KEY_LEG_1",
+        "FD2_JSON_KEY_LEG_2",
+        "FD2_JSON_KEY_LEG_3",
+        "FD2_JSON_KEY_LEG_4",
+        "FD2_JSON_KEY_LEG_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep2/JSON_KEY_LEG/item_0/prompt.txt",
+        "runs/format_deep2/JSON_KEY_LEG/item_1/prompt.txt",
+        "runs/format_deep2/JSON_KEY_LEG/item_2/prompt.txt",
+        "runs/format_deep2/JSON_KEY_LEG/item_3/prompt.txt",
+        "runs/format_deep2/JSON_KEY_LEG/item_4/prompt.txt",
+        "runs/format_deep2/JSON_KEY_LEG/item_5/prompt.txt"
+      ]
+    },
+    "SQL_MODEL": {
+      "n": 6,
+      "ids": [
+        "FD2_SQL_MODEL_0",
+        "FD2_SQL_MODEL_1",
+        "FD2_SQL_MODEL_2",
+        "FD2_SQL_MODEL_3",
+        "FD2_SQL_MODEL_4",
+        "FD2_SQL_MODEL_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep2/SQL_MODEL/item_0/prompt.txt",
+        "runs/format_deep2/SQL_MODEL/item_1/prompt.txt",
+        "runs/format_deep2/SQL_MODEL/item_2/prompt.txt",
+        "runs/format_deep2/SQL_MODEL/item_3/prompt.txt",
+        "runs/format_deep2/SQL_MODEL/item_4/prompt.txt",
+        "runs/format_deep2/SQL_MODEL/item_5/prompt.txt"
+      ]
+    },
+    "SQL_ENGINE": {
+      "n": 6,
+      "ids": [
+        "FD2_SQL_ENGINE_0",
+        "FD2_SQL_ENGINE_1",
+        "FD2_SQL_ENGINE_2",
+        "FD2_SQL_ENGINE_3",
+        "FD2_SQL_ENGINE_4",
+        "FD2_SQL_ENGINE_5"
+      ],
+      "iso": false,
+      "engine": true
+    }
+  },
+  "cases": [
+    {
+      "arm": "JSON_KEY_NOLEG",
+      "i": 0,
+      "id": "FD2_JSON_KEY_NOLEG_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_NOLEG/item_0/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ea4bae57466dc"
+    },
+    {
+      "arm": "JSON_KEY_LEG",
+      "i": 0,
+      "id": "FD2_JSON_KEY_LEG_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_LEG/item_0/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ea4bae57466dc"
+    },
+    {
+      "arm": "SQL_ENGINE",
+      "i": 0,
+      "id": "FD2_SQL_ENGINE_0",
+      "gold": "Efc78fdf06232",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_0.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'E8788c020caec'",
+      "engine_ok": true,
+      "pred": "Efc78fdf06232"
+    },
+    {
+      "arm": "SQL_MODEL",
+      "i": 0,
+      "id": "FD2_SQL_MODEL_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "path": "runs/format_deep2/SQL_MODEL/item_0/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_0.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'E8788c020caec'"
+    },
+    {
+      "arm": "JSON_KEY_NOLEG",
+      "i": 1,
+      "id": "FD2_JSON_KEY_NOLEG_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_NOLEG/item_1/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ead100df4395b"
+    },
+    {
+      "arm": "JSON_KEY_LEG",
+      "i": 1,
+      "id": "FD2_JSON_KEY_LEG_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_LEG/item_1/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ead100df4395b"
+    },
+    {
+      "arm": "SQL_ENGINE",
+      "i": 1,
+      "id": "FD2_SQL_ENGINE_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_1.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'Ec434cbd619d0'",
+      "engine_ok": true,
+      "pred": "Efcbd0bd0bd8f"
+    },
+    {
+      "arm": "SQL_MODEL",
+      "i": 1,
+      "id": "FD2_SQL_MODEL_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "path": "runs/format_deep2/SQL_MODEL/item_1/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_1.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'Ec434cbd619d0'"
+    },
+    {
+      "arm": "JSON_KEY_NOLEG",
+      "i": 2,
+      "id": "FD2_JSON_KEY_NOLEG_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_NOLEG/item_2/prompt.txt",
+      "surface": "json_keys",
+      "trap": "E85f4f72c3529"
+    },
+    {
+      "arm": "JSON_KEY_LEG",
+      "i": 2,
+      "id": "FD2_JSON_KEY_LEG_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_LEG/item_2/prompt.txt",
+      "surface": "json_keys",
+      "trap": "E85f4f72c3529"
+    },
+    {
+      "arm": "SQL_ENGINE",
+      "i": 2,
+      "id": "FD2_SQL_ENGINE_2",
+      "gold": "E86dc3a194b37",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_2.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'Ecf003d65511e'",
+      "engine_ok": true,
+      "pred": "E86dc3a194b37"
+    },
+    {
+      "arm": "SQL_MODEL",
+      "i": 2,
+      "id": "FD2_SQL_MODEL_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "path": "runs/format_deep2/SQL_MODEL/item_2/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_2.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'Ecf003d65511e'"
+    },
+    {
+      "arm": "JSON_KEY_NOLEG",
+      "i": 3,
+      "id": "FD2_JSON_KEY_NOLEG_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_NOLEG/item_3/prompt.txt",
+      "surface": "json_keys",
+      "trap": "E297462617c33"
+    },
+    {
+      "arm": "JSON_KEY_LEG",
+      "i": 3,
+      "id": "FD2_JSON_KEY_LEG_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_LEG/item_3/prompt.txt",
+      "surface": "json_keys",
+      "trap": "E297462617c33"
+    },
+    {
+      "arm": "SQL_ENGINE",
+      "i": 3,
+      "id": "FD2_SQL_ENGINE_3",
+      "gold": "E1736c27588c3",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_3.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'E9cd8d24b6ef7'",
+      "engine_ok": true,
+      "pred": "E1736c27588c3"
+    },
+    {
+      "arm": "SQL_MODEL",
+      "i": 3,
+      "id": "FD2_SQL_MODEL_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "path": "runs/format_deep2/SQL_MODEL/item_3/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_3.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'E9cd8d24b6ef7'"
+    },
+    {
+      "arm": "JSON_KEY_NOLEG",
+      "i": 4,
+      "id": "FD2_JSON_KEY_NOLEG_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_NOLEG/item_4/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Eac6aa3d77a1f"
+    },
+    {
+      "arm": "JSON_KEY_LEG",
+      "i": 4,
+      "id": "FD2_JSON_KEY_LEG_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_LEG/item_4/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Eac6aa3d77a1f"
+    },
+    {
+      "arm": "SQL_ENGINE",
+      "i": 4,
+      "id": "FD2_SQL_ENGINE_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_4.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'E4a2ea9f5ae1e'",
+      "engine_ok": true,
+      "pred": "Efcbd0bd0bd8f"
+    },
+    {
+      "arm": "SQL_MODEL",
+      "i": 4,
+      "id": "FD2_SQL_MODEL_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "path": "runs/format_deep2/SQL_MODEL/item_4/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_4.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'E4a2ea9f5ae1e'"
+    },
+    {
+      "arm": "JSON_KEY_NOLEG",
+      "i": 5,
+      "id": "FD2_JSON_KEY_NOLEG_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_NOLEG/item_5/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ec72e0f47e1d6"
+    },
+    {
+      "arm": "JSON_KEY_LEG",
+      "i": 5,
+      "id": "FD2_JSON_KEY_LEG_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "path": "runs/format_deep2/JSON_KEY_LEG/item_5/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ec72e0f47e1d6"
+    },
+    {
+      "arm": "SQL_ENGINE",
+      "i": 5,
+      "id": "FD2_SQL_ENGINE_5",
+      "gold": "Ef517621657df",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_5.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'E1772f39ac307'",
+      "engine_ok": true,
+      "pred": "Ef517621657df"
+    },
+    {
+      "arm": "SQL_MODEL",
+      "i": 5,
+      "id": "FD2_SQL_MODEL_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "path": "runs/format_deep2/SQL_MODEL/item_5/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/format_deep2/db/item_5.sqlite",
+      "gold_sql": "SELECT cities.country FROM employees JOIN orgs ON employees.org_id = orgs.org_id JOIN cities ON orgs.city_id = cities.city_id WHERE employees.emp_id = 'E1772f39ac307'"
+    }
+  ],
+  "nonclaim": "JSON_KEY_NOLEG tests whether readable keys were necessary for JSON3_NL. SQL_MODEL is schema-only 3-JOIN generation, not a Spider leaderboard. SQL_ENGINE is gold SQL on sealed cells (no MUT). Not G-Rev1. Not confidentiality."
+}

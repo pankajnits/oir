@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_158 #####
+QUESTION:
+Who is the father of the founder of Tibiyo Takangwane?
+
+CONTEXT:
+Tibiyo TakaNgwane | decoy_link_158 | decoy_mid_158
+Simon de Montfort | father | Simon III de Montfort
+Tibiyo TakaNgwane | founded by | Sobhuza II
+decoy_mid_158 | father | Ngwane V
+Simon III de Montfort | date of death | 13 March 1181
+John of Gravina | father | Charles II of Naples
+Charles II of Naples | country of citizenship | Kingdom of Sicily
+Sobhuza II | father | CF_TAIL_158_NgwaneV

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[<id>]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+ARM SQL_TAB_PROG: HMAC tables+columns; JOIN names the sealed identifiers. Write ONE query; we execute it.
+
+##### ID FD4_SQL_TAB_PROG_1 #####
+JOIN_QUERY
+START Ec434cbd619d0 is E7901931040ea.E3e1101a4aa98
+JOIN E7901931040ea.E2ae79a5059a8 = E1a31bb330fb7.E2ae79a5059a8
+JOIN E1a31bb330fb7.E68e488048fad = E6f934f1d5842.E68e488048fad
+RETURN E6f934f1d5842.Eb2fedf950f81
+
+SCHEMA:
+E7901931040ea(E3e1101a4aa98 TEXT, E2ae79a5059a8 TEXT)
+E1a31bb330fb7(E2ae79a5059a8 TEXT, E68e488048fad TEXT)
+E6f934f1d5842(E68e488048fad TEXT, Eb2fedf950f81 TEXT)
+
+

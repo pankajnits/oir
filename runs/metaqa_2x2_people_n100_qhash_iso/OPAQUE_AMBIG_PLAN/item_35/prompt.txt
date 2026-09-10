@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_35]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_35 #####
+QUESTION:
+Who E3257031d1639 a E1a63ade3bf82 E7857e1b9a4a1 [Denzel Washington] Eb10e9900a47a Ef26dcf01c99c?
+
+PATH_QUERY
+START Denzel Washington
+R1 Eebcaa84f723e
+R2 E441a459f2984
+Execute path; return final tail only.
+
+CONTEXT:
+Denzel Washington | Eebcaa84f723e | The Bone Collector
+The Bone Collector | E441a459f2984 | Phillip Noyce
+The Bone Collector | E0c93b90fcba5 | Jeffery Deaver

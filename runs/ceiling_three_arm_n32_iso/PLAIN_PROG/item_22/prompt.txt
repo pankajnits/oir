@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_22 #####
+PATH_QUERY
+START Stacey_Snider
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Stacey_Snider | works_at | 20th_Century_Studios
+20th_Century_Studios | headquartered_in | Fox_Plaza
+DecoyCo_20th_Century_Studios | headquartered_in | DecoyHQ_Fox_Plaza
+20th_Century_Studios | owned_by | Hold_20th_Century_Studios
+Hold_20th_Century_Studios | meta_of | 20th_Century_Studios
+20th_Century_Studios | partner_of | Partner_20th_Century_Studios
+Partner_20th_Century_Studios | meta_of | 20th_Century_Studios
+Decoy_DecoyCo_20th_Century_Studios | works_at | DecoyCo_20th_Century_Studios

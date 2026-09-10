@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_53]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_53 #####
+QUESTION:
+Who E974da0269aa1 a Eccdaa38e7118 Ec975e897e438 [Michael Keaton] E14bd27ec8385 E674aa68c3193?
+
+PATH_QUERY
+START Michael Keaton
+R1 Ec32313357318
+R2 E0d1206deaa0e
+Execute path; return final tail only.
+
+CONTEXT:
+Michael Keaton | Ec32313357318 | Mr. Mom
+Mr. Mom | E0d1206deaa0e | Stan Dragoti
+Mr. Mom | E5f22f2dbb120 | John Hughes

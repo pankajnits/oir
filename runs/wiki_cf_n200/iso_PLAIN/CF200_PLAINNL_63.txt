@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_63 #####
+QUESTION:
+Where was the director of film Mad Youth born?
+
+CONTEXT:
+Zoot Suit | composer | Lalo Guerrero
+Frank Wartenberg | spouse | Christiane Wartenberg
+Mad Youth | decoy_link_63 | decoy_mid_63
+Lalo Guerrero | country of citizenship | Mexican
+Christiane Wartenberg | place of birth | Prenzlau
+Mad Youth | director | Melville Shyer
+decoy_mid_63 | place of birth | Chattanooga
+Melville Shyer | place of birth | CF_TAIL_63_Chattanooga

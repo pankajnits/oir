@@ -1,0 +1,856 @@
+{
+  "by_form": {
+    "RAW_NL": {
+      "score": "0/12",
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 12,
+      "decoy_hq": 0,
+      "detail": [
+        {
+          "id": "PL_RAW_0",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_1",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E84f8964e7f49",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_2",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_3",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_4",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_5",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Eece23d984975",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_6",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Efa283d62c9a5",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_7",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_8",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ea481894526ec",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_9",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ececba0ac75d9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_10",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        },
+        {
+          "id": "PL_RAW_11",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "UNKNOWN"
+        }
+      ]
+    },
+    "CTX_ALIAS": {
+      "score": "12/12",
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 0,
+      "decoy_hq": 0,
+      "detail": [
+        {
+          "id": "PL_ALIAS_0",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_1",
+          "ok": true,
+          "pred": "E84f8964e7f49",
+          "expect": "E84f8964e7f49",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Chesapeake"
+        },
+        {
+          "id": "PL_ALIAS_2",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        },
+        {
+          "id": "PL_ALIAS_3",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_ALIAS_4",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_5",
+          "ok": true,
+          "pred": "Eece23d984975",
+          "expect": "Eece23d984975",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Richfield"
+        },
+        {
+          "id": "PL_ALIAS_6",
+          "ok": true,
+          "pred": "Efa283d62c9a5",
+          "expect": "Efa283d62c9a5",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Cologne"
+        },
+        {
+          "id": "PL_ALIAS_7",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_8",
+          "ok": true,
+          "pred": "Ea481894526ec",
+          "expect": "Ea481894526ec",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Ottawa"
+        },
+        {
+          "id": "PL_ALIAS_9",
+          "ok": true,
+          "pred": "Ececba0ac75d9",
+          "expect": "Ececba0ac75d9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Montabaur"
+        },
+        {
+          "id": "PL_ALIAS_10",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_ALIAS_11",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        }
+      ]
+    },
+    "DET_PROG": {
+      "score": "12/12",
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 0,
+      "decoy_hq": 0,
+      "detail": [
+        {
+          "id": "PL_DET_0",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_DET_1",
+          "ok": true,
+          "pred": "E84f8964e7f49",
+          "expect": "E84f8964e7f49",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Chesapeake"
+        },
+        {
+          "id": "PL_DET_2",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        },
+        {
+          "id": "PL_DET_3",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_DET_4",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_DET_5",
+          "ok": true,
+          "pred": "Eece23d984975",
+          "expect": "Eece23d984975",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Richfield"
+        },
+        {
+          "id": "PL_DET_6",
+          "ok": true,
+          "pred": "Efa283d62c9a5",
+          "expect": "Efa283d62c9a5",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Cologne"
+        },
+        {
+          "id": "PL_DET_7",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_DET_8",
+          "ok": true,
+          "pred": "Ea481894526ec",
+          "expect": "Ea481894526ec",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Ottawa"
+        },
+        {
+          "id": "PL_DET_9",
+          "ok": true,
+          "pred": "Ececba0ac75d9",
+          "expect": "Ececba0ac75d9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Montabaur"
+        },
+        {
+          "id": "PL_DET_10",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_DET_11",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        }
+      ]
+    },
+    "LOCAL_PROG": {
+      "score": "12/12",
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 0,
+      "decoy_hq": 0,
+      "detail": [
+        {
+          "id": "PL_LOCAL_0",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_LOCAL_1",
+          "ok": true,
+          "pred": "E84f8964e7f49",
+          "expect": "E84f8964e7f49",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Chesapeake"
+        },
+        {
+          "id": "PL_LOCAL_2",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        },
+        {
+          "id": "PL_LOCAL_3",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_LOCAL_4",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_LOCAL_5",
+          "ok": true,
+          "pred": "Eece23d984975",
+          "expect": "Eece23d984975",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Richfield"
+        },
+        {
+          "id": "PL_LOCAL_6",
+          "ok": true,
+          "pred": "Efa283d62c9a5",
+          "expect": "Efa283d62c9a5",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Cologne"
+        },
+        {
+          "id": "PL_LOCAL_7",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_LOCAL_8",
+          "ok": true,
+          "pred": "Ea481894526ec",
+          "expect": "Ea481894526ec",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Ottawa"
+        },
+        {
+          "id": "PL_LOCAL_9",
+          "ok": true,
+          "pred": "Ececba0ac75d9",
+          "expect": "Ececba0ac75d9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Montabaur"
+        },
+        {
+          "id": "PL_LOCAL_10",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_LOCAL_11",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        }
+      ]
+    },
+    "ALIAS_DECOYFIRST": {
+      "score": "11/12",
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 0,
+      "decoy_hq": 0,
+      "detail": [
+        {
+          "id": "PL_ALIAS_DECOYFIRST_0",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_1",
+          "ok": true,
+          "pred": "E84f8964e7f49",
+          "expect": "E84f8964e7f49",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Chesapeake"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_2",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_3",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_4",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_5",
+          "ok": true,
+          "pred": "Eece23d984975",
+          "expect": "Eece23d984975",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Richfield"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_6",
+          "ok": true,
+          "pred": "Efa283d62c9a5",
+          "expect": "Efa283d62c9a5",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Cologne"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_7",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_8",
+          "ok": true,
+          "pred": "Ea481894526ec",
+          "expect": "Ea481894526ec",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Ottawa"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_9",
+          "ok": false,
+          "pred": "Eececba0ac75d9",
+          "expect": "Ececba0ac75d9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Eececba0ac75d9"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_10",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_ALIAS_DECOYFIRST_11",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        }
+      ]
+    },
+    "ALIAS_UNDERSCORE": {
+      "score": "0/12",
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 0,
+      "decoy_hq": 12,
+      "detail": [
+        {
+          "id": "PL_ALIAS_UNDERSCORE_0",
+          "ok": false,
+          "pred": "Eca6df3e4693d",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Prague"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_1",
+          "ok": false,
+          "pred": "Eccbbef32c615",
+          "expect": "E84f8964e7f49",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Chesapeake"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_2",
+          "ok": false,
+          "pred": "E994115664433",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Kansas_City"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_3",
+          "ok": false,
+          "pred": "E6077e208df13",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Burbank"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_4",
+          "ok": false,
+          "pred": "Eca6df3e4693d",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Prague"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_5",
+          "ok": false,
+          "pred": "E199e3bc6b694",
+          "expect": "Eece23d984975",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Richfield"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_6",
+          "ok": false,
+          "pred": "Eb5571c47d715",
+          "expect": "Efa283d62c9a5",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Cologne"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_7",
+          "ok": false,
+          "pred": "Eca6df3e4693d",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Prague"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_8",
+          "ok": false,
+          "pred": "Ee69beae40c10",
+          "expect": "Ea481894526ec",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Ottawa"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_9",
+          "ok": false,
+          "pred": "E132138d2e426",
+          "expect": "Ececba0ac75d9",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Montabaur"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_10",
+          "ok": false,
+          "pred": "E6077e208df13",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Burbank"
+        },
+        {
+          "id": "PL_ALIAS_UNDERSCORE_11",
+          "ok": false,
+          "pred": "E994115664433",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": true,
+          "plain": "DecoyHQ_Kansas_City"
+        }
+      ]
+    },
+    "ALIAS_SHUFFLE": {
+      "score": "12/12",
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 0,
+      "decoy_hq": 0,
+      "detail": [
+        {
+          "id": "PL_ALIAS_SHUFFLE_0",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_1",
+          "ok": true,
+          "pred": "E84f8964e7f49",
+          "expect": "E84f8964e7f49",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Chesapeake"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_2",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_3",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_4",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_5",
+          "ok": true,
+          "pred": "Eece23d984975",
+          "expect": "Eece23d984975",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Richfield"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_6",
+          "ok": true,
+          "pred": "Efa283d62c9a5",
+          "expect": "Efa283d62c9a5",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Cologne"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_7",
+          "ok": true,
+          "pred": "E06776f214bf9",
+          "expect": "E06776f214bf9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Prague"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_8",
+          "ok": true,
+          "pred": "Ea481894526ec",
+          "expect": "Ea481894526ec",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Ottawa"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_9",
+          "ok": true,
+          "pred": "Ececba0ac75d9",
+          "expect": "Ececba0ac75d9",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Montabaur"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_10",
+          "ok": true,
+          "pred": "E2e409c8a42f1",
+          "expect": "E2e409c8a42f1",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Burbank"
+        },
+        {
+          "id": "PL_ALIAS_SHUFFLE_11",
+          "ok": true,
+          "pred": "E5158d993b495",
+          "expect": "E5158d993b495",
+          "company_stop": false,
+          "decoy": false,
+          "plain": "Kansas_City"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "RAW_NL": "0/12",
+    "CTX_ALIAS": "12/12",
+    "DET_PROG": "12/12",
+    "LOCAL_PROG": "12/12",
+    "ALIAS_DECOYFIRST": "11/12",
+    "ALIAS_UNDERSCORE": "0/12",
+    "ALIAS_SHUFFLE": "12/12"
+  },
+  "local_planner": {
+    "qwen3.5:latest": {
+      "compile": "12/12",
+      "router": "12/12"
+    },
+    "reecdev/tiny3.5:500m": {
+      "compile": "3/12",
+      "router": "3/12"
+    }
+  },
+  "det_router": {
+    "DET_COMPILER": {
+      "score": "12/12",
+      "ok": 12,
+      "n": 12
+    },
+    "CTX_ALIAS_ROUTER_NAIVE": {
+      "score": "0/0",
+      "ok": 0,
+      "n": 0
+    }
+  },
+  "claim": "Best enrichment under opacity = compile to PATH (local SLM or deterministic), not synonym paraphrase; CTX alias is schema-linking ablation.",
+  "scrutiny": "CTX_ALIAS without order control is suspect; ALIAS_UNDERSCORE decoy-first \u2192 0/12 DecoyHQ"
+}

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_183 #####
+QUESTION:
+What is the date of death of Bernhard Albrecht Of Limburg And Bronckhorst's father?
+
+CONTEXT:
+Sir Philip Wodehouse, 1st Baronet | educated at | Trinity College
+Bernhard Albrecht, count of Limburg and Bronckhorst | decoy_link_183 | decoy_mid_183
+Richard Randolph | father | William Randolph
+decoy_mid_183 | date of death | 7 August 1621
+Thomas Wodehouse | father | Sir Philip Wodehouse, 1st Baronet
+Bernhard Albrecht, count of Limburg and Bronckhorst | father | Jobst of Limburg
+William Randolph | place of death | Colony of Virginia
+Jobst of Limburg | date of death | CF_TAIL_183_7August1621

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_16]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_16 #####
+QUESTION:
+What city is the headquarters of the company led by Topi_Manner?
+
+PATH_QUERY
+START Topi_Manner
+R1 E38b8836af6bb
+R2 Ea1f7c99e9284
+Execute path; return final tail only.
+
+CONTEXT:
+Topi_Manner | E38b8836af6bb | Elisa
+Elisa | Ea1f7c99e9284 | Helsinki
+Topi_Manner | Ee09d372218eb | Ferrovie_dello_Stato_Italiane
+Ferrovie_dello_Stato_Italiane | Ef8e8e2187754 | Rome

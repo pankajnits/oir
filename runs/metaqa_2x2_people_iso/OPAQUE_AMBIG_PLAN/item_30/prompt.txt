@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_30]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_30 #####
+QUESTION:
+Who directed a movie that Jeff Bridges starred in?
+
+PATH_QUERY
+START Jeff Bridges
+R1 E77a75e4311e8
+R2 E3cd509d647fd
+Execute path; return final tail only.
+
+CONTEXT:
+Jeff Bridges | E77a75e4311e8 | Arlington Road
+Arlington Road | E3cd509d647fd | Mark Pellington
+Arlington Road | Ee0caf965ca8f | Ehren Kruger

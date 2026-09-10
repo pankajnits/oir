@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_12 #####
+QUESTION:
+What is the place of birth of the director of film Ruben Blades Is Not My Name?
+
+CONTEXT:
+decoy_mid_12 | place of birth | Panamá
+Niklas Busch Thor | date of birth | 21 February 1986
+Zofia Żółkiewska | father | Stanisław Żółkiewski
+Ruben Blades Is Not My Name | director | Abner Benaim
+Ebba Busch Thor | spouse | Niklas Busch Thor
+Abner Benaim | place of birth | CF_TAIL_12_Panam
+Ruben Blades Is Not My Name | decoy_link_12 | decoy_mid_12
+Stanisław Żółkiewski | country of citizenship | Polish–Lithuanian Commonwealth

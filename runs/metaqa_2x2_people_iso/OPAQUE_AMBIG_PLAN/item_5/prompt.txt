@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_5]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_5 #####
+QUESTION:
+Who directed a movie that James Mason starred in?
+
+PATH_QUERY
+START James Mason
+R1 E33caa1238b1b
+R2 Eb1fffc6476d2
+Execute path; return final tail only.
+
+CONTEXT:
+James Mason | E33caa1238b1b | A Place of One's Own
+A Place of One's Own | Eb1fffc6476d2 | Bernard Knowles
+A Place of One's Own | Ebfb3da0d6299 | Osbert Sitwell

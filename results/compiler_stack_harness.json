@@ -1,0 +1,762 @@
+{
+  "stack": "NL\u2192PathCompiler\u2192sealed PATH_QUERY\u2192LLM execute",
+  "n_cases": 48,
+  "n_per_cond": 12,
+  "compiler_selftest": "100/100",
+  "rev": {
+    "E48792448014e": "works_at",
+    "Ead8d5e79d003": "headquartered_in",
+    "E84b72cc33d1c": "owned_by",
+    "Ec6793b0e638e": "partner_of",
+    "E61cb71aa1e4d": "meta_of",
+    "Eb3ef9c68b17f": "David_Schaeffer",
+    "E877c7e466fd4": "Cogent_Communications",
+    "E78eb3cd866c4": "Washington_DC",
+    "E1bf83f20d912": "WaveDivision_Holdings_LLC",
+    "Ec24a3cb79afe": "New_Jersey",
+    "Eedf45f78aaa6": "Hold_Cogent_Communications",
+    "E8d4def2fdc50": "Meta_Cogent_Communications",
+    "E9d08f190f343": "Part_Cogent_Communications",
+    "E316a95a6f75b": "PMeta_Cogent_Communications",
+    "E78616760d911": "DecoyPerson_WaveDivision_Holdings_LLC",
+    "Eed4e6de3b6ff": "Where",
+    "E25b6e625f638": "is",
+    "E9547db9387b5": "the",
+    "E9aaa41c8a6cf": "company",
+    "Ee35629d64a95": "that",
+    "Ed30e4b0efb9c": "Hold_WaveDivision_Holdings_LLC",
+    "Eeaaa98b02a57": "Meta_WaveDivision_Holdings_LLC",
+    "E882995db69e7": "Part_WaveDivision_Holdings_LLC",
+    "E90706b8e5892": "PMeta_WaveDivision_Holdings_LLC",
+    "E7d3bd4728200": "DecoyPerson_Cogent_Communications",
+    "Efb02869d3603": "George_W_Edwards",
+    "Ecfb5bd7e12ec": "Kansas_City_Southern",
+    "E0177daec26e2": "Kansas_City",
+    "E99e3324d5837": "Uber",
+    "E579243183bca": "San_Francisco",
+    "E9ddd797403f5": "Hold_Kansas_City_Southern",
+    "E5770e507c4d9": "Meta_Kansas_City_Southern",
+    "E510a27f5259f": "Part_Kansas_City_Southern",
+    "E904fe369d9b4": "PMeta_Kansas_City_Southern",
+    "E1717bbcf0cbc": "DecoyPerson_Uber",
+    "E69e6bd6b664c": "In",
+    "E3ec69503609e": "which",
+    "E75d6320dda98": "city",
+    "Eb5362fbc1894": "employer",
+    "E7a29cd277c19": "of",
+    "E2d25590c9530": "George",
+    "Eb2e0eab2b264": "W",
+    "E2da3dcbf7746": "Edwards",
+    "E308fe81463ae": "based",
+    "E275856bc0c41": "Hold_Uber",
+    "E99e756925d7f": "Meta_Uber",
+    "Eab4caf8d4538": "Part_Uber",
+    "E0ea195cdfe78": "PMeta_Uber",
+    "E9b72057130b4": "DecoyPerson_Kansas_City_Southern",
+    "E37c01c2da9ba": "Eric_Vallat",
+    "E6573b0f9751c": "Lacoste_SA",
+    "Ef8d00dcf00cb": "Paris",
+    "E99f42920852f": "Hold_Lacoste_SA",
+    "E45d312b0d73f": "Meta_Lacoste_SA",
+    "E80b76d4ac950": "Part_Lacoste_SA",
+    "Eca5929256193": "PMeta_Lacoste_SA",
+    "Ecb35d30b99c9": "What",
+    "E14306c262610": "HQ",
+    "E36310ad40b48": "location",
+    "Ec842be1d0f6c": "firm",
+    "E9adf9205b605": "where",
+    "Ed8365e4940cd": "works",
+    "Eb5d7974f5eb6": "DecoyPerson_Lacoste_SA",
+    "E56d87f784966": "Moshe_Zana",
+    "Ed56c17ac791f": "Israel_Railways",
+    "Ed2b86b3824aa": "Lod_Railway_Station",
+    "E2205a92dd0f1": "Aetna",
+    "E7aef0664e6d9": "Hartford",
+    "E447008b196a4": "Hold_Israel_Railways",
+    "E20f7df79d9b6": "Meta_Israel_Railways",
+    "E97f39cd02a0c": "Part_Israel_Railways",
+    "E129893cc9993": "PMeta_Israel_Railways",
+    "Ed8c8f0a9ede6": "DecoyPerson_Aetna",
+    "Ed4f473c8e29e": "Find",
+    "E5dfff5821f21": "head",
+    "E5f1ea5869913": "office",
+    "E47e0fce9a549": "for",
+    "E724c37272145": "Moshe",
+    "E8277bc393499": "Zana",
+    "Ee0dacd2569dd": "s",
+    "E943e2851912d": "Hold_Aetna",
+    "E182570a88c9f": "Meta_Aetna",
+    "E655051f6eb44": "Part_Aetna",
+    "Ef98e03d34f39": "PMeta_Aetna",
+    "E20de7d65844d": "DecoyPerson_Israel_Railways",
+    "Efe9b6addc312": "Mark_T_Bertolini",
+    "E99aefef7aab0": "Which",
+    "E269e86839540": "place",
+    "Ed4cc8fbee209": "headquartered",
+    "E7f59f776f273": "in",
+    "E699a9b57276f": "Stephen_A_Schwarzman",
+    "Ef3e3d560b16a": "Blackstone_Inc",
+    "E0d967609d290": "New_York_City",
+    "E81ebee4e6953": "Storstockholms_Lokaltrafik",
+    "E2eada3a4b1a7": "Stockholm",
+    "Ec01792941c41": "Hold_Blackstone_Inc",
+    "E6427210a7d55": "Meta_Blackstone_Inc",
+    "Ecaab280b37a4": "Part_Blackstone_Inc",
+    "E70d2cfda73d0": "PMeta_Blackstone_Inc",
+    "Eb9947ca56c7d": "DecoyPerson_Storstockholms_Lokaltrafik",
+    "E764893453304": "Stephen",
+    "Ea36a1e8d05de": "A",
+    "Eb216d0647c40": "Schwarzman",
+    "E72b0b4b5137e": "Hold_Storstockholms_Lokaltrafik",
+    "Efd844bd0460f": "Meta_Storstockholms_Lokaltrafik",
+    "E4de94f950e04": "Part_Storstockholms_Lokaltrafik",
+    "E520e7490628c": "PMeta_Storstockholms_Lokaltrafik",
+    "E5ea0e859cdff": "DecoyPerson_Blackstone_Inc",
+    "E1b545ebf385c": "Stuart_Parker",
+    "Ef7b48576bf17": "USAA",
+    "E37c187346d89": "San_Antonio",
+    "Ef2c9bb83d6d8": "Unieuro",
+    "E120802256490": "Forl",
+    "E6932f8d3481e": "Hold_USAA",
+    "E202c28e51111": "Meta_USAA",
+    "Ee64482767bdf": "Part_USAA",
+    "E611c879ec722": "PMeta_USAA",
+    "E13e5242af69d": "DecoyPerson_Unieuro",
+    "E86ef02437abf": "Hold_Unieuro",
+    "E955a146a24a1": "Meta_Unieuro",
+    "Ef0faa9a9ff2d": "Part_Unieuro",
+    "E62c97168f078": "PMeta_Unieuro",
+    "E910c6b3de1f8": "DecoyPerson_USAA",
+    "Eacdb0adb7fe0": "Topi_Manner",
+    "E0615d80a1088": "Elisa",
+    "E1321231c034f": "Helsinki",
+    "E8e0fbf333e00": "Hold_Elisa",
+    "E8b75964b71e2": "Meta_Elisa",
+    "E87dfbfcf1254": "Part_Elisa",
+    "Ef008c787ef6e": "PMeta_Elisa",
+    "E0e5d95c66302": "Topi",
+    "Eda092bcb0c07": "Manner",
+    "E54294ba9ccd9": "DecoyPerson_Elisa",
+    "E75442be1b594": "Keith_Creel",
+    "Ee55535bde8ac": "Canadian_Pacific_Kansas_City",
+    "E79e53a5d4597": "Calgary",
+    "Eb96fc3faeb2c": "esk_spoitelna",
+    "E69476b18923e": "Prague",
+    "Ea6c7a54ba872": "Hold_Canadian_Pacific_Kansas_City",
+    "Ef6abd30e20d4": "Meta_Canadian_Pacific_Kansas_City",
+    "Eaff6ff3eb7fb": "Part_Canadian_Pacific_Kansas_City",
+    "E64ccc695b232": "PMeta_Canadian_Pacific_Kansas_City",
+    "E9f98f1ef88a0": "DecoyPerson_esk_spoitelna",
+    "E020b9ebc5bdc": "Hold_esk_spoitelna",
+    "Ea749988e0c6f": "Meta_esk_spoitelna",
+    "Ee19a1d66f57d": "Part_esk_spoitelna",
+    "Ed3409a860262": "PMeta_esk_spoitelna",
+    "E51478c30715c": "DecoyPerson_Canadian_Pacific_Kansas_City",
+    "E678093f38eca": "Michael_Eisner",
+    "E3bd6d5ad0887": "The_Walt_Disney_Company",
+    "Eaad0327a089a": "Burbank",
+    "E271e3aed21ad": "Hold_The_Walt_Disney_Company",
+    "Ed7354263ba8e": "Meta_The_Walt_Disney_Company",
+    "E56f6c04723a5": "Part_The_Walt_Disney_Company",
+    "E6fe5cbcc1457": "PMeta_The_Walt_Disney_Company",
+    "Ec28346924aeb": "Michael",
+    "Ea48bd171d52d": "Eisner",
+    "E424678fa6826": "DecoyPerson_The_Walt_Disney_Company",
+    "E494543a8218b": "Harvey_C_Couch",
+    "E4557d29220ac": "Vodafone_Germany",
+    "E4d5c5c1daf25": "VodafoneCampus",
+    "E71eee3b5ad26": "DecoyPerson_Vodafone_Germany",
+    "Eff29ee9942b2": "Hold_Vodafone_Germany",
+    "E5e585fd6b85a": "Meta_Vodafone_Germany",
+    "E6066cc7e1106": "Part_Vodafone_Germany",
+    "E4272815f2f18": "PMeta_Vodafone_Germany",
+    "E006a7d68b10c": "David_Green",
+    "E96ed74d88f94": "Hobby_Lobby",
+    "E56ea855d76d3": "Oklahoma_City",
+    "E2733d17743a5": "Hold_Hobby_Lobby",
+    "Eaaf2b9634c43": "Meta_Hobby_Lobby",
+    "E613b6244a0db": "Part_Hobby_Lobby",
+    "E16ac5473a7d4": "PMeta_Hobby_Lobby",
+    "Ed4ad2f9bd0da": "David",
+    "E396d0566e17c": "Green",
+    "E3a4c80f52630": "DecoyPerson_Hobby_Lobby"
+  },
+  "cases": [
+    {
+      "id": "CMP_RAW_0",
+      "cond": "raw_sealed_nl",
+      "nl": "Where is the company headquartered_in that David_Schaeffer works_at?",
+      "expect": "E78eb3cd866c4",
+      "intermediate_company": "E877c7e466fd4",
+      "plain_hq": "Washington_DC",
+      "person": "David_Schaeffer"
+    },
+    {
+      "id": "CMP_COMP_0",
+      "cond": "compiled_path",
+      "nl": "Where is the company headquartered_in that David_Schaeffer works_at?",
+      "compile": {
+        "ok": true,
+        "person": "David_Schaeffer",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART David_Schaeffer\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E78eb3cd866c4",
+      "intermediate_company": "E877c7e466fd4",
+      "plain_hq": "Washington_DC",
+      "person": "David_Schaeffer"
+    },
+    {
+      "id": "CMP_TWIN_0",
+      "cond": "compiled_twin",
+      "nl": "Where is the company headquartered_in that David_Schaeffer works_at?",
+      "expect": "Ec24a3cb79afe",
+      "plain_hq": "New_Jersey",
+      "person": "David_Schaeffer",
+      "twin_company": "WaveDivision_Holdings_LLC",
+      "original_hq": "Washington_DC",
+      "original_expect": "E78eb3cd866c4"
+    },
+    {
+      "id": "CMP_PROBE_0",
+      "cond": "probe_mid_final",
+      "nl": "Where is the company headquartered_in that David_Schaeffer works_at?",
+      "expect": "E78eb3cd866c4",
+      "expect_mid": "E877c7e466fd4",
+      "plain_hq": "Washington_DC",
+      "person": "David_Schaeffer"
+    },
+    {
+      "id": "CMP_RAW_1",
+      "cond": "raw_sealed_nl",
+      "nl": "In which city is the employer of George W Edwards based?",
+      "expect": "E0177daec26e2",
+      "intermediate_company": "Ecfb5bd7e12ec",
+      "plain_hq": "Kansas_City",
+      "person": "George_W_Edwards"
+    },
+    {
+      "id": "CMP_COMP_1",
+      "cond": "compiled_path",
+      "nl": "In which city is the employer of George W Edwards based?",
+      "compile": {
+        "ok": true,
+        "person": "George_W_Edwards",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART George_W_Edwards\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E0177daec26e2",
+      "intermediate_company": "Ecfb5bd7e12ec",
+      "plain_hq": "Kansas_City",
+      "person": "George_W_Edwards"
+    },
+    {
+      "id": "CMP_TWIN_1",
+      "cond": "compiled_twin",
+      "nl": "In which city is the employer of George W Edwards based?",
+      "expect": "E579243183bca",
+      "plain_hq": "San_Francisco",
+      "person": "George_W_Edwards",
+      "twin_company": "Uber",
+      "original_hq": "Kansas_City",
+      "original_expect": "E0177daec26e2"
+    },
+    {
+      "id": "CMP_PROBE_1",
+      "cond": "probe_mid_final",
+      "nl": "In which city is the employer of George W Edwards based?",
+      "expect": "E0177daec26e2",
+      "expect_mid": "Ecfb5bd7e12ec",
+      "plain_hq": "Kansas_City",
+      "person": "George_W_Edwards"
+    },
+    {
+      "id": "CMP_RAW_2",
+      "cond": "raw_sealed_nl",
+      "nl": "What is the HQ location of the firm where Eric_Vallat works?",
+      "expect": "Ef8d00dcf00cb",
+      "intermediate_company": "E6573b0f9751c",
+      "plain_hq": "Paris",
+      "person": "Eric_Vallat"
+    },
+    {
+      "id": "CMP_COMP_2",
+      "cond": "compiled_path",
+      "nl": "What is the HQ location of the firm where Eric_Vallat works?",
+      "compile": {
+        "ok": true,
+        "person": "Eric_Vallat",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Eric_Vallat\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "Ef8d00dcf00cb",
+      "intermediate_company": "E6573b0f9751c",
+      "plain_hq": "Paris",
+      "person": "Eric_Vallat"
+    },
+    {
+      "id": "CMP_TWIN_2",
+      "cond": "compiled_twin",
+      "nl": "What is the HQ location of the firm where Eric_Vallat works?",
+      "expect": "E0177daec26e2",
+      "plain_hq": "Kansas_City",
+      "person": "Eric_Vallat",
+      "twin_company": "Kansas_City_Southern",
+      "original_hq": "Paris",
+      "original_expect": "Ef8d00dcf00cb"
+    },
+    {
+      "id": "CMP_PROBE_2",
+      "cond": "probe_mid_final",
+      "nl": "What is the HQ location of the firm where Eric_Vallat works?",
+      "expect": "Ef8d00dcf00cb",
+      "expect_mid": "E6573b0f9751c",
+      "plain_hq": "Paris",
+      "person": "Eric_Vallat"
+    },
+    {
+      "id": "CMP_RAW_3",
+      "cond": "raw_sealed_nl",
+      "nl": "Find the head office city for Moshe Zana's company.",
+      "expect": "Ed2b86b3824aa",
+      "intermediate_company": "Ed56c17ac791f",
+      "plain_hq": "Lod_Railway_Station",
+      "person": "Moshe_Zana"
+    },
+    {
+      "id": "CMP_COMP_3",
+      "cond": "compiled_path",
+      "nl": "Find the head office city for Moshe Zana's company.",
+      "compile": {
+        "ok": true,
+        "person": "Moshe_Zana",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Moshe_Zana\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "Ed2b86b3824aa",
+      "intermediate_company": "Ed56c17ac791f",
+      "plain_hq": "Lod_Railway_Station",
+      "person": "Moshe_Zana"
+    },
+    {
+      "id": "CMP_TWIN_3",
+      "cond": "compiled_twin",
+      "nl": "Find the head office city for Moshe Zana's company.",
+      "expect": "E7aef0664e6d9",
+      "plain_hq": "Hartford",
+      "person": "Moshe_Zana",
+      "twin_company": "Aetna",
+      "original_hq": "Lod_Railway_Station",
+      "original_expect": "Ed2b86b3824aa"
+    },
+    {
+      "id": "CMP_PROBE_3",
+      "cond": "probe_mid_final",
+      "nl": "Find the head office city for Moshe Zana's company.",
+      "expect": "Ed2b86b3824aa",
+      "expect_mid": "Ed56c17ac791f",
+      "plain_hq": "Lod_Railway_Station",
+      "person": "Moshe_Zana"
+    },
+    {
+      "id": "CMP_RAW_4",
+      "cond": "raw_sealed_nl",
+      "nl": "Which place is Mark_T_Bertolini's employer headquartered in?",
+      "expect": "E7aef0664e6d9",
+      "intermediate_company": "E2205a92dd0f1",
+      "plain_hq": "Hartford",
+      "person": "Mark_T_Bertolini"
+    },
+    {
+      "id": "CMP_COMP_4",
+      "cond": "compiled_path",
+      "nl": "Which place is Mark_T_Bertolini's employer headquartered in?",
+      "compile": {
+        "ok": true,
+        "person": "Mark_T_Bertolini",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Mark_T_Bertolini\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E7aef0664e6d9",
+      "intermediate_company": "E2205a92dd0f1",
+      "plain_hq": "Hartford",
+      "person": "Mark_T_Bertolini"
+    },
+    {
+      "id": "CMP_TWIN_4",
+      "cond": "compiled_twin",
+      "nl": "Which place is Mark_T_Bertolini's employer headquartered in?",
+      "expect": "E0177daec26e2",
+      "plain_hq": "Kansas_City",
+      "person": "Mark_T_Bertolini",
+      "twin_company": "Kansas_City_Southern",
+      "original_hq": "Hartford",
+      "original_expect": "E7aef0664e6d9"
+    },
+    {
+      "id": "CMP_PROBE_4",
+      "cond": "probe_mid_final",
+      "nl": "Which place is Mark_T_Bertolini's employer headquartered in?",
+      "expect": "E7aef0664e6d9",
+      "expect_mid": "E2205a92dd0f1",
+      "plain_hq": "Hartford",
+      "person": "Mark_T_Bertolini"
+    },
+    {
+      "id": "CMP_RAW_5",
+      "cond": "raw_sealed_nl",
+      "nl": "Where is the company headquartered_in that Stephen A Schwarzman works_at?",
+      "expect": "E0d967609d290",
+      "intermediate_company": "Ef3e3d560b16a",
+      "plain_hq": "New_York_City",
+      "person": "Stephen_A_Schwarzman"
+    },
+    {
+      "id": "CMP_COMP_5",
+      "cond": "compiled_path",
+      "nl": "Where is the company headquartered_in that Stephen A Schwarzman works_at?",
+      "compile": {
+        "ok": true,
+        "person": "Stephen_A_Schwarzman",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Stephen_A_Schwarzman\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E0d967609d290",
+      "intermediate_company": "Ef3e3d560b16a",
+      "plain_hq": "New_York_City",
+      "person": "Stephen_A_Schwarzman"
+    },
+    {
+      "id": "CMP_TWIN_5",
+      "cond": "compiled_twin",
+      "nl": "Where is the company headquartered_in that Stephen A Schwarzman works_at?",
+      "expect": "E2eada3a4b1a7",
+      "plain_hq": "Stockholm",
+      "person": "Stephen_A_Schwarzman",
+      "twin_company": "Storstockholms_Lokaltrafik",
+      "original_hq": "New_York_City",
+      "original_expect": "E0d967609d290"
+    },
+    {
+      "id": "CMP_PROBE_5",
+      "cond": "probe_mid_final",
+      "nl": "Where is the company headquartered_in that Stephen A Schwarzman works_at?",
+      "expect": "E0d967609d290",
+      "expect_mid": "Ef3e3d560b16a",
+      "plain_hq": "New_York_City",
+      "person": "Stephen_A_Schwarzman"
+    },
+    {
+      "id": "CMP_RAW_6",
+      "cond": "raw_sealed_nl",
+      "nl": "In which city is the employer of Stuart_Parker based?",
+      "expect": "E37c187346d89",
+      "intermediate_company": "Ef7b48576bf17",
+      "plain_hq": "San_Antonio",
+      "person": "Stuart_Parker"
+    },
+    {
+      "id": "CMP_COMP_6",
+      "cond": "compiled_path",
+      "nl": "In which city is the employer of Stuart_Parker based?",
+      "compile": {
+        "ok": true,
+        "person": "Stuart_Parker",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Stuart_Parker\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E37c187346d89",
+      "intermediate_company": "Ef7b48576bf17",
+      "plain_hq": "San_Antonio",
+      "person": "Stuart_Parker"
+    },
+    {
+      "id": "CMP_TWIN_6",
+      "cond": "compiled_twin",
+      "nl": "In which city is the employer of Stuart_Parker based?",
+      "expect": "E120802256490",
+      "plain_hq": "Forl",
+      "person": "Stuart_Parker",
+      "twin_company": "Unieuro",
+      "original_hq": "San_Antonio",
+      "original_expect": "E37c187346d89"
+    },
+    {
+      "id": "CMP_PROBE_6",
+      "cond": "probe_mid_final",
+      "nl": "In which city is the employer of Stuart_Parker based?",
+      "expect": "E37c187346d89",
+      "expect_mid": "Ef7b48576bf17",
+      "plain_hq": "San_Antonio",
+      "person": "Stuart_Parker"
+    },
+    {
+      "id": "CMP_RAW_7",
+      "cond": "raw_sealed_nl",
+      "nl": "What is the HQ location of the firm where Topi Manner works?",
+      "expect": "E1321231c034f",
+      "intermediate_company": "E0615d80a1088",
+      "plain_hq": "Helsinki",
+      "person": "Topi_Manner"
+    },
+    {
+      "id": "CMP_COMP_7",
+      "cond": "compiled_path",
+      "nl": "What is the HQ location of the firm where Topi Manner works?",
+      "compile": {
+        "ok": true,
+        "person": "Topi_Manner",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Topi_Manner\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E1321231c034f",
+      "intermediate_company": "E0615d80a1088",
+      "plain_hq": "Helsinki",
+      "person": "Topi_Manner"
+    },
+    {
+      "id": "CMP_TWIN_7",
+      "cond": "compiled_twin",
+      "nl": "What is the HQ location of the firm where Topi Manner works?",
+      "expect": "E0177daec26e2",
+      "plain_hq": "Kansas_City",
+      "person": "Topi_Manner",
+      "twin_company": "Kansas_City_Southern",
+      "original_hq": "Helsinki",
+      "original_expect": "E1321231c034f"
+    },
+    {
+      "id": "CMP_PROBE_7",
+      "cond": "probe_mid_final",
+      "nl": "What is the HQ location of the firm where Topi Manner works?",
+      "expect": "E1321231c034f",
+      "expect_mid": "E0615d80a1088",
+      "plain_hq": "Helsinki",
+      "person": "Topi_Manner"
+    },
+    {
+      "id": "CMP_RAW_8",
+      "cond": "raw_sealed_nl",
+      "nl": "Find the head office city for Keith_Creel's company.",
+      "expect": "E79e53a5d4597",
+      "intermediate_company": "Ee55535bde8ac",
+      "plain_hq": "Calgary",
+      "person": "Keith_Creel"
+    },
+    {
+      "id": "CMP_COMP_8",
+      "cond": "compiled_path",
+      "nl": "Find the head office city for Keith_Creel's company.",
+      "compile": {
+        "ok": true,
+        "person": "Keith_Creel",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Keith_Creel\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E79e53a5d4597",
+      "intermediate_company": "Ee55535bde8ac",
+      "plain_hq": "Calgary",
+      "person": "Keith_Creel"
+    },
+    {
+      "id": "CMP_TWIN_8",
+      "cond": "compiled_twin",
+      "nl": "Find the head office city for Keith_Creel's company.",
+      "expect": "E69476b18923e",
+      "plain_hq": "Prague",
+      "person": "Keith_Creel",
+      "twin_company": "esk_spoitelna",
+      "original_hq": "Calgary",
+      "original_expect": "E79e53a5d4597"
+    },
+    {
+      "id": "CMP_PROBE_8",
+      "cond": "probe_mid_final",
+      "nl": "Find the head office city for Keith_Creel's company.",
+      "expect": "E79e53a5d4597",
+      "expect_mid": "Ee55535bde8ac",
+      "plain_hq": "Calgary",
+      "person": "Keith_Creel"
+    },
+    {
+      "id": "CMP_RAW_9",
+      "cond": "raw_sealed_nl",
+      "nl": "Which place is Michael Eisner's employer headquartered in?",
+      "expect": "Eaad0327a089a",
+      "intermediate_company": "E3bd6d5ad0887",
+      "plain_hq": "Burbank",
+      "person": "Michael_Eisner"
+    },
+    {
+      "id": "CMP_COMP_9",
+      "cond": "compiled_path",
+      "nl": "Which place is Michael Eisner's employer headquartered in?",
+      "compile": {
+        "ok": true,
+        "person": "Michael_Eisner",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Michael_Eisner\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "Eaad0327a089a",
+      "intermediate_company": "E3bd6d5ad0887",
+      "plain_hq": "Burbank",
+      "person": "Michael_Eisner"
+    },
+    {
+      "id": "CMP_TWIN_9",
+      "cond": "compiled_twin",
+      "nl": "Which place is Michael Eisner's employer headquartered in?",
+      "expect": "E0177daec26e2",
+      "plain_hq": "Kansas_City",
+      "person": "Michael_Eisner",
+      "twin_company": "Kansas_City_Southern",
+      "original_hq": "Burbank",
+      "original_expect": "Eaad0327a089a"
+    },
+    {
+      "id": "CMP_PROBE_9",
+      "cond": "probe_mid_final",
+      "nl": "Which place is Michael Eisner's employer headquartered in?",
+      "expect": "Eaad0327a089a",
+      "expect_mid": "E3bd6d5ad0887",
+      "plain_hq": "Burbank",
+      "person": "Michael_Eisner"
+    },
+    {
+      "id": "CMP_RAW_10",
+      "cond": "raw_sealed_nl",
+      "nl": "Where is the company headquartered_in that Harvey_C_Couch works_at?",
+      "expect": "E0177daec26e2",
+      "intermediate_company": "Ecfb5bd7e12ec",
+      "plain_hq": "Kansas_City",
+      "person": "Harvey_C_Couch"
+    },
+    {
+      "id": "CMP_COMP_10",
+      "cond": "compiled_path",
+      "nl": "Where is the company headquartered_in that Harvey_C_Couch works_at?",
+      "compile": {
+        "ok": true,
+        "person": "Harvey_C_Couch",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART Harvey_C_Couch\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E0177daec26e2",
+      "intermediate_company": "Ecfb5bd7e12ec",
+      "plain_hq": "Kansas_City",
+      "person": "Harvey_C_Couch"
+    },
+    {
+      "id": "CMP_TWIN_10",
+      "cond": "compiled_twin",
+      "nl": "Where is the company headquartered_in that Harvey_C_Couch works_at?",
+      "expect": "E4d5c5c1daf25",
+      "plain_hq": "VodafoneCampus",
+      "person": "Harvey_C_Couch",
+      "twin_company": "Vodafone_Germany",
+      "original_hq": "Kansas_City",
+      "original_expect": "E0177daec26e2"
+    },
+    {
+      "id": "CMP_PROBE_10",
+      "cond": "probe_mid_final",
+      "nl": "Where is the company headquartered_in that Harvey_C_Couch works_at?",
+      "expect": "E0177daec26e2",
+      "expect_mid": "Ecfb5bd7e12ec",
+      "plain_hq": "Kansas_City",
+      "person": "Harvey_C_Couch"
+    },
+    {
+      "id": "CMP_RAW_11",
+      "cond": "raw_sealed_nl",
+      "nl": "In which city is the employer of David Green based?",
+      "expect": "E56ea855d76d3",
+      "intermediate_company": "E96ed74d88f94",
+      "plain_hq": "Oklahoma_City",
+      "person": "David_Green"
+    },
+    {
+      "id": "CMP_COMP_11",
+      "cond": "compiled_path",
+      "nl": "In which city is the employer of David Green based?",
+      "compile": {
+        "ok": true,
+        "person": "David_Green",
+        "path": [
+          "works_at",
+          "headquartered_in"
+        ],
+        "program_plain": "PATH_QUERY\nSTART David_Green\nR1 works_at\nR2 headquartered_in\nExecute START -R1-> x -R2-> y. Return y only.",
+        "reason": "ok"
+      },
+      "expect": "E56ea855d76d3",
+      "intermediate_company": "E96ed74d88f94",
+      "plain_hq": "Oklahoma_City",
+      "person": "David_Green"
+    },
+    {
+      "id": "CMP_TWIN_11",
+      "cond": "compiled_twin",
+      "nl": "In which city is the employer of David Green based?",
+      "expect": "Eaad0327a089a",
+      "plain_hq": "Burbank",
+      "person": "David_Green",
+      "twin_company": "The_Walt_Disney_Company",
+      "original_hq": "Oklahoma_City",
+      "original_expect": "E56ea855d76d3"
+    },
+    {
+      "id": "CMP_PROBE_11",
+      "cond": "probe_mid_final",
+      "nl": "In which city is the employer of David Green based?",
+      "expect": "E56ea855d76d3",
+      "expect_mid": "E96ed74d88f94",
+      "plain_hq": "Oklahoma_City",
+      "person": "David_Green"
+    }
+  ]
+}

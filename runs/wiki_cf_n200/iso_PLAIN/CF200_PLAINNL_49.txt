@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_49 #####
+QUESTION:
+What is the place of birth of the founder of Faculté Libre De Médecines Naturelles Et D'Ethnomédecine?
+
+CONTEXT:
+FLMNE | decoy_link_49 | decoy_mid_49
+decoy_mid_49 | place of birth | Sedan
+Paddy Breathnach | country of citizenship | Ireland
+Agnes of Hohenstaufen | spouse | Henry V
+FLMNE | founded by | Jean-Pierre Willem
+Freakdog | director | Paddy Breathnach
+Henry V | place of death | Brunswick
+Jean-Pierre Willem | place of birth | CF_TAIL_49_Sedan

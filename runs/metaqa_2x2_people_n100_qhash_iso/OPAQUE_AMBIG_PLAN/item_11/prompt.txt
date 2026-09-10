@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_11]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_11 #####
+QUESTION:
+Who Ecd2771d58697 a E04ed92bcf36f Eebd0237375b9 [Piper Perabo] E849426c706ef E1dd977451eee?
+
+PATH_QUERY
+START Piper Perabo
+R1 E2583f3fdbac4
+R2 Ebe9d894f30d1
+Execute path; return final tail only.
+
+CONTEXT:
+Piper Perabo | E2583f3fdbac4 | Coyote Ugly
+Coyote Ugly | Ebe9d894f30d1 | David McNally
+Coyote Ugly | E82c5041b870a | Gina Wendkos

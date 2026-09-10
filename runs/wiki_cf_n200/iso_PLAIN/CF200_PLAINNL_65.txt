@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_65 #####
+QUESTION:
+What nationality is the creator of Road Tasted?
+
+CONTEXT:
+Road Tasted | creator | Gordon Elliott
+Countess Palatine Anna Magdalena of Birkenfeld-Bischweiler | place of death | Babenhausen
+Simon Fraser, 13th Lord Lovat | date of birth | 21 December 1828
+decoy_mid_65 | country of citizenship | Australian
+Countess Johanna Magdalene of Hanau-Lichtenberg | mother | Countess Palatine Anna Magdalena of Birkenfeld-Bischweiler
+Gordon Elliott | country of citizenship | CF_TAIL_65_Australian
+Brigadier Simon Joseph Fraser, 14th Lord Lovat | father | Simon Fraser, 13th Lord Lovat
+Road Tasted | decoy_link_65 | decoy_mid_65

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_96]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_96 #####
+QUESTION:
+Who E7e1fb2b99e8b a Edb1936ef2cdd E4d9609668f4f [Dean Martin] Ea7470630f000 E197ad6d71a6e?
+
+PATH_QUERY
+START Dean Martin
+R1 E13904eeb2149
+R2 Ebd4bd3de97e8
+Execute path; return final tail only.
+
+CONTEXT:
+Dean Martin | E13904eeb2149 | Toys in the Attic
+Toys in the Attic | Ebd4bd3de97e8 | George Roy Hill
+Toys in the Attic | E42264e16f227 | Lillian Hellman

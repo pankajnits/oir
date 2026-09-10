@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_0]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_0 #####
+QUESTION:
+What city is the headquarters of the company led by Michael_Eisner?
+
+PATH_QUERY
+START Michael_Eisner
+R1 E09e8fc382cb2
+R2 E7591f4264f0e
+Execute path; return final tail only.
+
+CONTEXT:
+Michael_Eisner | E09e8fc382cb2 | The_Walt_Disney_Company
+The_Walt_Disney_Company | E7591f4264f0e | Burbank
+Michael_Eisner | Ebf49914a6673 | Cogent_Communications
+Cogent_Communications | E023507f5d8ae | Washington_DC
+Michael_Eisner | Ebcca9168a2d6 | Kansas_City_Southern
+Kansas_City_Southern | E00cf46b45f35 | Kansas_City
+Michael_Eisner | E58c95f3e6abb | Lacoste_SA
+Lacoste_SA | E29bc2cec6497 | Paris
+Michael_Eisner | E001cee661d0d | Israel_Railways
+Israel_Railways | Ef2b50dea939b | Lod_Railway_Station

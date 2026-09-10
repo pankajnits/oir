@@ -1,0 +1,18 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+=== QUIZ ===
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Edf3e206ab934 works_at? City only.
+
+CONTEXT:
+Edf3e206ab934 | works_at | Ebd2a8a93a920
+Ea664b8387734 | works_at | Ebd2a8a93a920
+E86ab88cf0cbe | located_in | Edb640541688d
+Ebd2a8a93a920 | located_in | E5d206cc8acf1
+E86ab88cf0cbe | owned_by | E637fd8018be8
+Ebd2a8a93a920 | owned_by | E33c4941762a7
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

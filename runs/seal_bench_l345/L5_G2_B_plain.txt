@@ -1,0 +1,12 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city where BOTH A2 and B2 have their companies located_in (companies may differ). If none, UNKNOWN. Answer city seal/plain only.
+
+CONTEXT:
+A2 | works_at | C1_2
+B2 | works_at | C2_2
+C1_2 | located_in | SoloA2
+C2_2 | located_in | SoloB2

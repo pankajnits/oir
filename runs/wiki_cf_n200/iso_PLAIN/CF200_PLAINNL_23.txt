@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_23 #####
+QUESTION:
+What is the place of birth of the director of film Nightwatching?
+
+CONTEXT:
+Nightwatching | director | Peter Greenaway
+Samuel Johnson | place of death | London
+Vladimir of Staritsa | cause of death | poison
+Elizabeth Johnson | spouse | Samuel Johnson
+decoy_mid_23 | place of birth | Newport, Wales
+Maria Vladimirovna of Staritsa | father | Vladimir of Staritsa
+Peter Greenaway | place of birth | CF_TAIL_23_NewportWales
+Nightwatching | decoy_link_23 | decoy_mid_23

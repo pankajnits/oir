@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_7]: <sql>
+
+DB: department_management
+SCHEMA:
+department(Department_ID, Name, Creation, Ranking, Budget_in_Billions, Num_Employees)
+head(head_ID, name, born_state, age)
+management(department_ID, head_ID, temporary_acting)
+QUESTION:
+What are the distinct creation years of the departments managed by a secretary born in state 'Alabama'?

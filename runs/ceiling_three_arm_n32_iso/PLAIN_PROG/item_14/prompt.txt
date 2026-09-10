@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_14 #####
+PATH_QUERY
+START Hayk_Yesayan
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Hayk_Yesayan | works_at | Telecom_Armenia
+Telecom_Armenia | headquartered_in | Yerevan
+DecoyCo_Telecom_Armenia | headquartered_in | DecoyHQ_Yerevan
+Telecom_Armenia | owned_by | Hold_Telecom_Armenia
+Hold_Telecom_Armenia | meta_of | Telecom_Armenia
+Telecom_Armenia | partner_of | Partner_Telecom_Armenia
+Partner_Telecom_Armenia | meta_of | Telecom_Armenia
+Decoy_DecoyCo_Telecom_Armenia | works_at | DecoyCo_Telecom_Armenia

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_109 #####
+QUESTION:
+Where was the husband of Christiane Kubrick born?
+
+CONTEXT:
+Christiane Susanne Kubrick | spouse | Stanley Kubrick
+John Gayle | country of citizenship | United States
+Amelia Gayle Gorgas | father | John Gayle
+decoy_mid_109 | place of birth | Bronx
+Jacques Rivette | cause of death | Alzheimer
+Christiane Susanne Kubrick | decoy_link_109 | decoy_mid_109
+Stanley Kubrick | place of birth | CF_TAIL_109_Bronx
+Around a Small Mountain | director | Jacques Rivette

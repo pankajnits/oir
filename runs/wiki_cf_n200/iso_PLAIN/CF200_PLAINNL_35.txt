@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_35 #####
+QUESTION:
+What nationality is Gheorghe Remenco's mother?
+
+CONTEXT:
+Alexandra Remenco | country of citizenship | CF_TAIL_35_Romania
+Louis de Luxembourg, Count of Saint-Pol | date of death | 19 December 1475
+John of Luxembourg, Count of Soissons | father | Louis de Luxembourg, Count of Saint-Pol
+Gheorghe Remenco | decoy_link_35 | decoy_mid_35
+Donna Summer | place of death | Naples
+decoy_mid_35 | country of citizenship | Romania
+Breakaway | performer | Donna Summer
+Gheorghe Remenco | mother | Alexandra Remenco

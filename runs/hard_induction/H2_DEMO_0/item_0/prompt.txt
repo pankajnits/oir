@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM H2_DEMO_0: hop=2; 0 sealed demos; one quiz; no PATH.
+
+No demos. No path. No relation names.
+From START, output the sealed answer atom using only CONTEXT.
+If more than one reading is possible, output UNKNOWN.
+
+##### ID HI_H2_D0_0 #####
+START E018acec40d66
+CONTEXT:
+Eac0f51af4649 | E012504e5dfe3 | E8790297823ed
+E018acec40d66 | E2015ed2c3440 | Eac0f51af4649
+E23dbc470c1ad | E2b10ab6bd718 | Eac0f51af4649
+Eac0f51af4649 | E82575c60383a | E23dbc470c1ad
+Ed4775a607292 | E8e1361738c88 | E018acec40d66
+E018acec40d66 | E9239e808191b | Ed4775a607292
+

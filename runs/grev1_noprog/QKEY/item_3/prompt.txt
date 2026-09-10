@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM QKEY: keys and values sealed. Question uses the same HMAC as the JSON key. No legend. No JOIN/PROG. One quiz.
+
+##### ID GREV1_QKEY_3 #####
+QUESTION:
+What is E50fa5c3a0018 of E5f5818fb480f?
+
+CONTEXT:
+{
+  "E826c3ff68bff": [
+    {
+      "E66dc6fa9a878": "Ee182f23bc006",
+      "Ec0166bbc0243": "E3ad40314735d"
+    },
+    {
+      "E66dc6fa9a878": "Eed6273afcaa6",
+      "Ec0166bbc0243": "Efbc4d384a7d6"
+    },
+    {
+      "E66dc6fa9a878": "E5f5818fb480f",
+      "Ec0166bbc0243": "E58a9b74523db"
+    }
+  ],
+  "E21bad2ccb08f": [
+    {
+      "E66dc6fa9a878": "E58a9b74523db",
+      "E3ddb74c77130": {
+        "E50fa5c3a0018": "Ece526e834198",
+        "E6d5d6096cde3": "Ed9e596fd924d"
+      }
+    },
+    {
+      "E66dc6fa9a878": "E3ad40314735d",
+      "E3ddb74c77130": {
+        "E50fa5c3a0018": "E7912e7706f6a",
+        "E6d5d6096cde3": "E323d02839bdf"
+      }
+    },
+    {
+      "E66dc6fa9a878": "Efbc4d384a7d6",
+      "E3ddb74c77130": {
+        "E50fa5c3a0018": "Ece526e834198",
+        "E6d5d6096cde3": "E8bc0b5b84954"
+      }
+    }
+  ]
+}
+

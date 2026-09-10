@@ -1,0 +1,221 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM LEGEND_NL: English rel → sealed rel map + span-sealed Q. No PATH.
+
+##### ID OR_LEGEND_0 #####
+LEGEND
+director = E0b35ff5b0c7b
+mother = Eaf559b7721d5
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Who is the mother of the director of film E6c356a5c4956 (Film)?
+
+CONTEXT:
+E1cf88d85d7f8 | Eaf559b7721d5 | Ed1d21ff0869e
+Ea1cfaa5587cc | E0b35ff5b0c7b | Efec52669257d
+E8756de2b1505 | Eb001700916b5 | Eb677dbecc633
+E6c356a5c4956 | E0b35ff5b0c7b | E1cf88d85d7f8
+E72c04ae69d48 | Eaf559b7721d5 | E6123d32ac8a1
+E6dc9c4c91695 | E92f2c86b3f72 | E8756de2b1505
+Efec52669257d | E1e3bfd18ce20 | E14d03ba79cee
+E6c356a5c4956 | E483c043a8221 | E72c04ae69d48
+
+##### ID OR_LEGEND_1 #####
+LEGEND
+father = E92f2c86b3f72
+date of death = Eb001700916b5
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+When did John V, Prince Of Anhalt-Zerbst's father die?
+
+CONTEXT:
+E6dc9c4c91695 | E92f2c86b3f72 | E8756de2b1505
+E7d561a532ecc | E0b35ff5b0c7b | E374fe773ddc8
+E6dc9c4c91695 | Eade4b81dd70e | E531191c3f087
+E374fe773ddc8 | E8cc8dacea1d9 | E2793fa0af2d1
+E531191c3f087 | Eb001700916b5 | Eb677dbecc633
+Ea1cfaa5587cc | E0b35ff5b0c7b | Efec52669257d
+Efec52669257d | E1e3bfd18ce20 | E14d03ba79cee
+E8756de2b1505 | Eb001700916b5 | E0e5de48666c1
+
+##### ID OR_LEGEND_2 #####
+LEGEND
+director = E0b35ff5b0c7b
+award received = E1e3bfd18ce20
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+What is the award that the director of film Ea1cfaa5587cc won?
+
+CONTEXT:
+E847a118d5847 | E92f2c86b3f72 | E677618e53d37
+E374fe773ddc8 | E8cc8dacea1d9 | E2793fa0af2d1
+E09aafb9ef674 | E1e3bfd18ce20 | E14d03ba79cee
+Ea1cfaa5587cc | Ef36f6af895bc | E09aafb9ef674
+Ea1cfaa5587cc | E0b35ff5b0c7b | Efec52669257d
+E677618e53d37 | E8cc8dacea1d9 | Ef5f01b8820ea
+E7d561a532ecc | E0b35ff5b0c7b | E374fe773ddc8
+Efec52669257d | E1e3bfd18ce20 | E9df979069b70
+
+##### ID OR_LEGEND_3 #####
+LEGEND
+director = E0b35ff5b0c7b
+place of birth = E8cc8dacea1d9
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Where was the director of film E7d561a532ecc born?
+
+CONTEXT:
+E677618e53d37 | E8cc8dacea1d9 | Ef5f01b8820ea
+E357dbaa808e0 | E8cc8dacea1d9 | E395da38200d1
+E847a118d5847 | E92f2c86b3f72 | E677618e53d37
+E374fe773ddc8 | E8cc8dacea1d9 | Efe3f82eef721
+E7d561a532ecc | Ed666cf75d98f | Ef644a68757c9
+E8f2b2070ed85 | E0b35ff5b0c7b | E357dbaa808e0
+E7d561a532ecc | E0b35ff5b0c7b | E374fe773ddc8
+Ef644a68757c9 | E8cc8dacea1d9 | E2793fa0af2d1
+
+##### ID OR_LEGEND_4 #####
+LEGEND
+father = E92f2c86b3f72
+place of birth = E8cc8dacea1d9
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Where was the father of E847a118d5847 born?
+
+CONTEXT:
+E847a118d5847 | E92f2c86b3f72 | E677618e53d37
+E8f2b2070ed85 | E0b35ff5b0c7b | E357dbaa808e0
+E677618e53d37 | E8cc8dacea1d9 | E8c948e05c1d0
+E67a5a60549a5 | E19650717cd28 | E8487aaa7e176
+E8487aaa7e176 | E2be8513bf682 | E03a8b7e18a9e
+E356c466d450d | E8cc8dacea1d9 | Ef5f01b8820ea
+E357dbaa808e0 | E8cc8dacea1d9 | E395da38200d1
+E847a118d5847 | Ee3ceff0cf2de | E356c466d450d
+
+##### ID OR_LEGEND_5 #####
+LEGEND
+director = E0b35ff5b0c7b
+place of birth = E8cc8dacea1d9
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Where was the director of film E8f2b2070ed85 (Film) born?
+
+CONTEXT:
+E67a5a60549a5 | E19650717cd28 | E8487aaa7e176
+E8f2b2070ed85 | E0b35ff5b0c7b | E357dbaa808e0
+E39b363452474 | E0b35ff5b0c7b | E152bdad4ef41
+E8487aaa7e176 | E2be8513bf682 | E03a8b7e18a9e
+E357dbaa808e0 | E8cc8dacea1d9 | Eba979aba7147
+Ecf1bb03becae | E8cc8dacea1d9 | E395da38200d1
+E152bdad4ef41 | E257520c171fb | Ebe057ec7ff4e
+E8f2b2070ed85 | E966b4aebf519 | Ecf1bb03becae
+
+##### ID OR_LEGEND_6 #####
+LEGEND
+spouse = E19650717cd28
+cause of death = E2be8513bf682
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Why did E67a5a60549a5's wife die?
+
+CONTEXT:
+Eb272237d4ca3 | Eb001700916b5 | Ed02558bd289f
+E672e1040d03e | E2be8513bf682 | E03a8b7e18a9e
+E39b363452474 | E0b35ff5b0c7b | E152bdad4ef41
+Eff903cba9963 | E19650717cd28 | Eb272237d4ca3
+E8487aaa7e176 | E2be8513bf682 | E77f4f9ea71b8
+E67a5a60549a5 | E19650717cd28 | E8487aaa7e176
+E67a5a60549a5 | Ead38e0c7fdf4 | E672e1040d03e
+E152bdad4ef41 | E257520c171fb | Ebe057ec7ff4e
+
+##### ID OR_LEGEND_7 #####
+LEGEND
+director = E0b35ff5b0c7b
+place of death = E257520c171fb
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Where was the place of death of the director of film E39b363452474?
+
+CONTEXT:
+Eb272237d4ca3 | Eb001700916b5 | Ed02558bd289f
+E846903f178ae | E257520c171fb | Ebe057ec7ff4e
+E3245290af502 | E00994e72c067 | E4f2cbd3f9f3b
+Eff903cba9963 | E19650717cd28 | Eb272237d4ca3
+E39b363452474 | Ebf4f0daf4385 | E846903f178ae
+E152bdad4ef41 | E257520c171fb | Eb03723ba4d5e
+Ee5be1dd83e1f | E0b35ff5b0c7b | E3245290af502
+E39b363452474 | E0b35ff5b0c7b | E152bdad4ef41
+
+##### ID OR_LEGEND_8 #####
+LEGEND
+spouse = E19650717cd28
+date of death = Eb001700916b5
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+When did Eff903cba9963 (Singer)'s husband die?
+
+CONTEXT:
+Ed18f1d8de87b | E19650717cd28 | E3fb39a15ac07
+E3245290af502 | E00994e72c067 | E4f2cbd3f9f3b
+E3b267bb4be30 | E0b35ff5b0c7b | Ed18f1d8de87b
+E304498a0fa53 | Eb001700916b5 | Ed02558bd289f
+Eb272237d4ca3 | Eb001700916b5 | E214cb8d51c53
+Eff903cba9963 | E19650717cd28 | Eb272237d4ca3
+Eff903cba9963 | E11267242d536 | E304498a0fa53
+Ee5be1dd83e1f | E0b35ff5b0c7b | E3245290af502
+
+##### ID OR_LEGEND_9 #####
+LEGEND
+director = E0b35ff5b0c7b
+country of citizenship = E00994e72c067
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+What nationality is the director of film Ee5be1dd83e1f?
+
+CONTEXT:
+E3b267bb4be30 | E0b35ff5b0c7b | Ed18f1d8de87b
+Ed96cf7917ef7 | E19650717cd28 | E1a417fcc6060
+E3245290af502 | E00994e72c067 | E571ef2ac9c9c
+Ee5be1dd83e1f | E4ffc65cd508a | E8e8854b83e3d
+Ed18f1d8de87b | E19650717cd28 | E3fb39a15ac07
+Ee5be1dd83e1f | E0b35ff5b0c7b | E3245290af502
+E1a417fcc6060 | E257520c171fb | Eafb6840dec0f
+E8e8854b83e3d | E00994e72c067 | E4f2cbd3f9f3b
+
+##### ID OR_LEGEND_10 #####
+LEGEND
+director = E0b35ff5b0c7b
+spouse = E19650717cd28
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Who is the spouse of the director of film E3b267bb4be30?
+
+CONTEXT:
+Eca83a886723a | E19650717cd28 | E3fb39a15ac07
+E6c356a5c4956 | E0b35ff5b0c7b | E1cf88d85d7f8
+E1a417fcc6060 | E257520c171fb | Eafb6840dec0f
+E1cf88d85d7f8 | Eaf559b7721d5 | E6123d32ac8a1
+E3b267bb4be30 | E17fb04da41cc | Eca83a886723a
+Ed96cf7917ef7 | E19650717cd28 | E1a417fcc6060
+E3b267bb4be30 | E0b35ff5b0c7b | Ed18f1d8de87b
+Ed18f1d8de87b | E19650717cd28 | Ebf87c49a1dc5
+
+##### ID OR_LEGEND_11 #####
+LEGEND
+spouse = E19650717cd28
+place of death = E257520c171fb
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Where was the place of death of Ed96cf7917ef7's husband?
+
+CONTEXT:
+E9d0068cc7807 | E257520c171fb | Eafb6840dec0f
+E8756de2b1505 | Eb001700916b5 | Eb677dbecc633
+E6dc9c4c91695 | E92f2c86b3f72 | E8756de2b1505
+Ed96cf7917ef7 | Ef1eab5406714 | E9d0068cc7807
+E6c356a5c4956 | E0b35ff5b0c7b | E1cf88d85d7f8
+E1cf88d85d7f8 | Eaf559b7721d5 | E6123d32ac8a1
+E1a417fcc6060 | E257520c171fb | E621f4cd32323
+Ed96cf7917ef7 | E19650717cd28 | E1a417fcc6060

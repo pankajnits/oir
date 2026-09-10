@@ -1,0 +1,55 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_91]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_91 #####
+DB: city_record
+SCHEMA (English name → sealed sqlite identifier):
+city = E171084eb6b2d
+City_ID = E274c32c77ef4
+City = E827b8b8db81b
+Hanzi = E95c76ec104dd
+Hanyu_Pinyin = E28473947c93f
+Regional_Population = E32a2feb0d6e0
+GDP = E8be4267579ad
+match = E46949a23edd8
+Match_ID = Ed465698d2739
+Date = E0b73ca84609a
+Venue = E5fd2fd4f902f
+Score = E0b07bef17ee6
+Result = E8e393bef8612
+Competition = E00bd7401b889
+temperature = E26cae3361367
+Jan = Ebc1e6db75608
+Feb = Ee08c9a7e4153
+Mar = E3da29dacc1e5
+Apr = E3df04d994b85
+Jun = E3625bc027092
+Jul = E48ced104f3cd
+Aug = Eb87a889c707f
+Sep = Eaf5bc8b8f874
+Oct = E223b23bd0f6f
+Nov = E4e56e071cae9
+Dec = E5d73e8f489a1
+hosting_city = Eac78fe0742d9
+Year = E9064125e3029
+Host_City = Ed5173c56e3c3
+
+city(City_ID, City, Hanzi, Hanyu_Pinyin, Regional_Population, GDP)
+match(Match_ID, Date, Venue, Score, Result, Competition)
+temperature(City_ID, Jan, Feb, Mar, Apr, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+hosting_city(Year, Match_ID, Host_City)
+
+QUESTION:
+Find the Eb4ecd89d0506 that hosted the most events.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

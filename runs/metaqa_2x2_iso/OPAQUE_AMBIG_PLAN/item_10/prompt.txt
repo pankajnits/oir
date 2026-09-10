@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_10]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_10 #####
+QUESTION:
+What is the genre of a movie directed by Charles Barton?
+
+PATH_QUERY
+START Charles Barton
+R1 Eda93b3a7c29e
+R2 Ef53d2d72fa4f
+Execute path; return final tail only.
+
+CONTEXT:
+Charles Barton | Eda93b3a7c29e | The Shaggy Dog
+The Shaggy Dog | Ef53d2d72fa4f | Comedy
+The Shaggy Dog | E0e3e4a86081c | English

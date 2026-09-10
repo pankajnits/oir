@@ -1,0 +1,368 @@
+{
+  "goal": "same-encoding Q+C only; real Wikidata multi-hop",
+  "source": "data/real/wikidata_ceo_hops.json",
+  "n_quiz_per_cond": 8,
+  "cases": [
+    {
+      "id": "REAL_CANON_0",
+      "cond": "canon",
+      "expect": "E72d81aea35f8",
+      "plain_hq": "Toronto",
+      "person": "Tony_Staffieri"
+    },
+    {
+      "id": "REAL_PARA_0",
+      "cond": "para",
+      "expect": "E72d81aea35f8",
+      "plain_hq": "Toronto",
+      "person": "Tony_Staffieri"
+    },
+    {
+      "id": "REAL_STRUCT_0",
+      "cond": "struct",
+      "expect": "E72d81aea35f8",
+      "plain_hq": "Toronto",
+      "person": "Tony_Staffieri"
+    },
+    {
+      "id": "REAL_CANON_1",
+      "cond": "canon",
+      "expect": "E67ba03bc63eb",
+      "plain_hq": "Ventura",
+      "person": "Q108434845"
+    },
+    {
+      "id": "REAL_PARA_1",
+      "cond": "para",
+      "expect": "E67ba03bc63eb",
+      "plain_hq": "Ventura",
+      "person": "Q108434845"
+    },
+    {
+      "id": "REAL_STRUCT_1",
+      "cond": "struct",
+      "expect": "E67ba03bc63eb",
+      "plain_hq": "Ventura",
+      "person": "Q108434845"
+    },
+    {
+      "id": "REAL_CANON_2",
+      "cond": "canon",
+      "expect": "E0e524b94058b",
+      "plain_hq": "Vienna",
+      "person": "Peter_Bosek"
+    },
+    {
+      "id": "REAL_PARA_2",
+      "cond": "para",
+      "expect": "E0e524b94058b",
+      "plain_hq": "Vienna",
+      "person": "Peter_Bosek"
+    },
+    {
+      "id": "REAL_STRUCT_2",
+      "cond": "struct",
+      "expect": "E0e524b94058b",
+      "plain_hq": "Vienna",
+      "person": "Peter_Bosek"
+    },
+    {
+      "id": "REAL_CANON_3",
+      "cond": "canon",
+      "expect": "E9a0c8e236627",
+      "plain_hq": "Rockville",
+      "person": "Jim_Gibbons"
+    },
+    {
+      "id": "REAL_PARA_3",
+      "cond": "para",
+      "expect": "E9a0c8e236627",
+      "plain_hq": "Rockville",
+      "person": "Jim_Gibbons"
+    },
+    {
+      "id": "REAL_STRUCT_3",
+      "cond": "struct",
+      "expect": "E9a0c8e236627",
+      "plain_hq": "Rockville",
+      "person": "Jim_Gibbons"
+    },
+    {
+      "id": "REAL_CANON_4",
+      "cond": "canon",
+      "expect": "E248b1d10f4f4",
+      "plain_hq": "Melbourne",
+      "person": "David_Thodey"
+    },
+    {
+      "id": "REAL_PARA_4",
+      "cond": "para",
+      "expect": "E248b1d10f4f4",
+      "plain_hq": "Melbourne",
+      "person": "David_Thodey"
+    },
+    {
+      "id": "REAL_STRUCT_4",
+      "cond": "struct",
+      "expect": "E248b1d10f4f4",
+      "plain_hq": "Melbourne",
+      "person": "David_Thodey"
+    },
+    {
+      "id": "REAL_CANON_5",
+      "cond": "canon",
+      "expect": "Ef558fa179354",
+      "plain_hq": "Paris",
+      "person": "Jef_Van_In"
+    },
+    {
+      "id": "REAL_PARA_5",
+      "cond": "para",
+      "expect": "Ef558fa179354",
+      "plain_hq": "Paris",
+      "person": "Jef_Van_In"
+    },
+    {
+      "id": "REAL_STRUCT_5",
+      "cond": "struct",
+      "expect": "Ef558fa179354",
+      "plain_hq": "Paris",
+      "person": "Jef_Van_In"
+    },
+    {
+      "id": "REAL_CANON_6",
+      "cond": "canon",
+      "expect": "Ed085ec0b22ae",
+      "plain_hq": "Prague",
+      "person": "Patrik_Tk"
+    },
+    {
+      "id": "REAL_PARA_6",
+      "cond": "para",
+      "expect": "Ed085ec0b22ae",
+      "plain_hq": "Prague",
+      "person": "Patrik_Tk"
+    },
+    {
+      "id": "REAL_STRUCT_6",
+      "cond": "struct",
+      "expect": "Ed085ec0b22ae",
+      "plain_hq": "Prague",
+      "person": "Patrik_Tk"
+    },
+    {
+      "id": "REAL_CANON_7",
+      "cond": "canon",
+      "expect": "E207a55634d78",
+      "plain_hq": "Santa_Clara",
+      "person": "Jonathan_I_Schwartz"
+    },
+    {
+      "id": "REAL_PARA_7",
+      "cond": "para",
+      "expect": "E207a55634d78",
+      "plain_hq": "Santa_Clara",
+      "person": "Jonathan_I_Schwartz"
+    },
+    {
+      "id": "REAL_STRUCT_7",
+      "cond": "struct",
+      "expect": "E207a55634d78",
+      "plain_hq": "Santa_Clara",
+      "person": "Jonathan_I_Schwartz"
+    },
+    {
+      "id": "REAL_DEMO_0",
+      "cond": "demo",
+      "expect": "E72d81aea35f8",
+      "plain_hq": "Toronto",
+      "person": "Tony_Staffieri"
+    },
+    {
+      "id": "REAL_DEMO_1",
+      "cond": "demo",
+      "expect": "E67ba03bc63eb",
+      "plain_hq": "Ventura",
+      "person": "Q108434845"
+    },
+    {
+      "id": "REAL_DEMO_2",
+      "cond": "demo",
+      "expect": "E0e524b94058b",
+      "plain_hq": "Vienna",
+      "person": "Peter_Bosek"
+    },
+    {
+      "id": "REAL_DEMO_3",
+      "cond": "demo",
+      "expect": "E9a0c8e236627",
+      "plain_hq": "Rockville",
+      "person": "Jim_Gibbons"
+    },
+    {
+      "id": "REAL_DEMO_4",
+      "cond": "demo",
+      "expect": "E248b1d10f4f4",
+      "plain_hq": "Melbourne",
+      "person": "David_Thodey"
+    },
+    {
+      "id": "REAL_DEMO_5",
+      "cond": "demo",
+      "expect": "Ef558fa179354",
+      "plain_hq": "Paris",
+      "person": "Jef_Van_In"
+    },
+    {
+      "id": "REAL_DEMO_6",
+      "cond": "demo",
+      "expect": "Ed085ec0b22ae",
+      "plain_hq": "Prague",
+      "person": "Patrik_Tk"
+    },
+    {
+      "id": "REAL_DEMO_7",
+      "cond": "demo",
+      "expect": "E207a55634d78",
+      "plain_hq": "Santa_Clara",
+      "person": "Jonathan_I_Schwartz"
+    }
+  ],
+  "rev": {
+    "Ee8956805d4ec": "works_at",
+    "Ecc419031069b": "headquartered_in",
+    "Eb2d28ad48186": "owned_by",
+    "Ee2fa86e30bd0": "partner_of",
+    "E624543373c1f": "meta_of",
+    "Eadb2489d0e4c": "Tony_Staffieri",
+    "E2ec9cd1665ee": "Rogers_Communications",
+    "E72d81aea35f8": "Toronto",
+    "Ecf9146679a5f": "AXA",
+    "Ef558fa179354": "Paris",
+    "Ea45a027a4ecd": "Hold_Rogers_Communications",
+    "E8bf62324ea7e": "Meta_Rogers_Communications",
+    "E0bc90e125e1b": "Part_Rogers_Communications",
+    "E1b1709a741cb": "PMeta_Rogers_Communications",
+    "E969f3e55def1": "DecoyPerson_Rogers_Communications",
+    "E5ec8e72d583f": "Where",
+    "E8ff36c379b8b": "is",
+    "E7da16776ad51": "the",
+    "Ed6084ae345f5": "company",
+    "E55c6eae4163e": "that",
+    "Eab04e7ce0b1f": "Reply",
+    "E98f9f2a5b324": "location",
+    "Ee5634fc48006": "seal",
+    "E95ba7c35647b": "only",
+    "E3d2992d19349": "In",
+    "E54fb65a881ce": "which",
+    "E7cb685ee4d66": "city",
+    "Ee53de1774a43": "employer",
+    "E21a3bbc79a17": "of",
+    "Ea9300f6f5da8": "based",
+    "E86d076a2d0aa": "Q108434845",
+    "E6af1315566f4": "Patagonia_Inc",
+    "E67ba03bc63eb": "Ventura",
+    "Edd0c6a0a5d16": "Costco",
+    "E1d63d541dab0": "Issaquah",
+    "E770d483df69a": "Hold_Patagonia_Inc",
+    "E88c2953039d8": "Meta_Patagonia_Inc",
+    "Eedc051e87ae3": "Part_Patagonia_Inc",
+    "E1cd4ceb9a66d": "PMeta_Patagonia_Inc",
+    "E2b6c2cda95c3": "DecoyPerson_Patagonia_Inc",
+    "Ebd67e2d5fce9": "Peter_Bosek",
+    "E8747017c2fac": "Erste_Group",
+    "E0e524b94058b": "Vienna",
+    "E3faa1ef51a8d": "JT_Banka",
+    "Ed085ec0b22ae": "Prague",
+    "E6a979d959564": "Hold_Erste_Group",
+    "Efe832e59d841": "Meta_Erste_Group",
+    "E829524adf180": "Part_Erste_Group",
+    "E7c9a6f878520": "PMeta_Erste_Group",
+    "Eec0a2917bed2": "DecoyPerson_Erste_Group",
+    "E01c0278460e9": "Jim_Gibbons",
+    "E6f3d70288712": "Goodwill_Industries",
+    "E9a0c8e236627": "Rockville",
+    "E84c2eebead3d": "Kooperativa_pojiovna",
+    "E929da13e510b": "Hold_Goodwill_Industries",
+    "E387830c6c0af": "Meta_Goodwill_Industries",
+    "Eb13914f7b592": "Part_Goodwill_Industries",
+    "E37394d2b2ba5": "PMeta_Goodwill_Industries",
+    "E0228c25acf44": "DecoyPerson_Goodwill_Industries",
+    "Ec00e1829e5e8": "David_Thodey",
+    "E94b735f8f187": "Telstra",
+    "E248b1d10f4f4": "Melbourne",
+    "Ea04dc49c0986": "Don_Quijote",
+    "Ee57b10aca51a": "Aobadai",
+    "E512e0ede2038": "Hold_Telstra",
+    "E3ca051d6e5d4": "Meta_Telstra",
+    "Ef8f254f04678": "Part_Telstra",
+    "Ee3dc96a3ecff": "PMeta_Telstra",
+    "E1460cfb9c65f": "DecoyPerson_Telstra",
+    "E461d19273efb": "Jef_Van_In",
+    "Eb10243006a1d": "Hold_AXA",
+    "E6da6e0d0d534": "Meta_AXA",
+    "E484eda44910a": "Part_AXA",
+    "Eef35155369e5": "PMeta_AXA",
+    "Eb26385028baf": "DecoyPerson_AXA",
+    "Ed84424453d0a": "Patrik_Tk",
+    "E1d4d730ab66b": "Hold_JT_Banka",
+    "E43c41cc79f20": "Meta_JT_Banka",
+    "E82291c1d9b7f": "Part_JT_Banka",
+    "E07aac2dbb270": "PMeta_JT_Banka",
+    "Eb85dc0d0966d": "DecoyPerson_JT_Banka",
+    "Edf1fd7254459": "Jonathan_I_Schwartz",
+    "E198d13b802e2": "Sun_Microsystems",
+    "E207a55634d78": "Santa_Clara",
+    "E62c5c498bc7b": "Endesa",
+    "E3919e9d58a50": "Madrid",
+    "Ebc508fcc489b": "Hold_Sun_Microsystems",
+    "Edce463c7edc6": "Meta_Sun_Microsystems",
+    "Edda70a26169b": "Part_Sun_Microsystems",
+    "E868cc7d13a55": "PMeta_Sun_Microsystems",
+    "Ed3bab78ccd9d": "DecoyPerson_Sun_Microsystems",
+    "Ea55f94719ea2": "Martin_Divi",
+    "E493167546d33": "Lyft",
+    "E53d5ac693a4f": "San_Francisco",
+    "E1fbe7a27bfbb": "Hold_Kooperativa_pojiovna",
+    "E97774495d4b8": "Meta_Kooperativa_pojiovna",
+    "Ef7d3527253aa": "Part_Kooperativa_pojiovna",
+    "E22770657721c": "PMeta_Kooperativa_pojiovna",
+    "E05e11b2d2dd1": "DecoyPerson_Kooperativa_pojiovna",
+    "E43ea08ba4611": "Bill_Magness",
+    "Ea52aeb759ddd": "Electric_Reliability_Council_of_Texas",
+    "E3f9b1e6691cc": "Taylor",
+    "Edefbd3a7ce83": "Hold_Electric_Reliability_Council_of_Texas",
+    "E606e37ca1287": "Meta_Electric_Reliability_Council_of_Texas",
+    "E49af2a8f30cd": "Part_Electric_Reliability_Council_of_Texas",
+    "Eb4bbe9dabb23": "PMeta_Electric_Reliability_Council_of_Texas",
+    "E6418d292c81a": "DecoyPerson_Electric_Reliability_Council_of_Texas",
+    "E0534a542e48e": "Jos_Damin_Bogas_Glvez",
+    "E84fb7c1d339c": "Hold_Endesa",
+    "E237ecf90ed09": "Meta_Endesa",
+    "E05b06bce2eaa": "Part_Endesa",
+    "E9f84dd5be01b": "PMeta_Endesa",
+    "Eae660ab891b9": "DecoyPerson_Endesa",
+    "E0dffcc9a2ce5": "The_Walt_Disney_Company",
+    "E0a387f2966d6": "Burbank",
+    "E949eae8684b4": "C__J_Clark_International_Ltd",
+    "E88a9194b5ad0": "Street"
+  },
+  "companies": [
+    "AXA",
+    "C__J_Clark_International_Ltd",
+    "Costco",
+    "Don_Quijote",
+    "Electric_Reliability_Council_of_Texas",
+    "Endesa",
+    "Erste_Group",
+    "Goodwill_Industries",
+    "JT_Banka",
+    "Kooperativa_pojiovna",
+    "Lyft",
+    "Patagonia_Inc",
+    "Rogers_Communications",
+    "Sun_Microsystems",
+    "Telstra",
+    "The_Walt_Disney_Company"
+  ]
+}

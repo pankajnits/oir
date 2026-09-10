@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_20 #####
+PATH_QUERY
+START Macon_Foscue_Brock_Jr
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Macon_Foscue_Brock_Jr | works_at | Dollar_Tree
+Dollar_Tree | headquartered_in | Chesapeake
+DecoyCo_Dollar_Tree | headquartered_in | DecoyHQ_Chesapeake
+Dollar_Tree | owned_by | Hold_Dollar_Tree
+Hold_Dollar_Tree | meta_of | Dollar_Tree
+Dollar_Tree | partner_of | Partner_Dollar_Tree
+Partner_Dollar_Tree | meta_of | Dollar_Tree
+Decoy_DecoyCo_Dollar_Tree | works_at | DecoyCo_Dollar_Tree

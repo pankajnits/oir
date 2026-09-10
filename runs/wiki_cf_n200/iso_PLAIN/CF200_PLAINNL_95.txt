@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_95 #####
+QUESTION:
+Where was the father of Princess Isabella Of Bavaria born?
+
+CONTEXT:
+James Meadows Rendel | date of death | 21 November 1856
+Crane Wilbur | place of birth | Athens
+Prince Adalbert of Bavaria | place of birth | CF_TAIL_95_Munich
+decoy_mid_95 | place of birth | Munich
+The Bat | director | Crane Wilbur
+Princess Isabella of Bavaria | decoy_link_95 | decoy_mid_95
+Alexander Meadows Rendel | father | James Meadows Rendel
+Princess Isabella of Bavaria | father | Prince Adalbert of Bavaria

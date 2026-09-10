@@ -1,0 +1,36 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM H3_DEMO_1: hop=3; 1 sealed demos; one quiz; no PATH.
+
+Learn the mapping from DEMOs (same encoding, novel seals).
+Answer the QUIZ the same way. No English relation names. No PATH.
+
+DEMO 0:
+START Ee0c547b25005
+CONTEXT:
+E9ddaf734860a | E6c4a60866837 | E21d006f7ba6b
+Ee0c547b25005 | E01abbd98bd27 | E9ddaf734860a
+E751a09279c4c | E4e2818902abe | Ee0c547b25005
+E21d006f7ba6b | E69feabf1db9a | E4c99a0328c79
+E9ddaf734860a | E0de46472f55a | E711c07543fc4
+E21d006f7ba6b | Eb39117d601b0 | E15cb38cfa5b8
+E15cb38cfa5b8 | E45ac60c0c6b6 | E21d006f7ba6b
+Ee0c547b25005 | Eb446dbccd49c | E751a09279c4c
+E711c07543fc4 | E98b3df011088 | E9ddaf734860a
+ANSWER_SEALED: E4c99a0328c79
+
+--- QUIZ ---
+##### ID HI_H3_D1_3 #####
+START Ea712916c3244
+CONTEXT:
+E7da7b0ab616d | E84582c876ae0 | Ea712916c3244
+E5ce25e7521b3 | E6c39db1c3ca2 | Ed6e8df0ae600
+Ed6e8df0ae600 | E6c4a60866837 | E0bb945e0173b
+E0bb945e0173b | E69feabf1db9a | E687407a6bf39
+Ea712916c3244 | E85bfa9bf5721 | E7da7b0ab616d
+Ea712916c3244 | E01abbd98bd27 | Ed6e8df0ae600
+Ecd217e74bd0e | Ecd66875bb152 | E0bb945e0173b
+E0bb945e0173b | E9ff88a6053fc | Ecd217e74bd0e
+Ed6e8df0ae600 | E3a10176656da | E5ce25e7521b3
+

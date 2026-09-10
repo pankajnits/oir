@@ -1,0 +1,191 @@
+{
+  "claim": "Prompt-local Transformer, instance-fresh local ids, no HMAC lexicon. Default net is NOT given PATH-matched adjacency (unlike v3 MP). Oracle ablation adds a path-match bit on edges.",
+  "typed_decoy_holdout": {
+    "tf": "101/200",
+    "typed_sink": "200/200",
+    "unique": "0/200",
+    "type_only": "0/200",
+    "n": 200,
+    "tf_k": 101
+  },
+  "typed_decoy_holdout_oracle_pmatch": {
+    "tf": "99/200",
+    "typed_sink": "200/200",
+    "unique": "0/200",
+    "type_only": "0/200",
+    "n": 200,
+    "tf_k": 99
+  },
+  "typed_decoy_ood_h3": {
+    "tf": "47/100",
+    "typed_sink": "100/100",
+    "unique": "0/100",
+    "type_only": "0/100",
+    "n": 100,
+    "tf_k": 47
+  },
+  "typed_decoy_ood_h3_oracle_pmatch": {
+    "tf": "49/100",
+    "typed_sink": "100/100",
+    "unique": "0/100",
+    "type_only": "0/100",
+    "n": 100,
+    "tf_k": 49
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "loss": 1.2406314819578141,
+      "train400": "191/400",
+      "holdout": "97/200"
+    },
+    {
+      "epoch": 1,
+      "loss": 1.0991013031157235,
+      "train400": "194/400",
+      "holdout": "97/200"
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0989377782458352,
+      "train400": "198/400",
+      "holdout": "99/200"
+    },
+    {
+      "epoch": 3,
+      "loss": 1.09883969927591,
+      "train400": "193/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 4,
+      "loss": 1.0987766526994251,
+      "train400": "194/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 5,
+      "loss": 1.0987344355810256,
+      "train400": "202/400",
+      "holdout": "99/200"
+    },
+    {
+      "epoch": 6,
+      "loss": 1.0987051309101166,
+      "train400": "191/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 7,
+      "loss": 1.0986842882065546,
+      "train400": "208/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 8,
+      "loss": 1.098669067261711,
+      "train400": "208/400",
+      "holdout": "100/200"
+    },
+    {
+      "epoch": 9,
+      "loss": 1.098657725349305,
+      "train400": "182/400",
+      "holdout": "99/200"
+    },
+    {
+      "epoch": 10,
+      "loss": 1.0986491441726685,
+      "train400": "186/400",
+      "holdout": "100/200"
+    },
+    {
+      "epoch": 11,
+      "loss": 1.098642555494157,
+      "train400": "184/400",
+      "holdout": "101/200"
+    }
+  ],
+  "history_oracle": [
+    {
+      "epoch": 0,
+      "loss": 1.2325491659224979,
+      "train400": "196/400",
+      "holdout": "102/200"
+    },
+    {
+      "epoch": 1,
+      "loss": 1.0992308514458793,
+      "train400": "199/400",
+      "holdout": "97/200"
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0989955777213687,
+      "train400": "203/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 3,
+      "loss": 1.0988597529275077,
+      "train400": "212/400",
+      "holdout": "100/200"
+    },
+    {
+      "epoch": 4,
+      "loss": 1.0987770443870908,
+      "train400": "197/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 5,
+      "loss": 1.0987249574964009,
+      "train400": "193/400",
+      "holdout": "98/200"
+    },
+    {
+      "epoch": 6,
+      "loss": 1.0986913310156927,
+      "train400": "204/400",
+      "holdout": "100/200"
+    },
+    {
+      "epoch": 7,
+      "loss": 1.098669135381305,
+      "train400": "194/400",
+      "holdout": "96/200"
+    },
+    {
+      "epoch": 8,
+      "loss": 1.0986541471784077,
+      "train400": "203/400",
+      "holdout": "99/200"
+    },
+    {
+      "epoch": 9,
+      "loss": 1.0986438743651858,
+      "train400": "192/400",
+      "holdout": "98/200"
+    },
+    {
+      "epoch": 10,
+      "loss": 1.0986366555804299,
+      "train400": "211/400",
+      "holdout": "101/200"
+    },
+    {
+      "epoch": 11,
+      "loss": 1.0986314236171661,
+      "train400": "199/400",
+      "holdout": "99/200"
+    }
+  ],
+  "hparams": {
+    "d": 32,
+    "nhead": 4,
+    "nlayers": 2,
+    "epochs": 12,
+    "n_train": 2000
+  },
+  "nonclaim": "PATH+SINK_TYPE given. Not G-Rev1. Tiny CPU Transformer, not a 1.5B SFT."
+}

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_172 #####
+QUESTION:
+Who is the spouse of the director of film Married And In Love?
+
+CONTEXT:
+decoy_mid_172 | spouse | Maureen O'Sullivan
+Marek Sobieski | place of burial | Lublin
+Married and in Love | director | John Farrow
+John Farrow | spouse | CF_TAIL_172_MaureenOSull
+"Heart Attack | performer | Enrique Iglesias
+Married and in Love | decoy_link_172 | decoy_mid_172
+Enrique Iglesias | country of citizenship | Spanish
+Aleksandra Marianna Wiesiołowska | father | Marek Sobieski

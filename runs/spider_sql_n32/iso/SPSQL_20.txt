@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_20]: <sql>
+
+DB: train_station
+SCHEMA:
+station(Station_ID, Name, Annual_entry_exit, Annual_interchanges, Total_Passengers, Location, Main_Services, Number_of_Platforms)
+train(Train_ID, Name, Time, Service)
+train_station(Train_ID, Station_ID)
+QUESTION:
+What are the names of the stations which serve both "Ananthapuri Express" and "Guruvayur Express" trains?

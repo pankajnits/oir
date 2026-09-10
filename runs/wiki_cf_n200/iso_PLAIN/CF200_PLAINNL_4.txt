@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_4 #####
+QUESTION:
+Where was the father of Fergus Mac Fogartaig born?
+
+CONTEXT:
+Cien Años | performer | Selena
+decoy_mid_4 | place of birth | Irish
+Fergus mac Fogartaig | father | Fogartach mac Néill
+Fergus mac Fogartaig | decoy_link_4 | decoy_mid_4
+John Jay | place of death | Westchester County, New York
+Peter Augustus Jay | father | John Jay
+Selena | spouse | Chris Pérez
+Fogartach mac Néill | place of birth | CF_TAIL_4_Irish

@@ -1,0 +1,47 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_59]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_59 #####
+DB: party_people
+SCHEMA (English name → sealed sqlite identifier):
+region = E4e0c06b51fee
+Region_ID = Ecc257d4dfe28
+Region_name = Ecd8a7d7e1407
+Date = Ec13f4bb4c8f5
+Label = E56f3166889ad
+Format = E79e0fb31aaa4
+Catalogue = Ea899a009c333
+party = E8f80f0bc913e
+Party_ID = Edfd6063fbf12
+Minister = Ef6c0bb354402
+Took_office = E51c5fc757d30
+Left_office = E87b663829914
+Party_name = Eb4ea17b6478b
+member = E9f988b0dce59
+Member_ID = Eedb9bfceb283
+Member_Name = E23cfd2314e6a
+In_office = Ecad6355c6e4c
+party_events = Ef51bdf54dd37
+Event_ID = Eec0290eb8850
+Event_Name = E20cba64ec6e0
+Member_in_charge_ID = Edff78efa6943
+
+region(Region_ID, Region_name, Date, Label, Format, Catalogue)
+party(Party_ID, Minister, Took_office, Left_office, Region_ID, Party_name)
+member(Member_ID, Member_Name, Party_ID, In_office)
+party_events(Event_ID, Event_Name, Party_ID, Member_in_charge_ID)
+
+QUESTION:
+Return the Ecd8a7d7e1407 of the Ef51bdf54dd37 with the most members.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

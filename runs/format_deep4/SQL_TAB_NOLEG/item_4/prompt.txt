@@ -1,0 +1,15 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[<id>]: <sqlite>  — or UNKNOWN if you cannot bind tables/columns.
+If more than one reading is possible, output UNKNOWN.
+
+ARM SQL_TAB_NOLEG: live sqlite; HMAC table AND column names; English question. No legend. Write ONE query; we execute it.
+
+##### ID FD4_SQL_TAB_NOLEG_4 #####
+SCHEMA:
+E6f934f1d5842(E68e488048fad TEXT, Eb2fedf950f81 TEXT)
+E1a31bb330fb7(E2ae79a5059a8 TEXT, E68e488048fad TEXT)
+E7901931040ea(E3e1101a4aa98 TEXT, E2ae79a5059a8 TEXT)
+
+QUESTION:
+Return the country of the employee whose emp_id is E4a2ea9f5ae1e.
+

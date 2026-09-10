@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_12]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_12 #####
+QUESTION:
+What city is the headquarters of the company led by Achim_Wei?
+
+PATH_QUERY
+START Achim_Wei
+R1 E4f5472dba29f
+R2 Eac9cec6e8118
+Execute path; return final tail only.
+
+CONTEXT:
+Achim_Wei | E4f5472dba29f | Ionos
+Ionos | Eac9cec6e8118 | Montabaur
+Achim_Wei | E05911272ae27 | Sveriges_Television
+Sveriges_Television | E204860e2cbc2 | Stockholm

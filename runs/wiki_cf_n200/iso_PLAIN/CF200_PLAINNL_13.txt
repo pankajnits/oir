@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_13 #####
+QUESTION:
+What is the place of birth of the director of film The Watermelon Woman?
+
+CONTEXT:
+The Watermelon Woman | director | Cheryl Dunye
+Cheryl Dunye | place of birth | CF_TAIL_13_Liberian
+Sad Song of Yellow Skin | director | Michael Rubbo
+Alphonso of Brienne | country of citizenship | France
+decoy_mid_13 | place of birth | Liberian
+Michael Rubbo | award received | Fulbright Scholarship
+The Watermelon Woman | decoy_link_13 | decoy_mid_13
+John I of Brienne, Count of Eu | father | Alphonso of Brienne

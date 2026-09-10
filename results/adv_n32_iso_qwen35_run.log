@@ -1,0 +1,68 @@
+skip SAME_TRAP 0
+skip SAME_TRAP 1
+skip SAME_TRAP 2
+skip SAME_TRAP 3
+skip SAME_TRAP 4
+skip SAME_TRAP 5
+skip SAME_TRAP 6
+skip SAME_TRAP 7
+skip SAME_TRAP 8
+skip SAME_TRAP 9
+skip SAME_TRAP 10
+skip SAME_TRAP 11
+skip SAME_TRAP 12
+skip SAME_TRAP 13
+skip SAME_TRAP 14
+skip SAME_TRAP 15
+skip SAME_TRAP 16
+skip SAME_TRAP 17
+skip SAME_TRAP 18
+skip SAME_TRAP 19
+skip SAME_TRAP 20
+skip SAME_TRAP 21
+skip SAME_TRAP 22
+skip SAME_TRAP 23
+skip SAME_TRAP 24
+skip SAME_TRAP 25
+skip SAME_TRAP 26
+skip SAME_TRAP 27
+skip SAME_TRAP 28
+skip SAME_TRAP 29
+skip SAME_TRAP 30
+skip SAME_TRAP 31
+skip CROSS_TRAP 0
+skip CROSS_TRAP 1
+skip CROSS_TRAP 2
+skip CROSS_TRAP 3
+skip CROSS_TRAP 4
+skip CROSS_TRAP 5
+skip CROSS_TRAP 6
+skip CROSS_TRAP 7
+skip CROSS_TRAP 8
+CROSS_TRAP item_9 4.7s -> UNKNOWN
+CROSS_TRAP item_10 8.9s -> UNKNOWN
+CROSS_TRAP item_11 9.0s -> UNKNOWN
+CROSS_TRAP item_12 9.0s -> UNKNOWN
+CROSS_TRAP item_13 8.9s -> UNKNOWN
+CROSS_TRAP item_14 8.9s -> UNKNOWN
+CROSS_TRAP item_15 9.0s -> UNKNOWN
+CROSS_TRAP item_16 9.1s -> UNKNOWN
+CROSS_TRAP item_17 10.4s -> UNKNOWN
+CROSS_TRAP item_18 9.0s -> UNKNOWN
+CROSS_TRAP item_19 16.9s -> UNKNOWN
+CROSS_TRAP item_20 9.9s -> UNKNOWN
+CROSS_TRAP item_21 9.5s -> UNKNOWN
+Traceback (most recent call last):
+  File "/Users/pankaj/experiment/oir/harness/run_ollama_adv_n32_iso.py", line 78, in <module>
+    raw = f"ERROR: {e}"
+
+  File "/Users/pankaj/experiment/oir/harness/run_ollama_adv_n32_iso.py", line 72, in main
+    prompt = Path(p).read_text()
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pankaj/.pyenv/versions/3.12.9/lib/python3.12/pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pankaj/.pyenv/versions/3.12.9/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/pankaj/experiment/oir/results/adv_n32_iso_replies_qwen35/CROSS_TRAP/item_22.txt'

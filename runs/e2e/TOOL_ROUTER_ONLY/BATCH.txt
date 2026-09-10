@@ -1,0 +1,237 @@
+MODEL UNDER TEST. Read ONLY this file. No other tools/files unless TOOL protocol says so.
+
+Same encoding on question/program and context.
+
+Default format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+COUNT format: ANSWER_NUM[<id>]: <integer>
+
+E2E binder form TOOL_ROUTER
+
+
+##### ID E2E_TOOL_0 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=E4408526e1287 via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_0]: <seal>
+
+CONTEXT:
+Efbd536d32f11 | Ed0682a546e89 | E5e5679957802
+Efbd536d32f11 | E6cdfc50eac8a | Ebfd59e4977a1
+E58f301f0d148 | E24076ed7759f | E55f058b40f09
+E4408526e1287 | Ecd34ee50b7fa | Efbd536d32f11
+Eeeded50f77e7 | Ecd34ee50b7fa | E3d899483f1ed
+E5e5679957802 | E24076ed7759f | E0928628c2dec
+E3d899483f1ed | E6cdfc50eac8a | E2885bd8257e3
+Efbd536d32f11 | E19afe731c9e6 | E58f301f0d148
+
+
+##### ID E2E_TOOL_1 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=E4ad75cb51476 via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_1]: <seal>
+
+CONTEXT:
+E4ad75cb51476 | Ecd34ee50b7fa | E0f5ca58d1fb9
+E0f5ca58d1fb9 | Ed0682a546e89 | E3ed01b73be2a
+E3ed01b73be2a | E24076ed7759f | Efcb7764eb580
+E0f5ca58d1fb9 | E19afe731c9e6 | Eba43348f6f85
+E0f5ca58d1fb9 | E6cdfc50eac8a | Ebe6db6ef1926
+E6c745f5a2055 | E6cdfc50eac8a | Eeda6e1ebc62e
+E165f3518d914 | Ecd34ee50b7fa | E6c745f5a2055
+Eba43348f6f85 | E24076ed7759f | E5a1e59c9257c
+
+
+##### ID E2E_TOOL_2 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=E6a7f57ec2e88 via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_2]: <seal>
+
+CONTEXT:
+Ed4eb5357f0cc | Ed0682a546e89 | E5735f7a81713
+Ed4eb5357f0cc | E19afe731c9e6 | Ef033d58d5bc0
+Ef033d58d5bc0 | E24076ed7759f | E70beee780da8
+E82aa6c1ca33d | Ecd34ee50b7fa | Ebf97009933a4
+Ed4eb5357f0cc | E6cdfc50eac8a | Eed9f7d6eff1c
+E5735f7a81713 | E24076ed7759f | Ef6df5196a5ee
+E6a7f57ec2e88 | Ecd34ee50b7fa | Ed4eb5357f0cc
+Ebf97009933a4 | E6cdfc50eac8a | E3023f41cdc83
+
+
+##### ID E2E_TOOL_3 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=Efff408378ccd via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_3]: <seal>
+
+CONTEXT:
+E0f1970ee53b9 | Ed0682a546e89 | Ecfa60ccc77ea
+E0f1970ee53b9 | E19afe731c9e6 | E191c4daae7fc
+Ecfa60ccc77ea | E24076ed7759f | E5d39af82fc31
+Ed5617f68ad9f | E6cdfc50eac8a | Ed0e20f05dbb2
+Ee7bb3874643b | Ecd34ee50b7fa | Ed5617f68ad9f
+Efff408378ccd | Ecd34ee50b7fa | E0f1970ee53b9
+E191c4daae7fc | E24076ed7759f | E23854e68b417
+E0f1970ee53b9 | E6cdfc50eac8a | Ef4e4cfe7f509
+
+
+##### ID E2E_TOOL_4 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=Ed1789c1801b8 via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_4]: <seal>
+
+CONTEXT:
+E5d6663a4ea76 | Ecd34ee50b7fa | E4e6746282fa5
+Eb790b555d248 | E6cdfc50eac8a | E83f66c12f682
+Eb790b555d248 | Ed0682a546e89 | E6cc2657a6e9e
+Ed1789c1801b8 | Ecd34ee50b7fa | Eb790b555d248
+Eba8ea78ee062 | E24076ed7759f | E5084e18aface
+E6cc2657a6e9e | E24076ed7759f | E67b032ec592d
+Eb790b555d248 | E19afe731c9e6 | Eba8ea78ee062
+E4e6746282fa5 | E6cdfc50eac8a | Ef2dbbf844aa8
+
+
+##### ID E2E_TOOL_5 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=E33f46e854bc3 via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_5]: <seal>
+
+CONTEXT:
+E88420c59298d | Ed0682a546e89 | Eaa9399c5bf26
+E88420c59298d | E19afe731c9e6 | Eea4c003d1206
+Eaa9399c5bf26 | E24076ed7759f | E8390b8d2b266
+E33f46e854bc3 | Ecd34ee50b7fa | E88420c59298d
+E88420c59298d | E6cdfc50eac8a | Ea4f97de9302f
+Eea4c003d1206 | E24076ed7759f | E393bd398ae93
+E0f5ca58d1fb9 | E6cdfc50eac8a | Ebe6db6ef1926
+E960fbbfe4539 | Ecd34ee50b7fa | E0f5ca58d1fb9
+
+
+##### ID E2E_TOOL_6 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=E49d25db0f36f via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_6]: <seal>
+
+CONTEXT:
+E7729878576cd | E24076ed7759f | E148612839648
+E83d350c8303d | E19afe731c9e6 | E38c21f366883
+E83d350c8303d | Ed0682a546e89 | E7729878576cd
+E4e6746282fa5 | E6cdfc50eac8a | Ef2dbbf844aa8
+E49d25db0f36f | Ecd34ee50b7fa | E83d350c8303d
+E38c21f366883 | E24076ed7759f | Ee316931778c8
+E83d350c8303d | E6cdfc50eac8a | E59c673821b67
+E5d6663a4ea76 | Ecd34ee50b7fa | E4e6746282fa5
+
+
+##### ID E2E_TOOL_7 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=Eba2c1a3a8ed7 via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_7]: <seal>
+
+CONTEXT:
+Eba2c1a3a8ed7 | Ecd34ee50b7fa | Ed4535fbacee6
+E02f8953ca1c7 | E6cdfc50eac8a | E7ae89478484e
+Ed4535fbacee6 | E19afe731c9e6 | Ef9e2aeb92e21
+E4fb48eff1a37 | Ecd34ee50b7fa | E02f8953ca1c7
+Ef9e2aeb92e21 | E24076ed7759f | Ea06a9a8dc32f
+Ed4535fbacee6 | Ed0682a546e89 | E6d1549d083dc
+Ed4535fbacee6 | E6cdfc50eac8a | Eccb8c438a3b3
+E6d1549d083dc | E24076ed7759f | Eda68fa9ca914
+
+
+##### ID E2E_TOOL_8 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=Eb23cabf50c9f via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_8]: <seal>
+
+CONTEXT:
+E15080f91050e | E6cdfc50eac8a | Eb912789d3ec1
+E0f5ca58d1fb9 | E6cdfc50eac8a | Ebe6db6ef1926
+Eb23cabf50c9f | Ecd34ee50b7fa | E15080f91050e
+E15080f91050e | E19afe731c9e6 | E90a246d54c68
+E960fbbfe4539 | Ecd34ee50b7fa | E0f5ca58d1fb9
+E90a246d54c68 | E24076ed7759f | Ead12142101b5
+E15080f91050e | Ed0682a546e89 | E6b2fcbe5b3f8
+E6b2fcbe5b3f8 | E24076ed7759f | E85402c684680
+
+
+##### ID E2E_TOOL_9 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=E9aad5ebfc496 via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_9]: <seal>
+
+CONTEXT:
+E9aad5ebfc496 | Ecd34ee50b7fa | E08e3b14e878d
+E0504ed883c41 | E24076ed7759f | Ecc3e268984ed
+Ee3c611d6ebf9 | Ecd34ee50b7fa | Ec28a0dc5951d
+E08e3b14e878d | E6cdfc50eac8a | Ea688f70418ae
+Ec28a0dc5951d | E6cdfc50eac8a | E62a51ecd5300
+Efbfa1bb271d6 | E24076ed7759f | E7cd4a416de2d
+E08e3b14e878d | E19afe731c9e6 | E0504ed883c41
+E08e3b14e878d | Ed0682a546e89 | Efbfa1bb271d6
+
+
+##### ID E2E_TOOL_10 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=E1e49df996945 via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_10]: <seal>
+
+CONTEXT:
+E926dbc1f2f41 | E6cdfc50eac8a | E65d278426928
+E926dbc1f2f41 | E19afe731c9e6 | E662a60c2f4bb
+E0f5ca58d1fb9 | E6cdfc50eac8a | Ebe6db6ef1926
+E960fbbfe4539 | Ecd34ee50b7fa | E0f5ca58d1fb9
+E926dbc1f2f41 | Ed0682a546e89 | Ea1ac8cc9ed8e
+E1e49df996945 | Ecd34ee50b7fa | E926dbc1f2f41
+E662a60c2f4bb | E24076ed7759f | Ecac4694937ab
+Ea1ac8cc9ed8e | E24076ed7759f | E0e96415a16ba
+
+
+##### ID E2E_TOOL_11 #####
+TOOL PROTOCOL (simulate SealRouter):
+You may write lines:
+  TOOL_LOOKUP[<id>]: <head_seal> <rel_seal>
+Use returned tails from CONTEXT only (exact triple match).
+Goal: 2-hop HQ for START=E1bcf5dbf8fef via Ecd34ee50b7fa then E6cdfc50eac8a.
+Finally: ANSWER_SEALED[E2E_TOOL_11]: <seal>
+
+CONTEXT:
+E960fbbfe4539 | Ecd34ee50b7fa | E0f5ca58d1fb9
+E882d8c05f3df | Ed0682a546e89 | E4cfc240fa06f
+E882d8c05f3df | E6cdfc50eac8a | Ef3fcd8b4c35a
+E1bcf5dbf8fef | Ecd34ee50b7fa | E882d8c05f3df
+E4cfc240fa06f | E24076ed7759f | Ec21546491396
+E0f5ca58d1fb9 | E6cdfc50eac8a | Ebe6db6ef1926
+E882d8c05f3df | E19afe731c9e6 | Eb78fb99d47ee
+Eb78fb99d47ee | E24076ed7759f | E8c66afda7f14

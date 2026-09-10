@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_54]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_54 #####
+QUESTION:
+Who directed a movie that Amanda Crew starred in?
+
+PATH_QUERY
+START Amanda Crew
+R1 E8830ee5cb9c0
+R2 E7a1a6cb27b7c
+Execute path; return final tail only.
+
+CONTEXT:
+Amanda Crew | E8830ee5cb9c0 | Repeaters
+Repeaters | E7a1a6cb27b7c | Carl Bessai
+Repeaters | E74f62bec789a | Arne Olsen

@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_10]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_10 #####
+QUESTION:
+What city is the headquarters of the company led by David_Green?
+
+PATH_QUERY
+START David_Green
+R1 Eb5b3ba6713af
+R2 E222d23596b01
+Execute path; return final tail only.
+
+CONTEXT:
+David_Green | Eb5b3ba6713af | Hobby_Lobby
+Hobby_Lobby | E222d23596b01 | Oklahoma_City
+David_Green | Ee2fb3965584d | Cogent_Communications
+Cogent_Communications | Eead95fe96edb | Washington_DC
+David_Green | Ecb5927a38215 | Kansas_City_Southern
+Kansas_City_Southern | Ea91a37e9fb02 | Kansas_City
+David_Green | Eab1731e49909 | Lacoste_SA
+Lacoste_SA | E7e8bd74c6be4 | Paris
+David_Green | E8957807125bd | Israel_Railways
+Israel_Railways | E1d9a257158af | Lod_Railway_Station

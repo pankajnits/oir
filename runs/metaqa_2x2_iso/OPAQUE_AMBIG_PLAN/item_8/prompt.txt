@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_8]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_8 #####
+QUESTION:
+What is the genre of a movie directed by Claude Chabrol?
+
+PATH_QUERY
+START Claude Chabrol
+R1 E8ece639fd62d
+R2 Eb25f2ad0df16
+Execute path; return final tail only.
+
+CONTEXT:
+Claude Chabrol | E8ece639fd62d | Les Cousins
+Les Cousins | Eb25f2ad0df16 | Drama
+Les Cousins | Edca7a23d84f1 | French

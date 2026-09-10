@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "in_dist": {
+      "pass": "8/8",
+      "UNKNOWN": "0/8",
+      "mid": "0/8"
+    },
+    "ood_rel": {
+      "pass": "8/8",
+      "UNKNOWN": "0/8",
+      "mid": "0/8"
+    },
+    "ood_nohandle": {
+      "pass": "0/8",
+      "UNKNOWN": "8/8",
+      "mid": "0/8"
+    }
+  },
+  "finding": "Handles transfer to held-out relation domiciled_at (8/8). English plan without seal binding \u2192 UNKNOWN 8/8. OIR follows handle-bound seals, not pretrained relation lexicon."
+}

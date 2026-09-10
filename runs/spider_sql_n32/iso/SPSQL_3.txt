@@ -1,0 +1,10 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_3]: <sql>
+
+DB: network_2
+SCHEMA:
+Person(name, age, city, gender, job)
+PersonFriend(name, friend, year)
+QUESTION:
+What are the different names of friends who are younger than the average age for a friend?

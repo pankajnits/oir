@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_132 #####
+QUESTION:
+Which country the performer of song The Desert Is In Your Heart is from?
+
+CONTEXT:
+The Desert Is in Your Heart | performer | Bonnie Tyler
+The Desert Is in Your Heart | decoy_link_132 | decoy_mid_132
+Yin Lihua | spouse | Liu Xiu
+Her Strut | performer | Bob Seger
+decoy_mid_132 | country of citizenship | United Kingdom
+Bonnie Tyler | country of citizenship | CF_TAIL_132_UnitedKingdo
+Liu Xiu | place of death | Luoyang
+Bob Seger | place of birth | Detroit

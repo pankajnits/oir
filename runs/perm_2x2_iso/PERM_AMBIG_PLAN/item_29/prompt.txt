@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_29]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_29 #####
+QUESTION:
+What city is the headquarters of the company led by Tom_Buhrow?
+
+PATH_QUERY
+START Tom_Buhrow
+R1 Eb7f32869dc22
+R2 Ed56381acbe84
+Execute path; return final tail only.
+
+CONTEXT:
+Tom_Buhrow | Eb7f32869dc22 | Westdeutscher_Rundfunk
+Westdeutscher_Rundfunk | Ed56381acbe84 | Cologne
+Tom_Buhrow | Ea9a08de4344e | Aetna
+Aetna | E3fdda4ca0a00 | Hartford

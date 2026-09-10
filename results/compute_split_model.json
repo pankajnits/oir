@@ -1,0 +1,86 @@
+{
+  "assumptions": {
+    "train_flops": "C=6ND",
+    "H100_effective_FLOP_s": 500000000000000.0,
+    "H100_USD_per_hour": 2.5,
+    "caveat": "Order-of-magnitude model for architecture argument \u2014 not a lab invoice. DeepSeek reported 2.788M H800-h / ~$5.6M @ $2; GPT-4 era ~$78\u2013100M+ (AI Index). Small RL reasoner ~$42 (arXiv:2503.16219)."
+  },
+  "train": [
+    {
+      "name": "monolith_frontierish_70B_chinchilla",
+      "N": 70000000000.0,
+      "D": 1400000000000.0,
+      "FLOPs_6ND": 5.88e+23,
+      "H100_hours_est": 326666.7,
+      "USD_est_at_2p5": 816667.0,
+      "note": "70B \u00d7 1.4T tokens (Chinchilla-scale language+reason together)"
+    },
+    {
+      "name": "monolith_8B_web",
+      "N": 8000000000.0,
+      "D": 2000000000000.0,
+      "FLOPs_6ND": 9.6e+22,
+      "H100_hours_est": 53333.3,
+      "USD_est_at_2p5": 133333.0,
+      "note": "8B on ~2T web tokens (typical open LM pretrain order)"
+    },
+    {
+      "name": "language_only_8B_web",
+      "N": 8000000000.0,
+      "D": 2000000000000.0,
+      "FLOPs_6ND": 9.6e+22,
+      "H100_hours_est": 53333.3,
+      "USD_est_at_2p5": 133333.0,
+      "note": "Language module: same as 8B web LM (talk/compile)"
+    },
+    {
+      "name": "reasoner_3B_programs",
+      "N": 3000000000.0,
+      "D": 50000000000.0,
+      "FLOPs_6ND": 9e+20,
+      "H100_hours_est": 500.0,
+      "USD_est_at_2p5": 1250.0,
+      "note": "Reasoner on ~50B program/graph tokens (OIR-relevant corpus)"
+    },
+    {
+      "name": "reasoner_1p5B_RL_anchor",
+      "N": 1500000000.0,
+      "D": 1000000000.0,
+      "FLOPs_6ND": 9e+18,
+      "H100_hours_est": 5.0,
+      "USD_est_at_2p5": 12.0,
+      "note": "Anchor: published small RL reasoner ~$42 / 4\u00d7A40 / 24h"
+    },
+    {
+      "name": "deepseek_v3_reported_scale",
+      "N": 37000000000.0,
+      "D": 14800000000000.0,
+      "FLOPs_6ND": 3.2856e+24,
+      "H100_hours_est": 1825333.3,
+      "USD_est_at_2p5": 4563333.0,
+      "note": "Order-of-mag check vs DeepSeek-V3 2.788M H800-h reported"
+    }
+  ],
+  "architecture_compare_train_USD": {
+    "monolith_70B_chinchilla_est": 816667.0,
+    "monolith_8B_web_est": 133333.0,
+    "split_Language8B_plus_Reasoner3B_est": 134583.0,
+    "split_Language8B_plus_SealRouter_est": 133333.0,
+    "ratio_monolith70_over_split_sealrouter": 6.1,
+    "ratio_monolith8_over_reasoner_alone": 106.7,
+    "oir_claim": "If opaque-ID execution does not need web-language pretraining, Reasoner train tokens collapse from ~1e12 to ~1e10\u20135e10 (or $0 SealRouter)."
+  },
+  "inference_1M_queries_per_day_USD": {
+    "monolith_70B_api_like": 48000.0,
+    "split_lang8B_plus_reasoner3B_api_like": 1000.0,
+    "split_lang8B_plus_SealRouter": 801.0,
+    "tokens_assumption": "mono 8k tok/q; lang compile 2k; reasoner 1k; SealRouter ~free"
+  },
+  "published_anchors": {
+    "DeepSeek_V3_H800_hours": 2788000.0,
+    "DeepSeek_V3_USD_at_2": 5576000.0,
+    "GPT4_era_USD_AI_Index": "78e6\u2013100e6+",
+    "small_RL_reasoner_USD": 42,
+    "small_RL_reasoner_cite": "arXiv:2503.16219 Open-RS ~4\u00d7A40 24h"
+  }
+}

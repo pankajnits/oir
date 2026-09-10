@@ -1,0 +1,299 @@
+MODEL UNDER TEST. No tools. Answer EVERY ID. One answer line per ID.
+
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+
+##### ID L4_G0_A_plain #####
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Where is the company located that Q0 works_at? City only.
+
+CONTEXT:
+Q0 | works_at | R0
+R0 | located_in | U0
+Dx0_0 | works_at | Dco0_0
+Dco0_0 | located_in | Dci0_0
+Dx0_1 | works_at | Dco0_1
+Dco0_1 | located_in | Dci0_1
+Dx0_2 | works_at | Dco0_2
+Dco0_2 | located_in | Dci0_2
+Dx0_3 | works_at | Dco0_3
+Dco0_3 | located_in | Dci0_3
+Dx0_4 | works_at | Dco0_4
+Dco0_4 | located_in | Dci0_4
+Dx0_5 | works_at | Dco0_5
+Dco0_5 | located_in | Dci0_5
+Dx0_6 | works_at | Dco0_6
+Dco0_6 | located_in | Dci0_6
+Dx0_7 | works_at | Dco0_7
+Dco0_7 | located_in | Dci0_7
+Dx0_8 | works_at | Dco0_8
+Dco0_8 | located_in | Dci0_8
+Dx0_9 | works_at | Dco0_9
+Dco0_9 | located_in | Dci0_9
+Dx0_10 | works_at | Dco0_10
+Dco0_10 | located_in | Dci0_10
+Dx0_11 | works_at | Dco0_11
+Dco0_11 | located_in | Dci0_11
+S0 | located_in | V0
+T0 | located_in | W0
+Z0 | works_at | S0
+
+
+##### ID L4_G0_B_plain #####
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Where is the company located that Q0 works_at? City only.
+
+CONTEXT:
+Q0 | works_at | S0
+R0 | located_in | U0
+Dx0_0 | works_at | Dco0_0
+Dco0_0 | located_in | Dci0_0
+Dx0_1 | works_at | Dco0_1
+Dco0_1 | located_in | Dci0_1
+Dx0_2 | works_at | Dco0_2
+Dco0_2 | located_in | Dci0_2
+Dx0_3 | works_at | Dco0_3
+Dco0_3 | located_in | Dci0_3
+Dx0_4 | works_at | Dco0_4
+Dco0_4 | located_in | Dci0_4
+Dx0_5 | works_at | Dco0_5
+Dco0_5 | located_in | Dci0_5
+Dx0_6 | works_at | Dco0_6
+Dco0_6 | located_in | Dci0_6
+Dx0_7 | works_at | Dco0_7
+Dco0_7 | located_in | Dci0_7
+Dx0_8 | works_at | Dco0_8
+Dco0_8 | located_in | Dci0_8
+Dx0_9 | works_at | Dco0_9
+Dco0_9 | located_in | Dci0_9
+Dx0_10 | works_at | Dco0_10
+Dco0_10 | located_in | Dci0_10
+Dx0_11 | works_at | Dco0_11
+Dco0_11 | located_in | Dci0_11
+S0 | located_in | V0
+T0 | located_in | W0
+Z0 | works_at | S0
+
+
+##### ID L4_G1_A_plain #####
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Where is the company located that Q1 works_at? City only.
+
+CONTEXT:
+Q1 | works_at | R1
+R1 | located_in | U1
+Dx1_0 | works_at | Dco1_0
+Dco1_0 | located_in | Dci1_0
+Dx1_1 | works_at | Dco1_1
+Dco1_1 | located_in | Dci1_1
+Dx1_2 | works_at | Dco1_2
+Dco1_2 | located_in | Dci1_2
+Dx1_3 | works_at | Dco1_3
+Dco1_3 | located_in | Dci1_3
+Dx1_4 | works_at | Dco1_4
+Dco1_4 | located_in | Dci1_4
+Dx1_5 | works_at | Dco1_5
+Dco1_5 | located_in | Dci1_5
+Dx1_6 | works_at | Dco1_6
+Dco1_6 | located_in | Dci1_6
+Dx1_7 | works_at | Dco1_7
+Dco1_7 | located_in | Dci1_7
+Dx1_8 | works_at | Dco1_8
+Dco1_8 | located_in | Dci1_8
+Dx1_9 | works_at | Dco1_9
+Dco1_9 | located_in | Dci1_9
+Dx1_10 | works_at | Dco1_10
+Dco1_10 | located_in | Dci1_10
+Dx1_11 | works_at | Dco1_11
+Dco1_11 | located_in | Dci1_11
+S1 | located_in | V1
+T1 | located_in | W1
+Z1 | works_at | S1
+
+
+##### ID L4_G1_B_plain #####
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Where is the company located that Q1 works_at? City only.
+
+CONTEXT:
+Q1 | works_at | S1
+R1 | located_in | U1
+Dx1_0 | works_at | Dco1_0
+Dco1_0 | located_in | Dci1_0
+Dx1_1 | works_at | Dco1_1
+Dco1_1 | located_in | Dci1_1
+Dx1_2 | works_at | Dco1_2
+Dco1_2 | located_in | Dci1_2
+Dx1_3 | works_at | Dco1_3
+Dco1_3 | located_in | Dci1_3
+Dx1_4 | works_at | Dco1_4
+Dco1_4 | located_in | Dci1_4
+Dx1_5 | works_at | Dco1_5
+Dco1_5 | located_in | Dci1_5
+Dx1_6 | works_at | Dco1_6
+Dco1_6 | located_in | Dci1_6
+Dx1_7 | works_at | Dco1_7
+Dco1_7 | located_in | Dci1_7
+Dx1_8 | works_at | Dco1_8
+Dco1_8 | located_in | Dci1_8
+Dx1_9 | works_at | Dco1_9
+Dco1_9 | located_in | Dci1_9
+Dx1_10 | works_at | Dco1_10
+Dco1_10 | located_in | Dci1_10
+Dx1_11 | works_at | Dco1_11
+Dco1_11 | located_in | Dci1_11
+S1 | located_in | V1
+T1 | located_in | W1
+Z1 | works_at | S1
+
+
+##### ID L4_G2_A_plain #####
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Where is the company located that Q2 works_at? City only.
+
+CONTEXT:
+Q2 | works_at | R2
+R2 | located_in | U2
+Dx2_0 | works_at | Dco2_0
+Dco2_0 | located_in | Dci2_0
+Dx2_1 | works_at | Dco2_1
+Dco2_1 | located_in | Dci2_1
+Dx2_2 | works_at | Dco2_2
+Dco2_2 | located_in | Dci2_2
+Dx2_3 | works_at | Dco2_3
+Dco2_3 | located_in | Dci2_3
+Dx2_4 | works_at | Dco2_4
+Dco2_4 | located_in | Dci2_4
+Dx2_5 | works_at | Dco2_5
+Dco2_5 | located_in | Dci2_5
+Dx2_6 | works_at | Dco2_6
+Dco2_6 | located_in | Dci2_6
+Dx2_7 | works_at | Dco2_7
+Dco2_7 | located_in | Dci2_7
+Dx2_8 | works_at | Dco2_8
+Dco2_8 | located_in | Dci2_8
+Dx2_9 | works_at | Dco2_9
+Dco2_9 | located_in | Dci2_9
+Dx2_10 | works_at | Dco2_10
+Dco2_10 | located_in | Dci2_10
+Dx2_11 | works_at | Dco2_11
+Dco2_11 | located_in | Dci2_11
+S2 | located_in | V2
+T2 | located_in | W2
+Z2 | works_at | S2
+
+
+##### ID L4_G2_B_plain #####
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Where is the company located that Q2 works_at? City only.
+
+CONTEXT:
+Q2 | works_at | S2
+R2 | located_in | U2
+Dx2_0 | works_at | Dco2_0
+Dco2_0 | located_in | Dci2_0
+Dx2_1 | works_at | Dco2_1
+Dco2_1 | located_in | Dci2_1
+Dx2_2 | works_at | Dco2_2
+Dco2_2 | located_in | Dci2_2
+Dx2_3 | works_at | Dco2_3
+Dco2_3 | located_in | Dci2_3
+Dx2_4 | works_at | Dco2_4
+Dco2_4 | located_in | Dci2_4
+Dx2_5 | works_at | Dco2_5
+Dco2_5 | located_in | Dci2_5
+Dx2_6 | works_at | Dco2_6
+Dco2_6 | located_in | Dci2_6
+Dx2_7 | works_at | Dco2_7
+Dco2_7 | located_in | Dci2_7
+Dx2_8 | works_at | Dco2_8
+Dco2_8 | located_in | Dci2_8
+Dx2_9 | works_at | Dco2_9
+Dco2_9 | located_in | Dci2_9
+Dx2_10 | works_at | Dco2_10
+Dco2_10 | located_in | Dci2_10
+Dx2_11 | works_at | Dco2_11
+Dco2_11 | located_in | Dci2_11
+S2 | located_in | V2
+T2 | located_in | W2
+Z2 | works_at | S2
+
+
+##### ID L4_G3_A_plain #####
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Where is the company located that Q3 works_at? City only.
+
+CONTEXT:
+Q3 | works_at | R3
+R3 | located_in | U3
+Dx3_0 | works_at | Dco3_0
+Dco3_0 | located_in | Dci3_0
+Dx3_1 | works_at | Dco3_1
+Dco3_1 | located_in | Dci3_1
+Dx3_2 | works_at | Dco3_2
+Dco3_2 | located_in | Dci3_2
+Dx3_3 | works_at | Dco3_3
+Dco3_3 | located_in | Dci3_3
+Dx3_4 | works_at | Dco3_4
+Dco3_4 | located_in | Dci3_4
+Dx3_5 | works_at | Dco3_5
+Dco3_5 | located_in | Dci3_5
+Dx3_6 | works_at | Dco3_6
+Dco3_6 | located_in | Dci3_6
+Dx3_7 | works_at | Dco3_7
+Dco3_7 | located_in | Dci3_7
+Dx3_8 | works_at | Dco3_8
+Dco3_8 | located_in | Dci3_8
+Dx3_9 | works_at | Dco3_9
+Dco3_9 | located_in | Dci3_9
+Dx3_10 | works_at | Dco3_10
+Dco3_10 | located_in | Dci3_10
+Dx3_11 | works_at | Dco3_11
+Dco3_11 | located_in | Dci3_11
+S3 | located_in | V3
+T3 | located_in | W3
+Z3 | works_at | S3
+
+
+##### ID L4_G3_B_plain #####
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Where is the company located that Q3 works_at? City only.
+
+CONTEXT:
+Q3 | works_at | S3
+R3 | located_in | U3
+Dx3_0 | works_at | Dco3_0
+Dco3_0 | located_in | Dci3_0
+Dx3_1 | works_at | Dco3_1
+Dco3_1 | located_in | Dci3_1
+Dx3_2 | works_at | Dco3_2
+Dco3_2 | located_in | Dci3_2
+Dx3_3 | works_at | Dco3_3
+Dco3_3 | located_in | Dci3_3
+Dx3_4 | works_at | Dco3_4
+Dco3_4 | located_in | Dci3_4
+Dx3_5 | works_at | Dco3_5
+Dco3_5 | located_in | Dci3_5
+Dx3_6 | works_at | Dco3_6
+Dco3_6 | located_in | Dci3_6
+Dx3_7 | works_at | Dco3_7
+Dco3_7 | located_in | Dci3_7
+Dx3_8 | works_at | Dco3_8
+Dco3_8 | located_in | Dci3_8
+Dx3_9 | works_at | Dco3_9
+Dco3_9 | located_in | Dci3_9
+Dx3_10 | works_at | Dco3_10
+Dco3_10 | located_in | Dci3_10
+Dx3_11 | works_at | Dco3_11
+Dco3_11 | located_in | Dci3_11
+S3 | located_in | V3
+T3 | located_in | W3
+Z3 | works_at | S3

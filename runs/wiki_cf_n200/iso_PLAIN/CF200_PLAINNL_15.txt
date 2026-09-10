@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_15 #####
+QUESTION:
+Which award the performer of song Constantemente Mía got?
+
+CONTEXT:
+Princess Maria Immaculata of Bourbon-Two Sicilies | country of citizenship | Italian
+Il Volo | award received | CF_TAIL_15_SanremoMusic
+Archduke Leopold Salvator of Austria | mother | Princess Maria Immaculata of Bourbon-Two Sicilies
+Must Love Dogs | director | Gary David Goldberg
+Constantemente Mía | performer | Il Volo
+decoy_mid_15 | award received | Sanremo Music Festival
+Gary David Goldberg | place of birth | Brooklyn
+Constantemente Mía | decoy_link_15 | decoy_mid_15

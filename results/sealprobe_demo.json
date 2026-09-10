@@ -1,0 +1,27 @@
+{
+  "tool": "SealProbe",
+  "version": "0.1",
+  "threat_model_note": "LLM UNKNOWN != confidentiality. Script probes are mandatory.",
+  "rag_security_claim": "NOT_SOLVED \u2014 see paper/RESEARCH_PIVOT.md",
+  "probes": [
+    {
+      "name": "script_freq",
+      "ok": true,
+      "detail": {
+        "top_seal": "se4cc",
+        "true_char": "e",
+        "unique_seals": 25
+      }
+    },
+    {
+      "name": "script_crib",
+      "ok": true,
+      "detail": {
+        "coverage": 0.929,
+        "known_len": 51,
+        "mapped_symbols": 19
+      }
+    }
+  ],
+  "align_quiz_preview_chars": 799
+}

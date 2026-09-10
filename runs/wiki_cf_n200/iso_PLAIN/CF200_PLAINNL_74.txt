@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_74 #####
+QUESTION:
+What is the place of birth of the performer of song Don'T Let Me Down (Leona Lewis Song)?
+
+CONTEXT:
+Nathan "Nate" Phelps | father | Fred Phelps
+Fred Phelps | place of death | Topeka, Kansas
+decoy_mid_74 | place of birth | London
+Leona Lewis | place of birth | CF_TAIL_74_London
+Don't Let Me Down | decoy_link_74 | decoy_mid_74
+Frances Amélia Tupper | spouse | Sir Charles Tupper
+Sir Charles Tupper | place of birth | Amherst, Nova Scotia
+Don't Let Me Down | performer | Leona Lewis

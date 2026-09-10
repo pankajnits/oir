@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_1]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_1 #####
+QUESTION:
+What city is the headquarters of the company led by Landon_H_Rowland?
+
+PATH_QUERY
+START Landon_H_Rowland
+R1 Ec3cba8da71a6
+R2 Efc31f86ee4d0
+Execute path; return final tail only.
+
+CONTEXT:
+Landon_H_Rowland | Ec3cba8da71a6 | Kansas_City_Southern
+Kansas_City_Southern | Efc31f86ee4d0 | Kansas_City
+Landon_H_Rowland | Eb6a5ab0eb509 | Cogent_Communications
+Cogent_Communications | E8994fea9a25a | Washington_DC
+Landon_H_Rowland | Ea50dd08c84af | Lacoste_SA
+Lacoste_SA | E2d566672c93f | Paris
+Landon_H_Rowland | E43cf4a032f69 | Israel_Railways
+Israel_Railways | E851b5dead67a | Lod_Railway_Station
+Landon_H_Rowland | E0451f7897232 | Aetna
+Aetna | E9434d15e704c | Hartford

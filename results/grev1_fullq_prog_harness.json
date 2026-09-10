@@ -1,0 +1,86 @@
+{
+  "n": 6,
+  "suite": "grev1_fullq_prog",
+  "seed": 20260814,
+  "nonclaim": "PROG given. Not G-Rev1. Not confidentiality. English MUT wrapper is protocol, not the app question.",
+  "cases": [
+    {
+      "arm": "FULLQ_PROG",
+      "i": 0,
+      "id": "GREV1_FULLQ_PROG_0",
+      "gold": "Edb2d4c3ffaae",
+      "trap": "E8dbb3128d08b",
+      "iso": true,
+      "path": "runs/grev1_fullq_prog/FULLQ_PROG/item_0/prompt.txt",
+      "plain_q": "What is the country of Michal Krapinec?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 Ea99ba16d9e80?",
+      "english_in_sealed_q": false,
+      "plain_country": "India"
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 1,
+      "id": "GREV1_FULLQ_PROG_1",
+      "gold": "E7912e7706f6a",
+      "trap": "E23050f64ea02",
+      "iso": true,
+      "path": "runs/grev1_fullq_prog/FULLQ_PROG/item_1/prompt.txt",
+      "plain_q": "What is the country of Dara Khosrowshahi?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 E670a09aaaa35?",
+      "english_in_sealed_q": false,
+      "plain_country": "France"
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 2,
+      "id": "GREV1_FULLQ_PROG_2",
+      "gold": "Ee77f23f5c785",
+      "trap": "E1e1aca4c76ba",
+      "iso": true,
+      "path": "runs/grev1_fullq_prog/FULLQ_PROG/item_2/prompt.txt",
+      "plain_q": "What is the country of Mark T Bertolini?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 E2a5705afdc21?",
+      "english_in_sealed_q": false,
+      "plain_country": "Japan"
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 3,
+      "id": "GREV1_FULLQ_PROG_3",
+      "gold": "Ece526e834198",
+      "trap": "Ed9e596fd924d",
+      "iso": true,
+      "path": "runs/grev1_fullq_prog/FULLQ_PROG/item_3/prompt.txt",
+      "plain_q": "What is the country of Walt Disney?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 E5f5818fb480f?",
+      "english_in_sealed_q": false,
+      "plain_country": "Brazil"
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 4,
+      "id": "GREV1_FULLQ_PROG_4",
+      "gold": "E7912e7706f6a",
+      "trap": "E323d02839bdf",
+      "iso": true,
+      "path": "runs/grev1_fullq_prog/FULLQ_PROG/item_4/prompt.txt",
+      "plain_q": "What is the country of William N Deramus Jr?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 Edc5b8f11b1d6?",
+      "english_in_sealed_q": false,
+      "plain_country": "France"
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 5,
+      "id": "GREV1_FULLQ_PROG_5",
+      "gold": "Ebd6442406bc8",
+      "trap": "Ea5a88dd9f572",
+      "iso": true,
+      "path": "runs/grev1_fullq_prog/FULLQ_PROG/item_5/prompt.txt",
+      "plain_q": "What is the country of Topi Manner?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 Eeb735a7e19d0?",
+      "english_in_sealed_q": false,
+      "plain_country": "UK"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_10 #####
+PATH_QUERY
+START Hubert_Joly
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Hubert_Joly | works_at | Best_Buy
+Best_Buy | headquartered_in | Richfield
+DecoyCo_Best_Buy | headquartered_in | DecoyHQ_Richfield
+Best_Buy | owned_by | Hold_Best_Buy
+Hold_Best_Buy | meta_of | Best_Buy
+Best_Buy | partner_of | Partner_Best_Buy
+Partner_Best_Buy | meta_of | Best_Buy
+Decoy_DecoyCo_Best_Buy | works_at | DecoyCo_Best_Buy

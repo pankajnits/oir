@@ -1,0 +1,575 @@
+{
+  "n": 32,
+  "seed": 20260821,
+  "protocol": "isolation",
+  "source": "data/real/wikidata_ceo_hops_v2.json",
+  "source_public": "Same Wikidata CEO 2x2 graphs; relation map is a random injection, not HMAC",
+  "keys": "per-item RNG permutation into E+12hex; entities English",
+  "start_in_question": true,
+  "arms": {
+    "PERM_UNIQUE": {
+      "ids": [
+        "PERM_PERM_UNIQUE_0",
+        "PERM_PERM_UNIQUE_1",
+        "PERM_PERM_UNIQUE_2",
+        "PERM_PERM_UNIQUE_3",
+        "PERM_PERM_UNIQUE_4",
+        "PERM_PERM_UNIQUE_5",
+        "PERM_PERM_UNIQUE_6",
+        "PERM_PERM_UNIQUE_7",
+        "PERM_PERM_UNIQUE_8",
+        "PERM_PERM_UNIQUE_9",
+        "PERM_PERM_UNIQUE_10",
+        "PERM_PERM_UNIQUE_11",
+        "PERM_PERM_UNIQUE_12",
+        "PERM_PERM_UNIQUE_13",
+        "PERM_PERM_UNIQUE_14",
+        "PERM_PERM_UNIQUE_15",
+        "PERM_PERM_UNIQUE_16",
+        "PERM_PERM_UNIQUE_17",
+        "PERM_PERM_UNIQUE_18",
+        "PERM_PERM_UNIQUE_19",
+        "PERM_PERM_UNIQUE_20",
+        "PERM_PERM_UNIQUE_21",
+        "PERM_PERM_UNIQUE_22",
+        "PERM_PERM_UNIQUE_23",
+        "PERM_PERM_UNIQUE_24",
+        "PERM_PERM_UNIQUE_25",
+        "PERM_PERM_UNIQUE_26",
+        "PERM_PERM_UNIQUE_27",
+        "PERM_PERM_UNIQUE_28",
+        "PERM_PERM_UNIQUE_29",
+        "PERM_PERM_UNIQUE_30",
+        "PERM_PERM_UNIQUE_31"
+      ],
+      "item_paths": [
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_0/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_1/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_2/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_3/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_4/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_5/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_6/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_7/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_8/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_9/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_10/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_11/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_12/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_13/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_14/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_15/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_16/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_17/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_18/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_19/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_20/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_21/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_22/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_23/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_24/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_25/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_26/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_27/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_28/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_29/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_30/prompt.txt",
+        "runs/perm_2x2_iso/PERM_UNIQUE/item_31/prompt.txt"
+      ]
+    },
+    "PERM_AMBIG": {
+      "ids": [
+        "PERM_PERM_AMBIG_0",
+        "PERM_PERM_AMBIG_1",
+        "PERM_PERM_AMBIG_2",
+        "PERM_PERM_AMBIG_3",
+        "PERM_PERM_AMBIG_4",
+        "PERM_PERM_AMBIG_5",
+        "PERM_PERM_AMBIG_6",
+        "PERM_PERM_AMBIG_7",
+        "PERM_PERM_AMBIG_8",
+        "PERM_PERM_AMBIG_9",
+        "PERM_PERM_AMBIG_10",
+        "PERM_PERM_AMBIG_11",
+        "PERM_PERM_AMBIG_12",
+        "PERM_PERM_AMBIG_13",
+        "PERM_PERM_AMBIG_14",
+        "PERM_PERM_AMBIG_15",
+        "PERM_PERM_AMBIG_16",
+        "PERM_PERM_AMBIG_17",
+        "PERM_PERM_AMBIG_18",
+        "PERM_PERM_AMBIG_19",
+        "PERM_PERM_AMBIG_20",
+        "PERM_PERM_AMBIG_21",
+        "PERM_PERM_AMBIG_22",
+        "PERM_PERM_AMBIG_23",
+        "PERM_PERM_AMBIG_24",
+        "PERM_PERM_AMBIG_25",
+        "PERM_PERM_AMBIG_26",
+        "PERM_PERM_AMBIG_27",
+        "PERM_PERM_AMBIG_28",
+        "PERM_PERM_AMBIG_29",
+        "PERM_PERM_AMBIG_30",
+        "PERM_PERM_AMBIG_31"
+      ],
+      "item_paths": [
+        "runs/perm_2x2_iso/PERM_AMBIG/item_0/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_1/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_2/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_3/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_4/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_5/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_6/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_7/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_8/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_9/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_10/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_11/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_12/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_13/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_14/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_15/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_16/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_17/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_18/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_19/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_20/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_21/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_22/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_23/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_24/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_25/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_26/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_27/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_28/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_29/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_30/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG/item_31/prompt.txt"
+      ]
+    },
+    "PERM_AMBIG_PLAN": {
+      "ids": [
+        "PERM_PERM_AMBIG_PLAN_0",
+        "PERM_PERM_AMBIG_PLAN_1",
+        "PERM_PERM_AMBIG_PLAN_2",
+        "PERM_PERM_AMBIG_PLAN_3",
+        "PERM_PERM_AMBIG_PLAN_4",
+        "PERM_PERM_AMBIG_PLAN_5",
+        "PERM_PERM_AMBIG_PLAN_6",
+        "PERM_PERM_AMBIG_PLAN_7",
+        "PERM_PERM_AMBIG_PLAN_8",
+        "PERM_PERM_AMBIG_PLAN_9",
+        "PERM_PERM_AMBIG_PLAN_10",
+        "PERM_PERM_AMBIG_PLAN_11",
+        "PERM_PERM_AMBIG_PLAN_12",
+        "PERM_PERM_AMBIG_PLAN_13",
+        "PERM_PERM_AMBIG_PLAN_14",
+        "PERM_PERM_AMBIG_PLAN_15",
+        "PERM_PERM_AMBIG_PLAN_16",
+        "PERM_PERM_AMBIG_PLAN_17",
+        "PERM_PERM_AMBIG_PLAN_18",
+        "PERM_PERM_AMBIG_PLAN_19",
+        "PERM_PERM_AMBIG_PLAN_20",
+        "PERM_PERM_AMBIG_PLAN_21",
+        "PERM_PERM_AMBIG_PLAN_22",
+        "PERM_PERM_AMBIG_PLAN_23",
+        "PERM_PERM_AMBIG_PLAN_24",
+        "PERM_PERM_AMBIG_PLAN_25",
+        "PERM_PERM_AMBIG_PLAN_26",
+        "PERM_PERM_AMBIG_PLAN_27",
+        "PERM_PERM_AMBIG_PLAN_28",
+        "PERM_PERM_AMBIG_PLAN_29",
+        "PERM_PERM_AMBIG_PLAN_30",
+        "PERM_PERM_AMBIG_PLAN_31"
+      ],
+      "item_paths": [
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_0/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_1/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_2/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_3/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_4/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_5/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_6/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_7/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_8/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_9/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_10/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_11/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_12/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_13/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_14/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_15/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_16/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_17/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_18/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_19/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_20/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_21/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_22/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_23/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_24/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_25/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_26/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_27/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_28/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_29/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_30/prompt.txt",
+        "runs/perm_2x2_iso/PERM_AMBIG_PLAN/item_31/prompt.txt"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "i": 0,
+      "person": "Michael_Eisner",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_0",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_0",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_0"
+      },
+      "gold": "Burbank",
+      "decoy_hq": "Kansas_City"
+    },
+    {
+      "i": 1,
+      "person": "Landon_H_Rowland",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_1",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_1",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_1"
+      },
+      "gold": "Kansas_City",
+      "decoy_hq": "Broadway"
+    },
+    {
+      "i": 2,
+      "person": "Lucian_Grainge",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_2",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_2",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_2"
+      },
+      "gold": "Broadway",
+      "decoy_hq": "NRK_Marienlyst"
+    },
+    {
+      "i": 3,
+      "person": "Vibeke_Frst_Haugen",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_3",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_3",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_3"
+      },
+      "gold": "NRK_Marienlyst",
+      "decoy_hq": "Warsaw"
+    },
+    {
+      "i": 4,
+      "person": "Krzysztof_Mamiski",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_4",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_4",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_4"
+      },
+      "gold": "Warsaw",
+      "decoy_hq": "Stockholm"
+    },
+    {
+      "i": 5,
+      "person": "David_Lagerholm",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_5",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_5",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_5"
+      },
+      "gold": "Stockholm",
+      "decoy_hq": "Burbank"
+    },
+    {
+      "i": 6,
+      "person": "Bob_Iger",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_6",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_6",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_6"
+      },
+      "gold": "Burbank",
+      "decoy_hq": "Zurich"
+    },
+    {
+      "i": 7,
+      "person": "Sergio_Ermotti",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_7",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_7",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_7"
+      },
+      "gold": "Zurich",
+      "decoy_hq": "Kansas_City"
+    },
+    {
+      "i": 8,
+      "person": "Samuel_W_Fordyce",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_8",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_8",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_8"
+      },
+      "gold": "Kansas_City",
+      "decoy_hq": "New_Jersey"
+    },
+    {
+      "i": 9,
+      "person": "Steve_Weed",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_9",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_9",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_9"
+      },
+      "gold": "New_Jersey",
+      "decoy_hq": "Oklahoma_City"
+    },
+    {
+      "i": 10,
+      "person": "David_Green",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_10",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_10",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_10"
+      },
+      "gold": "Oklahoma_City",
+      "decoy_hq": "San_Antonio"
+    },
+    {
+      "i": 11,
+      "person": "Stuart_Parker",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_11",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_11",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_11"
+      },
+      "gold": "San_Antonio",
+      "decoy_hq": "Montabaur"
+    },
+    {
+      "i": 12,
+      "person": "Achim_Wei",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_12",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_12",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_12"
+      },
+      "gold": "Montabaur",
+      "decoy_hq": "Stockholm"
+    },
+    {
+      "i": 13,
+      "person": "Anne_Lagercrantz",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_13",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_13",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_13"
+      },
+      "gold": "Stockholm",
+      "decoy_hq": "Warsaw"
+    },
+    {
+      "i": 14,
+      "person": "Beata_KozowskaChya",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_14",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_14",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_14"
+      },
+      "gold": "Warsaw",
+      "decoy_hq": "Richmond"
+    },
+    {
+      "i": 15,
+      "person": "David_J_Wright",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_15",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_15",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_15"
+      },
+      "gold": "Richmond",
+      "decoy_hq": "Helsinki"
+    },
+    {
+      "i": 16,
+      "person": "Topi_Manner",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_16",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_16",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_16"
+      },
+      "gold": "Helsinki",
+      "decoy_hq": "Rome"
+    },
+    {
+      "i": 17,
+      "person": "Luigi_Ferraris",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_17",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_17",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_17"
+      },
+      "gold": "Rome",
+      "decoy_hq": "New_York_City"
+    },
+    {
+      "i": 18,
+      "person": "David_Zaslav",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_18",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_18",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_18"
+      },
+      "gold": "New_York_City",
+      "decoy_hq": "Kansas_City"
+    },
+    {
+      "i": 19,
+      "person": "William_N_Deramus_Jr",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_19",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_19",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_19"
+      },
+      "gold": "Kansas_City",
+      "decoy_hq": "Chesapeake"
+    },
+    {
+      "i": 20,
+      "person": "Macon_Foscue_Brock_Jr",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_20",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_20",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_20"
+      },
+      "gold": "Chesapeake",
+      "decoy_hq": "Oklahoma_City"
+    },
+    {
+      "i": 21,
+      "person": "Frank_Love",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_21",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_21",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_21"
+      },
+      "gold": "Oklahoma_City",
+      "decoy_hq": "Coral_Gables"
+    },
+    {
+      "i": 22,
+      "person": "Robert_E_Sanchez",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_22",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_22",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_22"
+      },
+      "gold": "Coral_Gables",
+      "decoy_hq": "Bochum"
+    },
+    {
+      "i": 23,
+      "person": "Luka_Mucic",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_23",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_23",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_23"
+      },
+      "gold": "Bochum",
+      "decoy_hq": "Amsterdam"
+    },
+    {
+      "i": 24,
+      "person": "Freddy_Heineken",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_24",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_24",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_24"
+      },
+      "gold": "Amsterdam",
+      "decoy_hq": "Burbank"
+    },
+    {
+      "i": 25,
+      "person": "Raymond_Watson",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_25",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_25",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_25"
+      },
+      "gold": "Burbank",
+      "decoy_hq": "Fox_Plaza"
+    },
+    {
+      "i": 26,
+      "person": "Stacey_Snider",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_26",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_26",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_26"
+      },
+      "gold": "Fox_Plaza",
+      "decoy_hq": "CNN_Center"
+    },
+    {
+      "i": 27,
+      "person": "John_K_Martin_Jr",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_27",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_27",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_27"
+      },
+      "gold": "CNN_Center",
+      "decoy_hq": "Swindon"
+    },
+    {
+      "i": 28,
+      "person": "Richard_Gordon_Handover",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_28",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_28",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_28"
+      },
+      "gold": "Swindon",
+      "decoy_hq": "Cologne"
+    },
+    {
+      "i": 29,
+      "person": "Tom_Buhrow",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_29",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_29",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_29"
+      },
+      "gold": "Cologne",
+      "decoy_hq": "Hartford"
+    },
+    {
+      "i": 30,
+      "person": "Mark_T_Bertolini",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_30",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_30",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_30"
+      },
+      "gold": "Hartford",
+      "decoy_hq": "Lod_Railway_Station"
+    },
+    {
+      "i": 31,
+      "person": "Moshe_Zana",
+      "ids": {
+        "PERM_UNIQUE": "PERM_PERM_UNIQUE_31",
+        "PERM_AMBIG": "PERM_PERM_AMBIG_31",
+        "PERM_AMBIG_PLAN": "PERM_PERM_AMBIG_PLAN_31"
+      },
+      "gold": "Lod_Railway_Station",
+      "decoy_hq": "Burbank"
+    }
+  ]
+}

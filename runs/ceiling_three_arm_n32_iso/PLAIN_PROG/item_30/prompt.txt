@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_30 #####
+PATH_QUERY
+START Jakub_Duslek
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jakub_Duslek | works_at | UniCredit_Bank_Czech_Republic_and_Slovakia
+UniCredit_Bank_Czech_Republic_and_Slovakia | headquartered_in | Prague
+DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia | headquartered_in | DecoyHQ_Prague
+UniCredit_Bank_Czech_Republic_and_Slovakia | owned_by | Hold_UniCredit_Bank_Czech_Republic_and_Slovakia
+Hold_UniCredit_Bank_Czech_Republic_and_Slovakia | meta_of | UniCredit_Bank_Czech_Republic_and_Slovakia
+UniCredit_Bank_Czech_Republic_and_Slovakia | partner_of | Partner_UniCredit_Bank_Czech_Republic_and_Slovakia
+Partner_UniCredit_Bank_Czech_Republic_and_Slovakia | meta_of | UniCredit_Bank_Czech_Republic_and_Slovakia
+Decoy_DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia | works_at | DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia

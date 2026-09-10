@@ -1,0 +1,18 @@
+{
+  "poison_trap": {
+    "got": "E296719f37a8e",
+    "decoded": "Acme",
+    "poison": "E38ee11477cec",
+    "true": "Ea63f166f8fe6",
+    "verdict": "HONEST_FAIL_intermediate_not_cheated"
+  },
+  "moc_opaque_rel": "8/8",
+  "moc_none_colocated_with_opaque_batch": "8/8 SUSPECT contamination",
+  "moc_none_isolated": {
+    "pass": "0/8",
+    "mid": "4/8",
+    "twin_collapse": true,
+    "note": "A/B same seal within graph; lost discrimination"
+  },
+  "protocol": "Never co-locate handle batches with nohint; poison-trap recommended; isolate directories"
+}

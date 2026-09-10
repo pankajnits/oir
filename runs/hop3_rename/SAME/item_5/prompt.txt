@@ -1,0 +1,64 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM SAME_BALANCED σ′: 4 sealed 2-hop demos (R,S); 3-hop quiz gold (R,S,R) AND a novel trap cycle; symmetric noise. One quiz. New encoding.
+
+Learn the mapping from DEMOs (same encoding, novel node seals).
+Answer the QUIZ the same way. No English relation names. No PATH.
+
+DEMO 0:
+START E9c43408ea90b
+CONTEXT:
+E1ef5c9002d4c | E230033222f3b | E7a7605fa1b49
+E9c43408ea90b | E7e8bf0c70d51 | E1ef5c9002d4c
+E95289dfc49d2 | E3860e4c60e9b | E9c43408ea90b
+E9c43408ea90b | E6dd71cbcf6a4 | E95289dfc49d2
+ANSWER_SEALED: E7a7605fa1b49
+
+DEMO 1:
+START Eebc90e654f63
+CONTEXT:
+E9828f72a6b47 | E230033222f3b | Ebfe57ee105ef
+Eebc90e654f63 | E7e8bf0c70d51 | E9828f72a6b47
+E739ce2b653aa | E4445d609ed93 | Eebc90e654f63
+Eebc90e654f63 | E96f7f1439a3f | E739ce2b653aa
+ANSWER_SEALED: Ebfe57ee105ef
+
+DEMO 2:
+START E227d076d0721
+CONTEXT:
+Ee86a26cbcc65 | E230033222f3b | Eccafa7c390d8
+E227d076d0721 | E7e8bf0c70d51 | Ee86a26cbcc65
+E227d076d0721 | Ef92c7434338c | E0b3d7042a044
+E0b3d7042a044 | E63967b65024e | E227d076d0721
+ANSWER_SEALED: Eccafa7c390d8
+
+DEMO 3:
+START E09afac523b2d
+CONTEXT:
+E09afac523b2d | E87027e21812e | E761ac69571fc
+Eb383d2976ca8 | E230033222f3b | E3aa4d8e2dc79
+E761ac69571fc | E61ccaae29002 | E09afac523b2d
+E09afac523b2d | E7e8bf0c70d51 | Eb383d2976ca8
+ANSWER_SEALED: E3aa4d8e2dc79
+
+--- QUIZ ---
+##### ID H3R_SAME_5 #####
+START Ea4cb46420f81
+CONTEXT:
+E39ea811395e8 | Ecf53c4384f99 | Efb2020149194
+E2c8c3bb3ad4c | E571bac11b768 | E2c15fb46170a
+E2c15fb46170a | E8170d9ee3626 | Efb2020149194
+Ee3fb92d4093c | E230033222f3b | Eeffbd88eb50e
+Eeffbd88eb50e | Ecb6aa442704a | Eda45bd29df29
+Ea4cb46420f81 | E7e8bf0c70d51 | Ee3fb92d4093c
+Ee3fb92d4093c | E13de2b1d034e | E02596b66fe7d
+Ea4cb46420f81 | E544c9a096eb1 | E2c15fb46170a
+Efb2020149194 | E32557155359b | E39ea811395e8
+Eeffbd88eb50e | E7e8bf0c70d51 | E3cd42ba65d46
+E02596b66fe7d | Ea38ccaa3f199 | Ee3fb92d4093c
+Efb2020149194 | E544c9a096eb1 | Ee5c40d152abf
+E2c15fb46170a | E739efe6283a1 | E2c8c3bb3ad4c
+Eda45bd29df29 | E351c7c0d51af | Eeffbd88eb50e
+

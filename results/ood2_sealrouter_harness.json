@@ -1,0 +1,210 @@
+{
+  "benchmark": "ood2_stationed_in + SealRouter baseline",
+  "router_checks": [
+    {
+      "id": "G0_A",
+      "router": "E21414857d2e1",
+      "expect": "E21414857d2e1"
+    },
+    {
+      "id": "G0_B",
+      "router": "E61935127abdb",
+      "expect": "E61935127abdb"
+    },
+    {
+      "id": "G1_A",
+      "router": "E0e3dbf75b110",
+      "expect": "E0e3dbf75b110"
+    },
+    {
+      "id": "G1_B",
+      "router": "Efe07a96d6a65",
+      "expect": "Efe07a96d6a65"
+    },
+    {
+      "id": "G2_A",
+      "router": "Efe0028c9124a",
+      "expect": "Efe0028c9124a"
+    },
+    {
+      "id": "G2_B",
+      "router": "Ecedb79d0aa24",
+      "expect": "Ecedb79d0aa24"
+    },
+    {
+      "id": "G3_A",
+      "router": "Ebf81e7c5ca9b",
+      "expect": "Ebf81e7c5ca9b"
+    },
+    {
+      "id": "G3_B",
+      "router": "Ef87e136997aa",
+      "expect": "Ef87e136997aa"
+    }
+  ],
+  "router_count_demo": {
+    "CityX_count": 3,
+    "expect": 3
+  },
+  "n": 16,
+  "rev": {
+    "Ec07c17f85747": "Alice0",
+    "E2d1d5d5c1ee3": "works_at",
+    "Ed954a68729e2": "Acme0",
+    "E4e751938968f": "Bob0",
+    "E47d0155c0898": "Beta0",
+    "Ef15041c57dd3": "stationed_in",
+    "E21414857d2e1": "CityX0",
+    "E61935127abdb": "CityY0",
+    "Eed4359adcc15": "owned_by",
+    "Ea538053e20c1": "Hold0",
+    "E43118db956ac": "HoldB0",
+    "E889f75e22732": "Alice1",
+    "E6046fcd6c2a2": "Acme1",
+    "Eb8aaf64cff66": "Bob1",
+    "Ea9e8fe886ee7": "Beta1",
+    "E0e3dbf75b110": "CityX1",
+    "Efe07a96d6a65": "CityY1",
+    "E483c760235d5": "Hold1",
+    "Ed43362a5d712": "HoldB1",
+    "Eebdd90ea0e7d": "Alice2",
+    "E2ab5a4b8efad": "Acme2",
+    "E2506c9dad051": "Bob2",
+    "E00b106c069fe": "Beta2",
+    "Efe0028c9124a": "CityX2",
+    "Ecedb79d0aa24": "CityY2",
+    "E908e22427552": "Hold2",
+    "Eb26618b4465c": "HoldB2",
+    "Ef560fcd5da87": "Alice3",
+    "Ed2065f089fe6": "Acme3",
+    "E2103cc3682c5": "Bob3",
+    "E0c100640d370": "Beta3",
+    "Ebf81e7c5ca9b": "CityX3",
+    "Ef87e136997aa": "CityY3",
+    "Eba9b79459755": "Hold3",
+    "E8a162dee79e1": "HoldB3",
+    "E552940dd0c5e": "P0",
+    "E94a2c3e9d37b": "CoA",
+    "E822bfa67576d": "P1",
+    "E1c8e2f7c8c28": "P2",
+    "E79fa12425eb6": "P3",
+    "E2da9ad57a1da": "CoB",
+    "E35f26c097944": "located_in",
+    "E4d10af826d5a": "CityX",
+    "E981147d8109d": "CityY"
+  },
+  "cases": [
+    {
+      "id": "OOD2_G0_A_ood2_handles",
+      "condition": "ood2_handles",
+      "expect_sealed": "E21414857d2e1",
+      "expect_plain": "CityX0",
+      "payload": "runs/ood2_handles_ONLY/OOD2_G0_A_ood2_handles.txt"
+    },
+    {
+      "id": "OOD2_G0_A_ood2_nohandle",
+      "condition": "ood2_nohandle",
+      "expect_sealed": "E21414857d2e1",
+      "expect_plain": "CityX0",
+      "payload": "runs/ood2_nohandle_ONLY/OOD2_G0_A_ood2_nohandle.txt"
+    },
+    {
+      "id": "OOD2_G0_B_ood2_handles",
+      "condition": "ood2_handles",
+      "expect_sealed": "E61935127abdb",
+      "expect_plain": "CityY0",
+      "payload": "runs/ood2_handles_ONLY/OOD2_G0_B_ood2_handles.txt"
+    },
+    {
+      "id": "OOD2_G0_B_ood2_nohandle",
+      "condition": "ood2_nohandle",
+      "expect_sealed": "E61935127abdb",
+      "expect_plain": "CityY0",
+      "payload": "runs/ood2_nohandle_ONLY/OOD2_G0_B_ood2_nohandle.txt"
+    },
+    {
+      "id": "OOD2_G1_A_ood2_handles",
+      "condition": "ood2_handles",
+      "expect_sealed": "E0e3dbf75b110",
+      "expect_plain": "CityX1",
+      "payload": "runs/ood2_handles_ONLY/OOD2_G1_A_ood2_handles.txt"
+    },
+    {
+      "id": "OOD2_G1_A_ood2_nohandle",
+      "condition": "ood2_nohandle",
+      "expect_sealed": "E0e3dbf75b110",
+      "expect_plain": "CityX1",
+      "payload": "runs/ood2_nohandle_ONLY/OOD2_G1_A_ood2_nohandle.txt"
+    },
+    {
+      "id": "OOD2_G1_B_ood2_handles",
+      "condition": "ood2_handles",
+      "expect_sealed": "Efe07a96d6a65",
+      "expect_plain": "CityY1",
+      "payload": "runs/ood2_handles_ONLY/OOD2_G1_B_ood2_handles.txt"
+    },
+    {
+      "id": "OOD2_G1_B_ood2_nohandle",
+      "condition": "ood2_nohandle",
+      "expect_sealed": "Efe07a96d6a65",
+      "expect_plain": "CityY1",
+      "payload": "runs/ood2_nohandle_ONLY/OOD2_G1_B_ood2_nohandle.txt"
+    },
+    {
+      "id": "OOD2_G2_A_ood2_handles",
+      "condition": "ood2_handles",
+      "expect_sealed": "Efe0028c9124a",
+      "expect_plain": "CityX2",
+      "payload": "runs/ood2_handles_ONLY/OOD2_G2_A_ood2_handles.txt"
+    },
+    {
+      "id": "OOD2_G2_A_ood2_nohandle",
+      "condition": "ood2_nohandle",
+      "expect_sealed": "Efe0028c9124a",
+      "expect_plain": "CityX2",
+      "payload": "runs/ood2_nohandle_ONLY/OOD2_G2_A_ood2_nohandle.txt"
+    },
+    {
+      "id": "OOD2_G2_B_ood2_handles",
+      "condition": "ood2_handles",
+      "expect_sealed": "Ecedb79d0aa24",
+      "expect_plain": "CityY2",
+      "payload": "runs/ood2_handles_ONLY/OOD2_G2_B_ood2_handles.txt"
+    },
+    {
+      "id": "OOD2_G2_B_ood2_nohandle",
+      "condition": "ood2_nohandle",
+      "expect_sealed": "Ecedb79d0aa24",
+      "expect_plain": "CityY2",
+      "payload": "runs/ood2_nohandle_ONLY/OOD2_G2_B_ood2_nohandle.txt"
+    },
+    {
+      "id": "OOD2_G3_A_ood2_handles",
+      "condition": "ood2_handles",
+      "expect_sealed": "Ebf81e7c5ca9b",
+      "expect_plain": "CityX3",
+      "payload": "runs/ood2_handles_ONLY/OOD2_G3_A_ood2_handles.txt"
+    },
+    {
+      "id": "OOD2_G3_A_ood2_nohandle",
+      "condition": "ood2_nohandle",
+      "expect_sealed": "Ebf81e7c5ca9b",
+      "expect_plain": "CityX3",
+      "payload": "runs/ood2_nohandle_ONLY/OOD2_G3_A_ood2_nohandle.txt"
+    },
+    {
+      "id": "OOD2_G3_B_ood2_handles",
+      "condition": "ood2_handles",
+      "expect_sealed": "Ef87e136997aa",
+      "expect_plain": "CityY3",
+      "payload": "runs/ood2_handles_ONLY/OOD2_G3_B_ood2_handles.txt"
+    },
+    {
+      "id": "OOD2_G3_B_ood2_nohandle",
+      "condition": "ood2_nohandle",
+      "expect_sealed": "Ef87e136997aa",
+      "expect_plain": "CityY3",
+      "payload": "runs/ood2_nohandle_ONLY/OOD2_G3_B_ood2_nohandle.txt"
+    }
+  ]
+}

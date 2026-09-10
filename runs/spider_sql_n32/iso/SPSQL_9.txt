@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_9]: <sql>
+
+DB: museum_visit
+SCHEMA:
+museum(Museum_ID, Name, Num_of_Staff, Open_Year)
+visitor(ID, Name, Level_of_membership, Age)
+visit(Museum_ID, visitor_ID, Num_of_Ticket, Total_spent)
+QUESTION:
+What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?

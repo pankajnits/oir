@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_39 #####
+QUESTION:
+What is the cause of death of director of film Love On The Ground?
+
+CONTEXT:
+Jacques Rivette | cause of death | CF_TAIL_39_Alzheimer
+Adolf of Germany | place of death | Göllheim
+Mechtild of Nassau | father | Adolf of Germany
+Abbas Kiarostami | country of citizenship | Iran
+Love on the Ground | decoy_link_39 | decoy_mid_39
+decoy_mid_39 | cause of death | Alzheimer
+Love on the Ground | director | Jacques Rivette
+Close-Up | director | Abbas Kiarostami

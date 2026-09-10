@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_175 #####
+QUESTION:
+Where was the director of film Pretty Smart born?
+
+CONTEXT:
+Pretty Smart | director | Dimitri Logothetis
+decoy_mid_175 | place of birth | Greek
+Come Closer | performer | Eddie Rambeau
+Marcus Julius Gessius Bassianus | father | Marcus Julius Gessius Marcianus
+Pretty Smart | decoy_link_175 | decoy_mid_175
+Marcus Julius Gessius Marcianus | date of death | 218
+Dimitri Logothetis | place of birth | CF_TAIL_175_Greek
+Eddie Rambeau | place of birth | Hazleton, Pennsylvania

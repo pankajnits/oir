@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_9 #####
+QUESTION:
+What nationality is the director of film World And Time Enough?
+
+CONTEXT:
+Eden and After | director | Alain Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Eric Mueller | country of citizenship | CF_TAIL_9_UnitedStates
+World and Time Enough | decoy_link_9 | decoy_mid_9
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+World and Time Enough | director | Eric Mueller
+Stefan Nemanja | place of death | Hilandar
+decoy_mid_9 | country of citizenship | United States

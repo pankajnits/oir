@@ -1,0 +1,202 @@
+{
+  "claim": "G-Rev2 scaffold: neural/count Reasoner vs instance-local executor (SealRouter-equivalent). Instance-local walk is the opaque executor ceiling; global count fails on fresh seals.",
+  "n_train": 3000,
+  "n_holdout": 200,
+  "instance_local_holdout": "200/200",
+  "global_count_holdout": "0/200",
+  "holdout_fit_count_oracle": "200/200",
+  "reading": "Fresh seals per instance \u2192 memorizing train edges cannot transfer (global_count\u22480). Instance-local indexing recovers PATH (ceiling). G-Rev2 needs a Reasoner that binds *within* the prompt graph, not a lexicon of seals \u2014 next: torch TinyExec or SFT Qwen on (input\u2192output) with prompt-local attention.",
+  "torch": {
+    "backend": "torch_meanpool_mlp",
+    "device": "cpu",
+    "vocab": 18110,
+    "epochs": 5,
+    "history": [
+      {
+        "epoch": 0,
+        "train_acc": 0.019,
+        "holdout_acc": 0.02,
+        "train_loss": 5.4870671424865725
+      },
+      {
+        "epoch": 1,
+        "train_acc": 0.027333333333333334,
+        "holdout_acc": 0.04,
+        "train_loss": 3.9398799883524576
+      },
+      {
+        "epoch": 2,
+        "train_acc": 0.094,
+        "holdout_acc": 0.02,
+        "train_loss": 3.7286672821044924
+      },
+      {
+        "epoch": 3,
+        "train_acc": 0.261,
+        "holdout_acc": 0.02,
+        "train_loss": 3.1368968671162922
+      },
+      {
+        "epoch": 4,
+        "train_acc": 0.5293333333333333,
+        "holdout_acc": 0.04,
+        "train_loss": 1.9586347929636638
+      }
+    ],
+    "holdout_acc": 0.04,
+    "train_acc": 0.5293333333333333,
+    "ckpt": "results/tiny_reasoner_torch.pt",
+    "note": "Holdout seals are mostly <unk> under train-only vocab \u2014 low holdout acc expected unless the net invents prompt-local walks. High train + low holdout = lexicon fail."
+  },
+  "seed": 7,
+  "ts": 1785761337.468916,
+  "hop_walker": {
+    "backend": "char_emb_hop_walker",
+    "holdout": "200/200",
+    "history": [
+      {
+        "epoch": 0,
+        "loss": 0.0,
+        "holdout": "200/200",
+        "train200": "200/200"
+      },
+      {
+        "epoch": 1,
+        "loss": 0.0,
+        "holdout": "200/200",
+        "train200": "200/200"
+      },
+      {
+        "epoch": 2,
+        "loss": 0.0,
+        "holdout": "200/200",
+        "train200": "200/200"
+      },
+      {
+        "epoch": 3,
+        "loss": 0.0,
+        "holdout": "200/200",
+        "train200": "200/200"
+      },
+      {
+        "epoch": 4,
+        "loss": 0.0,
+        "holdout": "200/200",
+        "train200": "200/200"
+      },
+      {
+        "epoch": 5,
+        "loss": 0.0,
+        "holdout": "200/200",
+        "train200": "200/200"
+      }
+    ],
+    "claim": "Prompt-local hop walker with char seal embeddings \u2014 G-Rev2 candidate (needs PATH)."
+  },
+  "ambig": {
+    "ambig_first_edge_holdout": "21/200",
+    "ambig_unique_router_holdout": "0/200",
+    "hop_walker_history": [
+      {
+        "epoch": 0,
+        "loss": 137.4641,
+        "holdout": "26/200",
+        "holdout_acc": 0.13
+      },
+      {
+        "epoch": 1,
+        "loss": 137.3621,
+        "holdout": "24/200",
+        "holdout_acc": 0.12
+      },
+      {
+        "epoch": 2,
+        "loss": 137.298,
+        "holdout": "23/200",
+        "holdout_acc": 0.115
+      },
+      {
+        "epoch": 3,
+        "loss": 137.3449,
+        "holdout": "25/200",
+        "holdout_acc": 0.125
+      },
+      {
+        "epoch": 4,
+        "loss": 137.2473,
+        "holdout": "20/200",
+        "holdout_acc": 0.1
+      },
+      {
+        "epoch": 5,
+        "loss": 137.3398,
+        "holdout": "25/200",
+        "holdout_acc": 0.125
+      },
+      {
+        "epoch": 6,
+        "loss": 137.3011,
+        "holdout": "21/200",
+        "holdout_acc": 0.105
+      },
+      {
+        "epoch": 7,
+        "loss": 137.0648,
+        "holdout": "33/200",
+        "holdout_acc": 0.165
+      }
+    ],
+    "hop_walker_holdout": "33/200",
+    "hop_walker_holdout_h3": "7/100",
+    "chance_2hop_3way": 0.1111,
+    "reading": "On ambiguous multi-out PATH, unique SealRouter returns None; first-edge is chance. Char-emb hop walker learns gold continuation under reachability supervision."
+  },
+  "continuable_ambig": {
+    "first_edge_holdout": "20/200",
+    "unique_router_holdout": "0/200",
+    "continuable_dfs_holdout": "68/200",
+    "char_hop_walker_unstructured_ambig": "33/200",
+    "reading": "Unstructured multi-out (all tails look alike in seal space): char-emb walker \u2248 chance. Continuable decoys (dead-end traps): structural DFS Reasoner recovers gold without seal lexicon. G-Rev2 = learn that structural policy (or better); G-Rev1 = no PATH at all."
+  },
+  "v2_typed_sink": {
+    "claim": "G-Rev2 v2: PATH+typed-sink yields unique sealed answers under multi-out distractors. Prompt-local structural Reasoner matches symbolic typed-sink router; lexicon fails.",
+    "version": 2,
+    "seed": 11,
+    "n_train": 2000,
+    "summary": {
+      "hold_h2": {
+        "first_edge": "23/200",
+        "unique_router": "0/200",
+        "typed_sink_router": "200/200",
+        "struct_logreg": "200/200",
+        "global_count": "0/200"
+      },
+      "hold_h3_ood_depth": {
+        "first_edge": "4/100",
+        "unique_router": "0/100",
+        "typed_sink_router": "100/100",
+        "struct_logreg": "100/100",
+        "global_count": "0/100"
+      },
+      "hold_h2_decoy4": {
+        "first_edge": "11/200",
+        "unique_router": "0/200",
+        "typed_sink_router": "200/200",
+        "struct_logreg": "200/200",
+        "global_count": "0/200"
+      }
+    },
+    "model_weights": {
+      "w": [
+        8.815718403671445,
+        7.568482241376137,
+        3.741708486885832,
+        -1.5604177585195635,
+        -2.559328032356513
+      ],
+      "b": -0.8531093441188635
+    },
+    "reading": "Well-posed under distractors: typed_sink_router = ceiling. Struct logreg learns prompt-local continuable+typed features (not seal IDs). unique_router fails; global_count fails; first_edge ~chance. Still not G-Rev1 (PATH+type in program).",
+    "ts": 1786966724.4425359
+  }
+}

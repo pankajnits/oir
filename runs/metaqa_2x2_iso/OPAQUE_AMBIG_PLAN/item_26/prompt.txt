@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_26]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_26 #####
+QUESTION:
+What is the genre of a movie directed by Romain Gavras?
+
+PATH_QUERY
+START Romain Gavras
+R1 E26e9cb6f08ab
+R2 Ee31984bc4dc9
+Execute path; return final tail only.
+
+CONTEXT:
+Romain Gavras | E26e9cb6f08ab | Our Day Will Come
+Our Day Will Come | Ee31984bc4dc9 | Drama
+Our Day Will Come | E5c6df859dd5c | French

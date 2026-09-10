@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_23]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_23 #####
+QUESTION:
+Who E1741482f5125 a E6be6864e661d E18f3364f4daf [Katie Holmes] Ed0de0acd41ce E62eea05206b9?
+
+PATH_QUERY
+START Katie Holmes
+R1 E98934eb46944
+R2 E1c1c981b58c0
+Execute path; return final tail only.
+
+CONTEXT:
+Katie Holmes | E98934eb46944 | Go
+Go | E1c1c981b58c0 | Doug Liman
+Go | E4f2830f87402 | John August

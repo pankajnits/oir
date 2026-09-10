@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_88 #####
+QUESTION:
+Who is the mother of the director of film Zoolander?
+
+CONTEXT:
+Edgar Rice Burroughs | place of burial | Tarzana
+decoy_mid_88 | mother | Meara Stiller
+Down Where The Buffalo Go | director | Ian Knox
+Zoolander | decoy_link_88 | decoy_mid_88
+John Coleman "Jack" Burroughs | father | Edgar Rice Burroughs
+Zoolander | director | Ben Stiller
+Ian Knox | country of citizenship | Ireland
+Ben Stiller | mother | CF_TAIL_88_MearaStiller

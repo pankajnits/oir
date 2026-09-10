@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_21]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_21 #####
+QUESTION:
+What city is the headquarters of the company led by Frank_Love?
+
+PATH_QUERY
+START Frank_Love
+R1 E05403a4348d0
+R2 E5d10e69c2289
+Execute path; return final tail only.
+
+CONTEXT:
+Frank_Love | E05403a4348d0 | Loves_Travel_Stops__Country_Stores
+Loves_Travel_Stops__Country_Stores | E5d10e69c2289 | Oklahoma_City
+Frank_Love | Eaeac6b4e61ca | Ryder
+Ryder | E2982a4e7943a | Coral_Gables

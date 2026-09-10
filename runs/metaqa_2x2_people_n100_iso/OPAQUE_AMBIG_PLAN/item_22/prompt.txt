@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_22]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_22 #####
+QUESTION:
+Who directed a movie that Matt Damon starred in?
+
+PATH_QUERY
+START Matt Damon
+R1 E64a92399ce28
+R2 E7053bb036dcb
+Execute path; return final tail only.
+
+CONTEXT:
+Matt Damon | E64a92399ce28 | The Good Shepherd
+The Good Shepherd | E7053bb036dcb | Robert De Niro
+The Good Shepherd | E50c65e374693 | Eric Roth

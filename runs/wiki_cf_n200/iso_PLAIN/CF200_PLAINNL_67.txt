@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_67 #####
+QUESTION:
+What nationality is the director of film Galapagos (1955 Film)?
+
+CONTEXT:
+Galapagos | director | Thor Heyerdahl
+Steven Okazaki | place of birth | Venice
+Philip Braham | date of death | 2 May 1934
+Thor Heyerdahl | country of citizenship | CF_TAIL_67_Norwegian
+decoy_mid_67 | country of citizenship | Norwegian
+Galapagos | decoy_link_67 | decoy_mid_67
+Living on Tokyo Time | director | Steven Okazaki
+"Limehouse Blues | composer | Philip Braham

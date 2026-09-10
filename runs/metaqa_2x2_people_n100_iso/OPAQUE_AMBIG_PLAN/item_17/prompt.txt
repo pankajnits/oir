@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_17]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_17 #####
+QUESTION:
+Who directed a movie that John Goodman starred in?
+
+PATH_QUERY
+START John Goodman
+R1 Ec450f6933527
+R2 E134fa78073ab
+Execute path; return final tail only.
+
+CONTEXT:
+John Goodman | Ec450f6933527 | Matinee
+Matinee | E134fa78073ab | Joe Dante
+Matinee | Eff2bd51a41f0 | Jerico

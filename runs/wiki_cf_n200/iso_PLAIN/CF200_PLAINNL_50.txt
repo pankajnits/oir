@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_50 #####
+QUESTION:
+Where did the director of film The Fruit Hunters study?
+
+CONTEXT:
+Yung Chang | educated at | CF_TAIL_50_ConcordiaUni
+Power of Women | director | Jayadevi
+The Fruit Hunters | decoy_link_50 | decoy_mid_50
+The Fruit Hunters | director | Yung Chang
+Aladdin Aur Jadui Chirag | director | Homi Wadia
+Jayadevi | father | Jayavarman I
+decoy_mid_50 | educated at | Concordia University
+Homi Wadia | spouse | Fearless Nadia

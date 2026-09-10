@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_83 #####
+QUESTION:
+Where did the director of film Slaves (Film) die?
+
+CONTEXT:
+Robin Thicke | mother | Gloria Loring
+Herbert Biberman | place of death | CF_TAIL_83_NewYork
+Slaves | director | Herbert Biberman
+Tancred of Hauteville | place of birth | Coutances
+Slaves | decoy_link_83 | decoy_mid_83
+decoy_mid_83 | place of death | New York
+William Iron Arm | father | Tancred of Hauteville
+For the Rest of My Life | performer | Robin Thicke

@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[OIRJ_NS_SILENT_10]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NS_SILENT: Q sealed; keys namespaced JSONKEY:. Match impossible. No JOIN.
+
+##### ID OIRJ_NS_SILENT_10 #####
+QUESTION (token-HMAC'd):
+Ef972596b6b50 E738df806ae8c Ef783add74279 E2db2833056d0 E7c92b1ef420e E7b7ddcf845e8?
+
+
+CONTEXT:
+{
+  "E9c9d37c8e755": [
+    {
+      "E3f0391f277c9": "E1b6810893b7a",
+      "E9ae73dc9888f": "E760a787d4823"
+    },
+    {
+      "E3f0391f277c9": "E259309a3e587",
+      "E9ae73dc9888f": "E760a787d4823"
+    },
+    {
+      "E3f0391f277c9": "E7b7ddcf845e8",
+      "E9ae73dc9888f": "Ec800cfbb5a46"
+    }
+  ],
+  "Ead36e283eb11": [
+    {
+      "E3f0391f277c9": "E760a787d4823",
+      "E2bff38f664c7": {
+        "Ef2b4096a7366": "E6f7659acc29e",
+        "E7ddd227e88a7": "E8dcb4cb3b0f0"
+      }
+    },
+    {
+      "E3f0391f277c9": "Ec800cfbb5a46",
+      "E2bff38f664c7": {
+        "E7ddd227e88a7": "E27331991de55",
+        "Ef2b4096a7366": "E6cd3bd94a561"
+      }
+    },
+    {
+      "E3f0391f277c9": "E760a787d4823",
+      "E2bff38f664c7": {
+        "E7ddd227e88a7": "E8dcb4cb3b0f0",
+        "Ef2b4096a7366": "E6f7659acc29e"
+      }
+    }
+  ]
+}

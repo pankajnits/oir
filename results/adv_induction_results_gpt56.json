@@ -1,0 +1,332 @@
+{
+  "model": "gpt56",
+  "summary": {
+    "SAME_TRAP": {
+      "score": "6/6",
+      "trap_rate": "0/6",
+      "unknown": 0,
+      "missing": 0
+    },
+    "CROSS_TRAP": {
+      "score": "0/6",
+      "trap_rate": "6/6",
+      "unknown": 0,
+      "missing": 0
+    },
+    "HOP_MISMATCH": {
+      "score": "not_run",
+      "trap_rate": "not_run",
+      "unknown": 0,
+      "missing": 6
+    },
+    "SAME_BALANCED": {
+      "score": "6/6",
+      "trap_rate": "0/6",
+      "unknown": 0,
+      "missing": 0
+    },
+    "CROSS_BALANCED": {
+      "score": "0/6",
+      "trap_rate": "0/6",
+      "unknown": 6,
+      "missing": 0
+    },
+    "PATH_TRAP": {
+      "score": "not_run",
+      "trap_rate": "not_run",
+      "unknown": 0,
+      "missing": 6
+    }
+  },
+  "rows": [
+    {
+      "arm": "SAME_TRAP",
+      "id": "ADV_SAME_TRAP_0",
+      "gold": "Ed16b652346cf",
+      "pred": "Ed16b652346cf",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_TRAP",
+      "id": "ADV_SAME_TRAP_1",
+      "gold": "E39cbcc753de5",
+      "pred": "E39cbcc753de5",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_TRAP",
+      "id": "ADV_SAME_TRAP_2",
+      "gold": "Ead867fef0043",
+      "pred": "Ead867fef0043",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_TRAP",
+      "id": "ADV_SAME_TRAP_3",
+      "gold": "Ee1454a8962eb",
+      "pred": "Ee1454a8962eb",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_TRAP",
+      "id": "ADV_SAME_TRAP_4",
+      "gold": "Eec406daf7481",
+      "pred": "Eec406daf7481",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_TRAP",
+      "id": "ADV_SAME_TRAP_5",
+      "gold": "E5602a662a59a",
+      "pred": "E5602a662a59a",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "id": "ADV_CROSS_TRAP_0",
+      "gold": "E046da3325da6",
+      "pred": "E95f69137be3f",
+      "ok": false,
+      "chose_trap": true
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "id": "ADV_CROSS_TRAP_1",
+      "gold": "E2d0ef5e110a8",
+      "pred": "E99bd75d5d32f",
+      "ok": false,
+      "chose_trap": true
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "id": "ADV_CROSS_TRAP_2",
+      "gold": "Ebae8a0073f2a",
+      "pred": "Eb64512c72e00",
+      "ok": false,
+      "chose_trap": true
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "id": "ADV_CROSS_TRAP_3",
+      "gold": "E0c0910da9ea5",
+      "pred": "E19974c9db67f",
+      "ok": false,
+      "chose_trap": true
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "id": "ADV_CROSS_TRAP_4",
+      "gold": "E408cc1c56dd6",
+      "pred": "Ef7d9691ac0b1",
+      "ok": false,
+      "chose_trap": true
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "id": "ADV_CROSS_TRAP_5",
+      "gold": "Ef98b00abfa7c",
+      "pred": "E80c804a712f4",
+      "ok": false,
+      "chose_trap": true
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "id": "ADV_HOP_MISMATCH_0",
+      "gold": "Ec207d5a56495",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "id": "ADV_HOP_MISMATCH_1",
+      "gold": "E804387eb1c91",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "id": "ADV_HOP_MISMATCH_2",
+      "gold": "E3157d0f14a95",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "id": "ADV_HOP_MISMATCH_3",
+      "gold": "Ef9c44c52b8b4",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "id": "ADV_HOP_MISMATCH_4",
+      "gold": "E34ceb01fef49",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "id": "ADV_HOP_MISMATCH_5",
+      "gold": "Ed3ddb60c1347",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "id": "ADV_SAME_BALANCED_0",
+      "gold": "E88367278b0ce",
+      "pred": "E88367278b0ce",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "id": "ADV_SAME_BALANCED_1",
+      "gold": "Ed588b368cb2a",
+      "pred": "Ed588b368cb2a",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "id": "ADV_SAME_BALANCED_2",
+      "gold": "E32cc5d966a78",
+      "pred": "E32cc5d966a78",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "id": "ADV_SAME_BALANCED_3",
+      "gold": "E7e87b5da7089",
+      "pred": "E7e87b5da7089",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "id": "ADV_SAME_BALANCED_4",
+      "gold": "Ecffbc1ed32eb",
+      "pred": "Ecffbc1ed32eb",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "id": "ADV_SAME_BALANCED_5",
+      "gold": "E1932e873b379",
+      "pred": "E1932e873b379",
+      "ok": true,
+      "chose_trap": false
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "id": "ADV_CROSS_BALANCED_0",
+      "gold": "E5c2196ea5aaa",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "id": "ADV_CROSS_BALANCED_1",
+      "gold": "Ec34f446f73af",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "id": "ADV_CROSS_BALANCED_2",
+      "gold": "Ed84340a0ac40",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "id": "ADV_CROSS_BALANCED_3",
+      "gold": "Eeeda10e386af",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "id": "ADV_CROSS_BALANCED_4",
+      "gold": "E7a4af27ccb66",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "id": "ADV_CROSS_BALANCED_5",
+      "gold": "E746d1ed72a3b",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "PATH_TRAP",
+      "id": "ADV_PATH_TRAP_0",
+      "gold": "Ed16b652346cf",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "PATH_TRAP",
+      "id": "ADV_PATH_TRAP_1",
+      "gold": "E39cbcc753de5",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "PATH_TRAP",
+      "id": "ADV_PATH_TRAP_2",
+      "gold": "Ead867fef0043",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "PATH_TRAP",
+      "id": "ADV_PATH_TRAP_3",
+      "gold": "Ee1454a8962eb",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "PATH_TRAP",
+      "id": "ADV_PATH_TRAP_4",
+      "gold": "Eec406daf7481",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    },
+    {
+      "arm": "PATH_TRAP",
+      "id": "ADV_PATH_TRAP_5",
+      "gold": "E5602a662a59a",
+      "pred": "",
+      "ok": false,
+      "chose_trap": false
+    }
+  ],
+  "reply_dir": "results/adv_induction_replies_gpt56"
+}

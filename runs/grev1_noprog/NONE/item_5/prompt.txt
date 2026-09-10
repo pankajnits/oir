@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NONE: keys and values sealed. Question is only START. No legend. No JOIN/PROG. No field name. One quiz.
+
+##### ID GREV1_NONE_5 #####
+QUESTION:
+Answer for Eeb735a7e19d0. Return one atom.
+
+CONTEXT:
+{
+  "E826c3ff68bff": [
+    {
+      "E66dc6fa9a878": "Eeb735a7e19d0",
+      "Ec0166bbc0243": "Edac9ead38c95"
+    },
+    {
+      "E66dc6fa9a878": "E5b7236e83234",
+      "Ec0166bbc0243": "E58a9b74523db"
+    },
+    {
+      "E66dc6fa9a878": "E70b9abedb349",
+      "Ec0166bbc0243": "E3ad40314735d"
+    }
+  ],
+  "E21bad2ccb08f": [
+    {
+      "E66dc6fa9a878": "E58a9b74523db",
+      "E3ddb74c77130": {
+        "E6d5d6096cde3": "Ed9e596fd924d",
+        "E50fa5c3a0018": "Ece526e834198"
+      }
+    },
+    {
+      "E66dc6fa9a878": "E3ad40314735d",
+      "E3ddb74c77130": {
+        "E6d5d6096cde3": "E323d02839bdf",
+        "E50fa5c3a0018": "E7912e7706f6a"
+      }
+    },
+    {
+      "E66dc6fa9a878": "Edac9ead38c95",
+      "E3ddb74c77130": {
+        "E50fa5c3a0018": "Ebd6442406bc8",
+        "E6d5d6096cde3": "Ea5a88dd9f572"
+      }
+    }
+  ]
+}
+

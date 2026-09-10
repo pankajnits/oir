@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_16 #####
+PATH_QUERY
+START Mark_T_Bertolini
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mark_T_Bertolini | works_at | Aetna
+Aetna | headquartered_in | Hartford
+DecoyCo_Aetna | headquartered_in | DecoyHQ_Hartford
+Aetna | owned_by | Hold_Aetna
+Hold_Aetna | meta_of | Aetna
+Aetna | partner_of | Partner_Aetna
+Partner_Aetna | meta_of | Aetna
+Decoy_DecoyCo_Aetna | works_at | DecoyCo_Aetna

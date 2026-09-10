@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_28]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_28 #####
+QUESTION:
+What is the genre of a movie directed by Benedikt Erlingsson?
+
+PATH_QUERY
+START Benedikt Erlingsson
+R1 E37d9c03510d1
+R2 Ed2aeccd78141
+Execute path; return final tail only.
+
+CONTEXT:
+Benedikt Erlingsson | E37d9c03510d1 | Of Horses and Men
+Of Horses and Men | Ed2aeccd78141 | Drama
+Of Horses and Men | E25e630db2cc0 | Icelandic

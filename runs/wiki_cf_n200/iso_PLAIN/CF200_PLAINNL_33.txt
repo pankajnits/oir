@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_33 #####
+QUESTION:
+What is the place of birth of the director of film Letter To The King?
+
+CONTEXT:
+God | performer | John Lennon
+Hisham Zaman | place of birth | CF_TAIL_33_Kurdish
+Letter to the King | decoy_link_33 | decoy_mid_33
+Benito Perojo | place of birth | Madrid
+decoy_mid_33 | place of birth | Kurdish
+Marianela | director | Benito Perojo
+Letter to the King | director | Hisham Zaman
+John Lennon | place of birth | Liverpool

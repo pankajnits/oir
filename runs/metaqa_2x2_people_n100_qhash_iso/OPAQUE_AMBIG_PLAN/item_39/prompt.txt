@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_39]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_39 #####
+QUESTION:
+Who E20d37519e3b4 a E46c0b3787d9b E504376449902 [Rosanna Arquette] E76117b29ed1a E6dad35492868?
+
+PATH_QUERY
+START Rosanna Arquette
+R1 E405f1a8be358
+R2 E5d2d5036a9ea
+Execute path; return final tail only.
+
+CONTEXT:
+Rosanna Arquette | E405f1a8be358 | After Hours
+After Hours | E5d2d5036a9ea | Martin Scorsese
+After Hours | E436ee162e8ae | Joseph Minion

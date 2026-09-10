@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_50]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_50 #####
+QUESTION:
+Who E07bf920d1c6c a E1cce608dbf77 Ed91d5a49e79e [Anjelica Huston] Ed42de34bb35d Ec7e853c52a07?
+
+PATH_QUERY
+START Anjelica Huston
+R1 Ef1de59b908f7
+R2 Eabeb755c521a
+Execute path; return final tail only.
+
+CONTEXT:
+Anjelica Huston | Ef1de59b908f7 | Material Girls
+Material Girls | Eabeb755c521a | Martha Coolidge
+Material Girls | E7e3729f7f6a3 | John Quaintance

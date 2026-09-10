@@ -1,0 +1,37 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM VAULT_NOLEG: readable JSON keys, vault:v1 values. English name in QUESTION. No legend. No JOIN.
+
+##### ID FD_VAULT_NOLEG_0 #####
+QUESTION:
+Where is the headquarters city of the company associated with Michal Krapinec?
+Return the vault token for that city.
+
+CONTEXT:
+{
+  "people": {
+    "vault:v1:E070db7f9be4b": {
+      "company": "vault:v1:E1ff0d6b1ca97"
+    },
+    "vault:v1:Eb51c4008fb63": {
+      "company": "vault:v1:E1f210d606f06"
+    },
+    "vault:v1:Eedaab8d49de3": {
+      "company": "vault:v1:E28091ae235f3"
+    }
+  },
+  "companies": {
+    "vault:v1:E1ff0d6b1ca97": {
+      "hq_city": "vault:v1:E9df4d8ea2ce3"
+    },
+    "vault:v1:E1f210d606f06": {
+      "hq_city": "vault:v1:E0dd1bf8cfd25"
+    },
+    "vault:v1:E28091ae235f3": {
+      "hq_city": "vault:v1:E6b896407f3eb"
+    }
+  }
+}
+

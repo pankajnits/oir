@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_11]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_11 #####
+QUESTION:
+What city is the headquarters of the company led by Stuart_Parker?
+
+PATH_QUERY
+START Stuart_Parker
+R1 E16e3b42af38f
+R2 E0efd75fd1bbe
+Execute path; return final tail only.
+
+CONTEXT:
+Stuart_Parker | E16e3b42af38f | USAA
+USAA | E0efd75fd1bbe | San_Antonio
+Stuart_Parker | E1006ac6c904a | Ionos
+Ionos | Ee0d54751a57b | Montabaur

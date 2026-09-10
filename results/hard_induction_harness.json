@@ -1,0 +1,878 @@
+{
+  "claim": "Hard opaque induction: depth stress + cross-schema demo transfer toward G-Rev1 pressure (elicitation limit).",
+  "version": 1,
+  "seed": 20260803,
+  "key_tag": "oir-hard-induction-v1",
+  "n_quiz": 6,
+  "hops": [
+    2,
+    3,
+    4
+  ],
+  "demo_ks": [
+    0,
+    1,
+    4
+  ],
+  "cases": [
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 0,
+      "id_template": "HI_H2_D{k}_0",
+      "gold": "E8790297823ed",
+      "start": "E018acec40d66",
+      "rels": [
+        "rel_h2_step0",
+        "rel_h2_step1"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 1,
+      "id_template": "HI_H2_D{k}_1",
+      "gold": "E2407a7fc93fa",
+      "start": "E7ce77bd91566",
+      "rels": [
+        "rel_h2_step0",
+        "rel_h2_step1"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 2,
+      "id_template": "HI_H2_D{k}_2",
+      "gold": "E30dd79a5d845",
+      "start": "Ebbaf8d65dbd0",
+      "rels": [
+        "rel_h2_step0",
+        "rel_h2_step1"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 3,
+      "id_template": "HI_H2_D{k}_3",
+      "gold": "Eeac8ab9a38a1",
+      "start": "E1a17b5f8e0ff",
+      "rels": [
+        "rel_h2_step0",
+        "rel_h2_step1"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 4,
+      "id_template": "HI_H2_D{k}_4",
+      "gold": "Ec176c2bf84a8",
+      "start": "E848cd8de56ce",
+      "rels": [
+        "rel_h2_step0",
+        "rel_h2_step1"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 5,
+      "id_template": "HI_H2_D{k}_5",
+      "gold": "Ef2a8956102f8",
+      "start": "E3b1a7536853c",
+      "rels": [
+        "rel_h2_step0",
+        "rel_h2_step1"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 0,
+      "arm": "PATH",
+      "id": "HI_H2_PATH_0",
+      "gold": "E8790297823ed"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 1,
+      "arm": "PATH",
+      "id": "HI_H2_PATH_1",
+      "gold": "E2407a7fc93fa"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 2,
+      "arm": "PATH",
+      "id": "HI_H2_PATH_2",
+      "gold": "E30dd79a5d845"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 3,
+      "arm": "PATH",
+      "id": "HI_H2_PATH_3",
+      "gold": "Eeac8ab9a38a1"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 4,
+      "arm": "PATH",
+      "id": "HI_H2_PATH_4",
+      "gold": "Ec176c2bf84a8"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 2,
+      "i": 5,
+      "arm": "PATH",
+      "id": "HI_H2_PATH_5",
+      "gold": "Ef2a8956102f8"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 0,
+      "id_template": "HI_H3_D{k}_0",
+      "gold": "E4b324aff5c33",
+      "start": "Ed722ef0bcb3b",
+      "rels": [
+        "rel_h3_step0",
+        "rel_h3_step1",
+        "rel_h3_step2"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 1,
+      "id_template": "HI_H3_D{k}_1",
+      "gold": "E4946f23c0521",
+      "start": "E321c22310f80",
+      "rels": [
+        "rel_h3_step0",
+        "rel_h3_step1",
+        "rel_h3_step2"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 2,
+      "id_template": "HI_H3_D{k}_2",
+      "gold": "Edf923697b4e9",
+      "start": "E1825023a741f",
+      "rels": [
+        "rel_h3_step0",
+        "rel_h3_step1",
+        "rel_h3_step2"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 3,
+      "id_template": "HI_H3_D{k}_3",
+      "gold": "E687407a6bf39",
+      "start": "Ea712916c3244",
+      "rels": [
+        "rel_h3_step0",
+        "rel_h3_step1",
+        "rel_h3_step2"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 4,
+      "id_template": "HI_H3_D{k}_4",
+      "gold": "E3b9ddf564ce1",
+      "start": "E95e9aaddb774",
+      "rels": [
+        "rel_h3_step0",
+        "rel_h3_step1",
+        "rel_h3_step2"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 5,
+      "id_template": "HI_H3_D{k}_5",
+      "gold": "Eb91e6a76dbdc",
+      "start": "E5840f62871ca",
+      "rels": [
+        "rel_h3_step0",
+        "rel_h3_step1",
+        "rel_h3_step2"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 0,
+      "arm": "PATH",
+      "id": "HI_H3_PATH_0",
+      "gold": "E4b324aff5c33"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 1,
+      "arm": "PATH",
+      "id": "HI_H3_PATH_1",
+      "gold": "E4946f23c0521"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 2,
+      "arm": "PATH",
+      "id": "HI_H3_PATH_2",
+      "gold": "Edf923697b4e9"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 3,
+      "arm": "PATH",
+      "id": "HI_H3_PATH_3",
+      "gold": "E687407a6bf39"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 4,
+      "arm": "PATH",
+      "id": "HI_H3_PATH_4",
+      "gold": "E3b9ddf564ce1"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 3,
+      "i": 5,
+      "arm": "PATH",
+      "id": "HI_H3_PATH_5",
+      "gold": "Eb91e6a76dbdc"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 0,
+      "id_template": "HI_H4_D{k}_0",
+      "gold": "E43c9f8c844fe",
+      "start": "Ee1bb9aae44d2",
+      "rels": [
+        "rel_h4_step0",
+        "rel_h4_step1",
+        "rel_h4_step2",
+        "rel_h4_step3"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 1,
+      "id_template": "HI_H4_D{k}_1",
+      "gold": "E3de897f347c4",
+      "start": "E010938cd3da7",
+      "rels": [
+        "rel_h4_step0",
+        "rel_h4_step1",
+        "rel_h4_step2",
+        "rel_h4_step3"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 2,
+      "id_template": "HI_H4_D{k}_2",
+      "gold": "Eef89ea63b81f",
+      "start": "Ef038475ef727",
+      "rels": [
+        "rel_h4_step0",
+        "rel_h4_step1",
+        "rel_h4_step2",
+        "rel_h4_step3"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 3,
+      "id_template": "HI_H4_D{k}_3",
+      "gold": "Ea113dbcebacf",
+      "start": "E942dbd3ad775",
+      "rels": [
+        "rel_h4_step0",
+        "rel_h4_step1",
+        "rel_h4_step2",
+        "rel_h4_step3"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 4,
+      "id_template": "HI_H4_D{k}_4",
+      "gold": "Ec42e49b4ff72",
+      "start": "E460dcc1d206a",
+      "rels": [
+        "rel_h4_step0",
+        "rel_h4_step1",
+        "rel_h4_step2",
+        "rel_h4_step3"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 5,
+      "id_template": "HI_H4_D{k}_5",
+      "gold": "Eb2a6521ed908",
+      "start": "Edb9719d6b998",
+      "rels": [
+        "rel_h4_step0",
+        "rel_h4_step1",
+        "rel_h4_step2",
+        "rel_h4_step3"
+      ]
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 0,
+      "arm": "PATH",
+      "id": "HI_H4_PATH_0",
+      "gold": "E43c9f8c844fe"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 1,
+      "arm": "PATH",
+      "id": "HI_H4_PATH_1",
+      "gold": "E3de897f347c4"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 2,
+      "arm": "PATH",
+      "id": "HI_H4_PATH_2",
+      "gold": "Eef89ea63b81f"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 3,
+      "arm": "PATH",
+      "id": "HI_H4_PATH_3",
+      "gold": "Ea113dbcebacf"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 4,
+      "arm": "PATH",
+      "id": "HI_H4_PATH_4",
+      "gold": "Ec42e49b4ff72"
+    },
+    {
+      "suite": "DEPTH",
+      "hop": 4,
+      "i": 5,
+      "arm": "PATH",
+      "id": "HI_H4_PATH_5",
+      "gold": "Eb2a6521ed908"
+    },
+    {
+      "suite": "CROSS",
+      "arm": "CROSS_DEMO_4",
+      "i": 0,
+      "id": "HI_CROSS_DEMO_4_0",
+      "gold": "Ee6b3cdab1323",
+      "quiz_rels": [
+        "schemaB_r1",
+        "schemaB_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "CROSS_DEMO_4",
+      "i": 1,
+      "id": "HI_CROSS_DEMO_4_1",
+      "gold": "E1897956156ad",
+      "quiz_rels": [
+        "schemaB_r1",
+        "schemaB_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "CROSS_DEMO_4",
+      "i": 2,
+      "id": "HI_CROSS_DEMO_4_2",
+      "gold": "E111838653324",
+      "quiz_rels": [
+        "schemaB_r1",
+        "schemaB_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "CROSS_DEMO_4",
+      "i": 3,
+      "id": "HI_CROSS_DEMO_4_3",
+      "gold": "E3e78c16404e6",
+      "quiz_rels": [
+        "schemaB_r1",
+        "schemaB_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "CROSS_DEMO_4",
+      "i": 4,
+      "id": "HI_CROSS_DEMO_4_4",
+      "gold": "Eb5f1eb7c8ca5",
+      "quiz_rels": [
+        "schemaB_r1",
+        "schemaB_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "CROSS_DEMO_4",
+      "i": 5,
+      "id": "HI_CROSS_DEMO_4_5",
+      "gold": "E57958a9a1386",
+      "quiz_rels": [
+        "schemaB_r1",
+        "schemaB_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "SAME_DEMO_4",
+      "i": 0,
+      "id": "HI_SAME_DEMO_4_0",
+      "gold": "E1692ae524b3c",
+      "quiz_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "SAME_DEMO_4",
+      "i": 1,
+      "id": "HI_SAME_DEMO_4_1",
+      "gold": "E81bed85236b2",
+      "quiz_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "SAME_DEMO_4",
+      "i": 2,
+      "id": "HI_SAME_DEMO_4_2",
+      "gold": "E579d959eec91",
+      "quiz_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "SAME_DEMO_4",
+      "i": 3,
+      "id": "HI_SAME_DEMO_4_3",
+      "gold": "Eb7861d0697df",
+      "quiz_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "SAME_DEMO_4",
+      "i": 4,
+      "id": "HI_SAME_DEMO_4_4",
+      "gold": "E2ea8ca473e35",
+      "quiz_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    },
+    {
+      "suite": "CROSS",
+      "arm": "SAME_DEMO_4",
+      "i": 5,
+      "id": "HI_SAME_DEMO_4_5",
+      "gold": "E635188b3cf94",
+      "quiz_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ],
+      "demo_rels": [
+        "schemaA_r1",
+        "schemaA_r2"
+      ]
+    }
+  ],
+  "arms": {
+    "H2_DEMO_0": {
+      "suite": "DEPTH",
+      "hop": 2,
+      "n_demo": 0,
+      "ids": [
+        "HI_H2_D0_0",
+        "HI_H2_D0_1",
+        "HI_H2_D0_2",
+        "HI_H2_D0_3",
+        "HI_H2_D0_4",
+        "HI_H2_D0_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H2_DEMO_0/item_0/prompt.txt",
+        "runs/hard_induction/H2_DEMO_0/item_1/prompt.txt",
+        "runs/hard_induction/H2_DEMO_0/item_2/prompt.txt",
+        "runs/hard_induction/H2_DEMO_0/item_3/prompt.txt",
+        "runs/hard_induction/H2_DEMO_0/item_4/prompt.txt",
+        "runs/hard_induction/H2_DEMO_0/item_5/prompt.txt"
+      ]
+    },
+    "H2_DEMO_1": {
+      "suite": "DEPTH",
+      "hop": 2,
+      "n_demo": 1,
+      "ids": [
+        "HI_H2_D1_0",
+        "HI_H2_D1_1",
+        "HI_H2_D1_2",
+        "HI_H2_D1_3",
+        "HI_H2_D1_4",
+        "HI_H2_D1_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H2_DEMO_1/item_0/prompt.txt",
+        "runs/hard_induction/H2_DEMO_1/item_1/prompt.txt",
+        "runs/hard_induction/H2_DEMO_1/item_2/prompt.txt",
+        "runs/hard_induction/H2_DEMO_1/item_3/prompt.txt",
+        "runs/hard_induction/H2_DEMO_1/item_4/prompt.txt",
+        "runs/hard_induction/H2_DEMO_1/item_5/prompt.txt"
+      ]
+    },
+    "H2_DEMO_4": {
+      "suite": "DEPTH",
+      "hop": 2,
+      "n_demo": 4,
+      "ids": [
+        "HI_H2_D4_0",
+        "HI_H2_D4_1",
+        "HI_H2_D4_2",
+        "HI_H2_D4_3",
+        "HI_H2_D4_4",
+        "HI_H2_D4_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H2_DEMO_4/item_0/prompt.txt",
+        "runs/hard_induction/H2_DEMO_4/item_1/prompt.txt",
+        "runs/hard_induction/H2_DEMO_4/item_2/prompt.txt",
+        "runs/hard_induction/H2_DEMO_4/item_3/prompt.txt",
+        "runs/hard_induction/H2_DEMO_4/item_4/prompt.txt",
+        "runs/hard_induction/H2_DEMO_4/item_5/prompt.txt"
+      ]
+    },
+    "H2_PATH": {
+      "suite": "DEPTH",
+      "hop": 2,
+      "n_demo": 0,
+      "ids": [
+        "HI_H2_PATH_0",
+        "HI_H2_PATH_1",
+        "HI_H2_PATH_2",
+        "HI_H2_PATH_3",
+        "HI_H2_PATH_4",
+        "HI_H2_PATH_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H2_PATH/item_0/prompt.txt",
+        "runs/hard_induction/H2_PATH/item_1/prompt.txt",
+        "runs/hard_induction/H2_PATH/item_2/prompt.txt",
+        "runs/hard_induction/H2_PATH/item_3/prompt.txt",
+        "runs/hard_induction/H2_PATH/item_4/prompt.txt",
+        "runs/hard_induction/H2_PATH/item_5/prompt.txt"
+      ],
+      "kind": "PATH"
+    },
+    "H3_DEMO_0": {
+      "suite": "DEPTH",
+      "hop": 3,
+      "n_demo": 0,
+      "ids": [
+        "HI_H3_D0_0",
+        "HI_H3_D0_1",
+        "HI_H3_D0_2",
+        "HI_H3_D0_3",
+        "HI_H3_D0_4",
+        "HI_H3_D0_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H3_DEMO_0/item_0/prompt.txt",
+        "runs/hard_induction/H3_DEMO_0/item_1/prompt.txt",
+        "runs/hard_induction/H3_DEMO_0/item_2/prompt.txt",
+        "runs/hard_induction/H3_DEMO_0/item_3/prompt.txt",
+        "runs/hard_induction/H3_DEMO_0/item_4/prompt.txt",
+        "runs/hard_induction/H3_DEMO_0/item_5/prompt.txt"
+      ]
+    },
+    "H3_DEMO_1": {
+      "suite": "DEPTH",
+      "hop": 3,
+      "n_demo": 1,
+      "ids": [
+        "HI_H3_D1_0",
+        "HI_H3_D1_1",
+        "HI_H3_D1_2",
+        "HI_H3_D1_3",
+        "HI_H3_D1_4",
+        "HI_H3_D1_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H3_DEMO_1/item_0/prompt.txt",
+        "runs/hard_induction/H3_DEMO_1/item_1/prompt.txt",
+        "runs/hard_induction/H3_DEMO_1/item_2/prompt.txt",
+        "runs/hard_induction/H3_DEMO_1/item_3/prompt.txt",
+        "runs/hard_induction/H3_DEMO_1/item_4/prompt.txt",
+        "runs/hard_induction/H3_DEMO_1/item_5/prompt.txt"
+      ]
+    },
+    "H3_DEMO_4": {
+      "suite": "DEPTH",
+      "hop": 3,
+      "n_demo": 4,
+      "ids": [
+        "HI_H3_D4_0",
+        "HI_H3_D4_1",
+        "HI_H3_D4_2",
+        "HI_H3_D4_3",
+        "HI_H3_D4_4",
+        "HI_H3_D4_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H3_DEMO_4/item_0/prompt.txt",
+        "runs/hard_induction/H3_DEMO_4/item_1/prompt.txt",
+        "runs/hard_induction/H3_DEMO_4/item_2/prompt.txt",
+        "runs/hard_induction/H3_DEMO_4/item_3/prompt.txt",
+        "runs/hard_induction/H3_DEMO_4/item_4/prompt.txt",
+        "runs/hard_induction/H3_DEMO_4/item_5/prompt.txt"
+      ]
+    },
+    "H3_PATH": {
+      "suite": "DEPTH",
+      "hop": 3,
+      "n_demo": 0,
+      "ids": [
+        "HI_H3_PATH_0",
+        "HI_H3_PATH_1",
+        "HI_H3_PATH_2",
+        "HI_H3_PATH_3",
+        "HI_H3_PATH_4",
+        "HI_H3_PATH_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H3_PATH/item_0/prompt.txt",
+        "runs/hard_induction/H3_PATH/item_1/prompt.txt",
+        "runs/hard_induction/H3_PATH/item_2/prompt.txt",
+        "runs/hard_induction/H3_PATH/item_3/prompt.txt",
+        "runs/hard_induction/H3_PATH/item_4/prompt.txt",
+        "runs/hard_induction/H3_PATH/item_5/prompt.txt"
+      ],
+      "kind": "PATH"
+    },
+    "H4_DEMO_0": {
+      "suite": "DEPTH",
+      "hop": 4,
+      "n_demo": 0,
+      "ids": [
+        "HI_H4_D0_0",
+        "HI_H4_D0_1",
+        "HI_H4_D0_2",
+        "HI_H4_D0_3",
+        "HI_H4_D0_4",
+        "HI_H4_D0_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H4_DEMO_0/item_0/prompt.txt",
+        "runs/hard_induction/H4_DEMO_0/item_1/prompt.txt",
+        "runs/hard_induction/H4_DEMO_0/item_2/prompt.txt",
+        "runs/hard_induction/H4_DEMO_0/item_3/prompt.txt",
+        "runs/hard_induction/H4_DEMO_0/item_4/prompt.txt",
+        "runs/hard_induction/H4_DEMO_0/item_5/prompt.txt"
+      ]
+    },
+    "H4_DEMO_1": {
+      "suite": "DEPTH",
+      "hop": 4,
+      "n_demo": 1,
+      "ids": [
+        "HI_H4_D1_0",
+        "HI_H4_D1_1",
+        "HI_H4_D1_2",
+        "HI_H4_D1_3",
+        "HI_H4_D1_4",
+        "HI_H4_D1_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H4_DEMO_1/item_0/prompt.txt",
+        "runs/hard_induction/H4_DEMO_1/item_1/prompt.txt",
+        "runs/hard_induction/H4_DEMO_1/item_2/prompt.txt",
+        "runs/hard_induction/H4_DEMO_1/item_3/prompt.txt",
+        "runs/hard_induction/H4_DEMO_1/item_4/prompt.txt",
+        "runs/hard_induction/H4_DEMO_1/item_5/prompt.txt"
+      ]
+    },
+    "H4_DEMO_4": {
+      "suite": "DEPTH",
+      "hop": 4,
+      "n_demo": 4,
+      "ids": [
+        "HI_H4_D4_0",
+        "HI_H4_D4_1",
+        "HI_H4_D4_2",
+        "HI_H4_D4_3",
+        "HI_H4_D4_4",
+        "HI_H4_D4_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H4_DEMO_4/item_0/prompt.txt",
+        "runs/hard_induction/H4_DEMO_4/item_1/prompt.txt",
+        "runs/hard_induction/H4_DEMO_4/item_2/prompt.txt",
+        "runs/hard_induction/H4_DEMO_4/item_3/prompt.txt",
+        "runs/hard_induction/H4_DEMO_4/item_4/prompt.txt",
+        "runs/hard_induction/H4_DEMO_4/item_5/prompt.txt"
+      ]
+    },
+    "H4_PATH": {
+      "suite": "DEPTH",
+      "hop": 4,
+      "n_demo": 0,
+      "ids": [
+        "HI_H4_PATH_0",
+        "HI_H4_PATH_1",
+        "HI_H4_PATH_2",
+        "HI_H4_PATH_3",
+        "HI_H4_PATH_4",
+        "HI_H4_PATH_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/H4_PATH/item_0/prompt.txt",
+        "runs/hard_induction/H4_PATH/item_1/prompt.txt",
+        "runs/hard_induction/H4_PATH/item_2/prompt.txt",
+        "runs/hard_induction/H4_PATH/item_3/prompt.txt",
+        "runs/hard_induction/H4_PATH/item_4/prompt.txt",
+        "runs/hard_induction/H4_PATH/item_5/prompt.txt"
+      ],
+      "kind": "PATH"
+    },
+    "CROSS_DEMO_4": {
+      "suite": "CROSS",
+      "n_demo": 4,
+      "ids": [
+        "HI_CROSS_DEMO_4_0",
+        "HI_CROSS_DEMO_4_1",
+        "HI_CROSS_DEMO_4_2",
+        "HI_CROSS_DEMO_4_3",
+        "HI_CROSS_DEMO_4_4",
+        "HI_CROSS_DEMO_4_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/CROSS_DEMO_4/item_0/prompt.txt",
+        "runs/hard_induction/CROSS_DEMO_4/item_1/prompt.txt",
+        "runs/hard_induction/CROSS_DEMO_4/item_2/prompt.txt",
+        "runs/hard_induction/CROSS_DEMO_4/item_3/prompt.txt",
+        "runs/hard_induction/CROSS_DEMO_4/item_4/prompt.txt",
+        "runs/hard_induction/CROSS_DEMO_4/item_5/prompt.txt"
+      ],
+      "label": "demos schemaA; quiz schemaB (novel rel seals)"
+    },
+    "SAME_DEMO_4": {
+      "suite": "CROSS",
+      "n_demo": 4,
+      "ids": [
+        "HI_SAME_DEMO_4_0",
+        "HI_SAME_DEMO_4_1",
+        "HI_SAME_DEMO_4_2",
+        "HI_SAME_DEMO_4_3",
+        "HI_SAME_DEMO_4_4",
+        "HI_SAME_DEMO_4_5"
+      ],
+      "item_paths": [
+        "runs/hard_induction/SAME_DEMO_4/item_0/prompt.txt",
+        "runs/hard_induction/SAME_DEMO_4/item_1/prompt.txt",
+        "runs/hard_induction/SAME_DEMO_4/item_2/prompt.txt",
+        "runs/hard_induction/SAME_DEMO_4/item_3/prompt.txt",
+        "runs/hard_induction/SAME_DEMO_4/item_4/prompt.txt",
+        "runs/hard_induction/SAME_DEMO_4/item_5/prompt.txt"
+      ],
+      "label": "demos schemaA; quiz schemaA (control)"
+    }
+  },
+  "protocol": "synthetic chains; one quiz per file; edge shuffle; no English PATH/legend on DEMO; CROSS uses novel relation seals",
+  "charter": "paper/RESEARCH_CHARTER.md"
+}

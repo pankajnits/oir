@@ -1,0 +1,173 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM CEO/PLAIN_NL: readable graph + English question. No PATH. Return the HQ city.
+
+##### ID CEO_PLAINNL_0 #####
+QUESTION:
+Where is the headquarters of the company that Bob Iger works for?
+
+CONTEXT:
+Bob_Iger | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company
+
+##### ID CEO_PLAINNL_1 #####
+QUESTION:
+Where is the headquarters of the company that Lucian Grainge works for?
+
+CONTEXT:
+Lucian_Grainge | works_at | Universal_Music_Group
+Universal_Music_Group | headquartered_in | Broadway
+DecoyCo_Universal_Music_Group | headquartered_in | DecoyHQ_Broadway
+Universal_Music_Group | owned_by | Hold_Universal_Music_Group
+Hold_Universal_Music_Group | meta_of | Universal_Music_Group
+Universal_Music_Group | partner_of | Partner_Universal_Music_Group
+Partner_Universal_Music_Group | meta_of | Universal_Music_Group
+Decoy_DecoyCo_Universal_Music_Group | works_at | DecoyCo_Universal_Music_Group
+
+##### ID CEO_PLAINNL_2 #####
+QUESTION:
+Where is the headquarters of the company that Roy O Disney works for?
+
+CONTEXT:
+Roy_O_Disney | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company
+
+##### ID CEO_PLAINNL_3 #####
+QUESTION:
+Where is the headquarters of the company that Landon H Rowland works for?
+
+CONTEXT:
+Landon_H_Rowland | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEO_PLAINNL_4 #####
+QUESTION:
+Where is the headquarters of the company that Stuart Parker works for?
+
+CONTEXT:
+Stuart_Parker | works_at | USAA
+USAA | headquartered_in | San_Antonio
+DecoyCo_USAA | headquartered_in | DecoyHQ_San_Antonio
+USAA | owned_by | Hold_USAA
+Hold_USAA | meta_of | USAA
+USAA | partner_of | Partner_USAA
+Partner_USAA | meta_of | USAA
+Decoy_DecoyCo_USAA | works_at | DecoyCo_USAA
+
+##### ID CEO_PLAINNL_5 #####
+QUESTION:
+Where is the headquarters of the company that Kristin Lian works for?
+
+CONTEXT:
+Kristin_Lian | works_at | Hafslund_Kraft
+Hafslund_Kraft | headquartered_in | Oslo
+DecoyCo_Hafslund_Kraft | headquartered_in | DecoyHQ_Oslo
+Hafslund_Kraft | owned_by | Hold_Hafslund_Kraft
+Hold_Hafslund_Kraft | meta_of | Hafslund_Kraft
+Hafslund_Kraft | partner_of | Partner_Hafslund_Kraft
+Partner_Hafslund_Kraft | meta_of | Hafslund_Kraft
+Decoy_DecoyCo_Hafslund_Kraft | works_at | DecoyCo_Hafslund_Kraft
+
+##### ID CEO_PLAINNL_6 #####
+QUESTION:
+Where is the headquarters of the company that Thomas S Carter works for?
+
+CONTEXT:
+Thomas_S_Carter | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEO_PLAINNL_7 #####
+QUESTION:
+Where is the headquarters of the company that Bob Chapek works for?
+
+CONTEXT:
+Bob_Chapek | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company
+
+##### ID CEO_PLAINNL_8 #####
+QUESTION:
+Where is the headquarters of the company that Hans Vestberg works for?
+
+CONTEXT:
+Hans_Vestberg | works_at | Verizon
+Verizon | headquartered_in | Philadelphia
+DecoyCo_Verizon | headquartered_in | DecoyHQ_Philadelphia
+Verizon | owned_by | Hold_Verizon
+Hold_Verizon | meta_of | Verizon
+Verizon | partner_of | Partner_Verizon
+Partner_Verizon | meta_of | Verizon
+Decoy_DecoyCo_Verizon | works_at | DecoyCo_Verizon
+
+##### ID CEO_PLAINNL_9 #####
+QUESTION:
+Where is the headquarters of the company that Luka Mucic works for?
+
+CONTEXT:
+Luka_Mucic | works_at | Vonovia
+Vonovia | headquartered_in | Bochum
+DecoyCo_Vonovia | headquartered_in | DecoyHQ_Bochum
+Vonovia | owned_by | Hold_Vonovia
+Hold_Vonovia | meta_of | Vonovia
+Vonovia | partner_of | Partner_Vonovia
+Partner_Vonovia | meta_of | Vonovia
+Decoy_DecoyCo_Vonovia | works_at | DecoyCo_Vonovia
+
+##### ID CEO_PLAINNL_10 #####
+QUESTION:
+Where is the headquarters of the company that Mario Greco works for?
+
+CONTEXT:
+Mario_Greco | works_at | Zurich_Insurance_Group
+Zurich_Insurance_Group | headquartered_in | Zurich
+DecoyCo_Zurich_Insurance_Group | headquartered_in | DecoyHQ_Zurich
+Zurich_Insurance_Group | owned_by | Hold_Zurich_Insurance_Group
+Hold_Zurich_Insurance_Group | meta_of | Zurich_Insurance_Group
+Zurich_Insurance_Group | partner_of | Partner_Zurich_Insurance_Group
+Partner_Zurich_Insurance_Group | meta_of | Zurich_Insurance_Group
+Decoy_DecoyCo_Zurich_Insurance_Group | works_at | DecoyCo_Zurich_Insurance_Group
+
+##### ID CEO_PLAINNL_11 #####
+QUESTION:
+Where is the headquarters of the company that William N Deramus III works for?
+
+CONTEXT:
+William_N_Deramus_III | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern

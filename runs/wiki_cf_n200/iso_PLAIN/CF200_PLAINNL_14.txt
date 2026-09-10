@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_14 #####
+QUESTION:
+Where did Mary Bethune Abbott's husband die?
+
+CONTEXT:
+The Little Door Into the World | director | George Dewhurst
+George Dewhurst | place of death | London
+John Abbott | place of death | CF_TAIL_14_Montreal
+Mary Abbott | spouse | John Abbott
+B. E. Doxat-Pratt | employer | Hollandia
+decoy_mid_14 | place of death | Montreal
+Laughter and Tears | director | B. E. Doxat-Pratt
+Mary Abbott | decoy_link_14 | decoy_mid_14

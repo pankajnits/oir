@@ -1,0 +1,14 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+Answer from CONTEXT triples. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: What city is the HQ of the parent company that owns the company where P0 works_at? Answer city only.
+
+CONTEXT:
+P0 | works_at | Co0B
+Co0B | owned_by | Par0B
+Par0B | HQ_in | City0B
+P0x | works_at | Co0A
+Co0A | owned_by | Par0A
+Par0A | HQ_in | City0A

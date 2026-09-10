@@ -1,0 +1,44 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_9]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_9 #####
+DB: music_4
+SCHEMA (English name → sealed sqlite identifier):
+artist = Eae398e6c0f1b
+Artist_ID = E851ebb4773a2
+Artist = Ea2518591e6ac
+Age = Ed55479bf50ea
+Famous_Title = E7d41f87a6e46
+Famous_Release_date = E5f0d74a0f486
+volume = E2646882c74fe
+Volume_ID = Efb8e0a0a7db9
+Volume_Issue = Ede40974217a4
+Issue_Date = E094f2e47b9e6
+Weeks_on_Top = E51b200e50699
+Song = Ef54fe1b1a52b
+music_festival = Eda4fa5582c72
+ID = E26062a728cb8
+Music_Festival = E0d03c46438da
+Date_of_ceremony = E2efd031acc94
+Category = Ec47bf41e32e3
+Volume = E9f3be6604a08
+Result = E3db05360e37f
+
+artist(Artist_ID, Artist, Age, Famous_Title, Famous_Release_date)
+volume(Volume_ID, Volume_Issue, Issue_Date, Weeks_on_Top, Song, Artist_ID)
+music_festival(ID, Music_Festival, Date_of_ceremony, Category, Volume, Result)
+
+QUESTION:
+What are the Ec211fb6a70c4 dates of volumes associated with the E85315e596ed0 aged 23 or younger?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

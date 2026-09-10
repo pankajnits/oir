@@ -1,0 +1,308 @@
+MODEL UNDER TEST. Read ONLY this file.
+For EACH id write: SQL[<id>]: <sqlite>
+Readable schema. Execute mentally is NOT required; we will run your SQL.
+
+##### ID SPSQL_0 #####
+DB: small_bank_1
+SCHEMA:
+ACCOUNTS(custid, name)
+SAVINGS(custid, balance)
+CHECKING(custid, balance)
+QUESTION:
+Find the checking balance of the accounts whose savings balance is higher than the average savings balance.
+
+##### ID SPSQL_1 #####
+DB: department_management
+SCHEMA:
+department(Department_ID, Name, Creation, Ranking, Budget_in_Billions, Num_Employees)
+head(head_ID, name, born_state, age)
+management(department_ID, head_ID, temporary_acting)
+QUESTION:
+List the states where both the secretary of 'Treasury' department and the secretary of 'Homeland Security' were born.
+
+##### ID SPSQL_2 #####
+DB: music_4
+SCHEMA:
+artist(Artist_ID, Artist, Age, Famous_Title, Famous_Release_date)
+volume(Volume_ID, Volume_Issue, Issue_Date, Weeks_on_Top, Song, Artist_ID)
+music_festival(ID, Music_Festival, Date_of_ceremony, Category, Volume, Result)
+QUESTION:
+What are the famous titles of artists who have not only had volumes that spent more than 2 weeks on top but also volumes that spent less than 2 weeks on top?
+
+##### ID SPSQL_3 #####
+DB: network_2
+SCHEMA:
+Person(name, age, city, gender, job)
+PersonFriend(name, friend, year)
+QUESTION:
+What are the different names of friends who are younger than the average age for a friend?
+
+##### ID SPSQL_4 #####
+DB: customer_complaints
+SCHEMA:
+Staff(staff_id, gender, first_name, last_name, email_address, phone_number)
+Customers(customer_id, customer_type_code, address_line_1, address_line_2, town_city, state, email_address, phone_number)
+Products(product_id, parent_product_id, product_category_code, date_product_first_available, date_product_discontinued, product_name, product_description, product_price)
+Complaints(complaint_id, product_id, customer_id, complaint_outcome_code, complaint_status_code, complaint_type_code, date_complaint_raised, date_complaint_closed, staff_id)
+QUESTION:
+Find the emails of customers who has filed a complaints of the product with the most complaints.
+
+##### ID SPSQL_5 #####
+DB: gymnast
+SCHEMA:
+gymnast(Gymnast_ID, Floor_Exercise_Points, Pommel_Horse_Points, Rings_Points, Vault_Points, Parallel_Bars_Points, Horizontal_Bar_Points, Total_Points)
+people(People_ID, Name, Age, Height, Hometown)
+QUESTION:
+What is the most common hometown of gymnasts?
+
+##### ID SPSQL_6 #####
+DB: music_2
+SCHEMA:
+Songs(SongId, Title)
+Albums(AId, Title, Year, Label, Type)
+Band(Id, Firstname, Lastname)
+Instruments(SongId, BandmateId, Instrument)
+Performance(SongId, Bandmate, StagePosition)
+Tracklists(AlbumId, Position, SongId)
+Vocals(SongId, Bandmate, Type)
+QUESTION:
+What are the types of vocals used in the song "Demon Kitty Rag"?
+
+##### ID SPSQL_7 #####
+DB: department_management
+SCHEMA:
+department(Department_ID, Name, Creation, Ranking, Budget_in_Billions, Num_Employees)
+head(head_ID, name, born_state, age)
+management(department_ID, head_ID, temporary_acting)
+QUESTION:
+What are the distinct creation years of the departments managed by a secretary born in state 'Alabama'?
+
+##### ID SPSQL_8 #####
+DB: icfp_1
+SCHEMA:
+Inst(instID, name, country)
+Authors(authID, lname, fname)
+Papers(paperID, title)
+Authorship(authID, instID, paperID, authOrder)
+QUESTION:
+Find the number of papers published by authors from the institution "Tokohu University".
+
+##### ID SPSQL_9 #####
+DB: museum_visit
+SCHEMA:
+museum(Museum_ID, Name, Num_of_Staff, Open_Year)
+visitor(ID, Name, Level_of_membership, Age)
+visit(Museum_ID, visitor_ID, Num_of_Ticket, Total_spent)
+QUESTION:
+What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?
+
+##### ID SPSQL_10 #####
+DB: program_share
+SCHEMA:
+program(Program_ID, Name, Origin, Launch, Owner)
+channel(Channel_ID, Name, Owner, Share_in_percent, Rating_in_percent)
+broadcast(Channel_ID, Program_ID, Time_of_day)
+broadcast_share(Channel_ID, Program_ID, Date, Share_in_percent)
+QUESTION:
+Which program is broadcast most frequently? Give me the program name.
+
+##### ID SPSQL_11 #####
+DB: climbing
+SCHEMA:
+mountain(Mountain_ID, Name, Height, Prominence, Range, Country)
+climber(Climber_ID, Name, Country, Time, Points, Mountain_ID)
+QUESTION:
+Show the height of the mountain climbed by the climber with the maximum points.
+
+##### ID SPSQL_12 #####
+DB: city_record
+SCHEMA:
+city(City_ID, City, Hanzi, Hanyu_Pinyin, Regional_Population, GDP)
+match(Match_ID, Date, Venue, Score, Result, Competition)
+temperature(City_ID, Jan, Feb, Mar, Apr, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+hosting_city(Year, Match_ID, Host_City)
+QUESTION:
+Find the city that hosted the most events.
+
+##### ID SPSQL_13 #####
+DB: gymnast
+SCHEMA:
+gymnast(Gymnast_ID, Floor_Exercise_Points, Pommel_Horse_Points, Rings_Points, Vault_Points, Parallel_Bars_Points, Horizontal_Bar_Points, Total_Points)
+people(People_ID, Name, Age, Height, Hometown)
+QUESTION:
+Give the hometowns from which two or more gymnasts are from.
+
+##### ID SPSQL_14 #####
+DB: icfp_1
+SCHEMA:
+Inst(instID, name, country)
+Authors(authID, lname, fname)
+Papers(paperID, title)
+Authorship(authID, instID, paperID, authOrder)
+QUESTION:
+Which author has written the most papers? Find his or her last name.
+
+##### ID SPSQL_15 #####
+DB: match_season
+SCHEMA:
+country(Country_id, Country_name, Capital, Official_native_language)
+team(Team_id, Name)
+match_season(Season, Player, Position, Country, Team, Draft_Pick_Number, Draft_Class, College)
+player(Player_ID, Player, Years_Played, Total_WL, Singles_WL, Doubles_WL, Team)
+QUESTION:
+Count the number of different colleges that players who play for Columbus Crew are from.
+
+##### ID SPSQL_16 #####
+DB: employee_hire_evaluation
+SCHEMA:
+employee(Employee_ID, Name, Age, City)
+shop(Shop_ID, Name, Location, District, Number_products, Manager_name)
+hiring(Shop_ID, Employee_ID, Start_from, Is_full_time)
+evaluation(Employee_ID, Year_awarded, Bonus)
+QUESTION:
+What is the name of the shop that is hiring the largest number of employees?
+
+##### ID SPSQL_17 #####
+DB: icfp_1
+SCHEMA:
+Inst(instID, name, country)
+Authors(authID, lname, fname)
+Papers(paperID, title)
+Authorship(authID, instID, paperID, authOrder)
+QUESTION:
+How many papers have "Atsushi Ohori" published?
+
+##### ID SPSQL_18 #####
+DB: loan_1
+SCHEMA:
+bank(branch_ID, bname, no_of_customers, city, state)
+customer(cust_ID, cust_name, acc_type, acc_bal, no_of_loans, credit_score, branch_ID, state)
+loan(loan_ID, loan_type, cust_ID, branch_ID, amount)
+QUESTION:
+Find the name of bank branch that provided the greatest total amount of loans to customers with credit score is less than 100.
+
+##### ID SPSQL_19 #####
+DB: music_1
+SCHEMA:
+genre(g_name, rating, most_popular_in)
+artist(artist_name, country, gender, preferred_genre)
+files(f_id, artist_name, file_size, duration, formats)
+song(song_name, artist_name, country, f_id, genre_is, rating, languages, releasedate, resolution)
+QUESTION:
+What is the average rating of songs produced by female artists?
+
+##### ID SPSQL_20 #####
+DB: train_station
+SCHEMA:
+station(Station_ID, Name, Annual_entry_exit, Annual_interchanges, Total_Passengers, Location, Main_Services, Number_of_Platforms)
+train(Train_ID, Name, Time, Service)
+train_station(Train_ID, Station_ID)
+QUESTION:
+What are the names of the stations which serve both "Ananthapuri Express" and "Guruvayur Express" trains?
+
+##### ID SPSQL_21 #####
+DB: city_record
+SCHEMA:
+city(City_ID, City, Hanzi, Hanyu_Pinyin, Regional_Population, GDP)
+match(Match_ID, Date, Venue, Score, Result, Competition)
+temperature(City_ID, Jan, Feb, Mar, Apr, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+hosting_city(Year, Match_ID, Host_City)
+QUESTION:
+In February, which city marks the highest temperature?
+
+##### ID SPSQL_22 #####
+DB: scientist_1
+SCHEMA:
+Scientists(SSN, Name)
+Projects(Code, Name, Hours)
+AssignedTo(Scientist, Project)
+QUESTION:
+Find the total hours of the projects that scientists named Michael Rogers or Carol Smith are assigned to.
+
+##### ID SPSQL_23 #####
+DB: shop_membership
+SCHEMA:
+member(Member_ID, Card_Number, Name, Hometown, Level)
+branch(Branch_ID, Name, Open_year, Address_road, City, membership_amount)
+membership_register_branch(Member_ID, Branch_ID, Register_Year)
+purchase(Member_ID, Branch_ID, Year, Total_pounds)
+QUESTION:
+How many total pounds were purchased in the year 2018 at all London branches?
+
+##### ID SPSQL_24 #####
+DB: storm_record
+SCHEMA:
+storm(Storm_ID, Name, Dates_active, Max_speed, Damage_millions_USD, Number_Deaths)
+region(Region_id, Region_code, Region_name)
+affected_region(Region_id, Storm_ID, Number_city_affected)
+QUESTION:
+What are the names of the storms that affected both the regions of Afghanistan and Albania?
+
+##### ID SPSQL_25 #####
+DB: city_record
+SCHEMA:
+city(City_ID, City, Hanzi, Hanyu_Pinyin, Regional_Population, GDP)
+match(Match_ID, Date, Venue, Score, Result, Competition)
+temperature(City_ID, Jan, Feb, Mar, Apr, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+hosting_city(Year, Match_ID, Host_City)
+QUESTION:
+Which city has hosted the most events?
+
+##### ID SPSQL_26 #####
+DB: movie_1
+SCHEMA:
+Movie(mID, title, year, director)
+Reviewer(rID, name)
+Rating(rID, mID, stars, ratingDate)
+QUESTION:
+What are the names of all directors whose movies have been reviewed by Sarah Martinez?
+
+##### ID SPSQL_27 #####
+DB: icfp_1
+SCHEMA:
+Inst(instID, name, country)
+Authors(authID, lname, fname)
+Papers(paperID, title)
+Authorship(authID, instID, paperID, authOrder)
+QUESTION:
+Find the titles of papers whose first author is affiliated with an institution in the country "Japan" and has last name "Ohori"?
+
+##### ID SPSQL_28 #####
+DB: soccer_2
+SCHEMA:
+College(cName, state, enr)
+Player(pID, pName, yCard, HS)
+Tryout(pID, cName, pPos, decision)
+QUESTION:
+What is the average number of hours spent practicing for students who got rejected?
+
+##### ID SPSQL_29 #####
+DB: small_bank_1
+SCHEMA:
+ACCOUNTS(custid, name)
+SAVINGS(custid, balance)
+CHECKING(custid, balance)
+QUESTION:
+Find the name of account that has the lowest total checking and saving balance.
+
+##### ID SPSQL_30 #####
+DB: music_2
+SCHEMA:
+Songs(SongId, Title)
+Albums(AId, Title, Year, Label, Type)
+Band(Id, Firstname, Lastname)
+Instruments(SongId, BandmateId, Instrument)
+Performance(SongId, Bandmate, StagePosition)
+Tracklists(AlbumId, Position, SongId)
+Vocals(SongId, Bandmate, Type)
+QUESTION:
+Find the number of songs in all the studio albums.
+
+##### ID SPSQL_31 #####
+DB: network_1
+SCHEMA:
+Highschooler(ID, name, grade)
+Friend(student_id, friend_id)
+Likes(student_id, liked_id)
+QUESTION:
+Count the number of friends Kyle has.

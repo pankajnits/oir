@@ -1,0 +1,15 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_6]: <sql>
+
+DB: music_2
+SCHEMA:
+Songs(SongId, Title)
+Albums(AId, Title, Year, Label, Type)
+Band(Id, Firstname, Lastname)
+Instruments(SongId, BandmateId, Instrument)
+Performance(SongId, Bandmate, StagePosition)
+Tracklists(AlbumId, Position, SongId)
+Vocals(SongId, Bandmate, Type)
+QUESTION:
+What are the types of vocals used in the song "Demon Kitty Rag"?

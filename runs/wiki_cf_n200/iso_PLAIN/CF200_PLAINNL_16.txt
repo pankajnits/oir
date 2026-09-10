@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_16 #####
+QUESTION:
+Where did Sylvia Burka's husband die?
+
+CONTEXT:
+Caroline Margaret Watson Fleming | spouse | Aretas B. Fleming
+decoy_mid_16 | place of death | Toronto
+Sylvia Burka | decoy_link_16 | decoy_mid_16
+Deneys Reitz | father | Francis William Reitz
+Aretas B. Fleming | place of birth | Fairmont, West Virginia
+Sylvia Burka | spouse | Jocelyn Lovell
+Francis William Reitz | place of birth | Swellendam
+Jocelyn Lovell | place of death | CF_TAIL_16_Toronto

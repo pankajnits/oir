@@ -1,0 +1,277 @@
+{
+  "model": "auto",
+  "n": 32,
+  "summary": {
+    "score": "29/32",
+    "wilson": {
+      "k": 29,
+      "n": 32,
+      "acc": 0.9062,
+      "ci95": [
+        0.7578,
+        0.9676
+      ],
+      "display": "29/32 [0.76,0.97]"
+    },
+    "exec_ok_parse": 32
+  },
+  "nonclaim": "Not a Spider leaderboard. SQL is executed in sqlite.",
+  "rows": [
+    {
+      "id": "SPSQL_0",
+      "sql": "SELECT T2.balance FROM SAVINGS AS T1 JOIN CHECKING AS T2 ON T1.custid = T2.custid WHERE T1.balance > (SELECT AVG(balance) FROM SAVINGS)",
+      "got": 2000.0,
+      "gold": "2000.0",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_1",
+      "sql": "SELECT T3.born_state FROM department AS T1 JOIN management AS T2 ON T1.Department_ID = T2.department_ID JOIN head AS T3 ON T2.head_ID = T3.head_ID WHERE T1.Name",
+      "got": "California",
+      "gold": "California",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_2",
+      "sql": "SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID = T2.Artist_ID WHERE T2.Weeks_on_Top > 2 INTERSECT SELECT T1.Famous_Title FROM artist",
+      "got": "Bergen 1996",
+      "gold": "Bergen 1996",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_3",
+      "sql": "SELECT DISTINCT T2.name FROM PersonFriend AS T1 JOIN Person AS T2 ON T1.friend = T2.name WHERE T2.age < (SELECT AVG(age) FROM Person)",
+      "got": "Dan",
+      "gold": "Zach",
+      "ok": false,
+      "err": "mismatch"
+    },
+    {
+      "id": "SPSQL_4",
+      "sql": "SELECT DISTINCT T1.email_address FROM Customers AS T1 JOIN Complaints AS T2 ON T1.customer_id = T2.customer_id WHERE T2.product_id = (SELECT product_id FROM Com",
+      "got": "rzulauf@example.org",
+      "gold": "hsteuber@example.org",
+      "ok": false,
+      "err": "mismatch"
+    },
+    {
+      "id": "SPSQL_5",
+      "sql": "SELECT T2.Hometown FROM gymnast AS T1 JOIN people AS T2 ON T1.Gymnast_ID = T2.People_ID GROUP BY T2.Hometown ORDER BY COUNT(*) DESC LIMIT 1",
+      "got": "Santo Domingo",
+      "gold": "Santo Domingo",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_6",
+      "sql": "SELECT T2.Type FROM Songs AS T1 JOIN Vocals AS T2 ON T1.SongId = T2.SongId WHERE T1.Title = 'Demon Kitty Rag'",
+      "got": null,
+      "gold": "0",
+      "ok": false,
+      "err": "empty"
+    },
+    {
+      "id": "SPSQL_7",
+      "sql": "SELECT DISTINCT T1.Creation FROM department AS T1 JOIN management AS T2 ON T1.Department_ID = T2.department_ID JOIN head AS T3 ON T2.head_ID = T3.head_ID WHERE ",
+      "got": "1903",
+      "gold": "1903",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_8",
+      "sql": "SELECT COUNT(DISTINCT T1.paperID) FROM Authorship AS T1 JOIN Inst AS T2 ON T1.instID = T2.instID WHERE T2.name = 'Tokohu University'",
+      "got": 0,
+      "gold": "0",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_9",
+      "sql": "SELECT T1.Name FROM visitor AS T1 JOIN visit AS T2 ON T1.ID = T2.visitor_ID JOIN museum AS T3 ON T2.Museum_ID = T3.Museum_ID WHERE T3.Open_Year < 2009 INTERSECT",
+      "got": "Fernando Gago",
+      "gold": "Fernando Gago",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_10",
+      "sql": "SELECT T1.Name FROM program AS T1 JOIN broadcast AS T2 ON T1.Program_ID = T2.Program_ID GROUP BY T1.Program_ID ORDER BY COUNT(*) DESC LIMIT 1",
+      "got": "Toonmax",
+      "gold": "Toonmax",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_11",
+      "sql": "SELECT T1.Height FROM mountain AS T1 JOIN climber AS T2 ON T1.Mountain_ID = T2.Mountain_ID ORDER BY T2.Points DESC LIMIT 1",
+      "got": 5895.0,
+      "gold": "5895.0",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_12",
+      "sql": "SELECT T1.City FROM city AS T1 JOIN hosting_city AS T2 ON T1.City_ID = T2.Host_City GROUP BY T2.Host_City ORDER BY COUNT(*) DESC LIMIT 1",
+      "got": "Nanjing ( Jiangsu )",
+      "gold": "Nanjing ( Jiangsu )",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_13",
+      "sql": "SELECT T2.Hometown FROM gymnast AS T1 JOIN people AS T2 ON T1.Gymnast_ID = T2.People_ID GROUP BY T2.Hometown HAVING COUNT(*) >= 2",
+      "got": "Santo Domingo",
+      "gold": "Santo Domingo",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_14",
+      "sql": "SELECT T1.lname FROM Authors AS T1 JOIN Authorship AS T2 ON T1.authID = T2.authID GROUP BY T1.authID ORDER BY COUNT(*) DESC LIMIT 1",
+      "got": "Hinze",
+      "gold": "Hinze",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_15",
+      "sql": "SELECT COUNT(DISTINCT T1.College) FROM match_season AS T1 JOIN team AS T2 ON T1.Team = T2.Team_id WHERE T2.Name = 'Columbus Crew'",
+      "got": 1,
+      "gold": "1",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_16",
+      "sql": "SELECT T1.Name FROM shop AS T1 JOIN hiring AS T2 ON T1.Shop_ID = T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY COUNT(*) DESC LIMIT 1",
+      "got": "FC Haka",
+      "gold": "FC Haka",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_17",
+      "sql": "SELECT COUNT(DISTINCT T1.paperID) FROM Authorship AS T1 JOIN Authors AS T2 ON T1.authID = T2.authID WHERE T2.fname = 'Atsushi' AND T2.lname = 'Ohori'",
+      "got": 1,
+      "gold": "1",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_18",
+      "sql": "SELECT T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_ID = T2.branch_ID JOIN customer AS T3 ON T2.cust_ID = T3.cust_ID WHERE T3.credit_score < 100 GROUP ",
+      "got": "downtown",
+      "gold": "downtown",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_19",
+      "sql": "SELECT AVG(T1.rating) FROM song AS T1 JOIN artist AS T2 ON T1.artist_name = T2.artist_name WHERE T2.gender = 'Female'",
+      "got": 7.333333333333333,
+      "gold": "7.333333333333333",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_20",
+      "sql": "SELECT T3.Name FROM train AS T1 JOIN train_station AS T2 ON T1.Train_ID = T2.Train_ID JOIN station AS T3 ON T2.Station_ID = T3.Station_ID WHERE T1.Name = 'Anant",
+      "got": "London Waterloo",
+      "gold": "London Waterloo",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_21",
+      "sql": "SELECT T1.City FROM city AS T1 JOIN temperature AS T2 ON T1.City_ID = T2.City_ID ORDER BY T2.Feb DESC LIMIT 1",
+      "got": "Suzhou ( Jiangsu )",
+      "gold": "Suzhou ( Jiangsu )",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_22",
+      "sql": "SELECT SUM(T1.Hours) FROM Projects AS T1 WHERE T1.Code IN (SELECT T2.Project FROM AssignedTo AS T2 JOIN Scientists AS T3 ON T2.Scientist = T3.SSN WHERE T3.Name ",
+      "got": 6702,
+      "gold": "6702",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_23",
+      "sql": "SELECT SUM(T1.Total_pounds) FROM purchase AS T1 JOIN branch AS T2 ON T1.Branch_ID = T2.Branch_ID WHERE T1.Year = 2018 AND T2.City = 'London'",
+      "got": 3531.59,
+      "gold": "3531.59",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_24",
+      "sql": "SELECT T1.Name FROM storm AS T1 JOIN affected_region AS T2 ON T1.Storm_ID = T2.Storm_ID JOIN region AS T3 ON T2.Region_id = T3.Region_id WHERE T3.Region_name = ",
+      "got": "One",
+      "gold": "One",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_25",
+      "sql": "SELECT T1.City FROM city AS T1 JOIN hosting_city AS T2 ON T1.City_ID = T2.Host_City GROUP BY T2.Host_City ORDER BY COUNT(*) DESC LIMIT 1",
+      "got": "Nanjing ( Jiangsu )",
+      "gold": "Nanjing ( Jiangsu )",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_26",
+      "sql": "SELECT DISTINCT T1.director FROM Movie AS T1 JOIN Rating AS T2 ON T1.mID = T2.mID JOIN Reviewer AS T3 ON T2.rID = T3.rID WHERE T3.name = 'Sarah Martinez'",
+      "got": "Victor Fleming",
+      "gold": "Victor Fleming",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_27",
+      "sql": "SELECT T1.title FROM Papers AS T1 JOIN Authorship AS T2 ON T1.paperID = T2.paperID JOIN Authors AS T3 ON T2.authID = T3.authID JOIN Inst AS T4 ON T2.instID = T4",
+      "got": "Making Standard ML a Practical Database Programming Language",
+      "gold": "Making Standard ML a Practical Database Programming Language",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_28",
+      "sql": "SELECT AVG(T1.HS) FROM Player AS T1 JOIN Tryout AS T2 ON T1.pID = T2.pID WHERE T2.decision = 'no'",
+      "got": 925.0,
+      "gold": "925.0",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_29",
+      "sql": "SELECT T1.name FROM ACCOUNTS AS T1 JOIN SAVINGS AS T2 ON T1.custid = T2.custid JOIN CHECKING AS T3 ON T1.custid = T3.custid ORDER BY T2.balance + T3.balance ASC",
+      "got": "Porter",
+      "gold": "Porter",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_30",
+      "sql": "SELECT COUNT(*) FROM Albums AS T1 JOIN Tracklists AS T2 ON T1.AId = T2.AlbumId WHERE T1.Type = 'Studio'",
+      "got": 0,
+      "gold": "0",
+      "ok": true,
+      "err": null
+    },
+    {
+      "id": "SPSQL_31",
+      "sql": "SELECT COUNT(*) FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.ID WHERE T2.name = 'Kyle'",
+      "got": 1,
+      "gold": "1",
+      "ok": true,
+      "err": null
+    }
+  ]
+}

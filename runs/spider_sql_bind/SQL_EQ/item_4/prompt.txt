@@ -1,0 +1,45 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_4]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_4 #####
+DB: local_govt_mdm
+SCHEMA (English name → sealed sqlite identifier):
+Customer_Master_Index = E0e13069a32bf
+master_customer_id = E393902ed2641
+cmi_details = E19fbe686ecee
+CMI_Cross_References = E562bc88ef719
+cmi_cross_ref_id = E4ff0da0a6ac0
+source_system_code = E62ba91aa8f30
+Council_Tax = Eb6c18624deef
+council_tax_id = E987ee2331047
+Business_Rates = Ec852f7742399
+business_rates_id = E32f076fe3a1b
+Benefits_Overpayments = Edb11af19d3bc
+Parking_Fines = E9847ec6cb7ad
+Rent_Arrears = E6b99658ef197
+Electoral_Register = E38eab5a47bbb
+electoral_register_id = Ed48b30827359
+
+Customer_Master_Index(master_customer_id, cmi_details)
+CMI_Cross_References(cmi_cross_ref_id, master_customer_id, source_system_code)
+Council_Tax(council_tax_id, cmi_cross_ref_id)
+Business_Rates(business_rates_id, cmi_cross_ref_id)
+Benefits_Overpayments(council_tax_id, cmi_cross_ref_id)
+Parking_Fines(council_tax_id, cmi_cross_ref_id)
+Rent_Arrears(council_tax_id, cmi_cross_ref_id)
+Electoral_Register(electoral_register_id, cmi_cross_ref_id)
+
+QUESTION:
+What are the Ed48b30827359 ids of Ed48b30827359 registries that have the E562bc88ef719 reference E62ba91aa8f30 'Ed48b30827359' or 'Tax'?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

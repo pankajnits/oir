@@ -1,0 +1,55 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM HOP_MISMATCH: demos 2-hop; quiz 3-hop novel; blind 2-hop copy = wrong_2hop
+
+Learn the mapping from DEMOs (same encoding).
+Answer the QUIZ the same way. No English relation names. No PATH.
+If ambiguous, UNKNOWN.
+
+DEMO 0:
+START E7af0a2353d41
+CONTEXT:
+E7af0a2353d41 | E0a6f0ab007be | Eb6911576847d
+Eb6911576847d | Eeaf69e30f876 | Eb7e9ad0b43f0
+E97f409ae24c3 | E9ef29863464a | E7af0a2353d41
+E7af0a2353d41 | E15294150d7e0 | E97f409ae24c3
+ANSWER_SEALED: Eb7e9ad0b43f0
+
+DEMO 1:
+START Ee11cfd8da5bb
+CONTEXT:
+E6c7eafb8bd0f | Eeaf69e30f876 | Ec83a7e874224
+Efcfa24ad9e27 | Ed1799ea52f9d | Ee11cfd8da5bb
+Ee11cfd8da5bb | E3a3f249b05d4 | Efcfa24ad9e27
+Ee11cfd8da5bb | E0a6f0ab007be | E6c7eafb8bd0f
+ANSWER_SEALED: Ec83a7e874224
+
+DEMO 2:
+START E204e4d272936
+CONTEXT:
+E915d4e0b5faa | Eeaf69e30f876 | Ed6b3f18685f5
+E204e4d272936 | E12a822934437 | E9b043db03c44
+E204e4d272936 | E0a6f0ab007be | E915d4e0b5faa
+E9b043db03c44 | E1346ec9fe25f | E204e4d272936
+ANSWER_SEALED: Ed6b3f18685f5
+
+DEMO 3:
+START E0f227c8da994
+CONTEXT:
+E0f227c8da994 | E0d5bdf162305 | Ec0f60eaabf5b
+Ec0f60eaabf5b | E202637807ceb | E0f227c8da994
+Ea41e85ce48fd | Eeaf69e30f876 | Ebb1dfc139bd7
+E0f227c8da994 | E0a6f0ab007be | Ea41e85ce48fd
+ANSWER_SEALED: Ebb1dfc139bd7
+
+--- QUIZ ---
+##### ID ADV_HOP_MISMATCH_5 #####
+START E4e1e677b4968
+CONTEXT:
+E4e1e677b4968 | Ea79dbb6b7bae | Ed8b225d89435
+E35c2f9cdf5de | Ec90627237afa | Ed3ddb60c1347
+E4e1e677b4968 | E3802aa4fee67 | E1077a2a2b942
+Ed8b225d89435 | E7bdea277cb74 | E4ca0457746ed
+E1077a2a2b942 | Ebcef99f96809 | E35c2f9cdf5de
+

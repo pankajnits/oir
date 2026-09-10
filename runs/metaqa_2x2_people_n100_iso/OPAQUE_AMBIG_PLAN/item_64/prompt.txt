@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_64]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_64 #####
+QUESTION:
+Who directed a movie that Peter Coyote starred in?
+
+PATH_QUERY
+START Peter Coyote
+R1 Ebc831b6d2ddc
+R2 E2d5ef4445cf7
+Execute path; return final tail only.
+
+CONTEXT:
+Peter Coyote | Ebc831b6d2ddc | Jagged Edge
+Jagged Edge | E2d5ef4445cf7 | Richard Marquand
+Jagged Edge | Ea404ddd61ca6 | Joe Eszterhas

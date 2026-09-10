@@ -1,0 +1,19 @@
+{
+  "edge_order_confound": {
+    "handles": "8/8",
+    "handles_hold_errors": 0,
+    "nohandle": "0/8",
+    "nohandle_UNKNOWN": "8/8"
+  },
+  "interpretation": "Handles robust to owned_by-before-city order. Nohandle \u2192 UNKNOWN when order heuristic broken. Prior ood2_nohandle 8/8 was file-order artifact \u2014 DISCARD as capability claim.",
+  "ood_family_locked": {
+    "domiciled_at_handles_composer": "8/8",
+    "domiciled_at_handles_claude": "8/8",
+    "domiciled_at_nohandle_composer": "0/8 UNKNOWN (first OOD run)",
+    "domiciled_at_nohandle_claude": "0/8 wrong edge \u2192 Hold",
+    "stationed_in_handles": "8/8",
+    "stationed_in_nohandle_city_first": "8/8 DISCARD order heuristic",
+    "stationed_in_nohandle_owned_first": "0/8 UNKNOWN (clean)"
+  },
+  "sealrouter": "tools/seal_router.py exact path executor; count demo 3/3"
+}

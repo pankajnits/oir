@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[OIRJ_ISO_SILENT_0]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM ISO_SILENT: same σ on Q and keys. No English. No JOIN. Select country vs city by token equality.
+
+##### ID OIRJ_ISO_SILENT_0 #####
+QUESTION (token-HMAC'd):
+E6df498010ff5 E53a6506e3b14 Eab2f74aa3398 E1c4d734d0266 Efbe2183c12d4 E2437da276f87?
+
+
+CONTEXT:
+{
+  "Efa1d433e1380": [
+    {
+      "E2041e58b56c8": "E39fe2a57cf63",
+      "E98c3f6f90bac": "Edb67519505d2"
+    },
+    {
+      "E2041e58b56c8": "E2437da276f87",
+      "E98c3f6f90bac": "E90591867ba76"
+    },
+    {
+      "E2041e58b56c8": "Ea744b8ebe365",
+      "E98c3f6f90bac": "Eee83040b1197"
+    }
+  ],
+  "E3f53994ff231": [
+    {
+      "E2041e58b56c8": "E90591867ba76",
+      "E6355f4b2caf7": {
+        "E1c4d734d0266": "Ed45dd67a5dfd",
+        "E5f020e483b74": "E5defd5be80b9"
+      }
+    },
+    {
+      "E2041e58b56c8": "Edb67519505d2",
+      "E6355f4b2caf7": {
+        "E1c4d734d0266": "E367bd7f44271",
+        "E5f020e483b74": "Ebe61e20ba377"
+      }
+    },
+    {
+      "E2041e58b56c8": "Eee83040b1197",
+      "E6355f4b2caf7": {
+        "E1c4d734d0266": "Ec3eb507c2fd3",
+        "E5f020e483b74": "Ea1e4472977e6"
+      }
+    }
+  ]
+}

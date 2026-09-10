@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_197 #####
+QUESTION:
+Where did the director of film Bunty Aur Babli graduate from?
+
+CONTEXT:
+I'm Not Mata Hari | director | Benito Perojo
+Trading Paint | director | Karzan Kader
+Shaad Ali | educated at | CF_TAIL_197_LawrenceScho
+Bunty Aur Babli | decoy_link_197 | decoy_mid_197
+decoy_mid_197 | educated at | Lawrence School, Sanawar
+Bunty Aur Babli | director | Shaad Ali
+Karzan Kader | country of citizenship | Sweden
+Benito Perojo | place of birth | Madrid

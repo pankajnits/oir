@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM EXCEPT_NL: sealed cells, readable headers. No SQL. English NOT. One quiz.
+
+##### ID EX_NL_0 #####
+START Ed4defaffa732
+Return the emp_id of the employee who does NOT work at the same org_id as START. Exclude START itself.
+
+CONTEXT:
+TABLE employees
+| emp_id | org_id |
+| --- | --- |
+| Ed660e0b50836 | Ee539b0bdb29c |
+| E51798ca64f6f | Efdd140967553 |
+| Ed4defaffa732 | Ee539b0bdb29c |
+

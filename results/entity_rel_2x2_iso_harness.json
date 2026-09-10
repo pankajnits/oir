@@ -1,0 +1,1270 @@
+{
+  "n": 32,
+  "seed": 20260821,
+  "protocol": "isolation",
+  "source": "data/real/wikidata_ceo_hops_v2.json",
+  "source_public": "Wikidata-derived CEO\u2192company\u2192HQ slice (73 records in-repo)",
+  "keys": "per-item HMAC; OE seals entities only; OO seals entities and relations",
+  "start_in_question": true,
+  "factors": [
+    "entity_lexicality",
+    "relation_lexicality",
+    "path_determinacy"
+  ],
+  "arms": {
+    "OE_UNIQUE": {
+      "ids": [
+        "ER22_OE_UNIQUE_0",
+        "ER22_OE_UNIQUE_1",
+        "ER22_OE_UNIQUE_2",
+        "ER22_OE_UNIQUE_3",
+        "ER22_OE_UNIQUE_4",
+        "ER22_OE_UNIQUE_5",
+        "ER22_OE_UNIQUE_6",
+        "ER22_OE_UNIQUE_7",
+        "ER22_OE_UNIQUE_8",
+        "ER22_OE_UNIQUE_9",
+        "ER22_OE_UNIQUE_10",
+        "ER22_OE_UNIQUE_11",
+        "ER22_OE_UNIQUE_12",
+        "ER22_OE_UNIQUE_13",
+        "ER22_OE_UNIQUE_14",
+        "ER22_OE_UNIQUE_15",
+        "ER22_OE_UNIQUE_16",
+        "ER22_OE_UNIQUE_17",
+        "ER22_OE_UNIQUE_18",
+        "ER22_OE_UNIQUE_19",
+        "ER22_OE_UNIQUE_20",
+        "ER22_OE_UNIQUE_21",
+        "ER22_OE_UNIQUE_22",
+        "ER22_OE_UNIQUE_23",
+        "ER22_OE_UNIQUE_24",
+        "ER22_OE_UNIQUE_25",
+        "ER22_OE_UNIQUE_26",
+        "ER22_OE_UNIQUE_27",
+        "ER22_OE_UNIQUE_28",
+        "ER22_OE_UNIQUE_29",
+        "ER22_OE_UNIQUE_30",
+        "ER22_OE_UNIQUE_31"
+      ],
+      "item_paths": [
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_0/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_1/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_2/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_3/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_4/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_5/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_6/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_7/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_8/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_9/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_10/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_11/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_12/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_13/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_14/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_15/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_16/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_17/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_18/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_19/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_20/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_21/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_22/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_23/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_24/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_25/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_26/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_27/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_28/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_29/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_30/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_UNIQUE/item_31/prompt.txt"
+      ],
+      "sealed_answer": true
+    },
+    "OE_AMBIG": {
+      "ids": [
+        "ER22_OE_AMBIG_0",
+        "ER22_OE_AMBIG_1",
+        "ER22_OE_AMBIG_2",
+        "ER22_OE_AMBIG_3",
+        "ER22_OE_AMBIG_4",
+        "ER22_OE_AMBIG_5",
+        "ER22_OE_AMBIG_6",
+        "ER22_OE_AMBIG_7",
+        "ER22_OE_AMBIG_8",
+        "ER22_OE_AMBIG_9",
+        "ER22_OE_AMBIG_10",
+        "ER22_OE_AMBIG_11",
+        "ER22_OE_AMBIG_12",
+        "ER22_OE_AMBIG_13",
+        "ER22_OE_AMBIG_14",
+        "ER22_OE_AMBIG_15",
+        "ER22_OE_AMBIG_16",
+        "ER22_OE_AMBIG_17",
+        "ER22_OE_AMBIG_18",
+        "ER22_OE_AMBIG_19",
+        "ER22_OE_AMBIG_20",
+        "ER22_OE_AMBIG_21",
+        "ER22_OE_AMBIG_22",
+        "ER22_OE_AMBIG_23",
+        "ER22_OE_AMBIG_24",
+        "ER22_OE_AMBIG_25",
+        "ER22_OE_AMBIG_26",
+        "ER22_OE_AMBIG_27",
+        "ER22_OE_AMBIG_28",
+        "ER22_OE_AMBIG_29",
+        "ER22_OE_AMBIG_30",
+        "ER22_OE_AMBIG_31"
+      ],
+      "item_paths": [
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_0/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_1/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_2/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_3/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_4/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_5/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_6/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_7/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_8/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_9/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_10/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_11/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_12/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_13/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_14/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_15/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_16/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_17/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_18/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_19/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_20/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_21/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_22/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_23/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_24/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_25/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_26/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_27/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_28/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_29/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_30/prompt.txt",
+        "runs/entity_rel_2x2_iso/OE_AMBIG/item_31/prompt.txt"
+      ],
+      "sealed_answer": true
+    },
+    "OO_UNIQUE": {
+      "ids": [
+        "ER22_OO_UNIQUE_0",
+        "ER22_OO_UNIQUE_1",
+        "ER22_OO_UNIQUE_2",
+        "ER22_OO_UNIQUE_3",
+        "ER22_OO_UNIQUE_4",
+        "ER22_OO_UNIQUE_5",
+        "ER22_OO_UNIQUE_6",
+        "ER22_OO_UNIQUE_7",
+        "ER22_OO_UNIQUE_8",
+        "ER22_OO_UNIQUE_9",
+        "ER22_OO_UNIQUE_10",
+        "ER22_OO_UNIQUE_11",
+        "ER22_OO_UNIQUE_12",
+        "ER22_OO_UNIQUE_13",
+        "ER22_OO_UNIQUE_14",
+        "ER22_OO_UNIQUE_15",
+        "ER22_OO_UNIQUE_16",
+        "ER22_OO_UNIQUE_17",
+        "ER22_OO_UNIQUE_18",
+        "ER22_OO_UNIQUE_19",
+        "ER22_OO_UNIQUE_20",
+        "ER22_OO_UNIQUE_21",
+        "ER22_OO_UNIQUE_22",
+        "ER22_OO_UNIQUE_23",
+        "ER22_OO_UNIQUE_24",
+        "ER22_OO_UNIQUE_25",
+        "ER22_OO_UNIQUE_26",
+        "ER22_OO_UNIQUE_27",
+        "ER22_OO_UNIQUE_28",
+        "ER22_OO_UNIQUE_29",
+        "ER22_OO_UNIQUE_30",
+        "ER22_OO_UNIQUE_31"
+      ],
+      "item_paths": [
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_0/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_1/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_2/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_3/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_4/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_5/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_6/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_7/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_8/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_9/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_10/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_11/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_12/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_13/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_14/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_15/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_16/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_17/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_18/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_19/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_20/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_21/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_22/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_23/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_24/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_25/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_26/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_27/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_28/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_29/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_30/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_UNIQUE/item_31/prompt.txt"
+      ],
+      "sealed_answer": true
+    },
+    "OO_AMBIG": {
+      "ids": [
+        "ER22_OO_AMBIG_0",
+        "ER22_OO_AMBIG_1",
+        "ER22_OO_AMBIG_2",
+        "ER22_OO_AMBIG_3",
+        "ER22_OO_AMBIG_4",
+        "ER22_OO_AMBIG_5",
+        "ER22_OO_AMBIG_6",
+        "ER22_OO_AMBIG_7",
+        "ER22_OO_AMBIG_8",
+        "ER22_OO_AMBIG_9",
+        "ER22_OO_AMBIG_10",
+        "ER22_OO_AMBIG_11",
+        "ER22_OO_AMBIG_12",
+        "ER22_OO_AMBIG_13",
+        "ER22_OO_AMBIG_14",
+        "ER22_OO_AMBIG_15",
+        "ER22_OO_AMBIG_16",
+        "ER22_OO_AMBIG_17",
+        "ER22_OO_AMBIG_18",
+        "ER22_OO_AMBIG_19",
+        "ER22_OO_AMBIG_20",
+        "ER22_OO_AMBIG_21",
+        "ER22_OO_AMBIG_22",
+        "ER22_OO_AMBIG_23",
+        "ER22_OO_AMBIG_24",
+        "ER22_OO_AMBIG_25",
+        "ER22_OO_AMBIG_26",
+        "ER22_OO_AMBIG_27",
+        "ER22_OO_AMBIG_28",
+        "ER22_OO_AMBIG_29",
+        "ER22_OO_AMBIG_30",
+        "ER22_OO_AMBIG_31"
+      ],
+      "item_paths": [
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_0/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_1/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_2/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_3/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_4/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_5/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_6/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_7/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_8/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_9/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_10/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_11/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_12/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_13/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_14/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_15/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_16/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_17/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_18/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_19/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_20/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_21/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_22/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_23/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_24/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_25/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_26/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_27/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_28/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_29/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_30/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG/item_31/prompt.txt"
+      ],
+      "sealed_answer": true
+    },
+    "OO_AMBIG_PLAN": {
+      "ids": [
+        "ER22_OO_AMBIG_PLAN_0",
+        "ER22_OO_AMBIG_PLAN_1",
+        "ER22_OO_AMBIG_PLAN_2",
+        "ER22_OO_AMBIG_PLAN_3",
+        "ER22_OO_AMBIG_PLAN_4",
+        "ER22_OO_AMBIG_PLAN_5",
+        "ER22_OO_AMBIG_PLAN_6",
+        "ER22_OO_AMBIG_PLAN_7",
+        "ER22_OO_AMBIG_PLAN_8",
+        "ER22_OO_AMBIG_PLAN_9",
+        "ER22_OO_AMBIG_PLAN_10",
+        "ER22_OO_AMBIG_PLAN_11",
+        "ER22_OO_AMBIG_PLAN_12",
+        "ER22_OO_AMBIG_PLAN_13",
+        "ER22_OO_AMBIG_PLAN_14",
+        "ER22_OO_AMBIG_PLAN_15",
+        "ER22_OO_AMBIG_PLAN_16",
+        "ER22_OO_AMBIG_PLAN_17",
+        "ER22_OO_AMBIG_PLAN_18",
+        "ER22_OO_AMBIG_PLAN_19",
+        "ER22_OO_AMBIG_PLAN_20",
+        "ER22_OO_AMBIG_PLAN_21",
+        "ER22_OO_AMBIG_PLAN_22",
+        "ER22_OO_AMBIG_PLAN_23",
+        "ER22_OO_AMBIG_PLAN_24",
+        "ER22_OO_AMBIG_PLAN_25",
+        "ER22_OO_AMBIG_PLAN_26",
+        "ER22_OO_AMBIG_PLAN_27",
+        "ER22_OO_AMBIG_PLAN_28",
+        "ER22_OO_AMBIG_PLAN_29",
+        "ER22_OO_AMBIG_PLAN_30",
+        "ER22_OO_AMBIG_PLAN_31"
+      ],
+      "item_paths": [
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_0/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_1/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_2/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_3/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_4/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_5/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_6/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_7/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_8/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_9/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_10/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_11/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_12/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_13/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_14/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_15/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_16/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_17/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_18/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_19/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_20/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_21/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_22/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_23/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_24/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_25/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_26/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_27/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_28/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_29/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_30/prompt.txt",
+        "runs/entity_rel_2x2_iso/OO_AMBIG_PLAN/item_31/prompt.txt"
+      ],
+      "sealed_answer": true
+    }
+  },
+  "cases": [
+    {
+      "i": 0,
+      "person": "Michael_Eisner",
+      "hq": "Burbank",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_0",
+        "OE_AMBIG": "ER22_OE_AMBIG_0",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_0",
+        "OO_AMBIG": "ER22_OO_AMBIG_0",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_0"
+      },
+      "gold": "E06fc29a21ac0",
+      "decoy_hq": "Ed2a0d4bfbfb7",
+      "golds": {
+        "OE_UNIQUE": "E06fc29a21ac0",
+        "OE_AMBIG": "E06fc29a21ac0",
+        "OO_UNIQUE": "E06fc29a21ac0",
+        "OO_AMBIG": "E06fc29a21ac0",
+        "OO_AMBIG_PLAN": "E06fc29a21ac0"
+      },
+      "decoys": {
+        "OE_UNIQUE": "Ed2a0d4bfbfb7",
+        "OE_AMBIG": "Ed2a0d4bfbfb7",
+        "OO_UNIQUE": "Ed2a0d4bfbfb7",
+        "OO_AMBIG": "Ed2a0d4bfbfb7",
+        "OO_AMBIG_PLAN": "Ed2a0d4bfbfb7"
+      }
+    },
+    {
+      "i": 1,
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_1",
+        "OE_AMBIG": "ER22_OE_AMBIG_1",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_1",
+        "OO_AMBIG": "ER22_OO_AMBIG_1",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_1"
+      },
+      "gold": "E93d7dcb33f0a",
+      "decoy_hq": "E757aec47da2c",
+      "golds": {
+        "OE_UNIQUE": "E93d7dcb33f0a",
+        "OE_AMBIG": "E93d7dcb33f0a",
+        "OO_UNIQUE": "E93d7dcb33f0a",
+        "OO_AMBIG": "E93d7dcb33f0a",
+        "OO_AMBIG_PLAN": "E93d7dcb33f0a"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E757aec47da2c",
+        "OE_AMBIG": "E757aec47da2c",
+        "OO_UNIQUE": "E757aec47da2c",
+        "OO_AMBIG": "E757aec47da2c",
+        "OO_AMBIG_PLAN": "E757aec47da2c"
+      }
+    },
+    {
+      "i": 2,
+      "person": "Lucian_Grainge",
+      "hq": "Broadway",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_2",
+        "OE_AMBIG": "ER22_OE_AMBIG_2",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_2",
+        "OO_AMBIG": "ER22_OO_AMBIG_2",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_2"
+      },
+      "gold": "Ea229eed7fa98",
+      "decoy_hq": "E2911a2a59e1b",
+      "golds": {
+        "OE_UNIQUE": "Ea229eed7fa98",
+        "OE_AMBIG": "Ea229eed7fa98",
+        "OO_UNIQUE": "Ea229eed7fa98",
+        "OO_AMBIG": "Ea229eed7fa98",
+        "OO_AMBIG_PLAN": "Ea229eed7fa98"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E2911a2a59e1b",
+        "OE_AMBIG": "E2911a2a59e1b",
+        "OO_UNIQUE": "E2911a2a59e1b",
+        "OO_AMBIG": "E2911a2a59e1b",
+        "OO_AMBIG_PLAN": "E2911a2a59e1b"
+      }
+    },
+    {
+      "i": 3,
+      "person": "Vibeke_Frst_Haugen",
+      "hq": "NRK_Marienlyst",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_3",
+        "OE_AMBIG": "ER22_OE_AMBIG_3",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_3",
+        "OO_AMBIG": "ER22_OO_AMBIG_3",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_3"
+      },
+      "gold": "Eb74f3534ee2b",
+      "decoy_hq": "E36bb08e42963",
+      "golds": {
+        "OE_UNIQUE": "Eb74f3534ee2b",
+        "OE_AMBIG": "Eb74f3534ee2b",
+        "OO_UNIQUE": "Eb74f3534ee2b",
+        "OO_AMBIG": "Eb74f3534ee2b",
+        "OO_AMBIG_PLAN": "Eb74f3534ee2b"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E36bb08e42963",
+        "OE_AMBIG": "E36bb08e42963",
+        "OO_UNIQUE": "E36bb08e42963",
+        "OO_AMBIG": "E36bb08e42963",
+        "OO_AMBIG_PLAN": "E36bb08e42963"
+      }
+    },
+    {
+      "i": 4,
+      "person": "Krzysztof_Mamiski",
+      "hq": "Warsaw",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_4",
+        "OE_AMBIG": "ER22_OE_AMBIG_4",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_4",
+        "OO_AMBIG": "ER22_OO_AMBIG_4",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_4"
+      },
+      "gold": "Ee8d316310620",
+      "decoy_hq": "E73d20289d3a8",
+      "golds": {
+        "OE_UNIQUE": "Ee8d316310620",
+        "OE_AMBIG": "Ee8d316310620",
+        "OO_UNIQUE": "Ee8d316310620",
+        "OO_AMBIG": "Ee8d316310620",
+        "OO_AMBIG_PLAN": "Ee8d316310620"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E73d20289d3a8",
+        "OE_AMBIG": "E73d20289d3a8",
+        "OO_UNIQUE": "E73d20289d3a8",
+        "OO_AMBIG": "E73d20289d3a8",
+        "OO_AMBIG_PLAN": "E73d20289d3a8"
+      }
+    },
+    {
+      "i": 5,
+      "person": "David_Lagerholm",
+      "hq": "Stockholm",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_5",
+        "OE_AMBIG": "ER22_OE_AMBIG_5",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_5",
+        "OO_AMBIG": "ER22_OO_AMBIG_5",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_5"
+      },
+      "gold": "Ea724870e3476",
+      "decoy_hq": "E49547dfaea66",
+      "golds": {
+        "OE_UNIQUE": "Ea724870e3476",
+        "OE_AMBIG": "Ea724870e3476",
+        "OO_UNIQUE": "Ea724870e3476",
+        "OO_AMBIG": "Ea724870e3476",
+        "OO_AMBIG_PLAN": "Ea724870e3476"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E49547dfaea66",
+        "OE_AMBIG": "E49547dfaea66",
+        "OO_UNIQUE": "E49547dfaea66",
+        "OO_AMBIG": "E49547dfaea66",
+        "OO_AMBIG_PLAN": "E49547dfaea66"
+      }
+    },
+    {
+      "i": 6,
+      "person": "Bob_Iger",
+      "hq": "Burbank",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_6",
+        "OE_AMBIG": "ER22_OE_AMBIG_6",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_6",
+        "OO_AMBIG": "ER22_OO_AMBIG_6",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_6"
+      },
+      "gold": "Ecfb68440f9dd",
+      "decoy_hq": "E74461ed9048f",
+      "golds": {
+        "OE_UNIQUE": "Ecfb68440f9dd",
+        "OE_AMBIG": "Ecfb68440f9dd",
+        "OO_UNIQUE": "Ecfb68440f9dd",
+        "OO_AMBIG": "Ecfb68440f9dd",
+        "OO_AMBIG_PLAN": "Ecfb68440f9dd"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E74461ed9048f",
+        "OE_AMBIG": "E74461ed9048f",
+        "OO_UNIQUE": "E74461ed9048f",
+        "OO_AMBIG": "E74461ed9048f",
+        "OO_AMBIG_PLAN": "E74461ed9048f"
+      }
+    },
+    {
+      "i": 7,
+      "person": "Sergio_Ermotti",
+      "hq": "Zurich",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_7",
+        "OE_AMBIG": "ER22_OE_AMBIG_7",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_7",
+        "OO_AMBIG": "ER22_OO_AMBIG_7",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_7"
+      },
+      "gold": "Ea2070faa2608",
+      "decoy_hq": "Ef8017ec50704",
+      "golds": {
+        "OE_UNIQUE": "Ea2070faa2608",
+        "OE_AMBIG": "Ea2070faa2608",
+        "OO_UNIQUE": "Ea2070faa2608",
+        "OO_AMBIG": "Ea2070faa2608",
+        "OO_AMBIG_PLAN": "Ea2070faa2608"
+      },
+      "decoys": {
+        "OE_UNIQUE": "Ef8017ec50704",
+        "OE_AMBIG": "Ef8017ec50704",
+        "OO_UNIQUE": "Ef8017ec50704",
+        "OO_AMBIG": "Ef8017ec50704",
+        "OO_AMBIG_PLAN": "Ef8017ec50704"
+      }
+    },
+    {
+      "i": 8,
+      "person": "Samuel_W_Fordyce",
+      "hq": "Kansas_City",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_8",
+        "OE_AMBIG": "ER22_OE_AMBIG_8",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_8",
+        "OO_AMBIG": "ER22_OO_AMBIG_8",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_8"
+      },
+      "gold": "E2ffc4f4eae87",
+      "decoy_hq": "E4a8bd8b54334",
+      "golds": {
+        "OE_UNIQUE": "E2ffc4f4eae87",
+        "OE_AMBIG": "E2ffc4f4eae87",
+        "OO_UNIQUE": "E2ffc4f4eae87",
+        "OO_AMBIG": "E2ffc4f4eae87",
+        "OO_AMBIG_PLAN": "E2ffc4f4eae87"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E4a8bd8b54334",
+        "OE_AMBIG": "E4a8bd8b54334",
+        "OO_UNIQUE": "E4a8bd8b54334",
+        "OO_AMBIG": "E4a8bd8b54334",
+        "OO_AMBIG_PLAN": "E4a8bd8b54334"
+      }
+    },
+    {
+      "i": 9,
+      "person": "Steve_Weed",
+      "hq": "New_Jersey",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_9",
+        "OE_AMBIG": "ER22_OE_AMBIG_9",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_9",
+        "OO_AMBIG": "ER22_OO_AMBIG_9",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_9"
+      },
+      "gold": "E9c6836caac46",
+      "decoy_hq": "E8fb53e65d860",
+      "golds": {
+        "OE_UNIQUE": "E9c6836caac46",
+        "OE_AMBIG": "E9c6836caac46",
+        "OO_UNIQUE": "E9c6836caac46",
+        "OO_AMBIG": "E9c6836caac46",
+        "OO_AMBIG_PLAN": "E9c6836caac46"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E8fb53e65d860",
+        "OE_AMBIG": "E8fb53e65d860",
+        "OO_UNIQUE": "E8fb53e65d860",
+        "OO_AMBIG": "E8fb53e65d860",
+        "OO_AMBIG_PLAN": "E8fb53e65d860"
+      }
+    },
+    {
+      "i": 10,
+      "person": "David_Green",
+      "hq": "Oklahoma_City",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_10",
+        "OE_AMBIG": "ER22_OE_AMBIG_10",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_10",
+        "OO_AMBIG": "ER22_OO_AMBIG_10",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_10"
+      },
+      "gold": "Eee40b2576ac1",
+      "decoy_hq": "E8d8af212754f",
+      "golds": {
+        "OE_UNIQUE": "Eee40b2576ac1",
+        "OE_AMBIG": "Eee40b2576ac1",
+        "OO_UNIQUE": "Eee40b2576ac1",
+        "OO_AMBIG": "Eee40b2576ac1",
+        "OO_AMBIG_PLAN": "Eee40b2576ac1"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E8d8af212754f",
+        "OE_AMBIG": "E8d8af212754f",
+        "OO_UNIQUE": "E8d8af212754f",
+        "OO_AMBIG": "E8d8af212754f",
+        "OO_AMBIG_PLAN": "E8d8af212754f"
+      }
+    },
+    {
+      "i": 11,
+      "person": "Stuart_Parker",
+      "hq": "San_Antonio",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_11",
+        "OE_AMBIG": "ER22_OE_AMBIG_11",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_11",
+        "OO_AMBIG": "ER22_OO_AMBIG_11",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_11"
+      },
+      "gold": "Ee0429107e02a",
+      "decoy_hq": "E7053cf97cabc",
+      "golds": {
+        "OE_UNIQUE": "Ee0429107e02a",
+        "OE_AMBIG": "Ee0429107e02a",
+        "OO_UNIQUE": "Ee0429107e02a",
+        "OO_AMBIG": "Ee0429107e02a",
+        "OO_AMBIG_PLAN": "Ee0429107e02a"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E7053cf97cabc",
+        "OE_AMBIG": "E7053cf97cabc",
+        "OO_UNIQUE": "E7053cf97cabc",
+        "OO_AMBIG": "E7053cf97cabc",
+        "OO_AMBIG_PLAN": "E7053cf97cabc"
+      }
+    },
+    {
+      "i": 12,
+      "person": "Achim_Wei",
+      "hq": "Montabaur",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_12",
+        "OE_AMBIG": "ER22_OE_AMBIG_12",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_12",
+        "OO_AMBIG": "ER22_OO_AMBIG_12",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_12"
+      },
+      "gold": "E934e32a33bea",
+      "decoy_hq": "E688af3cb741d",
+      "golds": {
+        "OE_UNIQUE": "E934e32a33bea",
+        "OE_AMBIG": "E934e32a33bea",
+        "OO_UNIQUE": "E934e32a33bea",
+        "OO_AMBIG": "E934e32a33bea",
+        "OO_AMBIG_PLAN": "E934e32a33bea"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E688af3cb741d",
+        "OE_AMBIG": "E688af3cb741d",
+        "OO_UNIQUE": "E688af3cb741d",
+        "OO_AMBIG": "E688af3cb741d",
+        "OO_AMBIG_PLAN": "E688af3cb741d"
+      }
+    },
+    {
+      "i": 13,
+      "person": "Anne_Lagercrantz",
+      "hq": "Stockholm",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_13",
+        "OE_AMBIG": "ER22_OE_AMBIG_13",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_13",
+        "OO_AMBIG": "ER22_OO_AMBIG_13",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_13"
+      },
+      "gold": "E432948ca9b22",
+      "decoy_hq": "E6720e22bb4a2",
+      "golds": {
+        "OE_UNIQUE": "E432948ca9b22",
+        "OE_AMBIG": "E432948ca9b22",
+        "OO_UNIQUE": "E432948ca9b22",
+        "OO_AMBIG": "E432948ca9b22",
+        "OO_AMBIG_PLAN": "E432948ca9b22"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E6720e22bb4a2",
+        "OE_AMBIG": "E6720e22bb4a2",
+        "OO_UNIQUE": "E6720e22bb4a2",
+        "OO_AMBIG": "E6720e22bb4a2",
+        "OO_AMBIG_PLAN": "E6720e22bb4a2"
+      }
+    },
+    {
+      "i": 14,
+      "person": "Beata_KozowskaChya",
+      "hq": "Warsaw",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_14",
+        "OE_AMBIG": "ER22_OE_AMBIG_14",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_14",
+        "OO_AMBIG": "ER22_OO_AMBIG_14",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_14"
+      },
+      "gold": "E9fb304c3a27f",
+      "decoy_hq": "E640cdde411bb",
+      "golds": {
+        "OE_UNIQUE": "E9fb304c3a27f",
+        "OE_AMBIG": "E9fb304c3a27f",
+        "OO_UNIQUE": "E9fb304c3a27f",
+        "OO_AMBIG": "E9fb304c3a27f",
+        "OO_AMBIG_PLAN": "E9fb304c3a27f"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E640cdde411bb",
+        "OE_AMBIG": "E640cdde411bb",
+        "OO_UNIQUE": "E640cdde411bb",
+        "OO_AMBIG": "E640cdde411bb",
+        "OO_AMBIG_PLAN": "E640cdde411bb"
+      }
+    },
+    {
+      "i": 15,
+      "person": "David_J_Wright",
+      "hq": "Richmond",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_15",
+        "OE_AMBIG": "ER22_OE_AMBIG_15",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_15",
+        "OO_AMBIG": "ER22_OO_AMBIG_15",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_15"
+      },
+      "gold": "E5af8417d904c",
+      "decoy_hq": "E9d5ad7a2c751",
+      "golds": {
+        "OE_UNIQUE": "E5af8417d904c",
+        "OE_AMBIG": "E5af8417d904c",
+        "OO_UNIQUE": "E5af8417d904c",
+        "OO_AMBIG": "E5af8417d904c",
+        "OO_AMBIG_PLAN": "E5af8417d904c"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E9d5ad7a2c751",
+        "OE_AMBIG": "E9d5ad7a2c751",
+        "OO_UNIQUE": "E9d5ad7a2c751",
+        "OO_AMBIG": "E9d5ad7a2c751",
+        "OO_AMBIG_PLAN": "E9d5ad7a2c751"
+      }
+    },
+    {
+      "i": 16,
+      "person": "Topi_Manner",
+      "hq": "Helsinki",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_16",
+        "OE_AMBIG": "ER22_OE_AMBIG_16",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_16",
+        "OO_AMBIG": "ER22_OO_AMBIG_16",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_16"
+      },
+      "gold": "E0849262f5a64",
+      "decoy_hq": "Ed7618dcaaef7",
+      "golds": {
+        "OE_UNIQUE": "E0849262f5a64",
+        "OE_AMBIG": "E0849262f5a64",
+        "OO_UNIQUE": "E0849262f5a64",
+        "OO_AMBIG": "E0849262f5a64",
+        "OO_AMBIG_PLAN": "E0849262f5a64"
+      },
+      "decoys": {
+        "OE_UNIQUE": "Ed7618dcaaef7",
+        "OE_AMBIG": "Ed7618dcaaef7",
+        "OO_UNIQUE": "Ed7618dcaaef7",
+        "OO_AMBIG": "Ed7618dcaaef7",
+        "OO_AMBIG_PLAN": "Ed7618dcaaef7"
+      }
+    },
+    {
+      "i": 17,
+      "person": "Luigi_Ferraris",
+      "hq": "Rome",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_17",
+        "OE_AMBIG": "ER22_OE_AMBIG_17",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_17",
+        "OO_AMBIG": "ER22_OO_AMBIG_17",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_17"
+      },
+      "gold": "E1777ac201839",
+      "decoy_hq": "E558fe5fa823a",
+      "golds": {
+        "OE_UNIQUE": "E1777ac201839",
+        "OE_AMBIG": "E1777ac201839",
+        "OO_UNIQUE": "E1777ac201839",
+        "OO_AMBIG": "E1777ac201839",
+        "OO_AMBIG_PLAN": "E1777ac201839"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E558fe5fa823a",
+        "OE_AMBIG": "E558fe5fa823a",
+        "OO_UNIQUE": "E558fe5fa823a",
+        "OO_AMBIG": "E558fe5fa823a",
+        "OO_AMBIG_PLAN": "E558fe5fa823a"
+      }
+    },
+    {
+      "i": 18,
+      "person": "David_Zaslav",
+      "hq": "New_York_City",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_18",
+        "OE_AMBIG": "ER22_OE_AMBIG_18",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_18",
+        "OO_AMBIG": "ER22_OO_AMBIG_18",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_18"
+      },
+      "gold": "E35209bfb0417",
+      "decoy_hq": "E4f498a5b93aa",
+      "golds": {
+        "OE_UNIQUE": "E35209bfb0417",
+        "OE_AMBIG": "E35209bfb0417",
+        "OO_UNIQUE": "E35209bfb0417",
+        "OO_AMBIG": "E35209bfb0417",
+        "OO_AMBIG_PLAN": "E35209bfb0417"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E4f498a5b93aa",
+        "OE_AMBIG": "E4f498a5b93aa",
+        "OO_UNIQUE": "E4f498a5b93aa",
+        "OO_AMBIG": "E4f498a5b93aa",
+        "OO_AMBIG_PLAN": "E4f498a5b93aa"
+      }
+    },
+    {
+      "i": 19,
+      "person": "William_N_Deramus_Jr",
+      "hq": "Kansas_City",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_19",
+        "OE_AMBIG": "ER22_OE_AMBIG_19",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_19",
+        "OO_AMBIG": "ER22_OO_AMBIG_19",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_19"
+      },
+      "gold": "Eed58f425f51a",
+      "decoy_hq": "E750baf77d7f2",
+      "golds": {
+        "OE_UNIQUE": "Eed58f425f51a",
+        "OE_AMBIG": "Eed58f425f51a",
+        "OO_UNIQUE": "Eed58f425f51a",
+        "OO_AMBIG": "Eed58f425f51a",
+        "OO_AMBIG_PLAN": "Eed58f425f51a"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E750baf77d7f2",
+        "OE_AMBIG": "E750baf77d7f2",
+        "OO_UNIQUE": "E750baf77d7f2",
+        "OO_AMBIG": "E750baf77d7f2",
+        "OO_AMBIG_PLAN": "E750baf77d7f2"
+      }
+    },
+    {
+      "i": 20,
+      "person": "Macon_Foscue_Brock_Jr",
+      "hq": "Chesapeake",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_20",
+        "OE_AMBIG": "ER22_OE_AMBIG_20",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_20",
+        "OO_AMBIG": "ER22_OO_AMBIG_20",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_20"
+      },
+      "gold": "Ebb66e050ab53",
+      "decoy_hq": "E0313322a954f",
+      "golds": {
+        "OE_UNIQUE": "Ebb66e050ab53",
+        "OE_AMBIG": "Ebb66e050ab53",
+        "OO_UNIQUE": "Ebb66e050ab53",
+        "OO_AMBIG": "Ebb66e050ab53",
+        "OO_AMBIG_PLAN": "Ebb66e050ab53"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E0313322a954f",
+        "OE_AMBIG": "E0313322a954f",
+        "OO_UNIQUE": "E0313322a954f",
+        "OO_AMBIG": "E0313322a954f",
+        "OO_AMBIG_PLAN": "E0313322a954f"
+      }
+    },
+    {
+      "i": 21,
+      "person": "Frank_Love",
+      "hq": "Oklahoma_City",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_21",
+        "OE_AMBIG": "ER22_OE_AMBIG_21",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_21",
+        "OO_AMBIG": "ER22_OO_AMBIG_21",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_21"
+      },
+      "gold": "Ea91a05155c10",
+      "decoy_hq": "E466987347f1d",
+      "golds": {
+        "OE_UNIQUE": "Ea91a05155c10",
+        "OE_AMBIG": "Ea91a05155c10",
+        "OO_UNIQUE": "Ea91a05155c10",
+        "OO_AMBIG": "Ea91a05155c10",
+        "OO_AMBIG_PLAN": "Ea91a05155c10"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E466987347f1d",
+        "OE_AMBIG": "E466987347f1d",
+        "OO_UNIQUE": "E466987347f1d",
+        "OO_AMBIG": "E466987347f1d",
+        "OO_AMBIG_PLAN": "E466987347f1d"
+      }
+    },
+    {
+      "i": 22,
+      "person": "Robert_E_Sanchez",
+      "hq": "Coral_Gables",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_22",
+        "OE_AMBIG": "ER22_OE_AMBIG_22",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_22",
+        "OO_AMBIG": "ER22_OO_AMBIG_22",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_22"
+      },
+      "gold": "Efbbdb738a337",
+      "decoy_hq": "E85da32e6e1eb",
+      "golds": {
+        "OE_UNIQUE": "Efbbdb738a337",
+        "OE_AMBIG": "Efbbdb738a337",
+        "OO_UNIQUE": "Efbbdb738a337",
+        "OO_AMBIG": "Efbbdb738a337",
+        "OO_AMBIG_PLAN": "Efbbdb738a337"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E85da32e6e1eb",
+        "OE_AMBIG": "E85da32e6e1eb",
+        "OO_UNIQUE": "E85da32e6e1eb",
+        "OO_AMBIG": "E85da32e6e1eb",
+        "OO_AMBIG_PLAN": "E85da32e6e1eb"
+      }
+    },
+    {
+      "i": 23,
+      "person": "Luka_Mucic",
+      "hq": "Bochum",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_23",
+        "OE_AMBIG": "ER22_OE_AMBIG_23",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_23",
+        "OO_AMBIG": "ER22_OO_AMBIG_23",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_23"
+      },
+      "gold": "E4a4c9080559d",
+      "decoy_hq": "Ea285b8e14db1",
+      "golds": {
+        "OE_UNIQUE": "E4a4c9080559d",
+        "OE_AMBIG": "E4a4c9080559d",
+        "OO_UNIQUE": "E4a4c9080559d",
+        "OO_AMBIG": "E4a4c9080559d",
+        "OO_AMBIG_PLAN": "E4a4c9080559d"
+      },
+      "decoys": {
+        "OE_UNIQUE": "Ea285b8e14db1",
+        "OE_AMBIG": "Ea285b8e14db1",
+        "OO_UNIQUE": "Ea285b8e14db1",
+        "OO_AMBIG": "Ea285b8e14db1",
+        "OO_AMBIG_PLAN": "Ea285b8e14db1"
+      }
+    },
+    {
+      "i": 24,
+      "person": "Freddy_Heineken",
+      "hq": "Amsterdam",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_24",
+        "OE_AMBIG": "ER22_OE_AMBIG_24",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_24",
+        "OO_AMBIG": "ER22_OO_AMBIG_24",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_24"
+      },
+      "gold": "E165081aba8cf",
+      "decoy_hq": "Ed2deb31a44bf",
+      "golds": {
+        "OE_UNIQUE": "E165081aba8cf",
+        "OE_AMBIG": "E165081aba8cf",
+        "OO_UNIQUE": "E165081aba8cf",
+        "OO_AMBIG": "E165081aba8cf",
+        "OO_AMBIG_PLAN": "E165081aba8cf"
+      },
+      "decoys": {
+        "OE_UNIQUE": "Ed2deb31a44bf",
+        "OE_AMBIG": "Ed2deb31a44bf",
+        "OO_UNIQUE": "Ed2deb31a44bf",
+        "OO_AMBIG": "Ed2deb31a44bf",
+        "OO_AMBIG_PLAN": "Ed2deb31a44bf"
+      }
+    },
+    {
+      "i": 25,
+      "person": "Raymond_Watson",
+      "hq": "Burbank",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_25",
+        "OE_AMBIG": "ER22_OE_AMBIG_25",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_25",
+        "OO_AMBIG": "ER22_OO_AMBIG_25",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_25"
+      },
+      "gold": "Ef3b23e8d2d2b",
+      "decoy_hq": "E3f57f89b7a55",
+      "golds": {
+        "OE_UNIQUE": "Ef3b23e8d2d2b",
+        "OE_AMBIG": "Ef3b23e8d2d2b",
+        "OO_UNIQUE": "Ef3b23e8d2d2b",
+        "OO_AMBIG": "Ef3b23e8d2d2b",
+        "OO_AMBIG_PLAN": "Ef3b23e8d2d2b"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E3f57f89b7a55",
+        "OE_AMBIG": "E3f57f89b7a55",
+        "OO_UNIQUE": "E3f57f89b7a55",
+        "OO_AMBIG": "E3f57f89b7a55",
+        "OO_AMBIG_PLAN": "E3f57f89b7a55"
+      }
+    },
+    {
+      "i": 26,
+      "person": "Stacey_Snider",
+      "hq": "Fox_Plaza",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_26",
+        "OE_AMBIG": "ER22_OE_AMBIG_26",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_26",
+        "OO_AMBIG": "ER22_OO_AMBIG_26",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_26"
+      },
+      "gold": "Ed5725c07aa92",
+      "decoy_hq": "E567c0473e229",
+      "golds": {
+        "OE_UNIQUE": "Ed5725c07aa92",
+        "OE_AMBIG": "Ed5725c07aa92",
+        "OO_UNIQUE": "Ed5725c07aa92",
+        "OO_AMBIG": "Ed5725c07aa92",
+        "OO_AMBIG_PLAN": "Ed5725c07aa92"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E567c0473e229",
+        "OE_AMBIG": "E567c0473e229",
+        "OO_UNIQUE": "E567c0473e229",
+        "OO_AMBIG": "E567c0473e229",
+        "OO_AMBIG_PLAN": "E567c0473e229"
+      }
+    },
+    {
+      "i": 27,
+      "person": "John_K_Martin_Jr",
+      "hq": "CNN_Center",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_27",
+        "OE_AMBIG": "ER22_OE_AMBIG_27",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_27",
+        "OO_AMBIG": "ER22_OO_AMBIG_27",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_27"
+      },
+      "gold": "Ea90b95defe94",
+      "decoy_hq": "Ecb4a6c12ae92",
+      "golds": {
+        "OE_UNIQUE": "Ea90b95defe94",
+        "OE_AMBIG": "Ea90b95defe94",
+        "OO_UNIQUE": "Ea90b95defe94",
+        "OO_AMBIG": "Ea90b95defe94",
+        "OO_AMBIG_PLAN": "Ea90b95defe94"
+      },
+      "decoys": {
+        "OE_UNIQUE": "Ecb4a6c12ae92",
+        "OE_AMBIG": "Ecb4a6c12ae92",
+        "OO_UNIQUE": "Ecb4a6c12ae92",
+        "OO_AMBIG": "Ecb4a6c12ae92",
+        "OO_AMBIG_PLAN": "Ecb4a6c12ae92"
+      }
+    },
+    {
+      "i": 28,
+      "person": "Richard_Gordon_Handover",
+      "hq": "Swindon",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_28",
+        "OE_AMBIG": "ER22_OE_AMBIG_28",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_28",
+        "OO_AMBIG": "ER22_OO_AMBIG_28",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_28"
+      },
+      "gold": "E38106caa6de8",
+      "decoy_hq": "E9a7608bd37d4",
+      "golds": {
+        "OE_UNIQUE": "E38106caa6de8",
+        "OE_AMBIG": "E38106caa6de8",
+        "OO_UNIQUE": "E38106caa6de8",
+        "OO_AMBIG": "E38106caa6de8",
+        "OO_AMBIG_PLAN": "E38106caa6de8"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E9a7608bd37d4",
+        "OE_AMBIG": "E9a7608bd37d4",
+        "OO_UNIQUE": "E9a7608bd37d4",
+        "OO_AMBIG": "E9a7608bd37d4",
+        "OO_AMBIG_PLAN": "E9a7608bd37d4"
+      }
+    },
+    {
+      "i": 29,
+      "person": "Tom_Buhrow",
+      "hq": "Cologne",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_29",
+        "OE_AMBIG": "ER22_OE_AMBIG_29",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_29",
+        "OO_AMBIG": "ER22_OO_AMBIG_29",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_29"
+      },
+      "gold": "E8d07ac036143",
+      "decoy_hq": "E4f9e2f49d2ae",
+      "golds": {
+        "OE_UNIQUE": "E8d07ac036143",
+        "OE_AMBIG": "E8d07ac036143",
+        "OO_UNIQUE": "E8d07ac036143",
+        "OO_AMBIG": "E8d07ac036143",
+        "OO_AMBIG_PLAN": "E8d07ac036143"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E4f9e2f49d2ae",
+        "OE_AMBIG": "E4f9e2f49d2ae",
+        "OO_UNIQUE": "E4f9e2f49d2ae",
+        "OO_AMBIG": "E4f9e2f49d2ae",
+        "OO_AMBIG_PLAN": "E4f9e2f49d2ae"
+      }
+    },
+    {
+      "i": 30,
+      "person": "Mark_T_Bertolini",
+      "hq": "Hartford",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_30",
+        "OE_AMBIG": "ER22_OE_AMBIG_30",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_30",
+        "OO_AMBIG": "ER22_OO_AMBIG_30",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_30"
+      },
+      "gold": "E047eb8269a27",
+      "decoy_hq": "Ea91da46df188",
+      "golds": {
+        "OE_UNIQUE": "E047eb8269a27",
+        "OE_AMBIG": "E047eb8269a27",
+        "OO_UNIQUE": "E047eb8269a27",
+        "OO_AMBIG": "E047eb8269a27",
+        "OO_AMBIG_PLAN": "E047eb8269a27"
+      },
+      "decoys": {
+        "OE_UNIQUE": "Ea91da46df188",
+        "OE_AMBIG": "Ea91da46df188",
+        "OO_UNIQUE": "Ea91da46df188",
+        "OO_AMBIG": "Ea91da46df188",
+        "OO_AMBIG_PLAN": "Ea91da46df188"
+      }
+    },
+    {
+      "i": 31,
+      "person": "Moshe_Zana",
+      "hq": "Lod_Railway_Station",
+      "ids": {
+        "OE_UNIQUE": "ER22_OE_UNIQUE_31",
+        "OE_AMBIG": "ER22_OE_AMBIG_31",
+        "OO_UNIQUE": "ER22_OO_UNIQUE_31",
+        "OO_AMBIG": "ER22_OO_AMBIG_31",
+        "OO_AMBIG_PLAN": "ER22_OO_AMBIG_PLAN_31"
+      },
+      "gold": "Ed952835710d5",
+      "decoy_hq": "E6654afc85e26",
+      "golds": {
+        "OE_UNIQUE": "Ed952835710d5",
+        "OE_AMBIG": "Ed952835710d5",
+        "OO_UNIQUE": "Ed952835710d5",
+        "OO_AMBIG": "Ed952835710d5",
+        "OO_AMBIG_PLAN": "Ed952835710d5"
+      },
+      "decoys": {
+        "OE_UNIQUE": "E6654afc85e26",
+        "OE_AMBIG": "E6654afc85e26",
+        "OO_UNIQUE": "E6654afc85e26",
+        "OO_AMBIG": "E6654afc85e26",
+        "OO_AMBIG_PLAN": "E6654afc85e26"
+      }
+    }
+  ],
+  "note": "EE/EO cells live in factorial_2x2_iso_gpt56.json (same people, start in q)."
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_14]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_14 #####
+QUESTION:
+Who directed a movie that Marlon Brando starred in?
+
+PATH_QUERY
+START Marlon Brando
+R1 Efee363e8963b
+R2 E654c02c6d0d0
+Execute path; return final tail only.
+
+CONTEXT:
+Marlon Brando | Efee363e8963b | The Men
+The Men | E654c02c6d0d0 | Fred Zinnemann
+The Men | Eb2b59d4ca926 | Carl Foreman

@@ -1,0 +1,30 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[PB_VAULT_EQ_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM VAULT_EQ: sealed markdown tables; same σ as Q; equality recipe; no JOIN.
+
+##### ID PB_VAULT_EQ_4 #####
+QUESTION (token-HMAC'd):
+E7ad8d4b730c4 E2fe3e9bc164d E9e1f0d5b0438 E3c4d7cdcd7f7 Ef76f993de285 Ea1a3e021eed7?
+
+PROTOCOL (English; do not decrypt):
+- QUESTION, SCHEMA, and CONTEXT (if present) use the same encoding.
+- Identical tokens are the same entity or the same field (equality, not English).
+- Walk by token equality. If more than one reading is possible, UNKNOWN.
+No JOIN/PATH is given.
+
+CONTEXT:
+TABLE E8aa9e6c1c1d3
+| Ebc612e2dbcaa | E0b6e3f0d5e97 |
+| --- | --- |
+| Ea1a3e021eed7 | E9ce3c7e790c4 |
+| Ee178dd30da1d | Ede3c515a807d |
+| Ead65ba5d58ab | E4204565ba7eb |
+
+TABLE Ede68b6646283
+| Ebc612e2dbcaa | E5607ca51bba6 | E3c4d7cdcd7f7 |
+| --- | --- | --- |
+| E9ce3c7e790c4 | E3e0adb654a3b | E8a2117a6908e |
+| E4204565ba7eb | Eefc572c062c1 | E714088062177 |
+| Ede3c515a807d | E50cf220cedce | Ec485c8a15620 |

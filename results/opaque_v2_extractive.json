@@ -1,0 +1,109 @@
+{
+  "n": 12,
+  "summary": {
+    "EXTRACTIVE_pass": "11/12",
+    "policy_EXTRACTIVE": "6/6",
+    "feta_EXTRACTIVE": "5/6",
+    "mean_rubric": 0.812,
+    "mean_retrieve_hit": 1.0
+  },
+  "rows": [
+    {
+      "id": "SUB_HR_0",
+      "doc": "hr_handbook",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 1.0,
+      "extractive_pass": true,
+      "plain_preview": "parental leave\n- primary caregiver: 12 week paid parental leave.\n- secondary caregiver: 4 week paid parental leave. || -"
+    },
+    {
+      "id": "SUB_HR_1",
+      "doc": "hr_handbook",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 1.0,
+      "extractive_pass": true,
+      "plain_preview": "blackout date\n- no pto is approved during the annual inventory week (e93517ddeeb49 full week of december),\nexcept for do"
+    },
+    {
+      "id": "SUB_SUP_0",
+      "doc": "support_kb",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 1.0,
+      "extractive_pass": true,
+      "plain_preview": "two-factor authentication\n- 2fa is required for all admin roles.\n- supported method: authenticator app and hardware secu"
+    },
+    {
+      "id": "SUB_SUP_1",
+      "doc": "support_kb",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 1.0,
+      "extractive_pass": true,
+      "plain_preview": "locked account\n- after 5 failed attempt, the account lock for 30 minutes.\n- admin can unlock immediately from admin > us"
+    },
+    {
+      "id": "SUB_PRIV_0",
+      "doc": "privacy_policy",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 1.0,
+      "extractive_pass": true,
+      "plain_preview": "3. retention\naccount profile data is retained for 24 month after account closure.\nbilling record are retained for 7 year"
+    },
+    {
+      "id": "SUB_PRIV_1",
+      "doc": "privacy_policy",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 1.0,
+      "extractive_pass": true,
+      "plain_preview": "4. international transfer\ncustomer data may be processed in the united state and germany.\nstandard contractual clause ap"
+    },
+    {
+      "id": "FETA_18904",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 0.75,
+      "extractive_pass": true,
+      "plain_preview": "annette taddeo\nparty | party | candidate | vote | %\n- | republican | rick scott/e5c53d8f72b63 l\u00f3e7d431a811fc8 | 2,e22d7e"
+    },
+    {
+      "id": "FETA_19172",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 0.75,
+      "extractive_pass": true,
+      "plain_preview": "1986 all japan endurance championship\nround | circuit | winning team\nround | circuit | winning driver\n1 | suzuka circuit"
+    },
+    {
+      "id": "FETA_20797",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 0.75,
+      "extractive_pass": true,
+      "plain_preview": "1990 civic forum leadership election\ncandidate | vote | - | -\nv\u00e1e9fa8e7bea727 klau | 115 | 68.86 | -\nmartin palou\u0161 | 52 "
+    },
+    {
+      "id": "FETA_19186",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 0.75,
+      "extractive_pass": true,
+      "plain_preview": "john nygren\nparty | party | candidate | vote | % | \u00b1\n- | republican | john nygren (e2b0e63168b8a) | 16,ef86602aa6475 | 5"
+    },
+    {
+      "id": "FETA_13738",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 0.5,
+      "extractive_pass": true,
+      "plain_preview": "ryan kwanten\nyear | title | role | note\n1994 | signal one | kid | -\n2002 | the junction boys | claude gearheart | televi"
+    },
+    {
+      "id": "FETA_7975",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "extractive_rubric": 0.25,
+      "extractive_pass": false,
+      "plain_preview": "kansa city comet (e52fd841d5d69\u2013e183375e6bdba)\nyear | division | league | reg. season | playoff | avg. attendance\n1981/e"
+    }
+  ],
+  "note": "Deterministic extractive = join top-3 opaque-retrieved sealed chunks; no LLM. Mechanism: IR not sealed reasoning."
+}

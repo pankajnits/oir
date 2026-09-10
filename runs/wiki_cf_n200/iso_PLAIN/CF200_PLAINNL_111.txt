@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_111 #####
+QUESTION:
+Which country the director of film I Live On Danger is from?
+
+CONTEXT:
+Xiahou Yuan | country of citizenship | Eastern Han Dynasty
+decoy_mid_111 | country of citizenship | America
+I Live on Danger | director | Sam White
+Liu Xuan | father | Liu Shan
+Liu Shan | place of death | Luoyang
+Sam White | country of citizenship | CF_TAIL_111_America
+Xiahou Wei | father | Xiahou Yuan
+I Live on Danger | decoy_link_111 | decoy_mid_111

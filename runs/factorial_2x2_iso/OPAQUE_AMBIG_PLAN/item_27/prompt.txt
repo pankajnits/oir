@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_27]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_27 #####
+QUESTION:
+What city is the headquarters of the company led by John_K_Martin_Jr?
+
+PATH_QUERY
+START John_K_Martin_Jr
+R1 E4c1ee4f3dd51
+R2 E5058a4002f3c
+Execute path; return final tail only.
+
+CONTEXT:
+John_K_Martin_Jr | E4c1ee4f3dd51 | Turner_Broadcasting_System
+Turner_Broadcasting_System | E5058a4002f3c | CNN_Center
+John_K_Martin_Jr | E8be74dfc518f | WHSmith
+WHSmith | Ef1c40e9e82e0 | Swindon

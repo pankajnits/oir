@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_4]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_4 #####
+QUESTION:
+Who directed a movie that Jennifer Connelly starred in?
+
+PATH_QUERY
+START Jennifer Connelly
+R1 E6ac844b8ad35
+R2 E4658470bd72e
+Execute path; return final tail only.
+
+CONTEXT:
+Jennifer Connelly | E6ac844b8ad35 | The Hot Spot
+The Hot Spot | E4658470bd72e | Dennis Hopper
+The Hot Spot | Ed8ef74cf76eb | Charles Williams

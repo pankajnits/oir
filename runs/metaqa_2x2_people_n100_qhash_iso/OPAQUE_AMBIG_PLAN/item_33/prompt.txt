@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_33]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_33 #####
+QUESTION:
+Who E72c23be2ade2 a E24211270197c E4e5a9d38e73b [Toni Collette] E2bbdf5d72ea4 E8de42f2f6334?
+
+PATH_QUERY
+START Toni Collette
+R1 Ed0f735445aa5
+R2 E5661a3ee7e2f
+Execute path; return final tail only.
+
+CONTEXT:
+Toni Collette | Ed0f735445aa5 | Connie and Carla
+Connie and Carla | E5661a3ee7e2f | Michael Lembeck
+Connie and Carla | Eda6caf0da3c7 | Nia Vardalos

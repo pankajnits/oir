@@ -1,0 +1,60 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM JSON_KEY_LEG: same sealed-key JSON + English→key legend. No JOIN. Start token is in CONTEXT.
+
+##### ID FD2_JSON_KEY_LEG_0 #####
+KEY_LEGEND (English name → sealed JSON key):
+employees = E9ede64de6c6b
+orgs = E34a414b78b8e
+id = Eddc513f32ca9
+employer = E4223fbe49889
+hq = Eb753ca416d68
+city = E88bb97e873bf
+country = E40e4eda039dd
+
+START E8788c020caec
+From START, return the nested country atom.
+
+CONTEXT:
+{
+  "E9ede64de6c6b": [
+    {
+      "Eddc513f32ca9": "Ed669a228e739",
+      "E4223fbe49889": "E90d9211098ed"
+    },
+    {
+      "Eddc513f32ca9": "Ecd7412b95977",
+      "E4223fbe49889": "E90e2fc56a354"
+    },
+    {
+      "Eddc513f32ca9": "E8788c020caec",
+      "E4223fbe49889": "E9e6a43068596"
+    }
+  ],
+  "E34a414b78b8e": [
+    {
+      "Eddc513f32ca9": "E90e2fc56a354",
+      "Eb753ca416d68": {
+        "E88bb97e873bf": "E160efc82b9a9",
+        "E40e4eda039dd": "Edc50c13f9cfb"
+      }
+    },
+    {
+      "Eddc513f32ca9": "E90d9211098ed",
+      "Eb753ca416d68": {
+        "E88bb97e873bf": "Efdb644f517d4",
+        "E40e4eda039dd": "E86dc3a194b37"
+      }
+    },
+    {
+      "Eddc513f32ca9": "E9e6a43068596",
+      "Eb753ca416d68": {
+        "E88bb97e873bf": "Ea4bae57466dc",
+        "E40e4eda039dd": "Efc78fdf06232"
+      }
+    }
+  ]
+}
+

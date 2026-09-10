@@ -1,0 +1,93 @@
+{
+  "model": "auto",
+  "summary": {
+    "DECOY_MUT": {
+      "score": "6/6",
+      "wilson": {
+        "k": 6,
+        "n": 6,
+        "acc": 1.0,
+        "ci95": [
+          0.6097,
+          1.0
+        ],
+        "display": "6/6 [0.61,1.00]"
+      },
+      "gold": 6,
+      "trap": 0,
+      "unknown": 0,
+      "missing": 0,
+      "other": 0
+    }
+  },
+  "golds_all_differ": null,
+  "nonclaim": "PATH+SINK_TYPE given. Not G-Rev1. Type-only fails on these items.",
+  "rows": [
+    {
+      "arm": "DECOY_MUT",
+      "i": 0,
+      "id": "GREV2_DECOY_0",
+      "gold": "E610542dbc3c0",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_0/prompt.txt",
+      "pred": "E610542dbc3c0",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 1,
+      "id": "GREV2_DECOY_1",
+      "gold": "Ea7760e4d2116",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_1/prompt.txt",
+      "pred": "Ea7760e4d2116",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 2,
+      "id": "GREV2_DECOY_2",
+      "gold": "E2c8e49d4a5f0",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_2/prompt.txt",
+      "pred": "E2c8e49d4a5f0",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 3,
+      "id": "GREV2_DECOY_3",
+      "gold": "Ea7083a5c199a",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_3/prompt.txt",
+      "pred": "Ea7083a5c199a",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 4,
+      "id": "GREV2_DECOY_4",
+      "gold": "Ed761b15723ec",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_4/prompt.txt",
+      "pred": "Ed761b15723ec",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "DECOY_MUT",
+      "i": 5,
+      "id": "GREV2_DECOY_5",
+      "gold": "E9d1a7ae1fdcc",
+      "iso": true,
+      "path": "runs/grev2_decoy_mut/item_5/prompt.txt",
+      "pred": "E9d1a7ae1fdcc",
+      "kind": "gold",
+      "ok": true
+    }
+  ]
+}

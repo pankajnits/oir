@@ -1,0 +1,147 @@
+{
+  "model": "claude_sonnet",
+  "n": 12,
+  "summary": {
+    "PLAIN_PROG": "12/12",
+    "SEAL_PROG": "12/12",
+    "SEAL_NL": "0/12",
+    "SEAL_NL_company_stop": "0/12",
+    "SealRouter_ceiling": "12/12"
+  },
+  "rows": [
+    {
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Prague",
+      "pred_sealprog": "Ee138565326cb",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Chesapeake",
+      "pred_sealprog": "E1b90a1720bdc",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Kansas_City",
+      "pred_sealprog": "E886a29de95cb",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 3,
+      "person": "Bob_Chapek",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Burbank",
+      "pred_sealprog": "E7d9472e4ebba",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Prague",
+      "pred_sealprog": "Ee138565326cb",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 5,
+      "person": "Hubert_Joly",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Richfield",
+      "pred_sealprog": "E3a6eb92c7e79",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Cologne",
+      "pred_sealprog": "E685231d46aa2",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Prague",
+      "pred_sealprog": "Ee138565326cb",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 8,
+      "person": "Catherine_Tait",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Ottawa",
+      "pred_sealprog": "E047d8cbfb065",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 9,
+      "person": "Achim_Wei",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Montabaur",
+      "pred_sealprog": "E3549aba35879",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 10,
+      "person": "Walt_Disney",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Burbank",
+      "pred_sealprog": "E7d9472e4ebba",
+      "pred_sealnl": "UNKNOWN"
+    },
+    {
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "plain_ok": true,
+      "sealprog_ok": true,
+      "sealnl_ok": false,
+      "sealnl_company_stop": false,
+      "pred_plain": "Kansas_City",
+      "pred_sealprog": "E886a29de95cb",
+      "pred_sealnl": "UNKNOWN"
+    }
+  ],
+  "reply_dir": "results/ceiling_replies_claude_sonnet",
+  "verdict": "SUPPORTED: PLAIN\u2248SEAL_PROG \u226b SEAL_NL"
+}

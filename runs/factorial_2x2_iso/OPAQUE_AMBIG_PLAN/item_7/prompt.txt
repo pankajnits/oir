@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_7]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_7 #####
+QUESTION:
+What city is the headquarters of the company led by Sergio_Ermotti?
+
+PATH_QUERY
+START Sergio_Ermotti
+R1 E3903c6ee227d
+R2 E9ced7a93a53c
+Execute path; return final tail only.
+
+CONTEXT:
+Sergio_Ermotti | E3903c6ee227d | UBS
+UBS | E9ced7a93a53c | Zurich
+Sergio_Ermotti | E215638f82863 | Kansas_City_Southern
+Kansas_City_Southern | E265823d3a97f | Kansas_City

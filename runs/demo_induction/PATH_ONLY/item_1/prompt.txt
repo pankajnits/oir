@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM PATH: gold PATH binder ceiling; one item.
+
+Follow PATH over sealed CONTEXT. Output final sealed atom only.
+
+##### ID DI_PATH_1 #####
+PATH_QUERY
+START Eff3e3959d777
+R1 E52139c3202c8
+R2 E7746fff2bd73
+Execute path; return final tail only.
+
+CONTEXT:
+Eba1a1d8c7b4a | E858849c62adb | E47f08d103c91
+Eff3e3959d777 | E52139c3202c8 | Eba1a1d8c7b4a
+E44de96c92509 | E932ffa426291 | Eba1a1d8c7b4a
+Eba1a1d8c7b4a | E7746fff2bd73 | E38dce175e91d
+E26cab31b58f1 | E7746fff2bd73 | E1f8741df39be
+Ec3bfb6cd2328 | E52139c3202c8 | E26cab31b58f1
+E47f08d103c91 | E932ffa426291 | Eba1a1d8c7b4a
+Eba1a1d8c7b4a | E2e6e5420ef6e | E44de96c92509
+

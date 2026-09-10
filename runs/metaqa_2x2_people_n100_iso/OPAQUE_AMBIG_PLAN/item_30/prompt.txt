@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_30]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_30 #####
+QUESTION:
+Who directed a movie that Josh Hutcherson starred in?
+
+PATH_QUERY
+START Josh Hutcherson
+R1 E6ac85361c182
+R2 Ef82232428738
+Execute path; return final tail only.
+
+CONTEXT:
+Josh Hutcherson | E6ac85361c182 | Little Manhattan
+Little Manhattan | Ef82232428738 | Mark Levin
+Little Manhattan | E91249f8559b3 | Jennifer Flackett

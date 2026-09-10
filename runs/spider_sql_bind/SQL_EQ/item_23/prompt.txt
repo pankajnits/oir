@@ -1,0 +1,50 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_23]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_23 #####
+DB: store_product
+SCHEMA (English name → sealed sqlite identifier):
+product = E710244b70bb6
+product_id = Ec45a30cfe9e2
+dimensions = Ea65bbc023ed1
+dpi = E8cdbcec350f1
+pages_per_minute_color = E58bb368bc08b
+max_page_size = E957b5ebad1f0
+interface = E1f1fa6066197
+store = Ebe9054d47c15
+Store_ID = E0c7eb33056d7
+Store_Name = Ea4cf83938273
+Type = E0204ef50c93f
+Area_size = Ed035887fddd7
+Number_of_product_category = E8ab3cc684f4a
+Ranking = E43b1ac513f02
+district = E4543911788d7
+District_ID = Ead0c11bafb73
+District_name = E00d85c9d80fd
+Headquartered_City = Ec31a90a48dad
+City_Population = Ec9c4d7bebdea
+City_Area = E21c3fddbfd43
+store_product = E8906ff13cd44
+Product_ID = E9efdaee914d5
+store_district = Ea0560c01476f
+
+product(product_id, product, dimensions, dpi, pages_per_minute_color, max_page_size, interface)
+store(Store_ID, Store_Name, Type, Area_size, Number_of_product_category, Ranking)
+district(District_ID, District_name, Headquartered_City, City_Population, City_Area)
+store_product(Store_ID, Product_ID)
+store_district(Store_ID, District_ID)
+
+QUESTION:
+Find the names of districts where have both Ec31a90a48dad mall and village Ea0560c01476f E0204ef50c93f stores.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

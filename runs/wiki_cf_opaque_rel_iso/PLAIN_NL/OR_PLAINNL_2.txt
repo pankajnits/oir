@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_2 #####
+QUESTION:
+What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?
+
+CONTEXT:
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+David Lynch | place of birth | Missoula, Montana
+decoy_mid_2 | award received | Myanmar Motion Picture Academy Awards
+Wearing Velvet Slippers under a Golden Umbrella | decoy_link_2 | decoy_mid_2
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Ioan S. Nenițescu | place of birth | Galați
+Ronnie Rocket | director | David Lynch
+Wunna | award received | CF_TAIL_2_MyanmarMotio

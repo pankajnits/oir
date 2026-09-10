@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_22]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_22 #####
+QUESTION:
+What city is the headquarters of the company led by Robert_E_Sanchez?
+
+PATH_QUERY
+START Robert_E_Sanchez
+R1 E459b9e808bad
+R2 E4a39e0aa768b
+Execute path; return final tail only.
+
+CONTEXT:
+Robert_E_Sanchez | E459b9e808bad | Ryder
+Ryder | E4a39e0aa768b | Coral_Gables
+Robert_E_Sanchez | E527fc020b91a | Vonovia
+Vonovia | E69b08969296d | Bochum

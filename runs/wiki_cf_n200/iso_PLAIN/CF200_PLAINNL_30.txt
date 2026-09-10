@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_30 #####
+QUESTION:
+When is Flavius Justus's father's birthday?
+
+CONTEXT:
+Flavius Justus | father | Josephus
+Hugh le Despenser | cause of death | hanged, drawn and quartered
+Josephus | date of birth | CF_TAIL_30_37
+Edward le Despenser | father | Hugh le Despenser
+Jessica Mauboy | place of birth | Darwin
+decoy_mid_30 | date of birth | 37
+Flavius Justus | decoy_link_30 | decoy_mid_30
+"Never Be the Same | performer | Jessica Mauboy

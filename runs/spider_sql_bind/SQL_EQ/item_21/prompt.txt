@@ -1,0 +1,42 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_21]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_21 #####
+DB: loan_1
+SCHEMA (English name → sealed sqlite identifier):
+bank = Ed83158eee46b
+branch_ID = Ea20b08efce46
+bname = Ec30d252114cc
+no_of_customers = E827f48b2e1b4
+city = E41974c408c3b
+state = E72cdfe0e80de
+customer = E6f9208af87f3
+cust_ID = Ed9bc3af02c6c
+cust_name = E010b613fa9f0
+acc_type = E978c07dcd2c0
+acc_bal = E3b2dd76d96da
+no_of_loans = E1d94411b6411
+credit_score = E78a8e30cbe7a
+loan = E8849db67d644
+loan_ID = E185069d0f956
+loan_type = E31af667a97f8
+amount = Eb3a78e1b4bcc
+
+bank(branch_ID, bname, no_of_customers, city, state)
+customer(cust_ID, cust_name, acc_type, acc_bal, no_of_loans, credit_score, branch_ID, state)
+loan(loan_ID, loan_type, cust_ID, branch_ID, amount)
+
+QUESTION:
+Find the E010b613fa9f0 of Ed83158eee46b Ea20b08efce46 that provided the greatest total Eb3a78e1b4bcc of E1d94411b6411 to E827f48b2e1b4 with E78a8e30cbe7a is less than 100.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

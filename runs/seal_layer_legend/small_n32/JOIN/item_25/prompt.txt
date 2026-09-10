@@ -1,0 +1,56 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_SMALL_JOIN_25]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM JOIN: layer bound START, HMAC'd Q, HMAC'd JSON keys+values, attached JOIN.
+
+##### ID SLL_SMALL_JOIN_25 #####
+QUESTION (token-HMAC'd):
+Eab5c81eb276b E56990bd336a6 Eaaa275730b35 E417eeca8767c E46d2d55f20e8 E20059bcd963a?
+
+JOIN_QUERY
+START E20059bcd963a
+In array Ebb669efffa0b, match E155813375afd = START, take Ecf961623b05f.
+In array E1b20145b40ee, match E155813375afd = that employer, take E4d5fb98ec2c1.E9c61fa44fc10.
+Return that atom.
+
+CONTEXT:
+{
+  "Ebb669efffa0b": [
+    {
+      "E155813375afd": "E20059bcd963a",
+      "Ecf961623b05f": "E26fa617c696f"
+    },
+    {
+      "E155813375afd": "E2cf46c78f5fc",
+      "Ecf961623b05f": "E26fa617c696f"
+    },
+    {
+      "E155813375afd": "Ee2474975d10a",
+      "Ecf961623b05f": "Efd23dd2b444d"
+    }
+  ],
+  "E1b20145b40ee": [
+    {
+      "E155813375afd": "E26fa617c696f",
+      "E4d5fb98ec2c1": {
+        "Ebf923eaabeb4": "E135fc3d04083",
+        "E9c61fa44fc10": "Ea443a24ef904"
+      }
+    },
+    {
+      "E155813375afd": "Efd23dd2b444d",
+      "E4d5fb98ec2c1": {
+        "Ebf923eaabeb4": "E5ea43beff55e",
+        "E9c61fa44fc10": "E124fbc0bf247"
+      }
+    },
+    {
+      "E155813375afd": "E26fa617c696f",
+      "E4d5fb98ec2c1": {
+        "Ebf923eaabeb4": "E135fc3d04083",
+        "E9c61fa44fc10": "Ea443a24ef904"
+      }
+    }
+  ]
+}

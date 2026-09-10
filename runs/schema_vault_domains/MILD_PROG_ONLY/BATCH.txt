@@ -1,0 +1,317 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM MILD_PROG: readable column names (schema known), sealed cells, JOIN on named columns + composite keys.
+
+##### ID SV_MILDPROG_0 #####
+JOIN_QUERY (composite key)
+K1 patient_id = E4e56731f140f
+K2 encounter_date = E15f3359a7726
+JOIN encounters.patient_id = patients.patient_id
+JOIN conditions.enc_id = encounters.enc_id
+Filter encounters.encounter_date = K2; return conditions.condition_code.
+
+CONTEXT:
+TABLE patients
+| patient_id | birth_year |
+| --- | --- |
+| E6136dfff5365 | Ec3dfb3b5352b |
+| E4e56731f140f | E65387fee0f6f |
+
+TABLE encounters
+| enc_id | patient_id | encounter_date | practitioner_id |
+| --- | --- | --- | --- |
+| Eab4fcb414e8a | E4e56731f140f | E15f3359a7726 | Eb86f3f2c527e |
+| Eb04589264fe2 | E6136dfff5365 | E15f3359a7726 | Ee862006792d5 |
+| Ec8c8097a2e1e | E4e56731f140f | E5ce5a4e37049 | Ec7040ac02ca8 |
+
+TABLE conditions
+| enc_id | condition_code | status |
+| --- | --- | --- |
+| Ec8c8097a2e1e | Ec47929584edf | E2d9f0da89b73 |
+| Eb04589264fe2 | E1d1c605f8520 | E30817ada7949 |
+| Eab4fcb414e8a | E7cd5665b4f4e | E30817ada7949 |
+
+##### ID SV_MILDPROG_1 #####
+JOIN_QUERY (composite key)
+K1 patient_id = E79cd984a4bb1
+K2 encounter_date = Ebbcc45499d90
+JOIN encounters.patient_id = patients.patient_id
+JOIN conditions.enc_id = encounters.enc_id
+Filter encounters.encounter_date = K2; return conditions.condition_code.
+
+CONTEXT:
+TABLE patients
+| patient_id | birth_year |
+| --- | --- |
+| E9ab155609508 | Ef12e49268aee |
+| E79cd984a4bb1 | E185f413034fa |
+
+TABLE encounters
+| enc_id | patient_id | encounter_date | practitioner_id |
+| --- | --- | --- | --- |
+| E3bbd29e2b71f | E9ab155609508 | Ebbcc45499d90 | E390722b3fa36 |
+| Ef9d00714fd81 | E79cd984a4bb1 | E252135dcb9ed | E2528544bfe90 |
+| E577f6086faa1 | E79cd984a4bb1 | Ebbcc45499d90 | E1564ab9e0e18 |
+
+TABLE conditions
+| enc_id | condition_code | status |
+| --- | --- | --- |
+| Ef9d00714fd81 | E7c43a585c548 | E2d9f0da89b73 |
+| E577f6086faa1 | E3d6290904d79 | E30817ada7949 |
+| E3bbd29e2b71f | E23754f19f2de | E30817ada7949 |
+
+##### ID SV_MILDPROG_2 #####
+JOIN_QUERY (composite key)
+K1 patient_id = E1326769ea60e
+K2 encounter_date = E700b9dccd5d1
+JOIN encounters.patient_id = patients.patient_id
+JOIN conditions.enc_id = encounters.enc_id
+Filter encounters.encounter_date = K2; return conditions.condition_code.
+
+CONTEXT:
+TABLE patients
+| patient_id | birth_year |
+| --- | --- |
+| E1326769ea60e | E8c8e593e05b9 |
+| Ebad488a0b109 | E2b099261ceb7 |
+
+TABLE encounters
+| enc_id | patient_id | encounter_date | practitioner_id |
+| --- | --- | --- | --- |
+| E2b4994a2dfe0 | E1326769ea60e | E1b7725beb0e3 | E3255e05b95e9 |
+| E04bcd8301b21 | Ebad488a0b109 | E700b9dccd5d1 | Ec656dbdb3b4d |
+| E53bfc5c8dace | E1326769ea60e | E700b9dccd5d1 | E3907cc91d36a |
+
+TABLE conditions
+| enc_id | condition_code | status |
+| --- | --- | --- |
+| E04bcd8301b21 | E7e8df6474b0e | E30817ada7949 |
+| E2b4994a2dfe0 | Ed9bcbd1020ca | E2d9f0da89b73 |
+| E53bfc5c8dace | Ef5082ceb5aeb | E30817ada7949 |
+
+##### ID SV_MILDPROG_3 #####
+JOIN_QUERY (composite key)
+K1 patient_id = E247fbc5870ad
+K2 encounter_date = E88eaa65d3971
+JOIN encounters.patient_id = patients.patient_id
+JOIN conditions.enc_id = encounters.enc_id
+Filter encounters.encounter_date = K2; return conditions.condition_code.
+
+CONTEXT:
+TABLE patients
+| patient_id | birth_year |
+| --- | --- |
+| E247fbc5870ad | Ed034c4f9d87e |
+| Eca2911fdaa30 | Eb2a42c5745aa |
+
+TABLE encounters
+| enc_id | patient_id | encounter_date | practitioner_id |
+| --- | --- | --- | --- |
+| E9487ddc04462 | E247fbc5870ad | Eb5485ade7ac7 | E83a59a40681a |
+| E85495ca73081 | Eca2911fdaa30 | E88eaa65d3971 | Ea69e9f40aedb |
+| E108deff2e236 | E247fbc5870ad | E88eaa65d3971 | Ee5bdc2213434 |
+
+TABLE conditions
+| enc_id | condition_code | status |
+| --- | --- | --- |
+| E85495ca73081 | Eac5c9c0c0838 | E30817ada7949 |
+| E9487ddc04462 | E347edcec4056 | E2d9f0da89b73 |
+| E108deff2e236 | E37fd1f491387 | E30817ada7949 |
+
+##### ID SV_MILDPROG_4 #####
+JOIN_QUERY (composite key)
+K1 account_id = E228d1e726cb9
+K2 txn_id = E8135fd45f061
+JOIN transactions.account_id = accounts.account_id
+JOIN merchants.merchant_id = transactions.merchant_id
+Filter transactions.txn_id = K2; return merchants.merchant_city.
+
+CONTEXT:
+TABLE accounts
+| account_id | kyc_tier |
+| --- | --- |
+| Eb6c0aeca84c6 | Eb0f633c7b008 |
+| E228d1e726cb9 | Eb1f17ab95378 |
+
+TABLE transactions
+| txn_id | account_id | merchant_id | amount |
+| --- | --- | --- | --- |
+| E8135fd45f061 | E228d1e726cb9 | Ed6af735af28c | E73208622c73f |
+| E7ee9202751e0 | E228d1e726cb9 | E4f7d3d999e63 | E81a679509552 |
+| E8d60ec21830b | Eb6c0aeca84c6 | Ed6af735af28c | Ec624f6e31942 |
+
+TABLE merchants
+| merchant_id | mcc | merchant_city |
+| --- | --- | --- |
+| E4f7d3d999e63 | E9760d3653458 | E9905963164a8 |
+| Ed6af735af28c | E5c73c222ada7 | E7b4c7e4b4635 |
+
+##### ID SV_MILDPROG_5 #####
+JOIN_QUERY (composite key)
+K1 account_id = Ec59e531308c3
+K2 txn_id = Ee278adfd684e
+JOIN transactions.account_id = accounts.account_id
+JOIN merchants.merchant_id = transactions.merchant_id
+Filter transactions.txn_id = K2; return merchants.merchant_city.
+
+CONTEXT:
+TABLE accounts
+| account_id | kyc_tier |
+| --- | --- |
+| E7291a806b0f7 | Eb0f633c7b008 |
+| Ec59e531308c3 | Eb1f17ab95378 |
+
+TABLE transactions
+| txn_id | account_id | merchant_id | amount |
+| --- | --- | --- | --- |
+| Edc321bcaefe9 | Ec59e531308c3 | E3d342d1c06a3 | E05e8aa036f7c |
+| E175afc917c74 | E7291a806b0f7 | Ece7ff8de9674 | Ec624f6e31942 |
+| Ee278adfd684e | Ec59e531308c3 | Ece7ff8de9674 | Ee18ee52fb896 |
+
+TABLE merchants
+| merchant_id | mcc | merchant_city |
+| --- | --- | --- |
+| E3d342d1c06a3 | E9760d3653458 | Ee7498010e1fd |
+| Ece7ff8de9674 | E5c73c222ada7 | E94e3486d6741 |
+
+##### ID SV_MILDPROG_6 #####
+JOIN_QUERY (composite key)
+K1 account_id = Ea0577c0bdc35
+K2 txn_id = E714a0994c383
+JOIN transactions.account_id = accounts.account_id
+JOIN merchants.merchant_id = transactions.merchant_id
+Filter transactions.txn_id = K2; return merchants.merchant_city.
+
+CONTEXT:
+TABLE accounts
+| account_id | kyc_tier |
+| --- | --- |
+| E2783bda2543c | Eb0f633c7b008 |
+| Ea0577c0bdc35 | Eb1f17ab95378 |
+
+TABLE transactions
+| txn_id | account_id | merchant_id | amount |
+| --- | --- | --- | --- |
+| E714a0994c383 | Ea0577c0bdc35 | Ed1798ac1b493 | E930f798192af |
+| E1eb6cd5b89d1 | E2783bda2543c | Ed1798ac1b493 | Ec624f6e31942 |
+| Eae6e2d7f8834 | Ea0577c0bdc35 | E733807592c00 | E3c7358f20df7 |
+
+TABLE merchants
+| merchant_id | mcc | merchant_city |
+| --- | --- | --- |
+| E733807592c00 | E9760d3653458 | E86fef8786317 |
+| Ed1798ac1b493 | E5c73c222ada7 | Eb0b4b1734d0c |
+
+##### ID SV_MILDPROG_7 #####
+JOIN_QUERY (composite key)
+K1 account_id = E68889ced8d1b
+K2 txn_id = E6cf3335b942c
+JOIN transactions.account_id = accounts.account_id
+JOIN merchants.merchant_id = transactions.merchant_id
+Filter transactions.txn_id = K2; return merchants.merchant_city.
+
+CONTEXT:
+TABLE accounts
+| account_id | kyc_tier |
+| --- | --- |
+| E912bccd9ec27 | Eb0f633c7b008 |
+| E68889ced8d1b | Eb1f17ab95378 |
+
+TABLE transactions
+| txn_id | account_id | merchant_id | amount |
+| --- | --- | --- | --- |
+| E6cf3335b942c | E68889ced8d1b | E1a7c8ddc4111 | E330c64dc754f |
+| E91cfc77a1348 | E912bccd9ec27 | E1a7c8ddc4111 | Ec624f6e31942 |
+| E9a003384d6e6 | E68889ced8d1b | E421a275000f4 | Ec07d8cd2c4c8 |
+
+TABLE merchants
+| merchant_id | mcc | merchant_city |
+| --- | --- | --- |
+| E421a275000f4 | E9760d3653458 | Eddfd84062faa |
+| E1a7c8ddc4111 | E5c73c222ada7 | E34a97b7a44cd |
+
+##### ID SV_MILDPROG_8 #####
+JOIN_QUERY (composite key)
+K1 ghsa_id = E13ce7917730e
+K2 package = E7e7b5e096864
+JOIN packages.package = advisories.package
+Filter advisories.ghsa_id = K1 AND advisories.package = K2; return cve_alias.
+
+CONTEXT:
+TABLE advisories
+| ghsa_id | package | ecosystem | cve_alias |
+| --- | --- | --- | --- |
+| E70d7f5d92178 | Ecf27388a71e0 | E527a3840b1aa | E14627e475f29 |
+| Efbae1203cdf4 | E7e7b5e096864 | E527a3840b1aa | E8e74c6fb8d53 |
+| E13ce7917730e | E7e7b5e096864 | E527a3840b1aa | E237fcc92ea57 |
+
+TABLE packages
+| package | ecosystem | registry |
+| --- | --- | --- |
+| Ecf27388a71e0 | E527a3840b1aa | E527a3840b1aa |
+| E7e7b5e096864 | E527a3840b1aa | E527a3840b1aa |
+
+##### ID SV_MILDPROG_9 #####
+JOIN_QUERY (composite key)
+K1 ghsa_id = Ee4717387bd38
+K2 package = E9c30b73368cd
+JOIN packages.package = advisories.package
+Filter advisories.ghsa_id = K1 AND advisories.package = K2; return cve_alias.
+
+CONTEXT:
+TABLE advisories
+| ghsa_id | package | ecosystem | cve_alias |
+| --- | --- | --- | --- |
+| E79ab8154d39a | E4e451969601d | Ee45d736f3860 | Ec78ca34042ab |
+| Efa3ddda7b451 | E9c30b73368cd | Ee45d736f3860 | E95c13a379ebe |
+| Ee4717387bd38 | E9c30b73368cd | Ee45d736f3860 | E9c2663af7077 |
+
+TABLE packages
+| package | ecosystem | registry |
+| --- | --- | --- |
+| E4e451969601d | Ee45d736f3860 | Ee45d736f3860 |
+| E9c30b73368cd | Ee45d736f3860 | Ee45d736f3860 |
+
+##### ID SV_MILDPROG_10 #####
+JOIN_QUERY (composite key)
+K1 ghsa_id = Ec1d1acc73152
+K2 package = Ef8c2d4b7472b
+JOIN packages.package = advisories.package
+Filter advisories.ghsa_id = K1 AND advisories.package = K2; return cve_alias.
+
+CONTEXT:
+TABLE advisories
+| ghsa_id | package | ecosystem | cve_alias |
+| --- | --- | --- | --- |
+| Ef0be68f33121 | E68fb13b46ef0 | Ee45d736f3860 | E7ebe677aa4c1 |
+| E14a67acc4906 | Ef8c2d4b7472b | Ee45d736f3860 | E5406652e3eea |
+| Ec1d1acc73152 | Ef8c2d4b7472b | Ee45d736f3860 | E213e795c01d7 |
+
+TABLE packages
+| package | ecosystem | registry |
+| --- | --- | --- |
+| Ef8c2d4b7472b | Ee45d736f3860 | Ee45d736f3860 |
+| E68fb13b46ef0 | Ee45d736f3860 | Ee45d736f3860 |
+
+##### ID SV_MILDPROG_11 #####
+JOIN_QUERY (composite key)
+K1 ghsa_id = Eaa47c5ee99ae
+K2 package = Ef8c2d4b7472b
+JOIN packages.package = advisories.package
+Filter advisories.ghsa_id = K1 AND advisories.package = K2; return cve_alias.
+
+CONTEXT:
+TABLE advisories
+| ghsa_id | package | ecosystem | cve_alias |
+| --- | --- | --- | --- |
+| E589e5372ea3b | E6cd24ad45332 | Ee45d736f3860 | E411fee694a0e |
+| Eaa47c5ee99ae | Ef8c2d4b7472b | Ee45d736f3860 | Ed5c97a66f927 |
+| E43c174e00281 | Ef8c2d4b7472b | Ee45d736f3860 | E754ae2f2d06f |
+
+TABLE packages
+| package | ecosystem | registry |
+| --- | --- | --- |
+| E6cd24ad45332 | Ee45d736f3860 | Ee45d736f3860 |
+| Ef8c2d4b7472b | Ee45d736f3860 | Ee45d736f3860 |

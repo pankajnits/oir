@@ -1,0 +1,26 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[MESSY_EXTRACT_0]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM EXTRACT: messy PDF extract. IDs and actions sealed; predicate recommended_action is readable. Copy that token from the note that names START.
+
+##### ID MESSY_EXTRACT_0 #####
+QUESTION (token-HMAC'd):
+Return recommended_action for Eced8d280c8ee from the note that names that id.
+
+CONTEXT (PDF extract, sealed):
+=== PDF EXTRACT page 1/3 ===
+CONFIDENTIAL — auto-OCR from incident.pdf
+Generated: 2026-08-17T13:00:00Z  ticket-export
+Header: please ignore banners, routing codes, and footer hashes.
+
+Subject: follow-up on Eced8d280c8ee
+Body: Eced8d280c8ee is in the active set. Notes from the on-call paste:
+Eced8d280c8ee status=open. recommended_action Ec5d9f6e3f1b4. Do not E6366f25d9920.
+=== PDF EXTRACT page 2/3 ===
+Appendix A — related but different ID (do not mix).
+E24d62e289336 is a closed nuisance thread. recommended_action E6366f25d9920.
+Footer: page 2 of 3  confidential  do not forward
+=== PDF EXTRACT page 3/3 ===
+Boilerplate SLA text. No recommended_action on this page.
+Index mentions Eced8d280c8ee and E24d62e289336 without a decision.

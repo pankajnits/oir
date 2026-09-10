@@ -1,0 +1,1066 @@
+{
+  "model": "auto",
+  "n": 12,
+  "summary": {
+    "TABLE_PLAIN_PROG": {
+      "score": "12/12",
+      "missing": 0
+    },
+    "TABLE_SEAL_PROG": {
+      "score": "12/12",
+      "missing": 0
+    },
+    "TABLE_SEAL_NL": {
+      "score": "0/12",
+      "missing": 0
+    },
+    "TABLE_SEAL_BOTH": {
+      "score": "12/12",
+      "missing": 0
+    },
+    "JSON_PLAIN_PROG": {
+      "score": "12/12",
+      "missing": 0
+    },
+    "JSON_SEAL_PROG": {
+      "score": "12/12",
+      "missing": 0
+    },
+    "JSON_SEAL_NL": {
+      "score": "0/12",
+      "missing": 0
+    },
+    "JSON_SEAL_BOTH": {
+      "score": "12/12",
+      "missing": 0
+    },
+    "VAULT_MILD": {
+      "score": "12/12",
+      "missing": 0
+    },
+    "VAULT_STRICT_PROG": {
+      "score": "12/12",
+      "missing": 0
+    },
+    "VAULT_STRICT_NL": {
+      "score": "0/12",
+      "missing": 0
+    },
+    "VAULT_STRICT_BOTH": {
+      "score": "12/12",
+      "missing": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_0",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_1",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_2",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_3",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_4",
+      "gold": "San_Antonio",
+      "pred": "San_Antonio",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_5",
+      "gold": "Oslo",
+      "pred": "Oslo",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_6",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_7",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_8",
+      "gold": "Philadelphia",
+      "pred": "Philadelphia",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_9",
+      "gold": "Bochum",
+      "pred": "Bochum",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_10",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_PLAIN_PROG",
+      "id": "DOM_TABLE_PLAIN_11",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_0",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "E53bf3b0197dc",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_2",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_3",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "E7a96dde51ba9",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "Ec95bcddd0abe",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_6",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_7",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_8",
+      "gold": "Efbcb189852b1",
+      "pred": "Efbcb189852b1",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_9",
+      "gold": "E1371102a8522",
+      "pred": "E1371102a8522",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "E3de9412cb2c1",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_PROG",
+      "id": "DOM_TABLE_SEALPROG_11",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_0",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_2",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_3",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_6",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_7",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_8",
+      "gold": "Efbcb189852b1",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_9",
+      "gold": "E1371102a8522",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_NL",
+      "id": "DOM_TABLE_SEALNL_11",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_0",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "E53bf3b0197dc",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_2",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_3",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "E7a96dde51ba9",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "Ec95bcddd0abe",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_6",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_7",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_8",
+      "gold": "Efbcb189852b1",
+      "pred": "Efbcb189852b1",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_9",
+      "gold": "E1371102a8522",
+      "pred": "E1371102a8522",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "E3de9412cb2c1",
+      "ok": true
+    },
+    {
+      "arm": "TABLE_SEAL_BOTH",
+      "id": "DOM_TABLE_SEALBOTH_11",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_0",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_1",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_2",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_3",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_4",
+      "gold": "San_Antonio",
+      "pred": "San_Antonio",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_5",
+      "gold": "Oslo",
+      "pred": "Oslo",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_6",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_7",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_8",
+      "gold": "Philadelphia",
+      "pred": "Philadelphia",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_9",
+      "gold": "Bochum",
+      "pred": "Bochum",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_10",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true
+    },
+    {
+      "arm": "JSON_PLAIN_PROG",
+      "id": "DOM_JSON_PLAIN_11",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_0",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "E53bf3b0197dc",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_2",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_3",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "E7a96dde51ba9",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "Ec95bcddd0abe",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_6",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_7",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_8",
+      "gold": "Efbcb189852b1",
+      "pred": "Efbcb189852b1",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_9",
+      "gold": "E1371102a8522",
+      "pred": "E1371102a8522",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "E3de9412cb2c1",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_PROG",
+      "id": "DOM_JSON_SEALPROG_11",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_0",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_2",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_3",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_6",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_7",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_8",
+      "gold": "Efbcb189852b1",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_9",
+      "gold": "E1371102a8522",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_NL",
+      "id": "DOM_JSON_SEALNL_11",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_0",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "E53bf3b0197dc",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_2",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_3",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "E7a96dde51ba9",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "Ec95bcddd0abe",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_6",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_7",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_8",
+      "gold": "Efbcb189852b1",
+      "pred": "Efbcb189852b1",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_9",
+      "gold": "E1371102a8522",
+      "pred": "E1371102a8522",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "E3de9412cb2c1",
+      "ok": true
+    },
+    {
+      "arm": "JSON_SEAL_BOTH",
+      "id": "DOM_JSON_SEALBOTH_11",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_0",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "E53bf3b0197dc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_2",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_3",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "E7a96dde51ba9",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "Ec95bcddd0abe",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_6",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_7",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_8",
+      "gold": "Efbcb189852b1",
+      "pred": "Efbcb189852b1",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_9",
+      "gold": "E1371102a8522",
+      "pred": "E1371102a8522",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "E3de9412cb2c1",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_MILD",
+      "id": "DOM_VAULT_MILD_11",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_0",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "E53bf3b0197dc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_2",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_3",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "E7a96dde51ba9",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "Ec95bcddd0abe",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_6",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_7",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_8",
+      "gold": "Efbcb189852b1",
+      "pred": "Efbcb189852b1",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_9",
+      "gold": "E1371102a8522",
+      "pred": "E1371102a8522",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "E3de9412cb2c1",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_PROG",
+      "id": "DOM_VAULT_STRICTPROG_11",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_0",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_2",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_3",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_6",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_7",
+      "gold": "E38991d8565fc",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_8",
+      "gold": "Efbcb189852b1",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_9",
+      "gold": "E1371102a8522",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_NL",
+      "id": "DOM_VAULT_STRICTNL_11",
+      "gold": "E5ee83207c12e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_0",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_1",
+      "gold": "E53bf3b0197dc",
+      "pred": "E53bf3b0197dc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_2",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_3",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_4",
+      "gold": "E7a96dde51ba9",
+      "pred": "E7a96dde51ba9",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_5",
+      "gold": "Ec95bcddd0abe",
+      "pred": "Ec95bcddd0abe",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_6",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_7",
+      "gold": "E38991d8565fc",
+      "pred": "E38991d8565fc",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_8",
+      "gold": "Efbcb189852b1",
+      "pred": "Efbcb189852b1",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_9",
+      "gold": "E1371102a8522",
+      "pred": "E1371102a8522",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_10",
+      "gold": "E3de9412cb2c1",
+      "pred": "E3de9412cb2c1",
+      "ok": true
+    },
+    {
+      "arm": "VAULT_STRICT_BOTH",
+      "id": "DOM_VAULT_STRICTBOTH_11",
+      "gold": "E5ee83207c12e",
+      "pred": "E5ee83207c12e",
+      "ok": true
+    }
+  ],
+  "reply_dir": "results/domain_replies_auto",
+  "verdict": "SUPPORTED format transfer"
+}

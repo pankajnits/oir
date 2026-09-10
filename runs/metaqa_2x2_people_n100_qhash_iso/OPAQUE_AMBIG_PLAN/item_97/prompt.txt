@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_97]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_97 #####
+QUESTION:
+Who E0ff89ee8b6b4 a E77b2e6a000c4 Efbb72c844912 [Faith Domergue] Ef2b101f9e548 Ee8cb6a744350?
+
+PATH_QUERY
+START Faith Domergue
+R1 E553c77da8979
+R2 E0363ff301bd0
+Execute path; return final tail only.
+
+CONTEXT:
+Faith Domergue | E553c77da8979 | This Island Earth
+This Island Earth | E0363ff301bd0 | Joseph M. Newman
+This Island Earth | Ee333677d3581 | Raymond F. Jones

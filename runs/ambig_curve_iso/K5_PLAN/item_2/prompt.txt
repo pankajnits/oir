@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_2]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_2 #####
+QUESTION:
+What city is the headquarters of the company led by Lucian_Grainge?
+
+PATH_QUERY
+START Lucian_Grainge
+R1 E8e51bd0e59e0
+R2 E627cb08b8a11
+Execute path; return final tail only.
+
+CONTEXT:
+Lucian_Grainge | E8e51bd0e59e0 | Universal_Music_Group
+Universal_Music_Group | E627cb08b8a11 | Broadway
+Lucian_Grainge | Efa2221b116b9 | Cogent_Communications
+Cogent_Communications | Ec93c88dada9f | Washington_DC
+Lucian_Grainge | E90f307d9e62d | Kansas_City_Southern
+Kansas_City_Southern | E36fcaa480b0f | Kansas_City
+Lucian_Grainge | E4e4843153725 | Lacoste_SA
+Lacoste_SA | E7c8fedf60837 | Paris
+Lucian_Grainge | E480eac81919e | Israel_Railways
+Israel_Railways | E1cbb9fb9a57e | Lod_Railway_Station

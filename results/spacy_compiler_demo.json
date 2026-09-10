@@ -1,0 +1,111 @@
+{
+  "claim": "spaCy NER + rules can compile HQ-family PATH; huge C handled by ego retrieval + SealRouter \u2014 not by stuffing 1e5 tokens into a tiny LM.",
+  "n": 12,
+  "compile_exec": "12/12",
+  "followup": "12/12",
+  "full_context_triples": 584,
+  "details": [
+    {
+      "person": "David_Schaeffer",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "George_W_Edwards",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Eric_Vallat",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Moshe_Zana",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Mark_T_Bertolini",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Stephen_A_Schwarzman",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Stuart_Parker",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Topi_Manner",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Keith_Creel",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Michael_Eisner",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "Harvey_C_Couch",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    },
+    {
+      "person": "David_Green",
+      "compile": "ner_hq_ok",
+      "exec_ok": true,
+      "follow_ok": true,
+      "ego_edges": 4,
+      "full_triples": 584
+    }
+  ],
+  "limits": [
+    "Not a FinQA synthesizer",
+    "Follow-ups need DialogueState (implemented)",
+    "Tiny LLM planner still weak (see PLANNER_LOCAL 3/12)",
+    "100k tokens \u2192 index+retrieve, never full prompt"
+  ]
+}

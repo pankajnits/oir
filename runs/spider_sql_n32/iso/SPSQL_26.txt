@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_26]: <sql>
+
+DB: movie_1
+SCHEMA:
+Movie(mID, title, year, director)
+Reviewer(rID, name)
+Rating(rID, mID, stars, ratingDate)
+QUESTION:
+What are the names of all directors whose movies have been reviewed by Sarah Martinez?

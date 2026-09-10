@@ -1,0 +1,46 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_99]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_99 #####
+DB: election
+SCHEMA (English name → sealed sqlite identifier):
+county = E0f0961e72fc8
+County_Id = Ec46306a30081
+County_name = E785fec665719
+Population = E24565eee3251
+Zip_code = E99283a69397a
+party = E3fb813bd79ee
+Party_ID = Ea626791dc84d
+Year = E9a6e1504e8d5
+Party = E4aa3ac63ce15
+Governor = E20a130d0b68b
+Lieutenant_Governor = E7f64e0867e72
+Comptroller = E97c1b2842f16
+Attorney_General = E5a4136bea142
+US_Senate = Edacd6c3c0de5
+election = E716cb9cfa70a
+Election_ID = E356ae0fb78ed
+Counties_Represented = E0c48ae7d9059
+District = Ee8a537ce2ed7
+Delegate = E1976324cedbc
+First_Elected = E1699bcf916fd
+Committee = E1a2d4f3015cd
+
+county(County_Id, County_name, Population, Zip_code)
+party(Party_ID, Year, Party, Governor, Lieutenant_Governor, Comptroller, Attorney_General, US_Senate)
+election(Election_ID, Counties_Represented, District, Delegate, Party, First_Elected, Committee)
+
+QUESTION:
+Show the E785fec665719 of the Ea626791dc84d that has the most delegates.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

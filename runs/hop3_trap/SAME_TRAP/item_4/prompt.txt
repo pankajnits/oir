@@ -1,0 +1,60 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM SAME_TRAP: 4 sealed 2-hop demos (R,S); 3-hop quiz has gold (R,S,R) AND a novel trap cycle. One quiz.
+
+Learn the mapping from DEMOs (same encoding, novel node seals).
+Answer the QUIZ the same way. No English relation names. No PATH.
+
+DEMO 0:
+START E035d39b1001a
+CONTEXT:
+Eefa3963648aa | E2e065b633101 | Ea5837d2f6d4f
+E035d39b1001a | E00d720787b2e | Eefa3963648aa
+E82a7a773f87a | Eed9d2f97664f | E035d39b1001a
+E035d39b1001a | E708af765abac | E82a7a773f87a
+ANSWER_SEALED: Ea5837d2f6d4f
+
+DEMO 1:
+START E53c60a905ff2
+CONTEXT:
+E527f735db568 | E2e065b633101 | E5031f52d6078
+E53c60a905ff2 | E00d720787b2e | E527f735db568
+E334f5c845f01 | E0f004f48f313 | E53c60a905ff2
+E53c60a905ff2 | E600a595a5baf | E334f5c845f01
+ANSWER_SEALED: E5031f52d6078
+
+DEMO 2:
+START Eeb93ed7363de
+CONTEXT:
+E0686f96cc0f4 | E2e065b633101 | E8ce9fef519d5
+Eeb93ed7363de | E00d720787b2e | E0686f96cc0f4
+Eeb93ed7363de | Eb01a7a573290 | E70cbdbaafe98
+E70cbdbaafe98 | Efd70fdf2fb0d | Eeb93ed7363de
+ANSWER_SEALED: E8ce9fef519d5
+
+DEMO 3:
+START E5215b9295f6f
+CONTEXT:
+E5215b9295f6f | E1e0e95a6c32c | Ee035c8de44aa
+E12d3b3c48953 | E2e065b633101 | E13417bb7643a
+Ee035c8de44aa | E135055b61bc6 | E5215b9295f6f
+E5215b9295f6f | E00d720787b2e | E12d3b3c48953
+ANSWER_SEALED: E13417bb7643a
+
+--- QUIZ ---
+##### ID H3T_SAME_TRAP_4 #####
+START E20e65dc8035a
+CONTEXT:
+E453b3534ea4b | E2e065b633101 | E83e6078b4edd
+E83e6078b4edd | E00d720787b2e | Ec2b2634dd958
+E83e6078b4edd | E42d4a63bb0d2 | E6bacd984a1b4
+E20e65dc8035a | Ed7d10252937b | Ed6b14e120ddd
+Ebb68d74cf73e | E82a8ff661720 | E453b3534ea4b
+E453b3534ea4b | E65ab49dac41f | Ebb68d74cf73e
+E20e65dc8035a | E00d720787b2e | E453b3534ea4b
+E6bacd984a1b4 | Efa583e0857b2 | E83e6078b4edd
+E2ea6f7af6187 | Ed7d10252937b | E98c021ec713b
+Ed6b14e120ddd | Ecc80f94ac48f | E2ea6f7af6187
+

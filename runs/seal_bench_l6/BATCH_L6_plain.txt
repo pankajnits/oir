@@ -1,0 +1,123 @@
+MODEL UNDER TEST. No tools. Answer EVERY ID.
+
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+
+##### ID L6_G0_A_plain #####
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice0 works_at, but ONLY if that city is NOT the city where Bob0's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice0 | works_at | Acme0
+Bob0 | works_at | Beta0
+Carol0 | works_at | Acme0
+Carol0 | reports_to | Bob0
+Acme0 | located_in | CityX0
+Beta0 | located_in | CityY0
+
+
+
+##### ID L6_G0_B_plain #####
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice0 works_at, but ONLY if that city is NOT the city where Bob0's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice0 | works_at | Beta0
+Bob0 | works_at | Beta0
+Carol0 | works_at | Acme0
+Carol0 | reports_to | Bob0
+Acme0 | located_in | CityX0
+Beta0 | located_in | CityY0
+
+
+
+##### ID L6_G1_A_plain #####
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice1 works_at, but ONLY if that city is NOT the city where Bob1's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice1 | works_at | Acme1
+Bob1 | works_at | Beta1
+Carol1 | works_at | Acme1
+Carol1 | reports_to | Bob1
+Acme1 | located_in | CityX1
+Beta1 | located_in | CityY1
+
+
+
+##### ID L6_G1_B_plain #####
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice1 works_at, but ONLY if that city is NOT the city where Bob1's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice1 | works_at | Beta1
+Bob1 | works_at | Beta1
+Carol1 | works_at | Acme1
+Carol1 | reports_to | Bob1
+Acme1 | located_in | CityX1
+Beta1 | located_in | CityY1
+
+
+
+##### ID L6_G2_A_plain #####
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice2 works_at, but ONLY if that city is NOT the city where Bob2's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice2 | works_at | Acme2
+Bob2 | works_at | Beta2
+Carol2 | works_at | Acme2
+Carol2 | reports_to | Bob2
+Acme2 | located_in | CityX2
+Beta2 | located_in | CityY2
+
+
+
+##### ID L6_G2_B_plain #####
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice2 works_at, but ONLY if that city is NOT the city where Bob2's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice2 | works_at | Beta2
+Bob2 | works_at | Beta2
+Carol2 | works_at | Acme2
+Carol2 | reports_to | Bob2
+Acme2 | located_in | CityX2
+Beta2 | located_in | CityY2
+
+
+
+##### ID L6_G3_A_plain #####
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice3 works_at, but ONLY if that city is NOT the city where Bob3's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice3 | works_at | Acme3
+Bob3 | works_at | Beta3
+Carol3 | works_at | Acme3
+Carol3 | reports_to | Bob3
+Acme3 | located_in | CityX3
+Beta3 | located_in | CityY3
+
+
+
+##### ID L6_G3_B_plain #####
+Answer from CONTEXT. One line: ANSWER_PLAIN: <city_or_UNKNOWN>
+
+QUESTION: Find the city of the company where Alice3 works_at, but ONLY if that city is NOT the city where Bob3's company is located_in. Else UNKNOWN.
+
+CONTEXT:
+Alice3 | works_at | Beta3
+Bob3 | works_at | Beta3
+Carol3 | works_at | Acme3
+Carol3 | reports_to | Bob3
+Acme3 | located_in | CityX3
+Beta3 | located_in | CityY3
+

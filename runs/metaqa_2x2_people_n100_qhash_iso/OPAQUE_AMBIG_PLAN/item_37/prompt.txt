@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_37]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_37 #####
+QUESTION:
+Who E7a2921201501 a Ef180a9e7d17c Ea2460c7dfec0 [Gregory Peck] E6950e551dcfe Ef4e564c28b76?
+
+PATH_QUERY
+START Gregory Peck
+R1 E0412ae15da50
+R2 E2419fe2fe00b
+Execute path; return final tail only.
+
+CONTEXT:
+Gregory Peck | E0412ae15da50 | Designing Woman
+Designing Woman | E2419fe2fe00b | Vincente Minnelli
+Designing Woman | Ef65d425cb471 | George Wells

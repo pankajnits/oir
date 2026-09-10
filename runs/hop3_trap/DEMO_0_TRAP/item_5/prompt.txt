@@ -1,0 +1,23 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM DEMO_0_TRAP: no demos; two 3-hop cycles from START. One quiz.
+
+No demos. No path. No relation names.
+From START, output the sealed answer atom using only CONTEXT.
+
+##### ID H3T_DEMO_0_TRAP_5 #####
+START E2598ec0d4826
+CONTEXT:
+E15ae7d61b742 | E748ba2755769 | E10ccfbeb6139
+Eed15d3aa9c72 | E53f16838d9cb | E5c1e59740286
+Eed15d3aa9c72 | E00d720787b2e | E5419cde1781a
+E11254428ad30 | Ecc80f94ac48f | E0d83883f90df
+E0d83883f90df | Ed7d10252937b | Eef286d61708d
+E2598ec0d4826 | Ed7d10252937b | E11254428ad30
+E10ccfbeb6139 | E141f3abf85cb | E15ae7d61b742
+E2598ec0d4826 | E00d720787b2e | E10ccfbeb6139
+E5c1e59740286 | Ef7c225c86e61 | Eed15d3aa9c72
+E10ccfbeb6139 | E2e065b633101 | Eed15d3aa9c72
+

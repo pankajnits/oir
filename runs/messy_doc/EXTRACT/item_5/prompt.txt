@@ -1,0 +1,26 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[MESSY_EXTRACT_5]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM EXTRACT: messy PDF extract. IDs and actions sealed; predicate recommended_action is readable. Copy that token from the note that names START.
+
+##### ID MESSY_EXTRACT_5 #####
+QUESTION (token-HMAC'd):
+Return recommended_action for Ef141352a91a5 from the note that names that id.
+
+CONTEXT (PDF extract, sealed):
+=== PDF EXTRACT page 1/3 ===
+CONFIDENTIAL — auto-OCR from incident.pdf
+Generated: 2026-08-17T13:00:00Z  ticket-export
+Header: please ignore banners, routing codes, and footer hashes.
+
+Subject: follow-up on Ef141352a91a5
+Body: Ef141352a91a5 is in the active set. Notes from the on-call paste:
+Ef141352a91a5 status=open. recommended_action Ef3c795a8a4cb. Do not E5eeab9e5bc00.
+=== PDF EXTRACT page 2/3 ===
+Appendix A — related but different ID (do not mix).
+Ea8b6ebb7b54c is a closed nuisance thread. recommended_action E5eeab9e5bc00.
+Footer: page 2 of 3  confidential  do not forward
+=== PDF EXTRACT page 3/3 ===
+Boilerplate SLA text. No recommended_action on this page.
+Index mentions Ef141352a91a5 and Ea8b6ebb7b54c without a decision.

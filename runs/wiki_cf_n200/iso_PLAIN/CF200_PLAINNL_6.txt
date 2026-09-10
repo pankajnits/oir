@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_6 #####
+QUESTION:
+Where did the director of film The Steps (Film) graduate from?
+
+CONTEXT:
+Andrew Currie | educated at | CF_TAIL_6_CanadianFilm
+decoy_mid_6 | educated at | Canadian Film Centre
+The Steps | director | Andrew Currie
+Jack Lee | educated at | Marling School
+When You Were Mine | composer | Prince
+The Steps | decoy_link_6 | decoy_mid_6
+Circle of Deception | director | Jack Lee
+Prince | country of citizenship | American

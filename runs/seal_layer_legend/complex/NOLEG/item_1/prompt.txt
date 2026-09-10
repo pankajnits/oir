@@ -1,0 +1,79 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_CX_NOLEG_1]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NOLEG family=COMPLEX use=TICKET: bound START, HMAC Q. No schema. No PATH.
+
+##### ID SLL_CX_NOLEG_1 #####
+QUESTION (token-HMAC'd):
+Ebb91a9740953 E661ff8826cd4 E75dc0590e8f1 Eb747d9dfab38 Ed5f29bc65909 Ebdb2ff15e81e E56b517e76a93?
+
+
+CONTEXT:
+TABLE hop1
+| E4dd78b911b8c | Ef38492c857e4 |
+| --- | --- |
+| Ed5f29bc65909 | Ec934e1f5bb9e |
+| E87e33cdb208e | Ef8a5c056ee09 |
+| E94415e880662 | E43a87a1cb0bf |
+| Efb2aafac5470 | Ecf701bac50d6 |
+
+TABLE hop2
+| E5e28db63e60a | Eef6774bda39a |
+| --- | --- |
+| Ec934e1f5bb9e | Ec596c40e2617 |
+| Ef8a5c056ee09 | Ee4f850b0bd55 |
+| E43a87a1cb0bf | E2ab328f109a8 |
+| Ecf701bac50d6 | Ea83384083b55 |
+
+TABLE hop3
+| Ef18f9c88eddf | Eaf57181d5b94 |
+| --- | --- |
+| Ec596c40e2617 | E96f8e4402356 |
+| Ee4f850b0bd55 | E96f8e4402356 |
+| E2ab328f109a8 | E5f89fdc9abab |
+| Ea83384083b55 | E27c11daee2a6 |
+
+JSON
+{
+  "use_case": "Eec8a39acb2f5",
+  "graph": {
+    "Ed5f29bc65909": {
+      "Ef38492c857e4": "Ec934e1f5bb9e"
+    },
+    "Ec934e1f5bb9e": {
+      "Eef6774bda39a": "Ec596c40e2617"
+    },
+    "Ec596c40e2617": {
+      "Eaf57181d5b94": "E96f8e4402356"
+    },
+    "E87e33cdb208e": {
+      "Ef38492c857e4": "Ef8a5c056ee09"
+    },
+    "Ef8a5c056ee09": {
+      "Eef6774bda39a": "Ee4f850b0bd55"
+    },
+    "Ee4f850b0bd55": {
+      "Eaf57181d5b94": "E96f8e4402356"
+    },
+    "E94415e880662": {
+      "Ef38492c857e4": "E43a87a1cb0bf"
+    },
+    "E43a87a1cb0bf": {
+      "Eef6774bda39a": "E2ab328f109a8"
+    },
+    "E2ab328f109a8": {
+      "Eaf57181d5b94": "E5f89fdc9abab"
+    },
+    "Efb2aafac5470": {
+      "Ef38492c857e4": "Ecf701bac50d6"
+    },
+    "Ecf701bac50d6": {
+      "Eef6774bda39a": "Ea83384083b55"
+    },
+    "Ea83384083b55": {
+      "Eaf57181d5b94": "E27c11daee2a6"
+    }
+  },
+  "notes": "E2d9468146562 Ed5f29bc65909: E9fe04b40d037 Eedea98b82849 E9716755f9023 E7c9bce608f1f E9b0118165890 E75dc0590e8f1 Ead46198aa327, Eba3fd61bfa60 Eb7989196f288 Ea8077a44af09 Ec1f361f6d4de E1b98c4310dcd"
+}

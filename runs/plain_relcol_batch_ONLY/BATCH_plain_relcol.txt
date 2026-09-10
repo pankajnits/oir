@@ -1,0 +1,155 @@
+MODEL UNDER TEST. No tools. Read ONLY this file. Answer EVERY ID.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID PRC_G0_A #####
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E93b3a61ac2c2 works_at? City only.
+
+CONTEXT:
+E93b3a61ac2c2 | works_at | Ea5ec3fca2081
+E57cec73d4e52 | works_at | Ee9039c2f8bcc
+Ea5ec3fca2081 | located_in | E065e43ae3c4e
+Ee9039c2f8bcc | located_in | Ef5627f1dd1c6
+Ea5ec3fca2081 | owned_by | E0aace6c51b8d
+Ee9039c2f8bcc | owned_by | E5e0a8f6ba2cb
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID PRC_G0_B #####
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that E93b3a61ac2c2 works_at? City only.
+
+CONTEXT:
+E93b3a61ac2c2 | works_at | Ee9039c2f8bcc
+E57cec73d4e52 | works_at | Ee9039c2f8bcc
+Ea5ec3fca2081 | located_in | E065e43ae3c4e
+Ee9039c2f8bcc | located_in | Ef5627f1dd1c6
+Ea5ec3fca2081 | owned_by | E0aace6c51b8d
+Ee9039c2f8bcc | owned_by | E5e0a8f6ba2cb
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID PRC_G1_A #####
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Eb00e66db2876 works_at? City only.
+
+CONTEXT:
+Eb00e66db2876 | works_at | Ee49d45fba7ef
+E5c4eb14178f7 | works_at | E3892f0b894d2
+Ee49d45fba7ef | located_in | Ee739939374fa
+E3892f0b894d2 | located_in | Eb03c108305b5
+Ee49d45fba7ef | owned_by | E0c9d95df1d69
+E3892f0b894d2 | owned_by | E1db4e2bff833
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID PRC_G1_B #####
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Eb00e66db2876 works_at? City only.
+
+CONTEXT:
+Eb00e66db2876 | works_at | E3892f0b894d2
+E5c4eb14178f7 | works_at | E3892f0b894d2
+Ee49d45fba7ef | located_in | Ee739939374fa
+E3892f0b894d2 | located_in | Eb03c108305b5
+Ee49d45fba7ef | owned_by | E0c9d95df1d69
+E3892f0b894d2 | owned_by | E1db4e2bff833
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID PRC_G2_A #####
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Edf3e206ab934 works_at? City only.
+
+CONTEXT:
+Edf3e206ab934 | works_at | E86ab88cf0cbe
+Ea664b8387734 | works_at | Ebd2a8a93a920
+E86ab88cf0cbe | located_in | Edb640541688d
+Ebd2a8a93a920 | located_in | E5d206cc8acf1
+E86ab88cf0cbe | owned_by | E637fd8018be8
+Ebd2a8a93a920 | owned_by | E33c4941762a7
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID PRC_G2_B #####
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Edf3e206ab934 works_at? City only.
+
+CONTEXT:
+Edf3e206ab934 | works_at | Ebd2a8a93a920
+Ea664b8387734 | works_at | Ebd2a8a93a920
+E86ab88cf0cbe | located_in | Edb640541688d
+Ebd2a8a93a920 | located_in | E5d206cc8acf1
+E86ab88cf0cbe | owned_by | E637fd8018be8
+Ebd2a8a93a920 | owned_by | E33c4941762a7
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID PRC_G3_A #####
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Ef512b09441e6 works_at? City only.
+
+CONTEXT:
+Ef512b09441e6 | works_at | Efd902a7da097
+E9e9079985973 | works_at | Ee02c1b0be0e5
+Efd902a7da097 | located_in | E7dd2104dbdf2
+Ee02c1b0be0e5 | located_in | E88bffa59f2f1
+Efd902a7da097 | owned_by | Ec6ae9af6fac9
+Ee02c1b0be0e5 | owned_by | E677869549b4f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID PRC_G3_B #####
+Entities sealed; middle column is English relation names.
+Join works_at then located_in. Answer city seal only.
+
+QUESTION:
+Where is the company located that Ef512b09441e6 works_at? City only.
+
+CONTEXT:
+Ef512b09441e6 | works_at | Ee02c1b0be0e5
+E9e9079985973 | works_at | Ee02c1b0be0e5
+Efd902a7da097 | located_in | E7dd2104dbdf2
+Ee02c1b0be0e5 | located_in | E88bffa59f2f1
+Efd902a7da097 | owned_by | Ec6ae9af6fac9
+Ee02c1b0be0e5 | owned_by | E677869549b4f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+

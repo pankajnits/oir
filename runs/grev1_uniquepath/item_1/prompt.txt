@@ -1,0 +1,78 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[GREV1_UP_1]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM UNIQUE_PATH: unique 3-hop from START. Entities and relations sealed. No PATH. No legend. One quiz.
+
+##### ID GREV1_UP_1 #####
+QUESTION:
+E58875e3ef0db E0ee693b40c01 E5c9c8f093dd1 Ebe474e158d7a E18938eefaa62 E7e227837b7be E9e9bd1443382? E18938eefaa62
+
+CONTEXT:
+TABLE hop1
+| E104d56def5f7 | Edb0988923b5f |
+| --- | --- |
+| E18938eefaa62 | E8e944650ef6a |
+| Ef4c8c79dd078 | Eeae9693cbda1 |
+| Ee40b8c25b8da | E8e43e4a1a6ac |
+| Edd1084b9e036 | E7281fd9ce12c |
+
+TABLE hop2
+| E13271a9bb4a4 | E57f25cde6130 |
+| --- | --- |
+| E8e944650ef6a | E3f6ab96aa48f |
+| Eeae9693cbda1 | Eedb520ddb8b9 |
+| E8e43e4a1a6ac | Ed7a6c13ab612 |
+| E7281fd9ce12c | E93d6fee524af |
+
+TABLE hop3
+| Ee36d382df714 | E3425439c7188 |
+| --- | --- |
+| E3f6ab96aa48f | E71c70032a80c |
+| Eedb520ddb8b9 | E68bd1fcffc3b |
+| Ed7a6c13ab612 | E16c8914b2530 |
+| E93d6fee524af | Eecc4a0ac3568 |
+
+JSON
+{
+  "use_case": "E2beb1b1c1364",
+  "graph": {
+    "E18938eefaa62": {
+      "Edb0988923b5f": "E8e944650ef6a"
+    },
+    "E8e944650ef6a": {
+      "E57f25cde6130": "E3f6ab96aa48f"
+    },
+    "E3f6ab96aa48f": {
+      "E3425439c7188": "E71c70032a80c"
+    },
+    "Ef4c8c79dd078": {
+      "Edb0988923b5f": "Eeae9693cbda1"
+    },
+    "Eeae9693cbda1": {
+      "E57f25cde6130": "Eedb520ddb8b9"
+    },
+    "Eedb520ddb8b9": {
+      "E3425439c7188": "E68bd1fcffc3b"
+    },
+    "Ee40b8c25b8da": {
+      "Edb0988923b5f": "E8e43e4a1a6ac"
+    },
+    "E8e43e4a1a6ac": {
+      "E57f25cde6130": "Ed7a6c13ab612"
+    },
+    "Ed7a6c13ab612": {
+      "E3425439c7188": "E16c8914b2530"
+    },
+    "Edd1084b9e036": {
+      "Edb0988923b5f": "E7281fd9ce12c"
+    },
+    "E7281fd9ce12c": {
+      "E57f25cde6130": "E93d6fee524af"
+    },
+    "E93d6fee524af": {
+      "E3425439c7188": "Eecc4a0ac3568"
+    }
+  },
+  "notes": "E5192d70a66db E18938eefaa62: E9340c028e8f4 Ed2f0a04c9cfe E4ff8503fcb6d E11ce8eb30422 E9c00895d6c78 E5c9c8f093dd1 E8c34af86c954, Eeb2300d51c4c Ebe02e43f0d50 Ea41b6c6c003b E672218acf12f E49fa01c4eb5f"
+}

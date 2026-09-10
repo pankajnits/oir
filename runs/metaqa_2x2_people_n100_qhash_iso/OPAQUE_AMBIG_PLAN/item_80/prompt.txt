@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_80]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_80 #####
+QUESTION:
+Who Eadb8c8037f4f a E08b3cc0e0990 Ebe6637883aee [Antonio Banderas] E9d1ee61ce775 E2dc01bff8ba3?
+
+PATH_QUERY
+START Antonio Banderas
+R1 Efea656b8ae3f
+R2 Ed1b2ae14237e
+Execute path; return final tail only.
+
+CONTEXT:
+Antonio Banderas | Efea656b8ae3f | The Big Bang
+The Big Bang | Ed1b2ae14237e | Tony Krantz
+The Big Bang | Efdb85f641240 | Erik Jendresen

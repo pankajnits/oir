@@ -1,0 +1,43 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_93]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_93 #####
+DB: shop_membership
+SCHEMA (English name → sealed sqlite identifier):
+member = E5fb611134b81
+Member_ID = E96c95e03363d
+Card_Number = E5e93fb86e56c
+Name = E437a4d5f5550
+Hometown = E63a24924b6eb
+Level = E697a6a56bb30
+branch = Eb837c8b617c4
+Branch_ID = E1e89de0910a9
+Open_year = Ed8929212d6c2
+Address_road = E4eb321a11f39
+City = Ecf409a75839f
+membership_amount = Ee7633c4d3a29
+membership_register_branch = E7c3e5751e3a0
+Register_Year = Ea0ec86d6d29c
+purchase = E09e8edcec398
+Year = E1bce086052aa
+Total_pounds = E4f1454f9dbb5
+
+member(Member_ID, Card_Number, Name, Hometown, Level)
+branch(Branch_ID, Name, Open_year, Address_road, City, membership_amount)
+membership_register_branch(Member_ID, Branch_ID, Register_Year)
+purchase(Member_ID, Branch_ID, Year, Total_pounds)
+
+QUESTION:
+What is the sum of E4f1454f9dbb5 of E09e8edcec398 in Ea0ec86d6d29c 2018 for all branches in London?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

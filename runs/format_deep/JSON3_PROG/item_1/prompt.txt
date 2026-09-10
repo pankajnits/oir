@@ -1,0 +1,53 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM JSON3_PROG: nested sealed JSON (hq object) + JOIN. One quiz.
+
+##### ID FD_JSON3_PROG_1 #####
+JOIN_QUERY
+START Eee9db6823892
+Follow employees[].id → employees[].employer → orgs[].id → orgs[].hq.country
+Return the nested country atom.
+
+CONTEXT:
+{
+  "employees": [
+    {
+      "id": "Eee9db6823892",
+      "employer": "Eb98f7ba7f0b9"
+    },
+    {
+      "id": "E8704c42e6279",
+      "employer": "Efcdb34c54c36"
+    },
+    {
+      "id": "E9d82fd58dd2f",
+      "employer": "E0fe8baea683f"
+    }
+  ],
+  "orgs": [
+    {
+      "id": "E0fe8baea683f",
+      "hq": {
+        "city": "E4d44aea74e4d",
+        "country": "Ec0cbce79c203"
+      }
+    },
+    {
+      "id": "Eb98f7ba7f0b9",
+      "hq": {
+        "city": "E6a80f6ee4a41",
+        "country": "E7f9bd32594cc"
+      }
+    },
+    {
+      "id": "Efcdb34c54c36",
+      "hq": {
+        "city": "Eec33eceba03d",
+        "country": "Edaafd7ab3b5a"
+      }
+    }
+  ]
+}
+

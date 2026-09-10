@@ -1,0 +1,1 @@
+SQL[FD2_SQL_MODEL_5]: SELECT c.country FROM employees e JOIN orgs o ON o.org_id = e.org_id JOIN cities c ON c.city_id = o.city_id WHERE e.emp_id = 'E1772f39ac307'

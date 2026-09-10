@@ -1,0 +1,208 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL_PLAIN_0 #####
+PATH_QUERY
+START Jakub_Strnad
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jakub_Strnad | works_at | Allianz_pojiovna
+Allianz_pojiovna | headquartered_in | Prague
+DecoyCo_Allianz_pojiovna | headquartered_in | DecoyHQ_Prague
+Allianz_pojiovna | owned_by | Hold_Allianz_pojiovna
+Hold_Allianz_pojiovna | meta_of | Allianz_pojiovna
+Allianz_pojiovna | partner_of | Partner_Allianz_pojiovna
+Partner_Allianz_pojiovna | meta_of | Allianz_pojiovna
+Decoy_DecoyCo_Allianz_pojiovna | works_at | DecoyCo_Allianz_pojiovna
+
+##### ID CEIL_PLAIN_1 #####
+PATH_QUERY
+START Macon_Foscue_Brock_Jr
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Macon_Foscue_Brock_Jr | works_at | Dollar_Tree
+Dollar_Tree | headquartered_in | Chesapeake
+DecoyCo_Dollar_Tree | headquartered_in | DecoyHQ_Chesapeake
+Dollar_Tree | owned_by | Hold_Dollar_Tree
+Hold_Dollar_Tree | meta_of | Dollar_Tree
+Dollar_Tree | partner_of | Partner_Dollar_Tree
+Partner_Dollar_Tree | meta_of | Dollar_Tree
+Decoy_DecoyCo_Dollar_Tree | works_at | DecoyCo_Dollar_Tree
+
+##### ID CEIL_PLAIN_2 #####
+PATH_QUERY
+START Landon_H_Rowland
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Landon_H_Rowland | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern
+
+##### ID CEIL_PLAIN_3 #####
+PATH_QUERY
+START Bob_Chapek
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Bob_Chapek | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company
+
+##### ID CEIL_PLAIN_4 #####
+PATH_QUERY
+START Jakub_Duslek
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jakub_Duslek | works_at | UniCredit_Bank_Czech_Republic_and_Slovakia
+UniCredit_Bank_Czech_Republic_and_Slovakia | headquartered_in | Prague
+DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia | headquartered_in | DecoyHQ_Prague
+UniCredit_Bank_Czech_Republic_and_Slovakia | owned_by | Hold_UniCredit_Bank_Czech_Republic_and_Slovakia
+Hold_UniCredit_Bank_Czech_Republic_and_Slovakia | meta_of | UniCredit_Bank_Czech_Republic_and_Slovakia
+UniCredit_Bank_Czech_Republic_and_Slovakia | partner_of | Partner_UniCredit_Bank_Czech_Republic_and_Slovakia
+Partner_UniCredit_Bank_Czech_Republic_and_Slovakia | meta_of | UniCredit_Bank_Czech_Republic_and_Slovakia
+Decoy_DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia | works_at | DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia
+
+##### ID CEIL_PLAIN_5 #####
+PATH_QUERY
+START Hubert_Joly
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Hubert_Joly | works_at | Best_Buy
+Best_Buy | headquartered_in | Richfield
+DecoyCo_Best_Buy | headquartered_in | DecoyHQ_Richfield
+Best_Buy | owned_by | Hold_Best_Buy
+Hold_Best_Buy | meta_of | Best_Buy
+Best_Buy | partner_of | Partner_Best_Buy
+Partner_Best_Buy | meta_of | Best_Buy
+Decoy_DecoyCo_Best_Buy | works_at | DecoyCo_Best_Buy
+
+##### ID CEIL_PLAIN_6 #####
+PATH_QUERY
+START Tom_Buhrow
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Tom_Buhrow | works_at | Westdeutscher_Rundfunk
+Westdeutscher_Rundfunk | headquartered_in | Cologne
+DecoyCo_Westdeutscher_Rundfunk | headquartered_in | DecoyHQ_Cologne
+Westdeutscher_Rundfunk | owned_by | Hold_Westdeutscher_Rundfunk
+Hold_Westdeutscher_Rundfunk | meta_of | Westdeutscher_Rundfunk
+Westdeutscher_Rundfunk | partner_of | Partner_Westdeutscher_Rundfunk
+Partner_Westdeutscher_Rundfunk | meta_of | Westdeutscher_Rundfunk
+Decoy_DecoyCo_Westdeutscher_Rundfunk | works_at | DecoyCo_Westdeutscher_Rundfunk
+
+##### ID CEIL_PLAIN_7 #####
+PATH_QUERY
+START Michal_Krapinec
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Michal_Krapinec | works_at | esk_drhy
+esk_drhy | headquartered_in | Prague
+DecoyCo_esk_drhy | headquartered_in | DecoyHQ_Prague
+esk_drhy | owned_by | Hold_esk_drhy
+Hold_esk_drhy | meta_of | esk_drhy
+esk_drhy | partner_of | Partner_esk_drhy
+Partner_esk_drhy | meta_of | esk_drhy
+Decoy_DecoyCo_esk_drhy | works_at | DecoyCo_esk_drhy
+
+##### ID CEIL_PLAIN_8 #####
+PATH_QUERY
+START Catherine_Tait
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Catherine_Tait | works_at | Canadian_Broadcasting_Corporation
+Canadian_Broadcasting_Corporation | headquartered_in | Ottawa
+DecoyCo_Canadian_Broadcasting_Corporation | headquartered_in | DecoyHQ_Ottawa
+Canadian_Broadcasting_Corporation | owned_by | Hold_Canadian_Broadcasting_Corporation
+Hold_Canadian_Broadcasting_Corporation | meta_of | Canadian_Broadcasting_Corporation
+Canadian_Broadcasting_Corporation | partner_of | Partner_Canadian_Broadcasting_Corporation
+Partner_Canadian_Broadcasting_Corporation | meta_of | Canadian_Broadcasting_Corporation
+Decoy_DecoyCo_Canadian_Broadcasting_Corporation | works_at | DecoyCo_Canadian_Broadcasting_Corporation
+
+##### ID CEIL_PLAIN_9 #####
+PATH_QUERY
+START Achim_Wei
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Achim_Wei | works_at | Ionos
+Ionos | headquartered_in | Montabaur
+DecoyCo_Ionos | headquartered_in | DecoyHQ_Montabaur
+Ionos | owned_by | Hold_Ionos
+Hold_Ionos | meta_of | Ionos
+Ionos | partner_of | Partner_Ionos
+Partner_Ionos | meta_of | Ionos
+Decoy_DecoyCo_Ionos | works_at | DecoyCo_Ionos
+
+##### ID CEIL_PLAIN_10 #####
+PATH_QUERY
+START Walt_Disney
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Walt_Disney | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company
+
+##### ID CEIL_PLAIN_11 #####
+PATH_QUERY
+START William_N_Deramus_IV
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+William_N_Deramus_IV | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern

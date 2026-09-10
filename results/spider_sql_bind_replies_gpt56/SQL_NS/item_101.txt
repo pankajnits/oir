@@ -1,0 +1,3 @@
+SQL[PB_SQL_NS_101]: SELECT s.E423c1adcdc00 FROM Ebf3d25f4bed5 AS s JOIN Ec699e04b58f9 AS ts ON s.E7f9ac754b91d = ts.E7f9ac754b91d JOIN Ea219e2c54257 AS t ON ts.E3e9436417cc1 = t.E3e9436417cc1 WHERE t.E423c1adcdc00 IN ('Ananthapuri Express', 'Guruvayur Express') GROUP BY s.E7f9ac754b91d, s.E423c1adcdc00 HAVING COUNT(DISTINCT t.E423c1adcdc00) = 2;
+# raw_tail
+SQL[PB_SQL_101]: SELECT s.E423c1adcdc00 FROM Ebf3d25f4bed5 AS s JOIN Ec699e04b58f9 AS ts ON s.E7f9ac754b91d = ts.E7f9ac754b91d JOIN Ea219e2c54257 AS t ON ts.E3e9436417cc1 = t.E3e9436417cc1 WHERE t.E423c1adcdc00 IN ('Ananthapuri Express', 'Guruvayur Express') GROUP BY s.E7f9ac754b91d, s.E423c1adcdc00 HAVING COUNT(DISTINCT t.E423c1adcdc00) = 2;

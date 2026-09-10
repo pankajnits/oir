@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_81]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_81 #####
+QUESTION:
+Who directed a movie that Leonardo DiCaprio starred in?
+
+PATH_QUERY
+START Leonardo DiCaprio
+R1 E5e6df4718761
+R2 E0d7beb1900be
+Execute path; return final tail only.
+
+CONTEXT:
+Leonardo DiCaprio | E5e6df4718761 | The Basketball Diaries
+The Basketball Diaries | E0d7beb1900be | Scott Kalvert
+The Basketball Diaries | Ec1a62e451ebc | Jim Carroll

@@ -1,0 +1,17 @@
+{
+  "hypothesis_user": "If model reasons on IDs it can figure out relations on IDs automatically",
+  "zero_shot": {
+    "pass": "0/4",
+    "hold_errors": 0,
+    "partner_errors": 4,
+    "note": "Picked a 2-hop but WRONG second relation seal vs gold city"
+  },
+  "few_shot_id_induction": {
+    "pass": "4/4",
+    "note": "Demos with shared relation seals \u2014 induces path"
+  },
+  "handles_control": {
+    "pass": "4/4"
+  },
+  "verdict": "PARTIAL SUPPORT for user: few-shot sealed demos \u2192 4/4 without English. REJECT naive claim: zero-shot single graph does NOT uniquely identify city-rel (got 0/4 cities; errors are other sink tails). ID reasoning \u2260 automatic correct relation discovery without demos or handles."
+}

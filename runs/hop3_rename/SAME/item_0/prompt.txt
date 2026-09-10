@@ -1,0 +1,64 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM SAME_BALANCED σ′: 4 sealed 2-hop demos (R,S); 3-hop quiz gold (R,S,R) AND a novel trap cycle; symmetric noise. One quiz. New encoding.
+
+Learn the mapping from DEMOs (same encoding, novel node seals).
+Answer the QUIZ the same way. No English relation names. No PATH.
+
+DEMO 0:
+START E9c43408ea90b
+CONTEXT:
+E1ef5c9002d4c | E230033222f3b | E7a7605fa1b49
+E9c43408ea90b | E7e8bf0c70d51 | E1ef5c9002d4c
+E95289dfc49d2 | E3860e4c60e9b | E9c43408ea90b
+E9c43408ea90b | E6dd71cbcf6a4 | E95289dfc49d2
+ANSWER_SEALED: E7a7605fa1b49
+
+DEMO 1:
+START Eebc90e654f63
+CONTEXT:
+E9828f72a6b47 | E230033222f3b | Ebfe57ee105ef
+Eebc90e654f63 | E7e8bf0c70d51 | E9828f72a6b47
+E739ce2b653aa | E4445d609ed93 | Eebc90e654f63
+Eebc90e654f63 | E96f7f1439a3f | E739ce2b653aa
+ANSWER_SEALED: Ebfe57ee105ef
+
+DEMO 2:
+START E227d076d0721
+CONTEXT:
+Ee86a26cbcc65 | E230033222f3b | Eccafa7c390d8
+E227d076d0721 | E7e8bf0c70d51 | Ee86a26cbcc65
+E227d076d0721 | Ef92c7434338c | E0b3d7042a044
+E0b3d7042a044 | E63967b65024e | E227d076d0721
+ANSWER_SEALED: Eccafa7c390d8
+
+DEMO 3:
+START E09afac523b2d
+CONTEXT:
+E09afac523b2d | E87027e21812e | E761ac69571fc
+Eb383d2976ca8 | E230033222f3b | E3aa4d8e2dc79
+E761ac69571fc | E61ccaae29002 | E09afac523b2d
+E09afac523b2d | E7e8bf0c70d51 | Eb383d2976ca8
+ANSWER_SEALED: E3aa4d8e2dc79
+
+--- QUIZ ---
+##### ID H3R_SAME_0 #####
+START E94ebef7dabce
+CONTEXT:
+Ea5ac5b3daaf4 | E2c26c8e0549e | E3791c4e4d069
+E2148fb07ffbc | E4beb8278740e | E124f3072e1fa
+E3791c4e4d069 | Ea5a3f570db7c | Ea5ac5b3daaf4
+E124f3072e1fa | E230033222f3b | E3791c4e4d069
+E5f8e9040619e | E8170d9ee3626 | E6011f0251362
+E124f3072e1fa | E413435c5f8c1 | E2148fb07ffbc
+E6011f0251362 | E544c9a096eb1 | Ec59ac1a271c5
+Ebac94872993a | E364889b3f675 | E5f8e9040619e
+E6011f0251362 | E6e4f40e7f9d6 | E5fee0e3e2ecc
+E5fee0e3e2ecc | E6a478fa1be2a | E6011f0251362
+E5f8e9040619e | E14e2a3c51486 | Ebac94872993a
+E3791c4e4d069 | E7e8bf0c70d51 | E734901ec06e0
+E94ebef7dabce | E544c9a096eb1 | E5f8e9040619e
+E94ebef7dabce | E7e8bf0c70d51 | E124f3072e1fa
+

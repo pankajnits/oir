@@ -1,0 +1,51 @@
+{
+  "name": "OIR-Bench",
+  "version": "2026-08-21",
+  "claim": "lexicon hiding; not confidentiality",
+  "suites": [
+    {
+      "id": "factorial_2x2_iso",
+      "n": 32,
+      "protocol": "isolation",
+      "keys": "per-item HMAC on relations; entities English",
+      "prompts": "runs/factorial_2x2_iso",
+      "harness": "results/factorial_2x2_iso_harness.json",
+      "scorer": "harness/score_factorial_2x2.py",
+      "locked_freeform": ["gpt56", "composer25", "grok45"],
+      "primary": true
+    },
+    {
+      "id": "ceiling_three_arm_n32_iso",
+      "n": 32,
+      "protocol": "isolation",
+      "keys": "per-item HMAC",
+      "prompts": "runs/ceiling_three_arm_n32_iso",
+      "harness": "results/ceiling_three_arm_n32_iso_harness.json",
+      "scorer": "harness/score_ceiling_n32_iso.py",
+      "locked_freeform": ["gpt56", "grok45", "composer25"]
+    },
+    {
+      "id": "adv_induction_n32_iso",
+      "n": 32,
+      "protocol": "isolation",
+      "prompts": "runs/adv_induction_n32_iso",
+      "harness": "results/adv_induction_n32_iso_harness.json",
+      "scorer": "harness/score_adv_n32_iso.py",
+      "locked_freeform": ["gpt56", "grok45ff", "composer25ff"],
+      "binding_archived_not_claim": ["grok45"]
+    },
+    {
+      "id": "oir_bench_baselines_n200",
+      "n": 200,
+      "protocol": "frozen_split",
+      "scores": "results/oir_bench_baselines.json"
+    },
+    {
+      "id": "grev2_typed_sink",
+      "n": 200,
+      "protocol": "synthetic_holdout",
+      "data": "data/synthetic/grev2_typed_sink_holdout.jsonl",
+      "scores": "results/grev2_typed_sink_results.json"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_124 #####
+QUESTION:
+What is the date of death of Joseph Martin (1726–1776)'s father?
+
+CONTEXT:
+Joan of England | mother | Philippa of Hainault
+Philippa of Hainault | cause of death | edema
+Jelena Lieven | father | Alexander Lieven
+Joseph Martin | decoy_link_124 | decoy_mid_124
+Joseph Martin | father | John Martin
+Alexander Lieven | place of birth | Moscow
+decoy_mid_124 | date of death | 1767
+John Martin | date of death | CF_TAIL_124_1767

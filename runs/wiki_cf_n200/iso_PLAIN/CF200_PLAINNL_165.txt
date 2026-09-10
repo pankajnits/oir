@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_165 #####
+QUESTION:
+Where did Wenceslaus Of Krosno's father die?
+
+CONTEXT:
+Armin, Prince of Lippe | father | Leopold IV, Prince of Lippe
+Henry VIII the Sparrow | place of death | CF_TAIL_165_Szprotawa
+Leopold IV, Prince of Lippe | date of death | 30 December 1949
+decoy_mid_165 | place of death | Szprotawa
+Crane Wilbur | place of birth | Athens
+Wenceslaus of Krosno | father | Henry VIII the Sparrow
+Inside the Walls of Folsom Prison | director | Crane Wilbur
+Wenceslaus of Krosno | decoy_link_165 | decoy_mid_165

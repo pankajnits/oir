@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_11]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_11 #####
+QUESTION:
+What city is the headquarters of the company led by Stuart_Parker?
+
+PATH_QUERY
+START Stuart_Parker
+R1 Ec24d909ea8c2
+R2 E9de69babb258
+Execute path; return final tail only.
+
+CONTEXT:
+Stuart_Parker | Ec24d909ea8c2 | USAA
+USAA | E9de69babb258 | San_Antonio
+Stuart_Parker | E63200f85d5ee | Ionos
+Ionos | E8fb9ece6444c | Montabaur

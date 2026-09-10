@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_0]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_0 #####
+QUESTION:
+What city is the headquarters of the company led by Michael_Eisner?
+
+PATH_QUERY
+START Michael_Eisner
+R1 E334675310f05
+R2 Eac04fab538ca
+Execute path; return final tail only.
+
+CONTEXT:
+Michael_Eisner | E334675310f05 | The_Walt_Disney_Company
+The_Walt_Disney_Company | Eac04fab538ca | Burbank
+Michael_Eisner | Ec8eebfb91508 | Kansas_City_Southern
+Kansas_City_Southern | Eca7e2608606b | Kansas_City

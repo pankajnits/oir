@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_25]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_25 #####
+QUESTION:
+What is the genre of a movie directed by Michaël R. Roskam?
+
+PATH_QUERY
+START Michaël R. Roskam
+R1 E0294e92c6d67
+R2 E8b7dec2066f6
+Execute path; return final tail only.
+
+CONTEXT:
+Michaël R. Roskam | E0294e92c6d67 | Bullhead
+Bullhead | E8b7dec2066f6 | Drama
+Bullhead | E02baf06e7c2d | Flemish

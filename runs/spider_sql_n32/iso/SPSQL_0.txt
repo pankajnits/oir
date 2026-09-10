@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_0]: <sql>
+
+DB: small_bank_1
+SCHEMA:
+ACCOUNTS(custid, name)
+SAVINGS(custid, balance)
+CHECKING(custid, balance)
+QUESTION:
+Find the checking balance of the accounts whose savings balance is higher than the average savings balance.

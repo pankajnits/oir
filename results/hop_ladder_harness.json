@@ -1,0 +1,237 @@
+{
+  "claim": "SEAL_PROG saturates across hop depth 1\u20134; free SEAL_NL near floor",
+  "version": 2,
+  "n_per_hop": 8,
+  "hops": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "cases": [
+    {
+      "hop": 1,
+      "i": 0,
+      "gold": "Ead130a94eddf",
+      "prog_id": "HOP1_PROG_0",
+      "nl_id": "HOP1_NL_0"
+    },
+    {
+      "hop": 1,
+      "i": 1,
+      "gold": "E89726af6bffd",
+      "prog_id": "HOP1_PROG_1",
+      "nl_id": "HOP1_NL_1"
+    },
+    {
+      "hop": 1,
+      "i": 2,
+      "gold": "Ea1cfe6b6cbdd",
+      "prog_id": "HOP1_PROG_2",
+      "nl_id": "HOP1_NL_2"
+    },
+    {
+      "hop": 1,
+      "i": 3,
+      "gold": "E25d36fb9c8a7",
+      "prog_id": "HOP1_PROG_3",
+      "nl_id": "HOP1_NL_3"
+    },
+    {
+      "hop": 1,
+      "i": 4,
+      "gold": "E1e4f59eed6c1",
+      "prog_id": "HOP1_PROG_4",
+      "nl_id": "HOP1_NL_4"
+    },
+    {
+      "hop": 1,
+      "i": 5,
+      "gold": "E093a89f02b4f",
+      "prog_id": "HOP1_PROG_5",
+      "nl_id": "HOP1_NL_5"
+    },
+    {
+      "hop": 1,
+      "i": 6,
+      "gold": "E633178b65e8f",
+      "prog_id": "HOP1_PROG_6",
+      "nl_id": "HOP1_NL_6"
+    },
+    {
+      "hop": 1,
+      "i": 7,
+      "gold": "Ee36d8763e5f1",
+      "prog_id": "HOP1_PROG_7",
+      "nl_id": "HOP1_NL_7"
+    },
+    {
+      "hop": 2,
+      "i": 0,
+      "gold": "E6a22340965b4",
+      "prog_id": "HOP2_PROG_0",
+      "nl_id": "HOP2_NL_0"
+    },
+    {
+      "hop": 2,
+      "i": 1,
+      "gold": "E546d09971f85",
+      "prog_id": "HOP2_PROG_1",
+      "nl_id": "HOP2_NL_1"
+    },
+    {
+      "hop": 2,
+      "i": 2,
+      "gold": "E0ed36c71a8ff",
+      "prog_id": "HOP2_PROG_2",
+      "nl_id": "HOP2_NL_2"
+    },
+    {
+      "hop": 2,
+      "i": 3,
+      "gold": "E244a132b8fa3",
+      "prog_id": "HOP2_PROG_3",
+      "nl_id": "HOP2_NL_3"
+    },
+    {
+      "hop": 2,
+      "i": 4,
+      "gold": "E3afd58da1f18",
+      "prog_id": "HOP2_PROG_4",
+      "nl_id": "HOP2_NL_4"
+    },
+    {
+      "hop": 2,
+      "i": 5,
+      "gold": "E3aa5ca3cd319",
+      "prog_id": "HOP2_PROG_5",
+      "nl_id": "HOP2_NL_5"
+    },
+    {
+      "hop": 2,
+      "i": 6,
+      "gold": "E24f0411a643d",
+      "prog_id": "HOP2_PROG_6",
+      "nl_id": "HOP2_NL_6"
+    },
+    {
+      "hop": 2,
+      "i": 7,
+      "gold": "E2ebe7c5afa68",
+      "prog_id": "HOP2_PROG_7",
+      "nl_id": "HOP2_NL_7"
+    },
+    {
+      "hop": 3,
+      "i": 0,
+      "gold": "Ebfb88846d055",
+      "prog_id": "HOP3_PROG_0",
+      "nl_id": "HOP3_NL_0"
+    },
+    {
+      "hop": 3,
+      "i": 1,
+      "gold": "E299c80f3a20e",
+      "prog_id": "HOP3_PROG_1",
+      "nl_id": "HOP3_NL_1"
+    },
+    {
+      "hop": 3,
+      "i": 2,
+      "gold": "E09f48c5f0d6e",
+      "prog_id": "HOP3_PROG_2",
+      "nl_id": "HOP3_NL_2"
+    },
+    {
+      "hop": 3,
+      "i": 3,
+      "gold": "Ead889f0aba1b",
+      "prog_id": "HOP3_PROG_3",
+      "nl_id": "HOP3_NL_3"
+    },
+    {
+      "hop": 3,
+      "i": 4,
+      "gold": "E1ea37e246d37",
+      "prog_id": "HOP3_PROG_4",
+      "nl_id": "HOP3_NL_4"
+    },
+    {
+      "hop": 3,
+      "i": 5,
+      "gold": "E66231390a0f1",
+      "prog_id": "HOP3_PROG_5",
+      "nl_id": "HOP3_NL_5"
+    },
+    {
+      "hop": 3,
+      "i": 6,
+      "gold": "Edbc5bcae5f07",
+      "prog_id": "HOP3_PROG_6",
+      "nl_id": "HOP3_NL_6"
+    },
+    {
+      "hop": 3,
+      "i": 7,
+      "gold": "E1792ff6887f8",
+      "prog_id": "HOP3_PROG_7",
+      "nl_id": "HOP3_NL_7"
+    },
+    {
+      "hop": 4,
+      "i": 0,
+      "gold": "Ea7b59657dae9",
+      "prog_id": "HOP4_PROG_0",
+      "nl_id": "HOP4_NL_0"
+    },
+    {
+      "hop": 4,
+      "i": 1,
+      "gold": "E950da0ff115a",
+      "prog_id": "HOP4_PROG_1",
+      "nl_id": "HOP4_NL_1"
+    },
+    {
+      "hop": 4,
+      "i": 2,
+      "gold": "E05d035dd19b1",
+      "prog_id": "HOP4_PROG_2",
+      "nl_id": "HOP4_NL_2"
+    },
+    {
+      "hop": 4,
+      "i": 3,
+      "gold": "E5cba77558102",
+      "prog_id": "HOP4_PROG_3",
+      "nl_id": "HOP4_NL_3"
+    },
+    {
+      "hop": 4,
+      "i": 4,
+      "gold": "Ed1a82d6fd423",
+      "prog_id": "HOP4_PROG_4",
+      "nl_id": "HOP4_NL_4"
+    },
+    {
+      "hop": 4,
+      "i": 5,
+      "gold": "Ed358b41ce546",
+      "prog_id": "HOP4_PROG_5",
+      "nl_id": "HOP4_NL_5"
+    },
+    {
+      "hop": 4,
+      "i": 6,
+      "gold": "E72a340c57bab",
+      "prog_id": "HOP4_PROG_6",
+      "nl_id": "HOP4_NL_6"
+    },
+    {
+      "hop": 4,
+      "i": 7,
+      "gold": "E64d6a64977ee",
+      "prog_id": "HOP4_PROG_7",
+      "nl_id": "HOP4_NL_7"
+    }
+  ]
+}

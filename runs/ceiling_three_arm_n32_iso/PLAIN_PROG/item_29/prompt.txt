@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_29 #####
+PATH_QUERY
+START Raymond_Watson
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Raymond_Watson | works_at | The_Walt_Disney_Company
+The_Walt_Disney_Company | headquartered_in | Burbank
+DecoyCo_The_Walt_Disney_Company | headquartered_in | DecoyHQ_Burbank
+The_Walt_Disney_Company | owned_by | Hold_The_Walt_Disney_Company
+Hold_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+The_Walt_Disney_Company | partner_of | Partner_The_Walt_Disney_Company
+Partner_The_Walt_Disney_Company | meta_of | The_Walt_Disney_Company
+Decoy_DecoyCo_The_Walt_Disney_Company | works_at | DecoyCo_The_Walt_Disney_Company

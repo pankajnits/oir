@@ -1,0 +1,30 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM H2_DEMO_1: hop=2; 1 sealed demos; one quiz; no PATH.
+
+Learn the mapping from DEMOs (same encoding, novel seals).
+Answer the QUIZ the same way. No English relation names. No PATH.
+
+DEMO 0:
+START E2cea9caa7c7e
+CONTEXT:
+E02f19c1c0fcc | E2aa09665b56e | E2cea9caa7c7e
+E33fe02344f67 | E3ab23a2c7023 | Ecbd02e101e03
+E2cea9caa7c7e | E2015ed2c3440 | E33fe02344f67
+E33fe02344f67 | E012504e5dfe3 | Eef712aa91659
+E2cea9caa7c7e | E5503bf8a53dd | E02f19c1c0fcc
+Ecbd02e101e03 | E63bce04b455b | E33fe02344f67
+ANSWER_SEALED: Eef712aa91659
+
+--- QUIZ ---
+##### ID HI_H2_D1_5 #####
+START E3b1a7536853c
+CONTEXT:
+E6729a9c4ca51 | E012504e5dfe3 | Ef2a8956102f8
+Ed61055af7bbd | E82376108074f | E3b1a7536853c
+E6729a9c4ca51 | E8355d6235b34 | E53644c3d377e
+E3b1a7536853c | E2015ed2c3440 | E6729a9c4ca51
+E53644c3d377e | Ee4b4786e126d | E6729a9c4ca51
+E3b1a7536853c | E338bb7552096 | Ed61055af7bbd
+

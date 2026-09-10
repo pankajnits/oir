@@ -1,0 +1,317 @@
+{
+  "n": 6,
+  "suite": "hop3_bal",
+  "seed": 20260814,
+  "arms": {
+    "SAME_BALANCED": {
+      "n": 6,
+      "ids": [
+        "H3B_SAME_BALANCED_0",
+        "H3B_SAME_BALANCED_1",
+        "H3B_SAME_BALANCED_2",
+        "H3B_SAME_BALANCED_3",
+        "H3B_SAME_BALANCED_4",
+        "H3B_SAME_BALANCED_5"
+      ],
+      "item_paths": [
+        "runs/hop3_bal/SAME_BALANCED/item_0/prompt.txt",
+        "runs/hop3_bal/SAME_BALANCED/item_1/prompt.txt",
+        "runs/hop3_bal/SAME_BALANCED/item_2/prompt.txt",
+        "runs/hop3_bal/SAME_BALANCED/item_3/prompt.txt",
+        "runs/hop3_bal/SAME_BALANCED/item_4/prompt.txt",
+        "runs/hop3_bal/SAME_BALANCED/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "CROSS_BALANCED": {
+      "n": 6,
+      "ids": [
+        "H3B_CROSS_BALANCED_0",
+        "H3B_CROSS_BALANCED_1",
+        "H3B_CROSS_BALANCED_2",
+        "H3B_CROSS_BALANCED_3",
+        "H3B_CROSS_BALANCED_4",
+        "H3B_CROSS_BALANCED_5"
+      ],
+      "item_paths": [
+        "runs/hop3_bal/CROSS_BALANCED/item_0/prompt.txt",
+        "runs/hop3_bal/CROSS_BALANCED/item_1/prompt.txt",
+        "runs/hop3_bal/CROSS_BALANCED/item_2/prompt.txt",
+        "runs/hop3_bal/CROSS_BALANCED/item_3/prompt.txt",
+        "runs/hop3_bal/CROSS_BALANCED/item_4/prompt.txt",
+        "runs/hop3_bal/CROSS_BALANCED/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "DEMO_0_BALANCED": {
+      "n": 6,
+      "ids": [
+        "H3B_DEMO_0_BALANCED_0",
+        "H3B_DEMO_0_BALANCED_1",
+        "H3B_DEMO_0_BALANCED_2",
+        "H3B_DEMO_0_BALANCED_3",
+        "H3B_DEMO_0_BALANCED_4",
+        "H3B_DEMO_0_BALANCED_5"
+      ],
+      "item_paths": [
+        "runs/hop3_bal/DEMO_0_BALANCED/item_0/prompt.txt",
+        "runs/hop3_bal/DEMO_0_BALANCED/item_1/prompt.txt",
+        "runs/hop3_bal/DEMO_0_BALANCED/item_2/prompt.txt",
+        "runs/hop3_bal/DEMO_0_BALANCED/item_3/prompt.txt",
+        "runs/hop3_bal/DEMO_0_BALANCED/item_4/prompt.txt",
+        "runs/hop3_bal/DEMO_0_BALANCED/item_5/prompt.txt"
+      ],
+      "iso": true
+    },
+    "PATH": {
+      "n": 6,
+      "ids": [
+        "H3B_PATH_0",
+        "H3B_PATH_1",
+        "H3B_PATH_2",
+        "H3B_PATH_3",
+        "H3B_PATH_4",
+        "H3B_PATH_5"
+      ],
+      "batch": "runs/hop3_bal/PATH_BATCH/BATCH.txt",
+      "iso": false
+    }
+  },
+  "cases": [
+    {
+      "arm": "SAME_BALANCED",
+      "i": 0,
+      "id": "H3B_SAME_BALANCED_0",
+      "gold": "E78e4d45b1753",
+      "trap": "Ec19d06291eec",
+      "early": "E3d7a893552b1",
+      "iso": true,
+      "path": "runs/hop3_bal/SAME_BALANCED/item_0/prompt.txt"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "i": 1,
+      "id": "H3B_SAME_BALANCED_1",
+      "gold": "Ee564428716f6",
+      "trap": "E019314027748",
+      "early": "E8eb05e4e055e",
+      "iso": true,
+      "path": "runs/hop3_bal/SAME_BALANCED/item_1/prompt.txt"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "i": 2,
+      "id": "H3B_SAME_BALANCED_2",
+      "gold": "E1f8fa1cfd964",
+      "trap": "E6b08b1cddb98",
+      "early": "E3c2af70b722f",
+      "iso": true,
+      "path": "runs/hop3_bal/SAME_BALANCED/item_2/prompt.txt"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "i": 3,
+      "id": "H3B_SAME_BALANCED_3",
+      "gold": "E228784839f48",
+      "trap": "E4af953c94dd0",
+      "early": "E80fd507ffd97",
+      "iso": true,
+      "path": "runs/hop3_bal/SAME_BALANCED/item_3/prompt.txt"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "i": 4,
+      "id": "H3B_SAME_BALANCED_4",
+      "gold": "E01c998febff3",
+      "trap": "E8ad69da59016",
+      "early": "E52056718997c",
+      "iso": true,
+      "path": "runs/hop3_bal/SAME_BALANCED/item_4/prompt.txt"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "i": 5,
+      "id": "H3B_SAME_BALANCED_5",
+      "gold": "Eb5d293ca45c5",
+      "trap": "Eb24aa8531217",
+      "early": "Eef18e3af1c88",
+      "iso": true,
+      "path": "runs/hop3_bal/SAME_BALANCED/item_5/prompt.txt"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "i": 0,
+      "id": "H3B_CROSS_BALANCED_0",
+      "gold": "E431be54d9a12",
+      "trap": "E8c1f36cbc767",
+      "early": "Ecb68244053fb",
+      "iso": true,
+      "path": "runs/hop3_bal/CROSS_BALANCED/item_0/prompt.txt"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "i": 1,
+      "id": "H3B_CROSS_BALANCED_1",
+      "gold": "E4cb8e90b73e4",
+      "trap": "E6817678306f4",
+      "early": "E29298e2f0278",
+      "iso": true,
+      "path": "runs/hop3_bal/CROSS_BALANCED/item_1/prompt.txt"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "i": 2,
+      "id": "H3B_CROSS_BALANCED_2",
+      "gold": "E1abda7dcda6d",
+      "trap": "Eaa62d3c4e215",
+      "early": "E5c44c80f6fe8",
+      "iso": true,
+      "path": "runs/hop3_bal/CROSS_BALANCED/item_2/prompt.txt"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "i": 3,
+      "id": "H3B_CROSS_BALANCED_3",
+      "gold": "E10b0f0da67c3",
+      "trap": "Ecb6b0de25b4f",
+      "early": "Ed7bc5286fb6b",
+      "iso": true,
+      "path": "runs/hop3_bal/CROSS_BALANCED/item_3/prompt.txt"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "i": 4,
+      "id": "H3B_CROSS_BALANCED_4",
+      "gold": "E11acb75f4e41",
+      "trap": "E5e1c31c1e847",
+      "early": "E1489d1e3aeda",
+      "iso": true,
+      "path": "runs/hop3_bal/CROSS_BALANCED/item_4/prompt.txt"
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "i": 5,
+      "id": "H3B_CROSS_BALANCED_5",
+      "gold": "E821f217136d7",
+      "trap": "E866559cc987b",
+      "early": "Ef39f47cbb8c9",
+      "iso": true,
+      "path": "runs/hop3_bal/CROSS_BALANCED/item_5/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_BALANCED",
+      "i": 0,
+      "id": "H3B_DEMO_0_BALANCED_0",
+      "gold": "E78e4d45b1753",
+      "trap": "Ec19d06291eec",
+      "early": "E3d7a893552b1",
+      "iso": true,
+      "path": "runs/hop3_bal/DEMO_0_BALANCED/item_0/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_BALANCED",
+      "i": 1,
+      "id": "H3B_DEMO_0_BALANCED_1",
+      "gold": "Ee564428716f6",
+      "trap": "E019314027748",
+      "early": "E8eb05e4e055e",
+      "iso": true,
+      "path": "runs/hop3_bal/DEMO_0_BALANCED/item_1/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_BALANCED",
+      "i": 2,
+      "id": "H3B_DEMO_0_BALANCED_2",
+      "gold": "E1f8fa1cfd964",
+      "trap": "E6b08b1cddb98",
+      "early": "E3c2af70b722f",
+      "iso": true,
+      "path": "runs/hop3_bal/DEMO_0_BALANCED/item_2/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_BALANCED",
+      "i": 3,
+      "id": "H3B_DEMO_0_BALANCED_3",
+      "gold": "E228784839f48",
+      "trap": "E4af953c94dd0",
+      "early": "E80fd507ffd97",
+      "iso": true,
+      "path": "runs/hop3_bal/DEMO_0_BALANCED/item_3/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_BALANCED",
+      "i": 4,
+      "id": "H3B_DEMO_0_BALANCED_4",
+      "gold": "E01c998febff3",
+      "trap": "E8ad69da59016",
+      "early": "E52056718997c",
+      "iso": true,
+      "path": "runs/hop3_bal/DEMO_0_BALANCED/item_4/prompt.txt"
+    },
+    {
+      "arm": "DEMO_0_BALANCED",
+      "i": 5,
+      "id": "H3B_DEMO_0_BALANCED_5",
+      "gold": "Eb5d293ca45c5",
+      "trap": "Eb24aa8531217",
+      "early": "Eef18e3af1c88",
+      "iso": true,
+      "path": "runs/hop3_bal/DEMO_0_BALANCED/item_5/prompt.txt"
+    },
+    {
+      "arm": "PATH",
+      "i": 0,
+      "id": "H3B_PATH_0",
+      "gold": "E78e4d45b1753",
+      "trap": "Ec19d06291eec",
+      "early": "E3d7a893552b1",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 1,
+      "id": "H3B_PATH_1",
+      "gold": "Ee564428716f6",
+      "trap": "E019314027748",
+      "early": "E8eb05e4e055e",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 2,
+      "id": "H3B_PATH_2",
+      "gold": "E1f8fa1cfd964",
+      "trap": "E6b08b1cddb98",
+      "early": "E3c2af70b722f",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 3,
+      "id": "H3B_PATH_3",
+      "gold": "E228784839f48",
+      "trap": "E4af953c94dd0",
+      "early": "E80fd507ffd97",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 4,
+      "id": "H3B_PATH_4",
+      "gold": "E01c998febff3",
+      "trap": "E8ad69da59016",
+      "early": "E52056718997c",
+      "iso": false
+    },
+    {
+      "arm": "PATH",
+      "i": 5,
+      "id": "H3B_PATH_5",
+      "gold": "Eb5d293ca45c5",
+      "trap": "Eb24aa8531217",
+      "early": "Eef18e3af1c88",
+      "iso": false
+    }
+  ],
+  "nonclaim": "Balanced trap (symmetric noise). SAME success is relation-token binding, not G-Rev1. DEMO_0 / SAME / CROSS are one quiz per file."
+}

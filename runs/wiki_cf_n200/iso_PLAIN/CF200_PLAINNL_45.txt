@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_45 #####
+QUESTION:
+Where did the director of film Man Detained graduate from?
+
+CONTEXT:
+Man Detained | decoy_link_45 | decoy_mid_45
+Leopoldo Torre Nilsson | father | Leopoldo Torres Ríos
+The Seven Madmen | director | Leopoldo Torre Nilsson
+decoy_mid_45 | educated at | Churcher's College
+Man Detained | director | Robert Tronson
+Robert Tronson | educated at | CF_TAIL_45_ChurchersCol
+André Téchiné | employer | Cahiers du cinéma
+Scene of the Crime | director | André Téchiné

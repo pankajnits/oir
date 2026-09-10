@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_6]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_6 #####
+QUESTION:
+What is the genre of a movie directed by Aki Kaurismäki?
+
+PATH_QUERY
+START Aki Kaurismäki
+R1 E2e3ffa85ac1d
+R2 E405c1ab37a32
+Execute path; return final tail only.
+
+CONTEXT:
+Aki Kaurismäki | E2e3ffa85ac1d | Shadows in Paradise
+Shadows in Paradise | E405c1ab37a32 | Drama, Comedy
+Shadows in Paradise | Eef94cd9fc843 | Finnish

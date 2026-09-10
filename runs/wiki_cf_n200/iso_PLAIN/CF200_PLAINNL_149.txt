@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_149 #####
+QUESTION:
+Who is the father of the director of film Snake In The Eagle'S Shadow?
+
+CONTEXT:
+Snake in the Eagle's Shadow | director | Yuen Woo-ping
+Yuen Woo-ping | father | CF_TAIL_149_YuenSiutien
+Ferdinand de Lesseps | date of birth | 19 November 1805
+Snake in the Eagle's Shadow | decoy_link_149 | decoy_mid_149
+decoy_mid_149 | father | Yuen Siu-tien
+William Duncan | place of death | Hollywood
+The Universal Company | founded by | Ferdinand de Lesseps
+Wolves of the North | director | William Duncan

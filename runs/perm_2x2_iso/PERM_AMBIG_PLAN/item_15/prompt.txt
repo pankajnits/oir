@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_15]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_15 #####
+QUESTION:
+What city is the headquarters of the company led by David_J_Wright?
+
+PATH_QUERY
+START David_J_Wright
+R1 E33b7363df5bb
+R2 Ea79d27fb340f
+Execute path; return final tail only.
+
+CONTEXT:
+David_J_Wright | E33b7363df5bb | Globcal_International
+Globcal_International | Ea79d27fb340f | Richmond
+David_J_Wright | E83b107b97e2a | Elisa
+Elisa | E6f0ee72851f8 | Helsinki

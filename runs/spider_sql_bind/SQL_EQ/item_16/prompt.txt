@@ -1,0 +1,54 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_16]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_16 #####
+DB: sports_competition
+SCHEMA (English name → sealed sqlite identifier):
+club = E2c0b12d4f7b9
+Club_ID = E2885b5eae271
+name = Eafa26a962a6e
+Region = E8d23882b8fb6
+Start_year = E6521e1f7a086
+club_rank = E35b7c82cb8e3
+Rank = E45ce00dbe750
+Gold = E5690605b6ede
+Silver = E85cbfd321a19
+Bronze = E926fb9901154
+Total = E6ecb1aa655d7
+player = Eb9ac17c3926f
+Player_ID = E154882552440
+Position = Ec7f5a7f243f0
+Apps = Edf0a7cbb64f4
+Tries = Ed48aa574117d
+Goals = E0799284dd673
+Points = Ec18e090400db
+competition = Ec30d7e8145f1
+Competition_ID = E5a8746bbb6dd
+Year = Ed6efb57780c0
+Competition_type = E8f1b82c06fe0
+Country = E27ba4c0f4fba
+competition_result = Ea142def9f951
+Club_ID_1 = Ea4e0a66d475b
+Club_ID_2 = Ea2d9ee966cb9
+Score = E9c99df2ff0e5
+
+club(Club_ID, name, Region, Start_year)
+club_rank(Rank, Club_ID, Gold, Silver, Bronze, Total)
+player(Player_ID, name, Position, Club_ID, Apps, Tries, Goals, Points)
+competition(Competition_ID, Year, Competition_type, Country)
+competition_result(Competition_ID, Club_ID_1, Club_ID_2, Score)
+
+QUESTION:
+What are the names of the clubs that have players in the Ec7f5a7f243f0 of "Right Wing"?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_146 #####
+QUESTION:
+Where was the place of death of the director of film Legend Of Love?
+
+CONTEXT:
+Legend of Love | decoy_link_146 | decoy_mid_146
+Last Knights | director | Kazuaki Kiriya
+decoy_mid_146 | place of death | Rome
+Legend of Love | director | Raffaello Matarazzo
+Ernst L. Freud | mother | Martha Bernays
+Raffaello Matarazzo | place of death | CF_TAIL_146_Rome
+Kazuaki Kiriya | country of citizenship | Japan
+Martha Bernays | place of birth | Hamburg

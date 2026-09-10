@@ -1,0 +1,47 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_85]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_85 #####
+DB: protein_institute
+SCHEMA (English name → sealed sqlite identifier):
+building = Eb53a40f27caf
+building_id = E36019ba9ba71
+Name = Ed3fa0675f32b
+Street_address = E5749749033bf
+Years_as_tallest = Eb9612a0170c2
+Height_feet = E64c805f75763
+Floors = E082a7646d720
+Institution = E0642037fe8b5
+Institution_id = E16bdf1ba6eb8
+Location = Ea105524f423c
+Founded = Ec9c20923fdb2
+Type = Ec93fffd528cc
+Enrollment = E7aeefd06ca76
+Team = Ebac2b171da0d
+Primary_Conference = Eca8d9c93ee29
+protein = E3b7c7f79cf7f
+common_name = E1c0df194a12e
+protein_name = E52761133f9bb
+divergence_from_human_lineage = E7eac6b9445bb
+accession_number = Ecb768422bac7
+sequence_length = E914d8ed9e8b5
+sequence_identity_to_human_protein = Ef3de67d6ee51
+
+building(building_id, Name, Street_address, Years_as_tallest, Height_feet, Floors)
+Institution(Institution_id, Institution, Location, Founded, Type, Enrollment, Team, Primary_Conference, building_id)
+protein(common_name, protein_name, divergence_from_human_lineage, accession_number, sequence_length, sequence_identity_to_human_protein, Institution_id)
+
+QUESTION:
+How many proteins are associated with an E5b6b7336abbc Ebef28057d54e after 1880 or an E5b6b7336abbc with E9d59c30062ba "Private"?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

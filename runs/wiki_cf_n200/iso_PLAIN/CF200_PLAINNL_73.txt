@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_73 #####
+QUESTION:
+Where did the director of film Der Schuß Durchs Fenster die?
+
+CONTEXT:
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Hibbert Newton Binney | father | Jonathan Binney
+Siegfried Breuer | place of death | CF_TAIL_73_Weende
+decoy_mid_73 | place of death | Weende
+Jonathan Binney | place of birth | Hull
+Der Schuß durchs Fenster | decoy_link_73 | decoy_mid_73
+Der Schuß durchs Fenster | director | Siegfried Breuer
+Tender are the Feet | director | Wunna

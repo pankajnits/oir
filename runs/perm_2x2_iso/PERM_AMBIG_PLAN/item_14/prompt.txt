@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_14]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_14 #####
+QUESTION:
+What city is the headquarters of the company led by Beata_KozowskaChya?
+
+PATH_QUERY
+START Beata_KozowskaChya
+R1 E7b24722b70cb
+R2 E7045f81d23f1
+Execute path; return final tail only.
+
+CONTEXT:
+Beata_KozowskaChya | E7b24722b70cb | Powszechny_Zakad_Ubezpiecze
+Powszechny_Zakad_Ubezpiecze | E7045f81d23f1 | Warsaw
+Beata_KozowskaChya | Ece3bdb384efc | Globcal_International
+Globcal_International | Ec2dc0bcc7180 | Richmond

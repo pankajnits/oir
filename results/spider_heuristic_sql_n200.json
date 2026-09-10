@@ -1,0 +1,127 @@
+{
+  "n": 200,
+  "HEURISTIC_SQL_EXEC": {
+    "score": "17/200",
+    "wilson": {
+      "k": 17,
+      "n": 200,
+      "acc": 0.085,
+      "ci95": [
+        0.0537,
+        0.1319
+      ],
+      "display": "17/200 [0.05,0.13]"
+    }
+  },
+  "note": "Schema-link templates executed in sqlite. Not CodeS. Not LLM-as-SQL.",
+  "rows_head": [
+    {
+      "db": "small_bank_1",
+      "q": "Find the checking balance of the accounts whose savings balance is higher than t",
+      "sql": "SELECT COUNT(*) FROM \"ACCOUNTS\"",
+      "got": 7,
+      "gold": "2000.0",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "department_management",
+      "q": "List the states where both the secretary of 'Treasury' department and the secret",
+      "sql": "SELECT \"Name\" FROM \"department\" LIMIT 1",
+      "got": "State",
+      "gold": "California",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "music_4",
+      "q": "What are the famous titles of artists who have not only had volumes that spent m",
+      "sql": "SELECT \"volume\".\"Volume_ID\" FROM \"volume\" JOIN \"artist\" ON \"volume\".\"Artist_ID\" = \"artist\".\"Artist_ID\" LIMIT 1",
+      "got": 1,
+      "gold": "Bergen 1996",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "network_2",
+      "q": "What are the different names of friends who are younger than the average age for",
+      "sql": "SELECT AVG(\"year\") FROM \"PersonFriend\"",
+      "got": 8.25,
+      "gold": "Zach",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "customer_complaints",
+      "q": "Find the emails of customers who has filed a complaints of the product with the ",
+      "sql": "SELECT \"Customers\".\"town_city\" FROM \"Complaints\" JOIN \"Customers\" ON \"Complaints\".\"customer_id\" = \"Customers\".\"customer_id\" LIMIT 1",
+      "got": "West Annamariestad",
+      "gold": "hsteuber@example.org",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "gymnast",
+      "q": "What is the most common hometown of gymnasts?",
+      "sql": "SELECT \"Gymnast_ID\" FROM \"gymnast\" LIMIT 1",
+      "got": 1,
+      "gold": "Santo Domingo",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "music_2",
+      "q": "What are the types of vocals used in the song \"Demon Kitty Rag\"?",
+      "sql": "SELECT \"SongId\" FROM \"Vocals\" LIMIT 1",
+      "got": null,
+      "gold": "0",
+      "ok": false,
+      "err": "empty"
+    },
+    {
+      "db": "department_management",
+      "q": "What are the distinct creation years of the departments managed by a secretary b",
+      "sql": "SELECT \"Name\" FROM \"department\" LIMIT 1",
+      "got": "State",
+      "gold": "1903",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "icfp_1",
+      "q": "Find the number of papers published by authors from the institution \"Tokohu Univ",
+      "sql": "SELECT COUNT(*) FROM \"Authors\"",
+      "got": 13,
+      "gold": "0",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "museum_visit",
+      "q": "What is the name of the visitor who visited both a museum opened before 2009 and",
+      "sql": "SELECT \"museum\".\"Name\" FROM \"visit\" JOIN \"visitor\" ON \"visit\".\"visitor_ID\" = \"visitor\".\"ID\" LIMIT 1",
+      "got": null,
+      "gold": "Fernando Gago",
+      "ok": false,
+      "err": "no such column: museum.Name"
+    },
+    {
+      "db": "program_share",
+      "q": "Which program is broadcast most frequently? Give me the program name.",
+      "sql": "SELECT \"program\".\"Name\" FROM \"broadcast\" JOIN \"program\" ON \"broadcast\".\"Program_ID\" = \"program\".\"Program_ID\" LIMIT 1",
+      "got": "Aniworld",
+      "gold": "Toonmax",
+      "ok": false,
+      "err": null
+    },
+    {
+      "db": "climbing",
+      "q": "Show the height of the mountain climbed by the climber with the maximum points.",
+      "sql": "SELECT \"climber\".\"Name\" FROM \"climber\" JOIN \"mountain\" ON \"climber\".\"Mountain_ID\" = \"mountain\".\"Mountain_ID\" LIMIT 1",
+      "got": "Klaus Enders",
+      "gold": "5895.0",
+      "ok": false,
+      "err": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_52]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_52 #####
+QUESTION:
+Who Eeec2164c6c1a a Ee75daf3f8b4f Ebd59447ac6d5 [Charlie Sheen] E107031118031 Ed41c2364c3fd?
+
+PATH_QUERY
+START Charlie Sheen
+R1 Ef1477482d8cd
+R2 E3b099a8de6ff
+Execute path; return final tail only.
+
+CONTEXT:
+Charlie Sheen | Ef1477482d8cd | Cadence
+Cadence | E3b099a8de6ff | Martin Sheen
+Cadence | Ec18f4d07be83 | Gordon Weaver

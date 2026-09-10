@@ -1,0 +1,25 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM DEMO_0: no demos; 4-hop cycle quiz. One quiz.
+
+No demos. No path. No relation names.
+From START, output the sealed answer atom using only CONTEXT.
+
+##### ID H4_DEMO_0_2 #####
+START Ec2abc2d36de1
+CONTEXT:
+E32d8d87c1d72 | E24b4188a2a57 | E43ddbc700edd
+E18583220c10a | E9b87202f7136 | E94e09d537f4f
+Ed85718357d28 | E694569edfe91 | E18583220c10a
+Ec2abc2d36de1 | Ebe9f031c0579 | E43ddbc700edd
+E3c844607b90f | E165ffb787573 | Ec2abc2d36de1
+E0530a16cca15 | Ec70cb8e06873 | E4e4133a80993
+Ec2abc2d36de1 | E3d08e9ffa366 | E3c844607b90f
+E43ddbc700edd | E0f911c1b6948 | E32d8d87c1d72
+E4e4133a80993 | Ef8cfdd73c6be | E0530a16cca15
+E18583220c10a | Ec33377b7cab9 | Ed85718357d28
+E43ddbc700edd | E9b87202f7136 | E4e4133a80993
+E4e4133a80993 | Ebe9f031c0579 | E18583220c10a
+

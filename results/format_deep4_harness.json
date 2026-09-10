@@ -1,0 +1,383 @@
+{
+  "n": 6,
+  "suite": "format_deep4",
+  "seed": 20260814,
+  "tab_map": {
+    "employees": "E7901931040ea",
+    "orgs": "E1a31bb330fb7",
+    "cities": "E6f934f1d5842"
+  },
+  "col_map": {
+    "emp_id": "E3e1101a4aa98",
+    "org_id": "E2ae79a5059a8",
+    "city_id": "E68e488048fad",
+    "country": "Eb2fedf950f81"
+  },
+  "engine_gold": "6/6",
+  "arms": {
+    "SQL_TAB_NOLEG": {
+      "n": 6,
+      "ids": [
+        "FD4_SQL_TAB_NOLEG_0",
+        "FD4_SQL_TAB_NOLEG_1",
+        "FD4_SQL_TAB_NOLEG_2",
+        "FD4_SQL_TAB_NOLEG_3",
+        "FD4_SQL_TAB_NOLEG_4",
+        "FD4_SQL_TAB_NOLEG_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep4/SQL_TAB_NOLEG/item_0/prompt.txt",
+        "runs/format_deep4/SQL_TAB_NOLEG/item_1/prompt.txt",
+        "runs/format_deep4/SQL_TAB_NOLEG/item_2/prompt.txt",
+        "runs/format_deep4/SQL_TAB_NOLEG/item_3/prompt.txt",
+        "runs/format_deep4/SQL_TAB_NOLEG/item_4/prompt.txt",
+        "runs/format_deep4/SQL_TAB_NOLEG/item_5/prompt.txt"
+      ]
+    },
+    "SQL_TAB_LEG": {
+      "n": 6,
+      "ids": [
+        "FD4_SQL_TAB_LEG_0",
+        "FD4_SQL_TAB_LEG_1",
+        "FD4_SQL_TAB_LEG_2",
+        "FD4_SQL_TAB_LEG_3",
+        "FD4_SQL_TAB_LEG_4",
+        "FD4_SQL_TAB_LEG_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep4/SQL_TAB_LEG/item_0/prompt.txt",
+        "runs/format_deep4/SQL_TAB_LEG/item_1/prompt.txt",
+        "runs/format_deep4/SQL_TAB_LEG/item_2/prompt.txt",
+        "runs/format_deep4/SQL_TAB_LEG/item_3/prompt.txt",
+        "runs/format_deep4/SQL_TAB_LEG/item_4/prompt.txt",
+        "runs/format_deep4/SQL_TAB_LEG/item_5/prompt.txt"
+      ]
+    },
+    "SQL_TAB_PROG": {
+      "n": 6,
+      "ids": [
+        "FD4_SQL_TAB_PROG_0",
+        "FD4_SQL_TAB_PROG_1",
+        "FD4_SQL_TAB_PROG_2",
+        "FD4_SQL_TAB_PROG_3",
+        "FD4_SQL_TAB_PROG_4",
+        "FD4_SQL_TAB_PROG_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep4/SQL_TAB_PROG/item_0/prompt.txt",
+        "runs/format_deep4/SQL_TAB_PROG/item_1/prompt.txt",
+        "runs/format_deep4/SQL_TAB_PROG/item_2/prompt.txt",
+        "runs/format_deep4/SQL_TAB_PROG/item_3/prompt.txt",
+        "runs/format_deep4/SQL_TAB_PROG/item_4/prompt.txt",
+        "runs/format_deep4/SQL_TAB_PROG/item_5/prompt.txt"
+      ]
+    },
+    "SQL_TAB_ENGINE": {
+      "n": 6,
+      "ids": [
+        "FD4_SQL_TAB_ENGINE_0",
+        "FD4_SQL_TAB_ENGINE_1",
+        "FD4_SQL_TAB_ENGINE_2",
+        "FD4_SQL_TAB_ENGINE_3",
+        "FD4_SQL_TAB_ENGINE_4",
+        "FD4_SQL_TAB_ENGINE_5"
+      ],
+      "iso": false,
+      "engine": true
+    }
+  },
+  "cases": [
+    {
+      "arm": "SQL_TAB_ENGINE",
+      "i": 0,
+      "id": "FD4_SQL_TAB_ENGINE_0",
+      "gold": "Efc78fdf06232",
+      "iso": false,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_0.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E8788c020caec'",
+      "engine_ok": true,
+      "pred": "Efc78fdf06232"
+    },
+    {
+      "arm": "SQL_TAB_NOLEG",
+      "i": 0,
+      "id": "FD4_SQL_TAB_NOLEG_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_0.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E8788c020caec'",
+      "trap": "Ea4bae57466dc",
+      "path": "runs/format_deep4/SQL_TAB_NOLEG/item_0/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_LEG",
+      "i": 0,
+      "id": "FD4_SQL_TAB_LEG_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_0.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E8788c020caec'",
+      "trap": "Ea4bae57466dc",
+      "path": "runs/format_deep4/SQL_TAB_LEG/item_0/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_PROG",
+      "i": 0,
+      "id": "FD4_SQL_TAB_PROG_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_0.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E8788c020caec'",
+      "trap": "Ea4bae57466dc",
+      "path": "runs/format_deep4/SQL_TAB_PROG/item_0/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_ENGINE",
+      "i": 1,
+      "id": "FD4_SQL_TAB_ENGINE_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": false,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_1.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'Ec434cbd619d0'",
+      "engine_ok": true,
+      "pred": "Efcbd0bd0bd8f"
+    },
+    {
+      "arm": "SQL_TAB_NOLEG",
+      "i": 1,
+      "id": "FD4_SQL_TAB_NOLEG_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_1.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'Ec434cbd619d0'",
+      "trap": "Ead100df4395b",
+      "path": "runs/format_deep4/SQL_TAB_NOLEG/item_1/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_LEG",
+      "i": 1,
+      "id": "FD4_SQL_TAB_LEG_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_1.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'Ec434cbd619d0'",
+      "trap": "Ead100df4395b",
+      "path": "runs/format_deep4/SQL_TAB_LEG/item_1/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_PROG",
+      "i": 1,
+      "id": "FD4_SQL_TAB_PROG_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_1.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'Ec434cbd619d0'",
+      "trap": "Ead100df4395b",
+      "path": "runs/format_deep4/SQL_TAB_PROG/item_1/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_ENGINE",
+      "i": 2,
+      "id": "FD4_SQL_TAB_ENGINE_2",
+      "gold": "E86dc3a194b37",
+      "iso": false,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_2.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'Ecf003d65511e'",
+      "engine_ok": true,
+      "pred": "E86dc3a194b37"
+    },
+    {
+      "arm": "SQL_TAB_NOLEG",
+      "i": 2,
+      "id": "FD4_SQL_TAB_NOLEG_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_2.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'Ecf003d65511e'",
+      "trap": "E85f4f72c3529",
+      "path": "runs/format_deep4/SQL_TAB_NOLEG/item_2/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_LEG",
+      "i": 2,
+      "id": "FD4_SQL_TAB_LEG_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_2.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'Ecf003d65511e'",
+      "trap": "E85f4f72c3529",
+      "path": "runs/format_deep4/SQL_TAB_LEG/item_2/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_PROG",
+      "i": 2,
+      "id": "FD4_SQL_TAB_PROG_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_2.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'Ecf003d65511e'",
+      "trap": "E85f4f72c3529",
+      "path": "runs/format_deep4/SQL_TAB_PROG/item_2/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_ENGINE",
+      "i": 3,
+      "id": "FD4_SQL_TAB_ENGINE_3",
+      "gold": "E1736c27588c3",
+      "iso": false,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_3.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E9cd8d24b6ef7'",
+      "engine_ok": true,
+      "pred": "E1736c27588c3"
+    },
+    {
+      "arm": "SQL_TAB_NOLEG",
+      "i": 3,
+      "id": "FD4_SQL_TAB_NOLEG_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_3.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E9cd8d24b6ef7'",
+      "trap": "E297462617c33",
+      "path": "runs/format_deep4/SQL_TAB_NOLEG/item_3/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_LEG",
+      "i": 3,
+      "id": "FD4_SQL_TAB_LEG_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_3.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E9cd8d24b6ef7'",
+      "trap": "E297462617c33",
+      "path": "runs/format_deep4/SQL_TAB_LEG/item_3/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_PROG",
+      "i": 3,
+      "id": "FD4_SQL_TAB_PROG_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_3.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E9cd8d24b6ef7'",
+      "trap": "E297462617c33",
+      "path": "runs/format_deep4/SQL_TAB_PROG/item_3/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_ENGINE",
+      "i": 4,
+      "id": "FD4_SQL_TAB_ENGINE_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": false,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_4.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E4a2ea9f5ae1e'",
+      "engine_ok": true,
+      "pred": "Efcbd0bd0bd8f"
+    },
+    {
+      "arm": "SQL_TAB_NOLEG",
+      "i": 4,
+      "id": "FD4_SQL_TAB_NOLEG_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_4.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E4a2ea9f5ae1e'",
+      "trap": "Eac6aa3d77a1f",
+      "path": "runs/format_deep4/SQL_TAB_NOLEG/item_4/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_LEG",
+      "i": 4,
+      "id": "FD4_SQL_TAB_LEG_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_4.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E4a2ea9f5ae1e'",
+      "trap": "Eac6aa3d77a1f",
+      "path": "runs/format_deep4/SQL_TAB_LEG/item_4/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_PROG",
+      "i": 4,
+      "id": "FD4_SQL_TAB_PROG_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_4.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E4a2ea9f5ae1e'",
+      "trap": "Eac6aa3d77a1f",
+      "path": "runs/format_deep4/SQL_TAB_PROG/item_4/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_ENGINE",
+      "i": 5,
+      "id": "FD4_SQL_TAB_ENGINE_5",
+      "gold": "Ef517621657df",
+      "iso": false,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_5.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E1772f39ac307'",
+      "engine_ok": true,
+      "pred": "Ef517621657df"
+    },
+    {
+      "arm": "SQL_TAB_NOLEG",
+      "i": 5,
+      "id": "FD4_SQL_TAB_NOLEG_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_5.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E1772f39ac307'",
+      "trap": "Ec72e0f47e1d6",
+      "path": "runs/format_deep4/SQL_TAB_NOLEG/item_5/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_LEG",
+      "i": 5,
+      "id": "FD4_SQL_TAB_LEG_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_5.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E1772f39ac307'",
+      "trap": "Ec72e0f47e1d6",
+      "path": "runs/format_deep4/SQL_TAB_LEG/item_5/prompt.txt"
+    },
+    {
+      "arm": "SQL_TAB_PROG",
+      "i": 5,
+      "id": "FD4_SQL_TAB_PROG_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "surface": "sqlite_tabs",
+      "db": "runs/format_deep4/db/item_5.sqlite",
+      "gold_sql": "SELECT \"E6f934f1d5842\".\"Eb2fedf950f81\" FROM \"E7901931040ea\" JOIN \"E1a31bb330fb7\" ON \"E7901931040ea\".\"E2ae79a5059a8\" = \"E1a31bb330fb7\".\"E2ae79a5059a8\" JOIN \"E6f934f1d5842\" ON \"E1a31bb330fb7\".\"E68e488048fad\" = \"E6f934f1d5842\".\"E68e488048fad\" WHERE \"E7901931040ea\".\"E3e1101a4aa98\" = 'E1772f39ac307'",
+      "trap": "Ec72e0f47e1d6",
+      "path": "runs/format_deep4/SQL_TAB_PROG/item_5/prompt.txt"
+    }
+  ],
+  "nonclaim": "Closes table-name leak from SQL_COL_NOLEG. SQL_TAB_NOLEG fail is missing table/column binder. Not CodeS. Not G-Rev1. Not confidentiality."
+}

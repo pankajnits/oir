@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-17",
+  "status": "cannot_run",
+  "faked": false,
+  "attempted": [
+    "Confirmed public weights exist: seeklhy/codes-1b, seeklhy/codes-1b-spider, seeklhy/codes-3b-spider",
+    "HEAD seeklhy/codes-1b-spider pytorch_model.bin Content-Length=4548920521 (~4.55 GiB)",
+    "Official RUCKBReasoning/codes eval: 8x NVIDIA A800 80GB, SIC checkpoints from Google Drive, data.zip, float16 device_map=auto, schema-item filter required"
+  ],
+  "blockers": {
+    "disk": "host volume 98% full, ~11 GiB free; 4.55 GiB weight + HF cache copy would be reckless",
+    "gpu": "no A800; official script is torch.float16 device_map=auto on multi-GPU",
+    "sic": "schema-item classifier ckpts are a separate Drive zip; zero-shot script requires --sic_path",
+    "not_done": "did not download weights; did not train a toy seq2seq and call it CodeS"
+  },
+  "locked_floors": {
+    "heuristic_sql_exec": "17/200",
+    "llm_model_sql_exec": "29/32",
+    "engine_gold": "191/200"
+  },
+  "nonclaim": "Heuristic 17/200 is not CodeS. LLM MODEL_SQL 29/32 is not CodeS."
+}

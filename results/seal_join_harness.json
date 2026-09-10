@@ -1,0 +1,115 @@
+{
+  "benchmark": "SEAL-Join",
+  "answer_A": "CityX",
+  "answer_B": "CityY",
+  "sealed_A": "Ec71de67166d8",
+  "sealed_B": "E0c347949830b",
+  "alice": "Eeb3f81ca1139",
+  "rev": {
+    "Eeb3f81ca1139": "Alice",
+    "E00c2d7e2918c": "works_at",
+    "Ec2d505c84b67": "Acme",
+    "E4a1ed6beaa9b": "Bob",
+    "Ee71d634f5fcd": "BetaCorp",
+    "Edc7932eaa73c": "Carol",
+    "Ee7403c960599": "located_in",
+    "Ec71de67166d8": "CityX",
+    "E0c347949830b": "CityY",
+    "E79bf3e2b7a55": "reports_to",
+    "E0ed440e2a4ec": "Where",
+    "E3c6e76a42996": "is",
+    "E4b83b274a87d": "the",
+    "Eeb9be5116e98": "company",
+    "E74b88aa4b43a": "located",
+    "E2ada90a1bc4c": "that",
+    "E1fe6d764242a": "Join",
+    "E9d0ec6710c4b": "then",
+    "E841cebf166d2": "Answer",
+    "Ec6c1178de2cb": "city",
+    "E7f3323a74f58": "only"
+  },
+  "node_bag_A": [
+    "Acme",
+    "Acme",
+    "Acme",
+    "Alice",
+    "Alice",
+    "BetaCorp",
+    "BetaCorp",
+    "Bob",
+    "Carol",
+    "Carol",
+    "CityX",
+    "CityY",
+    "located_in",
+    "located_in",
+    "reports_to",
+    "works_at",
+    "works_at",
+    "works_at"
+  ],
+  "node_bag_B": [
+    "Acme",
+    "Acme",
+    "Acme",
+    "Alice",
+    "Alice",
+    "BetaCorp",
+    "BetaCorp",
+    "Bob",
+    "Carol",
+    "Carol",
+    "CityX",
+    "CityY",
+    "located_in",
+    "located_in",
+    "reports_to",
+    "works_at",
+    "works_at",
+    "works_at"
+  ],
+  "cases": [
+    {
+      "id": "SJ_plain_A",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "CityX",
+      "payload": "runs/seal_join/SJ_plain_A.txt"
+    },
+    {
+      "id": "SJ_plain_B",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "CityY",
+      "payload": "runs/seal_join/SJ_plain_B.txt"
+    },
+    {
+      "id": "SJ_sealed_free_A",
+      "twin": "A",
+      "mode": "sealed_free",
+      "expect": "CityX",
+      "payload": "runs/seal_join/SJ_sealed_free_A.txt"
+    },
+    {
+      "id": "SJ_sealed_free_B",
+      "twin": "B",
+      "mode": "sealed_free",
+      "expect": "CityY",
+      "payload": "runs/seal_join/SJ_sealed_free_B.txt"
+    },
+    {
+      "id": "SJ_sealed_nohint_A",
+      "twin": "A",
+      "mode": "sealed_nohint",
+      "expect": "CityX",
+      "payload": "runs/seal_join/SJ_sealed_nohint_A.txt"
+    },
+    {
+      "id": "SJ_sealed_nohint_B",
+      "twin": "B",
+      "mode": "sealed_nohint",
+      "expect": "CityY",
+      "payload": "runs/seal_join/SJ_sealed_nohint_B.txt"
+    }
+  ]
+}

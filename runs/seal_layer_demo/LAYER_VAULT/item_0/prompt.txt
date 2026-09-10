@@ -1,0 +1,44 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[LAYER_VAULT_0]: <token_or_UNKNOWN>
+
+ARM LAYER_VAULT: layer bound the English name to START and token-HMAC'd the question. You never see plaintext names or English question words. Follow JOIN over sealed JSON keys.
+
+##### ID LAYER_VAULT_0 #####
+QUESTION (already sealed by the layer):
+E863de6e0d429 Ecedf7c16696a Eb74940db6964 E5fa9d6ddbd03 Ea686864cc47b Eb8ee1c31b117 Ee9cd31a9e82b E00225716aad4?
+
+JOIN_QUERY
+START Ee9cd31a9e82b
+In array E0495eb9264dc, match Eb9b6c700cb86 = START, take Ef335bda89ff9.
+In array E37ca342e3762, match Eb9b6c700cb86 = that employer, take E9049d8727481.Ecedf7c16696a.
+Return that atom.
+
+CONTEXT:
+{
+  "E0495eb9264dc": [
+    {
+      "Eb9b6c700cb86": "E8f495b0e242b",
+      "Ef335bda89ff9": "E111ab979021b"
+    },
+    {
+      "Eb9b6c700cb86": "Ee9cd31a9e82b",
+      "Ef335bda89ff9": "E78beaaf1261b"
+    }
+  ],
+  "E37ca342e3762": [
+    {
+      "Eb9b6c700cb86": "E111ab979021b",
+      "E9049d8727481": {
+        "Efbd2af92f42e": "E2d73315bb9b0",
+        "Ecedf7c16696a": "E644c3ea5a854"
+      }
+    },
+    {
+      "Eb9b6c700cb86": "E78beaaf1261b",
+      "E9049d8727481": {
+        "Efbd2af92f42e": "E908f35c67834",
+        "Ecedf7c16696a": "Ebbd30ec7e1cb"
+      }
+    }
+  ]
+}

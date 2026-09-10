@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_38]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_38 #####
+QUESTION:
+Who directed a movie that Robert Duvall starred in?
+
+PATH_QUERY
+START Robert Duvall
+R1 E7040b60cf9a7
+R2 Eb8ae3b1b4cc4
+Execute path; return final tail only.
+
+CONTEXT:
+Robert Duvall | E7040b60cf9a7 | Tender Mercies
+Tender Mercies | Eb8ae3b1b4cc4 | Bruce Beresford
+Tender Mercies | Ee1b9a2f6b959 | Horton Foote

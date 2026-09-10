@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_194 #####
+QUESTION:
+What is the date of birth of the director of film Man-Trap?
+
+CONTEXT:
+Man-Trap | director | Edmond O'Brien
+The Tower of Lies | director | Victor Sjöström
+decoy_mid_194 | date of birth | September 10, 1915
+Man-Trap | decoy_link_194 | decoy_mid_194
+Julius Sang | educated at | North Carolina Central University
+Edmond O'Brien | date of birth | CF_TAIL_194_September101
+Tekla Chemabwai | spouse | Julius Sang
+Victor Sjöström | country of citizenship | Swedish

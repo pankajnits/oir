@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_15]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_15 #####
+QUESTION:
+Who directed a movie that Ray Milland starred in?
+
+PATH_QUERY
+START Ray Milland
+R1 E27a82dd5cf31
+R2 E8b7cdb489fd2
+Execute path; return final tail only.
+
+CONTEXT:
+Ray Milland | E27a82dd5cf31 | The Uninvited
+The Uninvited | E8b7cdb489fd2 | Lewis Allen
+The Uninvited | Ed2b68398f417 | Dorothy Macardle

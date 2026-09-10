@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_30]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_30 #####
+QUESTION:
+What is the genre of a movie directed by Christian Molina?
+
+PATH_QUERY
+START Christian Molina
+R1 E1937e8905be2
+R2 E6120b92922d6
+Execute path; return final tail only.
+
+CONTEXT:
+Christian Molina | E1937e8905be2 | Diary of a Nymphomaniac
+Diary of a Nymphomaniac | E6120b92922d6 | Drama
+Diary of a Nymphomaniac | E1b8b17ea6daa | French, Spanish

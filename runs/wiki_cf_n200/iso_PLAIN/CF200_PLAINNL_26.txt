@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_26 #####
+QUESTION:
+Where was the place of burial of Thomas Mason (1770–1800)'s father?
+
+CONTEXT:
+Thomas Mason | decoy_link_26 | decoy_mid_26
+Arthur D. Ganong | place of birth | St. Stephen, New Brunswick
+Sueperman's Big Sister | performer | Ian Dury
+Ian Dury | date of death | 27 March 2000
+George Mason | place of burial | CF_TAIL_26_Virginia
+decoy_mid_26 | place of burial | Virginia
+Thomas Mason | father | George Mason
+Rendol Whidden Ganong | father | Arthur D. Ganong

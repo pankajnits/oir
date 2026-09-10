@@ -1,0 +1,1 @@
+SQL[EX_MODEL_0]: SELECT emp_id FROM employees WHERE emp_id <> 'Ed4defaffa732' AND org_id <> (SELECT org_id FROM employees WHERE emp_id = 'Ed4defaffa732')

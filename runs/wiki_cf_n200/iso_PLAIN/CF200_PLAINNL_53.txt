@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_53 #####
+QUESTION:
+Where was the father of Deneys Reitz born?
+
+CONTEXT:
+Michael Nesmith | award received | Grammy
+Celebrity Sports Center | founded by | Walt Disney
+Francis William Reitz | place of birth | CF_TAIL_53_Swellendam
+decoy_mid_53 | place of birth | Swellendam
+Cruisin' | composer | Michael Nesmith
+Deneys Reitz | father | Francis William Reitz
+Walt Disney | place of birth | Chicago
+Deneys Reitz | decoy_link_53 | decoy_mid_53

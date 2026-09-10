@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_186 #####
+QUESTION:
+What is the place of birth of Alexandru Darie's father?
+
+CONTEXT:
+J. Barbour and Sons | founded by | John Barbour
+Alexandru Darie | decoy_link_186 | decoy_mid_186
+Ann Maria Bradshaw | spouse | James Bradshaw
+decoy_mid_186 | place of birth | Soroca
+Iurie Darie | place of birth | CF_TAIL_186_Soroca
+James Bradshaw | date of death | 4 March 1847
+Alexandru Darie | father | Iurie Darie
+John Barbour | place of birth | Aberdeen

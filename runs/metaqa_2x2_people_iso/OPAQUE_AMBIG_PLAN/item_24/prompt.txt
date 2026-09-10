@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_24]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_24 #####
+QUESTION:
+Who directed a movie that John Mills starred in?
+
+PATH_QUERY
+START John Mills
+R1 Ead5c3bee473c
+R2 E2841b031a414
+Execute path; return final tail only.
+
+CONTEXT:
+John Mills | Ead5c3bee473c | Ice Cold in Alex
+Ice Cold in Alex | E2841b031a414 | J. Lee Thompson
+Ice Cold in Alex | E48db5cc29554 | Christopher Landon

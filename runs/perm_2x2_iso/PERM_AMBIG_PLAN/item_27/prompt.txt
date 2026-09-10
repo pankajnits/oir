@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_27]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_27 #####
+QUESTION:
+What city is the headquarters of the company led by John_K_Martin_Jr?
+
+PATH_QUERY
+START John_K_Martin_Jr
+R1 E5a5e5e475817
+R2 Edf2a06b112f5
+Execute path; return final tail only.
+
+CONTEXT:
+John_K_Martin_Jr | E5a5e5e475817 | Turner_Broadcasting_System
+Turner_Broadcasting_System | Edf2a06b112f5 | CNN_Center
+John_K_Martin_Jr | Eba2a4c02ac68 | WHSmith
+WHSmith | E20fd43d26317 | Swindon

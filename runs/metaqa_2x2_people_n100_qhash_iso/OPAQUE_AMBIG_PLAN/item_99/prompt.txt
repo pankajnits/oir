@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_99]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_99 #####
+QUESTION:
+Who E6558c9cf5e29 a E5150867034a8 Eaba9405ba685 [Tina Fey] E905660215ee0 E498e7db5638c?
+
+PATH_QUERY
+START Tina Fey
+R1 Ec775904a6906
+R2 Efed32d2bea60
+Execute path; return final tail only.
+
+CONTEXT:
+Tina Fey | Ec775904a6906 | Admission
+Admission | Efed32d2bea60 | Paul Weitz
+Admission | E263d7968e830 | Jean Hanff Korelitz

@@ -1,0 +1,60 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_SMALL_LEGEND_20]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM LEGEND: layer bound START, HMAC'd Q, HMAC'd JSON keys+values, English key schema. No JOIN.
+
+##### ID SLL_SMALL_LEGEND_20 #####
+QUESTION (token-HMAC'd):
+Ec02665515d3e Eb28abb30642d E89ae85f704dd E812f8d847975 E11891f1f227f Ea5b5fb939d69?
+
+KEY_SCHEMA (English name → sealed JSON key):
+employees = Ea7326374c25d
+orgs = Ea524b7994ca0
+id = E388d7352a467
+employer = Eae974e3734d0
+hq = E61f45f23c68f
+city = Eaed93b3aa209
+country = E06b87d16c2c7
+Use the schema to read CONTEXT. No JOIN is given. Return one sealed atom.
+
+CONTEXT:
+{
+  "Ea7326374c25d": [
+    {
+      "E388d7352a467": "Ea5b5fb939d69",
+      "Eae974e3734d0": "Ea145110d6056"
+    },
+    {
+      "E388d7352a467": "E2ab550eb7bf4",
+      "Eae974e3734d0": "E6294ac604c82"
+    },
+    {
+      "E388d7352a467": "E2637a4221ea9",
+      "Eae974e3734d0": "Ec3cc41b21c72"
+    }
+  ],
+  "Ea524b7994ca0": [
+    {
+      "E388d7352a467": "E6294ac604c82",
+      "E61f45f23c68f": {
+        "Eaed93b3aa209": "Eaca1598d405a",
+        "E06b87d16c2c7": "E14da1a1afdf6"
+      }
+    },
+    {
+      "E388d7352a467": "Ec3cc41b21c72",
+      "E61f45f23c68f": {
+        "Eaed93b3aa209": "Edb883b9bc926",
+        "E06b87d16c2c7": "Ec624ab203b57"
+      }
+    },
+    {
+      "E388d7352a467": "Ea145110d6056",
+      "E61f45f23c68f": {
+        "E06b87d16c2c7": "Ea77c46118b65",
+        "Eaed93b3aa209": "Ee323a48b1a34"
+      }
+    }
+  ]
+}

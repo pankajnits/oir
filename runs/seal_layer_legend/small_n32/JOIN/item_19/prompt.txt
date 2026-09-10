@@ -1,0 +1,56 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_SMALL_JOIN_19]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM JOIN: layer bound START, HMAC'd Q, HMAC'd JSON keys+values, attached JOIN.
+
+##### ID SLL_SMALL_JOIN_19 #####
+QUESTION (token-HMAC'd):
+E3c85b7aab741 Ec8e51dd7abdd E753a14cb3c9c E803693914bff E9cab4c807b8e E3125667331e0?
+
+JOIN_QUERY
+START E3125667331e0
+In array E1cf6198478f9, match Ef7dd180a666b = START, take E9d43ae7870ff.
+In array Edca194c9815e, match Ef7dd180a666b = that employer, take E360b9a4d017e.Ee91b74d59d5b.
+Return that atom.
+
+CONTEXT:
+{
+  "E1cf6198478f9": [
+    {
+      "Ef7dd180a666b": "E3125667331e0",
+      "E9d43ae7870ff": "E634db627b2e4"
+    },
+    {
+      "Ef7dd180a666b": "E020dd817ba85",
+      "E9d43ae7870ff": "Edb41917e7200"
+    },
+    {
+      "Ef7dd180a666b": "E597df09cabd9",
+      "E9d43ae7870ff": "E9ec3dd448be9"
+    }
+  ],
+  "Edca194c9815e": [
+    {
+      "Ef7dd180a666b": "E634db627b2e4",
+      "E360b9a4d017e": {
+        "Eccf7a4185e6a": "E406845d3f97f",
+        "Ee91b74d59d5b": "E4c1fd5e370a6"
+      }
+    },
+    {
+      "Ef7dd180a666b": "E9ec3dd448be9",
+      "E360b9a4d017e": {
+        "Eccf7a4185e6a": "E09b7323e4644",
+        "Ee91b74d59d5b": "E32e1f591afbd"
+      }
+    },
+    {
+      "Ef7dd180a666b": "Edb41917e7200",
+      "E360b9a4d017e": {
+        "Ee91b74d59d5b": "Ef9f4cdc26bce",
+        "Eccf7a4185e6a": "E810e51cb7451"
+      }
+    }
+  ]
+}

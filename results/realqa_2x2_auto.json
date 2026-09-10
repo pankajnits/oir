@@ -1,0 +1,1746 @@
+{
+  "model": "auto",
+  "design": "opacity × binder 2×2",
+  "families": {
+    "ceo": {
+      "n": 12,
+      "source": "data/real/wikidata_ceo_hops_v2.json",
+      "summary": {
+        "PLAIN_NL": {
+          "score": "12/12",
+          "missing": 0,
+          "wilson": {
+            "k": 12,
+            "n": 12,
+            "acc": 1.0,
+            "ci95": [
+              0.7575,
+              1.0
+            ],
+            "display": "12/12 [0.76,1.00]"
+          }
+        },
+        "PLAIN_PROG": {
+          "score": "12/12",
+          "missing": 0,
+          "wilson": {
+            "k": 12,
+            "n": 12,
+            "acc": 1.0,
+            "ci95": [
+              0.7575,
+              1.0
+            ],
+            "display": "12/12 [0.76,1.00]"
+          }
+        },
+        "SEAL_NL": {
+          "score": "0/12",
+          "missing": 0,
+          "wilson": {
+            "k": 0,
+            "n": 12,
+            "acc": 0.0,
+            "ci95": [
+              0.0,
+              0.2425
+            ],
+            "display": "0/12 [0.00,0.24]"
+          }
+        },
+        "SEAL_PROG": {
+          "score": "12/12",
+          "missing": 0,
+          "wilson": {
+            "k": 12,
+            "n": 12,
+            "acc": 1.0,
+            "ci95": [
+              0.7575,
+              1.0
+            ],
+            "display": "12/12 [0.76,1.00]"
+          }
+        },
+        "SPAN_NL": {
+          "score": "12/12",
+          "missing": 0,
+          "wilson": {
+            "k": 12,
+            "n": 12,
+            "acc": 1.0,
+            "ci95": [
+              0.7575,
+              1.0
+            ],
+            "display": "12/12 [0.76,1.00]"
+          }
+        }
+      },
+      "verdict": "SUPPORTED: PLAIN_NL ≈ PLAIN_PROG ≈ SEAL_PROG ≫ SEAL_NL"
+    },
+    "wiki": {
+      "n": 12,
+      "source": "data/2wiki_compositional_n12.json",
+      "summary": {
+        "PLAIN_NL": {
+          "score": "12/12",
+          "missing": 0,
+          "wilson": {
+            "k": 12,
+            "n": 12,
+            "acc": 1.0,
+            "ci95": [
+              0.7575,
+              1.0
+            ],
+            "display": "12/12 [0.76,1.00]"
+          }
+        },
+        "PLAIN_PROG": {
+          "score": "12/12",
+          "missing": 0,
+          "wilson": {
+            "k": 12,
+            "n": 12,
+            "acc": 1.0,
+            "ci95": [
+              0.7575,
+              1.0
+            ],
+            "display": "12/12 [0.76,1.00]"
+          }
+        },
+        "SEAL_NL": {
+          "score": "2/12",
+          "missing": 0,
+          "wilson": {
+            "k": 2,
+            "n": 12,
+            "acc": 0.1667,
+            "ci95": [
+              0.047,
+              0.448
+            ],
+            "display": "2/12 [0.05,0.45]"
+          }
+        },
+        "SEAL_PROG": {
+          "score": "12/12",
+          "missing": 0,
+          "wilson": {
+            "k": 12,
+            "n": 12,
+            "acc": 1.0,
+            "ci95": [
+              0.7575,
+              1.0
+            ],
+            "display": "12/12 [0.76,1.00]"
+          }
+        },
+        "SPAN_NL": {
+          "score": "12/12",
+          "missing": 0,
+          "wilson": {
+            "k": 12,
+            "n": 12,
+            "acc": 1.0,
+            "ci95": [
+              0.7575,
+              1.0
+            ],
+            "display": "12/12 [0.76,1.00]"
+          }
+        }
+      },
+      "verdict": "MIXED: PLAIN_NL 12/12; PLAIN_PROG 12/12; SEAL_PROG 12/12; SEAL_NL 2/12"
+    },
+    "wtq": {
+      "n": 8,
+      "source": "data/benchmarks/WikiTableQuestions",
+      "summary": {
+        "PLAIN_NL": {
+          "score": "8/8",
+          "missing": 0,
+          "wilson": {
+            "k": 8,
+            "n": 8,
+            "acc": 1.0,
+            "ci95": [
+              0.6756,
+              1.0
+            ],
+            "display": "8/8 [0.68,1.00]"
+          }
+        },
+        "PLAIN_PROG": {
+          "score": "8/8",
+          "missing": 0,
+          "wilson": {
+            "k": 8,
+            "n": 8,
+            "acc": 1.0,
+            "ci95": [
+              0.6756,
+              1.0
+            ],
+            "display": "8/8 [0.68,1.00]"
+          }
+        },
+        "SEAL_NL": {
+          "score": "0/8",
+          "missing": 0,
+          "wilson": {
+            "k": 0,
+            "n": 8,
+            "acc": 0.0,
+            "ci95": [
+              0.0,
+              0.3244
+            ],
+            "display": "0/8 [0.00,0.32]"
+          }
+        },
+        "SEAL_PROG": {
+          "score": "8/8",
+          "missing": 0,
+          "wilson": {
+            "k": 8,
+            "n": 8,
+            "acc": 1.0,
+            "ci95": [
+              0.6756,
+              1.0
+            ],
+            "display": "8/8 [0.68,1.00]"
+          }
+        }
+      },
+      "verdict": "SUPPORTED: PLAIN_NL ≈ PLAIN_PROG ≈ SEAL_PROG ≫ SEAL_NL"
+    }
+  },
+  "rows": [
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_0",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Bob Iger works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_1",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Lucian Grainge works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_2",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Roy O Disney works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_3",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Landon H Rowland works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_4",
+      "gold": "San_Antonio",
+      "pred": "San_Antonio",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Stuart Parker works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_5",
+      "gold": "Oslo",
+      "pred": "Oslo",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Kristin Lian works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_6",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Thomas S Carter works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_7",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Bob Chapek works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_8",
+      "gold": "Philadelphia",
+      "pred": "Philadelphia",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Hans Vestberg works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_9",
+      "gold": "Bochum",
+      "pred": "Bochum",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Luka Mucic works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_10",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Mario Greco works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_NL",
+      "id": "CEO_PLAINNL_11",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "question": "Where is the headquarters of the company that William N Deramus III works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_0",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Bob Iger works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_1",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Lucian Grainge works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_2",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Roy O Disney works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_3",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Landon H Rowland works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_4",
+      "gold": "San_Antonio",
+      "pred": "San_Antonio",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Stuart Parker works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_5",
+      "gold": "Oslo",
+      "pred": "Oslo",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Kristin Lian works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_6",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Thomas S Carter works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_7",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Bob Chapek works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_8",
+      "gold": "Philadelphia",
+      "pred": "Philadelphia",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Hans Vestberg works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_9",
+      "gold": "Bochum",
+      "pred": "Bochum",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Luka Mucic works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_10",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Mario Greco works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "PLAIN_PROG",
+      "id": "CEO_PLAINPROG_11",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true,
+      "question": "Where is the headquarters of the company that William N Deramus III works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_0",
+      "gold": "E10c7eb44befe",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Bob Iger works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_1",
+      "gold": "E5b2f5f3695c1",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Lucian Grainge works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_2",
+      "gold": "E10c7eb44befe",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Roy O Disney works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_3",
+      "gold": "E4c3556bc93d2",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Landon H Rowland works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_4",
+      "gold": "E5cdb278ce49b",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Stuart Parker works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_5",
+      "gold": "E3fcab76cecb5",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Kristin Lian works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_6",
+      "gold": "E4c3556bc93d2",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Thomas S Carter works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_7",
+      "gold": "E10c7eb44befe",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Bob Chapek works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_8",
+      "gold": "E0686445691ef",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Hans Vestberg works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_9",
+      "gold": "E2ff44401ac83",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Luka Mucic works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_10",
+      "gold": "E0d9fde98ebdb",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that Mario Greco works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_NL",
+      "id": "CEO_SEALNL_11",
+      "gold": "E4c3556bc93d2",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where is the headquarters of the company that William N Deramus III works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_0",
+      "gold": "E10c7eb44befe",
+      "pred": "E10c7eb44befe",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Bob Iger works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_1",
+      "gold": "E5b2f5f3695c1",
+      "pred": "E5b2f5f3695c1",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Lucian Grainge works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_2",
+      "gold": "E10c7eb44befe",
+      "pred": "E10c7eb44befe",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Roy O Disney works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_3",
+      "gold": "E4c3556bc93d2",
+      "pred": "E4c3556bc93d2",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Landon H Rowland works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_4",
+      "gold": "E5cdb278ce49b",
+      "pred": "E5cdb278ce49b",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Stuart Parker works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_5",
+      "gold": "E3fcab76cecb5",
+      "pred": "E3fcab76cecb5",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Kristin Lian works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_6",
+      "gold": "E4c3556bc93d2",
+      "pred": "E4c3556bc93d2",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Thomas S Carter works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_7",
+      "gold": "E10c7eb44befe",
+      "pred": "E10c7eb44befe",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Bob Chapek works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_8",
+      "gold": "E0686445691ef",
+      "pred": "E0686445691ef",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Hans Vestberg works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_9",
+      "gold": "E2ff44401ac83",
+      "pred": "E2ff44401ac83",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Luka Mucic works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_10",
+      "gold": "E0d9fde98ebdb",
+      "pred": "E0d9fde98ebdb",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Mario Greco works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SEAL_PROG",
+      "id": "CEO_SEALPROG_11",
+      "gold": "E4c3556bc93d2",
+      "pred": "E4c3556bc93d2",
+      "ok": true,
+      "question": "Where is the headquarters of the company that William N Deramus III works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_0",
+      "gold": "E10c7eb44befe",
+      "pred": "E10c7eb44befe",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Bob Iger works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_1",
+      "gold": "E5b2f5f3695c1",
+      "pred": "E5b2f5f3695c1",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Lucian Grainge works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_2",
+      "gold": "E10c7eb44befe",
+      "pred": "E10c7eb44befe",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Roy O Disney works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_3",
+      "gold": "E4c3556bc93d2",
+      "pred": "E4c3556bc93d2",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Landon H Rowland works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_4",
+      "gold": "E5cdb278ce49b",
+      "pred": "E5cdb278ce49b",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Stuart Parker works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_5",
+      "gold": "E3fcab76cecb5",
+      "pred": "E3fcab76cecb5",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Kristin Lian works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_6",
+      "gold": "E4c3556bc93d2",
+      "pred": "E4c3556bc93d2",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Thomas S Carter works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_7",
+      "gold": "E10c7eb44befe",
+      "pred": "E10c7eb44befe",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Bob Chapek works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_8",
+      "gold": "E0686445691ef",
+      "pred": "E0686445691ef",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Hans Vestberg works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_9",
+      "gold": "E2ff44401ac83",
+      "pred": "E2ff44401ac83",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Luka Mucic works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_10",
+      "gold": "E0d9fde98ebdb",
+      "pred": "E0d9fde98ebdb",
+      "ok": true,
+      "question": "Where is the headquarters of the company that Mario Greco works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "ceo",
+      "arm": "SPAN_NL",
+      "id": "CEO_SPANNL_11",
+      "gold": "E4c3556bc93d2",
+      "pred": "E4c3556bc93d2",
+      "ok": true,
+      "question": "Where is the headquarters of the company that William N Deramus III works for?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_0",
+      "gold": "Małgorzata Braunek",
+      "pred": "Małgorzata Braunek",
+      "ok": true,
+      "question": "Who is the mother of the director of film Polish-Russian War (Film)?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_1",
+      "gold": "12 June 1516",
+      "pred": "12 June 1516",
+      "ok": true,
+      "question": "When did John V, Prince Of Anhalt-Zerbst's father die?",
+      "start_seal_in_span_q": false
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_2",
+      "gold": "Myanmar Motion Picture Academy Awards",
+      "pred": "Myanmar Motion Picture Academy Awards",
+      "ok": true,
+      "question": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_3",
+      "gold": "Missoula, Montana",
+      "pred": "Missoula, Montana",
+      "ok": true,
+      "question": "Where was the director of film Ronnie Rocket born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_4",
+      "gold": "Galați",
+      "pred": "Galați",
+      "ok": true,
+      "question": "Where was the father of Ștefan I. Nenițescu born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_5",
+      "gold": "Brooklyn",
+      "pred": "Brooklyn",
+      "ok": true,
+      "question": "Where was the director of film Thomas Jefferson (Film) born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_6",
+      "gold": "stroke",
+      "pred": "stroke",
+      "ok": true,
+      "question": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_7",
+      "gold": "Nice",
+      "pred": "Nice",
+      "ok": true,
+      "question": "Where was the place of death of the director of film Beat Girl?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_8",
+      "gold": "1983",
+      "pred": "1983",
+      "ok": true,
+      "question": "When did Jean Martin (Singer)'s husband die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_9",
+      "gold": "United States",
+      "pred": "United States",
+      "ok": true,
+      "question": "What nationality is the director of film World And Time Enough?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_10",
+      "gold": "Catherine Robbe-Grillet",
+      "pred": "Catherine Robbe-Grillet",
+      "ok": true,
+      "question": "Who is the spouse of the director of film Eden And After?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_NL",
+      "id": "WIKI_PLAINNL_11",
+      "gold": "Hilandar",
+      "pred": "Hilandar",
+      "ok": true,
+      "question": "Where was the place of death of Anastasia Of Serbia's husband?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_0",
+      "gold": "Małgorzata Braunek",
+      "pred": "Małgorzata Braunek",
+      "ok": true,
+      "question": "Who is the mother of the director of film Polish-Russian War (Film)?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_1",
+      "gold": "12 June 1516",
+      "pred": "12 June 1516",
+      "ok": true,
+      "question": "When did John V, Prince Of Anhalt-Zerbst's father die?",
+      "start_seal_in_span_q": false
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_2",
+      "gold": "Myanmar Motion Picture Academy Awards",
+      "pred": "Myanmar Motion Picture Academy Awards",
+      "ok": true,
+      "question": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_3",
+      "gold": "Missoula, Montana",
+      "pred": "Missoula, Montana",
+      "ok": true,
+      "question": "Where was the director of film Ronnie Rocket born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_4",
+      "gold": "Galați",
+      "pred": "Galați",
+      "ok": true,
+      "question": "Where was the father of Ștefan I. Nenițescu born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_5",
+      "gold": "Brooklyn",
+      "pred": "Brooklyn",
+      "ok": true,
+      "question": "Where was the director of film Thomas Jefferson (Film) born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_6",
+      "gold": "stroke",
+      "pred": "stroke",
+      "ok": true,
+      "question": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_7",
+      "gold": "Nice",
+      "pred": "Nice",
+      "ok": true,
+      "question": "Where was the place of death of the director of film Beat Girl?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_8",
+      "gold": "1983",
+      "pred": "1983",
+      "ok": true,
+      "question": "When did Jean Martin (Singer)'s husband die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_9",
+      "gold": "United States",
+      "pred": "United States",
+      "ok": true,
+      "question": "What nationality is the director of film World And Time Enough?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_10",
+      "gold": "Catherine Robbe-Grillet",
+      "pred": "Catherine Robbe-Grillet",
+      "ok": true,
+      "question": "Who is the spouse of the director of film Eden And After?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "PLAIN_PROG",
+      "id": "WIKI_PLAINPROG_11",
+      "gold": "Hilandar",
+      "pred": "Hilandar",
+      "ok": true,
+      "question": "Where was the place of death of Anastasia Of Serbia's husband?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_0",
+      "gold": "Ea52bec18d1c8",
+      "pred": "Ea52bec18d1c8",
+      "ok": true,
+      "question": "Who is the mother of the director of film Polish-Russian War (Film)?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_1",
+      "gold": "Ec63991795cfa",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "When did John V, Prince Of Anhalt-Zerbst's father die?",
+      "start_seal_in_span_q": false
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_2",
+      "gold": "Efb02dc5c7976",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_3",
+      "gold": "Ecaa351cb0b48",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where was the director of film Ronnie Rocket born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_4",
+      "gold": "E629e1dcde277",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where was the father of Ștefan I. Nenițescu born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_5",
+      "gold": "Eeacdf8354089",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where was the director of film Thomas Jefferson (Film) born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_6",
+      "gold": "E45fd4c7d6483",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_7",
+      "gold": "E672db16d70af",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where was the place of death of the director of film Beat Girl?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_8",
+      "gold": "E28729f099a26",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "When did Jean Martin (Singer)'s husband die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_9",
+      "gold": "E506b5d075fbf",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "What nationality is the director of film World And Time Enough?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_10",
+      "gold": "Eeec851268ee7",
+      "pred": "Eeec851268ee7",
+      "ok": true,
+      "question": "Who is the spouse of the director of film Eden And After?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_NL",
+      "id": "WIKI_SEALNL_11",
+      "gold": "E70dbb7ff2085",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "Where was the place of death of Anastasia Of Serbia's husband?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_0",
+      "gold": "Ea52bec18d1c8",
+      "pred": "Ea52bec18d1c8",
+      "ok": true,
+      "question": "Who is the mother of the director of film Polish-Russian War (Film)?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_1",
+      "gold": "Ec63991795cfa",
+      "pred": "Ec63991795cfa",
+      "ok": true,
+      "question": "When did John V, Prince Of Anhalt-Zerbst's father die?",
+      "start_seal_in_span_q": false
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_2",
+      "gold": "Efb02dc5c7976",
+      "pred": "Efb02dc5c7976",
+      "ok": true,
+      "question": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_3",
+      "gold": "Ecaa351cb0b48",
+      "pred": "Ecaa351cb0b48",
+      "ok": true,
+      "question": "Where was the director of film Ronnie Rocket born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_4",
+      "gold": "E629e1dcde277",
+      "pred": "E629e1dcde277",
+      "ok": true,
+      "question": "Where was the father of Ștefan I. Nenițescu born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_5",
+      "gold": "Eeacdf8354089",
+      "pred": "Eeacdf8354089",
+      "ok": true,
+      "question": "Where was the director of film Thomas Jefferson (Film) born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_6",
+      "gold": "E45fd4c7d6483",
+      "pred": "E45fd4c7d6483",
+      "ok": true,
+      "question": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_7",
+      "gold": "E672db16d70af",
+      "pred": "E672db16d70af",
+      "ok": true,
+      "question": "Where was the place of death of the director of film Beat Girl?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_8",
+      "gold": "E28729f099a26",
+      "pred": "E28729f099a26",
+      "ok": true,
+      "question": "When did Jean Martin (Singer)'s husband die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_9",
+      "gold": "E506b5d075fbf",
+      "pred": "E506b5d075fbf",
+      "ok": true,
+      "question": "What nationality is the director of film World And Time Enough?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_10",
+      "gold": "Eeec851268ee7",
+      "pred": "Eeec851268ee7",
+      "ok": true,
+      "question": "Who is the spouse of the director of film Eden And After?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SEAL_PROG",
+      "id": "WIKI_SEALPROG_11",
+      "gold": "E70dbb7ff2085",
+      "pred": "E70dbb7ff2085",
+      "ok": true,
+      "question": "Where was the place of death of Anastasia Of Serbia's husband?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_0",
+      "gold": "Ea52bec18d1c8",
+      "pred": "Ea52bec18d1c8",
+      "ok": true,
+      "question": "Who is the mother of the director of film Polish-Russian War (Film)?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_1",
+      "gold": "Ec63991795cfa",
+      "pred": "Ec63991795cfa",
+      "ok": true,
+      "question": "When did John V, Prince Of Anhalt-Zerbst's father die?",
+      "start_seal_in_span_q": false
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_2",
+      "gold": "Efb02dc5c7976",
+      "pred": "Efb02dc5c7976",
+      "ok": true,
+      "question": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_3",
+      "gold": "Ecaa351cb0b48",
+      "pred": "Ecaa351cb0b48",
+      "ok": true,
+      "question": "Where was the director of film Ronnie Rocket born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_4",
+      "gold": "E629e1dcde277",
+      "pred": "E629e1dcde277",
+      "ok": true,
+      "question": "Where was the father of Ștefan I. Nenițescu born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_5",
+      "gold": "Eeacdf8354089",
+      "pred": "Eeacdf8354089",
+      "ok": true,
+      "question": "Where was the director of film Thomas Jefferson (Film) born?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_6",
+      "gold": "E45fd4c7d6483",
+      "pred": "E45fd4c7d6483",
+      "ok": true,
+      "question": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_7",
+      "gold": "E672db16d70af",
+      "pred": "E672db16d70af",
+      "ok": true,
+      "question": "Where was the place of death of the director of film Beat Girl?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_8",
+      "gold": "E28729f099a26",
+      "pred": "E28729f099a26",
+      "ok": true,
+      "question": "When did Jean Martin (Singer)'s husband die?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_9",
+      "gold": "E506b5d075fbf",
+      "pred": "E506b5d075fbf",
+      "ok": true,
+      "question": "What nationality is the director of film World And Time Enough?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_10",
+      "gold": "Eeec851268ee7",
+      "pred": "Eeec851268ee7",
+      "ok": true,
+      "question": "Who is the spouse of the director of film Eden And After?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wiki",
+      "arm": "SPAN_NL",
+      "id": "WIKI_SPANNL_11",
+      "gold": "E70dbb7ff2085",
+      "pred": "E70dbb7ff2085",
+      "ok": true,
+      "question": "Where was the place of death of Anastasia Of Serbia's husband?",
+      "start_seal_in_span_q": true
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_NL",
+      "id": "WTQ_PLAINNL_0",
+      "gold": "Justiciar",
+      "pred": "Justiciar",
+      "ok": true,
+      "question": "who superceded lord high steward?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_NL",
+      "id": "WTQ_PLAINNL_1",
+      "gold": "October 2011",
+      "pred": "October 2011",
+      "ok": true,
+      "question": "when did the restaurant \"verre\" at the hilton dubai creek close?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_NL",
+      "id": "WTQ_PLAINNL_2",
+      "gold": "Chester Township, Ohio",
+      "pred": "Chester Township, Ohio",
+      "ok": true,
+      "question": "where is saint anslem school located?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_NL",
+      "id": "WTQ_PLAINNL_3",
+      "gold": "Eddie Johnson",
+      "pred": "Eddie Johnson",
+      "ok": true,
+      "question": "who is the only goalscorer to score between 18 and 20 goals?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_NL",
+      "id": "WTQ_PLAINNL_4",
+      "gold": "Georges-Henri Héon",
+      "pred": "Georges-Henri Héon",
+      "ok": true,
+      "question": "who was the first lieutenant to take office?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_NL",
+      "id": "WTQ_PLAINNL_5",
+      "gold": "060",
+      "pred": "060",
+      "ok": true,
+      "question": "which number is before 061?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_NL",
+      "id": "WTQ_PLAINNL_6",
+      "gold": "Bamberg Church",
+      "pred": "Bamberg Church",
+      "ok": true,
+      "question": "which church name does not have the name of the parish in its name?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_NL",
+      "id": "WTQ_PLAINNL_7",
+      "gold": "Justin Rodriguez",
+      "pred": "Justin Rodriguez",
+      "ok": true,
+      "question": "who is the last representative on the table?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_PROG",
+      "id": "WTQ_PLAINPROG_0",
+      "gold": "Justiciar",
+      "pred": "Justiciar",
+      "ok": true,
+      "question": "who superceded lord high steward?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_PROG",
+      "id": "WTQ_PLAINPROG_1",
+      "gold": "October 2011",
+      "pred": "October 2011",
+      "ok": true,
+      "question": "when did the restaurant \"verre\" at the hilton dubai creek close?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_PROG",
+      "id": "WTQ_PLAINPROG_2",
+      "gold": "Chester Township, Ohio",
+      "pred": "Chester Township, Ohio",
+      "ok": true,
+      "question": "where is saint anslem school located?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_PROG",
+      "id": "WTQ_PLAINPROG_3",
+      "gold": "Eddie Johnson",
+      "pred": "Eddie Johnson",
+      "ok": true,
+      "question": "who is the only goalscorer to score between 18 and 20 goals?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_PROG",
+      "id": "WTQ_PLAINPROG_4",
+      "gold": "Georges-Henri Héon",
+      "pred": "Georges-Henri Héon",
+      "ok": true,
+      "question": "who was the first lieutenant to take office?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_PROG",
+      "id": "WTQ_PLAINPROG_5",
+      "gold": "060",
+      "pred": "060",
+      "ok": true,
+      "question": "which number is before 061?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_PROG",
+      "id": "WTQ_PLAINPROG_6",
+      "gold": "Bamberg Church",
+      "pred": "Bamberg Church",
+      "ok": true,
+      "question": "which church name does not have the name of the parish in its name?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "PLAIN_PROG",
+      "id": "WTQ_PLAINPROG_7",
+      "gold": "Justin Rodriguez",
+      "pred": "Justin Rodriguez",
+      "ok": true,
+      "question": "who is the last representative on the table?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_NL",
+      "id": "WTQ_SEALNL_0",
+      "gold": "E27e2a69d0533",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "who superceded lord high steward?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_NL",
+      "id": "WTQ_SEALNL_1",
+      "gold": "E48e5aa51d29e",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "when did the restaurant \"verre\" at the hilton dubai creek close?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_NL",
+      "id": "WTQ_SEALNL_2",
+      "gold": "E5d667b54f520",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "where is saint anslem school located?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_NL",
+      "id": "WTQ_SEALNL_3",
+      "gold": "E6ab2875bda75",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "who is the only goalscorer to score between 18 and 20 goals?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_NL",
+      "id": "WTQ_SEALNL_4",
+      "gold": "E5ba0e5c9f141",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "who was the first lieutenant to take office?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_NL",
+      "id": "WTQ_SEALNL_5",
+      "gold": "E564f165b9177",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "which number is before 061?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_NL",
+      "id": "WTQ_SEALNL_6",
+      "gold": "E16022e4176c5",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "which church name does not have the name of the parish in its name?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_NL",
+      "id": "WTQ_SEALNL_7",
+      "gold": "E5c6ccf6a9a7a",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "question": "who is the last representative on the table?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_PROG",
+      "id": "WTQ_SEALPROG_0",
+      "gold": "E27e2a69d0533",
+      "pred": "E27e2a69d0533",
+      "ok": true,
+      "question": "who superceded lord high steward?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_PROG",
+      "id": "WTQ_SEALPROG_1",
+      "gold": "E48e5aa51d29e",
+      "pred": "E48e5aa51d29e",
+      "ok": true,
+      "question": "when did the restaurant \"verre\" at the hilton dubai creek close?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_PROG",
+      "id": "WTQ_SEALPROG_2",
+      "gold": "E5d667b54f520",
+      "pred": "E5d667b54f520",
+      "ok": true,
+      "question": "where is saint anslem school located?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_PROG",
+      "id": "WTQ_SEALPROG_3",
+      "gold": "E6ab2875bda75",
+      "pred": "E6ab2875bda75",
+      "ok": true,
+      "question": "who is the only goalscorer to score between 18 and 20 goals?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_PROG",
+      "id": "WTQ_SEALPROG_4",
+      "gold": "E5ba0e5c9f141",
+      "pred": "E5ba0e5c9f141",
+      "ok": true,
+      "question": "who was the first lieutenant to take office?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_PROG",
+      "id": "WTQ_SEALPROG_5",
+      "gold": "E564f165b9177",
+      "pred": "E564f165b9177",
+      "ok": true,
+      "question": "which number is before 061?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_PROG",
+      "id": "WTQ_SEALPROG_6",
+      "gold": "E16022e4176c5",
+      "pred": "E16022e4176c5",
+      "ok": true,
+      "question": "which church name does not have the name of the parish in its name?",
+      "start_seal_in_span_q": null
+    },
+    {
+      "family": "wtq",
+      "arm": "SEAL_PROG",
+      "id": "WTQ_SEALPROG_7",
+      "gold": "E5c6ccf6a9a7a",
+      "pred": "E5c6ccf6a9a7a",
+      "ok": true,
+      "question": "who is the last representative on the table?",
+      "start_seal_in_span_q": null
+    }
+  ],
+  "nonclaim": "Not G-Rev1. Not privacy. 2Wiki context is gold evidence triples, not full Wikipedia retrieval. WTQ PROG is gold LOOKUP, not a WTQ solver. Spider join-SQL lock is still missing. SEAL_NL token-HMAC is the ceiling protocol (start ID may leave V(G)); SPAN_NL is the span-aligned control. PLAIN_NL is not counterfactual — parametric Wikipedia answers remain possible."
+}

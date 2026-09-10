@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_179 #####
+QUESTION:
+What nationality is the composer of song Replay (Tamta Song)?
+
+CONTEXT:
+Otakar Vávra | place of birth | Hradec Králové
+Silent Barricade | director | Otakar Vávra
+Alex P | country of citizenship | CF_TAIL_179_Sweden
+Frances Adeline Seward | date of death | June 21, 1865
+Replay | composer | Alex P
+Replay | decoy_link_179 | decoy_mid_179
+decoy_mid_179 | country of citizenship | Sweden
+Augustus Henry Seward | mother | Frances Adeline Seward

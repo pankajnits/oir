@@ -1,0 +1,337 @@
+{
+  "by_form": {
+    "NL": {
+      "ok": 0,
+      "n": 20,
+      "detail": [
+        {
+          "id": "WTQFIX_NL_0",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ed8abbeb36fd2",
+          "stratum": "lookup_filter",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_1",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ee874ab0ac3d6",
+          "stratum": "lookup_filter",
+          "in_ctx": false,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_2",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E81e32dd0f6f3",
+          "stratum": "lookup_filter",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_3",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ece05da6065ce",
+          "stratum": "lookup_filter",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_4",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Eb878224ce488",
+          "stratum": "lookup_filter",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_5",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E2c13b6494759",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_6",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E2935fed73895",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_7",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Eb7a640f8fee3",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_8",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E38c82b2c0d23",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_9",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ebcfbeb1b9219",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_10",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ed91603ddd479",
+          "stratum": "aggregate",
+          "in_ctx": false,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_11",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ece05da6065ce",
+          "stratum": "aggregate",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_12",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ec2b5b5a6e2d1",
+          "stratum": "aggregate",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_13",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Efe67d6085097",
+          "stratum": "aggregate",
+          "in_ctx": false,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_14",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ece05da6065ce",
+          "stratum": "aggregate",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_15",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E61976ccef8ea",
+          "stratum": "compose",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_16",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E68111613eeac",
+          "stratum": "compose",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_17",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E29310b74df93",
+          "stratum": "compose",
+          "in_ctx": false,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_18",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E9a654d3a51fd",
+          "stratum": "compose",
+          "in_ctx": false,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_NL_19",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E071c76fea781",
+          "stratum": "compose",
+          "in_ctx": true,
+          "model": "composer"
+        }
+      ],
+      "score": "0/20",
+      "reply": "results/wtq_dsl_replies/WTQFIX_NL_composer.txt"
+    },
+    "DSL": {
+      "ok": 15,
+      "n": 15,
+      "detail": [
+        {
+          "id": "WTQFIX_DSL_0",
+          "ok": true,
+          "pred": "Ed8abbeb36fd2",
+          "expect": "Ed8abbeb36fd2",
+          "stratum": "lookup_filter",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_2",
+          "ok": true,
+          "pred": "E81e32dd0f6f3",
+          "expect": "E81e32dd0f6f3",
+          "stratum": "lookup_filter",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_3",
+          "ok": true,
+          "pred": "Ece05da6065ce",
+          "expect": "Ece05da6065ce",
+          "stratum": "lookup_filter",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_4",
+          "ok": true,
+          "pred": "Eb878224ce488",
+          "expect": "Eb878224ce488",
+          "stratum": "lookup_filter",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_5",
+          "ok": true,
+          "pred": "E2c13b6494759",
+          "expect": "E2c13b6494759",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_6",
+          "ok": true,
+          "pred": "E2935fed73895",
+          "expect": "E2935fed73895",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_7",
+          "ok": true,
+          "pred": "Eb7a640f8fee3",
+          "expect": "Eb7a640f8fee3",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_8",
+          "ok": true,
+          "pred": "E38c82b2c0d23",
+          "expect": "E38c82b2c0d23",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_9",
+          "ok": true,
+          "pred": "Ebcfbeb1b9219",
+          "expect": "Ebcfbeb1b9219",
+          "stratum": "compare",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_11",
+          "ok": true,
+          "pred": "Ece05da6065ce",
+          "expect": "Ece05da6065ce",
+          "stratum": "aggregate",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_12",
+          "ok": true,
+          "pred": "Ec2b5b5a6e2d1",
+          "expect": "Ec2b5b5a6e2d1",
+          "stratum": "aggregate",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_14",
+          "ok": true,
+          "pred": "Ece05da6065ce",
+          "expect": "Ece05da6065ce",
+          "stratum": "aggregate",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_15",
+          "ok": true,
+          "pred": "E61976ccef8ea",
+          "expect": "E61976ccef8ea",
+          "stratum": "compose",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_16",
+          "ok": true,
+          "pred": "E68111613eeac",
+          "expect": "E68111613eeac",
+          "stratum": "compose",
+          "in_ctx": true,
+          "model": "composer"
+        },
+        {
+          "id": "WTQFIX_DSL_19",
+          "ok": true,
+          "pred": "E071c76fea781",
+          "expect": "E071c76fea781",
+          "stratum": "compose",
+          "in_ctx": true,
+          "model": "composer"
+        }
+      ],
+      "score": "15/15",
+      "reply": "results/wtq_dsl_replies/WTQFIX_DSL_composer.txt"
+    }
+  },
+  "claim": "WTQ sealed NL fails; explicit cell LOOKUP DSL restores answers when cell is in table",
+  "note": "DSL uses gold-aligned ROW/COL LOOKUP (execution under opacity). Not NL\u2192SQL compilation. Parallel to PATH_PROG saturation."
+}

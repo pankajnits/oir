@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_9]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_9 #####
+QUESTION:
+What city is the headquarters of the company led by Steve_Weed?
+
+PATH_QUERY
+START Steve_Weed
+R1 E8491847b6e11
+R2 Ea260b2014742
+Execute path; return final tail only.
+
+CONTEXT:
+Steve_Weed | E8491847b6e11 | WaveDivision_Holdings_LLC
+WaveDivision_Holdings_LLC | Ea260b2014742 | New_Jersey
+Steve_Weed | Eaa62b1cf91cf | Hobby_Lobby
+Hobby_Lobby | Eb05ee35d506c | Oklahoma_City

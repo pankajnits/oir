@@ -1,0 +1,85 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_CX_PATH_5]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM PATH family=COMPLEX use=ONCALL: bound START, HMAC Q, PATH given.
+
+##### ID SLL_CX_PATH_5 #####
+QUESTION (token-HMAC'd):
+E2a643051e40f E4f3c82585071 E501320009160 E212e17114476 E640d31a17ff3 E04160494f990 Ebcedef0144a1 Ee4f978c8a593 E50a5d3dfec2a?
+
+PATH_QUERY
+START Ee4f978c8a593
+R1 E6c27409437ae
+R2 E7967a63f41e5
+R3 Ecbce8d75ff85
+Execute path; return final tail only.
+
+CONTEXT:
+TABLE hop1
+| Eccd9a67525b9 | E6c27409437ae |
+| --- | --- |
+| Ee4f978c8a593 | Ef5209dbc483d |
+| E07cd4efa8261 | E0cc0dfc29e35 |
+| E56ab6f960427 | Ef145664bd3ff |
+| E27b85d0b5bfe | E19fd13d9f542 |
+
+TABLE hop2
+| E40da60fba1ca | E7967a63f41e5 |
+| --- | --- |
+| Ef5209dbc483d | E6c57bd78b5fa |
+| E0cc0dfc29e35 | Eed10428dc387 |
+| Ef145664bd3ff | E5d74e5cf74a8 |
+| E19fd13d9f542 | E578812fa12c2 |
+
+TABLE hop3
+| Eef92c2df9b21 | Ecbce8d75ff85 |
+| --- | --- |
+| E6c57bd78b5fa | E3c1ccc9c0d1d |
+| Eed10428dc387 | Ea6f9038d15d5 |
+| E5d74e5cf74a8 | E4104d5810b91 |
+| E578812fa12c2 | E733c1c7131f8 |
+
+JSON
+{
+  "use_case": "E968e8876612d",
+  "graph": {
+    "Ee4f978c8a593": {
+      "E6c27409437ae": "Ef5209dbc483d"
+    },
+    "Ef5209dbc483d": {
+      "E7967a63f41e5": "E6c57bd78b5fa"
+    },
+    "E6c57bd78b5fa": {
+      "Ecbce8d75ff85": "E3c1ccc9c0d1d"
+    },
+    "E07cd4efa8261": {
+      "E6c27409437ae": "E0cc0dfc29e35"
+    },
+    "E0cc0dfc29e35": {
+      "E7967a63f41e5": "Eed10428dc387"
+    },
+    "Eed10428dc387": {
+      "Ecbce8d75ff85": "Ea6f9038d15d5"
+    },
+    "E56ab6f960427": {
+      "E6c27409437ae": "Ef145664bd3ff"
+    },
+    "Ef145664bd3ff": {
+      "E7967a63f41e5": "E5d74e5cf74a8"
+    },
+    "E5d74e5cf74a8": {
+      "Ecbce8d75ff85": "E4104d5810b91"
+    },
+    "E27b85d0b5bfe": {
+      "E6c27409437ae": "E19fd13d9f542"
+    },
+    "E19fd13d9f542": {
+      "E7967a63f41e5": "E578812fa12c2"
+    },
+    "E578812fa12c2": {
+      "Ecbce8d75ff85": "E733c1c7131f8"
+    }
+  },
+  "notes": "Ee51893ae0b4e Ee4f978c8a593 E490f80e37f63 E308617386433 E8e891b05b89b E889157bbc265 E0fd10d8d59c7 Ede4c6ddb45ae, Ef547f60aa018 E9f368b940a65 Ee2318e36ccca Ec6c34f4cd77f E6f3b9fc1e453"
+}

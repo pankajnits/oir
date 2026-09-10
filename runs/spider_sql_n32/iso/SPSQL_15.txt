@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_15]: <sql>
+
+DB: match_season
+SCHEMA:
+country(Country_id, Country_name, Capital, Official_native_language)
+team(Team_id, Name)
+match_season(Season, Player, Position, Country, Team, Draft_Pick_Number, Draft_Class, College)
+player(Player_ID, Player, Years_Played, Total_WL, Singles_WL, Doubles_WL, Team)
+QUESTION:
+Count the number of different colleges that players who play for Columbus Crew are from.

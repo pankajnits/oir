@@ -1,0 +1,58 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM SAME_BALANCED: SAME seals; dual-path with SYMMETRIC noise
+
+Learn the mapping from DEMOs (same encoding).
+Answer the QUIZ the same way. No English relation names. No PATH.
+If ambiguous, UNKNOWN.
+
+DEMO 0:
+START Eecd15e3ea6a6
+CONTEXT:
+Eecd15e3ea6a6 | Ef09ef52bcb3c | Edf06f9cd5d37
+Eecd15e3ea6a6 | E0995a541103d | Eaefd1a107646
+Eaefd1a107646 | E0458ae94bcaf | E7c69e2b3d0c9
+Edf06f9cd5d37 | E90c9555ae88b | Eecd15e3ea6a6
+ANSWER_SEALED: E7c69e2b3d0c9
+
+DEMO 1:
+START E4f7b8fcdec3d
+CONTEXT:
+E4f7b8fcdec3d | E0995a541103d | Ef43a9e412f71
+Ef43a9e412f71 | E0458ae94bcaf | Eacf35a129345
+E9a3184d4fc8c | E42b0a141184e | E4f7b8fcdec3d
+E4f7b8fcdec3d | E6e02ab16e317 | E9a3184d4fc8c
+ANSWER_SEALED: Eacf35a129345
+
+DEMO 2:
+START E7a81e1d4b0eb
+CONTEXT:
+E7a81e1d4b0eb | E8faa6153a321 | E7448defc24ec
+E7a81e1d4b0eb | E0995a541103d | Ecc726daf27b7
+E7448defc24ec | E7ccace838bb4 | E7a81e1d4b0eb
+Ecc726daf27b7 | E0458ae94bcaf | E6921ca5630bf
+ANSWER_SEALED: E6921ca5630bf
+
+DEMO 3:
+START E04ce05e1054e
+CONTEXT:
+E6d08db7a7955 | E0458ae94bcaf | Ed49678144e76
+E04ce05e1054e | E6aff214d5a29 | E7a10cee149d4
+E7a10cee149d4 | Eea730aff416e | E04ce05e1054e
+E04ce05e1054e | E0995a541103d | E6d08db7a7955
+ANSWER_SEALED: Ed49678144e76
+
+--- QUIZ ---
+##### ID ADV32_SAME_BALANCED_22 #####
+START E2498ece5a2ff
+CONTEXT:
+E4e85a8252b36 | E8119b7b82b95 | E7d9e3c596432
+Ecf056b2458f5 | E3c0ac872c414 | E4e85a8252b36
+Ea0fbcb3cff0c | Ec15ee74a63bd | E3a7fa7ec3522
+E4e85a8252b36 | Ee2403173f712 | Ecf056b2458f5
+E3a7fa7ec3522 | E2ae0e6422bbf | Ea0fbcb3cff0c
+Ea0fbcb3cff0c | E0458ae94bcaf | E4e1b05ed1d2f
+E2498ece5a2ff | E0995a541103d | Ea0fbcb3cff0c
+E2498ece5a2ff | E992e2a579172 | E4e85a8252b36
+

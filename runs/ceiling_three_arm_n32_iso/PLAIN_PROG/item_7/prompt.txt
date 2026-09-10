@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_7 #####
+PATH_QUERY
+START Samuel_W_Fordyce
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Samuel_W_Fordyce | works_at | Kansas_City_Southern
+Kansas_City_Southern | headquartered_in | Kansas_City
+DecoyCo_Kansas_City_Southern | headquartered_in | DecoyHQ_Kansas_City
+Kansas_City_Southern | owned_by | Hold_Kansas_City_Southern
+Hold_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Kansas_City_Southern | partner_of | Partner_Kansas_City_Southern
+Partner_Kansas_City_Southern | meta_of | Kansas_City_Southern
+Decoy_DecoyCo_Kansas_City_Southern | works_at | DecoyCo_Kansas_City_Southern

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_61]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_61 #####
+QUESTION:
+Who directed a movie that Kirsten Dunst starred in?
+
+PATH_QUERY
+START Kirsten Dunst
+R1 Eae2e8c59d545
+R2 E6cd930bd6a17
+Execute path; return final tail only.
+
+CONTEXT:
+Kirsten Dunst | Eae2e8c59d545 | Bring It On
+Bring It On | E6cd930bd6a17 | Peyton Reed
+Bring It On | Ef41793b6315a | Jessica Bendinger

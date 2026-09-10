@@ -1,0 +1,15 @@
+[
+  {
+    "id": "TOY_0",
+    "question": "Which city is the headquarters of the company led by Alice Smith?",
+    "start": "Alice_Smith",
+    "rels": ["leads", "hq_in"],
+    "triples": [
+      ["Alice_Smith", "leads", "CoA"],
+      ["CoA", "hq_in", "Paris"],
+      ["Bob_Jones", "leads", "CoB"],
+      ["CoB", "hq_in", "Oslo"]
+    ],
+    "gold": "Paris"
+  }
+]

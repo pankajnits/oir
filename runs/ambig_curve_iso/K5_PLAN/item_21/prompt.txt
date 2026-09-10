@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_21]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_21 #####
+QUESTION:
+What city is the headquarters of the company led by Frank_Love?
+
+PATH_QUERY
+START Frank_Love
+R1 Ed3ebea38e270
+R2 E3efaf8ff4ec2
+Execute path; return final tail only.
+
+CONTEXT:
+Frank_Love | Ed3ebea38e270 | Loves_Travel_Stops__Country_Stores
+Loves_Travel_Stops__Country_Stores | E3efaf8ff4ec2 | Oklahoma_City
+Frank_Love | E01364b841868 | Cogent_Communications
+Cogent_Communications | E7ea54ce9833e | Washington_DC
+Frank_Love | Eae706ba67f07 | Kansas_City_Southern
+Kansas_City_Southern | Ec77f45fe3ccf | Kansas_City
+Frank_Love | Eb8f8936ef879 | Lacoste_SA
+Lacoste_SA | E1914f64c19f7 | Paris
+Frank_Love | E1ca4678f0673 | Israel_Railways
+Israel_Railways | E82231ff3a5ab | Lod_Railway_Station

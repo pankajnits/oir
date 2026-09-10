@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_13 #####
+PATH_QUERY
+START Luigi_Ferraris
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Luigi_Ferraris | works_at | Ferrovie_dello_Stato_Italiane
+Ferrovie_dello_Stato_Italiane | headquartered_in | Rome
+DecoyCo_Ferrovie_dello_Stato_Italiane | headquartered_in | DecoyHQ_Rome
+Ferrovie_dello_Stato_Italiane | owned_by | Hold_Ferrovie_dello_Stato_Italiane
+Hold_Ferrovie_dello_Stato_Italiane | meta_of | Ferrovie_dello_Stato_Italiane
+Ferrovie_dello_Stato_Italiane | partner_of | Partner_Ferrovie_dello_Stato_Italiane
+Partner_Ferrovie_dello_Stato_Italiane | meta_of | Ferrovie_dello_Stato_Italiane
+Decoy_DecoyCo_Ferrovie_dello_Stato_Italiane | works_at | DecoyCo_Ferrovie_dello_Stato_Italiane

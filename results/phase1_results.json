@@ -1,0 +1,63 @@
+{
+  "phase": 1,
+  "summary": {
+    "oir_char_align": true,
+    "oir_char_crack_blocked": true,
+    "mismatch_false_positive": true,
+    "mono_align_without_crack": true,
+    "multihop_nl_failed": true,
+    "word_align": true,
+    "nodelim_still_ok": true
+  },
+  "rows": [
+    {
+      "id": "P1_mono_align",
+      "pass": true,
+      "got": "amber lattice seven",
+      "note": "confound: align without needing crack"
+    },
+    {
+      "id": "P1_mono_crack",
+      "pass": true,
+      "got": "UNKNOWN",
+      "note": "crack failed on short KV mono \u2014 weak confound this run"
+    },
+    {
+      "id": "P1_char_align",
+      "pass": true,
+      "got": "amber lattice seven",
+      "note": "OIR positive"
+    },
+    {
+      "id": "P1_char_crack",
+      "pass": true,
+      "got": "UNKNOWN",
+      "note": "crack control OK"
+    },
+    {
+      "id": "P1_char_mismatch",
+      "pass": false,
+      "got": "amber lattice seven",
+      "note": "FALSE POSITIVE pattern match across keys; unsealed_B=amber lattice seven"
+    },
+    {
+      "id": "P1_word_align",
+      "pass": true,
+      "got": "amber lattice seven",
+      "note": "word-HMAC align"
+    },
+    {
+      "id": "P1_char_nodelim_align",
+      "pass": true,
+      "got": "amber lattice seven",
+      "note": "no >>> still succeeded (key still unique prefix)"
+    },
+    {
+      "id": "P1_multihop_nl",
+      "pass": false,
+      "got": "yes",
+      "note": "hard multi-hop NL \u2014 expected FAIL"
+    }
+  ],
+  "scientific_takeaway": "OIR (HMAC char + >>>) works with crack blocked. Mismatch needs stricter controls (false positive). Multi-hop sealed NL without derived keys fails \u2014 paper must treat KV success as necessary but not sufficient for \u201creasoning\u201d. Mono align can succeed even when crack returns UNKNOWN on short KV \u2014 alignment \u2260 cracking."
+}

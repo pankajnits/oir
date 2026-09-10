@@ -1,0 +1,313 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+Context was extracted from a real Excel workbook then sealed.
+
+Same encoding on question and context. No external world knowledge.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+REAL EXCEL [WIKI_XLSX] sealed PATH_QUERY.
+
+
+##### ID XD_WIKI_XLSX_PROG_0 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Ea56e31da7339
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E745741d7eb13 | E6744fb42c6f6 | E0fdf841a302c
+E135abb0e607d | E0eb65c94fca6 | Ec9566d46a76d
+E2f1fff047948 | E84a5821dd6cc | E135abb0e607d
+E956456b9be03 | Ed16fddb0fe75 | E3ddae0cf835b
+E745741d7eb13 | E0eb65c94fca6 | E1e8b3da707e5
+Ea56e31da7339 | E84a5821dd6cc | E745741d7eb13
+E745741d7eb13 | Ee9037c612fa7 | E956456b9be03
+E0fdf841a302c | Ed16fddb0fe75 | Ee24053aaeb32
+
+
+##### ID XD_WIKI_XLSX_PROG_1 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Ee8b092323ad9
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E2f6bfd009502 | Ed16fddb0fe75 | E907f78c027b3
+E52696736d76b | E84a5821dd6cc | E7dc3bfacce1f
+E764f7d8ae42a | E0eb65c94fca6 | E4b98c76f42ec
+Ee8b092323ad9 | E84a5821dd6cc | E764f7d8ae42a
+Ec7fe927f5277 | Ed16fddb0fe75 | E64792677ef09
+E7dc3bfacce1f | E0eb65c94fca6 | Eb2d16e2a470f
+E764f7d8ae42a | Ee9037c612fa7 | E2f6bfd009502
+E764f7d8ae42a | E6744fb42c6f6 | Ec7fe927f5277
+
+
+##### ID XD_WIKI_XLSX_PROG_2 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START E21b9bc208a49
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E5d78b5cc89fe | E0eb65c94fca6 | Eff7a5054ec19
+E7d0ca784fbae | E0eb65c94fca6 | Ea6d089ff5284
+E5d78b5cc89fe | E6744fb42c6f6 | Eea10a6e164ef
+E21b9bc208a49 | E84a5821dd6cc | E5d78b5cc89fe
+E5e14841349ec | E84a5821dd6cc | E7d0ca784fbae
+Eea10a6e164ef | Ed16fddb0fe75 | Ebecf805a40b9
+E5d78b5cc89fe | Ee9037c612fa7 | E937525d409ba
+E937525d409ba | Ed16fddb0fe75 | E2d9d34f2c837
+
+
+##### ID XD_WIKI_XLSX_PROG_3 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Efa17cae9e8bb
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E49c229f91f98 | Ee9037c612fa7 | E6c5a2cc489c3
+E6c5a2cc489c3 | Ed16fddb0fe75 | Eb85066ec69a0
+E7dc3bfacce1f | E0eb65c94fca6 | Eb2d16e2a470f
+E49c229f91f98 | E6744fb42c6f6 | Edac05ee27648
+E49c229f91f98 | E0eb65c94fca6 | Ea4a9a7ecef7a
+Efa17cae9e8bb | E84a5821dd6cc | E49c229f91f98
+E52696736d76b | E84a5821dd6cc | E7dc3bfacce1f
+Edac05ee27648 | Ed16fddb0fe75 | E472a0fa681ee
+
+
+##### ID XD_WIKI_XLSX_PROG_4 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Edcc2687f4b6d
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E433fd1ea2cd9 | E6744fb42c6f6 | E4b56e45c3f3a
+Eef02ba54af77 | E84a5821dd6cc | E821a5dbea7f1
+Edcc2687f4b6d | E84a5821dd6cc | E433fd1ea2cd9
+Eab602e586cf8 | Ed16fddb0fe75 | Eec76596b4001
+E433fd1ea2cd9 | Ee9037c612fa7 | Eab602e586cf8
+E433fd1ea2cd9 | E0eb65c94fca6 | E2c987e73107d
+E4b56e45c3f3a | Ed16fddb0fe75 | Ead4ff9488302
+E821a5dbea7f1 | E0eb65c94fca6 | Eb2d16e2a470f
+
+
+##### ID XD_WIKI_XLSX_PROG_5 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Ef9d3d9622faa
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Eb8eced8d29a8 | E84a5821dd6cc | E5d78b5cc89fe
+E7d0ca784fbae | E0eb65c94fca6 | Ea6d089ff5284
+E23c101f6f4e7 | Ed16fddb0fe75 | E9b62b3e6d315
+E03fcd12e2edf | Ed16fddb0fe75 | Ee6a3f46b1daf
+Ef9d3d9622faa | E84a5821dd6cc | E7d0ca784fbae
+E7d0ca784fbae | E6744fb42c6f6 | E03fcd12e2edf
+E5d78b5cc89fe | E0eb65c94fca6 | Eff7a5054ec19
+E7d0ca784fbae | Ee9037c612fa7 | E23c101f6f4e7
+
+
+##### ID XD_WIKI_XLSX_PROG_6 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Eda9ebb029b83
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E821a5dbea7f1 | E6744fb42c6f6 | Ee9ede9588025
+E821a5dbea7f1 | Ee9037c612fa7 | Eeb9d5c0d5500
+Eb3f4bc539e98 | E0eb65c94fca6 | E12514c619b47
+E2f78a6cae904 | E84a5821dd6cc | Eb3f4bc539e98
+Eeb9d5c0d5500 | Ed16fddb0fe75 | E77f3e024ae98
+Ee9ede9588025 | Ed16fddb0fe75 | E1088ecd78cb6
+E821a5dbea7f1 | E0eb65c94fca6 | Eb2d16e2a470f
+Eda9ebb029b83 | E84a5821dd6cc | E821a5dbea7f1
+
+
+##### ID XD_WIKI_XLSX_PROG_7 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Eed87134259f7
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E52696736d76b | E84a5821dd6cc | E7dc3bfacce1f
+E74bf5c0e5a3b | Ed16fddb0fe75 | E2612728fa6af
+Ec6ac2624446e | E0eb65c94fca6 | Ee3613601ea7a
+E7dc3bfacce1f | E0eb65c94fca6 | Eb2d16e2a470f
+Ec6ac2624446e | Ee9037c612fa7 | E0203e49ac510
+Eed87134259f7 | E84a5821dd6cc | Ec6ac2624446e
+Ec6ac2624446e | E6744fb42c6f6 | E74bf5c0e5a3b
+E0203e49ac510 | Ed16fddb0fe75 | E2d6c7e9014e4
+
+
+##### ID XD_WIKI_XLSX_PROG_8 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START E5cc5330dfff1
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E7775b0cb03b8 | E6744fb42c6f6 | E428e97fd40d5
+E7775b0cb03b8 | Ee9037c612fa7 | E0b6b4a881cf3
+E7775b0cb03b8 | E0eb65c94fca6 | Ece46eea209da
+Ed1b84e8fbf42 | E84a5821dd6cc | Eb736cb37c0a6
+E428e97fd40d5 | Ed16fddb0fe75 | E15ed8f55764e
+E0b6b4a881cf3 | Ed16fddb0fe75 | E70e5432d6430
+E5cc5330dfff1 | E84a5821dd6cc | E7775b0cb03b8
+Eb736cb37c0a6 | E0eb65c94fca6 | Eb49b16afb497
+
+
+##### ID XD_WIKI_XLSX_PROG_9 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Ea8411a404318
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Eb3f4bc539e98 | E0eb65c94fca6 | E12514c619b47
+Ef3d5fec1b856 | E84a5821dd6cc | E764f7d8ae42a
+Eb3f4bc539e98 | Ee9037c612fa7 | E4536680c3390
+E764f7d8ae42a | E0eb65c94fca6 | E4b98c76f42ec
+Ea8411a404318 | E84a5821dd6cc | Eb3f4bc539e98
+Eac7d9ffe8c5a | Ed16fddb0fe75 | Ed2d61e771a12
+E4536680c3390 | Ed16fddb0fe75 | Eda40faf0322d
+Eb3f4bc539e98 | E6744fb42c6f6 | Eac7d9ffe8c5a
+
+
+##### ID XD_WIKI_XLSX_PROG_10 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START E4a8f91878bf0
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Eb736cb37c0a6 | Ee9037c612fa7 | Ed14d9759f490
+Ed14d9759f490 | Ed16fddb0fe75 | E8723bc0f0e0a
+Eb736cb37c0a6 | E6744fb42c6f6 | Ee3e3458d5229
+Eb3f4bc539e98 | E0eb65c94fca6 | E12514c619b47
+Eb736cb37c0a6 | E0eb65c94fca6 | Eb49b16afb497
+Ee3e3458d5229 | Ed16fddb0fe75 | E43272deace5b
+E4a8f91878bf0 | E84a5821dd6cc | Eb736cb37c0a6
+E2f78a6cae904 | E84a5821dd6cc | Eb3f4bc539e98
+
+
+##### ID XD_WIKI_XLSX_PROG_11 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START E357bfadbfb3b
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E17e214a204f4 | Ed16fddb0fe75 | Eae9402dd0850
+E135abb0e607d | E6744fb42c6f6 | E19e6f9a41adf
+E135abb0e607d | Ee9037c612fa7 | E17e214a204f4
+E357bfadbfb3b | E84a5821dd6cc | E135abb0e607d
+E5d78b5cc89fe | E0eb65c94fca6 | Eff7a5054ec19
+E19e6f9a41adf | Ed16fddb0fe75 | E687d06bc13c4
+Eb8eced8d29a8 | E84a5821dd6cc | E5d78b5cc89fe
+E135abb0e607d | E0eb65c94fca6 | Ec9566d46a76d
+
+
+##### ID XD_WIKI_XLSX_PROG_12 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START E3fae3ffa0704
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Ebb07e0724f67 | E6744fb42c6f6 | Ebe896f9bfa84
+Ebe896f9bfa84 | Ed16fddb0fe75 | Ec57535cba418
+E3fae3ffa0704 | E84a5821dd6cc | Ebb07e0724f67
+Ebb07e0724f67 | E0eb65c94fca6 | E23357912d562
+E9f398bf19974 | Ed16fddb0fe75 | E79cd2ea13a9d
+E7d0ca784fbae | E0eb65c94fca6 | Ea6d089ff5284
+E5e14841349ec | E84a5821dd6cc | E7d0ca784fbae
+Ebb07e0724f67 | Ee9037c612fa7 | E9f398bf19974
+
+
+##### ID XD_WIKI_XLSX_PROG_13 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START E5c5064fb1750
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+Ec7b42201d4ba | E0eb65c94fca6 | Eb2d16e2a470f
+Ec7b42201d4ba | Ee9037c612fa7 | E45854d2c8de2
+E804eded66255 | Ed16fddb0fe75 | E348b6f240ab5
+Ec7b42201d4ba | E6744fb42c6f6 | E804eded66255
+E5c5064fb1750 | E84a5821dd6cc | Ec7b42201d4ba
+E49c229f91f98 | E0eb65c94fca6 | Ea4a9a7ecef7a
+E7c442226d184 | E84a5821dd6cc | E49c229f91f98
+E45854d2c8de2 | Ed16fddb0fe75 | E71dcd0b733f6
+
+
+##### ID XD_WIKI_XLSX_PROG_14 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START E2c401484268d
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E49c229f91f98 | E0eb65c94fca6 | Ea4a9a7ecef7a
+E68f40d0ebebd | Ee9037c612fa7 | Ea4f6aef82c85
+E68f40d0ebebd | E0eb65c94fca6 | Ea6bd777597d9
+E7c442226d184 | E84a5821dd6cc | E49c229f91f98
+E68f40d0ebebd | E6744fb42c6f6 | E4efaedb097e4
+E2c401484268d | E84a5821dd6cc | E68f40d0ebebd
+E4efaedb097e4 | Ed16fddb0fe75 | Eedc9ae4787d4
+Ea4f6aef82c85 | Ed16fddb0fe75 | E9bd11338d27c
+
+
+##### ID XD_WIKI_XLSX_PROG_15 #####
+SOURCE: wiki_ceo_hr.xlsx
+PATH_QUERY
+START Ee8e4b8820154
+R1 E84a5821dd6cc
+R2 E0eb65c94fca6
+Execute START -R1-> x -R2-> y. Return y seal only.
+
+CONTEXT:
+E7dc3bfacce1f | Ee9037c612fa7 | Eaa1f8a870d0c
+E433fd1ea2cd9 | E0eb65c94fca6 | E2c987e73107d
+E7dc3bfacce1f | E6744fb42c6f6 | E07b13ea6a97b
+E7dc3bfacce1f | E0eb65c94fca6 | Eb2d16e2a470f
+Ee8e4b8820154 | E84a5821dd6cc | E7dc3bfacce1f
+Eadde6b7a1bb1 | E84a5821dd6cc | E433fd1ea2cd9
+Eaa1f8a870d0c | Ed16fddb0fe75 | Edc28916a93b6
+E07b13ea6a97b | Ed16fddb0fe75 | Ea212bd7207e1

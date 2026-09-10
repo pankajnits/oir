@@ -1,0 +1,17 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+=== QUIZ ===
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX2? Reply with the integer count only.
+
+CONTEXT:
+P2_0 | works_at | CoA2
+P2_1 | works_at | CoA2
+P2_2 | works_at | CoA2
+P2_3 | works_at | CoB2
+CoA2 | located_in | CityY2
+CoB2 | located_in | CityX2
+Dx2 | works_at | Dco2
+Dco2 | located_in | Dcity2
+CoA2 | owned_by | Hold2

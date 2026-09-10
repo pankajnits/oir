@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_168 #####
+QUESTION:
+What is the date of death of Jean Noël Destréhan's father?
+
+CONTEXT:
+Willem de Sitter | date of birth | 6 May 1872
+Jean-Noël Destréhan | father | Jean Baptiste d'Estrehan
+Ulbo de Sitter | father | Willem de Sitter
+Jean-Noël Destréhan | decoy_link_168 | decoy_mid_168
+Edward Wingfield, 2nd Viscount Powerscourt | father | Richard Wingfield, 1st Viscount Powerscourt
+decoy_mid_168 | date of death | 26 February 1765
+Jean Baptiste d'Estrehan | date of death | CF_TAIL_168_26February17
+Richard Wingfield, 1st Viscount Powerscourt | date of death | 21 October 1751

@@ -1,0 +1,173 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English question + plaintext KG. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+##### ID CF_PLAINNL_0 #####
+QUESTION:
+Who is the mother of the director of film Polish-Russian War (Film)?
+
+CONTEXT:
+Xawery Żuławski | mother | CF_TAIL_0_MagorzataBra
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Polish-Russian War | director | Xawery Żuławski
+decoy_mid_0 | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Polish-Russian War | decoy_link_0 | decoy_mid_0
+
+##### ID CF_PLAINNL_1 #####
+QUESTION:
+When did John V, Prince Of Anhalt-Zerbst's father die?
+
+CONTEXT:
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ronnie Rocket | director | David Lynch
+John V of Anhalt-Zerbst | decoy_link_1 | decoy_mid_1
+David Lynch | place of birth | Missoula, Montana
+decoy_mid_1 | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ernest I, Prince of Anhalt-Dessau | date of death | CF_TAIL_1_12June1516
+
+##### ID CF_PLAINNL_2 #####
+QUESTION:
+What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?
+
+CONTEXT:
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+David Lynch | place of birth | Missoula, Montana
+decoy_mid_2 | award received | Myanmar Motion Picture Academy Awards
+Wearing Velvet Slippers under a Golden Umbrella | decoy_link_2 | decoy_mid_2
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Ioan S. Nenițescu | place of birth | Galați
+Ronnie Rocket | director | David Lynch
+Wunna | award received | CF_TAIL_2_MyanmarMotio
+
+##### ID CF_PLAINNL_3 #####
+QUESTION:
+Where was the director of film Ronnie Rocket born?
+
+CONTEXT:
+Ioan S. Nenițescu | place of birth | Galați
+Ken Burns | place of birth | Brooklyn
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+David Lynch | place of birth | CF_TAIL_3_MissoulaMont
+Ronnie Rocket | decoy_link_3 | decoy_mid_3
+Thomas Jefferson | director | Ken Burns
+Ronnie Rocket | director | David Lynch
+decoy_mid_3 | place of birth | Missoula, Montana
+
+##### ID CF_PLAINNL_4 #####
+QUESTION:
+Where was the father of Ștefan I. Nenițescu born?
+
+CONTEXT:
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Thomas Jefferson | director | Ken Burns
+Ioan S. Nenițescu | place of birth | CF_TAIL_4_Galai
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+decoy_mid_4 | place of birth | Galați
+Ken Burns | place of birth | Brooklyn
+Ștefan I. Nenițescu | decoy_link_4 | decoy_mid_4
+
+##### ID CF_PLAINNL_5 #####
+QUESTION:
+Where was the director of film Thomas Jefferson (Film) born?
+
+CONTEXT:
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Thomas Jefferson | director | Ken Burns
+Beat Girl | director | Edmond T. Gréville
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Ken Burns | place of birth | CF_TAIL_5_Brooklyn
+decoy_mid_5 | place of birth | Brooklyn
+Edmond T. Gréville | place of death | Nice
+Thomas Jefferson | decoy_link_5 | decoy_mid_5
+
+##### ID CF_PLAINNL_6 #####
+QUESTION:
+Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?
+
+CONTEXT:
+William Black | date of death | 1983
+decoy_mid_6 | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Jean Martin | spouse | William Black
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | CF_TAIL_6_stroke
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Grand Duke Kirill Vladimirovich of Russia | decoy_link_6 | decoy_mid_6
+Edmond T. Gréville | place of death | Nice
+
+##### ID CF_PLAINNL_7 #####
+QUESTION:
+Where was the place of death of the director of film Beat Girl?
+
+CONTEXT:
+William Black | date of death | 1983
+decoy_mid_7 | place of death | Nice
+Eric Mueller | country of citizenship | United States
+Jean Martin | spouse | William Black
+Beat Girl | decoy_link_7 | decoy_mid_7
+Edmond T. Gréville | place of death | CF_TAIL_7_Nice
+World and Time Enough | director | Eric Mueller
+Beat Girl | director | Edmond T. Gréville
+
+##### ID CF_PLAINNL_8 #####
+QUESTION:
+When did Jean Martin (Singer)'s husband die?
+
+CONTEXT:
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+decoy_mid_8 | date of death | 1983
+William Black | date of death | CF_TAIL_8_1983
+Jean Martin | spouse | William Black
+Jean Martin | decoy_link_8 | decoy_mid_8
+World and Time Enough | director | Eric Mueller
+
+##### ID CF_PLAINNL_9 #####
+QUESTION:
+What nationality is the director of film World And Time Enough?
+
+CONTEXT:
+Eden and After | director | Alain Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Eric Mueller | country of citizenship | CF_TAIL_9_UnitedStates
+World and Time Enough | decoy_link_9 | decoy_mid_9
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+World and Time Enough | director | Eric Mueller
+Stefan Nemanja | place of death | Hilandar
+decoy_mid_9 | country of citizenship | United States
+
+##### ID CF_PLAINNL_10 #####
+QUESTION:
+Who is the spouse of the director of film Eden And After?
+
+CONTEXT:
+decoy_mid_10 | spouse | Catherine Robbe-Grillet
+Polish-Russian War | director | Xawery Żuławski
+Stefan Nemanja | place of death | Hilandar
+Xawery Żuławski | mother | Małgorzata Braunek
+Eden and After | decoy_link_10 | decoy_mid_10
+Anastasia of Serbia | spouse | Stefan Nemanja
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | CF_TAIL_10_CatherineRob
+
+##### ID CF_PLAINNL_11 #####
+QUESTION:
+Where was the place of death of Anastasia Of Serbia's husband?
+
+CONTEXT:
+decoy_mid_11 | place of death | Hilandar
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Anastasia of Serbia | decoy_link_11 | decoy_mid_11
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+Stefan Nemanja | place of death | CF_TAIL_11_Hilandar
+Anastasia of Serbia | spouse | Stefan Nemanja

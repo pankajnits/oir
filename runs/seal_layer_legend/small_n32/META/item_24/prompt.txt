@@ -1,0 +1,70 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_SMALL_META_24]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM META: sealed Q+values; bilingual schema; English protocol (encoding + isomorphism + how to use). No JOIN.
+
+##### ID SLL_SMALL_META_24 #####
+QUESTION (token-HMAC'd):
+Eb1367e0621af Ef1c5383fa576 E027a4b5b47ff E74eea071ad82 Ed0bd49617aa3 E7b19941d20c5?
+
+PROTOCOL (English; this is the only readable instruction):
+- QUESTION is encoded. Do not try to read English from those tokens.
+- CONTEXT keys and values are encoded the same way.
+- Isomorphism: identical tokens are the same entity or the same field.
+  Matching tokens is equality, not decryption.
+- KEY_SCHEMA below is bilingual: English meaning = sealed key token.
+- How to use: one QUESTION token is also an employee id in CONTEXT; that is START.
+  The encoded question asks for that person's country (not city).
+  Use the schema names (employees, id, employer, orgs, hq, country) and token
+  equality to walk CONTEXT. Return one sealed atom. No JOIN/PATH is given.
+
+KEY_SCHEMA (English name → sealed JSON key):
+  employees = Eef9b9e277e3c
+  orgs = Eb52455728c2e
+  id = Ed7c93315f5a2
+  employer = E4baf3952cfb4
+  hq = E986d7f6a3223
+  city = E327946a68961
+  country = Eb5c181bb2014
+
+CONTEXT:
+{
+  "Eef9b9e277e3c": [
+    {
+      "Ed7c93315f5a2": "Ed5b0e66eff58",
+      "E4baf3952cfb4": "E7085c9f3307f"
+    },
+    {
+      "Ed7c93315f5a2": "Ee6dc20ece191",
+      "E4baf3952cfb4": "Eb75f7f02d0d1"
+    },
+    {
+      "Ed7c93315f5a2": "E7b19941d20c5",
+      "E4baf3952cfb4": "E809f95781010"
+    }
+  ],
+  "Eb52455728c2e": [
+    {
+      "Ed7c93315f5a2": "Eb75f7f02d0d1",
+      "E986d7f6a3223": {
+        "E327946a68961": "Eb05c771abffe",
+        "Eb5c181bb2014": "Eed74cd01abda"
+      }
+    },
+    {
+      "Ed7c93315f5a2": "E809f95781010",
+      "E986d7f6a3223": {
+        "Eb5c181bb2014": "E6ac034966edb",
+        "E327946a68961": "E8a11ea8f8573"
+      }
+    },
+    {
+      "Ed7c93315f5a2": "E7085c9f3307f",
+      "E986d7f6a3223": {
+        "E327946a68961": "E8e82d66d1abd",
+        "Eb5c181bb2014": "E6ac034966edb"
+      }
+    }
+  ]
+}

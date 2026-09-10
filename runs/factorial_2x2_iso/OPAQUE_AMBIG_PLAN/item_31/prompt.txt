@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_31]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_31 #####
+QUESTION:
+What city is the headquarters of the company led by Moshe_Zana?
+
+PATH_QUERY
+START Moshe_Zana
+R1 Eb021d4a9c5af
+R2 Ee099445ab25e
+Execute path; return final tail only.
+
+CONTEXT:
+Moshe_Zana | Eb021d4a9c5af | Israel_Railways
+Israel_Railways | Ee099445ab25e | Lod_Railway_Station
+Moshe_Zana | E47dc8c2cd78f | The_Walt_Disney_Company
+The_Walt_Disney_Company | E5a6540d53363 | Burbank

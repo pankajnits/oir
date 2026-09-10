@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_108 #####
+QUESTION:
+What is the place of birth of the director of film El Complejo De Felipe?
+
+CONTEXT:
+Juan Carlos Thorry | place of birth | CF_TAIL_108_CoronelPring
+Red Bull Racing Team | founded by | Dietrich Mateschitz
+Dietrich Mateschitz | country of citizenship | Austrian
+decoy_mid_108 | place of birth | Coronel Pringles
+El Complejo de Felipe | director | Juan Carlos Thorry
+William Randolph | place of death | Colony of Virginia
+Edward Randolph | father | William Randolph
+El Complejo de Felipe | decoy_link_108 | decoy_mid_108

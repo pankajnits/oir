@@ -1,0 +1,34 @@
+{
+  "rescored": {
+    "canon": "0/8",
+    "struct": "8/8",
+    "prog_fix": "8/8",
+    "scale": "24/24",
+    "SealRouter_scale_paths": "24/24"
+  },
+  "supported_bool": {
+    "canon_0_8_stopped_at_company": true,
+    "struct_8_8": true,
+    "prog_fix_8_8": true,
+    "scale_24_24_rescore": true,
+    "scale_SealRouter_gold_consistent": true,
+    "canon_Q_had_both_relation_seals": true
+  },
+  "caveats": [
+    "Path-program/struct prompts use English control words (START, R1, LEFT column) \u2014 not zero language, but not relation names.",
+    "Scale uses different HMAC key than first real suite \u2014 cannot compare seals across suites.",
+    "Model answers were not originally persisted in JSON; this audit re-binds session answers then rescores.",
+    "Demo condition includes answer demos (same encoding) \u2014 not pure zero-shot.",
+    "Wikidata CEO field (P169) can be noisy; some HQ values are campuses not cities (e.g. Samsung_Town in other file).",
+    "v1 had 2 QID-like person strings; quiz set QID count=1.",
+    "Cross-model 24/24 = identical strings in one session; not a large multi-seed study.",
+    "Subagents have tools; protocol says no other files \u2014 poison traps used earlier but not on every real-data run."
+  ],
+  "data": {
+    "v1_n": 30,
+    "v2_n": 73,
+    "qid_quiz": [
+      "Q108434845"
+    ]
+  }
+}

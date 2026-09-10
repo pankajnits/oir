@@ -1,0 +1,401 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM 2WIKI/PLAIN_PROG: same KG + gold PATH over readable symbols.
+
+##### ID WIKI_PLAINPROG_0 #####
+PATH_QUERY
+START Polish-Russian War
+R1 director
+R2 mother
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_1 #####
+PATH_QUERY
+START John V of Anhalt-Zerbst
+R1 father
+R2 date of death
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_2 #####
+PATH_QUERY
+START Wearing Velvet Slippers under a Golden Umbrella
+R1 director
+R2 award received
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_3 #####
+PATH_QUERY
+START Ronnie Rocket
+R1 director
+R2 place of birth
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_4 #####
+PATH_QUERY
+START Ștefan I. Nenițescu
+R1 father
+R2 place of birth
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_5 #####
+PATH_QUERY
+START Thomas Jefferson
+R1 director
+R2 place of birth
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_6 #####
+PATH_QUERY
+START Grand Duke Kirill Vladimirovich of Russia
+R1 spouse
+R2 cause of death
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_7 #####
+PATH_QUERY
+START Beat Girl
+R1 director
+R2 place of death
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_8 #####
+PATH_QUERY
+START Jean Martin
+R1 spouse
+R2 date of death
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_9 #####
+PATH_QUERY
+START World and Time Enough
+R1 director
+R2 country of citizenship
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_10 #####
+PATH_QUERY
+START Eden and After
+R1 director
+R2 spouse
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar
+
+##### ID WIKI_PLAINPROG_11 #####
+PATH_QUERY
+START Anastasia of Serbia
+R1 spouse
+R2 place of death
+Execute path; return final tail only.
+
+CONTEXT:
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+Wearing Velvet Slippers under a Golden Umbrella | director | Wunna
+Wunna | award received | Myanmar Motion Picture Academy Awards
+Ronnie Rocket | director | David Lynch
+David Lynch | place of birth | Missoula, Montana
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Ioan S. Nenițescu | place of birth | Galați
+Thomas Jefferson | director | Ken Burns
+Ken Burns | place of birth | Brooklyn
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+Beat Girl | director | Edmond T. Gréville
+Edmond T. Gréville | place of death | Nice
+Jean Martin | spouse | William Black
+William Black | date of death | 1983
+World and Time Enough | director | Eric Mueller
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Anastasia of Serbia | spouse | Stefan Nemanja
+Stefan Nemanja | place of death | Hilandar

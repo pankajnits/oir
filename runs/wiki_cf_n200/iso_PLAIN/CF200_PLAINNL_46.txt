@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_46 #####
+QUESTION:
+Which country the director of film Mrs. Gibbons' Boys (Film) is from?
+
+CONTEXT:
+Mrs. Gibbons' Boys | director | Max Varnel
+La terre est ronde | performer | Orelsan
+Mrs. Gibbons' Boys | decoy_link_46 | decoy_mid_46
+Danger: Diabolik | director | Mario Bava
+Orelsan | place of birth | Alençon
+Mario Bava | child | Lamberto Bava
+decoy_mid_46 | country of citizenship | French
+Max Varnel | country of citizenship | CF_TAIL_46_French

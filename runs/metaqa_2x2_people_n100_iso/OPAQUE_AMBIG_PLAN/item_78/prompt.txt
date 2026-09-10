@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_78]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_78 #####
+QUESTION:
+Who directed a movie that Kåre Hedebrant starred in?
+
+PATH_QUERY
+START Kåre Hedebrant
+R1 E14f07d42b472
+R2 Eabf07941cc17
+Execute path; return final tail only.
+
+CONTEXT:
+Kåre Hedebrant | E14f07d42b472 | Let the Right One In
+Let the Right One In | Eabf07941cc17 | Tomas Alfredson
+Let the Right One In | E5d0eb3bf2420 | John Ajvide Lindqvist

@@ -1,0 +1,37 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM VAULT_NOLEG: readable JSON keys, vault:v1 values. English name in QUESTION. No legend. No JOIN.
+
+##### ID FD_VAULT_NOLEG_2 #####
+QUESTION:
+Where is the headquarters city of the company associated with Mark T Bertolini?
+Return the vault token for that city.
+
+CONTEXT:
+{
+  "people": {
+    "vault:v1:E520e59d75d16": {
+      "company": "vault:v1:E37448d929d1d"
+    },
+    "vault:v1:Ed93835c2e2a9": {
+      "company": "vault:v1:E5c22f29251dd"
+    },
+    "vault:v1:Ee8ceb6d9148e": {
+      "company": "vault:v1:E21ac3691d11f"
+    }
+  },
+  "companies": {
+    "vault:v1:E37448d929d1d": {
+      "hq_city": "vault:v1:Ef53504c65b99"
+    },
+    "vault:v1:E5c22f29251dd": {
+      "hq_city": "vault:v1:E9b1babed97ec"
+    },
+    "vault:v1:E21ac3691d11f": {
+      "hq_city": "vault:v1:Eb74f1545434b"
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_44 #####
+QUESTION:
+Where was the director of film The Wonderful Land Of Oz born?
+
+CONTEXT:
+Six Months of Life | director | Víctor Urruchúa
+The Wonderful Land of Oz | director | Barry Mahon
+decoy_mid_44 | place of birth | Bakersfield, California
+The Wonderful Land of Oz | decoy_link_44 | decoy_mid_44
+Barry Mahon | place of birth | CF_TAIL_44_BakersfieldC
+Sukhumala Marasri | father | Mongkut
+Víctor Urruchúa | place of birth | Mexican
+Mongkut | country of citizenship | Siam

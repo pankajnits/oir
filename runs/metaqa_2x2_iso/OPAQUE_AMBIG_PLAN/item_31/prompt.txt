@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_31]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_31 #####
+QUESTION:
+What is the genre of a movie directed by Teddy Chan?
+
+PATH_QUERY
+START Teddy Chan
+R1 Ec4f64a0966de
+R2 Ec26b77a79c57
+Execute path; return final tail only.
+
+CONTEXT:
+Teddy Chan | Ec4f64a0966de | The Accidental Spy
+The Accidental Spy | Ec26b77a79c57 | Action
+The Accidental Spy | Ea7f4147845a0 | English, Korean, Turkish

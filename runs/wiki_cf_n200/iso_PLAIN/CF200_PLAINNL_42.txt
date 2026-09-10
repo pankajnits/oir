@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_42 #####
+QUESTION:
+Which award the director of film The Dream Is Alive earned?
+
+CONTEXT:
+In the Line of Duty 4: Witness | director | Yuen Woo-ping
+The Dream is Alive | decoy_link_42 | decoy_mid_42
+The Dream is Alive | director | Graeme Ferguson
+Graeme Ferguson | award received | CF_TAIL_42_MemberoftheO
+Charles Ferdinand, Duke of Berry | place of death | Paris
+Yuen Woo-ping | father | Yuen Siu-tien
+decoy_mid_42 | award received | Member of the Order of Canada
+Henri, Count of Chambord | father | Charles Ferdinand, Duke of Berry

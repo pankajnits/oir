@@ -1,0 +1,19 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption.
+English plan only (no seal bindings): join works_at then stationed_in.
+All CONTEXT atoms are opaque seals.
+
+QUESTION:
+What city is associated with the employer of Ef560fcd5da87? City seal only.
+
+CONTEXT:
+Ef560fcd5da87 | E2d1d5d5c1ee3 | E0c100640d370
+E2103cc3682c5 | E2d1d5d5c1ee3 | E0c100640d370
+Ed2065f089fe6 | Ef15041c57dd3 | Ebf81e7c5ca9b
+E0c100640d370 | Ef15041c57dd3 | Ef87e136997aa
+Ed2065f089fe6 | Eed4359adcc15 | Eba9b79459755
+E0c100640d370 | Eed4359adcc15 | E8a162dee79e1
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

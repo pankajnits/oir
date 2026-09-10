@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_7]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_7 #####
+QUESTION:
+What city is the headquarters of the company led by Sergio_Ermotti?
+
+PATH_QUERY
+START Sergio_Ermotti
+R1 E77f1cb82ef2c
+R2 Ee44a388b00bf
+Execute path; return final tail only.
+
+CONTEXT:
+Sergio_Ermotti | E77f1cb82ef2c | UBS
+UBS | Ee44a388b00bf | Zurich
+Sergio_Ermotti | E68ffcfe5a976 | Kansas_City_Southern
+Kansas_City_Southern | E811cb7a3dcb1 | Kansas_City

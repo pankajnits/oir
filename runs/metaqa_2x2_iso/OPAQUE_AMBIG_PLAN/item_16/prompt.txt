@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_16]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_16 #####
+QUESTION:
+What is the genre of a movie directed by Alberto Cavalcanti?
+
+PATH_QUERY
+START Alberto Cavalcanti
+R1 E0d2d13a24c91
+R2 E9ca4d2eb7f1a
+Execute path; return final tail only.
+
+CONTEXT:
+Alberto Cavalcanti | E0d2d13a24c91 | Went the Day Well?
+Went the Day Well? | E9ca4d2eb7f1a | War
+Went the Day Well? | Ea5ea6ef95aa1 | English, German

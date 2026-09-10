@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_56 #####
+QUESTION:
+Where was the place of death of the director of film The Men Around Lucy?
+
+CONTEXT:
+Griha Pravesh | director | Basu Bhattacharya
+Princess Amalia of Saxe-Weimar-Eisenach | spouse | Prince Henry of the Netherlands
+The Men Around Lucy | decoy_link_56 | decoy_mid_56
+decoy_mid_56 | place of death | London
+Prince Henry of the Netherlands | place of birth | Soestdijk Palace
+Basu Bhattacharya | child | Aditya Bhattacharya
+The Men Around Lucy | director | Alexander Korda
+Alexander Korda | place of death | CF_TAIL_56_London

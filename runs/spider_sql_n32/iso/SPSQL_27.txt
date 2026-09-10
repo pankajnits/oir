@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_27]: <sql>
+
+DB: icfp_1
+SCHEMA:
+Inst(instID, name, country)
+Authors(authID, lname, fname)
+Papers(paperID, title)
+Authorship(authID, instID, paperID, authOrder)
+QUESTION:
+Find the titles of papers whose first author is affiliated with an institution in the country "Japan" and has last name "Ohori"?

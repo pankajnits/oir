@@ -1,0 +1,706 @@
+{
+  "suite": "realqa_2x2",
+  "design": "opacity × binder: PLAIN_NL / PLAIN_PROG / SEAL_NL / SEAL_PROG",
+  "prediction": "PLAIN_NL ≈ PLAIN_PROG ≈ SEAL_PROG ≫ SEAL_NL",
+  "nonclaim": "Not G-Rev1. Not privacy. 2Wiki context is gold evidence triples, not full Wikipedia retrieval. WTQ PROG is gold LOOKUP, not a WTQ solver. Spider join-SQL lock is still missing. SEAL_NL token-HMAC is the ceiling protocol (start ID may leave V(G)); SPAN_NL is the span-aligned control. PLAIN_NL is not counterfactual — parametric Wikipedia answers remain possible.",
+  "ceo": {
+    "n": 12,
+    "seed": 20260813,
+    "family": "ceo_hq",
+    "source": "data/real/wikidata_ceo_hops_v2.json",
+    "question_form": "Where is the headquarters of the company that {person} works for?",
+    "gold": "Wikidata HQ city (exact)",
+    "paths": {
+      "PLAIN_NL": "runs/realqa_2x2/ceo/PLAIN_NL_ONLY/BATCH.txt",
+      "PLAIN_PROG": "runs/realqa_2x2/ceo/PLAIN_PROG_ONLY/BATCH.txt",
+      "SEAL_NL": "runs/realqa_2x2/ceo/SEAL_NL_ONLY/BATCH.txt",
+      "SEAL_PROG": "runs/realqa_2x2/ceo/SEAL_PROG_ONLY/BATCH.txt",
+      "SPAN_NL": "runs/realqa_2x2/ceo/SPAN_NL_ONLY/BATCH.txt"
+    },
+    "cases": [
+      {
+        "i": 0,
+        "person": "Bob_Iger",
+        "company": "The_Walt_Disney_Company",
+        "hq": "Burbank",
+        "question": "Where is the headquarters of the company that Bob Iger works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_0",
+          "PLAIN_PROG": "CEO_PLAINPROG_0",
+          "SEAL_NL": "CEO_SEALNL_0",
+          "SEAL_PROG": "CEO_SEALPROG_0",
+          "SPAN_NL": "CEO_SPANNL_0"
+        },
+        "expect_plain": "Burbank",
+        "expect_seal": "E10c7eb44befe",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 1,
+        "person": "Lucian_Grainge",
+        "company": "Universal_Music_Group",
+        "hq": "Broadway",
+        "question": "Where is the headquarters of the company that Lucian Grainge works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_1",
+          "PLAIN_PROG": "CEO_PLAINPROG_1",
+          "SEAL_NL": "CEO_SEALNL_1",
+          "SEAL_PROG": "CEO_SEALPROG_1",
+          "SPAN_NL": "CEO_SPANNL_1"
+        },
+        "expect_plain": "Broadway",
+        "expect_seal": "E5b2f5f3695c1",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 2,
+        "person": "Roy_O_Disney",
+        "company": "The_Walt_Disney_Company",
+        "hq": "Burbank",
+        "question": "Where is the headquarters of the company that Roy O Disney works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_2",
+          "PLAIN_PROG": "CEO_PLAINPROG_2",
+          "SEAL_NL": "CEO_SEALNL_2",
+          "SEAL_PROG": "CEO_SEALPROG_2",
+          "SPAN_NL": "CEO_SPANNL_2"
+        },
+        "expect_plain": "Burbank",
+        "expect_seal": "E10c7eb44befe",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 3,
+        "person": "Landon_H_Rowland",
+        "company": "Kansas_City_Southern",
+        "hq": "Kansas_City",
+        "question": "Where is the headquarters of the company that Landon H Rowland works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_3",
+          "PLAIN_PROG": "CEO_PLAINPROG_3",
+          "SEAL_NL": "CEO_SEALNL_3",
+          "SEAL_PROG": "CEO_SEALPROG_3",
+          "SPAN_NL": "CEO_SPANNL_3"
+        },
+        "expect_plain": "Kansas_City",
+        "expect_seal": "E4c3556bc93d2",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 4,
+        "person": "Stuart_Parker",
+        "company": "USAA",
+        "hq": "San_Antonio",
+        "question": "Where is the headquarters of the company that Stuart Parker works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_4",
+          "PLAIN_PROG": "CEO_PLAINPROG_4",
+          "SEAL_NL": "CEO_SEALNL_4",
+          "SEAL_PROG": "CEO_SEALPROG_4",
+          "SPAN_NL": "CEO_SPANNL_4"
+        },
+        "expect_plain": "San_Antonio",
+        "expect_seal": "E5cdb278ce49b",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 5,
+        "person": "Kristin_Lian",
+        "company": "Hafslund_Kraft",
+        "hq": "Oslo",
+        "question": "Where is the headquarters of the company that Kristin Lian works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_5",
+          "PLAIN_PROG": "CEO_PLAINPROG_5",
+          "SEAL_NL": "CEO_SEALNL_5",
+          "SEAL_PROG": "CEO_SEALPROG_5",
+          "SPAN_NL": "CEO_SPANNL_5"
+        },
+        "expect_plain": "Oslo",
+        "expect_seal": "E3fcab76cecb5",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 6,
+        "person": "Thomas_S_Carter",
+        "company": "Kansas_City_Southern",
+        "hq": "Kansas_City",
+        "question": "Where is the headquarters of the company that Thomas S Carter works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_6",
+          "PLAIN_PROG": "CEO_PLAINPROG_6",
+          "SEAL_NL": "CEO_SEALNL_6",
+          "SEAL_PROG": "CEO_SEALPROG_6",
+          "SPAN_NL": "CEO_SPANNL_6"
+        },
+        "expect_plain": "Kansas_City",
+        "expect_seal": "E4c3556bc93d2",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 7,
+        "person": "Bob_Chapek",
+        "company": "The_Walt_Disney_Company",
+        "hq": "Burbank",
+        "question": "Where is the headquarters of the company that Bob Chapek works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_7",
+          "PLAIN_PROG": "CEO_PLAINPROG_7",
+          "SEAL_NL": "CEO_SEALNL_7",
+          "SEAL_PROG": "CEO_SEALPROG_7",
+          "SPAN_NL": "CEO_SPANNL_7"
+        },
+        "expect_plain": "Burbank",
+        "expect_seal": "E10c7eb44befe",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 8,
+        "person": "Hans_Vestberg",
+        "company": "Verizon",
+        "hq": "Philadelphia",
+        "question": "Where is the headquarters of the company that Hans Vestberg works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_8",
+          "PLAIN_PROG": "CEO_PLAINPROG_8",
+          "SEAL_NL": "CEO_SEALNL_8",
+          "SEAL_PROG": "CEO_SEALPROG_8",
+          "SPAN_NL": "CEO_SPANNL_8"
+        },
+        "expect_plain": "Philadelphia",
+        "expect_seal": "E0686445691ef",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 9,
+        "person": "Luka_Mucic",
+        "company": "Vonovia",
+        "hq": "Bochum",
+        "question": "Where is the headquarters of the company that Luka Mucic works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_9",
+          "PLAIN_PROG": "CEO_PLAINPROG_9",
+          "SEAL_NL": "CEO_SEALNL_9",
+          "SEAL_PROG": "CEO_SEALPROG_9",
+          "SPAN_NL": "CEO_SPANNL_9"
+        },
+        "expect_plain": "Bochum",
+        "expect_seal": "E2ff44401ac83",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 10,
+        "person": "Mario_Greco",
+        "company": "Zurich_Insurance_Group",
+        "hq": "Zurich",
+        "question": "Where is the headquarters of the company that Mario Greco works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_10",
+          "PLAIN_PROG": "CEO_PLAINPROG_10",
+          "SEAL_NL": "CEO_SEALNL_10",
+          "SEAL_PROG": "CEO_SEALPROG_10",
+          "SPAN_NL": "CEO_SPANNL_10"
+        },
+        "expect_plain": "Zurich",
+        "expect_seal": "E0d9fde98ebdb",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      },
+      {
+        "i": 11,
+        "person": "William_N_Deramus_III",
+        "company": "Kansas_City_Southern",
+        "hq": "Kansas_City",
+        "question": "Where is the headquarters of the company that William N Deramus III works for?",
+        "ids": {
+          "PLAIN_NL": "CEO_PLAINNL_11",
+          "PLAIN_PROG": "CEO_PLAINPROG_11",
+          "SEAL_NL": "CEO_SEALNL_11",
+          "SEAL_PROG": "CEO_SEALPROG_11",
+          "SPAN_NL": "CEO_SPANNL_11"
+        },
+        "expect_plain": "Kansas_City",
+        "expect_seal": "E4c3556bc93d2",
+        "start_seal_in_span_q": true,
+        "source": "wikidata_ceo_hops_v2"
+      }
+    ],
+    "sealrouter_ceiling": "12/12",
+    "protocol_note": "SEAL_NL = EntitySeal.text (token HMAC; start ID may not be in V(G)). SPAN_NL = whole-span replace of person/company/HQ/relations so start_seal ∈ QUESTION."
+  },
+  "wiki": {
+    "n": 12,
+    "family": "2wiki_compositional",
+    "source": "data/2wiki_compositional_n12.json",
+    "license": "Apache-2.0 (2WikiMultihopQA)",
+    "gold": "dataset answer string; sealed arm = HMAC of that string",
+    "paths": {
+      "PLAIN_NL": "runs/realqa_2x2/wiki/PLAIN_NL_ONLY/BATCH.txt",
+      "PLAIN_PROG": "runs/realqa_2x2/wiki/PLAIN_PROG_ONLY/BATCH.txt",
+      "SEAL_NL": "runs/realqa_2x2/wiki/SEAL_NL_ONLY/BATCH.txt",
+      "SEAL_PROG": "runs/realqa_2x2/wiki/SEAL_PROG_ONLY/BATCH.txt",
+      "SPAN_NL": "runs/realqa_2x2/wiki/SPAN_NL_ONLY/BATCH.txt"
+    },
+    "cases": [
+      {
+        "i": 0,
+        "wiki_id": "8813f87c0bdd11eba7f7acde48001122",
+        "question": "Who is the mother of the director of film Polish-Russian War (Film)?",
+        "answer": "Małgorzata Braunek",
+        "start": "Polish-Russian War",
+        "rels": [
+          "director",
+          "mother"
+        ],
+        "mid": "Xawery Żuławski",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_0",
+          "PLAIN_PROG": "WIKI_PLAINPROG_0",
+          "SEAL_NL": "WIKI_SEALNL_0",
+          "SEAL_PROG": "WIKI_SEALPROG_0",
+          "SPAN_NL": "WIKI_SPANNL_0"
+        },
+        "expect_plain": "Małgorzata Braunek",
+        "expect_seal": "Ea52bec18d1c8",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 1,
+        "wiki_id": "e2a3bf2a0bdd11eba7f7acde48001122",
+        "question": "When did John V, Prince Of Anhalt-Zerbst's father die?",
+        "answer": "12 June 1516",
+        "start": "John V of Anhalt-Zerbst",
+        "rels": [
+          "father",
+          "date of death"
+        ],
+        "mid": "Ernest I, Prince of Anhalt-Dessau",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_1",
+          "PLAIN_PROG": "WIKI_PLAINPROG_1",
+          "SEAL_NL": "WIKI_SEALNL_1",
+          "SEAL_PROG": "WIKI_SEALPROG_1",
+          "SPAN_NL": "WIKI_SPANNL_1"
+        },
+        "expect_plain": "12 June 1516",
+        "expect_seal": "Ec63991795cfa",
+        "start_seal_in_span_q": false,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 2,
+        "wiki_id": "0cd3bdea0bde11eba7f7acde48001122",
+        "question": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?",
+        "answer": "Myanmar Motion Picture Academy Awards",
+        "start": "Wearing Velvet Slippers under a Golden Umbrella",
+        "rels": [
+          "director",
+          "award received"
+        ],
+        "mid": "Wunna",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_2",
+          "PLAIN_PROG": "WIKI_PLAINPROG_2",
+          "SEAL_NL": "WIKI_SEALNL_2",
+          "SEAL_PROG": "WIKI_SEALPROG_2",
+          "SPAN_NL": "WIKI_SPANNL_2"
+        },
+        "expect_plain": "Myanmar Motion Picture Academy Awards",
+        "expect_seal": "Efb02dc5c7976",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 3,
+        "wiki_id": "f9dcb4a60bda11eba7f7acde48001122",
+        "question": "Where was the director of film Ronnie Rocket born?",
+        "answer": "Missoula, Montana",
+        "start": "Ronnie Rocket",
+        "rels": [
+          "director",
+          "place of birth"
+        ],
+        "mid": "David Lynch",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_3",
+          "PLAIN_PROG": "WIKI_PLAINPROG_3",
+          "SEAL_NL": "WIKI_SEALNL_3",
+          "SEAL_PROG": "WIKI_SEALPROG_3",
+          "SPAN_NL": "WIKI_SPANNL_3"
+        },
+        "expect_plain": "Missoula, Montana",
+        "expect_seal": "Ecaa351cb0b48",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 4,
+        "wiki_id": "019bed300bde11eba7f7acde48001122",
+        "question": "Where was the father of Ștefan I. Nenițescu born?",
+        "answer": "Galați",
+        "start": "Ștefan I. Nenițescu",
+        "rels": [
+          "father",
+          "place of birth"
+        ],
+        "mid": "Ioan S. Nenițescu",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_4",
+          "PLAIN_PROG": "WIKI_PLAINPROG_4",
+          "SEAL_NL": "WIKI_SEALNL_4",
+          "SEAL_PROG": "WIKI_SEALPROG_4",
+          "SPAN_NL": "WIKI_SPANNL_4"
+        },
+        "expect_plain": "Galați",
+        "expect_seal": "E629e1dcde277",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 5,
+        "wiki_id": "464cfa460bd911eba7f7acde48001122",
+        "question": "Where was the director of film Thomas Jefferson (Film) born?",
+        "answer": "Brooklyn",
+        "start": "Thomas Jefferson",
+        "rels": [
+          "director",
+          "place of birth"
+        ],
+        "mid": "Ken Burns",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_5",
+          "PLAIN_PROG": "WIKI_PLAINPROG_5",
+          "SEAL_NL": "WIKI_SEALNL_5",
+          "SEAL_PROG": "WIKI_SEALPROG_5",
+          "SPAN_NL": "WIKI_SPANNL_5"
+        },
+        "expect_plain": "Brooklyn",
+        "expect_seal": "Eeacdf8354089",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 6,
+        "wiki_id": "c05e16a40bdd11eba7f7acde48001122",
+        "question": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?",
+        "answer": "stroke",
+        "start": "Grand Duke Kirill Vladimirovich of Russia",
+        "rels": [
+          "spouse",
+          "cause of death"
+        ],
+        "mid": "Princess Victoria Melita of Saxe-Coburg and Gotha",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_6",
+          "PLAIN_PROG": "WIKI_PLAINPROG_6",
+          "SEAL_NL": "WIKI_SEALNL_6",
+          "SEAL_PROG": "WIKI_SEALPROG_6",
+          "SPAN_NL": "WIKI_SPANNL_6"
+        },
+        "expect_plain": "stroke",
+        "expect_seal": "E45fd4c7d6483",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 7,
+        "wiki_id": "2935f1640bda11eba7f7acde48001122",
+        "question": "Where was the place of death of the director of film Beat Girl?",
+        "answer": "Nice",
+        "start": "Beat Girl",
+        "rels": [
+          "director",
+          "place of death"
+        ],
+        "mid": "Edmond T. Gréville",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_7",
+          "PLAIN_PROG": "WIKI_PLAINPROG_7",
+          "SEAL_NL": "WIKI_SEALNL_7",
+          "SEAL_PROG": "WIKI_SEALPROG_7",
+          "SPAN_NL": "WIKI_SPANNL_7"
+        },
+        "expect_plain": "Nice",
+        "expect_seal": "E672db16d70af",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 8,
+        "wiki_id": "dfe93efe0bdd11eba7f7acde48001122",
+        "question": "When did Jean Martin (Singer)'s husband die?",
+        "answer": "1983",
+        "start": "Jean Martin",
+        "rels": [
+          "spouse",
+          "date of death"
+        ],
+        "mid": "William Black",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_8",
+          "PLAIN_PROG": "WIKI_PLAINPROG_8",
+          "SEAL_NL": "WIKI_SEALNL_8",
+          "SEAL_PROG": "WIKI_SEALPROG_8",
+          "SPAN_NL": "WIKI_SPANNL_8"
+        },
+        "expect_plain": "1983",
+        "expect_seal": "E28729f099a26",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 9,
+        "wiki_id": "2207e9060bda11eba7f7acde48001122",
+        "question": "What nationality is the director of film World And Time Enough?",
+        "answer": "United States",
+        "start": "World and Time Enough",
+        "rels": [
+          "director",
+          "country of citizenship"
+        ],
+        "mid": "Eric Mueller",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_9",
+          "PLAIN_PROG": "WIKI_PLAINPROG_9",
+          "SEAL_NL": "WIKI_SEALNL_9",
+          "SEAL_PROG": "WIKI_SEALPROG_9",
+          "SPAN_NL": "WIKI_SPANNL_9"
+        },
+        "expect_plain": "United States",
+        "expect_seal": "E506b5d075fbf",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 10,
+        "wiki_id": "a9cc5f240bdb11eba7f7acde48001122",
+        "question": "Who is the spouse of the director of film Eden And After?",
+        "answer": "Catherine Robbe-Grillet",
+        "start": "Eden and After",
+        "rels": [
+          "director",
+          "spouse"
+        ],
+        "mid": "Alain Robbe-Grillet",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_10",
+          "PLAIN_PROG": "WIKI_PLAINPROG_10",
+          "SEAL_NL": "WIKI_SEALNL_10",
+          "SEAL_PROG": "WIKI_SEALPROG_10",
+          "SPAN_NL": "WIKI_SPANNL_10"
+        },
+        "expect_plain": "Catherine Robbe-Grillet",
+        "expect_seal": "Eeec851268ee7",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      },
+      {
+        "i": 11,
+        "wiki_id": "6ebe05740bde11eba7f7acde48001122",
+        "question": "Where was the place of death of Anastasia Of Serbia's husband?",
+        "answer": "Hilandar",
+        "start": "Anastasia of Serbia",
+        "rels": [
+          "spouse",
+          "place of death"
+        ],
+        "mid": "Stefan Nemanja",
+        "ids": {
+          "PLAIN_NL": "WIKI_PLAINNL_11",
+          "PLAIN_PROG": "WIKI_PLAINPROG_11",
+          "SEAL_NL": "WIKI_SEALNL_11",
+          "SEAL_PROG": "WIKI_SEALPROG_11",
+          "SPAN_NL": "WIKI_SPANNL_11"
+        },
+        "expect_plain": "Hilandar",
+        "expect_seal": "E70dbb7ff2085",
+        "start_seal_in_span_q": true,
+        "source": "2WikiMultihopQA validation compositional"
+      }
+    ],
+    "sealrouter_ceiling": "12/12",
+    "protocol_note": "Questions and answers are the dataset's. Context is the union of the 12 gold evidence chains (24 triples), not Wikipedia passages. SEAL_NL = EntitySeal.text. SPAN_NL = whole-span entity/relation replace; log start_seal_in_span_q. Unique path: SPAN_NL success may be copy-and-walk."
+  },
+  "wtq": {
+    "n": 8,
+    "family": "wtq_lookup",
+    "source": "data/benchmarks/WikiTableQuestions",
+    "license": "CC BY-SA 4.0 (WikiTableQuestions)",
+    "ids": [
+      "nu-69",
+      "nu-97",
+      "nu-99",
+      "nu-184",
+      "nu-200",
+      "nu-261",
+      "nu-288",
+      "nu-324"
+    ],
+    "gold": "dataset targetValue (unique body cell)",
+    "paths": {
+      "PLAIN_NL": "runs/realqa_2x2/wtq/PLAIN_NL_ONLY/BATCH.txt",
+      "PLAIN_PROG": "runs/realqa_2x2/wtq/PLAIN_PROG_ONLY/BATCH.txt",
+      "SEAL_NL": "runs/realqa_2x2/wtq/SEAL_NL_ONLY/BATCH.txt",
+      "SEAL_PROG": "runs/realqa_2x2/wtq/SEAL_PROG_ONLY/BATCH.txt"
+    },
+    "cases": [
+      {
+        "i": 0,
+        "wtq_id": "nu-69",
+        "question": "who superceded lord high steward?",
+        "answer": "Justiciar",
+        "csv": "csv/204-csv/368.csv",
+        "row_id": "ROW_1",
+        "col_rel": "col_superseded_by",
+        "ids": {
+          "PLAIN_NL": "WTQ_PLAINNL_0",
+          "PLAIN_PROG": "WTQ_PLAINPROG_0",
+          "SEAL_NL": "WTQ_SEALNL_0",
+          "SEAL_PROG": "WTQ_SEALPROG_0"
+        },
+        "expect_plain": "Justiciar",
+        "expect_seal": "E27e2a69d0533",
+        "source": "WikiTableQuestions pristine-unseen-tables"
+      },
+      {
+        "i": 1,
+        "wtq_id": "nu-97",
+        "question": "when did the restaurant \"verre\" at the hilton dubai creek close?",
+        "answer": "October 2011",
+        "csv": "csv/202-csv/93.csv",
+        "row_id": "ROW_1",
+        "col_rel": "col_Date_Closed",
+        "ids": {
+          "PLAIN_NL": "WTQ_PLAINNL_1",
+          "PLAIN_PROG": "WTQ_PLAINPROG_1",
+          "SEAL_NL": "WTQ_SEALNL_1",
+          "SEAL_PROG": "WTQ_SEALPROG_1"
+        },
+        "expect_plain": "October 2011",
+        "expect_seal": "E48e5aa51d29e",
+        "source": "WikiTableQuestions pristine-unseen-tables"
+      },
+      {
+        "i": 2,
+        "wtq_id": "nu-99",
+        "question": "where is saint anslem school located?",
+        "answer": "Chester Township, Ohio",
+        "csv": "csv/200-csv/8.csv",
+        "row_id": "ROW_6",
+        "col_rel": "col_Location",
+        "ids": {
+          "PLAIN_NL": "WTQ_PLAINNL_2",
+          "PLAIN_PROG": "WTQ_PLAINPROG_2",
+          "SEAL_NL": "WTQ_SEALNL_2",
+          "SEAL_PROG": "WTQ_SEALPROG_2"
+        },
+        "expect_plain": "Chester Township, Ohio",
+        "expect_seal": "E5d667b54f520",
+        "source": "WikiTableQuestions pristine-unseen-tables"
+      },
+      {
+        "i": 3,
+        "wtq_id": "nu-184",
+        "question": "who is the only goalscorer to score between 18 and 20 goals?",
+        "answer": "Eddie Johnson",
+        "csv": "csv/204-csv/410.csv",
+        "row_id": "ROW_8",
+        "col_rel": "col_Player",
+        "ids": {
+          "PLAIN_NL": "WTQ_PLAINNL_3",
+          "PLAIN_PROG": "WTQ_PLAINPROG_3",
+          "SEAL_NL": "WTQ_SEALNL_3",
+          "SEAL_PROG": "WTQ_SEALPROG_3"
+        },
+        "expect_plain": "Eddie Johnson",
+        "expect_seal": "E6ab2875bda75",
+        "source": "WikiTableQuestions pristine-unseen-tables"
+      },
+      {
+        "i": 4,
+        "wtq_id": "nu-200",
+        "question": "who was the first lieutenant to take office?",
+        "answer": "Georges-Henri Héon",
+        "csv": "csv/203-csv/831.csv",
+        "row_id": "ROW_1",
+        "col_rel": "col_Political_lieutenant",
+        "ids": {
+          "PLAIN_NL": "WTQ_PLAINNL_4",
+          "PLAIN_PROG": "WTQ_PLAINPROG_4",
+          "SEAL_NL": "WTQ_SEALNL_4",
+          "SEAL_PROG": "WTQ_SEALPROG_4"
+        },
+        "expect_plain": "Georges-Henri Héon",
+        "expect_seal": "E5ba0e5c9f141",
+        "source": "WikiTableQuestions pristine-unseen-tables"
+      },
+      {
+        "i": 5,
+        "wtq_id": "nu-261",
+        "question": "which number is before 061?",
+        "answer": "060",
+        "csv": "csv/203-csv/684.csv",
+        "row_id": "ROW_1",
+        "col_rel": "col_Octal",
+        "ids": {
+          "PLAIN_NL": "WTQ_PLAINNL_5",
+          "PLAIN_PROG": "WTQ_PLAINPROG_5",
+          "SEAL_NL": "WTQ_SEALNL_5",
+          "SEAL_PROG": "WTQ_SEALPROG_5"
+        },
+        "expect_plain": "060",
+        "expect_seal": "E564f165b9177",
+        "source": "WikiTableQuestions pristine-unseen-tables"
+      },
+      {
+        "i": 6,
+        "wtq_id": "nu-288",
+        "question": "which church name does not have the name of the parish in its name?",
+        "answer": "Bamberg Church",
+        "csv": "csv/202-csv/175.csv",
+        "row_id": "ROW_4",
+        "col_rel": "col_Church_name",
+        "ids": {
+          "PLAIN_NL": "WTQ_PLAINNL_6",
+          "PLAIN_PROG": "WTQ_PLAINPROG_6",
+          "SEAL_NL": "WTQ_SEALNL_6",
+          "SEAL_PROG": "WTQ_SEALPROG_6"
+        },
+        "expect_plain": "Bamberg Church",
+        "expect_seal": "E16022e4176c5",
+        "source": "WikiTableQuestions pristine-unseen-tables"
+      },
+      {
+        "i": 7,
+        "wtq_id": "nu-324",
+        "question": "who is the last representative on the table?",
+        "answer": "Justin Rodriguez",
+        "csv": "csv/203-csv/155.csv",
+        "row_id": "ROW_10",
+        "col_rel": "col_Representative",
+        "ids": {
+          "PLAIN_NL": "WTQ_PLAINNL_7",
+          "PLAIN_PROG": "WTQ_PLAINPROG_7",
+          "SEAL_NL": "WTQ_SEALNL_7",
+          "SEAL_PROG": "WTQ_SEALPROG_7"
+        },
+        "expect_plain": "Justin Rodriguez",
+        "expect_seal": "E5c6ccf6a9a7a",
+        "source": "WikiTableQuestions pristine-unseen-tables"
+      }
+    ],
+    "sealrouter_ceiling": "8/8",
+    "protocol_note": "PLAIN_NL uses the human question. PROG is gold cell LOOKUP (binder control), not a WTQ semantic parser. Some questions are mildly compositional (first/last/only); do not claim a WTQ leaderboard."
+  }
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_48]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_48 #####
+QUESTION:
+Who Eb6823cfa984f a Ed1058472b6c1 Eaeeb4a3887fe [Harry Dean Stanton] E8c8a524dae3e E695536bd28a3?
+
+PATH_QUERY
+START Harry Dean Stanton
+R1 E31b4d920cba1
+R2 E6c7af5410a3e
+Execute path; return final tail only.
+
+CONTEXT:
+Harry Dean Stanton | E31b4d920cba1 | Cockfighter
+Cockfighter | E6c7af5410a3e | Monte Hellman
+Cockfighter | E26bd624cc24d | Charles Willeford

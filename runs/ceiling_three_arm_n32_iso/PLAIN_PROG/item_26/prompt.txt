@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_26 #####
+PATH_QUERY
+START David_J_Wright
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+David_J_Wright | works_at | Globcal_International
+Globcal_International | headquartered_in | Richmond
+DecoyCo_Globcal_International | headquartered_in | DecoyHQ_Richmond
+Globcal_International | owned_by | Hold_Globcal_International
+Hold_Globcal_International | meta_of | Globcal_International
+Globcal_International | partner_of | Partner_Globcal_International
+Partner_Globcal_International | meta_of | Globcal_International
+Decoy_DecoyCo_Globcal_International | works_at | DecoyCo_Globcal_International

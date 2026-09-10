@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_93]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_93 #####
+QUESTION:
+Who directed a movie that Natalie Portman starred in?
+
+PATH_QUERY
+START Natalie Portman
+R1 Ee437c1a21903
+R2 E71b998496797
+Execute path; return final tail only.
+
+CONTEXT:
+Natalie Portman | Ee437c1a21903 | No Strings Attached
+No Strings Attached | E71b998496797 | Ivan Reitman
+No Strings Attached | Ed2f27e8e64ce | Elizabeth Meriwether

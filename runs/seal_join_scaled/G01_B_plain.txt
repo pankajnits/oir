@@ -1,0 +1,12 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Leo1 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Leo1 | works_at | RidgeTech
+KenZ1 | works_at | Orbital
+Orbital | located_in | Cedar
+RidgeTech | located_in | CityX

@@ -1,0 +1,148 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM WTQ/PLAIN_NL: real WikiTableQuestions utterance + markdown table. No LOOKUP. Return the table cell that answers the question.
+
+##### ID WTQ_PLAINNL_0 #####
+QUESTION:
+who superceded lord high steward?
+
+CONTEXT:
+| row_id | col_Position | col_Officer | col_current_officers | col_superseded_by | col_Royal_Household |
+| --- | --- | --- | --- | --- | --- |
+| ROW_1 | 1 | Lord High Steward | vacant | Justiciar | Lord Steward |
+| ROW_2 | 2 | Lord High Chancellor | The Rt Hon Chris Grayling, MP |  |  |
+| ROW_3 | 3 | Lord High Treasurer | in commission |  |  |
+| ROW_4 | 4 | Lord President of the Council | The Rt Hon Nick Clegg, MP |  |  |
+| ROW_5 | 5 | Lord Privy Seal | The Rt Hon Andrew Lansley, CBE, MP |  |  |
+| ROW_6 | 6 | Lord Great Chamberlain | The Marquess of Cholmondeley | Lord High Treasurer | Lord Chamberlain |
+| ROW_7 | 7 | Lord High Constable | vacant | Earl Marshal | Master of the Horse |
+| ROW_8 | 8 | Earl Marshal | The Duke of Norfolk |  | Master of the Horse |
+| ROW_9 | 9 | Lord High Admiral | HRH The Duke of Edinburgh |  |  |
+
+##### ID WTQ_PLAINNL_1 #####
+QUESTION:
+when did the restaurant "verre" at the hilton dubai creek close?
+
+CONTEXT:
+| row_id | col_Restaurant | col_Location | col_Date_Opened | col_Date_Closed |
+| --- | --- | --- | --- | --- |
+| ROW_1 | Verre at the Hilton Dubai Creek | Dubai, United Arab Emirates |  | October 2011 |
+| ROW_2 | Maze by Gordon Ramsay | The Pearl-Qatar, Doha, Qatar | 2010 | March 2012 |
+| ROW_3 | Gordon Ramsay at Conrad Tokyo | Conrad Tokyo, Tokyo, Japan |  | - |
+| ROW_4 | Cerise by Gordon Ramsay | Minato, Tokyo, Japan |  | - |
+| ROW_5 | Maze by Gordon Ramsay | One and Only Hotel, Cape Town, South Africa | April 2009 | July 2010 |
+| ROW_6 | Maze / Maze Grill by Gordon Ramsay | Crown Metropol, Melbourne, Australia | March 2010 | August 2011 |
+
+##### ID WTQ_PLAINNL_2 #####
+QUESTION:
+where is saint anslem school located?
+
+CONTEXT:
+| row_id | col_District | col_Location | col_Communities_served |
+| --- | --- | --- | --- |
+| ROW_1 | Agape Christian Academy | Burton Township, Ohio and Troy Township, Ohio | Accepts applications prior to the start of each school year |
+| ROW_2 | Hawken School | Gates Mills, Ohio | College preparatory day school: online application, site visit and testing |
+| ROW_3 | Hershey Montessori Farm School | Huntsburg Township, Ohio | parent-owned, and chartered by Ohio Department of Education: application deadline January each year |
+| ROW_4 | Notre Dame-Cathedral Latin | Munson Township, Ohio | Roman Catholic Diocese of Cleveland: open to 8th grade students who have attended a Catholic elementary school and others who have not |
+| ROW_5 | Solon/Bainbridge Montessori School of Languages | Bainbridge Township, Ohio | nonsectarian Montessori School: quarterly enrollment periods |
+| ROW_6 | Saint Anselm School | Chester Township, Ohio | Roman Catholic Diocese of Cleveland K - 8th grade; preschool |
+| ROW_7 | Saint Helen's School | Newbury, Ohio | Roman Catholic Diocese of Cleveland K - 8th grade; parishioners and non-parishioners |
+| ROW_8 | Saint Mary's School | Chardon, Ohio | Roman Catholic Diocese of Cleveland preschool - 8th grade; parishioners and non-parishioners |
+
+##### ID WTQ_PLAINNL_3 #####
+QUESTION:
+who is the only goalscorer to score between 18 and 20 goals?
+
+CONTEXT:
+| row_id | col_EMPTY | col_Player | col_Goals | col_Caps | col_Career |
+| --- | --- | --- | --- | --- | --- |
+| ROW_1 | 1 | Landon Donovan | 57 | 155 | 2000–present |
+| ROW_2 | 2 | Clint Dempsey | 36 | 103 | 2004–present |
+| ROW_3 | 3 | Eric Wynalda | 34 | 106 | 1990–2000 |
+| ROW_4 | 4 | Brian McBride | 30 | 95 | 1993–2006 |
+| ROW_5 | 5 | Joe-Max Moore | 24 | 100 | 1992–2002 |
+| ROW_6 | 6T | Jozy Altidore | 21 | 67 | 2007–present |
+| ROW_7 | 6T | Bruce Murray | 21 | 86 | 1985–1993 |
+| ROW_8 | 8 | Eddie Johnson | 19 | 62 | 2004–present |
+| ROW_9 | 9T | Earnie Stewart | 17 | 101 | 1990–2004 |
+| ROW_10 | 9T | DaMarcus Beasley | 17 | 114 | 2001–present |
+
+##### ID WTQ_PLAINNL_4 #####
+QUESTION:
+who was the first lieutenant to take office?
+
+CONTEXT:
+| row_id | col_Political_lieutenant | col_District__Area | col_Took_Office | col_Left_Office | col_Party_leader |
+| --- | --- | --- | --- | --- | --- |
+| ROW_1 | Georges-Henri Héon | Argenteuil
+(Laurentides) | 1949 | 1949 | George A. Drew |
+| ROW_2 | Léon Balcer | Trois-Rivières
+(Mauricie) | 1957 | 1965 | John George Diefenbaker |
+| ROW_3 | Marcel Faribault | none | 1967 | 1968 | Robert Stanfield |
+| ROW_4 | Claude Wagner | Saint-Hyacinthe
+(Montérégie) | 1972 | 1978 | Robert Stanfield
+Joe Clark |
+| ROW_5 | Lucien Bouchard | Lac-Saint-Jean
+(Saguenay-Lac-Saint-Jean) | 1988 | 1990 | Brian Mulroney |
+| ROW_6 | Benoît Bouchard | Roberval
+(Saguenay-Lac-Saint-Jean) | 1990 | 1993 | Brian Mulroney |
+| ROW_7 | Monique Landry | Blainville—Deux-Montagnes
+(Laurentides) | 1993 | 1993 | Kim Campbell |
+| ROW_8 | André Bachand | Richmond—Arthabaska
+(Centre-du-Québec &
+Eastern Townships) | 1998 | 2004 | Joe Clark
+Peter MacKay |
+
+##### ID WTQ_PLAINNL_5 #####
+QUESTION:
+which number is before 061?
+
+CONTEXT:
+| row_id | col_Binary | col_Octal | col_Decimal | col_Hexadecimal | col_Glyph |
+| --- | --- | --- | --- | --- | --- |
+| ROW_1 | 0011 0000 | 060 | 48 | 30 | 0 |
+| ROW_2 | 0011 0001 | 061 | 49 | 31 | 1 |
+| ROW_3 | 0011 0010 | 062 | 50 | 32 | 2 |
+| ROW_4 | 0011 0011 | 063 | 51 | 33 | 3 |
+| ROW_5 | 0011 0100 | 064 | 52 | 34 | 4 |
+| ROW_6 | 0011 0101 | 065 | 53 | 35 | 5 |
+| ROW_7 | 0011 0110 | 066 | 54 | 36 | 6 |
+| ROW_8 | 0011 0111 | 067 | 55 | 37 | 7 |
+| ROW_9 | 0011 1000 | 070 | 56 | 38 | 8 |
+| ROW_10 | 0011 1001 | 071 | 57 | 39 | 9 |
+
+##### ID WTQ_PLAINNL_6 #####
+QUESTION:
+which church name does not have the name of the parish in its name?
+
+CONTEXT:
+| row_id | col_Parish | col_Church_name | col_Location | col_Year_built |
+| --- | --- | --- | --- | --- |
+| ROW_1 | Alstadhaug | Alstadhaug Church | Alstadhaug | 1180 |
+| ROW_2 | Ekne | Ekne Church | Ekne | 1893 |
+| ROW_3 | Levanger | Levanger Church | Levanger | 1902 |
+| ROW_4 | Levanger | Bamberg Church | Levanger | 1998 |
+| ROW_5 | Markabygd | Markabygda Church | Markabygd | 1887 |
+| ROW_6 | Okkenhaug | Okkenhaug Chapel | Okkenhaug | 1893 |
+| ROW_7 | Ytterøy | Ytterøy Church | Ytterøya | 1890 |
+| ROW_8 | Åsen | Åsen Church | Åsen | 1904 |
+
+##### ID WTQ_PLAINNL_7 #####
+QUESTION:
+who is the last representative on the table?
+
+CONTEXT:
+| row_id | col_Representative | col_Party | col_Home_Town_City | col_District |
+| --- | --- | --- | --- | --- |
+| ROW_1 | Trey Martinez Fischer | D | San Antonio | 116 |
+| ROW_2 | Philip Cortez | D | San Antonio | 117 |
+| ROW_3 | Joe Farias | D | San Antonio | 118 |
+| ROW_4 | Roland Gutierrez | D | San Antonio | 119 |
+| ROW_5 | Ruth McClendon | D | San Antonio | 120 |
+| ROW_6 | Joe Straus | R | San Antonio | 121 |
+| ROW_7 | Lyle Larson | R | San Antonio | 122 |
+| ROW_8 | Mike Villarreal | D | San Antonio | 123 |
+| ROW_9 | Jose Menendez | D | San Antonio | 124 |
+| ROW_10 | Justin Rodriguez | D | San Antonio | 125 |

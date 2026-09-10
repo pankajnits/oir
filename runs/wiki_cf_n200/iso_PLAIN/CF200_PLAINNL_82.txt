@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_82 #####
+QUESTION:
+Who is the father of the composer of song I Am The World?
+
+CONTEXT:
+I Am the World | composer | Robin Gibb
+I Am the World | decoy_link_82 | decoy_mid_82
+Orbis Pictus | director | Martin Šulík
+Martin Šulík | educated at | Academy of Performing Arts in Bratislava
+decoy_mid_82 | father | Hugh Gibb
+Robin Gibb | father | CF_TAIL_82_HughGibb
+Thomas Howard, 2nd Duke of Norfolk | father | John Howard, 1st Duke of Norfolk
+John Howard, 1st Duke of Norfolk | place of death | Battle of Bosworth

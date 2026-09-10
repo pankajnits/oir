@@ -1,0 +1,196 @@
+MODEL UNDER TEST. No tools. Answer EVERY item. One ANSWER line per ID.
+
+For plain mode: ANSWER_PLAIN[<id>]: <city>
+For sealed modes: ANSWER_SEALED[<id>]: <seal> or UNKNOWN
+
+
+##### ID G00_A_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Leo0 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Leo0 | works_at | Acme
+NoraZ0 | works_at | QuarkInc
+Acme | located_in | DeltaVille
+QuarkInc | located_in | Meadow
+
+
+##### ID G00_B_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Leo0 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Leo0 | works_at | QuarkInc
+NoraZ0 | works_at | Acme
+Acme | located_in | DeltaVille
+QuarkInc | located_in | Meadow
+
+
+##### ID G01_A_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Leo1 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Leo1 | works_at | Orbital
+KenZ1 | works_at | RidgeTech
+Orbital | located_in | Cedar
+RidgeTech | located_in | CityX
+
+
+##### ID G01_B_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Leo1 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Leo1 | works_at | RidgeTech
+KenZ1 | works_at | Orbital
+Orbital | located_in | Cedar
+RidgeTech | located_in | CityX
+
+
+##### ID G02_A_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Jon2 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Jon2 | works_at | QuarkInc
+OmarZ2 | works_at | NovaLtd
+QuarkInc | located_in | Meadow
+NovaLtd | located_in | Pinnacle
+
+
+##### ID G02_B_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Jon2 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Jon2 | works_at | NovaLtd
+OmarZ2 | works_at | QuarkInc
+QuarkInc | located_in | Meadow
+NovaLtd | located_in | Pinnacle
+
+
+##### ID G03_A_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Nora3 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Nora3 | works_at | Orbital
+KenZ3 | works_at | SummitAI
+Orbital | located_in | Cedar
+SummitAI | located_in | Oakport
+
+
+##### ID G03_B_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Nora3 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Nora3 | works_at | SummitAI
+KenZ3 | works_at | Orbital
+Orbital | located_in | Cedar
+SummitAI | located_in | Oakport
+
+
+##### ID G04_A_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Mia4 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Mia4 | works_at | NovaLtd
+OmarZ4 | works_at | Acme
+NovaLtd | located_in | CityX
+Acme | located_in | DeltaVille
+
+
+##### ID G04_B_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Mia4 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Mia4 | works_at | Acme
+OmarZ4 | works_at | NovaLtd
+NovaLtd | located_in | CityX
+Acme | located_in | DeltaVille
+
+
+##### ID G05_A_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Mia5 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Mia5 | works_at | SummitAI
+RaviZ5 | works_at | Orbital
+SummitAI | located_in | CityX
+Orbital | located_in | Pinnacle
+
+
+##### ID G05_B_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Mia5 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Mia5 | works_at | Orbital
+RaviZ5 | works_at | SummitAI
+SummitAI | located_in | CityX
+Orbital | located_in | Pinnacle
+
+
+##### ID G06_A_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Omar6 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Omar6 | works_at | RidgeTech
+RaviZ6 | works_at | SummitAI
+RidgeTech | located_in | CityY
+SummitAI | located_in | DeltaVille
+
+
+##### ID G06_B_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Omar6 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Omar6 | works_at | SummitAI
+RaviZ6 | works_at | RidgeTech
+RidgeTech | located_in | CityY
+SummitAI | located_in | DeltaVille
+
+
+##### ID G07_A_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Mia7 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Mia7 | works_at | Orbital
+RaviZ7 | works_at | NovaLtd
+Orbital | located_in | DeltaVille
+NovaLtd | located_in | Cedar
+
+
+##### ID G07_B_plain #####
+Answer using CONTEXT only. One line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Mia7 works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT:
+Mia7 | works_at | NovaLtd
+RaviZ7 | works_at | Orbital
+Orbital | located_in | DeltaVille
+NovaLtd | located_in | Cedar

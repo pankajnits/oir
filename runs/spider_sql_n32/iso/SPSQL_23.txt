@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_23]: <sql>
+
+DB: shop_membership
+SCHEMA:
+member(Member_ID, Card_Number, Name, Hometown, Level)
+branch(Branch_ID, Name, Open_year, Address_road, City, membership_amount)
+membership_register_branch(Member_ID, Branch_ID, Register_Year)
+purchase(Member_ID, Branch_ID, Year, Total_pounds)
+QUESTION:
+How many total pounds were purchased in the year 2018 at all London branches?

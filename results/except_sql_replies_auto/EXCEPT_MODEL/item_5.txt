@@ -1,0 +1,1 @@
+SQL[EX_MODEL_5]: SELECT emp_id FROM employees EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E97e43169d2af')

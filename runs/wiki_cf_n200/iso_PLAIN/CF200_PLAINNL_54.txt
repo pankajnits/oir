@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_54 #####
+QUESTION:
+Who is the child of the director of film His Royal Highness (1932 Film)?
+
+CONTEXT:
+John Merivale | father | Philip Merivale
+decoy_mid_54 | child | Francis William Thring
+Philip Merivale | place of birth | Los Angeles
+His Royal Highness | director | F. W. Thring
+His Royal Highness | decoy_link_54 | decoy_mid_54
+F. W. Thring | child | CF_TAIL_54_FrancisWilli
+Buddy Giovinazzo | place of birth | New York
+No Way Home | director | Buddy Giovinazzo

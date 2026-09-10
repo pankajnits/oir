@@ -1,0 +1,10 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_11]: <sql>
+
+DB: climbing
+SCHEMA:
+mountain(Mountain_ID, Name, Height, Prominence, Range, Country)
+climber(Climber_ID, Name, Country, Time, Points, Mountain_ID)
+QUESTION:
+Show the height of the mountain climbed by the climber with the maximum points.

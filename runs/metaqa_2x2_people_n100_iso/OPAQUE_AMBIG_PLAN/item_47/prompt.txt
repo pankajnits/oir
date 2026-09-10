@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_47]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_47 #####
+QUESTION:
+Who directed a movie that Morgan Freeman starred in?
+
+PATH_QUERY
+START Morgan Freeman
+R1 Eb716bde84707
+R2 E8ad63d517602
+Execute path; return final tail only.
+
+CONTEXT:
+Morgan Freeman | Eb716bde84707 | The Magic of Belle Isle
+The Magic of Belle Isle | E8ad63d517602 | Rob Reiner
+The Magic of Belle Isle | Eb85d4883482c | Guy Thomas

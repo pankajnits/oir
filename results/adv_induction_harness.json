@@ -1,0 +1,445 @@
+{
+  "claim": "Adversarial opaque induction: dual-path traps + hop mismatch to test whether demo success is isomorphic shape matching vs sealed-relation binding.",
+  "version": 1,
+  "seed": 20260803,
+  "key_tag": "oir-adv-induction-v1",
+  "n_quiz": 6,
+  "cases": [
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 0,
+      "id": "ADV_SAME_TRAP_0",
+      "gold": "Ed16b652346cf",
+      "trap": "E00cffd18edab",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 1,
+      "id": "ADV_SAME_TRAP_1",
+      "gold": "E39cbcc753de5",
+      "trap": "Eb5ca454c96d1",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 2,
+      "id": "ADV_SAME_TRAP_2",
+      "gold": "Ead867fef0043",
+      "trap": "E356e808d7d52",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 3,
+      "id": "ADV_SAME_TRAP_3",
+      "gold": "Ee1454a8962eb",
+      "trap": "E3f62aa1aefc6",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 4,
+      "id": "ADV_SAME_TRAP_4",
+      "gold": "Eec406daf7481",
+      "trap": "Ee582b9591ec2",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_TRAP",
+      "kind": "trap_same",
+      "i": 5,
+      "id": "ADV_SAME_TRAP_5",
+      "gold": "E5602a662a59a",
+      "trap": "E432ded0382f4",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 0,
+      "id": "ADV_CROSS_TRAP_0",
+      "gold": "E046da3325da6",
+      "trap": "E95f69137be3f",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 1,
+      "id": "ADV_CROSS_TRAP_1",
+      "gold": "E2d0ef5e110a8",
+      "trap": "E99bd75d5d32f",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 2,
+      "id": "ADV_CROSS_TRAP_2",
+      "gold": "Ebae8a0073f2a",
+      "trap": "Eb64512c72e00",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 3,
+      "id": "ADV_CROSS_TRAP_3",
+      "gold": "E0c0910da9ea5",
+      "trap": "E19974c9db67f",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 4,
+      "id": "ADV_CROSS_TRAP_4",
+      "gold": "E408cc1c56dd6",
+      "trap": "Ef7d9691ac0b1",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "kind": "trap_cross",
+      "i": 5,
+      "id": "ADV_CROSS_TRAP_5",
+      "gold": "Ef98b00abfa7c",
+      "trap": "E80c804a712f4",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "kind": "mismatch",
+      "i": 0,
+      "id": "ADV_HOP_MISMATCH_0",
+      "gold": "Ec207d5a56495",
+      "trap": null,
+      "wrong_2hop": "Ea4e02b2042f2"
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "kind": "mismatch",
+      "i": 1,
+      "id": "ADV_HOP_MISMATCH_1",
+      "gold": "E804387eb1c91",
+      "trap": null,
+      "wrong_2hop": "E7a18d5287eb4"
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "kind": "mismatch",
+      "i": 2,
+      "id": "ADV_HOP_MISMATCH_2",
+      "gold": "E3157d0f14a95",
+      "trap": null,
+      "wrong_2hop": "E8ca88b64bb7b"
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "kind": "mismatch",
+      "i": 3,
+      "id": "ADV_HOP_MISMATCH_3",
+      "gold": "Ef9c44c52b8b4",
+      "trap": null,
+      "wrong_2hop": "Ed9194ccf41a6"
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "kind": "mismatch",
+      "i": 4,
+      "id": "ADV_HOP_MISMATCH_4",
+      "gold": "E34ceb01fef49",
+      "trap": null,
+      "wrong_2hop": "E64b23ac07926"
+    },
+    {
+      "arm": "HOP_MISMATCH",
+      "kind": "mismatch",
+      "i": 5,
+      "id": "ADV_HOP_MISMATCH_5",
+      "gold": "Ed3ddb60c1347",
+      "trap": null,
+      "wrong_2hop": "E4ca0457746ed"
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 0,
+      "id": "ADV_SAME_BALANCED_0",
+      "gold": "E88367278b0ce",
+      "trap": "Ed5d8886b9076",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 1,
+      "id": "ADV_SAME_BALANCED_1",
+      "gold": "Ed588b368cb2a",
+      "trap": "E95748d93fc78",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 2,
+      "id": "ADV_SAME_BALANCED_2",
+      "gold": "E32cc5d966a78",
+      "trap": "E1e5e184998f2",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 3,
+      "id": "ADV_SAME_BALANCED_3",
+      "gold": "E7e87b5da7089",
+      "trap": "E135eafe624c5",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 4,
+      "id": "ADV_SAME_BALANCED_4",
+      "gold": "Ecffbc1ed32eb",
+      "trap": "E83d14496ed11",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "SAME_BALANCED",
+      "kind": "trap_same_balanced",
+      "i": 5,
+      "id": "ADV_SAME_BALANCED_5",
+      "gold": "E1932e873b379",
+      "trap": "Ee8e6cf808888",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 0,
+      "id": "ADV_CROSS_BALANCED_0",
+      "gold": "E5c2196ea5aaa",
+      "trap": "E8ae9acfa42a6",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 1,
+      "id": "ADV_CROSS_BALANCED_1",
+      "gold": "Ec34f446f73af",
+      "trap": "E199bff263a98",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 2,
+      "id": "ADV_CROSS_BALANCED_2",
+      "gold": "Ed84340a0ac40",
+      "trap": "E3758879ff256",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 3,
+      "id": "ADV_CROSS_BALANCED_3",
+      "gold": "Eeeda10e386af",
+      "trap": "Eec83b10ceb3b",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 4,
+      "id": "ADV_CROSS_BALANCED_4",
+      "gold": "E7a4af27ccb66",
+      "trap": "E08628f766369",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "CROSS_BALANCED",
+      "kind": "trap_cross_balanced",
+      "i": 5,
+      "id": "ADV_CROSS_BALANCED_5",
+      "gold": "E746d1ed72a3b",
+      "trap": "Efa838c4491c5",
+      "wrong_2hop": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 0,
+      "id": "ADV_PATH_TRAP_0",
+      "gold": "Ed16b652346cf"
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 1,
+      "id": "ADV_PATH_TRAP_1",
+      "gold": "E39cbcc753de5"
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 2,
+      "id": "ADV_PATH_TRAP_2",
+      "gold": "Ead867fef0043"
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 3,
+      "id": "ADV_PATH_TRAP_3",
+      "gold": "Ee1454a8962eb"
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 4,
+      "id": "ADV_PATH_TRAP_4",
+      "gold": "Eec406daf7481"
+    },
+    {
+      "arm": "PATH_TRAP",
+      "kind": "path",
+      "i": 5,
+      "id": "ADV_PATH_TRAP_5",
+      "gold": "E5602a662a59a"
+    }
+  ],
+  "arms": {
+    "SAME_TRAP": {
+      "label": "demos schemaA; quiz dual-path; gold uses schemaA seals",
+      "kind": "trap_same",
+      "ids": [
+        "ADV_SAME_TRAP_0",
+        "ADV_SAME_TRAP_1",
+        "ADV_SAME_TRAP_2",
+        "ADV_SAME_TRAP_3",
+        "ADV_SAME_TRAP_4",
+        "ADV_SAME_TRAP_5"
+      ],
+      "item_paths": [
+        "runs/adv_induction/SAME_TRAP/item_0/prompt.txt",
+        "runs/adv_induction/SAME_TRAP/item_1/prompt.txt",
+        "runs/adv_induction/SAME_TRAP/item_2/prompt.txt",
+        "runs/adv_induction/SAME_TRAP/item_3/prompt.txt",
+        "runs/adv_induction/SAME_TRAP/item_4/prompt.txt",
+        "runs/adv_induction/SAME_TRAP/item_5/prompt.txt"
+      ]
+    },
+    "CROSS_TRAP": {
+      "label": "demos schemaA; quiz dual-path; gold uses NOVEL seals (shape match insufficient)",
+      "kind": "trap_cross",
+      "ids": [
+        "ADV_CROSS_TRAP_0",
+        "ADV_CROSS_TRAP_1",
+        "ADV_CROSS_TRAP_2",
+        "ADV_CROSS_TRAP_3",
+        "ADV_CROSS_TRAP_4",
+        "ADV_CROSS_TRAP_5"
+      ],
+      "item_paths": [
+        "runs/adv_induction/CROSS_TRAP/item_0/prompt.txt",
+        "runs/adv_induction/CROSS_TRAP/item_1/prompt.txt",
+        "runs/adv_induction/CROSS_TRAP/item_2/prompt.txt",
+        "runs/adv_induction/CROSS_TRAP/item_3/prompt.txt",
+        "runs/adv_induction/CROSS_TRAP/item_4/prompt.txt",
+        "runs/adv_induction/CROSS_TRAP/item_5/prompt.txt"
+      ]
+    },
+    "HOP_MISMATCH": {
+      "label": "demos 2-hop; quiz 3-hop novel; blind 2-hop copy = wrong_2hop",
+      "kind": "mismatch",
+      "ids": [
+        "ADV_HOP_MISMATCH_0",
+        "ADV_HOP_MISMATCH_1",
+        "ADV_HOP_MISMATCH_2",
+        "ADV_HOP_MISMATCH_3",
+        "ADV_HOP_MISMATCH_4",
+        "ADV_HOP_MISMATCH_5"
+      ],
+      "item_paths": [
+        "runs/adv_induction/HOP_MISMATCH/item_0/prompt.txt",
+        "runs/adv_induction/HOP_MISMATCH/item_1/prompt.txt",
+        "runs/adv_induction/HOP_MISMATCH/item_2/prompt.txt",
+        "runs/adv_induction/HOP_MISMATCH/item_3/prompt.txt",
+        "runs/adv_induction/HOP_MISMATCH/item_4/prompt.txt",
+        "runs/adv_induction/HOP_MISMATCH/item_5/prompt.txt"
+      ]
+    },
+    "SAME_BALANCED": {
+      "label": "SAME seals; dual-path with SYMMETRIC noise on gold+trap mids",
+      "kind": "trap_same_balanced",
+      "ids": [
+        "ADV_SAME_BALANCED_0",
+        "ADV_SAME_BALANCED_1",
+        "ADV_SAME_BALANCED_2",
+        "ADV_SAME_BALANCED_3",
+        "ADV_SAME_BALANCED_4",
+        "ADV_SAME_BALANCED_5"
+      ],
+      "item_paths": [
+        "runs/adv_induction/SAME_BALANCED/item_0/prompt.txt",
+        "runs/adv_induction/SAME_BALANCED/item_1/prompt.txt",
+        "runs/adv_induction/SAME_BALANCED/item_2/prompt.txt",
+        "runs/adv_induction/SAME_BALANCED/item_3/prompt.txt",
+        "runs/adv_induction/SAME_BALANCED/item_4/prompt.txt",
+        "runs/adv_induction/SAME_BALANCED/item_5/prompt.txt"
+      ]
+    },
+    "CROSS_BALANCED": {
+      "label": "CROSS novel seals; dual-path with SYMMETRIC noise on gold+trap mids",
+      "kind": "trap_cross_balanced",
+      "ids": [
+        "ADV_CROSS_BALANCED_0",
+        "ADV_CROSS_BALANCED_1",
+        "ADV_CROSS_BALANCED_2",
+        "ADV_CROSS_BALANCED_3",
+        "ADV_CROSS_BALANCED_4",
+        "ADV_CROSS_BALANCED_5"
+      ],
+      "item_paths": [
+        "runs/adv_induction/CROSS_BALANCED/item_0/prompt.txt",
+        "runs/adv_induction/CROSS_BALANCED/item_1/prompt.txt",
+        "runs/adv_induction/CROSS_BALANCED/item_2/prompt.txt",
+        "runs/adv_induction/CROSS_BALANCED/item_3/prompt.txt",
+        "runs/adv_induction/CROSS_BALANCED/item_4/prompt.txt",
+        "runs/adv_induction/CROSS_BALANCED/item_5/prompt.txt"
+      ]
+    },
+    "PATH_TRAP": {
+      "label": "PATH ceiling on trap graphs",
+      "kind": "path",
+      "ids": [
+        "ADV_PATH_TRAP_0",
+        "ADV_PATH_TRAP_1",
+        "ADV_PATH_TRAP_2",
+        "ADV_PATH_TRAP_3",
+        "ADV_PATH_TRAP_4",
+        "ADV_PATH_TRAP_5"
+      ],
+      "item_paths": [
+        "runs/adv_induction/PATH_TRAP/item_0/prompt.txt",
+        "runs/adv_induction/PATH_TRAP/item_1/prompt.txt",
+        "runs/adv_induction/PATH_TRAP/item_2/prompt.txt",
+        "runs/adv_induction/PATH_TRAP/item_3/prompt.txt",
+        "runs/adv_induction/PATH_TRAP/item_4/prompt.txt",
+        "runs/adv_induction/PATH_TRAP/item_5/prompt.txt"
+      ]
+    }
+  },
+  "protocol": "one quiz per file; stash gold; isolation MUT",
+  "paper": "paper/PAPER_STATUS.md B1"
+}

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_20]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_20 #####
+QUESTION:
+What city is the headquarters of the company led by Macon_Foscue_Brock_Jr?
+
+PATH_QUERY
+START Macon_Foscue_Brock_Jr
+R1 E3175d1e436c5
+R2 Ed7b5abbf7e15
+Execute path; return final tail only.
+
+CONTEXT:
+Macon_Foscue_Brock_Jr | E3175d1e436c5 | Dollar_Tree
+Dollar_Tree | Ed7b5abbf7e15 | Chesapeake
+Macon_Foscue_Brock_Jr | Ee036f8f1d017 | Loves_Travel_Stops__Country_Stores
+Loves_Travel_Stops__Country_Stores | E6be5c4828ef2 | Oklahoma_City

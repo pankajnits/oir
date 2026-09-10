@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_169 #####
+QUESTION:
+What is the place of birth of Princess Raiyah Bint Hussein's father?
+
+CONTEXT:
+Princess Raiyah bint Hussein | father | Hussein of Jordan
+Princess Raiyah bint Hussein | decoy_link_169 | decoy_mid_169
+decoy_mid_169 | place of birth | Amman
+Torrid Zone | director | William Keighley
+William Keighley | place of death | New York
+Hussein of Jordan | place of birth | CF_TAIL_169_Amman
+Horace Seymour | father | Lord Hugh Seymour
+Lord Hugh Seymour | country of citizenship | Great Britain

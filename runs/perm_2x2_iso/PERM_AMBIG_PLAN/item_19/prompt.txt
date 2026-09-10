@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_19]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_19 #####
+QUESTION:
+What city is the headquarters of the company led by William_N_Deramus_Jr?
+
+PATH_QUERY
+START William_N_Deramus_Jr
+R1 E5f123440edd7
+R2 E1d7302c67596
+Execute path; return final tail only.
+
+CONTEXT:
+William_N_Deramus_Jr | E5f123440edd7 | Kansas_City_Southern
+Kansas_City_Southern | E1d7302c67596 | Kansas_City
+William_N_Deramus_Jr | Ed8b3ed1c8914 | Dollar_Tree
+Dollar_Tree | Efe9af217b725 | Chesapeake

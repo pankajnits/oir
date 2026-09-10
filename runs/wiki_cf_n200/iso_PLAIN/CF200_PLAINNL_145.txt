@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_145 #####
+QUESTION:
+Where does the founder of Les Films Du Losange work at?
+
+CONTEXT:
+decoy_mid_145 | employer | Cahiers du cinéma
+Mahatma Gandhi | father | Karamchand Gandhi
+Donald G. Jackson | place of burial | Westwood Village Memorial Park Cemetery
+Les films du losange | decoy_link_145 | decoy_mid_145
+Éric Rohmer | employer | CF_TAIL_145_Cahiersducin
+Gujarat Vidyapith | founded by | Mahatma Gandhi
+Les films du losange | founded by | Éric Rohmer
+The Roller Blade Seven | director | Donald G. Jackson

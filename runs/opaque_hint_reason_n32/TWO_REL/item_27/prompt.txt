@@ -1,0 +1,47 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[OHR_TWO_REL_27]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM TWO_REL: same graph; sealed Q names employer; explicit equality recipe. No JOIN.
+
+##### ID OHR_TWO_REL_27 #####
+QUESTION (token-HMAC'd):
+E92a7d2a22dce E592626738ac5 Ea8c0e9c3a2e1 Ee24352f98a73 E0a9bab75480a Ea8c0e9c3a2e1 E5b4c34f028e5 E0a9bab75480a E964df0304749?
+
+HINTS (English; do not decrypt; do not use world knowledge):
+- Everything you need is in this message.
+- Identical tokens are the same entity or field.
+- START is a QUESTION token that also appears as an id value.
+- Asked fields are QUESTION tokens that also appear as JSON keys.
+- Walk CONTEXT by token equality. Return one sealed value or UNKNOWN.
+No JOIN. Field names are not listed in English.
+
+CONTEXT:
+{
+  "E176edc620cd6": [
+    {
+      "E2ccf4184ced1": "E2dd543fd356b",
+      "E5b4c34f028e5": "E721b4b2adf0a",
+      "E2f94533c74b4": "Ed66fa02f1cf6"
+    },
+    {
+      "E2ccf4184ced1": "E964df0304749",
+      "E5b4c34f028e5": "Ed66fa02f1cf6",
+      "E2f94533c74b4": "E03916a39e3f6"
+    }
+  ],
+  "Ea831fd43e1b8": [
+    {
+      "E2ccf4184ced1": "E721b4b2adf0a",
+      "Ee24352f98a73": "Ed3772c46075c"
+    },
+    {
+      "E2ccf4184ced1": "E03916a39e3f6",
+      "Ee24352f98a73": "Ed3772c46075c"
+    },
+    {
+      "E2ccf4184ced1": "Ed66fa02f1cf6",
+      "Ee24352f98a73": "E0aee7d46f681"
+    }
+  ]
+}

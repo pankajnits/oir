@@ -1,0 +1,209 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM CEO/SEAL_PROG: sealed graph + PATH over seals.
+
+##### ID CEO_SEALPROG_0 #####
+PATH_QUERY
+START Ee03752a0cdd1
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+Ee03752a0cdd1 | E7f9a776987f4 | Ea7ed4bc15c4a
+Ea7ed4bc15c4a | Ed2f1c5b1c763 | E10c7eb44befe
+Ee15fbf6f5cc8 | Ed2f1c5b1c763 | E6f2260e34166
+Ea7ed4bc15c4a | Edfc403c652ee | E33e0daeab937
+E33e0daeab937 | E7447b20765ad | Ea7ed4bc15c4a
+Ea7ed4bc15c4a | Ec0e134ad026e | E1039df500027
+E1039df500027 | E7447b20765ad | Ea7ed4bc15c4a
+Ebaa4aa801ca4 | E7f9a776987f4 | Ee15fbf6f5cc8
+
+##### ID CEO_SEALPROG_1 #####
+PATH_QUERY
+START E7e8d15a12b7a
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+E7e8d15a12b7a | E7f9a776987f4 | Eb51382e0b5b0
+Eb51382e0b5b0 | Ed2f1c5b1c763 | E5b2f5f3695c1
+Eb26b65d57a5a | Ed2f1c5b1c763 | Edbf75d2e9108
+Eb51382e0b5b0 | Edfc403c652ee | Eb47f8b976f09
+Eb47f8b976f09 | E7447b20765ad | Eb51382e0b5b0
+Eb51382e0b5b0 | Ec0e134ad026e | E2e440d406288
+E2e440d406288 | E7447b20765ad | Eb51382e0b5b0
+Ec1425b8ebd2b | E7f9a776987f4 | Eb26b65d57a5a
+
+##### ID CEO_SEALPROG_2 #####
+PATH_QUERY
+START E12c2a3d24e38
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+E12c2a3d24e38 | E7f9a776987f4 | Ea7ed4bc15c4a
+Ea7ed4bc15c4a | Ed2f1c5b1c763 | E10c7eb44befe
+Ee15fbf6f5cc8 | Ed2f1c5b1c763 | E6f2260e34166
+Ea7ed4bc15c4a | Edfc403c652ee | E33e0daeab937
+E33e0daeab937 | E7447b20765ad | Ea7ed4bc15c4a
+Ea7ed4bc15c4a | Ec0e134ad026e | E1039df500027
+E1039df500027 | E7447b20765ad | Ea7ed4bc15c4a
+Ebaa4aa801ca4 | E7f9a776987f4 | Ee15fbf6f5cc8
+
+##### ID CEO_SEALPROG_3 #####
+PATH_QUERY
+START Eacb88434b10a
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+Eacb88434b10a | E7f9a776987f4 | E70f2a6ef6760
+E70f2a6ef6760 | Ed2f1c5b1c763 | E4c3556bc93d2
+E5e57ed47d1dc | Ed2f1c5b1c763 | E2470d5f53e58
+E70f2a6ef6760 | Edfc403c652ee | E64f38f1c0b24
+E64f38f1c0b24 | E7447b20765ad | E70f2a6ef6760
+E70f2a6ef6760 | Ec0e134ad026e | E0bfeedf06ac0
+E0bfeedf06ac0 | E7447b20765ad | E70f2a6ef6760
+Eadf6662ddcf0 | E7f9a776987f4 | E5e57ed47d1dc
+
+##### ID CEO_SEALPROG_4 #####
+PATH_QUERY
+START Eeb78dd779856
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+Eeb78dd779856 | E7f9a776987f4 | E3cc43e737276
+E3cc43e737276 | Ed2f1c5b1c763 | E5cdb278ce49b
+E444a15a97d57 | Ed2f1c5b1c763 | E08918db668d2
+E3cc43e737276 | Edfc403c652ee | E940f4d1cc34f
+E940f4d1cc34f | E7447b20765ad | E3cc43e737276
+E3cc43e737276 | Ec0e134ad026e | E17d6c6d581dd
+E17d6c6d581dd | E7447b20765ad | E3cc43e737276
+E60cfb16a0b7a | E7f9a776987f4 | E444a15a97d57
+
+##### ID CEO_SEALPROG_5 #####
+PATH_QUERY
+START Ee33c0f3fc515
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+Ee33c0f3fc515 | E7f9a776987f4 | E7134ae505fd1
+E7134ae505fd1 | Ed2f1c5b1c763 | E3fcab76cecb5
+Ef2ed4f6c92ae | Ed2f1c5b1c763 | E984c0013c16f
+E7134ae505fd1 | Edfc403c652ee | Edf0489f5db4d
+Edf0489f5db4d | E7447b20765ad | E7134ae505fd1
+E7134ae505fd1 | Ec0e134ad026e | E1414ccbf21bf
+E1414ccbf21bf | E7447b20765ad | E7134ae505fd1
+Ebfad5fad4cd0 | E7f9a776987f4 | Ef2ed4f6c92ae
+
+##### ID CEO_SEALPROG_6 #####
+PATH_QUERY
+START E6eea62661940
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+E6eea62661940 | E7f9a776987f4 | E70f2a6ef6760
+E70f2a6ef6760 | Ed2f1c5b1c763 | E4c3556bc93d2
+E5e57ed47d1dc | Ed2f1c5b1c763 | E2470d5f53e58
+E70f2a6ef6760 | Edfc403c652ee | E64f38f1c0b24
+E64f38f1c0b24 | E7447b20765ad | E70f2a6ef6760
+E70f2a6ef6760 | Ec0e134ad026e | E0bfeedf06ac0
+E0bfeedf06ac0 | E7447b20765ad | E70f2a6ef6760
+Eadf6662ddcf0 | E7f9a776987f4 | E5e57ed47d1dc
+
+##### ID CEO_SEALPROG_7 #####
+PATH_QUERY
+START Ea7b8febb248c
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+Ea7b8febb248c | E7f9a776987f4 | Ea7ed4bc15c4a
+Ea7ed4bc15c4a | Ed2f1c5b1c763 | E10c7eb44befe
+Ee15fbf6f5cc8 | Ed2f1c5b1c763 | E6f2260e34166
+Ea7ed4bc15c4a | Edfc403c652ee | E33e0daeab937
+E33e0daeab937 | E7447b20765ad | Ea7ed4bc15c4a
+Ea7ed4bc15c4a | Ec0e134ad026e | E1039df500027
+E1039df500027 | E7447b20765ad | Ea7ed4bc15c4a
+Ebaa4aa801ca4 | E7f9a776987f4 | Ee15fbf6f5cc8
+
+##### ID CEO_SEALPROG_8 #####
+PATH_QUERY
+START Ed0ef6f93791e
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+Ed0ef6f93791e | E7f9a776987f4 | E17be259eca84
+E17be259eca84 | Ed2f1c5b1c763 | E0686445691ef
+E815e7dd50d16 | Ed2f1c5b1c763 | E39dd4fd0b154
+E17be259eca84 | Edfc403c652ee | E2c0d79cef037
+E2c0d79cef037 | E7447b20765ad | E17be259eca84
+E17be259eca84 | Ec0e134ad026e | E602451cb372f
+E602451cb372f | E7447b20765ad | E17be259eca84
+Eaf0754534be4 | E7f9a776987f4 | E815e7dd50d16
+
+##### ID CEO_SEALPROG_9 #####
+PATH_QUERY
+START Eb846d599dd81
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+Eb846d599dd81 | E7f9a776987f4 | Ec5c4f2acf87d
+Ec5c4f2acf87d | Ed2f1c5b1c763 | E2ff44401ac83
+Ea9cb5708c021 | Ed2f1c5b1c763 | Eca438b79f615
+Ec5c4f2acf87d | Edfc403c652ee | Edc22bfff6bb4
+Edc22bfff6bb4 | E7447b20765ad | Ec5c4f2acf87d
+Ec5c4f2acf87d | Ec0e134ad026e | Ec308d8fead00
+Ec308d8fead00 | E7447b20765ad | Ec5c4f2acf87d
+E41e6ccafa78f | E7f9a776987f4 | Ea9cb5708c021
+
+##### ID CEO_SEALPROG_10 #####
+PATH_QUERY
+START E6fbe12717854
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+E6fbe12717854 | E7f9a776987f4 | E1d53ca55627d
+E1d53ca55627d | Ed2f1c5b1c763 | E0d9fde98ebdb
+E4b3f17ce0afd | Ed2f1c5b1c763 | E90e0b230ac68
+E1d53ca55627d | Edfc403c652ee | E51a1be0e441e
+E51a1be0e441e | E7447b20765ad | E1d53ca55627d
+E1d53ca55627d | Ec0e134ad026e | E4c7f393f3ce7
+E4c7f393f3ce7 | E7447b20765ad | E1d53ca55627d
+E468ced3f6814 | E7f9a776987f4 | E4b3f17ce0afd
+
+##### ID CEO_SEALPROG_11 #####
+PATH_QUERY
+START E7163b0127ffc
+R1 E7f9a776987f4
+R2 Ed2f1c5b1c763
+Execute path; return final tail only.
+
+CONTEXT:
+E7163b0127ffc | E7f9a776987f4 | E70f2a6ef6760
+E70f2a6ef6760 | Ed2f1c5b1c763 | E4c3556bc93d2
+E5e57ed47d1dc | Ed2f1c5b1c763 | E2470d5f53e58
+E70f2a6ef6760 | Edfc403c652ee | E64f38f1c0b24
+E64f38f1c0b24 | E7447b20765ad | E70f2a6ef6760
+E70f2a6ef6760 | Ec0e134ad026e | E0bfeedf06ac0
+E0bfeedf06ac0 | E7447b20765ad | E70f2a6ef6760
+Eadf6662ddcf0 | E7f9a776987f4 | E5e57ed47d1dc

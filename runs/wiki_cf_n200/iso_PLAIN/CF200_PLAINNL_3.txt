@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_3 #####
+QUESTION:
+Which country the director of film Batman: The Dark Knight Returns (Film) is from?
+
+CONTEXT:
+Jay Oliva | country of citizenship | CF_TAIL_3_American
+Batman: The Dark Knight Returns | decoy_link_3 | decoy_mid_3
+decoy_mid_3 | country of citizenship | American
+García Fernández of Castile | place of birth | Burgos
+Batman: The Dark Knight Returns | director | Jay Oliva
+Ulrich | place of burial | monastery of Rosazzo
+Pellegrinus I of Aquileia | father | Ulrich
+Ava of Ribagorza | spouse | García Fernández of Castile

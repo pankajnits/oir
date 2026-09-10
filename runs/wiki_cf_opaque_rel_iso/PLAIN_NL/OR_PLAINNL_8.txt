@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_8 #####
+QUESTION:
+When did Jean Martin (Singer)'s husband die?
+
+CONTEXT:
+Alain Robbe-Grillet | spouse | Catherine Robbe-Grillet
+Eric Mueller | country of citizenship | United States
+Eden and After | director | Alain Robbe-Grillet
+decoy_mid_8 | date of death | 1983
+William Black | date of death | CF_TAIL_8_1983
+Jean Martin | spouse | William Black
+Jean Martin | decoy_link_8 | decoy_mid_8
+World and Time Enough | director | Eric Mueller

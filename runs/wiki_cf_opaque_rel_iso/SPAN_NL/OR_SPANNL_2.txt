@@ -1,0 +1,20 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM SPAN_NL: entity-span seals; RELATIONS in CONTEXT are opaque. No PATH, no legend.
+
+##### ID OR_SPANNL_2 #####
+English question (entity spans sealed). Graph relations are opaque HMAC tokens.
+QUESTION:
+What is the award that the director of film Ea1cfaa5587cc won?
+
+CONTEXT:
+E847a118d5847 | E92f2c86b3f72 | E677618e53d37
+E374fe773ddc8 | E8cc8dacea1d9 | E2793fa0af2d1
+E09aafb9ef674 | E1e3bfd18ce20 | E14d03ba79cee
+Ea1cfaa5587cc | Ef36f6af895bc | E09aafb9ef674
+Ea1cfaa5587cc | E0b35ff5b0c7b | Efec52669257d
+E677618e53d37 | E8cc8dacea1d9 | Ef5f01b8820ea
+E7d561a532ecc | E0b35ff5b0c7b | E374fe773ddc8
+Efec52669257d | E1e3bfd18ce20 | E9df979069b70

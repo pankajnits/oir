@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_133 #####
+QUESTION:
+Which country Nathalie Santer-Bjørndalen's husband is from?
+
+CONTEXT:
+Nathalie Santer | spouse | Ole Einar Bjørndalen
+decoy_mid_133 | country of citizenship | Norwegian
+Ole Einar Bjørndalen | country of citizenship | CF_TAIL_133_Norwegian
+Tim Buckley | cause of death | overdose
+Phantasmagoria in Two | performer | Tim Buckley
+The Crimebusters | director | Boris Sagal
+Boris Sagal | country of citizenship | American
+Nathalie Santer | decoy_link_133 | decoy_mid_133

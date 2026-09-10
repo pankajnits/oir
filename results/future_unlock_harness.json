@@ -1,0 +1,158 @@
+{
+  "n": 8,
+  "suite": "future_unlock",
+  "paths": {
+    "HOP_PLAIN": "runs/future_unlock/HOP_PLAIN_ONLY/BATCH.txt",
+    "HOP_SEAL_PROG": "runs/future_unlock/HOP_SEAL_PROG_ONLY/BATCH.txt",
+    "HOP_SEAL_NL": "runs/future_unlock/HOP_SEAL_NL_ONLY/BATCH.txt",
+    "SUBJ_NL": "runs/future_unlock/SUBJ_NL_ONLY/BATCH.txt",
+    "SUBJ_EXTRACT": "runs/future_unlock/SUBJ_EXTRACT_ONLY/BATCH.txt"
+  },
+  "cases": [
+    {
+      "i": 0,
+      "kind": "LEGAL",
+      "ids": {
+        "HOP_PLAIN": "FU_HOP_PLAIN_0",
+        "HOP_SEAL_PROG": "FU_HOP_SEAL_PROG_0",
+        "HOP_SEAL_NL": "FU_HOP_SEAL_NL_0",
+        "SUBJ_NL": "FU_SUBJ_NL_0",
+        "SUBJ_EXTRACT": "FU_SUBJ_EXTRACT_0"
+      },
+      "expect_hop_plain": "Venue_0",
+      "expect_hop_seal": "E3f36ba569221",
+      "expect_subj": "E364ddf3f8bde",
+      "trap_subj": "E734f7591eee2",
+      "qh": "Which venue sits the judge on docket Docket_0?",
+      "qs": "What should counsel do next for Docket_0? Return recommended_action only.",
+      "start_in_nl_q": true
+    },
+    {
+      "i": 1,
+      "kind": "CODE",
+      "ids": {
+        "HOP_PLAIN": "FU_HOP_PLAIN_1",
+        "HOP_SEAL_PROG": "FU_HOP_SEAL_PROG_1",
+        "HOP_SEAL_NL": "FU_HOP_SEAL_NL_1",
+        "SUBJ_NL": "FU_SUBJ_NL_1",
+        "SUBJ_EXTRACT": "FU_SUBJ_EXTRACT_1"
+      },
+      "expect_hop_plain": "region_1",
+      "expect_hop_seal": "E9f17bb48f5fc",
+      "expect_subj": "E214cd5b796a9",
+      "trap_subj": "Ecc2227520580",
+      "qh": "Which region does the owner of commit sha_1abc page?",
+      "qs": "Ship decision for sha_1abc? Return recommended_action only.",
+      "start_in_nl_q": true
+    },
+    {
+      "i": 2,
+      "kind": "CLOUD",
+      "ids": {
+        "HOP_PLAIN": "FU_HOP_PLAIN_2",
+        "HOP_SEAL_PROG": "FU_HOP_SEAL_PROG_2",
+        "HOP_SEAL_NL": "FU_HOP_SEAL_NL_2",
+        "SUBJ_NL": "FU_SUBJ_NL_2",
+        "SUBJ_EXTRACT": "FU_SUBJ_EXTRACT_2"
+      },
+      "expect_hop_plain": "zone_2",
+      "expect_hop_seal": "Ef815f2446fdf",
+      "expect_subj": "Ee60f5259ad9e",
+      "trap_subj": "Ee69df75158de",
+      "qh": "Which zone is the owner of arn_2 in?",
+      "qs": "Remediation for arn_2? Return recommended_action only.",
+      "start_in_nl_q": true
+    },
+    {
+      "i": 3,
+      "kind": "CLINIC",
+      "ids": {
+        "HOP_PLAIN": "FU_HOP_PLAIN_3",
+        "HOP_SEAL_PROG": "FU_HOP_SEAL_PROG_3",
+        "HOP_SEAL_NL": "FU_HOP_SEAL_NL_3",
+        "SUBJ_NL": "FU_SUBJ_NL_3",
+        "SUBJ_EXTRACT": "FU_SUBJ_EXTRACT_3"
+      },
+      "expect_hop_plain": "clinic_3",
+      "expect_hop_seal": "E4d4d0a786794",
+      "expect_subj": "E00ed29a03722",
+      "trap_subj": "E76abbe44c900",
+      "qh": "Which clinic saw the clinician for patient pat_3?",
+      "qs": "Next clinical step for pat_3? Return recommended_action only. Not medical advice.",
+      "start_in_nl_q": true
+    },
+    {
+      "i": 4,
+      "kind": "LEGAL",
+      "ids": {
+        "HOP_PLAIN": "FU_HOP_PLAIN_4",
+        "HOP_SEAL_PROG": "FU_HOP_SEAL_PROG_4",
+        "HOP_SEAL_NL": "FU_HOP_SEAL_NL_4",
+        "SUBJ_NL": "FU_SUBJ_NL_4",
+        "SUBJ_EXTRACT": "FU_SUBJ_EXTRACT_4"
+      },
+      "expect_hop_plain": "Venue_4",
+      "expect_hop_seal": "E7a1b7e649b9b",
+      "expect_subj": "E364ddf3f8bde",
+      "trap_subj": "E734f7591eee2",
+      "qh": "Which venue sits the judge on docket Docket_4?",
+      "qs": "What should counsel do next for Docket_4? Return recommended_action only.",
+      "start_in_nl_q": true
+    },
+    {
+      "i": 5,
+      "kind": "CODE",
+      "ids": {
+        "HOP_PLAIN": "FU_HOP_PLAIN_5",
+        "HOP_SEAL_PROG": "FU_HOP_SEAL_PROG_5",
+        "HOP_SEAL_NL": "FU_HOP_SEAL_NL_5",
+        "SUBJ_NL": "FU_SUBJ_NL_5",
+        "SUBJ_EXTRACT": "FU_SUBJ_EXTRACT_5"
+      },
+      "expect_hop_plain": "region_5",
+      "expect_hop_seal": "E42b15248628f",
+      "expect_subj": "E214cd5b796a9",
+      "trap_subj": "Ecc2227520580",
+      "qh": "Which region does the owner of commit sha_5abc page?",
+      "qs": "Ship decision for sha_5abc? Return recommended_action only.",
+      "start_in_nl_q": true
+    },
+    {
+      "i": 6,
+      "kind": "CLOUD",
+      "ids": {
+        "HOP_PLAIN": "FU_HOP_PLAIN_6",
+        "HOP_SEAL_PROG": "FU_HOP_SEAL_PROG_6",
+        "HOP_SEAL_NL": "FU_HOP_SEAL_NL_6",
+        "SUBJ_NL": "FU_SUBJ_NL_6",
+        "SUBJ_EXTRACT": "FU_SUBJ_EXTRACT_6"
+      },
+      "expect_hop_plain": "zone_6",
+      "expect_hop_seal": "E110c63e208be",
+      "expect_subj": "Ee60f5259ad9e",
+      "trap_subj": "Ee69df75158de",
+      "qh": "Which zone is the owner of arn_6 in?",
+      "qs": "Remediation for arn_6? Return recommended_action only.",
+      "start_in_nl_q": true
+    },
+    {
+      "i": 7,
+      "kind": "CLINIC",
+      "ids": {
+        "HOP_PLAIN": "FU_HOP_PLAIN_7",
+        "HOP_SEAL_PROG": "FU_HOP_SEAL_PROG_7",
+        "HOP_SEAL_NL": "FU_HOP_SEAL_NL_7",
+        "SUBJ_NL": "FU_SUBJ_NL_7",
+        "SUBJ_EXTRACT": "FU_SUBJ_EXTRACT_7"
+      },
+      "expect_hop_plain": "clinic_7",
+      "expect_hop_seal": "E5d97c05b2c6a",
+      "expect_subj": "E00ed29a03722",
+      "trap_subj": "E76abbe44c900",
+      "qh": "Which clinic saw the clinician for patient pat_7?",
+      "qs": "Next clinical step for pat_7? Return recommended_action only. Not medical advice.",
+      "start_in_nl_q": true
+    }
+  ],
+  "nonclaim": "Synthetic LEGAL/CODE/CLOUD/CLINIC. Not legal/medical advice. Not G-Rev1. Extractive \u2260 authoring."
+}

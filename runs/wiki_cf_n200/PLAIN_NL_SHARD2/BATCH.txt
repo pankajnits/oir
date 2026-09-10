@@ -1,0 +1,705 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL shard 2 (n=50). CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_100 #####
+QUESTION:
+Where was the father of Dionysius Vossius born?
+
+CONTEXT:
+Deeyah Khan | country of citizenship | Norwegian
+John Michael Kohler | place of death | Sheboygan
+Gerardus Vossius | place of birth | CF_TAIL_100_Heidelberg
+decoy_mid_100 | place of birth | Heidelberg
+Dionies Vos | father | Gerardus Vossius
+Dionies Vos | decoy_link_100 | decoy_mid_100
+Walter Jodok Kohler, Sr. | father | John Michael Kohler
+Islam's Non-Believers | director | Deeyah Khan
+
+##### ID CF200_PLAINNL_101 #####
+QUESTION:
+Where does George Charles Wallich's father work at?
+
+CONTEXT:
+Chris Brown | award received | Grammy Award for Best R&B Album
+Two Tickets to Paradise | director | D. B. Sweeney
+George Charles Wallich | father | Nathaniel Wallich
+"Fine by Me | performer | Chris Brown
+decoy_mid_101 | employer | Calcutta Botanical Garden
+D. B. Sweeney | date of birth | November 14, 1961
+George Charles Wallich | decoy_link_101 | decoy_mid_101
+Nathaniel Wallich | employer | CF_TAIL_101_CalcuttaBota
+
+##### ID CF200_PLAINNL_102 #####
+QUESTION:
+Where was the husband of Nagammai born?
+
+CONTEXT:
+Back Home | director | Piers Haggard
+Revenge of the Ninja | director | Sam Firstenberg
+Periyar E. V. Ramasamy | place of birth | CF_TAIL_102_Erode
+Sam Firstenberg | place of birth | Poland
+Nagammai | spouse | Periyar E. V. Ramasamy
+decoy_mid_102 | place of birth | Erode
+Piers Haggard | child | Daisy Haggard
+Nagammai | decoy_link_102 | decoy_mid_102
+
+##### ID CF200_PLAINNL_103 #####
+QUESTION:
+What is the place of birth of the director of film True North Trilogy?
+
+CONTEXT:
+Kevin Smith | place of birth | CF_TAIL_103_RedBank
+Thea Sharrock | place of birth | London
+decoy_mid_103 | place of birth | Red Bank
+The "True North" trilogy | decoy_link_103 | decoy_mid_103
+Simple Gogoi | country of citizenship | India
+The One and Only Ivan | director | Thea Sharrock
+Tumi Jodi Kuwa | director | Simple Gogoi
+The "True North" trilogy | director | Kevin Smith
+
+##### ID CF200_PLAINNL_104 #####
+QUESTION:
+Where did Louis Of Nassau's mother die?
+
+CONTEXT:
+Nighthawks | composer | Keith Emerson
+Louis of Nassau | mother | Juliana of Stolberg
+Louis of Nassau | decoy_link_104 | decoy_mid_104
+Juliana of Stolberg | place of death | CF_TAIL_104_Dillenburg
+Gustavo Hernández Pérez | country of citizenship | Venezuelan
+The Mexican Dream | director | Gustavo Hernández Pérez
+Keith Emerson | place of death | Santa Monica, California
+decoy_mid_104 | place of death | Dillenburg
+
+##### ID CF200_PLAINNL_105 #####
+QUESTION:
+When did Ludwig Gruno Of Hesse-Homburg's father die?
+
+CONTEXT:
+Citizen Mavzik | composer | Alan Melikdjanian
+Frederick III, Landgrave of Hesse-Homburg | date of death | CF_TAIL_105_8June1746
+decoy_mid_105 | date of death | 8 June 1746
+La Yuma | director | Florence Jaugey
+Alan Melikdjanian | country of citizenship | Latvian
+Ludwig Gruno of Hesse-Homburg | decoy_link_105 | decoy_mid_105
+Florence Jaugey | country of citizenship | French
+Ludwig Gruno of Hesse-Homburg | father | Frederick III, Landgrave of Hesse-Homburg
+
+##### ID CF200_PLAINNL_106 #####
+QUESTION:
+What is the place of birth of the composer of film Naayudamma?
+
+CONTEXT:
+Christopher Columbus – The Enigma | director | Manoel de Oliveira
+Ramiro II of Aragon | father | Sancho Ramírez
+decoy_mid_106 | place of birth | Tamil
+Sancho Ramírez | date of death | 1094
+Naayudamma | composer | Deva
+Naayudamma | decoy_link_106 | decoy_mid_106
+Deva | place of birth | CF_TAIL_106_Tamil
+Manoel de Oliveira | place of birth | Porto
+
+##### ID CF200_PLAINNL_107 #####
+QUESTION:
+Where was the place of death of Ashraf Hotak's father?
+
+CONTEXT:
+Ashraf Hotak | decoy_link_107 | decoy_mid_107
+Abdul Aziz Hotak | place of death | CF_TAIL_107_Kandahar
+Furia infernal | director | Armando Bó
+Herman C. Raymaker | place of death | Long Island
+Ashraf Hotak | father | Abdul Aziz Hotak
+A Hero of the Big Snows | director | Herman C. Raymaker
+decoy_mid_107 | place of death | Kandahar
+Armando Bó | child | Víctor Bó
+
+##### ID CF200_PLAINNL_108 #####
+QUESTION:
+What is the place of birth of the director of film El Complejo De Felipe?
+
+CONTEXT:
+Juan Carlos Thorry | place of birth | CF_TAIL_108_CoronelPring
+Red Bull Racing Team | founded by | Dietrich Mateschitz
+Dietrich Mateschitz | country of citizenship | Austrian
+decoy_mid_108 | place of birth | Coronel Pringles
+El Complejo de Felipe | director | Juan Carlos Thorry
+William Randolph | place of death | Colony of Virginia
+Edward Randolph | father | William Randolph
+El Complejo de Felipe | decoy_link_108 | decoy_mid_108
+
+##### ID CF200_PLAINNL_109 #####
+QUESTION:
+Where was the husband of Christiane Kubrick born?
+
+CONTEXT:
+Christiane Susanne Kubrick | spouse | Stanley Kubrick
+John Gayle | country of citizenship | United States
+Amelia Gayle Gorgas | father | John Gayle
+decoy_mid_109 | place of birth | Bronx
+Jacques Rivette | cause of death | Alzheimer
+Christiane Susanne Kubrick | decoy_link_109 | decoy_mid_109
+Stanley Kubrick | place of birth | CF_TAIL_109_Bronx
+Around a Small Mountain | director | Jacques Rivette
+
+##### ID CF200_PLAINNL_110 #####
+QUESTION:
+Who is the spouse of the director of film Beyond Glory?
+
+CONTEXT:
+Beyond Glory | director | John Farrow
+José Bohr | country of citizenship | Chilean
+John Farrow | spouse | CF_TAIL_110_MaureenOSull
+Una luz en mi camino | director | José Bohr
+A Kiss on the Nose | director | Laura Neri
+decoy_mid_110 | spouse | Maureen O'Sullivan
+Beyond Glory | decoy_link_110 | decoy_mid_110
+Laura Neri | country of citizenship | Greek
+
+##### ID CF200_PLAINNL_111 #####
+QUESTION:
+Which country the director of film I Live On Danger is from?
+
+CONTEXT:
+Xiahou Yuan | country of citizenship | Eastern Han Dynasty
+decoy_mid_111 | country of citizenship | America
+I Live on Danger | director | Sam White
+Liu Xuan | father | Liu Shan
+Liu Shan | place of death | Luoyang
+Sam White | country of citizenship | CF_TAIL_111_America
+Xiahou Wei | father | Xiahou Yuan
+I Live on Danger | decoy_link_111 | decoy_mid_111
+
+##### ID CF200_PLAINNL_112 #####
+QUESTION:
+Where was the director of film Incubus Hq Live born?
+
+CONTEXT:
+decoy_mid_112 | place of birth | New York
+Donna Summer | place of death | Naples
+Incubus HQ Live | decoy_link_112 | decoy_mid_112
+Incubus HQ Live | director | Marc Scarpa
+Orhan | place of birth | Söğüt
+Murad I | father | Orhan
+Brooklyn Sudano | mother | Donna Summer
+Marc Scarpa | place of birth | CF_TAIL_112_NewYork
+
+##### ID CF200_PLAINNL_113 #####
+QUESTION:
+Where was the father of Alexandre Grimaldi-Coste born?
+
+CONTEXT:
+Said bin Sultan | place of death | Muscat
+Alexandre Grimaldi-Coste | father | Albert II
+Emily Ruete | father | Said bin Sultan
+Alexandre Grimaldi-Coste | decoy_link_113 | decoy_mid_113
+Catherine & Co. | director | Michel Boisrond
+Albert II | place of birth | CF_TAIL_113_PrincesPalac
+decoy_mid_113 | place of birth | Prince's Palace of Monaco
+Michel Boisrond | place of death | La Celle-Saint-Cloud
+
+##### ID CF200_PLAINNL_114 #####
+QUESTION:
+Where did William Killigrew (1606–1695)'s father graduate from?
+
+CONTEXT:
+Eugene C. Pulliam | place of death | Arizona
+Eugene S. Pulliam | father | Eugene C. Pulliam
+William Killigrew | father | Robert Killigrew
+Bolko III of Münsterberg | date of death | 13 June 1410
+Euphemia of Münsterberg | father | Bolko III of Münsterberg
+decoy_mid_114 | educated at | House
+William Killigrew | decoy_link_114 | decoy_mid_114
+Robert Killigrew | educated at | CF_TAIL_114_House
+
+##### ID CF200_PLAINNL_115 #####
+QUESTION:
+Which country Aleksander Koniecpolski (1620–1659)'s father is from?
+
+CONTEXT:
+William de Warenne, 2nd Earl of Surrey | father | William de Warenne, 1st Earl of Surrey
+Dušan Hanák | place of birth | Bratislava
+Aleksander Koniecpolski | decoy_link_115 | decoy_mid_115
+Stanisław Koniecpolski | country of citizenship | CF_TAIL_115_PolishLithua
+Aleksander Koniecpolski | father | Stanisław Koniecpolski
+decoy_mid_115 | country of citizenship | Polish-Lithuanian Commonwealth
+I Love, You Love | director | Dušan Hanák
+William de Warenne, 1st Earl of Surrey | place of death | Lewes
+
+##### ID CF200_PLAINNL_116 #####
+QUESTION:
+What is the place of birth of the director of film Aashiq (2001 Film)?
+
+CONTEXT:
+Margherita Aldobrandini | place of birth | Capodimonte
+Indra Kumar | place of birth | CF_TAIL_116_Gujarati
+Vittoria Farnese d'Este | mother | Margherita Aldobrandini
+Aashiq | director | Indra Kumar
+decoy_mid_116 | place of birth | Gujarati
+Aashiq | decoy_link_116 | decoy_mid_116
+Augusta Marie of Holstein-Gottorp | father | Frederick III
+Frederick III | date of death | 10 August 1659
+
+##### ID CF200_PLAINNL_117 #####
+QUESTION:
+Where was the director of film The Iron Man (Serial) born?
+
+CONTEXT:
+Slide Away | performer | Miley Cyrus
+Jay Marchant | place of birth | CF_TAIL_117_TrippCountyS
+Miley Cyrus | father | Billy Ray Cyrus
+Maurice de Saxe | father | Augustus II the Strong
+decoy_mid_117 | place of birth | Tripp County, South Dakota
+Augustus II the Strong | place of death | Warsaw
+The Iron Man | decoy_link_117 | decoy_mid_117
+The Iron Man | director | Jay Marchant
+
+##### ID CF200_PLAINNL_118 #####
+QUESTION:
+When did Joanna Of Aragon, Countess Of Foix's mother die?
+
+CONTEXT:
+Ride, Vaquero! | director | John Farrow
+John Farrow | spouse | Maureen O'Sullivan
+Joanna of Aragon, Countess of Foix | mother | Martha of Armagnac
+Jay Marchant | place of death | Los Angeles County
+Joanna of Aragon, Countess of Foix | decoy_link_118 | decoy_mid_118
+The Great Circus Mystery | director | Jay Marchant
+decoy_mid_118 | date of death | 23 October 1378
+Martha of Armagnac | date of death | CF_TAIL_118_23October137
+
+##### ID CF200_PLAINNL_119 #####
+QUESTION:
+Why did the director of film The Obsessed Of Catule die?
+
+CONTEXT:
+Anselmo Duarte | cause of death | CF_TAIL_119_stroke
+A Lady of Quality | director | J. Searle Dawley
+decoy_mid_119 | cause of death | stroke
+J. Searle Dawley | place of birth | Colorado
+The Obsessed of Catule | decoy_link_119 | decoy_mid_119
+Politics of Love | director | William Dear
+The Obsessed of Catule | director | Anselmo Duarte
+William Dear | place of birth | Toronto, Ontario
+
+##### ID CF200_PLAINNL_120 #####
+QUESTION:
+Where was the place of death of the performer of song White Squall (Song)?
+
+CONTEXT:
+Stan Rogers | place of death | CF_TAIL_120_GreaterCinci
+White Squall | performer | Stan Rogers
+decoy_mid_120 | place of death | Greater Cincinnati Airport
+White Squall | decoy_link_120 | decoy_mid_120
+Sensational Janine | director | Hans Billian
+Hans Billian | place of death | Gräfelfing
+Michael Edward Reagan | mother | Jane Wyman
+Jane Wyman | employer | Warner Bros.
+
+##### ID CF200_PLAINNL_121 #####
+QUESTION:
+Where was the place of death of the director of film Gitano (1970 Film)?
+
+CONTEXT:
+Elizabeth of Rhuddlan | father | Edward I
+decoy_mid_121 | place of death | Buenos Aires
+Sarah Silverman: Jesus Is Magic | director | Liam Lynch
+Liam Lynch | country of citizenship | United States
+Edward I | place of birth | Westminster
+Gitano | director | Emilio Vieyra
+Emilio Vieyra | place of death | CF_TAIL_121_BuenosAires
+Gitano | decoy_link_121 | decoy_mid_121
+
+##### ID CF200_PLAINNL_122 #####
+QUESTION:
+Where was the director of film Lightning Romance born?
+
+CONTEXT:
+Patrick Berg | father | Ørjan Berg
+One Love | performer | Carlene Carter
+Lightning Romance | decoy_link_122 | decoy_mid_122
+Albert S. Rogell | place of birth | CF_TAIL_122_OklahomaCity
+Ørjan Berg | date of birth | 20 August 1968
+decoy_mid_122 | place of birth | Oklahoma City, Oklahoma
+Lightning Romance | director | Albert S. Rogell
+Carlene Carter | mother | June Carter
+
+##### ID CF200_PLAINNL_123 #####
+QUESTION:
+Where was the place of death of Seraphina Sforza's husband?
+
+CONTEXT:
+decoy_mid_123 | place of death | Pesaro
+Alessandro Sforza | place of death | CF_TAIL_123_Pesaro
+Lana Del Rey | place of birth | New York
+Seraphina Sforza | spouse | Alessandro Sforza
+The Man Who Laughed at Love | director | Benito Perojo
+Benito Perojo | place of death | Madrid
+Seraphina Sforza | decoy_link_123 | decoy_mid_123
+Florida Kilos | performer | Lana Del Rey
+
+##### ID CF200_PLAINNL_124 #####
+QUESTION:
+What is the date of death of Joseph Martin (1726–1776)'s father?
+
+CONTEXT:
+Joan of England | mother | Philippa of Hainault
+Philippa of Hainault | cause of death | edema
+Jelena Lieven | father | Alexander Lieven
+Joseph Martin | decoy_link_124 | decoy_mid_124
+Joseph Martin | father | John Martin
+Alexander Lieven | place of birth | Moscow
+decoy_mid_124 | date of death | 1767
+John Martin | date of death | CF_TAIL_124_1767
+
+##### ID CF200_PLAINNL_125 #####
+QUESTION:
+What nationality is the director of film The Return (2006 Film)?
+
+CONTEXT:
+Max McGraw | date of birth | 1 February 1883
+decoy_mid_125 | country of citizenship | British
+The Secret of Wera Baranska | director | Eugen Burg
+Eugen Burg | place of death | Theresienstadt concentration camp
+The Return | decoy_link_125 | decoy_mid_125
+Asif Kapadia | country of citizenship | CF_TAIL_125_British
+The Return | director | Asif Kapadia
+McGraw Electric | founded by | Max McGraw
+
+##### ID CF200_PLAINNL_126 #####
+QUESTION:
+What nationality is the director of film El Día Que Me Quieras (1935 Film)?
+
+CONTEXT:
+Bertha of Hereford | mother | Sibyl de Neufmarché
+Sibyl de Neufmarché | country of citizenship | Welsh
+El día que me quieras | director | John Reinhardt
+John Reinhardt | country of citizenship | CF_TAIL_126_American
+Dina Wadia | father | Muhammad Ali Jinnah
+El día que me quieras | decoy_link_126 | decoy_mid_126
+Muhammad Ali Jinnah | place of death | Karachi
+decoy_mid_126 | country of citizenship | American
+
+##### ID CF200_PLAINNL_127 #####
+QUESTION:
+What nationality is the director of film Armless?
+
+CONTEXT:
+William Douglas, 10th Earl of Angus | place of death | Paris, France
+Armless | decoy_link_127 | decoy_mid_127
+Armless | director | Habib Azar
+Robert Gordon | place of birth | Belleville
+Habib Azar | country of citizenship | CF_TAIL_127_UnitedStates
+James Douglas, 1st Lord Mordington | father | William Douglas, 10th Earl of Angus
+decoy_mid_127 | country of citizenship | United States
+Alma Lenore Francis | spouse | Robert Gordon
+
+##### ID CF200_PLAINNL_128 #####
+QUESTION:
+What is the place of birth of the director of film Must Love Dogs?
+
+CONTEXT:
+Must Love Dogs | decoy_link_128 | decoy_mid_128
+Kenneth Gyang | place of birth | Barkin Ladi
+Confusion Na Wa | director | Kenneth Gyang
+Delilah | educated at | City and Islington College
+Breathe | performer | Delilah
+Must Love Dogs | director | Gary David Goldberg
+Gary David Goldberg | place of birth | CF_TAIL_128_Brooklyn
+decoy_mid_128 | place of birth | Brooklyn
+
+##### ID CF200_PLAINNL_129 #####
+QUESTION:
+Who is the spouse of the director of film Cross Country Cruise?
+
+CONTEXT:
+John Stark | place of burial | New Hampshire
+Ekaterina Yurevna Gubareva | spouse | Pavel Gubarev
+Caleb Stark | father | John Stark
+decoy_mid_129 | spouse | Ona Munson
+Cross Country Cruise | director | Edward Buzzell
+Edward Buzzell | spouse | CF_TAIL_129_OnaMunson
+Cross Country Cruise | decoy_link_129 | decoy_mid_129
+Pavel Gubarev | country of citizenship | Russian
+
+##### ID CF200_PLAINNL_130 #####
+QUESTION:
+What nationality is the composer of song When You Were Mine (Prince Song)?
+
+CONTEXT:
+John II of Brienne, Count of Eu | date of death | 11 July 1302
+When You Were Mine | decoy_link_130 | decoy_mid_130
+Circle of Deception | director | Jack Lee
+Prince | country of citizenship | CF_TAIL_130_American
+decoy_mid_130 | country of citizenship | American
+Raoul I of Brienne, Count of Eu | father | John II of Brienne, Count of Eu
+When You Were Mine | composer | Prince
+Jack Lee | educated at | Marling School
+
+##### ID CF200_PLAINNL_131 #####
+QUESTION:
+Where was the performer of song Old Money (Lana Del Rey Song) born?
+
+CONTEXT:
+Vladimir Vengerov | award received | People's Artist of the RSFSR
+Fridrikh Ermler | place of birth | Rēzekne
+Old Money | decoy_link_131 | decoy_mid_131
+Old Money | performer | Lana Del Rey
+Two Captains | director | Vladimir Vengerov
+The House in the Snow-Drifts | director | Fridrikh Ermler
+Lana Del Rey | place of birth | CF_TAIL_131_NewYork
+decoy_mid_131 | place of birth | New York
+
+##### ID CF200_PLAINNL_132 #####
+QUESTION:
+Which country the performer of song The Desert Is In Your Heart is from?
+
+CONTEXT:
+The Desert Is in Your Heart | performer | Bonnie Tyler
+The Desert Is in Your Heart | decoy_link_132 | decoy_mid_132
+Yin Lihua | spouse | Liu Xiu
+Her Strut | performer | Bob Seger
+decoy_mid_132 | country of citizenship | United Kingdom
+Bonnie Tyler | country of citizenship | CF_TAIL_132_UnitedKingdo
+Liu Xiu | place of death | Luoyang
+Bob Seger | place of birth | Detroit
+
+##### ID CF200_PLAINNL_133 #####
+QUESTION:
+Which country Nathalie Santer-Bjørndalen's husband is from?
+
+CONTEXT:
+Nathalie Santer | spouse | Ole Einar Bjørndalen
+decoy_mid_133 | country of citizenship | Norwegian
+Ole Einar Bjørndalen | country of citizenship | CF_TAIL_133_Norwegian
+Tim Buckley | cause of death | overdose
+Phantasmagoria in Two | performer | Tim Buckley
+The Crimebusters | director | Boris Sagal
+Boris Sagal | country of citizenship | American
+Nathalie Santer | decoy_link_133 | decoy_mid_133
+
+##### ID CF200_PLAINNL_134 #####
+QUESTION:
+What is the place of birth of Lisa Dahlkvist's father?
+
+CONTEXT:
+Prince Moulay Hicham of Morocco | father | Prince Moulay Abdallah of Morocco
+Lisa Karolina Viktoria Dahlkvist | decoy_link_134 | decoy_mid_134
+Lady Magdalene's | director | J. Neil Schulman
+Lisa Karolina Viktoria Dahlkvist | father | Dala
+Dala | place of birth | CF_TAIL_134_Mockfjrd
+decoy_mid_134 | place of birth | Mockfjärd
+J. Neil Schulman | award received | Prometheus Award
+Prince Moulay Abdallah of Morocco | date of death | 20 December 1983
+
+##### ID CF200_PLAINNL_135 #####
+QUESTION:
+What is the place of birth of Johnny De Mol's mother?
+
+CONTEXT:
+John Carel "Johnny" de Mol | mother | Willeke Alberti
+James Stewart, Duke of Rothesay | mother | Margaret Tudor
+Margaret Tudor | country of citizenship | English
+John Carel "Johnny" de Mol | decoy_link_135 | decoy_mid_135
+Joyce E. Bernal | country of citizenship | Philippines
+Kailangan Ko'y Ikaw | director | Joyce E. Bernal
+decoy_mid_135 | place of birth | Amsterdam
+Willeke Alberti | place of birth | CF_TAIL_135_Amsterdam
+
+##### ID CF200_PLAINNL_136 #####
+QUESTION:
+What nationality of the company that manufactured Bottle Caps (Candy)?
+
+CONTEXT:
+Bottle Caps | decoy_link_136 | decoy_mid_136
+Atom.com | founded by | Mika Salmi
+Prince Welf Ernst of Hanover | father | Prince George William of Hanover
+Prince George William of Hanover | country of citizenship | German
+Bottle Caps | manufacturer | Nestlé
+Nestlé | country | CF_TAIL_136_Swiss
+Mika Salmi | country of citizenship | Finnish
+decoy_mid_136 | country | Swiss
+
+##### ID CF200_PLAINNL_137 #####
+QUESTION:
+Where was the place of death of the director of film Ducháček Will Fix It?
+
+CONTEXT:
+Despinis eton 39 | director | Alekos Sakellarios
+Shahrzad Mojab | spouse | Amir Hassanpour
+Alekos Sakellarios | place of burial | First Cemetery of Athens
+Duchacek Will Fix It | decoy_link_137 | decoy_mid_137
+Duchacek Will Fix It | director | Karel Lamač
+Karel Lamač | place of death | CF_TAIL_137_HamburgGerma
+Amir Hassanpour | educated at | University of Tehran
+decoy_mid_137 | place of death | Hamburg, Germany
+
+##### ID CF200_PLAINNL_138 #####
+QUESTION:
+Where did the director of film Hraběnka Z Podskalí die?
+
+CONTEXT:
+Charles William Vane | place of death | London
+Karel Lamač | place of death | CF_TAIL_138_HamburgGerma
+Hraběnka z Podskalí | decoy_link_138 | decoy_mid_138
+Frances Anne Vane, Marchioness of Londonderry | spouse | Charles William Vane
+Thomas Mason | father | George Mason
+decoy_mid_138 | place of death | Hamburg, Germany
+Hraběnka z Podskalí | director | Karel Lamač
+George Mason | place of birth | Fairfax
+
+##### ID CF200_PLAINNL_139 #####
+QUESTION:
+Where did the composer of film Pepo (Film) die?
+
+CONTEXT:
+Pepo | decoy_link_139 | decoy_mid_139
+Olivier Baroux | date of birth | 5 January 1964
+Aram Khachaturian | place of death | CF_TAIL_139_Moscow
+decoy_mid_139 | place of death | Moscow
+Eduardo Frei Montalva | place of birth | Santiago
+Pepo | composer | Aram Khachaturian
+Eduardo Alfredo Juan Bernardo Frei Ruiz-Tagle | father | Eduardo Frei Montalva
+Les Tuche 2 | director | Olivier Baroux
+
+##### ID CF200_PLAINNL_140 #####
+QUESTION:
+Where was the place of death of the director of film Dixie Dugan (Film)?
+
+CONTEXT:
+decoy_mid_140 | place of death | Hollywood
+Otto Brower | place of death | CF_TAIL_140_Hollywood
+Theudebert I | date of death | 548
+Dixie Dugan | director | Otto Brower
+1913 Massacre | performer | Woody Guthrie
+Woody Guthrie | cause of death | Huntington's disease
+Dixie Dugan | decoy_link_140 | decoy_mid_140
+Deuteria | spouse | Theudebert I
+
+##### ID CF200_PLAINNL_141 #####
+QUESTION:
+Where was the director of film Invasion (2014 Film) born?
+
+CONTEXT:
+Invasion | director | Abner Benaim
+Up, Down, Fragile | director | Jacques Rivette
+American Woman | director | Jake Scott
+Abner Benaim | place of birth | CF_TAIL_141_Panam
+Jake Scott | father | Ridley Scott
+decoy_mid_141 | place of birth | Panamá
+Invasion | decoy_link_141 | decoy_mid_141
+Jacques Rivette | cause of death | Alzheimer
+
+##### ID CF200_PLAINNL_142 #####
+QUESTION:
+Where was the director of film A Winter Of Cyclists born?
+
+CONTEXT:
+Island in the Sun | director | Robert Rossen
+decoy_mid_142 | place of birth | Irish
+Mike Prendergast | place of birth | CF_TAIL_142_Irish
+A Winter of Cyclists | director | Mike Prendergast
+Robert Rossen | place of death | Hollywood
+Night of the Scarecrow | director | Jeff Burr
+Jeff Burr | place of birth | Aurora, Ohio
+A Winter of Cyclists | decoy_link_142 | decoy_mid_142
+
+##### ID CF200_PLAINNL_143 #####
+QUESTION:
+Where does the director of film Thieves (1996 Film) work at?
+
+CONTEXT:
+Thieves | decoy_link_143 | decoy_mid_143
+André Téchiné | employer | CF_TAIL_143_Cahiersducin
+Ludwig Gruno of Hesse-Homburg | father | Frederick III, Landgrave of Hesse-Homburg
+Florence Jaugey | country of citizenship | French
+La Yuma | director | Florence Jaugey
+decoy_mid_143 | employer | Cahiers du cinéma
+Frederick III, Landgrave of Hesse-Homburg | date of death | 8 June 1746
+Thieves | director | André Téchiné
+
+##### ID CF200_PLAINNL_144 #####
+QUESTION:
+Which country the director of film Chill Factor (Film) is from?
+
+CONTEXT:
+Chill Factor | decoy_link_144 | decoy_mid_144
+Little Alvin and the Mini-Munks | director | Jerry Rees
+Jerry Rees | place of birth | American
+Joan of Navarre | mother | Joan of France
+Hugh Johnson | country of citizenship | CF_TAIL_144_Irish
+Chill Factor | director | Hugh Johnson
+decoy_mid_144 | country of citizenship | Irish
+Joan of France | place of death | Évreux
+
+##### ID CF200_PLAINNL_145 #####
+QUESTION:
+Where does the founder of Les Films Du Losange work at?
+
+CONTEXT:
+decoy_mid_145 | employer | Cahiers du cinéma
+Mahatma Gandhi | father | Karamchand Gandhi
+Donald G. Jackson | place of burial | Westwood Village Memorial Park Cemetery
+Les films du losange | decoy_link_145 | decoy_mid_145
+Éric Rohmer | employer | CF_TAIL_145_Cahiersducin
+Gujarat Vidyapith | founded by | Mahatma Gandhi
+Les films du losange | founded by | Éric Rohmer
+The Roller Blade Seven | director | Donald G. Jackson
+
+##### ID CF200_PLAINNL_146 #####
+QUESTION:
+Where was the place of death of the director of film Legend Of Love?
+
+CONTEXT:
+Legend of Love | decoy_link_146 | decoy_mid_146
+Last Knights | director | Kazuaki Kiriya
+decoy_mid_146 | place of death | Rome
+Legend of Love | director | Raffaello Matarazzo
+Ernst L. Freud | mother | Martha Bernays
+Raffaello Matarazzo | place of death | CF_TAIL_146_Rome
+Kazuaki Kiriya | country of citizenship | Japan
+Martha Bernays | place of birth | Hamburg
+
+##### ID CF200_PLAINNL_147 #####
+QUESTION:
+Where was the director of film Love In The Ring born?
+
+CONTEXT:
+Reinhold Schünzel | place of birth | CF_TAIL_147_Hamburg
+decoy_mid_147 | place of birth | Hamburg
+John Lennon | place of birth | Liverpool
+Well Well Well | performer | John Lennon
+Love in the Ring | director | Reinhold Schünzel
+Love in the Ring | decoy_link_147 | decoy_mid_147
+Home Fries | director | Dean Parisot
+Dean Parisot | educated at | Tisch
+
+##### ID CF200_PLAINNL_148 #####
+QUESTION:
+What is the place of birth of Ray Hutchison's wife?
+
+CONTEXT:
+Mark Burnett | country of citizenship | British
+Kay Bailey Hutchison | place of birth | CF_TAIL_148_GalvestonTex
+Ray Hutchison | spouse | Kay Bailey Hutchison
+decoy_mid_148 | place of birth | Galveston, Texas
+Pepin the Hunchback | father | Charlemagne
+Ray Hutchison | decoy_link_148 | decoy_mid_148
+Expedition Impossible | creator | Mark Burnett
+Charlemagne | place of birth | Frankish Kingdom
+
+##### ID CF200_PLAINNL_149 #####
+QUESTION:
+Who is the father of the director of film Snake In The Eagle'S Shadow?
+
+CONTEXT:
+Snake in the Eagle's Shadow | director | Yuen Woo-ping
+Yuen Woo-ping | father | CF_TAIL_149_YuenSiutien
+Ferdinand de Lesseps | date of birth | 19 November 1805
+Snake in the Eagle's Shadow | decoy_link_149 | decoy_mid_149
+decoy_mid_149 | father | Yuen Siu-tien
+William Duncan | place of death | Hollywood
+The Universal Company | founded by | Ferdinand de Lesseps
+Wolves of the North | director | William Duncan

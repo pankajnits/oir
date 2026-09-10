@@ -1,0 +1,801 @@
+{
+  "binder_family": [
+    "DSL",
+    "COUNT",
+    "PATH3",
+    "TOOL",
+    "NL"
+  ],
+  "paths": {
+    "DSL_FILTER": "runs/e2e/DSL_FILTER_ONLY/BATCH.txt",
+    "DSL_COUNT": "runs/e2e/DSL_COUNT_ONLY/BATCH.txt",
+    "PATH3": "runs/e2e/PATH3_ONLY/BATCH.txt",
+    "TOOL_ROUTER": "runs/e2e/TOOL_ROUTER_ONLY/BATCH.txt",
+    "NL_CTRL": "runs/e2e/NL_CTRL_ONLY/BATCH.txt",
+    "PDF_NL": "runs/e2e/PDF_NL_ONLY/BATCH.txt",
+    "PDF_PROG": "runs/e2e/PDF_PROG_ONLY/BATCH.txt"
+  },
+  "pdf_meta": {
+    "text": "data/real_docs/e2e/pdf_text_extract.txt",
+    "ocr": "data/real_docs/e2e/pdf_ocr_extract.txt",
+    "ocr_ok": true
+  },
+  "cases": [
+    {
+      "id": "E2E_DSL_0",
+      "form": "DSL",
+      "expect": "Ebfd59e4977a1",
+      "person": "David_Schaeffer"
+    },
+    {
+      "id": "E2E_COUNT_0",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "David_Schaeffer"
+    },
+    {
+      "id": "E2E_PATH3_0",
+      "form": "PATH3",
+      "expect": "Ee1e32a72d4c0",
+      "person": "David_Schaeffer"
+    },
+    {
+      "id": "E2E_TOOL_0",
+      "form": "TOOL",
+      "expect": "Ebfd59e4977a1",
+      "person": "David_Schaeffer"
+    },
+    {
+      "id": "E2E_NL_0",
+      "form": "NL",
+      "expect": "Ebfd59e4977a1",
+      "intermediate_company": "Efbd536d32f11",
+      "person": "David_Schaeffer"
+    },
+    {
+      "id": "E2E_DSL_1",
+      "form": "DSL",
+      "expect": "Ebe6db6ef1926",
+      "person": "Landon_H_Rowland"
+    },
+    {
+      "id": "E2E_COUNT_1",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Landon_H_Rowland"
+    },
+    {
+      "id": "E2E_PATH3_1",
+      "form": "PATH3",
+      "expect": "Ed2401a7f3ad4",
+      "person": "Landon_H_Rowland"
+    },
+    {
+      "id": "E2E_TOOL_1",
+      "form": "TOOL",
+      "expect": "Ebe6db6ef1926",
+      "person": "Landon_H_Rowland"
+    },
+    {
+      "id": "E2E_NL_1",
+      "form": "NL",
+      "expect": "Ebe6db6ef1926",
+      "intermediate_company": "E0f5ca58d1fb9",
+      "person": "Landon_H_Rowland"
+    },
+    {
+      "id": "E2E_DSL_2",
+      "form": "DSL",
+      "expect": "Eed9f7d6eff1c",
+      "person": "Giancarlo_Nicosanti_Monterastelli"
+    },
+    {
+      "id": "E2E_COUNT_2",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Giancarlo_Nicosanti_Monterastelli"
+    },
+    {
+      "id": "E2E_PATH3_2",
+      "form": "PATH3",
+      "expect": "E7b47cbb6efd0",
+      "person": "Giancarlo_Nicosanti_Monterastelli"
+    },
+    {
+      "id": "E2E_TOOL_2",
+      "form": "TOOL",
+      "expect": "Eed9f7d6eff1c",
+      "person": "Giancarlo_Nicosanti_Monterastelli"
+    },
+    {
+      "id": "E2E_NL_2",
+      "form": "NL",
+      "expect": "Eed9f7d6eff1c",
+      "intermediate_company": "Ed4eb5357f0cc",
+      "person": "Giancarlo_Nicosanti_Monterastelli"
+    },
+    {
+      "id": "E2E_DSL_3",
+      "form": "DSL",
+      "expect": "Ef4e4cfe7f509",
+      "person": "Kentaro_Okuda"
+    },
+    {
+      "id": "E2E_COUNT_3",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Kentaro_Okuda"
+    },
+    {
+      "id": "E2E_PATH3_3",
+      "form": "PATH3",
+      "expect": "E1d462107ef7f",
+      "person": "Kentaro_Okuda"
+    },
+    {
+      "id": "E2E_TOOL_3",
+      "form": "TOOL",
+      "expect": "Ef4e4cfe7f509",
+      "person": "Kentaro_Okuda"
+    },
+    {
+      "id": "E2E_NL_3",
+      "form": "NL",
+      "expect": "Ef4e4cfe7f509",
+      "intermediate_company": "E0f1970ee53b9",
+      "person": "Kentaro_Okuda"
+    },
+    {
+      "id": "E2E_DSL_4",
+      "form": "DSL",
+      "expect": "E83f66c12f682",
+      "person": "Hans_Vestberg"
+    },
+    {
+      "id": "E2E_COUNT_4",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Hans_Vestberg"
+    },
+    {
+      "id": "E2E_PATH3_4",
+      "form": "PATH3",
+      "expect": "Ee073632a67f5",
+      "person": "Hans_Vestberg"
+    },
+    {
+      "id": "E2E_TOOL_4",
+      "form": "TOOL",
+      "expect": "E83f66c12f682",
+      "person": "Hans_Vestberg"
+    },
+    {
+      "id": "E2E_NL_4",
+      "form": "NL",
+      "expect": "E83f66c12f682",
+      "intermediate_company": "Eb790b555d248",
+      "person": "Hans_Vestberg"
+    },
+    {
+      "id": "E2E_DSL_5",
+      "form": "DSL",
+      "expect": "Ea4f97de9302f",
+      "person": "Lucian_Grainge"
+    },
+    {
+      "id": "E2E_COUNT_5",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Lucian_Grainge"
+    },
+    {
+      "id": "E2E_PATH3_5",
+      "form": "PATH3",
+      "expect": "Ece97806927e9",
+      "person": "Lucian_Grainge"
+    },
+    {
+      "id": "E2E_TOOL_5",
+      "form": "TOOL",
+      "expect": "Ea4f97de9302f",
+      "person": "Lucian_Grainge"
+    },
+    {
+      "id": "E2E_NL_5",
+      "form": "NL",
+      "expect": "Ea4f97de9302f",
+      "intermediate_company": "E88420c59298d",
+      "person": "Lucian_Grainge"
+    },
+    {
+      "id": "E2E_DSL_6",
+      "form": "DSL",
+      "expect": "E59c673821b67",
+      "person": "Tom_Salomon"
+    },
+    {
+      "id": "E2E_COUNT_6",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Tom_Salomon"
+    },
+    {
+      "id": "E2E_PATH3_6",
+      "form": "PATH3",
+      "expect": "E799df3745f9a",
+      "person": "Tom_Salomon"
+    },
+    {
+      "id": "E2E_TOOL_6",
+      "form": "TOOL",
+      "expect": "E59c673821b67",
+      "person": "Tom_Salomon"
+    },
+    {
+      "id": "E2E_NL_6",
+      "form": "NL",
+      "expect": "E59c673821b67",
+      "intermediate_company": "E83d350c8303d",
+      "person": "Tom_Salomon"
+    },
+    {
+      "id": "E2E_DSL_7",
+      "form": "DSL",
+      "expect": "Eccb8c438a3b3",
+      "person": "Luka_Mucic"
+    },
+    {
+      "id": "E2E_COUNT_7",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Luka_Mucic"
+    },
+    {
+      "id": "E2E_PATH3_7",
+      "form": "PATH3",
+      "expect": "E74b6f1b26d8f",
+      "person": "Luka_Mucic"
+    },
+    {
+      "id": "E2E_TOOL_7",
+      "form": "TOOL",
+      "expect": "Eccb8c438a3b3",
+      "person": "Luka_Mucic"
+    },
+    {
+      "id": "E2E_NL_7",
+      "form": "NL",
+      "expect": "Eccb8c438a3b3",
+      "intermediate_company": "Ed4535fbacee6",
+      "person": "Luka_Mucic"
+    },
+    {
+      "id": "E2E_DSL_8",
+      "form": "DSL",
+      "expect": "Eb912789d3ec1",
+      "person": "JeanFranois_van_Boxmeer"
+    },
+    {
+      "id": "E2E_COUNT_8",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "JeanFranois_van_Boxmeer"
+    },
+    {
+      "id": "E2E_PATH3_8",
+      "form": "PATH3",
+      "expect": "Ee138cecdf000",
+      "person": "JeanFranois_van_Boxmeer"
+    },
+    {
+      "id": "E2E_TOOL_8",
+      "form": "TOOL",
+      "expect": "Eb912789d3ec1",
+      "person": "JeanFranois_van_Boxmeer"
+    },
+    {
+      "id": "E2E_NL_8",
+      "form": "NL",
+      "expect": "Eb912789d3ec1",
+      "intermediate_company": "E15080f91050e",
+      "person": "JeanFranois_van_Boxmeer"
+    },
+    {
+      "id": "E2E_DSL_9",
+      "form": "DSL",
+      "expect": "Ea688f70418ae",
+      "person": "David_Simon"
+    },
+    {
+      "id": "E2E_COUNT_9",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "David_Simon"
+    },
+    {
+      "id": "E2E_PATH3_9",
+      "form": "PATH3",
+      "expect": "E9d217ab23c08",
+      "person": "David_Simon"
+    },
+    {
+      "id": "E2E_TOOL_9",
+      "form": "TOOL",
+      "expect": "Ea688f70418ae",
+      "person": "David_Simon"
+    },
+    {
+      "id": "E2E_NL_9",
+      "form": "NL",
+      "expect": "Ea688f70418ae",
+      "intermediate_company": "E08e3b14e878d",
+      "person": "David_Simon"
+    },
+    {
+      "id": "E2E_DSL_10",
+      "form": "DSL",
+      "expect": "E65d278426928",
+      "person": "Richard_Gordon_Handover"
+    },
+    {
+      "id": "E2E_COUNT_10",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Richard_Gordon_Handover"
+    },
+    {
+      "id": "E2E_PATH3_10",
+      "form": "PATH3",
+      "expect": "Eb5f9b39b9e79",
+      "person": "Richard_Gordon_Handover"
+    },
+    {
+      "id": "E2E_TOOL_10",
+      "form": "TOOL",
+      "expect": "E65d278426928",
+      "person": "Richard_Gordon_Handover"
+    },
+    {
+      "id": "E2E_NL_10",
+      "form": "NL",
+      "expect": "E65d278426928",
+      "intermediate_company": "E926dbc1f2f41",
+      "person": "Richard_Gordon_Handover"
+    },
+    {
+      "id": "E2E_DSL_11",
+      "form": "DSL",
+      "expect": "Ef3fcd8b4c35a",
+      "person": "Mike_Sievert"
+    },
+    {
+      "id": "E2E_COUNT_11",
+      "form": "COUNT",
+      "expect_num": 2,
+      "person": "Mike_Sievert"
+    },
+    {
+      "id": "E2E_PATH3_11",
+      "form": "PATH3",
+      "expect": "Eb477de74f200",
+      "person": "Mike_Sievert"
+    },
+    {
+      "id": "E2E_TOOL_11",
+      "form": "TOOL",
+      "expect": "Ef3fcd8b4c35a",
+      "person": "Mike_Sievert"
+    },
+    {
+      "id": "E2E_NL_11",
+      "form": "NL",
+      "expect": "Ef3fcd8b4c35a",
+      "intermediate_company": "E882d8c05f3df",
+      "person": "Mike_Sievert"
+    },
+    {
+      "id": "PDF_TEXT_NL_0",
+      "form": "NL",
+      "channel": "PDF_TEXT",
+      "expect": "Ebfd59e4977a1",
+      "person": "David_Schaeffer",
+      "hq": "Washington_DC"
+    },
+    {
+      "id": "PDF_TEXT_PROG_0",
+      "form": "PROG",
+      "channel": "PDF_TEXT",
+      "expect": "Ebfd59e4977a1",
+      "person": "David_Schaeffer",
+      "hq": "Washington_DC"
+    },
+    {
+      "id": "PDF_TEXT_NL_1",
+      "form": "NL",
+      "channel": "PDF_TEXT",
+      "expect": "Ebe6db6ef1926",
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City"
+    },
+    {
+      "id": "PDF_TEXT_PROG_1",
+      "form": "PROG",
+      "channel": "PDF_TEXT",
+      "expect": "Ebe6db6ef1926",
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City"
+    },
+    {
+      "id": "PDF_TEXT_NL_2",
+      "form": "NL",
+      "channel": "PDF_TEXT",
+      "expect": "Eed9f7d6eff1c",
+      "person": "Giancarlo_Nicosanti_Monterastelli",
+      "hq": "Forl"
+    },
+    {
+      "id": "PDF_TEXT_PROG_2",
+      "form": "PROG",
+      "channel": "PDF_TEXT",
+      "expect": "Eed9f7d6eff1c",
+      "person": "Giancarlo_Nicosanti_Monterastelli",
+      "hq": "Forl"
+    },
+    {
+      "id": "PDF_TEXT_NL_3",
+      "form": "NL",
+      "channel": "PDF_TEXT",
+      "expect": "Ef4e4cfe7f509",
+      "person": "Kentaro_Okuda",
+      "hq": "Tokyo"
+    },
+    {
+      "id": "PDF_TEXT_PROG_3",
+      "form": "PROG",
+      "channel": "PDF_TEXT",
+      "expect": "Ef4e4cfe7f509",
+      "person": "Kentaro_Okuda",
+      "hq": "Tokyo"
+    },
+    {
+      "id": "PDF_TEXT_NL_4",
+      "form": "NL",
+      "channel": "PDF_TEXT",
+      "expect": "E83f66c12f682",
+      "person": "Hans_Vestberg",
+      "hq": "Philadelphia"
+    },
+    {
+      "id": "PDF_TEXT_PROG_4",
+      "form": "PROG",
+      "channel": "PDF_TEXT",
+      "expect": "E83f66c12f682",
+      "person": "Hans_Vestberg",
+      "hq": "Philadelphia"
+    },
+    {
+      "id": "PDF_TEXT_NL_5",
+      "form": "NL",
+      "channel": "PDF_TEXT",
+      "expect": "Ea4f97de9302f",
+      "person": "Lucian_Grainge",
+      "hq": "Broadway"
+    },
+    {
+      "id": "PDF_TEXT_PROG_5",
+      "form": "PROG",
+      "channel": "PDF_TEXT",
+      "expect": "Ea4f97de9302f",
+      "person": "Lucian_Grainge",
+      "hq": "Broadway"
+    },
+    {
+      "id": "PDF_TEXT_NL_6",
+      "form": "NL",
+      "channel": "PDF_TEXT",
+      "expect": "E59c673821b67",
+      "person": "Tom_Salomon",
+      "hq": "Prague"
+    },
+    {
+      "id": "PDF_TEXT_PROG_6",
+      "form": "PROG",
+      "channel": "PDF_TEXT",
+      "expect": "E59c673821b67",
+      "person": "Tom_Salomon",
+      "hq": "Prague"
+    },
+    {
+      "id": "PDF_TEXT_NL_7",
+      "form": "NL",
+      "channel": "PDF_TEXT",
+      "expect": "Eccb8c438a3b3",
+      "person": "Luka_Mucic",
+      "hq": "Bochum"
+    },
+    {
+      "id": "PDF_TEXT_PROG_7",
+      "form": "PROG",
+      "channel": "PDF_TEXT",
+      "expect": "Eccb8c438a3b3",
+      "person": "Luka_Mucic",
+      "hq": "Bochum"
+    },
+    {
+      "id": "PDF_OCR_NL_0",
+      "form": "NL",
+      "channel": "PDF_OCR",
+      "expect": "Ebfd59e4977a1",
+      "person": "David_Schaeffer",
+      "hq": "Washington_DC"
+    },
+    {
+      "id": "PDF_OCR_PROG_0",
+      "form": "PROG",
+      "channel": "PDF_OCR",
+      "expect": "Ebfd59e4977a1",
+      "person": "David_Schaeffer",
+      "hq": "Washington_DC"
+    },
+    {
+      "id": "PDF_OCR_NL_1",
+      "form": "NL",
+      "channel": "PDF_OCR",
+      "expect": "Ebe6db6ef1926",
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City"
+    },
+    {
+      "id": "PDF_OCR_PROG_1",
+      "form": "PROG",
+      "channel": "PDF_OCR",
+      "expect": "Ebe6db6ef1926",
+      "person": "Landon_H_Rowland",
+      "hq": "Kansas_City"
+    },
+    {
+      "id": "PDF_OCR_NL_2",
+      "form": "NL",
+      "channel": "PDF_OCR",
+      "expect": "Eed9f7d6eff1c",
+      "person": "Giancarlo_Nicosanti_Monterastelli",
+      "hq": "Forl"
+    },
+    {
+      "id": "PDF_OCR_PROG_2",
+      "form": "PROG",
+      "channel": "PDF_OCR",
+      "expect": "Eed9f7d6eff1c",
+      "person": "Giancarlo_Nicosanti_Monterastelli",
+      "hq": "Forl"
+    },
+    {
+      "id": "PDF_OCR_NL_3",
+      "form": "NL",
+      "channel": "PDF_OCR",
+      "expect": "Ef4e4cfe7f509",
+      "person": "Kentaro_Okuda",
+      "hq": "Tokyo"
+    },
+    {
+      "id": "PDF_OCR_PROG_3",
+      "form": "PROG",
+      "channel": "PDF_OCR",
+      "expect": "Ef4e4cfe7f509",
+      "person": "Kentaro_Okuda",
+      "hq": "Tokyo"
+    },
+    {
+      "id": "PDF_OCR_NL_4",
+      "form": "NL",
+      "channel": "PDF_OCR",
+      "expect": "E83f66c12f682",
+      "person": "Hans_Vestberg",
+      "hq": "Philadelphia"
+    },
+    {
+      "id": "PDF_OCR_PROG_4",
+      "form": "PROG",
+      "channel": "PDF_OCR",
+      "expect": "E83f66c12f682",
+      "person": "Hans_Vestberg",
+      "hq": "Philadelphia"
+    },
+    {
+      "id": "PDF_OCR_NL_5",
+      "form": "NL",
+      "channel": "PDF_OCR",
+      "expect": "Ea4f97de9302f",
+      "person": "Lucian_Grainge",
+      "hq": "Broadway"
+    },
+    {
+      "id": "PDF_OCR_PROG_5",
+      "form": "PROG",
+      "channel": "PDF_OCR",
+      "expect": "Ea4f97de9302f",
+      "person": "Lucian_Grainge",
+      "hq": "Broadway"
+    },
+    {
+      "id": "PDF_OCR_NL_6",
+      "form": "NL",
+      "channel": "PDF_OCR",
+      "expect": "E59c673821b67",
+      "person": "Tom_Salomon",
+      "hq": "Prague"
+    },
+    {
+      "id": "PDF_OCR_PROG_6",
+      "form": "PROG",
+      "channel": "PDF_OCR",
+      "expect": "E59c673821b67",
+      "person": "Tom_Salomon",
+      "hq": "Prague"
+    },
+    {
+      "id": "PDF_OCR_NL_7",
+      "form": "NL",
+      "channel": "PDF_OCR",
+      "expect": "Eccb8c438a3b3",
+      "person": "Luka_Mucic",
+      "hq": "Bochum"
+    },
+    {
+      "id": "PDF_OCR_PROG_7",
+      "form": "PROG",
+      "channel": "PDF_OCR",
+      "expect": "Eccb8c438a3b3",
+      "person": "Luka_Mucic",
+      "hq": "Bochum"
+    }
+  ],
+  "rev": {
+    "Ecd34ee50b7fa": "works_at",
+    "E6cdfc50eac8a": "headquartered_in",
+    "E19afe731c9e6": "owned_by",
+    "Ed0682a546e89": "partner_of",
+    "E24076ed7759f": "meta_of",
+    "Ee3147d8942d3": "located_in",
+    "Efbd536d32f11": "Cogent_Communications",
+    "E5e5679957802": "Part_Cogent_Communications",
+    "Ebfd59e4977a1": "Washington_DC",
+    "E58f301f0d148": "Hold_Cogent_Communications",
+    "E55f058b40f09": "Meta_Cogent_Communications",
+    "E4408526e1287": "David_Schaeffer",
+    "Eeeded50f77e7": "Decoy_Telecom_Armenia",
+    "E3d899483f1ed": "Telecom_Armenia",
+    "E0928628c2dec": "PMeta_Cogent_Communications",
+    "E2885bd8257e3": "Yerevan",
+    "Ebfb779a05cc7": "Country_of_Yerevan",
+    "Ee1e32a72d4c0": "Country_of_Washington_DC",
+    "E2c83099a5aca": "Where",
+    "Ef2592c72fc48": "is",
+    "Ee79e5a53bfbc": "the",
+    "Eee0c0fd74974": "company",
+    "E45cd057b7f85": "that",
+    "E4ad75cb51476": "Landon_H_Rowland",
+    "E0f5ca58d1fb9": "Kansas_City_Southern",
+    "E3ed01b73be2a": "Part_Kansas_City_Southern",
+    "Efcb7764eb580": "PMeta_Kansas_City_Southern",
+    "Eba43348f6f85": "Hold_Kansas_City_Southern",
+    "Ebe6db6ef1926": "Kansas_City",
+    "E6c745f5a2055": "Canadian_Broadcasting_Corporation",
+    "Eeda6e1ebc62e": "Ottawa",
+    "E165f3518d914": "Decoy_Canadian_Broadcasting_Corporation",
+    "E5a1e59c9257c": "Meta_Kansas_City_Southern",
+    "Eab2615c4b5f4": "Country_of_Ottawa",
+    "Ed2401a7f3ad4": "Country_of_Kansas_City",
+    "Ed4eb5357f0cc": "Unieuro",
+    "E5735f7a81713": "Part_Unieuro",
+    "Ef033d58d5bc0": "Hold_Unieuro",
+    "E70beee780da8": "Meta_Unieuro",
+    "E82aa6c1ca33d": "Decoy_The_Walt_Disney_Company",
+    "Ebf97009933a4": "The_Walt_Disney_Company",
+    "Eed9f7d6eff1c": "Forl",
+    "Ef6df5196a5ee": "PMeta_Unieuro",
+    "E6a7f57ec2e88": "Giancarlo_Nicosanti_Monterastelli",
+    "E3023f41cdc83": "Burbank",
+    "E0730b6e67a83": "Country_of_Burbank",
+    "E7b47cbb6efd0": "Country_of_Forl",
+    "E0f1970ee53b9": "Nomura_Holdings",
+    "Ecfa60ccc77ea": "Part_Nomura_Holdings",
+    "E191c4daae7fc": "Hold_Nomura_Holdings",
+    "E5d39af82fc31": "PMeta_Nomura_Holdings",
+    "Ed5617f68ad9f": "Zurich_Insurance_Group",
+    "Ed0e20f05dbb2": "Zurich",
+    "Ee7bb3874643b": "Decoy_Zurich_Insurance_Group",
+    "Efff408378ccd": "Kentaro_Okuda",
+    "E23854e68b417": "Meta_Nomura_Holdings",
+    "Ef4e4cfe7f509": "Tokyo",
+    "E4dff7a7bb1de": "Country_of_Zurich",
+    "E1d462107ef7f": "Country_of_Tokyo",
+    "E5d6663a4ea76": "Decoy_WaveDivision_Holdings_LLC",
+    "E4e6746282fa5": "WaveDivision_Holdings_LLC",
+    "Eb790b555d248": "Verizon",
+    "E83f66c12f682": "Philadelphia",
+    "E6cc2657a6e9e": "Part_Verizon",
+    "Ed1789c1801b8": "Hans_Vestberg",
+    "Eba8ea78ee062": "Hold_Verizon",
+    "E5084e18aface": "Meta_Verizon",
+    "E67b032ec592d": "PMeta_Verizon",
+    "Ef2dbbf844aa8": "New_Jersey",
+    "E1bb76e2463b4": "Country_of_New_Jersey",
+    "Ee073632a67f5": "Country_of_Philadelphia",
+    "E88420c59298d": "Universal_Music_Group",
+    "Eaa9399c5bf26": "Part_Universal_Music_Group",
+    "Eea4c003d1206": "Hold_Universal_Music_Group",
+    "E8390b8d2b266": "PMeta_Universal_Music_Group",
+    "E33f46e854bc3": "Lucian_Grainge",
+    "Ea4f97de9302f": "Broadway",
+    "E393bd398ae93": "Meta_Universal_Music_Group",
+    "E960fbbfe4539": "Decoy_Kansas_City_Southern",
+    "Ece97806927e9": "Country_of_Broadway",
+    "E7729878576cd": "Part_esk_spoitelna",
+    "E148612839648": "PMeta_esk_spoitelna",
+    "E83d350c8303d": "esk_spoitelna",
+    "E38c21f366883": "Hold_esk_spoitelna",
+    "E49d25db0f36f": "Tom_Salomon",
+    "Ee316931778c8": "Meta_esk_spoitelna",
+    "E59c673821b67": "Prague",
+    "E799df3745f9a": "Country_of_Prague",
+    "Eba2c1a3a8ed7": "Luka_Mucic",
+    "Ed4535fbacee6": "Vonovia",
+    "E02f8953ca1c7": "Vodafone_Germany",
+    "E7ae89478484e": "VodafoneCampus",
+    "Ef9e2aeb92e21": "Hold_Vonovia",
+    "E4fb48eff1a37": "Decoy_Vodafone_Germany",
+    "Ea06a9a8dc32f": "Meta_Vonovia",
+    "E6d1549d083dc": "Part_Vonovia",
+    "Eccb8c438a3b3": "Bochum",
+    "Eda68fa9ca914": "PMeta_Vonovia",
+    "E74b6f1b26d8f": "Country_of_Bochum",
+    "E3709e059c900": "Country_of_VodafoneCampus",
+    "E15080f91050e": "Heineken_International",
+    "Eb912789d3ec1": "Amsterdam",
+    "Eb23cabf50c9f": "JeanFranois_van_Boxmeer",
+    "E90a246d54c68": "Hold_Heineken_International",
+    "Ead12142101b5": "Meta_Heineken_International",
+    "E6b2fcbe5b3f8": "Part_Heineken_International",
+    "E85402c684680": "PMeta_Heineken_International",
+    "Ee138cecdf000": "Country_of_Amsterdam",
+    "E9aad5ebfc496": "David_Simon",
+    "E08e3b14e878d": "Simon_Property_Group",
+    "E0504ed883c41": "Hold_Simon_Property_Group",
+    "Ecc3e268984ed": "Meta_Simon_Property_Group",
+    "Ee3c611d6ebf9": "Decoy_Lacoste_SA",
+    "Ec28a0dc5951d": "Lacoste_SA",
+    "Ea688f70418ae": "Simon_Property_Group_Headquarters",
+    "E62a51ecd5300": "Paris",
+    "Efbfa1bb271d6": "Part_Simon_Property_Group",
+    "E7cd4a416de2d": "PMeta_Simon_Property_Group",
+    "E9d217ab23c08": "Country_of_Simon_Property_Group_Headquarters",
+    "E630054bdfdfc": "Country_of_Paris",
+    "E926dbc1f2f41": "WHSmith",
+    "E65d278426928": "Swindon",
+    "E662a60c2f4bb": "Hold_WHSmith",
+    "Ea1ac8cc9ed8e": "Part_WHSmith",
+    "E1e49df996945": "Richard_Gordon_Handover",
+    "Ecac4694937ab": "Meta_WHSmith",
+    "E0e96415a16ba": "PMeta_WHSmith",
+    "Eb5f9b39b9e79": "Country_of_Swindon",
+    "E882d8c05f3df": "TMobile_US",
+    "E4cfc240fa06f": "Part_TMobile_US",
+    "Ef3fcd8b4c35a": "Bellevue",
+    "E1bcf5dbf8fef": "Mike_Sievert",
+    "Ec21546491396": "PMeta_TMobile_US",
+    "Eb78fb99d47ee": "Hold_TMobile_US",
+    "E8c66afda7f14": "Meta_TMobile_US",
+    "Eb477de74f200": "Country_of_Bellevue",
+    "Ed338bc853256": "Decoy_Vonovia",
+    "Ec24cecb0f1bf": "Decoy_Cogent_Communications",
+    "Ea651473d1367": "Decoy_Nomura_Holdings",
+    "E5cb869af8072": "Decoy_TMobile_US",
+    "Eb1763520887c": "Decoy_Unieuro",
+    "E171b19d11f34": "Decoy_Universal_Music_Group",
+    "Eb10a08374c6a": "Decoy_Heineken_International",
+    "E7e61f2dee837": "Decoy_esk_spoitelna"
+  },
+  "n_binder": 12,
+  "note": "DSL=LOOKUP chain; COUNT=aggregate; PATH3=3-hop; TOOL=SealRouter simulation; PDF TEXT vs OCR channels"
+}

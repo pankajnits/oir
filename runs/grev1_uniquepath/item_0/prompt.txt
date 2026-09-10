@@ -1,0 +1,72 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[GREV1_UP_0]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM UNIQUE_PATH: unique 3-hop from START. Entities and relations sealed. No PATH. No legend. One quiz.
+
+##### ID GREV1_UP_0 #####
+QUESTION:
+E774f4b926c7f E3f98b5492d29 Ec6f1ac5941e7 E38bd4e323312 Eb1bfe33ca091 Ec388f6138c23 E38bd4e323312 Eaa92ec0d4a84 Ec388f6138c23 Ebcb45c793006 E257138c228b5?
+
+CONTEXT:
+TABLE hop1
+| Ebb8977dd3369 | E544a2a147d4c |
+| --- | --- |
+| Ebcb45c793006 | E091fed27600f |
+| E15480a51c695 | E9c9a9b15f259 |
+| E9a4b9f6f5ed9 | Ec25d3f085fe3 |
+| E335cd33b5e2f | E091fed27600f |
+
+TABLE hop2
+| E0b6edd29d3c4 | E7491680c6971 |
+| --- | --- |
+| E091fed27600f | E94c41652dfdf |
+| E9c9a9b15f259 | Ef098a2e9462b |
+| Ec25d3f085fe3 | E9bafeca412e6 |
+| E091fed27600f | E94c41652dfdf |
+
+TABLE hop3
+| E797f39231924 | E2b20e3867947 |
+| --- | --- |
+| E94c41652dfdf | E7536d1444e72 |
+| Ef098a2e9462b | E9461dae96f23 |
+| E9bafeca412e6 | E33167bf0fa01 |
+| E94c41652dfdf | E7536d1444e72 |
+
+JSON
+{
+  "use_case": "Ebe7e1f749f78",
+  "graph": {
+    "Ebcb45c793006": {
+      "E544a2a147d4c": "E091fed27600f"
+    },
+    "E091fed27600f": {
+      "E7491680c6971": "E94c41652dfdf"
+    },
+    "E94c41652dfdf": {
+      "E2b20e3867947": "E7536d1444e72"
+    },
+    "E15480a51c695": {
+      "E544a2a147d4c": "E9c9a9b15f259"
+    },
+    "E9c9a9b15f259": {
+      "E7491680c6971": "Ef098a2e9462b"
+    },
+    "Ef098a2e9462b": {
+      "E2b20e3867947": "E9461dae96f23"
+    },
+    "E9a4b9f6f5ed9": {
+      "E544a2a147d4c": "Ec25d3f085fe3"
+    },
+    "Ec25d3f085fe3": {
+      "E7491680c6971": "E9bafeca412e6"
+    },
+    "E9bafeca412e6": {
+      "E2b20e3867947": "E33167bf0fa01"
+    },
+    "E335cd33b5e2f": {
+      "E544a2a147d4c": "E091fed27600f"
+    }
+  },
+  "notes": "Ebcb45c793006 E3d415319de3f E7aa2fe8089e3: E0b31236fa6b1 E1b0344bbc46a Ebbfb62511ec3 E810f89a3195e, E02d2c9ad0bcc E07570e336b4c E8c369f28cc24 E213c3a9da0fd E1cfc3619d9c8 E63d36d700a4e E38bd4e323312 E1e2b9468c094 E7a9cd73555f8 Eecc5c9cd97a1"
+}

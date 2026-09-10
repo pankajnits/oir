@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_116 #####
+QUESTION:
+What is the place of birth of the director of film Aashiq (2001 Film)?
+
+CONTEXT:
+Margherita Aldobrandini | place of birth | Capodimonte
+Indra Kumar | place of birth | CF_TAIL_116_Gujarati
+Vittoria Farnese d'Este | mother | Margherita Aldobrandini
+Aashiq | director | Indra Kumar
+decoy_mid_116 | place of birth | Gujarati
+Aashiq | decoy_link_116 | decoy_mid_116
+Augusta Marie of Holstein-Gottorp | father | Frederick III
+Frederick III | date of death | 10 August 1659

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_134 #####
+QUESTION:
+What is the place of birth of Lisa Dahlkvist's father?
+
+CONTEXT:
+Prince Moulay Hicham of Morocco | father | Prince Moulay Abdallah of Morocco
+Lisa Karolina Viktoria Dahlkvist | decoy_link_134 | decoy_mid_134
+Lady Magdalene's | director | J. Neil Schulman
+Lisa Karolina Viktoria Dahlkvist | father | Dala
+Dala | place of birth | CF_TAIL_134_Mockfjrd
+decoy_mid_134 | place of birth | Mockfjärd
+J. Neil Schulman | award received | Prometheus Award
+Prince Moulay Abdallah of Morocco | date of death | 20 December 1983

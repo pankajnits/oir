@@ -1,0 +1,605 @@
+{
+  "n": 24,
+  "seed": 20260813,
+  "suite": "adv_induction_n24",
+  "claim": "n=24 SAME\u226bCROSS under asymmetric traps; PATH ceiling on same graphs.",
+  "arms": {
+    "SAME_TRAP": {
+      "label": "demos schemaA; quiz dual-path; gold uses schemaA seals (asymmetric noise on gold mid)",
+      "ids": [
+        "ADV24_SAME_TRAP_0",
+        "ADV24_SAME_TRAP_1",
+        "ADV24_SAME_TRAP_2",
+        "ADV24_SAME_TRAP_3",
+        "ADV24_SAME_TRAP_4",
+        "ADV24_SAME_TRAP_5",
+        "ADV24_SAME_TRAP_6",
+        "ADV24_SAME_TRAP_7",
+        "ADV24_SAME_TRAP_8",
+        "ADV24_SAME_TRAP_9",
+        "ADV24_SAME_TRAP_10",
+        "ADV24_SAME_TRAP_11",
+        "ADV24_SAME_TRAP_12",
+        "ADV24_SAME_TRAP_13",
+        "ADV24_SAME_TRAP_14",
+        "ADV24_SAME_TRAP_15",
+        "ADV24_SAME_TRAP_16",
+        "ADV24_SAME_TRAP_17",
+        "ADV24_SAME_TRAP_18",
+        "ADV24_SAME_TRAP_19",
+        "ADV24_SAME_TRAP_20",
+        "ADV24_SAME_TRAP_21",
+        "ADV24_SAME_TRAP_22",
+        "ADV24_SAME_TRAP_23"
+      ],
+      "path": "runs/adv_induction_n24/SAME_TRAP_ONLY/BATCH.txt"
+    },
+    "CROSS_TRAP": {
+      "label": "demos schemaA; quiz dual-path; gold uses NOVEL seals",
+      "ids": [
+        "ADV24_CROSS_TRAP_0",
+        "ADV24_CROSS_TRAP_1",
+        "ADV24_CROSS_TRAP_2",
+        "ADV24_CROSS_TRAP_3",
+        "ADV24_CROSS_TRAP_4",
+        "ADV24_CROSS_TRAP_5",
+        "ADV24_CROSS_TRAP_6",
+        "ADV24_CROSS_TRAP_7",
+        "ADV24_CROSS_TRAP_8",
+        "ADV24_CROSS_TRAP_9",
+        "ADV24_CROSS_TRAP_10",
+        "ADV24_CROSS_TRAP_11",
+        "ADV24_CROSS_TRAP_12",
+        "ADV24_CROSS_TRAP_13",
+        "ADV24_CROSS_TRAP_14",
+        "ADV24_CROSS_TRAP_15",
+        "ADV24_CROSS_TRAP_16",
+        "ADV24_CROSS_TRAP_17",
+        "ADV24_CROSS_TRAP_18",
+        "ADV24_CROSS_TRAP_19",
+        "ADV24_CROSS_TRAP_20",
+        "ADV24_CROSS_TRAP_21",
+        "ADV24_CROSS_TRAP_22",
+        "ADV24_CROSS_TRAP_23"
+      ],
+      "path": "runs/adv_induction_n24/CROSS_TRAP_ONLY/BATCH.txt"
+    },
+    "PATH_TRAP": {
+      "label": "PATH ceiling on dual-path graphs",
+      "ids": [
+        "ADV24_PATH_TRAP_0",
+        "ADV24_PATH_TRAP_1",
+        "ADV24_PATH_TRAP_2",
+        "ADV24_PATH_TRAP_3",
+        "ADV24_PATH_TRAP_4",
+        "ADV24_PATH_TRAP_5",
+        "ADV24_PATH_TRAP_6",
+        "ADV24_PATH_TRAP_7",
+        "ADV24_PATH_TRAP_8",
+        "ADV24_PATH_TRAP_9",
+        "ADV24_PATH_TRAP_10",
+        "ADV24_PATH_TRAP_11",
+        "ADV24_PATH_TRAP_12",
+        "ADV24_PATH_TRAP_13",
+        "ADV24_PATH_TRAP_14",
+        "ADV24_PATH_TRAP_15",
+        "ADV24_PATH_TRAP_16",
+        "ADV24_PATH_TRAP_17",
+        "ADV24_PATH_TRAP_18",
+        "ADV24_PATH_TRAP_19",
+        "ADV24_PATH_TRAP_20",
+        "ADV24_PATH_TRAP_21",
+        "ADV24_PATH_TRAP_22",
+        "ADV24_PATH_TRAP_23"
+      ],
+      "path": "runs/adv_induction_n24/PATH_TRAP_ONLY/BATCH.txt"
+    }
+  },
+  "cases": [
+    {
+      "arm": "SAME_TRAP",
+      "i": 0,
+      "id": "ADV24_SAME_TRAP_0",
+      "gold": "E78acadf49fbb",
+      "trap": "E9c482c05ba77"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 1,
+      "id": "ADV24_SAME_TRAP_1",
+      "gold": "Ea1fbeb8d0c4c",
+      "trap": "E4655fc49d0f4"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 2,
+      "id": "ADV24_SAME_TRAP_2",
+      "gold": "E6ce136e7bf26",
+      "trap": "Ef1a747fa6545"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 3,
+      "id": "ADV24_SAME_TRAP_3",
+      "gold": "E5c5e1e260c94",
+      "trap": "E2114a194fdb7"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 4,
+      "id": "ADV24_SAME_TRAP_4",
+      "gold": "E22cc1b320317",
+      "trap": "Eec46b2eb3c81"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 5,
+      "id": "ADV24_SAME_TRAP_5",
+      "gold": "E9476aa8d1c6c",
+      "trap": "E557192ba0191"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 6,
+      "id": "ADV24_SAME_TRAP_6",
+      "gold": "E8e4a76aa0fd4",
+      "trap": "E17455c4fe506"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 7,
+      "id": "ADV24_SAME_TRAP_7",
+      "gold": "E612d2d60101e",
+      "trap": "E40a8d2ed8c6b"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 8,
+      "id": "ADV24_SAME_TRAP_8",
+      "gold": "Ef10813d5c42e",
+      "trap": "E77decf2440fd"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 9,
+      "id": "ADV24_SAME_TRAP_9",
+      "gold": "Ecc97fb315c8e",
+      "trap": "E39b872e22638"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 10,
+      "id": "ADV24_SAME_TRAP_10",
+      "gold": "E791c208055fc",
+      "trap": "E21d547e237cf"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 11,
+      "id": "ADV24_SAME_TRAP_11",
+      "gold": "E6714abd6450a",
+      "trap": "Ecbb54416dcd5"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 12,
+      "id": "ADV24_SAME_TRAP_12",
+      "gold": "E68bdddd57f5d",
+      "trap": "E71c7acf427ed"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 13,
+      "id": "ADV24_SAME_TRAP_13",
+      "gold": "E1e45908f669b",
+      "trap": "E9581ded23599"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 14,
+      "id": "ADV24_SAME_TRAP_14",
+      "gold": "Ec54eb5cc7212",
+      "trap": "Eb777b8cad2f9"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 15,
+      "id": "ADV24_SAME_TRAP_15",
+      "gold": "Eeb75b0c25049",
+      "trap": "E5a9ec52b283a"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 16,
+      "id": "ADV24_SAME_TRAP_16",
+      "gold": "E9b7b6785bfc6",
+      "trap": "E02fdd5a03583"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 17,
+      "id": "ADV24_SAME_TRAP_17",
+      "gold": "Eef8427437e73",
+      "trap": "Eb07328e3661f"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 18,
+      "id": "ADV24_SAME_TRAP_18",
+      "gold": "E7c30044ee847",
+      "trap": "E86b3c6abd148"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 19,
+      "id": "ADV24_SAME_TRAP_19",
+      "gold": "Eae2565cf7fb2",
+      "trap": "E03c97a4b225c"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 20,
+      "id": "ADV24_SAME_TRAP_20",
+      "gold": "Ebd4622c4576f",
+      "trap": "Ef5f25573c33f"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 21,
+      "id": "ADV24_SAME_TRAP_21",
+      "gold": "E53649c8310a7",
+      "trap": "Efce95396cca7"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 22,
+      "id": "ADV24_SAME_TRAP_22",
+      "gold": "E112a0416d9b8",
+      "trap": "E90cdfe9e4245"
+    },
+    {
+      "arm": "SAME_TRAP",
+      "i": 23,
+      "id": "ADV24_SAME_TRAP_23",
+      "gold": "E715b5bf26e13",
+      "trap": "E0ad308cba6e1"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 0,
+      "id": "ADV24_CROSS_TRAP_0",
+      "gold": "E75e022fc181a",
+      "trap": "Ed9f9b00edb15"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 1,
+      "id": "ADV24_CROSS_TRAP_1",
+      "gold": "Ee706555ec2db",
+      "trap": "E7a08d9431b6c"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 2,
+      "id": "ADV24_CROSS_TRAP_2",
+      "gold": "Ed9a2a6d7d902",
+      "trap": "E93a44445eb8f"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 3,
+      "id": "ADV24_CROSS_TRAP_3",
+      "gold": "Ef340b4beefac",
+      "trap": "Ea49e40b562d8"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 4,
+      "id": "ADV24_CROSS_TRAP_4",
+      "gold": "E2de695f3207b",
+      "trap": "Ed2eb29c3ed91"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 5,
+      "id": "ADV24_CROSS_TRAP_5",
+      "gold": "E4c666ebe10e9",
+      "trap": "Ed50b67db426d"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 6,
+      "id": "ADV24_CROSS_TRAP_6",
+      "gold": "Ea82b8e0ed47f",
+      "trap": "E9f31d4b04030"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 7,
+      "id": "ADV24_CROSS_TRAP_7",
+      "gold": "Ed64ac66f0d26",
+      "trap": "Efbcf08f8e7da"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 8,
+      "id": "ADV24_CROSS_TRAP_8",
+      "gold": "Ebb233ab99eb0",
+      "trap": "Ea6580549550e"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 9,
+      "id": "ADV24_CROSS_TRAP_9",
+      "gold": "E3a682a5f4a86",
+      "trap": "E9a7f563cb71d"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 10,
+      "id": "ADV24_CROSS_TRAP_10",
+      "gold": "Ea9701596128e",
+      "trap": "E0e93ba8ee53f"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 11,
+      "id": "ADV24_CROSS_TRAP_11",
+      "gold": "Eb2b5b372aad7",
+      "trap": "E7183128a706d"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 12,
+      "id": "ADV24_CROSS_TRAP_12",
+      "gold": "E9b7d71383ba4",
+      "trap": "E126cd6ee4aac"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 13,
+      "id": "ADV24_CROSS_TRAP_13",
+      "gold": "E1223c8401f3b",
+      "trap": "Efb8d940809d8"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 14,
+      "id": "ADV24_CROSS_TRAP_14",
+      "gold": "E55de9fe7e292",
+      "trap": "Eee8373a56c35"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 15,
+      "id": "ADV24_CROSS_TRAP_15",
+      "gold": "E950e6d1889a7",
+      "trap": "E5ad1d78097c2"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 16,
+      "id": "ADV24_CROSS_TRAP_16",
+      "gold": "Ecad15a48b55a",
+      "trap": "Eb1da77cfe50b"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 17,
+      "id": "ADV24_CROSS_TRAP_17",
+      "gold": "Ede949089b0de",
+      "trap": "Ec42016be1814"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 18,
+      "id": "ADV24_CROSS_TRAP_18",
+      "gold": "Ee6a16df6920d",
+      "trap": "E43cc7971418f"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 19,
+      "id": "ADV24_CROSS_TRAP_19",
+      "gold": "E49d1e3132f52",
+      "trap": "Ed748023b122a"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 20,
+      "id": "ADV24_CROSS_TRAP_20",
+      "gold": "Eae6b8113ccc3",
+      "trap": "E953f89395e28"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 21,
+      "id": "ADV24_CROSS_TRAP_21",
+      "gold": "E4bc2bae58aba",
+      "trap": "E5f9c43ec7635"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 22,
+      "id": "ADV24_CROSS_TRAP_22",
+      "gold": "E60c5dca1ba59",
+      "trap": "E2b1b86421655"
+    },
+    {
+      "arm": "CROSS_TRAP",
+      "i": 23,
+      "id": "ADV24_CROSS_TRAP_23",
+      "gold": "E6811dfd2455d",
+      "trap": "E44c6db6681a3"
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 0,
+      "id": "ADV24_PATH_TRAP_0",
+      "gold": "E78acadf49fbb",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 1,
+      "id": "ADV24_PATH_TRAP_1",
+      "gold": "Ea1fbeb8d0c4c",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 2,
+      "id": "ADV24_PATH_TRAP_2",
+      "gold": "E6ce136e7bf26",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 3,
+      "id": "ADV24_PATH_TRAP_3",
+      "gold": "E5c5e1e260c94",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 4,
+      "id": "ADV24_PATH_TRAP_4",
+      "gold": "E22cc1b320317",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 5,
+      "id": "ADV24_PATH_TRAP_5",
+      "gold": "E9476aa8d1c6c",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 6,
+      "id": "ADV24_PATH_TRAP_6",
+      "gold": "E8e4a76aa0fd4",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 7,
+      "id": "ADV24_PATH_TRAP_7",
+      "gold": "E612d2d60101e",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 8,
+      "id": "ADV24_PATH_TRAP_8",
+      "gold": "Ef10813d5c42e",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 9,
+      "id": "ADV24_PATH_TRAP_9",
+      "gold": "Ecc97fb315c8e",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 10,
+      "id": "ADV24_PATH_TRAP_10",
+      "gold": "E791c208055fc",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 11,
+      "id": "ADV24_PATH_TRAP_11",
+      "gold": "E6714abd6450a",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 12,
+      "id": "ADV24_PATH_TRAP_12",
+      "gold": "E68bdddd57f5d",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 13,
+      "id": "ADV24_PATH_TRAP_13",
+      "gold": "E1e45908f669b",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 14,
+      "id": "ADV24_PATH_TRAP_14",
+      "gold": "Ec54eb5cc7212",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 15,
+      "id": "ADV24_PATH_TRAP_15",
+      "gold": "Eeb75b0c25049",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 16,
+      "id": "ADV24_PATH_TRAP_16",
+      "gold": "E9b7b6785bfc6",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 17,
+      "id": "ADV24_PATH_TRAP_17",
+      "gold": "Eef8427437e73",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 18,
+      "id": "ADV24_PATH_TRAP_18",
+      "gold": "E7c30044ee847",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 19,
+      "id": "ADV24_PATH_TRAP_19",
+      "gold": "Eae2565cf7fb2",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 20,
+      "id": "ADV24_PATH_TRAP_20",
+      "gold": "Ebd4622c4576f",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 21,
+      "id": "ADV24_PATH_TRAP_21",
+      "gold": "E53649c8310a7",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 22,
+      "id": "ADV24_PATH_TRAP_22",
+      "gold": "E112a0416d9b8",
+      "trap": null
+    },
+    {
+      "arm": "PATH_TRAP",
+      "i": 23,
+      "id": "ADV24_PATH_TRAP_23",
+      "gold": "E715b5bf26e13",
+      "trap": null
+    }
+  ],
+  "note": "Does not replace locked n=6 adv_induction_harness.json"
+}

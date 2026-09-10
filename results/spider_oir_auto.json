@@ -1,0 +1,497 @@
+{
+  "model": "auto",
+  "n": 12,
+  "summary": {
+    "PLAIN_NL": {
+      "score": "12/12",
+      "wilson": {
+        "k": 12,
+        "n": 12,
+        "acc": 1.0,
+        "ci95": [
+          0.7575,
+          1.0
+        ],
+        "display": "12/12 [0.76,1.00]"
+      },
+      "missing": 0
+    },
+    "MILD_NL": {
+      "score": "4/12",
+      "wilson": {
+        "k": 4,
+        "n": 12,
+        "acc": 0.3333,
+        "ci95": [
+          0.1381,
+          0.6094
+        ],
+        "display": "4/12 [0.14,0.61]"
+      },
+      "missing": 0
+    },
+    "GOLD_SQL": {
+      "score": "3/12",
+      "wilson": {
+        "k": 3,
+        "n": 12,
+        "acc": 0.25,
+        "ci95": [
+          0.0889,
+          0.5323
+        ],
+        "display": "3/12 [0.09,0.53]"
+      },
+      "missing": 0
+    },
+    "MODEL_SQL": {
+      "score": "5/12",
+      "wilson": {
+        "k": 5,
+        "n": 12,
+        "acc": 0.4167,
+        "ci95": [
+          0.1933,
+          0.6805
+        ],
+        "display": "5/12 [0.19,0.68]"
+      },
+      "missing": 0
+    }
+  },
+  "nonclaim": "Not a Spider leaderboard. Small-DB slice. GOLD_SQL is ceiling. MODEL_SQL is G-Inc2.",
+  "rows": [
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_0",
+      "db": "employee_hire_evaluation",
+      "gold": "George Chuter",
+      "pred": "George Chuter",
+      "ok": true,
+      "q": "find the name of employee who was awarded the most times in the evaluation."
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_1",
+      "db": "employee_hire_evaluation",
+      "gold": "Louis Deacon",
+      "pred": "Louis Deacon",
+      "ok": true,
+      "q": "Find the name of the employee who got the highest one time bonus."
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_2",
+      "db": "employee_hire_evaluation",
+      "gold": "FC Haka",
+      "pred": "FC Haka",
+      "ok": true,
+      "q": "What is the name of the shop that is hiring the largest number of employees?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_3",
+      "db": "course_teach",
+      "gold": "Anne Walker",
+      "pred": "Anne Walker",
+      "ok": true,
+      "q": "Show names of teachers that teach at least two courses."
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_4",
+      "db": "museum_visit",
+      "gold": "570.84",
+      "pred": "570.84",
+      "ok": true,
+      "q": "What is the total ticket expense of the visitors whose membership level is 1?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_5",
+      "db": "museum_visit",
+      "gold": "Fernando Gago",
+      "pred": "Fernando Gago",
+      "ok": true,
+      "q": "What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_6",
+      "db": "poker_player",
+      "gold": "August 8, 1986",
+      "pred": "August 8, 1986",
+      "ok": true,
+      "q": "What is the birth date of the poker player with the lowest earnings?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_7",
+      "db": "poker_player",
+      "gold": "68.0",
+      "pred": "68.0",
+      "ok": true,
+      "q": "What is the money rank of the tallest poker player?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_8",
+      "db": "poker_player",
+      "gold": "309445.0",
+      "pred": "309445.0",
+      "ok": true,
+      "q": "What is the average earnings of poker players with height higher than 200?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_9",
+      "db": "network_1",
+      "gold": "Andrew",
+      "pred": "Andrew",
+      "ok": true,
+      "q": "What is the name of the high schooler who has the greatest number of friends?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_10",
+      "db": "network_1",
+      "gold": "Andrew",
+      "pred": "Andrew",
+      "ok": true,
+      "q": "Show the names of high schoolers who have at least 3 friends."
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "SP_PLAINNL_11",
+      "db": "network_1",
+      "gold": "Jordan",
+      "pred": "Jordan",
+      "ok": true,
+      "q": "Show the names of all of the high schooler Kyle's friends."
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_0",
+      "db": "employee_hire_evaluation",
+      "gold": "E145afaf21d5a",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "find the name of employee who was awarded the most times in the evaluation."
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_1",
+      "db": "employee_hire_evaluation",
+      "gold": "E573878f2ced5",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "Find the name of the employee who got the highest one time bonus."
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_2",
+      "db": "employee_hire_evaluation",
+      "gold": "Ecbeec41afc79",
+      "pred": "Ecbeec41afc79",
+      "ok": true,
+      "q": "What is the name of the shop that is hiring the largest number of employees?"
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_3",
+      "db": "course_teach",
+      "gold": "E87e945b52098",
+      "pred": "E87e945b52098",
+      "ok": true,
+      "q": "Show names of teachers that teach at least two courses."
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_4",
+      "db": "museum_visit",
+      "gold": "E79e354fb1876",
+      "pred": "E5a168b49f595",
+      "ok": false,
+      "q": "What is the total ticket expense of the visitors whose membership level is 1?"
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_5",
+      "db": "museum_visit",
+      "gold": "E808d75dbf5f4",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?"
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_6",
+      "db": "poker_player",
+      "gold": "Ef08f17509d68",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the birth date of the poker player with the lowest earnings?"
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_7",
+      "db": "poker_player",
+      "gold": "E228392832e72",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the money rank of the tallest poker player?"
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_8",
+      "db": "poker_player",
+      "gold": "E6b82cbd98e44",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the average earnings of poker players with height higher than 200?"
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_9",
+      "db": "network_1",
+      "gold": "E3005664bac57",
+      "pred": "E3005664bac57",
+      "ok": true,
+      "q": "What is the name of the high schooler who has the greatest number of friends?"
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_10",
+      "db": "network_1",
+      "gold": "E3005664bac57",
+      "pred": "E3005664bac57",
+      "ok": true,
+      "q": "Show the names of high schoolers who have at least 3 friends."
+    },
+    {
+      "arm": "MILD_NL",
+      "id": "SP_MILDNL_11",
+      "db": "network_1",
+      "gold": "Ee985164fd599",
+      "pred": "Ecbd79d055ebb",
+      "ok": false,
+      "q": "Show the names of all of the high schooler Kyle's friends."
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_0",
+      "db": "employee_hire_evaluation",
+      "gold": "E145afaf21d5a",
+      "pred": "E145afaf21d5a",
+      "ok": true,
+      "q": "find the name of employee who was awarded the most times in the evaluation."
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_1",
+      "db": "employee_hire_evaluation",
+      "gold": "E573878f2ced5",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "Find the name of the employee who got the highest one time bonus."
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_2",
+      "db": "employee_hire_evaluation",
+      "gold": "Ecbeec41afc79",
+      "pred": "Ecbeec41afc79",
+      "ok": true,
+      "q": "What is the name of the shop that is hiring the largest number of employees?"
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_3",
+      "db": "course_teach",
+      "gold": "E87e945b52098",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "Show names of teachers that teach at least two courses."
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_4",
+      "db": "museum_visit",
+      "gold": "E79e354fb1876",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the total ticket expense of the visitors whose membership level is 1?"
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_5",
+      "db": "museum_visit",
+      "gold": "E808d75dbf5f4",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?"
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_6",
+      "db": "poker_player",
+      "gold": "Ef08f17509d68",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the birth date of the poker player with the lowest earnings?"
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_7",
+      "db": "poker_player",
+      "gold": "E228392832e72",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the money rank of the tallest poker player?"
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_8",
+      "db": "poker_player",
+      "gold": "E6b82cbd98e44",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the average earnings of poker players with height higher than 200?"
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_9",
+      "db": "network_1",
+      "gold": "E3005664bac57",
+      "pred": "E3005664bac57",
+      "ok": true,
+      "q": "What is the name of the high schooler who has the greatest number of friends?"
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_10",
+      "db": "network_1",
+      "gold": "E3005664bac57",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "Show the names of high schoolers who have at least 3 friends."
+    },
+    {
+      "arm": "GOLD_SQL",
+      "id": "SP_GOLDSQL_11",
+      "db": "network_1",
+      "gold": "Ee985164fd599",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "Show the names of all of the high schooler Kyle's friends."
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_0",
+      "db": "employee_hire_evaluation",
+      "gold": "E145afaf21d5a",
+      "pred": "E145afaf21d5a",
+      "ok": true,
+      "q": "find the name of employee who was awarded the most times in the evaluation."
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_1",
+      "db": "employee_hire_evaluation",
+      "gold": "E573878f2ced5",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "Find the name of the employee who got the highest one time bonus."
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_2",
+      "db": "employee_hire_evaluation",
+      "gold": "Ecbeec41afc79",
+      "pred": "Ecbeec41afc79",
+      "ok": true,
+      "q": "What is the name of the shop that is hiring the largest number of employees?"
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_3",
+      "db": "course_teach",
+      "gold": "E87e945b52098",
+      "pred": "E87e945b52098",
+      "ok": true,
+      "q": "Show names of teachers that teach at least two courses."
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_4",
+      "db": "museum_visit",
+      "gold": "E79e354fb1876",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the total ticket expense of the visitors whose membership level is 1?"
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_5",
+      "db": "museum_visit",
+      "gold": "E808d75dbf5f4",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?"
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_6",
+      "db": "poker_player",
+      "gold": "Ef08f17509d68",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the birth date of the poker player with the lowest earnings?"
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_7",
+      "db": "poker_player",
+      "gold": "E228392832e72",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the money rank of the tallest poker player?"
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_8",
+      "db": "poker_player",
+      "gold": "E6b82cbd98e44",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "What is the average earnings of poker players with height higher than 200?"
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_9",
+      "db": "network_1",
+      "gold": "E3005664bac57",
+      "pred": "E3005664bac57",
+      "ok": true,
+      "q": "What is the name of the high schooler who has the greatest number of friends?"
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_10",
+      "db": "network_1",
+      "gold": "E3005664bac57",
+      "pred": "E3005664bac57",
+      "ok": true,
+      "q": "Show the names of high schoolers who have at least 3 friends."
+    },
+    {
+      "arm": "MODEL_SQL",
+      "id": "SP_MODELSQL_11",
+      "db": "network_1",
+      "gold": "Ee985164fd599",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "q": "Show the names of all of the high schooler Kyle's friends."
+    }
+  ]
+}

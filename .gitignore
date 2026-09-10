@@ -1,0 +1,59 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.mplconfig/
+.DS_Store
+.idea/
+.vscode/
+*.pt
+*.tgz
+*.tar.gz
+
+# TeX junk / local compiles (keep the canonical preprint PDF)
+paper/**/*.aux
+paper/**/*.log
+paper/**/*.out
+paper/**/*.synctex.gz
+paper/**/*.fdb_latexmk
+paper/**/*.fls
+paper/**/*.bbl
+paper/**/*.blg
+paper/_review_pages/
+paper/_audit_pages/
+paper/**/review_pages/
+paper/figures/*.pdf
+!paper/arxiv_upload/main.pdf
+
+# Third-party dumps — download from upstream (see data/README.md)
+data/spider/
+data/2wiki/
+data/benchmarks/
+data/metaqa/wiki_entities_kb.txt
+data/**/__MACOSX/
+
+# Secrets / local keys
+.env
+.env.*
+!.env.example
+*.pem
+*secret*.json
+credentials.json
+results/custom_three_arm/
+
+# Stale figure basenames (never ship; TeX uses fig1_matched_2x2 / fig2_opaque_paths)
+paper/**/fig1_dissociation_spine.*
+paper/**/fig2_cross_model_ceiling.*
+
+.coverage
+htmlcov/
+.tox/
+
+# Megabyte exploratory long-context packs (rebuildable; not paper spine)
+runs/longctx_1m/
+results/longctx_1m*

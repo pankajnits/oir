@@ -1,0 +1,182 @@
+{
+  "n": 12,
+  "suite": "spider_oir",
+  "license": "CC-BY-SA-4.0 (Spider)",
+  "paths": {
+    "PLAIN_NL": "runs/spider_oir/PLAIN_NL_ONLY/BATCH.txt",
+    "MILD_NL": "runs/spider_oir/MILD_NL_ONLY/BATCH.txt",
+    "GOLD_SQL": "runs/spider_oir/GOLD_SQL_ONLY/BATCH.txt",
+    "MODEL_SQL": "runs/spider_oir/MODEL_SQL_ONLY/BATCH.txt"
+  },
+  "cases": [
+    {
+      "i": 0,
+      "db_id": "employee_hire_evaluation",
+      "question": "find the name of employee who was awarded the most times in the evaluation.",
+      "query": "SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID GROUP BY t2.Employee_ID ORDER BY count(*) DESC LIMIT 1",
+      "expect_plain": "George Chuter",
+      "expect_seal": "E145afaf21d5a",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_0",
+        "MILD_NL": "SP_MILDNL_0",
+        "GOLD_SQL": "SP_GOLDSQL_0",
+        "MODEL_SQL": "SP_MODELSQL_0"
+      }
+    },
+    {
+      "i": 1,
+      "db_id": "employee_hire_evaluation",
+      "question": "Find the name of the employee who got the highest one time bonus.",
+      "query": "SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID ORDER BY t2.bonus DESC LIMIT 1",
+      "expect_plain": "Louis Deacon",
+      "expect_seal": "E573878f2ced5",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_1",
+        "MILD_NL": "SP_MILDNL_1",
+        "GOLD_SQL": "SP_GOLDSQL_1",
+        "MODEL_SQL": "SP_MODELSQL_1"
+      }
+    },
+    {
+      "i": 2,
+      "db_id": "employee_hire_evaluation",
+      "question": "What is the name of the shop that is hiring the largest number of employees?",
+      "query": "SELECT t2.name FROM hiring AS t1 JOIN shop AS t2 ON t1.shop_id  =  t2.shop_id GROUP BY t1.shop_id ORDER BY count(*) DESC LIMIT 1",
+      "expect_plain": "FC Haka",
+      "expect_seal": "Ecbeec41afc79",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_2",
+        "MILD_NL": "SP_MILDNL_2",
+        "GOLD_SQL": "SP_GOLDSQL_2",
+        "MODEL_SQL": "SP_MODELSQL_2"
+      }
+    },
+    {
+      "i": 3,
+      "db_id": "course_teach",
+      "question": "Show names of teachers that teach at least two courses.",
+      "query": "SELECT T2.Name FROM course_arrange AS T1 JOIN teacher AS T2 ON T1.Teacher_ID  =  T2.Teacher_ID GROUP BY T2.Name HAVING COUNT(*)  >=  2",
+      "expect_plain": "Anne Walker",
+      "expect_seal": "E87e945b52098",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_3",
+        "MILD_NL": "SP_MILDNL_3",
+        "GOLD_SQL": "SP_GOLDSQL_3",
+        "MODEL_SQL": "SP_MODELSQL_3"
+      }
+    },
+    {
+      "i": 4,
+      "db_id": "museum_visit",
+      "question": "What is the total ticket expense of the visitors whose membership level is 1?",
+      "query": "SELECT sum(t2.Total_spent) FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id WHERE t1.Level_of_membership  =  1",
+      "expect_plain": "570.84",
+      "expect_seal": "E79e354fb1876",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_4",
+        "MILD_NL": "SP_MILDNL_4",
+        "GOLD_SQL": "SP_GOLDSQL_4",
+        "MODEL_SQL": "SP_MODELSQL_4"
+      }
+    },
+    {
+      "i": 5,
+      "db_id": "museum_visit",
+      "question": "What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?",
+      "query": "SELECT t1.name FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id JOIN museum AS t3 ON t3.Museum_ID  =  t2.Museum_ID WHERE t3.open_year  <  2009 INTERSECT SELECT t1.name FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id JOIN museum AS t3 ON t3.Museum_ID  =  t2.Museum_ID WHERE t3.open_year  >  2011",
+      "expect_plain": "Fernando Gago",
+      "expect_seal": "E808d75dbf5f4",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_5",
+        "MILD_NL": "SP_MILDNL_5",
+        "GOLD_SQL": "SP_GOLDSQL_5",
+        "MODEL_SQL": "SP_MODELSQL_5"
+      }
+    },
+    {
+      "i": 6,
+      "db_id": "poker_player",
+      "question": "What is the birth date of the poker player with the lowest earnings?",
+      "query": "SELECT T1.Birth_Date FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Earnings ASC LIMIT 1",
+      "expect_plain": "August 8, 1986",
+      "expect_seal": "Ef08f17509d68",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_6",
+        "MILD_NL": "SP_MILDNL_6",
+        "GOLD_SQL": "SP_GOLDSQL_6",
+        "MODEL_SQL": "SP_MODELSQL_6"
+      }
+    },
+    {
+      "i": 7,
+      "db_id": "poker_player",
+      "question": "What is the money rank of the tallest poker player?",
+      "query": "SELECT T2.Money_Rank FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Height DESC LIMIT 1",
+      "expect_plain": "68.0",
+      "expect_seal": "E228392832e72",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_7",
+        "MILD_NL": "SP_MILDNL_7",
+        "GOLD_SQL": "SP_GOLDSQL_7",
+        "MODEL_SQL": "SP_MODELSQL_7"
+      }
+    },
+    {
+      "i": 8,
+      "db_id": "poker_player",
+      "question": "What is the average earnings of poker players with height higher than 200?",
+      "query": "SELECT avg(T2.Earnings) FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Height  >  200",
+      "expect_plain": "309445.0",
+      "expect_seal": "E6b82cbd98e44",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_8",
+        "MILD_NL": "SP_MILDNL_8",
+        "GOLD_SQL": "SP_GOLDSQL_8",
+        "MODEL_SQL": "SP_MODELSQL_8"
+      }
+    },
+    {
+      "i": 9,
+      "db_id": "network_1",
+      "question": "What is the name of the high schooler who has the greatest number of friends?",
+      "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id ORDER BY count(*) DESC LIMIT 1",
+      "expect_plain": "Andrew",
+      "expect_seal": "E3005664bac57",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_9",
+        "MILD_NL": "SP_MILDNL_9",
+        "GOLD_SQL": "SP_GOLDSQL_9",
+        "MODEL_SQL": "SP_MODELSQL_9"
+      }
+    },
+    {
+      "i": 10,
+      "db_id": "network_1",
+      "question": "Show the names of high schoolers who have at least 3 friends.",
+      "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id HAVING count(*)  >=  3",
+      "expect_plain": "Andrew",
+      "expect_seal": "E3005664bac57",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_10",
+        "MILD_NL": "SP_MILDNL_10",
+        "GOLD_SQL": "SP_GOLDSQL_10",
+        "MODEL_SQL": "SP_MODELSQL_10"
+      }
+    },
+    {
+      "i": 11,
+      "db_id": "network_1",
+      "question": "Show the names of all of the high schooler Kyle's friends.",
+      "query": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id JOIN Highschooler AS T3 ON T1.friend_id  =  T3.id WHERE T2.name  =  \"Kyle\"",
+      "expect_plain": "Jordan",
+      "expect_seal": "Ee985164fd599",
+      "ids": {
+        "PLAIN_NL": "SP_PLAINNL_11",
+        "MILD_NL": "SP_MILDNL_11",
+        "GOLD_SQL": "SP_GOLDSQL_11",
+        "MODEL_SQL": "SP_MODELSQL_11"
+      }
+    }
+  ],
+  "nonclaim": "Not a Spider leaderboard. Small-DB slice. GOLD_SQL is ceiling. MODEL_SQL is G-Inc2."
+}

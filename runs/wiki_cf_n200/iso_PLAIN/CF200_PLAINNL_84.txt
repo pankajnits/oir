@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_84 #####
+QUESTION:
+Where did Muawwaz Ibn Amr's father die?
+
+CONTEXT:
+Amr ibn al-Jamuh | place of death | CF_TAIL_84_BattleofUhud
+Muawwaz ibn Amr | father | Amr ibn al-Jamuh
+Aubrey Scotto | place of death | Los Angeles
+decoy_mid_84 | place of death | Battle of Uhud
+Sergei Eisenstein | date of death | 11 February 1948
+Muawwaz ibn Amr | decoy_link_84 | decoy_mid_84
+The General Line | director | Sergei Eisenstein
+Follow Your Heart | director | Aubrey Scotto

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_154 #####
+QUESTION:
+Where was the place of death of Crato, Count Of Nassau-Saarbrücken's father?
+
+CONTEXT:
+Juris Podnieks | date of death | June 23, 1992
+Vai viegli būt jaunam? | director | Juris Podnieks
+Majestic Hotel Cellars | director | Richard Pottier
+Crato, Count of Nassau-Saarbrücken | father | William Louis of Nassau-Saarbrücken
+decoy_mid_154 | place of death | Metz
+William Louis of Nassau-Saarbrücken | place of death | CF_TAIL_154_Metz
+Richard Pottier | place of death | Le Plessis-Bouchard
+Crato, Count of Nassau-Saarbrücken | decoy_link_154 | decoy_mid_154

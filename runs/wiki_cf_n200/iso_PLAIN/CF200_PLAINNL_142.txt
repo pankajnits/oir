@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_142 #####
+QUESTION:
+Where was the director of film A Winter Of Cyclists born?
+
+CONTEXT:
+Island in the Sun | director | Robert Rossen
+decoy_mid_142 | place of birth | Irish
+Mike Prendergast | place of birth | CF_TAIL_142_Irish
+A Winter of Cyclists | director | Mike Prendergast
+Robert Rossen | place of death | Hollywood
+Night of the Scarecrow | director | Jeff Burr
+Jeff Burr | place of birth | Aurora, Ohio
+A Winter of Cyclists | decoy_link_142 | decoy_mid_142

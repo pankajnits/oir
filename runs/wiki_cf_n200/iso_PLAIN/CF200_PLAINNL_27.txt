@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_27 #####
+QUESTION:
+Where did Constantine Palaiologos (Son Of Andronikos Ii)'s mother die?
+
+CONTEXT:
+William Drury | father | Sir Robert Drury
+decoy_mid_27 | place of death | Constantinople
+Constantine Doukas Komnenos Palaiologos | mother | Anna of Hungary
+Sir Robert Drury | country of citizenship | England
+Bronwyn Bancroft | place of birth | Tenterfield, New South Wales
+Ned Manning | spouse | Bronwyn Bancroft
+Constantine Doukas Komnenos Palaiologos | decoy_link_27 | decoy_mid_27
+Anna of Hungary | place of death | CF_TAIL_27_Constantinop

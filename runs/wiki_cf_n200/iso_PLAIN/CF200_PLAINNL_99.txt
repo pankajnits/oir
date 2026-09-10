@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_99 #####
+QUESTION:
+What is the place of birth of the director of film Dayere Zangi?
+
+CONTEXT:
+El Cantar de mi ciudad | director | José A. Ferreyra
+decoy_mid_99 | place of birth | Tehran
+Oei Oei Oei | performer | Johan Cruyff
+Parisa Bakhtavar | place of birth | CF_TAIL_99_Tehran
+Johan Cruyff | place of death | Barcelona
+Dayere Zangi | director | Parisa Bakhtavar
+José A. Ferreyra | place of death | Buenos Aires
+Dayere Zangi | decoy_link_99 | decoy_mid_99

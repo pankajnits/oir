@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_29 #####
+QUESTION:
+Where was the father of Thorvald Eiriksson born?
+
+CONTEXT:
+Reinhold Schünzel | place of birth | Hamburg
+Erik the Red | place of birth | CF_TAIL_29_Norway
+The Great Awakening | director | Reinhold Schünzel
+decoy_mid_29 | place of birth | Norway
+Thorvald Eiriksson | decoy_link_29 | decoy_mid_29
+Leophron | father | Anaxilas
+Thorvald Eiriksson | father | Erik the Red
+Anaxilas | place of birth | Reggio Calabria

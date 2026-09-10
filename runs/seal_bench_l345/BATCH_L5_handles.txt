@@ -1,0 +1,155 @@
+MODEL UNDER TEST. No tools. Answer EVERY ID. One answer line per ID.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID L5_G0_A_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=E2170ae8ddd2e B=Ee002f775f01d
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a E2170ae8ddd2e Eda7c8ec543ca Ee002f775f01d E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+E2170ae8ddd2e | E8830785bf19e | Edea321096312
+Ee002f775f01d | E8830785bf19e | E0fc68b7a035e
+Edea321096312 | E3e7182d58c91 | E358e03411714
+E0fc68b7a035e | E3e7182d58c91 | E358e03411714
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L5_G0_B_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=E2170ae8ddd2e B=Ee002f775f01d
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a E2170ae8ddd2e Eda7c8ec543ca Ee002f775f01d E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+E2170ae8ddd2e | E8830785bf19e | Edea321096312
+Ee002f775f01d | E8830785bf19e | E0fc68b7a035e
+Edea321096312 | E3e7182d58c91 | E36b9862aacdd
+E0fc68b7a035e | E3e7182d58c91 | Ea48d0e89ef93
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L5_G1_A_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=Ea682c1e8743b B=E924b206f1fd1
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a Ea682c1e8743b Eda7c8ec543ca E924b206f1fd1 E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+Ea682c1e8743b | E8830785bf19e | Eea07ed46559c
+E924b206f1fd1 | E8830785bf19e | E75e85948c36c
+Eea07ed46559c | E3e7182d58c91 | E803c0e07d427
+E75e85948c36c | E3e7182d58c91 | E803c0e07d427
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L5_G1_B_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=Ea682c1e8743b B=E924b206f1fd1
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a Ea682c1e8743b Eda7c8ec543ca E924b206f1fd1 E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+Ea682c1e8743b | E8830785bf19e | Eea07ed46559c
+E924b206f1fd1 | E8830785bf19e | E75e85948c36c
+Eea07ed46559c | E3e7182d58c91 | Ed799628f6a81
+E75e85948c36c | E3e7182d58c91 | E8d1f73f29d55
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L5_G2_A_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=E9546f30e072c B=E52f0d0a9dc0e
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a E9546f30e072c Eda7c8ec543ca E52f0d0a9dc0e E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+E9546f30e072c | E8830785bf19e | E064c9cdc5211
+E52f0d0a9dc0e | E8830785bf19e | E8c5da1008ec5
+E064c9cdc5211 | E3e7182d58c91 | Ef55548f9243b
+E8c5da1008ec5 | E3e7182d58c91 | Ef55548f9243b
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L5_G2_B_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=E9546f30e072c B=E52f0d0a9dc0e
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a E9546f30e072c Eda7c8ec543ca E52f0d0a9dc0e E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+E9546f30e072c | E8830785bf19e | E064c9cdc5211
+E52f0d0a9dc0e | E8830785bf19e | E8c5da1008ec5
+E064c9cdc5211 | E3e7182d58c91 | E743075fbcdb9
+E8c5da1008ec5 | E3e7182d58c91 | E9e2fe4ba0397
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L5_G3_A_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=Ec963e8c08b8a B=E5f3977e6444d
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a Ec963e8c08b8a Eda7c8ec543ca E5f3977e6444d E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+Ec963e8c08b8a | E8830785bf19e | E7db0306ac86c
+E5f3977e6444d | E8830785bf19e | Ef8a036eb062f
+E7db0306ac86c | E3e7182d58c91 | Eaf75d3b3e345
+Ef8a036eb062f | E3e7182d58c91 | Eaf75d3b3e345
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L5_G3_B_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles: A=Ec963e8c08b8a B=E5f3977e6444d
+works_at=E8830785bf19e located_in=E3e7182d58c91
+Find companies for A and B; find located_in cities; if same city return it else UNKNOWN.
+
+QUESTION:
+E70df509ea603 E1c824e9554d3 E91920b656f21 E867c5181478f E58b9fa35f72a Ec963e8c08b8a Eda7c8ec543ca E5f3977e6444d E0b7e2a49ffb3 E6c2991bd9e96 E68bb0f4c8acf E3e7182d58c91 (E68bb0f4c8acf E65420d9b719a E1ac7d00ca004). Edf01cc69e178 E844f2f3a2c61, E3a50f44886cd. Eea76add491f8 E91920b656f21 Ee2bf37deb9d6/E9dcf67071eaa E3d323901debc.
+
+CONTEXT:
+Ec963e8c08b8a | E8830785bf19e | E7db0306ac86c
+E5f3977e6444d | E8830785bf19e | Ef8a036eb062f
+E7db0306ac86c | E3e7182d58c91 | E56a63071c832
+Ef8a036eb062f | E3e7182d58c91 | E9544aef5b66f
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

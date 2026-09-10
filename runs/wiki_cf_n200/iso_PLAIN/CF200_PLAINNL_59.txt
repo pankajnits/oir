@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_59 #####
+QUESTION:
+Who is the child of the director of film Love Affair (Unreleased Film)?
+
+CONTEXT:
+Love Affair | director | Soni Razdan
+Dana Priest | employer | University of Maryland
+Soni Razdan | child | CF_TAIL_59_AliaBhatt
+Thaddeus Phelps Mott | father | Valentine Mott
+William Chester Goodfellow | spouse | Dana Priest
+decoy_mid_59 | child | Alia Bhatt
+Love Affair | decoy_link_59 | decoy_mid_59
+Valentine Mott | place of death | New York

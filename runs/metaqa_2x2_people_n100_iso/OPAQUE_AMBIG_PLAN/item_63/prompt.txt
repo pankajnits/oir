@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_63]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_63 #####
+QUESTION:
+Who directed a movie that Hedy Lamarr starred in?
+
+PATH_QUERY
+START Hedy Lamarr
+R1 Ecbf4e2dcd914
+R2 Ea83579777b70
+Execute path; return final tail only.
+
+CONTEXT:
+Hedy Lamarr | Ecbf4e2dcd914 | Experiment Perilous
+Experiment Perilous | Ea83579777b70 | Jacques Tourneur
+Experiment Perilous | Ea30e7ede0e1c | Margaret Carpenter

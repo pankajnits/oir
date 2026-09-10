@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_26]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_26 #####
+QUESTION:
+What city is the headquarters of the company led by Stacey_Snider?
+
+PATH_QUERY
+START Stacey_Snider
+R1 Ee2317188543d
+R2 E3e13812cbd53
+Execute path; return final tail only.
+
+CONTEXT:
+Stacey_Snider | Ee2317188543d | 20th_Century_Studios
+20th_Century_Studios | E3e13812cbd53 | Fox_Plaza
+Stacey_Snider | E8a90a14630e6 | Turner_Broadcasting_System
+Turner_Broadcasting_System | E63b9384dc44d | CNN_Center

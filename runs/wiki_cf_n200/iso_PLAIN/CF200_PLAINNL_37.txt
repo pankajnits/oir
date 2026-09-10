@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_37 #####
+QUESTION:
+What nationality is Dalfi D'Alvernha's father?
+
+CONTEXT:
+Charles Calvert, 5th Baron Baltimore | place of death | England
+William VII the Young of Auvergne | country of citizenship | CF_TAIL_37_France
+Benedict Swingate Calvert | father | Charles Calvert, 5th Baron Baltimore
+Dalfi d'Alvernha | father | William VII the Young of Auvergne
+Edward Fellowes | date of death | 9 August 1887
+Dalfi d'Alvernha | decoy_link_37 | decoy_mid_37
+ Ailwyn | father | Edward Fellowes
+decoy_mid_37 | country of citizenship | France

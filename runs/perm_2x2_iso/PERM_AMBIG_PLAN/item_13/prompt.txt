@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_13]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_13 #####
+QUESTION:
+What city is the headquarters of the company led by Anne_Lagercrantz?
+
+PATH_QUERY
+START Anne_Lagercrantz
+R1 E1f4111f074a9
+R2 Ec1ad5c05415a
+Execute path; return final tail only.
+
+CONTEXT:
+Anne_Lagercrantz | E1f4111f074a9 | Sveriges_Television
+Sveriges_Television | Ec1ad5c05415a | Stockholm
+Anne_Lagercrantz | Eed6c119a4153 | Powszechny_Zakad_Ubezpiecze
+Powszechny_Zakad_Ubezpiecze | E2f43bd177f5b | Warsaw

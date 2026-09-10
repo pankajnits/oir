@@ -1,0 +1,72 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[GREV1_UP_3]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM UNIQUE_PATH: unique 3-hop from START. Entities and relations sealed. No PATH. No legend. One quiz.
+
+##### ID GREV1_UP_3 #####
+QUESTION:
+E41245ed0bbc3 E9f25976f64de Ebde426e45a00 Eba4d26147ebc Edfb2c50d4dce E6b762e284d73 Eba4d26147ebc E9f6be560e524 E6b762e284d73 Ee509ac0b6cf3 Eef20cae738dc?
+
+CONTEXT:
+TABLE hop1
+| E2705397b25f0 | E8cb44bb8de78 |
+| --- | --- |
+| Ee509ac0b6cf3 | E8eb390046090 |
+| E9ddbc525b359 | E49ec4d76d9e2 |
+| E622c307912ba | E433ce8a2fdcc |
+| Ed2256b4171b6 | E8eb390046090 |
+
+TABLE hop2
+| Ea61946765d3d | E6087b07faf8a |
+| --- | --- |
+| E8eb390046090 | Ea3bb3280f037 |
+| E49ec4d76d9e2 | Ed7d175b54b73 |
+| E433ce8a2fdcc | Eee01547256b5 |
+| E8eb390046090 | Ea3bb3280f037 |
+
+TABLE hop3
+| Eba16ec156b74 | Eb4474c8b5cdb |
+| --- | --- |
+| Ea3bb3280f037 | Eb222431c9d9e |
+| Ed7d175b54b73 | E9d87d6a59653 |
+| Eee01547256b5 | E2d84ceb48e86 |
+| Ea3bb3280f037 | Eb222431c9d9e |
+
+JSON
+{
+  "use_case": "Ef1b8bcb6cf0b",
+  "graph": {
+    "Ee509ac0b6cf3": {
+      "E8cb44bb8de78": "E8eb390046090"
+    },
+    "E8eb390046090": {
+      "E6087b07faf8a": "Ea3bb3280f037"
+    },
+    "Ea3bb3280f037": {
+      "Eb4474c8b5cdb": "Eb222431c9d9e"
+    },
+    "E9ddbc525b359": {
+      "E8cb44bb8de78": "E49ec4d76d9e2"
+    },
+    "E49ec4d76d9e2": {
+      "E6087b07faf8a": "Ed7d175b54b73"
+    },
+    "Ed7d175b54b73": {
+      "Eb4474c8b5cdb": "E9d87d6a59653"
+    },
+    "E622c307912ba": {
+      "E8cb44bb8de78": "E433ce8a2fdcc"
+    },
+    "E433ce8a2fdcc": {
+      "E6087b07faf8a": "Eee01547256b5"
+    },
+    "Eee01547256b5": {
+      "Eb4474c8b5cdb": "E2d84ceb48e86"
+    },
+    "Ed2256b4171b6": {
+      "E8cb44bb8de78": "E8eb390046090"
+    }
+  },
+  "notes": "Ee509ac0b6cf3 E955a03ea68ac E075c2e1f415b: Ebbc52754bbfe Eef40375cd0b2 E5147303bfd01 Eb3a43b32c545, E9d31398ff318 E33f2a598ff5c E4705179fc820 E55b77fee99b5 E5c40033c92a2 E4caef89321d4 Eba4d26147ebc Eba7fd8071f27 E7faa888209d2 E2848e0ddec40"
+}

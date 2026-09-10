@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_18]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_18 #####
+QUESTION:
+What city is the headquarters of the company led by David_Zaslav?
+
+PATH_QUERY
+START David_Zaslav
+R1 E2749b516b7e2
+R2 E840c04ae6ed9
+Execute path; return final tail only.
+
+CONTEXT:
+David_Zaslav | E2749b516b7e2 | Warner_Bros_Discovery
+Warner_Bros_Discovery | E840c04ae6ed9 | New_York_City
+David_Zaslav | E100fea00a478 | Kansas_City_Southern
+Kansas_City_Southern | E42be35c2e745 | Kansas_City

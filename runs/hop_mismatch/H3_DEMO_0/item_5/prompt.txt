@@ -1,0 +1,22 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM H3_DEMO_0: 3-hop cycle quiz; no demos; no PATH.
+
+No demos. No path. No relation names.
+From START, output the sealed answer atom using only CONTEXT.
+
+##### ID HM_H3_DEMO_0_5 #####
+START E765fe9edfccc
+CONTEXT:
+E25d997ba83a3 | E3e5f6d81727c | E818013bf0a19
+Ebf4ffb580807 | E9576ec5a0841 | E765fe9edfccc
+Eef20814981ef | E3d0c85209598 | E25d997ba83a3
+E765fe9edfccc | E3e5f6d81727c | Eef20814981ef
+E785038b2f480 | E9dfa6cf668ca | Eef20814981ef
+Eef20814981ef | Ec1b263e31865 | E785038b2f480
+E765fe9edfccc | E50a417a53142 | Ebf4ffb580807
+Ea9c7407e9584 | Ee504ae0bc94e | E25d997ba83a3
+E25d997ba83a3 | Ec2fc750ef345 | Ea9c7407e9584
+

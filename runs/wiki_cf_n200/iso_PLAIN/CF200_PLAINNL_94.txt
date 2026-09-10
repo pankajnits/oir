@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_94 #####
+QUESTION:
+What is the place of birth of the director of film The Rain Of Sorrow?
+
+CONTEXT:
+Claude Nelson Warren | spouse | Elizabeth von Till Warren
+The Rain of Sorrow | decoy_link_94 | decoy_mid_94
+Tala Mi Daw | father | Binnya U
+Elizabeth von Till Warren | country of citizenship | American
+The Rain of Sorrow | director | Wang Yin
+decoy_mid_94 | place of birth | Shanghai
+Wang Yin | place of birth | CF_TAIL_94_Shanghai
+Binnya U | place of birth | Martaban

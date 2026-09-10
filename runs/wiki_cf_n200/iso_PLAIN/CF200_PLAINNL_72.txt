@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_72 #####
+QUESTION:
+What is the place of birth of Ratna Malla's father?
+
+CONTEXT:
+Archduke Karl Salvator of Austria | place of birth | Florence
+decoy_mid_72 | place of birth | Nepal
+Jüri Pootsmann | date of birth | 1 July 1994
+Jayayakshya Malla | place of birth | CF_TAIL_72_Nepal
+Ratna Malla | father | Jayayakshya Malla
+Ratna Malla | decoy_link_72 | decoy_mid_72
+Aga siis | performer | Jüri Pootsmann
+Archduchess Karoline Marie of Austria | father | Archduke Karl Salvator of Austria

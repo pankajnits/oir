@@ -1,0 +1,482 @@
+{
+  "n_instances": 8,
+  "n_cases": 48,
+  "rev": {
+    "Ec0528964979a": "DeltaVille",
+    "E28320012a6c9": "Where",
+    "E19387f3e2c5d": "is",
+    "Ee93e15139e78": "the",
+    "Ea49ac167c25a": "company",
+    "E6955f3e4a256": "located",
+    "Ee0c62d1c3805": "that",
+    "Ebd89882c7614": "Leo0",
+    "E38d65b1ac00c": "works_at",
+    "Eb2efc7f050d8": "Join",
+    "E53faca84695a": "then",
+    "E1b88a9646693": "located_in",
+    "Eabfb24181407": "Answer",
+    "E74b70218f762": "city",
+    "E643069b110f0": "only",
+    "E62d32f5d7924": "Acme",
+    "E70a0ddec0805": "NoraZ0",
+    "E83080907d250": "QuarkInc",
+    "Eca4367194315": "Meadow",
+    "E82bdff59b121": "Cedar",
+    "E6d26ba39e662": "Leo1",
+    "Ef7c88425cf35": "Orbital",
+    "E1da8da61f909": "KenZ1",
+    "E7caf4ca2dd23": "RidgeTech",
+    "Ec370cca2da83": "CityX",
+    "Ee643502318fd": "Jon2",
+    "Efb151c144707": "OmarZ2",
+    "E57eefe518dde": "NovaLtd",
+    "E827ad47bc40f": "Pinnacle",
+    "E65519778b813": "Nora3",
+    "Eb6f2baa1ed75": "KenZ3",
+    "Edddbe671cc14": "SummitAI",
+    "Ef33b2ba03ddf": "Oakport",
+    "E70b50065a7ab": "Mia4",
+    "E80ec2039454e": "OmarZ4",
+    "E496307436737": "Mia5",
+    "Ecb8086073a20": "RaviZ5",
+    "E7094aa03ad9c": "CityY",
+    "Ed7407c2a2b4d": "Omar6",
+    "Ec778719fb7cd": "RaviZ6",
+    "E450d79891a24": "Mia7",
+    "E7c7ad1641ac4": "RaviZ7"
+  },
+  "cases": [
+    {
+      "id": "G00_A_plain",
+      "graph": "G00",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G00_A_plain.txt"
+    },
+    {
+      "id": "G00_A_handles",
+      "graph": "G00",
+      "twin": "A",
+      "mode": "handles",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G00_A_handles.txt"
+    },
+    {
+      "id": "G00_A_nohint",
+      "graph": "G00",
+      "twin": "A",
+      "mode": "nohint",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G00_A_nohint.txt"
+    },
+    {
+      "id": "G00_B_plain",
+      "graph": "G00",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "Meadow",
+      "expect_sealed": "Eca4367194315",
+      "payload": "runs/seal_join_scaled/G00_B_plain.txt"
+    },
+    {
+      "id": "G00_B_handles",
+      "graph": "G00",
+      "twin": "B",
+      "mode": "handles",
+      "expect": "Meadow",
+      "expect_sealed": "Eca4367194315",
+      "payload": "runs/seal_join_scaled/G00_B_handles.txt"
+    },
+    {
+      "id": "G00_B_nohint",
+      "graph": "G00",
+      "twin": "B",
+      "mode": "nohint",
+      "expect": "Meadow",
+      "expect_sealed": "Eca4367194315",
+      "payload": "runs/seal_join_scaled/G00_B_nohint.txt"
+    },
+    {
+      "id": "G01_A_plain",
+      "graph": "G01",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G01_A_plain.txt"
+    },
+    {
+      "id": "G01_A_handles",
+      "graph": "G01",
+      "twin": "A",
+      "mode": "handles",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G01_A_handles.txt"
+    },
+    {
+      "id": "G01_A_nohint",
+      "graph": "G01",
+      "twin": "A",
+      "mode": "nohint",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G01_A_nohint.txt"
+    },
+    {
+      "id": "G01_B_plain",
+      "graph": "G01",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G01_B_plain.txt"
+    },
+    {
+      "id": "G01_B_handles",
+      "graph": "G01",
+      "twin": "B",
+      "mode": "handles",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G01_B_handles.txt"
+    },
+    {
+      "id": "G01_B_nohint",
+      "graph": "G01",
+      "twin": "B",
+      "mode": "nohint",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G01_B_nohint.txt"
+    },
+    {
+      "id": "G02_A_plain",
+      "graph": "G02",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "Meadow",
+      "expect_sealed": "Eca4367194315",
+      "payload": "runs/seal_join_scaled/G02_A_plain.txt"
+    },
+    {
+      "id": "G02_A_handles",
+      "graph": "G02",
+      "twin": "A",
+      "mode": "handles",
+      "expect": "Meadow",
+      "expect_sealed": "Eca4367194315",
+      "payload": "runs/seal_join_scaled/G02_A_handles.txt"
+    },
+    {
+      "id": "G02_A_nohint",
+      "graph": "G02",
+      "twin": "A",
+      "mode": "nohint",
+      "expect": "Meadow",
+      "expect_sealed": "Eca4367194315",
+      "payload": "runs/seal_join_scaled/G02_A_nohint.txt"
+    },
+    {
+      "id": "G02_B_plain",
+      "graph": "G02",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "Pinnacle",
+      "expect_sealed": "E827ad47bc40f",
+      "payload": "runs/seal_join_scaled/G02_B_plain.txt"
+    },
+    {
+      "id": "G02_B_handles",
+      "graph": "G02",
+      "twin": "B",
+      "mode": "handles",
+      "expect": "Pinnacle",
+      "expect_sealed": "E827ad47bc40f",
+      "payload": "runs/seal_join_scaled/G02_B_handles.txt"
+    },
+    {
+      "id": "G02_B_nohint",
+      "graph": "G02",
+      "twin": "B",
+      "mode": "nohint",
+      "expect": "Pinnacle",
+      "expect_sealed": "E827ad47bc40f",
+      "payload": "runs/seal_join_scaled/G02_B_nohint.txt"
+    },
+    {
+      "id": "G03_A_plain",
+      "graph": "G03",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G03_A_plain.txt"
+    },
+    {
+      "id": "G03_A_handles",
+      "graph": "G03",
+      "twin": "A",
+      "mode": "handles",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G03_A_handles.txt"
+    },
+    {
+      "id": "G03_A_nohint",
+      "graph": "G03",
+      "twin": "A",
+      "mode": "nohint",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G03_A_nohint.txt"
+    },
+    {
+      "id": "G03_B_plain",
+      "graph": "G03",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "Oakport",
+      "expect_sealed": "Ef33b2ba03ddf",
+      "payload": "runs/seal_join_scaled/G03_B_plain.txt"
+    },
+    {
+      "id": "G03_B_handles",
+      "graph": "G03",
+      "twin": "B",
+      "mode": "handles",
+      "expect": "Oakport",
+      "expect_sealed": "Ef33b2ba03ddf",
+      "payload": "runs/seal_join_scaled/G03_B_handles.txt"
+    },
+    {
+      "id": "G03_B_nohint",
+      "graph": "G03",
+      "twin": "B",
+      "mode": "nohint",
+      "expect": "Oakport",
+      "expect_sealed": "Ef33b2ba03ddf",
+      "payload": "runs/seal_join_scaled/G03_B_nohint.txt"
+    },
+    {
+      "id": "G04_A_plain",
+      "graph": "G04",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G04_A_plain.txt"
+    },
+    {
+      "id": "G04_A_handles",
+      "graph": "G04",
+      "twin": "A",
+      "mode": "handles",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G04_A_handles.txt"
+    },
+    {
+      "id": "G04_A_nohint",
+      "graph": "G04",
+      "twin": "A",
+      "mode": "nohint",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G04_A_nohint.txt"
+    },
+    {
+      "id": "G04_B_plain",
+      "graph": "G04",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G04_B_plain.txt"
+    },
+    {
+      "id": "G04_B_handles",
+      "graph": "G04",
+      "twin": "B",
+      "mode": "handles",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G04_B_handles.txt"
+    },
+    {
+      "id": "G04_B_nohint",
+      "graph": "G04",
+      "twin": "B",
+      "mode": "nohint",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G04_B_nohint.txt"
+    },
+    {
+      "id": "G05_A_plain",
+      "graph": "G05",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G05_A_plain.txt"
+    },
+    {
+      "id": "G05_A_handles",
+      "graph": "G05",
+      "twin": "A",
+      "mode": "handles",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G05_A_handles.txt"
+    },
+    {
+      "id": "G05_A_nohint",
+      "graph": "G05",
+      "twin": "A",
+      "mode": "nohint",
+      "expect": "CityX",
+      "expect_sealed": "Ec370cca2da83",
+      "payload": "runs/seal_join_scaled/G05_A_nohint.txt"
+    },
+    {
+      "id": "G05_B_plain",
+      "graph": "G05",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "Pinnacle",
+      "expect_sealed": "E827ad47bc40f",
+      "payload": "runs/seal_join_scaled/G05_B_plain.txt"
+    },
+    {
+      "id": "G05_B_handles",
+      "graph": "G05",
+      "twin": "B",
+      "mode": "handles",
+      "expect": "Pinnacle",
+      "expect_sealed": "E827ad47bc40f",
+      "payload": "runs/seal_join_scaled/G05_B_handles.txt"
+    },
+    {
+      "id": "G05_B_nohint",
+      "graph": "G05",
+      "twin": "B",
+      "mode": "nohint",
+      "expect": "Pinnacle",
+      "expect_sealed": "E827ad47bc40f",
+      "payload": "runs/seal_join_scaled/G05_B_nohint.txt"
+    },
+    {
+      "id": "G06_A_plain",
+      "graph": "G06",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "CityY",
+      "expect_sealed": "E7094aa03ad9c",
+      "payload": "runs/seal_join_scaled/G06_A_plain.txt"
+    },
+    {
+      "id": "G06_A_handles",
+      "graph": "G06",
+      "twin": "A",
+      "mode": "handles",
+      "expect": "CityY",
+      "expect_sealed": "E7094aa03ad9c",
+      "payload": "runs/seal_join_scaled/G06_A_handles.txt"
+    },
+    {
+      "id": "G06_A_nohint",
+      "graph": "G06",
+      "twin": "A",
+      "mode": "nohint",
+      "expect": "CityY",
+      "expect_sealed": "E7094aa03ad9c",
+      "payload": "runs/seal_join_scaled/G06_A_nohint.txt"
+    },
+    {
+      "id": "G06_B_plain",
+      "graph": "G06",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G06_B_plain.txt"
+    },
+    {
+      "id": "G06_B_handles",
+      "graph": "G06",
+      "twin": "B",
+      "mode": "handles",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G06_B_handles.txt"
+    },
+    {
+      "id": "G06_B_nohint",
+      "graph": "G06",
+      "twin": "B",
+      "mode": "nohint",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G06_B_nohint.txt"
+    },
+    {
+      "id": "G07_A_plain",
+      "graph": "G07",
+      "twin": "A",
+      "mode": "plain",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G07_A_plain.txt"
+    },
+    {
+      "id": "G07_A_handles",
+      "graph": "G07",
+      "twin": "A",
+      "mode": "handles",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G07_A_handles.txt"
+    },
+    {
+      "id": "G07_A_nohint",
+      "graph": "G07",
+      "twin": "A",
+      "mode": "nohint",
+      "expect": "DeltaVille",
+      "expect_sealed": "Ec0528964979a",
+      "payload": "runs/seal_join_scaled/G07_A_nohint.txt"
+    },
+    {
+      "id": "G07_B_plain",
+      "graph": "G07",
+      "twin": "B",
+      "mode": "plain",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G07_B_plain.txt"
+    },
+    {
+      "id": "G07_B_handles",
+      "graph": "G07",
+      "twin": "B",
+      "mode": "handles",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G07_B_handles.txt"
+    },
+    {
+      "id": "G07_B_nohint",
+      "graph": "G07",
+      "twin": "B",
+      "mode": "nohint",
+      "expect": "Cedar",
+      "expect_sealed": "E82bdff59b121",
+      "payload": "runs/seal_join_scaled/G07_B_nohint.txt"
+    }
+  ]
+}

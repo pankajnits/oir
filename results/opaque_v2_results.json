@@ -1,0 +1,167 @@
+{
+  "n": 12,
+  "theory": [
+    "induction heads \u2192 copy not sealed CoT",
+    "ciphered reasoning lit \u2192 avoid reasoning-in-seals",
+    "NUMEN n-gram hash \u2192 morphology under seals",
+    "ingest plaintext OK; query opaque"
+  ],
+  "opaque_retrieve_mean_gold_hit": 1.0,
+  "summary": {
+    "NL_pass": "0/12",
+    "V2_pass": "7/12",
+    "policy_NL": "0/6",
+    "policy_V2": "4/6",
+    "feta_NL": "0/6",
+    "feta_V2": "3/6",
+    "mean_NL_rubric": 0.0,
+    "mean_V2_rubric": 0.493
+  },
+  "rows": [
+    {
+      "id": "SUB_HR_0",
+      "doc": "hr_handbook",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": true,
+      "v2_rubric": 0.5,
+      "v2_evidence_recall": 1.0,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "12 week paid parental leave. 4"
+    },
+    {
+      "id": "SUB_HR_1",
+      "doc": "hr_handbook",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": false,
+      "v2_rubric": 0.25,
+      "v2_evidence_recall": 0.5,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "first full week of december pto proportional to hour worked. forfeited on january 1."
+    },
+    {
+      "id": "SUB_SUP_0",
+      "doc": "support_kb",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": true,
+      "v2_rubric": 0.67,
+      "v2_evidence_recall": 1.0,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "user security. required for all admin roles. authenticator app and hardware security key. was deprecated on march 1 2025"
+    },
+    {
+      "id": "SUB_SUP_1",
+      "doc": "support_kb",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": false,
+      "v2_rubric": 0.25,
+      "v2_evidence_recall": 0.5,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "user security. authenticator app and hardware security key. for all admin roles."
+    },
+    {
+      "id": "SUB_PRIV_0",
+      "doc": "privacy_policy",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": true,
+      "v2_rubric": 1.0,
+      "v2_evidence_recall": 1.0,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "profile data 24 month closure. 7 year tax compliance. 90 days."
+    },
+    {
+      "id": "SUB_PRIV_1",
+      "doc": "privacy_policy",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": true,
+      "v2_rubric": 1.0,
+      "v2_evidence_recall": 1.0,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "transfer may be processed in the united state and germany. clause apply for eea customers."
+    },
+    {
+      "id": "FETA_18904",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": false,
+      "v2_rubric": 0.0,
+      "v2_evidence_recall": 0.0,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "candidate vote farid khavari lateresa a. jone 20 186 0.3 5 951 561"
+    },
+    {
+      "id": "FETA_19172",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": true,
+      "v2_rubric": 0.75,
+      "v2_evidence_recall": 1.0,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "japan endurance championship driver advan sport nova porsche 962c"
+    },
+    {
+      "id": "FETA_20797",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": true,
+      "v2_rubric": 0.75,
+      "v2_evidence_recall": 1.0,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "1990 civic forum leadership election candidate vote clav klau 115 68.86"
+    },
+    {
+      "id": "FETA_19186",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": true,
+      "v2_rubric": 0.5,
+      "v2_evidence_recall": 1.0,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "candidate vote john nygren 16 081 59.05 8.63 joe reinhard 11 129 40.87"
+    },
+    {
+      "id": "FETA_13738",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": false,
+      "v2_rubric": 0.0,
+      "v2_evidence_recall": 0.67,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "title role note junction boys television film howard mclaughlin dead silence jamie ashen"
+    },
+    {
+      "id": "FETA_7975",
+      "doc": "feta",
+      "retrieve_hit": 1.0,
+      "nl_pass": false,
+      "nl_rubric": 0.0,
+      "v2_pass": false,
+      "v2_rubric": 0.25,
+      "v2_evidence_recall": 0.33,
+      "nl_unsealed": "UNKNOWN",
+      "v2_unsealed": "1979 91 division league reg. season playoff avg. attendance 6th did not qualify 11 058"
+    }
+  ],
+  "claim": "Opaque gen v2: sealed char-ngram BM25 retrieve + induction-copy generate. No gold lines. No cleartext C at query."
+}

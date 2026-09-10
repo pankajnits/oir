@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_17]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_17 #####
+QUESTION:
+What city is the headquarters of the company led by Luigi_Ferraris?
+
+PATH_QUERY
+START Luigi_Ferraris
+R1 E998ac328ef66
+R2 Eb5ea3fd6f3f0
+Execute path; return final tail only.
+
+CONTEXT:
+Luigi_Ferraris | E998ac328ef66 | Ferrovie_dello_Stato_Italiane
+Ferrovie_dello_Stato_Italiane | Eb5ea3fd6f3f0 | Rome
+Luigi_Ferraris | E6ea71bff7f9a | Warner_Bros_Discovery
+Warner_Bros_Discovery | E937baa995fa0 | New_York_City

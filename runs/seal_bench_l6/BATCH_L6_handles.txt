@@ -1,0 +1,179 @@
+MODEL UNDER TEST. No tools. Answer EVERY ID.
+
+Format: ANSWER_SEALED[<id>]: <city_or_UNKNOWN>
+
+
+##### ID L6_G0_A_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+A=E5f6246993945 B=E8153f8fc8e4c
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 E5f6246993945 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 E8153f8fc8e4c'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+E5f6246993945 | E8fc04ee41435 | E6aadbdd9f442
+E8153f8fc8e4c | E8fc04ee41435 | Eedad82f957c3
+Eb8dcaad23cb2 | E8fc04ee41435 | E6aadbdd9f442
+Eb8dcaad23cb2 | E4f76b32980e2 | E8153f8fc8e4c
+E6aadbdd9f442 | E23cdad3cb53c | E16492050a4d1
+Eedad82f957c3 | E23cdad3cb53c | E0e98b4f4386d
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID L6_G0_B_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+A=E5f6246993945 B=E8153f8fc8e4c
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 E5f6246993945 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 E8153f8fc8e4c'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+E5f6246993945 | E8fc04ee41435 | Eedad82f957c3
+E8153f8fc8e4c | E8fc04ee41435 | Eedad82f957c3
+Eb8dcaad23cb2 | E8fc04ee41435 | E6aadbdd9f442
+Eb8dcaad23cb2 | E4f76b32980e2 | E8153f8fc8e4c
+E6aadbdd9f442 | E23cdad3cb53c | E16492050a4d1
+Eedad82f957c3 | E23cdad3cb53c | E0e98b4f4386d
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID L6_G1_A_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+A=Ea99eaf0e4401 B=E853ccacf311e
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 Ea99eaf0e4401 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 E853ccacf311e'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+Ea99eaf0e4401 | E8fc04ee41435 | Efbde85eeb716
+E853ccacf311e | E8fc04ee41435 | E3bde63f4a8f4
+E988799059071 | E8fc04ee41435 | Efbde85eeb716
+E988799059071 | E4f76b32980e2 | E853ccacf311e
+Efbde85eeb716 | E23cdad3cb53c | E55849d8c9a24
+E3bde63f4a8f4 | E23cdad3cb53c | Efc47ce6dd8b4
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID L6_G1_B_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+A=Ea99eaf0e4401 B=E853ccacf311e
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 Ea99eaf0e4401 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 E853ccacf311e'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+Ea99eaf0e4401 | E8fc04ee41435 | E3bde63f4a8f4
+E853ccacf311e | E8fc04ee41435 | E3bde63f4a8f4
+E988799059071 | E8fc04ee41435 | Efbde85eeb716
+E988799059071 | E4f76b32980e2 | E853ccacf311e
+Efbde85eeb716 | E23cdad3cb53c | E55849d8c9a24
+E3bde63f4a8f4 | E23cdad3cb53c | Efc47ce6dd8b4
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID L6_G2_A_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+A=E1a8a60b07503 B=E61e928b88549
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 E1a8a60b07503 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 E61e928b88549'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+E1a8a60b07503 | E8fc04ee41435 | Eaed1dbfc3e95
+E61e928b88549 | E8fc04ee41435 | Ea4d54084f2ac
+Ea6e32cfc998a | E8fc04ee41435 | Eaed1dbfc3e95
+Ea6e32cfc998a | E4f76b32980e2 | E61e928b88549
+Eaed1dbfc3e95 | E23cdad3cb53c | E59d4d4f020c7
+Ea4d54084f2ac | E23cdad3cb53c | Eb5f525098b39
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID L6_G2_B_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+A=E1a8a60b07503 B=E61e928b88549
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 E1a8a60b07503 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 E61e928b88549'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+E1a8a60b07503 | E8fc04ee41435 | Ea4d54084f2ac
+E61e928b88549 | E8fc04ee41435 | Ea4d54084f2ac
+Ea6e32cfc998a | E8fc04ee41435 | Eaed1dbfc3e95
+Ea6e32cfc998a | E4f76b32980e2 | E61e928b88549
+Eaed1dbfc3e95 | E23cdad3cb53c | E59d4d4f020c7
+Ea4d54084f2ac | E23cdad3cb53c | Eb5f525098b39
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID L6_G3_A_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+A=E2d9f3b2c7840 B=Edb84a20f2153
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 E2d9f3b2c7840 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 Edb84a20f2153'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+E2d9f3b2c7840 | E8fc04ee41435 | E088f344c925b
+Edb84a20f2153 | E8fc04ee41435 | E401c49261d4e
+Ebc67ddeab0bf | E8fc04ee41435 | E088f344c925b
+Ebc67ddeab0bf | E4f76b32980e2 | Edb84a20f2153
+E088f344c925b | E23cdad3cb53c | E5e8ba67fa9f0
+E401c49261d4e | E23cdad3cb53c | E9bc6337e7f19
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID L6_G3_B_handles #####
+OPAQUE JOIN — no decryption.
+Handles:
+A=E2d9f3b2c7840 B=Edb84a20f2153
+works_at=E8fc04ee41435 located_in=E23cdad3cb53c
+Compute city_A and city_B; if city_A != city_B return city_A else UNKNOWN.
+
+QUESTION:
+E9a5978e04402 E6bfcc8e9d454 Eb6f113da63ae E7cf4c7ff09e6 E6bfcc8e9d454 E0a585bff2ea2 Eea828ad12b93 E2d9f3b2c7840 E8fc04ee41435, E2edfd6ef9783 Edb9405f331ee Eba127c2c6589 E6aeacdee52f6 Eb6f113da63ae Eb21e7dc4f2a5 E79e29607eddd E6bfcc8e9d454 Eb6f113da63ae Eea828ad12b93 Edb84a20f2153'E81c6bc6478f9 E0a585bff2ea2 Eb21e7dc4f2a5 E23cdad3cb53c. Ef7794b1fac32 E7a67096d9876.
+
+CONTEXT:
+E2d9f3b2c7840 | E8fc04ee41435 | E401c49261d4e
+Edb84a20f2153 | E8fc04ee41435 | E401c49261d4e
+Ebc67ddeab0bf | E8fc04ee41435 | E088f344c925b
+Ebc67ddeab0bf | E4f76b32980e2 | Edb84a20f2153
+E088f344c925b | E23cdad3cb53c | E5e8ba67fa9f0
+E401c49261d4e | E23cdad3cb53c | E9bc6337e7f19
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+

@@ -1,0 +1,57 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM FULLQ_PROG: question words HMAC-sealed; JSON keys and values sealed; JOIN names sealed keys. No plaintext names. One quiz.
+
+##### ID GREV1_FULLQ_PROG_1 #####
+QUESTION (fully token-HMAC'd by the layer; START left as a sealed id):
+E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 E670a09aaaa35?
+
+JOIN_QUERY
+START E670a09aaaa35
+In array E826c3ff68bff, match E66dc6fa9a878 = START, take Ec0166bbc0243.
+In array E21bad2ccb08f, match E66dc6fa9a878 = that employer, take E3ddb74c77130.E50fa5c3a0018.
+Return that atom.
+
+CONTEXT:
+{
+  "E826c3ff68bff": [
+    {
+      "E66dc6fa9a878": "Ea7a6bbd4278f",
+      "Ec0166bbc0243": "Ef3b31837eb38"
+    },
+    {
+      "E66dc6fa9a878": "E670a09aaaa35",
+      "Ec0166bbc0243": "E2e17861f404a"
+    },
+    {
+      "E66dc6fa9a878": "Ef5011ba6f633",
+      "Ec0166bbc0243": "Ed07603ec161a"
+    }
+  ],
+  "E21bad2ccb08f": [
+    {
+      "E66dc6fa9a878": "E2e17861f404a",
+      "E3ddb74c77130": {
+        "E50fa5c3a0018": "E7912e7706f6a",
+        "E6d5d6096cde3": "E23050f64ea02"
+      }
+    },
+    {
+      "E66dc6fa9a878": "Ed07603ec161a",
+      "E3ddb74c77130": {
+        "E50fa5c3a0018": "Ebd6442406bc8",
+        "E6d5d6096cde3": "Ef2f78be2bc8a"
+      }
+    },
+    {
+      "E66dc6fa9a878": "Ef3b31837eb38",
+      "E3ddb74c77130": {
+        "E6d5d6096cde3": "E5ac4f9ae61a6",
+        "E50fa5c3a0018": "Edb2d4c3ffaae"
+      }
+    }
+  ]
+}
+

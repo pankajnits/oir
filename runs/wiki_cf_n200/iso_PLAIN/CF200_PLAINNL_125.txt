@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_125 #####
+QUESTION:
+What nationality is the director of film The Return (2006 Film)?
+
+CONTEXT:
+Max McGraw | date of birth | 1 February 1883
+decoy_mid_125 | country of citizenship | British
+The Secret of Wera Baranska | director | Eugen Burg
+Eugen Burg | place of death | Theresienstadt concentration camp
+The Return | decoy_link_125 | decoy_mid_125
+Asif Kapadia | country of citizenship | CF_TAIL_125_British
+The Return | director | Asif Kapadia
+McGraw Electric | founded by | Max McGraw

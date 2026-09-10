@@ -1,0 +1,24 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[CURVE_K5_PLAN_30]: <city_or_UNKNOWN>
+ARM K5_PLAN: k=5 graph plus explicit sealed relation sequence.
+##### ID CURVE_K5_PLAN_30 #####
+QUESTION:
+What city is the headquarters of the company led by Mark_T_Bertolini?
+
+PATH_QUERY
+START Mark_T_Bertolini
+R1 Ea450bb9b3eec
+R2 E17014d930f44
+Execute path; return final tail only.
+
+CONTEXT:
+Mark_T_Bertolini | Ea450bb9b3eec | Aetna
+Aetna | E17014d930f44 | Hartford
+Mark_T_Bertolini | Eb71760f12447 | Cogent_Communications
+Cogent_Communications | Ee5f8b4bcbb2c | Washington_DC
+Mark_T_Bertolini | E1e3b12ce83fe | Kansas_City_Southern
+Kansas_City_Southern | Eb26231464eaa | Kansas_City
+Mark_T_Bertolini | E9d6c372f901b | Lacoste_SA
+Lacoste_SA | E21a6bef07cc9 | Paris
+Mark_T_Bertolini | Ee680ecbd5785 | Israel_Railways
+Israel_Railways | E6176a12df4ec | Lod_Railway_Station

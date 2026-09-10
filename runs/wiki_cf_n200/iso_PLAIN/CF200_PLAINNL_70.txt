@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_70 #####
+QUESTION:
+What is the place of birth of Thomas Mason (1770–1800)'s father?
+
+CONTEXT:
+Georges Lautner | mother | Renée Saint-Cyr
+Thomas Mason | decoy_link_70 | decoy_mid_70
+Thomas Mason | father | George Mason
+George Mason | place of birth | CF_TAIL_70_Fairfax
+Charles William Vane | place of death | London
+decoy_mid_70 | place of birth | Fairfax
+Death of a Corrupt Man | director | Georges Lautner
+Frances Anne Vane, Marchioness of Londonderry | spouse | Charles William Vane

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_178 #####
+QUESTION:
+What is the place of birth of the composer of song Vem Vet?
+
+CONTEXT:
+Vem vet | decoy_link_178 | decoy_mid_178
+Thomas Henty | father | Tommy Cooper
+Lisa Ekdahl | place of birth | CF_TAIL_178_Stockholm
+Tommy Cooper | date of death | 15 April 1984
+Hello My Dear Wrong Number | director | Priyadarshan
+Priyadarshan | country of citizenship | India
+Vem vet | composer | Lisa Ekdahl
+decoy_mid_178 | place of birth | Stockholm

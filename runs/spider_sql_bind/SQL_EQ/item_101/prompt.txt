@@ -1,0 +1,39 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_101]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_101 #####
+DB: train_station
+SCHEMA (English name → sealed sqlite identifier):
+station = Ed1e5e5df852b
+Station_ID = E43e6f8f84cbf
+Name = E6dc7e0d6d37c
+Annual_entry_exit = E43b992ffce7f
+Annual_interchanges = E288416d21b39
+Total_Passengers = E853dd86885e9
+Location = E6421e89e0b6c
+Main_Services = Ed4d5e3778322
+Number_of_Platforms = E9969041a1752
+train = Eff66647a5d23
+Train_ID = E423fffda9aff
+Time = Ecfd86312c6cf
+Service = E35d0966505ea
+train_station = E47173966e565
+
+station(Station_ID, Name, Annual_entry_exit, Annual_interchanges, Total_Passengers, Location, Main_Services, Number_of_Platforms)
+train(Train_ID, Name, Time, Service)
+train_station(Train_ID, Station_ID)
+
+QUESTION:
+What are the names of the stations which serve both "Ananthapuri Express" and "Guruvayur Express" trains?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

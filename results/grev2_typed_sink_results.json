@@ -1,0 +1,41 @@
+{
+  "claim": "G-Rev2 v2: PATH+typed-sink yields unique sealed answers under multi-out distractors. Prompt-local structural Reasoner matches symbolic typed-sink router; lexicon fails.",
+  "version": 2,
+  "seed": 11,
+  "n_train": 2000,
+  "summary": {
+    "hold_h2": {
+      "first_edge": "23/200",
+      "unique_router": "0/200",
+      "typed_sink_router": "200/200",
+      "struct_logreg": "200/200",
+      "global_count": "0/200"
+    },
+    "hold_h3_ood_depth": {
+      "first_edge": "4/100",
+      "unique_router": "0/100",
+      "typed_sink_router": "100/100",
+      "struct_logreg": "100/100",
+      "global_count": "0/100"
+    },
+    "hold_h2_decoy4": {
+      "first_edge": "11/200",
+      "unique_router": "0/200",
+      "typed_sink_router": "200/200",
+      "struct_logreg": "200/200",
+      "global_count": "0/200"
+    }
+  },
+  "model_weights": {
+    "w": [
+      8.815718403671445,
+      7.568482241376137,
+      3.741708486885832,
+      -1.5604177585195635,
+      -2.559328032356513
+    ],
+    "b": -0.8531093441188635
+  },
+  "reading": "Well-posed under distractors: typed_sink_router = ceiling. Struct logreg learns prompt-local continuable+typed features (not seal IDs). unique_router fails; global_count fails; first_edge ~chance. Still not G-Rev1 (PATH+type in program).",
+  "ts": 1786966724.4425359
+}

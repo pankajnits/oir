@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_101 #####
+QUESTION:
+Where does George Charles Wallich's father work at?
+
+CONTEXT:
+Chris Brown | award received | Grammy Award for Best R&B Album
+Two Tickets to Paradise | director | D. B. Sweeney
+George Charles Wallich | father | Nathaniel Wallich
+"Fine by Me | performer | Chris Brown
+decoy_mid_101 | employer | Calcutta Botanical Garden
+D. B. Sweeney | date of birth | November 14, 1961
+George Charles Wallich | decoy_link_101 | decoy_mid_101
+Nathaniel Wallich | employer | CF_TAIL_101_CalcuttaBota

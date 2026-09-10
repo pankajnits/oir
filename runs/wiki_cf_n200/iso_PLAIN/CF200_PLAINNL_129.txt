@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_129 #####
+QUESTION:
+Who is the spouse of the director of film Cross Country Cruise?
+
+CONTEXT:
+John Stark | place of burial | New Hampshire
+Ekaterina Yurevna Gubareva | spouse | Pavel Gubarev
+Caleb Stark | father | John Stark
+decoy_mid_129 | spouse | Ona Munson
+Cross Country Cruise | director | Edward Buzzell
+Edward Buzzell | spouse | CF_TAIL_129_OnaMunson
+Cross Country Cruise | decoy_link_129 | decoy_mid_129
+Pavel Gubarev | country of citizenship | Russian

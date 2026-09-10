@@ -1,0 +1,73 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_CX_NOLEG_3]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NOLEG family=COMPLEX use=HR: bound START, HMAC Q. No schema. No PATH.
+
+##### ID SLL_CX_NOLEG_3 #####
+QUESTION (token-HMAC'd):
+Ecba059bdfba8 Ea185fa42d81a E3faa84f56621 E1dcbabf83781 Ed707d8592762 E114eca869269 E1dcbabf83781 Ebf3e61f505d5 E114eca869269 E7dd12f1a370c Ed658a451152b?
+
+
+CONTEXT:
+TABLE hop1
+| E03dc10198ac1 | E970a5feddc02 |
+| --- | --- |
+| E7dd12f1a370c | Ece8e10d56318 |
+| Eb8dc8ea4f21a | E8dd6f9c36875 |
+| E24ce9a257667 | E7b3fdc40db55 |
+| E6b79c0459674 | Ece8e10d56318 |
+
+TABLE hop2
+| Effa76797d1d7 | E965e070f5b92 |
+| --- | --- |
+| Ece8e10d56318 | Ed20619292165 |
+| E8dd6f9c36875 | Ed08c6cfdc50f |
+| E7b3fdc40db55 | E8b531eb216ce |
+| Ece8e10d56318 | Ed20619292165 |
+
+TABLE hop3
+| E28e8144af88d | E87fdabbc16cb |
+| --- | --- |
+| Ed20619292165 | E12118c7a8dc8 |
+| Ed08c6cfdc50f | E9ca14a2c674d |
+| E8b531eb216ce | Ee7b711322203 |
+| Ed20619292165 | E12118c7a8dc8 |
+
+JSON
+{
+  "use_case": "E437aeb7c08d6",
+  "graph": {
+    "E7dd12f1a370c": {
+      "E970a5feddc02": "Ece8e10d56318"
+    },
+    "Ece8e10d56318": {
+      "E965e070f5b92": "Ed20619292165"
+    },
+    "Ed20619292165": {
+      "E87fdabbc16cb": "E12118c7a8dc8"
+    },
+    "Eb8dc8ea4f21a": {
+      "E970a5feddc02": "E8dd6f9c36875"
+    },
+    "E8dd6f9c36875": {
+      "E965e070f5b92": "Ed08c6cfdc50f"
+    },
+    "Ed08c6cfdc50f": {
+      "E87fdabbc16cb": "E9ca14a2c674d"
+    },
+    "E24ce9a257667": {
+      "E970a5feddc02": "E7b3fdc40db55"
+    },
+    "E7b3fdc40db55": {
+      "E965e070f5b92": "E8b531eb216ce"
+    },
+    "E8b531eb216ce": {
+      "E87fdabbc16cb": "Ee7b711322203"
+    },
+    "E6b79c0459674": {
+      "E970a5feddc02": "Ece8e10d56318"
+    }
+  },
+  "notes": "E7dd12f1a370c Ef27cf4912817 Eec5be385cf0e: E162ad2908438 Ec6f1147f1dbb Eaa61f742fa4c Ea1eed19c47e0, Ea288b0d19028 E8f94e0c45137 E5f5e2ecf82e9 Ea4d87e9725ae E049d56d83998 E175fe59c6679 E1dcbabf83781 E975a242a168b E21c0971e2e62 Ea7c742870da6"
+}

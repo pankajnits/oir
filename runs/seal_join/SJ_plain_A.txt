@@ -1,0 +1,14 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+Answer using CONTEXT triples only. Reply one line: ANSWER_PLAIN: <city>
+
+QUESTION: Where is the company located that Alice works_at? Join works_at then located_in. Answer the city only.
+
+CONTEXT (HEAD | REL | TAIL):
+Alice | works_at | Acme
+Bob | works_at | BetaCorp
+Carol | works_at | Acme
+Acme | located_in | CityX
+BetaCorp | located_in | CityY
+Alice | reports_to | Carol

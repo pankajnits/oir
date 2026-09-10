@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_117 #####
+QUESTION:
+Where was the director of film The Iron Man (Serial) born?
+
+CONTEXT:
+Slide Away | performer | Miley Cyrus
+Jay Marchant | place of birth | CF_TAIL_117_TrippCountyS
+Miley Cyrus | father | Billy Ray Cyrus
+Maurice de Saxe | father | Augustus II the Strong
+decoy_mid_117 | place of birth | Tripp County, South Dakota
+Augustus II the Strong | place of death | Warsaw
+The Iron Man | decoy_link_117 | decoy_mid_117
+The Iron Man | director | Jay Marchant

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_41]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_41 #####
+QUESTION:
+Who directed a movie that Maureen O'Hara starred in?
+
+PATH_QUERY
+START Maureen O'Hara
+R1 E7a9136664ebb
+R2 Ef72a3bb8fc4b
+Execute path; return final tail only.
+
+CONTEXT:
+Maureen O'Hara | E7a9136664ebb | The Black Swan
+The Black Swan | Ef72a3bb8fc4b | Henry King
+The Black Swan | Eaf4384316ba8 | Rafael Sabatini

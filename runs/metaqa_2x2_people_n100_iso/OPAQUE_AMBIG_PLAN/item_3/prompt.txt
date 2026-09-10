@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_3]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_3 #####
+QUESTION:
+Who directed a movie that Matt Dillon starred in?
+
+PATH_QUERY
+START Matt Dillon
+R1 Edb2b2e0dea52
+R2 E7b0dc1685e10
+Execute path; return final tail only.
+
+CONTEXT:
+Matt Dillon | Edb2b2e0dea52 | Golden Gate
+Golden Gate | E7b0dc1685e10 | John Madden
+Golden Gate | E6a2bdc076332 | David Henry Hwang

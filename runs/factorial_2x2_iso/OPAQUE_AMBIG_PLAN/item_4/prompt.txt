@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_4]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_4 #####
+QUESTION:
+What city is the headquarters of the company led by Krzysztof_Mamiski?
+
+PATH_QUERY
+START Krzysztof_Mamiski
+R1 E0a157f7b8b43
+R2 E80d1dcfc3dbc
+Execute path; return final tail only.
+
+CONTEXT:
+Krzysztof_Mamiski | E0a157f7b8b43 | Polish_State_Railways
+Polish_State_Railways | E80d1dcfc3dbc | Warsaw
+Krzysztof_Mamiski | Ea6db0136360b | Storstockholms_Lokaltrafik
+Storstockholms_Lokaltrafik | Ebacdf9417f0e | Stockholm

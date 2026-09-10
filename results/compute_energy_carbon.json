@@ -1,0 +1,123 @@
+{
+  "anchors_published": {
+    "DeepSeek_V3": {
+      "H800_hours": 2788000.0,
+      "USD_at_2": 5576000.0,
+      "note": "final run only; arXiv:2412.19437"
+    },
+    "Llama_3_1_8B": {
+      "H100_hours": 1460000.0
+    },
+    "Llama_3_1_70B": {
+      "H100_hours": 7000000.0
+    },
+    "Llama_3_1_405B": {
+      "H100_hours": 30840000.0
+    },
+    "Llama_3_70B_energy_card": {
+      "H100_hours": 1720000.0,
+      "kWh_gpu_reported_order": 6400000.0,
+      "note": "Meta model card ~1.72M H100-h; ~6.4 GWh GPU-only cited in secondary sources"
+    },
+    "small_RL_reasoner": {
+      "USD": 42,
+      "cite": "arXiv:2503.16219"
+    },
+    "hardware": {
+      "H100_TDP_W": 700,
+      "train_util_vs_TDP": 0.76,
+      "PUE": 1.25,
+      "kgCO2_per_kWh_location": 0.385
+    }
+  },
+  "energy_from_gpu_hours": {
+    "monolith_frontierish_70B_chinchilla": {
+      "kWh_gpu_only": 173786.7,
+      "kWh_wall_PUE": 217233.4,
+      "tCO2e_location": 83.635
+    },
+    "monolith_8B_web": {
+      "kWh_gpu_only": 28373.3,
+      "kWh_wall_PUE": 35466.6,
+      "tCO2e_location": 13.655
+    },
+    "language_only_8B_web": {
+      "kWh_gpu_only": 28373.3,
+      "kWh_wall_PUE": 35466.6,
+      "tCO2e_location": 13.655
+    },
+    "reasoner_3B_programs": {
+      "kWh_gpu_only": 266.0,
+      "kWh_wall_PUE": 332.5,
+      "tCO2e_location": 0.128
+    },
+    "reasoner_1p5B_RL_anchor": {
+      "kWh_gpu_only": 2.7,
+      "kWh_wall_PUE": 3.3,
+      "tCO2e_location": 0.001
+    },
+    "deepseek_v3_reported_scale": {
+      "kWh_gpu_only": 971077.3,
+      "kWh_wall_PUE": 1213846.6,
+      "tCO2e_location": 467.331
+    },
+    "DeepSeek_V3": {
+      "kWh_gpu_only": 1483216.0,
+      "kWh_wall_PUE": 1854020.0,
+      "tCO2e_location": 713.798
+    },
+    "Llama_3_1_8B": {
+      "kWh_gpu_only": 776720.0,
+      "kWh_wall_PUE": 970900.0,
+      "tCO2e_location": 373.796
+    },
+    "Llama_3_1_70B": {
+      "kWh_gpu_only": 3724000.0,
+      "kWh_wall_PUE": 4655000.0,
+      "tCO2e_location": 1792.175
+    },
+    "Llama_3_1_405B": {
+      "kWh_gpu_only": 16406880.0,
+      "kWh_wall_PUE": 20508600.0,
+      "tCO2e_location": 7895.811
+    },
+    "Llama_3_70B_energy_card": {
+      "kWh_gpu_only": 915040.0,
+      "kWh_wall_PUE": 1143800.0,
+      "tCO2e_location": 440.363
+    }
+  },
+  "architecture_energy_compare": {
+    "monolith_70B": {
+      "kWh_gpu_only": 173786.7,
+      "kWh_wall_PUE": 217233.4,
+      "tCO2e_location": 83.635
+    },
+    "language_8B_web": {
+      "kWh_gpu_only": 28373.3,
+      "kWh_wall_PUE": 35466.6,
+      "tCO2e_location": 13.655
+    },
+    "reasoner_3B_programs": {
+      "kWh_gpu_only": 266.0,
+      "kWh_wall_PUE": 332.5,
+      "tCO2e_location": 0.128
+    },
+    "sealrouter": {
+      "kWh_wall_PUE": 0.0,
+      "tCO2e_location": 0.0
+    },
+    "split_lang_plus_reasoner": {
+      "kWh_gpu_only": 28639.3,
+      "kWh_wall_PUE": 35799.1,
+      "tCO2e_location": 13.783
+    },
+    "split_lang_plus_sealrouter": {
+      "kWh_gpu_only": 28373.3,
+      "kWh_wall_PUE": 35466.6,
+      "tCO2e_location": 13.655
+    },
+    "ratio_mono70_wall_over_split_seal": 6.1
+  },
+  "method": "kWh_gpu = GPU-h \u00d7 TDP_kW \u00d7 util; kWh_wall = kWh_gpu \u00d7 PUE; tCO2e = kWh_wall \u00d7 kg/kWh / 1000"
+}

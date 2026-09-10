@@ -1,0 +1,576 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID.
+
+LOOKUP recommended_action in sealed notes.
+
+##### ID CXSUBJ_PROG_0 #####
+LOOKUP_QUERY
+FIELD Ebbff968de9c9
+NOTES contain the action token. Return that sealed action token only.
+
+CONTEXT:
+TABLE hop1
+| Ed4c31ca9d6f2 | E144db5363738 |
+| --- | --- |
+| Eea4fca279a9e | E6136f0a8d2b4 |
+| Ec33c5ca6ccf7 | Ed3f67b3e439c |
+| Ec57817f60dd1 | E64048e2ce6d5 |
+| E6e1c0e8e35c9 | E6136f0a8d2b4 |
+
+TABLE hop2
+| E00e3d2993f04 | E899113c0b950 |
+| --- | --- |
+| E6136f0a8d2b4 | E5157dc144a52 |
+| Ed3f67b3e439c | Ef7cbadee457b |
+| E64048e2ce6d5 | Eab2a2a023583 |
+| E6136f0a8d2b4 | E5157dc144a52 |
+
+TABLE hop3
+| E8a7fa1f611c0 | Ee1b5d5508c2d |
+| --- | --- |
+| E5157dc144a52 | E536468dfed39 |
+| Ef7cbadee457b | E0b50eb5b875d |
+| Eab2a2a023583 | E28eab463d016 |
+| E5157dc144a52 | E536468dfed39 |
+
+JSON
+{
+  "use_case": "Ef0e8b3472509",
+  "graph": {
+    "Eea4fca279a9e": {
+      "E144db5363738": "E6136f0a8d2b4"
+    },
+    "E6136f0a8d2b4": {
+      "E899113c0b950": "E5157dc144a52"
+    },
+    "E5157dc144a52": {
+      "Ee1b5d5508c2d": "E536468dfed39"
+    },
+    "Ec33c5ca6ccf7": {
+      "E144db5363738": "Ed3f67b3e439c"
+    },
+    "Ed3f67b3e439c": {
+      "E899113c0b950": "Ef7cbadee457b"
+    },
+    "Ef7cbadee457b": {
+      "Ee1b5d5508c2d": "E0b50eb5b875d"
+    },
+    "Ec57817f60dd1": {
+      "E144db5363738": "E64048e2ce6d5"
+    },
+    "E64048e2ce6d5": {
+      "E899113c0b950": "Eab2a2a023583"
+    },
+    "Eab2a2a023583": {
+      "Ee1b5d5508c2d": "E28eab463d016"
+    },
+    "E6e1c0e8e35c9": {
+      "E144db5363738": "E6136f0a8d2b4"
+    }
+  },
+  "notes": "Eea4fca279a9e E3362f1a56e30 E5c8b3dedd2e6: Eb0a9bfc41118 Ed19e45df902c Ef232f4a81af1 Eef52db885958, Ef92fc5a2ccc8 E941c9f7a7002 E4f44dd160899 E4e072abc08c0 E7163afad1603 E9eeb8373dba8 Ea52e5156eed4 Eaecbb4c3ee86 E510ce62dd00c E4a4b889b8b16"
+}
+
+##### ID CXSUBJ_PROG_1 #####
+LOOKUP_QUERY
+FIELD Ebbff968de9c9
+NOTES contain the action token. Return that sealed action token only.
+
+CONTEXT:
+TABLE hop1
+| Ed4c31ca9d6f2 | E1f3b97ab3ce5 |
+| --- | --- |
+| Ecee0bdeb51c5 | E49fc02ecfb4a |
+| E2bc22e4e248c | Ed90f7efae10f |
+| E08dc78bc3fab | E437807305490 |
+| E9cd4694a35f7 | E41a636ccd061 |
+
+TABLE hop2
+| E00e3d2993f04 | E2b77198280dc |
+| --- | --- |
+| E49fc02ecfb4a | E879faf92f5f4 |
+| Ed90f7efae10f | Ea60d5210246f |
+| E437807305490 | Ea037da7a6287 |
+| E41a636ccd061 | Ec98a6a7aac97 |
+
+TABLE hop3
+| E8a7fa1f611c0 | Ecb739dbb84bb |
+| --- | --- |
+| E879faf92f5f4 | E28eab463d016 |
+| Ea60d5210246f | Ee4bc30e6f930 |
+| Ea037da7a6287 | E06531c79933b |
+| Ec98a6a7aac97 | Ee22b6815aaf6 |
+
+JSON
+{
+  "use_case": "E9e5ebfcf7486",
+  "graph": {
+    "Ecee0bdeb51c5": {
+      "E1f3b97ab3ce5": "E49fc02ecfb4a"
+    },
+    "E49fc02ecfb4a": {
+      "E2b77198280dc": "E879faf92f5f4"
+    },
+    "E879faf92f5f4": {
+      "Ecb739dbb84bb": "E28eab463d016"
+    },
+    "E2bc22e4e248c": {
+      "E1f3b97ab3ce5": "Ed90f7efae10f"
+    },
+    "Ed90f7efae10f": {
+      "E2b77198280dc": "Ea60d5210246f"
+    },
+    "Ea60d5210246f": {
+      "Ecb739dbb84bb": "Ee4bc30e6f930"
+    },
+    "E08dc78bc3fab": {
+      "E1f3b97ab3ce5": "E437807305490"
+    },
+    "E437807305490": {
+      "E2b77198280dc": "Ea037da7a6287"
+    },
+    "Ea037da7a6287": {
+      "Ecb739dbb84bb": "E06531c79933b"
+    },
+    "E9cd4694a35f7": {
+      "E1f3b97ab3ce5": "E41a636ccd061"
+    },
+    "E41a636ccd061": {
+      "E2b77198280dc": "Ec98a6a7aac97"
+    },
+    "Ec98a6a7aac97": {
+      "Ecb739dbb84bb": "Ee22b6815aaf6"
+    }
+  },
+  "notes": "E6b7dbd3c81b1 Ecee0bdeb51c5: Ec5f7ad7332ea E9da5ba1cdf81 Ee01c3e0aa3f9 E310656949521 E8d451e83c120 E18c3051f6413 Ee3edb56d2367, E3dc014881991 E941c9f7a7002 E30c8e80a648e E510ce62dd00c E7df44a33edce"
+}
+
+##### ID CXSUBJ_PROG_2 #####
+LOOKUP_QUERY
+FIELD Ebbff968de9c9
+NOTES contain the action token. Return that sealed action token only.
+
+CONTEXT:
+TABLE hop1
+| Ed4c31ca9d6f2 | E2c511c8c71c5 |
+| --- | --- |
+| Eeafe5c0bc74d | Eeab325bd5e7a |
+| Ed0d45872adef | Eb12bfbc587ec |
+| E0a2db9800000 | E5012a6692a38 |
+| Eeafe5c0bc74d | Ec350aad23b18 |
+
+TABLE hop2
+| E00e3d2993f04 | E827fbacf4a78 |
+| --- | --- |
+| Eeab325bd5e7a | E838230c64da7 |
+| Eb12bfbc587ec | E05ebbaa44769 |
+| E5012a6692a38 | Eabf0d962ac7e |
+| Ec350aad23b18 | Eb14c97ca15aa |
+
+TABLE hop3
+| E8a7fa1f611c0 | Ef2d91f1f0da0 |
+| --- | --- |
+| E838230c64da7 | E28eab463d016 |
+| E05ebbaa44769 | E62827d4ab9ee |
+| Eabf0d962ac7e | E4444d54d3e85 |
+| Eb14c97ca15aa | E28eab463d016 |
+
+JSON
+{
+  "use_case": "Ef2b580db92c4",
+  "graph": {
+    "Eeafe5c0bc74d": {
+      "E2c511c8c71c5": "Ec350aad23b18"
+    },
+    "Eeab325bd5e7a": {
+      "E827fbacf4a78": "E838230c64da7"
+    },
+    "E838230c64da7": {
+      "Ef2d91f1f0da0": "E28eab463d016"
+    },
+    "Ed0d45872adef": {
+      "E2c511c8c71c5": "Eb12bfbc587ec"
+    },
+    "Eb12bfbc587ec": {
+      "E827fbacf4a78": "E05ebbaa44769"
+    },
+    "E05ebbaa44769": {
+      "Ef2d91f1f0da0": "E62827d4ab9ee"
+    },
+    "E0a2db9800000": {
+      "E2c511c8c71c5": "E5012a6692a38"
+    },
+    "E5012a6692a38": {
+      "E827fbacf4a78": "Eabf0d962ac7e"
+    },
+    "Eabf0d962ac7e": {
+      "Ef2d91f1f0da0": "E4444d54d3e85"
+    },
+    "Ec350aad23b18": {
+      "E827fbacf4a78": "Eb14c97ca15aa"
+    },
+    "Eb14c97ca15aa": {
+      "Ef2d91f1f0da0": "E28eab463d016"
+    }
+  },
+  "notes": "E1ed901134c40 Eeafe5c0bc74d Ecf6d82b3766d E310656949521 E527d47adaad8 E8dac57b2e803 E4817dbf576fe E58451ee90610, E41587391b659 E941c9f7a7002 E7b6c936682e0 E510ce62dd00c E8d4894ce2845"
+}
+
+##### ID CXSUBJ_PROG_3 #####
+LOOKUP_QUERY
+FIELD Ebbff968de9c9
+NOTES contain the action token. Return that sealed action token only.
+
+CONTEXT:
+TABLE hop1
+| Ed4c31ca9d6f2 | E144db5363738 |
+| --- | --- |
+| E0abee97e2d5d | E13a5c9d748f4 |
+| Ed978974f32e5 | E1d42c299e4ba |
+| E036089401ccb | Ef4b45145a282 |
+| E57fe370b470a | E13a5c9d748f4 |
+
+TABLE hop2
+| E00e3d2993f04 | E899113c0b950 |
+| --- | --- |
+| E13a5c9d748f4 | Edb853c1afa54 |
+| E1d42c299e4ba | Ec5f4f2214f3d |
+| Ef4b45145a282 | E6ee2201e3046 |
+| E13a5c9d748f4 | Edb853c1afa54 |
+
+TABLE hop3
+| E8a7fa1f611c0 | Ee1b5d5508c2d |
+| --- | --- |
+| Edb853c1afa54 | Ec87055a5ed03 |
+| Ec5f4f2214f3d | E0b50eb5b875d |
+| E6ee2201e3046 | E28eab463d016 |
+| Edb853c1afa54 | Ec87055a5ed03 |
+
+JSON
+{
+  "use_case": "Ef0e8b3472509",
+  "graph": {
+    "E0abee97e2d5d": {
+      "E144db5363738": "E13a5c9d748f4"
+    },
+    "E13a5c9d748f4": {
+      "E899113c0b950": "Edb853c1afa54"
+    },
+    "Edb853c1afa54": {
+      "Ee1b5d5508c2d": "Ec87055a5ed03"
+    },
+    "Ed978974f32e5": {
+      "E144db5363738": "E1d42c299e4ba"
+    },
+    "E1d42c299e4ba": {
+      "E899113c0b950": "Ec5f4f2214f3d"
+    },
+    "Ec5f4f2214f3d": {
+      "Ee1b5d5508c2d": "E0b50eb5b875d"
+    },
+    "E036089401ccb": {
+      "E144db5363738": "Ef4b45145a282"
+    },
+    "Ef4b45145a282": {
+      "E899113c0b950": "E6ee2201e3046"
+    },
+    "E6ee2201e3046": {
+      "Ee1b5d5508c2d": "E28eab463d016"
+    },
+    "E57fe370b470a": {
+      "E144db5363738": "E13a5c9d748f4"
+    }
+  },
+  "notes": "E0abee97e2d5d E3362f1a56e30 E5c8b3dedd2e6: Eb0a9bfc41118 Ed19e45df902c Ef232f4a81af1 Eef52db885958, Ef92fc5a2ccc8 E941c9f7a7002 E4f44dd160899 E4e072abc08c0 E7163afad1603 E9eeb8373dba8 Ea52e5156eed4 Eaecbb4c3ee86 E510ce62dd00c E4a4b889b8b16"
+}
+
+##### ID CXSUBJ_PROG_4 #####
+LOOKUP_QUERY
+FIELD Ebbff968de9c9
+NOTES contain the action token. Return that sealed action token only.
+
+CONTEXT:
+TABLE hop1
+| Ed4c31ca9d6f2 | E1f3b97ab3ce5 |
+| --- | --- |
+| Ebe8516e2a66a | E95f7ed5ebbc5 |
+| Eed87b6cafbd8 | E260ddd4733b2 |
+| E43e0272e9903 | E5380dc288de5 |
+| E5f04c315fd5d | Eaf34e97f75eb |
+
+TABLE hop2
+| E00e3d2993f04 | E2b77198280dc |
+| --- | --- |
+| E95f7ed5ebbc5 | E4ba57696575a |
+| E260ddd4733b2 | Ed0c65115e28a |
+| E5380dc288de5 | E5ae331b73e33 |
+| Eaf34e97f75eb | Ee6e1041b6345 |
+
+TABLE hop3
+| E8a7fa1f611c0 | Ecb739dbb84bb |
+| --- | --- |
+| E4ba57696575a | E4444d54d3e85 |
+| Ed0c65115e28a | Ed43349d4d899 |
+| E5ae331b73e33 | Eac3cc40a4303 |
+| Ee6e1041b6345 | E8bb28d7774ed |
+
+JSON
+{
+  "use_case": "E9e5ebfcf7486",
+  "graph": {
+    "Ebe8516e2a66a": {
+      "E1f3b97ab3ce5": "E95f7ed5ebbc5"
+    },
+    "E95f7ed5ebbc5": {
+      "E2b77198280dc": "E4ba57696575a"
+    },
+    "E4ba57696575a": {
+      "Ecb739dbb84bb": "E4444d54d3e85"
+    },
+    "Eed87b6cafbd8": {
+      "E1f3b97ab3ce5": "E260ddd4733b2"
+    },
+    "E260ddd4733b2": {
+      "E2b77198280dc": "Ed0c65115e28a"
+    },
+    "Ed0c65115e28a": {
+      "Ecb739dbb84bb": "Ed43349d4d899"
+    },
+    "E43e0272e9903": {
+      "E1f3b97ab3ce5": "E5380dc288de5"
+    },
+    "E5380dc288de5": {
+      "E2b77198280dc": "E5ae331b73e33"
+    },
+    "E5ae331b73e33": {
+      "Ecb739dbb84bb": "Eac3cc40a4303"
+    },
+    "E5f04c315fd5d": {
+      "E1f3b97ab3ce5": "Eaf34e97f75eb"
+    },
+    "Eaf34e97f75eb": {
+      "E2b77198280dc": "Ee6e1041b6345"
+    },
+    "Ee6e1041b6345": {
+      "Ecb739dbb84bb": "E8bb28d7774ed"
+    }
+  },
+  "notes": "E6b7dbd3c81b1 Ebe8516e2a66a: Ec5f7ad7332ea E9da5ba1cdf81 Ee01c3e0aa3f9 E310656949521 E8d451e83c120 E18c3051f6413 Ee3edb56d2367, E3dc014881991 E941c9f7a7002 E30c8e80a648e E510ce62dd00c E7df44a33edce"
+}
+
+##### ID CXSUBJ_PROG_5 #####
+LOOKUP_QUERY
+FIELD Ebbff968de9c9
+NOTES contain the action token. Return that sealed action token only.
+
+CONTEXT:
+TABLE hop1
+| Ed4c31ca9d6f2 | E2c511c8c71c5 |
+| --- | --- |
+| E60caa19139f1 | E6e6e0ab42f63 |
+| E709c1d7e02e2 | E26b121c27115 |
+| E5efaaafdb9ca | Ef3eb0fc70c57 |
+| E145d84bfd518 | Eb20445851ef8 |
+
+TABLE hop2
+| E00e3d2993f04 | E827fbacf4a78 |
+| --- | --- |
+| E6e6e0ab42f63 | Ea465ade5e4d9 |
+| E26b121c27115 | E66e126af198b |
+| Ef3eb0fc70c57 | Ea64d8b0b918f |
+| Eb20445851ef8 | E591dbbb281f5 |
+
+TABLE hop3
+| E8a7fa1f611c0 | Ef2d91f1f0da0 |
+| --- | --- |
+| Ea465ade5e4d9 | E06531c79933b |
+| E66e126af198b | E0ded3e4fa34f |
+| Ea64d8b0b918f | E61c4b2124372 |
+| E591dbbb281f5 | Ee4bc30e6f930 |
+
+JSON
+{
+  "use_case": "Ef2b580db92c4",
+  "graph": {
+    "E60caa19139f1": {
+      "E2c511c8c71c5": "E6e6e0ab42f63"
+    },
+    "E6e6e0ab42f63": {
+      "E827fbacf4a78": "Ea465ade5e4d9"
+    },
+    "Ea465ade5e4d9": {
+      "Ef2d91f1f0da0": "E06531c79933b"
+    },
+    "E709c1d7e02e2": {
+      "E2c511c8c71c5": "E26b121c27115"
+    },
+    "E26b121c27115": {
+      "E827fbacf4a78": "E66e126af198b"
+    },
+    "E66e126af198b": {
+      "Ef2d91f1f0da0": "E0ded3e4fa34f"
+    },
+    "E5efaaafdb9ca": {
+      "E2c511c8c71c5": "Ef3eb0fc70c57"
+    },
+    "Ef3eb0fc70c57": {
+      "E827fbacf4a78": "Ea64d8b0b918f"
+    },
+    "Ea64d8b0b918f": {
+      "Ef2d91f1f0da0": "E61c4b2124372"
+    },
+    "E145d84bfd518": {
+      "E2c511c8c71c5": "Eb20445851ef8"
+    },
+    "Eb20445851ef8": {
+      "E827fbacf4a78": "E591dbbb281f5"
+    },
+    "E591dbbb281f5": {
+      "Ef2d91f1f0da0": "Ee4bc30e6f930"
+    }
+  },
+  "notes": "E1ed901134c40 E60caa19139f1 Ecf6d82b3766d E310656949521 E527d47adaad8 E8dac57b2e803 E4817dbf576fe E58451ee90610, E41587391b659 E941c9f7a7002 E7b6c936682e0 E510ce62dd00c E8d4894ce2845"
+}
+
+##### ID CXSUBJ_PROG_6 #####
+LOOKUP_QUERY
+FIELD Ebbff968de9c9
+NOTES contain the action token. Return that sealed action token only.
+
+CONTEXT:
+TABLE hop1
+| Ed4c31ca9d6f2 | E144db5363738 |
+| --- | --- |
+| Ef9d15dd36dd7 | Effb6c42456d7 |
+| Eda794799b9e1 | E503298dd1f7d |
+| E2e6c6360109c | Edf67742b434c |
+| E9a2b6da628e0 | Effb6c42456d7 |
+
+TABLE hop2
+| E00e3d2993f04 | E899113c0b950 |
+| --- | --- |
+| Effb6c42456d7 | E5ffacb44165c |
+| E503298dd1f7d | E263be6ca7f79 |
+| Edf67742b434c | E229e29183cdc |
+| Effb6c42456d7 | E5ffacb44165c |
+
+TABLE hop3
+| E8a7fa1f611c0 | Ee1b5d5508c2d |
+| --- | --- |
+| E5ffacb44165c | E48bc846f491f |
+| E263be6ca7f79 | E5917c6dbff62 |
+| E229e29183cdc | Ec84214186253 |
+| E5ffacb44165c | E48bc846f491f |
+
+JSON
+{
+  "use_case": "Ef0e8b3472509",
+  "graph": {
+    "Ef9d15dd36dd7": {
+      "E144db5363738": "Effb6c42456d7"
+    },
+    "Effb6c42456d7": {
+      "E899113c0b950": "E5ffacb44165c"
+    },
+    "E5ffacb44165c": {
+      "Ee1b5d5508c2d": "E48bc846f491f"
+    },
+    "Eda794799b9e1": {
+      "E144db5363738": "E503298dd1f7d"
+    },
+    "E503298dd1f7d": {
+      "E899113c0b950": "E263be6ca7f79"
+    },
+    "E263be6ca7f79": {
+      "Ee1b5d5508c2d": "E5917c6dbff62"
+    },
+    "E2e6c6360109c": {
+      "E144db5363738": "Edf67742b434c"
+    },
+    "Edf67742b434c": {
+      "E899113c0b950": "E229e29183cdc"
+    },
+    "E229e29183cdc": {
+      "Ee1b5d5508c2d": "Ec84214186253"
+    },
+    "E9a2b6da628e0": {
+      "E144db5363738": "Effb6c42456d7"
+    }
+  },
+  "notes": "Ef9d15dd36dd7 E3362f1a56e30 E5c8b3dedd2e6: Eb0a9bfc41118 Ed19e45df902c Ef232f4a81af1 Eef52db885958, Ef92fc5a2ccc8 E941c9f7a7002 E4f44dd160899 E4e072abc08c0 E7163afad1603 E9eeb8373dba8 Ea52e5156eed4 Eaecbb4c3ee86 E510ce62dd00c E4a4b889b8b16"
+}
+
+##### ID CXSUBJ_PROG_7 #####
+LOOKUP_QUERY
+FIELD Ebbff968de9c9
+NOTES contain the action token. Return that sealed action token only.
+
+CONTEXT:
+TABLE hop1
+| Ed4c31ca9d6f2 | E1f3b97ab3ce5 |
+| --- | --- |
+| E104c28767e27 | E281c8b2a83e2 |
+| E531ce6145f08 | E6e27136da755 |
+| E5921cfb547e3 | E7521a178c7ab |
+| Ed5f8bd884786 | E76e5222aae14 |
+
+TABLE hop2
+| E00e3d2993f04 | E2b77198280dc |
+| --- | --- |
+| E281c8b2a83e2 | Ea5ff98a27a3e |
+| E6e27136da755 | Ee89ba63b8776 |
+| E7521a178c7ab | E62657b6b5dee |
+| E76e5222aae14 | Eebea7a404dd5 |
+
+TABLE hop3
+| E8a7fa1f611c0 | Ecb739dbb84bb |
+| --- | --- |
+| Ea5ff98a27a3e | Ea0243c4fdd12 |
+| Ee89ba63b8776 | E995d97502b44 |
+| E62657b6b5dee | E7247768c4c2d |
+| Eebea7a404dd5 | E4b56b6b95ca1 |
+
+JSON
+{
+  "use_case": "E9e5ebfcf7486",
+  "graph": {
+    "E104c28767e27": {
+      "E1f3b97ab3ce5": "E281c8b2a83e2"
+    },
+    "E281c8b2a83e2": {
+      "E2b77198280dc": "Ea5ff98a27a3e"
+    },
+    "Ea5ff98a27a3e": {
+      "Ecb739dbb84bb": "Ea0243c4fdd12"
+    },
+    "E531ce6145f08": {
+      "E1f3b97ab3ce5": "E6e27136da755"
+    },
+    "E6e27136da755": {
+      "E2b77198280dc": "Ee89ba63b8776"
+    },
+    "Ee89ba63b8776": {
+      "Ecb739dbb84bb": "E995d97502b44"
+    },
+    "E5921cfb547e3": {
+      "E1f3b97ab3ce5": "E7521a178c7ab"
+    },
+    "E7521a178c7ab": {
+      "E2b77198280dc": "E62657b6b5dee"
+    },
+    "E62657b6b5dee": {
+      "Ecb739dbb84bb": "E7247768c4c2d"
+    },
+    "Ed5f8bd884786": {
+      "E1f3b97ab3ce5": "E76e5222aae14"
+    },
+    "E76e5222aae14": {
+      "E2b77198280dc": "Eebea7a404dd5"
+    },
+    "Eebea7a404dd5": {
+      "Ecb739dbb84bb": "E4b56b6b95ca1"
+    }
+  },
+  "notes": "E6b7dbd3c81b1 E104c28767e27: Ec5f7ad7332ea E9da5ba1cdf81 Ee01c3e0aa3f9 E310656949521 E8d451e83c120 E18c3051f6413 Ee3edb56d2367, E3dc014881991 E941c9f7a7002 E30c8e80a648e E510ce62dd00c E7df44a33edce"
+}

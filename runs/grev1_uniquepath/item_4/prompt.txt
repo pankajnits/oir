@@ -1,0 +1,78 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[GREV1_UP_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM UNIQUE_PATH: unique 3-hop from START. Entities and relations sealed. No PATH. No legend. One quiz.
+
+##### ID GREV1_UP_4 #####
+QUESTION:
+E6533b1bcb865 E6c83a1f10883 Ed0f1fdfe00d4 E512ddd75e280 E9eb7d019c34d Ed346a6f1eb26 Ea4e12583b9d5? E9eb7d019c34d
+
+CONTEXT:
+TABLE hop1
+| Ee709adf57e34 | E34728f0152cb |
+| --- | --- |
+| E9eb7d019c34d | E1b624a8f43a8 |
+| E9b6da6d1483a | E0c70ed96316a |
+| Eeb1df5d9c34b | E2c2590ee53f3 |
+| E48155f6e59cb | E437cf3d2bb3b |
+
+TABLE hop2
+| Ec27ad56de709 | Ed119b797927f |
+| --- | --- |
+| E1b624a8f43a8 | E3aa52a6a1faf |
+| E0c70ed96316a | Ea5a72018dcea |
+| E2c2590ee53f3 | E28ce3ad70e7b |
+| E437cf3d2bb3b | E41c2b0fa9872 |
+
+TABLE hop3
+| Eeb5860f05fc2 | E71ac2ebafa03 |
+| --- | --- |
+| E3aa52a6a1faf | E9498b4caa20a |
+| Ea5a72018dcea | E5dedf3040534 |
+| E28ce3ad70e7b | E2e16b1dea831 |
+| E41c2b0fa9872 | Eab70776deacb |
+
+JSON
+{
+  "use_case": "Ed5589dd8a754",
+  "graph": {
+    "E9eb7d019c34d": {
+      "E34728f0152cb": "E1b624a8f43a8"
+    },
+    "E1b624a8f43a8": {
+      "Ed119b797927f": "E3aa52a6a1faf"
+    },
+    "E3aa52a6a1faf": {
+      "E71ac2ebafa03": "E9498b4caa20a"
+    },
+    "E9b6da6d1483a": {
+      "E34728f0152cb": "E0c70ed96316a"
+    },
+    "E0c70ed96316a": {
+      "Ed119b797927f": "Ea5a72018dcea"
+    },
+    "Ea5a72018dcea": {
+      "E71ac2ebafa03": "E5dedf3040534"
+    },
+    "Eeb1df5d9c34b": {
+      "E34728f0152cb": "E2c2590ee53f3"
+    },
+    "E2c2590ee53f3": {
+      "Ed119b797927f": "E28ce3ad70e7b"
+    },
+    "E28ce3ad70e7b": {
+      "E71ac2ebafa03": "E2e16b1dea831"
+    },
+    "E48155f6e59cb": {
+      "E34728f0152cb": "E437cf3d2bb3b"
+    },
+    "E437cf3d2bb3b": {
+      "Ed119b797927f": "E41c2b0fa9872"
+    },
+    "E41c2b0fa9872": {
+      "E71ac2ebafa03": "Eab70776deacb"
+    }
+  },
+  "notes": "E2c894134e8f7 E9eb7d019c34d: E97910486443f Ebcd3e231543e E597367de5ae8 E1934914c8731 E423a01788281 Ed0f1fdfe00d4 Ec76e7e859b0e, Ee220f0a807e8 E2046852e1cb7 Ea6004caf2968 E1fad0ba09629 E8d3f6f2dbf05"
+}

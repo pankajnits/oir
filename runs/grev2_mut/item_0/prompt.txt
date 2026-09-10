@@ -1,0 +1,23 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+Follow PATH_TYPED_SINK over sealed CONTEXT. Output final sealed atom only.
+
+##### ID GREV2_MUT_0 #####
+PATH_TYPED_SINK
+START E65e82a658756
+R1 E9dd7e177fded
+R2 E4d1078db86d1
+SINK_TYPE E7c80b8942f98 E95e1463b755d
+Execute path; final node must have typed sink edge; return final sealed atom only.
+
+CONTEXT:
+E65e82a658756 | E9dd7e177fded | E76b87f8ba7a9
+Ed6f4cd0b3e0b | E7c80b8942f98 | E95e1463b755d
+E65e82a658756 | E9dd7e177fded | Ec526f7dce57e
+Ec526f7dce57e | E4d1078db86d1 | Ea6172cc7d0d3
+E65e82a658756 | Ed1300f3de327 | Eb269c85018b9
+E65e82a658756 | E9dd7e177fded | E359236264806
+Ec526f7dce57e | E4d1078db86d1 | Ed6f4cd0b3e0b
+E65e82a658756 | E7d69b034f5be | Ef2d092a40574
+Ec526f7dce57e | E4d1078db86d1 | E681c10be7a18

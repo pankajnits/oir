@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_21 #####
+PATH_QUERY
+START Dmitri_Dolgov
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Dmitri_Dolgov | works_at | Waymo
+Waymo | headquartered_in | Mountain_View
+DecoyCo_Waymo | headquartered_in | DecoyHQ_Mountain_View
+Waymo | owned_by | Hold_Waymo
+Hold_Waymo | meta_of | Waymo
+Waymo | partner_of | Partner_Waymo
+Partner_Waymo | meta_of | Waymo
+Decoy_DecoyCo_Waymo | works_at | DecoyCo_Waymo

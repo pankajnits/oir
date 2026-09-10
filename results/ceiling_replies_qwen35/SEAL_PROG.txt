@@ -1,0 +1,44 @@
+Based on the provided data, here is the step-by-step execution for each path query to determine the final tail.
+
+### Logic Analysis
+Each block defines a `PATH_QUERY` with:
+- A **START** node.
+- Two potential routes (**R1**, **R2**) leading from the start or intermediate nodes.
+- The instruction "Execute path; return final tail only." implies finding the longest valid chain starting from the given START, following either R1 or R2 until no further connections exist in the provided CONTEXT list for that specific sequence.
+
+However, looking at the structure of these problems (common in graph traversal puzzles), there is often a single continuous line hidden within the context lines where one node connects to another uniquely forming a path from Start -> ... -> End.
+Let's trace each:
+
+---
+
+### 1. ID CEIL_SEALPROG_7
+- **START**: `E789a7031856f`
+- **R1**: `E7ede4d5734ce` (Check Context for connection)
+- **R2**: `Ee22530088fc3`
+
+**Context Analysis:**
+We look for lines containing the current node and see where they lead.
+Line 9: `E9c68bfc27c6d | E7ede4d5734ce | Ea5297d379f1a` -> This suggests a connection involving R1, but let's look for the specific path starting from Start.
+
+Actually, looking at the pattern of previous similar problems (if this were part of a larger dataset), usually, there is one line that starts with `START`, then leads to an intermediate, which leads to another...
+Let's re-examine the first block provided in your prompt without headers:
+`You30088fc3 | Eb95f16695736 ...` seems like noise or a previous answer key.
+
+Let's focus on **CEIL_SEALPROG_7**:
+- Start: `E789a7031856f`
+- Context Line 2 contains `Eb03237e36e79 | Ee22530088fc3 ...`. Wait, the START is not in line 1 or 2 directly as a first element.
+Let's look for `E789a7031856f` in the context list: It does **not** appear in any of the lines under CEIL_SEALPROG_7 except potentially implicitly? No, it must be there.
+Ah, looking closely at the provided text block for 7:
+Lines:
+1. `E789a7031856f | E7ede4d5734ce | Eb03237e36e79` -> **Found!** The start is here. It connects to `Eb03237e36e79`.
+   - Note: R1 says `E7ede...`, but the line shows `E789a... | E7ede...`. This implies a branch? Or maybe the path goes Start -> Eb03237e36e79.
+   Let's trace from `Eb03237e36e79`:
+   - Line 4: `Eb03237e36e79 | E2032d4622389 | Ec830a87bba4a` -> Next is `Ec830a87bba4a`.
+   - From `Ec830a87bba4a`: Line 5: `Ec830a87bba4a | E75ca9daf61cd | Eb03237e36e79` -> Next is `E75ca9daf61cd`.
+   - From `E75ca9daf61cd`: Is there a line starting with it? No. It appears as the second element in lines 4 and 8, or third in others.
+   
+Let's try tracing **R2** (`Ee22530088fc3`):
+- Line 2: `Eb03237e36e79 | Ee22530088fc3 ...` (This doesn't start with R2).
+- Is there a line starting with `Ee22530088fc3`? No.
+
+Wait, the instruction says "R1 [Node], R2 [Node]". Usually, this means from Start

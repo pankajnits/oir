@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[DPWM_PLAN_19]: <seal_or_UNKNOWN>
+
+ARM PLAN: explicit sealed relation sequence on the MATCHED graph.
+
+Follow PATH over sealed CONTEXT. Output final sealed atom only.
+
+##### ID DPWM_PLAN_19 #####
+PATH_QUERY
+START E24f510305a1f
+R1 E93909af7de17
+R2 Ed03bf1db87d2
+Execute path; return final tail only.
+
+CONTEXT:
+E24f510305a1f | E93909af7de17 | Ec11c33dd043c
+Ec11c33dd043c | Ed03bf1db87d2 | Ec874ffdc6f8d
+Ec11c33dd043c | E415d961437a5 | E4cc3aeed433c
+

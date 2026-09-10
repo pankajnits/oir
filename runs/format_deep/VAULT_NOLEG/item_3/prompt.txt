@@ -1,0 +1,37 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM VAULT_NOLEG: readable JSON keys, vault:v1 values. English name in QUESTION. No legend. No JOIN.
+
+##### ID FD_VAULT_NOLEG_3 #####
+QUESTION:
+Where is the headquarters city of the company associated with Walt Disney?
+Return the vault token for that city.
+
+CONTEXT:
+{
+  "people": {
+    "vault:v1:E3642c609f152": {
+      "company": "vault:v1:Ee02e5d430e00"
+    },
+    "vault:v1:E35971172665c": {
+      "company": "vault:v1:E60230da0fea9"
+    },
+    "vault:v1:E98cfc5d666f6": {
+      "company": "vault:v1:Ef7cfc8cbb0f2"
+    }
+  },
+  "companies": {
+    "vault:v1:Ee02e5d430e00": {
+      "hq_city": "vault:v1:Ef92bb8008bf4"
+    },
+    "vault:v1:E60230da0fea9": {
+      "hq_city": "vault:v1:Ea2c95161db06"
+    },
+    "vault:v1:Ef7cfc8cbb0f2": {
+      "hq_city": "vault:v1:E6f047bb96e7d"
+    }
+  }
+}
+

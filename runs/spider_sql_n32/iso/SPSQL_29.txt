@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_29]: <sql>
+
+DB: small_bank_1
+SCHEMA:
+ACCOUNTS(custid, name)
+SAVINGS(custid, balance)
+CHECKING(custid, balance)
+QUESTION:
+Find the name of account that has the lowest total checking and saving balance.

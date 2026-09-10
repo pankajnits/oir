@@ -1,0 +1,82 @@
+{
+  "iteration": "2.1",
+  "rev": {
+    "sd0f3": "p",
+    "se125": "r",
+    "s621a": "i",
+    "s8a65": "m",
+    "sf64c": "a",
+    "s59d8": "N",
+    "se4b6": "_",
+    "s92ea": "e",
+    "s138f": "s",
+    "sd4e0": "c",
+    "s9a47": "h",
+    "sdf7e": "l",
+    "s28af": "d",
+    "sb0fb": "D",
+    "s5164": "E",
+    "sc52e": "V",
+    "se346": "o",
+    "s9266": "n",
+    "sef0a": "u",
+    "sc0a6": "t",
+    "sf699": "K",
+    "s9ccb": "v",
+    "s112d": "M",
+    "s6a9c": "z",
+    "sef71": "g",
+    "s475f": "b",
+    "sb871": "1",
+    "sa05e": "9",
+    "s21dc": "-",
+    "sa131": "4",
+    "s2b05": "7",
+    "s55df": "8",
+    "s801e": "2",
+    "s0fdb": "0",
+    "se9dd": "f",
+    "s47ff": "w",
+    "sefe7": "G",
+    "s9297": "B",
+    "s3d10": "T",
+    "s3b79": "A",
+    "s96f1": "L",
+    "sadca": "P",
+    "s1943": "H",
+    "s4a37": "W",
+    "s6e1a": "k"
+  },
+  "cases": {
+    "P21_stepA_find_opener": {
+      "expected": "Dr Elias Vorn",
+      "expect_pass": true,
+      "payload": "runs/phase2_iter21/P21_stepA_find_opener.txt"
+    },
+    "P21_stepB_phrase_after_bridge": {
+      "expected": "amber lattice seven",
+      "expect_pass": true,
+      "payload": "runs/phase2_iter21/P21_stepB_phrase_after_bridge.txt"
+    },
+    "P21_two_subgoal_one_reply": {
+      "expected": "amber lattice seven",
+      "expect_pass": false,
+      "payload": "runs/phase2_iter21/P21_two_subgoal_one_reply.txt"
+    },
+    "P21_prose_marked_direct": {
+      "expected": "amber lattice seven",
+      "expect_pass": true,
+      "payload": "runs/phase2_iter21/P21_prose_marked_direct.txt"
+    },
+    "P21_prose_marked_multihop": {
+      "expected": "amber lattice seven",
+      "expect_pass": false,
+      "payload": "runs/phase2_iter21/P21_prose_marked_multihop.txt"
+    },
+    "P21_mismatch_minimal_prompt": {
+      "expected": null,
+      "expect_pass": false,
+      "payload": "runs/phase2_iter21/P21_mismatch_minimal_prompt.txt"
+    }
+  }
+}

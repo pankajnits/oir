@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_24]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_24 #####
+QUESTION:
+What is the genre of a movie directed by Mamoru Oshii?
+
+PATH_QUERY
+START Mamoru Oshii
+R1 E152e4bfb873b
+R2 E573d9b87a8b4
+Execute path; return final tail only.
+
+CONTEXT:
+Mamoru Oshii | E152e4bfb873b | The Sky Crawlers
+The Sky Crawlers | E573d9b87a8b4 | Animation
+The Sky Crawlers | Ec72fa55f12fa | Japanese

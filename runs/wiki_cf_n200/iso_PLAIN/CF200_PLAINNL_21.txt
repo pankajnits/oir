@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_21 #####
+QUESTION:
+What nationality is Abdallah Ibn Abd Al-Malik's father?
+
+CONTEXT:
+ʿAbdallāh ibn ʿAbd al-Malik | decoy_link_21 | decoy_mid_21
+ʿAbdallāh ibn ʿAbd al-Malik | father | Abd al-Malik ibn Marwan
+00 Schneider – Jagd auf Nihil Baxter | director | Helge Schneider
+Helge Schneider | place of birth | Mülheim an der Ruhr
+decoy_mid_21 | country of citizenship | Peninsula
+Abd al-Malik ibn Marwan | country of citizenship | CF_TAIL_21_Peninsula
+Jane Bewick | father | Thomas Bewick
+Thomas Bewick | country of citizenship | British

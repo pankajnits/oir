@@ -1,0 +1,46 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[OHR_ABSTRACT_13]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM ABSTRACT: two-route graph; sealed Q; vague in-message hints only. No JOIN.
+
+##### ID OHR_ABSTRACT_13 #####
+QUESTION (token-HMAC'd):
+E4ad8aeb7e2d5 E00c25464768a E3ad2ab062435 E43b928645c6e E8ad8cfa95872 E3ad2ab062435 E70209573a70f E8ad8cfa95872 Edf51aea2f756?
+
+HINTS (English; do not decrypt; do not use world knowledge):
+- Everything you need is in this message: the encoded QUESTION and CONTEXT.
+- Reason only over those tokens. Identical tokens are the same object or field.
+- Align the encoded question with CONTEXT until one sealed answer is forced.
+- If it is not forced, UNKNOWN.
+No JOIN. No legend. Field names are not given in English.
+
+CONTEXT:
+{
+  "Ec809e55eb641": [
+    {
+      "E85888d6016ee": "Ebe754daceb50",
+      "E70209573a70f": "Efcbd4973ffcc",
+      "Ea6dbb97f1b98": "E2a2a6dd781b8"
+    },
+    {
+      "E85888d6016ee": "Edf51aea2f756",
+      "E70209573a70f": "E2a2a6dd781b8",
+      "Ea6dbb97f1b98": "E93ed022a69e8"
+    }
+  ],
+  "Ed231897ea849": [
+    {
+      "E85888d6016ee": "Efcbd4973ffcc",
+      "E43b928645c6e": "Ef265b5df106c"
+    },
+    {
+      "E85888d6016ee": "E2a2a6dd781b8",
+      "E43b928645c6e": "Ecb7e8fa86dce"
+    },
+    {
+      "E85888d6016ee": "E93ed022a69e8",
+      "E43b928645c6e": "E02601630c446"
+    }
+  ]
+}

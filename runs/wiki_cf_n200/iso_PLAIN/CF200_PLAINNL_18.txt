@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_18 #####
+QUESTION:
+Where did Sir Richard Butler Of Polestown's father die?
+
+CONTEXT:
+Bulugan | spouse | Temür Khan
+decoy_mid_18 | place of death | Gowran
+James Butler, 3rd Earl of Ormond | place of death | CF_TAIL_18_Gowran
+Sir Richard Butler (1395 – 1443) of Polestown | father | James Butler, 3rd Earl of Ormond
+Temür Khan | country of citizenship | Yuan dynasty
+Sky High | director | Lynn Reynolds
+Sir Richard Butler (1395 – 1443) of Polestown | decoy_link_18 | decoy_mid_18
+Lynn Reynolds | place of birth | Harlan, Iowa

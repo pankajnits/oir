@@ -1,0 +1,437 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+Answer EVERY ID.
+
+ARM VAULT_MILD: readable keys (company, hq_city), sealed entity values, JOIN named in English.
+
+##### ID DOM_VAULT_MILD_0 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E38daae229352
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E38daae229352?
+
+CONTEXT:
+{
+  "people": {
+    "E38daae229352": {
+      "company": "E5b1923a5564b"
+    },
+    "E17763e69c7e5": {
+      "company": "E3864f2c15482"
+    },
+    "E9428f0a69b97": {
+      "company": "E238da43b8dab"
+    }
+  },
+  "companies": {
+    "E5b1923a5564b": {
+      "hq_city": "E38991d8565fc"
+    },
+    "E3864f2c15482": {
+      "hq_city": "E832f4aeb7fe9"
+    },
+    "E238da43b8dab": {
+      "hq_city": "E00a13ef9e583"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_1 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START Ec862c7864f1e
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token Ec862c7864f1e?
+
+CONTEXT:
+{
+  "people": {
+    "Ec862c7864f1e": {
+      "company": "E5648ca467b71"
+    },
+    "E8f519d59883d": {
+      "company": "Ea66303e3ed71"
+    },
+    "E5a54810f50a3": {
+      "company": "E8a945953e829"
+    }
+  },
+  "companies": {
+    "E5648ca467b71": {
+      "hq_city": "E53bf3b0197dc"
+    },
+    "Ea66303e3ed71": {
+      "hq_city": "E5d4088333ab9"
+    },
+    "E8a945953e829": {
+      "hq_city": "E1e7e65c625c4"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_2 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E915f1ae896c3
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E915f1ae896c3?
+
+CONTEXT:
+{
+  "people": {
+    "E915f1ae896c3": {
+      "company": "E5b1923a5564b"
+    },
+    "Ee2852cc60b9b": {
+      "company": "E2bd196fff85d"
+    },
+    "Eef853c15f639": {
+      "company": "Ecc655e8578ec"
+    }
+  },
+  "companies": {
+    "E5b1923a5564b": {
+      "hq_city": "E38991d8565fc"
+    },
+    "E2bd196fff85d": {
+      "hq_city": "Ebd1397cdcc2b"
+    },
+    "Ecc655e8578ec": {
+      "hq_city": "Eaf0912c7498f"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_3 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E6fb8b4ba248b
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E6fb8b4ba248b?
+
+CONTEXT:
+{
+  "people": {
+    "E6fb8b4ba248b": {
+      "company": "Eb27b6add03d4"
+    },
+    "Edaede33e24d4": {
+      "company": "E99a331dad720"
+    },
+    "E61c3bc833163": {
+      "company": "E9de78eb29557"
+    }
+  },
+  "companies": {
+    "Eb27b6add03d4": {
+      "hq_city": "E5ee83207c12e"
+    },
+    "E99a331dad720": {
+      "hq_city": "E357b55a0a62f"
+    },
+    "E9de78eb29557": {
+      "hq_city": "E0b724b7a8008"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_4 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E627db7d0fb06
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E627db7d0fb06?
+
+CONTEXT:
+{
+  "people": {
+    "E627db7d0fb06": {
+      "company": "E348aa416d535"
+    },
+    "E039bbd390e04": {
+      "company": "E150b3fcaed9e"
+    },
+    "E33228b8bf1c0": {
+      "company": "E0db2b3273194"
+    }
+  },
+  "companies": {
+    "E348aa416d535": {
+      "hq_city": "E7a96dde51ba9"
+    },
+    "E150b3fcaed9e": {
+      "hq_city": "E5d7181369d39"
+    },
+    "E0db2b3273194": {
+      "hq_city": "E1eb9a01597e0"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_5 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E4b6a5b8332be
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E4b6a5b8332be?
+
+CONTEXT:
+{
+  "people": {
+    "E4b6a5b8332be": {
+      "company": "E3eaa24ec4827"
+    },
+    "Ef4a652f9e8b1": {
+      "company": "E8fbd5f23ba43"
+    },
+    "E382664b84689": {
+      "company": "E6c638346175b"
+    }
+  },
+  "companies": {
+    "E3eaa24ec4827": {
+      "hq_city": "Ec95bcddd0abe"
+    },
+    "E8fbd5f23ba43": {
+      "hq_city": "Ee393ab427402"
+    },
+    "E6c638346175b": {
+      "hq_city": "E12b1e7a925ca"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_6 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E271c672c7e1c
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E271c672c7e1c?
+
+CONTEXT:
+{
+  "people": {
+    "E271c672c7e1c": {
+      "company": "Eb27b6add03d4"
+    },
+    "Ed3e422684796": {
+      "company": "Ef054aa2c60af"
+    },
+    "Ef582a216680e": {
+      "company": "E2ba125516697"
+    }
+  },
+  "companies": {
+    "Eb27b6add03d4": {
+      "hq_city": "E5ee83207c12e"
+    },
+    "Ef054aa2c60af": {
+      "hq_city": "E8d28a14db79a"
+    },
+    "E2ba125516697": {
+      "hq_city": "E71d71f08739c"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_7 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E19688b766e7e
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E19688b766e7e?
+
+CONTEXT:
+{
+  "people": {
+    "E19688b766e7e": {
+      "company": "E5b1923a5564b"
+    },
+    "E17763e69c7e5": {
+      "company": "E3864f2c15482"
+    },
+    "E8c011a5831a4": {
+      "company": "Ecff2bd471585"
+    }
+  },
+  "companies": {
+    "E5b1923a5564b": {
+      "hq_city": "E38991d8565fc"
+    },
+    "E3864f2c15482": {
+      "hq_city": "E832f4aeb7fe9"
+    },
+    "Ecff2bd471585": {
+      "hq_city": "E20a1c842696f"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_8 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E23312912aa0e
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E23312912aa0e?
+
+CONTEXT:
+{
+  "people": {
+    "E23312912aa0e": {
+      "company": "E00fed7b6181f"
+    },
+    "Ed5736adab143": {
+      "company": "Eb27b6add03d4"
+    },
+    "E8c7c3d24459e": {
+      "company": "E24db086b2d4b"
+    }
+  },
+  "companies": {
+    "E00fed7b6181f": {
+      "hq_city": "Efbcb189852b1"
+    },
+    "Eb27b6add03d4": {
+      "hq_city": "E5ee83207c12e"
+    },
+    "E24db086b2d4b": {
+      "hq_city": "Efebf0d5cd517"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_9 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E48b51d1d7bde
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E48b51d1d7bde?
+
+CONTEXT:
+{
+  "people": {
+    "E48b51d1d7bde": {
+      "company": "Ef3468e201cbb"
+    },
+    "E0d81b04e091c": {
+      "company": "Eb81e1f409a46"
+    },
+    "Ecd2bc83b67c8": {
+      "company": "Eb27b6add03d4"
+    }
+  },
+  "companies": {
+    "Ef3468e201cbb": {
+      "hq_city": "E1371102a8522"
+    },
+    "Eb81e1f409a46": {
+      "hq_city": "Ee3d844cbf44f"
+    },
+    "Eb27b6add03d4": {
+      "hq_city": "E5ee83207c12e"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_10 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START Eb3597926c200
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token Eb3597926c200?
+
+CONTEXT:
+{
+  "people": {
+    "Eb3597926c200": {
+      "company": "Eaf75bd221309"
+    },
+    "E1f74f75eb725": {
+      "company": "E18c4ab1e1ce0"
+    },
+    "E0d5cdfa2d834": {
+      "company": "E5a4bbc4faf1f"
+    }
+  },
+  "companies": {
+    "Eaf75bd221309": {
+      "hq_city": "E3de9412cb2c1"
+    },
+    "E18c4ab1e1ce0": {
+      "hq_city": "E591b0d96cbce"
+    },
+    "E5a4bbc4faf1f": {
+      "hq_city": "Ee3d844cbf44f"
+    }
+  }
+}
+
+##### ID DOM_VAULT_MILD_11 #####
+JOIN_QUERY (readable keys, sealed entity values)
+START E15147aee6fb9
+R1 company
+R2 hq_city
+Return the sealed hq_city token.
+
+QUESTION:
+Using readable keys company / hq_city, what is the hq_city of the company linked from person token E15147aee6fb9?
+
+CONTEXT:
+{
+  "people": {
+    "E15147aee6fb9": {
+      "company": "Eb27b6add03d4"
+    },
+    "E17763e69c7e5": {
+      "company": "E3864f2c15482"
+    },
+    "E0d81b04e091c": {
+      "company": "Eb81e1f409a46"
+    }
+  },
+  "companies": {
+    "Eb27b6add03d4": {
+      "hq_city": "E5ee83207c12e"
+    },
+    "E3864f2c15482": {
+      "hq_city": "E832f4aeb7fe9"
+    },
+    "Eb81e1f409a46": {
+      "hq_city": "Ee3d844cbf44f"
+    }
+  }
+}

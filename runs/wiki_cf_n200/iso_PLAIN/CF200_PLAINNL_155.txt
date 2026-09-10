@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_155 #####
+QUESTION:
+Where was the place of burial of Nebetah's mother?
+
+CONTEXT:
+decoy_mid_155 | place of burial | KV35
+Hussein of Jordan | place of birth | Amman
+John of Lencastre, 1st Duke of Aveiro | place of death | Coimbra
+Tiye | place of burial | CF_TAIL_155_KV35
+Nebetah | decoy_link_155 | decoy_mid_155
+Nebetah | mother | Tiye
+Princess Raiyah bint Hussein | father | Hussein of Jordan
+George of Lencastre, 2nd Duke of Aveiro | father | John of Lencastre, 1st Duke of Aveiro

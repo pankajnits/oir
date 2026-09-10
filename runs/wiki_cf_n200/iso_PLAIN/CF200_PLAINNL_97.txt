@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_97 #####
+QUESTION:
+What nationality is the director of film Truly Human?
+
+CONTEXT:
+Truly Human | decoy_link_97 | decoy_mid_97
+Stanley Kwan | educated at | Hong Kong Baptist College
+Yang ± Yin: Gender in Chinese Cinema | director | Stanley Kwan
+decoy_mid_97 | country of citizenship | Swedish
+Men of Texas | director | Ray Enright
+Åke Sandgren | country of citizenship | CF_TAIL_97_Swedish
+Ray Enright | place of death | Hollywood
+Truly Human | director | Åke Sandgren

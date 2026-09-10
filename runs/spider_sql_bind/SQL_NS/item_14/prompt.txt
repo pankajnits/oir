@@ -1,0 +1,49 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_14]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_14 #####
+DB: match_season
+SCHEMA (English name → sealed sqlite identifier):
+country = E256bb56d6d71
+Country_id = Edd0412337a6e
+Country_name = Eabee6249974c
+Capital = Ec497bc76fdbb
+Official_native_language = E62967a36ef26
+team = E2af64a5aef7c
+Team_id = Ec070dff68b83
+Name = Ec9472eef8911
+match_season = E53bb538a4281
+Season = E3c86c9e653ad
+Player = Ee0482e14b327
+Position = Eb8eb8d59ca5c
+Country = E6c7460c233a1
+Team = E9c9d4d742758
+Draft_Pick_Number = Ed4212872ed7e
+Draft_Class = Ea27f81c4980f
+College = E932ba4c58b78
+player = Ea08bbd3ec2d6
+Player_ID = E760fe5de58e2
+Years_Played = E1a7ecb903366
+Total_WL = E08a2c6b7f294
+Singles_WL = E02ae2937d4fe
+Doubles_WL = Eea16ebcfff5f
+
+country(Country_id, Country_name, Capital, Official_native_language)
+team(Team_id, Name)
+match_season(Season, Player, Position, Country, Team, Draft_Pick_Number, Draft_Class, College)
+player(Player_ID, Player, Years_Played, Total_WL, Singles_WL, Doubles_WL, Team)
+
+QUESTION:
+Count the E680bd5b3cb1e of different E0b048072df7d languages corresponding to countries that players who play Defender are from.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

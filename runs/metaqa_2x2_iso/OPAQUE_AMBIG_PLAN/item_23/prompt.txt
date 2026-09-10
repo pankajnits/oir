@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_23]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_23 #####
+QUESTION:
+What is the genre of a movie directed by Sylvain Chomet?
+
+PATH_QUERY
+START Sylvain Chomet
+R1 Ef7888e2c9557
+R2 E4022f8655e68
+Execute path; return final tail only.
+
+CONTEXT:
+Sylvain Chomet | Ef7888e2c9557 | The Triplets of Belleville
+The Triplets of Belleville | E4022f8655e68 | Comedy, Animation
+The Triplets of Belleville | E9aa337e115c0 | French

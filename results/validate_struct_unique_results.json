@@ -1,0 +1,5 @@
+{
+  "structurally_unique_zeroshot": "8/8",
+  "ambiguous_control_UNKNOWN": "4/4",
+  "verdict": "User insight CONFIRMED under deeper analysis: with no few-shot and no relation handles, model can recover the correct 2-hop end when the target relation is structurally unique (8/8). When multiple pure-sink relations exist, it correctly abstains (4/4 UNKNOWN). Prior ZS failure was ambiguity, not absence of ID reasoning. Grounding is still needed when the query intent is semantic (\"city\") rather than structural (\"unique path to pure sink\") \u2014 unless the schema makes that intent coincide with structure."
+}

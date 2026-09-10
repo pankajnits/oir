@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_28]: <sql>
+
+DB: soccer_2
+SCHEMA:
+College(cName, state, enr)
+Player(pID, pName, yCard, HS)
+Tryout(pID, cName, pPos, decision)
+QUESTION:
+What is the average number of hours spent practicing for students who got rejected?

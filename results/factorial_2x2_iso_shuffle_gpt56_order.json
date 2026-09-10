@@ -1,0 +1,41 @@
+{
+  "model": "gpt56",
+  "by_arm": {
+    "ENG_AMBIG": {
+      "overall": {
+        "score": "29/32",
+        "unknown": 3,
+        "missing": 0,
+        "decoy": 0
+      },
+      "gold_first": {
+        "score": "15/16",
+        "unknown": 1,
+        "decoy": 0
+      },
+      "decoy_first": {
+        "score": "14/16",
+        "unknown": 2,
+        "decoy": 0
+      }
+    },
+    "OPAQUE_AMBIG": {
+      "overall": {
+        "score": "5/32",
+        "unknown": 25,
+        "missing": 0,
+        "decoy": 1
+      },
+      "gold_first": {
+        "score": "3/16",
+        "unknown": 12,
+        "decoy": 0
+      },
+      "decoy_first": {
+        "score": "2/16",
+        "unknown": 13,
+        "decoy": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "nonclaim": "Layer has the HMAC key. LLM never sees plaintext. Not confidentiality vs the layer. Not G-Rev1.",
+  "app_sees": {
+    "question": "What country is the HQ of David Schaeffer in?",
+    "vault_plaintext": {
+      "employees": [
+        {
+          "id": "George_W_Edwards",
+          "employer": "Kansas_City_Southern"
+        },
+        {
+          "id": "David_Schaeffer",
+          "employer": "Cogent_Communications"
+        }
+      ],
+      "orgs": [
+        {
+          "id": "Kansas_City_Southern",
+          "hq": {
+            "city": "Kansas_City",
+            "country": "France"
+          }
+        },
+        {
+          "id": "Cogent_Communications",
+          "hq": {
+            "city": "Washington_DC",
+            "country": "USA"
+          }
+        }
+      ]
+    },
+    "expected_plain": "USA"
+  },
+  "llm_sees": {
+    "question": "E863de6e0d429 Ecedf7c16696a Eb74940db6964 E5fa9d6ddbd03 Ea686864cc47b Eb8ee1c31b117 Ee9cd31a9e82b E00225716aad4?",
+    "start": "Ee9cd31a9e82b",
+    "prog": "JOIN_QUERY\nSTART Ee9cd31a9e82b\nIn array E0495eb9264dc, match Eb9b6c700cb86 = START, take Ef335bda89ff9.\nIn array E37ca342e3762, match Eb9b6c700cb86 = that employer, take E9049d8727481.Ecedf7c16696a.\nReturn that atom.",
+    "vault_sealed": {
+      "E0495eb9264dc": [
+        {
+          "Eb9b6c700cb86": "E8f495b0e242b",
+          "Ef335bda89ff9": "E111ab979021b"
+        },
+        {
+          "Eb9b6c700cb86": "Ee9cd31a9e82b",
+          "Ef335bda89ff9": "E78beaaf1261b"
+        }
+      ],
+      "E37ca342e3762": [
+        {
+          "Eb9b6c700cb86": "E111ab979021b",
+          "E9049d8727481": {
+            "Efbd2af92f42e": "E2d73315bb9b0",
+            "Ecedf7c16696a": "E644c3ea5a854"
+          }
+        },
+        {
+          "Eb9b6c700cb86": "E78beaaf1261b",
+          "E9049d8727481": {
+            "Efbd2af92f42e": "E908f35c67834",
+            "Ecedf7c16696a": "Ebbd30ec7e1cb"
+          }
+        }
+      ]
+    }
+  },
+  "gold_sealed": "Ebbd30ec7e1cb",
+  "plaintext_in_llm_prompt": false,
+  "engine_sqlite": {
+    "sql": "SELECT C.\"Ecedf7c16696a\" FROM \"E0495eb9264dc\" E JOIN \"E37ca342e3762\" O ON E.\"E2232a8392ccd\" = O.\"Eb9b6c700cb86\" JOIN \"E7dd1a720c32f\" C ON O.\"E08908aeefccb\" = C.\"Eb9b6c700cb86\" WHERE E.\"Eb9b6c700cb86\" = 'Ee9cd31a9e82b'",
+    "got": "Ebbd30ec7e1cb",
+    "ok": true
+  },
+  "rev": {
+    "E0495eb9264dc": "employees",
+    "Eb9b6c700cb86": "id",
+    "E8f495b0e242b": "George_W_Edwards",
+    "Ef335bda89ff9": "employer",
+    "E111ab979021b": "Kansas_City_Southern",
+    "Ee9cd31a9e82b": "David_Schaeffer",
+    "E78beaaf1261b": "Cogent_Communications",
+    "E37ca342e3762": "orgs",
+    "E9049d8727481": "hq",
+    "Efbd2af92f42e": "city",
+    "E2d73315bb9b0": "Kansas_City",
+    "Ecedf7c16696a": "country",
+    "E644c3ea5a854": "France",
+    "E908f35c67834": "Washington_DC",
+    "Ebbd30ec7e1cb": "USA",
+    "E863de6e0d429": "What",
+    "Eb74940db6964": "is",
+    "E5fa9d6ddbd03": "the",
+    "Ea686864cc47b": "HQ",
+    "Eb8ee1c31b117": "of",
+    "E00225716aad4": "in",
+    "E7dd1a720c32f": "cities",
+    "E2232a8392ccd": "org_id",
+    "E08908aeefccb": "city_id"
+  },
+  "prompt": "runs/seal_layer_demo/LAYER_VAULT/item_0/prompt.txt"
+}

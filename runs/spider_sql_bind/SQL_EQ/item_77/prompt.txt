@@ -1,0 +1,40 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_77]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_77 #####
+DB: program_share
+SCHEMA (English name → sealed sqlite identifier):
+program = Ee76dad3e1779
+Program_ID = E0af5dd6ce1bd
+Name = Ea22e3abf4907
+Origin = E11e383961d94
+Launch = E131c1abfa652
+Owner = Ebbcdf988d123
+channel = Eff83ea26eef9
+Channel_ID = Ebe3d62c7a961
+Share_in_percent = E4e631a64a3ec
+Rating_in_percent = E06308a223642
+broadcast = E6eb6f4d28005
+Time_of_day = Ea4f83cbfd997
+broadcast_share = E2757017c6491
+Date = E33c13c1544a7
+
+program(Program_ID, Name, Origin, Launch, Owner)
+channel(Channel_ID, Name, Owner, Share_in_percent, Rating_in_percent)
+broadcast(Channel_ID, Program_ID, Time_of_day)
+broadcast_share(Channel_ID, Program_ID, Date, Share_in_percent)
+
+QUESTION:
+Which E0af5dd6ce1bd is E2757017c6491 most frequently? Give me the E0af5dd6ce1bd Ea22e3abf4907.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

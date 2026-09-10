@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_40 #####
+QUESTION:
+What is the date of birth of the director of film Night Of The Twelve?
+
+CONTEXT:
+Borys Lankosz | educated at | National Film School in Łódź
+Rewers | director | Borys Lankosz
+Night of the Twelve | decoy_link_40 | decoy_mid_40
+Hans Schweikart | date of birth | CF_TAIL_40_1October1895
+The Ups and Downs of a Handyman | director | John Sealey
+Night of the Twelve | director | Hans Schweikart
+decoy_mid_40 | date of birth | 1 October 1895
+John Sealey | place of birth | Wallasey

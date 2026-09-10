@@ -1,0 +1,43 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_19]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_19 #####
+DB: employee_hire_evaluation
+SCHEMA (English name → sealed sqlite identifier):
+employee = E059d11fd3c93
+Employee_ID = Ec31fe7c1e381
+Name = Eb871aaeb0e76
+Age = Eee0d4d041bd6
+City = E520dc981b42f
+shop = E0e86f939cf4a
+Shop_ID = Ee9b871b7b97b
+Location = Eee987281c665
+District = Eff3343a3ef2a
+Number_products = E08afa2f88349
+Manager_name = E2ee17eb46b4a
+hiring = Ea90d9b7fc1af
+Start_from = E3b153e50610f
+Is_full_time = E36706779e6d2
+evaluation = E4b810360e947
+Year_awarded = E24b56bc31e07
+Bonus = Ed7af956ec5e2
+
+employee(Employee_ID, Name, Age, City)
+shop(Shop_ID, Name, Location, District, Number_products, Manager_name)
+hiring(Shop_ID, Employee_ID, Start_from, Is_full_time)
+evaluation(Employee_ID, Year_awarded, Bonus)
+
+QUESTION:
+Which Ec31fe7c1e381 received the most awards in evaluations? Give me the Ec31fe7c1e381 E2ee17eb46b4a.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

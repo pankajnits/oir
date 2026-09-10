@@ -1,0 +1,41 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_78]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_78 #####
+DB: film_rank
+SCHEMA (English name → sealed sqlite identifier):
+film = E3101697e3ffb
+Film_ID = E0a33ae1b4693
+Title = E6095393ebbb0
+Studio = E79d1b1be14c5
+Director = Eb8456c8ae000
+Gross_in_dollar = Efb45d4045a75
+market = Ea20fe2451837
+Market_ID = E278704d5af0d
+Country = E771181e8e6d6
+Number_cities = E9fc6c4496a13
+film_market_estimation = E74eef955753c
+Estimation_ID = Ef66f5c67ba55
+Low_Estimate = E5702d5d5293d
+High_Estimate = Ec7835a03ac55
+Type = Ee2a9ad66cd72
+Year = E1780112c7ef3
+
+film(Film_ID, Title, Studio, Director, Gross_in_dollar)
+market(Market_ID, Country, Number_cities)
+film_market_estimation(Estimation_ID, Low_Estimate, High_Estimate, Film_ID, Type, Market_ID, Year)
+
+QUESTION:
+Who are the different directors of films which had Ed021968e7d84 Ed021968e7d84 in 1995?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

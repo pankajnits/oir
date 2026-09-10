@@ -1,0 +1,22 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM SEAL_PROG: gold PATH over sealed entities AND relations (ceiling).
+
+##### ID OR_SEALPROG_3 #####
+PATH_QUERY
+START E7d561a532ecc
+R1 E0b35ff5b0c7b
+R2 E8cc8dacea1d9
+Execute path; return final tail only.
+
+CONTEXT:
+E677618e53d37 | E8cc8dacea1d9 | Ef5f01b8820ea
+E357dbaa808e0 | E8cc8dacea1d9 | E395da38200d1
+E847a118d5847 | E92f2c86b3f72 | E677618e53d37
+E374fe773ddc8 | E8cc8dacea1d9 | Efe3f82eef721
+E7d561a532ecc | Ed666cf75d98f | Ef644a68757c9
+E8f2b2070ed85 | E0b35ff5b0c7b | E357dbaa808e0
+E7d561a532ecc | E0b35ff5b0c7b | E374fe773ddc8
+Ef644a68757c9 | E8cc8dacea1d9 | E2793fa0af2d1

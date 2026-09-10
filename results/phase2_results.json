@@ -1,0 +1,166 @@
+{
+  "phase": 2,
+  "iteration": "2.0",
+  "science_flags": {
+    "mismatch_hardened": true,
+    "align_still_works": true,
+    "direct_in_atomic_store": true,
+    "multihop_sealed_success": false,
+    "prose_direct_success": false,
+    "prose_multihop_success": false,
+    "crack_blocked": true,
+    "plaintext_ceiling_ok": true
+  },
+  "rows": [
+    {
+      "id": "P2a_mismatch_same_structure",
+      "family": "mismatch",
+      "expect_pass": false,
+      "got": "UNKNOWN",
+      "unsealed": null,
+      "task_correct": true,
+      "verdict": "PASS",
+      "scrutiny": "Expect UNKNOWN; Phase-1 failed this with FP"
+    },
+    {
+      "id": "P2a_mismatch_asymmetric_keys",
+      "family": "mismatch",
+      "expect_pass": false,
+      "got": "UNKNOWN",
+      "unsealed": null,
+      "task_correct": true,
+      "verdict": "PASS",
+      "scrutiny": "Different key names + different HMAC key \u2014 should be easy UNKNOWN"
+    },
+    {
+      "id": "P2a_align_control",
+      "family": "align",
+      "expect_pass": true,
+      "got": "sf64c s8a65 s475f s92ea se125 \u00b7 sdf7e sf64c sc0a6 sc0a6 s621a sd4e0 s92ea \u00b7 s138f s92ea s9ccb s92ea s9266",
+      "unsealed": "amber lattice seven",
+      "task_correct": true,
+      "verdict": "PASS",
+      "scrutiny": "Positive control: OIR must still work on larger atomic store"
+    },
+    {
+      "id": "P2b_hop_phrase_for_opener",
+      "family": "multihop",
+      "expect_pass": false,
+      "got": "s9266 se346",
+      "unsealed": "no",
+      "task_correct": false,
+      "verdict": "WRONG_AS_HARD(no)",
+      "scrutiny": "2-hop: identify opener then phrase; NO derived key"
+    },
+    {
+      "id": "P2b_hop_combo_for_anomalous_specimen",
+      "family": "multihop",
+      "expect_pass": false,
+      "got": "s59d8 sefe7 s21dc sa131 sa131 sb871 s2b05 s21dc s9297 s5164 s3d10 s3b79",
+      "unsealed": "NG-4417-BETA",
+      "task_correct": false,
+      "verdict": "WRONG_AS_HARD(NG-4417-BETA)",
+      "scrutiny": "3-hop: anomalous specimen \u2192 in vault gamma \u2192 combination"
+    },
+    {
+      "id": "P2b_hop_easy_direct_still",
+      "family": "align",
+      "expect_pass": true,
+      "got": "s59d8 sefe7 s21dc s801e s801e s0fdb sb871 s21dc s3b79 s96f1 sadca s1943 s3b79",
+      "unsealed": "NG-2201-ALPHA",
+      "task_correct": true,
+      "verdict": "PASS",
+      "scrutiny": "Control: direct key lookup in same CONTEXT must still pass"
+    },
+    {
+      "id": "P2c_prose_direct_phrase",
+      "family": "prose",
+      "expect_pass": true,
+      "got": "UNKNOWN",
+      "unsealed": null,
+      "task_correct": false,
+      "verdict": "FAIL_UNKNOWN",
+      "scrutiny": "Prose span with opaque separator \u2014 medium"
+    },
+    {
+      "id": "P2c_prose_multihop",
+      "family": "prose_multihop",
+      "expect_pass": false,
+      "got": "sc0a6 s9a47 s92ea",
+      "unsealed": "the",
+      "task_correct": false,
+      "verdict": "WRONG_AS_HARD(the)",
+      "scrutiny": "Prose multi-hop \u2014 hardest"
+    },
+    {
+      "id": "P2c_prose_crack",
+      "family": "crack",
+      "expect_pass": false,
+      "got": "UNKNOWN",
+      "unsealed": null,
+      "task_correct": null,
+      "verdict": "CONTROL_OK",
+      "scrutiny": "Crack must fail on prose seals"
+    },
+    {
+      "id": "P2d_plain_multihop",
+      "family": "plaintext_ceiling",
+      "expect_pass": true,
+      "got": "amber lattice seven",
+      "unsealed": "amber lattice seven",
+      "task_correct": true,
+      "verdict": "PASS",
+      "scrutiny": "Ceiling: same multi-hop in English must pass"
+    },
+    {
+      "id": "P2d_plain_combo_hop",
+      "family": "plaintext_ceiling",
+      "expect_pass": true,
+      "got": "19-47-82",
+      "unsealed": "19-47-82",
+      "task_correct": true,
+      "verdict": "PASS",
+      "scrutiny": "Ceiling: 3-hop English"
+    }
+  ],
+  "takeaways": [
+    "Mismatch FP fixed under strict exact-equality prompts (2/2 UNKNOWN).",
+    "OIR lookup still works on larger atomic stores.",
+    "CRITICAL GAP: plaintext multi-hop PASS; sealed multi-hop FAIL \u2014 not task impossibility.",
+    "Sealed prose direct QA failed (UNKNOWN) \u2014 harder than KV; needs iteration 2c-2.",
+    "Prose crack remains blocked."
+  ],
+  "failure_taxonomy_samples": [
+    {
+      "id": "P2b_hop_phrase_for_opener",
+      "got": "no",
+      "verdict": "WRONG_AS_HARD(no)"
+    },
+    {
+      "id": "P2b_hop_combo_for_anomalous_specimen",
+      "got": "NG-4417-BETA",
+      "verdict": "WRONG_AS_HARD(NG-4417-BETA)"
+    },
+    {
+      "id": "P2c_prose_direct_phrase",
+      "got": null,
+      "verdict": "FAIL_UNKNOWN"
+    },
+    {
+      "id": "P2c_prose_direct_phrase",
+      "got": null,
+      "verdict": "FAIL_UNKNOWN"
+    },
+    {
+      "id": "P2c_prose_multihop",
+      "got": "the",
+      "verdict": "WRONG_AS_HARD(the)"
+    }
+  ],
+  "next_iterations": [
+    "2c-2: prose with line-anchored KEY/VALUE English markers around sealed bodies",
+    "2b-2: scaffolded two-step sealed hops (Q1 find opener sealed; Q2 use that as query) \u2014 isolate where chain breaks",
+    "2a-3: mismatch WITHOUT strict English rules \u2014 measure FP return rate",
+    "2e: few-shot sealed alignment demos then multi-hop"
+  ]
+}

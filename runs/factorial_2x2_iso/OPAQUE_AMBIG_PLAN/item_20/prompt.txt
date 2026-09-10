@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_20]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_20 #####
+QUESTION:
+What city is the headquarters of the company led by Macon_Foscue_Brock_Jr?
+
+PATH_QUERY
+START Macon_Foscue_Brock_Jr
+R1 E757dbc44d55c
+R2 Ed4b5f23662b1
+Execute path; return final tail only.
+
+CONTEXT:
+Macon_Foscue_Brock_Jr | E757dbc44d55c | Dollar_Tree
+Dollar_Tree | Ed4b5f23662b1 | Chesapeake
+Macon_Foscue_Brock_Jr | Eb7a423f1df5d | Loves_Travel_Stops__Country_Stores
+Loves_Travel_Stops__Country_Stores | E5688c5bc2d11 | Oklahoma_City

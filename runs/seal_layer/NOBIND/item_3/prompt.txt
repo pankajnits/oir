@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[LAYER_NOBIND_3]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NOBIND: question HMAC'd as typed (spaced name splits). No PROG. No legend.
+
+##### ID LAYER_NOBIND_3 #####
+QUESTION (token-HMAC'd):
+Eeff56fc62737 Ec3f11f1e78a5 Ecd453236f86b E156c6a520143 Ee9dde9ed0ff4 Ec4e6c42a94e2 Ef2be854203ec?
+
+
+CONTEXT:
+{
+  "E4a5266536f46": [
+    {
+      "Efc31ffe72438": "Ed923399f6f9c",
+      "E2c36eb7b2bcb": "E1317babc707f"
+    },
+    {
+      "Efc31ffe72438": "Ec93ef24eb80e",
+      "E2c36eb7b2bcb": "E9c55ec82a92b"
+    },
+    {
+      "Efc31ffe72438": "E8986d89118b8",
+      "E2c36eb7b2bcb": "E2b3bf7145e0b"
+    }
+  ],
+  "Ea4877369655a": [
+    {
+      "Efc31ffe72438": "E2b3bf7145e0b",
+      "E42f177dd9d33": {
+        "E156c6a520143": "E9353288db5bb",
+        "E512708203fcd": "E07a008bd3bab"
+      }
+    },
+    {
+      "Efc31ffe72438": "E9c55ec82a92b",
+      "E42f177dd9d33": {
+        "E156c6a520143": "E4815c8f806a0",
+        "E512708203fcd": "Ecdd7476ad205"
+      }
+    },
+    {
+      "Efc31ffe72438": "E1317babc707f",
+      "E42f177dd9d33": {
+        "E156c6a520143": "E4815c8f806a0",
+        "E512708203fcd": "E277a6f0bd029"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_85 #####
+QUESTION:
+Which country Aleksandra Marianna Wiesiołowska's father is from?
+
+CONTEXT:
+Tivala | father | Ashoka
+Marek Sobieski | country of citizenship | CF_TAIL_85_PolishLithua
+decoy_mid_85 | country of citizenship | Polish–Lithuanian Commonwealth
+Ashoka | country of citizenship | Maurya dynasty
+Double or Nothing | director | Roy Mack
+Roy Mack | place of birth | New Brunswick, New Jersey
+Aleksandra Marianna Wiesiołowska | father | Marek Sobieski
+Aleksandra Marianna Wiesiołowska | decoy_link_85 | decoy_mid_85

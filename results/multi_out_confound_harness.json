@@ -1,0 +1,308 @@
+{
+  "n": 16,
+  "rev": {
+    "E2441f389f5d0": "CityX0",
+    "Eefc5631d2547": "Acme0",
+    "Efd8bffb6f27f": "Alice0",
+    "E308e973e973f": "works_at",
+    "E9b10945753e8": "owned_by",
+    "Ed35e4f4f1cb7": "HoldCo0",
+    "E9772587b2ee5": "founded_in",
+    "Ec0b6f5f49716": "Year0A",
+    "E48ef9b81645b": "partner_of",
+    "Eedde9ed4649f": "Partner0A",
+    "Ebec3ec1fa5f8": "Beta0",
+    "Ea58a1bf7adeb": "HoldCo0B",
+    "E40a1b3be389f": "Year0B",
+    "Eb7ca3911e80f": "Partner0B",
+    "E5ba4654e5129": "Bob0",
+    "E239d2b75798a": "located_in",
+    "Ee63d523e786c": "CityY0",
+    "E0b514dd936ad": "Where",
+    "Eee85eaf515bf": "is",
+    "E209400d2b36f": "the",
+    "E49c18aee79ad": "company",
+    "E1e47b5d6de24": "located",
+    "Ee32c53d5c45b": "that",
+    "E3f412cab3130": "City",
+    "E60c7879cb40c": "only",
+    "Ecda4babaedc9": "CityX1",
+    "E6614f402850d": "Acme1",
+    "Ee263609a3ec5": "Alice1",
+    "E0c5a959151f5": "HoldCo1",
+    "E223b25e1b8ee": "Year1A",
+    "E8cf2b266edd4": "Partner1A",
+    "E03efae89967f": "Beta1",
+    "E5297ce137fff": "HoldCo1B",
+    "E369fef36d99f": "Year1B",
+    "Eed3945f83895": "Partner1B",
+    "E2881a2ae99d7": "Bob1",
+    "E7075711ccce4": "CityY1",
+    "Ea2dbdfdfb716": "CityX2",
+    "Ea9da431237c8": "Acme2",
+    "E1b23bcee7aad": "Alice2",
+    "Ebfca9e29edb4": "HoldCo2",
+    "Ee3f875c77b60": "Year2A",
+    "E405f8382ad0d": "Partner2A",
+    "Ed28f1c4abb9c": "Beta2",
+    "E33d2573c08fb": "HoldCo2B",
+    "E81b00b677f3e": "Year2B",
+    "Eff355c9257b9": "Partner2B",
+    "E72029caf1b38": "Bob2",
+    "E16eb97a637e0": "CityY2",
+    "Ede037d28ef54": "CityX3",
+    "Efeb725527c9f": "Acme3",
+    "E2aa90fff1f69": "Alice3",
+    "E4e12baace34c": "HoldCo3",
+    "E5e0c0c6e3b02": "Year3A",
+    "Ef5db81721013": "Partner3A",
+    "Ec16f68f7d551": "Beta3",
+    "E7fb951cd1a62": "HoldCo3B",
+    "E135776d91bcd": "Year3B",
+    "Eceb735305d85": "Partner3B",
+    "Ed6eb8ee642c9": "Bob3",
+    "E94e4570f1d9c": "CityY3"
+  },
+  "cases": [
+    {
+      "id": "MOC_G0_A_opaque_rel",
+      "condition": "opaque_rel",
+      "twin": "A",
+      "g": 0,
+      "expect_sealed": "E2441f389f5d0",
+      "expect_plain": "CityX0",
+      "intermediate_company_seal": "Eefc5631d2547",
+      "decoy_tails": [
+        "Ed35e4f4f1cb7",
+        "Ec0b6f5f49716",
+        "Eedde9ed4649f"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G0_A_opaque_rel.txt"
+    },
+    {
+      "id": "MOC_G0_A_none",
+      "condition": "none",
+      "twin": "A",
+      "g": 0,
+      "expect_sealed": "E2441f389f5d0",
+      "expect_plain": "CityX0",
+      "intermediate_company_seal": "Eefc5631d2547",
+      "decoy_tails": [
+        "Ed35e4f4f1cb7",
+        "Ec0b6f5f49716",
+        "Eedde9ed4649f"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G0_A_none.txt"
+    },
+    {
+      "id": "MOC_G0_B_opaque_rel",
+      "condition": "opaque_rel",
+      "twin": "B",
+      "g": 0,
+      "expect_sealed": "Ee63d523e786c",
+      "expect_plain": "CityY0",
+      "intermediate_company_seal": "Ebec3ec1fa5f8",
+      "decoy_tails": [
+        "Ed35e4f4f1cb7",
+        "Ec0b6f5f49716",
+        "Eedde9ed4649f"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G0_B_opaque_rel.txt"
+    },
+    {
+      "id": "MOC_G0_B_none",
+      "condition": "none",
+      "twin": "B",
+      "g": 0,
+      "expect_sealed": "Ee63d523e786c",
+      "expect_plain": "CityY0",
+      "intermediate_company_seal": "Ebec3ec1fa5f8",
+      "decoy_tails": [
+        "Ed35e4f4f1cb7",
+        "Ec0b6f5f49716",
+        "Eedde9ed4649f"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G0_B_none.txt"
+    },
+    {
+      "id": "MOC_G1_A_opaque_rel",
+      "condition": "opaque_rel",
+      "twin": "A",
+      "g": 1,
+      "expect_sealed": "Ecda4babaedc9",
+      "expect_plain": "CityX1",
+      "intermediate_company_seal": "E6614f402850d",
+      "decoy_tails": [
+        "E0c5a959151f5",
+        "E223b25e1b8ee",
+        "E8cf2b266edd4"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G1_A_opaque_rel.txt"
+    },
+    {
+      "id": "MOC_G1_A_none",
+      "condition": "none",
+      "twin": "A",
+      "g": 1,
+      "expect_sealed": "Ecda4babaedc9",
+      "expect_plain": "CityX1",
+      "intermediate_company_seal": "E6614f402850d",
+      "decoy_tails": [
+        "E0c5a959151f5",
+        "E223b25e1b8ee",
+        "E8cf2b266edd4"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G1_A_none.txt"
+    },
+    {
+      "id": "MOC_G1_B_opaque_rel",
+      "condition": "opaque_rel",
+      "twin": "B",
+      "g": 1,
+      "expect_sealed": "E7075711ccce4",
+      "expect_plain": "CityY1",
+      "intermediate_company_seal": "E03efae89967f",
+      "decoy_tails": [
+        "E0c5a959151f5",
+        "E223b25e1b8ee",
+        "E8cf2b266edd4"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G1_B_opaque_rel.txt"
+    },
+    {
+      "id": "MOC_G1_B_none",
+      "condition": "none",
+      "twin": "B",
+      "g": 1,
+      "expect_sealed": "E7075711ccce4",
+      "expect_plain": "CityY1",
+      "intermediate_company_seal": "E03efae89967f",
+      "decoy_tails": [
+        "E0c5a959151f5",
+        "E223b25e1b8ee",
+        "E8cf2b266edd4"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G1_B_none.txt"
+    },
+    {
+      "id": "MOC_G2_A_opaque_rel",
+      "condition": "opaque_rel",
+      "twin": "A",
+      "g": 2,
+      "expect_sealed": "Ea2dbdfdfb716",
+      "expect_plain": "CityX2",
+      "intermediate_company_seal": "Ea9da431237c8",
+      "decoy_tails": [
+        "Ebfca9e29edb4",
+        "Ee3f875c77b60",
+        "E405f8382ad0d"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G2_A_opaque_rel.txt"
+    },
+    {
+      "id": "MOC_G2_A_none",
+      "condition": "none",
+      "twin": "A",
+      "g": 2,
+      "expect_sealed": "Ea2dbdfdfb716",
+      "expect_plain": "CityX2",
+      "intermediate_company_seal": "Ea9da431237c8",
+      "decoy_tails": [
+        "Ebfca9e29edb4",
+        "Ee3f875c77b60",
+        "E405f8382ad0d"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G2_A_none.txt"
+    },
+    {
+      "id": "MOC_G2_B_opaque_rel",
+      "condition": "opaque_rel",
+      "twin": "B",
+      "g": 2,
+      "expect_sealed": "E16eb97a637e0",
+      "expect_plain": "CityY2",
+      "intermediate_company_seal": "Ed28f1c4abb9c",
+      "decoy_tails": [
+        "Ebfca9e29edb4",
+        "Ee3f875c77b60",
+        "E405f8382ad0d"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G2_B_opaque_rel.txt"
+    },
+    {
+      "id": "MOC_G2_B_none",
+      "condition": "none",
+      "twin": "B",
+      "g": 2,
+      "expect_sealed": "E16eb97a637e0",
+      "expect_plain": "CityY2",
+      "intermediate_company_seal": "Ed28f1c4abb9c",
+      "decoy_tails": [
+        "Ebfca9e29edb4",
+        "Ee3f875c77b60",
+        "E405f8382ad0d"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G2_B_none.txt"
+    },
+    {
+      "id": "MOC_G3_A_opaque_rel",
+      "condition": "opaque_rel",
+      "twin": "A",
+      "g": 3,
+      "expect_sealed": "Ede037d28ef54",
+      "expect_plain": "CityX3",
+      "intermediate_company_seal": "Efeb725527c9f",
+      "decoy_tails": [
+        "E4e12baace34c",
+        "E5e0c0c6e3b02",
+        "Ef5db81721013"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G3_A_opaque_rel.txt"
+    },
+    {
+      "id": "MOC_G3_A_none",
+      "condition": "none",
+      "twin": "A",
+      "g": 3,
+      "expect_sealed": "Ede037d28ef54",
+      "expect_plain": "CityX3",
+      "intermediate_company_seal": "Efeb725527c9f",
+      "decoy_tails": [
+        "E4e12baace34c",
+        "E5e0c0c6e3b02",
+        "Ef5db81721013"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G3_A_none.txt"
+    },
+    {
+      "id": "MOC_G3_B_opaque_rel",
+      "condition": "opaque_rel",
+      "twin": "B",
+      "g": 3,
+      "expect_sealed": "E94e4570f1d9c",
+      "expect_plain": "CityY3",
+      "intermediate_company_seal": "Ec16f68f7d551",
+      "decoy_tails": [
+        "E4e12baace34c",
+        "E5e0c0c6e3b02",
+        "Ef5db81721013"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G3_B_opaque_rel.txt"
+    },
+    {
+      "id": "MOC_G3_B_none",
+      "condition": "none",
+      "twin": "B",
+      "g": 3,
+      "expect_sealed": "E94e4570f1d9c",
+      "expect_plain": "CityY3",
+      "intermediate_company_seal": "Ec16f68f7d551",
+      "decoy_tails": [
+        "E4e12baace34c",
+        "E5e0c0c6e3b02",
+        "Ef5db81721013"
+      ],
+      "payload": "runs/multi_out_confound/MOC_G3_B_none.txt"
+    }
+  ]
+}

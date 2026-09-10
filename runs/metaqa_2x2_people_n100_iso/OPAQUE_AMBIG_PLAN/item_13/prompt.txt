@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_13]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_13 #####
+QUESTION:
+Who directed a movie that Steve McQueen starred in?
+
+PATH_QUERY
+START Steve McQueen
+R1 E3cd8c251d1d9
+R2 E9d26da7f3be6
+Execute path; return final tail only.
+
+CONTEXT:
+Steve McQueen | E3cd8c251d1d9 | The Reivers
+The Reivers | E9d26da7f3be6 | Mark Rydell
+The Reivers | E776f1eb73173 | William Faulkner

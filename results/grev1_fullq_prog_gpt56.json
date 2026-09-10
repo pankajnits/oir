@@ -1,0 +1,118 @@
+{
+  "model": "gpt56",
+  "n": 6,
+  "summary": {
+    "FULLQ_PROG": {
+      "score": "6/6",
+      "wilson": {
+        "k": 6,
+        "n": 6,
+        "acc": 1.0,
+        "ci95": [
+          0.6097,
+          1.0
+        ],
+        "display": "6/6 [0.61,1.00]"
+      },
+      "iso": true,
+      "gold": 6,
+      "trap": 0,
+      "unknown": 0,
+      "missing": 0,
+      "other": 0
+    }
+  },
+  "nonclaim": "PROG given. Not G-Rev1. Not confidentiality. English MUT wrapper is protocol, not the app question.",
+  "rows": [
+    {
+      "arm": "FULLQ_PROG",
+      "i": 0,
+      "id": "GREV1_FULLQ_PROG_0",
+      "gold": "Edb2d4c3ffaae",
+      "trap": "E8dbb3128d08b",
+      "iso": true,
+      "plain_q": "What is the country of Michal Krapinec?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 Ea99ba16d9e80?",
+      "english_in_sealed_q": false,
+      "plain_country": "India",
+      "pred": "Edb2d4c3ffaae",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 1,
+      "id": "GREV1_FULLQ_PROG_1",
+      "gold": "E7912e7706f6a",
+      "trap": "E23050f64ea02",
+      "iso": true,
+      "plain_q": "What is the country of Dara Khosrowshahi?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 E670a09aaaa35?",
+      "english_in_sealed_q": false,
+      "plain_country": "France",
+      "pred": "E7912e7706f6a",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 2,
+      "id": "GREV1_FULLQ_PROG_2",
+      "gold": "Ee77f23f5c785",
+      "trap": "E1e1aca4c76ba",
+      "iso": true,
+      "plain_q": "What is the country of Mark T Bertolini?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 E2a5705afdc21?",
+      "english_in_sealed_q": false,
+      "plain_country": "Japan",
+      "pred": "Ee77f23f5c785",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 3,
+      "id": "GREV1_FULLQ_PROG_3",
+      "gold": "Ece526e834198",
+      "trap": "Ed9e596fd924d",
+      "iso": true,
+      "plain_q": "What is the country of Walt Disney?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 E5f5818fb480f?",
+      "english_in_sealed_q": false,
+      "plain_country": "Brazil",
+      "pred": "Ece526e834198",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 4,
+      "id": "GREV1_FULLQ_PROG_4",
+      "gold": "E7912e7706f6a",
+      "trap": "E323d02839bdf",
+      "iso": true,
+      "plain_q": "What is the country of William N Deramus Jr?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 Edc5b8f11b1d6?",
+      "english_in_sealed_q": false,
+      "plain_country": "France",
+      "pred": "E7912e7706f6a",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "arm": "FULLQ_PROG",
+      "i": 5,
+      "id": "GREV1_FULLQ_PROG_5",
+      "gold": "Ebd6442406bc8",
+      "trap": "Ea5a88dd9f572",
+      "iso": true,
+      "plain_q": "What is the country of Topi Manner?",
+      "sealed_q": "E65e3cdcaa711 E4f3c32d28390 E5d3e601cda9f E50fa5c3a0018 E27397ed4d871 Eeb735a7e19d0?",
+      "english_in_sealed_q": false,
+      "plain_country": "UK",
+      "pred": "Ebd6442406bc8",
+      "kind": "gold",
+      "ok": true
+    }
+  ]
+}

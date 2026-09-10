@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_103 #####
+QUESTION:
+What is the place of birth of the director of film True North Trilogy?
+
+CONTEXT:
+Kevin Smith | place of birth | CF_TAIL_103_RedBank
+Thea Sharrock | place of birth | London
+decoy_mid_103 | place of birth | Red Bank
+The "True North" trilogy | decoy_link_103 | decoy_mid_103
+Simple Gogoi | country of citizenship | India
+The One and Only Ivan | director | Thea Sharrock
+Tumi Jodi Kuwa | director | Simple Gogoi
+The "True North" trilogy | director | Kevin Smith

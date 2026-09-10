@@ -1,0 +1,107 @@
+{
+  "model": "claude",
+  "n": 6,
+  "summary": {
+    "score": "6/6",
+    "wilson": {
+      "k": 6,
+      "n": 6,
+      "acc": 1.0,
+      "ci95": [
+        0.6097,
+        1.0
+      ],
+      "display": "6/6 [0.61,1.00]"
+    },
+    "unknown": 0,
+    "trap": 0,
+    "missing": 0
+  },
+  "nonclaim": "Unique 3-hop. Isolation. Per-item HMAC. No PATH. Validates complex SEAL_NL, not city/country NONE.",
+  "rows": [
+    {
+      "i": 0,
+      "id": "GREV1_UP_0",
+      "use": "HR",
+      "gold": "E7536d1444e72",
+      "trap": "E9461dae96f23",
+      "start": "Ebcb45c793006",
+      "start_in_q": true,
+      "iso": true,
+      "per_item_key": true,
+      "pred": "E7536d1444e72",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "i": 1,
+      "id": "GREV1_UP_1",
+      "use": "TICKET",
+      "gold": "E71c70032a80c",
+      "trap": "E68bd1fcffc3b",
+      "start": "E18938eefaa62",
+      "start_in_q": true,
+      "iso": true,
+      "per_item_key": true,
+      "pred": "E71c70032a80c",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "i": 2,
+      "id": "GREV1_UP_2",
+      "use": "ONCALL",
+      "gold": "E4b6fc339bce4",
+      "trap": "E7791c5f99401",
+      "start": "Ef8b9fddfb64b",
+      "start_in_q": true,
+      "iso": true,
+      "per_item_key": true,
+      "pred": "E4b6fc339bce4",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "i": 3,
+      "id": "GREV1_UP_3",
+      "use": "HR",
+      "gold": "Eb222431c9d9e",
+      "trap": "E9d87d6a59653",
+      "start": "Ee509ac0b6cf3",
+      "start_in_q": true,
+      "iso": true,
+      "per_item_key": true,
+      "pred": "Eb222431c9d9e",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "i": 4,
+      "id": "GREV1_UP_4",
+      "use": "TICKET",
+      "gold": "E9498b4caa20a",
+      "trap": "E5dedf3040534",
+      "start": "E9eb7d019c34d",
+      "start_in_q": true,
+      "iso": true,
+      "per_item_key": true,
+      "pred": "E9498b4caa20a",
+      "kind": "gold",
+      "ok": true
+    },
+    {
+      "i": 5,
+      "id": "GREV1_UP_5",
+      "use": "ONCALL",
+      "gold": "Ed74a7d74a0f8",
+      "trap": "E5bb488306e32",
+      "start": "E8df762f4454f",
+      "start_in_q": true,
+      "iso": true,
+      "per_item_key": true,
+      "pred": "Ed74a7d74a0f8",
+      "kind": "gold",
+      "ok": true
+    }
+  ]
+}

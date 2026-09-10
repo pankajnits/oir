@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_119 #####
+QUESTION:
+Why did the director of film The Obsessed Of Catule die?
+
+CONTEXT:
+Anselmo Duarte | cause of death | CF_TAIL_119_stroke
+A Lady of Quality | director | J. Searle Dawley
+decoy_mid_119 | cause of death | stroke
+J. Searle Dawley | place of birth | Colorado
+The Obsessed of Catule | decoy_link_119 | decoy_mid_119
+Politics of Love | director | William Dear
+The Obsessed of Catule | director | Anselmo Duarte
+William Dear | place of birth | Toronto, Ontario

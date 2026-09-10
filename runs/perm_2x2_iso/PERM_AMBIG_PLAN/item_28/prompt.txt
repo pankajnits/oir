@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_28]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_28 #####
+QUESTION:
+What city is the headquarters of the company led by Richard_Gordon_Handover?
+
+PATH_QUERY
+START Richard_Gordon_Handover
+R1 E61a7ec9e5278
+R2 E41f4d0f2b883
+Execute path; return final tail only.
+
+CONTEXT:
+Richard_Gordon_Handover | E61a7ec9e5278 | WHSmith
+WHSmith | E41f4d0f2b883 | Swindon
+Richard_Gordon_Handover | Ece53595b9128 | Westdeutscher_Rundfunk
+Westdeutscher_Rundfunk | E328ba41e89e6 | Cologne

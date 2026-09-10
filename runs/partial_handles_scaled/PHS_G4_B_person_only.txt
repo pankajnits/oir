@@ -1,0 +1,20 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles (person only):
+person=E6dd3cb6140ba
+No relation seals. Infer relations from triple structure; join to city.
+
+QUESTION:
+Ef4847a56531d Eb21e7dc4f2a5 E6bfcc8e9d454 E0a585bff2ea2 Ee7c3b1a85cce E6aeacdee52f6 E6dd3cb6140ba E8fc04ee41435? E1afd20f80224 E86f011e335b9.
+
+CONTEXT:
+E6dd3cb6140ba | E8fc04ee41435 | E759853093924
+E1ab9dde55750 | E8fc04ee41435 | E759853093924
+E0f6357d6818f | E8fc04ee41435 | Eda4aef1ef3f6
+E0f6357d6818f | E4f76b32980e2 | E1ab9dde55750
+Eda4aef1ef3f6 | E23cdad3cb53c | E1f160a177a7c
+E759853093924 | E23cdad3cb53c | Edd4fe32be1c0
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

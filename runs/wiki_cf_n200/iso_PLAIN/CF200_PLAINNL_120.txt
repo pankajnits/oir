@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_120 #####
+QUESTION:
+Where was the place of death of the performer of song White Squall (Song)?
+
+CONTEXT:
+Stan Rogers | place of death | CF_TAIL_120_GreaterCinci
+White Squall | performer | Stan Rogers
+decoy_mid_120 | place of death | Greater Cincinnati Airport
+White Squall | decoy_link_120 | decoy_mid_120
+Sensational Janine | director | Hans Billian
+Hans Billian | place of death | Gräfelfing
+Michael Edward Reagan | mother | Jane Wyman
+Jane Wyman | employer | Warner Bros.

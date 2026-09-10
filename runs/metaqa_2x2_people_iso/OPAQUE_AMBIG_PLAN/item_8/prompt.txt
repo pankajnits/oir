@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_8]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_8 #####
+QUESTION:
+Who directed a movie that Gene Tierney starred in?
+
+PATH_QUERY
+START Gene Tierney
+R1 E5781ba9f40c0
+R2 E276806714264
+Execute path; return final tail only.
+
+CONTEXT:
+Gene Tierney | E5781ba9f40c0 | Tobacco Road
+Tobacco Road | E276806714264 | John Ford
+Tobacco Road | Ecb44badffd2d | Erskine Caldwell

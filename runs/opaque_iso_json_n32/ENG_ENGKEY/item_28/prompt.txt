@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[OIRJ_ENG_ENGKEY_28]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM ENG_ENGKEY: English Q; English keys; sealed values. No JOIN.
+
+##### ID OIRJ_ENG_ENGKEY_28 #####
+QUESTION (token-HMAC'd):
+What is the country of E901ec0dcdc0c?
+
+
+CONTEXT:
+{
+  "employees": [
+    {
+      "id": "E901ec0dcdc0c",
+      "employer": "E47bc3f14cf7b"
+    },
+    {
+      "id": "E2a9e776dc174",
+      "employer": "E222e03bf662a"
+    },
+    {
+      "id": "E9e5777a9dd45",
+      "employer": "E284818ec78e3"
+    }
+  ],
+  "orgs": [
+    {
+      "id": "E47bc3f14cf7b",
+      "hq": {
+        "city": "Ed1ab348b5c4e",
+        "country": "E2c6b0437725e"
+      }
+    },
+    {
+      "id": "E284818ec78e3",
+      "hq": {
+        "city": "E0884f0d32ea4",
+        "country": "E268a564ab10a"
+      }
+    },
+    {
+      "id": "E222e03bf662a",
+      "hq": {
+        "country": "E5568c26f68f2",
+        "city": "E2ea8deeeb73e"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_10]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_10 #####
+QUESTION:
+Who directed a movie that Kim Basinger starred in?
+
+PATH_QUERY
+START Kim Basinger
+R1 E2c4ed152fc3f
+R2 E0b2c61b99155
+Execute path; return final tail only.
+
+CONTEXT:
+Kim Basinger | E2c4ed152fc3f | Fool for Love
+Fool for Love | E0b2c61b99155 | Robert Altman
+Fool for Love | E332e80df67d7 | Sam Shepard

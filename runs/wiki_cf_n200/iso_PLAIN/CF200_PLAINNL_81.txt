@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_81 #####
+QUESTION:
+Who is the spouse of the performer of song Forever Everyday?
+
+CONTEXT:
+Forever Everyday | decoy_link_81 | decoy_mid_81
+Circle of the Sun | director | Colin Low
+Colin Low | place of death | Montreal
+Forever Everyday | performer | Lee Ann Womack
+Henry William de Saussure | place of death | Columbia, SC
+decoy_mid_81 | spouse | Frank Liddell
+Lee Ann Womack | spouse | CF_TAIL_81_FrankLiddell
+William Ford De Saussure | father | Henry William de Saussure

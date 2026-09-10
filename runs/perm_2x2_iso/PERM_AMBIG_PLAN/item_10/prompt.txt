@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_10]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_10 #####
+QUESTION:
+What city is the headquarters of the company led by David_Green?
+
+PATH_QUERY
+START David_Green
+R1 Ef74c506499c8
+R2 Ea34daf7552d5
+Execute path; return final tail only.
+
+CONTEXT:
+David_Green | Ef74c506499c8 | Hobby_Lobby
+Hobby_Lobby | Ea34daf7552d5 | Oklahoma_City
+David_Green | Eeb8b6142e207 | USAA
+USAA | E393ce4f7a634 | San_Antonio

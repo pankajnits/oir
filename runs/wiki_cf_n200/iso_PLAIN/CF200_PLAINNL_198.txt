@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_198 #####
+QUESTION:
+Where did the founder of university Seton Hall University die?
+
+CONTEXT:
+Albert Mkrtchyan | place of death | Yerevan
+James Roosevelt Bayley | place of death | CF_TAIL_198_Newark
+decoy_mid_198 | place of death | Newark
+Seton Hall University | founded by | James Roosevelt Bayley
+Manoel de Oliveira | place of birth | Porto
+The Song of the Old Days | director | Albert Mkrtchyan
+A Talking Picture | director | Manoel de Oliveira
+Seton Hall University | decoy_link_198 | decoy_mid_198

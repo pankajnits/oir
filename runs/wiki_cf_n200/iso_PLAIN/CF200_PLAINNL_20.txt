@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_20 #####
+QUESTION:
+When did Philipp, Duke Of Saxe-Merseburg-Lauchstädt's father die?
+
+CONTEXT:
+decoy_mid_20 | date of death | 18 October 1691
+Let's Be Evil | director | Martin Owen
+Philip II, Count of Nevers | date of birth | 1389
+Christian I, Duke of Saxe-Merseburg | date of death | CF_TAIL_20_18October169
+Philipp, Duke of Saxe-Merseburg-Lauchstädt | decoy_link_20 | decoy_mid_20
+Charles I, Count of Nevers | father | Philip II, Count of Nevers
+Martin Owen | employer | Royal Academy of Music
+Philipp, Duke of Saxe-Merseburg-Lauchstädt | father | Christian I, Duke of Saxe-Merseburg

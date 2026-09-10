@@ -1,0 +1,23 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM LEGEND_NL: English rel → sealed rel map + span-sealed Q. No PATH.
+
+##### ID OR_LEGEND_7 #####
+LEGEND
+director = E0b35ff5b0c7b
+place of death = E257520c171fb
+(other CONTEXT rel tokens are distractors)
+QUESTION:
+Where was the place of death of the director of film E39b363452474?
+
+CONTEXT:
+Eb272237d4ca3 | Eb001700916b5 | Ed02558bd289f
+E846903f178ae | E257520c171fb | Ebe057ec7ff4e
+E3245290af502 | E00994e72c067 | E4f2cbd3f9f3b
+Eff903cba9963 | E19650717cd28 | Eb272237d4ca3
+E39b363452474 | Ebf4f0daf4385 | E846903f178ae
+E152bdad4ef41 | E257520c171fb | Eb03723ba4d5e
+Ee5be1dd83e1f | E0b35ff5b0c7b | E3245290af502
+E39b363452474 | E0b35ff5b0c7b | E152bdad4ef41

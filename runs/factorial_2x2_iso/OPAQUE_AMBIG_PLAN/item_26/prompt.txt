@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_26]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_26 #####
+QUESTION:
+What city is the headquarters of the company led by Stacey_Snider?
+
+PATH_QUERY
+START Stacey_Snider
+R1 E39ecd9333029
+R2 E0e8ebc04e7f6
+Execute path; return final tail only.
+
+CONTEXT:
+Stacey_Snider | E39ecd9333029 | 20th_Century_Studios
+20th_Century_Studios | E0e8ebc04e7f6 | Fox_Plaza
+Stacey_Snider | E918ff2227aa4 | Turner_Broadcasting_System
+Turner_Broadcasting_System | E23cfc487d2bb | CNN_Center

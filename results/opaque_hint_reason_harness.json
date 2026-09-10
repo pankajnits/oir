@@ -1,0 +1,180 @@
+{
+  "n": 6,
+  "suite": "opaque_hint_reason",
+  "seed": 20260829,
+  "nonclaim": "Sealed Q + in-message hints. TWO_REL trap is mentor country. Not JOIN. Not confidentiality.",
+  "arms": {
+    "ABSTRACT": {
+      "ids": [
+        "OHR_ABSTRACT_0",
+        "OHR_ABSTRACT_1",
+        "OHR_ABSTRACT_2",
+        "OHR_ABSTRACT_3",
+        "OHR_ABSTRACT_4",
+        "OHR_ABSTRACT_5"
+      ],
+      "item_paths": [
+        "runs/opaque_hint_reason/ABSTRACT/item_0/prompt.txt",
+        "runs/opaque_hint_reason/ABSTRACT/item_1/prompt.txt",
+        "runs/opaque_hint_reason/ABSTRACT/item_2/prompt.txt",
+        "runs/opaque_hint_reason/ABSTRACT/item_3/prompt.txt",
+        "runs/opaque_hint_reason/ABSTRACT/item_4/prompt.txt",
+        "runs/opaque_hint_reason/ABSTRACT/item_5/prompt.txt"
+      ],
+      "sealed_answer": true
+    },
+    "TWO_REL": {
+      "ids": [
+        "OHR_TWO_REL_0",
+        "OHR_TWO_REL_1",
+        "OHR_TWO_REL_2",
+        "OHR_TWO_REL_3",
+        "OHR_TWO_REL_4",
+        "OHR_TWO_REL_5"
+      ],
+      "item_paths": [
+        "runs/opaque_hint_reason/TWO_REL/item_0/prompt.txt",
+        "runs/opaque_hint_reason/TWO_REL/item_1/prompt.txt",
+        "runs/opaque_hint_reason/TWO_REL/item_2/prompt.txt",
+        "runs/opaque_hint_reason/TWO_REL/item_3/prompt.txt",
+        "runs/opaque_hint_reason/TWO_REL/item_4/prompt.txt",
+        "runs/opaque_hint_reason/TWO_REL/item_5/prompt.txt"
+      ],
+      "sealed_answer": true
+    }
+  },
+  "cases": [
+    {
+      "arm": "ABSTRACT",
+      "i": 0,
+      "id": "OHR_ABSTRACT_0",
+      "gold": "E362914b20850",
+      "trap": "E9512e4822cbb",
+      "start": "E5798f82ab89b",
+      "path": "runs/opaque_hint_reason/ABSTRACT/item_0/prompt.txt",
+      "app_q": "What is the country of the employer of John K Martin Jr?",
+      "iso": true
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 0,
+      "id": "OHR_TWO_REL_0",
+      "gold": "E362914b20850",
+      "trap": "E9512e4822cbb",
+      "start": "E5798f82ab89b",
+      "path": "runs/opaque_hint_reason/TWO_REL/item_0/prompt.txt",
+      "app_q": "What is the country of the employer of John K Martin Jr?",
+      "iso": true
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 1,
+      "id": "OHR_ABSTRACT_1",
+      "gold": "Efcd13307bfaa",
+      "trap": "E910ffb27db2f",
+      "start": "E1fe76d3854ba",
+      "path": "runs/opaque_hint_reason/ABSTRACT/item_1/prompt.txt",
+      "app_q": "What is the country of the employer of Michal Krapinec?",
+      "iso": true
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 1,
+      "id": "OHR_TWO_REL_1",
+      "gold": "Efcd13307bfaa",
+      "trap": "E910ffb27db2f",
+      "start": "E1fe76d3854ba",
+      "path": "runs/opaque_hint_reason/TWO_REL/item_1/prompt.txt",
+      "app_q": "What is the country of the employer of Michal Krapinec?",
+      "iso": true
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 2,
+      "id": "OHR_ABSTRACT_2",
+      "gold": "E943b7ef9e718",
+      "trap": "E9ebe7b552bbf",
+      "start": "E10e6db27a2ba",
+      "path": "runs/opaque_hint_reason/ABSTRACT/item_2/prompt.txt",
+      "app_q": "What is the country of the employer of Keith Creel?",
+      "iso": true
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 2,
+      "id": "OHR_TWO_REL_2",
+      "gold": "E943b7ef9e718",
+      "trap": "E9ebe7b552bbf",
+      "start": "E10e6db27a2ba",
+      "path": "runs/opaque_hint_reason/TWO_REL/item_2/prompt.txt",
+      "app_q": "What is the country of the employer of Keith Creel?",
+      "iso": true
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 3,
+      "id": "OHR_ABSTRACT_3",
+      "gold": "E637a02ef29ec",
+      "trap": "Ef556644f50fd",
+      "start": "E9d5d1b3fb9ac",
+      "path": "runs/opaque_hint_reason/ABSTRACT/item_3/prompt.txt",
+      "app_q": "What is the country of the employer of Stephen A Schwarzman?",
+      "iso": true
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 3,
+      "id": "OHR_TWO_REL_3",
+      "gold": "E637a02ef29ec",
+      "trap": "Ef556644f50fd",
+      "start": "E9d5d1b3fb9ac",
+      "path": "runs/opaque_hint_reason/TWO_REL/item_3/prompt.txt",
+      "app_q": "What is the country of the employer of Stephen A Schwarzman?",
+      "iso": true
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 4,
+      "id": "OHR_ABSTRACT_4",
+      "gold": "E8e981fbac141",
+      "trap": "E2048372384e5",
+      "start": "E08b76ee2e270",
+      "path": "runs/opaque_hint_reason/ABSTRACT/item_4/prompt.txt",
+      "app_q": "What is the country of the employer of Topi Manner?",
+      "iso": true
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 4,
+      "id": "OHR_TWO_REL_4",
+      "gold": "E8e981fbac141",
+      "trap": "E2048372384e5",
+      "start": "E08b76ee2e270",
+      "path": "runs/opaque_hint_reason/TWO_REL/item_4/prompt.txt",
+      "app_q": "What is the country of the employer of Topi Manner?",
+      "iso": true
+    },
+    {
+      "arm": "ABSTRACT",
+      "i": 5,
+      "id": "OHR_ABSTRACT_5",
+      "gold": "Eac26f6afd03f",
+      "trap": "E759bde67d82a",
+      "start": "E03b2bcb0ba83",
+      "path": "runs/opaque_hint_reason/ABSTRACT/item_5/prompt.txt",
+      "app_q": "What is the country of the employer of Jakub Strnad?",
+      "iso": true
+    },
+    {
+      "arm": "TWO_REL",
+      "i": 5,
+      "id": "OHR_TWO_REL_5",
+      "gold": "Eac26f6afd03f",
+      "trap": "E759bde67d82a",
+      "start": "E03b2bcb0ba83",
+      "path": "runs/opaque_hint_reason/TWO_REL/item_5/prompt.txt",
+      "app_q": "What is the country of the employer of Jakub Strnad?",
+      "iso": true
+    }
+  ]
+}

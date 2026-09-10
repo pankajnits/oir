@@ -1,0 +1,40 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM VAULT_LEG: same vault JSON + name→token legend. English QUESTION. No JOIN.
+
+##### ID FD_VAULT_LEG_5 #####
+LEGEND (plaintext name → vault token):
+Topi Manner = vault:v1:E838e3317aad3
+
+QUESTION:
+Where is the headquarters city of the company associated with Topi Manner?
+Return the vault token for that city.
+
+CONTEXT:
+{
+  "people": {
+    "vault:v1:E838e3317aad3": {
+      "company": "vault:v1:E4f505259084b"
+    },
+    "vault:v1:E7bd00aec89cf": {
+      "company": "vault:v1:E35c6044cad26"
+    },
+    "vault:v1:Ea15386cbce1e": {
+      "company": "vault:v1:E054f8bc2e5e4"
+    }
+  },
+  "companies": {
+    "vault:v1:E4f505259084b": {
+      "hq_city": "vault:v1:E30831f61de2e"
+    },
+    "vault:v1:E35c6044cad26": {
+      "hq_city": "vault:v1:Ec2026ed14e2f"
+    },
+    "vault:v1:E054f8bc2e5e4": {
+      "hq_city": "vault:v1:E7ca803432f5a"
+    }
+  }
+}
+

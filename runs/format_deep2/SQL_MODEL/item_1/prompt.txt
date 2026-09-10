@@ -1,0 +1,15 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[<id>]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+ARM SQL_MODEL: live sqlite. You do not see rows. Write ONE query; we execute it.
+
+##### ID FD2_SQL_MODEL_1 #####
+SCHEMA:
+employees(emp_id TEXT, org_id TEXT)
+orgs(org_id TEXT, city_id TEXT)
+cities(city_id TEXT, country TEXT)
+
+QUESTION:
+Return cities.country for the employee whose emp_id is Ec434cbd619d0.
+

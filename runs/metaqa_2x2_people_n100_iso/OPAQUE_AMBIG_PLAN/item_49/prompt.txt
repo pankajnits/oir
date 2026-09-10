@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_49]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_49 #####
+QUESTION:
+Who directed a movie that Mark Wahlberg starred in?
+
+PATH_QUERY
+START Mark Wahlberg
+R1 Ea6fa72fe318f
+R2 Ea56c7f18fe29
+Execute path; return final tail only.
+
+CONTEXT:
+Mark Wahlberg | Ea6fa72fe318f | The Perfect Storm
+The Perfect Storm | Ea56c7f18fe29 | Wolfgang Petersen
+The Perfect Storm | E41ae7b1ffc60 | Sebastian Junger

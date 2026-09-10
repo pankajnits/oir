@@ -1,0 +1,11 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_2]: <sql>
+
+DB: music_4
+SCHEMA:
+artist(Artist_ID, Artist, Age, Famous_Title, Famous_Release_date)
+volume(Volume_ID, Volume_Issue, Issue_Date, Weeks_on_Top, Song, Artist_ID)
+music_festival(ID, Music_Festival, Date_of_ceremony, Category, Volume, Result)
+QUESTION:
+What are the famous titles of artists who have not only had volumes that spent more than 2 weeks on top but also volumes that spent less than 2 weeks on top?

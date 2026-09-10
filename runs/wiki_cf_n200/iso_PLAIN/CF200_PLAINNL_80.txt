@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_80 #####
+QUESTION:
+Where was the place of death of Amaury De Montfort (Died 1241)'s father?
+
+CONTEXT:
+Kunigunde of Sternberg | place of birth | Konopiště
+Amaury de Montfort | decoy_link_80 | decoy_mid_80
+decoy_mid_80 | place of death | Toulouse
+Amaury de Montfort | father | Simon de Montfort, 5th Earl of Leicester
+Charles III, Prince of Monaco | mother | Maria Caroline Gibert de Lametz
+Simon de Montfort, 5th Earl of Leicester | place of death | CF_TAIL_80_Toulouse
+Maria Caroline Gibert de Lametz | date of birth | 18 July 1793
+Sidonie of Poděbrady | mother | Kunigunde of Sternberg

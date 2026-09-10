@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_72]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_72 #####
+QUESTION:
+Who directed a movie that Albert Finney starred in?
+
+PATH_QUERY
+START Albert Finney
+R1 E4faa5832c846
+R2 Ebbe236e4ecda
+Execute path; return final tail only.
+
+CONTEXT:
+Albert Finney | E4faa5832c846 | The Run of the Country
+The Run of the Country | Ebbe236e4ecda | Peter Yates
+The Run of the Country | Eb4ae551b6902 | Shane Connaughton

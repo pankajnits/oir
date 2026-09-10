@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_23]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_23 #####
+QUESTION:
+What city is the headquarters of the company led by Luka_Mucic?
+
+PATH_QUERY
+START Luka_Mucic
+R1 Efd1627e5a09f
+R2 Ecb6fbe7420f4
+Execute path; return final tail only.
+
+CONTEXT:
+Luka_Mucic | Efd1627e5a09f | Vonovia
+Vonovia | Ecb6fbe7420f4 | Bochum
+Luka_Mucic | Ec2656f2ddb60 | Heineken_International
+Heineken_International | E679ff1cf9b07 | Amsterdam

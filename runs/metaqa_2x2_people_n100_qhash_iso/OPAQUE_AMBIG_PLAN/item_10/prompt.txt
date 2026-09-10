@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_10]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_10 #####
+QUESTION:
+Who E0f6c3bc52afa a E3602d3416ed8 E202e4ee2ee17 [Kim Basinger] E9e8291e68eda Ec31ea822cf55?
+
+PATH_QUERY
+START Kim Basinger
+R1 E088ea87413fa
+R2 E5b3e7b93c62a
+Execute path; return final tail only.
+
+CONTEXT:
+Kim Basinger | E088ea87413fa | Fool for Love
+Fool for Love | E5b3e7b93c62a | Robert Altman
+Fool for Love | E4b40e1583702 | Sam Shepard

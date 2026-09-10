@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_9]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_9 #####
+QUESTION:
+What city is the headquarters of the company led by Steve_Weed?
+
+PATH_QUERY
+START Steve_Weed
+R1 E3d81bcbed9da
+R2 E26450424bae8
+Execute path; return final tail only.
+
+CONTEXT:
+Steve_Weed | E3d81bcbed9da | WaveDivision_Holdings_LLC
+WaveDivision_Holdings_LLC | E26450424bae8 | New_Jersey
+Steve_Weed | E27278b046bfd | Hobby_Lobby
+Hobby_Lobby | E3606b15c1047 | Oklahoma_City

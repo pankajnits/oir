@@ -1,0 +1,269 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+Answer EVERY ID.
+
+ARM TABLE/SEAL_PROG: HMAC-sealed table cells AND headers + JOIN over seals.
+
+##### ID DOM_TABLE_SEALPROG_0 #####
+JOIN_QUERY
+START E38daae229352
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E17763e69c7e5 | E3864f2c15482 |
+| E9428f0a69b97 | E238da43b8dab |
+| E38daae229352 | E5b1923a5564b |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| E3864f2c15482 | E832f4aeb7fe9 |
+| E238da43b8dab | E00a13ef9e583 |
+| E5b1923a5564b | E38991d8565fc |
+
+##### ID DOM_TABLE_SEALPROG_1 #####
+JOIN_QUERY
+START Ec862c7864f1e
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E5a54810f50a3 | E8a945953e829 |
+| Ec862c7864f1e | E5648ca467b71 |
+| E8f519d59883d | Ea66303e3ed71 |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| E5648ca467b71 | E53bf3b0197dc |
+| Ea66303e3ed71 | E5d4088333ab9 |
+| E8a945953e829 | E1e7e65c625c4 |
+
+##### ID DOM_TABLE_SEALPROG_2 #####
+JOIN_QUERY
+START E915f1ae896c3
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| Eef853c15f639 | Ecc655e8578ec |
+| Ee2852cc60b9b | E2bd196fff85d |
+| E915f1ae896c3 | E5b1923a5564b |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| Ecc655e8578ec | Eaf0912c7498f |
+| E5b1923a5564b | E38991d8565fc |
+| E2bd196fff85d | Ebd1397cdcc2b |
+
+##### ID DOM_TABLE_SEALPROG_3 #####
+JOIN_QUERY
+START E6fb8b4ba248b
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| Edaede33e24d4 | E99a331dad720 |
+| E61c3bc833163 | E9de78eb29557 |
+| E6fb8b4ba248b | Eb27b6add03d4 |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| E99a331dad720 | E357b55a0a62f |
+| E9de78eb29557 | E0b724b7a8008 |
+| Eb27b6add03d4 | E5ee83207c12e |
+
+##### ID DOM_TABLE_SEALPROG_4 #####
+JOIN_QUERY
+START E627db7d0fb06
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E039bbd390e04 | E150b3fcaed9e |
+| E33228b8bf1c0 | E0db2b3273194 |
+| E627db7d0fb06 | E348aa416d535 |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| E348aa416d535 | E7a96dde51ba9 |
+| E150b3fcaed9e | E5d7181369d39 |
+| E0db2b3273194 | E1eb9a01597e0 |
+
+##### ID DOM_TABLE_SEALPROG_5 #####
+JOIN_QUERY
+START E4b6a5b8332be
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E382664b84689 | E6c638346175b |
+| Ef4a652f9e8b1 | E8fbd5f23ba43 |
+| E4b6a5b8332be | E3eaa24ec4827 |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| E6c638346175b | E12b1e7a925ca |
+| E8fbd5f23ba43 | Ee393ab427402 |
+| E3eaa24ec4827 | Ec95bcddd0abe |
+
+##### ID DOM_TABLE_SEALPROG_6 #####
+JOIN_QUERY
+START E271c672c7e1c
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| Ef582a216680e | E2ba125516697 |
+| E271c672c7e1c | Eb27b6add03d4 |
+| Ed3e422684796 | Ef054aa2c60af |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| Eb27b6add03d4 | E5ee83207c12e |
+| Ef054aa2c60af | E8d28a14db79a |
+| E2ba125516697 | E71d71f08739c |
+
+##### ID DOM_TABLE_SEALPROG_7 #####
+JOIN_QUERY
+START E19688b766e7e
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E17763e69c7e5 | E3864f2c15482 |
+| E8c011a5831a4 | Ecff2bd471585 |
+| E19688b766e7e | E5b1923a5564b |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| E5b1923a5564b | E38991d8565fc |
+| Ecff2bd471585 | E20a1c842696f |
+| E3864f2c15482 | E832f4aeb7fe9 |
+
+##### ID DOM_TABLE_SEALPROG_8 #####
+JOIN_QUERY
+START E23312912aa0e
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E23312912aa0e | E00fed7b6181f |
+| Ed5736adab143 | Eb27b6add03d4 |
+| E8c7c3d24459e | E24db086b2d4b |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| Eb27b6add03d4 | E5ee83207c12e |
+| E00fed7b6181f | Efbcb189852b1 |
+| E24db086b2d4b | Efebf0d5cd517 |
+
+##### ID DOM_TABLE_SEALPROG_9 #####
+JOIN_QUERY
+START E48b51d1d7bde
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E0d81b04e091c | Eb81e1f409a46 |
+| E48b51d1d7bde | Ef3468e201cbb |
+| Ecd2bc83b67c8 | Eb27b6add03d4 |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| Eb81e1f409a46 | Ee3d844cbf44f |
+| Ef3468e201cbb | E1371102a8522 |
+| Eb27b6add03d4 | E5ee83207c12e |
+
+##### ID DOM_TABLE_SEALPROG_10 #####
+JOIN_QUERY
+START Eb3597926c200
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E0d5cdfa2d834 | E5a4bbc4faf1f |
+| E1f74f75eb725 | E18c4ab1e1ce0 |
+| Eb3597926c200 | Eaf75bd221309 |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| E18c4ab1e1ce0 | E591b0d96cbce |
+| Eaf75bd221309 | E3de9412cb2c1 |
+| E5a4bbc4faf1f | Ee3d844cbf44f |
+
+##### ID DOM_TABLE_SEALPROG_11 #####
+JOIN_QUERY
+START E15147aee6fb9
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+CONTEXT:
+TABLE people
+| E1cd945fcc663 | Eb74d7068d8c9 |
+| --- | --- |
+| E0d81b04e091c | Eb81e1f409a46 |
+| E17763e69c7e5 | E3864f2c15482 |
+| E15147aee6fb9 | Eb27b6add03d4 |
+
+TABLE companies
+| Eb74d7068d8c9 | Ec66cf2f33ed7 |
+| --- | --- |
+| E3864f2c15482 | E832f4aeb7fe9 |
+| Eb81e1f409a46 | Ee3d844cbf44f |
+| Eb27b6add03d4 | E5ee83207c12e |

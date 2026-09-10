@@ -1,0 +1,538 @@
+{
+  "model": "gpt56",
+  "n": 12,
+  "summary": {
+    "PLAIN_NL": {
+      "score": "not_run",
+      "wiki_leak": "not_run",
+      "missing": 12,
+      "wilson": null
+    },
+    "SPAN_NL": {
+      "score": "12/12",
+      "wiki_leak": "0/12",
+      "missing": 0,
+      "wilson": {
+        "k": 12,
+        "n": 12,
+        "acc": 1.0,
+        "ci95": [
+          0.7575,
+          1.0
+        ],
+        "display": "12/12 [0.76,1.00]"
+      }
+    },
+    "SEAL_PROG": {
+      "score": "not_run",
+      "wiki_leak": "not_run",
+      "missing": 12,
+      "wilson": null
+    },
+    "LEGEND_NL": {
+      "score": "12/12",
+      "wiki_leak": "0/12",
+      "missing": 0,
+      "wilson": {
+        "k": 12,
+        "n": 12,
+        "acc": 1.0,
+        "ci95": [
+          0.7575,
+          1.0
+        ],
+        "display": "12/12 [0.76,1.00]"
+      }
+    },
+    "MODEL_PLAN": {
+      "score": "not_run",
+      "wiki_leak": "not_run",
+      "missing": 12,
+      "wilson": null
+    }
+  },
+  "hypothesis": "SPAN_NL collapses when relations are opaque; LEGEND/PATH restore. Not G-Rev1.",
+  "nonclaim": "Not G-Rev1. MODEL_PLAN without lexicon is expected to fail or leak.",
+  "rows": [
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_0",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Who is the mother of the director of film Polish-Russian War (Film)?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_1",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "When did John V, Prince Of Anhalt-Zerbst's father die?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_2",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_3",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the director of film Ronnie Rocket born?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_4",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the father of \u0218tefan I. Neni\u021bescu born?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_5",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the director of film Thomas Jefferson (Film) born?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_6",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_7",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the place of death of the director of film Beat Girl?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_8",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "When did Jean Martin (Singer)'s husband die?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_9",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "What nationality is the director of film World And Time Enough?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_10",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Who is the spouse of the director of film Eden And After?"
+    },
+    {
+      "arm": "PLAIN_NL",
+      "id": "OR_PLAINNL_11",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the place of death of Anastasia Of Serbia's husband?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_0",
+      "pred": "Ed1d21ff0869e",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Who is the mother of the director of film Polish-Russian War (Film)?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_1",
+      "pred": "E0e5de48666c1",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When did John V, Prince Of Anhalt-Zerbst's father die?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_2",
+      "pred": "E9df979069b70",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_3",
+      "pred": "Efe3f82eef721",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the director of film Ronnie Rocket born?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_4",
+      "pred": "E8c948e05c1d0",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the father of \u0218tefan I. Neni\u021bescu born?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_5",
+      "pred": "Eba979aba7147",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the director of film Thomas Jefferson (Film) born?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_6",
+      "pred": "E77f4f9ea71b8",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_7",
+      "pred": "Eb03723ba4d5e",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the place of death of the director of film Beat Girl?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_8",
+      "pred": "E214cb8d51c53",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When did Jean Martin (Singer)'s husband die?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_9",
+      "pred": "E571ef2ac9c9c",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What nationality is the director of film World And Time Enough?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_10",
+      "pred": "Ebf87c49a1dc5",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Who is the spouse of the director of film Eden And After?"
+    },
+    {
+      "arm": "SPAN_NL",
+      "id": "OR_SPANNL_11",
+      "pred": "E621f4cd32323",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the place of death of Anastasia Of Serbia's husband?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_0",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Who is the mother of the director of film Polish-Russian War (Film)?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_1",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "When did John V, Prince Of Anhalt-Zerbst's father die?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_2",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_3",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the director of film Ronnie Rocket born?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_4",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the father of \u0218tefan I. Neni\u021bescu born?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_5",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the director of film Thomas Jefferson (Film) born?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_6",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_7",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the place of death of the director of film Beat Girl?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_8",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "When did Jean Martin (Singer)'s husband die?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_9",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "What nationality is the director of film World And Time Enough?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_10",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Who is the spouse of the director of film Eden And After?"
+    },
+    {
+      "arm": "SEAL_PROG",
+      "id": "OR_SEALPROG_11",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the place of death of Anastasia Of Serbia's husband?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_0",
+      "pred": "Ed1d21ff0869e",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Who is the mother of the director of film Polish-Russian War (Film)?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_1",
+      "pred": "E0e5de48666c1",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When did John V, Prince Of Anhalt-Zerbst's father die?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_2",
+      "pred": "E9df979069b70",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_3",
+      "pred": "Efe3f82eef721",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the director of film Ronnie Rocket born?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_4",
+      "pred": "E8c948e05c1d0",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the father of \u0218tefan I. Neni\u021bescu born?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_5",
+      "pred": "Eba979aba7147",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the director of film Thomas Jefferson (Film) born?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_6",
+      "pred": "E77f4f9ea71b8",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_7",
+      "pred": "Eb03723ba4d5e",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the place of death of the director of film Beat Girl?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_8",
+      "pred": "E214cb8d51c53",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "When did Jean Martin (Singer)'s husband die?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_9",
+      "pred": "E571ef2ac9c9c",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "What nationality is the director of film World And Time Enough?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_10",
+      "pred": "Ebf87c49a1dc5",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Who is the spouse of the director of film Eden And After?"
+    },
+    {
+      "arm": "LEGEND_NL",
+      "id": "OR_LEGEND_11",
+      "pred": "E621f4cd32323",
+      "ok": true,
+      "wiki_leak": false,
+      "q": "Where was the place of death of Anastasia Of Serbia's husband?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_0",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Who is the mother of the director of film Polish-Russian War (Film)?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_1",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "When did John V, Prince Of Anhalt-Zerbst's father die?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_2",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "What is the award that the director of film Wearing Velvet Slippers Under A Golden Umbrella won?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_3",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the director of film Ronnie Rocket born?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_4",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the father of \u0218tefan I. Neni\u021bescu born?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_5",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the director of film Thomas Jefferson (Film) born?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_6",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Why did Grand Duke Kirill Vladimirovich Of Russia's wife die?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_7",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the place of death of the director of film Beat Girl?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_8",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "When did Jean Martin (Singer)'s husband die?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_9",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "What nationality is the director of film World And Time Enough?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_10",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Who is the spouse of the director of film Eden And After?"
+    },
+    {
+      "arm": "MODEL_PLAN",
+      "id": "OR_MODELPLAN_11",
+      "pred": "MISSING",
+      "ok": false,
+      "wiki_leak": false,
+      "q": "Where was the place of death of Anastasia Of Serbia's husband?"
+    }
+  ]
+}

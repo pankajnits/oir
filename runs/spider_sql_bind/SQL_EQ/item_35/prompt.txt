@@ -1,0 +1,56 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_35]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_35 #####
+DB: customer_complaints
+SCHEMA (English name → sealed sqlite identifier):
+Staff = Ea7234955f4d6
+staff_id = E9e8087f4d509
+gender = E75532c1d9b66
+first_name = E79ad93365ab8
+last_name = E973b07936057
+email_address = E86672d59a53b
+phone_number = E9a216f202867
+Customers = E3cd1c2e0fae3
+customer_id = E1f713d14f147
+customer_type_code = E9944f2fab2fa
+address_line_1 = E6232bb2de058
+address_line_2 = Ef2ac28e4d656
+town_city = Eead917b9bb18
+state = E9845e9914d94
+Products = E193e16a9fad8
+product_id = E2299bf2e0de6
+parent_product_id = Eb59f251f6f13
+product_category_code = E94215a727f52
+date_product_first_available = Efa0deb39bfe3
+date_product_discontinued = E867a41dfeb88
+product_name = Ef118bb60d2cc
+product_description = Eff1ba475538d
+product_price = Ef2d687c7f7c2
+Complaints = Ea202270e199f
+complaint_id = E1de36b0e8a23
+complaint_outcome_code = Efff897a31b49
+complaint_status_code = E4f380b9ba4a8
+complaint_type_code = E0ada23f0cafc
+date_complaint_raised = Ebe664a0579d2
+date_complaint_closed = E5482dac5abb4
+
+Staff(staff_id, gender, first_name, last_name, email_address, phone_number)
+Customers(customer_id, customer_type_code, address_line_1, address_line_2, town_city, state, email_address, phone_number)
+Products(product_id, parent_product_id, product_category_code, date_product_first_available, date_product_discontinued, product_name, product_description, product_price)
+Complaints(complaint_id, product_id, customer_id, complaint_outcome_code, complaint_status_code, complaint_type_code, date_complaint_raised, date_complaint_closed, staff_id)
+
+QUESTION:
+What is the E973b07936057 Ef118bb60d2cc of the E9e8087f4d509 member in charge of the Efff897a31b49 on the Efa0deb39bfe3 with the lowest Ef2d687c7f7c2?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

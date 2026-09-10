@@ -1,0 +1,840 @@
+{
+  "compiler_selftest": "100/100",
+  "sealrouter_bound": {
+    "compiled_path": "12/12",
+    "compiled_twin": "12/12"
+  },
+  "models": {
+    "composer": {
+      "compiled_path": {
+        "cond": "compiled_path",
+        "score": "12/12",
+        "n_correct": 12,
+        "n": 12,
+        "company_stops": 0,
+        "detail": [
+          {
+            "id": "CMP_COMP_0",
+            "ok": true,
+            "pred": "E78eb3cd866c4",
+            "expect": "E78eb3cd866c4",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Schaeffer",
+            "plain_hq": "Washington_DC"
+          },
+          {
+            "id": "CMP_COMP_1",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "George_W_Edwards",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_COMP_2",
+            "ok": true,
+            "pred": "Ef8d00dcf00cb",
+            "expect": "Ef8d00dcf00cb",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Eric_Vallat",
+            "plain_hq": "Paris"
+          },
+          {
+            "id": "CMP_COMP_3",
+            "ok": true,
+            "pred": "Ed2b86b3824aa",
+            "expect": "Ed2b86b3824aa",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Moshe_Zana",
+            "plain_hq": "Lod_Railway_Station"
+          },
+          {
+            "id": "CMP_COMP_4",
+            "ok": true,
+            "pred": "E7aef0664e6d9",
+            "expect": "E7aef0664e6d9",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Mark_T_Bertolini",
+            "plain_hq": "Hartford"
+          },
+          {
+            "id": "CMP_COMP_5",
+            "ok": true,
+            "pred": "E0d967609d290",
+            "expect": "E0d967609d290",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stephen_A_Schwarzman",
+            "plain_hq": "New_York_City"
+          },
+          {
+            "id": "CMP_COMP_6",
+            "ok": true,
+            "pred": "E37c187346d89",
+            "expect": "E37c187346d89",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stuart_Parker",
+            "plain_hq": "San_Antonio"
+          },
+          {
+            "id": "CMP_COMP_7",
+            "ok": true,
+            "pred": "E1321231c034f",
+            "expect": "E1321231c034f",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Topi_Manner",
+            "plain_hq": "Helsinki"
+          },
+          {
+            "id": "CMP_COMP_8",
+            "ok": true,
+            "pred": "E79e53a5d4597",
+            "expect": "E79e53a5d4597",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Keith_Creel",
+            "plain_hq": "Calgary"
+          },
+          {
+            "id": "CMP_COMP_9",
+            "ok": true,
+            "pred": "Eaad0327a089a",
+            "expect": "Eaad0327a089a",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Michael_Eisner",
+            "plain_hq": "Burbank"
+          },
+          {
+            "id": "CMP_COMP_10",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Harvey_C_Couch",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_COMP_11",
+            "ok": true,
+            "pred": "E56ea855d76d3",
+            "expect": "E56ea855d76d3",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Green",
+            "plain_hq": "Oklahoma_City"
+          }
+        ]
+      },
+      "compiled_twin": {
+        "cond": "compiled_twin",
+        "score": "12/12",
+        "n_correct": 12,
+        "n": 12,
+        "company_stops": 0,
+        "detail": [
+          {
+            "id": "CMP_TWIN_0",
+            "ok": true,
+            "pred": "Ec24a3cb79afe",
+            "expect": "Ec24a3cb79afe",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Schaeffer",
+            "plain_hq": "New_Jersey"
+          },
+          {
+            "id": "CMP_TWIN_1",
+            "ok": true,
+            "pred": "E579243183bca",
+            "expect": "E579243183bca",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "George_W_Edwards",
+            "plain_hq": "San_Francisco"
+          },
+          {
+            "id": "CMP_TWIN_2",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Eric_Vallat",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_TWIN_3",
+            "ok": true,
+            "pred": "E7aef0664e6d9",
+            "expect": "E7aef0664e6d9",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Moshe_Zana",
+            "plain_hq": "Hartford"
+          },
+          {
+            "id": "CMP_TWIN_4",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Mark_T_Bertolini",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_TWIN_5",
+            "ok": true,
+            "pred": "E2eada3a4b1a7",
+            "expect": "E2eada3a4b1a7",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stephen_A_Schwarzman",
+            "plain_hq": "Stockholm"
+          },
+          {
+            "id": "CMP_TWIN_6",
+            "ok": true,
+            "pred": "E120802256490",
+            "expect": "E120802256490",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stuart_Parker",
+            "plain_hq": "Forl"
+          },
+          {
+            "id": "CMP_TWIN_7",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Topi_Manner",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_TWIN_8",
+            "ok": true,
+            "pred": "E69476b18923e",
+            "expect": "E69476b18923e",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Keith_Creel",
+            "plain_hq": "Prague"
+          },
+          {
+            "id": "CMP_TWIN_9",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Michael_Eisner",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_TWIN_10",
+            "ok": true,
+            "pred": "E4d5c5c1daf25",
+            "expect": "E4d5c5c1daf25",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Harvey_C_Couch",
+            "plain_hq": "VodafoneCampus"
+          },
+          {
+            "id": "CMP_TWIN_11",
+            "ok": true,
+            "pred": "Eaad0327a089a",
+            "expect": "Eaad0327a089a",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Green",
+            "plain_hq": "Burbank"
+          }
+        ]
+      },
+      "probe_mid_final": {
+        "cond": "probe_mid_final",
+        "score": "7/12",
+        "n_correct": 7,
+        "n": 12,
+        "company_stops": 0,
+        "detail": [
+          {
+            "id": "CMP_PROBE_0",
+            "ok": true,
+            "pred": "E78eb3cd866c4",
+            "expect": "E78eb3cd866c4",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "David_Schaeffer",
+            "plain_hq": "Washington_DC"
+          },
+          {
+            "id": "CMP_PROBE_1",
+            "ok": false,
+            "pred": "E5770e507c4d9",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "George_W_Edwards",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_PROBE_2",
+            "ok": true,
+            "pred": "Ef8d00dcf00cb",
+            "expect": "Ef8d00dcf00cb",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Eric_Vallat",
+            "plain_hq": "Paris"
+          },
+          {
+            "id": "CMP_PROBE_3",
+            "ok": true,
+            "pred": "Ed2b86b3824aa",
+            "expect": "Ed2b86b3824aa",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Moshe_Zana",
+            "plain_hq": "Lod_Railway_Station"
+          },
+          {
+            "id": "CMP_PROBE_4",
+            "ok": true,
+            "pred": "E7aef0664e6d9",
+            "expect": "E7aef0664e6d9",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Mark_T_Bertolini",
+            "plain_hq": "Hartford"
+          },
+          {
+            "id": "CMP_PROBE_5",
+            "ok": false,
+            "pred": "E6427210a7d55",
+            "expect": "E0d967609d290",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Stephen_A_Schwarzman",
+            "plain_hq": "New_York_City"
+          },
+          {
+            "id": "CMP_PROBE_6",
+            "ok": true,
+            "pred": "E37c187346d89",
+            "expect": "E37c187346d89",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Stuart_Parker",
+            "plain_hq": "San_Antonio"
+          },
+          {
+            "id": "CMP_PROBE_7",
+            "ok": false,
+            "pred": "E8e0fbf333e00",
+            "expect": "E1321231c034f",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Topi_Manner",
+            "plain_hq": "Helsinki"
+          },
+          {
+            "id": "CMP_PROBE_8",
+            "ok": true,
+            "pred": "E79e53a5d4597",
+            "expect": "E79e53a5d4597",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Keith_Creel",
+            "plain_hq": "Calgary"
+          },
+          {
+            "id": "CMP_PROBE_9",
+            "ok": false,
+            "pred": "E271e3aed21ad",
+            "expect": "Eaad0327a089a",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Michael_Eisner",
+            "plain_hq": "Burbank"
+          },
+          {
+            "id": "CMP_PROBE_10",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "Harvey_C_Couch",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_PROBE_11",
+            "ok": false,
+            "pred": "E2733d17743a5",
+            "expect": "E56ea855d76d3",
+            "company_stop": false,
+            "mid_ok": true,
+            "person": "David_Green",
+            "plain_hq": "Oklahoma_City"
+          }
+        ]
+      },
+      "twin_flips": "12/12",
+      "raw_sealed_nl": {
+        "cond": "raw_sealed_nl",
+        "score": "0/12",
+        "n_correct": 0,
+        "n": 12,
+        "company_stops": 3,
+        "detail": [
+          {
+            "id": "CMP_RAW_0",
+            "ok": false,
+            "pred": "E877c7e466fd4",
+            "expect": "E78eb3cd866c4",
+            "company_stop": true,
+            "mid_ok": null,
+            "person": "David_Schaeffer",
+            "plain_hq": "Washington_DC"
+          },
+          {
+            "id": "CMP_RAW_1",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "George_W_Edwards",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_RAW_2",
+            "ok": false,
+            "pred": "Eca5929256193",
+            "expect": "Ef8d00dcf00cb",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Eric_Vallat",
+            "plain_hq": "Paris"
+          },
+          {
+            "id": "CMP_RAW_3",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "Ed2b86b3824aa",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Moshe_Zana",
+            "plain_hq": "Lod_Railway_Station"
+          },
+          {
+            "id": "CMP_RAW_4",
+            "ok": false,
+            "pred": "Ef98e03d34f39",
+            "expect": "E7aef0664e6d9",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Mark_T_Bertolini",
+            "plain_hq": "Hartford"
+          },
+          {
+            "id": "CMP_RAW_5",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E0d967609d290",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stephen_A_Schwarzman",
+            "plain_hq": "New_York_City"
+          },
+          {
+            "id": "CMP_RAW_6",
+            "ok": false,
+            "pred": "Ef7b48576bf17",
+            "expect": "E37c187346d89",
+            "company_stop": true,
+            "mid_ok": null,
+            "person": "Stuart_Parker",
+            "plain_hq": "San_Antonio"
+          },
+          {
+            "id": "CMP_RAW_7",
+            "ok": false,
+            "pred": "Ef008c787ef6e",
+            "expect": "E1321231c034f",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Topi_Manner",
+            "plain_hq": "Helsinki"
+          },
+          {
+            "id": "CMP_RAW_8",
+            "ok": false,
+            "pred": "E64ccc695b232",
+            "expect": "E79e53a5d4597",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Keith_Creel",
+            "plain_hq": "Calgary"
+          },
+          {
+            "id": "CMP_RAW_9",
+            "ok": false,
+            "pred": "E6fe5cbcc1457",
+            "expect": "Eaad0327a089a",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Michael_Eisner",
+            "plain_hq": "Burbank"
+          },
+          {
+            "id": "CMP_RAW_10",
+            "ok": false,
+            "pred": "Ecfb5bd7e12ec",
+            "expect": "E0177daec26e2",
+            "company_stop": true,
+            "mid_ok": null,
+            "person": "Harvey_C_Couch",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_RAW_11",
+            "ok": false,
+            "pred": "UNKNOWN",
+            "expect": "E56ea855d76d3",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Green",
+            "plain_hq": "Oklahoma_City"
+          }
+        ]
+      }
+    },
+    "claude": {
+      "compiled_path": {
+        "cond": "compiled_path",
+        "score": "12/12",
+        "n_correct": 12,
+        "n": 12,
+        "company_stops": 0,
+        "detail": [
+          {
+            "id": "CMP_COMP_0",
+            "ok": true,
+            "pred": "E78eb3cd866c4",
+            "expect": "E78eb3cd866c4",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Schaeffer",
+            "plain_hq": "Washington_DC"
+          },
+          {
+            "id": "CMP_COMP_1",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "George_W_Edwards",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_COMP_2",
+            "ok": true,
+            "pred": "Ef8d00dcf00cb",
+            "expect": "Ef8d00dcf00cb",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Eric_Vallat",
+            "plain_hq": "Paris"
+          },
+          {
+            "id": "CMP_COMP_3",
+            "ok": true,
+            "pred": "Ed2b86b3824aa",
+            "expect": "Ed2b86b3824aa",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Moshe_Zana",
+            "plain_hq": "Lod_Railway_Station"
+          },
+          {
+            "id": "CMP_COMP_4",
+            "ok": true,
+            "pred": "E7aef0664e6d9",
+            "expect": "E7aef0664e6d9",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Mark_T_Bertolini",
+            "plain_hq": "Hartford"
+          },
+          {
+            "id": "CMP_COMP_5",
+            "ok": true,
+            "pred": "E0d967609d290",
+            "expect": "E0d967609d290",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stephen_A_Schwarzman",
+            "plain_hq": "New_York_City"
+          },
+          {
+            "id": "CMP_COMP_6",
+            "ok": true,
+            "pred": "E37c187346d89",
+            "expect": "E37c187346d89",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stuart_Parker",
+            "plain_hq": "San_Antonio"
+          },
+          {
+            "id": "CMP_COMP_7",
+            "ok": true,
+            "pred": "E1321231c034f",
+            "expect": "E1321231c034f",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Topi_Manner",
+            "plain_hq": "Helsinki"
+          },
+          {
+            "id": "CMP_COMP_8",
+            "ok": true,
+            "pred": "E79e53a5d4597",
+            "expect": "E79e53a5d4597",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Keith_Creel",
+            "plain_hq": "Calgary"
+          },
+          {
+            "id": "CMP_COMP_9",
+            "ok": true,
+            "pred": "Eaad0327a089a",
+            "expect": "Eaad0327a089a",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Michael_Eisner",
+            "plain_hq": "Burbank"
+          },
+          {
+            "id": "CMP_COMP_10",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Harvey_C_Couch",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_COMP_11",
+            "ok": true,
+            "pred": "E56ea855d76d3",
+            "expect": "E56ea855d76d3",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Green",
+            "plain_hq": "Oklahoma_City"
+          }
+        ]
+      },
+      "compiled_twin": {
+        "cond": "compiled_twin",
+        "score": "12/12",
+        "n_correct": 12,
+        "n": 12,
+        "company_stops": 0,
+        "detail": [
+          {
+            "id": "CMP_TWIN_0",
+            "ok": true,
+            "pred": "Ec24a3cb79afe",
+            "expect": "Ec24a3cb79afe",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Schaeffer",
+            "plain_hq": "New_Jersey"
+          },
+          {
+            "id": "CMP_TWIN_1",
+            "ok": true,
+            "pred": "E579243183bca",
+            "expect": "E579243183bca",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "George_W_Edwards",
+            "plain_hq": "San_Francisco"
+          },
+          {
+            "id": "CMP_TWIN_2",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Eric_Vallat",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_TWIN_3",
+            "ok": true,
+            "pred": "E7aef0664e6d9",
+            "expect": "E7aef0664e6d9",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Moshe_Zana",
+            "plain_hq": "Hartford"
+          },
+          {
+            "id": "CMP_TWIN_4",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Mark_T_Bertolini",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_TWIN_5",
+            "ok": true,
+            "pred": "E2eada3a4b1a7",
+            "expect": "E2eada3a4b1a7",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stephen_A_Schwarzman",
+            "plain_hq": "Stockholm"
+          },
+          {
+            "id": "CMP_TWIN_6",
+            "ok": true,
+            "pred": "E120802256490",
+            "expect": "E120802256490",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Stuart_Parker",
+            "plain_hq": "Forl"
+          },
+          {
+            "id": "CMP_TWIN_7",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Topi_Manner",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_TWIN_8",
+            "ok": true,
+            "pred": "E69476b18923e",
+            "expect": "E69476b18923e",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Keith_Creel",
+            "plain_hq": "Prague"
+          },
+          {
+            "id": "CMP_TWIN_9",
+            "ok": true,
+            "pred": "E0177daec26e2",
+            "expect": "E0177daec26e2",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Michael_Eisner",
+            "plain_hq": "Kansas_City"
+          },
+          {
+            "id": "CMP_TWIN_10",
+            "ok": true,
+            "pred": "E4d5c5c1daf25",
+            "expect": "E4d5c5c1daf25",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "Harvey_C_Couch",
+            "plain_hq": "VodafoneCampus"
+          },
+          {
+            "id": "CMP_TWIN_11",
+            "ok": true,
+            "pred": "Eaad0327a089a",
+            "expect": "Eaad0327a089a",
+            "company_stop": false,
+            "mid_ok": null,
+            "person": "David_Green",
+            "plain_hq": "Burbank"
+          }
+        ]
+      },
+      "twin_flips": "12/12"
+    }
+  },
+  "probe_analysis": {
+    "mid_correct": "12/12",
+    "answer_correct_hq": "7/12",
+    "answer_equals_mid": "0/12",
+    "answer_equals_company_seal": "0/12",
+    "company_stops_scorer": 0
+  },
+  "raw_analysis": {
+    "score": "0/12",
+    "hq_correct": 0,
+    "company_stops": 3,
+    "unknown": 4,
+    "other_wrong": 5
+  },
+  "probe_wrong": [
+    {
+      "id": "CMP_PROBE_1",
+      "pred": "E5770e507c4d9",
+      "expect": "E0177daec26e2",
+      "mid_ok": true,
+      "plain": "Kansas_City"
+    },
+    {
+      "id": "CMP_PROBE_5",
+      "pred": "E6427210a7d55",
+      "expect": "E0d967609d290",
+      "mid_ok": true,
+      "plain": "New_York_City"
+    },
+    {
+      "id": "CMP_PROBE_7",
+      "pred": "E8e0fbf333e00",
+      "expect": "E1321231c034f",
+      "mid_ok": true,
+      "plain": "Helsinki"
+    },
+    {
+      "id": "CMP_PROBE_9",
+      "pred": "E271e3aed21ad",
+      "expect": "Eaad0327a089a",
+      "mid_ok": true,
+      "plain": "Burbank"
+    },
+    {
+      "id": "CMP_PROBE_11",
+      "pred": "E2733d17743a5",
+      "expect": "E56ea855d76d3",
+      "mid_ok": true,
+      "plain": "Oklahoma_City"
+    }
+  ]
+}

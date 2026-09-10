@@ -1,0 +1,617 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+Context from real FinQA / WikiTableQuestions tables, sealed.
+
+Same encoding on question and context. No external world knowledge.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>  OR  ANSWER_NUM[<id>]: <number> when instructed.
+
+FinQA items use ANSWER_NUM (computed). WTQ items use ANSWER_SEALED (cell copy).
+
+FinQA sealed gold PROGRAM over same tables.
+
+
+##### ID FQ_PROG_0 #####
+STRATUM: L1_single_op depth=1
+SOURCE: FinQA IP/2009/page_37.pdf-3
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+subtract(433, 17)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ed80d44a1537d | Eb39bdcb8ee7c
+Ee0542010eebe | Ec15e6fb25595 | E446991b9dada
+Ee0542010eebe | E86bd893c68fa | E22fdb7c27ad8
+Ee0542010eebe | Ecdecbca68fef | Edb87d6bd8159
+E152e3ede59f6 | Ed80d44a1537d | E4157070622ce
+E152e3ede59f6 | Ec15e6fb25595 | 433
+E152e3ede59f6 | E86bd893c68fa | 17
+E152e3ede59f6 | Ecdecbca68fef | 112
+
+Reply: ANSWER_NUM[FQ_PROG_0]: <number>
+
+
+##### ID FQ_PROG_1 #####
+STRATUM: L1_single_op depth=1
+SOURCE: FinQA JPM/2008/page_85.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+divide(48616, 184720)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | E3d2086499ea4 | E7eeeb75c59e0
+Ee0542010eebe | E86bd893c68fa | E084ef837afa3
+Ee0542010eebe | Ecdecbca68fef | Efd6cbda4c89d
+E152e3ede59f6 | E3d2086499ea4 | E9869e557f7ed
+E152e3ede59f6 | E86bd893c68fa | 48616
+E152e3ede59f6 | Ecdecbca68fef | 43496
+Ef0fa4ca0ea6d | E3d2086499ea4 | E94b2536d1808
+Ef0fa4ca0ea6d | E86bd893c68fa | E9e001bbf1dcd
+Ef0fa4ca0ea6d | Ecdecbca68fef | E1f87ef830fa0
+E3dbbd42fb373 | E3d2086499ea4 | E56b078f5dd21
+E3dbbd42fb373 | E86bd893c68fa | E071600f52601
+E3dbbd42fb373 | Ecdecbca68fef | E04e328e780c0
+E4699fa71e974 | E3d2086499ea4 | E1d6e58d664a1
+E4699fa71e974 | E86bd893c68fa | 1966895
+E4699fa71e974 | Ecdecbca68fef | 1473541
+
+Reply: ANSWER_NUM[FQ_PROG_1]: <number>
+
+
+##### ID FQ_PROG_2 #####
+STRATUM: L1_single_op depth=1
+SOURCE: FinQA PNC/2009/page_41.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+divide(107, 1012)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ed80d44a1537d | E3307e58ce86a
+Ee0542010eebe | E39cde93e55e8 | Ea189929ebe24
+Ee0542010eebe | E3c9c4273fc64 | E0cea3d15e012
+E152e3ede59f6 | Ed80d44a1537d | Eb100cb9d98c9
+E152e3ede59f6 | E39cde93e55e8 | 251
+E152e3ede59f6 | E3c9c4273fc64 | 747
+Ef0fa4ca0ea6d | Ed80d44a1537d | E9c8ecb25e6e6
+Ef0fa4ca0ea6d | E39cde93e55e8 | 1301
+Ef0fa4ca0ea6d | E3c9c4273fc64 | 2148
+E3dbbd42fb373 | Ed80d44a1537d | E6900580cbbb6
+E3dbbd42fb373 | E39cde93e55e8 | 1012
+E3dbbd42fb373 | E3c9c4273fc64 | 1824
+E4699fa71e974 | Ed80d44a1537d | Edb9a7abedc08
+E4699fa71e974 | E3c9c4273fc64 | 138
+E6d92d9a49b05 | Ed80d44a1537d | Ed181a186ed46
+E6d92d9a49b05 | E39cde93e55e8 | 1012
+E6d92d9a49b05 | E3c9c4273fc64 | 1962
+E0b44e670e477 | Ed80d44a1537d | E823b05b457cb
+E0b44e670e477 | E39cde93e55e8 | 226
+E0b44e670e477 | E3c9c4273fc64 | 256
+Ea098b55e239e | Ed80d44a1537d | Ed6bfd8611e90
+Ea098b55e239e | E39cde93e55e8 | Eb1cb3921d9f2
+Ea098b55e239e | E3c9c4273fc64 | E10074f686db3
+
+Reply: ANSWER_NUM[FQ_PROG_2]: <number>
+
+
+##### ID FQ_PROG_3 #####
+STRATUM: L1_single_op depth=1
+SOURCE: FinQA AAPL/2003/page_24.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+subtract(290, 92)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ee0bddbb618f8 | E416346e7bb54
+Ee0542010eebe | Eaf5f19830746 | E5674e6e11108
+Ee0542010eebe | E8caeb6f0ddee | E2e8c8c98d5d7
+Ee0542010eebe | E478c6b05bdd3 | E92bd0f1cc1df
+E152e3ede59f6 | Ee0bddbb618f8 | Edc31b5e7032b
+E152e3ede59f6 | Eaf5f19830746 | 4499
+E152e3ede59f6 | E8caeb6f0ddee | 4139
+E152e3ede59f6 | E478c6b05bdd3 | 4128
+Ef0fa4ca0ea6d | Ee0bddbb618f8 | E6949d3c88e5a
+Ef0fa4ca0ea6d | Eaf5f19830746 | Efb8a16d20cb2
+Ef0fa4ca0ea6d | E8caeb6f0ddee | Eca91a77c6378
+Ef0fa4ca0ea6d | E478c6b05bdd3 | E398d4a691780
+E3dbbd42fb373 | Ee0bddbb618f8 | E70c858319453
+E3dbbd42fb373 | Eaf5f19830746 | E8ccc4daeba16
+E3dbbd42fb373 | E8caeb6f0ddee | E562cf5cf139f
+E3dbbd42fb373 | E478c6b05bdd3 | E934793bb1b51
+
+Reply: ANSWER_NUM[FQ_PROG_3]: <number>
+
+
+##### ID FQ_PROG_4 #####
+STRATUM: L1_single_op depth=1
+SOURCE: FinQA V/2008/page_17.pdf-2
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+divide(55, 0.6)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ea1d7b61988b2 | Ee31bb3f4728f
+Ee0542010eebe | Efa4009f3fb65 | E410d3afab0bc
+Ee0542010eebe | E98f283bccef8 | E32e1ff54b36b
+Ee0542010eebe | E194e2b4a2528 | 50.3
+Ee0542010eebe | E2402e6e2b235 | 1592
+E152e3ede59f6 | Ea1d7b61988b2 | E3ab463e087d0
+E152e3ede59f6 | Efa4009f3fb65 | 1697
+E152e3ede59f6 | E98f283bccef8 | 2276
+E152e3ede59f6 | E194e2b4a2528 | 27.0
+E152e3ede59f6 | E2402e6e2b235 | 916
+Ef0fa4ca0ea6d | Ea1d7b61988b2 | E1ab4f6d3388f
+Ef0fa4ca0ea6d | Efa4009f3fb65 | 637
+Ef0fa4ca0ea6d | E98f283bccef8 | 647
+Ef0fa4ca0ea6d | E194e2b4a2528 | 5.0
+Ef0fa4ca0ea6d | E2402e6e2b235 | 86
+E3dbbd42fb373 | Ea1d7b61988b2 | E66b49e667fc8
+E3dbbd42fb373 | Efa4009f3fb65 | 102
+E3dbbd42fb373 | E98f283bccef8 | 119
+E3dbbd42fb373 | E194e2b4a2528 | 1.6
+E3dbbd42fb373 | E2402e6e2b235 | 57
+E4699fa71e974 | Ea1d7b61988b2 | Eca25b3e4c190
+E4699fa71e974 | Efa4009f3fb65 | 55
+E4699fa71e974 | E98f283bccef8 | 61
+E4699fa71e974 | E194e2b4a2528 | 0.6
+E4699fa71e974 | E2402e6e2b235 | 58
+E6d92d9a49b05 | Ea1d7b61988b2 | E44bb1ac5fb80
+E6d92d9a49b05 | Efa4009f3fb65 | 29
+E6d92d9a49b05 | E98f283bccef8 | 30
+E6d92d9a49b05 | E194e2b4a2528 | 0.2
+E6d92d9a49b05 | E2402e6e2b235 | 7
+
+Reply: ANSWER_NUM[FQ_PROG_4]: <number>
+
+
+##### ID FQ_PROG_5 #####
+STRATUM: L1_single_op depth=1
+SOURCE: FinQA TFX/2015/page_70.pdf-3
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+multiply(86.98, 4446967)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | E75e8276b0b51 | Ee1747e8d5d91
+Ee0542010eebe | Ed9c851a795f9 | 1442912
+Ee0542010eebe | E23093cab9997 | Ee1e57064dc2f
+Ee0542010eebe | Ee50326f36ba1 | 4446967
+
+Reply: ANSWER_NUM[FQ_PROG_5]: <number>
+
+
+##### ID FQ_PROG_6 #####
+STRATUM: L2_two_op depth=2
+SOURCE: FinQA HUM/2017/page_133.pdf-4
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+divide(1.49, 1.16), subtract(#0, const_1)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | E2801b4e31602 | 2015
+Ee0542010eebe | E89ca54de7d58 | E0b1aa0f89407
+Ee0542010eebe | E92c3a90893e5 | E7b8512c5bad1
+E152e3ede59f6 | E2801b4e31602 | 2016
+E152e3ede59f6 | E89ca54de7d58 | E04a17c588c2e
+E152e3ede59f6 | E92c3a90893e5 | E3ab2d69afa10
+Ef0fa4ca0ea6d | E2801b4e31602 | 2017
+Ef0fa4ca0ea6d | E89ca54de7d58 | E2d98a33674b3
+Ef0fa4ca0ea6d | E92c3a90893e5 | E5b31ae745cb0
+
+Reply: ANSWER_NUM[FQ_PROG_6]: <number>
+
+
+##### ID FQ_PROG_7 #####
+STRATUM: L2_two_op depth=2
+SOURCE: FinQA STT/2008/page_83.pdf-2
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+add(1.1, 1.4), divide(#0, const_2)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | E859319214c2b | E291bc86b8657
+Ee0542010eebe | Ee4edb9900b84 | E56863c1168cd
+Ee0542010eebe | Ed8aee2cebd3e | Eec44e8fec6a0
+Ee0542010eebe | Ebf88408d6355 | Ef4d51ceb6250
+Ee0542010eebe | Ee4edb9900b84 | E56863c1168cd
+Ee0542010eebe | Ed8aee2cebd3e | E882b2917dc09
+Ee0542010eebe | Ecb39dd5cc776 | Ee6b33bcedb6d
+E152e3ede59f6 | E859319214c2b | E5c2c78e7c1ac
+E152e3ede59f6 | Ee4edb9900b84 | 1.1
+E152e3ede59f6 | Ed8aee2cebd3e | 2.4
+E152e3ede59f6 | Ebf88408d6355 | .6
+E152e3ede59f6 | Ee4edb9900b84 | 1.4
+E152e3ede59f6 | Ed8aee2cebd3e | 3.7
+E152e3ede59f6 | Ecb39dd5cc776 | .1
+
+Reply: ANSWER_NUM[FQ_PROG_7]: <number>
+
+
+##### ID FQ_PROG_8 #####
+STRATUM: L2_two_op depth=2
+SOURCE: FinQA ETR/2008/page_377.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+subtract(442.3, 403.3), divide(#0, 403.3)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ee0bddbb618f8 | E029a6be1e3d9
+Ee0542010eebe | E4601fbbf7f8a | Ec6226308c15d
+E152e3ede59f6 | Ee0bddbb618f8 | E3b6eddd6a815
+E152e3ede59f6 | E4601fbbf7f8a | 13.1
+Ef0fa4ca0ea6d | Ee0bddbb618f8 | E1badea0cf052
+Ef0fa4ca0ea6d | E4601fbbf7f8a | 9.9
+E3dbbd42fb373 | Ee0bddbb618f8 | E2c0016a02350
+E3dbbd42fb373 | E4601fbbf7f8a | 9.7
+E4699fa71e974 | Ee0bddbb618f8 | E80bbf78e216b
+E4699fa71e974 | E4601fbbf7f8a | 6.1
+E6d92d9a49b05 | Ee0bddbb618f8 | E326040539657
+E6d92d9a49b05 | E4601fbbf7f8a | 2.6
+E0b44e670e477 | Ee0bddbb618f8 | E823b05b457cb
+E0b44e670e477 | E4601fbbf7f8a | Ec53d55b0aae4
+Ea098b55e239e | Ee0bddbb618f8 | Eb43dc2d8108d
+Ea098b55e239e | E4601fbbf7f8a | E41d24697ae0e
+
+Reply: ANSWER_NUM[FQ_PROG_8]: <number>
+
+
+##### ID FQ_PROG_9 #####
+STRATUM: L2_two_op depth=2
+SOURCE: FinQA UNP/2014/page_25.pdf-4
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+subtract(2.8, 2.6), divide(#0, 2.6)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | E48c53d237132 | Eafc779a0c15e
+Ee0542010eebe | Ec8c04fd3176d | Ec6d1cfd3a4a8
+Ee0542010eebe | Ed719d0b8ab5d | Efd8cb17ca1e0
+Ee0542010eebe | E8d8120daea3d | Ee6540f95f497
+Ee0542010eebe | E6df265d20d97 | E6c85db045bb3
+Ee0542010eebe | E41cf4846239d | E186a9d82e5e3
+E152e3ede59f6 | E48c53d237132 | E708e048333e3
+E152e3ede59f6 | Ec8c04fd3176d | 1428
+E152e3ede59f6 | Ed719d0b8ab5d | 1279
+E152e3ede59f6 | E8d8120daea3d | 1240
+E152e3ede59f6 | E6df265d20d97 | E275f445587a1
+E152e3ede59f6 | E41cf4846239d | E81cf9592d6be
+Ef0fa4ca0ea6d | E48c53d237132 | Ed6bfd8611e90
+Ef0fa4ca0ea6d | Ec8c04fd3176d | E25a7e8220a79
+Ef0fa4ca0ea6d | Ed719d0b8ab5d | Ec81db208454e
+Ef0fa4ca0ea6d | E8d8120daea3d | E8cb25fec2836
+Ef0fa4ca0ea6d | E6df265d20d97 | E6c85db045bb3
+Ef0fa4ca0ea6d | E41cf4846239d | E186a9d82e5e3
+
+Reply: ANSWER_NUM[FQ_PROG_9]: <number>
+
+
+##### ID FQ_PROG_10 #####
+STRATUM: L2_two_op depth=2
+SOURCE: FinQA ILMN/2007/page_78.pdf-3
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+subtract(366854, 187103), divide(#0, 187103)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ee0bddbb618f8 | E9d4a20167d51
+Ee0542010eebe | Eeba30b9aa5f9 | Ef7d6986c0993
+Ee0542010eebe | E29ab8f414846 | E04ee5bbfe356
+E152e3ede59f6 | Ee0bddbb618f8 | E5de487ebeae0
+E152e3ede59f6 | Eeba30b9aa5f9 | E6fcf8d75c112
+E152e3ede59f6 | E29ab8f414846 | E03a841d51ea6
+Ef0fa4ca0ea6d | Ee0bddbb618f8 | E2a7e56e4d1b8
+Ef0fa4ca0ea6d | Eeba30b9aa5f9 | Ed8532c20cbf5
+Ef0fa4ca0ea6d | E29ab8f414846 | E73939bbd00a9
+E3dbbd42fb373 | Ee0bddbb618f8 | E9dd9a17706d7
+E3dbbd42fb373 | Eeba30b9aa5f9 | E912b8693fe00
+E3dbbd42fb373 | E29ab8f414846 | E73939bbd00a9
+
+Reply: ANSWER_NUM[FQ_PROG_10]: <number>
+
+
+##### ID FQ_PROG_11 #####
+STRATUM: L2_two_op depth=2
+SOURCE: FinQA ETR/2003/page_84.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+add(503215, 462420), divide(#0, const_1000)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ee0bddbb618f8 | 2004
+Ee0542010eebe | E72c79b54ac11 | Ee7f916559940
+E152e3ede59f6 | Ee0bddbb618f8 | 2005
+E152e3ede59f6 | E72c79b54ac11 | E9167dc1d6e96
+Ef0fa4ca0ea6d | Ee0bddbb618f8 | 2006
+Ef0fa4ca0ea6d | E72c79b54ac11 | Ea5e66f618817
+E3dbbd42fb373 | Ee0bddbb618f8 | 2007
+E3dbbd42fb373 | E72c79b54ac11 | Eb1140830e5ce
+E4699fa71e974 | Ee0bddbb618f8 | 2008
+E4699fa71e974 | E72c79b54ac11 | E690d6d8552c5
+
+Reply: ANSWER_NUM[FQ_PROG_11]: <number>
+
+
+##### ID FQ_PROG_12 #####
+STRATUM: L3plus_compose depth=3
+SOURCE: FinQA AES/2015/page_117.pdf-3
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+add(205, 163), add(110, #0), divide(#1, const_3)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | E8fc45bff9e20 | E6b958fb82f32
+Ee0542010eebe | Ecc124ccca348 | E905799085bc3
+Ee0542010eebe | Ec8c04fd3176d | E89b9628df652
+Ee0542010eebe | Ed719d0b8ab5d | Ef778c8027302
+Ee0542010eebe | Efb00c16a06ea | Ed78f21ae7287
+Ee0542010eebe | E799808a28f10 | Ee12eea186633
+E152e3ede59f6 | E8fc45bff9e20 | E63fc1102bcae
+E152e3ede59f6 | Ecc124ccca348 | 165
+E152e3ede59f6 | Ec8c04fd3176d | 2014
+E152e3ede59f6 | Ed719d0b8ab5d | 2014
+E152e3ede59f6 | Efb00c16a06ea | 165
+E152e3ede59f6 | E799808a28f10 | 2014
+Ef0fa4ca0ea6d | E8fc45bff9e20 | Ec3e34b1a0ea0
+Ef0fa4ca0ea6d | Ecc124ccca348 | 2299
+Ef0fa4ca0ea6d | Ec8c04fd3176d | 1791
+Ef0fa4ca0ea6d | Ed719d0b8ab5d | 2715
+Ef0fa4ca0ea6d | Efb00c16a06ea | 508
+Ef0fa4ca0ea6d | E799808a28f10 | Ee12eea186633
+E3dbbd42fb373 | E8fc45bff9e20 | Eda38876e1ede
+E3dbbd42fb373 | Ecc124ccca348 | E39acc7a002ea
+E3dbbd42fb373 | Ec8c04fd3176d | E88258aa003ae
+E3dbbd42fb373 | Ed719d0b8ab5d | Ebb623c9ae6f7
+E3dbbd42fb373 | Efb00c16a06ea | E3772e216052a
+E3dbbd42fb373 | E799808a28f10 | 475
+E4699fa71e974 | E8fc45bff9e20 | E642e2e3ad7f3
+E4699fa71e974 | Ecc124ccca348 | 1741
+E4699fa71e974 | Ec8c04fd3176d | 1432
+E4699fa71e974 | Ed719d0b8ab5d | 1881
+E4699fa71e974 | Efb00c16a06ea | 309
+E4699fa71e974 | E799808a28f10 | E9e7cfd733cba
+E6d92d9a49b05 | E8fc45bff9e20 | E5b85e7050517
+E6d92d9a49b05 | Ecc124ccca348 | E9e7cfd733cba
+E6d92d9a49b05 | Ec8c04fd3176d | E90d4150eba85
+E6d92d9a49b05 | Ed719d0b8ab5d | Eea7bafda6b6e
+E6d92d9a49b05 | Efb00c16a06ea | 36
+E6d92d9a49b05 | E799808a28f10 | 50
+E0b44e670e477 | E8fc45bff9e20 | Ece2c692f5abb
+E0b44e670e477 | Ecc124ccca348 | Ed89d9286ee33
+E0b44e670e477 | Ec8c04fd3176d | Ec907f81da27c
+E0b44e670e477 | Ed719d0b8ab5d | E8929848ce359
+E0b44e670e477 | Efb00c16a06ea | 5
+E0b44e670e477 | E799808a28f10 | 19
+Ea098b55e239e | E8fc45bff9e20 | E168c616106c4
+Ea098b55e239e | Ecc124ccca348 | Ea6f9d6a1ba14
+Ea098b55e239e | Ec8c04fd3176d | E47970b263d28
+Ea098b55e239e | Ed719d0b8ab5d | E23c123f3360d
+Ea098b55e239e | Efb00c16a06ea | Ec148f859fd93
+Ea098b55e239e | E799808a28f10 | Eaa694eb313d4
+
+Reply: ANSWER_NUM[FQ_PROG_12]: <number>
+
+
+##### ID FQ_PROG_13 #####
+STRATUM: L3plus_compose depth=4
+SOURCE: FinQA LMT/2013/page_74.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+add(326.5, 328.4), add(#0, 339.9), add(#1, const_3), divide(#2, const_2)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ee0bddbb618f8 | Edbaba6abab14
+Ee0542010eebe | Ed719d0b8ab5d | 320.9
+Ee0542010eebe | E8d8120daea3d | 323.7
+Ee0542010eebe | E4cd25dfe2074 | 335.9
+E152e3ede59f6 | Ee0bddbb618f8 | Eeaeb1da51b2c
+E152e3ede59f6 | Ed719d0b8ab5d | 5.6
+E152e3ede59f6 | E8d8120daea3d | 4.7
+E152e3ede59f6 | E4cd25dfe2074 | 4.0
+Ef0fa4ca0ea6d | Ee0bddbb618f8 | E00eb998ac950
+Ef0fa4ca0ea6d | Ed719d0b8ab5d | 326.5
+Ef0fa4ca0ea6d | E8d8120daea3d | 328.4
+Ef0fa4ca0ea6d | E4cd25dfe2074 | 339.9
+
+Reply: ANSWER_NUM[FQ_PROG_13]: <number>
+
+
+##### ID FQ_PROG_14 #####
+STRATUM: L3plus_compose depth=4
+SOURCE: FinQA AON/2010/page_115.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+add(221, 209), add(#0, 226), add(#1, const_3), divide(#2, const_2)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | E5114eb8bd2b7 | E1dc2ec8b40e1
+Ee0542010eebe | E7189b95cdff0 | Eea9813b71648
+Ee0542010eebe | Ec15e6fb25595 | Ea4268afa4b9a
+Ee0542010eebe | E86bd893c68fa | Eb9caf92156d5
+E152e3ede59f6 | E5114eb8bd2b7 | E554c3df150ec
+E152e3ede59f6 | E7189b95cdff0 | 62
+E152e3ede59f6 | Ec15e6fb25595 | 60
+E152e3ede59f6 | E86bd893c68fa | 67
+Ef0fa4ca0ea6d | E5114eb8bd2b7 | E590e610fceac
+Ef0fa4ca0ea6d | E7189b95cdff0 | 17
+Ef0fa4ca0ea6d | Ec15e6fb25595 | 21
+Ef0fa4ca0ea6d | E86bd893c68fa | 24
+E3dbbd42fb373 | E5114eb8bd2b7 | E2a674446f963
+E3dbbd42fb373 | E7189b95cdff0 | 4
+E3dbbd42fb373 | Ec15e6fb25595 | 4
+E3dbbd42fb373 | E86bd893c68fa | 3
+E4699fa71e974 | E5114eb8bd2b7 | E3ff809a99d67
+E4699fa71e974 | E7189b95cdff0 | 221
+E4699fa71e974 | Ec15e6fb25595 | 209
+E4699fa71e974 | E86bd893c68fa | 226
+E6d92d9a49b05 | E5114eb8bd2b7 | Ef8cb98489392
+E6d92d9a49b05 | E7189b95cdff0 | 75
+E6d92d9a49b05 | Ec15e6fb25595 | 68
+E6d92d9a49b05 | E86bd893c68fa | 82
+E0b44e670e477 | E5114eb8bd2b7 | Ea9a2f1687b9f
+E0b44e670e477 | E7189b95cdff0 | E402b60dd906d
+E0b44e670e477 | Ec15e6fb25595 | E25516f888c01
+E0b44e670e477 | E86bd893c68fa | Ea49bb5d2feea
+
+Reply: ANSWER_NUM[FQ_PROG_14]: <number>
+
+
+##### ID FQ_PROG_15 #####
+STRATUM: L3plus_compose depth=5
+SOURCE: FinQA FRT/2005/page_117.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+divide(82551000, 68125000), subtract(#0, const_1), divide(1390000, 4645000), subtract(#2, const_1), subtract(#1, #3)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | E7d6854cd9c3c | Eb5c41fd40364
+Ee0542010eebe | E6630fa484f8b | 68125000
+E152e3ede59f6 | E7d6854cd9c3c | Eb3e2b45679fc
+E152e3ede59f6 | E6630fa484f8b | E38e1e1c028d2
+Ef0fa4ca0ea6d | E7d6854cd9c3c | E0f790a5b374d
+Ef0fa4ca0ea6d | E6630fa484f8b | 514177000
+E3dbbd42fb373 | E7d6854cd9c3c | Eb5c41fd40364
+E3dbbd42fb373 | E6630fa484f8b | 82551000
+E4699fa71e974 | E7d6854cd9c3c | Eb3e2b45679fc
+E4699fa71e974 | E6630fa484f8b | E0d8e18df6179
+E6d92d9a49b05 | E7d6854cd9c3c | E8d4eccb1cc87
+E6d92d9a49b05 | E6630fa484f8b | 595338000
+E0b44e670e477 | E7d6854cd9c3c | Eb5c41fd40364
+E0b44e670e477 | E6630fa484f8b | 83656000
+Ea098b55e239e | E7d6854cd9c3c | Eb3e2b45679fc
+Ea098b55e239e | E6630fa484f8b | E6133728c579b
+E3a57610e88d2 | E7d6854cd9c3c | Eb80c5f52caff
+E3a57610e88d2 | E6630fa484f8b | Efb83ce2be077
+
+Reply: ANSWER_NUM[FQ_PROG_15]: <number>
+
+
+##### ID FQ_PROG_16 #####
+STRATUM: L3plus_compose depth=5
+SOURCE: FinQA CDNS/2012/page_30.pdf-2
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+subtract(78.92, const_100), divide(#0, const_100), subtract(110.78, const_100), divide(#2, const_100), subtract(#0, #2)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ee0bddbb618f8 | E266fa34a50a9
+Ee0542010eebe | Eeb60211c2dd3 | 100.00
+Ee0542010eebe | E0d99e41472a7 | 22.55
+Ee0542010eebe | E67528e2061d9 | 35.17
+Ee0542010eebe | E325e1c237fec | 48.50
+Ee0542010eebe | Eb7298aaf4590 | 61.07
+Ee0542010eebe | E695a39cca8c9 | 78.92
+E152e3ede59f6 | Ee0bddbb618f8 | E10b07ed796c0
+E152e3ede59f6 | Eeb60211c2dd3 | 100.00
+E152e3ede59f6 | E0d99e41472a7 | 59.03
+E152e3ede59f6 | E67528e2061d9 | 82.25
+E152e3ede59f6 | E325e1c237fec | 97.32
+E152e3ede59f6 | Eb7298aaf4590 | 98.63
+E152e3ede59f6 | E695a39cca8c9 | 110.78
+Ef0fa4ca0ea6d | Ee0bddbb618f8 | E30f5cd1881ab
+Ef0fa4ca0ea6d | Eeb60211c2dd3 | 100.00
+Ef0fa4ca0ea6d | E0d99e41472a7 | 54.60
+Ef0fa4ca0ea6d | E67528e2061d9 | 82.76
+Ef0fa4ca0ea6d | E325e1c237fec | 108.11
+Ef0fa4ca0ea6d | Eb7298aaf4590 | 95.48
+Ef0fa4ca0ea6d | E695a39cca8c9 | 109.88
+
+Reply: ANSWER_NUM[FQ_PROG_16]: <number>
+
+
+##### ID FQ_PROG_17 #####
+STRATUM: L3plus_compose depth=3
+SOURCE: FinQA IPG/2008/page_93.pdf-3
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+subtract(76.7, 75.6), divide(#0, 76.7), multiply(#1, const_100)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ee0bddbb618f8 | E1e54853f4047
+Ee0542010eebe | Ec15e6fb25595 | E48a56b6ebad5
+Ee0542010eebe | E7189b95cdff0 | E457fc70ab162
+Ee0542010eebe | E4cd25dfe2074 | E8842098ac377
+Ee0542010eebe | E8d8120daea3d | Eb128aef09c15
+Ee0542010eebe | Ed719d0b8ab5d | E9aad56ee0c35
+Ee0542010eebe | E3867ea4f56b2 | E1c9992716cd2
+Ee0542010eebe | E3049ceddce86 | E7b8e3156e166
+E152e3ede59f6 | Ee0bddbb618f8 | E7e79b5295a7e
+E152e3ede59f6 | Ec15e6fb25595 | 11.8
+E152e3ede59f6 | E7189b95cdff0 | 34.3
+E152e3ede59f6 | E4cd25dfe2074 | 73.6
+E152e3ede59f6 | E8d8120daea3d | 70.8
+E152e3ede59f6 | Ed719d0b8ab5d | 70.2
+E152e3ede59f6 | E3867ea4f56b2 | 2.2
+E152e3ede59f6 | E3049ceddce86 | 262.9
+Ef0fa4ca0ea6d | Ee0bddbb618f8 | Ea960dba6c2b5
+Ef0fa4ca0ea6d | Ec15e6fb25595 | 79.3
+Ef0fa4ca0ea6d | E7189b95cdff0 | 66.4
+Ef0fa4ca0ea6d | E4cd25dfe2074 | 103.7
+Ef0fa4ca0ea6d | E8d8120daea3d | 75.3
+Ef0fa4ca0ea6d | Ed719d0b8ab5d | 75.9
+Ef0fa4ca0ea6d | E3867ea4f56b2 | 2.2
+Ef0fa4ca0ea6d | E3049ceddce86 | 402.8
+E3dbbd42fb373 | Ee0bddbb618f8 | E2edf53c09b42
+E3dbbd42fb373 | Ec15e6fb25595 | 2.6
+E3dbbd42fb373 | E7189b95cdff0 | 1.3
+E3dbbd42fb373 | E4cd25dfe2074 | 0.7
+E3dbbd42fb373 | E8d8120daea3d | 0.7
+E3dbbd42fb373 | Ed719d0b8ab5d | 0.3
+E3dbbd42fb373 | E3867ea4f56b2 | 2014
+E3dbbd42fb373 | E3049ceddce86 | 5.6
+E4699fa71e974 | Ee0bddbb618f8 | Ed6bfd8611e90
+E4699fa71e974 | Ec15e6fb25595 | E75455f4de883
+E4699fa71e974 | E7189b95cdff0 | E0c2642943ec9
+E4699fa71e974 | E4cd25dfe2074 | Ebd7a0452b795
+E4699fa71e974 | E8d8120daea3d | Ef8db60144ad8
+E4699fa71e974 | Ed719d0b8ab5d | E18c2ec493c97
+E4699fa71e974 | E3867ea4f56b2 | Edff95687dbf0
+E4699fa71e974 | E3049ceddce86 | E98cdc42aa87f
+
+Reply: ANSWER_NUM[FQ_PROG_17]: <number>
+
+
+##### ID FQ_PROG_18 #####
+STRATUM: L1_single_op depth=1
+SOURCE: FinQA IP/2006/page_32.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+divide(396, 2455)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ed80d44a1537d | Eb39bdcb8ee7c
+Ee0542010eebe | E9485fdadcbf1 | E994e84d4a8ee
+Ee0542010eebe | E064c31f9c2a4 | E15476cb427fe
+Ee0542010eebe | Eb9184dd6a78d | E87bbb098077e
+E152e3ede59f6 | Ed80d44a1537d | E4157070622ce
+E152e3ede59f6 | E9485fdadcbf1 | E1afd2baa91a0
+E152e3ede59f6 | E064c31f9c2a4 | E278c33224bb2
+E152e3ede59f6 | Eb9184dd6a78d | E5c011279fb98
+
+Reply: ANSWER_NUM[FQ_PROG_18]: <number>
+
+
+##### ID FQ_PROG_19 #####
+STRATUM: L1_single_op depth=1
+SOURCE: FinQA LMT/2016/page_48.pdf-1
+FINQA_PROGRAM (operators+numbers plaintext; CONTEXT row/col labels sealed)
+table_average(net sales, none)
+Execute over CONTEXT. Return numeric result.
+
+CONTEXT:
+Ee0542010eebe | Ee0bddbb618f8 | E416346e7bb54
+Ee0542010eebe | E37692d03b57f | Eba0c35b997e3
+Ee0542010eebe | Ecc124ccca348 | Ee80f337a993b
+Ee0542010eebe | Ec8c04fd3176d | E52215ece07a0
+E152e3ede59f6 | Ee0bddbb618f8 | E4157070622ce
+E152e3ede59f6 | E37692d03b57f | 1887
+E152e3ede59f6 | Ecc124ccca348 | 1681
+E152e3ede59f6 | Ec8c04fd3176d | 1649
+Ef0fa4ca0ea6d | Ee0bddbb618f8 | E8d2c44f2a4ef
+Ef0fa4ca0ea6d | E37692d03b57f | E95f37ba7e6e5
+Ef0fa4ca0ea6d | Ecc124ccca348 | E6a3199750e0f
+Ef0fa4ca0ea6d | Ec8c04fd3176d | E0341f28d296e
+E3dbbd42fb373 | Ee0bddbb618f8 | E299a16635cc8
+E3dbbd42fb373 | E37692d03b57f | Ed83af9dc48f1
+E3dbbd42fb373 | Ecc124ccca348 | Ee61908d52ec2
+E3dbbd42fb373 | Ec8c04fd3176d | Eb99249ff91d6
+
+Reply: ANSWER_NUM[FQ_PROG_19]: <number>

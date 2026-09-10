@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_153 #####
+QUESTION:
+What is the place of birth of Elijah Blue Allman's father?
+
+CONTEXT:
+decoy_mid_153 | place of birth | Nashville, Tennessee
+Gregg Allman | place of birth | CF_TAIL_153_NashvilleTen
+Louise Linton | spouse | Steven Mnuchin
+Sophie of Saxe-Lauenburg | date of death | 9 September 1473
+Elijah Blue Allman | father | Gregg Allman
+Gerhard VII, Duke of Jülich-Berg | spouse | Sophie of Saxe-Lauenburg
+Steven Mnuchin | employer | Goldman
+Elijah Blue Allman | decoy_link_153 | decoy_mid_153

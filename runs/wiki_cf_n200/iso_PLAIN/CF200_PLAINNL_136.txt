@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_136 #####
+QUESTION:
+What nationality of the company that manufactured Bottle Caps (Candy)?
+
+CONTEXT:
+Bottle Caps | decoy_link_136 | decoy_mid_136
+Atom.com | founded by | Mika Salmi
+Prince Welf Ernst of Hanover | father | Prince George William of Hanover
+Prince George William of Hanover | country of citizenship | German
+Bottle Caps | manufacturer | Nestlé
+Nestlé | country | CF_TAIL_136_Swiss
+Mika Salmi | country of citizenship | Finnish
+decoy_mid_136 | country | Swiss

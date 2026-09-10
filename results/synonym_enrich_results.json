@@ -1,0 +1,537 @@
+{
+  "by_form": {
+    "RAW": {
+      "ok": 0,
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 12,
+      "score": "0/12",
+      "detail": [
+        {
+          "id": "SYNENR_RAW_0",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Jakub Strnad works for?"
+        },
+        {
+          "id": "SYNENR_RAW_1",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E802c38d3e59d",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Macon Foscue Brock Jr works for?"
+        },
+        {
+          "id": "SYNENR_RAW_2",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Landon H Rowland works for?"
+        },
+        {
+          "id": "SYNENR_RAW_3",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Bob Chapek works for?"
+        },
+        {
+          "id": "SYNENR_RAW_4",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Jakub Duslek works for?"
+        },
+        {
+          "id": "SYNENR_RAW_5",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E0745ecfbd8b5",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Hubert Joly works for?"
+        },
+        {
+          "id": "SYNENR_RAW_6",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E188c1df26da8",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Tom Buhrow works for?"
+        },
+        {
+          "id": "SYNENR_RAW_7",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Michal Krapinec works for?"
+        },
+        {
+          "id": "SYNENR_RAW_8",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E10b498dc9e62",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Catherine Tait works for?"
+        },
+        {
+          "id": "SYNENR_RAW_9",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E33a6a278d2bd",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Achim Wei works for?"
+        },
+        {
+          "id": "SYNENR_RAW_10",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that Walt Disney works for?"
+        },
+        {
+          "id": "SYNENR_RAW_11",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "Where is the headquarters of the company that William N Deramus IV works for?"
+        }
+      ]
+    },
+    "SYN": {
+      "ok": 0,
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 12,
+      "score": "0/12",
+      "detail": [
+        {
+          "id": "SYNENR_SYN_0",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "In which city is the employer of Jakub Strnad based?"
+        },
+        {
+          "id": "SYNENR_SYN_1",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E802c38d3e59d",
+          "company_stop": false,
+          "q_clear": "What is the head-office location of the firm where Macon Foscue Brock Jr works?"
+        },
+        {
+          "id": "SYNENR_SYN_2",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "Find the HQ city for Landon H Rowland's organization."
+        },
+        {
+          "id": "SYNENR_SYN_3",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "Where does the company that employs Bob Chapek have its headquarters?"
+        },
+        {
+          "id": "SYNENR_SYN_4",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "In which city is the employer of Jakub Duslek based?"
+        },
+        {
+          "id": "SYNENR_SYN_5",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E0745ecfbd8b5",
+          "company_stop": false,
+          "q_clear": "What is the head-office location of the firm where Hubert Joly works?"
+        },
+        {
+          "id": "SYNENR_SYN_6",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E188c1df26da8",
+          "company_stop": false,
+          "q_clear": "Find the HQ city for Tom Buhrow's organization."
+        },
+        {
+          "id": "SYNENR_SYN_7",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "Where does the company that employs Michal Krapinec have its headquarters?"
+        },
+        {
+          "id": "SYNENR_SYN_8",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E10b498dc9e62",
+          "company_stop": false,
+          "q_clear": "In which city is the employer of Catherine Tait based?"
+        },
+        {
+          "id": "SYNENR_SYN_9",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E33a6a278d2bd",
+          "company_stop": false,
+          "q_clear": "What is the head-office location of the firm where Achim Wei works?"
+        },
+        {
+          "id": "SYNENR_SYN_10",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "Find the HQ city for Walt Disney's organization."
+        },
+        {
+          "id": "SYNENR_SYN_11",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "Where does the company that employs William N Deramus IV have its headquarters?"
+        }
+      ]
+    },
+    "SYN_LIVE": {
+      "ok": 0,
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 12,
+      "score": "0/12",
+      "detail": [
+        {
+          "id": "SYNENR_SYN_LIVE_0",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "In which city is the main office of the organization that employs Jakub Strnad?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_1",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E802c38d3e59d",
+          "company_stop": false,
+          "q_clear": "What city is home to the corporate headquarters of the employer of Macon Foscue Brock Jr?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_2",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "Where is the principal office located for the company that Landon H Rowland is employed by?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_3",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "Which city serves as the head office for the firm where Bob Chapek is employed?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_4",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "What is the location of the central headquarters of the business that Jakub Duslek works for?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_5",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E0745ecfbd8b5",
+          "company_stop": false,
+          "q_clear": "In what city is the main headquarters of Hubert Joly's employer?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_6",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E188c1df26da8",
+          "company_stop": false,
+          "q_clear": "Where does the company that employs Tom Buhrow have its head office?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_7",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "Which city contains the headquarters of the organization Michal Krapinec is employed by?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_8",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E10b498dc9e62",
+          "company_stop": false,
+          "q_clear": "What city is the corporate HQ located in for Catherine Tait's employer?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_9",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E33a6a278d2bd",
+          "company_stop": false,
+          "q_clear": "Where is the primary office of the firm that Achim Wei works for?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_10",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "In which city is the head office of Walt Disney's employer situated?"
+        },
+        {
+          "id": "SYNENR_SYN_LIVE_11",
+          "ok": false,
+          "pred": "UNKNOWN",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "What is the headquarters city of the company employing William N Deramus IV?"
+        }
+      ]
+    },
+    "CANON": {
+      "ok": 6,
+      "n": 12,
+      "company_stop": 6,
+      "unknown": 0,
+      "score": "6/12",
+      "detail": [
+        {
+          "id": "SYNENR_CANON_0",
+          "ok": false,
+          "pred": "Eefd6c78ded84",
+          "expect": "E7b230b4969d0",
+          "company_stop": true,
+          "q_clear": "Where is the company headquartered_in that Jakub_Strnad works_at?"
+        },
+        {
+          "id": "SYNENR_CANON_1",
+          "ok": true,
+          "pred": "E802c38d3e59d",
+          "expect": "E802c38d3e59d",
+          "company_stop": false,
+          "q_clear": "Find headquartered_in of the firm Macon_Foscue_Brock_Jr works_at."
+        },
+        {
+          "id": "SYNENR_CANON_2",
+          "ok": false,
+          "pred": "Ef692561bb203",
+          "expect": "E585b4a68a37b",
+          "company_stop": true,
+          "q_clear": "Where is the company headquartered_in that Landon_H_Rowland works_at?"
+        },
+        {
+          "id": "SYNENR_CANON_3",
+          "ok": true,
+          "pred": "Ea627f2df46d0",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "Find headquartered_in of the firm Bob_Chapek works_at."
+        },
+        {
+          "id": "SYNENR_CANON_4",
+          "ok": false,
+          "pred": "Ed1935aad9a9a",
+          "expect": "E7b230b4969d0",
+          "company_stop": true,
+          "q_clear": "Where is the company headquartered_in that Jakub_Duslek works_at?"
+        },
+        {
+          "id": "SYNENR_CANON_5",
+          "ok": true,
+          "pred": "E0745ecfbd8b5",
+          "expect": "E0745ecfbd8b5",
+          "company_stop": false,
+          "q_clear": "Find headquartered_in of the firm Hubert_Joly works_at."
+        },
+        {
+          "id": "SYNENR_CANON_6",
+          "ok": false,
+          "pred": "E80842cce7b98",
+          "expect": "E188c1df26da8",
+          "company_stop": true,
+          "q_clear": "Where is the company headquartered_in that Tom_Buhrow works_at?"
+        },
+        {
+          "id": "SYNENR_CANON_7",
+          "ok": true,
+          "pred": "E7b230b4969d0",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "Find headquartered_in of the firm Michal_Krapinec works_at."
+        },
+        {
+          "id": "SYNENR_CANON_8",
+          "ok": false,
+          "pred": "Eb0417cf4685b",
+          "expect": "E10b498dc9e62",
+          "company_stop": true,
+          "q_clear": "Where is the company headquartered_in that Catherine_Tait works_at?"
+        },
+        {
+          "id": "SYNENR_CANON_9",
+          "ok": true,
+          "pred": "E33a6a278d2bd",
+          "expect": "E33a6a278d2bd",
+          "company_stop": false,
+          "q_clear": "Find headquartered_in of the firm Achim_Wei works_at."
+        },
+        {
+          "id": "SYNENR_CANON_10",
+          "ok": false,
+          "pred": "Eaa3b248d2e5a",
+          "expect": "Ea627f2df46d0",
+          "company_stop": true,
+          "q_clear": "Where is the company headquartered_in that Walt_Disney works_at?"
+        },
+        {
+          "id": "SYNENR_CANON_11",
+          "ok": true,
+          "pred": "E585b4a68a37b",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "Find headquartered_in of the firm William_N_Deramus_IV works_at."
+        }
+      ]
+    },
+    "PROG": {
+      "ok": 12,
+      "n": 12,
+      "company_stop": 0,
+      "unknown": 0,
+      "score": "12/12",
+      "detail": [
+        {
+          "id": "SYNENR_PROG_0",
+          "ok": true,
+          "pred": "E7b230b4969d0",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E9583b9cf616d\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_1",
+          "ok": true,
+          "pred": "E802c38d3e59d",
+          "expect": "E802c38d3e59d",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E90a23113a6e6\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_2",
+          "ok": true,
+          "pred": "E585b4a68a37b",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART Ee3202e8dde00\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_3",
+          "ok": true,
+          "pred": "Ea627f2df46d0",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART Ee4b385dfefb0\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_4",
+          "ok": true,
+          "pred": "E7b230b4969d0",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E82b551e5ef5a\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_5",
+          "ok": true,
+          "pred": "E0745ecfbd8b5",
+          "expect": "E0745ecfbd8b5",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E0502a3912822\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_6",
+          "ok": true,
+          "pred": "E188c1df26da8",
+          "expect": "E188c1df26da8",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E8fb622726ebc\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_7",
+          "ok": true,
+          "pred": "E7b230b4969d0",
+          "expect": "E7b230b4969d0",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART Eae141907a84b\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_8",
+          "ok": true,
+          "pred": "E10b498dc9e62",
+          "expect": "E10b498dc9e62",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E2f10153f85d7\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_9",
+          "ok": true,
+          "pred": "E33a6a278d2bd",
+          "expect": "E33a6a278d2bd",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E7cc99862f0f8\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_10",
+          "ok": true,
+          "pred": "Ea627f2df46d0",
+          "expect": "Ea627f2df46d0",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E9e823b4f1f70\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        },
+        {
+          "id": "SYNENR_PROG_11",
+          "ok": true,
+          "pred": "E585b4a68a37b",
+          "expect": "E585b4a68a37b",
+          "company_stop": false,
+          "q_clear": "PATH_QUERY\nSTART E2fe3a78e2224\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+        }
+      ]
+    }
+  },
+  "summary": {
+    "RAW": "0/12",
+    "SYN": "0/12",
+    "SYN_LIVE": "0/12",
+    "CANON": "6/12",
+    "PROG": "12/12"
+  },
+  "claim": "Test whether synonym enrichment before sealing restores multi-hop; CANON injects graph relation atoms; SYN uses free synonyms."
+}

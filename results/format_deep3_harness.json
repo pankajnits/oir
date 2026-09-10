@@ -1,0 +1,375 @@
+{
+  "n": 6,
+  "suite": "format_deep3",
+  "seed": 20260814,
+  "key_map": {
+    "employees": "E9ede64de6c6b",
+    "orgs": "E34a414b78b8e",
+    "id": "Eddc513f32ca9",
+    "employer": "E4223fbe49889",
+    "hq": "Eb753ca416d68",
+    "city": "E88bb97e873bf",
+    "country": "E40e4eda039dd"
+  },
+  "col_map": {
+    "emp_id": "E3e1101a4aa98",
+    "org_id": "E2ae79a5059a8",
+    "city_id": "E68e488048fad",
+    "country": "Eb2fedf950f81"
+  },
+  "engine_gold": "6/6",
+  "arms": {
+    "JSON_KEY_PROG": {
+      "n": 6,
+      "ids": [
+        "FD3_JSON_KEY_PROG_0",
+        "FD3_JSON_KEY_PROG_1",
+        "FD3_JSON_KEY_PROG_2",
+        "FD3_JSON_KEY_PROG_3",
+        "FD3_JSON_KEY_PROG_4",
+        "FD3_JSON_KEY_PROG_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep3/JSON_KEY_PROG/item_0/prompt.txt",
+        "runs/format_deep3/JSON_KEY_PROG/item_1/prompt.txt",
+        "runs/format_deep3/JSON_KEY_PROG/item_2/prompt.txt",
+        "runs/format_deep3/JSON_KEY_PROG/item_3/prompt.txt",
+        "runs/format_deep3/JSON_KEY_PROG/item_4/prompt.txt",
+        "runs/format_deep3/JSON_KEY_PROG/item_5/prompt.txt"
+      ]
+    },
+    "SQL_COL_NOLEG": {
+      "n": 6,
+      "ids": [
+        "FD3_SQL_COL_NOLEG_0",
+        "FD3_SQL_COL_NOLEG_1",
+        "FD3_SQL_COL_NOLEG_2",
+        "FD3_SQL_COL_NOLEG_3",
+        "FD3_SQL_COL_NOLEG_4",
+        "FD3_SQL_COL_NOLEG_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep3/SQL_COL_NOLEG/item_0/prompt.txt",
+        "runs/format_deep3/SQL_COL_NOLEG/item_1/prompt.txt",
+        "runs/format_deep3/SQL_COL_NOLEG/item_2/prompt.txt",
+        "runs/format_deep3/SQL_COL_NOLEG/item_3/prompt.txt",
+        "runs/format_deep3/SQL_COL_NOLEG/item_4/prompt.txt",
+        "runs/format_deep3/SQL_COL_NOLEG/item_5/prompt.txt"
+      ]
+    },
+    "SQL_COL_LEG": {
+      "n": 6,
+      "ids": [
+        "FD3_SQL_COL_LEG_0",
+        "FD3_SQL_COL_LEG_1",
+        "FD3_SQL_COL_LEG_2",
+        "FD3_SQL_COL_LEG_3",
+        "FD3_SQL_COL_LEG_4",
+        "FD3_SQL_COL_LEG_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/format_deep3/SQL_COL_LEG/item_0/prompt.txt",
+        "runs/format_deep3/SQL_COL_LEG/item_1/prompt.txt",
+        "runs/format_deep3/SQL_COL_LEG/item_2/prompt.txt",
+        "runs/format_deep3/SQL_COL_LEG/item_3/prompt.txt",
+        "runs/format_deep3/SQL_COL_LEG/item_4/prompt.txt",
+        "runs/format_deep3/SQL_COL_LEG/item_5/prompt.txt"
+      ]
+    },
+    "SQL_COL_ENGINE": {
+      "n": 6,
+      "ids": [
+        "FD3_SQL_COL_ENGINE_0",
+        "FD3_SQL_COL_ENGINE_1",
+        "FD3_SQL_COL_ENGINE_2",
+        "FD3_SQL_COL_ENGINE_3",
+        "FD3_SQL_COL_ENGINE_4",
+        "FD3_SQL_COL_ENGINE_5"
+      ],
+      "iso": false,
+      "engine": true
+    }
+  },
+  "cases": [
+    {
+      "arm": "JSON_KEY_PROG",
+      "i": 0,
+      "id": "FD3_JSON_KEY_PROG_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "path": "runs/format_deep3/JSON_KEY_PROG/item_0/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ea4bae57466dc"
+    },
+    {
+      "arm": "SQL_COL_ENGINE",
+      "i": 0,
+      "id": "FD3_SQL_COL_ENGINE_0",
+      "gold": "Efc78fdf06232",
+      "iso": false,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_0.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E8788c020caec'",
+      "engine_ok": true,
+      "pred": "Efc78fdf06232"
+    },
+    {
+      "arm": "SQL_COL_NOLEG",
+      "i": 0,
+      "id": "FD3_SQL_COL_NOLEG_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_0.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E8788c020caec'",
+      "trap": "Ea4bae57466dc",
+      "path": "runs/format_deep3/SQL_COL_NOLEG/item_0/prompt.txt"
+    },
+    {
+      "arm": "SQL_COL_LEG",
+      "i": 0,
+      "id": "FD3_SQL_COL_LEG_0",
+      "gold": "Efc78fdf06232",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_0.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E8788c020caec'",
+      "trap": "Ea4bae57466dc",
+      "path": "runs/format_deep3/SQL_COL_LEG/item_0/prompt.txt"
+    },
+    {
+      "arm": "JSON_KEY_PROG",
+      "i": 1,
+      "id": "FD3_JSON_KEY_PROG_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "path": "runs/format_deep3/JSON_KEY_PROG/item_1/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ead100df4395b"
+    },
+    {
+      "arm": "SQL_COL_ENGINE",
+      "i": 1,
+      "id": "FD3_SQL_COL_ENGINE_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": false,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_1.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'Ec434cbd619d0'",
+      "engine_ok": true,
+      "pred": "Efcbd0bd0bd8f"
+    },
+    {
+      "arm": "SQL_COL_NOLEG",
+      "i": 1,
+      "id": "FD3_SQL_COL_NOLEG_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_1.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'Ec434cbd619d0'",
+      "trap": "Ead100df4395b",
+      "path": "runs/format_deep3/SQL_COL_NOLEG/item_1/prompt.txt"
+    },
+    {
+      "arm": "SQL_COL_LEG",
+      "i": 1,
+      "id": "FD3_SQL_COL_LEG_1",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_1.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'Ec434cbd619d0'",
+      "trap": "Ead100df4395b",
+      "path": "runs/format_deep3/SQL_COL_LEG/item_1/prompt.txt"
+    },
+    {
+      "arm": "JSON_KEY_PROG",
+      "i": 2,
+      "id": "FD3_JSON_KEY_PROG_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "path": "runs/format_deep3/JSON_KEY_PROG/item_2/prompt.txt",
+      "surface": "json_keys",
+      "trap": "E85f4f72c3529"
+    },
+    {
+      "arm": "SQL_COL_ENGINE",
+      "i": 2,
+      "id": "FD3_SQL_COL_ENGINE_2",
+      "gold": "E86dc3a194b37",
+      "iso": false,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_2.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'Ecf003d65511e'",
+      "engine_ok": true,
+      "pred": "E86dc3a194b37"
+    },
+    {
+      "arm": "SQL_COL_NOLEG",
+      "i": 2,
+      "id": "FD3_SQL_COL_NOLEG_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_2.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'Ecf003d65511e'",
+      "trap": "E85f4f72c3529",
+      "path": "runs/format_deep3/SQL_COL_NOLEG/item_2/prompt.txt"
+    },
+    {
+      "arm": "SQL_COL_LEG",
+      "i": 2,
+      "id": "FD3_SQL_COL_LEG_2",
+      "gold": "E86dc3a194b37",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_2.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'Ecf003d65511e'",
+      "trap": "E85f4f72c3529",
+      "path": "runs/format_deep3/SQL_COL_LEG/item_2/prompt.txt"
+    },
+    {
+      "arm": "JSON_KEY_PROG",
+      "i": 3,
+      "id": "FD3_JSON_KEY_PROG_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "path": "runs/format_deep3/JSON_KEY_PROG/item_3/prompt.txt",
+      "surface": "json_keys",
+      "trap": "E297462617c33"
+    },
+    {
+      "arm": "SQL_COL_ENGINE",
+      "i": 3,
+      "id": "FD3_SQL_COL_ENGINE_3",
+      "gold": "E1736c27588c3",
+      "iso": false,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_3.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E9cd8d24b6ef7'",
+      "engine_ok": true,
+      "pred": "E1736c27588c3"
+    },
+    {
+      "arm": "SQL_COL_NOLEG",
+      "i": 3,
+      "id": "FD3_SQL_COL_NOLEG_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_3.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E9cd8d24b6ef7'",
+      "trap": "E297462617c33",
+      "path": "runs/format_deep3/SQL_COL_NOLEG/item_3/prompt.txt"
+    },
+    {
+      "arm": "SQL_COL_LEG",
+      "i": 3,
+      "id": "FD3_SQL_COL_LEG_3",
+      "gold": "E1736c27588c3",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_3.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E9cd8d24b6ef7'",
+      "trap": "E297462617c33",
+      "path": "runs/format_deep3/SQL_COL_LEG/item_3/prompt.txt"
+    },
+    {
+      "arm": "JSON_KEY_PROG",
+      "i": 4,
+      "id": "FD3_JSON_KEY_PROG_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "path": "runs/format_deep3/JSON_KEY_PROG/item_4/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Eac6aa3d77a1f"
+    },
+    {
+      "arm": "SQL_COL_ENGINE",
+      "i": 4,
+      "id": "FD3_SQL_COL_ENGINE_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": false,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_4.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E4a2ea9f5ae1e'",
+      "engine_ok": true,
+      "pred": "Efcbd0bd0bd8f"
+    },
+    {
+      "arm": "SQL_COL_NOLEG",
+      "i": 4,
+      "id": "FD3_SQL_COL_NOLEG_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_4.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E4a2ea9f5ae1e'",
+      "trap": "Eac6aa3d77a1f",
+      "path": "runs/format_deep3/SQL_COL_NOLEG/item_4/prompt.txt"
+    },
+    {
+      "arm": "SQL_COL_LEG",
+      "i": 4,
+      "id": "FD3_SQL_COL_LEG_4",
+      "gold": "Efcbd0bd0bd8f",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_4.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E4a2ea9f5ae1e'",
+      "trap": "Eac6aa3d77a1f",
+      "path": "runs/format_deep3/SQL_COL_LEG/item_4/prompt.txt"
+    },
+    {
+      "arm": "JSON_KEY_PROG",
+      "i": 5,
+      "id": "FD3_JSON_KEY_PROG_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "path": "runs/format_deep3/JSON_KEY_PROG/item_5/prompt.txt",
+      "surface": "json_keys",
+      "trap": "Ec72e0f47e1d6"
+    },
+    {
+      "arm": "SQL_COL_ENGINE",
+      "i": 5,
+      "id": "FD3_SQL_COL_ENGINE_5",
+      "gold": "Ef517621657df",
+      "iso": false,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_5.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E1772f39ac307'",
+      "engine_ok": true,
+      "pred": "Ef517621657df"
+    },
+    {
+      "arm": "SQL_COL_NOLEG",
+      "i": 5,
+      "id": "FD3_SQL_COL_NOLEG_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_5.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E1772f39ac307'",
+      "trap": "Ec72e0f47e1d6",
+      "path": "runs/format_deep3/SQL_COL_NOLEG/item_5/prompt.txt"
+    },
+    {
+      "arm": "SQL_COL_LEG",
+      "i": 5,
+      "id": "FD3_SQL_COL_LEG_5",
+      "gold": "Ef517621657df",
+      "iso": true,
+      "surface": "sqlite_cols",
+      "db": "runs/format_deep3/db/item_5.sqlite",
+      "gold_sql": "SELECT cities.\"Eb2fedf950f81\" FROM employees JOIN orgs ON employees.\"E2ae79a5059a8\" = orgs.\"E2ae79a5059a8\" JOIN cities ON orgs.\"E68e488048fad\" = cities.\"E68e488048fad\" WHERE employees.\"E3e1101a4aa98\" = 'E1772f39ac307'",
+      "trap": "Ec72e0f47e1d6",
+      "path": "runs/format_deep3/SQL_COL_LEG/item_5/prompt.txt"
+    }
+  ],
+  "nonclaim": "JSON_KEY_PROG is PATH over sealed keys, not G-Rev1. SQL_COL_NOLEG fail is missing column binder, not 'SQL doesn't work'. Not CodeS. Not confidentiality."
+}

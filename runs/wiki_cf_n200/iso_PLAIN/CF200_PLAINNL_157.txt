@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_157 #####
+QUESTION:
+Where was the place of death of the director of film On Their Own?
+
+CONTEXT:
+decoy_mid_157 | place of death | Hollywood
+The Story of Molly X | director | Crane Wilbur
+On Their Own | decoy_link_157 | decoy_mid_157
+Otto Brower | place of death | CF_TAIL_157_Hollywood
+Henry Scott, 1st Earl of Deloraine | father | James Scott, 1st Duke of Monmouth
+On Their Own | director | Otto Brower
+James Scott, 1st Duke of Monmouth | country of citizenship | English
+Crane Wilbur | place of birth | Athens

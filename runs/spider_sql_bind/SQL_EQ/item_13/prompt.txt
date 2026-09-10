@@ -1,0 +1,37 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_13]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_13 #####
+DB: browser_web
+SCHEMA (English name → sealed sqlite identifier):
+Web_client_accelerator = Ef905aec586ae
+id = Efa53af57bd7d
+name = E71d0516dc519
+Operating_system = Eaeafcffb7365
+Client = E5443158daa2c
+Connection = E34317a22c4db
+browser = Eaa3929153333
+market_share = E6186c050a4b2
+accelerator_compatible_browser = E0cd0633d93ef
+accelerator_id = E02a9e6b50c38
+browser_id = Eada1eae7f1d3
+compatible_since_year = E1d7a11983618
+
+Web_client_accelerator(id, name, Operating_system, Client, Connection)
+browser(id, name, market_share)
+accelerator_compatible_browser(accelerator_id, browser_id, compatible_since_year)
+
+QUESTION:
+What is the E71d0516dc519 of the E0cd0633d93ef that became E0cd0633d93ef with the E0cd0633d93ef 'CProxy' after E1d7a11983618 1998 ?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

@@ -1,0 +1,27 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM DEMO_0_BALANCED: no demos; two 3-hop cycles from START; symmetric noise. One quiz.
+
+No demos. No path. No relation names.
+From START, output the sealed answer atom using only CONTEXT.
+
+##### ID H3B_DEMO_0_BALANCED_1 #####
+START E4df3c158c44a
+CONTEXT:
+E4df3c158c44a | Ee2744564a89a | E3eddf462c3f9
+E5313da73e098 | Ed9ac7b46f212 | E883cb1919f08
+E0c6a1c94d17a | E16bd5a26eca8 | E3eddf462c3f9
+E8eb05e4e055e | Ecc95e4ac1a9f | Ee564428716f6
+E3eddf462c3f9 | E28d967af87c9 | E0c6a1c94d17a
+E5313da73e098 | E8f5d7c67a1d8 | E8eb05e4e055e
+E883cb1919f08 | E2375b3361253 | E5313da73e098
+E3eddf462c3f9 | E15f7e3bb5395 | E635ab4d53976
+E635ab4d53976 | Ee2744564a89a | E019314027748
+E635ab4d53976 | Ed1a0fe10b3b3 | Edffe0d673e36
+E4df3c158c44a | Ecc95e4ac1a9f | E5313da73e098
+Edffe0d673e36 | Ea32641f215f4 | E635ab4d53976
+E8eb05e4e055e | Ea4faff039540 | Ec754c3903fa3
+Ec754c3903fa3 | E3e7aff0c167a | E8eb05e4e055e
+

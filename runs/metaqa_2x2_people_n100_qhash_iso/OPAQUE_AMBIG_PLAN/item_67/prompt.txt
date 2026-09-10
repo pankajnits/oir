@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_67]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_67 #####
+QUESTION:
+Who Edbdcdfe7c647 a Efdabc1e3df0a Ee3bea9a5682f [Charles Laughton] Ee68a20133f3c Ec56bbcec71d9?
+
+PATH_QUERY
+START Charles Laughton
+R1 Eb0b3d86cc674
+R2 E856623db2b69
+Execute path; return final tail only.
+
+CONTEXT:
+Charles Laughton | Eb0b3d86cc674 | It Started with Eve
+It Started with Eve | E856623db2b69 | Henry Koster
+It Started with Eve | E6ec04880d938 | Hanns Kräly

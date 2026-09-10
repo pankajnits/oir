@@ -1,0 +1,42 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_27]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_27 #####
+DB: loan_1
+SCHEMA (English name → sealed sqlite identifier):
+bank = E7c884ee3e148
+branch_ID = E0577e0aef133
+bname = E838f6eeff38d
+no_of_customers = Ee26f8e76d187
+city = E81150b1c57a3
+state = Ef97c418b6b73
+customer = Ed44a301e2678
+cust_ID = E294b70d8fa83
+cust_name = Ed6b8541e65ce
+acc_type = Eb3bb02062773
+acc_bal = E7bd2dd6a84bd
+no_of_loans = Ec4e6c86ad21f
+credit_score = E17b4b29d7896
+loan = Ec9a4950f8f32
+loan_ID = E6ecc42a6f938
+loan_type = E8c9a675cdcf8
+amount = E6cab2d340e1d
+
+bank(branch_ID, bname, no_of_customers, city, state)
+customer(cust_ID, cust_name, acc_type, acc_bal, no_of_loans, credit_score, branch_ID, state)
+loan(loan_ID, loan_type, cust_ID, branch_ID, amount)
+
+QUESTION:
+Find the Ed6b8541e65ce of Ee26f8e76d187 who have Ec4e6c86ad21f of both Mortgages and Auto.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

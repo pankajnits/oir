@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_25 #####
+QUESTION:
+What is the place of birth of the director of film Marianela (1940 Film)?
+
+CONTEXT:
+Benito Perojo | place of birth | CF_TAIL_25_Madrid
+Marianela | director | Benito Perojo
+decoy_mid_25 | place of birth | Madrid
+Karin Stoltenberg | spouse | Thorvald Stoltenberg
+Thorvald Stoltenberg | employer | United Nations
+Lettre ouverte | director | Alex Joffé
+Alex Joffé | place of birth | Paris
+Marianela | decoy_link_25 | decoy_mid_25

@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. No other files.
+Write ONE sqlite SQL query that answers the question. Readable schema, plaintext DB names.
+Format: SQL[SPSQL_16]: <sql>
+
+DB: employee_hire_evaluation
+SCHEMA:
+employee(Employee_ID, Name, Age, City)
+shop(Shop_ID, Name, Location, District, Number_products, Manager_name)
+hiring(Shop_ID, Employee_ID, Start_from, Is_full_time)
+evaluation(Employee_ID, Year_awarded, Bonus)
+QUESTION:
+What is the name of the shop that is hiring the largest number of employees?

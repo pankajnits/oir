@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_52]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_52 #####
+QUESTION:
+Who directed a movie that Charlie Sheen starred in?
+
+PATH_QUERY
+START Charlie Sheen
+R1 Ed66b8360594b
+R2 E41962ebbb3b7
+Execute path; return final tail only.
+
+CONTEXT:
+Charlie Sheen | Ed66b8360594b | Cadence
+Cadence | E41962ebbb3b7 | Martin Sheen
+Cadence | E71d5b81a8e2c | Gordon Weaver

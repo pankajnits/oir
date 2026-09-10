@@ -1,0 +1,531 @@
+{
+  "version": 2,
+  "summary": {
+    "DEMO_0": "2/8",
+    "DEMO_1": "8/8",
+    "DEMO_2": "8/8",
+    "DEMO_4": "8/8",
+    "DEMO_8": "8/8",
+    "LEGEND": "8/8",
+    "PATH": "8/8"
+  },
+  "demo_curve": {
+    "0": "2/8",
+    "1": "8/8",
+    "2": "8/8",
+    "4": "8/8",
+    "8": "8/8"
+  },
+  "rows": [
+    {
+      "arm": "DEMO_0",
+      "i": 0,
+      "id": "DI_DEMO0_0",
+      "gold": "E25de5e9ed41b",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "unknown": true
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 1,
+      "id": "DI_DEMO0_1",
+      "gold": "E38dce175e91d",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "unknown": true
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 2,
+      "id": "DI_DEMO0_2",
+      "gold": "Ed73399a7ee2f",
+      "pred": "Ed73399a7ee2f",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 3,
+      "id": "DI_DEMO0_3",
+      "gold": "E65c97ab9e2a6",
+      "pred": "E65c97ab9e2a6",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 4,
+      "id": "DI_DEMO0_4",
+      "gold": "E247b2b202490",
+      "pred": "UNKNOWN",
+      "ok": false,
+      "unknown": true
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 5,
+      "id": "DI_DEMO0_5",
+      "gold": "E3064f422c03b",
+      "pred": "E39514947732d",
+      "ok": false,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 6,
+      "id": "DI_DEMO0_6",
+      "gold": "E7d4b4f08318c",
+      "pred": "Ec40bde48782a",
+      "ok": false,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_0",
+      "i": 7,
+      "id": "DI_DEMO0_7",
+      "gold": "E060d365f89af",
+      "pred": "Ee99c343fd5a3",
+      "ok": false,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_1",
+      "i": 0,
+      "id": "DI_DEMO1_0",
+      "gold": "E25de5e9ed41b",
+      "pred": "E25de5e9ed41b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_1",
+      "i": 1,
+      "id": "DI_DEMO1_1",
+      "gold": "E38dce175e91d",
+      "pred": "E38dce175e91d",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_1",
+      "i": 2,
+      "id": "DI_DEMO1_2",
+      "gold": "Ed73399a7ee2f",
+      "pred": "Ed73399a7ee2f",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_1",
+      "i": 3,
+      "id": "DI_DEMO1_3",
+      "gold": "E65c97ab9e2a6",
+      "pred": "E65c97ab9e2a6",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_1",
+      "i": 4,
+      "id": "DI_DEMO1_4",
+      "gold": "E247b2b202490",
+      "pred": "E247b2b202490",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_1",
+      "i": 5,
+      "id": "DI_DEMO1_5",
+      "gold": "E3064f422c03b",
+      "pred": "E3064f422c03b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_1",
+      "i": 6,
+      "id": "DI_DEMO1_6",
+      "gold": "E7d4b4f08318c",
+      "pred": "E7d4b4f08318c",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_1",
+      "i": 7,
+      "id": "DI_DEMO1_7",
+      "gold": "E060d365f89af",
+      "pred": "E060d365f89af",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_2",
+      "i": 0,
+      "id": "DI_DEMO2_0",
+      "gold": "E25de5e9ed41b",
+      "pred": "E25de5e9ed41b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_2",
+      "i": 1,
+      "id": "DI_DEMO2_1",
+      "gold": "E38dce175e91d",
+      "pred": "E38dce175e91d",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_2",
+      "i": 2,
+      "id": "DI_DEMO2_2",
+      "gold": "Ed73399a7ee2f",
+      "pred": "Ed73399a7ee2f",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_2",
+      "i": 3,
+      "id": "DI_DEMO2_3",
+      "gold": "E65c97ab9e2a6",
+      "pred": "E65c97ab9e2a6",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_2",
+      "i": 4,
+      "id": "DI_DEMO2_4",
+      "gold": "E247b2b202490",
+      "pred": "E247b2b202490",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_2",
+      "i": 5,
+      "id": "DI_DEMO2_5",
+      "gold": "E3064f422c03b",
+      "pred": "E3064f422c03b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_2",
+      "i": 6,
+      "id": "DI_DEMO2_6",
+      "gold": "E7d4b4f08318c",
+      "pred": "E7d4b4f08318c",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_2",
+      "i": 7,
+      "id": "DI_DEMO2_7",
+      "gold": "E060d365f89af",
+      "pred": "E060d365f89af",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_4",
+      "i": 0,
+      "id": "DI_DEMO4_0",
+      "gold": "E25de5e9ed41b",
+      "pred": "E25de5e9ed41b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_4",
+      "i": 1,
+      "id": "DI_DEMO4_1",
+      "gold": "E38dce175e91d",
+      "pred": "E38dce175e91d",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_4",
+      "i": 2,
+      "id": "DI_DEMO4_2",
+      "gold": "Ed73399a7ee2f",
+      "pred": "Ed73399a7ee2f",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_4",
+      "i": 3,
+      "id": "DI_DEMO4_3",
+      "gold": "E65c97ab9e2a6",
+      "pred": "E65c97ab9e2a6",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_4",
+      "i": 4,
+      "id": "DI_DEMO4_4",
+      "gold": "E247b2b202490",
+      "pred": "E247b2b202490",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_4",
+      "i": 5,
+      "id": "DI_DEMO4_5",
+      "gold": "E3064f422c03b",
+      "pred": "E3064f422c03b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_4",
+      "i": 6,
+      "id": "DI_DEMO4_6",
+      "gold": "E7d4b4f08318c",
+      "pred": "E7d4b4f08318c",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_4",
+      "i": 7,
+      "id": "DI_DEMO4_7",
+      "gold": "E060d365f89af",
+      "pred": "E060d365f89af",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_8",
+      "i": 0,
+      "id": "DI_DEMO8_0",
+      "gold": "E25de5e9ed41b",
+      "pred": "E25de5e9ed41b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_8",
+      "i": 1,
+      "id": "DI_DEMO8_1",
+      "gold": "E38dce175e91d",
+      "pred": "E38dce175e91d",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_8",
+      "i": 2,
+      "id": "DI_DEMO8_2",
+      "gold": "Ed73399a7ee2f",
+      "pred": "Ed73399a7ee2f",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_8",
+      "i": 3,
+      "id": "DI_DEMO8_3",
+      "gold": "E65c97ab9e2a6",
+      "pred": "E65c97ab9e2a6",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_8",
+      "i": 4,
+      "id": "DI_DEMO8_4",
+      "gold": "E247b2b202490",
+      "pred": "E247b2b202490",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_8",
+      "i": 5,
+      "id": "DI_DEMO8_5",
+      "gold": "E3064f422c03b",
+      "pred": "E3064f422c03b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_8",
+      "i": 6,
+      "id": "DI_DEMO8_6",
+      "gold": "E7d4b4f08318c",
+      "pred": "E7d4b4f08318c",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "DEMO_8",
+      "i": 7,
+      "id": "DI_DEMO8_7",
+      "gold": "E060d365f89af",
+      "pred": "E060d365f89af",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "LEGEND",
+      "i": 0,
+      "id": "DI_LEGEND_0",
+      "gold": "E25de5e9ed41b",
+      "pred": "E25de5e9ed41b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "LEGEND",
+      "i": 1,
+      "id": "DI_LEGEND_1",
+      "gold": "E38dce175e91d",
+      "pred": "E38dce175e91d",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "LEGEND",
+      "i": 2,
+      "id": "DI_LEGEND_2",
+      "gold": "Ed73399a7ee2f",
+      "pred": "Ed73399a7ee2f",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "LEGEND",
+      "i": 3,
+      "id": "DI_LEGEND_3",
+      "gold": "E65c97ab9e2a6",
+      "pred": "E65c97ab9e2a6",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "LEGEND",
+      "i": 4,
+      "id": "DI_LEGEND_4",
+      "gold": "E247b2b202490",
+      "pred": "E247b2b202490",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "LEGEND",
+      "i": 5,
+      "id": "DI_LEGEND_5",
+      "gold": "E3064f422c03b",
+      "pred": "E3064f422c03b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "LEGEND",
+      "i": 6,
+      "id": "DI_LEGEND_6",
+      "gold": "E7d4b4f08318c",
+      "pred": "E7d4b4f08318c",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "LEGEND",
+      "i": 7,
+      "id": "DI_LEGEND_7",
+      "gold": "E060d365f89af",
+      "pred": "E060d365f89af",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "PATH",
+      "i": 0,
+      "id": "DI_PATH_0",
+      "gold": "E25de5e9ed41b",
+      "pred": "E25de5e9ed41b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "PATH",
+      "i": 1,
+      "id": "DI_PATH_1",
+      "gold": "E38dce175e91d",
+      "pred": "E38dce175e91d",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "PATH",
+      "i": 2,
+      "id": "DI_PATH_2",
+      "gold": "Ed73399a7ee2f",
+      "pred": "Ed73399a7ee2f",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "PATH",
+      "i": 3,
+      "id": "DI_PATH_3",
+      "gold": "E65c97ab9e2a6",
+      "pred": "E65c97ab9e2a6",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "PATH",
+      "i": 4,
+      "id": "DI_PATH_4",
+      "gold": "E247b2b202490",
+      "pred": "E247b2b202490",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "PATH",
+      "i": 5,
+      "id": "DI_PATH_5",
+      "gold": "E3064f422c03b",
+      "pred": "E3064f422c03b",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "PATH",
+      "i": 6,
+      "id": "DI_PATH_6",
+      "gold": "E7d4b4f08318c",
+      "pred": "E7d4b4f08318c",
+      "ok": true,
+      "unknown": false
+    },
+    {
+      "arm": "PATH",
+      "i": 7,
+      "id": "DI_PATH_7",
+      "gold": "E060d365f89af",
+      "pred": "E060d365f89af",
+      "ok": true,
+      "unknown": false
+    }
+  ],
+  "protocol": "v2: one quiz per file; edge shuffle; no English two-hop on DEMO; demos disjoint from quiz; v1 batch+two-hop discarded as confound",
+  "v1_discard": {
+    "reason": "DEMO_0 8/8 via within-batch isomorphic induction + English two-hop leak",
+    "action": "do not cite v1 scores"
+  },
+  "verdict": "v2 curve (one-quiz-per-file; no English two-hop on DEMO). PATH=8/8; LEGEND=8/8; DEMO_0=2/8."
+}

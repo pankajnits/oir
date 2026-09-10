@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_159 #####
+QUESTION:
+Where does the director of film Six Figures (Film) work at?
+
+CONTEXT:
+Yeshaq I | place of death | Ethiopia
+decoy_mid_159 | employer | National Film Board of Canada
+Fisher Stevens | award received | Academy Award for Best Documentary Feature
+Six Figures | director | David Christensen
+Six Figures | decoy_link_159 | decoy_mid_159
+Just a Kiss | director | Fisher Stevens
+David Christensen | employer | CF_TAIL_159_NationalFilm
+Andreyas | father | Yeshaq I

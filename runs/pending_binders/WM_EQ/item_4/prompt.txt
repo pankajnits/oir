@@ -1,0 +1,20 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[PB_WM_EQ_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM WM_EQ: WikiMovies two-route graph; equality recipe; no plan.
+
+##### ID PB_WM_EQ_4 #####
+QUESTION (token-HMAC'd):
+Efffbb7d9684d Efab5c43c71c9 E54a440b8de05 E1a5360bb8dc9 Eccc1b9574aee E54a440b8de05 E55e4763ced34 Eccc1b9574aee Eedbfcf2bcb18?
+
+PROTOCOL (English; do not decrypt):
+- QUESTION, SCHEMA, and CONTEXT (if present) use the same encoding.
+- Identical tokens are the same entity or the same field (equality, not English).
+- Walk by token equality. If more than one reading is possible, UNKNOWN.
+No JOIN/PATH is given.
+
+CONTEXT:
+Eedbfcf2bcb18 | E55e4763ced34 | E93d967de9057
+E93d967de9057 | E1a5360bb8dc9 | Ecc99be1e2512
+E93d967de9057 | E711f912c2ed4 | E233617c87733

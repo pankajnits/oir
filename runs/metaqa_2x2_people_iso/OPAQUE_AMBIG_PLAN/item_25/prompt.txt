@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA2_OPAQUE_AMBIG_PLAN_25]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA2_OPAQUE_AMBIG_PLAN_25 #####
+QUESTION:
+Who directed a movie that John Hurt starred in?
+
+PATH_QUERY
+START John Hurt
+R1 E7a1528536034
+R2 Eaaedda2b45e9
+Execute path; return final tail only.
+
+CONTEXT:
+John Hurt | E7a1528536034 | The Osterman Weekend
+The Osterman Weekend | Eaaedda2b45e9 | Sam Peckinpah
+The Osterman Weekend | Efa368df92d6f | Robert Ludlum

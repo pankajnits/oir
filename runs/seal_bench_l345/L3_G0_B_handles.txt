@@ -1,0 +1,24 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=E50af05de1a97
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f E50af05de1a97 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+E50af05de1a97 | E8830785bf19e | Ea7d52b74a494
+Ea7d52b74a494 | E56f4bae38fe6 | E7d1884901470
+E7d1884901470 | Eb0b2f877d626 | E6d25abb8d073
+E9da83f107ac9 | E8830785bf19e | Ec356a157da57
+Ec356a157da57 | E56f4bae38fe6 | E338a5c1206f4
+E338a5c1206f4 | Eb0b2f877d626 | Edf9f4cb16be8
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

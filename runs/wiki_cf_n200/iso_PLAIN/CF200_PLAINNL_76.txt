@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_76 #####
+QUESTION:
+Where was the place of death of Temulin's father?
+
+CONTEXT:
+decoy_mid_76 | place of death | Khamag Mongol
+Temulin | decoy_link_76 | decoy_mid_76
+Bob Wills Is Still the King | performer | Waylon Jennings
+Under the Cards | director | André Cayatte
+Yesugei | place of death | CF_TAIL_76_KhamagMongol
+Temulin | father | Yesugei
+André Cayatte | place of birth | Carcassonne
+Waylon Jennings | spouse | Jessi Colter

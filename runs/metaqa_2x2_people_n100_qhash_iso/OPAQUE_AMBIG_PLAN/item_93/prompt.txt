@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_93]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_93 #####
+QUESTION:
+Who E3379351c7688 a Ebe0179136836 E1a448eca8919 [Natalie Portman] E136bc4de1e53 E0d6dbe2e096e?
+
+PATH_QUERY
+START Natalie Portman
+R1 E49a3a6556f0f
+R2 Ebc79cae53942
+Execute path; return final tail only.
+
+CONTEXT:
+Natalie Portman | E49a3a6556f0f | No Strings Attached
+No Strings Attached | Ebc79cae53942 | Ivan Reitman
+No Strings Attached | E8f1b411dfbc3 | Elizabeth Meriwether

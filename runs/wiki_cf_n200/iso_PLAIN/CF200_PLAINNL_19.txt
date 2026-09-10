@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_19 #####
+QUESTION:
+What is the place of birth of Frank Wartenberg's wife?
+
+CONTEXT:
+Frank Wartenberg | spouse | Christiane Wartenberg
+decoy_mid_19 | place of birth | Prenzlau
+Oberon Zell-Ravenheart | place of birth | St. Louis, Missouri
+Ett gammalt fult och elakt troll det var en gång | composer | Felix Körling
+Frank Wartenberg | decoy_link_19 | decoy_mid_19
+Felix Körling | father | August Körling
+Christiane Wartenberg | place of birth | CF_TAIL_19_Prenzlau
+Morning Glory Zell-Ravenheart | spouse | Oberon Zell-Ravenheart

@@ -1,0 +1,20 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM MODEL_PLAN: write PATH from English Q + opaque-rel graph. No gold PATH, no legend.
+
+##### ID OR_MODELPLAN_6 #####
+Write a PATH_QUERY using CONTEXT tokens only (no gold PATH). Then the sealed tail.
+QUESTION:
+Why did E67a5a60549a5's wife die?
+
+CONTEXT:
+Eb272237d4ca3 | Eb001700916b5 | Ed02558bd289f
+E672e1040d03e | E2be8513bf682 | E03a8b7e18a9e
+E39b363452474 | E0b35ff5b0c7b | E152bdad4ef41
+Eff903cba9963 | E19650717cd28 | Eb272237d4ca3
+E8487aaa7e176 | E2be8513bf682 | E77f4f9ea71b8
+E67a5a60549a5 | E19650717cd28 | E8487aaa7e176
+E67a5a60549a5 | Ead38e0c7fdf4 | E672e1040d03e
+E152bdad4ef41 | E257520c171fb | Ebe057ec7ff4e

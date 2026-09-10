@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22S_OPAQUE_AMBIG_24]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG: opaque relations, English entities; two 2-hops from start.
+##### ID F22S_OPAQUE_AMBIG_24 #####
+QUESTION:
+What city is the headquarters of the company led by Freddy_Heineken?
+
+CONTEXT:
+Freddy_Heineken | E281c76218070 | The_Walt_Disney_Company
+The_Walt_Disney_Company | E09e1bdd4d1b4 | Burbank
+Freddy_Heineken | E6c2cddc089f5 | Heineken_International
+Heineken_International | E66a11a2503c1 | Amsterdam

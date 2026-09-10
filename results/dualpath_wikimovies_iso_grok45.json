@@ -1,0 +1,702 @@
+{
+  "model": "grok45",
+  "n": 32,
+  "protocol": "isolation",
+  "start_in_question": true,
+  "source": "data/metaqa/oir_2hop_people_n32.json",
+  "summary": {
+    "MATCHED": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "NOVEL": {
+      "score": "0/32",
+      "unknown": 32,
+      "missing": 0,
+      "decoy": 0
+    },
+    "PLAN": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_0",
+      "gold": "Efa64f24da138",
+      "pred": "Efa64f24da138",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_1",
+      "gold": "E70a3ead50803",
+      "pred": "E70a3ead50803",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_2",
+      "gold": "Efb6eaabfc775",
+      "pred": "Efb6eaabfc775",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_3",
+      "gold": "Ee87028f6d48f",
+      "pred": "Ee87028f6d48f",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_4",
+      "gold": "E8a9774b38647",
+      "pred": "E8a9774b38647",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_5",
+      "gold": "E38ef550871c3",
+      "pred": "E38ef550871c3",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_6",
+      "gold": "Ebe1b2992761c",
+      "pred": "Ebe1b2992761c",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_7",
+      "gold": "Eed2f41f1e5d0",
+      "pred": "Eed2f41f1e5d0",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_8",
+      "gold": "E9a14ef6b2762",
+      "pred": "E9a14ef6b2762",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_9",
+      "gold": "E2abae1fe8e3f",
+      "pred": "E2abae1fe8e3f",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_10",
+      "gold": "E72f9a817102a",
+      "pred": "E72f9a817102a",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_11",
+      "gold": "E47895bab92f8",
+      "pred": "E47895bab92f8",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_12",
+      "gold": "Eaa207929a8be",
+      "pred": "Eaa207929a8be",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_13",
+      "gold": "E391508a65e88",
+      "pred": "E391508a65e88",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_14",
+      "gold": "E78e0a49f2f18",
+      "pred": "E78e0a49f2f18",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_15",
+      "gold": "E1aa566741b3a",
+      "pred": "E1aa566741b3a",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_16",
+      "gold": "E2042d9b9e506",
+      "pred": "E2042d9b9e506",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_17",
+      "gold": "E66c3cb2a88fa",
+      "pred": "E66c3cb2a88fa",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_18",
+      "gold": "E8e8755de39f1",
+      "pred": "E8e8755de39f1",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_19",
+      "gold": "Ec874ffdc6f8d",
+      "pred": "Ec874ffdc6f8d",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_20",
+      "gold": "Ee42ac8a2600a",
+      "pred": "Ee42ac8a2600a",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_21",
+      "gold": "Eae8c0942932e",
+      "pred": "Eae8c0942932e",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_22",
+      "gold": "Eecbf870e3a4c",
+      "pred": "Eecbf870e3a4c",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_23",
+      "gold": "Edd6a7c4b774f",
+      "pred": "Edd6a7c4b774f",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_24",
+      "gold": "Ed56bf79d8c87",
+      "pred": "Ed56bf79d8c87",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_25",
+      "gold": "E981094ca5286",
+      "pred": "E981094ca5286",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_26",
+      "gold": "E612f88ec09d3",
+      "pred": "E612f88ec09d3",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_27",
+      "gold": "E6e289b8f0807",
+      "pred": "E6e289b8f0807",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_28",
+      "gold": "Ea84d04febe0a",
+      "pred": "Ea84d04febe0a",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_29",
+      "gold": "E2fb196c89511",
+      "pred": "E2fb196c89511",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_30",
+      "gold": "E5536f1eeeb88",
+      "pred": "E5536f1eeeb88",
+      "ok": true
+    },
+    {
+      "arm": "MATCHED",
+      "id": "DPWM_MATCHED_31",
+      "gold": "E01e95e3b2ae1",
+      "pred": "E01e95e3b2ae1",
+      "ok": true
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_0",
+      "gold": "Efa64f24da138",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_1",
+      "gold": "E70a3ead50803",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_2",
+      "gold": "Efb6eaabfc775",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_3",
+      "gold": "Ee87028f6d48f",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_4",
+      "gold": "E8a9774b38647",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_5",
+      "gold": "E38ef550871c3",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_6",
+      "gold": "Ebe1b2992761c",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_7",
+      "gold": "Eed2f41f1e5d0",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_8",
+      "gold": "E9a14ef6b2762",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_9",
+      "gold": "E2abae1fe8e3f",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_10",
+      "gold": "E72f9a817102a",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_11",
+      "gold": "E47895bab92f8",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_12",
+      "gold": "Eaa207929a8be",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_13",
+      "gold": "E391508a65e88",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_14",
+      "gold": "E78e0a49f2f18",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_15",
+      "gold": "E1aa566741b3a",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_16",
+      "gold": "E2042d9b9e506",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_17",
+      "gold": "E66c3cb2a88fa",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_18",
+      "gold": "E8e8755de39f1",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_19",
+      "gold": "Ec874ffdc6f8d",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_20",
+      "gold": "Ee42ac8a2600a",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_21",
+      "gold": "Eae8c0942932e",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_22",
+      "gold": "Eecbf870e3a4c",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_23",
+      "gold": "Edd6a7c4b774f",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_24",
+      "gold": "Ed56bf79d8c87",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_25",
+      "gold": "E981094ca5286",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_26",
+      "gold": "E612f88ec09d3",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_27",
+      "gold": "E6e289b8f0807",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_28",
+      "gold": "Ea84d04febe0a",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_29",
+      "gold": "E2fb196c89511",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_30",
+      "gold": "E5536f1eeeb88",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "NOVEL",
+      "id": "DPWM_NOVEL_31",
+      "gold": "E01e95e3b2ae1",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_0",
+      "gold": "Efa64f24da138",
+      "pred": "Efa64f24da138",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_1",
+      "gold": "E70a3ead50803",
+      "pred": "E70a3ead50803",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_2",
+      "gold": "Efb6eaabfc775",
+      "pred": "Efb6eaabfc775",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_3",
+      "gold": "Ee87028f6d48f",
+      "pred": "Ee87028f6d48f",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_4",
+      "gold": "E8a9774b38647",
+      "pred": "E8a9774b38647",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_5",
+      "gold": "E38ef550871c3",
+      "pred": "E38ef550871c3",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_6",
+      "gold": "Ebe1b2992761c",
+      "pred": "Ebe1b2992761c",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_7",
+      "gold": "Eed2f41f1e5d0",
+      "pred": "Eed2f41f1e5d0",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_8",
+      "gold": "E9a14ef6b2762",
+      "pred": "E9a14ef6b2762",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_9",
+      "gold": "E2abae1fe8e3f",
+      "pred": "E2abae1fe8e3f",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_10",
+      "gold": "E72f9a817102a",
+      "pred": "E72f9a817102a",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_11",
+      "gold": "E47895bab92f8",
+      "pred": "E47895bab92f8",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_12",
+      "gold": "Eaa207929a8be",
+      "pred": "Eaa207929a8be",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_13",
+      "gold": "E391508a65e88",
+      "pred": "E391508a65e88",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_14",
+      "gold": "E78e0a49f2f18",
+      "pred": "E78e0a49f2f18",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_15",
+      "gold": "E1aa566741b3a",
+      "pred": "E1aa566741b3a",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_16",
+      "gold": "E2042d9b9e506",
+      "pred": "E2042d9b9e506",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_17",
+      "gold": "E66c3cb2a88fa",
+      "pred": "E66c3cb2a88fa",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_18",
+      "gold": "E8e8755de39f1",
+      "pred": "E8e8755de39f1",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_19",
+      "gold": "Ec874ffdc6f8d",
+      "pred": "Ec874ffdc6f8d",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_20",
+      "gold": "Ee42ac8a2600a",
+      "pred": "Ee42ac8a2600a",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_21",
+      "gold": "Eae8c0942932e",
+      "pred": "Eae8c0942932e",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_22",
+      "gold": "Eecbf870e3a4c",
+      "pred": "Eecbf870e3a4c",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_23",
+      "gold": "Edd6a7c4b774f",
+      "pred": "Edd6a7c4b774f",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_24",
+      "gold": "Ed56bf79d8c87",
+      "pred": "Ed56bf79d8c87",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_25",
+      "gold": "E981094ca5286",
+      "pred": "E981094ca5286",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_26",
+      "gold": "E612f88ec09d3",
+      "pred": "E612f88ec09d3",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_27",
+      "gold": "E6e289b8f0807",
+      "pred": "E6e289b8f0807",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_28",
+      "gold": "Ea84d04febe0a",
+      "pred": "Ea84d04febe0a",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_29",
+      "gold": "E2fb196c89511",
+      "pred": "E2fb196c89511",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_30",
+      "gold": "E5536f1eeeb88",
+      "pred": "E5536f1eeeb88",
+      "ok": true
+    },
+    {
+      "arm": "PLAN",
+      "id": "DPWM_PLAN_31",
+      "gold": "E01e95e3b2ae1",
+      "pred": "E01e95e3b2ae1",
+      "ok": true
+    }
+  ],
+  "reply_dir": "results/dualpath_wikimovies_iso_harness_replies_grok45"
+}

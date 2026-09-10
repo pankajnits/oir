@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_92 #####
+QUESTION:
+When was Ebba Busch Thor's husband born?
+
+CONTEXT:
+Antoine Philippe, Duke of Montpensier | place of death | England
+Stanisław Żółkiewski | country of citizenship | Polish–Lithuanian Commonwealth
+Françoise Barbaroux | spouse | Antoine Philippe, Duke of Montpensier
+decoy_mid_92 | date of birth | 21 February 1986
+Ebba Busch Thor | spouse | Niklas Busch Thor
+Ebba Busch Thor | decoy_link_92 | decoy_mid_92
+Niklas Busch Thor | date of birth | CF_TAIL_92_21February19
+Zofia Żółkiewska | father | Stanisław Żółkiewski

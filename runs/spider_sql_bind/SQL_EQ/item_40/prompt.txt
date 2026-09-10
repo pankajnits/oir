@@ -1,0 +1,50 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_40]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_40 #####
+DB: store_product
+SCHEMA (English name → sealed sqlite identifier):
+product = Edb8890b04b10
+product_id = Ec2f1f187cfb2
+dimensions = E36ae254dc8f0
+dpi = Eb8e1b2a1d51d
+pages_per_minute_color = Ebe7060a5e024
+max_page_size = E466aeb4fcb62
+interface = E10fd023267b1
+store = E7ae48849bfeb
+Store_ID = E1635ab85525a
+Store_Name = Eb3c113367ec1
+Type = Ebd01927061bf
+Area_size = E9f024b874309
+Number_of_product_category = E6f3f897720c7
+Ranking = E5961c772accb
+district = Eed282dcbc5af
+District_ID = E628995544deb
+District_name = Efb01b7437347
+Headquartered_City = Eae85e7ba44d3
+City_Population = E029b94591663
+City_Area = Edd155b459eaa
+store_product = Ea93f17273b16
+Product_ID = E81fcb39e9384
+store_district = E1e5c55d65929
+
+product(product_id, product, dimensions, dpi, pages_per_minute_color, max_page_size, interface)
+store(Store_ID, Store_Name, Type, Area_size, Number_of_product_category, Ranking)
+district(District_ID, District_name, Headquartered_City, City_Population, City_Area)
+store_product(Store_ID, Product_ID)
+store_district(Store_ID, District_ID)
+
+QUESTION:
+What are the names of the districts that have both mall and village E1e5c55d65929 style shops?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

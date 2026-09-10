@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_29]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_29 #####
+QUESTION:
+What city is the headquarters of the company led by Tom_Buhrow?
+
+PATH_QUERY
+START Tom_Buhrow
+R1 E9f478518489c
+R2 Edcd5892fe375
+Execute path; return final tail only.
+
+CONTEXT:
+Tom_Buhrow | E9f478518489c | Westdeutscher_Rundfunk
+Westdeutscher_Rundfunk | Edcd5892fe375 | Cologne
+Tom_Buhrow | Eb62d9430e5d8 | Aetna
+Aetna | E66498cf3c4c7 | Hartford

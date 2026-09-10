@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_70]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_70 #####
+QUESTION:
+Who directed a movie that Harrison Ford starred in?
+
+PATH_QUERY
+START Harrison Ford
+R1 Ef95c5a3b591c
+R2 Ef0303adba19a
+Execute path; return final tail only.
+
+CONTEXT:
+Harrison Ford | Ef95c5a3b591c | Random Hearts
+Random Hearts | Ef0303adba19a | Sydney Pollack
+Random Hearts | E6a3ad50028c3 | Warren Adler

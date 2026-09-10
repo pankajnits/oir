@@ -1,0 +1,147 @@
+MODEL UNDER TEST. No tools. Read ONLY this file. Answer EVERY ID.
+
+Format: ANSWER_PLAIN[<id>]: <integer>
+
+
+##### ID L7_G0_A_plain #####
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX0? Reply with the integer count only.
+
+CONTEXT:
+P0_0 | works_at | CoA0
+P0_1 | works_at | CoA0
+P0_2 | works_at | CoA0
+P0_3 | works_at | CoB0
+CoA0 | located_in | CityX0
+CoB0 | located_in | CityY0
+Dx0 | works_at | Dco0
+Dco0 | located_in | Dcity0
+CoA0 | owned_by | Hold0
+
+
+
+##### ID L7_G0_B_plain #####
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX0? Reply with the integer count only.
+
+CONTEXT:
+P0_0 | works_at | CoA0
+P0_1 | works_at | CoA0
+P0_2 | works_at | CoA0
+P0_3 | works_at | CoB0
+CoA0 | located_in | CityY0
+CoB0 | located_in | CityX0
+Dx0 | works_at | Dco0
+Dco0 | located_in | Dcity0
+CoA0 | owned_by | Hold0
+
+
+
+##### ID L7_G1_A_plain #####
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX1? Reply with the integer count only.
+
+CONTEXT:
+P1_0 | works_at | CoA1
+P1_1 | works_at | CoA1
+P1_2 | works_at | CoA1
+P1_3 | works_at | CoB1
+CoA1 | located_in | CityX1
+CoB1 | located_in | CityY1
+Dx1 | works_at | Dco1
+Dco1 | located_in | Dcity1
+CoA1 | owned_by | Hold1
+
+
+
+##### ID L7_G1_B_plain #####
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX1? Reply with the integer count only.
+
+CONTEXT:
+P1_0 | works_at | CoA1
+P1_1 | works_at | CoA1
+P1_2 | works_at | CoA1
+P1_3 | works_at | CoB1
+CoA1 | located_in | CityY1
+CoB1 | located_in | CityX1
+Dx1 | works_at | Dco1
+Dco1 | located_in | Dcity1
+CoA1 | owned_by | Hold1
+
+
+
+##### ID L7_G2_A_plain #####
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX2? Reply with the integer count only.
+
+CONTEXT:
+P2_0 | works_at | CoA2
+P2_1 | works_at | CoA2
+P2_2 | works_at | CoA2
+P2_3 | works_at | CoB2
+CoA2 | located_in | CityX2
+CoB2 | located_in | CityY2
+Dx2 | works_at | Dco2
+Dco2 | located_in | Dcity2
+CoA2 | owned_by | Hold2
+
+
+
+##### ID L7_G2_B_plain #####
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX2? Reply with the integer count only.
+
+CONTEXT:
+P2_0 | works_at | CoA2
+P2_1 | works_at | CoA2
+P2_2 | works_at | CoA2
+P2_3 | works_at | CoB2
+CoA2 | located_in | CityY2
+CoB2 | located_in | CityX2
+Dx2 | works_at | Dco2
+Dco2 | located_in | Dcity2
+CoA2 | owned_by | Hold2
+
+
+
+##### ID L7_G3_A_plain #####
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX3? Reply with the integer count only.
+
+CONTEXT:
+P3_0 | works_at | CoA3
+P3_1 | works_at | CoA3
+P3_2 | works_at | CoA3
+P3_3 | works_at | CoB3
+CoA3 | located_in | CityX3
+CoB3 | located_in | CityY3
+Dx3 | works_at | Dco3
+Dco3 | located_in | Dcity3
+CoA3 | owned_by | Hold3
+
+
+
+##### ID L7_G3_B_plain #####
+Answer from CONTEXT. Format: ANSWER_PLAIN: <integer>
+
+QUESTION: How many people work_at a company that is located_in CityX3? Reply with the integer count only.
+
+CONTEXT:
+P3_0 | works_at | CoA3
+P3_1 | works_at | CoA3
+P3_2 | works_at | CoA3
+P3_3 | works_at | CoB3
+CoA3 | located_in | CityY3
+CoB3 | located_in | CityX3
+Dx3 | works_at | Dco3
+Dco3 | located_in | Dcity3
+CoA3 | owned_by | Hold3
+

@@ -1,0 +1,365 @@
+{
+  "n": 6,
+  "suite": "except_sql",
+  "seed": 20260814,
+  "engine_gold": "6/6",
+  "arms": {
+    "EXCEPT_MODEL": {
+      "n": 6,
+      "ids": [
+        "EX_MODEL_0",
+        "EX_MODEL_1",
+        "EX_MODEL_2",
+        "EX_MODEL_3",
+        "EX_MODEL_4",
+        "EX_MODEL_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/except_sql/EXCEPT_MODEL/item_0/prompt.txt",
+        "runs/except_sql/EXCEPT_MODEL/item_1/prompt.txt",
+        "runs/except_sql/EXCEPT_MODEL/item_2/prompt.txt",
+        "runs/except_sql/EXCEPT_MODEL/item_3/prompt.txt",
+        "runs/except_sql/EXCEPT_MODEL/item_4/prompt.txt",
+        "runs/except_sql/EXCEPT_MODEL/item_5/prompt.txt"
+      ]
+    },
+    "EXCEPT_NL": {
+      "n": 6,
+      "ids": [
+        "EX_NL_0",
+        "EX_NL_1",
+        "EX_NL_2",
+        "EX_NL_3",
+        "EX_NL_4",
+        "EX_NL_5"
+      ],
+      "iso": true,
+      "item_paths": [
+        "runs/except_sql/EXCEPT_NL/item_0/prompt.txt",
+        "runs/except_sql/EXCEPT_NL/item_1/prompt.txt",
+        "runs/except_sql/EXCEPT_NL/item_2/prompt.txt",
+        "runs/except_sql/EXCEPT_NL/item_3/prompt.txt",
+        "runs/except_sql/EXCEPT_NL/item_4/prompt.txt",
+        "runs/except_sql/EXCEPT_NL/item_5/prompt.txt"
+      ]
+    },
+    "EXCEPT_ENGINE": {
+      "n": 6,
+      "ids": [
+        "EX_ENGINE_0",
+        "EX_ENGINE_1",
+        "EX_ENGINE_2",
+        "EX_ENGINE_3",
+        "EX_ENGINE_4",
+        "EX_ENGINE_5"
+      ],
+      "iso": false,
+      "engine": true
+    },
+    "EXCEPT_PROG": {
+      "n": 6,
+      "ids": [
+        "EX_PROG_0",
+        "EX_PROG_1",
+        "EX_PROG_2",
+        "EX_PROG_3",
+        "EX_PROG_4",
+        "EX_PROG_5"
+      ],
+      "iso": false,
+      "batch": "runs/except_sql/EXCEPT_PROG_BATCH/BATCH.txt"
+    }
+  },
+  "cases": [
+    {
+      "arm": "EXCEPT_ENGINE",
+      "i": 0,
+      "id": "EX_ENGINE_0",
+      "gold": "E51798ca64f6f",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_0.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'Ed4defaffa732' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'Ed4defaffa732')",
+      "engine_ok": true,
+      "pred": "E51798ca64f6f",
+      "trap": "Ed660e0b50836",
+      "start": "Ed4defaffa732"
+    },
+    {
+      "arm": "EXCEPT_MODEL",
+      "i": 0,
+      "id": "EX_MODEL_0",
+      "gold": "E51798ca64f6f",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_MODEL/item_0/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_0.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'Ed4defaffa732' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'Ed4defaffa732')",
+      "trap": "Ed660e0b50836",
+      "start": "Ed4defaffa732"
+    },
+    {
+      "arm": "EXCEPT_NL",
+      "i": 0,
+      "id": "EX_NL_0",
+      "gold": "E51798ca64f6f",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_NL/item_0/prompt.txt",
+      "surface": "sqlite_md",
+      "trap": "Ed660e0b50836",
+      "start": "Ed4defaffa732"
+    },
+    {
+      "arm": "EXCEPT_PROG",
+      "i": 0,
+      "id": "EX_PROG_0",
+      "gold": "E51798ca64f6f",
+      "iso": false,
+      "surface": "sqlite_md",
+      "trap": "Ed660e0b50836",
+      "start": "Ed4defaffa732"
+    },
+    {
+      "arm": "EXCEPT_ENGINE",
+      "i": 1,
+      "id": "EX_ENGINE_1",
+      "gold": "Ec4c38e652409",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_1.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'E01e6dadbab4a' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E01e6dadbab4a')",
+      "engine_ok": true,
+      "pred": "Ec4c38e652409",
+      "trap": "Ef88a87f18268",
+      "start": "E01e6dadbab4a"
+    },
+    {
+      "arm": "EXCEPT_MODEL",
+      "i": 1,
+      "id": "EX_MODEL_1",
+      "gold": "Ec4c38e652409",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_MODEL/item_1/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_1.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'E01e6dadbab4a' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E01e6dadbab4a')",
+      "trap": "Ef88a87f18268",
+      "start": "E01e6dadbab4a"
+    },
+    {
+      "arm": "EXCEPT_NL",
+      "i": 1,
+      "id": "EX_NL_1",
+      "gold": "Ec4c38e652409",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_NL/item_1/prompt.txt",
+      "surface": "sqlite_md",
+      "trap": "Ef88a87f18268",
+      "start": "E01e6dadbab4a"
+    },
+    {
+      "arm": "EXCEPT_PROG",
+      "i": 1,
+      "id": "EX_PROG_1",
+      "gold": "Ec4c38e652409",
+      "iso": false,
+      "surface": "sqlite_md",
+      "trap": "Ef88a87f18268",
+      "start": "E01e6dadbab4a"
+    },
+    {
+      "arm": "EXCEPT_ENGINE",
+      "i": 2,
+      "id": "EX_ENGINE_2",
+      "gold": "Eb269595825a2",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_2.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'E046a8673e1b0' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E046a8673e1b0')",
+      "engine_ok": true,
+      "pred": "Eb269595825a2",
+      "trap": "Ef81d6336a388",
+      "start": "E046a8673e1b0"
+    },
+    {
+      "arm": "EXCEPT_MODEL",
+      "i": 2,
+      "id": "EX_MODEL_2",
+      "gold": "Eb269595825a2",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_MODEL/item_2/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_2.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'E046a8673e1b0' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E046a8673e1b0')",
+      "trap": "Ef81d6336a388",
+      "start": "E046a8673e1b0"
+    },
+    {
+      "arm": "EXCEPT_NL",
+      "i": 2,
+      "id": "EX_NL_2",
+      "gold": "Eb269595825a2",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_NL/item_2/prompt.txt",
+      "surface": "sqlite_md",
+      "trap": "Ef81d6336a388",
+      "start": "E046a8673e1b0"
+    },
+    {
+      "arm": "EXCEPT_PROG",
+      "i": 2,
+      "id": "EX_PROG_2",
+      "gold": "Eb269595825a2",
+      "iso": false,
+      "surface": "sqlite_md",
+      "trap": "Ef81d6336a388",
+      "start": "E046a8673e1b0"
+    },
+    {
+      "arm": "EXCEPT_ENGINE",
+      "i": 3,
+      "id": "EX_ENGINE_3",
+      "gold": "E4e2a2c059218",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_3.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'E91d439e130e0' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E91d439e130e0')",
+      "engine_ok": true,
+      "pred": "E4e2a2c059218",
+      "trap": "E0b90bc50633a",
+      "start": "E91d439e130e0"
+    },
+    {
+      "arm": "EXCEPT_MODEL",
+      "i": 3,
+      "id": "EX_MODEL_3",
+      "gold": "E4e2a2c059218",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_MODEL/item_3/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_3.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'E91d439e130e0' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E91d439e130e0')",
+      "trap": "E0b90bc50633a",
+      "start": "E91d439e130e0"
+    },
+    {
+      "arm": "EXCEPT_NL",
+      "i": 3,
+      "id": "EX_NL_3",
+      "gold": "E4e2a2c059218",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_NL/item_3/prompt.txt",
+      "surface": "sqlite_md",
+      "trap": "E0b90bc50633a",
+      "start": "E91d439e130e0"
+    },
+    {
+      "arm": "EXCEPT_PROG",
+      "i": 3,
+      "id": "EX_PROG_3",
+      "gold": "E4e2a2c059218",
+      "iso": false,
+      "surface": "sqlite_md",
+      "trap": "E0b90bc50633a",
+      "start": "E91d439e130e0"
+    },
+    {
+      "arm": "EXCEPT_ENGINE",
+      "i": 4,
+      "id": "EX_ENGINE_4",
+      "gold": "E61db5a8c72d9",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_4.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'Ebcd85c1aa42a' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'Ebcd85c1aa42a')",
+      "engine_ok": true,
+      "pred": "E61db5a8c72d9",
+      "trap": "Eca1195c7731e",
+      "start": "Ebcd85c1aa42a"
+    },
+    {
+      "arm": "EXCEPT_MODEL",
+      "i": 4,
+      "id": "EX_MODEL_4",
+      "gold": "E61db5a8c72d9",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_MODEL/item_4/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_4.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'Ebcd85c1aa42a' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'Ebcd85c1aa42a')",
+      "trap": "Eca1195c7731e",
+      "start": "Ebcd85c1aa42a"
+    },
+    {
+      "arm": "EXCEPT_NL",
+      "i": 4,
+      "id": "EX_NL_4",
+      "gold": "E61db5a8c72d9",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_NL/item_4/prompt.txt",
+      "surface": "sqlite_md",
+      "trap": "Eca1195c7731e",
+      "start": "Ebcd85c1aa42a"
+    },
+    {
+      "arm": "EXCEPT_PROG",
+      "i": 4,
+      "id": "EX_PROG_4",
+      "gold": "E61db5a8c72d9",
+      "iso": false,
+      "surface": "sqlite_md",
+      "trap": "Eca1195c7731e",
+      "start": "Ebcd85c1aa42a"
+    },
+    {
+      "arm": "EXCEPT_ENGINE",
+      "i": 5,
+      "id": "EX_ENGINE_5",
+      "gold": "Ef81d6336a388",
+      "iso": false,
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_5.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'E97e43169d2af' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E97e43169d2af')",
+      "engine_ok": true,
+      "pred": "Ef81d6336a388",
+      "trap": "Ef557a2b6c034",
+      "start": "E97e43169d2af"
+    },
+    {
+      "arm": "EXCEPT_MODEL",
+      "i": 5,
+      "id": "EX_MODEL_5",
+      "gold": "Ef81d6336a388",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_MODEL/item_5/prompt.txt",
+      "surface": "sqlite_live",
+      "db": "runs/except_sql/db/item_5.sqlite",
+      "gold_sql": "SELECT emp_id FROM employees WHERE emp_id != 'E97e43169d2af' EXCEPT SELECT emp_id FROM employees WHERE org_id = (SELECT org_id FROM employees WHERE emp_id = 'E97e43169d2af')",
+      "trap": "Ef557a2b6c034",
+      "start": "E97e43169d2af"
+    },
+    {
+      "arm": "EXCEPT_NL",
+      "i": 5,
+      "id": "EX_NL_5",
+      "gold": "Ef81d6336a388",
+      "iso": true,
+      "path": "runs/except_sql/EXCEPT_NL/item_5/prompt.txt",
+      "surface": "sqlite_md",
+      "trap": "Ef557a2b6c034",
+      "start": "E97e43169d2af"
+    },
+    {
+      "arm": "EXCEPT_PROG",
+      "i": 5,
+      "id": "EX_PROG_5",
+      "gold": "Ef81d6336a388",
+      "iso": false,
+      "surface": "sqlite_md",
+      "trap": "Ef557a2b6c034",
+      "start": "E97e43169d2af"
+    }
+  ],
+  "nonclaim": "Anti-join over sealed emp/org IDs. Trap = same-org colleague. EXCEPT_ENGINE is gold SQL (no MUT). Not G-Rev1. Not Spider leaderboard."
+}

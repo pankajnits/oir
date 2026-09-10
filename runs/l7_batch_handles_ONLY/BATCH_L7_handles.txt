@@ -1,0 +1,211 @@
+MODEL UNDER TEST. No tools. Read ONLY this file. Answer EVERY ID.
+
+Format: ANSWER_SEALED[<id>]: <integer>
+
+
+##### ID L7_G0_A_handles #####
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=E065e43ae3c4e
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d E065e43ae3c4e? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+Ea17f4f440fc5 | E82092b423f2e | Eafa866dc9294
+E4392d9b59b90 | E82092b423f2e | Eafa866dc9294
+E5ebbd01f347b | E82092b423f2e | Eafa866dc9294
+E6d07dfcec01c | E82092b423f2e | Ee96f4681d78c
+Eafa866dc9294 | E02e95dbce28d | E065e43ae3c4e
+Ee96f4681d78c | E02e95dbce28d | Ef5627f1dd1c6
+Eb5ad674ddfbe | E82092b423f2e | Ec5c5f72529cb
+Ec5c5f72529cb | E02e95dbce28d | E1c3e2f44226a
+Eafa866dc9294 | E6c0aa1e2c6a7 | E0aace6c51b8d
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)
+
+
+
+##### ID L7_G0_B_handles #####
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=E065e43ae3c4e
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d E065e43ae3c4e? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+Ea17f4f440fc5 | E82092b423f2e | Eafa866dc9294
+E4392d9b59b90 | E82092b423f2e | Eafa866dc9294
+E5ebbd01f347b | E82092b423f2e | Eafa866dc9294
+E6d07dfcec01c | E82092b423f2e | Ee96f4681d78c
+Eafa866dc9294 | E02e95dbce28d | Ef5627f1dd1c6
+Ee96f4681d78c | E02e95dbce28d | E065e43ae3c4e
+Eb5ad674ddfbe | E82092b423f2e | Ec5c5f72529cb
+Ec5c5f72529cb | E02e95dbce28d | E1c3e2f44226a
+Eafa866dc9294 | E6c0aa1e2c6a7 | E0aace6c51b8d
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)
+
+
+
+##### ID L7_G1_A_handles #####
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=Ee739939374fa
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d Ee739939374fa? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+Ea4344e7f2b24 | E82092b423f2e | E6b753030137f
+E70f738958ce8 | E82092b423f2e | E6b753030137f
+E4d942c03dca2 | E82092b423f2e | E6b753030137f
+E3d1836daa4b8 | E82092b423f2e | E84fac2731127
+E6b753030137f | E02e95dbce28d | Ee739939374fa
+E84fac2731127 | E02e95dbce28d | Eb03c108305b5
+E71a9997658a5 | E82092b423f2e | Eaa28663ecb36
+Eaa28663ecb36 | E02e95dbce28d | E30c56c4a1de3
+E6b753030137f | E6c0aa1e2c6a7 | E0c9d95df1d69
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)
+
+
+
+##### ID L7_G1_B_handles #####
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=Ee739939374fa
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d Ee739939374fa? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+Ea4344e7f2b24 | E82092b423f2e | E6b753030137f
+E70f738958ce8 | E82092b423f2e | E6b753030137f
+E4d942c03dca2 | E82092b423f2e | E6b753030137f
+E3d1836daa4b8 | E82092b423f2e | E84fac2731127
+E6b753030137f | E02e95dbce28d | Eb03c108305b5
+E84fac2731127 | E02e95dbce28d | Ee739939374fa
+E71a9997658a5 | E82092b423f2e | Eaa28663ecb36
+Eaa28663ecb36 | E02e95dbce28d | E30c56c4a1de3
+E6b753030137f | E6c0aa1e2c6a7 | E0c9d95df1d69
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)
+
+
+
+##### ID L7_G2_A_handles #####
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=Edb640541688d
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d Edb640541688d? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+Eac08daec7ae5 | E82092b423f2e | E66b981d7aef9
+E44b5ae36c276 | E82092b423f2e | E66b981d7aef9
+Ecd006f011ea2 | E82092b423f2e | E66b981d7aef9
+E611d427afb44 | E82092b423f2e | E0dd08443db4e
+E66b981d7aef9 | E02e95dbce28d | Edb640541688d
+E0dd08443db4e | E02e95dbce28d | E5d206cc8acf1
+E019f891e5633 | E82092b423f2e | E61bae5415676
+E61bae5415676 | E02e95dbce28d | E38fb4005e243
+E66b981d7aef9 | E6c0aa1e2c6a7 | E637fd8018be8
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)
+
+
+
+##### ID L7_G2_B_handles #####
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=Edb640541688d
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d Edb640541688d? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+Eac08daec7ae5 | E82092b423f2e | E66b981d7aef9
+E44b5ae36c276 | E82092b423f2e | E66b981d7aef9
+Ecd006f011ea2 | E82092b423f2e | E66b981d7aef9
+E611d427afb44 | E82092b423f2e | E0dd08443db4e
+E66b981d7aef9 | E02e95dbce28d | E5d206cc8acf1
+E0dd08443db4e | E02e95dbce28d | Edb640541688d
+E019f891e5633 | E82092b423f2e | E61bae5415676
+E61bae5415676 | E02e95dbce28d | E38fb4005e243
+E66b981d7aef9 | E6c0aa1e2c6a7 | E637fd8018be8
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)
+
+
+
+##### ID L7_G3_A_handles #####
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=E7dd2104dbdf2
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d E7dd2104dbdf2? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+E6b7d604aeeef | E82092b423f2e | E6dac451600c6
+Ef2fd2f5f3e66 | E82092b423f2e | E6dac451600c6
+E868d3218a46c | E82092b423f2e | E6dac451600c6
+Eac7841db8ede | E82092b423f2e | Ef168fe62ffd3
+E6dac451600c6 | E02e95dbce28d | E7dd2104dbdf2
+Ef168fe62ffd3 | E02e95dbce28d | E88bffa59f2f1
+E843b17f1e58a | E82092b423f2e | E83312ca7bab6
+E83312ca7bab6 | E02e95dbce28d | Ec4ab53973e71
+E6dac451600c6 | E6c0aa1e2c6a7 | Ec6ae9af6fac9
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)
+
+
+
+##### ID L7_G3_B_handles #####
+OPAQUE COUNT JOIN — no decryption.
+Handles:
+city=E7dd2104dbdf2
+works_at=E82092b423f2e
+located_in=E02e95dbce28d
+Count people whose company is located_in the target city. Integer only.
+
+QUESTION:
+Eb46bab2b4a7a Ecb439067f839 Ec59924118f6d Eaadd81ffe1b8 E95c976aff627 E03b52e6d566a Ee5206bca98f9 Ecd8a0ecaa4c3 E02e95dbce28d E7dd2104dbdf2? E60a6514b8db1 E9b9eb3024711 Ec4fad0fa1300 Ece349e974754 E617776c0b216 E3c58b369e60a.
+
+CONTEXT:
+E6b7d604aeeef | E82092b423f2e | E6dac451600c6
+Ef2fd2f5f3e66 | E82092b423f2e | E6dac451600c6
+E868d3218a46c | E82092b423f2e | E6dac451600c6
+Eac7841db8ede | E82092b423f2e | Ef168fe62ffd3
+E6dac451600c6 | E02e95dbce28d | E88bffa59f2f1
+Ef168fe62ffd3 | E02e95dbce28d | E7dd2104dbdf2
+E843b17f1e58a | E82092b423f2e | E83312ca7bab6
+E83312ca7bab6 | E02e95dbce28d | Ec4ab53973e71
+E6dac451600c6 | E6c0aa1e2c6a7 | Ec6ae9af6fac9
+
+Reply: ANSWER_SEALED: <integer>   (count is plaintext integer)
+

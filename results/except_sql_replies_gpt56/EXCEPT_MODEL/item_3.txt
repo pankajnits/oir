@@ -1,0 +1,1 @@
+SQL[EX_MODEL_3]: SELECT emp_id FROM employees WHERE emp_id <> 'E91d439e130e0' EXCEPT SELECT e.emp_id FROM employees e JOIN employees t ON e.org_id IS t.org_id WHERE t.emp_id = 'E91d439e130e0'

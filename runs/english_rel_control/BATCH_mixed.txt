@@ -1,0 +1,355 @@
+MODEL UNDER TEST. No tools. Answer EVERY ID.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID ERC_G0_A_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E659440ceeb5e
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E659440ceeb5e Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E659440ceeb5e | Eeefe043a56eb | Edbb133d62864
+E13307ed7e33a | Eeefe043a56eb | E383a7092575e
+Ee5f199b70507 | Eeefe043a56eb | Edbb133d62864
+Ee5f199b70507 | Efb8ae31a6d8d | E13307ed7e33a
+Edbb133d62864 | Eedba6d115135 | Ee788c6527c53
+E383a7092575e | Eedba6d115135 | E464760bcfd8e
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G0_B_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E659440ceeb5e
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E659440ceeb5e Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E659440ceeb5e | Eeefe043a56eb | E383a7092575e
+E13307ed7e33a | Eeefe043a56eb | E383a7092575e
+Ee5f199b70507 | Eeefe043a56eb | Edbb133d62864
+Ee5f199b70507 | Efb8ae31a6d8d | E13307ed7e33a
+Edbb133d62864 | Eedba6d115135 | Ee788c6527c53
+E383a7092575e | Eedba6d115135 | E464760bcfd8e
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G1_A_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E4eb6f87b16de
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E4eb6f87b16de Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E4eb6f87b16de | Eeefe043a56eb | Eb3197fdaff86
+Edd5e1324420a | Eeefe043a56eb | E03a437536c0a
+E31438435ec41 | Eeefe043a56eb | Eb3197fdaff86
+E31438435ec41 | Efb8ae31a6d8d | Edd5e1324420a
+Eb3197fdaff86 | Eedba6d115135 | E59794f1080ec
+E03a437536c0a | Eedba6d115135 | E9512435ac05d
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G1_B_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E4eb6f87b16de
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E4eb6f87b16de Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E4eb6f87b16de | Eeefe043a56eb | E03a437536c0a
+Edd5e1324420a | Eeefe043a56eb | E03a437536c0a
+E31438435ec41 | Eeefe043a56eb | Eb3197fdaff86
+E31438435ec41 | Efb8ae31a6d8d | Edd5e1324420a
+Eb3197fdaff86 | Eedba6d115135 | E59794f1080ec
+E03a437536c0a | Eedba6d115135 | E9512435ac05d
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G2_A_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=Efb72ee26c623
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b Efb72ee26c623 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+Efb72ee26c623 | Eeefe043a56eb | Ef28ac059df05
+E55d53037f4e8 | Eeefe043a56eb | Eaaf9cb715970
+E5cdb06265013 | Eeefe043a56eb | Ef28ac059df05
+E5cdb06265013 | Efb8ae31a6d8d | E55d53037f4e8
+Ef28ac059df05 | Eedba6d115135 | Ef8b10053ea9e
+Eaaf9cb715970 | Eedba6d115135 | E3af8060e081a
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G2_B_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=Efb72ee26c623
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b Efb72ee26c623 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+Efb72ee26c623 | Eeefe043a56eb | Eaaf9cb715970
+E55d53037f4e8 | Eeefe043a56eb | Eaaf9cb715970
+E5cdb06265013 | Eeefe043a56eb | Ef28ac059df05
+E5cdb06265013 | Efb8ae31a6d8d | E55d53037f4e8
+Ef28ac059df05 | Eedba6d115135 | Ef8b10053ea9e
+Eaaf9cb715970 | Eedba6d115135 | E3af8060e081a
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G3_A_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E404c539b3969
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E404c539b3969 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E404c539b3969 | Eeefe043a56eb | Ee5641f02765f
+E0639a9baad31 | Eeefe043a56eb | Ed8ca8e8ad990
+Ec71ab3168bf2 | Eeefe043a56eb | Ee5641f02765f
+Ec71ab3168bf2 | Efb8ae31a6d8d | E0639a9baad31
+Ee5641f02765f | Eedba6d115135 | E8acde897311b
+Ed8ca8e8ad990 | Eedba6d115135 | E27281a1d8713
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G3_B_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E404c539b3969
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E404c539b3969 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E404c539b3969 | Eeefe043a56eb | Ed8ca8e8ad990
+E0639a9baad31 | Eeefe043a56eb | Ed8ca8e8ad990
+Ec71ab3168bf2 | Eeefe043a56eb | Ee5641f02765f
+Ec71ab3168bf2 | Efb8ae31a6d8d | E0639a9baad31
+Ee5641f02765f | Eedba6d115135 | E8acde897311b
+Ed8ca8e8ad990 | Eedba6d115135 | E27281a1d8713
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G4_A_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E20014ba4ff23
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E20014ba4ff23 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E20014ba4ff23 | Eeefe043a56eb | Ed6e7774c8cc2
+E96e9c1083287 | Eeefe043a56eb | E7e6c2bc7a257
+E3712093bba64 | Eeefe043a56eb | Ed6e7774c8cc2
+E3712093bba64 | Efb8ae31a6d8d | E96e9c1083287
+Ed6e7774c8cc2 | Eedba6d115135 | E535b92de2d44
+E7e6c2bc7a257 | Eedba6d115135 | Ee22a72036e38
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G4_B_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E20014ba4ff23
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E20014ba4ff23 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E20014ba4ff23 | Eeefe043a56eb | E7e6c2bc7a257
+E96e9c1083287 | Eeefe043a56eb | E7e6c2bc7a257
+E3712093bba64 | Eeefe043a56eb | Ed6e7774c8cc2
+E3712093bba64 | Efb8ae31a6d8d | E96e9c1083287
+Ed6e7774c8cc2 | Eedba6d115135 | E535b92de2d44
+E7e6c2bc7a257 | Eedba6d115135 | Ee22a72036e38
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G5_A_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=Ee156f1359447
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b Ee156f1359447 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+Ee156f1359447 | Eeefe043a56eb | E3a2d24741311
+E5dc55eaaf05c | Eeefe043a56eb | Ef8121d9208a5
+E52c3da491915 | Eeefe043a56eb | E3a2d24741311
+E52c3da491915 | Efb8ae31a6d8d | E5dc55eaaf05c
+E3a2d24741311 | Eedba6d115135 | E5f8a6474d33b
+Ef8121d9208a5 | Eedba6d115135 | Eee47577a0be9
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G5_B_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=Ee156f1359447
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b Ee156f1359447 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+Ee156f1359447 | Eeefe043a56eb | Ef8121d9208a5
+E5dc55eaaf05c | Eeefe043a56eb | Ef8121d9208a5
+E52c3da491915 | Eeefe043a56eb | E3a2d24741311
+E52c3da491915 | Efb8ae31a6d8d | E5dc55eaaf05c
+E3a2d24741311 | Eedba6d115135 | E5f8a6474d33b
+Ef8121d9208a5 | Eedba6d115135 | Eee47577a0be9
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G6_A_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E0c18f585f76c
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E0c18f585f76c Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E0c18f585f76c | Eeefe043a56eb | E044f3e6e59f2
+Eaeda2fece173 | Eeefe043a56eb | E65f793e7b51b
+E00ec372a33a6 | Eeefe043a56eb | E044f3e6e59f2
+E00ec372a33a6 | Efb8ae31a6d8d | Eaeda2fece173
+E044f3e6e59f2 | Eedba6d115135 | Ed384f2063ed2
+E65f793e7b51b | Eedba6d115135 | Efb4f421983e1
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G6_B_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E0c18f585f76c
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E0c18f585f76c Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E0c18f585f76c | Eeefe043a56eb | E65f793e7b51b
+Eaeda2fece173 | Eeefe043a56eb | E65f793e7b51b
+E00ec372a33a6 | Eeefe043a56eb | E044f3e6e59f2
+E00ec372a33a6 | Efb8ae31a6d8d | Eaeda2fece173
+E044f3e6e59f2 | Eedba6d115135 | Ed384f2063ed2
+E65f793e7b51b | Eedba6d115135 | Efb4f421983e1
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G7_A_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E6cae3f1d4df6
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E6cae3f1d4df6 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E6cae3f1d4df6 | Eeefe043a56eb | Ea832fb1b9328
+Ebf7de2af549e | Eeefe043a56eb | E184ded56b9bf
+E64e55ae4a579 | Eeefe043a56eb | Ea832fb1b9328
+E64e55ae4a579 | Efb8ae31a6d8d | Ebf7de2af549e
+Ea832fb1b9328 | Eedba6d115135 | E70cc08b46cd8
+E184ded56b9bf | Eedba6d115135 | E4fc342c29c1a
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID ERC_G7_B_mixed #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles:
+person=E6cae3f1d4df6
+English plan: join works_at then located_in (relation words are English, not seals).
+City seal only.
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E6cae3f1d4df6 Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E6cae3f1d4df6 | Eeefe043a56eb | E184ded56b9bf
+Ebf7de2af549e | Eeefe043a56eb | E184ded56b9bf
+E64e55ae4a579 | Eeefe043a56eb | Ea832fb1b9328
+E64e55ae4a579 | Efb8ae31a6d8d | Ebf7de2af549e
+Ea832fb1b9328 | Eedba6d115135 | E70cc08b46cd8
+E184ded56b9bf | Eedba6d115135 | E4fc342c29c1a
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+

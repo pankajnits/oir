@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_52 #####
+QUESTION:
+Where did Ermengarde Of Tuscany's mother die?
+
+CONTEXT:
+Bonne of Bourbon | father | Peter I
+Peter I | place of death | Poitiers
+Adalbert I, Margrave of Tuscany | place of birth | Italy
+decoy_mid_52 | place of death | Lucca
+Ermengarde of Tuscany | mother | Bertha
+Bertha | place of death | CF_TAIL_52_Lucca
+Ermengarde of Tuscany | decoy_link_52 | decoy_mid_52
+Adalbert II, Margrave of Tuscany | father | Adalbert I, Margrave of Tuscany

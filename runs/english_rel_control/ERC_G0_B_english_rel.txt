@@ -1,0 +1,22 @@
+MODEL UNDER TEST. No tools. No other files.
+
+=== QUIZ ===
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+Handles (English relation words — not seals):
+Relation names in CONTEXT middle column mean works_at and located_in in English.
+You must still match the *sealed* middle tokens that correspond to those roles.
+Join: follow works_at then located_in. City seal only.
+(Note: CONTEXT shows sealed tokens for ALL columns including relations.)
+
+QUESTION:
+E024faef66a50 E25ffa86440d9 E3a35ae98043a E4f82b52c5890 E6ca0c905c72f Ee02d9542c46b E659440ceeb5e Eeefe043a56eb? Eb5eddb366f7f E9a88d49d8e42.
+
+CONTEXT:
+E659440ceeb5e | Eeefe043a56eb | E383a7092575e
+E13307ed7e33a | Eeefe043a56eb | E383a7092575e
+Ee5f199b70507 | Eeefe043a56eb | Edbb133d62864
+Ee5f199b70507 | Efb8ae31a6d8d | E13307ed7e33a
+Edbb133d62864 | Eedba6d115135 | Ee788c6527c53
+E383a7092575e | Eedba6d115135 | E464760bcfd8e
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

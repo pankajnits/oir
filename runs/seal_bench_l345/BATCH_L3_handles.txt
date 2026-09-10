@@ -1,0 +1,195 @@
+MODEL UNDER TEST. No tools. Answer EVERY ID. One answer line per ID.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID L3_G0_A_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=E50af05de1a97
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f E50af05de1a97 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+E50af05de1a97 | E8830785bf19e | Ec356a157da57
+Ec356a157da57 | E56f4bae38fe6 | E338a5c1206f4
+E338a5c1206f4 | Eb0b2f877d626 | Edf9f4cb16be8
+E9da83f107ac9 | E8830785bf19e | Ea7d52b74a494
+Ea7d52b74a494 | E56f4bae38fe6 | E7d1884901470
+E7d1884901470 | Eb0b2f877d626 | E6d25abb8d073
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L3_G0_B_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=E50af05de1a97
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f E50af05de1a97 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+E50af05de1a97 | E8830785bf19e | Ea7d52b74a494
+Ea7d52b74a494 | E56f4bae38fe6 | E7d1884901470
+E7d1884901470 | Eb0b2f877d626 | E6d25abb8d073
+E9da83f107ac9 | E8830785bf19e | Ec356a157da57
+Ec356a157da57 | E56f4bae38fe6 | E338a5c1206f4
+E338a5c1206f4 | Eb0b2f877d626 | Edf9f4cb16be8
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L3_G1_A_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=E376a19058974
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f E376a19058974 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+E376a19058974 | E8830785bf19e | E470aff9e18b3
+E470aff9e18b3 | E56f4bae38fe6 | E48dc109c8c47
+E48dc109c8c47 | Eb0b2f877d626 | E7741ae50a25d
+E9a60f134a534 | E8830785bf19e | Ec06b709fd12c
+Ec06b709fd12c | E56f4bae38fe6 | Edf2a7fb98a1b
+Edf2a7fb98a1b | Eb0b2f877d626 | E97f08f078b56
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L3_G1_B_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=E376a19058974
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f E376a19058974 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+E376a19058974 | E8830785bf19e | Ec06b709fd12c
+Ec06b709fd12c | E56f4bae38fe6 | Edf2a7fb98a1b
+Edf2a7fb98a1b | Eb0b2f877d626 | E97f08f078b56
+E9a60f134a534 | E8830785bf19e | E470aff9e18b3
+E470aff9e18b3 | E56f4bae38fe6 | E48dc109c8c47
+E48dc109c8c47 | Eb0b2f877d626 | E7741ae50a25d
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L3_G2_A_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=Ef0774668bde1
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f Ef0774668bde1 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+Ef0774668bde1 | E8830785bf19e | E973d74e1c11e
+E973d74e1c11e | E56f4bae38fe6 | E1be4c6c8c3d8
+E1be4c6c8c3d8 | Eb0b2f877d626 | E1696a8e258d3
+E659f180f1758 | E8830785bf19e | E53ea5d86aa55
+E53ea5d86aa55 | E56f4bae38fe6 | E4aabf687c265
+E4aabf687c265 | Eb0b2f877d626 | Ea587702d1086
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L3_G2_B_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=Ef0774668bde1
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f Ef0774668bde1 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+Ef0774668bde1 | E8830785bf19e | E53ea5d86aa55
+E53ea5d86aa55 | E56f4bae38fe6 | E4aabf687c265
+E4aabf687c265 | Eb0b2f877d626 | Ea587702d1086
+E659f180f1758 | E8830785bf19e | E973d74e1c11e
+E973d74e1c11e | E56f4bae38fe6 | E1be4c6c8c3d8
+E1be4c6c8c3d8 | Eb0b2f877d626 | E1696a8e258d3
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L3_G3_A_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=Ee62b49970ac3
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f Ee62b49970ac3 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+Ee62b49970ac3 | E8830785bf19e | E75d8a0fe69e7
+E75d8a0fe69e7 | E56f4bae38fe6 | E0ea172a3afef
+E0ea172a3afef | Eb0b2f877d626 | E15204c119e53
+E762665853bc5 | E8830785bf19e | E2d4bbdcfa984
+E2d4bbdcfa984 | E56f4bae38fe6 | Eb30f6568e564
+Eb30f6568e564 | Eb0b2f877d626 | E3aab3dab51fa
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+##### ID L3_G3_B_handles #####
+OPAQUE JOIN — no decryption. Same entity ⇒ same seal.
+
+Handles (opaque):
+person=Ee62b49970ac3
+works_at=E8830785bf19e
+owned_by=E56f4bae38fe6
+HQ_in=Eb0b2f877d626
+Join person-works_at→co ; co-owned_by→parent ; parent-HQ_in→city.
+
+QUESTION:
+E7d061980ac7d E91920b656f21 Ec24ed12cdb4b E1c824e9554d3 E01661f7a1b8a Ec54a94d9cd5b E1c824e9554d3 Ea79a5c853e8f Ead6d5258f698 E462d804271a1 E1f061db12a70 E1c824e9554d3 Ead6d5258f698 E867c5181478f Ee62b49970ac3 E8830785bf19e? Eea76add491f8 E91920b656f21 E3d323901debc.
+
+CONTEXT:
+Ee62b49970ac3 | E8830785bf19e | E2d4bbdcfa984
+E2d4bbdcfa984 | E56f4bae38fe6 | Eb30f6568e564
+Eb30f6568e564 | Eb0b2f877d626 | E3aab3dab51fa
+E762665853bc5 | E8830785bf19e | E75d8a0fe69e7
+E75d8a0fe69e7 | E56f4bae38fe6 | E0ea172a3afef
+E0ea172a3afef | Eb0b2f877d626 | E15204c119e53
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN

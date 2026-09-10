@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_28 #####
+QUESTION:
+Where does the director of film Shock Treatment (1964 Film) work at?
+
+CONTEXT:
+Saadia | director | Albert Lewin
+Shock Treatment | decoy_link_28 | decoy_mid_28
+Albert Lewin | educated at | Harvard
+decoy_mid_28 | employer | San Diego State University
+Shock Treatment | director | Denis Sanders
+Lakhdar Brahimi | employer | United Nations
+Princess Rym | father | Lakhdar Brahimi
+Denis Sanders | employer | CF_TAIL_28_SanDiegoStat

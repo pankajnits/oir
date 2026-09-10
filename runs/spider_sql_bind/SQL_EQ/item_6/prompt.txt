@@ -1,0 +1,40 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_6]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_6 #####
+DB: medicine_enzyme_interaction
+SCHEMA (English name → sealed sqlite identifier):
+medicine = E521f36744ace
+id = E1412b7325eb7
+name = E2442ba2cd621
+Trade_Name = Edcebedbd14d7
+FDA_approved = Eced864d707eb
+enzyme = Ef7b494968b6a
+Location = E3218c9df448c
+Product = Ef3b7b86dfcc4
+Chromosome = Effedb7b48c5d
+OMIM = E21f4f72ceb04
+Porphyria = E5e0a7720ccef
+medicine_enzyme_interaction = Ecfcb699a60bc
+enzyme_id = E558b08361f3c
+medicine_id = Efee2a39fb55f
+interaction_type = E6945b8460203
+
+medicine(id, name, Trade_Name, FDA_approved)
+enzyme(id, name, Location, Product, Chromosome, OMIM, Porphyria)
+medicine_enzyme_interaction(enzyme_id, medicine_id, interaction_type)
+
+QUESTION:
+What are the names of enzymes in the Ecfcb699a60bc named 'Amisulpride' that can serve as an 'inhibitor'?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

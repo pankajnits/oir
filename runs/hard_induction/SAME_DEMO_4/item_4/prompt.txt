@@ -1,0 +1,63 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM SAME_DEMO_4: demos schemaA; quiz schemaA (control).
+
+Learn the mapping from DEMOs (same encoding).
+Answer the QUIZ the same way. No English relation names. No PATH.
+
+DEMO 0:
+START E4e511be01142
+CONTEXT:
+E4e511be01142 | E708254841c76 | E92cc80063fc4
+E2853fb97538a | E9401e49c2f72 | E9ae278af130a
+E4e511be01142 | Ead85cbe5b4e0 | E9ae278af130a
+E9ae278af130a | E2e99a9aef4da | E81306459737d
+E9ae278af130a | E5cbdf85e75e4 | E2853fb97538a
+E92cc80063fc4 | Edbc569c24466 | E4e511be01142
+ANSWER_SEALED: E81306459737d
+
+DEMO 1:
+START Efaa6f4e252bd
+CONTEXT:
+Efaa6f4e252bd | Ead85cbe5b4e0 | E503265b6340b
+Efaa6f4e252bd | E3e598c4c87be | Eed6bee643437
+E503265b6340b | E2e99a9aef4da | E290b6203c603
+Ee8643e2360ad | E777ee4030326 | E503265b6340b
+Eed6bee643437 | E20d98e5fe6c8 | Efaa6f4e252bd
+E503265b6340b | E6ffcc3f0e452 | Ee8643e2360ad
+ANSWER_SEALED: E290b6203c603
+
+DEMO 2:
+START Ed50d5c885008
+CONTEXT:
+Ed50d5c885008 | Ee7e13d3a97d2 | E889d88b4e403
+Efd3a13a52cac | Ec86c7b44a42f | E30fd5a10ad49
+Efd3a13a52cac | E2e99a9aef4da | E1703d31298f6
+E889d88b4e403 | Ec0c0057d87c1 | Ed50d5c885008
+E30fd5a10ad49 | E18d969abdbbc | Efd3a13a52cac
+Ed50d5c885008 | Ead85cbe5b4e0 | Efd3a13a52cac
+ANSWER_SEALED: E1703d31298f6
+
+DEMO 3:
+START E672b65978aba
+CONTEXT:
+E9eb8f6ed9faa | E17dfdb36a0b9 | E6439ae0d2208
+E672b65978aba | Ead85cbe5b4e0 | E6439ae0d2208
+E6439ae0d2208 | Ecfc3affd6a18 | E9eb8f6ed9faa
+E6439ae0d2208 | E2e99a9aef4da | E811ae6fb2814
+E9efa7e125952 | Ee37abf995575 | E672b65978aba
+E672b65978aba | E3a9f6b1d9b09 | E9efa7e125952
+ANSWER_SEALED: E811ae6fb2814
+
+--- QUIZ ---
+##### ID HI_SAME_DEMO_4_4 #####
+START Ed495c035f60a
+CONTEXT:
+E09fb81eed8d9 | E3deca55c037c | Ed495c035f60a
+Eaa8d9c39e8d8 | Ef9884959d877 | Ebae4c5bd7fd2
+Ebae4c5bd7fd2 | E6b76b4a44bce | Eaa8d9c39e8d8
+Ed495c035f60a | E10d986743f55 | E09fb81eed8d9
+Ed495c035f60a | Ead85cbe5b4e0 | Eaa8d9c39e8d8
+Eaa8d9c39e8d8 | E2e99a9aef4da | E2ea8ca473e35
+

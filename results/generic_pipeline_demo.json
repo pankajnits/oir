@@ -1,0 +1,71 @@
+{
+  "borrowed_patterns": {
+    "Text-to-SQL / MAC-SQL": "PathFamilyCompiler + table adapters",
+    "PyRAG": "compile plan \u2192 execute (SealRouter) \u2192 inspect",
+    "DSPy": "registry of binder forms (PATH/LOOKUP/COUNT)",
+    "local models": "swap MUT backend; core stays format-agnostic"
+  },
+  "graph": {
+    "adapter": "json_graph_ceo_hq",
+    "n": 5,
+    "sealrouter_path": "5/5",
+    "compiler_ok": 5,
+    "batch": "runs/generic_demo/GRAPH_PROG_ONLY/BATCH.txt",
+    "examples": [
+      {
+        "nl": "Where is the company headquartered_in that David_Schaeffer works_at?",
+        "compiled": [
+          "PATH_QUERY",
+          "START David_Schaeffer",
+          "R1 works_at",
+          "R2 headquartered_in"
+        ],
+        "ok": true
+      },
+      {
+        "nl": "Where is the company headquartered_in that George_W_Edwards works_at?",
+        "compiled": [
+          "PATH_QUERY",
+          "START George_W_Edwards",
+          "R1 works_at",
+          "R2 headquartered_in"
+        ],
+        "ok": true
+      }
+    ]
+  },
+  "excel": {
+    "adapter": "excel_ceo_hq",
+    "n": 5,
+    "sealrouter_path": "5/5"
+  },
+  "csv": {
+    "adapter": "csv_table",
+    "header": [
+      "company_name_id",
+      "company_name",
+      "url",
+      "year_founded",
+      "city",
+      "state"
+    ],
+    "n_triples_10rows": 186,
+    "sample": [
+      [
+        "Ea7b8107f7ad6",
+        "Eedf2b113e124",
+        "Eaf13bfa5ffd1"
+      ],
+      [
+        "Ea7b8107f7ad6",
+        "Ed20624636a38",
+        "Ed468f006da81"
+      ],
+      [
+        "Ea7b8107f7ad6",
+        "Ec16c371a597c",
+        "E7c0fe7bb2dce"
+      ]
+    ]
+  }
+}

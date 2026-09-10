@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_18 #####
+PATH_QUERY
+START David_Lagerholm
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+David_Lagerholm | works_at | Storstockholms_Lokaltrafik
+Storstockholms_Lokaltrafik | headquartered_in | Stockholm
+DecoyCo_Storstockholms_Lokaltrafik | headquartered_in | DecoyHQ_Stockholm
+Storstockholms_Lokaltrafik | owned_by | Hold_Storstockholms_Lokaltrafik
+Hold_Storstockholms_Lokaltrafik | meta_of | Storstockholms_Lokaltrafik
+Storstockholms_Lokaltrafik | partner_of | Partner_Storstockholms_Lokaltrafik
+Partner_Storstockholms_Lokaltrafik | meta_of | Storstockholms_Lokaltrafik
+Decoy_DecoyCo_Storstockholms_Lokaltrafik | works_at | DecoyCo_Storstockholms_Lokaltrafik

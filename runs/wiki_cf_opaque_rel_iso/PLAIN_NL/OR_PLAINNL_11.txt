@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_11 #####
+QUESTION:
+Where was the place of death of Anastasia Of Serbia's husband?
+
+CONTEXT:
+decoy_mid_11 | place of death | Hilandar
+Ernest I, Prince of Anhalt-Dessau | date of death | 12 June 1516
+John V of Anhalt-Zerbst | father | Ernest I, Prince of Anhalt-Dessau
+Anastasia of Serbia | decoy_link_11 | decoy_mid_11
+Polish-Russian War | director | Xawery Żuławski
+Xawery Żuławski | mother | Małgorzata Braunek
+Stefan Nemanja | place of death | CF_TAIL_11_Hilandar
+Anastasia of Serbia | spouse | Stefan Nemanja

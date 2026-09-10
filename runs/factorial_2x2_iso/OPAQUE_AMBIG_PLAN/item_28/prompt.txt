@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_28]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_28 #####
+QUESTION:
+What city is the headquarters of the company led by Richard_Gordon_Handover?
+
+PATH_QUERY
+START Richard_Gordon_Handover
+R1 E75f3fd44c5c8
+R2 Ecfb88aaa7ff0
+Execute path; return final tail only.
+
+CONTEXT:
+Richard_Gordon_Handover | E75f3fd44c5c8 | WHSmith
+WHSmith | Ecfb88aaa7ff0 | Swindon
+Richard_Gordon_Handover | Eeae57d257fdb | Westdeutscher_Rundfunk
+Westdeutscher_Rundfunk | Efb1986ec4fc5 | Cologne

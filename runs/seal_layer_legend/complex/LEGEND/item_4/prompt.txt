@@ -1,0 +1,84 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[SLL_CX_LEGEND_4]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM LEGEND family=COMPLEX use=TICKET: bound START, HMAC Q, relation schema. No PATH.
+
+##### ID SLL_CX_LEGEND_4 #####
+QUESTION (token-HMAC'd):
+E18e1f803855d E7f2cd676eced Eb2062694cd7d Efa5c0b622275 Ecd165c4ef0ea E91a66e6f769d E81d0cdd1cb27?
+
+REL_SCHEMA (English relation → sealed token):
+opened_by = Ee0a70699f63b
+billed_to = E6f1b13f587ed
+in_region = E8235d8d1d5f5
+Use the schema to walk CONTEXT. No PATH is given. Return the final sealed tail.
+
+CONTEXT:
+TABLE hop1
+| E865824ac8cba | Ee0a70699f63b |
+| --- | --- |
+| Ecd165c4ef0ea | E93017695577c |
+| Ef45d88d15bd4 | E9bc8e16ac39d |
+| Ecda2cbcec2fb | Ef057544674e8 |
+| E7cff9616b6f4 | E91e6e10b7a1d |
+
+TABLE hop2
+| E4fadfd94afb5 | E6f1b13f587ed |
+| --- | --- |
+| E93017695577c | Ebf812c56a831 |
+| E9bc8e16ac39d | E7416ef904f61 |
+| Ef057544674e8 | E09b5bfd11c57 |
+| E91e6e10b7a1d | E74b8745bc367 |
+
+TABLE hop3
+| E2c789c08ad8a | E8235d8d1d5f5 |
+| --- | --- |
+| Ebf812c56a831 | Eef036660e868 |
+| E7416ef904f61 | Eef036660e868 |
+| E09b5bfd11c57 | Edded04148c0a |
+| E74b8745bc367 | Ee3d427497c21 |
+
+JSON
+{
+  "use_case": "Eea3164615a29",
+  "graph": {
+    "Ecd165c4ef0ea": {
+      "Ee0a70699f63b": "E93017695577c"
+    },
+    "E93017695577c": {
+      "E6f1b13f587ed": "Ebf812c56a831"
+    },
+    "Ebf812c56a831": {
+      "E8235d8d1d5f5": "Eef036660e868"
+    },
+    "Ef45d88d15bd4": {
+      "Ee0a70699f63b": "E9bc8e16ac39d"
+    },
+    "E9bc8e16ac39d": {
+      "E6f1b13f587ed": "E7416ef904f61"
+    },
+    "E7416ef904f61": {
+      "E8235d8d1d5f5": "Eef036660e868"
+    },
+    "Ecda2cbcec2fb": {
+      "Ee0a70699f63b": "Ef057544674e8"
+    },
+    "Ef057544674e8": {
+      "E6f1b13f587ed": "E09b5bfd11c57"
+    },
+    "E09b5bfd11c57": {
+      "E8235d8d1d5f5": "Edded04148c0a"
+    },
+    "E7cff9616b6f4": {
+      "Ee0a70699f63b": "E91e6e10b7a1d"
+    },
+    "E91e6e10b7a1d": {
+      "E6f1b13f587ed": "E74b8745bc367"
+    },
+    "E74b8745bc367": {
+      "E8235d8d1d5f5": "Ee3d427497c21"
+    }
+  },
+  "notes": "E7ec3a9522093 Ecd165c4ef0ea: E51254c404c97 E1fe30dad25ea Edef8d77ff430 Ef88e30a57f4b E66cbecd9ac18 Eb2062694cd7d Ec24b0145c857, Eeba1aa55feba Ef6a06c6a4090 Eec391e386750 E3a426b4f2ac8 E8dd2042a3113"
+}

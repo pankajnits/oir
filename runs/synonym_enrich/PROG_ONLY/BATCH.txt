@@ -1,0 +1,208 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+Sealed PATH_QUERY control.
+
+##### ID SYNENR_PROG_0 #####
+PATH_QUERY
+START E9583b9cf616d
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E9583b9cf616d | Ee7e760d75ba8 | Eefd6c78ded84
+Eefd6c78ded84 | Ef30c328ca2f5 | E7b230b4969d0
+E89df56ae96fa | Ef30c328ca2f5 | E1c80ad6de58f
+Eefd6c78ded84 | E820c12bb31ab | E3e3776aa5bbd
+E3e3776aa5bbd | E76a70564eeb6 | Eefd6c78ded84
+Eefd6c78ded84 | E6b1e17a6ffca | E38a81456fc6a
+E38a81456fc6a | E76a70564eeb6 | Eefd6c78ded84
+Ef380edeb670d | Ee7e760d75ba8 | E89df56ae96fa
+
+##### ID SYNENR_PROG_1 #####
+PATH_QUERY
+START E90a23113a6e6
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E90a23113a6e6 | Ee7e760d75ba8 | Ee4319a7fea7e
+Ee4319a7fea7e | Ef30c328ca2f5 | E802c38d3e59d
+E749a14f9c0a9 | Ef30c328ca2f5 | Ee641a8a8e4a6
+Ee4319a7fea7e | E820c12bb31ab | Ea348fe892d51
+Ea348fe892d51 | E76a70564eeb6 | Ee4319a7fea7e
+Ee4319a7fea7e | E6b1e17a6ffca | E84613e0f6004
+E84613e0f6004 | E76a70564eeb6 | Ee4319a7fea7e
+E1ca93442ae97 | Ee7e760d75ba8 | E749a14f9c0a9
+
+##### ID SYNENR_PROG_2 #####
+PATH_QUERY
+START Ee3202e8dde00
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+Ee3202e8dde00 | Ee7e760d75ba8 | Ef692561bb203
+Ef692561bb203 | Ef30c328ca2f5 | E585b4a68a37b
+Ee6c77942d60b | Ef30c328ca2f5 | Efa2dd483b1e8
+Ef692561bb203 | E820c12bb31ab | E1b78363ce25e
+E1b78363ce25e | E76a70564eeb6 | Ef692561bb203
+Ef692561bb203 | E6b1e17a6ffca | E2a4b19d4b92f
+E2a4b19d4b92f | E76a70564eeb6 | Ef692561bb203
+E9efdb93444a4 | Ee7e760d75ba8 | Ee6c77942d60b
+
+##### ID SYNENR_PROG_3 #####
+PATH_QUERY
+START Ee4b385dfefb0
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+Ee4b385dfefb0 | Ee7e760d75ba8 | Eaa3b248d2e5a
+Eaa3b248d2e5a | Ef30c328ca2f5 | Ea627f2df46d0
+E73218f456cd6 | Ef30c328ca2f5 | E3ec8787bf09a
+Eaa3b248d2e5a | E820c12bb31ab | E96f09c05c66a
+E96f09c05c66a | E76a70564eeb6 | Eaa3b248d2e5a
+Eaa3b248d2e5a | E6b1e17a6ffca | Ea98348cbd3bb
+Ea98348cbd3bb | E76a70564eeb6 | Eaa3b248d2e5a
+E0b2910012bde | Ee7e760d75ba8 | E73218f456cd6
+
+##### ID SYNENR_PROG_4 #####
+PATH_QUERY
+START E82b551e5ef5a
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E82b551e5ef5a | Ee7e760d75ba8 | Ed1935aad9a9a
+Ed1935aad9a9a | Ef30c328ca2f5 | E7b230b4969d0
+E5c1ae2880619 | Ef30c328ca2f5 | E1c80ad6de58f
+Ed1935aad9a9a | E820c12bb31ab | Ee53dbbfb9404
+Ee53dbbfb9404 | E76a70564eeb6 | Ed1935aad9a9a
+Ed1935aad9a9a | E6b1e17a6ffca | Ebe619403e1f4
+Ebe619403e1f4 | E76a70564eeb6 | Ed1935aad9a9a
+E1da5cb2581d5 | Ee7e760d75ba8 | E5c1ae2880619
+
+##### ID SYNENR_PROG_5 #####
+PATH_QUERY
+START E0502a3912822
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E0502a3912822 | Ee7e760d75ba8 | Ef82dea737c5f
+Ef82dea737c5f | Ef30c328ca2f5 | E0745ecfbd8b5
+E1b875fe79420 | Ef30c328ca2f5 | E1c3c32e05a68
+Ef82dea737c5f | E820c12bb31ab | E71af34dd69af
+E71af34dd69af | E76a70564eeb6 | Ef82dea737c5f
+Ef82dea737c5f | E6b1e17a6ffca | E4d957c4755b8
+E4d957c4755b8 | E76a70564eeb6 | Ef82dea737c5f
+E2ad1dd2b73fb | Ee7e760d75ba8 | E1b875fe79420
+
+##### ID SYNENR_PROG_6 #####
+PATH_QUERY
+START E8fb622726ebc
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E8fb622726ebc | Ee7e760d75ba8 | E80842cce7b98
+E80842cce7b98 | Ef30c328ca2f5 | E188c1df26da8
+E73179e721c9c | Ef30c328ca2f5 | Ebbcb0f6be6bc
+E80842cce7b98 | E820c12bb31ab | Ecc63ee6b8445
+Ecc63ee6b8445 | E76a70564eeb6 | E80842cce7b98
+E80842cce7b98 | E6b1e17a6ffca | Ef02528d1dd55
+Ef02528d1dd55 | E76a70564eeb6 | E80842cce7b98
+E7057d02bd2d4 | Ee7e760d75ba8 | E73179e721c9c
+
+##### ID SYNENR_PROG_7 #####
+PATH_QUERY
+START Eae141907a84b
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+Eae141907a84b | Ee7e760d75ba8 | Edb742ffadf0e
+Edb742ffadf0e | Ef30c328ca2f5 | E7b230b4969d0
+E61ed69dc7e7f | Ef30c328ca2f5 | E1c80ad6de58f
+Edb742ffadf0e | E820c12bb31ab | Ea8eb7533906f
+Ea8eb7533906f | E76a70564eeb6 | Edb742ffadf0e
+Edb742ffadf0e | E6b1e17a6ffca | Ea0e97975933a
+Ea0e97975933a | E76a70564eeb6 | Edb742ffadf0e
+E32c7a6d0230e | Ee7e760d75ba8 | E61ed69dc7e7f
+
+##### ID SYNENR_PROG_8 #####
+PATH_QUERY
+START E2f10153f85d7
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E2f10153f85d7 | Ee7e760d75ba8 | Eb0417cf4685b
+Eb0417cf4685b | Ef30c328ca2f5 | E10b498dc9e62
+Ef03466e4540b | Ef30c328ca2f5 | Ea641749f51e3
+Eb0417cf4685b | E820c12bb31ab | E99b0713a50fe
+E99b0713a50fe | E76a70564eeb6 | Eb0417cf4685b
+Eb0417cf4685b | E6b1e17a6ffca | Ef9bf873641e0
+Ef9bf873641e0 | E76a70564eeb6 | Eb0417cf4685b
+E8f37ed9a3485 | Ee7e760d75ba8 | Ef03466e4540b
+
+##### ID SYNENR_PROG_9 #####
+PATH_QUERY
+START E7cc99862f0f8
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E7cc99862f0f8 | Ee7e760d75ba8 | E8ba53416afeb
+E8ba53416afeb | Ef30c328ca2f5 | E33a6a278d2bd
+E470f5e6676d5 | Ef30c328ca2f5 | E952a8d2ed271
+E8ba53416afeb | E820c12bb31ab | E62f3e8dabf7a
+E62f3e8dabf7a | E76a70564eeb6 | E8ba53416afeb
+E8ba53416afeb | E6b1e17a6ffca | E5367920c55cb
+E5367920c55cb | E76a70564eeb6 | E8ba53416afeb
+E601d387d9ccc | Ee7e760d75ba8 | E470f5e6676d5
+
+##### ID SYNENR_PROG_10 #####
+PATH_QUERY
+START E9e823b4f1f70
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E9e823b4f1f70 | Ee7e760d75ba8 | Eaa3b248d2e5a
+Eaa3b248d2e5a | Ef30c328ca2f5 | Ea627f2df46d0
+E73218f456cd6 | Ef30c328ca2f5 | E3ec8787bf09a
+Eaa3b248d2e5a | E820c12bb31ab | E96f09c05c66a
+E96f09c05c66a | E76a70564eeb6 | Eaa3b248d2e5a
+Eaa3b248d2e5a | E6b1e17a6ffca | Ea98348cbd3bb
+Ea98348cbd3bb | E76a70564eeb6 | Eaa3b248d2e5a
+E0b2910012bde | Ee7e760d75ba8 | E73218f456cd6
+
+##### ID SYNENR_PROG_11 #####
+PATH_QUERY
+START E2fe3a78e2224
+R1 Ee7e760d75ba8
+R2 Ef30c328ca2f5
+Execute path; return final tail only.
+
+CONTEXT:
+E2fe3a78e2224 | Ee7e760d75ba8 | Ef692561bb203
+Ef692561bb203 | Ef30c328ca2f5 | E585b4a68a37b
+Ee6c77942d60b | Ef30c328ca2f5 | Efa2dd483b1e8
+Ef692561bb203 | E820c12bb31ab | E1b78363ce25e
+E1b78363ce25e | E76a70564eeb6 | Ef692561bb203
+Ef692561bb203 | E6b1e17a6ffca | E2a4b19d4b92f
+E2a4b19d4b92f | E76a70564eeb6 | Ef692561bb203
+E9efdb93444a4 | Ee7e760d75ba8 | Ee6c77942d60b

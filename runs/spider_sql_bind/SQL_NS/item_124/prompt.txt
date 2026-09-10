@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_124]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_124 #####
+DB: swimming
+SCHEMA (English name → sealed sqlite identifier):
+swimmer = E595da69e33ae
+ID = Ea478b6a28b93
+name = E5785c55901bf
+Nationality = Ee1bf384b8782
+meter_100 = E45b35d8b9797
+meter_200 = Ef110e7d57f07
+meter_300 = Eeecac3e36572
+meter_400 = Edb317d226e26
+meter_500 = E482e13a1f17a
+meter_600 = Ef60b42018ba6
+meter_700 = Ea47ad43bb3ea
+Time = E92baf6e8faef
+stadium = Ee527ff3c15e5
+Capacity = E6c0a61e5f14e
+City = Ec36005e14e23
+Country = Efaa4544dbae6
+Opening_year = Ed5518e059344
+event = Edb63130ac191
+Name = E004305919803
+Stadium_ID = Ee3645d694ee0
+Year = E28b0283700a0
+record = E916f6fc1d8ed
+Result = E5388ae2ced7f
+Swimmer_ID = E7c06873f60f9
+Event_ID = E222592491987
+
+swimmer(ID, name, Nationality, meter_100, meter_200, meter_300, meter_400, meter_500, meter_600, meter_700, Time)
+stadium(ID, name, Capacity, City, Country, Opening_year)
+event(ID, Name, Stadium_ID, Year)
+record(ID, Result, Swimmer_ID, Event_ID)
+
+QUESTION:
+Find the names of stadiums that the most swimmers have been to.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

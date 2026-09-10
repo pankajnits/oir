@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_78 #####
+QUESTION:
+What nationality is the director of film The Wrecking Crew (2000 Film)?
+
+CONTEXT:
+The Next List | presenter | Sanjay Gupta
+Reinhold Schünzel | place of birth | Hamburg
+The Wrecking Crew | decoy_link_78 | decoy_mid_78
+decoy_mid_78 | country of citizenship | America
+The Wrecking Crew | director | Albert Pyun
+Albert Pyun | country of citizenship | CF_TAIL_78_America
+Sanjay Gupta | employer | Emory University
+Adam and Eve | director | Reinhold Schünzel

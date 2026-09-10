@@ -1,0 +1,641 @@
+{
+  "n": 32,
+  "seed": 20260821,
+  "shuffle_seed": 20260907,
+  "protocol": "isolation",
+  "source": "data/real/wikidata_ceo_hops_v2.json",
+  "source_public": "Same Wikidata CEO slice and HMAC keys as factorial_2x2_iso; CONTEXT order shuffled",
+  "keys": "per-item HMAC on relation atoms only; entities remain English",
+  "start_in_question": true,
+  "intervention": "gold/decoy 2-hop listing order (16 gold-first, 16 decoy-first)",
+  "primary_lock_untouched": "runs/factorial_2x2_iso/",
+  "n_gold_first": 16,
+  "n_decoy_first": 16,
+  "factors": [
+    "listing_order"
+  ],
+  "arms": {
+    "ENG_AMBIG": {
+      "ids": [
+        "F22S_ENG_AMBIG_0",
+        "F22S_ENG_AMBIG_1",
+        "F22S_ENG_AMBIG_2",
+        "F22S_ENG_AMBIG_3",
+        "F22S_ENG_AMBIG_4",
+        "F22S_ENG_AMBIG_5",
+        "F22S_ENG_AMBIG_6",
+        "F22S_ENG_AMBIG_7",
+        "F22S_ENG_AMBIG_8",
+        "F22S_ENG_AMBIG_9",
+        "F22S_ENG_AMBIG_10",
+        "F22S_ENG_AMBIG_11",
+        "F22S_ENG_AMBIG_12",
+        "F22S_ENG_AMBIG_13",
+        "F22S_ENG_AMBIG_14",
+        "F22S_ENG_AMBIG_15",
+        "F22S_ENG_AMBIG_16",
+        "F22S_ENG_AMBIG_17",
+        "F22S_ENG_AMBIG_18",
+        "F22S_ENG_AMBIG_19",
+        "F22S_ENG_AMBIG_20",
+        "F22S_ENG_AMBIG_21",
+        "F22S_ENG_AMBIG_22",
+        "F22S_ENG_AMBIG_23",
+        "F22S_ENG_AMBIG_24",
+        "F22S_ENG_AMBIG_25",
+        "F22S_ENG_AMBIG_26",
+        "F22S_ENG_AMBIG_27",
+        "F22S_ENG_AMBIG_28",
+        "F22S_ENG_AMBIG_29",
+        "F22S_ENG_AMBIG_30",
+        "F22S_ENG_AMBIG_31"
+      ],
+      "item_paths": [
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_0/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_1/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_2/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_3/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_4/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_5/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_6/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_7/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_8/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_9/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_10/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_11/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_12/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_13/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_14/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_15/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_16/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_17/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_18/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_19/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_20/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_21/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_22/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_23/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_24/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_25/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_26/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_27/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_28/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_29/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_30/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/ENG_AMBIG/item_31/prompt.txt"
+      ]
+    },
+    "OPAQUE_AMBIG": {
+      "ids": [
+        "F22S_OPAQUE_AMBIG_0",
+        "F22S_OPAQUE_AMBIG_1",
+        "F22S_OPAQUE_AMBIG_2",
+        "F22S_OPAQUE_AMBIG_3",
+        "F22S_OPAQUE_AMBIG_4",
+        "F22S_OPAQUE_AMBIG_5",
+        "F22S_OPAQUE_AMBIG_6",
+        "F22S_OPAQUE_AMBIG_7",
+        "F22S_OPAQUE_AMBIG_8",
+        "F22S_OPAQUE_AMBIG_9",
+        "F22S_OPAQUE_AMBIG_10",
+        "F22S_OPAQUE_AMBIG_11",
+        "F22S_OPAQUE_AMBIG_12",
+        "F22S_OPAQUE_AMBIG_13",
+        "F22S_OPAQUE_AMBIG_14",
+        "F22S_OPAQUE_AMBIG_15",
+        "F22S_OPAQUE_AMBIG_16",
+        "F22S_OPAQUE_AMBIG_17",
+        "F22S_OPAQUE_AMBIG_18",
+        "F22S_OPAQUE_AMBIG_19",
+        "F22S_OPAQUE_AMBIG_20",
+        "F22S_OPAQUE_AMBIG_21",
+        "F22S_OPAQUE_AMBIG_22",
+        "F22S_OPAQUE_AMBIG_23",
+        "F22S_OPAQUE_AMBIG_24",
+        "F22S_OPAQUE_AMBIG_25",
+        "F22S_OPAQUE_AMBIG_26",
+        "F22S_OPAQUE_AMBIG_27",
+        "F22S_OPAQUE_AMBIG_28",
+        "F22S_OPAQUE_AMBIG_29",
+        "F22S_OPAQUE_AMBIG_30",
+        "F22S_OPAQUE_AMBIG_31"
+      ],
+      "item_paths": [
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_0/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_1/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_2/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_3/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_4/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_5/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_6/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_7/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_8/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_9/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_10/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_11/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_12/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_13/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_14/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_15/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_16/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_17/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_18/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_19/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_20/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_21/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_22/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_23/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_24/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_25/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_26/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_27/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_28/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_29/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_30/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle/OPAQUE_AMBIG/item_31/prompt.txt"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "i": 0,
+      "person": "Michael_Eisner",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "decoy_hq": "Kansas_City",
+      "gold_first": false,
+      "first_listed_hq": "Kansas_City",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_0",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_0"
+      },
+      "gold": "Burbank"
+    },
+    {
+      "i": 1,
+      "person": "Landon_H_Rowland",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "decoy_hq": "Broadway",
+      "gold_first": false,
+      "first_listed_hq": "Broadway",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_1",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_1"
+      },
+      "gold": "Kansas_City"
+    },
+    {
+      "i": 2,
+      "person": "Lucian_Grainge",
+      "company": "Universal_Music_Group",
+      "hq": "Broadway",
+      "decoy_hq": "NRK_Marienlyst",
+      "gold_first": false,
+      "first_listed_hq": "NRK_Marienlyst",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_2",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_2"
+      },
+      "gold": "Broadway"
+    },
+    {
+      "i": 3,
+      "person": "Vibeke_Frst_Haugen",
+      "company": "Norwegian_Broadcasting_Corporation",
+      "hq": "NRK_Marienlyst",
+      "decoy_hq": "Warsaw",
+      "gold_first": true,
+      "first_listed_hq": "NRK_Marienlyst",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_3",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_3"
+      },
+      "gold": "NRK_Marienlyst"
+    },
+    {
+      "i": 4,
+      "person": "Krzysztof_Mamiski",
+      "company": "Polish_State_Railways",
+      "hq": "Warsaw",
+      "decoy_hq": "Stockholm",
+      "gold_first": false,
+      "first_listed_hq": "Stockholm",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_4",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_4"
+      },
+      "gold": "Warsaw"
+    },
+    {
+      "i": 5,
+      "person": "David_Lagerholm",
+      "company": "Storstockholms_Lokaltrafik",
+      "hq": "Stockholm",
+      "decoy_hq": "Burbank",
+      "gold_first": true,
+      "first_listed_hq": "Stockholm",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_5",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_5"
+      },
+      "gold": "Stockholm"
+    },
+    {
+      "i": 6,
+      "person": "Bob_Iger",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "decoy_hq": "Zurich",
+      "gold_first": true,
+      "first_listed_hq": "Burbank",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_6",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_6"
+      },
+      "gold": "Burbank"
+    },
+    {
+      "i": 7,
+      "person": "Sergio_Ermotti",
+      "company": "UBS",
+      "hq": "Zurich",
+      "decoy_hq": "Kansas_City",
+      "gold_first": true,
+      "first_listed_hq": "Zurich",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_7",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_7"
+      },
+      "gold": "Zurich"
+    },
+    {
+      "i": 8,
+      "person": "Samuel_W_Fordyce",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "decoy_hq": "New_Jersey",
+      "gold_first": true,
+      "first_listed_hq": "Kansas_City",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_8",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_8"
+      },
+      "gold": "Kansas_City"
+    },
+    {
+      "i": 9,
+      "person": "Steve_Weed",
+      "company": "WaveDivision_Holdings_LLC",
+      "hq": "New_Jersey",
+      "decoy_hq": "Oklahoma_City",
+      "gold_first": false,
+      "first_listed_hq": "Oklahoma_City",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_9",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_9"
+      },
+      "gold": "New_Jersey"
+    },
+    {
+      "i": 10,
+      "person": "David_Green",
+      "company": "Hobby_Lobby",
+      "hq": "Oklahoma_City",
+      "decoy_hq": "San_Antonio",
+      "gold_first": false,
+      "first_listed_hq": "San_Antonio",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_10",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_10"
+      },
+      "gold": "Oklahoma_City"
+    },
+    {
+      "i": 11,
+      "person": "Stuart_Parker",
+      "company": "USAA",
+      "hq": "San_Antonio",
+      "decoy_hq": "Montabaur",
+      "gold_first": true,
+      "first_listed_hq": "San_Antonio",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_11",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_11"
+      },
+      "gold": "San_Antonio"
+    },
+    {
+      "i": 12,
+      "person": "Achim_Wei",
+      "company": "Ionos",
+      "hq": "Montabaur",
+      "decoy_hq": "Stockholm",
+      "gold_first": false,
+      "first_listed_hq": "Stockholm",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_12",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_12"
+      },
+      "gold": "Montabaur"
+    },
+    {
+      "i": 13,
+      "person": "Anne_Lagercrantz",
+      "company": "Sveriges_Television",
+      "hq": "Stockholm",
+      "decoy_hq": "Warsaw",
+      "gold_first": true,
+      "first_listed_hq": "Stockholm",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_13",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_13"
+      },
+      "gold": "Stockholm"
+    },
+    {
+      "i": 14,
+      "person": "Beata_KozowskaChya",
+      "company": "Powszechny_Zakad_Ubezpiecze",
+      "hq": "Warsaw",
+      "decoy_hq": "Richmond",
+      "gold_first": true,
+      "first_listed_hq": "Warsaw",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_14",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_14"
+      },
+      "gold": "Warsaw"
+    },
+    {
+      "i": 15,
+      "person": "David_J_Wright",
+      "company": "Globcal_International",
+      "hq": "Richmond",
+      "decoy_hq": "Helsinki",
+      "gold_first": false,
+      "first_listed_hq": "Helsinki",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_15",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_15"
+      },
+      "gold": "Richmond"
+    },
+    {
+      "i": 16,
+      "person": "Topi_Manner",
+      "company": "Elisa",
+      "hq": "Helsinki",
+      "decoy_hq": "Rome",
+      "gold_first": true,
+      "first_listed_hq": "Helsinki",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_16",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_16"
+      },
+      "gold": "Helsinki"
+    },
+    {
+      "i": 17,
+      "person": "Luigi_Ferraris",
+      "company": "Ferrovie_dello_Stato_Italiane",
+      "hq": "Rome",
+      "decoy_hq": "New_York_City",
+      "gold_first": false,
+      "first_listed_hq": "New_York_City",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_17",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_17"
+      },
+      "gold": "Rome"
+    },
+    {
+      "i": 18,
+      "person": "David_Zaslav",
+      "company": "Warner_Bros_Discovery",
+      "hq": "New_York_City",
+      "decoy_hq": "Kansas_City",
+      "gold_first": false,
+      "first_listed_hq": "Kansas_City",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_18",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_18"
+      },
+      "gold": "New_York_City"
+    },
+    {
+      "i": 19,
+      "person": "William_N_Deramus_Jr",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "decoy_hq": "Chesapeake",
+      "gold_first": true,
+      "first_listed_hq": "Kansas_City",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_19",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_19"
+      },
+      "gold": "Kansas_City"
+    },
+    {
+      "i": 20,
+      "person": "Macon_Foscue_Brock_Jr",
+      "company": "Dollar_Tree",
+      "hq": "Chesapeake",
+      "decoy_hq": "Oklahoma_City",
+      "gold_first": false,
+      "first_listed_hq": "Oklahoma_City",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_20",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_20"
+      },
+      "gold": "Chesapeake"
+    },
+    {
+      "i": 21,
+      "person": "Frank_Love",
+      "company": "Loves_Travel_Stops__Country_Stores",
+      "hq": "Oklahoma_City",
+      "decoy_hq": "Coral_Gables",
+      "gold_first": false,
+      "first_listed_hq": "Coral_Gables",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_21",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_21"
+      },
+      "gold": "Oklahoma_City"
+    },
+    {
+      "i": 22,
+      "person": "Robert_E_Sanchez",
+      "company": "Ryder",
+      "hq": "Coral_Gables",
+      "decoy_hq": "Bochum",
+      "gold_first": false,
+      "first_listed_hq": "Bochum",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_22",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_22"
+      },
+      "gold": "Coral_Gables"
+    },
+    {
+      "i": 23,
+      "person": "Luka_Mucic",
+      "company": "Vonovia",
+      "hq": "Bochum",
+      "decoy_hq": "Amsterdam",
+      "gold_first": true,
+      "first_listed_hq": "Bochum",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_23",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_23"
+      },
+      "gold": "Bochum"
+    },
+    {
+      "i": 24,
+      "person": "Freddy_Heineken",
+      "company": "Heineken_International",
+      "hq": "Amsterdam",
+      "decoy_hq": "Burbank",
+      "gold_first": false,
+      "first_listed_hq": "Burbank",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_24",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_24"
+      },
+      "gold": "Amsterdam"
+    },
+    {
+      "i": 25,
+      "person": "Raymond_Watson",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "decoy_hq": "Fox_Plaza",
+      "gold_first": true,
+      "first_listed_hq": "Burbank",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_25",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_25"
+      },
+      "gold": "Burbank"
+    },
+    {
+      "i": 26,
+      "person": "Stacey_Snider",
+      "company": "20th_Century_Studios",
+      "hq": "Fox_Plaza",
+      "decoy_hq": "CNN_Center",
+      "gold_first": true,
+      "first_listed_hq": "Fox_Plaza",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_26",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_26"
+      },
+      "gold": "Fox_Plaza"
+    },
+    {
+      "i": 27,
+      "person": "John_K_Martin_Jr",
+      "company": "Turner_Broadcasting_System",
+      "hq": "CNN_Center",
+      "decoy_hq": "Swindon",
+      "gold_first": false,
+      "first_listed_hq": "Swindon",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_27",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_27"
+      },
+      "gold": "CNN_Center"
+    },
+    {
+      "i": 28,
+      "person": "Richard_Gordon_Handover",
+      "company": "WHSmith",
+      "hq": "Swindon",
+      "decoy_hq": "Cologne",
+      "gold_first": false,
+      "first_listed_hq": "Cologne",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_28",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_28"
+      },
+      "gold": "Swindon"
+    },
+    {
+      "i": 29,
+      "person": "Tom_Buhrow",
+      "company": "Westdeutscher_Rundfunk",
+      "hq": "Cologne",
+      "decoy_hq": "Hartford",
+      "gold_first": true,
+      "first_listed_hq": "Cologne",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_29",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_29"
+      },
+      "gold": "Cologne"
+    },
+    {
+      "i": 30,
+      "person": "Mark_T_Bertolini",
+      "company": "Aetna",
+      "hq": "Hartford",
+      "decoy_hq": "Lod_Railway_Station",
+      "gold_first": true,
+      "first_listed_hq": "Hartford",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_30",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_30"
+      },
+      "gold": "Hartford"
+    },
+    {
+      "i": 31,
+      "person": "Moshe_Zana",
+      "company": "Israel_Railways",
+      "hq": "Lod_Railway_Station",
+      "decoy_hq": "Burbank",
+      "gold_first": true,
+      "first_listed_hq": "Lod_Railway_Station",
+      "ambig_hops": 2,
+      "ids": {
+        "ENG_AMBIG": "F22S_ENG_AMBIG_31",
+        "OPAQUE_AMBIG": "F22S_OPAQUE_AMBIG_31"
+      },
+      "gold": "Lod_Railway_Station"
+    }
+  ]
+}

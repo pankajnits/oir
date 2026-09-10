@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_15]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_15 #####
+QUESTION:
+What city is the headquarters of the company led by David_J_Wright?
+
+PATH_QUERY
+START David_J_Wright
+R1 E52128c3a2ffc
+R2 E4d0dc5181ca6
+Execute path; return final tail only.
+
+CONTEXT:
+David_J_Wright | E52128c3a2ffc | Globcal_International
+Globcal_International | E4d0dc5181ca6 | Richmond
+David_J_Wright | E1e8ad55b69f8 | Elisa
+Elisa | Eae1aa64f5509 | Helsinki

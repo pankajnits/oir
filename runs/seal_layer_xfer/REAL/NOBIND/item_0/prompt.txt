@@ -1,0 +1,20 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[XFER_REAL_NOBIND_0]: <seal_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM NOBIND family=REAL 2Wiki: Q HMAC'd as typed. No PATH.
+
+##### ID XFER_REAL_NOBIND_0 #####
+QUESTION (token-HMAC'd):
+E97e8e44595cd E9d13f4f5f9c7 E0c120962da72 E25f8343d7f9e E04a80dda5548 E0c120962da72 Eedd0df311933 E04a80dda5548 E9f818e610475 E8bd36d0c465d E9fd8d4ee6b46 (E6d3fbf2c0931)?
+
+
+CONTEXT:
+| src | rel | dst |
+| --- | --- | --- |
+| Ed74f3724fed4 | E25f8343d7f9e | E18d0466bf932 |
+| E3e88b3cad02f | E957847de490d | E3e716a25c239 |
+| Ef62eeb99e9f3 | Eedd0df311933 | E3a4441aa4370 |
+| E3e716a25c239 | Eee4e7d057c8f | E0f7d99de0e0d |
+| Eba534e81a021 | Eedd0df311933 | Ed74f3724fed4 |
+| E3a4441aa4370 | E1ae279d55825 | E1782c0fb47fa |

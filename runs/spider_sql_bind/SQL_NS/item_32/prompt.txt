@@ -1,0 +1,58 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_32]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_32 #####
+DB: aircraft
+SCHEMA (English name → sealed sqlite identifier):
+pilot = E20a1917bc242
+Pilot_Id = Efaef52d1b8d4
+Name = Eb3c5947df4d3
+Age = E4ae70b2642cd
+aircraft = E01646e54f533
+Aircraft_ID = E9f3374b55862
+Aircraft = E1b598589d39c
+Description = E7ed40953dd20
+Max_Gross_Weight = E1b3e547cd24f
+Total_disk_area = Ed035128617c9
+Max_disk_Loading = E5c77e16035cf
+match = E6badfc1ca6a1
+Round = E2aab5338051f
+Location = Ed3802ceac7df
+Country = E3c0b98fee259
+Date = E533049009b59
+Fastest_Qualifying = E0e3817bbba1f
+Winning_Pilot = E9610351683aa
+Winning_Aircraft = Ebde7a0f38276
+airport = E013d3d9d3d34
+Airport_ID = E100865c406e0
+Airport_Name = Ee1b83a925a00
+Total_Passengers = E94321cb789d7
+%_Change_2007 = E071704893fd4
+International_Passengers = E0f61e531c381
+Domestic_Passengers = E8306e6c0787b
+Transit_Passengers = E35b736c5bfb9
+Aircraft_Movements = E345f8f9ee590
+Freight_Metric_Tonnes = Ed0731f103192
+airport_aircraft = E4809fb8cc149
+ID = Edb306945bb5d
+
+pilot(Pilot_Id, Name, Age)
+aircraft(Aircraft_ID, Aircraft, Description, Max_Gross_Weight, Total_disk_area, Max_disk_Loading)
+match(Round, Location, Country, Date, Fastest_Qualifying, Winning_Pilot, Winning_Aircraft)
+airport(Airport_ID, Airport_Name, Total_Passengers, %_Change_2007, International_Passengers, Domestic_Passengers, Transit_Passengers, Aircraft_Movements, Freight_Metric_Tonnes)
+airport_aircraft(ID, Airport_ID, Aircraft_ID)
+
+QUESTION:
+What are the names of all the aircrafts associated with London Gatwick Ebd211da0e02d?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

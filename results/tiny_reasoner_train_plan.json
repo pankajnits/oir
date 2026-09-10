@@ -1,0 +1,13 @@
+{
+  "n_train": 4800,
+  "n_holdout": 200,
+  "est_tokens": 1750000,
+  "model": "Qwen2.5-1.5B SFT/LoRA on sealed PATH only",
+  "est_H100_hours_full_ft_order": 0.01,
+  "est_USD": 0.02,
+  "LoRA_note": "LoRA typically 10-50\u00d7 cheaper wall time than full FT",
+  "files": [
+    "data/synthetic/sealed_path_train.jsonl",
+    "data/synthetic/sealed_path_holdout.jsonl"
+  ]
+}

@@ -1,0 +1,40 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_86]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_86 #####
+DB: department_management
+SCHEMA (English name → sealed sqlite identifier):
+department = Efca1f0f0067e
+Department_ID = E7ccf2bdeeb77
+Name = E1d165673d5c4
+Creation = E90930e3acfaf
+Ranking = E9fff532eb240
+Budget_in_Billions = E74af607ed60b
+Num_Employees = E3fcd543f77f2
+head = E3ae116ab4bc8
+head_ID = Ebbd7129bb20c
+name = Ed18546f57cb2
+born_state = E76aaf6258834
+age = E663ebc48615f
+management = E100afa4d00c1
+department_ID = E22b9c7b6b0fc
+temporary_acting = Efe8feba8a6cb
+
+department(Department_ID, Name, Creation, Ranking, Budget_in_Billions, Num_Employees)
+head(head_ID, name, born_state, age)
+management(department_ID, head_ID, temporary_acting)
+
+QUESTION:
+What are the distinct E90930e3acfaf years of the departments managed by a secretary E76aaf6258834 in E76aaf6258834 'Alabama'?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

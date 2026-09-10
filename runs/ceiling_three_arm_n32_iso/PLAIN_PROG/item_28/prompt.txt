@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_28 #####
+PATH_QUERY
+START Eric_Vallat
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Eric_Vallat | works_at | Lacoste_SA
+Lacoste_SA | headquartered_in | Paris
+DecoyCo_Lacoste_SA | headquartered_in | DecoyHQ_Paris
+Lacoste_SA | owned_by | Hold_Lacoste_SA
+Hold_Lacoste_SA | meta_of | Lacoste_SA
+Lacoste_SA | partner_of | Partner_Lacoste_SA
+Partner_Lacoste_SA | meta_of | Lacoste_SA
+Decoy_DecoyCo_Lacoste_SA | works_at | DecoyCo_Lacoste_SA

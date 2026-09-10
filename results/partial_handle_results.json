@@ -1,0 +1,140 @@
+{
+  "benchmark": "partial_handle_ablation",
+  "hypothesis": "relation handles are the critical scaffold for 2-hop OIR join",
+  "finding": "rel_only == full (2/2); person_only returns companies; none collapses BOTH twins to same company seal",
+  "by_ablation": {
+    "full": {
+      "n": 2,
+      "ok": 2,
+      "mid": 0,
+      "twin_both": null,
+      "answers_differ": true,
+      "twin_pair_correct": true
+    },
+    "rel_only": {
+      "n": 2,
+      "ok": 2,
+      "mid": 0,
+      "twin_both": null,
+      "answers_differ": true,
+      "twin_pair_correct": true
+    },
+    "person_only": {
+      "n": 2,
+      "ok": 0,
+      "mid": 2,
+      "twin_both": null,
+      "answers_differ": true,
+      "twin_pair_correct": false
+    },
+    "none": {
+      "n": 2,
+      "ok": 0,
+      "mid": 1,
+      "twin_both": null,
+      "answers_differ": false,
+      "twin_pair_correct": false
+    }
+  },
+  "rows": [
+    {
+      "id": "PH_A_full",
+      "ablation": "full",
+      "twin": "A",
+      "got": "E7b67f0d6abfb",
+      "expect": "E7b67f0d6abfb",
+      "ok": true,
+      "is_intermediate_company": false,
+      "unsealed_got": "CityX",
+      "unsealed_exp": "CityX"
+    },
+    {
+      "id": "PH_B_full",
+      "ablation": "full",
+      "twin": "B",
+      "got": "Ea9b56be7655c",
+      "expect": "Ea9b56be7655c",
+      "ok": true,
+      "is_intermediate_company": false,
+      "unsealed_got": "CityY",
+      "unsealed_exp": "CityY"
+    },
+    {
+      "id": "PH_A_rel_only",
+      "ablation": "rel_only",
+      "twin": "A",
+      "got": "E7b67f0d6abfb",
+      "expect": "E7b67f0d6abfb",
+      "ok": true,
+      "is_intermediate_company": false,
+      "unsealed_got": "CityX",
+      "unsealed_exp": "CityX"
+    },
+    {
+      "id": "PH_B_rel_only",
+      "ablation": "rel_only",
+      "twin": "B",
+      "got": "Ea9b56be7655c",
+      "expect": "Ea9b56be7655c",
+      "ok": true,
+      "is_intermediate_company": false,
+      "unsealed_got": "CityY",
+      "unsealed_exp": "CityY"
+    },
+    {
+      "id": "PH_A_person_only",
+      "ablation": "person_only",
+      "twin": "A",
+      "got": "Eff0684ad3168",
+      "expect": "E7b67f0d6abfb",
+      "ok": false,
+      "is_intermediate_company": true,
+      "unsealed_got": "Acme",
+      "unsealed_exp": "CityX"
+    },
+    {
+      "id": "PH_B_person_only",
+      "ablation": "person_only",
+      "twin": "B",
+      "got": "Eba1f7b5a9bb3",
+      "expect": "Ea9b56be7655c",
+      "ok": false,
+      "is_intermediate_company": true,
+      "unsealed_got": "BetaCorp",
+      "unsealed_exp": "CityY"
+    },
+    {
+      "id": "PH_A_none",
+      "ablation": "none",
+      "twin": "A",
+      "got": "Eff0684ad3168",
+      "expect": "E7b67f0d6abfb",
+      "ok": false,
+      "is_intermediate_company": true,
+      "unsealed_got": "Acme",
+      "unsealed_exp": "CityX"
+    },
+    {
+      "id": "PH_B_none",
+      "ablation": "none",
+      "twin": "B",
+      "got": "Eff0684ad3168",
+      "expect": "Ea9b56be7655c",
+      "ok": false,
+      "is_intermediate_company": false,
+      "unsealed_got": "Acme",
+      "unsealed_exp": "CityY"
+    }
+  ],
+  "cross_model": {
+    "claude_sonnet_L3_handles": "8/8 match composer",
+    "claude_sonnet_SJ_handles_A": "PASS CityX",
+    "claude_sonnet_SJ_nohint_A": "FAIL intermediate Acme",
+    "gpt_SJ_handles_B": "PASS CityY",
+    "gpt_SJ_nohint_B": "UNKNOWN (fail; different mode than Acme)"
+  },
+  "security": {
+    "injection_exfil": "UNKNOWN \u2014 pass (no plaintext leak)",
+    "twin_multiset": "bag equality optional; pilot bags equal"
+  }
+}

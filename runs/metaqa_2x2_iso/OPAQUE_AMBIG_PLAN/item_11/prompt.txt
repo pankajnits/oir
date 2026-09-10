@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA_OPAQUE_AMBIG_PLAN_11]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph plus explicit relation sequence.
+##### ID MQA_OPAQUE_AMBIG_PLAN_11 #####
+QUESTION:
+What is the genre of a movie directed by Juan José Campanella?
+
+PATH_QUERY
+START Juan José Campanella
+R1 Eb88e5a0ed093
+R2 Ecb2fd9eace0c
+Execute path; return final tail only.
+
+CONTEXT:
+Juan José Campanella | Eb88e5a0ed093 | The Secret in Their Eyes
+The Secret in Their Eyes | Ecb2fd9eace0c | Thriller
+The Secret in Their Eyes | E978cfd83859a | Spanish

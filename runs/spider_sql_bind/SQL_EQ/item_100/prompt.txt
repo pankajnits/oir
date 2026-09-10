@@ -1,0 +1,39 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_100]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_100 #####
+DB: gymnast
+SCHEMA (English name → sealed sqlite identifier):
+gymnast = Ee84e295ed3b3
+Gymnast_ID = E5f709540d0b1
+Floor_Exercise_Points = E6cbdc38866af
+Pommel_Horse_Points = E937b17bf39a0
+Rings_Points = Ed9b0fe4699af
+Vault_Points = Ecdaa6a490df8
+Parallel_Bars_Points = E9940ed4e24d9
+Horizontal_Bar_Points = E7010de9fc4ca
+Total_Points = Ee4d702b68009
+people = E31c30a712fcc
+People_ID = E2d2788d9117f
+Name = E613c1520fb3a
+Age = Ead856ce63f73
+Height = E4163942a3897
+Hometown = E8cfb8a2a3dcd
+
+gymnast(Gymnast_ID, Floor_Exercise_Points, Pommel_Horse_Points, Rings_Points, Vault_Points, Parallel_Bars_Points, Horizontal_Bar_Points, Total_Points)
+people(People_ID, Name, Age, Height, Hometown)
+
+QUESTION:
+Give the hometowns from which two or more gymnasts are from.
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

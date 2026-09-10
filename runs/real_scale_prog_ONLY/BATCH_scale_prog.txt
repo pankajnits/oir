@@ -1,0 +1,437 @@
+MODEL UNDER TEST. No tools. Read ONLY this file.
+
+Same encoding. PATH_QUERY: START -R1-> x -R2-> y. Return y.
+
+No external knowledge. Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID SCALE_PROG_0 #####
+PATH_QUERY
+START Ec4dcaa112f69
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+Ec4dcaa112f69 | E73f936ff24da | E88a722672d0b
+E88a722672d0b | E2ac45e8ed2c9 | E03918cb54e07
+E7ab5dc5577db | E2ac45e8ed2c9 | Ed5b390f3715f
+E88a722672d0b | E3117ed3cfce1 | Ef61b18181591
+Ef61b18181591 | E7128cec3b72d | E79abeda86c15
+E88a722672d0b | Eb3fee5c4727b | E0cc59964cfec
+E0cc59964cfec | E7128cec3b72d | Eeef2becddb74
+Ede59b9a333a4 | E73f936ff24da | E7ab5dc5577db
+
+
+##### ID SCALE_PROG_1 #####
+PATH_QUERY
+START E32caaf64662e
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E32caaf64662e | E73f936ff24da | E4c01bfd97caf
+E4c01bfd97caf | E2ac45e8ed2c9 | E084f6114d27c
+E7790f42cf4e1 | E2ac45e8ed2c9 | E0a0d2b68850b
+E4c01bfd97caf | E3117ed3cfce1 | E3d3b364f313e
+E3d3b364f313e | E7128cec3b72d | Ecd1f731b5cf5
+E4c01bfd97caf | Eb3fee5c4727b | E30a12234200a
+E30a12234200a | E7128cec3b72d | E6d998d05b0d5
+Ed0b0b2c597d6 | E73f936ff24da | E7790f42cf4e1
+
+
+##### ID SCALE_PROG_2 #####
+PATH_QUERY
+START E93611159aed5
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E93611159aed5 | E73f936ff24da | E4ebbbda664ad
+E4ebbbda664ad | E2ac45e8ed2c9 | E6b1177f2b1f5
+E4c01bfd97caf | E2ac45e8ed2c9 | E084f6114d27c
+E4ebbbda664ad | E3117ed3cfce1 | E241a3e3a8592
+E241a3e3a8592 | E7128cec3b72d | Ed29b669c29c9
+E4ebbbda664ad | Eb3fee5c4727b | E1191151cc9fc
+E1191151cc9fc | E7128cec3b72d | E0ddac407b273
+E375ce3bf111e | E73f936ff24da | E4c01bfd97caf
+
+
+##### ID SCALE_PROG_3 #####
+PATH_QUERY
+START Ea06f389b4a17
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+Ea06f389b4a17 | E73f936ff24da | E118457d2cfce
+E118457d2cfce | E2ac45e8ed2c9 | E39bcf53d555b
+E2727a79a5437 | E2ac45e8ed2c9 | E2a5d809dce40
+E118457d2cfce | E3117ed3cfce1 | E6c4b230bc02e
+E6c4b230bc02e | E7128cec3b72d | E4ae12b3d7ade
+E118457d2cfce | Eb3fee5c4727b | E71a7b1f4f085
+E71a7b1f4f085 | E7128cec3b72d | E4d78c3ffa2d7
+E1aff9506186e | E73f936ff24da | E2727a79a5437
+
+
+##### ID SCALE_PROG_4 #####
+PATH_QUERY
+START E37427636ed9f
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E37427636ed9f | E73f936ff24da | E3cf7b6aeb9f0
+E3cf7b6aeb9f0 | E2ac45e8ed2c9 | E6b1f890859f1
+Ef47b86bcec05 | E2ac45e8ed2c9 | Ec66cf77aec2d
+E3cf7b6aeb9f0 | E3117ed3cfce1 | E5d4101d686d1
+E5d4101d686d1 | E7128cec3b72d | Eb7ad3eef8ce5
+E3cf7b6aeb9f0 | Eb3fee5c4727b | Eac0ddc22f66e
+Eac0ddc22f66e | E7128cec3b72d | E3e8809cfd539
+Ef8f049871c1d | E73f936ff24da | Ef47b86bcec05
+
+
+##### ID SCALE_PROG_5 #####
+PATH_QUERY
+START E3f88d28758a1
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E3f88d28758a1 | E73f936ff24da | E462db4d6bfb9
+E462db4d6bfb9 | E2ac45e8ed2c9 | Ec2566b4bc407
+E4c01bfd97caf | E2ac45e8ed2c9 | E084f6114d27c
+E462db4d6bfb9 | E3117ed3cfce1 | E62c9d241907e
+E62c9d241907e | E7128cec3b72d | E3790d366991f
+E462db4d6bfb9 | Eb3fee5c4727b | E06ce794fe059
+E06ce794fe059 | E7128cec3b72d | Ee6fd63dc4be0
+Efa0acff3dc43 | E73f936ff24da | E4c01bfd97caf
+
+
+##### ID SCALE_PROG_6 #####
+PATH_QUERY
+START E009920c776df
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E009920c776df | E73f936ff24da | E2d41809ff9d4
+E2d41809ff9d4 | E2ac45e8ed2c9 | E68f28875dbfe
+E15167aec5920 | E2ac45e8ed2c9 | Ea5719c5d12ef
+E2d41809ff9d4 | E3117ed3cfce1 | E24702ed1323a
+E24702ed1323a | E7128cec3b72d | E452cba836669
+E2d41809ff9d4 | Eb3fee5c4727b | Eb710f632305a
+Eb710f632305a | E7128cec3b72d | Ed81584aee72b
+Ebb61ed320ba8 | E73f936ff24da | E15167aec5920
+
+
+##### ID SCALE_PROG_7 #####
+PATH_QUERY
+START E68f4ace2b729
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E68f4ace2b729 | E73f936ff24da | E16b429bb649f
+E16b429bb649f | E2ac45e8ed2c9 | E7590d9642e49
+Edfacde0c58f7 | E2ac45e8ed2c9 | E73580fc65b57
+E16b429bb649f | E3117ed3cfce1 | E134514dc6254
+E134514dc6254 | E7128cec3b72d | Eb2df4e6e4200
+E16b429bb649f | Eb3fee5c4727b | E9564d75c8843
+E9564d75c8843 | E7128cec3b72d | E83df0b940404
+Ec868131dfbc3 | E73f936ff24da | Edfacde0c58f7
+
+
+##### ID SCALE_PROG_8 #####
+PATH_QUERY
+START E0b9a3df545b8
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E0b9a3df545b8 | E73f936ff24da | E7790f42cf4e1
+E7790f42cf4e1 | E2ac45e8ed2c9 | E0a0d2b68850b
+E2727a79a5437 | E2ac45e8ed2c9 | E2a5d809dce40
+E7790f42cf4e1 | E3117ed3cfce1 | Efeb063785ab2
+Efeb063785ab2 | E7128cec3b72d | Ec0ae9d526cce
+E7790f42cf4e1 | Eb3fee5c4727b | Eab239c2f73bf
+Eab239c2f73bf | E7128cec3b72d | E6469b963bb7f
+E14ecb3dd2c0b | E73f936ff24da | E2727a79a5437
+
+
+##### ID SCALE_PROG_9 #####
+PATH_QUERY
+START E8b4c211e3eaa
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E8b4c211e3eaa | E73f936ff24da | Edfacde0c58f7
+Edfacde0c58f7 | E2ac45e8ed2c9 | E73580fc65b57
+E2d41809ff9d4 | E2ac45e8ed2c9 | E68f28875dbfe
+Edfacde0c58f7 | E3117ed3cfce1 | Ed38e62b7b352
+Ed38e62b7b352 | E7128cec3b72d | Eb477fcee2175
+Edfacde0c58f7 | Eb3fee5c4727b | Ecc87428c03fc
+Ecc87428c03fc | E7128cec3b72d | E8acdef20581e
+E6e66e377c577 | E73f936ff24da | E2d41809ff9d4
+
+
+##### ID SCALE_PROG_10 #####
+PATH_QUERY
+START Ed22635ea3f96
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+Ed22635ea3f96 | E73f936ff24da | E4c01bfd97caf
+E4c01bfd97caf | E2ac45e8ed2c9 | E084f6114d27c
+E38ef0d7c0aeb | E2ac45e8ed2c9 | E5920f5e29254
+E4c01bfd97caf | E3117ed3cfce1 | E3d3b364f313e
+E3d3b364f313e | E7128cec3b72d | Ecd1f731b5cf5
+E4c01bfd97caf | Eb3fee5c4727b | E30a12234200a
+E30a12234200a | E7128cec3b72d | E6d998d05b0d5
+Ed0b0b2c597d6 | E73f936ff24da | E38ef0d7c0aeb
+
+
+##### ID SCALE_PROG_11 #####
+PATH_QUERY
+START E0d136c4d98d0
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E0d136c4d98d0 | E73f936ff24da | E13f4d3c0a668
+E13f4d3c0a668 | E2ac45e8ed2c9 | E0f07e6e6419f
+E2727a79a5437 | E2ac45e8ed2c9 | E2a5d809dce40
+E13f4d3c0a668 | E3117ed3cfce1 | Ec56000e0efa2
+Ec56000e0efa2 | E7128cec3b72d | E881946e15351
+E13f4d3c0a668 | Eb3fee5c4727b | E899786a524cb
+E899786a524cb | E7128cec3b72d | E8a327bc15136
+E4ad5f3a1fc9b | E73f936ff24da | E2727a79a5437
+
+
+##### ID SCALE_PROG_12 #####
+PATH_QUERY
+START Ee56d55c5d196
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+Ee56d55c5d196 | E73f936ff24da | E514fd5bbfbc3
+E514fd5bbfbc3 | E2ac45e8ed2c9 | E3ffc6a5e2a70
+E889f4151d01f | E2ac45e8ed2c9 | Ec7835e396fa7
+E514fd5bbfbc3 | E3117ed3cfce1 | E11f99913d620
+E11f99913d620 | E7128cec3b72d | Ec9ca29e490f0
+E514fd5bbfbc3 | Eb3fee5c4727b | E30a5b77850e8
+E30a5b77850e8 | E7128cec3b72d | E2658e9cf8a44
+E4bb177b4c5db | E73f936ff24da | E889f4151d01f
+
+
+##### ID SCALE_PROG_13 #####
+PATH_QUERY
+START E7ab070613063
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E7ab070613063 | E73f936ff24da | Edfacde0c58f7
+Edfacde0c58f7 | E2ac45e8ed2c9 | E73580fc65b57
+E2ca6bdc96b1f | E2ac45e8ed2c9 | Eccb72b8ed7e7
+Edfacde0c58f7 | E3117ed3cfce1 | Ed38e62b7b352
+Ed38e62b7b352 | E7128cec3b72d | Eb477fcee2175
+Edfacde0c58f7 | Eb3fee5c4727b | Ecc87428c03fc
+Ecc87428c03fc | E7128cec3b72d | E8acdef20581e
+E6e66e377c577 | E73f936ff24da | E2ca6bdc96b1f
+
+
+##### ID SCALE_PROG_14 #####
+PATH_QUERY
+START E3469b466cb37
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E3469b466cb37 | E73f936ff24da | E5c5a70e2554c
+E5c5a70e2554c | E2ac45e8ed2c9 | E0b767ca8df6a
+E462db4d6bfb9 | E2ac45e8ed2c9 | Ec2566b4bc407
+E5c5a70e2554c | E3117ed3cfce1 | E6fc9cc347558
+E6fc9cc347558 | E7128cec3b72d | Ed80a1a98f9b0
+E5c5a70e2554c | Eb3fee5c4727b | E015e5ebd49b4
+E015e5ebd49b4 | E7128cec3b72d | E27a4a1a646f2
+E8308eca75d79 | E73f936ff24da | E462db4d6bfb9
+
+
+##### ID SCALE_PROG_15 #####
+PATH_QUERY
+START E2e325c58a653
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E2e325c58a653 | E73f936ff24da | E15167aec5920
+E15167aec5920 | E2ac45e8ed2c9 | Ea5719c5d12ef
+E751e091ee5a8 | E2ac45e8ed2c9 | Ed4c4113878f1
+E15167aec5920 | E3117ed3cfce1 | Ecabaaf56be3f
+Ecabaaf56be3f | E7128cec3b72d | E949f4ccc30af
+E15167aec5920 | Eb3fee5c4727b | E85548187ab89
+E85548187ab89 | E7128cec3b72d | E9d3b9e8b76c3
+E356fc3c2a1be | E73f936ff24da | E751e091ee5a8
+
+
+##### ID SCALE_PROG_16 #####
+PATH_QUERY
+START E16eeafef0f97
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E16eeafef0f97 | E73f936ff24da | E4c01bfd97caf
+E4c01bfd97caf | E2ac45e8ed2c9 | E084f6114d27c
+E3f455ea26847 | E2ac45e8ed2c9 | E6a0c9e0d39f1
+E4c01bfd97caf | E3117ed3cfce1 | E3d3b364f313e
+E3d3b364f313e | E7128cec3b72d | Ecd1f731b5cf5
+E4c01bfd97caf | Eb3fee5c4727b | E30a12234200a
+E30a12234200a | E7128cec3b72d | E6d998d05b0d5
+Ed0b0b2c597d6 | E73f936ff24da | E3f455ea26847
+
+
+##### ID SCALE_PROG_17 #####
+PATH_QUERY
+START E1d58dda6db97
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E1d58dda6db97 | E73f936ff24da | E9bf1623add01
+E9bf1623add01 | E2ac45e8ed2c9 | E536468e15eac
+E4ebbbda664ad | E2ac45e8ed2c9 | E6b1177f2b1f5
+E9bf1623add01 | E3117ed3cfce1 | E767b104b9b25
+E767b104b9b25 | E7128cec3b72d | E3cdac2f6122c
+E9bf1623add01 | Eb3fee5c4727b | E58d5c831eef2
+E58d5c831eef2 | E7128cec3b72d | E00a5dbb041db
+E7b13b9c730d1 | E73f936ff24da | E4ebbbda664ad
+
+
+##### ID SCALE_PROG_18 #####
+PATH_QUERY
+START E570b604376c5
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E570b604376c5 | E73f936ff24da | Ef47b86bcec05
+Ef47b86bcec05 | E2ac45e8ed2c9 | Ec66cf77aec2d
+E4c01bfd97caf | E2ac45e8ed2c9 | E084f6114d27c
+Ef47b86bcec05 | E3117ed3cfce1 | Ed2b5a45bfbb9
+Ed2b5a45bfbb9 | E7128cec3b72d | E963b5df84dc2
+Ef47b86bcec05 | Eb3fee5c4727b | E86c2ec45a46e
+E86c2ec45a46e | E7128cec3b72d | E9d9ed682f9ac
+E58c42f15a022 | E73f936ff24da | E4c01bfd97caf
+
+
+##### ID SCALE_PROG_19 #####
+PATH_QUERY
+START E487d27952db0
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E487d27952db0 | E73f936ff24da | E9e5d70385703
+E9e5d70385703 | E2ac45e8ed2c9 | Ec66cf77aec2d
+E462db4d6bfb9 | E2ac45e8ed2c9 | Ec2566b4bc407
+E9e5d70385703 | E3117ed3cfce1 | E7bd56190de1c
+E7bd56190de1c | E7128cec3b72d | E94e926abc30a
+E9e5d70385703 | Eb3fee5c4727b | E2141e51dc7f9
+E2141e51dc7f9 | E7128cec3b72d | E14dfeea48959
+E1e5db4ba00d3 | E73f936ff24da | E462db4d6bfb9
+
+
+##### ID SCALE_PROG_20 #####
+PATH_QUERY
+START E89fbad001d64
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E89fbad001d64 | E73f936ff24da | E04ac0d28f82a
+E04ac0d28f82a | E2ac45e8ed2c9 | E0f07e6e6419f
+Edfacde0c58f7 | E2ac45e8ed2c9 | E73580fc65b57
+E04ac0d28f82a | E3117ed3cfce1 | E83872bedd6df
+E83872bedd6df | E7128cec3b72d | Ef7fe5bb39abb
+E04ac0d28f82a | Eb3fee5c4727b | E75879b7eef76
+E75879b7eef76 | E7128cec3b72d | Ea30a4ab8e472
+E29d015a3fa33 | E73f936ff24da | Edfacde0c58f7
+
+
+##### ID SCALE_PROG_21 #####
+PATH_QUERY
+START Edffa329cf9ab
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+Edffa329cf9ab | E73f936ff24da | E814f68bc17fd
+E814f68bc17fd | E2ac45e8ed2c9 | Ee0ad2e3dee42
+E5c5a70e2554c | E2ac45e8ed2c9 | E0b767ca8df6a
+E814f68bc17fd | E3117ed3cfce1 | Ebb20cd00003b
+Ebb20cd00003b | E7128cec3b72d | E5904444a39a1
+E814f68bc17fd | Eb3fee5c4727b | E30fa26470e5d
+E30fa26470e5d | E7128cec3b72d | E740299208db2
+Eeba2ffcfd4f9 | E73f936ff24da | E5c5a70e2554c
+
+
+##### ID SCALE_PROG_22 #####
+PATH_QUERY
+START E1871addb1629
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E1871addb1629 | E73f936ff24da | E974b8df2c55d
+E974b8df2c55d | E2ac45e8ed2c9 | Ed4c4113878f1
+E961d8f02b0ea | E2ac45e8ed2c9 | E6a0c9e0d39f1
+E974b8df2c55d | E3117ed3cfce1 | E2a507d6198ab
+E2a507d6198ab | E7128cec3b72d | Ecc078ddbfc1a
+E974b8df2c55d | Eb3fee5c4727b | Ea644f3041d07
+Ea644f3041d07 | E7128cec3b72d | Efb1720017ba3
+Ecd91176f7c94 | E73f936ff24da | E961d8f02b0ea
+
+
+##### ID SCALE_PROG_23 #####
+PATH_QUERY
+START E1cc0e1a48b5a
+R1 E73f936ff24da
+R2 E2ac45e8ed2c9
+Return y seal only.
+
+CONTEXT:
+E1cc0e1a48b5a | E73f936ff24da | Edfacde0c58f7
+Edfacde0c58f7 | E2ac45e8ed2c9 | E73580fc65b57
+E7ab5dc5577db | E2ac45e8ed2c9 | Ed5b390f3715f
+Edfacde0c58f7 | E3117ed3cfce1 | Ed38e62b7b352
+Ed38e62b7b352 | E7128cec3b72d | Eb477fcee2175
+Edfacde0c58f7 | Eb3fee5c4727b | Ecc87428c03fc
+Ecc87428c03fc | E7128cec3b72d | E8acdef20581e
+E6e66e377c577 | E73f936ff24da | E7ab5dc5577db

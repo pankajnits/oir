@@ -1,0 +1,437 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+Answer EVERY ID.
+
+ARM VAULT_STRICT_BOTH: sealed keys+values + sealed NL + JOIN program. Execute JOIN; ignore unreadability of QUESTION.
+
+##### ID DOM_VAULT_STRICTBOTH_0 #####
+JOIN_QUERY
+START E38daae229352
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 E75384c2f06b4 Ed3379ba6daf6 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E38daae229352": {
+      "Eb74d7068d8c9": "E5b1923a5564b"
+    },
+    "E17763e69c7e5": {
+      "Eb74d7068d8c9": "E3864f2c15482"
+    },
+    "E9428f0a69b97": {
+      "Eb74d7068d8c9": "E238da43b8dab"
+    }
+  },
+  "companies": {
+    "E5b1923a5564b": {
+      "Ec66cf2f33ed7": "E38991d8565fc"
+    },
+    "E3864f2c15482": {
+      "Ec66cf2f33ed7": "E832f4aeb7fe9"
+    },
+    "E238da43b8dab": {
+      "Ec66cf2f33ed7": "E00a13ef9e583"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_1 #####
+JOIN_QUERY
+START Ec862c7864f1e
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 Efbaa402215a0 E6f095f6029b2 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "Ec862c7864f1e": {
+      "Eb74d7068d8c9": "E5648ca467b71"
+    },
+    "E8f519d59883d": {
+      "Eb74d7068d8c9": "Ea66303e3ed71"
+    },
+    "E5a54810f50a3": {
+      "Eb74d7068d8c9": "E8a945953e829"
+    }
+  },
+  "companies": {
+    "E5648ca467b71": {
+      "Ec66cf2f33ed7": "E53bf3b0197dc"
+    },
+    "Ea66303e3ed71": {
+      "Ec66cf2f33ed7": "E5d4088333ab9"
+    },
+    "E8a945953e829": {
+      "Ec66cf2f33ed7": "E1e7e65c625c4"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_2 #####
+JOIN_QUERY
+START E915f1ae896c3
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 E34289334016b Ed8d2655675d8 E9f29634a8086 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E915f1ae896c3": {
+      "Eb74d7068d8c9": "E5b1923a5564b"
+    },
+    "Ee2852cc60b9b": {
+      "Eb74d7068d8c9": "E2bd196fff85d"
+    },
+    "Eef853c15f639": {
+      "Eb74d7068d8c9": "Ecc655e8578ec"
+    }
+  },
+  "companies": {
+    "E5b1923a5564b": {
+      "Ec66cf2f33ed7": "E38991d8565fc"
+    },
+    "E2bd196fff85d": {
+      "Ec66cf2f33ed7": "Ebd1397cdcc2b"
+    },
+    "Ecc655e8578ec": {
+      "Ec66cf2f33ed7": "Eaf0912c7498f"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_3 #####
+JOIN_QUERY
+START E6fb8b4ba248b
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 E327b9d1e9261 E3ff2ba177a9f Efaa2933d7348 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E6fb8b4ba248b": {
+      "Eb74d7068d8c9": "Eb27b6add03d4"
+    },
+    "Edaede33e24d4": {
+      "Eb74d7068d8c9": "E99a331dad720"
+    },
+    "E61c3bc833163": {
+      "Eb74d7068d8c9": "E9de78eb29557"
+    }
+  },
+  "companies": {
+    "Eb27b6add03d4": {
+      "Ec66cf2f33ed7": "E5ee83207c12e"
+    },
+    "E99a331dad720": {
+      "Ec66cf2f33ed7": "E357b55a0a62f"
+    },
+    "E9de78eb29557": {
+      "Ec66cf2f33ed7": "E0b724b7a8008"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_4 #####
+JOIN_QUERY
+START E627db7d0fb06
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 Eadd3a7c9dcc4 Ed590b9a1f8b5 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E627db7d0fb06": {
+      "Eb74d7068d8c9": "E348aa416d535"
+    },
+    "E039bbd390e04": {
+      "Eb74d7068d8c9": "E150b3fcaed9e"
+    },
+    "E33228b8bf1c0": {
+      "Eb74d7068d8c9": "E0db2b3273194"
+    }
+  },
+  "companies": {
+    "E348aa416d535": {
+      "Ec66cf2f33ed7": "E7a96dde51ba9"
+    },
+    "E150b3fcaed9e": {
+      "Ec66cf2f33ed7": "E5d7181369d39"
+    },
+    "E0db2b3273194": {
+      "Ec66cf2f33ed7": "E1eb9a01597e0"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_5 #####
+JOIN_QUERY
+START E4b6a5b8332be
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 Ed108d8dca42f E9589bffe2fb6 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E4b6a5b8332be": {
+      "Eb74d7068d8c9": "E3eaa24ec4827"
+    },
+    "Ef4a652f9e8b1": {
+      "Eb74d7068d8c9": "E8fbd5f23ba43"
+    },
+    "E382664b84689": {
+      "Eb74d7068d8c9": "E6c638346175b"
+    }
+  },
+  "companies": {
+    "E3eaa24ec4827": {
+      "Ec66cf2f33ed7": "Ec95bcddd0abe"
+    },
+    "E8fbd5f23ba43": {
+      "Ec66cf2f33ed7": "Ee393ab427402"
+    },
+    "E6c638346175b": {
+      "Ec66cf2f33ed7": "E12b1e7a925ca"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_6 #####
+JOIN_QUERY
+START E271c672c7e1c
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 E04a50888b747 E8162165d9d85 Ebb397d611ac0 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E271c672c7e1c": {
+      "Eb74d7068d8c9": "Eb27b6add03d4"
+    },
+    "Ed3e422684796": {
+      "Eb74d7068d8c9": "Ef054aa2c60af"
+    },
+    "Ef582a216680e": {
+      "Eb74d7068d8c9": "E2ba125516697"
+    }
+  },
+  "companies": {
+    "Eb27b6add03d4": {
+      "Ec66cf2f33ed7": "E5ee83207c12e"
+    },
+    "Ef054aa2c60af": {
+      "Ec66cf2f33ed7": "E8d28a14db79a"
+    },
+    "E2ba125516697": {
+      "Ec66cf2f33ed7": "E71d71f08739c"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_7 #####
+JOIN_QUERY
+START E19688b766e7e
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 E75384c2f06b4 E8fabb68f7a4a E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E19688b766e7e": {
+      "Eb74d7068d8c9": "E5b1923a5564b"
+    },
+    "E17763e69c7e5": {
+      "Eb74d7068d8c9": "E3864f2c15482"
+    },
+    "E8c011a5831a4": {
+      "Eb74d7068d8c9": "Ecff2bd471585"
+    }
+  },
+  "companies": {
+    "E5b1923a5564b": {
+      "Ec66cf2f33ed7": "E38991d8565fc"
+    },
+    "E3864f2c15482": {
+      "Ec66cf2f33ed7": "E832f4aeb7fe9"
+    },
+    "Ecff2bd471585": {
+      "Ec66cf2f33ed7": "E20a1c842696f"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_8 #####
+JOIN_QUERY
+START E23312912aa0e
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 Eeec68e11312f E346a98d03a48 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E23312912aa0e": {
+      "Eb74d7068d8c9": "E00fed7b6181f"
+    },
+    "Ed5736adab143": {
+      "Eb74d7068d8c9": "Eb27b6add03d4"
+    },
+    "E8c7c3d24459e": {
+      "Eb74d7068d8c9": "E24db086b2d4b"
+    }
+  },
+  "companies": {
+    "E00fed7b6181f": {
+      "Ec66cf2f33ed7": "Efbcb189852b1"
+    },
+    "Eb27b6add03d4": {
+      "Ec66cf2f33ed7": "E5ee83207c12e"
+    },
+    "E24db086b2d4b": {
+      "Ec66cf2f33ed7": "Efebf0d5cd517"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_9 #####
+JOIN_QUERY
+START E48b51d1d7bde
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 Eeeee0cd81c07 Eeaf059c030a8 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E48b51d1d7bde": {
+      "Eb74d7068d8c9": "Ef3468e201cbb"
+    },
+    "E0d81b04e091c": {
+      "Eb74d7068d8c9": "Eb81e1f409a46"
+    },
+    "Ecd2bc83b67c8": {
+      "Eb74d7068d8c9": "Eb27b6add03d4"
+    }
+  },
+  "companies": {
+    "Ef3468e201cbb": {
+      "Ec66cf2f33ed7": "E1371102a8522"
+    },
+    "Eb81e1f409a46": {
+      "Ec66cf2f33ed7": "Ee3d844cbf44f"
+    },
+    "Eb27b6add03d4": {
+      "Ec66cf2f33ed7": "E5ee83207c12e"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_10 #####
+JOIN_QUERY
+START Eb3597926c200
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 Edc36ced5427d E8c1e1a35d221 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "Eb3597926c200": {
+      "Eb74d7068d8c9": "Eaf75bd221309"
+    },
+    "E1f74f75eb725": {
+      "Eb74d7068d8c9": "E18c4ab1e1ce0"
+    },
+    "E0d5cdfa2d834": {
+      "Eb74d7068d8c9": "E5a4bbc4faf1f"
+    }
+  },
+  "companies": {
+    "Eaf75bd221309": {
+      "Ec66cf2f33ed7": "E3de9412cb2c1"
+    },
+    "E18c4ab1e1ce0": {
+      "Ec66cf2f33ed7": "E591b0d96cbce"
+    },
+    "E5a4bbc4faf1f": {
+      "Ec66cf2f33ed7": "Ee3d844cbf44f"
+    }
+  }
+}
+
+##### ID DOM_VAULT_STRICTBOTH_11 #####
+JOIN_QUERY
+START E15147aee6fb9
+R1 Eb74d7068d8c9
+R2 Ec66cf2f33ed7
+Execute the two-hop join; return final tail only.
+
+QUESTION:
+Ec32973dd80f6 E32a3a1e37dcc Ea9284c257186 E979e5f3d698a Ebc1f2dc49393 E3cf7aa09225b Ea9284c257186 Eb74d7068d8c9 Ee7b3d3e34868 E16d6b6273ad8 E1efcf2366529 Edf900660e7d8 Ecf5df72ad6f1 E32a3a1e37dcc E831c1f1d34f2 E2800f0c72a9e?
+
+CONTEXT:
+{
+  "people": {
+    "E15147aee6fb9": {
+      "Eb74d7068d8c9": "Eb27b6add03d4"
+    },
+    "E17763e69c7e5": {
+      "Eb74d7068d8c9": "E3864f2c15482"
+    },
+    "E0d81b04e091c": {
+      "Eb74d7068d8c9": "Eb81e1f409a46"
+    }
+  },
+  "companies": {
+    "Eb27b6add03d4": {
+      "Ec66cf2f33ed7": "E5ee83207c12e"
+    },
+    "E3864f2c15482": {
+      "Ec66cf2f33ed7": "E832f4aeb7fe9"
+    },
+    "Eb81e1f409a46": {
+      "Ec66cf2f33ed7": "Ee3d844cbf44f"
+    }
+  }
+}

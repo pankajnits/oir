@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_171 #####
+QUESTION:
+What is the place of birth of the director of film Across The Great Divide (Film)?
+
+CONTEXT:
+The Happy Ending | director | Millard Webb
+Euphoria | performer | Usher
+Usher | place of birth | Dallas
+Stewart Raffill | place of birth | CF_TAIL_171_British
+Across the Great Divide | decoy_link_171 | decoy_mid_171
+Across the Great Divide | director | Stewart Raffill
+decoy_mid_171 | place of birth | British
+Millard Webb | spouse | Mary Eaton

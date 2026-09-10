@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM PLAIN_NL: English Q + plaintext KG. Gold is CF tail IN CONTEXT, not Wikipedia.
+
+##### ID OR_PLAINNL_4 #####
+QUESTION:
+Where was the father of Ștefan I. Nenițescu born?
+
+CONTEXT:
+Ștefan I. Nenițescu | father | Ioan S. Nenițescu
+Thomas Jefferson | director | Ken Burns
+Ioan S. Nenițescu | place of birth | CF_TAIL_4_Galai
+Grand Duke Kirill Vladimirovich of Russia | spouse | Princess Victoria Melita of Saxe-Coburg and Gotha
+Princess Victoria Melita of Saxe-Coburg and Gotha | cause of death | stroke
+decoy_mid_4 | place of birth | Galați
+Ken Burns | place of birth | Brooklyn
+Ștefan I. Nenițescu | decoy_link_4 | decoy_mid_4

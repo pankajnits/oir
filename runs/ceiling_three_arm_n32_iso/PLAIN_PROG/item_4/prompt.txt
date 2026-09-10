@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL32_PLAIN_4 #####
+PATH_QUERY
+START Marcel_de_Groot
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Marcel_de_Groot | works_at | Vodafone_Germany
+Vodafone_Germany | headquartered_in | VodafoneCampus
+DecoyCo_Vodafone_Germany | headquartered_in | DecoyHQ_VodafoneCampus
+Vodafone_Germany | owned_by | Hold_Vodafone_Germany
+Hold_Vodafone_Germany | meta_of | Vodafone_Germany
+Vodafone_Germany | partner_of | Partner_Vodafone_Germany
+Partner_Vodafone_Germany | meta_of | Vodafone_Germany
+Decoy_DecoyCo_Vodafone_Germany | works_at | DecoyCo_Vodafone_Germany

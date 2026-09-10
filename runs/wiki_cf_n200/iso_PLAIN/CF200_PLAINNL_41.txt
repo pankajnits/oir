@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_41 #####
+QUESTION:
+What is the place of birth of John Tzelepes Komnenos's father?
+
+CONTEXT:
+Henry V | place of death | Brunswick
+John Komnenos | father | Isaac Komnenos
+Agnes of Hohenstaufen | spouse | Henry V
+FLMNE | founded by | Jean-Pierre Willem
+John Komnenos | decoy_link_41 | decoy_mid_41
+Jean-Pierre Willem | place of birth | Sedan
+Isaac Komnenos | place of birth | CF_TAIL_41_Constantinop
+decoy_mid_41 | place of birth | Constantinople

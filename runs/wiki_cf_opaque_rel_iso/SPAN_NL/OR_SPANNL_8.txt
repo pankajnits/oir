@@ -1,0 +1,20 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+Answer EVERY ID. If ambiguous, UNKNOWN.
+
+ARM SPAN_NL: entity-span seals; RELATIONS in CONTEXT are opaque. No PATH, no legend.
+
+##### ID OR_SPANNL_8 #####
+English question (entity spans sealed). Graph relations are opaque HMAC tokens.
+QUESTION:
+When did Eff903cba9963 (Singer)'s husband die?
+
+CONTEXT:
+Ed18f1d8de87b | E19650717cd28 | E3fb39a15ac07
+E3245290af502 | E00994e72c067 | E4f2cbd3f9f3b
+E3b267bb4be30 | E0b35ff5b0c7b | Ed18f1d8de87b
+E304498a0fa53 | Eb001700916b5 | Ed02558bd289f
+Eb272237d4ca3 | Eb001700916b5 | E214cb8d51c53
+Eff903cba9963 | E19650717cd28 | Eb272237d4ca3
+Eff903cba9963 | E11267242d536 | E304498a0fa53
+Ee5be1dd83e1f | E0b35ff5b0c7b | E3245290af502

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_128 #####
+QUESTION:
+What is the place of birth of the director of film Must Love Dogs?
+
+CONTEXT:
+Must Love Dogs | decoy_link_128 | decoy_mid_128
+Kenneth Gyang | place of birth | Barkin Ladi
+Confusion Na Wa | director | Kenneth Gyang
+Delilah | educated at | City and Islington College
+Breathe | performer | Delilah
+Must Love Dogs | director | Gary David Goldberg
+Gary David Goldberg | place of birth | CF_TAIL_128_Brooklyn
+decoy_mid_128 | place of birth | Brooklyn

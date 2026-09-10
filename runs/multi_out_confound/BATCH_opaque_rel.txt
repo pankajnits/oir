@@ -1,0 +1,211 @@
+MODEL UNDER TEST. Answer EVERY ID.
+
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+
+##### ID MOC_G0_A_opaque_rel #####
+OPAQUE JOIN — no decryption.
+Handles:
+works_at=E308e973e973f
+located_in=E239d2b75798a
+Join works_at then located_in. Ignore owned_by/founded_in/partner_of. City seal only.
+
+QUESTION:
+E0b514dd936ad Eee85eaf515bf E209400d2b36f E49c18aee79ad E1e47b5d6de24 Ee32c53d5c45b Efd8bffb6f27f E308e973e973f? E3f412cab3130 E60c7879cb40c.
+
+CONTEXT:
+Efd8bffb6f27f | E308e973e973f | Eefc5631d2547
+Eefc5631d2547 | E9b10945753e8 | Ed35e4f4f1cb7
+Eefc5631d2547 | E9772587b2ee5 | Ec0b6f5f49716
+Eefc5631d2547 | E48ef9b81645b | Eedde9ed4649f
+Ebec3ec1fa5f8 | E9b10945753e8 | Ea58a1bf7adeb
+Ebec3ec1fa5f8 | E9772587b2ee5 | E40a1b3be389f
+Ebec3ec1fa5f8 | E48ef9b81645b | Eb7ca3911e80f
+E5ba4654e5129 | E308e973e973f | Ebec3ec1fa5f8
+Eefc5631d2547 | E239d2b75798a | E2441f389f5d0
+Ebec3ec1fa5f8 | E239d2b75798a | Ee63d523e786c
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID MOC_G0_B_opaque_rel #####
+OPAQUE JOIN — no decryption.
+Handles:
+works_at=E308e973e973f
+located_in=E239d2b75798a
+Join works_at then located_in. Ignore owned_by/founded_in/partner_of. City seal only.
+
+QUESTION:
+E0b514dd936ad Eee85eaf515bf E209400d2b36f E49c18aee79ad E1e47b5d6de24 Ee32c53d5c45b Efd8bffb6f27f E308e973e973f? E3f412cab3130 E60c7879cb40c.
+
+CONTEXT:
+Efd8bffb6f27f | E308e973e973f | Ebec3ec1fa5f8
+Eefc5631d2547 | E9b10945753e8 | Ed35e4f4f1cb7
+Eefc5631d2547 | E9772587b2ee5 | Ec0b6f5f49716
+Eefc5631d2547 | E48ef9b81645b | Eedde9ed4649f
+Ebec3ec1fa5f8 | E9b10945753e8 | Ea58a1bf7adeb
+Ebec3ec1fa5f8 | E9772587b2ee5 | E40a1b3be389f
+Ebec3ec1fa5f8 | E48ef9b81645b | Eb7ca3911e80f
+E5ba4654e5129 | E308e973e973f | Ebec3ec1fa5f8
+Eefc5631d2547 | E239d2b75798a | E2441f389f5d0
+Ebec3ec1fa5f8 | E239d2b75798a | Ee63d523e786c
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID MOC_G1_A_opaque_rel #####
+OPAQUE JOIN — no decryption.
+Handles:
+works_at=E308e973e973f
+located_in=E239d2b75798a
+Join works_at then located_in. Ignore owned_by/founded_in/partner_of. City seal only.
+
+QUESTION:
+E0b514dd936ad Eee85eaf515bf E209400d2b36f E49c18aee79ad E1e47b5d6de24 Ee32c53d5c45b Ee263609a3ec5 E308e973e973f? E3f412cab3130 E60c7879cb40c.
+
+CONTEXT:
+Ee263609a3ec5 | E308e973e973f | E6614f402850d
+E6614f402850d | E9b10945753e8 | E0c5a959151f5
+E6614f402850d | E9772587b2ee5 | E223b25e1b8ee
+E6614f402850d | E48ef9b81645b | E8cf2b266edd4
+E03efae89967f | E9b10945753e8 | E5297ce137fff
+E03efae89967f | E9772587b2ee5 | E369fef36d99f
+E03efae89967f | E48ef9b81645b | Eed3945f83895
+E2881a2ae99d7 | E308e973e973f | E03efae89967f
+E6614f402850d | E239d2b75798a | Ecda4babaedc9
+E03efae89967f | E239d2b75798a | E7075711ccce4
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID MOC_G1_B_opaque_rel #####
+OPAQUE JOIN — no decryption.
+Handles:
+works_at=E308e973e973f
+located_in=E239d2b75798a
+Join works_at then located_in. Ignore owned_by/founded_in/partner_of. City seal only.
+
+QUESTION:
+E0b514dd936ad Eee85eaf515bf E209400d2b36f E49c18aee79ad E1e47b5d6de24 Ee32c53d5c45b Ee263609a3ec5 E308e973e973f? E3f412cab3130 E60c7879cb40c.
+
+CONTEXT:
+Ee263609a3ec5 | E308e973e973f | E03efae89967f
+E6614f402850d | E9b10945753e8 | E0c5a959151f5
+E6614f402850d | E9772587b2ee5 | E223b25e1b8ee
+E6614f402850d | E48ef9b81645b | E8cf2b266edd4
+E03efae89967f | E9b10945753e8 | E5297ce137fff
+E03efae89967f | E9772587b2ee5 | E369fef36d99f
+E03efae89967f | E48ef9b81645b | Eed3945f83895
+E2881a2ae99d7 | E308e973e973f | E03efae89967f
+E6614f402850d | E239d2b75798a | Ecda4babaedc9
+E03efae89967f | E239d2b75798a | E7075711ccce4
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID MOC_G2_A_opaque_rel #####
+OPAQUE JOIN — no decryption.
+Handles:
+works_at=E308e973e973f
+located_in=E239d2b75798a
+Join works_at then located_in. Ignore owned_by/founded_in/partner_of. City seal only.
+
+QUESTION:
+E0b514dd936ad Eee85eaf515bf E209400d2b36f E49c18aee79ad E1e47b5d6de24 Ee32c53d5c45b E1b23bcee7aad E308e973e973f? E3f412cab3130 E60c7879cb40c.
+
+CONTEXT:
+E1b23bcee7aad | E308e973e973f | Ea9da431237c8
+Ea9da431237c8 | E9b10945753e8 | Ebfca9e29edb4
+Ea9da431237c8 | E9772587b2ee5 | Ee3f875c77b60
+Ea9da431237c8 | E48ef9b81645b | E405f8382ad0d
+Ed28f1c4abb9c | E9b10945753e8 | E33d2573c08fb
+Ed28f1c4abb9c | E9772587b2ee5 | E81b00b677f3e
+Ed28f1c4abb9c | E48ef9b81645b | Eff355c9257b9
+E72029caf1b38 | E308e973e973f | Ed28f1c4abb9c
+Ea9da431237c8 | E239d2b75798a | Ea2dbdfdfb716
+Ed28f1c4abb9c | E239d2b75798a | E16eb97a637e0
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID MOC_G2_B_opaque_rel #####
+OPAQUE JOIN — no decryption.
+Handles:
+works_at=E308e973e973f
+located_in=E239d2b75798a
+Join works_at then located_in. Ignore owned_by/founded_in/partner_of. City seal only.
+
+QUESTION:
+E0b514dd936ad Eee85eaf515bf E209400d2b36f E49c18aee79ad E1e47b5d6de24 Ee32c53d5c45b E1b23bcee7aad E308e973e973f? E3f412cab3130 E60c7879cb40c.
+
+CONTEXT:
+E1b23bcee7aad | E308e973e973f | Ed28f1c4abb9c
+Ea9da431237c8 | E9b10945753e8 | Ebfca9e29edb4
+Ea9da431237c8 | E9772587b2ee5 | Ee3f875c77b60
+Ea9da431237c8 | E48ef9b81645b | E405f8382ad0d
+Ed28f1c4abb9c | E9b10945753e8 | E33d2573c08fb
+Ed28f1c4abb9c | E9772587b2ee5 | E81b00b677f3e
+Ed28f1c4abb9c | E48ef9b81645b | Eff355c9257b9
+E72029caf1b38 | E308e973e973f | Ed28f1c4abb9c
+Ea9da431237c8 | E239d2b75798a | Ea2dbdfdfb716
+Ed28f1c4abb9c | E239d2b75798a | E16eb97a637e0
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID MOC_G3_A_opaque_rel #####
+OPAQUE JOIN — no decryption.
+Handles:
+works_at=E308e973e973f
+located_in=E239d2b75798a
+Join works_at then located_in. Ignore owned_by/founded_in/partner_of. City seal only.
+
+QUESTION:
+E0b514dd936ad Eee85eaf515bf E209400d2b36f E49c18aee79ad E1e47b5d6de24 Ee32c53d5c45b E2aa90fff1f69 E308e973e973f? E3f412cab3130 E60c7879cb40c.
+
+CONTEXT:
+E2aa90fff1f69 | E308e973e973f | Efeb725527c9f
+Efeb725527c9f | E9b10945753e8 | E4e12baace34c
+Efeb725527c9f | E9772587b2ee5 | E5e0c0c6e3b02
+Efeb725527c9f | E48ef9b81645b | Ef5db81721013
+Ec16f68f7d551 | E9b10945753e8 | E7fb951cd1a62
+Ec16f68f7d551 | E9772587b2ee5 | E135776d91bcd
+Ec16f68f7d551 | E48ef9b81645b | Eceb735305d85
+Ed6eb8ee642c9 | E308e973e973f | Ec16f68f7d551
+Efeb725527c9f | E239d2b75798a | Ede037d28ef54
+Ec16f68f7d551 | E239d2b75798a | E94e4570f1d9c
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+
+
+
+##### ID MOC_G3_B_opaque_rel #####
+OPAQUE JOIN — no decryption.
+Handles:
+works_at=E308e973e973f
+located_in=E239d2b75798a
+Join works_at then located_in. Ignore owned_by/founded_in/partner_of. City seal only.
+
+QUESTION:
+E0b514dd936ad Eee85eaf515bf E209400d2b36f E49c18aee79ad E1e47b5d6de24 Ee32c53d5c45b E2aa90fff1f69 E308e973e973f? E3f412cab3130 E60c7879cb40c.
+
+CONTEXT:
+E2aa90fff1f69 | E308e973e973f | Ec16f68f7d551
+Efeb725527c9f | E9b10945753e8 | E4e12baace34c
+Efeb725527c9f | E9772587b2ee5 | E5e0c0c6e3b02
+Efeb725527c9f | E48ef9b81645b | Ef5db81721013
+Ec16f68f7d551 | E9b10945753e8 | E7fb951cd1a62
+Ec16f68f7d551 | E9772587b2ee5 | E135776d91bcd
+Ec16f68f7d551 | E48ef9b81645b | Eceb735305d85
+Ed6eb8ee642c9 | E308e973e973f | Ec16f68f7d551
+Efeb725527c9f | E239d2b75798a | Ede037d28ef54
+Ec16f68f7d551 | E239d2b75798a | E94e4570f1d9c
+
+Reply: ANSWER_SEALED: <seal> OR UNKNOWN
+

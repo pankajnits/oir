@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_24]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_24 #####
+QUESTION:
+What city is the headquarters of the company led by Freddy_Heineken?
+
+PATH_QUERY
+START Freddy_Heineken
+R1 E73b2f0c889dd
+R2 E138e76482d92
+Execute path; return final tail only.
+
+CONTEXT:
+Freddy_Heineken | E73b2f0c889dd | Heineken_International
+Heineken_International | E138e76482d92 | Amsterdam
+Freddy_Heineken | E3cd7d42432dc | The_Walt_Disney_Company
+The_Walt_Disney_Company | Eca7965332eb3 | Burbank

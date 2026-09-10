@@ -1,0 +1,1055 @@
+{
+  "n": 12,
+  "key_note": "oir-synonym-enrich-v1",
+  "claim": "Test whether synonym enrichment before sealing restores multi-hop; CANON injects graph relation atoms; SYN uses free synonyms.",
+  "paths": {
+    "RAW": "runs/synonym_enrich/RAW_ONLY/BATCH.txt",
+    "SYN": "runs/synonym_enrich/SYN_ONLY/BATCH.txt",
+    "CANON": "runs/synonym_enrich/CANON_ONLY/BATCH.txt",
+    "PROG": "runs/synonym_enrich/PROG_ONLY/BATCH.txt",
+    "SYN_LIVE": "runs/synonym_enrich/SYN_LIVE_ONLY/BATCH.txt"
+  },
+  "cases": [
+    {
+      "id": "SYNENR_RAW_0",
+      "form": "RAW",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "company": "Allianz_pojiovna",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Eefd6c78ded84",
+      "q_clear": "Where is the headquarters of the company that Jakub Strnad works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E8d866844ecc0 E397acddc59b1 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_0",
+      "form": "SYN",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "company": "Allianz_pojiovna",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Eefd6c78ded84",
+      "q_clear": "In which city is the employer of Jakub Strnad based?",
+      "q_sealed": "Ee3914cd8f4cf Ec48aa06e1a04 E666f9bcd565b E247714a8b224 E5c464c6324a2 E6cd50a0b4815 Ec89b393c6bac E8d866844ecc0 E397acddc59b1 E0d83dcf27933?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_0",
+      "form": "CANON",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "company": "Allianz_pojiovna",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Eefd6c78ded84",
+      "q_clear": "Where is the company headquartered_in that Jakub_Strnad works_at?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E5fd1d715a936 Ef30c328ca2f5 E4c3f8b3766bf E9583b9cf616d Ee7e760d75ba8?",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_0",
+      "form": "PROG",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "company": "Allianz_pojiovna",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Eefd6c78ded84",
+      "q_clear": "PATH_QUERY\nSTART E9583b9cf616d\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_1",
+      "form": "RAW",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "company": "Dollar_Tree",
+      "hq": "Chesapeake",
+      "expect": "E802c38d3e59d",
+      "company_seal": "Ee4319a7fea7e",
+      "q_clear": "Where is the headquarters of the company that Macon Foscue Brock Jr works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E6fb75f98df3c E44ec6309cf75 Ef8c851e0fe9e Eeab096734754 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_1",
+      "form": "SYN",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "company": "Dollar_Tree",
+      "hq": "Chesapeake",
+      "expect": "E802c38d3e59d",
+      "company_seal": "Ee4319a7fea7e",
+      "q_clear": "What is the head-office location of the firm where Macon Foscue Brock Jr works?",
+      "q_sealed": "E4cebd48acc05 E247714a8b224 E5c464c6324a2 E6617446f294d Ecfa5b7027c25 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 Eb2d5bf1b42f0 E6fb75f98df3c E44ec6309cf75 Ef8c851e0fe9e Eeab096734754 Eea69612436ef?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_1",
+      "form": "CANON",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "company": "Dollar_Tree",
+      "hq": "Chesapeake",
+      "expect": "E802c38d3e59d",
+      "company_seal": "Ee4319a7fea7e",
+      "q_clear": "Find headquartered_in of the firm Macon_Foscue_Brock_Jr works_at.",
+      "q_sealed": "Ebeae4e298f7b Ef30c328ca2f5 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 E90a23113a6e6 E2cf2eba218f0",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_1",
+      "form": "PROG",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "company": "Dollar_Tree",
+      "hq": "Chesapeake",
+      "expect": "E802c38d3e59d",
+      "company_seal": "Ee4319a7fea7e",
+      "q_clear": "PATH_QUERY\nSTART E90a23113a6e6\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_2",
+      "form": "RAW",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "Where is the headquarters of the company that Landon H Rowland works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E66c34aef9184 Eb632ecf252dc Edf3410ef027a Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_2",
+      "form": "SYN",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "Find the HQ city for Landon H Rowland's organization.",
+      "q_sealed": "Ebeae4e298f7b E5c464c6324a2 E4ca9540512e3 E666f9bcd565b Ebf1bc0618c8e E66c34aef9184 Eb632ecf252dc Edf3410ef027a'Ee567f20278c2 E9bffbc2ce9a9",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_2",
+      "form": "CANON",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "Where is the company headquartered_in that Landon_H_Rowland works_at?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E5fd1d715a936 Ef30c328ca2f5 E4c3f8b3766bf Ee3202e8dde00 Ee7e760d75ba8?",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_2",
+      "form": "PROG",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "PATH_QUERY\nSTART Ee3202e8dde00\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_3",
+      "form": "RAW",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "Where is the headquarters of the company that Bob Chapek works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E5a87cfe4d736 E58d9ace2288a Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_3",
+      "form": "SYN",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "Where does the company that employs Bob Chapek have its headquarters?",
+      "q_sealed": "E6f77bac6c042 Eeaaf75f41917 E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E2e40dc03c294 E5a87cfe4d736 E58d9ace2288a E5af487a96384 E9c2a982ba7c8 E8bbb159a0b0d?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_3",
+      "form": "CANON",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "Find headquartered_in of the firm Bob_Chapek works_at.",
+      "q_sealed": "Ebeae4e298f7b Ef30c328ca2f5 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 Ee4b385dfefb0 E2cf2eba218f0",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_3",
+      "form": "PROG",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "PATH_QUERY\nSTART Ee4b385dfefb0\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_4",
+      "form": "RAW",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "company": "UniCredit_Bank_Czech_Republic_and_Slovakia",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Ed1935aad9a9a",
+      "q_clear": "Where is the headquarters of the company that Jakub Duslek works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E8d866844ecc0 E4040d58ab10c Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_4",
+      "form": "SYN",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "company": "UniCredit_Bank_Czech_Republic_and_Slovakia",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Ed1935aad9a9a",
+      "q_clear": "In which city is the employer of Jakub Duslek based?",
+      "q_sealed": "Ee3914cd8f4cf Ec48aa06e1a04 E666f9bcd565b E247714a8b224 E5c464c6324a2 E6cd50a0b4815 Ec89b393c6bac E8d866844ecc0 E4040d58ab10c E0d83dcf27933?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_4",
+      "form": "CANON",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "company": "UniCredit_Bank_Czech_Republic_and_Slovakia",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Ed1935aad9a9a",
+      "q_clear": "Where is the company headquartered_in that Jakub_Duslek works_at?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E5fd1d715a936 Ef30c328ca2f5 E4c3f8b3766bf E82b551e5ef5a Ee7e760d75ba8?",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_4",
+      "form": "PROG",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "company": "UniCredit_Bank_Czech_Republic_and_Slovakia",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Ed1935aad9a9a",
+      "q_clear": "PATH_QUERY\nSTART E82b551e5ef5a\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_5",
+      "form": "RAW",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "company": "Best_Buy",
+      "hq": "Richfield",
+      "expect": "E0745ecfbd8b5",
+      "company_seal": "Ef82dea737c5f",
+      "q_clear": "Where is the headquarters of the company that Hubert Joly works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf Ec31132854fc9 E20ab5a5e7370 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_5",
+      "form": "SYN",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "company": "Best_Buy",
+      "hq": "Richfield",
+      "expect": "E0745ecfbd8b5",
+      "company_seal": "Ef82dea737c5f",
+      "q_clear": "What is the head-office location of the firm where Hubert Joly works?",
+      "q_sealed": "E4cebd48acc05 E247714a8b224 E5c464c6324a2 E6617446f294d Ecfa5b7027c25 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 Eb2d5bf1b42f0 Ec31132854fc9 E20ab5a5e7370 Eea69612436ef?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_5",
+      "form": "CANON",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "company": "Best_Buy",
+      "hq": "Richfield",
+      "expect": "E0745ecfbd8b5",
+      "company_seal": "Ef82dea737c5f",
+      "q_clear": "Find headquartered_in of the firm Hubert_Joly works_at.",
+      "q_sealed": "Ebeae4e298f7b Ef30c328ca2f5 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 E0502a3912822 E2cf2eba218f0",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_5",
+      "form": "PROG",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "company": "Best_Buy",
+      "hq": "Richfield",
+      "expect": "E0745ecfbd8b5",
+      "company_seal": "Ef82dea737c5f",
+      "q_clear": "PATH_QUERY\nSTART E0502a3912822\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_6",
+      "form": "RAW",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "company": "Westdeutscher_Rundfunk",
+      "hq": "Cologne",
+      "expect": "E188c1df26da8",
+      "company_seal": "E80842cce7b98",
+      "q_clear": "Where is the headquarters of the company that Tom Buhrow works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E0f59e8dfcd41 Ecf753cf7bb84 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_6",
+      "form": "SYN",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "company": "Westdeutscher_Rundfunk",
+      "hq": "Cologne",
+      "expect": "E188c1df26da8",
+      "company_seal": "E80842cce7b98",
+      "q_clear": "Find the HQ city for Tom Buhrow's organization.",
+      "q_sealed": "Ebeae4e298f7b E5c464c6324a2 E4ca9540512e3 E666f9bcd565b Ebf1bc0618c8e E0f59e8dfcd41 Ecf753cf7bb84'Ee567f20278c2 E9bffbc2ce9a9",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_6",
+      "form": "CANON",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "company": "Westdeutscher_Rundfunk",
+      "hq": "Cologne",
+      "expect": "E188c1df26da8",
+      "company_seal": "E80842cce7b98",
+      "q_clear": "Where is the company headquartered_in that Tom_Buhrow works_at?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E5fd1d715a936 Ef30c328ca2f5 E4c3f8b3766bf E8fb622726ebc Ee7e760d75ba8?",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_6",
+      "form": "PROG",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "company": "Westdeutscher_Rundfunk",
+      "hq": "Cologne",
+      "expect": "E188c1df26da8",
+      "company_seal": "E80842cce7b98",
+      "q_clear": "PATH_QUERY\nSTART E8fb622726ebc\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_7",
+      "form": "RAW",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "company": "esk_drhy",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Edb742ffadf0e",
+      "q_clear": "Where is the headquarters of the company that Michal Krapinec works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf Ed773fc07ae82 Eb07358d8b2a2 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_7",
+      "form": "SYN",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "company": "esk_drhy",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Edb742ffadf0e",
+      "q_clear": "Where does the company that employs Michal Krapinec have its headquarters?",
+      "q_sealed": "E6f77bac6c042 Eeaaf75f41917 E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E2e40dc03c294 Ed773fc07ae82 Eb07358d8b2a2 E5af487a96384 E9c2a982ba7c8 E8bbb159a0b0d?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_7",
+      "form": "CANON",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "company": "esk_drhy",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Edb742ffadf0e",
+      "q_clear": "Find headquartered_in of the firm Michal_Krapinec works_at.",
+      "q_sealed": "Ebeae4e298f7b Ef30c328ca2f5 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 Eae141907a84b E2cf2eba218f0",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_7",
+      "form": "PROG",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "company": "esk_drhy",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Edb742ffadf0e",
+      "q_clear": "PATH_QUERY\nSTART Eae141907a84b\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_8",
+      "form": "RAW",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "company": "Canadian_Broadcasting_Corporation",
+      "hq": "Ottawa",
+      "expect": "E10b498dc9e62",
+      "company_seal": "Eb0417cf4685b",
+      "q_clear": "Where is the headquarters of the company that Catherine Tait works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E170a3cd8a034 E1606462b63ce Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_8",
+      "form": "SYN",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "company": "Canadian_Broadcasting_Corporation",
+      "hq": "Ottawa",
+      "expect": "E10b498dc9e62",
+      "company_seal": "Eb0417cf4685b",
+      "q_clear": "In which city is the employer of Catherine Tait based?",
+      "q_sealed": "Ee3914cd8f4cf Ec48aa06e1a04 E666f9bcd565b E247714a8b224 E5c464c6324a2 E6cd50a0b4815 Ec89b393c6bac E170a3cd8a034 E1606462b63ce E0d83dcf27933?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_8",
+      "form": "CANON",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "company": "Canadian_Broadcasting_Corporation",
+      "hq": "Ottawa",
+      "expect": "E10b498dc9e62",
+      "company_seal": "Eb0417cf4685b",
+      "q_clear": "Where is the company headquartered_in that Catherine_Tait works_at?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E5fd1d715a936 Ef30c328ca2f5 E4c3f8b3766bf E2f10153f85d7 Ee7e760d75ba8?",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_8",
+      "form": "PROG",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "company": "Canadian_Broadcasting_Corporation",
+      "hq": "Ottawa",
+      "expect": "E10b498dc9e62",
+      "company_seal": "Eb0417cf4685b",
+      "q_clear": "PATH_QUERY\nSTART E2f10153f85d7\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_9",
+      "form": "RAW",
+      "i": 9,
+      "person": "Achim_Wei",
+      "company": "Ionos",
+      "hq": "Montabaur",
+      "expect": "E33a6a278d2bd",
+      "company_seal": "E8ba53416afeb",
+      "q_clear": "Where is the headquarters of the company that Achim Wei works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E35a5ac440a15 Ed4b32226fd52 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_9",
+      "form": "SYN",
+      "i": 9,
+      "person": "Achim_Wei",
+      "company": "Ionos",
+      "hq": "Montabaur",
+      "expect": "E33a6a278d2bd",
+      "company_seal": "E8ba53416afeb",
+      "q_clear": "What is the head-office location of the firm where Achim Wei works?",
+      "q_sealed": "E4cebd48acc05 E247714a8b224 E5c464c6324a2 E6617446f294d Ecfa5b7027c25 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 Eb2d5bf1b42f0 E35a5ac440a15 Ed4b32226fd52 Eea69612436ef?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_9",
+      "form": "CANON",
+      "i": 9,
+      "person": "Achim_Wei",
+      "company": "Ionos",
+      "hq": "Montabaur",
+      "expect": "E33a6a278d2bd",
+      "company_seal": "E8ba53416afeb",
+      "q_clear": "Find headquartered_in of the firm Achim_Wei works_at.",
+      "q_sealed": "Ebeae4e298f7b Ef30c328ca2f5 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 E7cc99862f0f8 E2cf2eba218f0",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_9",
+      "form": "PROG",
+      "i": 9,
+      "person": "Achim_Wei",
+      "company": "Ionos",
+      "hq": "Montabaur",
+      "expect": "E33a6a278d2bd",
+      "company_seal": "E8ba53416afeb",
+      "q_clear": "PATH_QUERY\nSTART E7cc99862f0f8\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_10",
+      "form": "RAW",
+      "i": 10,
+      "person": "Walt_Disney",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "Where is the headquarters of the company that Walt Disney works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf Ec6119a942780 E98a8c13ab137 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_10",
+      "form": "SYN",
+      "i": 10,
+      "person": "Walt_Disney",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "Find the HQ city for Walt Disney's organization.",
+      "q_sealed": "Ebeae4e298f7b E5c464c6324a2 E4ca9540512e3 E666f9bcd565b Ebf1bc0618c8e Ec6119a942780 E98a8c13ab137'Ee567f20278c2 E9bffbc2ce9a9",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_10",
+      "form": "CANON",
+      "i": 10,
+      "person": "Walt_Disney",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "Where is the company headquartered_in that Walt_Disney works_at?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E5fd1d715a936 Ef30c328ca2f5 E4c3f8b3766bf E9e823b4f1f70 Ee7e760d75ba8?",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_10",
+      "form": "PROG",
+      "i": 10,
+      "person": "Walt_Disney",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "PATH_QUERY\nSTART E9e823b4f1f70\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_RAW_11",
+      "form": "RAW",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "Where is the headquarters of the company that William N Deramus IV works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E3d87dbae393e E7db7a68da640 Ecf69311788ba E93ba1efdff32 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_11",
+      "form": "SYN",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "Where does the company that employs William N Deramus IV have its headquarters?",
+      "q_sealed": "E6f77bac6c042 Eeaaf75f41917 E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E2e40dc03c294 E3d87dbae393e E7db7a68da640 Ecf69311788ba E93ba1efdff32 E5af487a96384 E9c2a982ba7c8 E8bbb159a0b0d?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_CANON_11",
+      "form": "CANON",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "Find headquartered_in of the firm William_N_Deramus_IV works_at.",
+      "q_sealed": "Ebeae4e298f7b Ef30c328ca2f5 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 E2fe3a78e2224 E2cf2eba218f0",
+      "relation_atoms_in_q": {
+        "works_at": true,
+        "headquartered_in": true
+      }
+    },
+    {
+      "id": "SYNENR_PROG_11",
+      "form": "PROG",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "PATH_QUERY\nSTART E2fe3a78e2224\nR1 Ee7e760d75ba8\nR2 Ef30c328ca2f5\nExecute path; return final tail only."
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_0",
+      "form": "SYN_LIVE",
+      "i": 0,
+      "person": "Jakub_Strnad",
+      "company": "Allianz_pojiovna",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Eefd6c78ded84",
+      "q_clear": "In which city is the main office of the organization that employs Jakub Strnad?",
+      "q_sealed": "Ee3914cd8f4cf Ec48aa06e1a04 E666f9bcd565b E247714a8b224 E5c464c6324a2 E6aaf31fbe6d4 Ed5b509fa4080 Ec89b393c6bac E5c464c6324a2 E428a11ada92e E4c3f8b3766bf E2e40dc03c294 E8d866844ecc0 E397acddc59b1?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_1",
+      "form": "SYN_LIVE",
+      "i": 1,
+      "person": "Macon_Foscue_Brock_Jr",
+      "company": "Dollar_Tree",
+      "hq": "Chesapeake",
+      "expect": "E802c38d3e59d",
+      "company_seal": "Ee4319a7fea7e",
+      "q_clear": "What city is home to the corporate headquarters of the employer of Macon Foscue Brock Jr?",
+      "q_sealed": "E4cebd48acc05 E666f9bcd565b E247714a8b224 Eb84399784aad E6b1b15105633 E5c464c6324a2 E023aab4d6956 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E6cd50a0b4815 Ec89b393c6bac E6fb75f98df3c E44ec6309cf75 Ef8c851e0fe9e Eeab096734754?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_2",
+      "form": "SYN_LIVE",
+      "i": 2,
+      "person": "Landon_H_Rowland",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "Where is the principal office located for the company that Landon H Rowland is employed by?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 Ea4272dae26d7 Ed5b509fa4080 Efa446d9d50ce Ebf1bc0618c8e E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E66c34aef9184 Eb632ecf252dc Edf3410ef027a E247714a8b224 E5ff0846def14 E167a85458fdd?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_3",
+      "form": "SYN_LIVE",
+      "i": 3,
+      "person": "Bob_Chapek",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "Which city serves as the head office for the firm where Bob Chapek is employed?",
+      "q_sealed": "E66368efa2a0e E666f9bcd565b E416dd94b2d56 E5d58e4236d11 E5c464c6324a2 E0a73ad841715 Ed5b509fa4080 Ebf1bc0618c8e E5c464c6324a2 Eb8523bf272c3 Eb2d5bf1b42f0 E5a87cfe4d736 E58d9ace2288a E247714a8b224 E5ff0846def14?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_4",
+      "form": "SYN_LIVE",
+      "i": 4,
+      "person": "Jakub_Duslek",
+      "company": "UniCredit_Bank_Czech_Republic_and_Slovakia",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Ed1935aad9a9a",
+      "q_clear": "What is the location of the central headquarters of the business that Jakub Duslek works for?",
+      "q_sealed": "E4cebd48acc05 E247714a8b224 E5c464c6324a2 Ecfa5b7027c25 Ec89b393c6bac E5c464c6324a2 E1f17f9ea5e32 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E8c3363419edb E4c3f8b3766bf E8d866844ecc0 E4040d58ab10c Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_5",
+      "form": "SYN_LIVE",
+      "i": 5,
+      "person": "Hubert_Joly",
+      "company": "Best_Buy",
+      "hq": "Richfield",
+      "expect": "E0745ecfbd8b5",
+      "company_seal": "Ef82dea737c5f",
+      "q_clear": "In what city is the main headquarters of Hubert Joly's employer?",
+      "q_sealed": "Ee3914cd8f4cf Ed0304077302c E666f9bcd565b E247714a8b224 E5c464c6324a2 E6aaf31fbe6d4 E8bbb159a0b0d Ec89b393c6bac Ec31132854fc9 E20ab5a5e7370'Ee567f20278c2 E6cd50a0b4815?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_6",
+      "form": "SYN_LIVE",
+      "i": 6,
+      "person": "Tom_Buhrow",
+      "company": "Westdeutscher_Rundfunk",
+      "hq": "Cologne",
+      "expect": "E188c1df26da8",
+      "company_seal": "E80842cce7b98",
+      "q_clear": "Where does the company that employs Tom Buhrow have its head office?",
+      "q_sealed": "E6f77bac6c042 Eeaaf75f41917 E5c464c6324a2 E5fd1d715a936 E4c3f8b3766bf E2e40dc03c294 E0f59e8dfcd41 Ecf753cf7bb84 E5af487a96384 E9c2a982ba7c8 E0a73ad841715 Ed5b509fa4080?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_7",
+      "form": "SYN_LIVE",
+      "i": 7,
+      "person": "Michal_Krapinec",
+      "company": "esk_drhy",
+      "hq": "Prague",
+      "expect": "E7b230b4969d0",
+      "company_seal": "Edb742ffadf0e",
+      "q_clear": "Which city contains the headquarters of the organization Michal Krapinec is employed by?",
+      "q_sealed": "E66368efa2a0e E666f9bcd565b Eb6d15f3cd194 E5c464c6324a2 E8bbb159a0b0d Ec89b393c6bac E5c464c6324a2 E428a11ada92e Ed773fc07ae82 Eb07358d8b2a2 E247714a8b224 E5ff0846def14 E167a85458fdd?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_8",
+      "form": "SYN_LIVE",
+      "i": 8,
+      "person": "Catherine_Tait",
+      "company": "Canadian_Broadcasting_Corporation",
+      "hq": "Ottawa",
+      "expect": "E10b498dc9e62",
+      "company_seal": "Eb0417cf4685b",
+      "q_clear": "What city is the corporate HQ located in for Catherine Tait's employer?",
+      "q_sealed": "E4cebd48acc05 E666f9bcd565b E247714a8b224 E5c464c6324a2 E023aab4d6956 E4ca9540512e3 Efa446d9d50ce Eb93ac25e8b8e Ebf1bc0618c8e E170a3cd8a034 E1606462b63ce'Ee567f20278c2 E6cd50a0b4815?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_9",
+      "form": "SYN_LIVE",
+      "i": 9,
+      "person": "Achim_Wei",
+      "company": "Ionos",
+      "hq": "Montabaur",
+      "expect": "E33a6a278d2bd",
+      "company_seal": "E8ba53416afeb",
+      "q_clear": "Where is the primary office of the firm that Achim Wei works for?",
+      "q_sealed": "E6f77bac6c042 E247714a8b224 E5c464c6324a2 E6fd28ecf0fca Ed5b509fa4080 Ec89b393c6bac E5c464c6324a2 Eb8523bf272c3 E4c3f8b3766bf E35a5ac440a15 Ed4b32226fd52 Eea69612436ef Ebf1bc0618c8e?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_10",
+      "form": "SYN_LIVE",
+      "i": 10,
+      "person": "Walt_Disney",
+      "company": "The_Walt_Disney_Company",
+      "hq": "Burbank",
+      "expect": "Ea627f2df46d0",
+      "company_seal": "Eaa3b248d2e5a",
+      "q_clear": "In which city is the head office of Walt Disney's employer situated?",
+      "q_sealed": "Ee3914cd8f4cf Ec48aa06e1a04 E666f9bcd565b E247714a8b224 E5c464c6324a2 E0a73ad841715 Ed5b509fa4080 Ec89b393c6bac Ec6119a942780 E98a8c13ab137'Ee567f20278c2 E6cd50a0b4815 E007af0710bea?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    },
+    {
+      "id": "SYNENR_SYN_LIVE_11",
+      "form": "SYN_LIVE",
+      "i": 11,
+      "person": "William_N_Deramus_IV",
+      "company": "Kansas_City_Southern",
+      "hq": "Kansas_City",
+      "expect": "E585b4a68a37b",
+      "company_seal": "Ef692561bb203",
+      "q_clear": "What is the headquarters city of the company employing William N Deramus IV?",
+      "q_sealed": "E4cebd48acc05 E247714a8b224 E5c464c6324a2 E8bbb159a0b0d E666f9bcd565b Ec89b393c6bac E5c464c6324a2 E5fd1d715a936 Eb2cadfdfead9 E3d87dbae393e E7db7a68da640 Ecf69311788ba E93ba1efdff32?",
+      "relation_atoms_in_q": {
+        "works_at": false,
+        "headquartered_in": false
+      }
+    }
+  ],
+  "rev": {
+    "E9583b9cf616d": "Jakub_Strnad",
+    "Ee7e760d75ba8": "works_at",
+    "Eefd6c78ded84": "Allianz_pojiovna",
+    "Ef30c328ca2f5": "headquartered_in",
+    "E7b230b4969d0": "Prague",
+    "E89df56ae96fa": "DecoyCo_Allianz_pojiovna",
+    "E1c80ad6de58f": "DecoyHQ_Prague",
+    "E820c12bb31ab": "owned_by",
+    "E3e3776aa5bbd": "Hold_Allianz_pojiovna",
+    "E76a70564eeb6": "meta_of",
+    "E6b1e17a6ffca": "partner_of",
+    "E38a81456fc6a": "Partner_Allianz_pojiovna",
+    "Ef380edeb670d": "Decoy_DecoyCo_Allianz_pojiovna",
+    "E6f77bac6c042": "Where",
+    "E247714a8b224": "is",
+    "E5c464c6324a2": "the",
+    "E8bbb159a0b0d": "headquarters",
+    "Ec89b393c6bac": "of",
+    "E5fd1d715a936": "company",
+    "E4c3f8b3766bf": "that",
+    "E8d866844ecc0": "Jakub",
+    "E397acddc59b1": "Strnad",
+    "Eea69612436ef": "works",
+    "Ebf1bc0618c8e": "for",
+    "Ee3914cd8f4cf": "In",
+    "Ec48aa06e1a04": "which",
+    "E666f9bcd565b": "city",
+    "E6cd50a0b4815": "employer",
+    "E0d83dcf27933": "based",
+    "E90a23113a6e6": "Macon_Foscue_Brock_Jr",
+    "Ee4319a7fea7e": "Dollar_Tree",
+    "E802c38d3e59d": "Chesapeake",
+    "E749a14f9c0a9": "DecoyCo_Dollar_Tree",
+    "Ee641a8a8e4a6": "DecoyHQ_Chesapeake",
+    "Ea348fe892d51": "Hold_Dollar_Tree",
+    "E84613e0f6004": "Partner_Dollar_Tree",
+    "E1ca93442ae97": "Decoy_DecoyCo_Dollar_Tree",
+    "E6fb75f98df3c": "Macon",
+    "E44ec6309cf75": "Foscue",
+    "Ef8c851e0fe9e": "Brock",
+    "Eeab096734754": "Jr",
+    "E4cebd48acc05": "What",
+    "E6617446f294d": "head-office",
+    "Ecfa5b7027c25": "location",
+    "Eb8523bf272c3": "firm",
+    "Eb2d5bf1b42f0": "where",
+    "Ebeae4e298f7b": "Find",
+    "E2cf2eba218f0": "works_at.",
+    "Ee3202e8dde00": "Landon_H_Rowland",
+    "Ef692561bb203": "Kansas_City_Southern",
+    "E585b4a68a37b": "Kansas_City",
+    "Ee6c77942d60b": "DecoyCo_Kansas_City_Southern",
+    "Efa2dd483b1e8": "DecoyHQ_Kansas_City",
+    "E1b78363ce25e": "Hold_Kansas_City_Southern",
+    "E2a4b19d4b92f": "Partner_Kansas_City_Southern",
+    "E9efdb93444a4": "Decoy_DecoyCo_Kansas_City_Southern",
+    "E66c34aef9184": "Landon",
+    "Eb632ecf252dc": "H",
+    "Edf3410ef027a": "Rowland",
+    "E4ca9540512e3": "HQ",
+    "Ee567f20278c2": "s",
+    "E9bffbc2ce9a9": "organization.",
+    "Ee4b385dfefb0": "Bob_Chapek",
+    "Eaa3b248d2e5a": "The_Walt_Disney_Company",
+    "Ea627f2df46d0": "Burbank",
+    "E73218f456cd6": "DecoyCo_The_Walt_Disney_Company",
+    "E3ec8787bf09a": "DecoyHQ_Burbank",
+    "E96f09c05c66a": "Hold_The_Walt_Disney_Company",
+    "Ea98348cbd3bb": "Partner_The_Walt_Disney_Company",
+    "E0b2910012bde": "Decoy_DecoyCo_The_Walt_Disney_Company",
+    "E5a87cfe4d736": "Bob",
+    "E58d9ace2288a": "Chapek",
+    "Eeaaf75f41917": "does",
+    "E2e40dc03c294": "employs",
+    "E5af487a96384": "have",
+    "E9c2a982ba7c8": "its",
+    "E82b551e5ef5a": "Jakub_Duslek",
+    "Ed1935aad9a9a": "UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "E5c1ae2880619": "DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "Ee53dbbfb9404": "Hold_UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "Ebe619403e1f4": "Partner_UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "E1da5cb2581d5": "Decoy_DecoyCo_UniCredit_Bank_Czech_Republic_and_Slovakia",
+    "E4040d58ab10c": "Duslek",
+    "E0502a3912822": "Hubert_Joly",
+    "Ef82dea737c5f": "Best_Buy",
+    "E0745ecfbd8b5": "Richfield",
+    "E1b875fe79420": "DecoyCo_Best_Buy",
+    "E1c3c32e05a68": "DecoyHQ_Richfield",
+    "E71af34dd69af": "Hold_Best_Buy",
+    "E4d957c4755b8": "Partner_Best_Buy",
+    "E2ad1dd2b73fb": "Decoy_DecoyCo_Best_Buy",
+    "Ec31132854fc9": "Hubert",
+    "E20ab5a5e7370": "Joly",
+    "E8fb622726ebc": "Tom_Buhrow",
+    "E80842cce7b98": "Westdeutscher_Rundfunk",
+    "E188c1df26da8": "Cologne",
+    "E73179e721c9c": "DecoyCo_Westdeutscher_Rundfunk",
+    "Ebbcb0f6be6bc": "DecoyHQ_Cologne",
+    "Ecc63ee6b8445": "Hold_Westdeutscher_Rundfunk",
+    "Ef02528d1dd55": "Partner_Westdeutscher_Rundfunk",
+    "E7057d02bd2d4": "Decoy_DecoyCo_Westdeutscher_Rundfunk",
+    "E0f59e8dfcd41": "Tom",
+    "Ecf753cf7bb84": "Buhrow",
+    "Eae141907a84b": "Michal_Krapinec",
+    "Edb742ffadf0e": "esk_drhy",
+    "E61ed69dc7e7f": "DecoyCo_esk_drhy",
+    "Ea8eb7533906f": "Hold_esk_drhy",
+    "Ea0e97975933a": "Partner_esk_drhy",
+    "E32c7a6d0230e": "Decoy_DecoyCo_esk_drhy",
+    "Ed773fc07ae82": "Michal",
+    "Eb07358d8b2a2": "Krapinec",
+    "E2f10153f85d7": "Catherine_Tait",
+    "Eb0417cf4685b": "Canadian_Broadcasting_Corporation",
+    "E10b498dc9e62": "Ottawa",
+    "Ef03466e4540b": "DecoyCo_Canadian_Broadcasting_Corporation",
+    "Ea641749f51e3": "DecoyHQ_Ottawa",
+    "E99b0713a50fe": "Hold_Canadian_Broadcasting_Corporation",
+    "Ef9bf873641e0": "Partner_Canadian_Broadcasting_Corporation",
+    "E8f37ed9a3485": "Decoy_DecoyCo_Canadian_Broadcasting_Corporation",
+    "E170a3cd8a034": "Catherine",
+    "E1606462b63ce": "Tait",
+    "E7cc99862f0f8": "Achim_Wei",
+    "E8ba53416afeb": "Ionos",
+    "E33a6a278d2bd": "Montabaur",
+    "E470f5e6676d5": "DecoyCo_Ionos",
+    "E952a8d2ed271": "DecoyHQ_Montabaur",
+    "E62f3e8dabf7a": "Hold_Ionos",
+    "E5367920c55cb": "Partner_Ionos",
+    "E601d387d9ccc": "Decoy_DecoyCo_Ionos",
+    "E35a5ac440a15": "Achim",
+    "Ed4b32226fd52": "Wei",
+    "E9e823b4f1f70": "Walt_Disney",
+    "Ec6119a942780": "Walt",
+    "E98a8c13ab137": "Disney",
+    "E2fe3a78e2224": "William_N_Deramus_IV",
+    "E3d87dbae393e": "William",
+    "E7db7a68da640": "N",
+    "Ecf69311788ba": "Deramus",
+    "E93ba1efdff32": "IV"
+  }
+}

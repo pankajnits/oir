@@ -1,0 +1,1162 @@
+{
+  "model": "gpt56",
+  "n": 32,
+  "protocol": "isolation",
+  "start_in_question": true,
+  "source": "WikiMovies kb (MetaQA movie graph)",
+  "summary": {
+    "ENG_UNIQUE": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "ENG_AMBIG": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_UNIQUE": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_AMBIG": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_AMBIG_PLAN": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_0",
+      "gold": "Comedy, Action",
+      "pred": "Comedy, Action",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_1",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_2",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_3",
+      "gold": "Short",
+      "pred": "Short",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_4",
+      "gold": "Drama, Fantasy, War",
+      "pred": "Drama, Fantasy, War",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_5",
+      "gold": "Action, Thriller",
+      "pred": "Action, Thriller",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_6",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_7",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_8",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_9",
+      "gold": "Drama, Mystery",
+      "pred": "Drama, Mystery",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_10",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_11",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_12",
+      "gold": "Documentary",
+      "pred": "Documentary",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_13",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_14",
+      "gold": "Drama, Romance",
+      "pred": "Drama, Romance",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_15",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_16",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_17",
+      "gold": "Drama, War",
+      "pred": "Drama, War",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_18",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_19",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_20",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_21",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_22",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_23",
+      "gold": "Comedy, Animation",
+      "pred": "Comedy, Animation",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_24",
+      "gold": "Animation",
+      "pred": "Animation",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_25",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_26",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_27",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_28",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_29",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_30",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "MQA_ENG_UNIQUE_31",
+      "gold": "Action",
+      "pred": "Action",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_0",
+      "gold": "Comedy, Action",
+      "pred": "Comedy, Action",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_1",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_2",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_3",
+      "gold": "Short",
+      "pred": "Short",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_4",
+      "gold": "Drama, Fantasy, War",
+      "pred": "Drama, Fantasy, War",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_5",
+      "gold": "Action, Thriller",
+      "pred": "Action, Thriller",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_6",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_7",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_8",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_9",
+      "gold": "Drama, Mystery",
+      "pred": "Drama, Mystery",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_10",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_11",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_12",
+      "gold": "Documentary",
+      "pred": "Documentary",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_13",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_14",
+      "gold": "Drama, Romance",
+      "pred": "Drama, Romance",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_15",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_16",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_17",
+      "gold": "Drama, War",
+      "pred": "Drama, War",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_18",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_19",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_20",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_21",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_22",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_23",
+      "gold": "Comedy, Animation",
+      "pred": "Comedy, Animation",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_24",
+      "gold": "Animation",
+      "pred": "Animation",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_25",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_26",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_27",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_28",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_29",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_30",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "MQA_ENG_AMBIG_31",
+      "gold": "Action",
+      "pred": "Action",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_0",
+      "gold": "Comedy, Action",
+      "pred": "Comedy, Action",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_1",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_2",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_3",
+      "gold": "Short",
+      "pred": "Short",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_4",
+      "gold": "Drama, Fantasy, War",
+      "pred": "Drama, Fantasy, War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_5",
+      "gold": "Action, Thriller",
+      "pred": "Action, Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_6",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_7",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_8",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_9",
+      "gold": "Drama, Mystery",
+      "pred": "Drama, Mystery",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_10",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_11",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_12",
+      "gold": "Documentary",
+      "pred": "Documentary",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_13",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_14",
+      "gold": "Drama, Romance",
+      "pred": "Drama, Romance",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_15",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_16",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_17",
+      "gold": "Drama, War",
+      "pred": "Drama, War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_18",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_19",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_20",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_21",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_22",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_23",
+      "gold": "Comedy, Animation",
+      "pred": "Comedy, Animation",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_24",
+      "gold": "Animation",
+      "pred": "Animation",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_25",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_26",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_27",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_28",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_29",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_30",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "MQA_OPAQUE_UNIQUE_31",
+      "gold": "Action",
+      "pred": "Action",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_0",
+      "gold": "Comedy, Action",
+      "pred": "Comedy, Action",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_1",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_2",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_3",
+      "gold": "Short",
+      "pred": "Short",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_4",
+      "gold": "Drama, Fantasy, War",
+      "pred": "Drama, Fantasy, War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_5",
+      "gold": "Action, Thriller",
+      "pred": "Action, Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_6",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_7",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_8",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_9",
+      "gold": "Drama, Mystery",
+      "pred": "Drama, Mystery",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_10",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_11",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_12",
+      "gold": "Documentary",
+      "pred": "Documentary",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_13",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_14",
+      "gold": "Drama, Romance",
+      "pred": "Drama, Romance",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_15",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_16",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_17",
+      "gold": "Drama, War",
+      "pred": "Drama, War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_18",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_19",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_20",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_21",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_22",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_23",
+      "gold": "Comedy, Animation",
+      "pred": "Comedy, Animation",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_24",
+      "gold": "Animation",
+      "pred": "Animation",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_25",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_26",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_27",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_28",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_29",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_30",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "MQA_OPAQUE_AMBIG_31",
+      "gold": "Action",
+      "pred": "Action",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_0",
+      "gold": "Comedy, Action",
+      "pred": "Comedy, Action",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_1",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_2",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_3",
+      "gold": "Short",
+      "pred": "Short",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_4",
+      "gold": "Drama, Fantasy, War",
+      "pred": "Drama, Fantasy, War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_5",
+      "gold": "Action, Thriller",
+      "pred": "Action, Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_6",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_7",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_8",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_9",
+      "gold": "Drama, Mystery",
+      "pred": "Drama, Mystery",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_10",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_11",
+      "gold": "Thriller",
+      "pred": "Thriller",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_12",
+      "gold": "Documentary",
+      "pred": "Documentary",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_13",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_14",
+      "gold": "Drama, Romance",
+      "pred": "Drama, Romance",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_15",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_16",
+      "gold": "War",
+      "pred": "War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_17",
+      "gold": "Drama, War",
+      "pred": "Drama, War",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_18",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_19",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_20",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_21",
+      "gold": "Horror",
+      "pred": "Horror",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_22",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_23",
+      "gold": "Comedy, Animation",
+      "pred": "Comedy, Animation",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_24",
+      "gold": "Animation",
+      "pred": "Animation",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_25",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_26",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_27",
+      "gold": "Comedy",
+      "pred": "Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_28",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_29",
+      "gold": "Drama, Comedy",
+      "pred": "Drama, Comedy",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_30",
+      "gold": "Drama",
+      "pred": "Drama",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "MQA_OPAQUE_AMBIG_PLAN_31",
+      "gold": "Action",
+      "pred": "Action",
+      "ok": true
+    }
+  ],
+  "reply_dir": "results/metaqa_2x2_iso_harness_replies_gpt56"
+}

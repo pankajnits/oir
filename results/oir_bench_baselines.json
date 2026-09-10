@@ -1,0 +1,205 @@
+{
+  "wiki_cf_n200": {
+    "n": 200,
+    "BM25_PLAIN": {
+      "score": "6/200",
+      "wilson": {
+        "k": 6,
+        "n": 200,
+        "acc": 0.03,
+        "ci95": [
+          0.0138,
+          0.0639
+        ],
+        "display": "6/200 [0.01,0.06]"
+      },
+      "wiki_leak": "75/200"
+    },
+    "BM25_SEAL": {
+      "score": "23/200",
+      "wilson": {
+        "k": 23,
+        "n": 200,
+        "acc": 0.115,
+        "ci95": [
+          0.0779,
+          0.1666
+        ],
+        "display": "23/200 [0.08,0.17]"
+      }
+    },
+    "SEALROUTER": {
+      "score": "200/200",
+      "wilson": {
+        "k": 200,
+        "n": 200,
+        "acc": 1.0,
+        "ci95": [
+          0.9812,
+          1.0
+        ],
+        "display": "200/200 [0.98,1.00]"
+      }
+    },
+    "note": "BM25_PLAIN may use English relation unigrams; BM25_SEAL is lexical IR over HMAC (expected floor)."
+  },
+  "spider_n200": {
+    "n": 200,
+    "SQLITE_ORIG": {
+      "score": "200/200",
+      "wilson": {
+        "k": 200,
+        "n": 200,
+        "acc": 1.0,
+        "ci95": [
+          0.9812,
+          1.0
+        ],
+        "display": "200/200 [0.98,1.00]"
+      }
+    },
+    "ENGINE_GOLD": {
+      "score": "191/200",
+      "wilson": {
+        "k": 191,
+        "n": 200,
+        "acc": 0.955,
+        "ci95": [
+          0.9167,
+          0.9761
+        ],
+        "display": "191/200 [0.92,0.98]"
+      }
+    },
+    "BM25_ROW": {
+      "score": "1/200",
+      "wilson": {
+        "k": 1,
+        "n": 200,
+        "acc": 0.005,
+        "ci95": [
+          0.0009,
+          0.0278
+        ],
+        "display": "1/200 [0.00,0.03]"
+      }
+    },
+    "SCHEMA_LINK": {
+      "score": "5/200",
+      "wilson": {
+        "k": 5,
+        "n": 200,
+        "acc": 0.025,
+        "ci95": [
+          0.0107,
+          0.0572
+        ],
+        "display": "5/200 [0.01,0.06]"
+      }
+    },
+    "engine_fail_n": 9,
+    "engine_fail_head": [
+      {
+        "db": "customer_complaints",
+        "q": "Return the phone number of the customer who filed the complaint that was raised ",
+        "sql_s": "SELECT t1.phone_number FROM customers AS t1 JOIN complaints AS t2 ON t1.customer_id  =  t2.customer_id ORDER BY t2.date_",
+        "got": "[('6963347450',)]",
+        "expect": "Eeb06e899a800"
+      },
+      {
+        "db": "soccer_2",
+        "q": "Which colleges do the tryout players whose name starts with letter D go to?",
+        "sql_s": "SELECT T1.cName FROM  tryout AS T1 JOIN player AS T2 ON T1.pID  =  T2.pID WHERE T2.pName LIKE 'D%'",
+        "got": "[]",
+        "expect": "E38b0491a88e7"
+      },
+      {
+        "db": "soccer_2",
+        "q": "Which colleges does each player with a name that starts with the letter D  who t",
+        "sql_s": "SELECT T1.cName FROM  tryout AS T1 JOIN player AS T2 ON T1.pID  =  T2.pID WHERE T2.pName LIKE 'D%'",
+        "got": "[]",
+        "expect": "E38b0491a88e7"
+      },
+      {
+        "db": "body_builder",
+        "q": "What are the total scores of the body builders whose birthday contains the strin",
+        "sql_s": "SELECT T1.total FROM body_builder AS T1 JOIN people AS T2 ON T1.people_id  =  T2.people_id WHERE T2.Birth_Date LIKE \"%Ja",
+        "got": "[]",
+        "expect": 317.5
+      },
+      {
+        "db": "music_1",
+        "q": "What is the average song duration for the songs that are in mp3 format and whose",
+        "sql_s": "SELECT avg(T1.duration) FROM files AS T1 JOIN song AS T2 ON T1.f_id  =  T2.f_id WHERE T1.formats  =  \"E1920d1ece68f\" AND",
+        "got": "[(0.0,)]",
+        "expect": 3.0
+      },
+      {
+        "db": "local_govt_in_alabama",
+        "q": "How many events had participants whose details had the substring 'Dr.'",
+        "sql_s": "SELECT count(*) FROM participants AS T1 JOIN Participants_in_Events AS T2 ON T1.Participant_ID  =  T2.Participant_ID WHE",
+        "got": "[(0,)]",
+        "expect": 1
+      },
+      {
+        "db": "customer_complaints",
+        "q": "What is the last name of the staff who has handled the first ever complaint?",
+        "sql_s": "SELECT t1.last_name FROM staff AS t1 JOIN complaints AS t2 ON t1.staff_id  =  t2.staff_id ORDER BY t2.date_complaint_rai",
+        "got": "[('Eb29609dc86f7',)]",
+        "expect": "E19c46c4c6200"
+      },
+      {
+        "db": "customer_complaints",
+        "q": "What is the phone number of the customer who has filed the most recent complaint",
+        "sql_s": "SELECT t1.phone_number FROM customers AS t1 JOIN complaints AS t2 ON t1.customer_id  =  t2.customer_id ORDER BY t2.date_",
+        "got": "[('6963347450',)]",
+        "expect": "Eeb06e899a800"
+      }
+    ],
+    "note": "ENGINE_GOLD = gold SQL, names sealed, digit-only TEXT left numeric. SCHEMA_LINK = cell mention in Q. Not CodeS."
+  },
+  "mcnemar_pilots": {
+    "wiki_cf_auto.json:PLAIN_NL vs SPAN_NL": {
+      "n01_b_only": 0,
+      "n10_a_only": 0,
+      "discordant": 0,
+      "p_two_sided": 1.0
+    },
+    "wiki_cf_auto.json:SPAN_NL vs SEAL_PROG": {
+      "n01_b_only": 0,
+      "n10_a_only": 0,
+      "discordant": 0,
+      "p_two_sided": 1.0
+    },
+    "wiki_cf_opaque_rel_auto.json:SPAN_NL vs LEGEND_NL": {
+      "n01_b_only": 12,
+      "n10_a_only": 0,
+      "discordant": 12,
+      "p_two_sided": 0.000488
+    },
+    "wiki_cf_opaque_rel_auto.json:SPAN_NL vs SEAL_PROG": {
+      "n01_b_only": 12,
+      "n10_a_only": 0,
+      "discordant": 12,
+      "p_two_sided": 0.000488
+    },
+    "spider_oir_auto.json:PLAIN_NL vs MILD_NL": {
+      "n01_b_only": 0,
+      "n10_a_only": 8,
+      "discordant": 8,
+      "p_two_sided": 0.007812
+    },
+    "spider_oir_auto.json:PLAIN_NL vs GOLD_SQL": {
+      "n01_b_only": 0,
+      "n10_a_only": 9,
+      "discordant": 9,
+      "p_two_sided": 0.003906
+    },
+    "spider_oir_auto.json:MILD_NL vs MODEL_SQL": {
+      "n01_b_only": 1,
+      "n10_a_only": 0,
+      "discordant": 1,
+      "p_two_sided": 1.0
+    }
+  }
+}

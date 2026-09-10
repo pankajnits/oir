@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_177 #####
+QUESTION:
+When is Jean-Baptiste Colbert, Marquis De Seignelay's father's birthday?
+
+CONTEXT:
+Jean-Baptiste Antoine Colbert, Marquis de Seignelay | father | Jean-Baptiste Colbert
+decoy_mid_177 | date of birth | 29 August 1619
+Jean-Baptiste Antoine Colbert, Marquis de Seignelay | decoy_link_177 | decoy_mid_177
+Jean-Baptiste Colbert | date of birth | CF_TAIL_177_29August1619
+Jim Wynorski | place of birth | New York
+Charles University | country | Czech Republic
+The Return of Swamp Thing | director | Jim Wynorski
+Prague Papers on the History of International Relations | publisher | Charles University

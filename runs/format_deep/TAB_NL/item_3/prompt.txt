@@ -1,0 +1,25 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge. Do not open other files.
+Format: ANSWER_SEALED[<id>]: <token_or_UNKNOWN>
+If more than one reading is possible, output UNKNOWN.
+
+ARM TAB_NL: two city columns. No JOIN. One quiz. If more than one city reading is possible, UNKNOWN.
+
+##### ID FD_TAB_NL_3 #####
+START E3642c609f152
+Return the city of this person's company.
+
+CONTEXT:
+TABLE people
+| person | company |
+| --- | --- |
+| E3642c609f152 | Ee02e5d430e00 |
+| E35971172665c | E60230da0fea9 |
+| E98cfc5d666f6 | Ef7cfc8cbb0f2 |
+
+TABLE companies
+| company | city_primary | city_secondary |
+| --- | --- | --- |
+| Ef7cfc8cbb0f2 | E6f047bb96e7d | E5f8153dbfb4f |
+| E60230da0fea9 | Ea2c95161db06 | E72afe609c44b |
+| Ee02e5d430e00 | Ef92bb8008bf4 | Ea2c95161db06 |
+

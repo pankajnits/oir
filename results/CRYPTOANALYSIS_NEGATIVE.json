@@ -1,0 +1,15 @@
+{
+  "critical_negative_result": true,
+  "claim": "Deterministic per-character HMAC sealing is cryptanalytically equivalent to a monoalphabetic substitution over an opaque alphabet.",
+  "evidence": {
+    "most_common_seal_is_e": true,
+    "seal_token_coverage_after_one_known_sentence_crib": 0.777,
+    "llm_refusal_is_not_security": true
+  },
+  "implication_for_paper": "Must NOT claim cryptographic confidentiality from char-HMAC OIR. Reframe: measurement of LLM behavior under referential isomorphism; security requires stronger seals + architecture.",
+  "recommended_seal_upgrades": [
+    "Word/entity-level HMAC (still Zipf-leaky; better than 26-letter mono)",
+    "Per-occurrence random tokens + equality index table (isomorphism via index, not token identity)",
+    "Dual-channel: clear instructions + sealed payloads with copy-constrained decoding"
+  ]
+}

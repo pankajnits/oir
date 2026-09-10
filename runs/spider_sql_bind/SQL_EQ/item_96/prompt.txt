@@ -1,0 +1,51 @@
+MODEL UNDER TEST. Read ONLY this file. The schema is the context. No decrypt. No world knowledge. Do not open other files.
+Format: SQL[PB_SQL_96]: <sqlite>
+If more than one reading is possible, output UNKNOWN.
+
+Sealed question. Schema maps English names to sealed identifiers. No rows.
+
+##### ID PB_SQL_96 #####
+DB: music_2
+SCHEMA (English name → sealed sqlite identifier):
+Songs = Eea6aa3fc6451
+SongId = Ef40388c66fc8
+Title = E75933936e0ea
+Albums = E76b344105a2e
+AId = E559e1464b6ca
+Year = E485bd912e375
+Label = E33c0ab34b796
+Type = Efc9814a8e351
+Band = E426f4511588b
+Id = Ef003202c46d2
+Firstname = E755e56c5f977
+Lastname = E7e734803b240
+Instruments = E603195fdde03
+BandmateId = E0beada36199f
+Instrument = Efd169662cb92
+Performance = E175e52999546
+Bandmate = Eab293082f408
+StagePosition = Eddab450f267b
+Tracklists = E5d1bc0f3e411
+AlbumId = Edae5d3b366e1
+Position = E116af28826e5
+Vocals = E412b3f4853de
+
+Songs(SongId, Title)
+Albums(AId, Title, Year, Label, Type)
+Band(Id, Firstname, Lastname)
+Instruments(SongId, BandmateId, Instrument)
+Performance(SongId, Bandmate, StagePosition)
+Tracklists(AlbumId, Position, SongId)
+Vocals(SongId, Bandmate, Type)
+
+QUESTION:
+What are the types of E412b3f4853de used in the song "Demon Kitty Rag"?
+
+PROTOCOL (English; do not decrypt):
+- The context is this file only: QUESTION + SCHEMA. There are no data rows.
+- Do not use world knowledge. Do not decrypt.
+- SCHEMA is bilingual: English name = sealed sqlite table or column.
+- A sealed QUESTION token that equals a SCHEMA identifier is that table or column.
+- Write ONE sqlite SELECT using the sealed identifiers. We execute it on hidden rows.
+- Join tables on sealed names that appear in two tables.
+- If no QUESTION token equals a SCHEMA identifier, output UNKNOWN.

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_98]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_98 #####
+QUESTION:
+Who E48166bc6c429 a Ed5751df78639 E9ea2bc86309a [Claire Danes] Eca5814887838 Ec383f6dcd8b1?
+
+PATH_QUERY
+START Claire Danes
+R1 Ea40772843ffe
+R2 E6e2c1e344a31
+Execute path; return final tail only.
+
+CONTEXT:
+Claire Danes | Ea40772843ffe | Temple Grandin
+Temple Grandin | E6e2c1e344a31 | Mick Jackson
+Temple Grandin | E922a22a4549e | Temple Grandin

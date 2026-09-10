@@ -1,0 +1,16 @@
+{
+  "real_wikidata": {
+    "canon_nl_sealed": "0/8 (stopped at company)",
+    "para_nl_sealed": "0/8 (stopped at company)",
+    "struct_pure_sink": "8/8",
+    "sealed_demos": "8/8",
+    "path_program_fix": "8/8",
+    "scaffold_fix": "8/8"
+  },
+  "fix": "NL sealed questions under-specify hop count; path-program or scaffold in same encoding restores 8/8",
+  "novelty": {
+    "core": "Same-encoding OIR on real Wikidata multi-hop; failure mode = 1-hop under NL seal; fix without leaving seal space",
+    "not_novel": "That LMs do English multi-hop; vault marketing",
+    "pc_take": "Anonymous path execution on real KGs + query-form ablation (NL vs program vs structure vs demos)"
+  }
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100_OPAQUE_AMBIG_PLAN_55]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN n=100
+##### ID MQA100_OPAQUE_AMBIG_PLAN_55 #####
+QUESTION:
+Who directed a movie that Jack Nicholson starred in?
+
+PATH_QUERY
+START Jack Nicholson
+R1 E61e80bda05cb
+R2 E3a9fa4a955c1
+Execute path; return final tail only.
+
+CONTEXT:
+Jack Nicholson | E61e80bda05cb | Carnal Knowledge
+Carnal Knowledge | E3a9fa4a955c1 | Mike Nichols
+Carnal Knowledge | E186f4249844d | Jules Feiffer

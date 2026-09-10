@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_66 #####
+QUESTION:
+What is the date of death of Edsel Ford Ii's father?
+
+CONTEXT:
+Edsel Bryant Ford II | decoy_link_66 | decoy_mid_66
+decoy_mid_66 | date of death | September 29, 1987
+Henry Ford II | date of death | CF_TAIL_66_September291
+Alexandre Promio | place of death | Asnières
+Yeh Gulistan Hamara | director | Atma Ram
+Atma Ram | country of citizenship | Afghanistan
+Départ de Jérusalem en chemin de fer | director | Alexandre Promio
+Edsel Bryant Ford II | father | Henry Ford II

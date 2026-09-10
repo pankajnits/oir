@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_126 #####
+QUESTION:
+What nationality is the director of film El Día Que Me Quieras (1935 Film)?
+
+CONTEXT:
+Bertha of Hereford | mother | Sibyl de Neufmarché
+Sibyl de Neufmarché | country of citizenship | Welsh
+El día que me quieras | director | John Reinhardt
+John Reinhardt | country of citizenship | CF_TAIL_126_American
+Dina Wadia | father | Muhammad Ali Jinnah
+El día que me quieras | decoy_link_126 | decoy_mid_126
+Muhammad Ali Jinnah | place of death | Karachi
+decoy_mid_126 | country of citizenship | American

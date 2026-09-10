@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_3]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F22_OPAQUE_AMBIG_PLAN_3 #####
+QUESTION:
+What city is the headquarters of the company led by Vibeke_Frst_Haugen?
+
+PATH_QUERY
+START Vibeke_Frst_Haugen
+R1 E16e3577083f2
+R2 E987128ec9c27
+Execute path; return final tail only.
+
+CONTEXT:
+Vibeke_Frst_Haugen | E16e3577083f2 | Norwegian_Broadcasting_Corporation
+Norwegian_Broadcasting_Corporation | E987128ec9c27 | NRK_Marienlyst
+Vibeke_Frst_Haugen | E15d0d3aa0be5 | Polish_State_Railways
+Polish_State_Railways | Eba9d42c8aea5 | Warsaw

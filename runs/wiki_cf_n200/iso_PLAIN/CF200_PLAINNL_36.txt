@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No decrypt. No world knowledge.
+Format: ANSWER_PLAIN[<id>]: <answer_or_UNKNOWN>
+Answer EVERY ID. Gold is the CF tail IN CONTEXT, not Wikipedia.
+
+ARM PLAIN_NL: one quiz. CF tail in CONTEXT, not Wikipedia.
+
+##### ID CF200_PLAINNL_36 #####
+QUESTION:
+When did the composer of film Through A Glass Darkly (Film) die?
+
+CONTEXT:
+Science Fiction Adventures | editor | Lester del Rey
+Through a Glass Darkly | composer | Johann Sebastian Bach
+Macadam Stories | director | Samuel Benchetrit
+Lester del Rey | date of death | May 10, 1993
+Johann Sebastian Bach | date of death | CF_TAIL_36_28July1750
+decoy_mid_36 | date of death | 28 July 1750
+Through a Glass Darkly | decoy_link_36 | decoy_mid_36
+Samuel Benchetrit | spouse | Vanessa Paradis

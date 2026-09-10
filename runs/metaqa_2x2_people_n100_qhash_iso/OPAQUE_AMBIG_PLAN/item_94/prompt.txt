@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA100B_OPAQUE_AMBIG_PLAN_94]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA100B_OPAQUE_AMBIG_PLAN_94 #####
+QUESTION:
+Who E53d04ae45473 a E8ca7a55a3554 E1cd56360a7ec [Dominique Sanda] E6b171b5619ac Ebd5a645da32f?
+
+PATH_QUERY
+START Dominique Sanda
+R1 E30152aea5e03
+R2 E1aa3563a97c9
+Execute path; return final tail only.
+
+CONTEXT:
+Dominique Sanda | E30152aea5e03 | A Gentle Woman
+A Gentle Woman | E1aa3563a97c9 | Robert Bresson
+A Gentle Woman | E8b7ed0b74858 | Fyodor Dostoevsky

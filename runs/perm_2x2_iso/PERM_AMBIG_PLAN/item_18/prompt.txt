@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[PERM_PERM_AMBIG_PLAN_18]: <city_or_UNKNOWN>
+ARM PERM_AMBIG_PLAN: same permutation graph plus explicit relation sequence.
+##### ID PERM_PERM_AMBIG_PLAN_18 #####
+QUESTION:
+What city is the headquarters of the company led by David_Zaslav?
+
+PATH_QUERY
+START David_Zaslav
+R1 E47d0e68488d7
+R2 Ee8281f85325f
+Execute path; return final tail only.
+
+CONTEXT:
+David_Zaslav | E47d0e68488d7 | Warner_Bros_Discovery
+Warner_Bros_Discovery | Ee8281f85325f | New_York_City
+David_Zaslav | E033b9e22548c | Kansas_City_Southern
+Kansas_City_Southern | E4b07153f2586 | Kansas_City
