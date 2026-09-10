@@ -72,7 +72,7 @@ primitive.
 With the start already in the query, unique-path traversal survives sealed
 relation strings (OpenAI English unique $31/32$, opaque unique $32/32$ on a
 Wikidata-derived CEO slice) and both-opaque unique paths are $32/32$ for
-Cursor Composer~2.5, OpenAI \mbox{\texttt{gpt-5.6-sol}}, and Grok~4.5.
+Composer~2.5, OpenAI \mbox{\texttt{gpt-5.6-sol}}, and Grok~4.5.
 When two same-type routes compete, \emph{relation-only} opacity (entities
 remain English) yields OpenAI $6/32$, mostly \texttt{UNKNOWN} ($24/32$)
 rather than decoy ($2/32$). That drop is OpenAI-shaped: Grok English two-path
@@ -395,9 +395,9 @@ Isolation $n{=}32$ uses one quiz per file and a per-item HMAC. Cells marked
 instead of the headquarters answer.
 
 \paragraph{Models.}
-The primary roster is Cursor Composer~2.5 (hereafter Composer~2.5), OpenAI
+The primary roster is Composer~2.5, OpenAI
 \mbox{\texttt{gpt-5.6-sol}} (hereafter OpenAI), and Grok~4.5. Secondary
-packaging probes additionally use an unversioned Cursor Claude endpoint
+packaging probes additionally use an unversioned Claude endpoint
 (Anthropic model id not stored; Appendix~\ref{app:middleware}).
 \texttt{gpt-5.6-sol} is the GPT-5.6 Sol Chat Completions endpoint (Sol is
 the flagship-equivalent tier of the GPT-5.6 family;
@@ -1105,7 +1105,7 @@ compiled, the layer may attach one sealed join as an execution control (not
 a list of candidate paths). The model, when used, returns $\sigma(a)$; the
 layer unseals. Isolation on the CEO vault without start-entity binding is
 $0/6$ vs.\ full layer $6/6$ for Composer~2.5, OpenAI, and an unversioned
-Cursor Claude endpoint (Anthropic model id not stored; plaintext names in
+Claude endpoint (Anthropic model id not stored; plaintext names in
 the packed prompt: $0$). On complex 3-hop and real 2Wiki,
 Composer~2.5 without binding is $0/6$ vs.\ layer $6/6$; OpenAI layer $6/6$
 (without binding: complex $4/6$, 2Wiki $0/6$). Those isolation files also

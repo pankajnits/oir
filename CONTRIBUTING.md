@@ -8,7 +8,7 @@ python3 -m pytest tests/ -q
 ruff check oir tests examples
 ```
 
-Python 3.10+. Do not commit API keys, `.env`, or `credentials.json`. Isolation runners use `OPENAI_API_KEY` (OpenAI) or `AGENT_API_KEY` (Cursor Composer 2.5 / Grok). Issues: https://github.com/pankajnits/oir/issues
+Python 3.10+. Do not commit API keys, `.env`, or `credentials.json`. Isolation runners use `OPENAI_API_KEY` (OpenAI) or `AGENT_API_KEY` (Composer 2.5 / Grok). Issues: https://github.com/pankajnits/oir/issues
 
 ## Layout
 
