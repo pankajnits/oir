@@ -37,7 +37,7 @@ Bring-your-own graph (engine ceiling, no LLM): `python3 examples/custom_three_ar
 
 Paper names vs suite ids: matched-asymmetric `SAME_TRAP`, novel-asymmetric `CROSS_TRAP`, matched-balanced `SAME_BALANCED`, novel-balanced `CROSS_BALANCED`, explicit plan `PATH_TRAP`.
 
-Do **not** run `harness/induce_follow_n32_iso.py` or `run_induce_mut_n32_iso.py` if the claim is free-form. Those are sealed-demo binding. Free-form locks: `adv_induction_n32_iso_{gpt56,grok45ff,composer25ff}.json`.
+Do **not** run `harness/induce_follow_n32_iso.py` or `run_induce_mut_n32_iso.py` if the claim is free-form. Those are sealed-demo binding. Free-form locks: `adv_induction_n32_iso_{gpt56,grok45ff,composer25ff}.json`. Tags: `auto` = Composer 2.5 on some packaging cells; `composer25` / `grok45` = isolation roster; `*ff` = dual-path free-form; `induce` = sealed demos; `mistral` / `qwen35` = local Ollama, not the three-family roster (plan n.r.). An ARM-banner Movie-B variant (`...arm_banner_v1.json`, two-path **25/100**) is not Condition B (locked topology header **3/100**).
 
 ## Non-LLM
 

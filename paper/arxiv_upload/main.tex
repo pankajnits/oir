@@ -292,7 +292,10 @@ stage; we do not observe the pair.
 \paragraph{Seal recipe.}
 Normalize each atom: strip; collapse whitespace to \texttt{\_}; map other
 non-alphanumeric characters (except underscore, period, hyphen) to
-\texttt{\_}; truncate to 64; empty maps to \texttt{EMPTY}. Distinct raw
+\texttt{\_} using the ASCII class \texttt{A--Za--z0--9\_.\-} (so
+\texttt{Z\"{u}rich}$\mapsto$\texttt{Z\_rich}; pure CJK keeps Unicode);
+truncate to 64; empty maps to \texttt{EMPTY}.
+The CEO JSON already deleted diacritics upstream. Distinct raw
 atoms must normalize to distinct strings. Tokens are HMAC-SHA256 over UTF-8
 bytes with a per-prompt 16-byte key; the token is \texttt{E} plus the first
 6 digest bytes as 12 hex digits. HMAC is keyed renaming, not a security
@@ -312,19 +315,24 @@ the same rate.
 \paragraph{Matched $2{\times}2$ (start in $q$).}
 \label{par:fact2x2}
 The $n{=}32$ suite is a constructed slice: 32 of 73 Wikidata-derived CEO
-records~\citep{vrandecic2014wikidata}, not a published CEO benchmark. Each
-instance is an independent graph of 8 triples and 8 entities. The gold
-two-hop uses \texttt{works\_at} then the headquarters relation. To isolate
-relation selection from start-entity identification we keep the start
-string in the question and hold entities, hop length, template, and graph
-size fixed. Two factors vary: relation labels (English vs.\ HMAC) and
-topology (one 2-hop from the start vs.\ two). Tails are the same type (two
-cities on Wikidata; two people on WikiMovies). On Wikidata two-path graphs
-both intermediates are companies, so both routes are
-person$\to$company$\to$city
+records~\citep{vrandecic2014wikidata}, not a published CEO benchmark.
+Each instance is 4 triples (unique-path: 6 entities with a disconnected
+decoy island; two-path: 5 entities sharing the start). The gold two-hop
+uses \texttt{works\_at} then the headquarters relation; the question says
+``led by''. The competing two-path route is synthetic
+(\texttt{ambig\_edges} attaches record $i{+}1$'s company/HQ under
+\texttt{partner\_of}/\texttt{located\_in}; not a Wikidata fact; decoy HQ
+pool $=$ gold HQ pool). To isolate relation selection from start-entity
+identification we keep the start string in the question and hold hop
+length, template, and graph size fixed. Two factors vary: relation labels
+(English vs.\ HMAC) and topology (one 2-hop from the start vs.\ two).
+Tails are intended as the same type; Wikidata P159 was not filtered
+(buildings/stations/a street among gold HQs; both OpenAI opaque two-path
+decoys sit on city/non-city pairs; Appendix~\ref{app:protocol}).
+On Wikidata two-path graphs both intermediates are companies
 (\texttt{works\_at}/\texttt{headquartered\_in} vs.\
-\texttt{partner\_of}/\texttt{located\_in}); we do not match Wikidata
-instance-of or industry. In the primary run the gold 2-hop is listed before
+\texttt{partner\_of}/\texttt{located\_in}).
+In the primary run the gold 2-hop is listed before
 the decoy 2-hop in CONTEXT; that order is the same in the English and opaque
 arms. A shuffled listing of the same 32 graphs and HMAC keys (16 gold-first,
 16 decoy-first) is a robustness check on a later endpoint snapshot
@@ -378,7 +386,7 @@ The format asks for one answer token in the graph's namespace or
 \texttt{UNKNOWN}. Primary metric: exact match (\texttt{UNKNOWN} is a miss).
 Scored \texttt{UNKNOWN} is an explicit \texttt{UNKNOWN} line or a reply from
 which no answer token was parsed. On two-path arms we also report decoy
-rate and \texttt{UNKNOWN} rate (Table~\ref{tab:threeway}).
+and \texttt{UNKNOWN} rates (Table~\ref{tab:threeway}).
 Wilson 95\% intervals use $z{=}1.96$~\citep{wilson1927}
 ($0/32 \Rightarrow [0.00,0.11]$;
 $6/32 \Rightarrow [0.09,0.35]$;
@@ -516,9 +524,10 @@ Opaque two paths $+$ plan & $32/0/0$ & $28/0/3$ & $32/0/0$ \\
 \caption{Three-way outcomes: gold / decoy / \texttt{UNKNOWN}.
 On this table \texttt{UNKNOWN} is an explicit \texttt{UNKNOWN} line
 (missing/unparsed $0$; both-named $0$). Remainder, if any, is another
-wrong token. Coverage and selective accuracy for every two-path row are
-in the surrounding text. Grok already returns \texttt{UNKNOWN} on
-English two-path.}
+wrong token. OpenAI's two decoys are P159 type-asymmetric pairs.
+Coverage and selective accuracy for every two-path row are in the
+surrounding text. Grok already returns \texttt{UNKNOWN} on English
+two-path.}
 \label{tab:threeway}
 \end{table}
 
@@ -731,8 +740,7 @@ confidentiality proof.
 
 The two-path ARM header names topology and opacity. English two-path
 $31/32$ shows the header alone does not force abstention, not that
-header$\times$opacity is zero; CONTEXT-only likewise does not identify
-instruction-following vs.\ missing parametric fallback.
+header$\times$opacity is zero.
 \textsc{Movie-A32} vs.\ \textsc{Movie-A100} is a confounded header-width
 contrast: on the 32 overlapping gold names OpenAI is $17/32$ vs.\ $29/32$
 (all 15 \texttt{UNKNOWN}s become gold; three original golds flip);
@@ -896,6 +904,16 @@ The $n{=}12$ three-arm is \textbf{batch} with one shared key
 OpenAI, and Grok~4.5; $n{=}24$ is the same protocol at a larger $n$.
 We never impute n.r.\ as zeros.
 
+P159 gold HQs that are not cities:
+\texttt{Broadway}, \texttt{NRK\_Marienlyst}, \texttt{Fox\_Plaza},
+\texttt{CNN\_Center}, \texttt{Lod\_Railway\_Station};
+\texttt{New\_Jersey} is a state.
+OpenAI opaque two-path decoys are items 27 and 31
+(\texttt{CNN\_Center} vs.\ Swindon; \texttt{Lod\_Railway\_Station} vs.\ Burbank).
+Source slice: Kansas\_City $10/73$, Burbank $6/73$; Disney three times in the 32.
+An archived Movie-B ARM banner naming director vs.\ writer is OpenAI
+two-path $25/100$; the locked topology-only Condition~B header is $3/100$.
+
 The CEO three-arm graphs add extra edges on the gold company
 (owned-by, partner-of, meta-of). One question template is used.
 Free English hashes the question piecewise, so the full person atom
@@ -1033,6 +1051,8 @@ prompt.
 
 An $n{=}8$ cell is zero demos $2/8$; one or more demos $8/8$. Isolation
 $n{=}32$ is the reported dual-path measurement.
+Local \texttt{mistral}/\texttt{qwen35} runs are not in the roster
+(matched-asymmetric $0/32$; Qwen matched-balanced $7/32$; plan n.r.).
 
 \FloatBarrier
 \section{No-hop binding (JSON)}
@@ -1065,7 +1085,9 @@ $0/32 \Rightarrow [0.00,0.11]$,
 $6/32 \Rightarrow [0.09,0.35]$,
 $31/32 \Rightarrow [0.84,0.99]$.
 Silent same-$\sigma$ OpenAI $6/32$ is a JSON-binding cell, distinct from
-\textsc{Wiki-H5}.}
+\textsc{Wiki-H5}.
+\texttt{NS\_SILENT} ARM lines say ``Match impossible''; those $0/32$ rows
+are not a sealed-join collapse.}
 \label{tab:ident32}
 \end{table}
 

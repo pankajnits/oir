@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Wilson 95% CIs for locked OIR headline arms."""
+"""Wilson 95% CIs for locked OIR headline arms.
+
+The hardcoded ARMS dict includes older n=12 packaging cells (WTQ_PLAIN_NL 8/8,
+OPAQUE_PLAN_ISO_AUTO, …). Those are not Wiki-H5 / Movie-B. Cite results/*.json
+for the paper spine.
+"""
 from __future__ import annotations
 
 import json

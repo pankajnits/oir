@@ -50,7 +50,7 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 
 Models are named **Composer 2.5**, **OpenAI** (`gpt-5.6-sol`), **Grok 4.5**. Result files tagged `auto` are Composer 2.5.
 
-The installable `MiddleLayer` / `SealedChat` package sits between an app and a public LLM. Names stay in the app; the model sees HMAC atoms for one request. **The layer holds the key.** Use a new `MiddleLayer()` per request (`SealedChat.ask` does not rotate the key). Non-Latin names are HMAC'd as Unicode atoms. Vault ints/bools stay JSON numbers.
+The installable `MiddleLayer` / `SealedChat` package sits between an app and a public LLM. Names stay in the app; the model sees HMAC atoms for one request. **The layer holds the key.** Use a new `MiddleLayer()` per request (`SealedChat.ask` does not rotate the key). Non-Latin names: pure CJK stays Unicode; mixed-script Latin is ASCII-folded (`Zürich` → `Z_rich`), matching the paper HMAC lock. Vault ints/bools stay JSON numbers.
 
 ```
 Your app  →  MiddleLayer.call() packs messages  →  SealedChat.ask() sends call.messages
