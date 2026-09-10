@@ -1,6 +1,6 @@
 # Paper
 
-NeurIPS-style preprint (`[preprint]{neurips_2026}`): **11 content pages**, then references and appendix.
+NeurIPS-style preprint (`[preprint]{neurips_2026}`): **10 content pages**, then references and appendix.
 
 | File | Role |
 |------|------|

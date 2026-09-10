@@ -130,7 +130,8 @@ $\sigma^{-1}$ is not scored. A written hop is an execution control. Matched
 versus novel demonstrations test in-prompt reuse of shown seals.
 
 OIR is a measurement protocol. HMAC renaming is the same family as PrivGemo's
-$\phi_Q$~\citep{privgemo2026}; we use it as an instrument. ``Lexical cues''
+entity map $\phi_Q$~\citep{privgemo2026}; we apply it to relation strings, which
+that paper leaves as original or clustered schema labels. ``Lexical cues''
 on the primary $2{\times}2$ means relation strings (entities stay English);
 both-opaque is a separate ablation. English multi-hop scores should not be
 read as evidence that the same join succeeds once predicates are sealed and
@@ -140,15 +141,13 @@ This paper reports: (i)~unique-route sealed execution with the start in $q$
 and no written hop; (ii)~end-to-end collapse when opaque relations meet path
 ambiguity, typically \texttt{UNKNOWN} rather than the decoy city;
 (iii)~matched demonstrations restore shown seals, while novel seals do not.
-What is new is the interaction rather than the opacity. Privacy-oriented
-KGQA anonymizes entities while relations stay the readable retrieval language
-and reports mild degradation~\citep{arog2025,privgemo2026,liu2026cor};
-compositional-limit and counterfactual studies vary the task and observe
-degradation~\citep{dziri2023faith,wu2024counterfactual}. Here the task, hop
-length, graph size, and template are fixed, only the vocabulary changes, and
-opacity is crossed with path ambiguity: it is free on a unique route and
-destructive only when two same-type routes compete, with abstention rather
-than a wrong route as the failure mode.
+What is new is the interaction rather than the opacity. Cited privacy KGQA
+keeps relation strings as readable words --- original labels or clustered
+schema names~\citep{arog2025,privgemo2026,liu2026cor}.
+GSM-Symbolic renames entities in English math~\citep{mirzadeh2025gsm}.
+We seal \emph{relation} strings, keep entities English, and cross that with
+path ambiguity: cheap on a unique route and abstention, not a wrong route,
+when two same-type routes compete.
 Cross-dataset checks, generator robustness, and packaging probes appear in
 Section~\ref{sec:results} and the appendix (Table~\ref{tab:inventory}).
 
@@ -165,27 +164,28 @@ $6/32$ (mostly \texttt{UNKNOWN}).}
 
 \section{Related Work}
 
-Think-on-Graph and Reasoning-on-Graphs select the next relation on a
-\emph{readable} graph~\citep{sun2024tog,luo2024rog}.
-Ciphered-prompt work scores in-context learning or in-cipher reasoning, not
-path ambiguity on a labeled graph~\citep{fang2025ciphers,guo2025ciphered}.
-GSM-Symbolic swaps names in English math templates~\citep{mirzadeh2025gsm};
-OIR holds the join fixed and can hide relation strings.
-2WikiMultihopQA is a readable multi-hop benchmark~\citep{ho2020constructing};
-we use English scores on our instances as the plaintext control.
+Think-on-Graph and Reasoning-on-Graphs select the next readable
+relation~\citep{sun2024tog,luo2024rog}. Ciphered ICL is not path ambiguity on a
+labeled graph~\citep{fang2025ciphers,guo2025ciphered}.
+GSM-Symbolic swaps entity names in English math~\citep{mirzadeh2025gsm};
+2WikiMultihopQA is a readable multi-hop control~\citep{ho2020constructing}.
 
 ARoG anonymizes \emph{entities} while relations stay the retrieval
-language~\citep{arog2025}. PrivGemo uses HMAC $\phi_Q$ in a dual tower: a
-remote Brain ranks retrieved candidate paths and a local Hand answers on the
-raw graph~\citep{privgemo2026}. Under full anonymization they report mild
-degradation (CWQ $67\%\to 59\%$; WebQSP $75\%$).
-Chain-of-Relations uses relation-centric exploration to reduce dependence on
-incomplete entity descriptions and to avoid premature entity
-pruning~\citep{liu2026cor}; relations remain the readable retrieval language.
+language~\citep{arog2025}. PrivGemo HMAC-seals entities ($\phi_Q$, e.g.\
+\texttt{ent\_17}); relations stay original labels or clustered schema words,
+not keyed opaque tokens, and a local Hand answers on the raw graph after a
+remote Brain ranks retrieved paths (CWQ $67\%\to 59\%$; WebQSP
+$75\%$)~\citep{privgemo2026}.
+CoR explores readable relations because entities often have no semantics
+beyond opaque IDs --- the OE hide-set, not relation-only
+\textsc{Wiki-H5}~\citep{liu2026cor}.
+\citet{tang2023semantic} map relation names to \texttt{r1} with rules in
+context; \citet{guo2025twohop} add distractor two-hops from other sources
+(or delete predicates). Neither crosses English vs.\ sealed relations with
+two same-start typed 2-hops.
 OIR withholds retrieved paths on the free arms (Table~\ref{tab:diff}).
 The primary cell seals relations while entities stay English; both-opaque is
-a separate ablation. CoR and ARoG report Hits@1 on WebQSP/CWQ; we report
-exact match on a controlled join.
+a separate ablation.
 
 Chain-of-thought and Text-to-SQL externalize plans over
 English~\citep{wei2022cot,yu2018spider}. MaskSQL abstracts schema tokens
@@ -197,36 +197,21 @@ We ask a behavioral question: can a pretrained model join when the relation
 vocabulary is freshly randomized and no plan is given? A sealed plan is then
 an execution upper bound.
 
-Compositional-limit studies change the task; we change only the vocabulary.
-\citet{dziri2023faith} find that transformers reduce multi-step composition to
-linearized subgraph matching, and \citet{wu2024counterfactual} report
-consistent degradation once a task is moved off the default assumptions it was
-pretrained on. Symbol tuning replaces natural-language labels with arbitrary
-symbols and shows models can be pushed to rely on input--label
-mappings~\citep{wei2023symbol}. Each of those interventions varies the task,
-the numeric base, or the label set. OIR holds the join, hop length, graph size,
-and question template fixed and replaces only the relation (or entity) strings,
-so the manipulated variable is lexical access rather than task difficulty. The
-$2{\times}2$ then crosses that variable with path ambiguity, which those
-studies do not vary: opacity is harmless on a unique route ($32/32$) and
-destructive only when two same-type routes compete. \citet{wei2023symbol} also
-motivates a control we do not run --- short pronounceable symbols rather than
-12-hex tokens (Section~\ref{sec:limitations}).
-
-Latent-hop and shortcut work asks a related question on readable prompts.
-\citet{yang2024latent} test whether LMs traverse two hops latently and find the
-second hop weaker than the first and not improving with scale; that is
-parametric recall over English predicates, whereas our graphs are in-context
-and the predicates carry no readable form, so a latent second hop has no
-lexical key to fire on. Multi-hop dataset design has long held that
-compositional questions can be answered without
-composing~\citep{min2019compositional}, and MuSiQue filters single-hop
-shortcuts by construction~\citep{trivedi2022musique}. Those controls remove
-redundant evidence. Opacity is a complementary control: it leaves the graph
-and the required composition intact and removes only the lexical route from the
-verb in $q$ to a predicate in $G$. Because unique-path opaque traversal stays
-at $32/32$, that removal does not by itself break execution --- it withdraws
-the cue that would otherwise select between routes.
+Compositional-limit studies change the task~\citep{dziri2023faith,wu2024counterfactual}.
+Symbol tuning replaces labels with arbitrary symbols~\citep{wei2023symbol}.
+OIR holds the join, hop length, graph size, and question template fixed and
+replaces relation strings. The $2{\times}2$ then crosses that variable with
+path ambiguity, which those studies do not vary: opacity is harmless on a
+unique route ($32/32$) and destructive only when two same-type routes compete.
+Short pronounceable symbols remain an un-run control
+(Section~\ref{sec:limitations}).
+Latent two-hop work tests parametric English
+predicates~\citep{yang2024latent}; shortcut filters remove redundant
+evidence~\citep{min2019compositional,trivedi2022musique}.
+Opacity leaves the required composition intact and removes only the lexical
+route from the verb in $q$ to a predicate in $G$. Unique-path opaque
+traversal stays at $32/32$, so that removal withdraws the cue that would
+otherwise select between routes rather than blocking execution.
 
 \begin{table}[t]
 \centering
@@ -241,13 +226,13 @@ Work & Hidden & Remote task & Join under opacity \\
 \midrule
 ICL CIPHERS & substitution text & ICL task accuracy (bijection inferred) & ICL tasks \\
 ARoG & entities; relations readable; topic names in $q$ & retrieve $+$ generate (relations, concepts) & privacy KG-RAG \\
-PrivGemo & names; optional relations & rank retrieved paths; local plaintext answer & privacy KG-RAG \\
-CoR & relations readable; entity text incomplete & relation-centric exploration & KGQA \\
+PrivGemo & entities (HMAC); relations original or clustered schema words & rank retrieved paths; local plaintext answer & privacy KG-RAG \\
+CoR & opaque entity IDs; relations readable & relation-centric exploration & KGQA \\
 \textbf{OIR} & relations (primary $2{\times}2$); entities too (ablation); one join or none & emit graph-namespace answer (no local decode) & selection vs.\ traversal \\
 \bottomrule
 \end{tabular}
-\caption{Related protocols. PrivGemo ranks retrieved paths remotely and
-answers locally on the raw graph. OIR sends one graph and scores the answer
+\caption{Related protocols. PrivGemo HMAC-seals entities; relations remain
+original or clustered schema labels. OIR sends one graph and scores the answer
 token from the same model.}
 \label{tab:diff}
 \end{table}
@@ -550,7 +535,7 @@ path: $\Delta_{\mathrm{opq}}=+1/32$ ($32/32$ vs.\ $31/32$). Two-path:
 $\Delta_{\mathrm{opq}}=-25/32$ ($6/32$ vs.\ $31/32$). The descriptive
 difference-in-differences is $-26/32$. The primary paired comparison is
 two-path English versus opaque: 25 items English-correct and opaque-wrong,
-0 reverse (McNemar exact $p{=}5.96{\times}10^{-8}$). Opacity is not a
+0 reverse (McNemar exact two-sided $p{=}5.96{\times}10^{-8}$;~\citealp{mcnemar1947}). Opacity is not a
 randomized within-item treatment; we report Wilson intervals and these
 paired counts. The primary $p$ remains significant under Bonferroni over
 60 cells; Wilson intervals treat items as independent Bernoulli trials,
@@ -559,7 +544,7 @@ which the cyclic decoy construction slightly violates
 On the 26 city-valued items (six P159 non-city HQs held out) OpenAI unique
 English, unique opaque, and English two-path are $26/26$; opaque two-path
 is $5/26$ (\texttt{UNKNOWN} $21$, decoy $0$; McNemar $21$ vs.\ $0$,
-$p{=}9.54{\times}10^{-7}$). Unique-path $\Delta_{\mathrm{opq}}$ is then
+$p{=}9.54{\times}10^{-7}$;~\citealp{mcnemar1947}). Unique-path $\Delta_{\mathrm{opq}}$ is then
 $0/26$: the $+1/32$ on the full suite is item 3
 (\texttt{NRK\_Marienlyst}) under the city format token. Composer English
 two-path $26/32$ is $26/26$ on cities (all six misses are non-city, including
@@ -804,8 +789,10 @@ no explicit map, the typical response here is \texttt{UNKNOWN}, not a
 random decoy. When $(r_1,r_2)$ is already known, a non-LLM router is a
 sufficient executor; the free sealed two-path graph is the unsupported
 interface. OIR diagnoses residual join ability after readable relations
-and retrieved paths are withheld. PrivGemo keeps those paths: full
-anonymization is CWQ $67\%\to 59\%$ and WebQSP $75\%$~\citep{privgemo2026}.
+and retrieved paths are withheld. PrivGemo keeps those paths and answers
+locally; its relation strings remain original or clustered schema labels, not
+keyed opaque tokens. Full anonymization is CWQ $67\%\to 59\%$ and WebQSP
+$75\%$~\citep{privgemo2026}.
 Without retrieved paths, OpenAI opaque two-path is $6/32$
 (coverage $8/32$, selective accuracy $6/8$).
 The two protocols are not interchangeable.
@@ -825,7 +812,7 @@ result. The suite uses a seeded sample of $n{=}32$ of 73 CEO records and one
 question template, so intervals are wide and a second seed is untested.
 Two-path decoys are cyclic ($i{+}1 \bmod 32$), so items are weakly dependent;
 Wilson intervals that assume independent Bernoulli trials are therefore
-slightly optimistic, while the within-item McNemar contrast is unaffected. English entities leave
+slightly optimistic, while the within-item McNemar contrast is unaffected~\citep{mcnemar1947}. English entities leave
 parametric cues; \textsc{Wiki-OO} is a complement, not a synthetic-ID
 experiment. HMAC two-path rates are not invariant across generators
 ($6/32$ vs.\ $15/32$ vs.\ $12/32$). That spread means the opaque two-path
@@ -884,6 +871,9 @@ That is an underspecified interface, not a scored $(r_1,r_2)$ and not a
 proof that traversal failed.
 English predicates, an equality recipe, or matched demonstrations restore
 end-to-end accuracy.
+Relation-label opacity, isolated from entity opacity and crossed with route
+ambiguity on a fixed join, is cheap when topology fixes the path and produces
+abstention --- not wrong routes --- when two same-type paths compete.
 
 \FloatBarrier
 \begin{thebibliography}{99}
@@ -924,6 +914,11 @@ Selective Classification for Deep Neural Networks.
 Shiyuan Guo, Henry Sleight, and Fabien Roger.
 All Code, No Thought: Current Language Models Struggle to Reason in Ciphered
 Language. \emph{ICLR}, 2026.
+\bibitem[Guo et al.(2025)]{guo2025twohop}
+Tianyu Guo, Hanlin Zhu, Ruiqi Zhang, Jiantao Jiao, Song Mei, Michael~I. Jordan,
+and Stuart Russell.
+How Do LLMs Perform Two-Hop Reasoning in Context?
+arXiv:2502.13913, 2025.
 \bibitem[Ho et al.(2020)]{ho2020constructing}
 Xanh Ho, Anh-Khoa Duong Nguyen, Saku Sugawara, and Akiko Aizawa.
 Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of
@@ -931,7 +926,12 @@ Reasoning Steps (2WikiMultihopQA). \emph{COLING}, 2020.
 \bibitem[Kadavath et al.(2022)]{kadavath2022know}
 Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain,
 Ethan Perez, Nicholas Schiefer, Zac Hatfield-Dodds, Nova DasSarma,
-Eli Tran-Johnson, et al.
+Eli Tran-Johnson, Scott Johnston, Sheer El-Showk, Andy Jones, Nelson Elhage,
+Tristan Hume, Anna Chen, Yuntao Bai, Sam Bowman, Stanislav Fort, Deep Ganguli,
+Danny Hernandez, Josh Jacobson, Jackson Kernion, Shauna Kravec, Liane Lovitt,
+Kamal Ndousse, Catherine Olsson, Sam Ringer, Dario Amodei, Tom Brown,
+Jack Clark, Nicholas Joseph, Ben Mann, Sam McCandlish, Chris Olah, and
+Jared Kaplan.
 Language Models (Mostly) Know What They Know.
 arXiv:2207.05221, 2022.
 \bibitem[Liu et al.(2026)]{liu2026cor}
@@ -981,6 +981,11 @@ Xingyu Tan, Xiaoyang Wang, Qing Liu, Xiwei Xu, Xin Yuan, Liming Zhu, and
 Wenjie Zhang.
 PrivGemo: Privacy-Preserving Dual-Tower Graph Retrieval for Empowering LLM
 Reasoning with Memory Augmentation. arXiv:2601.08739, 2026.
+\bibitem[Tang et al.(2023)]{tang2023semantic}
+Xiaojuan Tang, Zilong Zheng, Jiaqi Li, Fanxu Meng, Song-Chun Zhu, Yitao Liang,
+and Muhan Zhang.
+Large Language Models are In-Context Semantic Reasoners rather than Symbolic
+Reasoners. arXiv:2305.14825, 2023.
 \bibitem[Trivedi et al.(2022)]{trivedi2022musique}
 Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, and Ashish Sabharwal.
 MuSiQue: Multihop Questions via Single-hop Question Composition.
@@ -1007,7 +1012,7 @@ Know Your Limits: A Survey of Abstention in Large Language Models.
 \bibitem[Wilson(1927)]{wilson1927}
 Edwin~B. Wilson.
 Probable Inference, the Law of Succession, and Statistical Inference.
-\emph{JASA}, 1927.
+\emph{JASA}, 22(158):209--212, 1927.
 \bibitem[Wu et al.(2025)]{wu2025binding}
 Yiwei Wu, Atticus Geiger, and Rapha\"el Milli\`ere.
 How Do Transformers Learn Variable Binding in Symbolic Programs?
@@ -1378,8 +1383,7 @@ under a second key $\sigma'$ with a different gold on every pair.}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{fig7_opaque_rel_n200.png}
-\caption{Non-LLM and packaging controls (file
-\texttt{fig7\_opaque\_rel\_n200.png}).
+\caption{Non-LLM and packaging controls.
 Panel A is Composer $n{=}12$; panels B--C are frozen $n{=}200$ baselines.
 Left: opaque-rel NL $0/12$ vs.\ plan/legend $12/12$ (Composer~2.5, $n{=}12$).
 Middle: 2Wiki-CF BM25 $6/200$, Wikipedia-string leak $75/200$, SealRouter
@@ -1493,7 +1497,8 @@ Of 32 \textsc{Wiki-H5} items, 24 have $c_i{=}{-1}$, one has $c_i{=}{-2}$,
 7 have $c_i{=}0$; $T{=}{-}26$.
 Under exchangeability of unique-path and two-path opacity effects,
 $p{=}2/2^{25}{=}5.96{\times}10^{-8}$.
-That $p$ coincides numerically with the two-path McNemar $p$ (25 vs.\ 0);
+That $p$ coincides numerically with the two-path McNemar $p$ (25 vs.\ 0;
+\citealp{mcnemar1947});
 the tests are not the same.
 Opacity is not a randomized within-item treatment.
 The body reports Wilson intervals and the paired counts.

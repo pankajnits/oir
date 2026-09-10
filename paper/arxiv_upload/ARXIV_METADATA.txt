@@ -9,7 +9,7 @@ Cross-list: cs.AI, cs.LG
 
 License: CC BY 4.0
 
-Comments: 11 pages + appendix, 20 pages total. NeurIPS preprint style. Code: https://github.com/pankajnits/oir
+Comments: 10 pages + appendix, 20 pages total. NeurIPS preprint style. Code: https://github.com/pankajnits/oir
 
 Abstract (paste into arXiv form):
 We ask whether multi-hop answering over knowledge graphs needs readable names and predicates, or only equality among identifiers. We find that opacity blocks selection under path ambiguity, not unique-path traversal. Opaque isomorphic reasoning (OIR) is a measurement protocol: a renaming of entities and relations that we verify to be injective on each instance's finite atom set, with no legend in the prompt. HMAC-SHA256 is one generator of that map, not a cryptographic or privacy primitive.

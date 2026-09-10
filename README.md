@@ -9,7 +9,7 @@ Measurement protocol and HMAC middle layer for the paper
 **Code, isolation quizzes (`runs/`), and locked scores (`results/`):**
 [github.com/pankajnits/oir](https://github.com/pankajnits/oir)
 
-**PDF (NeurIPS preprint, 11 content pages + appendix):**
+**PDF (NeurIPS preprint, 10 content pages + appendix):**
 [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf)
 
 Cite this repository with [`CITATION.cff`](CITATION.cff).
