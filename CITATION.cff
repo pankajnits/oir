@@ -1,6 +1,8 @@
 cff-version: 1.2.0
-message: If you use this software or the locked quizzes, please cite this repository.
+message: If you use this software or the locked quizzes, please cite the paper.
 title: "OIR: Opaque Isomorphic Reasoning"
+version: "0.1.0"
+date-released: "2026-09-10"
 authors:
   - family-names: Pandey
     given-names: Pankaj
@@ -14,3 +16,12 @@ keywords:
   - multi-hop
   - opaque-identifiers
   - measurement
+preferred-citation:
+  type: article
+  title: "When Can Language Models Join Without Lexical Cues? Unique-Path Traversal versus End-to-End Accuracy under Path Ambiguity"
+  authors:
+    - family-names: Pandey
+      given-names: Pankaj
+  year: 2026
+  url: https://github.com/pankajnits/oir
+  notes: NeurIPS-style preprint. Isolation quizzes and locked scores are in this repository.

@@ -36,14 +36,15 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 | Unique path, both-opaque (entities+relations sealed) | **32/32** all three families |
 | Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; Composer **27/32**; Grok **30/32** |
 | English Wikidata 2×2 (OpenAI; relations readable) | unique **31/32**, two-path **31/32** |
-| Opacity × two same-type paths (OpenAI Wikidata 2×2) | English two-path **31/32** → opaque two-path **6/32** (McNemar 25 vs 0) |
-| English two-path, Grok (same graphs) | **4/32** (UNK 28); the opacity drop is OpenAI-shaped |
-| WikiMovies/MetaQA-derived n=100 Condition B (OpenAI) | unique **100/100**, two-path **3/100** |
-| Both-opaque two-path | **1/32 / 0/32 / 0/32** |
+| Opacity × two same-type paths (OpenAI Wikidata 2×2) | English two-path **31/32** → opaque **6/32** (UNK 24, decoy 2; McNemar 25 vs 0) |
+| Same graphs, Composer / Grok two-path | Composer English **26/32** → opaque **10/32**; Grok English **4/32** (UNK 28) → opaque **1/32** |
+| WikiMovies Condition A n=100 (OpenAI) | two-path **96/100**; on 32 names shared with A32, **29/32** (A32 was **17/32**) |
+| WikiMovies Condition B n=100 (OpenAI) | unique **100/100**, two-path **3/100** |
+| Both-opaque two-path (OpenAI / Composer / Grok) | **1/32 / 0/32 / 0/32** |
 | Dual-path | matched **32/32**; novel **0/32**; last-demo copy **0/32** |
 | No written hop: protocol / equality recipe | **32/32** all three |
 | No written hop: schema list / broken match | **0/32** all three |
-| Written hop (LLM) | OpenAI/Grok **32/32**; composer **28/32** (control) |
+| Written hop (LLM) | OpenAI/Grok **32/32**; Composer **28/32** (control) |
 | SealRouter on that hop | **32/32** (no LLM; not a reason to call a model) |
 | CEO free sealed English | **0/32** (confounded: piecewise hash; person atom typically absent from $q$) |
 
@@ -160,6 +161,7 @@ chat = SealedChat(MiddleLayer(), Echo())
 | `oir.MiddleLayer` | HMAC key + bind + pack + unseal. `new_call()` / new instance per request. |
 | `oir.layer.LayerCall` | `sealed_question`, `messages`, `llm_prompt`, `leaked`, `binder` |
 | `oir.chat.SealedChat` | `ask(...)` / `prepare(...)` — raises `LeakError` |
+| `oir.errors.LeakError` | Watched plaintext would have appeared in `call.messages`; send is refused |
 | `oir.chat.ChatCompleter` | Protocol: `complete(messages) -> str` |
 | `oir.chat.OpenAIChatClient` | Thin `openai` wrapper. `gpt-4o-mini`: `temperature=0`. `gpt-5*`: omit temperature, `max_completion_tokens=512` (paper runner). |
 | `oir.EntitySeal` / `oir.SealRouter` | Atom HMAC and exact PATH executor (paper ceiling) |

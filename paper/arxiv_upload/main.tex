@@ -543,9 +543,10 @@ $0/32$, with plan $32/32$.
 actor$\to$movie$\to$director vs.\ writer template (person tails).
 A32's ARM names two 2-hops; A100's is \texttt{OPAQUE\_AMBIG n=100}.
 On the 32 overlapping gold names OpenAI is $17/32$ (15 \texttt{UNKNOWN},
-decoy $0$) vs.\ $29/32$ under A100's thinner ARM (15 of those
-\texttt{UNKNOWN}s become gold). The extra 68 items are $67/68$, which is
-why the $n{=}100$ cell is $96/100$. Keys differ; they cannot explain an
+decoy $0$) vs.\ $29/32$ under A100's thinner ARM (all 15
+\texttt{UNKNOWN}s become gold; three of the original golds also flip).
+The extra 68 items are $67/68$, which is why the $n{=}100$ cell is
+$96/100$. Keys differ; they cannot explain an
 English-name lookup. Director is always the first person-tail, so
 parametric knowledge and a listing-slot heuristic are not separated.
 Movie-B keeps those names, hashes the verbs, and is $3/100$.
@@ -627,7 +628,7 @@ demonstrated correspondences; it is not induction of a general cipher.
 \centering
 \includegraphics[width=0.72\linewidth]{fig3_dualpath.png}
 \caption{\textsc{Dual} (synthetic, OpenAI $n{=}32$): matched $32/32$; novel
-$0/32$ (asymmetric decoy $8$).}
+$0/32$ (asymmetric decoy $8$); explicit plan $32/32$.}
 \label{fig:dualpath}
 \end{figure}
 
@@ -734,8 +735,8 @@ header$\times$opacity is zero; CONTEXT-only likewise does not identify
 instruction-following vs.\ missing parametric fallback.
 \textsc{Movie-A32} vs.\ \textsc{Movie-A100} is a confounded header-width
 contrast: on the 32 overlapping gold names OpenAI is $17/32$ vs.\ $29/32$
-(15 \texttt{UNKNOWN}s become gold); $96/100$ is the $n{=}100$ cell because
-the extra 68 items are $67/68$.
+(all 15 \texttt{UNKNOWN}s become gold; three original golds flip);
+$96/100$ is the $n{=}100$ cell because the extra 68 items are $67/68$.
 A header-neutral Wiki-H5 rerun is the highest-value missing cell.
 A world-knowledge-allowed prompt, forced-choice, scored $(r_1,r_2)$, and
 an HQ-city swap are also not in this evaluation.
@@ -1076,6 +1077,7 @@ Silent same-$\sigma$ OpenAI $6/32$ is a JSON-binding cell, distinct from
 \end{figure}
 \FloatBarrier
 
+Figure~\ref{fig:bind} is the OpenAI row of Table~\ref{tab:ident32}.
 The Table~\ref{tab:ident32} prompts are fixed English blocks (same wording
 for all three families). We use \emph{equality} rather than similarity:
 exact identity of sealed tokens, not a continuous metric. Schema list only
@@ -1188,9 +1190,10 @@ under a second key $\sigma'$ with a different gold on every pair.}
 \centering
 \includegraphics[width=\linewidth]{fig7_opaque_rel_n200.png}
 \caption{Non-LLM and packaging controls.
-Left: opaque-rel restore (Composer~2.5, $n{=}12$).
-Middle: 2Wiki-CF BM25 $6/200$ vs.\ SealRouter $200/200$.
-Right: Spider engine vs.\ BM25.
+Left: opaque-rel NL $0/12$ vs.\ plan/legend $12/12$ (Composer~2.5, $n{=}12$).
+Middle: 2Wiki-CF BM25 $6/200$, Wikipedia-string leak $75/200$, SealRouter
+$200/200$.
+Right: Spider sqlite $200/200$, gold-SQL engine $191/200$, BM25 $1/200$.
 CEO/2Wiki opacity$\times$prompt-form scores are in the surrounding prose.}
 \label{fig:packaging}
 \end{figure}

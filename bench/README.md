@@ -18,7 +18,7 @@ Manifest: `bench/MANIFEST.json`.
 
 ## Wikidata $2{\times}2$ (primary)
 
-Arms: `ENG_UNIQUE`, `ENG_AMBIG`, `OPAQUE_UNIQUE`, `OPAQUE_AMBIG` (+ plan control). Locked OpenAI: English unique/two-path **31/32**, opaque unique **32/32**, opaque two-path **6/32**. JSON: `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json`.
+Arms: `ENG_UNIQUE`, `ENG_AMBIG`, `OPAQUE_UNIQUE`, `OPAQUE_AMBIG` (+ plan control). Locked OpenAI: English unique/two-path **31/32**, opaque unique **32/32**, opaque two-path **6/32** (UNK 24, decoy 2). Composer English two-path **26/32** → opaque **10/32**; Grok **4/32** → **1/32**. JSON: `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json`.
 
 ## Three-arm (missing-start / execution bound)
 

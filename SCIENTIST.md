@@ -33,7 +33,7 @@ Scorers: `harness/score_*.py`.
 |-------|--------|------------------------|
 | Wikidata $2{\times}2$ n=32 | `factorial_2x2_iso.py` + iso harness runners | `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json` |
 | Wikidata two-path listing shuffle n=32 | `factorial_2x2_iso_shuffle.py` + `score_factorial_2x2.py gpt56 factorial_2x2_iso_shuffle_harness` | `results/factorial_2x2_iso_shuffle_gpt56.json` |
-| WikiMovies / MetaQA n=100 Condition A | `harness/metaqa_2x2_people_n100.py` | `results/metaqa_2x2_people_n100_iso_{gpt56,composer25,grok45}.json` (OpenAI two-path **96/100**; on the 32 names shared with Movie-A32, **29/32**) |
+| WikiMovies / MetaQA n=100 Condition A | `harness/metaqa_2x2_people_n100.py` | `results/metaqa_2x2_people_n100_iso_{gpt56,composer25,grok45}.json` (OpenAI two-path **96/100**; on the 32 names shared with Movie-A32, **29/32**, vs A32 **17/32**) |
 | WikiMovies/MetaQA-derived n=100 Condition B (OpenAI) | `harness/metaqa_2x2_people_n100_qhash.py` | `results/metaqa_2x2_people_n100_qhash_iso_gpt56.json` (unique **100/100**, two-path **3/100**) |
 | Entity×relation n=32 | `entity_rel_2x2_iso.py` | `results/entity_rel_2x2_iso_*.json` |
 | Dual-path n=32 | `score_adv_n32_iso.py {gpt56,grok45ff,composer25ff}` | `results/adv_induction_n32_iso_*.json` |
