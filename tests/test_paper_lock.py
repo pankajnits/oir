@@ -1,7 +1,9 @@
 """Headline paper numbers must match locked JSON (catches mixed-lock prose)."""
 from __future__ import annotations
 
+import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,3 +60,27 @@ def test_city_subset_non_twopath_errors_are_only_noncity():
                 continue
             if not r["ok"]:
                 assert r["gold"] in NONCITY, (fname, r["arm"], r["gold"], r.get("pred"))
+
+
+def test_sha256sums_lists_only_tracked_json():
+    """Fresh clones must be able to run ``shasum -c results/SHA256SUMS`` from the repo root."""
+    listed = []
+    for line in (RESULTS / "SHA256SUMS").read_text().splitlines():
+        digest, rel = line.split(None, 1)
+        listed.append(rel)
+        path = ROOT / rel
+        assert path.is_file(), rel
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == digest, rel
+        r = subprocess.run(
+            ["git", "-C", str(ROOT), "check-ignore", "-q", "--", rel],
+        )
+        assert r.returncode == 1, f"gitignored but listed: {rel}"
+    assert "results/longctx_1m_harness.json" not in listed
+    assert "results/longctx_1m_results.json" not in listed
+    tracked = subprocess.check_output(
+        ["git", "-C", str(ROOT), "ls-files", "-z", "--", "results/"],
+    )
+    tracked_json = {
+        p for p in tracked.decode().split("\0") if p.endswith(".json")
+    }
+    assert set(listed) == tracked_json

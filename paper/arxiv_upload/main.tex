@@ -179,10 +179,15 @@ $75\%$)~\citep{privgemo2026}.
 CoR explores readable relations because entities often have no semantics
 beyond opaque IDs --- the OE hide-set, not relation-only
 \textsc{Wiki-H5}~\citep{liu2026cor}.
-\citet{tang2023semantic} map relation names to \texttt{r1} with rules in
-context; \citet{guo2025twohop} add distractor two-hops from other sources
-(or delete predicates). Neither crosses English vs.\ sealed relations with
-two same-start typed 2-hops.
+\citet{tang2023semantic} find LLMs fail when relation names are replaced by
+symbols (\texttt{r1}) and rules must carry deduction; unique-path opaque
+$32/32$ is the complementary case: sealed relations still traverse when
+topology fixes the route.
+\citet{guo2025twohop} report collapse to random guessing among end entities
+when distractor two-hops have other sources. Wiki-H5 two-path, with
+\texttt{UNKNOWN} allowed, is abstention rather than guessing (OpenAI decoy
+$2/32$, \texttt{UNKNOWN} $24/32$); a forced-choice arm (unrun;
+Section~\ref{sec:limitations}) would put those protocols on the same scale.
 OIR withholds retrieved paths on the free arms (Table~\ref{tab:diff}).
 The primary cell seals relations while entities stay English; both-opaque is
 a separate ablation.
@@ -1060,8 +1065,10 @@ The 32 records are \texttt{random.Random(20260821).sample} from the 73-row
 CEO file; two-path decoys attach record $i{+}1 \bmod 32$, so each item's
 decoy company/HQ is the next item's gold. Wilson intervals in the body
 treat items as i.i.d.; that is slightly optimistic under this cycle.
-A SHA-256 lockfile over every \texttt{results/*.json} is
-\texttt{results/SHA256SUMS}; verify with
+A SHA-256 lockfile over git-tracked JSON in \texttt{results/} is
+\texttt{results/SHA256SUMS} (regenerate with
+\texttt{harness/write\_sha256sums.py}; ignored packs such as
+\texttt{longctx\_1m*} are omitted). Verify with
 \texttt{shasum -c results/SHA256SUMS}.
 \textsc{Wiki-OO} is a second suite on those records
 (\texttt{oir-entrel-2x2-iso-v1} and index).
