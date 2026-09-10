@@ -16,6 +16,16 @@ RESULTS = ROOT / "results"
 OUT = ROOT / "paper" / "figures"
 
 
+def wilson_interval(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
+    if n <= 0:
+        return (0.0, 1.0)
+    p = k / n
+    den = 1 + z * z / n
+    centre = (p + z * z / (2 * n)) / den
+    half = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / den
+    return max(0.0, centre - half), min(1.0, centre + half)
+
+
 def frac(s: str) -> float:
     a, b = s.split("/")
     return int(a) / int(b)
@@ -83,21 +93,66 @@ def main():
             ax.set_ylabel("Exact accuracy")
         return fig, ax
 
-    fig, ax = _one_panel("fig1_matched_2x2", figsize=(6.4, 3.35))
+    fig, ax = _one_panel("fig1_matched_2x2", figsize=(7.2, 3.55))
     labels = ["English\nunique", "English\ntwo-path", "Opaque\nunique", "Opaque\ntwo-path"]
-    scores = [
-        score_of(fact["ENG_UNIQUE"]),
-        score_of(fact["ENG_AMBIG"]),
-        score_of(fact["OPAQUE_UNIQUE"]),
-        score_of(fact["OPAQUE_AMBIG"]),
-    ]
-    vals = [frac(s) for s in scores]
-    colors = ["#2a6f6f", "#2a6f6f", "#2a6f6f", "#b33a3a"]
-    bars = ax.bar(labels, vals, color=colors, width=0.72, edgecolor="#1a1a1a", linewidth=0.6)
+    arms = ["ENG_UNIQUE", "ENG_AMBIG", "OPAQUE_UNIQUE", "OPAQUE_AMBIG"]
+    golds, decoys, unks = [], [], []
+    for a in arms:
+        row = fact[a]
+        n = int(score_of(row).split("/")[1])
+        g = int(score_of(row).split("/")[0])
+        d = int(row.get("decoy", 0) or 0)
+        u = int(row.get("unknown", 0) or 0)
+        golds.append(g / n)
+        decoys.append(d / n)
+        unks.append(u / n)
+    x = np.arange(len(labels))
+    ax.bar(x, golds, color="#2a6f6f", width=0.72, edgecolor="#1a1a1a", linewidth=0.6, label="Gold")
+    ax.bar(x, decoys, bottom=golds, color="#c47a2c", width=0.72, edgecolor="#1a1a1a", linewidth=0.6, label="Decoy")
+    ax.bar(
+        x,
+        unks,
+        bottom=np.array(golds) + np.array(decoys),
+        color="#c8c8c8",
+        width=0.72,
+        edgecolor="#1a1a1a",
+        linewidth=0.6,
+        label="UNKNOWN",
+    )
+    for i, a in enumerate(arms):
+        k_i, n_i = (int(part) for part in score_of(fact[a]).split("/"))
+        lo, hi = wilson_interval(k_i, n_i)
+        ax.errorbar(
+            x[i],
+            golds[i],
+            yerr=[[golds[i] - lo], [hi - golds[i]]],
+            fmt="none",
+            ecolor="#111",
+            capsize=3,
+            elinewidth=0.9,
+            zorder=4,
+        )
+        if golds[i] < 0.5:
+            y_txt = golds[i] + decoys[i] + max(unks[i] * 0.45, 0.08)
+            va, col = "center", "#111"
+        elif golds[i] < 0.88:
+            y_txt, va, col = min(golds[i] + 0.06, 0.92), "bottom", "#111"
+        else:
+            y_txt, va, col = golds[i] - 0.08, "top", "white"
+        ax.text(
+            x[i],
+            y_txt,
+            f"{k_i}/{n_i}",
+            ha="center",
+            va=va,
+            fontsize=8,
+            color=col,
+        )
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels)
     set_acc_axis(ax)
     ax.set_title("OpenAI Wikidata 2×2 (n=32, start in q)")
-    for b, s, v in zip(bars, scores, vals):
-        label_bar(ax, b, s, v, fontsize=8)
+    ax.legend(frameon=False, loc="center left", bbox_to_anchor=(1.01, 0.55), fontsize=8)
     fig.savefig(OUT / "fig1_matched_2x2.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig1_matched_2x2.png", dpi=200, bbox_inches="tight")
     plt.close()

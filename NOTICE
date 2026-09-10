@@ -10,3 +10,8 @@ Datasets keep their own licenses and are not re-licensed by this repository:
 - WikiMovies / MetaQA movie graph — as released with those papers
 - OSV.dev facts used in schema-vault cells — CC-BY-4.0
 - OpenData500 US companies CSV — as released by The GovLab; employee names in the Excel skin are synthetic
+
+TeX Gyre Termes and TeX Gyre Cursor OpenType files under `paper/arxiv_upload/fonts/`
+are the GUST Font License (GFL, derived from LPPL). They are a local `tectonic`
+fallback and are **not** in `paper/oir-arxiv.zip`; arXiv compiles against TeX Live's
+copy. They are not re-licensed as Apache-2.0.

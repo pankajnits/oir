@@ -12,23 +12,39 @@
 \usepackage{iftex}
 \iftutex
   \usepackage{fontspec}
-  \setmainfont{TeXGyreTermes}[
-    Path = fonts/,
-    Extension = .otf,
-    UprightFont = texgyretermes-regular,
-    BoldFont = texgyretermes-bold,
-    ItalicFont = texgyretermes-italic,
-    BoldItalicFont = texgyretermes-bolditalic
-  ]
-  \setmonofont{TeXGyreCursor}[
-    Path = fonts/,
-    Extension = .otf,
-    UprightFont = texgyrecursor-regular,
-    BoldFont = texgyrecursor-bold,
-    ItalicFont = texgyrecursor-italic,
-    BoldItalicFont = texgyrecursor-bolditalic,
-    Scale = MatchLowercase
-  ]
+  % Filename lookup (arXiv xelatex). Bundled fonts/ is a local tectonic fallback;
+  % TeX Live 2025 already ships these OTFs, so the arXiv zip omits fonts/.
+  \IfFileExists{fonts/texgyretermes-regular.otf}{%
+    \setmainfont{TeXGyreTermes}[
+      Path = fonts/,
+      Extension = .otf,
+      UprightFont = texgyretermes-regular,
+      BoldFont = texgyretermes-bold,
+      ItalicFont = texgyretermes-italic,
+      BoldItalicFont = texgyretermes-bolditalic
+    ]
+    \setmonofont{TeXGyreCursor}[
+      Path = fonts/,
+      Extension = .otf,
+      UprightFont = texgyrecursor-regular,
+      BoldFont = texgyrecursor-bold,
+      ItalicFont = texgyrecursor-italic,
+      BoldItalicFont = texgyrecursor-bolditalic,
+      Scale = MatchLowercase
+    ]
+  }{%
+    \setmainfont{texgyretermes-regular.otf}[
+      BoldFont = texgyretermes-bold.otf,
+      ItalicFont = texgyretermes-italic.otf,
+      BoldItalicFont = texgyretermes-bolditalic.otf
+    ]
+    \setmonofont{texgyrecursor-regular.otf}[
+      BoldFont = texgyrecursor-bold.otf,
+      ItalicFont = texgyrecursor-italic.otf,
+      BoldItalicFont = texgyrecursor-bolditalic.otf,
+      Scale = MatchLowercase
+    ]
+  }
 \fi
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
@@ -75,8 +91,10 @@ Wikidata-derived CEO slice) and both-opaque unique paths are $32/32$ for
 Composer~2.5, OpenAI \mbox{\texttt{gpt-5.6-sol}}, and Grok~4.5.
 When two same-type routes compete, \emph{relation-only} opacity (entities
 remain English) yields OpenAI $6/32$, mostly \texttt{UNKNOWN} ($24/32$)
-rather than decoy ($2/32$). That drop is OpenAI-shaped: Grok English two-path
-is already $4/32$. OpenAI both-opaque two-path on the same graphs is $1/32$.
+rather than decoy ($2/32$). Both decoys sit on non-city P159 golds; on the
+26 city-valued items the cell is $5/26$ (decoy $0$; McNemar $21$ vs.\ $0$).
+That drop is OpenAI-shaped: Grok English two-path is already $4/32$. OpenAI
+both-opaque two-path on the same graphs is $1/32$.
 We score the answer node, not an emitted $(r_1,r_2)$.
 Seals remove lexical cues; they are not a confidentiality proof.
 \end{abstract}
@@ -122,6 +140,15 @@ This paper reports: (i)~unique-route sealed execution with the start in $q$
 and no written hop; (ii)~end-to-end collapse when opaque relations meet path
 ambiguity, typically \texttt{UNKNOWN} rather than the decoy city;
 (iii)~matched demonstrations restore shown seals, while novel seals do not.
+What is new is the interaction rather than the opacity. Privacy-oriented
+KGQA anonymizes entities while relations stay the readable retrieval language
+and reports mild degradation~\citep{arog2025,privgemo2026,liu2026cor};
+compositional-limit and counterfactual studies vary the task and observe
+degradation~\citep{dziri2023faith,wu2024counterfactual}. Here the task, hop
+length, graph size, and template are fixed, only the vocabulary changes, and
+opacity is crossed with path ambiguity: it is free on a unique route and
+destructive only when two same-type routes compete, with abstention rather
+than a wrong route as the failure mode.
 Cross-dataset checks, generator robustness, and packaging probes appear in
 Section~\ref{sec:results} and the appendix (Table~\ref{tab:inventory}).
 
@@ -129,8 +156,10 @@ Section~\ref{sec:results} and the appendix (Table~\ref{tab:inventory}).
 \centering
 \includegraphics[width=0.92\linewidth]{fig1_matched_2x2.png}
 \caption{OpenAI \textsc{Wiki-H5} on Wikidata ($n{=}32$, start in $q$;
-relation-only). English unique/two-path $31/32$; opaque unique $32/32$;
-opaque two-path $6/32$ (mostly \texttt{UNKNOWN}).}
+relation-only). Stacked bars are gold / decoy / \texttt{UNKNOWN};
+whiskers are Wilson 95\% intervals on exact match.
+English unique/two-path $31/32$; opaque unique $32/32$; opaque two-path
+$6/32$ (mostly \texttt{UNKNOWN}).}
 \label{fig:spine}
 \end{figure}
 
@@ -161,10 +190,43 @@ exact match on a controlled join.
 Chain-of-thought and Text-to-SQL externalize plans over
 English~\citep{wei2022cot,yu2018spider}. MaskSQL abstracts schema tokens
 before remote SQL~\citep{abedini2025masksql}.
+\citet{feng2024binding} identify binding-ID vectors that attach attributes to
+their entities in LM activations, and
 \citet{wu2025binding} study binding circuitry on synthetic programs.
 We ask a behavioral question: can a pretrained model join when the relation
 vocabulary is freshly randomized and no plan is given? A sealed plan is then
 an execution upper bound.
+
+Compositional-limit studies change the task; we change only the vocabulary.
+\citet{dziri2023faith} find that transformers reduce multi-step composition to
+linearized subgraph matching, and \citet{wu2024counterfactual} report
+consistent degradation once a task is moved off the default assumptions it was
+pretrained on. Symbol tuning replaces natural-language labels with arbitrary
+symbols and shows models can be pushed to rely on input--label
+mappings~\citep{wei2023symbol}. Each of those interventions varies the task,
+the numeric base, or the label set. OIR holds the join, hop length, graph size,
+and question template fixed and replaces only the relation (or entity) strings,
+so the manipulated variable is lexical access rather than task difficulty. The
+$2{\times}2$ then crosses that variable with path ambiguity, which those
+studies do not vary: opacity is harmless on a unique route ($32/32$) and
+destructive only when two same-type routes compete. \citet{wei2023symbol} also
+motivates a control we do not run --- short pronounceable symbols rather than
+12-hex tokens (Section~\ref{sec:limitations}).
+
+Latent-hop and shortcut work asks a related question on readable prompts.
+\citet{yang2024latent} test whether LMs traverse two hops latently and find the
+second hop weaker than the first and not improving with scale; that is
+parametric recall over English predicates, whereas our graphs are in-context
+and the predicates carry no readable form, so a latent second hop has no
+lexical key to fire on. Multi-hop dataset design has long held that
+compositional questions can be answered without
+composing~\citep{min2019compositional}, and MuSiQue filters single-hop
+shortcuts by construction~\citep{trivedi2022musique}. Those controls remove
+redundant evidence. Opacity is a complementary control: it leaves the graph
+and the required composition intact and removes only the lexical route from the
+verb in $q$ to a predicate in $G$. Because unique-path opaque traversal stays
+at $32/32$, that removal does not by itself break execution --- it withdraws
+the cue that would otherwise select between routes.
 
 \begin{table}[t]
 \centering
@@ -251,7 +313,9 @@ evidence that traversal failed. Dual-path separates those cases: in-prompt
 reuse of demonstrated relation-seal correspondences restores end-to-end
 accuracy; novel seals receive no such mapping. Models may abstain
 (\texttt{UNKNOWN}) rather than guess. That is selective
-prediction~\citep{elyaniv2010selective,geifman2017selective}: coverage is the
+prediction~\citep{elyaniv2010selective,geifman2017selective}, studied in
+language models as calibration and
+abstention~\citep{kadavath2022know,wen2025abstention}: coverage is the
 fraction of items with a non-\texttt{UNKNOWN} parse, and selective accuracy
 is exact match among those items, not a forced-choice among the two routes.
 
@@ -314,8 +378,9 @@ the same rate.
 
 \paragraph{Matched $2{\times}2$ (start in $q$).}
 \label{par:fact2x2}
-The $n{=}32$ suite is a constructed slice: 32 of 73 Wikidata-derived CEO
-records~\citep{vrandecic2014wikidata}, not a published CEO benchmark.
+The $n{=}32$ suite is a seeded random sample of 32 of 73 Wikidata-derived CEO
+records (\texttt{random.Random(20260821).sample};~\citealp{vrandecic2014wikidata}),
+not a published CEO benchmark and not a hand-picked subset.
 Each instance is 4 triples (unique-path: 6 entities with a disconnected
 decoy island; two-path: 5 entities sharing the start). The gold two-hop
 uses \texttt{works\_at} then the headquarters relation; the question says
@@ -351,6 +416,10 @@ The primary two-path prompt is a single user message:
 \end{quote}
 It does \emph{not} contain the equality-recipe line
 (Appendix~\ref{app:recipe}).
+The format token is \texttt{<city\_or\_UNKNOWN>}, but six gold HQs are not
+cities (Appendix~\ref{app:protocol}). A model that obeys the format on those
+items must emit \texttt{UNKNOWN}. The $n{=}32$ lock remains the primary
+report; Section~\ref{sec:fact2x2} also scores the 26 city-valued items.
 English two-path is $31/32$ under that CONTEXT-only instruction, so the
 line does not by itself force abstention.
 Readable names (Eisner, Burbank) still leave OpenAI at \texttt{UNKNOWN}
@@ -395,6 +464,9 @@ On the OpenAI Wikidata $2{\times}2$, English two-path is correct and opaque
 two-path is not on $25$ of $32$ paired items, and the reverse never occurs
 (McNemar exact two-sided $p{=}5.96{\times}10^{-8}$;~\citealp{mcnemar1947}).
 That is the two-path paired contrast, not an interaction test.
+That $p$ clears Bonferroni over 60 reported cells
+($\alpha/60 \approx 8{\times}10^{-4}$); we do not treat every secondary cell
+as a confirmatory test.
 \textbf{Isolation} means one quiz per file with gold answers stored outside
 the model-visible prompt (stricter than multi-quiz \textbf{batch} files).
 Isolation $n{=}32$ uses one quiz per file and a per-item HMAC. Cells marked
@@ -480,7 +552,20 @@ difference-in-differences is $-26/32$. The primary paired comparison is
 two-path English versus opaque: 25 items English-correct and opaque-wrong,
 0 reverse (McNemar exact $p{=}5.96{\times}10^{-8}$). Opacity is not a
 randomized within-item treatment; we report Wilson intervals and these
-paired counts. An optional sign-flip of the per-item interaction contrast
+paired counts. The primary $p$ remains significant under Bonferroni over
+60 cells; Wilson intervals treat items as independent Bernoulli trials,
+which the cyclic decoy construction slightly violates
+(Appendix~\ref{app:protocol}).
+On the 26 city-valued items (six P159 non-city HQs held out) OpenAI unique
+English, unique opaque, and English two-path are $26/26$; opaque two-path
+is $5/26$ (\texttt{UNKNOWN} $21$, decoy $0$; McNemar $21$ vs.\ $0$,
+$p{=}9.54{\times}10^{-7}$). Unique-path $\Delta_{\mathrm{opq}}$ is then
+$0/26$: the $+1/32$ on the full suite is item 3
+(\texttt{NRK\_Marienlyst}) under the city format token. Composer English
+two-path $26/32$ is $26/26$ on cities (all six misses are non-city, including
+\texttt{Lod} for gold \texttt{Lod\_Railway\_Station}). Grok English two-path
+is $4/26$: that abstention is not a format artifact.
+An optional sign-flip of the per-item interaction contrast
 is Appendix~\ref{app:signflip} (same numerical $p$, different test).
 Opacity alone does not block traversal; the drop is concentrated in the
 two-path condition.
@@ -514,17 +599,19 @@ generators; the two-path \emph{rate} is not invariant.
 \toprule
 Wikidata cell (iso.\ $n{=}32$) & OpenAI & Composer~2.5 & Grok~4.5 \\
 \midrule
-English, unique & $31/0/1$ & $29/0/2$ & $32/0/0$ \\
-English, two paths & $31/0/1$ & $26/0/6$ & $4/0/28$ \\
-Opaque, unique & $32/0/0$ & $27/0/3$ & $30/0/2$ \\
-Opaque, two paths & $6/2/24$ & $10/0/22$ & $1/0/31$ \\
-Opaque two paths $+$ plan & $32/0/0$ & $28/0/3$ & $32/0/0$ \\
+English, unique & $31/0/1/0$ & $29/0/2/1$ & $32/0/0/0$ \\
+English, two paths & $31/0/1/0$ & $26/0/6/0$ & $4/0/28/0$ \\
+Opaque, unique & $32/0/0/0$ & $27/0/3/2$ & $30/0/2/0$ \\
+Opaque, two paths & $6/2/24/0$ & $10/0/22/0$ & $1/0/31/0$ \\
+Opaque two paths $+$ plan & $32/0/0/0$ & $28/0/3/1$ & $32/0/0/0$ \\
 \bottomrule
 \end{tabular}
-\caption{Three-way outcomes: gold / decoy / \texttt{UNKNOWN}.
+\caption{Four-way outcomes: gold / decoy / \texttt{UNKNOWN} / other wrong token.
 On this table \texttt{UNKNOWN} is an explicit \texttt{UNKNOWN} line
-(missing/unparsed $0$; both-named $0$). Remainder, if any, is another
-wrong token. OpenAI's two decoys are P159 type-asymmetric pairs.
+(missing/unparsed $0$; both-named $0$).
+Composer ``other'' cells are a wrong city that is neither gold nor decoy
+(English unique $1$, opaque unique $2$, plan $1$).
+OpenAI's two decoys are P159 type-asymmetric pairs.
 Coverage and selective accuracy for every two-path row are in the
 surrounding text. Grok already returns \texttt{UNKNOWN} on English
 two-path.}
@@ -649,8 +736,12 @@ explicit dual-path plan scores $32/32$. The same matched vs.\ novel contrast
 on WikiMovies director/writer facts is $32/32$ vs.\ $0/32$ for OpenAI,
 Composer~2.5, and Grok~4.5 (novel is \texttt{UNKNOWN} except Composer decoy
 $2/32$), with plan $32/32$. Composer saturates both matched-relation arms
-and the plan ($32/32$), abstains on novel-relation balanced, and takes the
-asymmetric decoy on all 32 novel-asymmetric items. Grok matches except on
+and the plan ($32/32$) and, under the isolation lock
+(\texttt{adv\_induction\_n32\_iso\_composer25.json}, not free-form),
+abstains on both novel-relation arms (\texttt{UNKNOWN} $32/32$, decoy $0$).
+Under the free-form lock (\texttt{composer25ff}) the same novel-asymmetric
+items are decoy $32/32$ (Table~\ref{tab:extended}); the two locks differ
+only in answer-format strictness. Grok matches except on
 novel-relation asymmetric (\texttt{UNKNOWN} $32/32$). Last-demo
 answer-token copy is $0/32$ on every arm.
 
@@ -723,19 +814,40 @@ The two protocols are not interchangeable.
 \label{sec:limitations}
 
 \textsc{Wiki-H5} is OpenAI-shaped: English two-path $31/32$ drops to opaque
-two-path $6/32$, while Grok English two-path is already $4/32$. Unique
+two-path $6/32$, while Grok English two-path is already $4/32$.
+The format token \texttt{<city\_or\_UNKNOWN>} makes six P159 non-city golds
+ill-posed; the 26 city-valued items keep the OpenAI dissociation
+($26/26$ vs.\ $5/26$) and show that Composer English two-path $26/32$ was
+format, not capability, while Grok $4/32$ was not.
+Unique
 both-opaque $32/32$ is the three-family traversal cell, not the two-path
-result. The suite uses $n{=}32$ of 73 CEO records and one question template,
-so intervals are wide and a second seed is untested. English entities leave
+result. The suite uses a seeded sample of $n{=}32$ of 73 CEO records and one
+question template, so intervals are wide and a second seed is untested.
+Two-path decoys are cyclic ($i{+}1 \bmod 32$), so items are weakly dependent;
+Wilson intervals that assume independent Bernoulli trials are therefore
+slightly optimistic, while the within-item McNemar contrast is unaffected. English entities leave
 parametric cues; \textsc{Wiki-OO} is a complement, not a synthetic-ID
 experiment. HMAC two-path rates are not invariant across generators
-($6/32$ vs.\ $15/32$ vs.\ $12/32$). Selection $(r_1,r_2)$ is inferred from
+($6/32$ vs.\ $15/32$ vs.\ $12/32$). That spread means the opaque two-path
+rate is a property of this token family and not of opacity alone: a 12-hex
+seal also costs more tokens and is harder to copy than a readable predicate.
+The control that would separate lexical access from token trackability ---
+short pronounceable symbols, in the spirit of symbol
+tuning~\citep{wei2023symbol} --- is not run here.
+Selection $(r_1,r_2)$ is inferred from
 the answer node; we do not score an emitted relation pair. Dual-path tests
 in-prompt reuse of shown seals, not a binding mechanism.
 Composer~2.5 and Grok~4.5 share prompt files but not a harness, so
 cross-family two-path gaps may partly reflect tools and retry policy.
 Evidence is behavioral: we do not claim a circuit-level account of
-abstention. Seals remove lexical cues on the instance; they are not a
+abstention. Selective accuracy stays high in every two-path opaque cell
+($6/8$, $10/10$, $1/1$), so the measured effect is concentrated in coverage
+rather than in conditional correctness. That is an abstention
+profile~\citep{kadavath2022know,wen2025abstention}, and it does not license
+the stronger claim that the join became impossible; a model that commits on a
+sealed two-path graph is usually right, which is itself evidence of residual
+cues we have not enumerated.
+Seals remove lexical cues on the instance; they are not a
 confidentiality proof.
 
 The two-path ARM header names topology and opacity. English two-path
@@ -785,6 +897,13 @@ Zhiyu Chen, Wenhu Chen, Charese Smiley, Sameena Shah, Iana Borova, Dylan Langdon
 Reema Moussa, Matt Beane, Ting-Hao Huang, Bryan Routledge, and William~Yang Wang.
 FinQA: A Dataset of Numerical Reasoning over Financial Data.
 \emph{EMNLP}, 2021.
+\bibitem[Dziri et al.(2023)]{dziri2023faith}
+Nouha Dziri, Ximing Lu, Melanie Sclar, Xiang~Lorraine Li, Liwei Jiang,
+Bill~Yuchen Lin, Peter West, Chandra Bhagavatula, Ronan Le~Bras,
+Jena~D. Hwang, Soumya Sanyal, Sean Welleck, Xiang Ren, Allyson Ettinger,
+Zaid Harchaoui, and Yejin Choi.
+Faith and Fate: Limits of Transformers on Compositionality.
+\emph{NeurIPS}, 2023.
 \bibitem[El-Yaniv and Wiener(2010)]{elyaniv2010selective}
 Ran El-Yaniv and Yair Wiener.
 On the Foundations of Noise-free Selective Classification.
@@ -793,6 +912,10 @@ On the Foundations of Noise-free Selective Classification.
 Zhouxiang Fang, Aayush Mishra, Muhan Gao, Anqi Liu, and Daniel Khashabi.
 ICL CIPHERS: Quantifying ``Learning'' in In-Context Learning via Substitution
 Ciphers. \emph{EMNLP}, 2025.
+\bibitem[Feng and Steinhardt(2024)]{feng2024binding}
+Jiahai Feng and Jacob Steinhardt.
+How do Language Models Bind Entities in Context?
+\emph{ICLR}, 2024.
 \bibitem[Geifman and El-Yaniv(2017)]{geifman2017selective}
 Yonatan Geifman and Ran El-Yaniv.
 Selective Classification for Deep Neural Networks.
@@ -805,6 +928,12 @@ Language. \emph{ICLR}, 2026.
 Xanh Ho, Anh-Khoa Duong Nguyen, Saku Sugawara, and Akiko Aizawa.
 Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of
 Reasoning Steps (2WikiMultihopQA). \emph{COLING}, 2020.
+\bibitem[Kadavath et al.(2022)]{kadavath2022know}
+Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain,
+Ethan Perez, Nicholas Schiefer, Zac Hatfield-Dodds, Nova DasSarma,
+Eli Tran-Johnson, et al.
+Language Models (Mostly) Know What They Know.
+arXiv:2207.05221, 2022.
 \bibitem[Liu et al.(2026)]{liu2026cor}
 Chenhui Liu, Jianpeng Zhou, and Jiahai Wang.
 Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs
@@ -823,6 +952,11 @@ Alexander Miller, Adam Fisch, Jesse Dodge, Amir-Hossein Karimi, Antoine Bordes,
 and Jason Weston.
 Key-Value Memory Networks for Directly Reading Documents (WikiMovies).
 \emph{EMNLP}, 2016.
+\bibitem[Min et al.(2019)]{min2019compositional}
+Sewon Min, Eric Wallace, Sameer Singh, Matt Gardner, Hannaneh Hajishirzi, and
+Luke Zettlemoyer.
+Compositional Questions Do Not Necessitate Multi-hop Reasoning.
+\emph{ACL}, 2019.
 \bibitem[Mirzadeh et al.(2025)]{mirzadeh2025gsm}
 Iman Mirzadeh, Keivan Alizadeh, Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, and
 Mehrdad Farajtabar.
@@ -847,6 +981,10 @@ Xingyu Tan, Xiaoyang Wang, Qing Liu, Xiwei Xu, Xin Yuan, Liming Zhu, and
 Wenjie Zhang.
 PrivGemo: Privacy-Preserving Dual-Tower Graph Retrieval for Empowering LLM
 Reasoning with Memory Augmentation. arXiv:2601.08739, 2026.
+\bibitem[Trivedi et al.(2022)]{trivedi2022musique}
+Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, and Ashish Sabharwal.
+MuSiQue: Multihop Questions via Single-hop Question Composition.
+\emph{TACL}, 10:539--554, 2022.
 \bibitem[Vrande\v{c}i\'c and Kr\"otzsch(2014)]{vrandecic2014wikidata}
 Denny Vrande\v{c}i\'c and Markus Kr\"otzsch.
 Wikidata: A Free Collaborative Knowledgebase.
@@ -856,6 +994,16 @@ Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia,
 Ed~H. Chi, Quoc~V. Le, and Denny Zhou.
 Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.
 \emph{NeurIPS}, 2022.
+\bibitem[Wei et al.(2023)]{wei2023symbol}
+Jerry Wei, Le Hou, Andrew Lampinen, Xiangning Chen, Da Huang, Yi Tay,
+Xinyun Chen, Yifeng Lu, Denny Zhou, Tengyu Ma, and Quoc Le.
+Symbol tuning improves in-context learning in language models.
+\emph{EMNLP}, 2023.
+\bibitem[Wen et al.(2025)]{wen2025abstention}
+Bingbing Wen, Jihan Yao, Shangbin Feng, Chenjun Xu, Yulia Tsvetkov, Bill Howe,
+and Lucy~Lu Wang.
+Know Your Limits: A Survey of Abstention in Large Language Models.
+\emph{TACL}, 13:529--556, 2025.
 \bibitem[Wilson(1927)]{wilson1927}
 Edwin~B. Wilson.
 Probable Inference, the Law of Succession, and Statistical Inference.
@@ -864,6 +1012,15 @@ Probable Inference, the Law of Succession, and Statistical Inference.
 Yiwei Wu, Atticus Geiger, and Rapha\"el Milli\`ere.
 How Do Transformers Learn Variable Binding in Symbolic Programs?
 \emph{ICML}, 2025.
+\bibitem[Wu et al.(2024)]{wu2024counterfactual}
+Zhaofeng Wu, Linlu Qiu, Alexis Ross, Ekin Aky\"urek, Boyuan Chen, Bailin Wang,
+Najoung Kim, Jacob Andreas, and Yoon Kim.
+Reasoning or Reciting? Exploring the Capabilities and Limitations of Language
+Models Through Counterfactual Tasks. \emph{NAACL}, 2024.
+\bibitem[Yang et al.(2024)]{yang2024latent}
+Sohee Yang, Elena Gribovskaya, Nora Kassner, Mor Geva, and Sebastian Riedel.
+Do Large Language Models Latently Perform Multi-Hop Reasoning?
+\emph{ACL}, 2024.
 \bibitem[Yu et al.(2018)]{yu2018spider}
 Tao Yu, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li,
 James Ma, Irene Li, Qingning Yao, Shanelle Roman, Zilin Zhang, and
@@ -894,6 +1051,13 @@ Composer~2.5 and Grok~4.5 use the same prompt files; settings are not
 equated.
 \textsc{Wiki-H5} uses seed $20260821$ and a per-item 16-byte key derived
 from \texttt{oir-fact-2x2-iso-v1} and the item index.
+The 32 records are \texttt{random.Random(20260821).sample} from the 73-row
+CEO file; two-path decoys attach record $i{+}1 \bmod 32$, so each item's
+decoy company/HQ is the next item's gold. Wilson intervals in the body
+treat items as i.i.d.; that is slightly optimistic under this cycle.
+A SHA-256 lockfile over every \texttt{results/*.json} is
+\texttt{results/SHA256SUMS}; verify with
+\texttt{shasum -c results/SHA256SUMS}.
 \textsc{Wiki-OO} is a second suite on those records
 (\texttt{oir-entrel-2x2-iso-v1} and index).
 \textsc{Movie-A32}/\textsc{Movie-A100}/\textsc{Movie-B} and Dual isolation
@@ -910,7 +1074,10 @@ P159 gold HQs that are not cities:
 \texttt{New\_Jersey} is a state.
 OpenAI opaque two-path decoys are items 27 and 31
 (\texttt{CNN\_Center} vs.\ Swindon; \texttt{Lod\_Railway\_Station} vs.\ Burbank).
-Source slice: Kansas\_City $10/73$, Burbank $6/73$; Disney three times in the 32.
+Both decoys are on the non-city subset; city-valued OpenAI opaque two-path is
+gold $5/26$, decoy $0$, \texttt{UNKNOWN} $21$.
+Every non-two-path miss in Table~\ref{tab:threeway} for all three families
+falls on those six golds. Source slice: Kansas\_City $10/73$, Burbank $6/73$; Disney three times in the 32.
 An archived Movie-B ARM banner naming director vs.\ writer is OpenAI
 two-path $25/100$; the locked topology-only Condition~B header is $3/100$.
 
@@ -1211,7 +1378,9 @@ under a second key $\sigma'$ with a different gold on every pair.}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{fig7_opaque_rel_n200.png}
-\caption{Non-LLM and packaging controls.
+\caption{Non-LLM and packaging controls (file
+\texttt{fig7\_opaque\_rel\_n200.png}).
+Panel A is Composer $n{=}12$; panels B--C are frozen $n{=}200$ baselines.
 Left: opaque-rel NL $0/12$ vs.\ plan/legend $12/12$ (Composer~2.5, $n{=}12$).
 Middle: 2Wiki-CF BM25 $6/200$, Wikipedia-string leak $75/200$, SealRouter
 $200/200$.

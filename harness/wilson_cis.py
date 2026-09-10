@@ -98,11 +98,34 @@ ARMS = {
 }
 
 
+def wiki_h5_from_lock() -> dict[str, tuple[int, int]]:
+    """Primary Wiki-H5 cells from the locked OpenAI JSON, not from ARMS."""
+    fact = json.loads((ROOT / "results" / "factorial_2x2_iso_gpt56.json").read_text())["summary"]
+    out: dict[str, tuple[int, int]] = {}
+    for arm, name in [
+        ("ENG_UNIQUE", "WIKI_H5_ENG_UNIQUE"),
+        ("ENG_AMBIG", "WIKI_H5_ENG_AMBIG"),
+        ("OPAQUE_UNIQUE", "WIKI_H5_OPAQUE_UNIQUE"),
+        ("OPAQUE_AMBIG", "WIKI_H5_OPAQUE_AMBIG"),
+        ("OPAQUE_AMBIG_PLAN", "WIKI_H5_OPAQUE_AMBIG_PLAN"),
+    ]:
+        k, n = (int(x) for x in fact[arm]["score"].split("/"))
+        out[name] = (k, n)
+    return out
+
+
 def main():
-    table = {name: wilson(k, n) for name, (k, n) in ARMS.items()}
+    headline = wiki_h5_from_lock()
+    table = {name: wilson(k, n) for name, (k, n) in {**headline, **ARMS}.items()}
     OUT.write_text(json.dumps({"z": 1.96, "arms": table}, indent=2))
+    print("--- Wiki-H5 (from results/factorial_2x2_iso_gpt56.json) ---")
+    for name in headline:
+        print(f"{name:32} {table[name]['display']}")
+    print("--- packaging / older cells ---")
     for name, row in table.items():
-        print(f"{name:24} {row['display']}")
+        if name in headline:
+            continue
+        print(f"{name:32} {row['display']}")
     print("wrote", OUT)
 
 

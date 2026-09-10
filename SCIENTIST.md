@@ -1,6 +1,6 @@
 # For scientists and reviewers
 
-This repo is a measurement lock plus an installable middle layer. Cite locked JSON; do not treat `missing` or `n.r.` as 0.
+This repo is a measurement lock plus an installable middle layer. Cite locked JSON; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS`.
 
 Paper PDF: [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf).
 Repository: https://github.com/pankajnits/oir
@@ -16,6 +16,7 @@ python3 examples/middleware_hr.py
 python3 examples/custom_three_arm.py examples/custom_graph.example.json
 python3 harness/prove_layer.py
 python3 harness/wilson_cis.py
+python3 harness/write_sha256sums.py   # or: shasum -c results/SHA256SUMS
 python3 harness/score_ceiling_n32_iso.py gpt56
 python3 harness/score_adv_n32_iso.py gpt56
 python3 harness/score_copy_vs_bind_n32.py gpt56
