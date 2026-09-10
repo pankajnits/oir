@@ -57,26 +57,17 @@ def test_alpha_tokens_not_hmac_shaped():
     toks = [s.atom(x) for x in ("works_at", "headquartered_in", "partner_of")]
     assert len(set(toks)) == 3
     assert all(len(t) == 12 and not am.HMAC_SHAPE.match(t) for t in toks)
-    spec2 = importlib.util.spec_from_file_location(
-        "entity_rel_2x2_iso", ROOT / "harness" / "entity_rel_2x2_iso.py"
-    )
-    er = importlib.util.module_from_spec(spec2)
-    spec2.loader.exec_module(er)
-    h = er.build()
-    prompt = Path(h["arms"]["OO_UNIQUE"]["item_paths"][0]).read_text()
-    assert h["cases"][0]["gold"] in prompt
+    h = json.loads((ROOT / "results/entity_rel_2x2_iso_harness.json").read_text())
+    prompt = (ROOT / "runs/entity_rel_2x2_iso/OO_UNIQUE/item_0/prompt.txt").read_text()
+    case0 = h["cases"][0]
+    assert case0["gold"] in prompt  # unique-path CONTEXT contains the sealed answer node
+    assert case0["hq"] not in prompt and case0["person"] not in prompt
     assert "What city is the headquarters" in prompt
 
 
 def test_dualpath_wikimovies_matched_vs_novel():
-    spec2 = importlib.util.spec_from_file_location(
-        "dualpath_wikimovies_iso", ROOT / "harness" / "dualpath_wikimovies_iso.py"
-    )
-    dp = importlib.util.module_from_spec(spec2)
-    spec2.loader.exec_module(dp)
-    h = dp.build()
-    matched = Path(h["arms"]["MATCHED"]["item_paths"][0]).read_text()
-    novel = Path(h["arms"]["NOVEL"]["item_paths"][0]).read_text()
+    matched = (ROOT / "runs/dualpath_wikimovies_iso/MATCHED/item_0/prompt.txt").read_text()
+    novel = (ROOT / "runs/dualpath_wikimovies_iso/NOVEL/item_0/prompt.txt").read_text()
     assert "DEMO 0:" in matched and "--- QUIZ ---" in matched
     assert "appeared_in_quiz" not in matched
     # novel quiz uses renamed relations; demos still use starred_in/directed_by
@@ -84,14 +75,9 @@ def test_dualpath_wikimovies_matched_vs_novel():
 
 
 def test_metaqa_official_keeps_bracketed_start():
-    spec2 = importlib.util.spec_from_file_location(
-        "metaqa_official_iso", ROOT / "harness" / "metaqa_official_iso.py"
-    )
-    mq = importlib.util.module_from_spec(spec2)
-    spec2.loader.exec_module(mq)
-    h = mq.build()
-    qeng = Path(h["arms"]["OPAQUE_REL_QENG"]["item_paths"][0]).read_text()
-    qh = Path(h["arms"]["OPAQUE_REL_QHASH"]["item_paths"][0]).read_text()
+    h = json.loads((ROOT / "results/metaqa_official_iso_harness.json").read_text())
+    qeng = (ROOT / "runs/metaqa_official_iso/OPAQUE_REL_QENG/item_0/prompt.txt").read_text()
+    qh = (ROOT / "runs/metaqa_official_iso/OPAQUE_REL_QHASH/item_0/prompt.txt").read_text()
     start = h["cases"][0]["start"]
     assert f"[{start}]" in qeng and f"[{start}]" in qh
     assert "directed" in qeng.lower() or "starred" in qeng.lower()

@@ -2,7 +2,7 @@
 """SealRouter for paper harnesses that still `sys.path` this directory.
 
 Canonical class: `oir.SealRouter` (oracle PATH executor, not an LLM).
-`.step` is an alias of `.lookup` so older lab scripts keep working.
+`.step` is an alias of `.lookup` so older harness scripts keep working.
 """
 
 from __future__ import annotations

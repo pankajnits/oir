@@ -9,6 +9,8 @@ build/
 .ruff_cache/
 .mplconfig/
 .DS_Store
+*.swp
+*~
 .idea/
 .vscode/
 *.pt
@@ -46,7 +48,7 @@ data/**/__MACOSX/
 credentials.json
 results/custom_three_arm/
 
-# Stale figure basenames (never ship; TeX uses fig1_matched_2x2 / fig2_opaque_paths)
+# Stale figure basenames (never ship; TeX uses fig1/fig3/fig4/fig6/fig7)
 paper/**/fig1_dissociation_spine.*
 paper/**/fig2_cross_model_ceiling.*
 
@@ -57,3 +59,4 @@ htmlcov/
 # Megabyte exploratory long-context packs (rebuildable; not paper spine)
 runs/longctx_1m/
 results/longctx_1m*
+results/*.log

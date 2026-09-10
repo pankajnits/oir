@@ -260,11 +260,11 @@ def build():
         "arms": arms_meta,
         "protocol": (
             "v2: one quiz per file; edge shuffle; no English two-hop on DEMO; "
-            "demos disjoint from quiz; v1 batch+two-hop discarded as confound"
+            "demos disjoint from quiz; v1 batch+two-hop discarded as a confound"
         ),
         "v1_discard": {
             "reason": "DEMO_0 8/8 via within-batch isomorphic induction + English two-hop leak",
-            "action": "do not cite v1 scores",
+            "action": "v1 scores are not part of the locked public cells",
         },
     }
     RESULTS.mkdir(parents=True, exist_ok=True)

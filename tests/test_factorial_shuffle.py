@@ -1,7 +1,8 @@
-"""Gold/decoy listing shuffle: construction only, no LLM, no primary lock rewrite."""
+"""Gold/decoy listing shuffle: read committed files. Do not call build()."""
 from __future__ import annotations
 
 import importlib.util
+import json
 from pathlib import Path
 
 from oir import EntitySeal
@@ -18,20 +19,19 @@ def _load(name: str):
 
 def test_shuffle_does_not_touch_primary_lock():
     primary = (ROOT / "runs/factorial_2x2_iso/OPAQUE_AMBIG/item_0/prompt.txt").read_text()
-    sh = _load("factorial_2x2_iso_shuffle")
-    h = sh.build()
+    h = json.loads((ROOT / "results/factorial_2x2_iso_shuffle_harness.json").read_text())
     after = (ROOT / "runs/factorial_2x2_iso/OPAQUE_AMBIG/item_0/prompt.txt").read_text()
     assert after == primary
     assert h["n"] == 32
     assert h["n_gold_first"] == 16
     assert h["n_decoy_first"] == 16
+    assert h["primary_lock_untouched"] == "runs/factorial_2x2_iso/"
     assert sum(1 for c in h["cases"] if c["gold_first"]) == 16
 
 
 def test_shuffle_is_order_only_same_hmac():
-    sh = _load("factorial_2x2_iso_shuffle")
     fact = _load("factorial_2x2_iso")
-    h = sh.build()
+    h = json.loads((ROOT / "results/factorial_2x2_iso_shuffle_harness.json").read_text())
     sealer = EntitySeal(fact.item_key(0))
     works = sealer.atom("works_at")
     primary = (ROOT / "runs/factorial_2x2_iso/OPAQUE_AMBIG/item_0/prompt.txt").read_text()

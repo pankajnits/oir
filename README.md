@@ -1,5 +1,8 @@
 # OIR — Opaque Isomorphic Reasoning
 
+[![CI](https://github.com/pankajnits/oir/actions/workflows/ci.yml/badge.svg)](https://github.com/pankajnits/oir/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+
 Measurement protocol and HMAC middle layer for the paper
 *When Can Language Models Join Without Lexical Cues?*
 
@@ -9,6 +12,8 @@ Measurement protocol and HMAC middle layer for the paper
 **PDF (NeurIPS preprint, 9 content pages + appendix):**
 [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf)
 
+Cite this repository with [`CITATION.cff`](CITATION.cff).
+
 ```bash
 git clone https://github.com/pankajnits/oir.git
 cd oir
@@ -16,18 +21,20 @@ pip install -e '.[dev]'
 python3 -m pytest tests/ -q
 ```
 
+From a checkout you can also `pip install git+https://github.com/pankajnits/oir.git`. The import name is `oir`; the PyPI-style distribution name is `oir-layer`.
+
 Compile the paper: `cd paper/arxiv_upload && tectonic -X compile main.tex`
 (see [`paper/README.md`](paper/README.md)). arXiv upload is
 [`paper/oir-arxiv.zip`](paper/oir-arxiv.zip) (**no** PDF inside).
 
 HMAC seals are an **instrument** (instance-wise injective renaming that preserves equality). They are not confidentiality, HIPAA, or IND-CPA. Missing cells are `n.r.`, never zeros.
 
-## Headline (composer-2.5, OpenAI `gpt-5.6-sol`, Grok 4.5)
+## Headline (Composer 2.5, OpenAI `gpt-5.6-sol`, Grok 4.5)
 
 | Cell | Result |
 |------|--------|
 | Unique path, both-opaque (entities+relations sealed) | **32/32** all three families |
-| Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; composer **27/32**; Grok **30/32** |
+| Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; Composer **27/32**; Grok **30/32** |
 | English Wikidata 2×2 (OpenAI; relations readable) | unique **31/32**, two-path **31/32** |
 | Opacity × two same-type paths (OpenAI Wikidata 2×2) | English two-path **31/32** → opaque two-path **6/32** (McNemar 25 vs 0) |
 | English two-path, Grok (same graphs) | **4/32** (UNK 28); the opacity drop is OpenAI-shaped |
@@ -40,7 +47,7 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 | SealRouter on that hop | **32/32** (no LLM; not a reason to call a model) |
 | CEO free sealed English | **0/32** (confounded: piecewise hash; person atom typically absent from $q$) |
 
-Models are named **composer-2.5**, **OpenAI**, **Grok 4.5**. Result files tagged `auto` are composer-2.5.
+Models are named **Cursor Composer 2.5**, **OpenAI** (`gpt-5.6-sol`), **Grok 4.5**. Result files tagged `auto` are Composer 2.5.
 
 The installable `MiddleLayer` / `SealedChat` package sits between an app and a public LLM. Names stay in the app; the model sees HMAC atoms for one request. **The layer holds the key.** Use a new `MiddleLayer()` per request (`SealedChat.ask` does not rotate the key). Non-Latin names are HMAC'd as Unicode atoms. Vault ints/bools stay JSON numbers.
 
@@ -206,4 +213,4 @@ Third-party dumps (Spider, 2Wiki, WTQ) are **not** in this clone. See [`data/REA
 
 ## License
 
-Apache-2.0 for original code. Datasets keep their own licenses (2WikiMultihopQA Apache-2.0; Spider CC-BY-SA-4.0; OSV CC-BY-4.0).
+Apache-2.0 for original code (see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)). Datasets keep their own licenses (Wikidata CC0; 2WikiMultihopQA Apache-2.0; Spider CC-BY-SA-4.0; OSV CC-BY-4.0).

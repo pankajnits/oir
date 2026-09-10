@@ -177,6 +177,7 @@ def main():
     ax.legend(frameon=False, loc="upper right", fontsize=8)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
+    # Not included in main.tex / oir-arxiv.zip (Table 3 already reports these cells).
     fig.savefig(OUT / "fig2_opaque_paths.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig2_opaque_paths.png", dpi=200, bbox_inches="tight")
     plt.close()
@@ -222,6 +223,7 @@ def main():
             ax.set_ylabel("Exact accuracy")
         for b, t, v in zip(bars, texts, vals):
             label_bar(ax, b, t, v, fontsize=8)
+    # Not included in main.tex / oir-arxiv.zip (scores are in appendix prose).
     fig.savefig(OUT / "fig5_realqa_2x2.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig5_realqa_2x2.png", dpi=200, bbox_inches="tight")
     plt.close()

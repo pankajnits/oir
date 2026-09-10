@@ -1,6 +1,6 @@
 # OIR-Bench (public measurement lock)
 
-Frozen isolation suites for opaque isomorphic reasoning. Gold lives in harness JSON, not in the model-visible prompt. Seals are lexicon hiding, not confidentiality. Missing cells are `n.r.`, never zeros. Result files tagged `auto` are composer-2.5.
+Frozen isolation suites for opaque isomorphic reasoning. Gold lives in harness JSON, not in the model-visible prompt. Seals are lexicon hiding, not confidentiality. Missing cells are `n.r.`, never zeros. Result files tagged `auto` are Cursor Composer 2.5.
 
 The **primary** isolation is the Wikidata matched $2{\times}2$ (start in $q$, relations sealed, entities English). The CEO three-arm is a missing-start / execution-bound cell, not that factorial.
 
@@ -29,7 +29,7 @@ ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
 ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
 ```
 
-Locked free-form: composer-2.5, OpenAI `gpt-5.6-sol`, and Grok 4.5 at `32/32 ≈ 32/32 ≫ 0/32`. Dual-path free-form tags: `gpt56`, `grok45ff`, `composer25ff`.
+Locked free-form: Cursor Composer 2.5, OpenAI `gpt-5.6-sol`, and Grok 4.5 at `32/32 ≈ 32/32 ≫ 0/32`. Dual-path free-form tags: `gpt56`, `grok45ff`, `composer25ff`.
 
 Bring-your-own graph (engine ceiling, no LLM): `python3 examples/custom_three_arm.py examples/custom_graph.example.json` — see [`SCIENTIST.md`](../SCIENTIST.md).
 

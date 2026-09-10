@@ -74,7 +74,7 @@ python3 harness/run_openai_ceiling_n32_iso.py
 python3 harness/score_ceiling_n32_iso.py gpt56
 ```
 
-Composer-2.5 / Grok cells used the same `runs/` files (`AGENT_API_KEY` + `harness/run_iso_agent_harness.py`). Tags `composer25` / `grok45` / `*ff` are reply directories under `results/`. Result files tagged `auto` are composer-2.5.
+Cursor Composer 2.5 / Grok cells used the same `runs/` files (`AGENT_API_KEY` + `harness/run_iso_agent_harness.py`). Tags `composer25` / `grok45` / `*ff` are reply directories under `results/`. Result files tagged `auto` are Composer 2.5.
 
 ## Third-party dumps
 

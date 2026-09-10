@@ -8,7 +8,7 @@ This clone ships **small** graphs used by the layer demo and several locked JSON
 
 | Path | Role |
 |------|------|
-| `real/wikidata_ceo_hops_v2.json` | CEO → company → HQ (three-arm / 2×2 / entity-rel) |
+| `real/wikidata_ceo_hops_v2.json` | CEO → company → HQ (three-arm / 2×2 / entity-rel). Wikidata-derived, CC0. |
 | `metaqa/oir_2hop_people_n100.json` | WikiMovies people freeze n=100 |
 | `metaqa/oir_official_2hop_n32.json` | MetaQA-style 2-hop template freeze (not 14k test) |
 | `wiki_cf_n200.json` | 2Wiki-CF n=200 items (not the raw 2Wiki dump) |

@@ -8,7 +8,7 @@ python3 -m pytest tests/ -q
 ruff check oir tests examples
 ```
 
-Python 3.10+. Do not commit API keys, `.env`, or `credentials.json`. Isolation runners use `OPENAI_API_KEY` (OpenAI) or `AGENT_API_KEY` (composer-2.5 / Grok). Issues: https://github.com/pankajnits/oir/issues
+Python 3.10+. Do not commit API keys, `.env`, or `credentials.json`. Isolation runners use `OPENAI_API_KEY` (OpenAI) or `AGENT_API_KEY` (Cursor Composer 2.5 / Grok). Issues: https://github.com/pankajnits/oir/issues
 
 ## Layout
 
@@ -24,4 +24,4 @@ Isolation: one item per file, gold only in harness JSON. Seal entities **and** r
 
 ## PRs
 
-Keep the middle-layer API stable (`oir.MiddleLayer`, `oir.SealedChat`, `LeakError`). Paper JSON locks are append-only unless you are correcting a disclosed scoring bug.
+Keep the middle-layer API stable (`oir.MiddleLayer`, `oir.SealedChat`, `LeakError`). Paper JSON locks are append-only unless you are correcting a disclosed scoring bug. Tests must read committed `runs/` and `results/` files; do not call harness `build()` from CI (some rebuilds need dumps that are not vendored).

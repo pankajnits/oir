@@ -1,0 +1,10 @@
+# Linguist: this repo is a Python library plus a large isolation-quiz lock.
+# Prompt dumps and sqlite skins would otherwise dominate GitHub language stats.
+runs/** linguist-documentation
+results/** linguist-documentation
+data/** linguist-documentation
+paper/** linguist-documentation
+*.sqlite linguist-generated
+*.png linguist-generated
+*.pdf linguist-generated
+*.xlsx linguist-generated

@@ -51,6 +51,7 @@ oir = ["py.typed"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+addopts = "--tb=short"
 
 [tool.ruff]
 target-version = "py310"
