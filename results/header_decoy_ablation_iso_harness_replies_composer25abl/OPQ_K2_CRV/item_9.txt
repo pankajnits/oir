@@ -1,0 +1,10 @@
+ANSWER_PLAIN[HDA_b8a0949520]: UNKNOWN
+# raw_tail
+From the context, **Steve_Weed** is linked to two organizations, each with a location on a 2-hop path (person → company → place):
+
+1. Steve_Weed → **WaveDivision_Holdings_LLC** → **New_Jersey**  
+2. Steve_Weed → **Cogent_Communications** → **Washington_DC**
+
+The question asks for **the** headquarters **city** of **the** company he leads, but the graph does not say which of those links is “led by” versus another role, and it gives **two** companies with **two** HQ places. **New_Jersey** is not named as a city here; **Washington_DC** is city-like, but picking it would ignore the other company without a rule in the context to choose one.
+
+ANSWER_PLAIN[HDA_b8a0949520]: UNKNOWN

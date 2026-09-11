@@ -1,0 +1,36 @@
+{
+  "id": "HDA_e01da1baff",
+  "arm": "OPQ_K2_CRV",
+  "item": 29,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_29/prompt.txt",
+  "pred": "Washington_DC",
+  "raw": "ANSWER_PLAIN[HDA_e01da1baff]: Washington_DC",
+  "elapsed_s": 2.757,
+  "utc": "2026-09-11T16:32:11.828809+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMySXRYIPGU1fkKCE8K061KUY9mKM",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144329,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 59,
+    "prompt_tokens": 174,
+    "total_tokens": 233,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 35,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

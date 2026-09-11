@@ -1,0 +1,12 @@
+{
+  "id": "HDA_283acd7c13",
+  "pred": "UNKNOWN",
+  "raw": "The CONTEXT gives two two-hop paths from `Stacey_Snider`: to `20th_Century_Studios` → `Fox_Plaza`, and to `Turner_Broadcasting_System` → `CNN_Center`. Nothing in the CONTEXT names a **city** (only those location entities), and “the company” is ambiguous because both studios are linked to Stacey. Using CONTEXT only:\n\nANSWER_PLAIN[HDA_283acd7c13]: UNKNOWN",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 13.836,
+  "utc": "2026-09-11T17:07:25.678996+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

@@ -1,0 +1,10 @@
+ANSWER_PLAIN[HDA_51624af438]: UNKNOWN
+# raw_tail
+ANSWER_PLAIN[HDA_51624af438]: UNKNOWN
+
+**Why:** From the start entity `Landon_H_Rowland` there are two 2-hop paths in CONTEXT, and the edge types are opaque so “led by” vs other roles aren’t distinguishable:
+
+1. `Landon_H_Rowland` → `Kansas_City_Southern` → `Kansas_City`  
+2. `Landon_H_Rowland` → `Universal_Music_Group` → `Broadway`
+
+Those point to different headquarters locations (`Kansas_City` vs `Broadway`), so a single city can’t be chosen from CONTEXT alone under OPAQUE_AMBIG.

@@ -49,7 +49,8 @@ class OpenAIChatClient:
 
     Paper isolation cells use ``gpt-5.6-sol`` with no temperature and
     ``max_completion_tokens=512``. Product defaults remain ``gpt-4o-mini``
-    at temperature 0. If a model rejects temperature, it is omitted and retried.
+    at temperature 0; ``gpt-5*`` product calls use ``max_completion_tokens=4096``
+    unless overridden. If a model rejects temperature, it is omitted and retried.
     """
 
     def __init__(
@@ -83,7 +84,7 @@ class OpenAIChatClient:
         kwargs: dict[str, Any] = {"model": self.model, "messages": messages}
         if self._paper_style():
             kwargs["max_completion_tokens"] = (
-                512 if self.max_completion_tokens is None else self.max_completion_tokens
+                4096 if self.max_completion_tokens is None else self.max_completion_tokens
             )
         elif self.max_completion_tokens is not None:
             kwargs["max_tokens"] = self.max_completion_tokens

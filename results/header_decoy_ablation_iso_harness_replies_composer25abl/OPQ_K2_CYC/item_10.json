@@ -1,0 +1,12 @@
+{
+  "id": "HDA_485c1ba130",
+  "pred": "Oklahoma_City",
+  "raw": "ANSWER_PLAIN[HDA_485c1ba130]: Oklahoma_City\n\n**Reasoning (context only):** David_Green is linked to **Hobby_Lobby** and **USAA**. Each company has a city one hop away: Hobby_Lobby → Oklahoma_City, USAA → San_Antonio. Those are two same-pattern 2-hop paths (person → company → city). The context does not label which link is “led by,” but **Hobby_Lobby → Oklahoma_City** is the path used when the question is taken to refer to Hobby_Lobby (the first company tied to David_Green in the context).",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 8.024,
+  "utc": "2026-09-11T17:08:30.413607+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

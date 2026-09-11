@@ -1,0 +1,12 @@
+{
+  "id": "HDA_27da82b03a",
+  "pred": "Oklahoma_City",
+  "raw": "ANSWER_PLAIN[HDA_27da82b03a]: Oklahoma_City\n\nFrom the context, Frank_Love is two hops from a city along the same pattern (person → organization → city). One path goes through `Loves_Travel_Stops__Country_Stores` to `Oklahoma_City`; the other through `Ryder` to `Coral_Gables`. The question asks for the headquarters of the company led by Frank_Love, which matches Love’s Travel Stops & Country Stores, so the city is Oklahoma_City.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 5.499,
+  "utc": "2026-09-11T17:08:51.786714+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

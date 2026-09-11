@@ -1,0 +1,12 @@
+{
+  "id": "HDA_4eba493d71",
+  "pred": "Burbank",
+  "raw": "ANSWER_PLAIN[HDA_4eba493d71]: Burbank\n\nFrom the context, Michael_Eisner is linked to **The_Walt_Disney_Company**, and **The_Walt_Disney_Company** is linked to **Burbank** — a two-hop path from the start entity to a city, which matches headquarters for the company he led (Disney). The other two-hop path (Michael_Eisner → Kansas_City_Southern → Kansas_City) is a second company association, not the usual “Eisner-led” company in this kind of question.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 18.937,
+  "utc": "2026-09-11T17:06:37.239925+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

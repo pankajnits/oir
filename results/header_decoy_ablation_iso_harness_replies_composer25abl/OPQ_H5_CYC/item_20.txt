@@ -1,0 +1,5 @@
+ANSWER_PLAIN[HDA_438e815ee7]: Chesapeake
+# raw_tail
+ANSWER_PLAIN[HDA_438e815ee7]: Chesapeake
+
+**Reasoning (context only):** From `Macon_Foscue_Brock_Jr`, one 2-hop chain is `Macon_Foscue_Brock_Jr` → `Dollar_Tree` → `Chesapeake`. That matches “company linked to this person” then “city linked to that company” (headquarters-style), with no relation labels in the graph. There is also `Macon_Foscue_Brock_Jr` → `Loves_Travel_Stops__Country_Stores` → `Oklahoma_City`; with opaque edges, both paths are valid, but the first company–city chain in the context for this person is **Chesapeake**.

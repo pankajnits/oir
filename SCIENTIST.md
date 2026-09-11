@@ -1,6 +1,6 @@
 # For scientists and reviewers
 
-This repo is a measurement lock plus an installable middle layer. Cite locked JSON; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS`.
+This repo is a hash-pinned measurement plus an installable middle layer. Cite locked JSON and reply files; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS` (JSON summaries, reply sidecars, and per-item `.txt` replies).
 
 Paper PDF: [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf).
 Repository: https://github.com/pankajnits/oir
@@ -32,7 +32,8 @@ Scorers: `harness/score_*.py`.
 
 | Suite | Scorer | Locked free-form JSON |
 |-------|--------|------------------------|
-| Wikidata $2{\times}2$ n=32 | `factorial_2x2_iso.py` + iso harness runners | `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json` |
+| Wikidata $2{\times}2$ n=32 | `factorial_2x2_iso.py` + iso harness runners | `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json` (named-arm opaque two-path OpenAI **6/32**; snapshot `gpt56sep` **5/32**) |
+| Header × decoy ablation n=32×7 | `header_decoy_ablation_iso.py` | `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json` (H5+cyclic OpenAI **20/32**, Composer **6/32**, Grok **0/32**; no ARM+cyclic **25/21/6**; English **29/25/24**). Composer/Grok used `--preamble none`. |
 | Wikidata two-path listing shuffle n=32 | `factorial_2x2_iso_shuffle.py` + `score_factorial_2x2.py gpt56 factorial_2x2_iso_shuffle_harness` | `results/factorial_2x2_iso_shuffle_gpt56.json` |
 | WikiMovies / MetaQA n=100 Condition A | `harness/metaqa_2x2_people_n100.py` | `results/metaqa_2x2_people_n100_iso_{gpt56,composer25,grok45}.json` (OpenAI two-path **96/100**; on the 32 names shared with Movie-A32, **29/32**, vs A32 **17/32**) |
 | WikiMovies/MetaQA-derived n=100 Condition B (OpenAI) | `harness/metaqa_2x2_people_n100_qhash.py` | `results/metaqa_2x2_people_n100_qhash_iso_gpt56.json` (unique **100/100**, two-path **3/100**) |
@@ -75,7 +76,9 @@ python3 harness/run_openai_ceiling_n32_iso.py
 python3 harness/score_ceiling_n32_iso.py gpt56
 ```
 
-Composer 2.5 / Grok cells used the same `runs/` files (`AGENT_API_KEY` + `harness/run_iso_agent_harness.py`). Tags `composer25` / `grok45` / `*ff` are reply directories under `results/`. Result files tagged `auto` are Composer 2.5. Dual-path free-form is `composer25ff` / `grok45ff`; `grok45.json` is archived binding; `induce` is sealed-demo binding, not free-form. Local `mistral` / `qwen35` dual-path JSONs are not in the three-family roster (plan n.r.).
+Composer 2.5 / Grok 4.5 cells used the same `runs/` files through Cursor's agent SDK (`AGENT_API_KEY` or `CURSOR_API_KEY` + `harness/run_iso_agent_harness.py`), not a vendor chat API. The runner's default `--preamble cursor` prefixes a reply-only instruction OpenAI never received; `--preamble none` sends the prompt file verbatim. Tags `composer25` / `grok45` / `*ff` are reply directories under `results/`. Do not reuse those tags for new suites. Result files tagged `auto` are Composer 2.5. Dual-path free-form is `composer25ff` / `grok45ff`; `grok45.json` is archived binding; `induce` is sealed-demo binding, not free-form. Local `mistral` / `qwen35` dual-path JSONs are not in the three-family roster (plan n.r.).
+
+Header × decoy ablation (11 September 2026): `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json`. Named-arm Wiki-H5 snapshot check: `results/factorial_2x2_iso_gpt56sep.json` (**5/32**, 1 `NO_OUTPUT`, OpenAI OPAQUE_AMBIG only; other arms `missing` 32 are not scores). Composer/Grok used `--preamble none`. Empty completions are `NO_OUTPUT` on new runner files; `--retry-empty` re-queries legacy empty files stored as UNKNOWN.
 
 ## Third-party dumps
 

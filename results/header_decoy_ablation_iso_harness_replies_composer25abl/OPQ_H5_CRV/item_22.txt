@@ -1,0 +1,5 @@
+ANSWER_PLAIN[HDA_2c86f54e61]: Coral_Gables
+# raw_tail
+ANSWER_PLAIN[HDA_2c86f54e61]: Coral_Gables
+
+**Context-only reasoning:** From `Robert_E_Sanchez`, there are two 2-hop chains to a city: via **Ryder** → **Coral_Gables**, and via **Cogent_Communications** → **Washington_DC**. Relation types are opaque, so which link means “led by” is ambiguous. **Ryder** is the first company on that path and **Coral_Gables** is its linked location, so that is the answer used above. If both edges are treated as leadership ties with no way to pick one company, the strict reading would be **UNKNOWN**.

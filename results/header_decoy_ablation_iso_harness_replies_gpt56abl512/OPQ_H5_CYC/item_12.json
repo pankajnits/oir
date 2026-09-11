@@ -1,0 +1,35 @@
+{
+  "id": "HDA_6c6e7b0927",
+  "arm": "OPQ_H5_CYC",
+  "item": 12,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_12/prompt.txt",
+  "pred": "Montabaur",
+  "raw": "ANSWER_PLAIN[HDA_6c6e7b0927]: Montabaur",
+  "elapsed_s": 2.712,
+  "utc": "2026-09-11T16:37:51.914089+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EMyY1bWfaIAay3hyuERb2IYmaZTxM",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144669,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 72,
+    "prompt_tokens": 174,
+    "total_tokens": 246,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 44,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HDA_a93b2b5ada",
+  "pred": "Burbank",
+  "raw": "ANSWER_PLAIN[HDA_a93b2b5ada]: Burbank\n\nFrom the context: Bob_Iger → The_Walt_Disney_Company → Burbank is a two-hop path (leader → company → city). That matches headquarters of the company tied to him via The_Walt_Disney_Company. There is also Bob_Iger → Cogent_Communications → Washington_DC; with only these edges and opaque relation types, Disney/Burbank is the usual reading for “company led by Bob_Iger” in this graph.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 6.486,
+  "utc": "2026-09-11T17:09:19.135984+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

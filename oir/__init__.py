@@ -50,18 +50,29 @@ __all__ = [
 
 
 class EntitySeal:
-    """Deterministic HMAC atom sealer. Same plaintext → same seal (isomorphism)."""
+    """Deterministic HMAC atom sealer. Same plaintext → same seal (isomorphism).
+
+    ``strict=True`` (default) refuses two distinct raw spellings that would
+    share a normalized form. Whitespace still folds (``Michael Eisner`` ≡
+    ``Michael_Eisner``). Use ``strict=False`` only to rebuild legacy locks.
+    """
 
     # ASCII atoms (incl. _.-) or a run of Unicode letters/digits (CJK, …).
     _PIECE = re.compile(r"[A-Za-z0-9_.\-]+|[^\W_]+|[^A-Za-z0-9_.\-]+")
     _ATOM = re.compile(r"[A-Za-z0-9_.\-]+|[^\W_]+")
 
-    def __init__(self, key: bytes | str, prefix: str = "E", nbytes: int = 6):
+    def __init__(self, key: bytes | str, prefix: str = "E", nbytes: int = 6, *, strict: bool = True):
         self.key = key.encode() if isinstance(key, str) else key
         self.prefix = prefix
         self.nbytes = nbytes
         self.fwd: dict[str, str] = {}
         self.rev: dict[str, str] = {}
+        # strict: refuse to give two distinct raw spellings one seal. Raw spellings
+        # are compared after folding whitespace to "_" (so "Michael Eisner" and
+        # "Michael_Eisner" still bind to one atom, as documented). strict=False
+        # reproduces the pre-review behaviour for rebuilding legacy locks.
+        self.strict = strict
+        self.raw_of: dict[str, str] = {}
 
     @staticmethod
     def normalize(a: str) -> str:
@@ -101,7 +112,15 @@ class EntitySeal:
         )
 
     def atom(self, a: str) -> str:
+        raw = re.sub(r"\s+", "_", str(a).strip())
         a = self.normalize(a)
+        if self.strict:
+            prev_raw = self.raw_of.setdefault(a, raw)
+            if prev_raw != raw:
+                raise ValueError(
+                    f"normalize collision: {prev_raw!r} and {raw!r} -> {a!r}; distinct names "
+                    "would share one seal (use strict=False only to rebuild legacy locks)"
+                )
         if a not in self.fwd:
             d = hmac.new(self.key, a.encode(), hashlib.sha256).digest()
             t = self.prefix + d[: self.nbytes].hex()

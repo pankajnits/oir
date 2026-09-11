@@ -1,0 +1,36 @@
+{
+  "id": "HDA_f33933472f",
+  "arm": "OPQ_K2_CYC",
+  "item": 22,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_22/prompt.txt",
+  "pred": "Coral_Gables",
+  "raw": "ANSWER_PLAIN[HDA_f33933472f]: Coral_Gables",
+  "elapsed_s": 2.175,
+  "utc": "2026-09-11T16:29:19.375777+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyPlmEwshBkdQwOqFJTsyihxBsKI",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144157,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 91,
+    "prompt_tokens": 162,
+    "total_tokens": 253,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 67,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

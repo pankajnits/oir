@@ -1,0 +1,36 @@
+{
+  "id": "HDA_0fd7b262ab",
+  "arm": "OPQ_K2_CYC",
+  "item": 20,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_20/prompt.txt",
+  "pred": "Chesapeake",
+  "raw": "ANSWER_PLAIN[HDA_0fd7b262ab]: Chesapeake",
+  "elapsed_s": 4.246,
+  "utc": "2026-09-11T16:29:14.683513+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyPeduZG1LcMOXI9kF16Mat1KtvH",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144150,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 181,
+    "prompt_tokens": 196,
+    "total_tokens": 377,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 157,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

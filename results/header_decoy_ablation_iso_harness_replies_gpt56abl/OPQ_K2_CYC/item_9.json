@@ -1,0 +1,36 @@
+{
+  "id": "HDA_c16968bd7b",
+  "arm": "OPQ_K2_CYC",
+  "item": 9,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_9/prompt.txt",
+  "pred": "New_Jersey",
+  "raw": "ANSWER_PLAIN[HDA_c16968bd7b]: New_Jersey",
+  "elapsed_s": 9.64,
+  "utc": "2026-09-11T16:28:28.702090+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyOph9arpwy6vXKKvMjiCN9LyYX2",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144099,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 378,
+    "prompt_tokens": 171,
+    "total_tokens": 549,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 353,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "HDA_2e2580bccb",
+  "arm": "OPQ_NONE_CYC",
+  "item": 6,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_6/prompt.txt",
+  "pred": "Burbank",
+  "raw": "ANSWER_PLAIN[HDA_2e2580bccb]: Burbank",
+  "elapsed_s": 1.84,
+  "utc": "2026-09-11T16:32:47.847808+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyT8hiKjwFt0BTyUl8Db8HAb5zwd",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144366,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 145,
+    "total_tokens": 165,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

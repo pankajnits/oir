@@ -1,0 +1,5 @@
+ANSWER_PLAIN[HDA_e46f97cc3d]: UNKNOWN
+# raw_tail
+ANSWER_PLAIN[HDA_e46f97cc3d]: UNKNOWN
+
+**Reasoning (context only):** `Vibeke_Frst_Haugen` has two one-hop links—to `Norwegian_Broadcasting_Corporation` and `Cogent_Communications`—and the relation types are opaque, so it isn’t clear which one is “the company led by” her. Each has a second hop: `Norwegian_Broadcasting_Corporation` → `NRK_Marienlyst` (a site name, not a city in the context), and `Cogent_Communications` → `Washington_DC`. With two equally valid 2-hop paths and no explicit “leadership” or “headquarters city” labels, the headquarters city is not uniquely determined from the given triples alone.

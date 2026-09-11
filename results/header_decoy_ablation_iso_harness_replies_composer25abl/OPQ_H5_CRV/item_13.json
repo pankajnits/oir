@@ -1,0 +1,12 @@
+{
+  "id": "HDA_de67c43228",
+  "pred": "UNKNOWN**",
+  "raw": "**ANSWER_PLAIN[HDA_de67c43228]: UNKNOWN**\n\nAnne_Lagercrantz is linked to two organizations in the context: **Sveriges_Television** (2-hop → **Stockholm**) and **Cogent_Communications** (2-hop → **Washington_DC**). The edge types are opaque (`E1abb7543af05`, `E1f5ccc556ebd`), so you cannot tell from this graph alone which link means “led by” or which company the question refers to. With two valid 2-hop headquarters cities and no way to pick one, the answer is **UNKNOWN**.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 3.825,
+  "utc": "2026-09-11T17:07:47.768518+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

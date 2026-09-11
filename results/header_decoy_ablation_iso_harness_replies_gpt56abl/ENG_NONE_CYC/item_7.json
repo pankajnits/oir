@@ -1,0 +1,36 @@
+{
+  "id": "HDA_671ac08144",
+  "arm": "ENG_NONE_CYC",
+  "item": 7,
+  "prompt_path": "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_7/prompt.txt",
+  "pred": "Zurich",
+  "raw": "ANSWER_PLAIN[HDA_671ac08144]: Zurich",
+  "elapsed_s": 1.837,
+  "utc": "2026-09-11T16:35:19.422279+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyVahLdTiZ1g1F3rQAyoIVCJAti0",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144518,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 126,
+    "total_tokens": 142,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

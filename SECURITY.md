@@ -6,7 +6,7 @@ This project is **lexicon hiding**, not a confidentiality system. HMAC seals pre
 - Report suspected leakage in `MiddleLayer.pack_messages` / `leak_check` by describing the API call, not by attaching secrets.
 - `leak_check` scans on-wire `messages` only, not isolation quiz files (`llm_prompt` / `pack_prompt`). A watched string that appears only as `cid` in an isolation header is not a send leak.
 - Protocol English (`PATH_QUERY`, `JOIN_QUERY`, `UNKNOWN`) can false-positive if you add those tokens to the watchlist; they are not plaintext names.
-- `OPENAI_API_KEY` and `AGENT_API_KEY` stay in the environment. Never commit them.
+- `OPENAI_API_KEY`, `AGENT_API_KEY`, and `CURSOR_API_KEY` stay in the environment. Never commit them.
 - Report security issues privately to `mightypp.nits@gmail.com` rather than a public issue.
 
 See `LICENSE` (Apache-2.0, AS IS).

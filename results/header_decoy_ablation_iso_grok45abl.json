@@ -1,0 +1,109 @@
+{
+  "tag": "grok45abl",
+  "harness": "results/header_decoy_ablation_iso_harness.json",
+  "cells": {
+    "OPQ_H5_CYC": {
+      "unknown": 32
+    },
+    "OPQ_H5_CRV": {
+      "unknown": 31,
+      "decoy": 1
+    },
+    "OPQ_K2_CYC": {
+      "unknown": 32
+    },
+    "OPQ_K2_CRV": {
+      "unknown": 29,
+      "decoy": 3
+    },
+    "OPQ_NONE_CYC": {
+      "unknown": 23,
+      "decoy": 3,
+      "gold": 6
+    },
+    "OPQ_NONE_CRV": {
+      "unknown": 26,
+      "decoy": 5,
+      "gold": 1
+    },
+    "ENG_NONE_CYC": {
+      "gold": 24,
+      "unknown": 8
+    }
+  },
+  "contrasts": [
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_NONE_CYC",
+      "n_paired": 32,
+      "a_only": 0,
+      "b_only": 6,
+      "mcnemar_exact_p": 0.03125
+    },
+    {
+      "a": "OPQ_K2_CYC",
+      "b": "OPQ_NONE_CYC",
+      "n_paired": 32,
+      "a_only": 0,
+      "b_only": 6,
+      "mcnemar_exact_p": 0.03125
+    },
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_K2_CYC",
+      "n_paired": 32,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CRV",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 32,
+      "a_only": 0,
+      "b_only": 1,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_K2_CRV",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 32,
+      "a_only": 0,
+      "b_only": 1,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CRV",
+      "b": "OPQ_K2_CRV",
+      "n_paired": 32,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_H5_CRV",
+      "n_paired": 32,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_K2_CYC",
+      "b": "OPQ_K2_CRV",
+      "n_paired": 32,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_NONE_CYC",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 32,
+      "a_only": 6,
+      "b_only": 1,
+      "mcnemar_exact_p": 0.125
+    }
+  ],
+  "note": "Grok 4.5, 11 Sep 2026, cursor_sdk AsyncAgent, --preamble none, 224/224 status=finished. Do not overwrite factorial_2x2_iso_grok45.json."
+}

@@ -1,6 +1,6 @@
 {
   "name": "OIR-Bench",
-  "version": "2026-08-21",
+  "version": "2026-09-11",
   "claim": "lexicon hiding; not confidentiality",
   "suites": [
     {
@@ -13,6 +13,17 @@
       "scorer": "harness/score_factorial_2x2.py",
       "locked_freeform": ["gpt56", "composer25", "grok45"],
       "primary": true
+    },
+    {
+      "id": "header_decoy_ablation_iso",
+      "n": 32,
+      "arms": 7,
+      "protocol": "isolation",
+      "keys": "WIKI-H5 per-item HMAC on relations; arm-neutral case ids",
+      "prompts": "runs/header_decoy_ablation_iso",
+      "harness": "results/header_decoy_ablation_iso_harness.json",
+      "scorer": "harness/header_decoy_ablation_iso.py",
+      "locked_freeform": ["gpt56abl", "composer25abl", "grok45abl"]
     },
     {
       "id": "ceiling_three_arm_n32_iso",

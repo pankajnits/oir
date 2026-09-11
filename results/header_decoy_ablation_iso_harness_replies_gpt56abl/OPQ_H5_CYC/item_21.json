@@ -1,0 +1,36 @@
+{
+  "id": "HDA_f32d8fc965",
+  "arm": "OPQ_H5_CYC",
+  "item": 21,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_21/prompt.txt",
+  "pred": "Oklahoma_City",
+  "raw": "ANSWER_PLAIN[HDA_f32d8fc965]: Oklahoma_City",
+  "elapsed_s": 2.314,
+  "utc": "2026-09-11T16:25:13.635588+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyLnYbQtrX2mSjMcolFlk3fCpaK6",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789143911,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 67,
+    "prompt_tokens": 176,
+    "total_tokens": 243,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 42,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

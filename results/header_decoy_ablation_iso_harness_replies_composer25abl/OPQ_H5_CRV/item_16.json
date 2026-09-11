@@ -1,0 +1,12 @@
+{
+  "id": "HDA_3361dcf2e8",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_PLAIN[HDA_3361dcf2e8]: UNKNOWN\n\nFrom CONTEXT only, Topi_Manner is one hop from **Elisa** and **Cogent_Communications**, with no label on those edges for “leads” vs any other tie. Each of those is one hop from a city (**Helsinki**, **Washington_DC**), again with opaque edges (not explicitly “headquarters”). That gives two 2-hop paths to two cities and no way to pick a single company he leads, so the HQ city is not uniquely determined.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 10.136,
+  "utc": "2026-09-11T17:07:58.646993+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

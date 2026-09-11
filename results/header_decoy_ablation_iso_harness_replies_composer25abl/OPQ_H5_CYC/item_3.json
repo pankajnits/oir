@@ -1,0 +1,12 @@
+{
+  "id": "HDA_980547c298",
+  "pred": "Warsaw",
+  "raw": "ANSWER_PLAIN[HDA_980547c298]: Warsaw\n\n**Reasoning (context only):** Vibeke_Frst_Haugen is linked to two organizations. One 2-hop chain is Vibeke_Frst_Haugen → Polish_State_Railways → **Warsaw**. The other is Vibeke_Frst_Haugen → Norwegian_Broadcasting_Corporation → NRK_Marienlyst. With opaque relation types, “the company led by” her is ambiguous, but **Warsaw** is the only entity in the graph that is clearly a city on a 2-hop headquarters-style path. NRK_Marienlyst is a place name, not given as a city in this context.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 12.097,
+  "utc": "2026-09-11T17:06:49.340928+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

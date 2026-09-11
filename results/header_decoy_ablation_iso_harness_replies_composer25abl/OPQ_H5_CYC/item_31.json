@@ -1,0 +1,12 @@
+{
+  "id": "HDA_8cdca87cc9",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_PLAIN[HDA_8cdca87cc9]: UNKNOWN\n\n**Why (context only):** Moshe_Zana is linked to two organizations—Israel_Railways and The_Walt_Disney_Company—and the edge types are opaque, so “led by” isn’t uniquely defined. Each org has a two-hop continuation: Israel_Railways → Lod_Railway_Station and The_Walt_Disney_Company → Burbank. Without knowing which link is leadership (and whether the second hop is headquarters for that company), you can’t pick a single headquarters city.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 6.498,
+  "utc": "2026-09-11T17:07:27.721616+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

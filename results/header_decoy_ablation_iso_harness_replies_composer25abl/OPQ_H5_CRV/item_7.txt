@@ -1,0 +1,10 @@
+ANSWER_PLAIN[HDA_61e4605406]: UNKNOWN
+# raw_tail
+ANSWER_PLAIN[HDA_61e4605406]: UNKNOWN
+
+From the context only, **Sergio_Ermotti** has two two-hop paths to a city, with no labels on the edges (e.g. who “leads” what or what is “headquarters”):
+
+1. Sergio_Ermotti → **UBS** → **Zurich**  
+2. Sergio_Ermotti → **Cogent_Communications** → **Washington_DC**
+
+Under opaque relations you cannot pick one company or one HQ city, so the answer is **UNKNOWN** rather than Zurich or Washington_DC alone.

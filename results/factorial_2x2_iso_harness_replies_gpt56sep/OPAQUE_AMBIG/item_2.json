@@ -1,0 +1,35 @@
+{
+  "id": "F22_OPAQUE_AMBIG_2",
+  "arm": "OPAQUE_AMBIG",
+  "item": 2,
+  "prompt_path": "runs/factorial_2x2_iso/OPAQUE_AMBIG/item_2/prompt.txt",
+  "pred": "Broadway",
+  "raw": "ANSWER_PLAIN[F22_OPAQUE_AMBIG_2]: Broadway",
+  "elapsed_s": 8.301,
+  "utc": "2026-09-11T16:39:26.273091+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EMyZSQhPnX4ubbESUxM1Un2WBKunS",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144758,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 215,
+    "prompt_tokens": 185,
+    "total_tokens": 400,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 192,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -202,7 +202,7 @@ def test_openai_gpt5_omits_temperature(monkeypatch):
     assert client.complete([{"role": "user", "content": "hi"}]) == "ANSWER_SEALED: UNKNOWN"
     assert len(calls) == 1
     assert "temperature" not in calls[0]
-    assert calls[0]["max_completion_tokens"] == 512
+    assert calls[0]["max_completion_tokens"] == 4096
 
 
 def test_openai_mini_sends_temperature(monkeypatch):

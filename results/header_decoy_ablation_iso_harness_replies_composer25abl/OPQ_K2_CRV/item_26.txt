@@ -1,0 +1,5 @@
+ANSWER_PLAIN[HDA_1ee492a6eb]: Washington_DC
+# raw_tail
+ANSWER_PLAIN[HDA_1ee492a6eb]: Washington_DC
+
+**Context-only reasoning:** From `Stacey_Snider`, there are two same-pattern 2-hop paths: `Stacey_Snider → 20th_Century_Studios → Fox_Plaza` and `Stacey_Snider → Cogent_Communications → Washington_DC`. The question asks for a **city** as headquarters. In the given context, `Washington_DC` is the only second-hop entity that is a city; `Fox_Plaza` is a place/building name with no city node supplied, so it cannot be answered as a city from this graph alone.

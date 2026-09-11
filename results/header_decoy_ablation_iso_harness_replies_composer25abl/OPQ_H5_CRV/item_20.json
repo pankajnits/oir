@@ -1,0 +1,12 @@
+{
+  "id": "HDA_1a16880ea3",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_PLAIN[HDA_1a16880ea3]: UNKNOWN\n\n**Reasoning (context only):** Macon_Foscue_Brock_Jr is linked to two companies. Each company is one hop from a location: Dollar_Tree → Chesapeake, and Cogent_Communications → Washington_DC. With opaque relation types, both are plausible “company led by him → headquarters city” two-hop chains, so a single city cannot be chosen from this context alone.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 5.161,
+  "utc": "2026-09-11T17:07:58.646275+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

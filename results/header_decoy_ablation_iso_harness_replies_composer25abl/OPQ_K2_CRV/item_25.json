@@ -1,0 +1,12 @@
+{
+  "id": "HDA_9093892077",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_PLAIN[HDA_9093892077]: UNKNOWN\n\nFrom the CONTEXT alone, Raymond_Watson is linked to two companies, each with a city on a 2-hop path:\n\n1. Raymond_Watson → The_Walt_Disney_Company → Burbank  \n2. Raymond_Watson → Cogent_Communications → Washington_DC  \n\nThe relation types are opaque, so you cannot tell which link means “led by” or whether both do. With two equally valid headquarters cities and no way to pick one company, the answer is **UNKNOWN**.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 9.326,
+  "utc": "2026-09-11T17:09:57.280903+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

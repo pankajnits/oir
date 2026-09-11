@@ -1,0 +1,12 @@
+ANSWER_PLAIN[HDA_7ad61e61d6]: UNKNOWN
+# raw_tail
+Tracing the CONTEXT from **Krzysztof_Mamiski** with 2-hop paths (person → company → city):
+
+1. Krzysztof_Mamiski → **Polish_State_Railways** → **Warsaw**  
+2. Krzysztof_Mamiski → **Cogent_Communications** → **Washington_DC**
+
+Both chains use the same shape (affiliation to a company, then company to a city). Relation IDs are opaque, so we cannot tell which link means “led by” versus another role, but each company is tied to a different headquarters city.
+
+The question asks for **the** city (singular) for **the** company he leads, so the graph does not pick a unique answer.
+
+ANSWER_PLAIN[HDA_7ad61e61d6]: UNKNOWN

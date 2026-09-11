@@ -1,0 +1,35 @@
+{
+  "id": "HDA_980547c298",
+  "arm": "OPQ_H5_CYC",
+  "item": 3,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_3/prompt.txt",
+  "pred": "Oslo",
+  "raw": "ANSWER_PLAIN[HDA_980547c298]: Oslo",
+  "elapsed_s": 8.406,
+  "utc": "2026-09-11T16:37:24.255900+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EMyXUVdlAZx4cg1pt69oY85jfSUJk",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144636,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 393,
+    "prompt_tokens": 195,
+    "total_tokens": 588,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 371,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

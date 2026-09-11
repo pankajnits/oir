@@ -1,0 +1,10 @@
+ANSWER_PLAIN[HDA_d9d0e93a91]: UNKNOWN**
+# raw_tail
+**ANSWER_PLAIN[HDA_d9d0e93a91]: UNKNOWN**
+
+From the given context only, `Topi_Manner` has two two-hop paths to a city:
+
+1. `Topi_Manner` → `Elisa` → `Helsinki`  
+2. `Topi_Manner` → `Ferrovie_dello_Stato_Italiane` → `Rome`
+
+The link types are opaque (only IDs like `E38b8836af6bb` and `Ee09d372218eb`), so you cannot tell which company is the one **led by** Topi_Manner. Each company is tied to a different headquarters city, so the answer is ambiguous under context-only rules.

@@ -1,0 +1,36 @@
+{
+  "id": "HDA_905b9fde0d",
+  "arm": "OPQ_H5_CRV",
+  "item": 14,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_14/prompt.txt",
+  "pred": "Warsaw",
+  "raw": "ANSWER_PLAIN[HDA_905b9fde0d]: Warsaw",
+  "elapsed_s": 2.781,
+  "utc": "2026-09-11T16:26:52.456384+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyNOn4jieCHoYIfpynY6FbVkbJii",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144010,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 84,
+    "prompt_tokens": 198,
+    "total_tokens": 282,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 60,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

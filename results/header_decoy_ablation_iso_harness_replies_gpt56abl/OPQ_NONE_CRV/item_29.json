@@ -1,0 +1,36 @@
+{
+  "id": "HDA_edb73360aa",
+  "arm": "OPQ_NONE_CRV",
+  "item": 29,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_29/prompt.txt",
+  "pred": "Cologne",
+  "raw": "ANSWER_PLAIN[HDA_edb73360aa]: Cologne",
+  "elapsed_s": 6.384,
+  "utc": "2026-09-11T16:35:02.120284+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyVIZITYiyHFt7ovdfx3Xkjm7QwI",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144500,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 153,
+    "total_tokens": 169,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

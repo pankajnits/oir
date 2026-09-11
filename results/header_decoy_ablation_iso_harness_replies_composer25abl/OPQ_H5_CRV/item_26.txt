@@ -1,0 +1,10 @@
+ANSWER_PLAIN[HDA_a40488506d]: Washington_DC
+# raw_tail
+ANSWER_PLAIN[HDA_a40488506d]: Washington_DC
+
+**Context-only reasoning:** From `Stacey_Snider`, there are two 2-hop chains to location-like entities:
+
+1. `Stacey_Snider` → `20th_Century_Studios` → `Fox_Plaza`  
+2. `Stacey_Snider` → `Cogent_Communications` → `Washington_DC`
+
+Relation types are not labeled, so which firm “led by” Stacey Snider is unclear. In this graph, only **Washington_DC** is given as a city; **Fox_Plaza** is not named as a city. The HQ city explicitly reachable in 2 hops on a company→location chain is **Washington_DC** (via `Cogent_Communications`). If the task treats the two company links as equally valid with no way to pick one, the strict ambiguous case would be **UNKNOWN**; the city explicitly in context on that pattern is **Washington_DC**.

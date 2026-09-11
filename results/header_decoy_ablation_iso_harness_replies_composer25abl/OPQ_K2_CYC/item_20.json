@@ -1,0 +1,12 @@
+{
+  "id": "HDA_0fd7b262ab",
+  "pred": "Chesapeake",
+  "raw": "ANSWER_PLAIN[HDA_0fd7b262ab]: Chesapeake\n\nFrom the context, **Macon_Foscue_Brock_Jr** is linked to **Dollar_Tree**, and **Dollar_Tree** is linked to **Chesapeake** (a 2-hop path: person → company → city). There is also a second 2-hop path through **Loves_Travel_Stops__Country_Stores** to **Oklahoma_City**; with only this context and a singular “the company,” **Chesapeake** is the answer tied to the first company chain listed (**Dollar_Tree**).",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 6.498,
+  "utc": "2026-09-11T17:08:49.168539+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

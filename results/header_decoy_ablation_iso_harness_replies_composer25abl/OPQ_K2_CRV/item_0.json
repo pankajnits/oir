@@ -1,0 +1,12 @@
+{
+  "id": "HDA_0f71517d6f",
+  "pred": "Burbank",
+  "raw": "ANSWER_PLAIN[HDA_0f71517d6f]: Burbank\n\nFrom the given CONTEXT, Michael_Eisner links to The_Walt_Disney_Company, and The_Walt_Disney_Company links to Burbank (a 2-hop path). There is also Michael_Eisner → Cogent_Communications → Washington_DC, but the question asks for the headquarters of the company led by Michael Eisner in the usual sense (Disney), which in this graph is Burbank.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 7.593,
+  "utc": "2026-09-11T17:09:10.172403+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

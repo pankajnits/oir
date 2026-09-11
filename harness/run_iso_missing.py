@@ -34,8 +34,8 @@ MODELS = [("composer25", "composer-2.5"), ("grok45", "grok-4.5")]
 
 
 def main() -> None:
-    if not os.environ.get("AGENT_API_KEY"):
-        raise SystemExit("Set AGENT_API_KEY")
+    if not os.environ.get("AGENT_API_KEY") and not os.environ.get("CURSOR_API_KEY"):
+        raise SystemExit("Set AGENT_API_KEY or CURSOR_API_KEY")
     conc = os.environ.get("OIR_CONCURRENCY", "4")
     for tag, model in MODELS:
         for harness, arms, stem in JOBS:

@@ -119,11 +119,12 @@ def build() -> dict:
     for i, row in enumerate(picked):
         decoy = picked[(i + 1) % N]
         if decoy["hq"] == row["hq"] or decoy["person"] == row["person"]:
-            decoy = {
-                "person": f"DecoyPerson_{i}",
-                "company": f"DecoyCo_{i}",
-                "hq": f"DecoyCity_{i}",
-            }
+            # Review fix: never substitute placeholder names such as "DecoyCity_i";
+            # they lexically label the decoy route. Fail loudly instead.
+            raise ValueError(
+                f"item {i}: cyclic decoy shares hq/person with gold; choose a new seed "
+                "or resample decoys explicitly and document it"
+            )
         u_edges = unique_edges(row, decoy)
         a_edges = ambig_edges(row, decoy)
         EntitySeal.assert_raw_injective(x for e in (*u_edges, *a_edges) for x in e)
@@ -205,7 +206,7 @@ def build() -> dict:
         "cases": cases,
     }
     out = RESULTS / "factorial_2x2_iso_harness.json"
-    out.write_text(json.dumps(harness, indent=2))
+    out.write_text(json.dumps(harness, indent=2, ensure_ascii=False) + "\n")
     print("wrote", out, "n", N)
     return harness
 

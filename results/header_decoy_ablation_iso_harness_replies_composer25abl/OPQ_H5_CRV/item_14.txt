@@ -1,0 +1,5 @@
+ANSWER_PLAIN[HDA_905b9fde0d]: UNKNOWN
+# raw_tail
+ANSWER_PLAIN[HDA_905b9fde0d]: UNKNOWN
+
+From the context, Beata_KozowskaChya has two one-hop links to companies (Powszechny_Zakad_Ubezpiecze and Cogent_Communications), and each company has a one-hop link to a city (Warsaw and Washington_DC). Relation types are opaque, so it is not clear which link means “led by” or “headquarters,” and there are two valid two-hop city paths. Under OPAQUE_AMBIG, the headquarters city is not uniquely determined.

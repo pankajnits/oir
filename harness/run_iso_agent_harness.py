@@ -1,11 +1,25 @@
 #!/usr/bin/env python3
-"""Isolation MUT (composer-2.5 / Grok) on isolation harness JSON.
+"""Isolation MUT (composer-2.5 / grok-4.5) through Cursor's Python SDK.
 
-No tools, empty cwd — the model cannot read gold JSON.
-Skips existing reply files. Does not re-run OpenAI.
+No tools, empty cwd: the model cannot read gold JSON. Skips final reply files.
 
   AGENT_API_KEY=... python3 harness/run_iso_agent_harness.py \\
-      results/factorial_2x2_iso_harness.json composer25 composer-2.5
+      results/factorial_2x2_iso_harness.json composer25 composer-2.5 [arm...] \\
+      [--preamble cursor|none] [--retry-empty] [--force]
+
+``CURSOR_API_KEY`` is accepted as a fallback for ``AGENT_API_KEY``.
+Do not reuse locked tags (``composer25``, ``grok45``) for new suites.
+
+Access route (disclose in papers): both models are called via Cursor's agent
+bridge (``cursor_sdk.AsyncAgent``), not a vendor chat API. Requires Cursor's
+Python SDK (``pip install -e '.[cursor]'``).
+
+``--preamble cursor`` (default, reproduces locked cells) prefixes every prompt
+with an instruction that OpenAI cells never received. ``--preamble none``
+sends the prompt file verbatim, matching run_openai_iso_harness.py.
+
+Review fixes: empty replies are NO_OUTPUT (not UNKNOWN); a JSON sidecar keeps
+the full reply, status, preamble mode, model and timestamp.
 """
 from __future__ import annotations
 
@@ -13,75 +27,98 @@ import argparse
 import asyncio
 import json
 import os
-import re
 import sys
 import tempfile
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "harness"))
-from paths import repo_abs
+from paths import repo_abs  # noqa: E402
+from reply_parse import classify, is_final, parse  # noqa: E402
 
 RESULTS = ROOT / "results"
-ANS_SEAL = re.compile(r"ANSWER_SEALED\[([^\]]+)\]:\s*(\S+)", re.I)
-ANS_PLAIN = re.compile(r"ANSWER_PLAIN\[([^\]]+)\]:\s*([^\n]+)", re.I)
+OK_STATUSES = {"finished", "completed"}
+CURSOR_PREAMBLE = (
+    "You are the model under test. Do not use tools. "
+    "Read ONLY this message. Reply with the required ANSWER line only.\n\n"
+)
 
 
-def parse(cid: str, raw: str, *, sealed: bool) -> tuple[str, str]:
-    rx = ANS_SEAL if sealed else ANS_PLAIN
-    prefix = "ANSWER_SEALED" if sealed else "ANSWER_PLAIN"
-    ms = list(rx.finditer(raw))
-    if ms:
-        pred = ms[-1].group(2).strip()
-        return pred, f"{prefix}[{cid}]: {pred}\n# raw_tail\n{raw[-800:]}\n"
-    if sealed:
-        atom = re.search(r"\b(E[0-9a-f]{12})\b", raw, re.I)
-        if atom and "ERROR:" not in raw:
-            pred = atom.group(1)
-            return pred, f"{prefix}[{cid}]: {pred}\n# raw\n{raw[:2500]}\n"
-    if re.search(r"\bUNKNOWN\b", raw, re.I) and "ERROR:" not in raw:
-        return "UNKNOWN", f"{prefix}[{cid}]: UNKNOWN\n# raw\n{raw[:2500]}\n"
-    lines = [ln.strip() for ln in raw.splitlines() if ln.strip() and not ln.startswith("#")]
-    if lines and "ERROR:" not in raw:
-        pred = lines[-1].split()[-1].strip(".,;:")
-        return pred, f"{prefix}[{cid}]: {pred}\n# raw\n{raw[:2500]}\n"
-    return "UNKNOWN", f"{prefix}[{cid}]: UNKNOWN\n# raw\n{raw[:2500]}\n"
+def resolve_api_key() -> str:
+    key = (
+        os.environ.get("AGENT_API_KEY", "").strip()
+        or os.environ.get("CURSOR_API_KEY", "").strip()
+    )
+    if not key:
+        raise SystemExit("Set AGENT_API_KEY or CURSOR_API_KEY (do not commit it).")
+    return key
 
 
-async def one(
-    *,
-    client,
-    model: str,
-    api_key: str,
-    cwd: str,
-    prompt: str,
-    cid: str,
-    sealed: bool,
-    out: Path,
-) -> str:
+def _status_error_message(ev) -> str | None:
+    if getattr(ev, "type", None) != "status":
+        return None
+    st = str(getattr(ev, "status", "")).upper()
+    if st != "ERROR":
+        return None
+    msg = (getattr(ev, "message", None) or "").strip()
+    return msg or None
+
+
+def _billing_blocked(raw: str) -> bool:
+    return "unpaid invoice" in (raw or "").lower()
+
+
+def _require_sdk():
+    try:
+        import cursor_sdk  # noqa: F401
+    except ImportError as e:  # pragma: no cover - environment dependent
+        raise SystemExit(
+            "cursor_sdk is required for Composer/Grok cells (Cursor agent bridge). "
+            "Install Cursor's Python SDK; see Cursor's SDK docs."
+        ) from e
+
+
+async def one(*, client, model: str, api_key: str, cwd: str, prompt: str, cid: str,
+              sealed: bool, out: Path, preamble: str) -> dict:
     from cursor_sdk import AgentOptions, AsyncAgent, LocalAgentOptions
 
     t0 = time.time()
-    try:
-        r = await asyncio.wait_for(
-            AsyncAgent.prompt(
-                "You are the model under test. Do not use tools. "
-                "Read ONLY this message. Reply with the required ANSWER line only.\n\n"
-                + prompt,
-                AgentOptions(
-                    model=model,
-                    api_key=api_key,
-                    tools=[],
-                    local=LocalAgentOptions(cwd=cwd),
-                ),
-                client=client,
-            ),
-            timeout=90,
+    status = None
+    err_note = None
+    sent = (CURSOR_PREAMBLE if preamble == "cursor" else "") + prompt
+
+    async def _call() -> str:
+        nonlocal status, err_note
+        agent = await AsyncAgent.create(
+            AgentOptions(model=model, api_key=api_key, tools=[],
+                         local=LocalAgentOptions(cwd=cwd)),
+            client=client,
         )
-        raw = (r.result or "").strip() or f"ERROR: empty status={r.status}"
-        if r.status != "finished" and not raw.startswith("ERROR:"):
-            raw = f"ERROR: status={r.status}\n{raw}"
+        try:
+            run = await agent.send(sent)
+            async for ev in run.messages():
+                note = _status_error_message(ev)
+                if note:
+                    err_note = note
+            r = await run.wait()
+            status = r.status
+            raw = (r.result or "").strip()
+            st = str(status or "").lower()
+            if err_note and not raw:
+                return f"ERROR: {err_note}"
+            if not raw and st not in OK_STATUSES:
+                return f"ERROR: empty status={status}"
+            if st not in OK_STATUSES and not raw.startswith("ERROR:"):
+                extra = f" ({err_note})" if err_note else ""
+                return f"ERROR: status={status}{extra}\n{raw}"
+            return raw
+        finally:
+            await agent.close()
+
+    try:
+        raw = await asyncio.wait_for(_call(), timeout=90)
     except TimeoutError:
         raw = "ERROR: timeout 90s"
     except Exception as e:
@@ -90,16 +127,22 @@ async def one(
     if raw.startswith("ERROR:"):
         text = f"ERROR: {raw}\n"
     out.write_text(text)
+    sidecar = {
+        "id": cid, "pred": pred, "raw": raw, "status": status, "model": model,
+        "preamble": preamble, "elapsed_s": round(time.time() - t0, 3),
+        "utc": datetime.now(timezone.utc).isoformat(), "route": "cursor_sdk.AsyncAgent",
+        "error": err_note,
+    }
+    out.with_suffix(".json").write_text(json.dumps(sidecar, indent=2, ensure_ascii=False) + "\n")
     print(f"{out.parent.name} {out.stem} {time.time() - t0:.1f}s -> {pred}", flush=True)
-    return pred
+    return {"pred": pred, "raw": raw, "status": status}
 
 
 async def run(args: argparse.Namespace) -> None:
+    _require_sdk()
     from cursor_sdk import AsyncClient
 
-    api_key = os.environ.get("AGENT_API_KEY", "").strip()
-    if not api_key:
-        raise SystemExit("Set AGENT_API_KEY (do not commit it).")
+    api_key = resolve_api_key()
     h = json.loads(Path(args.harness).read_text())
     arms = args.arms or list(h["arms"])
     reply_root = RESULTS / f"{Path(args.harness).stem}_replies_{args.tag}"
@@ -114,17 +157,11 @@ async def run(args: argparse.Namespace) -> None:
             out = out_dir / f"item_{i}.txt"
             if not args.force and out.exists():
                 prev = out.read_text()
-                if "ERROR:" not in prev and (ANS_SEAL.search(prev) or ANS_PLAIN.search(prev)):
+                if is_final(prev) and not (args.retry_empty and classify(prev) == "legacy_empty"):
                     print(f"skip {arm} {i}", flush=True)
                     continue
-            jobs.append(
-                {
-                    "prompt": repo_abs(p).read_text(),
-                    "cid": meta["ids"][i],
-                    "sealed": sealed,
-                    "out": out,
-                }
-            )
+            jobs.append({"prompt": repo_abs(p).read_text(), "cid": meta["ids"][i],
+                         "sealed": sealed, "out": out})
     if not jobs:
         print("nothing to run", args.tag, arms)
         return
@@ -132,18 +169,24 @@ async def run(args: argparse.Namespace) -> None:
     sem = asyncio.Semaphore(args.concurrency)
     async with await AsyncClient.launch_bridge(workspace=empty) as client:
 
-        async def guarded(job: dict) -> None:
+        async def guarded(job: dict) -> dict:
             async with sem:
-                await one(
-                    client=client,
-                    model=args.model,
-                    api_key=api_key,
-                    cwd=empty,
-                    **job,
-                )
+                return await one(client=client, model=args.model, api_key=api_key,
+                                 cwd=empty, preamble=args.preamble, **job)
 
-        await asyncio.gather(*(guarded(j) for j in jobs))
-    print("done", args.model, args.tag, arms, "n", len(jobs))
+        first = await guarded(jobs[0])
+        if _billing_blocked(first["raw"]):
+            raise SystemExit(
+                "Cursor API blocked (unpaid invoice). Pay at https://cursor.com/dashboard "
+                "then re-run; the canary ERROR file is not final and will be overwritten."
+            )
+        if (first["raw"] or "").startswith("ERROR:"):
+            raise SystemExit(
+                "canary failed (not scoring the rest): " + (first["raw"] or "")[:400]
+            )
+        if len(jobs) > 1:
+            await asyncio.gather(*(guarded(j) for j in jobs[1:]))
+    print("done", args.model, args.tag, arms, "n", len(jobs), "preamble", args.preamble)
 
 
 def main() -> None:
@@ -153,13 +196,13 @@ def main() -> None:
     ap.add_argument("model")
     ap.add_argument("arms", nargs="*")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--retry-empty", action="store_true")
+    ap.add_argument("--preamble", choices=("cursor", "none"), default="cursor")
     ap.add_argument("--concurrency", type=int, default=int(os.environ.get("OIR_CONCURRENCY", "4")))
     args = ap.parse_args()
     if not args.model.strip() or " " in args.tag:
-        raise SystemExit(
-            "Usage: run_iso_agent_harness.py HARNESS TAG MODEL "
-            "(TAG=composer25|grok45, MODEL=composer-2.5|grok-4.5)"
-        )
+        raise SystemExit("Usage: run_iso_agent_harness.py HARNESS TAG MODEL "
+                         "(TAG=composer25|grok45, MODEL=composer-2.5|grok-4.5)")
     asyncio.run(run(args))
 
 

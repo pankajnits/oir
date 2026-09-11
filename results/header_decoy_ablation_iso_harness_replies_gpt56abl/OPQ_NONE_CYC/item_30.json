@@ -1,0 +1,36 @@
+{
+  "id": "HDA_a43506a0b5",
+  "arm": "OPQ_NONE_CYC",
+  "item": 30,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_30/prompt.txt",
+  "pred": "Hartford",
+  "raw": "ANSWER_PLAIN[HDA_a43506a0b5]: Hartford",
+  "elapsed_s": 1.588,
+  "utc": "2026-09-11T16:33:41.069188+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EMyU0uLzV7YcxY6Qbv4GdKW0cX3Bm",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789144420,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 150,
+    "total_tokens": 168,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

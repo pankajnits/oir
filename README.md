@@ -36,7 +36,7 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 | Unique path, both-opaque (entities+relations sealed) | **32/32** all three families |
 | Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; Composer **27/32**; Grok **30/32** |
 | English Wikidata 2×2 (OpenAI; relations readable) | unique **31/32**, two-path **31/32** |
-| Opacity × two same-type paths (OpenAI Wikidata 2×2) | English two-path **31/32** → opaque **6/32** (UNK 24, decoy 2; McNemar 25 vs 0) |
+| Opacity × two same-type paths (OpenAI Wikidata 2×2) | Locked named-arm Wiki-H5 **6/32** (UNK 24, decoy 2). Snapshot **5/32** (1 `NO_OUTPUT`). Arm-neutral OpenAI: H5 cyclic **20/32**, H5 constant decoy **10/32**, K2 cyclic **30/32**, no ARM cyclic **25/32**. Composer H5 **6/32** vs no ARM **21/32**. Grok H5/K2 **0/32**, no ARM **6/32**, English no ARM **24/32**. |
 | Same graphs, Composer / Grok two-path | Composer English **26/32** → opaque **10/32**; Grok English **4/32** (UNK 28) → opaque **1/32** |
 | WikiMovies Condition A n=100 (OpenAI) | two-path **96/100**; on 32 names shared with A32, **29/32** (A32 was **17/32**) |
 | WikiMovies Condition B n=100 (OpenAI) | unique **100/100**, two-path **3/100** |
@@ -50,7 +50,7 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 
 Models are named **Composer 2.5**, **OpenAI** (`gpt-5.6-sol`), **Grok 4.5**. Result files tagged `auto` are Composer 2.5.
 
-The installable `MiddleLayer` / `SealedChat` package sits between an app and a public LLM. Names stay in the app; the model sees HMAC atoms for one request. **The layer holds the key.** Use a new `MiddleLayer()` per request (`SealedChat.ask` does not rotate the key). Non-Latin names: pure CJK stays Unicode; mixed-script Latin is ASCII-folded (`Zürich` → `Z_rich`), matching the paper HMAC lock. Vault ints/bools stay JSON numbers.
+The installable `MiddleLayer` / `SealedChat` package sits between an app and a public LLM. Names stay in the app; the model sees HMAC atoms for one request. **The layer holds the key.** Use a new `MiddleLayer()` per request (`SealedChat.ask` does not rotate the key). Non-Latin names: pure CJK stays Unicode. Mixed-script Latin is not “ASCII-folded”: any remaining ASCII causes non-ASCII characters to be replaced with `_` (`Zürich` → `Z_rich`; `東京 Tower` and `大阪 Tower` would collide). `EntitySeal(strict=True)` (the default) rejects distinct names that would share a seal; `strict=False` rebuilds legacy locks. Vault ints/bools stay JSON numbers.
 
 ```
 Your app  →  MiddleLayer.call() packs messages  →  SealedChat.ask() sends call.messages
@@ -65,6 +65,7 @@ Python 3.10+. From the root of this repository:
 ```bash
 pip install -e .
 pip install -e '.[openai]'   # official OpenAI SDK (optional)
+pip install -e '.[cursor]'   # Cursor Python SDK for Composer/Grok cells
 pip install -e '.[dev]'      # pytest
 pip install -e '.[paper]'    # matplotlib — rebuild paper figures
 ```
@@ -163,7 +164,7 @@ chat = SealedChat(MiddleLayer(), Echo())
 | `oir.chat.SealedChat` | `ask(...)` / `prepare(...)` — raises `LeakError` |
 | `oir.errors.LeakError` | Watched plaintext would have appeared in `call.messages`; send is refused |
 | `oir.chat.ChatCompleter` | Protocol: `complete(messages) -> str` |
-| `oir.chat.OpenAIChatClient` | Thin `openai` wrapper. `gpt-4o-mini`: `temperature=0`. `gpt-5*`: omit temperature, `max_completion_tokens=512` (paper runner). |
+| `oir.chat.OpenAIChatClient` | Thin `openai` wrapper. `gpt-4o-mini`: `temperature=0`. `gpt-5*`: omit temperature, `max_completion_tokens=4096` (paper isolation runner used 512). |
 | `oir.EntitySeal` / `oir.SealRouter` | Atom HMAC and exact PATH executor (paper ceiling) |
 
 ## What this is not
@@ -183,7 +184,7 @@ arXiv zip: [`paper/oir-arxiv.zip`](paper/oir-arxiv.zip).
 Compile: **[`paper/README.md`](paper/README.md)**.
 Reproduce and swap datasets: **[`SCIENTIST.md`](SCIENTIST.md)**.
 
-The table at the top of this README is the public spine. Cite `results/factorial_2x2_iso_*.json`, `results/factorial_2x2_iso_shuffle_gpt56.json` (listing order), `results/entity_rel_2x2_iso_*.json`, `results/adv_induction_n32_iso_*.json`, and the identifiability harnesses (`seal_layer_legend_small_n32_harness_*.json`, `opaque_iso_json_n32_harness_*.json`). The CEO three-arm (`ceiling_three_arm_n32_iso_*.json`) is a missing-start / execution-bound cell, not the $2{\times}2$. Missing cells are `n.r.`, not 0.
+The table at the top of this README is the public spine. Cite `results/factorial_2x2_iso_*.json`, `results/factorial_2x2_iso_shuffle_gpt56.json` (listing order), `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json` (header×decoy, 11 Sep 2026; `--preamble none` for Composer/Grok), `results/entity_rel_2x2_iso_*.json`, `results/adv_induction_n32_iso_*.json`, and the identifiability harnesses (`seal_layer_legend_small_n32_harness_*.json`, `opaque_iso_json_n32_harness_*.json`). The CEO three-arm (`ceiling_three_arm_n32_iso_*.json`) is a missing-start / execution-bound cell, not the $2{\times}2$. Missing cells are `n.r.`, not 0. Verify evidence with `shasum -c results/SHA256SUMS`.
 
 ## Layout
 

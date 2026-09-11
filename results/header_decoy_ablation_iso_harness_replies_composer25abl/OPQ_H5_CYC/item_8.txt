@@ -1,0 +1,10 @@
+ANSWER_PLAIN[HDA_de6abdb698]: UNKNOWN**
+# raw_tail
+**ANSWER_PLAIN[HDA_de6abdb698]: UNKNOWN**
+
+From the context alone, Samuel_W_Fordyce is linked to two companies on opaque edges:
+
+1. **Samuel_W_Fordyce → Kansas_City_Southern → Kansas_City**  
+2. **Samuel_W_Fordyce → WaveDivision_Holdings_LLC → New_Jersey**
+
+The question asks for **the** headquarters **city** of **the** company he leads, but the graph does not label which edge is “led by” versus another role, and there are two two-hop paths to different places (Kansas_City vs New_Jersey, which is not a city). With that ambiguity, a single city cannot be chosen from context only.

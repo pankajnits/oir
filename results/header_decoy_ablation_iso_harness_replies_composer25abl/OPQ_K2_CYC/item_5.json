@@ -1,0 +1,12 @@
+{
+  "id": "HDA_2d6bb97b95",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_PLAIN[HDA_2d6bb97b95]: UNKNOWN\n\nDavid_Lagerholm is linked to two companies in the context (Storstockholms_Lokaltrafik and The_Walt_Disney_Company), each with a two-hop path to a city (Stockholm and Burbank). With opaque relation types and no way to tell which link is “led by” or which company the question means, a single headquarters city cannot be chosen reliably.",
+  "status": "finished",
+  "model": "composer-2.5",
+  "preamble": "none",
+  "elapsed_s": 6.458,
+  "utc": "2026-09-11T17:08:22.388695+00:00",
+  "route": "cursor_sdk.AsyncAgent",
+  "error": null
+}

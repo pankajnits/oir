@@ -1,0 +1,1111 @@
+{
+  "n": 32,
+  "seed": 20260821,
+  "protocol": "isolation",
+  "suite": "header_decoy_ablation_iso",
+  "source": "data/real/wikidata_ceo_hops_v2.json",
+  "keys": "WIKI-H5 per-item HMAC (oir-fact-2x2-iso-v1) on relation atoms; entities English",
+  "case_ids": "arm-neutral hashes (no arm names in Format/ID lines)",
+  "factors": {
+    "header": [
+      "H5",
+      "K2",
+      "NONE"
+    ],
+    "decoy": [
+      "CYC",
+      "CRV"
+    ]
+  },
+  "arms": {
+    "OPQ_H5_CYC": {
+      "ids": [
+        "HDA_4eba493d71",
+        "HDA_51624af438",
+        "HDA_a027567e09",
+        "HDA_980547c298",
+        "HDA_56d3cbdca4",
+        "HDA_e748580318",
+        "HDA_b246213823",
+        "HDA_00c7eacf4b",
+        "HDA_de6abdb698",
+        "HDA_720b9e3e49",
+        "HDA_004b8aec58",
+        "HDA_330a991dd6",
+        "HDA_6c6e7b0927",
+        "HDA_0ac6f4b0e5",
+        "HDA_4f89b8406b",
+        "HDA_2e8e1313f4",
+        "HDA_d9d0e93a91",
+        "HDA_8364c8e372",
+        "HDA_e665aa3c77",
+        "HDA_8aee7e200f",
+        "HDA_438e815ee7",
+        "HDA_f32d8fc965",
+        "HDA_4cbe6c9253",
+        "HDA_0481629804",
+        "HDA_b26fe2be0b",
+        "HDA_cc00505406",
+        "HDA_283acd7c13",
+        "HDA_be90985da7",
+        "HDA_8b7a0845a0",
+        "HDA_f28db9ba94",
+        "HDA_b24aea7098",
+        "HDA_8cdca87cc9"
+      ],
+      "item_paths": [
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_0/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_1/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_2/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_3/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_4/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_5/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_6/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_7/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_8/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_9/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_10/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_11/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_12/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_13/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_14/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_15/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_16/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_17/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_18/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_19/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_20/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_21/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_22/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_23/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_24/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_25/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_26/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_27/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_28/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_29/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_30/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_31/prompt.txt"
+      ],
+      "header": "H5",
+      "decoy": "CYC",
+      "relations": "opaque"
+    },
+    "OPQ_H5_CRV": {
+      "ids": [
+        "HDA_0075d79589",
+        "HDA_3a6d76123c",
+        "HDA_cb9d334d71",
+        "HDA_e46f97cc3d",
+        "HDA_a28678c43b",
+        "HDA_d374e3d00b",
+        "HDA_680436219d",
+        "HDA_61e4605406",
+        "HDA_9914f6d12c",
+        "HDA_ea838ee865",
+        "HDA_534a4e65f5",
+        "HDA_d3290181ba",
+        "HDA_8bab6483a2",
+        "HDA_de67c43228",
+        "HDA_905b9fde0d",
+        "HDA_7d8daeae39",
+        "HDA_3361dcf2e8",
+        "HDA_f2490a673f",
+        "HDA_596ad71380",
+        "HDA_a4f6a0142d",
+        "HDA_1a16880ea3",
+        "HDA_969cf1014d",
+        "HDA_2c86f54e61",
+        "HDA_4fcb93e0ea",
+        "HDA_972af7cb17",
+        "HDA_44cff856f2",
+        "HDA_a40488506d",
+        "HDA_284db6e0cf",
+        "HDA_bb551db4cb",
+        "HDA_b490e45dc8",
+        "HDA_cfdd32f82a",
+        "HDA_51776449fb"
+      ],
+      "item_paths": [
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_0/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_1/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_2/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_3/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_4/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_5/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_6/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_7/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_8/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_9/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_10/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_11/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_12/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_13/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_14/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_15/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_16/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_17/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_18/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_19/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_20/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_21/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_22/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_23/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_24/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_25/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_26/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_27/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_28/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_29/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_30/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_H5_CRV/item_31/prompt.txt"
+      ],
+      "header": "H5",
+      "decoy": "CRV",
+      "relations": "opaque"
+    },
+    "OPQ_K2_CYC": {
+      "ids": [
+        "HDA_bce4eb45e0",
+        "HDA_56c210fadc",
+        "HDA_6c529d4662",
+        "HDA_d6fbf064e0",
+        "HDA_48a841bad9",
+        "HDA_2d6bb97b95",
+        "HDA_a5b2fcd0a6",
+        "HDA_8edce4fdb1",
+        "HDA_cbd9746395",
+        "HDA_c16968bd7b",
+        "HDA_485c1ba130",
+        "HDA_f90e585d9d",
+        "HDA_71465bd64c",
+        "HDA_bdd08e3567",
+        "HDA_9d028feea6",
+        "HDA_b07a1e38f7",
+        "HDA_74c0b1dc51",
+        "HDA_e176fd9c11",
+        "HDA_3ea4ef5c52",
+        "HDA_0e454b5cfe",
+        "HDA_0fd7b262ab",
+        "HDA_27da82b03a",
+        "HDA_f33933472f",
+        "HDA_771e7ad94c",
+        "HDA_bc910db36b",
+        "HDA_73e89541a7",
+        "HDA_0d0f5a75a9",
+        "HDA_48499bff58",
+        "HDA_e2c0eefe20",
+        "HDA_2d3d964740",
+        "HDA_db46fd7030",
+        "HDA_72d04c103f"
+      ],
+      "item_paths": [
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_0/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_1/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_2/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_3/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_4/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_5/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_6/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_7/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_8/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_9/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_10/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_11/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_12/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_13/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_14/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_15/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_16/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_17/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_18/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_19/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_20/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_21/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_22/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_23/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_24/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_25/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_26/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_27/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_28/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_29/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_30/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CYC/item_31/prompt.txt"
+      ],
+      "header": "K2",
+      "decoy": "CYC",
+      "relations": "opaque"
+    },
+    "OPQ_K2_CRV": {
+      "ids": [
+        "HDA_0f71517d6f",
+        "HDA_46fa5b0e22",
+        "HDA_48b1ba2cfa",
+        "HDA_da16a4518d",
+        "HDA_7ad61e61d6",
+        "HDA_28e66aa068",
+        "HDA_a93b2b5ada",
+        "HDA_7cae1a4ff7",
+        "HDA_44841f5017",
+        "HDA_b8a0949520",
+        "HDA_5a265fed16",
+        "HDA_170f764fb7",
+        "HDA_4e4aeba4c0",
+        "HDA_6340ffcbf9",
+        "HDA_2da3634666",
+        "HDA_5b390a66b4",
+        "HDA_830d4a5cd5",
+        "HDA_fe6dad8495",
+        "HDA_bb01373981",
+        "HDA_e2a40d7428",
+        "HDA_3083eb29fe",
+        "HDA_043d689901",
+        "HDA_e68e6e3a1a",
+        "HDA_83eaa3a16d",
+        "HDA_1185d8bfe9",
+        "HDA_9093892077",
+        "HDA_1ee492a6eb",
+        "HDA_4c46209f41",
+        "HDA_4d9d0f7374",
+        "HDA_e01da1baff",
+        "HDA_b7a011ee4f",
+        "HDA_0d27c5aa6e"
+      ],
+      "item_paths": [
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_0/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_1/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_2/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_3/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_4/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_5/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_6/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_7/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_8/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_9/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_10/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_11/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_12/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_13/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_14/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_15/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_16/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_17/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_18/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_19/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_20/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_21/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_22/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_23/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_24/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_25/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_26/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_27/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_28/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_29/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_30/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_K2_CRV/item_31/prompt.txt"
+      ],
+      "header": "K2",
+      "decoy": "CRV",
+      "relations": "opaque"
+    },
+    "OPQ_NONE_CYC": {
+      "ids": [
+        "HDA_16f9841bc2",
+        "HDA_0d3225b3fb",
+        "HDA_166f3d6b03",
+        "HDA_d08e25949d",
+        "HDA_ad9cffdf68",
+        "HDA_2c59bbaed0",
+        "HDA_2e2580bccb",
+        "HDA_8905b0de2f",
+        "HDA_797986034e",
+        "HDA_c40b058edb",
+        "HDA_b749ad83ed",
+        "HDA_cdc45d6257",
+        "HDA_890a96aaf4",
+        "HDA_5e0e5c5ae2",
+        "HDA_50a088a5f0",
+        "HDA_340b2fc61c",
+        "HDA_1d7b8450c4",
+        "HDA_c32459e94a",
+        "HDA_9590ea39df",
+        "HDA_cf5b58dd93",
+        "HDA_a88d1a0643",
+        "HDA_bab5bc195f",
+        "HDA_a3228e3b66",
+        "HDA_4a040e79ec",
+        "HDA_937b40a3cc",
+        "HDA_6e31fde68b",
+        "HDA_da082ffa85",
+        "HDA_52e36f7562",
+        "HDA_2584f5b05e",
+        "HDA_b9519fdb6b",
+        "HDA_a43506a0b5",
+        "HDA_07d9c162c2"
+      ],
+      "item_paths": [
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_0/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_1/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_2/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_3/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_4/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_5/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_6/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_7/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_8/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_9/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_10/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_11/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_12/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_13/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_14/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_15/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_16/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_17/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_18/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_19/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_20/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_21/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_22/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_23/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_24/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_25/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_26/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_27/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_28/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_29/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_30/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CYC/item_31/prompt.txt"
+      ],
+      "header": "NONE",
+      "decoy": "CYC",
+      "relations": "opaque"
+    },
+    "OPQ_NONE_CRV": {
+      "ids": [
+        "HDA_c1c8f647f4",
+        "HDA_3774af62e3",
+        "HDA_0a4956f699",
+        "HDA_35404db8f9",
+        "HDA_dedef554d4",
+        "HDA_15592a9e0a",
+        "HDA_fb92b27705",
+        "HDA_3abdd4dcff",
+        "HDA_8a1f9085a9",
+        "HDA_7e47e66ad7",
+        "HDA_a3c867ccdd",
+        "HDA_86c0e63ec7",
+        "HDA_938522b049",
+        "HDA_75e5f7106d",
+        "HDA_e52449e6d8",
+        "HDA_42561b4f37",
+        "HDA_948adc19e7",
+        "HDA_7c28fdf238",
+        "HDA_91aa12227a",
+        "HDA_380a795376",
+        "HDA_b899eb1469",
+        "HDA_9847319066",
+        "HDA_a9913da58f",
+        "HDA_9f85a1e3e1",
+        "HDA_e6b73f31d6",
+        "HDA_fd3617d9b0",
+        "HDA_d48488ed11",
+        "HDA_79e0643822",
+        "HDA_7c0d850f04",
+        "HDA_edb73360aa",
+        "HDA_b511946372",
+        "HDA_c27619250f"
+      ],
+      "item_paths": [
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_0/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_1/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_2/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_3/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_4/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_5/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_6/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_7/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_8/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_9/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_10/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_11/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_12/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_13/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_14/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_15/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_16/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_17/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_18/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_19/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_20/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_21/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_22/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_23/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_24/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_25/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_26/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_27/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_28/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_29/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_30/prompt.txt",
+        "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_31/prompt.txt"
+      ],
+      "header": "NONE",
+      "decoy": "CRV",
+      "relations": "opaque"
+    },
+    "ENG_NONE_CYC": {
+      "ids": [
+        "HDA_78d6c8f004",
+        "HDA_58d6812a25",
+        "HDA_e2e3ba5b8b",
+        "HDA_58184953b6",
+        "HDA_183069f682",
+        "HDA_34eb730466",
+        "HDA_34fdb5923e",
+        "HDA_671ac08144",
+        "HDA_0dbe9606e6",
+        "HDA_68682418f6",
+        "HDA_caf09923eb",
+        "HDA_3a0abe156b",
+        "HDA_9cacfa94fa",
+        "HDA_5751bca0f2",
+        "HDA_136c7cb9e3",
+        "HDA_cd846b67e7",
+        "HDA_a9bc907ab8",
+        "HDA_e58473a66d",
+        "HDA_1a1bdb6fa2",
+        "HDA_2c05ce5036",
+        "HDA_1582c2a26a",
+        "HDA_7e2cb8f749",
+        "HDA_aa52c31767",
+        "HDA_640b43855c",
+        "HDA_cf2f838941",
+        "HDA_25d5a9ce85",
+        "HDA_a9d3556cd6",
+        "HDA_97cc2ca816",
+        "HDA_70a4c6efb1",
+        "HDA_27e1309b6f",
+        "HDA_b50ca84261",
+        "HDA_f01bbda6b7"
+      ],
+      "item_paths": [
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_0/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_1/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_2/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_3/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_4/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_5/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_6/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_7/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_8/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_9/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_10/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_11/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_12/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_13/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_14/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_15/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_16/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_17/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_18/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_19/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_20/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_21/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_22/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_23/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_24/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_25/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_26/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_27/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_28/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_29/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_30/prompt.txt",
+        "runs/header_decoy_ablation_iso/ENG_NONE_CYC/item_31/prompt.txt"
+      ],
+      "header": "NONE",
+      "decoy": "CYC",
+      "relations": "english"
+    }
+  },
+  "cases": [
+    {
+      "i": 0,
+      "person": "Michael_Eisner",
+      "gold": "Burbank",
+      "decoy_hq": {
+        "CYC": "Kansas_City",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_4eba493d71",
+        "OPQ_H5_CRV": "HDA_0075d79589",
+        "OPQ_K2_CYC": "HDA_bce4eb45e0",
+        "OPQ_K2_CRV": "HDA_0f71517d6f",
+        "OPQ_NONE_CYC": "HDA_16f9841bc2",
+        "OPQ_NONE_CRV": "HDA_c1c8f647f4",
+        "ENG_NONE_CYC": "HDA_78d6c8f004"
+      }
+    },
+    {
+      "i": 1,
+      "person": "Landon_H_Rowland",
+      "gold": "Kansas_City",
+      "decoy_hq": {
+        "CYC": "Broadway",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_51624af438",
+        "OPQ_H5_CRV": "HDA_3a6d76123c",
+        "OPQ_K2_CYC": "HDA_56c210fadc",
+        "OPQ_K2_CRV": "HDA_46fa5b0e22",
+        "OPQ_NONE_CYC": "HDA_0d3225b3fb",
+        "OPQ_NONE_CRV": "HDA_3774af62e3",
+        "ENG_NONE_CYC": "HDA_58d6812a25"
+      }
+    },
+    {
+      "i": 2,
+      "person": "Lucian_Grainge",
+      "gold": "Broadway",
+      "decoy_hq": {
+        "CYC": "NRK_Marienlyst",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_a027567e09",
+        "OPQ_H5_CRV": "HDA_cb9d334d71",
+        "OPQ_K2_CYC": "HDA_6c529d4662",
+        "OPQ_K2_CRV": "HDA_48b1ba2cfa",
+        "OPQ_NONE_CYC": "HDA_166f3d6b03",
+        "OPQ_NONE_CRV": "HDA_0a4956f699",
+        "ENG_NONE_CYC": "HDA_e2e3ba5b8b"
+      }
+    },
+    {
+      "i": 3,
+      "person": "Vibeke_Frst_Haugen",
+      "gold": "NRK_Marienlyst",
+      "decoy_hq": {
+        "CYC": "Warsaw",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_980547c298",
+        "OPQ_H5_CRV": "HDA_e46f97cc3d",
+        "OPQ_K2_CYC": "HDA_d6fbf064e0",
+        "OPQ_K2_CRV": "HDA_da16a4518d",
+        "OPQ_NONE_CYC": "HDA_d08e25949d",
+        "OPQ_NONE_CRV": "HDA_35404db8f9",
+        "ENG_NONE_CYC": "HDA_58184953b6"
+      }
+    },
+    {
+      "i": 4,
+      "person": "Krzysztof_Mamiski",
+      "gold": "Warsaw",
+      "decoy_hq": {
+        "CYC": "Stockholm",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_56d3cbdca4",
+        "OPQ_H5_CRV": "HDA_a28678c43b",
+        "OPQ_K2_CYC": "HDA_48a841bad9",
+        "OPQ_K2_CRV": "HDA_7ad61e61d6",
+        "OPQ_NONE_CYC": "HDA_ad9cffdf68",
+        "OPQ_NONE_CRV": "HDA_dedef554d4",
+        "ENG_NONE_CYC": "HDA_183069f682"
+      }
+    },
+    {
+      "i": 5,
+      "person": "David_Lagerholm",
+      "gold": "Stockholm",
+      "decoy_hq": {
+        "CYC": "Burbank",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_e748580318",
+        "OPQ_H5_CRV": "HDA_d374e3d00b",
+        "OPQ_K2_CYC": "HDA_2d6bb97b95",
+        "OPQ_K2_CRV": "HDA_28e66aa068",
+        "OPQ_NONE_CYC": "HDA_2c59bbaed0",
+        "OPQ_NONE_CRV": "HDA_15592a9e0a",
+        "ENG_NONE_CYC": "HDA_34eb730466"
+      }
+    },
+    {
+      "i": 6,
+      "person": "Bob_Iger",
+      "gold": "Burbank",
+      "decoy_hq": {
+        "CYC": "Zurich",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_b246213823",
+        "OPQ_H5_CRV": "HDA_680436219d",
+        "OPQ_K2_CYC": "HDA_a5b2fcd0a6",
+        "OPQ_K2_CRV": "HDA_a93b2b5ada",
+        "OPQ_NONE_CYC": "HDA_2e2580bccb",
+        "OPQ_NONE_CRV": "HDA_fb92b27705",
+        "ENG_NONE_CYC": "HDA_34fdb5923e"
+      }
+    },
+    {
+      "i": 7,
+      "person": "Sergio_Ermotti",
+      "gold": "Zurich",
+      "decoy_hq": {
+        "CYC": "Kansas_City",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_00c7eacf4b",
+        "OPQ_H5_CRV": "HDA_61e4605406",
+        "OPQ_K2_CYC": "HDA_8edce4fdb1",
+        "OPQ_K2_CRV": "HDA_7cae1a4ff7",
+        "OPQ_NONE_CYC": "HDA_8905b0de2f",
+        "OPQ_NONE_CRV": "HDA_3abdd4dcff",
+        "ENG_NONE_CYC": "HDA_671ac08144"
+      }
+    },
+    {
+      "i": 8,
+      "person": "Samuel_W_Fordyce",
+      "gold": "Kansas_City",
+      "decoy_hq": {
+        "CYC": "New_Jersey",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_de6abdb698",
+        "OPQ_H5_CRV": "HDA_9914f6d12c",
+        "OPQ_K2_CYC": "HDA_cbd9746395",
+        "OPQ_K2_CRV": "HDA_44841f5017",
+        "OPQ_NONE_CYC": "HDA_797986034e",
+        "OPQ_NONE_CRV": "HDA_8a1f9085a9",
+        "ENG_NONE_CYC": "HDA_0dbe9606e6"
+      }
+    },
+    {
+      "i": 9,
+      "person": "Steve_Weed",
+      "gold": "New_Jersey",
+      "decoy_hq": {
+        "CYC": "Oklahoma_City",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_720b9e3e49",
+        "OPQ_H5_CRV": "HDA_ea838ee865",
+        "OPQ_K2_CYC": "HDA_c16968bd7b",
+        "OPQ_K2_CRV": "HDA_b8a0949520",
+        "OPQ_NONE_CYC": "HDA_c40b058edb",
+        "OPQ_NONE_CRV": "HDA_7e47e66ad7",
+        "ENG_NONE_CYC": "HDA_68682418f6"
+      }
+    },
+    {
+      "i": 10,
+      "person": "David_Green",
+      "gold": "Oklahoma_City",
+      "decoy_hq": {
+        "CYC": "San_Antonio",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_004b8aec58",
+        "OPQ_H5_CRV": "HDA_534a4e65f5",
+        "OPQ_K2_CYC": "HDA_485c1ba130",
+        "OPQ_K2_CRV": "HDA_5a265fed16",
+        "OPQ_NONE_CYC": "HDA_b749ad83ed",
+        "OPQ_NONE_CRV": "HDA_a3c867ccdd",
+        "ENG_NONE_CYC": "HDA_caf09923eb"
+      }
+    },
+    {
+      "i": 11,
+      "person": "Stuart_Parker",
+      "gold": "San_Antonio",
+      "decoy_hq": {
+        "CYC": "Montabaur",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_330a991dd6",
+        "OPQ_H5_CRV": "HDA_d3290181ba",
+        "OPQ_K2_CYC": "HDA_f90e585d9d",
+        "OPQ_K2_CRV": "HDA_170f764fb7",
+        "OPQ_NONE_CYC": "HDA_cdc45d6257",
+        "OPQ_NONE_CRV": "HDA_86c0e63ec7",
+        "ENG_NONE_CYC": "HDA_3a0abe156b"
+      }
+    },
+    {
+      "i": 12,
+      "person": "Achim_Wei",
+      "gold": "Montabaur",
+      "decoy_hq": {
+        "CYC": "Stockholm",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_6c6e7b0927",
+        "OPQ_H5_CRV": "HDA_8bab6483a2",
+        "OPQ_K2_CYC": "HDA_71465bd64c",
+        "OPQ_K2_CRV": "HDA_4e4aeba4c0",
+        "OPQ_NONE_CYC": "HDA_890a96aaf4",
+        "OPQ_NONE_CRV": "HDA_938522b049",
+        "ENG_NONE_CYC": "HDA_9cacfa94fa"
+      }
+    },
+    {
+      "i": 13,
+      "person": "Anne_Lagercrantz",
+      "gold": "Stockholm",
+      "decoy_hq": {
+        "CYC": "Warsaw",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_0ac6f4b0e5",
+        "OPQ_H5_CRV": "HDA_de67c43228",
+        "OPQ_K2_CYC": "HDA_bdd08e3567",
+        "OPQ_K2_CRV": "HDA_6340ffcbf9",
+        "OPQ_NONE_CYC": "HDA_5e0e5c5ae2",
+        "OPQ_NONE_CRV": "HDA_75e5f7106d",
+        "ENG_NONE_CYC": "HDA_5751bca0f2"
+      }
+    },
+    {
+      "i": 14,
+      "person": "Beata_KozowskaChya",
+      "gold": "Warsaw",
+      "decoy_hq": {
+        "CYC": "Richmond",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_4f89b8406b",
+        "OPQ_H5_CRV": "HDA_905b9fde0d",
+        "OPQ_K2_CYC": "HDA_9d028feea6",
+        "OPQ_K2_CRV": "HDA_2da3634666",
+        "OPQ_NONE_CYC": "HDA_50a088a5f0",
+        "OPQ_NONE_CRV": "HDA_e52449e6d8",
+        "ENG_NONE_CYC": "HDA_136c7cb9e3"
+      }
+    },
+    {
+      "i": 15,
+      "person": "David_J_Wright",
+      "gold": "Richmond",
+      "decoy_hq": {
+        "CYC": "Helsinki",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_2e8e1313f4",
+        "OPQ_H5_CRV": "HDA_7d8daeae39",
+        "OPQ_K2_CYC": "HDA_b07a1e38f7",
+        "OPQ_K2_CRV": "HDA_5b390a66b4",
+        "OPQ_NONE_CYC": "HDA_340b2fc61c",
+        "OPQ_NONE_CRV": "HDA_42561b4f37",
+        "ENG_NONE_CYC": "HDA_cd846b67e7"
+      }
+    },
+    {
+      "i": 16,
+      "person": "Topi_Manner",
+      "gold": "Helsinki",
+      "decoy_hq": {
+        "CYC": "Rome",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_d9d0e93a91",
+        "OPQ_H5_CRV": "HDA_3361dcf2e8",
+        "OPQ_K2_CYC": "HDA_74c0b1dc51",
+        "OPQ_K2_CRV": "HDA_830d4a5cd5",
+        "OPQ_NONE_CYC": "HDA_1d7b8450c4",
+        "OPQ_NONE_CRV": "HDA_948adc19e7",
+        "ENG_NONE_CYC": "HDA_a9bc907ab8"
+      }
+    },
+    {
+      "i": 17,
+      "person": "Luigi_Ferraris",
+      "gold": "Rome",
+      "decoy_hq": {
+        "CYC": "New_York_City",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_8364c8e372",
+        "OPQ_H5_CRV": "HDA_f2490a673f",
+        "OPQ_K2_CYC": "HDA_e176fd9c11",
+        "OPQ_K2_CRV": "HDA_fe6dad8495",
+        "OPQ_NONE_CYC": "HDA_c32459e94a",
+        "OPQ_NONE_CRV": "HDA_7c28fdf238",
+        "ENG_NONE_CYC": "HDA_e58473a66d"
+      }
+    },
+    {
+      "i": 18,
+      "person": "David_Zaslav",
+      "gold": "New_York_City",
+      "decoy_hq": {
+        "CYC": "Kansas_City",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_e665aa3c77",
+        "OPQ_H5_CRV": "HDA_596ad71380",
+        "OPQ_K2_CYC": "HDA_3ea4ef5c52",
+        "OPQ_K2_CRV": "HDA_bb01373981",
+        "OPQ_NONE_CYC": "HDA_9590ea39df",
+        "OPQ_NONE_CRV": "HDA_91aa12227a",
+        "ENG_NONE_CYC": "HDA_1a1bdb6fa2"
+      }
+    },
+    {
+      "i": 19,
+      "person": "William_N_Deramus_Jr",
+      "gold": "Kansas_City",
+      "decoy_hq": {
+        "CYC": "Chesapeake",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_8aee7e200f",
+        "OPQ_H5_CRV": "HDA_a4f6a0142d",
+        "OPQ_K2_CYC": "HDA_0e454b5cfe",
+        "OPQ_K2_CRV": "HDA_e2a40d7428",
+        "OPQ_NONE_CYC": "HDA_cf5b58dd93",
+        "OPQ_NONE_CRV": "HDA_380a795376",
+        "ENG_NONE_CYC": "HDA_2c05ce5036"
+      }
+    },
+    {
+      "i": 20,
+      "person": "Macon_Foscue_Brock_Jr",
+      "gold": "Chesapeake",
+      "decoy_hq": {
+        "CYC": "Oklahoma_City",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_438e815ee7",
+        "OPQ_H5_CRV": "HDA_1a16880ea3",
+        "OPQ_K2_CYC": "HDA_0fd7b262ab",
+        "OPQ_K2_CRV": "HDA_3083eb29fe",
+        "OPQ_NONE_CYC": "HDA_a88d1a0643",
+        "OPQ_NONE_CRV": "HDA_b899eb1469",
+        "ENG_NONE_CYC": "HDA_1582c2a26a"
+      }
+    },
+    {
+      "i": 21,
+      "person": "Frank_Love",
+      "gold": "Oklahoma_City",
+      "decoy_hq": {
+        "CYC": "Coral_Gables",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_f32d8fc965",
+        "OPQ_H5_CRV": "HDA_969cf1014d",
+        "OPQ_K2_CYC": "HDA_27da82b03a",
+        "OPQ_K2_CRV": "HDA_043d689901",
+        "OPQ_NONE_CYC": "HDA_bab5bc195f",
+        "OPQ_NONE_CRV": "HDA_9847319066",
+        "ENG_NONE_CYC": "HDA_7e2cb8f749"
+      }
+    },
+    {
+      "i": 22,
+      "person": "Robert_E_Sanchez",
+      "gold": "Coral_Gables",
+      "decoy_hq": {
+        "CYC": "Bochum",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_4cbe6c9253",
+        "OPQ_H5_CRV": "HDA_2c86f54e61",
+        "OPQ_K2_CYC": "HDA_f33933472f",
+        "OPQ_K2_CRV": "HDA_e68e6e3a1a",
+        "OPQ_NONE_CYC": "HDA_a3228e3b66",
+        "OPQ_NONE_CRV": "HDA_a9913da58f",
+        "ENG_NONE_CYC": "HDA_aa52c31767"
+      }
+    },
+    {
+      "i": 23,
+      "person": "Luka_Mucic",
+      "gold": "Bochum",
+      "decoy_hq": {
+        "CYC": "Amsterdam",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_0481629804",
+        "OPQ_H5_CRV": "HDA_4fcb93e0ea",
+        "OPQ_K2_CYC": "HDA_771e7ad94c",
+        "OPQ_K2_CRV": "HDA_83eaa3a16d",
+        "OPQ_NONE_CYC": "HDA_4a040e79ec",
+        "OPQ_NONE_CRV": "HDA_9f85a1e3e1",
+        "ENG_NONE_CYC": "HDA_640b43855c"
+      }
+    },
+    {
+      "i": 24,
+      "person": "Freddy_Heineken",
+      "gold": "Amsterdam",
+      "decoy_hq": {
+        "CYC": "Burbank",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_b26fe2be0b",
+        "OPQ_H5_CRV": "HDA_972af7cb17",
+        "OPQ_K2_CYC": "HDA_bc910db36b",
+        "OPQ_K2_CRV": "HDA_1185d8bfe9",
+        "OPQ_NONE_CYC": "HDA_937b40a3cc",
+        "OPQ_NONE_CRV": "HDA_e6b73f31d6",
+        "ENG_NONE_CYC": "HDA_cf2f838941"
+      }
+    },
+    {
+      "i": 25,
+      "person": "Raymond_Watson",
+      "gold": "Burbank",
+      "decoy_hq": {
+        "CYC": "Fox_Plaza",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_cc00505406",
+        "OPQ_H5_CRV": "HDA_44cff856f2",
+        "OPQ_K2_CYC": "HDA_73e89541a7",
+        "OPQ_K2_CRV": "HDA_9093892077",
+        "OPQ_NONE_CYC": "HDA_6e31fde68b",
+        "OPQ_NONE_CRV": "HDA_fd3617d9b0",
+        "ENG_NONE_CYC": "HDA_25d5a9ce85"
+      }
+    },
+    {
+      "i": 26,
+      "person": "Stacey_Snider",
+      "gold": "Fox_Plaza",
+      "decoy_hq": {
+        "CYC": "CNN_Center",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_283acd7c13",
+        "OPQ_H5_CRV": "HDA_a40488506d",
+        "OPQ_K2_CYC": "HDA_0d0f5a75a9",
+        "OPQ_K2_CRV": "HDA_1ee492a6eb",
+        "OPQ_NONE_CYC": "HDA_da082ffa85",
+        "OPQ_NONE_CRV": "HDA_d48488ed11",
+        "ENG_NONE_CYC": "HDA_a9d3556cd6"
+      }
+    },
+    {
+      "i": 27,
+      "person": "John_K_Martin_Jr",
+      "gold": "CNN_Center",
+      "decoy_hq": {
+        "CYC": "Swindon",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_be90985da7",
+        "OPQ_H5_CRV": "HDA_284db6e0cf",
+        "OPQ_K2_CYC": "HDA_48499bff58",
+        "OPQ_K2_CRV": "HDA_4c46209f41",
+        "OPQ_NONE_CYC": "HDA_52e36f7562",
+        "OPQ_NONE_CRV": "HDA_79e0643822",
+        "ENG_NONE_CYC": "HDA_97cc2ca816"
+      }
+    },
+    {
+      "i": 28,
+      "person": "Richard_Gordon_Handover",
+      "gold": "Swindon",
+      "decoy_hq": {
+        "CYC": "Cologne",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_8b7a0845a0",
+        "OPQ_H5_CRV": "HDA_bb551db4cb",
+        "OPQ_K2_CYC": "HDA_e2c0eefe20",
+        "OPQ_K2_CRV": "HDA_4d9d0f7374",
+        "OPQ_NONE_CYC": "HDA_2584f5b05e",
+        "OPQ_NONE_CRV": "HDA_7c0d850f04",
+        "ENG_NONE_CYC": "HDA_70a4c6efb1"
+      }
+    },
+    {
+      "i": 29,
+      "person": "Tom_Buhrow",
+      "gold": "Cologne",
+      "decoy_hq": {
+        "CYC": "Hartford",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_f28db9ba94",
+        "OPQ_H5_CRV": "HDA_b490e45dc8",
+        "OPQ_K2_CYC": "HDA_2d3d964740",
+        "OPQ_K2_CRV": "HDA_e01da1baff",
+        "OPQ_NONE_CYC": "HDA_b9519fdb6b",
+        "OPQ_NONE_CRV": "HDA_edb73360aa",
+        "ENG_NONE_CYC": "HDA_27e1309b6f"
+      }
+    },
+    {
+      "i": 30,
+      "person": "Mark_T_Bertolini",
+      "gold": "Hartford",
+      "decoy_hq": {
+        "CYC": "Lod_Railway_Station",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_b24aea7098",
+        "OPQ_H5_CRV": "HDA_cfdd32f82a",
+        "OPQ_K2_CYC": "HDA_db46fd7030",
+        "OPQ_K2_CRV": "HDA_b7a011ee4f",
+        "OPQ_NONE_CYC": "HDA_a43506a0b5",
+        "OPQ_NONE_CRV": "HDA_b511946372",
+        "ENG_NONE_CYC": "HDA_b50ca84261"
+      }
+    },
+    {
+      "i": 31,
+      "person": "Moshe_Zana",
+      "gold": "Lod_Railway_Station",
+      "decoy_hq": {
+        "CYC": "Burbank",
+        "CRV": "Washington_DC"
+      },
+      "ids": {
+        "OPQ_H5_CYC": "HDA_8cdca87cc9",
+        "OPQ_H5_CRV": "HDA_51776449fb",
+        "OPQ_K2_CYC": "HDA_72d04c103f",
+        "OPQ_K2_CRV": "HDA_0d27c5aa6e",
+        "OPQ_NONE_CYC": "HDA_07d9c162c2",
+        "OPQ_NONE_CRV": "HDA_c27619250f",
+        "ENG_NONE_CYC": "HDA_f01bbda6b7"
+      }
+    }
+  ]
+}

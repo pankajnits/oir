@@ -16,9 +16,9 @@ This clone ships **small** graphs used by the layer demo and several locked JSON
 | `spider_oir_n12.json`, `spider_oir_n200.json`, `spider_join_n8.json` | Spider **items**, not the sqlite DBs |
 | `osv_advisories_n8.json` | Small OSV slice |
 | `synthetic/*.jsonl` | G-Rev2 typed-decoy / path **holdouts**; `grev2_typed_sink_train.jsonl` is only for GNN rebuilds (cite `results/grev2_*.json` if you do not retrain) |
-| `real_docs/` | Messy-doc style pages |
+| `real_docs/` | Messy-doc style pages. `opendata500_us_companies.csv` is OpenData500 US companies metadata (license not stated in-file; treat as third-party, confirm before redistribution). |
 
-Not shipped: `2wiki_compositional_dev.json` (needed only to *rebuild* the CF freeze — `harness/freeze_wiki_cf.py` reads that filename, **not** a `data/2wiki` parquet dump). `sealed_path_train.jsonl` (G-Rev2 train; holdouts above are enough to score locked cells). G-Rev2 GNN/Transformer scripts need `pip install -e '.[torch]'`; cite `results/grev2_*.json` if torch is absent — do not score that as 0.
+Not shipped: `2wiki_compositional_dev.json` (needed only to *rebuild* the CF freeze — `harness/freeze_wiki_cf.py` reads that filename, **not** a `data/2wiki` parquet dump). `sealed_path_train.jsonl` (G-Rev2 train; holdouts above are enough to score locked cells). G-Rev2 GNN/Transformer scripts need `pip install -e '.[torch]'`; cite `results/grev2_*.json` if torch is absent — do not score that as 0. Spider-derived JSON items in this clone inherit Spider's CC BY-SA 4.0; the repo license is Apache-2.0.
 
 Do not run `baselines_oir.py` after restoring `data/spider` unless you intend to rewrite `results/oir_bench_baselines.json` (ENGINE **191/200**). Without the dump, that script skips Spider and does not overwrite the lockfile.
 
@@ -45,7 +45,7 @@ Download from upstream (not in this clone):
 | Dump | License | Upstream |
 |------|---------|----------|
 | Spider (`spider_data.zip`) | CC-BY-SA-4.0 | https://yale-lily.github.io/spider |
-| WikiMovies KB (`wiki_entities_kb.txt`) | as labeled | https://github.com/rohit129/Movie_KnowledgeGraph_QA (MetaQA movie graph) |
+| WikiMovies KB (`wiki_entities_kb.txt`) | as labeled upstream (third-party MetaQA mirror; confirm before redistribution) | https://github.com/rohit129/Movie_KnowledgeGraph_QA (MetaQA movie graph) |
 | 2WikiMultihopQA | Apache-2.0 | https://github.com/Alab-NII/2wikimultihop |
 | WikiTableQuestions / FinQA / FeTaQA | as labeled | respective project pages |
 

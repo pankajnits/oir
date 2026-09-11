@@ -165,7 +165,7 @@ def build() -> dict:
         "cases": cases,
     }
     out = RESULTS / "ambig_curve_iso_harness.json"
-    out.write_text(json.dumps(harness, indent=2))
+    out.write_text(json.dumps(harness, indent=2, ensure_ascii=False) + "\n")
     print("wrote", out)
     return harness
 
