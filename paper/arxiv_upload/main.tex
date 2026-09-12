@@ -710,18 +710,19 @@ noise is symmetric on both mids. Matched-relation is in-prompt reuse of
 demonstrated correspondences; it is not induction of a general cipher.
 
 Isolation $n{=}32$ (Figure~\ref{fig:dualpath}, Appendix~\ref{app:dual}): OpenAI saturates
-matched-relation under both noise regimes ($32/32$, decoy $0$), scores
-\texttt{UNKNOWN} on novel-relation balanced ($32/32$, of which 24 are empty
-completions), and fails novel-relation asymmetric ($0/32$;
-\texttt{UNKNOWN} $24$ of which 17 empty, decoy $8$). An
+matched-relation under both noise regimes ($32/32$, decoy $0$).
+Novel-relation balanced is exact match $0/32$: all 32 replies are
+\texttt{UNKNOWN} (24 empty completions).
+Novel-relation asymmetric is also $0/32$ (\texttt{UNKNOWN} $24$, of which
+17 empty, decoy $8$). An
 explicit dual-path plan scores $32/32$. The same matched vs.\ novel contrast
 on WikiMovies director/writer facts is $32/32$ vs.\ $0/32$ for OpenAI,
 Composer~2.5, and Grok~4.5 (novel is \texttt{UNKNOWN} except Composer decoy
 $2/32$), with plan $32/32$. Composer saturates both matched-relation arms and the plan ($32/32$).
 Composer isolation-tag novel-relation \texttt{UNKNOWN} is a sealed-demo
 helper, not a free completion; the free-form lock on those items is decoy
-$32/32$. Grok free-form is \texttt{UNKNOWN} $32/32$ on novel-relation
-asymmetric. Last-demo answer-token copy is $0/32$ on every arm.
+$32/32$. Grok free-form novel-relation asymmetric is \texttt{UNKNOWN} on all
+32 items. Last-demo answer-token copy is $0/32$ on every arm.
 
 On a two-path graph a forced
 uniform guess among the two complete routes is $1/2$; that null does not
@@ -819,7 +820,7 @@ When two same-type routes compete without an explicit map, models typically
 return \texttt{UNKNOWN} rather than the decoy.
 The named-arm Wiki-H5 lock is OpenAI $6/32$; header and case-id packaging
 move the same graphs across $10$--$30/32$, so that cell is not a constant of
-opacity. Both-opaque two-path is $1/32$.
+opacity. OpenAI both-opaque two-path is $1/32$.
 That is an underspecified interface, not a scored $(r_1,r_2)$ and not a
 proof that traversal failed.
 English predicates, an equality recipe, or matched demonstrations restore
@@ -983,7 +984,7 @@ Variational Reasoning for Question Answering with Knowledge Graph.
 \label{app:protocol}
 
 Isolation quizzes (\texttt{runs/}) and locked scores (\texttt{results/})
-are at \url{https://github.com/pankajnits/oir/releases/tag/v1.0.2} (Python $\ge 3.10$). OpenAI cells:
+are at \url{https://github.com/pankajnits/oir/releases/tag/v1.0.3} (Python $\ge 3.10$). OpenAI cells:
 \texttt{gpt-5.6-sol}, no tools, one sample, August 2026 snapshot,
 temperature omitted, \texttt{max\_completion\_tokens} 512;
 \texttt{reasoning\_effort} was omitted, and the runner stores the parsed
@@ -1010,7 +1011,7 @@ in \texttt{results/} is \texttt{results/SHA256SUMS} (regenerate with
 \texttt{longctx\_1m*} are omitted). That file is a hash pin, not a
 timestamped preregistration. Verify with
 \texttt{shasum -c results/SHA256SUMS}.
-Cite GitHub release tag \texttt{v1.0.2} rather than branch \texttt{HEAD}.
+Cite GitHub release tag \texttt{v1.0.3} rather than branch \texttt{HEAD}.
 No models were trained. OpenAI cells used Chat Completions on CPU-side API
 calls (\texttt{max\_completion\_tokens} 512; header$\times$decoy 4096).
 \textsc{Wiki-H5} isolation is 32 items $\times$ five named arms;
@@ -1088,7 +1089,8 @@ Names such as Disney remain, so $k$ is not isolated from entity semantics;
 neither curve is a replication of both-opaque $1/32$.
 Header$\times$decoy, arm-neutral ids, same 32 people
 (\texttt{header\_decoy\_ablation\_iso\_*.json}).
-OpenAI 11~September~2026, 4096 tokens, medium effort, $224/224$ stop:
+OpenAI 11~September~2026, 4096 tokens, medium effort, $224/224$ stop
+(slash pairs are cyclic / constant decoy):
 H5 $20/10$, K2 $30/26$, no ARM $25/27$, English $29$.
 Composer and Grok same day, Cursor SDK, \texttt{--preamble none},
 $224/224$ finished: H5 $6/2$ and $0/0$; K2 $20/13$ and $0/0$;

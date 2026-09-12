@@ -3,7 +3,7 @@
 This repo is a hash-pinned measurement plus an installable middle layer. Cite locked JSON and reply files; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS` (JSON summaries, reply sidecars, and per-item `.txt` replies).
 
 Paper PDF: [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf).
-Repository: https://github.com/pankajnits/oir (release tag `v1.0.2`).
+Repository: https://github.com/pankajnits/oir (release tag `v1.0.3`).
 
 ## What you can verify without an LLM or paid API
 

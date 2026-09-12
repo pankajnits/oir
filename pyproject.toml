@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "oir-layer"
-version = "1.0.2"
+version = "1.0.3"
 description = "Opaque isomorphic reasoning: a measurement protocol plus an HMAC middle layer. Seals hide lexicon; they are not confidentiality."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -39,8 +39,8 @@ torch = ["torch"]
 Homepage = "https://github.com/pankajnits/oir"
 Repository = "https://github.com/pankajnits/oir"
 Issues = "https://github.com/pankajnits/oir/issues"
-Paper = "https://github.com/pankajnits/oir/blob/v1.0.2/paper/arxiv_upload/main.pdf"
-Scientists = "https://github.com/pankajnits/oir/blob/v1.0.2/SCIENTIST.md"
+Paper = "https://github.com/pankajnits/oir/blob/v1.0.3/paper/arxiv_upload/main.pdf"
+Scientists = "https://github.com/pankajnits/oir/blob/v1.0.3/SCIENTIST.md"
 
 [tool.setuptools.packages.find]
 include = ["oir*"]
