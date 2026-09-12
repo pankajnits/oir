@@ -152,7 +152,7 @@ a packaging-sensitive exact-match rate (Appendix~\ref{app:tokens});
 What is new is the interaction rather than the opacity. Cited privacy KGQA
 keeps relation strings as readable words~\citep{arog2025,privgemo2026,liu2026cor}.
 We seal \emph{relation} strings, keep entities English, and cross that with
-path ambiguity: cheap on a unique route; underspecified, and
+path ambiguity: succeeds on a unique route; underspecified, and
 packaging-sensitive, when two same-type routes compete
 (Table~\ref{tab:inventory}).
 
@@ -500,7 +500,7 @@ Appendix~\ref{app:packaging}.
 \toprule
 ID & Dataset & Condition & $n$ & Models & Scored \\
 \midrule
-\textsc{Wiki-H5} & Wikidata CEO & rel-only $2{\times}2$, start in $q$ & 32 & OpenAI prim. & node \\
+\textsc{Wiki-H5} & Wikidata CEO & rel-only $2{\times}2$, start in $q$ & 32 & OpenAI & node \\
 \textsc{Wiki-OO} & same graphs & both-opaque & 32 & 3 families & $\sigma(a)$ \\
 \textsc{Wiki-Shuf} & same two-path & listing order & 32 & OpenAI & city \\
 \textsc{Movie-A32} & WikiMovies & actor$\to$movie$\to$dir vs writer & 32 & 3 models & person \\
@@ -719,13 +719,10 @@ explicit dual-path plan scores $32/32$. The same matched vs.\ novel contrast
 on WikiMovies director/writer facts is $32/32$ vs.\ $0/32$ for OpenAI,
 Composer~2.5, and Grok~4.5 (novel is \texttt{UNKNOWN} except Composer decoy
 $2/32$), with plan $32/32$. Composer saturates both matched-relation arms and the plan ($32/32$).
-Isolation-tag novel-relation \texttt{UNKNOWN}
-(\texttt{adv\_induction\_n32\_iso\_composer25.json}) is the sealed-demo helper
-\texttt{run\_induce\_mut\_n32\_iso.py}, not a free Composer completion.
-Under the free-form lock (\texttt{composer25ff}) those items are decoy
-$32/32$. Grok free-form (\texttt{grok45ff}) is
-\texttt{UNKNOWN} $32/32$ on novel-relation asymmetric. Last-demo
-answer-token copy is $0/32$ on every arm.
+Composer isolation-tag novel-relation \texttt{UNKNOWN} is a sealed-demo
+helper, not a free completion; the free-form lock on those items is decoy
+$32/32$. Grok free-form is \texttt{UNKNOWN} $32/32$ on novel-relation
+asymmetric. Last-demo answer-token copy is $0/32$ on every arm.
 
 On a two-path graph a forced
 uniform guess among the two complete routes is $1/2$; that null does not
@@ -833,11 +830,6 @@ $4/32$.
 
 \FloatBarrier
 \begin{thebibliography}{99}
-\bibitem[Abedini et al.(2025)]{abedini2025masksql}
-Sepideh Abedini, Shubhankar Mohapatra, D.~B. Emerson, Masoumeh Shafieinejad,
-Jesse~C. Cresswell, and Xi He.
-MaskSQL: Safeguarding Privacy for LLM-Based Text-to-SQL via Abstraction.
-arXiv:2509.23459, 2025.
 \bibitem[Chen et al.(2021)]{chen2021finqa}
 Zhiyu Chen, Wenhu Chen, Charese Smiley, Sameena Shah, Iana Borova, Dylan Langdon,
 Reema Moussa, Matt Beane, Ting-Hao Huang, Bryan Routledge, and William~Yang Wang.
@@ -899,11 +891,6 @@ Chenhui Liu, Jianpeng Zhou, and Jiahai Wang.
 Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs
 via Relation-Centric Exploration. \emph{Findings of ACL}, 2026.
 \url{https://aclanthology.org/2026.findings-acl.2138/}.
-\bibitem[Longpre et al.(2021)]{longpre2021conflicts}
-Shayne Longpre, Kartik Perisetla, Anthony Chen, Nikhil Ramesh, Chris DuBois,
-and Sameer Singh.
-Entity-Based Knowledge Conflicts in Question Answering.
-\emph{EMNLP}, 2021.
 \bibitem[Luo et al.(2024)]{luo2024rog}
 Linhao Luo, Yuan-Fang Li, Gholamreza Haffari, and Shirui Pan.
 Reasoning on Graphs: Faithful and Interpretable Large Language Model Reasoning.
@@ -917,11 +904,6 @@ Alexander Miller, Adam Fisch, Jesse Dodge, Amir-Hossein Karimi, Antoine Bordes,
 and Jason Weston.
 Key-Value Memory Networks for Directly Reading Documents (WikiMovies).
 \emph{EMNLP}, 2016.
-\bibitem[Min et al.(2019)]{min2019compositional}
-Sewon Min, Eric Wallace, Sameer Singh, Matt Gardner, Hannaneh Hajishirzi, and
-Luke Zettlemoyer.
-Compositional Questions Do Not Necessitate Multi-hop Reasoning.
-\emph{ACL}, 2019.
 \bibitem[Mirzadeh et al.(2025)]{mirzadeh2025gsm}
 Iman Mirzadeh, Keivan Alizadeh, Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, and
 Mehrdad Farajtabar.
@@ -955,10 +937,6 @@ Xiaojuan Tang, Zilong Zheng, Jiaqi Li, Fanxu Meng, Song-Chun Zhu, Yitao Liang,
 and Muhan Zhang.
 Large Language Models are In-Context Semantic Reasoners rather than Symbolic
 Reasoners. arXiv:2305.14825, 2023.
-\bibitem[Trivedi et al.(2022)]{trivedi2022musique}
-Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, and Ashish Sabharwal.
-MuSiQue: Multihop Questions via Single-hop Question Composition.
-\emph{TACL}, 10:539--554, 2022.
 \bibitem[Vrande\v{c}i\'c and Kr\"otzsch(2014)]{vrandecic2014wikidata}
 Denny Vrande\v{c}i\'c and Markus Kr\"otzsch.
 Wikidata: A Free Collaborative Knowledgebase.
@@ -987,19 +965,6 @@ Know Your Limits: A Survey of Abstention in Large Language Models.
 Edwin~B. Wilson.
 Probable Inference, the Law of Succession, and Statistical Inference.
 \emph{JASA}, 22(158):209--212, 1927.
-\bibitem[Wu et al.(2025)]{wu2025binding}
-Yiwei Wu, Atticus Geiger, and Rapha\"el Milli\`ere.
-How Do Transformers Learn Variable Binding in Symbolic Programs?
-\emph{ICML}, 2025.
-\bibitem[Wu et al.(2024)]{wu2024counterfactual}
-Zhaofeng Wu, Linlu Qiu, Alexis Ross, Ekin Aky\"urek, Boyuan Chen, Bailin Wang,
-Najoung Kim, Jacob Andreas, and Yoon Kim.
-Reasoning or Reciting? Exploring the Capabilities and Limitations of Language
-Models Through Counterfactual Tasks. \emph{NAACL}, 2024.
-\bibitem[Yang et al.(2024)]{yang2024latent}
-Sohee Yang, Elena Gribovskaya, Nora Kassner, Mor Geva, and Sebastian Riedel.
-Do Large Language Models Latently Perform Multi-Hop Reasoning?
-\emph{ACL}, 2024.
 \bibitem[Yu et al.(2018)]{yu2018spider}
 Tao Yu, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li,
 James Ma, Irene Li, Qingning Yao, Shanelle Roman, Zilin Zhang, and
@@ -1019,7 +984,7 @@ Variational Reasoning for Question Answering with Knowledge Graph.
 \label{app:protocol}
 
 Isolation quizzes (\texttt{runs/}) and locked scores (\texttt{results/})
-are at \url{https://github.com/pankajnits/oir} (Python $\ge 3.10$). OpenAI cells:
+are at \url{https://github.com/pankajnits/oir/releases/tag/v1.0.1} (Python $\ge 3.10$). OpenAI cells:
 \texttt{gpt-5.6-sol}, no tools, one sample, August 2026 snapshot,
 temperature omitted, \texttt{max\_completion\_tokens} 512;
 \texttt{reasoning\_effort} was omitted, and the runner stores the parsed
@@ -1046,7 +1011,7 @@ in \texttt{results/} is \texttt{results/SHA256SUMS} (regenerate with
 \texttt{longctx\_1m*} are omitted). That file is a hash pin, not a
 timestamped preregistration. Verify with
 \texttt{shasum -c results/SHA256SUMS}.
-Cite GitHub release tag \texttt{v1.0.0} rather than branch \texttt{HEAD}.
+Cite GitHub release tag \texttt{v1.0.1} rather than branch \texttt{HEAD}.
 No models were trained. OpenAI cells used Chat Completions on CPU-side API
 calls (\texttt{max\_completion\_tokens} 512; header$\times$decoy 4096).
 \textsc{Wiki-H5} isolation is 32 items $\times$ five named arms;
@@ -1239,6 +1204,10 @@ An $n{=}8$ cell is zero demos $2/8$; one or more demos $8/8$. Isolation
 $n{=}32$ is the reported dual-path measurement.
 Local \texttt{mistral}/\texttt{qwen35} runs are not in the roster
 (matched-asymmetric $0/32$; Qwen matched-balanced $7/32$; plan n.r.).
+Composer isolation-tag novel-relation \texttt{UNKNOWN} is
+\texttt{adv\_induction\_n32\_iso\_composer25.json} (helper
+\texttt{run\_induce\_mut\_n32\_iso.py}); the free-form lock is
+\texttt{composer25ff} (decoy $32/32$). Grok free-form is \texttt{grok45ff}.
 
 \FloatBarrier
 \section{No-hop binding (JSON)}

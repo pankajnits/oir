@@ -12,7 +12,7 @@ Measurement protocol and HMAC middle layer for the paper
 **PDF (NeurIPS preprint, 9 content pages + appendix + checklist):**
 [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf)
 
-Pinned clone: tag [`v1.0.0`](https://github.com/pankajnits/oir/releases/tag/v1.0.0).
+Pinned clone: tag [`v1.0.1`](https://github.com/pankajnits/oir/releases/tag/v1.0.1).
 
 Cite this repository with [`CITATION.cff`](CITATION.cff).
 
@@ -43,7 +43,7 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 | WikiMovies Condition A n=100 (OpenAI) | two-path **96/100**; on 32 names shared with A32, **29/32** (A32 was **17/32**) |
 | WikiMovies Condition B n=100 (OpenAI) | unique **100/100**, two-path **3/100** |
 | Both-opaque two-path (OpenAI / Composer / Grok) | **1/32 / 0/32 / 0/32** |
-| Dual-path | matched **32/32**; novel **0/32**; last-demo copy **0/32** |
+| Dual-path | isolation matched **32/32**, novel **0/32** (Composer isolation UNKNOWN is a sealed-demo helper; free-form `composer25ff` novel-asymmetric is decoy **32/32**) |
 | No written hop: protocol / equality recipe | **32/32** all three |
 | No written hop: schema list / broken match | **0/32** all three |
 | Written hop (LLM) | OpenAI/Grok **32/32**; Composer **28/32** (control) |
