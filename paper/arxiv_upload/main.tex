@@ -152,9 +152,8 @@ a packaging-sensitive exact-match rate (Appendix~\ref{app:tokens});
 What is new is the interaction rather than the opacity. Cited privacy KGQA
 keeps relation strings as readable words~\citep{arog2025,privgemo2026,liu2026cor}.
 We seal \emph{relation} strings, keep entities English, and cross that with
-path ambiguity: succeeds on a unique route; underspecified, and
-packaging-sensitive, when two same-type routes compete
-(Table~\ref{tab:inventory}).
+path ambiguity. Unique routes succeed; two competing same-type routes are
+underspecified and packaging-sensitive (Table~\ref{tab:inventory}).
 
 \begin{figure}[t]
 \centering
@@ -984,7 +983,7 @@ Variational Reasoning for Question Answering with Knowledge Graph.
 \label{app:protocol}
 
 Isolation quizzes (\texttt{runs/}) and locked scores (\texttt{results/})
-are at \url{https://github.com/pankajnits/oir/releases/tag/v1.0.1} (Python $\ge 3.10$). OpenAI cells:
+are at \url{https://github.com/pankajnits/oir/releases/tag/v1.0.2} (Python $\ge 3.10$). OpenAI cells:
 \texttt{gpt-5.6-sol}, no tools, one sample, August 2026 snapshot,
 temperature omitted, \texttt{max\_completion\_tokens} 512;
 \texttt{reasoning\_effort} was omitted, and the runner stores the parsed
@@ -1011,7 +1010,7 @@ in \texttt{results/} is \texttt{results/SHA256SUMS} (regenerate with
 \texttt{longctx\_1m*} are omitted). That file is a hash pin, not a
 timestamped preregistration. Verify with
 \texttt{shasum -c results/SHA256SUMS}.
-Cite GitHub release tag \texttt{v1.0.1} rather than branch \texttt{HEAD}.
+Cite GitHub release tag \texttt{v1.0.2} rather than branch \texttt{HEAD}.
 No models were trained. OpenAI cells used Chat Completions on CPU-side API
 calls (\texttt{max\_completion\_tokens} 512; header$\times$decoy 4096).
 \textsc{Wiki-H5} isolation is 32 items $\times$ five named arms;

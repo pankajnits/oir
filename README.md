@@ -12,7 +12,7 @@ Measurement protocol and HMAC middle layer for the paper
 **PDF (NeurIPS preprint, 9 content pages + appendix + checklist):**
 [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf)
 
-Pinned clone: tag [`v1.0.1`](https://github.com/pankajnits/oir/releases/tag/v1.0.1).
+Pinned clone: tag [`v1.0.2`](https://github.com/pankajnits/oir/releases/tag/v1.0.2).
 
 Cite this repository with [`CITATION.cff`](CITATION.cff).
 
