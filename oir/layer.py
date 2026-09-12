@@ -169,10 +169,17 @@ class MiddleLayer:
 
     def unseal(self, token: str) -> str | None:
         t = token.strip()
-        plain = self.sealer.rev.get(t)
-        if plain is not None:
-            return plain
-        return self.sealer.rev.get(t.split()[0]) if t else None
+        if not t:
+            return None
+        candidates = [t, self.sealer.canonical_atom(t)]
+        head = t.split()[0]
+        if head != t:
+            candidates.extend([head, self.sealer.canonical_atom(head)])
+        for cand in candidates:
+            plain = self.sealer.rev.get(cand)
+            if plain is not None:
+                return plain
+        return None
 
     def execute_path(self, triples: Sequence[tuple[str, str, str]], start: str, rels: Sequence[str]) -> list[str]:
         sealed = self.seal_triples(triples)

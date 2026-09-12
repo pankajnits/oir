@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "harness"))
 
+from lockjson import write_lock
 from paths import repo_rel
 from factorial_2x2_iso import (  # type: ignore
     N,
@@ -168,7 +169,7 @@ def build() -> dict:
     return harness
 
 
-def report(tag: str = "gpt56") -> dict:
+def report(tag: str = "gpt56", *, force: bool = False) -> dict:
     H = json.loads((RESULTS / "factorial_2x2_iso_shuffle_harness.json").read_text())
     scored = json.loads((RESULTS / f"factorial_2x2_iso_shuffle_{tag}.json").read_text())
     by_id = {row["id"]: row for row in scored["rows"]}
@@ -202,15 +203,18 @@ def report(tag: str = "gpt56") -> dict:
             },
         }
     path = RESULTS / f"factorial_2x2_iso_shuffle_{tag}_order.json"
-    path.write_text(json.dumps(out, indent=2))
-    print(json.dumps(out, indent=2))
+    write_lock(path, out, force=force)
+    print(json.dumps(out, indent=2, ensure_ascii=False))
     print("wrote", path)
     return out
 
 
 if __name__ == "__main__":
-    if sys.argv[1:] == ["report"] or (len(sys.argv) > 1 and sys.argv[1] == "report"):
-        tag = sys.argv[2] if len(sys.argv) > 2 else "gpt56"
-        report(tag)
+    force = "--force" in sys.argv
+    argv = [a for a in sys.argv[1:] if a != "--force"]
+    if argv[:1] == ["report"]:
+        if len(argv) < 2:
+            raise SystemExit("usage: factorial_2x2_iso_shuffle.py report TAG [--force]")
+        report(argv[1], force=force)
     else:
         build()

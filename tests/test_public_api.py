@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import oir
+import pytest
 from oir import EntitySeal, LeakError, MiddleLayer, SealedChat, SealRouter
 from oir.chat import parse_sealed_answer
 
@@ -38,12 +39,9 @@ def test_entity_seal_normalize_equality():
     assert not s.is_hmac_atom("Employer")
     assert not s.is_hmac_atom("Edmond T. Greville")
     EntitySeal.assert_raw_injective(["works_at", "headquartered_in"])
-    try:
-        EntitySeal.assert_raw_injective(["Bob Iger", "Bob_Iger"])
-    except ValueError:
-        pass
-    else:
-        raise AssertionError("expected normalize collision")
+    EntitySeal.assert_raw_injective(["Bob Iger", "Bob_Iger"])  # whitespace fold matches atom()
+    with pytest.raises(ValueError, match="normalize collision"):
+        EntitySeal.assert_raw_injective(["東京 Tower", "大阪 Tower"])
     t = s.atom("works_at")
     s.fwd.clear()
     s.rev[t] = "other"

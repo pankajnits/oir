@@ -6,19 +6,19 @@
   "source": "data/real/wikidata_ceo_hops_v2.json",
   "summary": {
     "ENG_UNIQUE": {
-      "score": "0/32",
+      "score": "n.r.",
       "unknown": 0,
       "missing": 32,
       "decoy": 0
     },
     "ENG_AMBIG": {
-      "score": "0/32",
+      "score": "n.r.",
       "unknown": 0,
       "missing": 32,
       "decoy": 0
     },
     "OPAQUE_UNIQUE": {
-      "score": "0/32",
+      "score": "n.r.",
       "unknown": 0,
       "missing": 32,
       "decoy": 0
@@ -27,10 +27,11 @@
       "score": "5/32",
       "unknown": 25,
       "missing": 0,
-      "decoy": 1
+      "decoy": 1,
+      "no_output": 1
     },
     "OPAQUE_AMBIG_PLAN": {
-      "score": "0/32",
+      "score": "n.r.",
       "unknown": 0,
       "missing": 32,
       "decoy": 0

@@ -4,19 +4,17 @@
   "cells": {
     "OPQ_H5_CYC": {
       "gold": 6,
-      "unknown": 21,
-      "other": 3,
+      "unknown": 23,
+      "other": 1,
       "decoy": 2
     },
     "OPQ_H5_CRV": {
-      "other": 3,
-      "unknown": 26,
-      "gold": 1,
+      "gold": 2,
+      "unknown": 28,
       "decoy": 2
     },
     "OPQ_K2_CYC": {
-      "other": 1,
-      "gold": 19,
+      "gold": 20,
       "unknown": 8,
       "decoy": 4
     },
@@ -31,15 +29,14 @@
       "decoy": 3
     },
     "OPQ_NONE_CRV": {
-      "gold": 17,
+      "gold": 18,
       "unknown": 9,
-      "decoy": 5,
-      "other": 1
+      "decoy": 5
     },
     "ENG_NONE_CYC": {
-      "gold": 25,
+      "gold": 26,
       "unknown": 5,
-      "other": 2
+      "other": 1
     }
   },
   "contrasts": [
@@ -56,16 +53,16 @@
       "b": "OPQ_NONE_CYC",
       "n_paired": 32,
       "a_only": 2,
-      "b_only": 4,
-      "mcnemar_exact_p": 0.6875
+      "b_only": 3,
+      "mcnemar_exact_p": 1.0
     },
     {
       "a": "OPQ_H5_CYC",
       "b": "OPQ_K2_CYC",
       "n_paired": 32,
-      "a_only": 1,
+      "a_only": 0,
       "b_only": 14,
-      "mcnemar_exact_p": 0.0009765625
+      "mcnemar_exact_p": 0.0001220703125
     },
     {
       "a": "OPQ_H5_CRV",
@@ -79,42 +76,42 @@
       "a": "OPQ_K2_CRV",
       "b": "OPQ_NONE_CRV",
       "n_paired": 32,
-      "a_only": 3,
+      "a_only": 2,
       "b_only": 7,
-      "mcnemar_exact_p": 0.34375
+      "mcnemar_exact_p": 0.1796875
     },
     {
       "a": "OPQ_H5_CRV",
       "b": "OPQ_K2_CRV",
       "n_paired": 32,
       "a_only": 0,
-      "b_only": 12,
-      "mcnemar_exact_p": 0.00048828125
+      "b_only": 11,
+      "mcnemar_exact_p": 0.0009765625
     },
     {
       "a": "OPQ_H5_CYC",
       "b": "OPQ_H5_CRV",
       "n_paired": 32,
-      "a_only": 6,
+      "a_only": 5,
       "b_only": 1,
-      "mcnemar_exact_p": 0.125
+      "mcnemar_exact_p": 0.21875
     },
     {
       "a": "OPQ_K2_CYC",
       "b": "OPQ_K2_CRV",
       "n_paired": 32,
       "a_only": 10,
-      "b_only": 4,
-      "mcnemar_exact_p": 0.1795654296875
+      "b_only": 3,
+      "mcnemar_exact_p": 0.09228515625
     },
     {
       "a": "OPQ_NONE_CYC",
       "b": "OPQ_NONE_CRV",
       "n_paired": 32,
-      "a_only": 7,
+      "a_only": 6,
       "b_only": 3,
-      "mcnemar_exact_p": 0.34375
+      "mcnemar_exact_p": 0.5078125
     }
   ],
-  "note": "Composer 2.5, 11 Sep 2026, cursor_sdk AsyncAgent, --preamble none, 224/224 status=finished. Do not overwrite factorial_2x2_iso_composer25.json."
+  "note": "Composer 2.5, 11 Sep 2026, cursor_sdk AsyncAgent, --preamble none, 224/224 status=finished. Gold counts strip wrapping markdown on the answer line (four items). Do not overwrite factorial_2x2_iso_composer25.json."
 }

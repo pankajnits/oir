@@ -103,14 +103,21 @@ class OpenAIChatClient:
 
 
 def parse_sealed_answer(text: str, *, prefix: str = "E", nbytes: int = 6) -> str:
+    nhex = nbytes * 2
+    atom_rx = re.compile(rf"{re.escape(prefix)}[0-9a-f]{{{nhex}}}", re.I)
+
+    def _canonical(tok: str) -> str:
+        t = tok.strip()
+        if atom_rx.fullmatch(t):
+            return prefix + t[len(prefix) :].lower()
+        return t
+
     m = SEAL_LINE.search(text)
     if m:
-        return m.group(1).strip()
-    nhex = nbytes * 2
-    atom = re.compile(rf"\b({re.escape(prefix)}[0-9a-f]{{{nhex}}})\b", re.I)
-    m = atom.search(text)
+        return _canonical(m.group(1))
+    m = re.search(rf"\b({re.escape(prefix)}[0-9a-f]{{{nhex}}})\b", text, re.I)
     if m:
-        return m.group(1)
+        return _canonical(m.group(1))
     if re.search(r"\bUNKNOWN\b", text, re.I):
         return "UNKNOWN"
     raise ValueError(f"no sealed answer in model text: {text[:200]!r}")

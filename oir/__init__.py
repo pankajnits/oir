@@ -87,14 +87,18 @@ class EntitySeal:
 
     @staticmethod
     def assert_raw_injective(atoms: Iterable[str]) -> None:
-        """Reject an instance if two distinct raw strings share a normalized form."""
+        """Reject an instance if two distinct raw strings share a normalized form.
+
+        Whitespace folding matches ``atom()`` (``Michael Eisner`` ≡ ``Michael_Eisner``).
+        """
         seen: dict[str, str] = {}
         for raw in atoms:
+            folded = re.sub(r"\s+", "_", str(raw).strip())
             n = EntitySeal.normalize(raw)
             prev = seen.get(n)
-            if prev is not None and prev != raw:
+            if prev is not None and prev != folded:
                 raise ValueError(f"normalize collision: {prev!r} and {raw!r} -> {n!r}")
-            seen[n] = raw
+            seen[n] = folded
 
     @classmethod
     def pieces(cls, s: str) -> list[str]:
@@ -110,6 +114,13 @@ class EntitySeal:
         return bool(
             token and re.fullmatch(rf"{re.escape(self.prefix)}[0-9a-f]{{{nhex}}}", token, re.I)
         )
+
+    def canonical_atom(self, token: str) -> str:
+        """Prefix + lowercase hex, so ``EABC…`` unseals the stored ``Eabc…``."""
+        t = (token or "").strip()
+        if self.is_hmac_atom(t):
+            return self.prefix + t[len(self.prefix) :].lower()
+        return t
 
     def atom(self, a: str) -> str:
         raw = re.sub(r"\s+", "_", str(a).strip())

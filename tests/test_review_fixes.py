@@ -35,7 +35,23 @@ def test_non_empty_replies_parse_as_before():
     assert (pred, rp.classify(text)) == ("Burbank", "explicit_answer")
 
 
-def test_legacy_empty_is_detected_but_stays_final():
+def test_markdown_wrappers_do_not_prevent_gold_match():
+    assert rp.clean_pred("Burbank**") == "Burbank"
+    assert rp.clean_pred("** Amsterdam") == "Amsterdam"
+    assert rp.clean_pred("** New_York_City") == "New_York_City"
+    assert rp.clean_pred("UNKNOWN**") == "UNKNOWN"
+    text = "ANSWER_PLAIN[X]: Burbank**\n# raw_tail\n**ANSWER_PLAIN[X]: Burbank**\n"
+    assert rp.first_pred(text) == "Burbank"
+    raw = "**ANSWER_SEALED[ER22_OO_UNIQUE_31]:** Ed952835710d5\n"
+    pred, stored = rp.parse("ER22_OO_UNIQUE_31", raw, sealed=True)
+    assert pred == "Ed952835710d5"
+    assert "Ed952835710d5" in stored.splitlines()[0]
+    recovered = rp.preds_from_text(
+        "ANSWER_SEALED[ER22_OO_UNIQUE_31]: \n# raw_tail\n**ANSWER_SEALED[ER22_OO_UNIQUE_31]:** Ed952835710d5\n",
+        rp.ANS_SEAL,
+    )
+    assert recovered["ER22_OO_UNIQUE_31"] == "Ed952835710d5"
+
     legacy = "ANSWER_PLAIN[X]: UNKNOWN\n# raw\n\n"
     assert rp.classify(legacy) == "legacy_empty"
     assert rp.is_final(legacy)  # resuming must not silently overwrite locked replies
@@ -103,7 +119,11 @@ def test_header_decoy_ablation_score(tmp_path):
     assert out["cells"]["OPQ_NONE_CYC"] == {"gold": 32}
     assert out["cells"]["OPQ_H5_CYC"] == {"no_output": 4, "unknown": 28}
     c = next(x for x in out["contrasts"] if (x["a"], x["b"]) == ("OPQ_H5_CYC", "OPQ_NONE_CYC"))
-    assert (c["a_only"], c["b_only"]) == (0, 32)
+    assert c["n_paired"] == 28
+    assert (c["a_only"], c["b_only"]) == (0, 28)
+    with pytest.raises(SystemExit, match="refusing to overwrite"):
+        mod.score("fake", harness_path=hp, results_dir=tmp_path)
+    mod.score("fake", harness_path=hp, results_dir=tmp_path, force=True)
 
 
 def test_agent_runner_accepts_cursor_api_key(monkeypatch):
@@ -116,6 +136,70 @@ def test_agent_runner_accepts_cursor_api_key(monkeypatch):
         mod.resolve_api_key()
 
 
+def test_agent_runner_canary_does_not_persist_error(tmp_path):
+    mod = _load("run_iso_agent_harness")
+    out = tmp_path / "item_0.txt"
+    with pytest.raises(SystemExit, match="no canary reply was written"):
+        mod.settle_canary({"raw": "ERROR: You have an unpaid invoice", "text": "x",
+                           "sidecar": {"id": "x"}}, out)
+    assert not out.exists()
+    assert not out.with_suffix(".json").exists()
+    with pytest.raises(SystemExit, match="canary failed"):
+        mod.settle_canary({"raw": "ERROR: timeout 90s", "text": "x",
+                           "sidecar": {"id": "x"}}, out)
+    assert not out.exists()
+    mod.settle_canary({"raw": "Burbank", "text": "ANSWER_PLAIN[X]: Burbank\n",
+                       "sidecar": {"id": "x"}}, out)
+    assert out.exists()
+
+
+def test_ceiling_lock_tag_ignores_empty_harness_stem(tmp_path):
+    mod = _load("score_ceiling_n32_iso")
+    (tmp_path / "ceiling_three_arm_n32_iso_harness_replies_gpt56").mkdir()
+    legacy = tmp_path / "ceiling_n32_iso_replies_gpt56" / "SEAL_NL"
+    legacy.mkdir(parents=True)
+    (legacy / "item_0.txt").write_text("ANSWER_SEALED[X]: UNKNOWN\n")
+    assert mod.reply_root("gpt56", tmp_path) == tmp_path / "ceiling_n32_iso_replies_gpt56"
+
+
+def test_ceiling_new_tag_uses_populated_stem_not_empty_legacy(tmp_path):
+    mod = _load("score_ceiling_n32_iso")
+    stem = tmp_path / "ceiling_three_arm_n32_iso_harness_replies_composer25tx" / "SEAL_NL"
+    stem.mkdir(parents=True)
+    (stem / "item_0.txt").write_text("ANSWER_SEALED[X]: UNKNOWN\n")
+    (tmp_path / "ceiling_n32_iso_replies_composer25tx").mkdir()
+    assert "harness_replies" in mod.reply_root("composer25tx", tmp_path).name
+
+
+def test_lockjson_refuse_does_not_mutate_caller(tmp_path):
+    mod = _load("lockjson")
+    p = tmp_path / "cell.json"
+    mod.write_lock(p, {"tag": "a", "note": "keep"})
+    payload = {"tag": "b"}
+    with pytest.raises(SystemExit, match="refusing to overwrite"):
+        mod.write_lock(p, payload)
+    assert payload == {"tag": "b"}
+
+
+def test_lockjson_refuses_overwrite(tmp_path):
+    mod = _load("lockjson")
+    p = tmp_path / "cell.json"
+    mod.write_lock(p, {"tag": "a", "note": "keep"})
+    with pytest.raises(SystemExit, match="refusing to overwrite"):
+        mod.write_lock(p, {"tag": "b"})
+    mod.write_lock(p, {"tag": "b"}, force=True)
+    blob = json.loads(p.read_text())
+    assert blob["tag"] == "b" and blob["note"] == "keep"
+    assert p.read_text().endswith("\n")
+
+
+def test_transcript_kind_splits_answer_only_from_dump():
+    assert rp.transcript_kind("ANSWER_SEALED[X]: UNKNOWN\n") == "answer_only"
+    assert rp.transcript_kind("ANSWER_SEALED[X]: Y\n# raw_tail\nY\n") == "transcript"
+    assert rp.transcript_kind("ANSWER_SEALED[X]: Y\n# raw_tail 2-hop via Z\n") == "short_tail"
+    assert rp.transcript_kind("# induce_mut tag=composer25 method=sealed_demo_binding\n") == "induce"
+
+
 def test_agent_runner_detects_unpaid_invoice():
     mod = _load("run_iso_agent_harness")
     assert mod._billing_blocked("ERROR: You have an unpaid invoice Visit cursor.com/dashboard")
@@ -124,9 +208,43 @@ def test_agent_runner_detects_unpaid_invoice():
     assert not rp.is_final(err)
 
 
+def test_error_in_raw_tail_does_not_unfinalize():
+    text = "ANSWER_PLAIN[X]: Burbank\n# raw_tail\n... ERROR: ignored in transcript ...\n"
+    assert rp.classify(text) == "explicit_answer"
+    assert rp.is_final(text)
+    assert not rp.is_final("ERROR: timeout 90s\n")
+
+
+def test_openai_runner_requires_tag_and_rejects_arm_as_tag():
+    mod = _load("run_openai_iso_harness")
+    p = mod.build_parser()
+    ns = p.parse_args([
+        str(ROOT / "results/factorial_2x2_iso_harness.json"), "gpt56abl",
+        "--max-completion-tokens", "4096",
+    ])
+    assert ns.tag == "gpt56abl"
+    assert ns.max_completion_tokens == 4096
+    assert p.get_default("max_completion_tokens") == 512
+    with pytest.raises(SystemExit, match="arm name"):
+        mod.parse_cli([str(ROOT / "results/factorial_2x2_iso_harness.json"), "OPAQUE_AMBIG"])
+
+
+def test_factorial_scorer_missing_arm_is_nr_not_zero(tmp_path):
+    import shutil
+    src = ROOT / "results/factorial_2x2_iso_harness.json"
+    shutil.copy(src, tmp_path / "factorial_2x2_iso_harness.json")
+    (tmp_path / "factorial_2x2_iso_harness_replies_fake").mkdir()
+    mod = _load("score_factorial_2x2")
+    out = mod.score("fake", results_dir=tmp_path)
+    assert all(c["score"] == "n.r." and c["missing"] == 32 for c in out["summary"].values())
+    with pytest.raises(SystemExit, match="refusing to overwrite"):
+        mod.score("fake", results_dir=tmp_path)
+
+
 def test_header_decoy_composer_grok_replies_are_not_errors():
     for tag in ("composer25abl", "grok45abl"):
         files = list((ROOT / "results" / f"header_decoy_ablation_iso_harness_replies_{tag}").glob("*/item_*.txt"))
         assert len(files) == 224, tag
         kinds = {rp.classify(p.read_text()) for p in files}
         assert "error" not in kinds, (tag, kinds)
+

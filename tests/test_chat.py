@@ -205,6 +205,19 @@ def test_openai_gpt5_omits_temperature(monkeypatch):
     assert calls[0]["max_completion_tokens"] == 4096
 
 
+def test_unseal_accepts_uppercase_hex():
+    from oir.layer import MiddleLayer
+
+    layer = MiddleLayer(b"case-test-key-16b")
+    tok = layer.atom("San Francisco")
+    assert layer.unseal(tok) == "San_Francisco"
+    assert layer.unseal(tok.upper()) == "San_Francisco"
+    from oir.chat import parse_sealed_answer
+
+    assert parse_sealed_answer(f"ANSWER_SEALED: {tok.upper()}") == tok
+
+
+
 def test_openai_mini_sends_temperature(monkeypatch):
     import sys
     import types

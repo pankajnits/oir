@@ -1,0 +1,163 @@
+% NeurIPS 2026 Paper Checklist. Do not modify the questions.
+% Answers use macros from neurips_2026.sty. Input after the appendix.
+
+\section*{NeurIPS Paper Checklist}
+
+\begin{enumerate}
+
+\item {\bf Claims}
+\item[] Question: Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?
+\item[] Answer: \answerYes{}
+\item[] Justification: The abstract and introduction state a measurement protocol, unique-path sealed traversal, and packaging-sensitive abstention under two competing routes. They restrict the matched $2{\times}2$ to OpenAI-shaped Wiki-H5 and do not claim a confidentiality proof or a scored $(r_1,r_2)$.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the abstract and introduction do not include the claims made in the paper.
+\item The abstract and/or introduction should clearly state the claims made, including the contributions made in the paper and important assumptions and limitations.
+\item The claims made should match theoretical and experimental results, and reflect how much the results can be expected to generalize to other settings.
+\item It is fine to include aspirational goals as motivation as long as it is clear that these goals are not attained by the paper.
+\end{itemize}
+
+\item {\bf Limitations}
+\item[] Question: Does the paper discuss the limitations of the work performed by the authors?
+\item[] Answer: \answerYes{}
+\item[] Justification: Section~\ref{sec:limitations} states that Wiki-H5 is OpenAI-shaped, $n{=}32$ on one template, cyclic decoys, packaging sensitivity, harness mismatch, inferred rather than scored $(r_1,r_2)$, and controls not evaluated here (forced-choice, short symbols, second seed).
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper has no limitation while the answer \answerNo{} means that the paper has limitations, but those are not discussed in the paper.
+\item The authors are encouraged to create a separate ``Limitations'' section in their paper.
+\item Reviewers are specifically instructed not to penalize honesty concerning limitations.
+\end{itemize}
+
+\item {\bf Theory assumptions and proofs}
+\item[] Question: For each theoretical result, does the paper provide the full set of assumptions and a complete (and correct) proof?
+\item[] Answer: \answerNA{}
+\item[] Justification: The paper is a measurement protocol. Section~\ref{sec:problem} defines selection and traversal maps; it does not state theorems.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not include theoretical results.
+\end{itemize}
+
+\item {\bf Experimental result reproducibility}
+\item[] Question: Does the paper fully disclose all the information needed to reproduce the main experimental results of the paper to the extent that it affects the main claims and/or conclusions of the paper (regardless of whether the code and data are provided or not)?
+\item[] Answer: \answerYes{}
+\item[] Justification: Section~\ref{sec:method} and Appendix~\ref{app:protocol} give seeds, HMAC width, isolation vs.\ batch, scoring (exact match; empty completions as \texttt{UNKNOWN}), model endpoints, and which cells are answer-line locks. Quizzes are in \texttt{runs/}; locked scores in \texttt{results/}.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not include experiments.
+\item While NeurIPS does not require releasing code, the conference does require all submissions to provide some reasonable avenue for reproducibility.
+\end{itemize}
+
+\item {\bf Open access to data and code}
+\item[] Question: Does the paper provide open access to the data and code, with sufficient instructions to faithfully reproduce the main experimental results, as described in supplemental material?
+\item[] Answer: \answerYes{}
+\item[] Justification: Isolation quizzes, locked JSON, reply trees, and \texttt{results/SHA256SUMS} are in the public repository named on the title page. Composer~2.5 and Grok~4.5 used a vendor agent SDK that is not the OpenAI API; Appendix~\ref{app:protocol} records that mismatch.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not include experiments requiring code.
+\item At submission time, to preserve anonymity, the authors should release anonymized versions (if applicable).
+\end{itemize}
+
+\item {\bf Experimental setting/details}
+\item[] Question: Does the paper specify all the training and test details (e.g., data splits, hyperparameters, how they were chosen, type of optimizer) necessary to understand the results?
+\item[] Answer: \answerYes{}
+\item[] Justification: No models are trained. Sampling seed, HMAC keys, $n$, temperature omission, token budgets, and ARM text are in Section~\ref{sec:method} and Appendix~\ref{app:protocol}.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not include experiments.
+\item The experimental setting should be presented in the core of the paper to a level of detail that is necessary to appreciate the results.
+\end{itemize}
+
+\item {\bf Experiment statistical significance}
+\item[] Question: Does the paper report error bars suitably and correctly defined or other appropriate information about the statistical significance of the experiments?
+\item[] Answer: \answerYes{}
+\item[] Justification: Wilson 95\% intervals ($z{=}1.96$) and McNemar exact two-sided complete-case tests are reported for the primary OpenAI $2{\times}2$. Appendix~\ref{app:protocol} notes that cyclic decoys slightly violate the i.i.d.\ assumption of the Wilson intervals.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not include experiments.
+\item The authors should answer \answerYes{} if the results are accompanied by error bars, confidence intervals, or statistical significance tests, at least for the experiments that support the main claims of the paper.
+\end{itemize}
+
+\item {\bf Experiments compute resources}
+\item[] Question: For each experiment, does the paper provide sufficient information on the computer resources (type of compute workers, memory, time of execution) needed to reproduce the experiments?
+\item[] Answer: \answerYes{}
+\item[] Justification: Appendix~\ref{app:protocol} records that no models were trained; OpenAI cells used Chat Completions; Composer/Grok used a hosted agent API; query counts for Wiki-H5 and header$\times$decoy are stated.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not include experiments.
+\end{itemize}
+
+\item {\bf Code of ethics}
+\item[] Question: Does the research conducted in the paper conform, in every respect, with the NeurIPS Code of Ethics \url{https://neurips.cc/public/EthicsGuidelines}?
+\item[] Answer: \answerYes{}
+\item[] Justification: Instances use licensed public graphs. No human subjects, no crowdwork, and no release of model generations as a corpus. HMAC is not treated as a privacy mechanism (Ethical considerations).
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the authors have not reviewed the NeurIPS Code of Ethics.
+\end{itemize}
+
+\item {\bf Broader impacts}
+\item[] Question: Does the paper discuss both potential positive societal impacts and negative societal impacts of the work performed?
+\item[] Answer: \answerYes{}
+\item[] Justification: Ethical considerations states the diagnostic use and the misuse of reading HMAC seals as confidentiality. The protocol is not a deployed anonymizer.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that there is no societal impact of the work performed.
+\end{itemize}
+
+\item {\bf Safeguards}
+\item[] Question: Does the paper describe safeguards that have been put in place for responsible release of data or models that have a high risk for misuse (e.g., pre-trained language models, image generators, or scraped datasets)?
+\item[] Answer: \answerNA{}
+\item[] Justification: The release is quizzes, scores, and hashing code over public KG slices. We do not release pretrained generators or scraped image/text corpora.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper poses no such risks.
+\end{itemize}
+
+\item {\bf Licenses for existing assets}
+\item[] Question: Are the creators or original owners of assets (e.g., code, data, models), used in the paper, properly credited and are the license and terms of use explicitly mentioned and properly respected?
+\item[] Answer: \answerYes{}
+\item[] Justification: Wikidata CEO records (CC0), WikiMovies/MetaQA as publicly released, 2WikiMultihopQA (Apache-2.0), and Spider (CC-BY-SA-4.0) are cited with licenses in Ethical considerations.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not use existing assets.
+\item The name of the license (e.g., CC-BY 4.0) should be included for each asset.
+\end{itemize}
+
+\item {\bf New assets}
+\item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?
+\item[] Answer: \answerYes{}
+\item[] Justification: Isolation quizzes, locked scores, and SHA-256 pins are documented in Appendix~\ref{app:protocol} and the repository README. Model generations are not released as a corpus.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not release new assets.
+\item At submission time, remember to anonymize your assets (if applicable).
+\end{itemize}
+
+\item {\bf Crowdsourcing and research with human subjects}
+\item[] Question: For crowdsourcing experiments and research with human subjects, does the paper include the full text of instructions given to participants and screenshots, if applicable, as well as details about compensation (if any)?
+\item[] Answer: \answerNA{}
+\item[] Justification: The study evaluates language-model APIs on public graphs. There are no human participants.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not involve crowdsourcing nor research with human subjects.
+\end{itemize}
+
+\item {\bf Institutional review board (IRB) approvals or equivalent for research with human subjects}
+\item[] Question: Does the paper describe potential risks incurred by study participants, whether such risks were disclosed to the subjects, and whether Institutional Review Board (IRB) approvals (or an equivalent approval/review based on the requirements of your country or institution) were obtained?
+\item[] Answer: \answerNA{}
+\item[] Justification: No human-subjects research.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the paper does not involve crowdsourcing nor research with human subjects.
+\end{itemize}
+
+\item {\bf Declaration of LLM usage}
+\item[] Question: Does the paper describe the usage of LLMs if it is an important, original, or non-standard component of the core methods in this research? Note that if the LLM is used only for writing, editing, or formatting purposes and does not impact the core methodology, scientific rigor, or originality of the research, declaration is not required.
+\item[] Answer: \answerNA{}
+\item[] Justification: HMAC sealing and the quiz files are the method. Language models are evaluated systems (Section~\ref{sec:method}), not a component of the protocol.
+\item[] Guidelines:
+\begin{itemize}
+\item The answer \answerNA{} means that the core method development in this research does not involve LLMs as any important, original, or non-standard components.
+\end{itemize}
+
+\end{enumerate}

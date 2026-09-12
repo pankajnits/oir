@@ -70,6 +70,32 @@ def _billing_blocked(raw: str) -> bool:
     return "unpaid invoice" in (raw or "").lower()
 
 
+def persist_reply(out: Path, *, text: str, sidecar: dict) -> None:
+    out.write_text(text)
+    out.with_suffix(".json").write_text(json.dumps(sidecar, indent=2, ensure_ascii=False) + "\n")
+
+
+def discard_reply(out: Path) -> None:
+    out.unlink(missing_ok=True)
+    out.with_suffix(".json").unlink(missing_ok=True)
+
+
+def settle_canary(first: dict, out: Path) -> None:
+    """Persist a successful canary, or discard any partial file and abort."""
+    raw = first.get("raw") or ""
+    if _billing_blocked(raw) or raw.startswith("ERROR:"):
+        discard_reply(out)
+        if _billing_blocked(raw):
+            raise SystemExit(
+                "Cursor API blocked (unpaid invoice). Pay at https://cursor.com/dashboard "
+                "then re-run; no canary reply was written."
+            )
+        raise SystemExit(
+            "canary failed (not scoring the rest; no reply written): " + raw[:400]
+        )
+    persist_reply(out, text=first["text"], sidecar=first["sidecar"])
+
+
 def _require_sdk():
     try:
         import cursor_sdk  # noqa: F401
@@ -81,7 +107,7 @@ def _require_sdk():
 
 
 async def one(*, client, model: str, api_key: str, cwd: str, prompt: str, cid: str,
-              sealed: bool, out: Path, preamble: str) -> dict:
+              sealed: bool, out: Path, preamble: str, write: bool = True) -> dict:
     from cursor_sdk import AgentOptions, AsyncAgent, LocalAgentOptions
 
     t0 = time.time()
@@ -126,16 +152,16 @@ async def one(*, client, model: str, api_key: str, cwd: str, prompt: str, cid: s
     pred, text = parse(cid, raw, sealed=sealed)
     if raw.startswith("ERROR:"):
         text = f"ERROR: {raw}\n"
-    out.write_text(text)
     sidecar = {
         "id": cid, "pred": pred, "raw": raw, "status": status, "model": model,
         "preamble": preamble, "elapsed_s": round(time.time() - t0, 3),
         "utc": datetime.now(timezone.utc).isoformat(), "route": "cursor_sdk.AsyncAgent",
         "error": err_note,
     }
-    out.with_suffix(".json").write_text(json.dumps(sidecar, indent=2, ensure_ascii=False) + "\n")
+    if write:
+        persist_reply(out, text=text, sidecar=sidecar)
     print(f"{out.parent.name} {out.stem} {time.time() - t0:.1f}s -> {pred}", flush=True)
-    return {"pred": pred, "raw": raw, "status": status}
+    return {"pred": pred, "raw": raw, "status": status, "text": text, "sidecar": sidecar}
 
 
 async def run(args: argparse.Namespace) -> None:
@@ -174,16 +200,11 @@ async def run(args: argparse.Namespace) -> None:
                 return await one(client=client, model=args.model, api_key=api_key,
                                  cwd=empty, preamble=args.preamble, **job)
 
-        first = await guarded(jobs[0])
-        if _billing_blocked(first["raw"]):
-            raise SystemExit(
-                "Cursor API blocked (unpaid invoice). Pay at https://cursor.com/dashboard "
-                "then re-run; the canary ERROR file is not final and will be overwritten."
-            )
-        if (first["raw"] or "").startswith("ERROR:"):
-            raise SystemExit(
-                "canary failed (not scoring the rest): " + (first["raw"] or "")[:400]
-            )
+        first_job = jobs[0]
+        async with sem:
+            first = await one(client=client, model=args.model, api_key=api_key,
+                              cwd=empty, preamble=args.preamble, write=False, **first_job)
+        settle_canary(first, first_job["out"])
         if len(jobs) > 1:
             await asyncio.gather(*(guarded(j) for j in jobs[1:]))
     print("done", args.model, args.tag, arms, "n", len(jobs), "preamble", args.preamble)

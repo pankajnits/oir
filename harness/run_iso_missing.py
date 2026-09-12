@@ -3,6 +3,10 @@
 
 Skips OpenAI. Skips OO_UNIQUE/OO_AMBIG (already scored for both families).
 Does not run WikiMovies n=100.
+
+Does not auto-score: ``score_factorial_2x2.py`` would rewrite locked
+``results/factorial_2x2_iso_{composer25,grok45}.json``. Score a new tag
+instead, or pass ``--force`` to that scorer only after a deliberate check.
 """
 from __future__ import annotations
 
@@ -15,7 +19,6 @@ ROOT = Path(__file__).resolve().parents[1]
 _venv_py = ROOT / ".venv" / "bin" / "python"
 PY = _venv_py if _venv_py.exists() else Path(sys.executable)
 RUNNER = ROOT / "harness" / "run_iso_agent_harness.py"
-SCORE = ROOT / "harness" / "score_factorial_2x2.py"
 
 JOBS = [
     ("results/factorial_2x2_iso_harness.json", None, "factorial_2x2_iso_harness"),
@@ -53,8 +56,10 @@ def main() -> None:
             print("==>", " ".join(cmd[-8:]), flush=True)
             try:
                 subprocess.check_call(cmd, cwd=str(ROOT))
-                subprocess.check_call(
-                    [sys.executable, str(SCORE), tag, stem], cwd=str(ROOT)
+                print(
+                    f"ran {tag} {stem}; not auto-scoring (would rewrite locked JSON). "
+                    f"To snapshot: python3 harness/score_factorial_2x2.py NEWTAG {stem}",
+                    flush=True,
                 )
             except subprocess.CalledProcessError as e:
                 print(f"FAILED {tag} {stem}: {e}", flush=True)

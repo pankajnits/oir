@@ -9,8 +9,10 @@ Measurement protocol and HMAC middle layer for the paper
 **Code, isolation quizzes (`runs/`), and locked scores (`results/`):**
 [github.com/pankajnits/oir](https://github.com/pankajnits/oir)
 
-**PDF (NeurIPS preprint, 10 content pages + appendix):**
+**PDF (NeurIPS preprint, 9 content pages + appendix + checklist):**
 [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf)
+
+Pinned clone: tag [`v1.0.0`](https://github.com/pankajnits/oir/releases/tag/v1.0.0).
 
 Cite this repository with [`CITATION.cff`](CITATION.cff).
 
@@ -36,7 +38,7 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 | Unique path, both-opaque (entities+relations sealed) | **32/32** all three families |
 | Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; Composer **27/32**; Grok **30/32** |
 | English Wikidata 2×2 (OpenAI; relations readable) | unique **31/32**, two-path **31/32** |
-| Opacity × two same-type paths (OpenAI Wikidata 2×2) | Locked named-arm Wiki-H5 **6/32** (UNK 24, decoy 2). Snapshot **5/32** (1 `NO_OUTPUT`). Arm-neutral OpenAI: H5 cyclic **20/32**, H5 constant decoy **10/32**, K2 cyclic **30/32**, no ARM cyclic **25/32**. Composer H5 **6/32** vs no ARM **21/32**. Grok H5/K2 **0/32**, no ARM **6/32**, English no ARM **24/32**. |
+| Opacity × two same-type paths (OpenAI Wikidata 2×2) | Locked named-arm Wiki-H5 **6/32** (UNK 24, decoy 2). Snapshot **5/32** (1 `NO_OUTPUT`). Arm-neutral OpenAI: H5 cyclic **20/32**, H5 constant decoy **10/32**, K2 cyclic **30/32**, no ARM cyclic **25/32**. Composer H5 cyclic **6/32** vs no ARM cyclic **21/32**. Grok H5/K2 **0/32**, no ARM cyclic **6/32**, English no ARM **24/32**. |
 | Same graphs, Composer / Grok two-path | Composer English **26/32** → opaque **10/32**; Grok English **4/32** (UNK 28) → opaque **1/32** |
 | WikiMovies Condition A n=100 (OpenAI) | two-path **96/100**; on 32 names shared with A32, **29/32** (A32 was **17/32**) |
 | WikiMovies Condition B n=100 (OpenAI) | unique **100/100**, two-path **3/100** |

@@ -4,7 +4,8 @@
     "compiler": "xelatex"
   },
   "sources": [
-    { "filename": "main.tex", "usage": "toplevel" }
+    { "filename": "main.tex", "usage": "toplevel" },
+    { "filename": "checklist.tex", "usage": "include" }
   ],
   "texlive_version": 2025
 }

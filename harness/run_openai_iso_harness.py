@@ -14,6 +14,8 @@ effort not sent, alias model id). Review fixes:
 * --retry-empty re-queries locked files that were empty completions;
 * --max-completion-tokens / --reasoning-effort make the budget explicit.
   Pin a dated snapshot with --model when rerunning for a paper cell.
+* TAG and HARNESS are required (no default ``gpt56``) so a missing tag cannot
+  write into the locked reply tree.
 """
 from __future__ import annotations
 
@@ -79,10 +81,10 @@ def complete(client, model: str, prompt: str, *, max_completion_tokens: int,
     raise RuntimeError(last)
 
 
-def main() -> None:
+def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser()
-    ap.add_argument("harness", nargs="?", default=str(RESULTS / "factorial_2x2_iso_harness.json"))
-    ap.add_argument("tag", nargs="?", default="gpt56")
+    ap.add_argument("harness", help="path to isolation harness JSON")
+    ap.add_argument("tag", help="reply-directory tag (do not reuse locked gpt56)")
     ap.add_argument("arms", nargs="*")
     ap.add_argument("--force", action="store_true", help="re-query every item")
     ap.add_argument("--retry-empty", action="store_true",
@@ -91,7 +93,22 @@ def main() -> None:
     ap.add_argument("--max-completion-tokens", type=int,
                     default=int(os.environ.get("OIR_MAX_COMPLETION_TOKENS", "512")))
     ap.add_argument("--reasoning-effort", default=os.environ.get("OIR_REASONING_EFFORT") or None)
-    args = ap.parse_args()
+    return ap
+
+
+def parse_cli(argv: list[str] | None = None) -> argparse.Namespace:
+    args = build_parser().parse_args(argv)
+    h = json.loads(Path(args.harness).read_text())
+    if args.tag in h["arms"] and not args.arms:
+        raise SystemExit(
+            f"{args.tag!r} is an arm name, not a tag. Usage: "
+            "run_openai_iso_harness.py HARNESS TAG [ARM ...]"
+        )
+    return args
+
+
+def main() -> None:
+    args = parse_cli()
     if not os.environ.get("OPENAI_API_KEY"):
         raise SystemExit("Set OPENAI_API_KEY in the environment (do not commit it).")
     from openai import OpenAI

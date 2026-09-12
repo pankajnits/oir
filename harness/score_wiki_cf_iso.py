@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "harness"))
+from lockjson import write_lock
 from wilson_cis import wilson
 
 H = json.loads((ROOT / "results" / "wiki_cf_n200_harness.json").read_text())
@@ -23,7 +24,11 @@ def norm(s: str) -> str:
 
 
 def main():
-    model = sys.argv[1] if len(sys.argv) > 1 else "gpt56_iso"
+    force = "--force" in sys.argv
+    argv = [a for a in sys.argv[1:] if a != "--force"]
+    if not argv:
+        raise SystemExit("usage: score_wiki_cf_iso.py TAG [--force]")
+    model = argv[0]
     d = ROOT / "results" / f"wiki_cf_n200_replies_{model}"
     preds = {}
     if d.exists():
@@ -41,6 +46,7 @@ def main():
     n = len(rows)
     k = sum(r["ok"] for r in rows)
     L = sum(r["wiki_leak"] for r in rows)
+    empty = n == 0
     by = {}
     for r in rows:
         by.setdefault(r["shard"], {"n": 0, "ok": 0, "leak": 0})
@@ -49,14 +55,18 @@ def main():
         by[r["shard"]]["leak"] += int(r["wiki_leak"])
     summary = {
         "n_scored": n,
-        "score": f"{k}/{n}" if n else "0/0",
-        "wiki_leak": f"{L}/{n}" if n else "0/0",
-        "wilson": wilson(k, n) if n else None,
+        "score": "n.r." if empty else f"{k}/{n}",
+        "wiki_leak": "n.r." if empty else f"{L}/{n}",
+        "wilson": None if empty else wilson(k, n),
         "by_shard": {str(s): f"{v['ok']}/{v['n']} leak {v['leak']}/{v['n']}" for s, v in sorted(by.items())},
     }
     out = ROOT / "results" / f"wiki_cf_iso_{model}.json"
-    out.write_text(json.dumps({"model": model, "summary": summary, "rows": rows, "nonclaim": "Isolation of PLAIN_NL CF. Not G-Rev1."}, indent=2))
-    print(json.dumps(summary, indent=2))
+    write_lock(
+        out,
+        {"model": model, "summary": summary, "rows": rows, "nonclaim": "Isolation of PLAIN_NL CF. Not G-Rev1."},
+        force=force,
+    )
+    print(json.dumps(summary, indent=2, ensure_ascii=False))
     print("wrote", out)
 
 

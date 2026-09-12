@@ -14,11 +14,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "harness"))
 from induce_follow_n32_iso import answer_prompt  # noqa: E402
+from lockjson import write_lock  # noqa: E402
 from paths import repo_abs
+from reply_parse import ANS_SEAL, preds_from_text  # noqa: E402
 
 RESULTS = ROOT / "results"
 H = json.loads((RESULTS / "adv_induction_n32_iso_harness.json").read_text())
-ANS = re.compile(r"ANSWER_SEALED\[([^\]]+)\]:\s*(\S+)", re.I)
 DEMO_ANS = re.compile(r"^ANSWER_SEALED:\s*(\S+)\s*$", re.I | re.M)
 
 
@@ -33,12 +34,16 @@ def load_preds(reply_root: Path, arm: str) -> dict[str, str]:
     if not d.is_dir():
         return preds
     for p in sorted(d.glob("item_*.txt")):
-        preds.update({m.group(1): m.group(2) for m in ANS.finditer(p.read_text())})
+        preds.update(preds_from_text(p.read_text(), ANS_SEAL))
     return preds
 
 
 def main() -> None:
-    tag = sys.argv[1] if len(sys.argv) > 1 else "gpt56"
+    force = "--force" in sys.argv
+    argv = [a for a in sys.argv[1:] if a != "--force"]
+    if not argv:
+        raise SystemExit("usage: score_copy_vs_bind_n32.py TAG [--force]")
+    tag = argv[0]
     reply = RESULTS / f"adv_n32_iso_replies_{tag}"
     golds = {c["id"]: c for c in H["cases"]}
     summary, rows = {}, []
@@ -86,18 +91,19 @@ def main() -> None:
                     "class": cls,
                 }
             )
+        nr = miss == n
         summary[arm] = {
             "n": n,
-            "gold": f"{gold_n}/{n}",
-            "trap": f"{trap_n}/{n}",
-            "copy_last_demo": f"{copy_n}/{n}",
-            "equiv_inducer": f"{bind_n}/{n}",
+            "gold": "n.r." if nr else f"{gold_n}/{n}",
+            "trap": "n.r." if nr else f"{trap_n}/{n}",
+            "copy_last_demo": "n.r." if nr else f"{copy_n}/{n}",
+            "equiv_inducer": "n.r." if nr else f"{bind_n}/{n}",
             "missing": miss,
         }
     out = {"model": tag, "summary": summary, "rows": rows, "reply_dir": str(reply)}
     path = RESULTS / f"copy_vs_bind_n32_{tag}.json"
-    path.write_text(json.dumps(out, indent=2))
-    print(json.dumps(summary, indent=2))
+    write_lock(path, out, force=force)
+    print(json.dumps(summary, indent=2, ensure_ascii=False))
     print("wrote", path)
 
 

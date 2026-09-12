@@ -38,9 +38,9 @@ and the paired exact McNemar tests printed by ``score``.
       results/header_decoy_ablation_iso_harness.json composer25abl composer-2.5 --preamble none
   AGENT_API_KEY=... python3 harness/run_iso_agent_harness.py \\
       results/header_decoy_ablation_iso_harness.json grok45abl grok-4.5 --preamble none
-  python3 harness/header_decoy_ablation_iso.py score gpt56abl
-  python3 harness/header_decoy_ablation_iso.py score composer25abl
-  python3 harness/header_decoy_ablation_iso.py score grok45abl
+  python3 harness/header_decoy_ablation_iso.py score gpt56abl --force
+  python3 harness/header_decoy_ablation_iso.py score composer25abl --force
+  python3 harness/header_decoy_ablation_iso.py score grok45abl --force
 """
 from __future__ import annotations
 
@@ -56,6 +56,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "harness"))
 
+from lockjson import write_lock  # noqa: E402
 from factorial_2x2_iso import (  # noqa: E402
     SEED,
     SOURCE,
@@ -153,7 +154,8 @@ def _mcnemar(b: int, c: int) -> float:
     return 1.0 if n == 0 else min(1.0, 2 * sum(comb(n, j) for j in range(min(b, c) + 1)) / 2**n)
 
 
-def score(tag: str, harness_path: Path = HARNESS, results_dir: Path = RESULTS) -> dict:
+def score(tag: str, harness_path: Path = HARNESS, results_dir: Path = RESULTS,
+          *, force: bool = False) -> dict:
     h = json.loads(harness_path.read_text())
     reply_root = results_dir / f"{harness_path.stem}_replies_{tag}"
     cells, ok = {}, {}
@@ -168,6 +170,7 @@ def score(tag: str, harness_path: Path = HARNESS, results_dir: Path = RESULTS) -
                 continue
             text = f.read_text()
             kind, pred = classify(text), first_pred(text)
+            incomplete = kind in ("error", "no_output", "legacy_empty")
             if kind == "error":
                 c["error"] += 1
             elif kind in ("no_output", "legacy_empty"):
@@ -180,7 +183,10 @@ def score(tag: str, harness_path: Path = HARNESS, results_dir: Path = RESULTS) -
                 c["decoy"] += 1
             else:
                 c["other"] += 1
-            hits.append(pred == case["gold"] and kind not in ("error", "no_output", "legacy_empty"))
+            # Complete-case McNemar: missing and incomplete (empty/error) are
+            # excluded from the pair. They still appear in cell counts. ITT
+            # (incomplete = not-gold) is not the reported p-value.
+            hits.append(None if incomplete else pred == case["gold"])
         cells[arm] = dict(c)
         ok[arm] = hits
     pairs = [(f"OPQ_{a}_{d}", f"OPQ_{b}_{d}") for d in ("CYC", "CRV")
@@ -195,14 +201,7 @@ def score(tag: str, harness_path: Path = HARNESS, results_dir: Path = RESULTS) -
                           "b_only": only_b, "mcnemar_exact_p": _mcnemar(only_a, only_b)})
     out = {"tag": tag, "harness": repo_rel(harness_path), "cells": cells, "contrasts": contrasts}
     dest = results_dir / f"{harness_path.stem.replace('_harness', '')}_{tag}.json"
-    if dest.exists():
-        try:
-            prev_note = json.loads(dest.read_text()).get("note")
-        except json.JSONDecodeError:
-            prev_note = None
-        if prev_note:
-            out["note"] = prev_note
-    dest.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
+    write_lock(dest, out, force=force)
     for arm, c in cells.items():
         print(f"{arm:14s} {c}")
     for x in contrasts:
@@ -216,8 +215,10 @@ if __name__ == "__main__":
     if cmd == "build":
         build()
     elif cmd == "score":
-        if len(sys.argv) < 3:
-            raise SystemExit("usage: header_decoy_ablation_iso.py score TAG")
-        score(sys.argv[2])
+        force = "--force" in sys.argv
+        argv = [a for a in sys.argv[2:] if a != "--force"]
+        if not argv:
+            raise SystemExit("usage: header_decoy_ablation_iso.py score TAG [--force]")
+        score(argv[0], force=force)
     else:
-        raise SystemExit("usage: header_decoy_ablation_iso.py build | score TAG")
+        raise SystemExit("usage: header_decoy_ablation_iso.py build | score TAG [--force]")

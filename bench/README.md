@@ -19,7 +19,7 @@ Manifest: `bench/MANIFEST.json`.
 
 ## Wikidata $2{\times}2$ (primary)
 
-Arms: `ENG_UNIQUE`, `ENG_AMBIG`, `OPAQUE_UNIQUE`, `OPAQUE_AMBIG` (+ plan control). Locked OpenAI named-arm files: English unique/two-path **31/32**, opaque unique **32/32**, opaque two-path **6/32** (UNK 24, decoy 2). Same-snapshot rerun of those files: **5/32** (`factorial_2x2_iso_gpt56sep.json`). Arm-neutral header×decoy (`header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json`): H5+cyclic **20/6/0**; no ARM+cyclic **25/21/6**; English no ARM **29/25/24**. Composer English two-path **26/32** → opaque **10/32**; Grok **4/32** → **1/32**. JSON: `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json`.
+Arms: `ENG_UNIQUE`, `ENG_AMBIG`, `OPAQUE_UNIQUE`, `OPAQUE_AMBIG` (+ plan control). Locked OpenAI named-arm files: English unique/two-path **31/32**, opaque unique **32/32**, opaque two-path **6/32** (UNK 24, decoy 2). Same-snapshot rerun of those files: **5/32** (`factorial_2x2_iso_gpt56sep.json`). Arm-neutral header×decoy (`header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json`): H5+cyclic **20/6/0**; no ARM+cyclic **25/21/6**; English no ARM **29/26/24**. Composer English two-path **26/32** → opaque **10/32**; Grok **4/32** → **1/32**. JSON: `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json`.
 
 ## Three-arm (missing-start / execution bound)
 
@@ -53,6 +53,7 @@ Typed-sink PATH programs: unique-edge SealRouter **0/200**, global count lexicon
 ```bash
 # score existing replies
 python3 harness/score_factorial_2x2.py gpt56 factorial_2x2_iso_harness
+# refuses if the score JSON already exists; --force overwrites a lockfile
 python3 harness/header_decoy_ablation_iso.py score gpt56abl
 python3 harness/score_ceiling_n32_iso.py gpt56
 python3 harness/score_adv_n32_iso.py gpt56

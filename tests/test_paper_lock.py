@@ -6,6 +6,8 @@ import json
 import subprocess
 from pathlib import Path
 
+import pytest
+
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results"
 
@@ -89,7 +91,11 @@ def test_header_decoy_ablation_openai_gold_counts():
     sep = sep_blob["summary"]["OPAQUE_AMBIG"]
     assert sep["score"] == "5/32"
     assert sep["missing"] == 0
+    assert sep.get("no_output") == 1
     assert sum(1 for r in sep_blob["rows"] if r["arm"] == "OPAQUE_AMBIG" and r["pred"] == "NO_OUTPUT") == 1
+    for arm in ("ENG_UNIQUE", "ENG_AMBIG", "OPAQUE_UNIQUE", "OPAQUE_AMBIG_PLAN"):
+        assert sep_blob["summary"][arm]["score"] == "n.r."
+        assert sep_blob["summary"][arm]["missing"] == 32
     assert "note" in blob and "4096" in blob["note"]
     h5_512 = _load("header_decoy_ablation_iso_gpt56abl512.json")["cells"]["OPQ_H5_CYC"]
     assert h5_512["gold"] == 20
@@ -101,12 +107,12 @@ def test_header_decoy_ablation_composer_grok_gold_counts():
     g = _load("header_decoy_ablation_iso_grok45abl.json")["cells"]
     assert all(_cell_n(cell) == 32 for cell in (*c.values(), *g.values()))
     assert c["OPQ_H5_CYC"]["gold"] == 6
-    assert c["OPQ_H5_CRV"]["gold"] == 1
-    assert c["OPQ_K2_CYC"]["gold"] == 19
+    assert c["OPQ_H5_CRV"]["gold"] == 2
+    assert c["OPQ_K2_CYC"]["gold"] == 20
     assert c["OPQ_K2_CRV"]["gold"] == 13
     assert c["OPQ_NONE_CYC"]["gold"] == 21
-    assert c["OPQ_NONE_CRV"]["gold"] == 17
-    assert c["ENG_NONE_CYC"]["gold"] == 25
+    assert c["OPQ_NONE_CRV"]["gold"] == 18
+    assert c["ENG_NONE_CYC"]["gold"] == 26
     assert g["OPQ_H5_CYC"].get("gold", 0) == 0
     assert g["OPQ_H5_CRV"].get("gold", 0) == 0
     assert g["OPQ_K2_CYC"].get("gold", 0) == 0
@@ -114,6 +120,40 @@ def test_header_decoy_ablation_composer_grok_gold_counts():
     assert g["OPQ_NONE_CYC"]["gold"] == 6
     assert g["OPQ_NONE_CRV"]["gold"] == 1
     assert g["ENG_NONE_CYC"]["gold"] == 24
+
+
+def test_locked_full_ablation_has_no_incompletes():
+    """Complete-case McNemar equals ITT on the three 7-arm locks (no empty/error)."""
+    for name in (
+        "header_decoy_ablation_iso_gpt56abl.json",
+        "header_decoy_ablation_iso_composer25abl.json",
+        "header_decoy_ablation_iso_grok45abl.json",
+    ):
+        for arm, cell in _load(name)["cells"].items():
+            assert cell.get("no_output", 0) == 0, (name, arm)
+            assert cell.get("error", 0) == 0, (name, arm)
+            assert cell.get("missing", 0) == 0, (name, arm)
+
+
+def test_composer25tx_does_not_replace_august_lock():
+    """Supplemental transcript rerun; August composer25 JSON stays the paper lock."""
+    lock = _load("entity_rel_2x2_iso_composer25.json")["summary"]
+    assert lock["OO_UNIQUE"]["score"] == "32/32"
+    assert lock["OO_AMBIG"]["score"] == "0/32"
+    assert lock["OO_AMBIG"]["unknown"] == 32
+    assert lock["OO_AMBIG"]["decoy"] == 0
+    tx_path = RESULTS / "entity_rel_2x2_iso_composer25tx.json"
+    if not tx_path.is_file():
+        pytest.skip("composer25tx supplemental JSON is not in this tree")
+    tx = json.loads(tx_path.read_text())
+    assert "does not replace" in tx.get("note", "").lower()
+    assert tx["summary"]["OO_UNIQUE"]["score"] == "32/32"
+    assert tx["summary"]["OO_AMBIG"]["score"] == "0/32"
+    ceil = json.loads((RESULTS / "ceiling_three_arm_n32_iso_composer25tx.json").read_text())
+    assert ceil["summary"]["SEAL_NL"]["score"] == "0/32"
+    assert ceil["summary"]["PLAIN_PROG"]["score"] == "n.r."
+    assert ceil["summary"]["SEAL_PROG"]["score"] == "n.r."
+    assert _load("ceiling_three_arm_n32_iso_composer25.json")["summary"]["SEAL_NL"]["score"] == "0/32"
 
 
 def test_sha256sums_lists_tracked_json_and_replies():

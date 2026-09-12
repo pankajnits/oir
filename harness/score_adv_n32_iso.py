@@ -4,19 +4,21 @@
 Free-form locks: gpt56 / grok45ff / composer25ff.
 Tag auto is composer-2.5 and may omit PATH_TRAP; do not cite missing==n as 0/n.
 
-    python3 harness/score_adv_n32_iso.py gpt56
+    python3 harness/score_adv_n32_iso.py TAG [--force]
 """
 from __future__ import annotations
 
 import json
-import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "harness"))
+from lockjson import write_lock  # noqa: E402
+from reply_parse import ANS_SEAL, preds_from_text  # noqa: E402
+
 RESULTS = ROOT / "results"
 H = json.loads((RESULTS / "adv_induction_n32_iso_harness.json").read_text())
-ANS = re.compile(r"ANSWER_SEALED\[([^\]]+)\]:\s*(\S+)", re.I)
 
 
 def cell_score(k: int, n: int, missing: int) -> str:
@@ -31,12 +33,16 @@ def load_preds(reply_root: Path, arm: str) -> dict[str, str]:
     d = reply_root / arm
     if d.is_dir():
         for p in sorted(d.glob("item_*.txt")):
-            preds.update({m.group(1): m.group(2) for m in ANS.finditer(p.read_text())})
+            preds.update(preds_from_text(p.read_text(), ANS_SEAL))
     return preds
 
 
 def main() -> None:
-    model = sys.argv[1] if len(sys.argv) > 1 else "gpt56"
+    force = "--force" in sys.argv
+    argv = [a for a in sys.argv[1:] if a != "--force"]
+    if not argv:
+        raise SystemExit("usage: score_adv_n32_iso.py TAG [--force]")
+    model = argv[0]
     reply = RESULTS / f"adv_n32_iso_replies_{model}"
     golds = {c["id"]: c for c in H["cases"]}
     summary, rows = {}, []
@@ -81,8 +87,8 @@ def main() -> None:
         "reply_dir": str(reply.relative_to(ROOT)) if reply.is_relative_to(ROOT) else str(reply),
     }
     path = RESULTS / f"adv_induction_n32_iso_{model}.json"
-    path.write_text(json.dumps(out, indent=2))
-    print(json.dumps(summary, indent=2))
+    write_lock(path, out, force=force)
+    print(json.dumps(summary, indent=2, ensure_ascii=False))
     print("wrote", path)
 
 
