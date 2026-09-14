@@ -3,7 +3,7 @@
 This repo is a hash-pinned measurement plus an installable middle layer. Cite locked JSON and reply files; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS` (JSON summaries, reply sidecars, and per-item `.txt` replies).
 
 Paper PDF: [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf).
-Repository: https://github.com/pankajnits/oir (release tag `v1.0.4`).
+Repository: https://github.com/pankajnits/oir (release tag `v1.0.5`).
 
 ## What you can verify without an LLM or paid API
 
@@ -88,7 +88,7 @@ python3 harness/score_ceiling_n32_iso.py gpt56
 
 Composer 2.5 / Grok 4.5 cells used the same `runs/` files through Cursor's agent SDK (`AGENT_API_KEY` or `CURSOR_API_KEY` + `harness/run_iso_agent_harness.py`), not a vendor chat API. The runner's default `--preamble cursor` prefixes a reply-only instruction OpenAI never received; `--preamble none` sends the prompt file verbatim. Tags `composer25` / `grok45` / `*ff` are reply directories under `results/`. Do not reuse those tags for new suites. Result files tagged `auto` are Composer 2.5. Dual-path free-form is `composer25ff` / `grok45ff`; `grok45.json` is archived binding; `induce` is sealed-demo binding, not free-form. Local `mistral` / `qwen35` dual-path JSONs are not in the three-family roster (plan n.r.).
 
-Header × decoy ablation (11 September 2026): `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json`. Named-arm Wiki-H5 snapshot check: `results/factorial_2x2_iso_gpt56sep.json` (**5/32**, 1 `NO_OUTPUT`, OpenAI OPAQUE_AMBIG only; other arms `n.r.` / `missing` 32 are not scores). Composer/Grok used `--preamble none`. Empty completions are `NO_OUTPUT` on new runner files; `--retry-empty` re-queries legacy empty files stored as UNKNOWN. `score_factorial_2x2.py` refuses to overwrite an existing score JSON unless `--force`.
+Header × decoy ablation (11 September 2026): `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json`. Named-arm Wiki-H5 snapshot check: `results/factorial_2x2_iso_gpt56sep.json` (**5/32**, 1 `NO_OUTPUT`, OpenAI OPAQUE_AMBIG only; other arms `n.r.` / `missing` 32 are not scores). Composer/Grok used `--preamble none`. Named-arm English Grok with prompt-verbatim (`factorial_2x2_iso_grok45pn.json`, `--preamble none`) is **4/32** and does **not** replace `grok45`. Empty completions are `NO_OUTPUT` on new runner files; `--retry-empty` re-queries legacy empty files stored as UNKNOWN. `score_factorial_2x2.py` refuses to overwrite an existing score JSON unless `--force`.
 
 ## Third-party dumps
 

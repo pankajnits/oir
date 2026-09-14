@@ -156,6 +156,40 @@ def test_composer25tx_does_not_replace_august_lock():
     assert _load("ceiling_three_arm_n32_iso_composer25.json")["summary"]["SEAL_NL"]["score"] == "0/32"
 
 
+def test_city_subset_english_twopath():
+    """City-valued English two-path: Composer format, Grok abstention, OpenAI ceiling."""
+    def _city_ok(fname: str) -> tuple[int, int]:
+        rows = [r for r in _load(fname)["rows"] if r["arm"] == "ENG_AMBIG"]
+        city = [r for r in rows if r["gold"] not in NONCITY]
+        return sum(1 for r in city if r["ok"]), len(city)
+
+    assert _city_ok("factorial_2x2_iso_gpt56.json") == (26, 26)
+    assert _city_ok("factorial_2x2_iso_composer25.json") == (26, 26)
+    assert _city_ok("factorial_2x2_iso_grok45.json") == (4, 26)
+
+
+def test_grok45pn_named_arm_english_matches_lock_and_does_not_replace():
+    """Prompt-verbatim Grok named-arm English stays 4/32; August grok45 is untouched."""
+    pn = _load("factorial_2x2_iso_grok45pn.json")
+    assert "does not replace" in pn.get("note", "").lower()
+    assert pn["summary"]["ENG_AMBIG"]["score"] == "4/32"
+    assert pn["summary"]["ENG_AMBIG"]["unknown"] == 28
+    for arm in ("ENG_UNIQUE", "OPAQUE_UNIQUE", "OPAQUE_AMBIG", "OPAQUE_AMBIG_PLAN"):
+        assert pn["summary"][arm]["score"] == "n.r."
+    lock = _load("factorial_2x2_iso_grok45.json")["summary"]
+    assert lock["ENG_AMBIG"]["score"] == "4/32"
+    assert lock["OPAQUE_AMBIG"]["score"] == "1/32"
+    reply_dir = RESULTS / "factorial_2x2_iso_harness_replies_grok45pn" / "ENG_AMBIG"
+    txts = sorted(reply_dir.glob("item_*.txt"))
+    sidecars = sorted(reply_dir.glob("item_*.json"))
+    assert len(txts) == 32
+    assert len(sidecars) == 32
+    for path in sidecars:
+        blob = json.loads(path.read_text())
+        assert blob.get("preamble") == "none"
+        assert blob.get("model") == "grok-4.5"
+
+
 def test_sha256sums_lists_tracked_json_and_replies():
     """Fresh clones must be able to run ``shasum -c results/SHA256SUMS`` from the repo root."""
     listed = []

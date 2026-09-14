@@ -93,15 +93,13 @@ both-opaque unique paths are $32/32$ for Composer~2.5, OpenAI
 When two same-type routes compete and the prompt supplies no
 semantic-to-symbol map, the typical response is \texttt{UNKNOWN} rather than
 the decoy city.
-That end-to-end rate is packaging-sensitive: named-arm Wiki-H5 (the ARM line
-and case id name the condition) is OpenAI $6/32$ (\texttt{UNKNOWN} $24/32$,
-decoy $2/32$); arm-neutral ids and header wording move the same graphs
-across $10$--$30/32$ (Composer/Grok: Appendix~\ref{app:tokens}).
-On the 26 city-valued items the named-arm cell is $5/26$.
-The matched $2{\times}2$ is OpenAI-shaped: Grok named-arm English two-path is
-already $4/32$ (arm-neutral $24/32$).
-OpenAI both-opaque two-path is $1/32$.
-We score the answer node, not an emitted $(r_1,r_2)$.
+Named-arm Wiki-H5 (ARM line and case id name the condition) is OpenAI
+$6/32$ (\texttt{UNKNOWN} $24/32$, decoy $2/32$); OpenAI packaging of the
+same graphs is $10$--$30/32$ (Composer/Grok: Appendix~\ref{app:tokens}).
+Exact-match under two routes is family- and packaging-dependent, not a
+ranking: named-arm English two-path is OpenAI $31/32$, Composer $26/32$,
+Grok $4/32$ (arm-neutral Grok $24/32$). OpenAI both-opaque two-path is
+$1/32$. We score the answer node, not an emitted $(r_1,r_2)$.
 Seals remove lexical cues; they are not a confidentiality proof.
 \end{abstract}
 
@@ -474,9 +472,11 @@ omitted because that family rejects temperature~$0$
 \texttt{gpt-5.6-sol}. Composer~2.5 and Grok~4.5 ran through Cursor's agent SDK
 on the same quiz files, with a reply-only preamble OpenAI never received.
 Tools, retry, and empty-reply handling are not equated (OpenAI locked empty
-completions as \texttt{UNKNOWN}). Cross-family two-path gaps may partly
-reflect harness. The opacity$\times$ambiguity pattern is most interpretable
-for OpenAI.
+completions as \texttt{UNKNOWN}). Unique-path opaque stays high on all three
+(Composer $27/32$, OpenAI $32/32$, Grok $30/32$): those SDK cells still
+execute unique-path joins. Named-arm DiD is most readable for OpenAI
+(Grok English two-path $4/32$ vs.\ arm-neutral $24/32$;
+Appendix~\ref{app:tokens}).
 Unique both-opaque $32/32$ is the three-family traversal cell. Isolation
 quizzes (\texttt{runs/}) and locked exact-match scores (\texttt{results/})
 are at \url{https://github.com/pankajnits/oir}. Inference settings are
@@ -559,10 +559,12 @@ is Appendix~\ref{app:signflip} (same numerical $p$, different test).
 Opacity alone does not block traversal; the drop is concentrated in the
 two-path condition.
 
-This pattern is \emph{not} a universal three-family result. Grok named-arm
-English two-path is already $4/32$ (\texttt{UNKNOWN} $28$; arm-neutral
-$24/32$, Appendix~\ref{app:tokens}). Composer English two-path is
-$26/32$. Opaque unique remains high (Composer $27/32$, Grok $30/32$);
+This pattern is \emph{not} a universal three-family exact-match rate.
+Unique-path opaque stays high on all three. The typical two-path action is
+\texttt{UNKNOWN} rather than decoy. Named-arm English two-path is OpenAI
+$31/32$, Composer $26/32$, Grok $4/32$ (\texttt{UNKNOWN} $28$; arm-neutral
+$24/32$): a packaging$\times$family DiD, not a ranking.
+Opaque unique remains high (Composer $27/32$, Grok $30/32$);
 named-arm opaque two-path drops ($10/32$, $1/32$); a written hop recovers
 ($28/32$, $32/32$). Exact-match alone hides the behavior: opaque two-path
 is mostly \texttt{UNKNOWN}, not decoy. Coverage is the fraction of items with
@@ -738,9 +740,8 @@ cell, not the isolation of selection. Join plans score $32/32$ on both
 plaintext and sealed atoms; SealRouter given the gold sealed relation
 sequence is $32/32$; free sealed English scores $0/32$ (all
 \texttt{UNKNOWN}) for Composer~2.5, OpenAI, and Grok~4.5
-(Table~\ref{tab:primary}). Batch $n{=}12$ and $n{=}24$ match that pattern.
-We exclude a batched free-sealed cell that can succeed by returning a unique
-neighbor without using $q$.
+(Table~\ref{tab:primary}). We exclude a batched free-sealed cell that can
+succeed by returning a unique neighbor without using $q$.
 
 \section{Discussion}
 
@@ -748,37 +749,29 @@ A join is structurally executable when the route is unique or $(r_1,r_2)$
 is given (unique opaque $32/32$; written hop $32/32$). The prompt explicitly
 maps query semantics onto one relation sequence when English predicates, a
 legend, or demonstrated seals are present. When two complete routes exist
-and that mapping is absent, selection is unsupported by explicit cues: the
-prompt presents an underspecified interface, and the typical response is
-\texttt{UNKNOWN} rather than decoy (Table~\ref{tab:threeway}). We do not
-claim the task is mathematically unidentifiable.
+and that mapping is absent, the typical response is \texttt{UNKNOWN} rather
+than decoy (Table~\ref{tab:threeway}); we do not claim mathematical
+unidentifiability.
 
-For OpenAI on \textsc{Wiki-H5}, the difference-in-differences is $-26/32$
-(25 vs.\ 0 paired counts). Grok named-arm English two-path is $4/32$
-(arm-neutral $24/32$; Appendix~\ref{app:tokens}). English
-relations restore OpenAI end-to-end accuracy with anonymous entities
-($32/32$); Grok still abstains ($3/32$). Dual-path shows in-prompt reuse of
-demonstrated relation-seal correspondences and that novel seals do not
-transfer. The CEO piecewise-hash $0/32$ is an input-binding control, not
-part of the matched factorial.
+For OpenAI on named-arm \textsc{Wiki-H5}, DiD is $-26/32$ (25 vs.\ 0).
+That contrast is most readable for OpenAI. English relations restore OpenAI
+end-to-end accuracy with anonymous entities ($32/32$); Grok still abstains
+($3/32$). Dual-path reuses demonstrated seals; novel seals do not transfer.
 Unique topology with the start in $q$, English predicates, matched
 demonstrations, or a same-$\sigma$ equality recipe restore execution; a
 bare schema list does not (Table~\ref{tab:ident32}).
-A written hop saturates, as does a non-LLM router: that is a control.
-A high English two-path rate does not imply that the same model can join
-once relation strings are opaque.
-Under two same-type routes the named-arm Wiki-H5 rate is
-packaging-sensitive (OpenAI $10$--$30/32$); the typical locked named-arm
-response is \texttt{UNKNOWN}, not a random decoy.
+A high English two-path rate does not imply the same join once relations
+are opaque. Named-arm Wiki-H5 is packaging-sensitive (OpenAI $10$--$30/32$);
+the typical locked response is \texttt{UNKNOWN}, not a random decoy.
 OIR diagnoses residual join ability after readable relations and retrieved
-paths are withheld. PrivGemo keeps those paths and answers locally
-\citep{privgemo2026}. The two protocols are not interchangeable.
+paths are withheld; PrivGemo keeps those paths and answers locally
+\citep{privgemo2026}.
 
 \section{Limitations}
 \label{sec:limitations}
 
-\textsc{Wiki-H5} is OpenAI-shaped: Grok named-arm English two-path is already
-$4/32$ (arm-neutral $24/32$).
+Named-arm \textsc{Wiki-H5} DiD is most readable for OpenAI
+(Table~\ref{tab:threeway}; Grok named-arm English two-path $4/32$).
 The format token \texttt{<city\_or\_UNKNOWN>} makes six P159 golds ill-posed;
 the 26 city items keep $26/26$ vs.\ $5/26$.
 The suite is $n{=}32$ of 73 records, one template, one seed; decoys are cyclic,
@@ -804,12 +797,11 @@ Appendix cells additionally use 2WikiMultihopQA (Apache-2.0;
 \citealp{ho2020constructing}) and Spider (CC-BY-SA-4.0;
 \citealp{yu2018spider}).
 No personally sensitive information is used. Model generations are not
-released as a corpus. Isolation quizzes (\texttt{runs/}) and exact-match
-scores (\texttt{results/}) are at \url{https://github.com/pankajnits/oir}.
+released as a corpus. Isolation quizzes and exact-match scores are at
+\url{https://github.com/pankajnits/oir}.
 OIR is a diagnostic, not a deployed anonymizer: treating HMAC seals as a
 confidentiality mechanism would over-trust prompts that still contain
-English names on the primary $2{\times}2$. The intended use is to test
-whether a claimed join survives sealed relation strings.
+English names on the primary $2{\times}2$.
 
 \section{Conclusion}
 
@@ -817,15 +809,15 @@ Unique-route sealed execution succeeds with the start in $q$ (opaque unique
 OpenAI $32/32$; both-opaque unique $32/32$ on three families).
 When two same-type routes compete without an explicit map, models typically
 return \texttt{UNKNOWN} rather than the decoy.
-The named-arm Wiki-H5 lock is OpenAI $6/32$; header and case-id packaging
-move the same graphs across $10$--$30/32$, so that cell is not a constant of
-opacity. OpenAI both-opaque two-path is $1/32$.
+The named-arm Wiki-H5 lock is OpenAI $6/32$; OpenAI header and case-id
+packaging move the same graphs across $10$--$30/32$, so that cell is not a
+constant of opacity. OpenAI both-opaque two-path is $1/32$.
 That is an underspecified interface, not a scored $(r_1,r_2)$ and not a
 proof that traversal failed.
 English predicates, an equality recipe, or matched demonstrations restore
 end-to-end accuracy.
-The $2{\times}2$ is OpenAI-shaped: Grok named-arm English two-path is already
-$4/32$.
+The three-family pattern is \texttt{UNKNOWN} rather than decoy, not a single
+$2{\times}2$ rate.
 
 \FloatBarrier
 \begin{thebibliography}{99}
@@ -983,7 +975,7 @@ Variational Reasoning for Question Answering with Knowledge Graph.
 \label{app:protocol}
 
 Isolation quizzes (\texttt{runs/}) and locked scores (\texttt{results/})
-are at \url{https://github.com/pankajnits/oir/releases/tag/v1.0.4} (Python $\ge 3.10$). OpenAI cells:
+are at \url{https://github.com/pankajnits/oir/releases/tag/v1.0.5} (Python $\ge 3.10$). OpenAI cells:
 \texttt{gpt-5.6-sol}, no tools, one sample, August 2026 snapshot,
 temperature omitted, \texttt{max\_completion\_tokens} 512;
 \texttt{reasoning\_effort} was omitted, and the runner stores the parsed
@@ -1010,7 +1002,7 @@ in \texttt{results/} is \texttt{results/SHA256SUMS} (regenerate with
 \texttt{longctx\_1m*} are omitted). That file is a hash pin, not a
 timestamped preregistration. Verify with
 \texttt{shasum -c results/SHA256SUMS}.
-Cite GitHub release tag \texttt{v1.0.4} rather than branch \texttt{HEAD}.
+Cite GitHub release tag \texttt{v1.0.5} rather than branch \texttt{HEAD}.
 No models were trained. OpenAI cells used Chat Completions on CPU-side API
 calls (\texttt{max\_completion\_tokens} 512; header$\times$decoy 4096).
 \textsc{Wiki-H5} isolation is 32 items $\times$ five named arms;
@@ -1095,6 +1087,9 @@ Composer and Grok same day, Cursor SDK, \texttt{--preamble none},
 $224/224$ finished: H5 $6/2$ and $0/0$; K2 $20/13$ and $0/0$;
 no ARM $21/18$ and $6/1$; English $26$ and $24$
 (markdown wrappers on four Composer answers stripped at score time).
+A named-arm English Grok rerun with the prompt file verbatim (no Cursor
+preamble; tag \texttt{grok45pn}) stays $4/32$ (rate, not item identity):
+the $24/32$ recovery is arm-neutral ids, not that prefix.
 Arm-neutral English vs.\ no-ARM cyclic opaque is Grok $24/32$ vs.\ $6/32$
 (McNemar $18$ vs.\ $0$, $p{=}7.6{\times}10^{-6}$); OpenAI $29$ vs.\ $25$ and
 Composer $26$ vs.\ $21$ are underpowered at $n{=}32$.
