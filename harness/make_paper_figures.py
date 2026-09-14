@@ -133,8 +133,8 @@ def main():
             zorder=4,
         )
         if golds[i] < 0.5:
-            y_txt = golds[i] + decoys[i] + max(unks[i] * 0.45, 0.08)
-            va, col = "center", "#111"
+            # Exact-match rate on the gold stack, not in the UNKNOWN band.
+            y_txt, va, col = max(golds[i] * 0.52, 0.03), "center", "white"
         elif golds[i] < 0.88:
             y_txt, va, col = min(golds[i] + 0.06, 0.92), "bottom", "#111"
         else:
@@ -147,6 +147,7 @@ def main():
             va=va,
             fontsize=8,
             color=col,
+            zorder=5,
         )
     ax.set_xticks(x)
     ax.set_xticklabels(labels)

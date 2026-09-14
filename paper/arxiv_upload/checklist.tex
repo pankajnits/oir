@@ -8,7 +8,7 @@
 \item {\bf Claims}
 \item[] Question: Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?
 \item[] Answer: \answerYes{}
-\item[] Justification: The abstract and introduction state a measurement protocol, unique-path sealed traversal, and packaging-sensitive abstention under two competing routes. They treat the named-arm DiD as most readable for OpenAI, not as a ranking of families, and do not claim a confidentiality proof or a scored $(r_1,r_2)$.
+\item[] Justification: The abstract and introduction state a measurement protocol, unique-path sealed traversal, and packaging-sensitive abstention under two competing routes. They report named-arm Wiki-H5 and family$\times$packaging exact-match rates, not a ranking of families, and do not claim a confidentiality proof or a scored $(r_1,r_2)$.
 \item[] Guidelines:
 \begin{itemize}
 \item The answer \answerNA{} means that the abstract and introduction do not include the claims made in the paper.
@@ -20,7 +20,7 @@
 \item {\bf Limitations}
 \item[] Question: Does the paper discuss the limitations of the work performed by the authors?
 \item[] Answer: \answerYes{}
-\item[] Justification: Section~\ref{sec:limitations} states that named-arm Wiki-H5 DiD is most readable for OpenAI, $n{=}32$ on one template, cyclic decoys, packaging sensitivity, harness mismatch, inferred rather than scored $(r_1,r_2)$, and controls not evaluated here (forced-choice, short symbols, second seed).
+\item[] Justification: Section~\ref{sec:limitations} states that named-arm Wiki-H5 DiD is most readable for OpenAI, $n{=}32$ on one template (reused on later suites), cyclic decoys, 512 vs.\ 4096/medium packaging, harness mismatch, Dual empty completions, inferred rather than scored $(r_1,r_2)$, OpenAI-only \textsc{Movie-B}/\textsc{Wiki-Shuf}, and controls not evaluated here (forced-choice, short symbols, second seed).
 \item[] Guidelines:
 \begin{itemize}
 \item The answer \answerNA{} means that the paper has no limitation while the answer \answerNo{} means that the paper has limitations, but those are not discussed in the paper.
@@ -40,7 +40,7 @@
 \item {\bf Experimental result reproducibility}
 \item[] Question: Does the paper fully disclose all the information needed to reproduce the main experimental results of the paper to the extent that it affects the main claims and/or conclusions of the paper (regardless of whether the code and data are provided or not)?
 \item[] Answer: \answerYes{}
-\item[] Justification: Section~\ref{sec:method} and Appendix~\ref{app:protocol} give seeds, HMAC width, isolation vs.\ batch, scoring (exact match; empty completions as \texttt{UNKNOWN}), model endpoints, and which cells are answer-line locks. Quizzes are in \texttt{runs/}; locked scores in \texttt{results/}.
+\item[] Justification: Section~\ref{sec:method} and Appendix~\ref{app:protocol} give seeds, HMAC width, isolation vs.\ batch, scoring (Wiki-H5/Wiki-OO: explicit \texttt{UNKNOWN}; Dual/no-hop OpenAI: empty completions stored as \texttt{UNKNOWN}; new runner: \texttt{NO\_OUTPUT}), model endpoints, and which cells are answer-line locks. Quizzes are in \texttt{runs/}; locked scores in \texttt{results/}.
 \item[] Guidelines:
 \begin{itemize}
 \item The answer \answerNA{} means that the paper does not include experiments.
@@ -89,7 +89,7 @@
 \item {\bf Code of ethics}
 \item[] Question: Does the research conducted in the paper conform, in every respect, with the NeurIPS Code of Ethics \url{https://neurips.cc/public/EthicsGuidelines}?
 \item[] Answer: \answerYes{}
-\item[] Justification: Instances use licensed public graphs. No human subjects, no crowdwork, and no release of model generations as a corpus. HMAC is not treated as a privacy mechanism (Ethical considerations).
+\item[] Justification: Instances use licensed public graphs. No human subjects, no crowdwork. Per-item replies are hash-pinned, not a training dump. HMAC is not treated as a privacy mechanism (Ethical considerations).
 \item[] Guidelines:
 \begin{itemize}
 \item The answer \answerNA{} means that the authors have not reviewed the NeurIPS Code of Ethics.
@@ -116,7 +116,7 @@
 \item {\bf Licenses for existing assets}
 \item[] Question: Are the creators or original owners of assets (e.g., code, data, models), used in the paper, properly credited and are the license and terms of use explicitly mentioned and properly respected?
 \item[] Answer: \answerYes{}
-\item[] Justification: Wikidata CEO records (CC0), WikiMovies/MetaQA as publicly released, 2WikiMultihopQA (Apache-2.0), and Spider (CC-BY-SA-4.0) are cited with licenses in Ethical considerations.
+\item[] Justification: Wikidata CEO records (CC0), WikiMovies/MetaQA as publicly released (upstream papers do not name a license string), 2WikiMultihopQA (Apache-2.0), and Spider (CC-BY-SA-4.0) are cited in Ethical considerations.
 \item[] Guidelines:
 \begin{itemize}
 \item The answer \answerNA{} means that the paper does not use existing assets.
@@ -126,7 +126,7 @@
 \item {\bf New assets}
 \item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?
 \item[] Answer: \answerYes{}
-\item[] Justification: Isolation quizzes, locked scores, and SHA-256 pins are documented in Appendix~\ref{app:protocol} and the repository README. Model generations are not released as a corpus.
+\item[] Justification: Isolation quizzes, locked scores, SHA-256 pins, and per-item reply files are documented in Appendix~\ref{app:protocol} and the repository README. Replies are not released as a training corpus.
 \item[] Guidelines:
 \begin{itemize}
 \item The answer \answerNA{} means that the paper does not release new assets.
