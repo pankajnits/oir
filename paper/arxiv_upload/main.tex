@@ -385,7 +385,7 @@ the decoy 2-hop in CONTEXT; that order is the same in the English and opaque
 arms. A shuffled listing of the same 32 graphs and HMAC keys (16 gold-first,
 16 decoy-first) is a robustness check on a later endpoint snapshot
 (Appendix~\ref{app:protocol}): English two-path $29/32$, opaque two-path
-$5/32$ (\texttt{UNKNOWN} $25/32$, decoy $1/32$). Opaque gold-first is $3/16$
+$5/32$ (\texttt{UNKNOWN} $25/32$, decoy $1/32$, other $1/32$). Opaque gold-first is $3/16$
 vs.\ decoy-first $2/16$: putting the decoy route first does not raise decoy
 selection.
 
@@ -403,7 +403,7 @@ The format token is \texttt{<city\_or\_UNKNOWN>}, but six gold HQs are not
 cities (Appendix~\ref{app:protocol}). A model that obeys the format on those
 items must emit \texttt{UNKNOWN}. The $n{=}32$ hash-pinned cell remains the primary
 report; Section~\ref{sec:fact2x2} also scores the 26 city-valued items.
-English two-path is $31/32$ under that CONTEXT-only instruction, so the
+OpenAI English two-path is $31/32$ under that CONTEXT-only instruction, so the
 line does not by itself force abstention.
 Readable names (Eisner, Burbank) still leave OpenAI at \texttt{UNKNOWN}
 $24/32$ on opaque two-path: either parametric HQ is treated as
