@@ -64,6 +64,35 @@ def test_headline_cells_contain_no_empty_completions():
         assert kinds and not kinds & {"legacy_empty", "no_output"}
 
 
+def test_composer25tx_unique_first_pred_is_32():
+    """Supplemental Wiki-OO unique replies recompute to 32/32 from the answer line."""
+    gold = {
+        r["id"]: r["gold"]
+        for r in json.loads((ROOT / "results" / "entity_rel_2x2_iso_composer25tx.json").read_text())["rows"]
+        if r["arm"] == "OO_UNIQUE"
+    }
+    stem = ROOT / "results" / "entity_rel_2x2_iso_harness_replies_composer25tx" / "OO_UNIQUE"
+    ok = 0
+    for i in range(32):
+        cid = f"ER22_OO_UNIQUE_{i}"
+        pred = rp.first_pred((stem / f"item_{i}.txt").read_text())
+        assert pred, cid
+        ok += pred == gold[cid]
+    assert ok == 32
+
+
+def test_no_stale_empty_answer_line_with_recoverable_tail():
+    """Locked item_*.txt must not store an empty first-line pred when the tail has ANSWER_*."""
+    stale = []
+    for p in (ROOT / "results").rglob("item_*.txt"):
+        text = p.read_text(errors="replace")
+        if rp.first_pred(text):
+            continue
+        if rp.ANS_SEAL.search(text) or rp.ANS_PLAIN.search(text):
+            stale.append(p.relative_to(ROOT).as_posix())
+    assert stale == []
+
+
 def test_entity_seal_rejects_distinct_names_sharing_a_seal():
     s = EntitySeal(b"k" * 16)
     s.atom("東京 Tower")

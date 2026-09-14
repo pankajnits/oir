@@ -16,12 +16,23 @@ from collections.abc import Callable, Iterable, Sequence
 from dataclasses import asdict, dataclass, field
 from importlib.metadata import PackageNotFoundError
 from importlib.metadata import version as _pkg_version
+from pathlib import Path
 from typing import Any
 
-try:
-    __version__ = _pkg_version("oir-layer")
-except PackageNotFoundError:
-    __version__ = "0.1.0"
+
+def _package_version() -> str:
+    pyproject = Path(__file__).resolve().parent.parent / "pyproject.toml"
+    if pyproject.is_file():
+        m = re.search(r'(?m)^version = "([^"]+)"', pyproject.read_text())
+        if m:
+            return m.group(1)
+    try:
+        return _pkg_version("oir-layer")
+    except PackageNotFoundError:
+        return "0.0.0"
+
+
+__version__ = _package_version()
 
 __all__ = [
     "EntitySeal",

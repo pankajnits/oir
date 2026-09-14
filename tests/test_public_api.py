@@ -1,14 +1,26 @@
 """Public package surface — imports a developer would copy from the README."""
 from __future__ import annotations
 
+import re
+from pathlib import Path
+
 import oir
 import pytest
 from oir import EntitySeal, LeakError, MiddleLayer, SealedChat, SealRouter
 from oir.chat import parse_sealed_answer
 
+_ROOT = Path(__file__).resolve().parents[1]
+
+
+def _pyproject_version() -> str:
+    text = (_ROOT / "pyproject.toml").read_text()
+    m = re.search(r'(?m)^version = "([^"]+)"', text)
+    assert m, "pyproject.toml has no version"
+    return m.group(1)
+
 
 def test_version_and_all():
-    assert oir.__version__ == "0.1.0"
+    assert oir.__version__ == _pyproject_version()
     for name in (
         "MiddleLayer",
         "SealedChat",
