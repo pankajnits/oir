@@ -1,0 +1,35 @@
+{
+  "id": "DP200_NOVEL_99",
+  "arm": "NOVEL",
+  "item": 99,
+  "prompt_path": "runs/dualpath_wikimovies_iso_n200/NOVEL/item_99/prompt.txt",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_SEALED[DP200_NOVEL_99]: UNKNOWN",
+  "elapsed_s": 4.567,
+  "utc": "2026-09-15T09:23:25.231957+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJflU5HmwaHHO4son3Ew7IfyQN66",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789464201,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 180,
+    "prompt_tokens": 595,
+    "total_tokens": 775,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 157,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

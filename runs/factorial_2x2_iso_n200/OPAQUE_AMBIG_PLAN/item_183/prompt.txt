@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_183]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_183 #####
+QUESTION:
+What city is the headquarters of the company led by Ebba_Ljungerud?
+
+PATH_QUERY
+START Ebba_Ljungerud
+R1 E9983df46525a
+R2 E6bc2ab16ae3d
+Execute path; return final tail only.
+
+CONTEXT:
+Ebba_Ljungerud | E9983df46525a | Paradox_Interactive
+Paradox_Interactive | E6bc2ab16ae3d | Stockholm
+Ebba_Ljungerud | E1ea5b0857c41 | Paymill
+Paymill | E018419d27db2 | Munich

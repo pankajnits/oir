@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_123 #####
+PATH_QUERY
+START Gail_F._Goodman
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Gail_F._Goodman | works_at | Constant_Contact
+Constant_Contact | headquartered_in | Waltham
+DecoyCo_Constant_Contact | headquartered_in | DecoyHQ_Waltham
+Constant_Contact | owned_by | Hold_Constant_Contact
+Hold_Constant_Contact | meta_of | Constant_Contact
+Constant_Contact | partner_of | Partner_Constant_Contact
+Partner_Constant_Contact | meta_of | Constant_Contact
+Decoy_DecoyCo_Constant_Contact | works_at | DecoyCo_Constant_Contact

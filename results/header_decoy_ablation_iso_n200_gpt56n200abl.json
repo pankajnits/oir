@@ -1,0 +1,115 @@
+{
+  "tag": "gpt56n200abl",
+  "harness": "results/header_decoy_ablation_iso_n200_harness.json",
+  "cells": {
+    "OPQ_H5_CYC": {
+      "gold": 129,
+      "unknown": 53,
+      "decoy": 18
+    },
+    "OPQ_H5_CRV": {
+      "unknown": 115,
+      "decoy": 41,
+      "gold": 44
+    },
+    "OPQ_K2_CYC": {
+      "gold": 179,
+      "decoy": 16,
+      "unknown": 5
+    },
+    "OPQ_K2_CRV": {
+      "gold": 144,
+      "unknown": 24,
+      "decoy": 32
+    },
+    "OPQ_NONE_CYC": {
+      "gold": 174,
+      "other": 4,
+      "decoy": 17,
+      "unknown": 5
+    },
+    "OPQ_NONE_CRV": {
+      "gold": 151,
+      "decoy": 33,
+      "unknown": 16
+    },
+    "ENG_NONE_CYC": {
+      "gold": 197,
+      "other": 3
+    }
+  },
+  "contrasts": [
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_NONE_CYC",
+      "n_paired": 200,
+      "a_only": 6,
+      "b_only": 51,
+      "mcnemar_exact_p": 5.676193126635809e-10
+    },
+    {
+      "a": "OPQ_K2_CYC",
+      "b": "OPQ_NONE_CYC",
+      "n_paired": 200,
+      "a_only": 12,
+      "b_only": 7,
+      "mcnemar_exact_p": 0.359283447265625
+    },
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_K2_CYC",
+      "n_paired": 200,
+      "a_only": 5,
+      "b_only": 55,
+      "mcnemar_exact_p": 1.0382663478969434e-11
+    },
+    {
+      "a": "OPQ_H5_CRV",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 200,
+      "a_only": 4,
+      "b_only": 111,
+      "mcnemar_exact_p": 3.4507445333269977e-28
+    },
+    {
+      "a": "OPQ_K2_CRV",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 200,
+      "a_only": 22,
+      "b_only": 29,
+      "mcnemar_exact_p": 0.4010619910279374
+    },
+    {
+      "a": "OPQ_H5_CRV",
+      "b": "OPQ_K2_CRV",
+      "n_paired": 200,
+      "a_only": 2,
+      "b_only": 102,
+      "mcnemar_exact_p": 5.384961754264932e-28
+    },
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_H5_CRV",
+      "n_paired": 200,
+      "a_only": 95,
+      "b_only": 10,
+      "mcnemar_exact_p": 1.5854524913510498e-18
+    },
+    {
+      "a": "OPQ_K2_CYC",
+      "b": "OPQ_K2_CRV",
+      "n_paired": 200,
+      "a_only": 43,
+      "b_only": 8,
+      "mcnemar_exact_p": 6.867117736675254e-07
+    },
+    {
+      "a": "OPQ_NONE_CYC",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 200,
+      "a_only": 30,
+      "b_only": 7,
+      "mcnemar_exact_p": 0.00019107642583549023
+    }
+  ]
+}

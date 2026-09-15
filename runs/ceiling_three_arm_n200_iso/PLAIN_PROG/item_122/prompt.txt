@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_122 #####
+PATH_QUERY
+START Ivica_Todori
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ivica_Todori | works_at | Agrokor
+Agrokor | headquartered_in | Zagreb
+DecoyCo_Agrokor | headquartered_in | DecoyHQ_Zagreb
+Agrokor | owned_by | Hold_Agrokor
+Hold_Agrokor | meta_of | Agrokor
+Agrokor | partner_of | Partner_Agrokor
+Partner_Agrokor | meta_of | Agrokor
+Decoy_DecoyCo_Agrokor | works_at | DecoyCo_Agrokor

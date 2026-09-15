@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_52 #####
+PATH_QUERY
+START Claudio_Graziano
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Claudio_Graziano | works_at | European_Union_Military_Committee
+European_Union_Military_Committee | headquartered_in | Brussels
+DecoyCo_European_Union_Military_Committee | headquartered_in | DecoyHQ_Brussels
+European_Union_Military_Committee | owned_by | Hold_European_Union_Military_Committee
+Hold_European_Union_Military_Committee | meta_of | European_Union_Military_Committee
+European_Union_Military_Committee | partner_of | Partner_European_Union_Military_Committee
+Partner_European_Union_Military_Committee | meta_of | European_Union_Military_Committee
+Decoy_DecoyCo_European_Union_Military_Committee | works_at | DecoyCo_European_Union_Military_Committee

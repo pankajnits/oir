@@ -1,0 +1,36 @@
+{
+  "id": "H200_67fbb0de85",
+  "arm": "OPQ_K2_CYC",
+  "item": 27,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CYC/item_27/prompt.txt",
+  "pred": "Likino-Dulyovo",
+  "raw": "ANSWER_PLAIN[H200_67fbb0de85]: Likino-Dulyovo",
+  "elapsed_s": 5.251,
+  "utc": "2026-09-15T08:45:18.878900+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ4sOiDSIUUv4bflP2panf45GSzY",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461914,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 191,
+    "prompt_tokens": 164,
+    "total_tokens": 355,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 163,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

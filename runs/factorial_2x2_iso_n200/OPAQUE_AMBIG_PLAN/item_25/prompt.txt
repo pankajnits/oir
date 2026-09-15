@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_25]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_25 #####
+QUESTION:
+What city is the headquarters of the company led by Gustaf_Sparre?
+
+PATH_QUERY
+START Gustaf_Sparre
+R1 E340b5139f54f
+R2 E42703199c51e
+Execute path; return final tail only.
+
+CONTEXT:
+Gustaf_Sparre | E340b5139f54f | Hjo_Stenstorps_J_rnv_g
+Hjo_Stenstorps_J_rnv_g | E42703199c51e | Hjo
+Gustaf_Sparre | E6bc78f4c7f6d | Civita
+Civita | E65392acfbcbf | Oslo

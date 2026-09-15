@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_190]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG: opaque relations, English entities; two 2-hops from start.
+##### ID F200_OPAQUE_AMBIG_190 #####
+QUESTION:
+What city is the headquarters of the company led by Maciej_Banach?
+
+CONTEXT:
+Maciej_Banach | Ef88800ac4a8d | Grupa_Handlo-Budowa
+Grupa_Handlo-Budowa | Ec945ba5e15fa | Bydgoszcz
+Maciej_Banach | E5e6aca1b4c84 | Suffolk_Construction_Company
+Suffolk_Construction_Company | Eeeb105c32715 | Boston

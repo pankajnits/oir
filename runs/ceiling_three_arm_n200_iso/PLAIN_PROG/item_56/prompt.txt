@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_56 #####
+PATH_QUERY
+START Fernando_Roig_Alfonso
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Fernando_Roig_Alfonso | works_at | Pamesa_Cer_mica
+Pamesa_Cer_mica | headquartered_in | Villarreal
+DecoyCo_Pamesa_Cer_mica | headquartered_in | DecoyHQ_Villarreal
+Pamesa_Cer_mica | owned_by | Hold_Pamesa_Cer_mica
+Hold_Pamesa_Cer_mica | meta_of | Pamesa_Cer_mica
+Pamesa_Cer_mica | partner_of | Partner_Pamesa_Cer_mica
+Partner_Pamesa_Cer_mica | meta_of | Pamesa_Cer_mica
+Decoy_DecoyCo_Pamesa_Cer_mica | works_at | DecoyCo_Pamesa_Cer_mica

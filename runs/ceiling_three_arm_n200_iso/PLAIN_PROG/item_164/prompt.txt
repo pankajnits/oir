@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_164 #####
+PATH_QUERY
+START Andy_Penn
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Andy_Penn | works_at | Telstra
+Telstra | headquartered_in | Melbourne
+DecoyCo_Telstra | headquartered_in | DecoyHQ_Melbourne
+Telstra | owned_by | Hold_Telstra
+Hold_Telstra | meta_of | Telstra
+Telstra | partner_of | Partner_Telstra
+Partner_Telstra | meta_of | Telstra
+Decoy_DecoyCo_Telstra | works_at | DecoyCo_Telstra

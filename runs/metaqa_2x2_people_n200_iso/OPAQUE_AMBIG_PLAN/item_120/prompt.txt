@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_120]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_120 #####
+QUESTION:
+Who directed a movie that Hugo Chávez starred in?
+
+PATH_QUERY
+START Hugo Chávez
+R1 E048a731d2680
+R2 E650dcd19413a
+Execute path; return final tail only.
+
+CONTEXT:
+Hugo Chávez | E048a731d2680 | South of the Border
+South of the Border | E650dcd19413a | Oliver Stone
+South of the Border | Eccbbe86e0bca | Tariq Ali

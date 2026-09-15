@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_126]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_126 #####
+QUESTION:
+What city is the headquarters of the company led by Nikodem_Bo_cza-Tomaszewski?
+
+PATH_QUERY
+START Nikodem_Bo_cza-Tomaszewski
+R1 E7960328fded2
+R2 E4f8eb3a72b6e
+Execute path; return final tail only.
+
+CONTEXT:
+Nikodem_Bo_cza-Tomaszewski | E7960328fded2 | Exatel
+Exatel | E4f8eb3a72b6e | Warsaw
+Nikodem_Bo_cza-Tomaszewski | E31e2c7bc7a8b | Reckitt
+Reckitt | E7b947f0f387a | Slough

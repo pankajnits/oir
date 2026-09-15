@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_48]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_48 #####
+QUESTION:
+What city is the headquarters of the company led by Henning_Windelband?
+
+PATH_QUERY
+START Henning_Windelband
+R1 E1d5b198e0406
+R2 Edc8f4cebd5fc
+Execute path; return final tail only.
+
+CONTEXT:
+Henning_Windelband | E1d5b198e0406 | youngfilms
+youngfilms | Edc8f4cebd5fc | Hamburg
+Henning_Windelband | E2e6dda8008b9 | Sound_Transit
+Sound_Transit | Edfaf55463c30 | Seattle

@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_99]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_99 #####
+QUESTION:
+What city is the headquarters of the company led by Werner_Hasselblatt?
+
+CONTEXT:
+Werner_Hasselblatt | works_at | Verband_der_deutschen_Minderheiten_in_Europa
+Verband_der_deutschen_Minderheiten_in_Europa | headquartered_in | Vienna
+Werner_Hasselblatt | partner_of | Ocado
+Ocado | located_in | Hatfield

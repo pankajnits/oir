@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_111 #####
+PATH_QUERY
+START Yuval_Ben-Itzhak
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Yuval_Ben-Itzhak | works_at | Socialbakers
+Socialbakers | headquartered_in | Plze
+DecoyCo_Socialbakers | headquartered_in | DecoyHQ_Plze
+Socialbakers | owned_by | Hold_Socialbakers
+Hold_Socialbakers | meta_of | Socialbakers
+Socialbakers | partner_of | Partner_Socialbakers
+Partner_Socialbakers | meta_of | Socialbakers
+Decoy_DecoyCo_Socialbakers | works_at | DecoyCo_Socialbakers

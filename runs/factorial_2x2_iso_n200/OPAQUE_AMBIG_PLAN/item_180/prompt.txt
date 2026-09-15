@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_180]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_180 #####
+QUESTION:
+What city is the headquarters of the company led by Boyan_Slat?
+
+PATH_QUERY
+START Boyan_Slat
+R1 Eb39e1640d963
+R2 E3a42b401d7cf
+Execute path; return final tail only.
+
+CONTEXT:
+Boyan_Slat | Eb39e1640d963 | The_Ocean_Cleanup_Foundation
+The_Ocean_Cleanup_Foundation | E3a42b401d7cf | Rotterdam
+Boyan_Slat | Ee60fec11674d | growtm
+growtm | Eb64692651680 | Bengaluru

@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_108",
+  "arm": "OPAQUE_AMBIG",
+  "item": 108,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG/item_108/prompt.txt",
+  "pred": "Ewald André Dupont",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_108]: Ewald André Dupont",
+  "elapsed_s": 3.095,
+  "utc": "2026-09-15T09:16:23.244797+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJYyb3E1dRiaviwqRqVHvNJbZeTM",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463780,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 90,
+    "prompt_tokens": 152,
+    "total_tokens": 242,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 61,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

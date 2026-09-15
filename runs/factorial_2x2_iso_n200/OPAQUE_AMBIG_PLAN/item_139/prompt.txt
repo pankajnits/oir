@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_139]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_139 #####
+QUESTION:
+What city is the headquarters of the company led by Dani_le_Marcovici?
+
+PATH_QUERY
+START Dani_le_Marcovici
+R1 E4cf407dca3c5
+R2 Ef499cd855d7f
+Execute path; return final tail only.
+
+CONTEXT:
+Dani_le_Marcovici | E4cf407dca3c5 | Raja_Group
+Raja_Group | Ef499cd855d7f | Tremblay-en-France
+Dani_le_Marcovici | E1b4e83aa15a7 | Mitteldeutscher_Basketball_Club
+Mitteldeutscher_Basketball_Club | Ee5cc2a2f7cf2 | Wei_enfels

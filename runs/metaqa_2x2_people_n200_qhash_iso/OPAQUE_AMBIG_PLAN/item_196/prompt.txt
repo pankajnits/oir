@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_196]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_196 #####
+QUESTION:
+Who Ec6cc7584ef13 a E3f10f207b71b E80c8020cd775 [Zach Gilford] E7f6e08ed8350 Ecd89fce266ac?
+
+PATH_QUERY
+START Zach Gilford
+R1 Ec2c9c4d4b0b4
+R2 E2fb79874d6b1
+Execute path; return final tail only.
+
+CONTEXT:
+Zach Gilford | Ec2c9c4d4b0b4 | Devil's Due
+Devil's Due | E2fb79874d6b1 | Tyler Gillett
+Devil's Due | E3a051260bfe9 | Lindsay Devlin

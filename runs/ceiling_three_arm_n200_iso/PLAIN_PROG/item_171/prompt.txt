@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_171 #####
+PATH_QUERY
+START Nick_Baker
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nick_Baker | works_at | RedBalloon
+RedBalloon | headquartered_in | Sydney
+DecoyCo_RedBalloon | headquartered_in | DecoyHQ_Sydney
+RedBalloon | owned_by | Hold_RedBalloon
+Hold_RedBalloon | meta_of | RedBalloon
+RedBalloon | partner_of | Partner_RedBalloon
+Partner_RedBalloon | meta_of | RedBalloon
+Decoy_DecoyCo_RedBalloon | works_at | DecoyCo_RedBalloon

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_188 #####
+PATH_QUERY
+START Nikolai_Kotlyar
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nikolai_Kotlyar | works_at | Nakhodka_Active_Marine_Fishery_Base
+Nakhodka_Active_Marine_Fishery_Base | headquartered_in | Nakhodka
+DecoyCo_Nakhodka_Active_Marine_Fishery_Base | headquartered_in | DecoyHQ_Nakhodka
+Nakhodka_Active_Marine_Fishery_Base | owned_by | Hold_Nakhodka_Active_Marine_Fishery_Base
+Hold_Nakhodka_Active_Marine_Fishery_Base | meta_of | Nakhodka_Active_Marine_Fishery_Base
+Nakhodka_Active_Marine_Fishery_Base | partner_of | Partner_Nakhodka_Active_Marine_Fishery_Base
+Partner_Nakhodka_Active_Marine_Fishery_Base | meta_of | Nakhodka_Active_Marine_Fishery_Base
+Decoy_DecoyCo_Nakhodka_Active_Marine_Fishery_Base | works_at | DecoyCo_Nakhodka_Active_Marine_Fishery_Base

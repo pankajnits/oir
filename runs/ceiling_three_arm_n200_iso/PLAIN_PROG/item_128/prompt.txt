@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_128 #####
+PATH_QUERY
+START Herna_Verhagen
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Herna_Verhagen | works_at | PostNL
+PostNL | headquartered_in | The_Hague
+DecoyCo_PostNL | headquartered_in | DecoyHQ_The_Hague
+PostNL | owned_by | Hold_PostNL
+Hold_PostNL | meta_of | PostNL
+PostNL | partner_of | Partner_PostNL
+Partner_PostNL | meta_of | PostNL
+Decoy_DecoyCo_PostNL | works_at | DecoyCo_PostNL

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_34]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_34 #####
+QUESTION:
+What city is the headquarters of the company led by Dan_Barker?
+
+PATH_QUERY
+START Dan_Barker
+R1 E15138e9d1a4e
+R2 Ee79268ff9435
+Execute path; return final tail only.
+
+CONTEXT:
+Dan_Barker | E15138e9d1a4e | Freedom_from_Religion_Foundation
+Freedom_from_Religion_Foundation | Ee79268ff9435 | Madison
+Dan_Barker | Ea157da0da47b | MyPurpleFolder
+MyPurpleFolder | Ee070d4017f09 | Dallas

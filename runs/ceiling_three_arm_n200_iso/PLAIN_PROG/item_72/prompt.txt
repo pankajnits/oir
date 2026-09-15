@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_72 #####
+PATH_QUERY
+START Gerardo_Salvador_Merino
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Gerardo_Salvador_Merino | works_at | Ebro
+Ebro | headquartered_in | Barcelona
+DecoyCo_Ebro | headquartered_in | DecoyHQ_Barcelona
+Ebro | owned_by | Hold_Ebro
+Hold_Ebro | meta_of | Ebro
+Ebro | partner_of | Partner_Ebro
+Partner_Ebro | meta_of | Ebro
+Decoy_DecoyCo_Ebro | works_at | DecoyCo_Ebro

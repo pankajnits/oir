@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_AMBIG_106",
+  "arm": "OPAQUE_AMBIG",
+  "item": 106,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_106/prompt.txt",
+  "pred": "Ron Howard and Gregory Widen",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_106]: Ron Howard and Gregory Widen",
+  "elapsed_s": 3.06,
+  "utc": "2026-09-15T09:20:03.056718+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJcWhKPwcuUGqtHsH4EzDUNMafpY",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789464000,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 101,
+    "prompt_tokens": 186,
+    "total_tokens": 287,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 70,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

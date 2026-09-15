@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_64 #####
+PATH_QUERY
+START Keith_Creel
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Keith_Creel | works_at | Canadian_Pacific_Kansas_City
+Canadian_Pacific_Kansas_City | headquartered_in | Calgary
+DecoyCo_Canadian_Pacific_Kansas_City | headquartered_in | DecoyHQ_Calgary
+Canadian_Pacific_Kansas_City | owned_by | Hold_Canadian_Pacific_Kansas_City
+Hold_Canadian_Pacific_Kansas_City | meta_of | Canadian_Pacific_Kansas_City
+Canadian_Pacific_Kansas_City | partner_of | Partner_Canadian_Pacific_Kansas_City
+Partner_Canadian_Pacific_Kansas_City | meta_of | Canadian_Pacific_Kansas_City
+Decoy_DecoyCo_Canadian_Pacific_Kansas_City | works_at | DecoyCo_Canadian_Pacific_Kansas_City

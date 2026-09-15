@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_185]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_185 #####
+QUESTION:
+Who Ed5e039feb2cb a E77048c07a2f8 E1fef5308fe32 [Ellen Page] E1d080bd9e1fd E5a0cc6024633?
+
+PATH_QUERY
+START Ellen Page
+R1 E86c096c7fa7b
+R2 E9e8d9429d7de
+Execute path; return final tail only.
+
+CONTEXT:
+Ellen Page | E86c096c7fa7b | Smart People
+Smart People | E9e8d9429d7de | Noam Murro
+Smart People | E098c4489ae3d | Mark Poirier

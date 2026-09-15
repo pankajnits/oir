@@ -1,0 +1,36 @@
+{
+  "id": "H200_dc8817ae82",
+  "arm": "OPQ_K2_CRV",
+  "item": 103,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CRV/item_103/prompt.txt",
+  "pred": "San_Jose",
+  "raw": "ANSWER_PLAIN[H200_dc8817ae82]: San_Jose",
+  "elapsed_s": 2.246,
+  "utc": "2026-09-15T08:47:34.681915+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ76CUy6qMdWcEZkjrhz8uQVEB2G",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462052,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 59,
+    "prompt_tokens": 176,
+    "total_tokens": 235,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 35,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_30 #####
+PATH_QUERY
+START Ibrahim_Assane_Mayaki
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ibrahim_Assane_Mayaki | works_at | New_Partnership_for_Africa_s_Development
+New_Partnership_for_Africa_s_Development | headquartered_in | Midrand
+DecoyCo_New_Partnership_for_Africa_s_Development | headquartered_in | DecoyHQ_Midrand
+New_Partnership_for_Africa_s_Development | owned_by | Hold_New_Partnership_for_Africa_s_Development
+Hold_New_Partnership_for_Africa_s_Development | meta_of | New_Partnership_for_Africa_s_Development
+New_Partnership_for_Africa_s_Development | partner_of | Partner_New_Partnership_for_Africa_s_Development
+Partner_New_Partnership_for_Africa_s_Development | meta_of | New_Partnership_for_Africa_s_Development
+Decoy_DecoyCo_New_Partnership_for_Africa_s_Development | works_at | DecoyCo_New_Partnership_for_Africa_s_Development

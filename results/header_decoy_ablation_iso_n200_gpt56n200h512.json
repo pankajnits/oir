@@ -1,0 +1,106 @@
+{
+  "tag": "gpt56n200h512",
+  "harness": "results/header_decoy_ablation_iso_n200_harness.json",
+  "cells": {
+    "OPQ_H5_CYC": {
+      "unknown": 44,
+      "gold": 134,
+      "other": 1,
+      "decoy": 20,
+      "no_output": 1
+    },
+    "OPQ_H5_CRV": {
+      "missing": 200
+    },
+    "OPQ_K2_CYC": {
+      "missing": 200
+    },
+    "OPQ_K2_CRV": {
+      "missing": 200
+    },
+    "OPQ_NONE_CYC": {
+      "missing": 200
+    },
+    "OPQ_NONE_CRV": {
+      "missing": 200
+    },
+    "ENG_NONE_CYC": {
+      "missing": 200
+    }
+  },
+  "contrasts": [
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_NONE_CYC",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_K2_CYC",
+      "b": "OPQ_NONE_CYC",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_K2_CYC",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CRV",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_K2_CRV",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CRV",
+      "b": "OPQ_K2_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_H5_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_K2_CYC",
+      "b": "OPQ_K2_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_NONE_CYC",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    }
+  ],
+  "note": "Only OPQ_H5_CYC was queried at 512 tokens (tag gpt56n200h512). Other arms missing=200 are not scores. Cite OPQ_H5_CYC gold 134/200. The seven-arm 4096/medium lock is header_decoy_ablation_iso_n200_gpt56n200abl.json."
+}

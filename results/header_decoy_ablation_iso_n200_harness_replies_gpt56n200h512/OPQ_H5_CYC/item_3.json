@@ -1,0 +1,35 @@
+{
+  "id": "H200_ff0240b946",
+  "arm": "OPQ_H5_CYC",
+  "item": 3,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_3/prompt.txt",
+  "pred": "Humleb_k",
+  "raw": "ANSWER_PLAIN[H200_ff0240b946]: Humleb_k",
+  "elapsed_s": 2.819,
+  "utc": "2026-09-15T08:51:06.339052+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJAWkDqq2WSTI6AhgDdLrODKpqzB",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462264,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 66,
+    "prompt_tokens": 175,
+    "total_tokens": 241,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 42,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

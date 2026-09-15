@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_121]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_121 #####
+QUESTION:
+Who E949fd7b39a7c a E44f75d402fb2 Eee40334512ac [Patrick Swayze] Eda51ede11541 Ec5333d469fdd?
+
+PATH_QUERY
+START Patrick Swayze
+R1 Ec5b198e9b21f
+R2 E3b1d6811b461
+Execute path; return final tail only.
+
+CONTEXT:
+Patrick Swayze | Ec5b198e9b21f | Dirty Dancing
+Dirty Dancing | E3b1d6811b461 | Emile Ardolino
+Dirty Dancing | E5d0db30c20d4 | Eleanor Bergstein

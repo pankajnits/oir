@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_102]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_102 #####
+QUESTION:
+Who Ef8d88c7986e9 a E0f46f9fa8a6d E2ca05053de09 [Matthew McConaughey] Ecd4b935ff008 E1591f54bd685?
+
+PATH_QUERY
+START Matthew McConaughey
+R1 E9b04ffede46d
+R2 Ef44d604f0a04
+Execute path; return final tail only.
+
+CONTEXT:
+Matthew McConaughey | E9b04ffede46d | We Are Marshall
+We Are Marshall | Ef44d604f0a04 | McG
+We Are Marshall | E6f39c93a2940 | Jamie Linden

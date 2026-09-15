@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_32 #####
+PATH_QUERY
+START Ola_K_llenius
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ola_K_llenius | works_at | Mercedes-Benz_AG
+Mercedes-Benz_AG | headquartered_in | Stuttgart
+DecoyCo_Mercedes-Benz_AG | headquartered_in | DecoyHQ_Stuttgart
+Mercedes-Benz_AG | owned_by | Hold_Mercedes-Benz_AG
+Hold_Mercedes-Benz_AG | meta_of | Mercedes-Benz_AG
+Mercedes-Benz_AG | partner_of | Partner_Mercedes-Benz_AG
+Partner_Mercedes-Benz_AG | meta_of | Mercedes-Benz_AG
+Decoy_DecoyCo_Mercedes-Benz_AG | works_at | DecoyCo_Mercedes-Benz_AG

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_11 #####
+PATH_QUERY
+START V_t_Vrba
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+V_t_Vrba | works_at | Webnode_AG
+Webnode_AG | headquartered_in | Zug
+DecoyCo_Webnode_AG | headquartered_in | DecoyHQ_Zug
+Webnode_AG | owned_by | Hold_Webnode_AG
+Hold_Webnode_AG | meta_of | Webnode_AG
+Webnode_AG | partner_of | Partner_Webnode_AG
+Partner_Webnode_AG | meta_of | Webnode_AG
+Decoy_DecoyCo_Webnode_AG | works_at | DecoyCo_Webnode_AG

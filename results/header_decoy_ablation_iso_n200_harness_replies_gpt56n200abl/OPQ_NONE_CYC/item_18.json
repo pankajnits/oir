@@ -1,0 +1,36 @@
+{
+  "id": "H200_9fba9a96c0",
+  "arm": "OPQ_NONE_CYC",
+  "item": 18,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_18/prompt.txt",
+  "pred": "Bellevue",
+  "raw": "ANSWER_PLAIN[H200_9fba9a96c0]: Bellevue",
+  "elapsed_s": 3.203,
+  "utc": "2026-09-15T08:48:29.195528+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ7yibGK2KTFRp1cgwlrpTCpy2q5",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462106,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 157,
+    "total_tokens": 177,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

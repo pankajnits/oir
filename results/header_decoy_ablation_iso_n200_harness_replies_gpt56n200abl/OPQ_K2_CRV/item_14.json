@@ -1,0 +1,36 @@
+{
+  "id": "H200_a3c8a114f2",
+  "arm": "OPQ_K2_CRV",
+  "item": 14,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CRV/item_14/prompt.txt",
+  "pred": "Arlington",
+  "raw": "ANSWER_PLAIN[H200_a3c8a114f2]: Arlington",
+  "elapsed_s": 4.549,
+  "utc": "2026-09-15T08:46:45.992870+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ6H5VtVXnLGPdhxGZeUVSIK626r",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462001,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 184,
+    "prompt_tokens": 176,
+    "total_tokens": 360,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 159,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

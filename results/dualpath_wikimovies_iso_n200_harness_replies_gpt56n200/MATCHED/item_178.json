@@ -1,0 +1,35 @@
+{
+  "id": "DP200_MATCHED_178",
+  "arm": "MATCHED",
+  "item": 178,
+  "prompt_path": "runs/dualpath_wikimovies_iso_n200/MATCHED/item_178/prompt.txt",
+  "pred": "E7e74408c6d4c",
+  "raw": "ANSWER_SEALED[DP200_MATCHED_178]: E7e74408c6d4c",
+  "elapsed_s": 1.69,
+  "utc": "2026-09-15T09:22:20.866703+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJelhtOrq9fUd5cPTPvdudkWChRg",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789464139,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 25,
+    "prompt_tokens": 533,
+    "total_tokens": 558,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

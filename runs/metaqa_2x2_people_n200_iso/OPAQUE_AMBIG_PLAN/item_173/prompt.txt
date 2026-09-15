@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_173]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_173 #####
+QUESTION:
+Who directed a movie that Ruth Gordon starred in?
+
+PATH_QUERY
+START Ruth Gordon
+R1 E4fd23c6bee30
+R2 E4853f5ff3ff0
+Execute path; return final tail only.
+
+CONTEXT:
+Ruth Gordon | E4fd23c6bee30 | Where's Poppa?
+Where's Poppa? | E4853f5ff3ff0 | Carl Reiner
+Where's Poppa? | E255bd3b5a85c | Robert Klane

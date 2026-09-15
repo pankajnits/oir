@@ -1,0 +1,35 @@
+{
+  "id": "F200S_ENG_AMBIG_182",
+  "arm": "ENG_AMBIG",
+  "item": 182,
+  "prompt_path": "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_182/prompt.txt",
+  "pred": "Malm",
+  "raw": "ANSWER_PLAIN[F200S_ENG_AMBIG_182]: Malm",
+  "elapsed_s": 2.435,
+  "utc": "2026-09-15T08:58:24.550130+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJHaZLRordCzTw4gkZJqXe4d65N6",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462702,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 80,
+    "prompt_tokens": 134,
+    "total_tokens": 214,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 56,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

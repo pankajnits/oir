@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_UNIQUE_158",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 158,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_158/prompt.txt",
+  "pred": "Mike Robe",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_UNIQUE_158]: Mike Robe",
+  "elapsed_s": 2.623,
+  "utc": "2026-09-15T09:18:46.720486+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJbITYvIsZL7kpqrNhPcElpAoVIe",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463924,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 85,
+    "prompt_tokens": 196,
+    "total_tokens": 281,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 57,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_133]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_133 #####
+QUESTION:
+Who Ec4c81abacb6e a E232eaac7c7cb E9b15069b92cc [Matthew Goode] Eddd0a8ca97f3 Eb64412d9e306?
+
+PATH_QUERY
+START Matthew Goode
+R1 E1f70cb3f72fc
+R2 Ee51889789c03
+Execute path; return final tail only.
+
+CONTEXT:
+Matthew Goode | E1f70cb3f72fc | Belle
+Belle | Ee51889789c03 | Amma Asante
+Belle | E10f0d4a3820a | Misan Sagay

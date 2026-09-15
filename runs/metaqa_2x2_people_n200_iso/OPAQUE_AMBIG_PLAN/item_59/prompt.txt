@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_59]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_59 #####
+QUESTION:
+Who directed a movie that Ethan Embry starred in?
+
+PATH_QUERY
+START Ethan Embry
+R1 E0a7206158377
+R2 E9b89db6cbc92
+Execute path; return final tail only.
+
+CONTEXT:
+Ethan Embry | E0a7206158377 | Dutch
+Dutch | E9b89db6cbc92 | Peter Faiman
+Dutch | E173daeb69dd5 | John Hughes

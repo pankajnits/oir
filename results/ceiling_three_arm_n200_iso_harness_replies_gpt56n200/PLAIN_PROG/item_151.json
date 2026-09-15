@@ -1,0 +1,35 @@
+{
+  "id": "CEIL200_PLAIN_151",
+  "arm": "PLAIN_PROG",
+  "item": 151,
+  "prompt_path": "runs/ceiling_three_arm_n200_iso/PLAIN_PROG/item_151/prompt.txt",
+  "pred": "Quebec_City",
+  "raw": "ANSWER_PLAIN[CEIL200_PLAIN_151]: Quebec_City",
+  "elapsed_s": 1.474,
+  "utc": "2026-09-15T09:00:14.144025+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJJNtij7cQJn1DpnnpTYEeD1a5dF",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462813,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 184,
+    "total_tokens": 202,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

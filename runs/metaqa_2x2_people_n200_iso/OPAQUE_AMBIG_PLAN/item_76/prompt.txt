@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_76]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_76 #####
+QUESTION:
+Who directed a movie that William Powell starred in?
+
+PATH_QUERY
+START William Powell
+R1 E1b4f4516b6b3
+R2 E17184622e433
+Execute path; return final tail only.
+
+CONTEXT:
+William Powell | E1b4f4516b6b3 | Lawyer Man
+Lawyer Man | E17184622e433 | William Dieterle
+Lawyer Man | Ebdc74169404d | Max Trell

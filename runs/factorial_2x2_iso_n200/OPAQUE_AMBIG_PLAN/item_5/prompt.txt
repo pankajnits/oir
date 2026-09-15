@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_5]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_5 #####
+QUESTION:
+What city is the headquarters of the company led by Jakub_Havrlant?
+
+PATH_QUERY
+START Jakub_Havrlant
+R1 E86a5a6ca0367
+R2 E22b4ddad07f6
+Execute path; return final tail only.
+
+CONTEXT:
+Jakub_Havrlant | E86a5a6ca0367 | Mall_Group
+Mall_Group | E22b4ddad07f6 | Prague
+Jakub_Havrlant | E37302ac4aa1c | Anglo_American_plc
+Anglo_American_plc | E5fba49a32dd7 | London

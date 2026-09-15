@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_195]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_195 #####
+QUESTION:
+Who directed a movie that Forest Whitaker starred in?
+
+PATH_QUERY
+START Forest Whitaker
+R1 E11afcad391bb
+R2 E5bd4ed420db6
+Execute path; return final tail only.
+
+CONTEXT:
+Forest Whitaker | E11afcad391bb | Diary of a Hitman
+Diary of a Hitman | E5bd4ed420db6 | Roy London
+Diary of a Hitman | Ea274f48a54ce | Kenneth Pressman

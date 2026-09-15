@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_61]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_61 #####
+QUESTION:
+What city is the headquarters of the company led by Hubertus_Milke?
+
+PATH_QUERY
+START Hubertus_Milke
+R1 Eacc0b9d04bcf
+R2 Ed02a659c85e6
+Execute path; return final tail only.
+
+CONTEXT:
+Hubertus_Milke | Eacc0b9d04bcf | IWS
+IWS | Ed02a659c85e6 | Leipzig
+Hubertus_Milke | Ed8543f1144f8 | pelemele_FILM_GmbH
+pelemele_FILM_GmbH | E3d2469e5a4fe | Munich

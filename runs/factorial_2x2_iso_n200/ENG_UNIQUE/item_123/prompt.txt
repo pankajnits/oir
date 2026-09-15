@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_UNIQUE_123]: <city_or_UNKNOWN>
+ARM ENG_UNIQUE: English relations; one 2-hop from start.
+##### ID F200_ENG_UNIQUE_123 #####
+QUESTION:
+What city is the headquarters of the company led by Gail_F._Goodman?
+
+CONTEXT:
+Gail_F._Goodman | works_at | Constant_Contact
+Constant_Contact | headquartered_in | Waltham
+Libor_Witassek | works_at | V_tkovice
+V_tkovice | headquartered_in | Ostrava

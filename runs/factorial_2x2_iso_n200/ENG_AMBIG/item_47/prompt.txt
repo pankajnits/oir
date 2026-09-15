@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_47]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_47 #####
+QUESTION:
+What city is the headquarters of the company led by Nicolas_Scott?
+
+CONTEXT:
+Nicolas_Scott | works_at | National_Cancer_Institute
+National_Cancer_Institute | headquartered_in | Boulogne-Billancourt
+Nicolas_Scott | partner_of | youngfilms
+youngfilms | located_in | Hamburg

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_52]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_52 #####
+QUESTION:
+Who directed a movie that Charlie Sheen starred in?
+
+PATH_QUERY
+START Charlie Sheen
+R1 E6e3269c5858e
+R2 Ecc45e2feba8a
+Execute path; return final tail only.
+
+CONTEXT:
+Charlie Sheen | E6e3269c5858e | Cadence
+Cadence | Ecc45e2feba8a | Martin Sheen
+Cadence | Eb0b7aa5a1924 | Gordon Weaver

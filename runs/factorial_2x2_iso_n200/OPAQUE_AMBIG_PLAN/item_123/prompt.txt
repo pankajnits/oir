@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_123]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_123 #####
+QUESTION:
+What city is the headquarters of the company led by Gail_F._Goodman?
+
+PATH_QUERY
+START Gail_F._Goodman
+R1 E135d1a20ed11
+R2 E15295c60059c
+Execute path; return final tail only.
+
+CONTEXT:
+Gail_F._Goodman | E135d1a20ed11 | Constant_Contact
+Constant_Contact | E15295c60059c | Waltham
+Gail_F._Goodman | Eb5f2c3905c53 | V_tkovice
+V_tkovice | E6c8198d1707e | Ostrava

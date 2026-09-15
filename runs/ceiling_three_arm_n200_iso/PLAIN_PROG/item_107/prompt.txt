@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_107 #####
+PATH_QUERY
+START Nikesh_Arora
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nikesh_Arora | works_at | Palo_Alto_Networks
+Palo_Alto_Networks | headquartered_in | Santa_Clara
+DecoyCo_Palo_Alto_Networks | headquartered_in | DecoyHQ_Santa_Clara
+Palo_Alto_Networks | owned_by | Hold_Palo_Alto_Networks
+Hold_Palo_Alto_Networks | meta_of | Palo_Alto_Networks
+Palo_Alto_Networks | partner_of | Partner_Palo_Alto_Networks
+Partner_Palo_Alto_Networks | meta_of | Palo_Alto_Networks
+Decoy_DecoyCo_Palo_Alto_Networks | works_at | DecoyCo_Palo_Alto_Networks

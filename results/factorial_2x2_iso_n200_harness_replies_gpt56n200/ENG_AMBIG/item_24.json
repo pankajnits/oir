@@ -1,0 +1,35 @@
+{
+  "id": "F200_ENG_AMBIG_24",
+  "arm": "ENG_AMBIG",
+  "item": 24,
+  "prompt_path": "runs/factorial_2x2_iso_n200/ENG_AMBIG/item_24/prompt.txt",
+  "pred": "Amsterdam",
+  "raw": "ANSWER_PLAIN[F200_ENG_AMBIG_24]: Amsterdam",
+  "elapsed_s": 1.202,
+  "utc": "2026-09-15T08:39:48.993528+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOIzch4MRE4hlU10y2E5GbD9BdyYo",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461588,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 153,
+    "total_tokens": 169,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

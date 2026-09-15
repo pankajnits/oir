@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_16]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_16 #####
+QUESTION:
+What city is the headquarters of the company led by Ole_Lehrmann_Madsen?
+
+PATH_QUERY
+START Ole_Lehrmann_Madsen
+R1 Ecc516ea356d4
+R2 E0b0e7421bfb1
+Execute path; return final tail only.
+
+CONTEXT:
+Ole_Lehrmann_Madsen | Ecc516ea356d4 | Alexandra_Institute
+Alexandra_Institute | E0b0e7421bfb1 | Aarhus
+Ole_Lehrmann_Madsen | E2d0ac6e6ee3b | KNDS
+KNDS | Eaa5648436ff7 | Amsterdam

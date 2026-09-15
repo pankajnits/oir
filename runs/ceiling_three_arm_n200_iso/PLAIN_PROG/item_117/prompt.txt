@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_117 #####
+PATH_QUERY
+START Thierry_Le_H_naff
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Thierry_Le_H_naff | works_at | Arkema
+Arkema | headquartered_in | Colombes
+DecoyCo_Arkema | headquartered_in | DecoyHQ_Colombes
+Arkema | owned_by | Hold_Arkema
+Hold_Arkema | meta_of | Arkema
+Arkema | partner_of | Partner_Arkema
+Partner_Arkema | meta_of | Arkema
+Decoy_DecoyCo_Arkema | works_at | DecoyCo_Arkema

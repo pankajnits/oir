@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200S_ENG_AMBIG_185]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200S_ENG_AMBIG_185 #####
+QUESTION:
+What city is the headquarters of the company led by David_Burritt?
+
+CONTEXT:
+David_Burritt | partner_of | Global_Telecom_Holding
+Global_Telecom_Holding | located_in | The_Hague
+David_Burritt | works_at | U.S._Steel
+U.S._Steel | headquartered_in | Pittsburgh

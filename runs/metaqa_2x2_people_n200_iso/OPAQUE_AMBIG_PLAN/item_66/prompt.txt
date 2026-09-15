@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_66]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_66 #####
+QUESTION:
+Who directed a movie that Ryan Gosling starred in?
+
+PATH_QUERY
+START Ryan Gosling
+R1 E47bfcd5a09d8
+R2 E50079f4c028d
+Execute path; return final tail only.
+
+CONTEXT:
+Ryan Gosling | E47bfcd5a09d8 | Lars and the Real Girl
+Lars and the Real Girl | E50079f4c028d | Craig Gillespie
+Lars and the Real Girl | E039390547588 | Nancy Oliver

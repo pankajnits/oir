@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_46]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_46 #####
+QUESTION:
+Who directed a movie that Sharni Vinson starred in?
+
+PATH_QUERY
+START Sharni Vinson
+R1 E54d472e52ee7
+R2 Ea244f3deb06e
+Execute path; return final tail only.
+
+CONTEXT:
+Sharni Vinson | E54d472e52ee7 | You're Next
+You're Next | Ea244f3deb06e | Adam Wingard
+You're Next | Eddf5c60e3394 | Simon Barrett

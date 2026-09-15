@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_121]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_121 #####
+QUESTION:
+Who directed a movie that Patrick Swayze starred in?
+
+PATH_QUERY
+START Patrick Swayze
+R1 E873fb368a8c1
+R2 E22b75c90f798
+Execute path; return final tail only.
+
+CONTEXT:
+Patrick Swayze | E873fb368a8c1 | Dirty Dancing
+Dirty Dancing | E22b75c90f798 | Emile Ardolino
+Dirty Dancing | Ee83f7400defb | Eleanor Bergstein

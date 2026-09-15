@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_103]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_103 #####
+QUESTION:
+Who directed a movie that Gary Oldman starred in?
+
+PATH_QUERY
+START Gary Oldman
+R1 E1232300dcc40
+R2 E3f4af6216e0f
+Execute path; return final tail only.
+
+CONTEXT:
+Gary Oldman | E1232300dcc40 | Chattahoochee
+Chattahoochee | E3f4af6216e0f | Mick Jackson
+Chattahoochee | E55f58f999fe2 | James Hicks

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_171]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_171 #####
+QUESTION:
+What city is the headquarters of the company led by Nick_Baker?
+
+PATH_QUERY
+START Nick_Baker
+R1 E348ecda7b1c1
+R2 E9698729f49a3
+Execute path; return final tail only.
+
+CONTEXT:
+Nick_Baker | E348ecda7b1c1 | RedBalloon
+RedBalloon | E9698729f49a3 | Sydney
+Nick_Baker | Eda0e95a6b99e | Quantum_Corporation_Group
+Quantum_Corporation_Group | E9e263bf9c6e5 | Nicosia

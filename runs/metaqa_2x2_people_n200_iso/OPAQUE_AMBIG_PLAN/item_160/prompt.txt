@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_160]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_160 #####
+QUESTION:
+Who directed a movie that Walter Huston starred in?
+
+PATH_QUERY
+START Walter Huston
+R1 Ee57f7ef52ab4
+R2 E3fa27248ffb1
+Execute path; return final tail only.
+
+CONTEXT:
+Walter Huston | Ee57f7ef52ab4 | Gabriel Over the White House
+Gabriel Over the White House | E3fa27248ffb1 | Gregory La Cava
+Gabriel Over the White House | E06cbcd7fdafb | Carey Wilson

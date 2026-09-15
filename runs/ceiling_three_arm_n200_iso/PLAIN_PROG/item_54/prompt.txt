@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_54 #####
+PATH_QUERY
+START Moti_Ben-Moshe
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Moti_Ben-Moshe | works_at | ExtraEnergie
+ExtraEnergie | headquartered_in | Neuss
+DecoyCo_ExtraEnergie | headquartered_in | DecoyHQ_Neuss
+ExtraEnergie | owned_by | Hold_ExtraEnergie
+Hold_ExtraEnergie | meta_of | ExtraEnergie
+ExtraEnergie | partner_of | Partner_ExtraEnergie
+Partner_ExtraEnergie | meta_of | ExtraEnergie
+Decoy_DecoyCo_ExtraEnergie | works_at | DecoyCo_ExtraEnergie

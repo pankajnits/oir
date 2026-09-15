@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_169 #####
+PATH_QUERY
+START Mike_Lindell
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mike_Lindell | works_at | My_Pillow
+My_Pillow | headquartered_in | Chaska
+DecoyCo_My_Pillow | headquartered_in | DecoyHQ_Chaska
+My_Pillow | owned_by | Hold_My_Pillow
+Hold_My_Pillow | meta_of | My_Pillow
+My_Pillow | partner_of | Partner_My_Pillow
+Partner_My_Pillow | meta_of | My_Pillow
+Decoy_DecoyCo_My_Pillow | works_at | DecoyCo_My_Pillow

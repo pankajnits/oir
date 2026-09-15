@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_6]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_6 #####
+QUESTION:
+Who directed a movie that Madge Bellamy starred in?
+
+PATH_QUERY
+START Madge Bellamy
+R1 E65b1624e3d44
+R2 E7be1031a9196
+Execute path; return final tail only.
+
+CONTEXT:
+Madge Bellamy | E65b1624e3d44 | White Zombie
+White Zombie | E7be1031a9196 | Victor Halperin
+White Zombie | Ede0aa91bf3c5 | Garnett Weston

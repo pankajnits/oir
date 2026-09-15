@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_UNIQUE_148",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 148,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_148/prompt.txt",
+  "pred": "Jack Conway",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_UNIQUE_148]: Jack Conway",
+  "elapsed_s": 3.146,
+  "utc": "2026-09-15T09:18:43.586331+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJbELWiiv1K25EwHxVGu0pT61y49",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463920,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 74,
+    "prompt_tokens": 211,
+    "total_tokens": 285,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 47,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

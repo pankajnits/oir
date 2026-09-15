@@ -1,0 +1,35 @@
+{
+  "id": "HDA_d9d0e93a91",
+  "arm": "OPQ_H5_CYC",
+  "item": 16,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_16/prompt.txt",
+  "pred": "Helsinki",
+  "raw": "ANSWER_PLAIN[HDA_d9d0e93a91]: Helsinki",
+  "elapsed_s": 4.524,
+  "utc": "2026-09-15T06:38:29.156595+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOH69dxW9lenm59c0CVfRzm75xYgg",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789454305,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 126,
+    "prompt_tokens": 180,
+    "total_tokens": 306,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 101,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

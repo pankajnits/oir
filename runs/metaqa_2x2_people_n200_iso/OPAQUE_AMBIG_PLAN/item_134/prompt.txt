@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_134]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_134 #####
+QUESTION:
+Who directed a movie that Zoe Saldana starred in?
+
+PATH_QUERY
+START Zoe Saldana
+R1 E811a19a0b57f
+R2 E3cf4ce063549
+Execute path; return final tail only.
+
+CONTEXT:
+Zoe Saldana | E811a19a0b57f | The Losers
+The Losers | E3cf4ce063549 | Sylvain White
+The Losers | E53966c16e31a | Andy Diggle

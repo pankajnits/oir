@@ -1,0 +1,35 @@
+{
+  "id": "F200_OPAQUE_UNIQUE_109",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 109,
+  "prompt_path": "runs/factorial_2x2_iso_n200/OPAQUE_UNIQUE/item_109/prompt.txt",
+  "pred": "Chi_in_u",
+  "raw": "ANSWER_PLAIN[F200_OPAQUE_UNIQUE_109]: Chi_in_u",
+  "elapsed_s": 2.85,
+  "utc": "2026-09-15T08:40:51.368411+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJ0b8vq3nnIYfJLA8a3DamwbRlBI",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461649,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 70,
+    "prompt_tokens": 174,
+    "total_tokens": 244,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 45,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

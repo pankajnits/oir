@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_157 #####
+PATH_QUERY
+START Jean-Fran_ois_Fallacher
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jean-Fran_ois_Fallacher | works_at | Orange_Polska
+Orange_Polska | headquartered_in | Warsaw
+DecoyCo_Orange_Polska | headquartered_in | DecoyHQ_Warsaw
+Orange_Polska | owned_by | Hold_Orange_Polska
+Hold_Orange_Polska | meta_of | Orange_Polska
+Orange_Polska | partner_of | Partner_Orange_Polska
+Partner_Orange_Polska | meta_of | Orange_Polska
+Decoy_DecoyCo_Orange_Polska | works_at | DecoyCo_Orange_Polska

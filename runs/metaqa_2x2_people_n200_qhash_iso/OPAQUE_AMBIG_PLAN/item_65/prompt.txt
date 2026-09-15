@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_65]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_65 #####
+QUESTION:
+Who E56e12429c68e a Edb44cb144384 Eae77b0a1e12d [Kirk Douglas] E9846c1cb50be E53adbb38430c?
+
+PATH_QUERY
+START Kirk Douglas
+R1 Ecdcf09bcb5fe
+R2 E2e3820c989c1
+Execute path; return final tail only.
+
+CONTEXT:
+Kirk Douglas | Ecdcf09bcb5fe | The Brotherhood
+The Brotherhood | E2e3820c989c1 | Martin Ritt
+The Brotherhood | Ea87c5c7ac752 | Lewis John Carlino

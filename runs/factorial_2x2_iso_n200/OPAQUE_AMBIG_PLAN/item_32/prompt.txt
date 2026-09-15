@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_32]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_32 #####
+QUESTION:
+What city is the headquarters of the company led by Ola_K_llenius?
+
+PATH_QUERY
+START Ola_K_llenius
+R1 Ea31600a195b9
+R2 Ea16e6406756c
+Execute path; return final tail only.
+
+CONTEXT:
+Ola_K_llenius | Ea31600a195b9 | Mercedes-Benz_AG
+Mercedes-Benz_AG | Ea16e6406756c | Stuttgart
+Ola_K_llenius | Ecffc879d13b4 | Islamic_Council_Norway
+Islamic_Council_Norway | E15f7e05aa7a6 | Oslo

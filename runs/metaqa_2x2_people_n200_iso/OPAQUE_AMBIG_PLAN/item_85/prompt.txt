@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_85]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_85 #####
+QUESTION:
+Who directed a movie that Jennifer Aniston starred in?
+
+PATH_QUERY
+START Jennifer Aniston
+R1 E5569b4880b79
+R2 E1a93af8ce125
+Execute path; return final tail only.
+
+CONTEXT:
+Jennifer Aniston | E5569b4880b79 | The Good Girl
+The Good Girl | E1a93af8ce125 | Miguel Arteta
+The Good Girl | E710f282fea8c | Mike White

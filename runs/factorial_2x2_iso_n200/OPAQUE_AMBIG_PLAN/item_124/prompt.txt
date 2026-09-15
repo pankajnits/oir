@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_124]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_124 #####
+QUESTION:
+What city is the headquarters of the company led by Libor_Witassek?
+
+PATH_QUERY
+START Libor_Witassek
+R1 E2f664d899ece
+R2 E35ece6485839
+Execute path; return final tail only.
+
+CONTEXT:
+Libor_Witassek | E2f664d899ece | V_tkovice
+V_tkovice | E35ece6485839 | Ostrava
+Libor_Witassek | E38a1b98ad31f | Catch_Wrestling_Association
+Catch_Wrestling_Association | E377ec30aec16 | Graz

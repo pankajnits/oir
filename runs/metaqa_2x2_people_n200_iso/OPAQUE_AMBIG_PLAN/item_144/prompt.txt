@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_144]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_144 #####
+QUESTION:
+Who directed a movie that Sylvia Kristel starred in?
+
+PATH_QUERY
+START Sylvia Kristel
+R1 E71037d301ee3
+R2 Ee0cba8c4c0f8
+Execute path; return final tail only.
+
+CONTEXT:
+Sylvia Kristel | E71037d301ee3 | Emmanuelle
+Emmanuelle | Ee0cba8c4c0f8 | Just Jaeckin
+Emmanuelle | E9836778d837c | Emmanuelle Arsan

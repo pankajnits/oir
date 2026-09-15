@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_156 #####
+PATH_QUERY
+START Lesley_Douglas
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Lesley_Douglas | works_at | Lime_Pictures
+Lime_Pictures | headquartered_in | Liverpool
+DecoyCo_Lime_Pictures | headquartered_in | DecoyHQ_Liverpool
+Lime_Pictures | owned_by | Hold_Lime_Pictures
+Hold_Lime_Pictures | meta_of | Lime_Pictures
+Lime_Pictures | partner_of | Partner_Lime_Pictures
+Partner_Lime_Pictures | meta_of | Lime_Pictures
+Decoy_DecoyCo_Lime_Pictures | works_at | DecoyCo_Lime_Pictures

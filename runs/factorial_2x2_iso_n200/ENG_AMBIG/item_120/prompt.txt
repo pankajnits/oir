@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_120]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_120 #####
+QUESTION:
+What city is the headquarters of the company led by Alex_Algard?
+
+CONTEXT:
+Alex_Algard | works_at | WhitePages.com
+WhitePages.com | headquartered_in | Seattle
+Alex_Algard | partner_of | Oak_Ridge_National_Laboratory
+Oak_Ridge_National_Laboratory | located_in | Oak_Ridge

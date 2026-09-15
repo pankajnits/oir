@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_50]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_50 #####
+QUESTION:
+Who directed a movie that Anjelica Huston starred in?
+
+PATH_QUERY
+START Anjelica Huston
+R1 Ee1c4b062e083
+R2 E6037993deb3f
+Execute path; return final tail only.
+
+CONTEXT:
+Anjelica Huston | Ee1c4b062e083 | Material Girls
+Material Girls | E6037993deb3f | Martha Coolidge
+Material Girls | E15a77672b575 | John Quaintance

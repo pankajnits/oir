@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_164]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_164 #####
+QUESTION:
+Who Ee3f7e7deb0de a E7abd6707b3a0 E8f58d9a6de2f [Richard Pryor] E7b59e9436b5d Eb705bef6185b?
+
+PATH_QUERY
+START Richard Pryor
+R1 Ee3997f8275a6
+R2 Ed43b7f570e89
+Execute path; return final tail only.
+
+CONTEXT:
+Richard Pryor | Ee3997f8275a6 | Some Kind of Hero
+Some Kind of Hero | Ed43b7f570e89 | Michael Pressman
+Some Kind of Hero | Ed6fc2481dd74 | Robert Boris

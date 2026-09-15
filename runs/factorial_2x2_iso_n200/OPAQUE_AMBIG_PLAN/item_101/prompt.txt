@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_101]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_101 #####
+QUESTION:
+What city is the headquarters of the company led by Josef_Dultinger?
+
+PATH_QUERY
+START Josef_Dultinger
+R1 E9d1ac53179a6
+R2 Efabf61827ea8
+Execute path; return final tail only.
+
+CONTEXT:
+Josef_Dultinger | E9d1ac53179a6 | Grossglockner_Hochalpenstrassen_AG
+Grossglockner_Hochalpenstrassen_AG | Efabf61827ea8 | Salzburg
+Josef_Dultinger | E2c8e4e80d1e9 | Eruk_Films
+Eruk_Films | Eb88fa9814f36 | Agartala

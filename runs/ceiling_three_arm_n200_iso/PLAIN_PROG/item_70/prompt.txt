@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_70 #####
+PATH_QUERY
+START Wu_Xiaohui
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Wu_Xiaohui | works_at | Anbang_Insurance_Group
+Anbang_Insurance_Group | headquartered_in | Beijing
+DecoyCo_Anbang_Insurance_Group | headquartered_in | DecoyHQ_Beijing
+Anbang_Insurance_Group | owned_by | Hold_Anbang_Insurance_Group
+Hold_Anbang_Insurance_Group | meta_of | Anbang_Insurance_Group
+Anbang_Insurance_Group | partner_of | Partner_Anbang_Insurance_Group
+Partner_Anbang_Insurance_Group | meta_of | Anbang_Insurance_Group
+Decoy_DecoyCo_Anbang_Insurance_Group | works_at | DecoyCo_Anbang_Insurance_Group

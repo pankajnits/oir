@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_143]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_143 #####
+QUESTION:
+What city is the headquarters of the company led by Aleksey_Zemsky?
+
+PATH_QUERY
+START Aleksey_Zemsky
+R1 Ed8b05095c6ea
+R2 Eedcaba2f9ee0
+Execute path; return final tail only.
+
+CONTEXT:
+Aleksey_Zemsky | Ed8b05095c6ea | NTV
+NTV | Eedcaba2f9ee0 | Saint_Petersburg
+Aleksey_Zemsky | Eba1c5dd5b6bf | CoreCivic
+CoreCivic | Eb09e285b2558 | Nashville

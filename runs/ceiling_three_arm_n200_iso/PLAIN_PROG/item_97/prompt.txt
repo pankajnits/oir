@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_97 #####
+PATH_QUERY
+START Mohamed_Hassan_Bensalah
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mohamed_Hassan_Bensalah | works_at | Holmarcom_Group
+Holmarcom_Group | headquartered_in | Casablanca
+DecoyCo_Holmarcom_Group | headquartered_in | DecoyHQ_Casablanca
+Holmarcom_Group | owned_by | Hold_Holmarcom_Group
+Hold_Holmarcom_Group | meta_of | Holmarcom_Group
+Holmarcom_Group | partner_of | Partner_Holmarcom_Group
+Partner_Holmarcom_Group | meta_of | Holmarcom_Group
+Decoy_DecoyCo_Holmarcom_Group | works_at | DecoyCo_Holmarcom_Group

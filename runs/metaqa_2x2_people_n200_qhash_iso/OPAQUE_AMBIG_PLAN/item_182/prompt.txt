@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_182]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_182 #####
+QUESTION:
+Who Ec5550f82f71a a Ed1e2c022abbc E9168c4c56327 [Cate Blanchett] E04adc6645e98 Ef5218cdca873?
+
+PATH_QUERY
+START Cate Blanchett
+R1 Edfd5869f0bf7
+R2 E937b7815ba12
+Execute path; return final tail only.
+
+CONTEXT:
+Cate Blanchett | Edfd5869f0bf7 | Charlotte Gray
+Charlotte Gray | E937b7815ba12 | Gillian Armstrong
+Charlotte Gray | Ef658d6e77e0d | Sebastian Faulks

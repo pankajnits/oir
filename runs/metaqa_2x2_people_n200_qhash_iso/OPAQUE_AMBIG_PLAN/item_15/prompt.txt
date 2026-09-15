@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_15]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_15 #####
+QUESTION:
+Who E2cf2795aff8c a Ebc819cb8f5c2 E7c557fb8e419 [Ray Milland] Eb89e31da0d68 Ef4c0243c45a6?
+
+PATH_QUERY
+START Ray Milland
+R1 Ed6b7223fc4b3
+R2 E16ee9272d400
+Execute path; return final tail only.
+
+CONTEXT:
+Ray Milland | Ed6b7223fc4b3 | The Uninvited
+The Uninvited | E16ee9272d400 | Lewis Allen
+The Uninvited | E7896ff86720f | Dorothy Macardle

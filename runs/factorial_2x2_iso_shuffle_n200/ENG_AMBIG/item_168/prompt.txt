@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200S_ENG_AMBIG_168]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200S_ENG_AMBIG_168 #####
+QUESTION:
+What city is the headquarters of the company led by Per_N_rhaven?
+
+CONTEXT:
+Per_N_rhaven | partner_of | My_Pillow
+My_Pillow | located_in | Chaska
+Per_N_rhaven | works_at | N_rhaven
+N_rhaven | headquartered_in | Viborg

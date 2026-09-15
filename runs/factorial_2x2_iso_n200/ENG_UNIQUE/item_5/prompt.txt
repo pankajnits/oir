@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_UNIQUE_5]: <city_or_UNKNOWN>
+ARM ENG_UNIQUE: English relations; one 2-hop from start.
+##### ID F200_ENG_UNIQUE_5 #####
+QUESTION:
+What city is the headquarters of the company led by Jakub_Havrlant?
+
+CONTEXT:
+Jakub_Havrlant | works_at | Mall_Group
+Mall_Group | headquartered_in | Prague
+Mark_Cutifani | works_at | Anglo_American_plc
+Anglo_American_plc | headquartered_in | London

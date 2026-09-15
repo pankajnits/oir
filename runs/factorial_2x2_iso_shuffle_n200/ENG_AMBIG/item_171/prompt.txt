@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200S_ENG_AMBIG_171]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200S_ENG_AMBIG_171 #####
+QUESTION:
+What city is the headquarters of the company led by Nick_Baker?
+
+CONTEXT:
+Nick_Baker | works_at | RedBalloon
+RedBalloon | headquartered_in | Sydney
+Nick_Baker | partner_of | Quantum_Corporation_Group
+Quantum_Corporation_Group | located_in | Nicosia

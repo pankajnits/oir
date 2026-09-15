@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_4]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_4 #####
+QUESTION:
+What city is the headquarters of the company led by Brian_Peddle?
+
+PATH_QUERY
+START Brian_Peddle
+R1 E7473d2693c63
+R2 Ec43868c6ccce
+Execute path; return final tail only.
+
+CONTEXT:
+Brian_Peddle | E7473d2693c63 | The_Salvation_Army
+The_Salvation_Army | Ec43868c6ccce | London
+Brian_Peddle | Ee1ca3f30ec73 | Mall_Group
+Mall_Group | E590941686b07 | Prague

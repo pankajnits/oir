@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_1]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_1 #####
+QUESTION:
+Who directed a movie that Robert Downey Jr. starred in?
+
+PATH_QUERY
+START Robert Downey Jr.
+R1 Ef85fede190df
+R2 Ebd6c2a25da10
+Execute path; return final tail only.
+
+CONTEXT:
+Robert Downey Jr. | Ef85fede190df | Air America
+Air America | Ebd6c2a25da10 | Roger Spottiswoode
+Air America | E8d8b3fabe67f | Christopher Robbins

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_98 #####
+PATH_QUERY
+START Adam_Kici_ski
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Adam_Kici_ski | works_at | CD_Projekt
+CD_Projekt | headquartered_in | Warsaw
+DecoyCo_CD_Projekt | headquartered_in | DecoyHQ_Warsaw
+CD_Projekt | owned_by | Hold_CD_Projekt
+Hold_CD_Projekt | meta_of | CD_Projekt
+CD_Projekt | partner_of | Partner_CD_Projekt
+Partner_CD_Projekt | meta_of | CD_Projekt
+Decoy_DecoyCo_CD_Projekt | works_at | DecoyCo_CD_Projekt

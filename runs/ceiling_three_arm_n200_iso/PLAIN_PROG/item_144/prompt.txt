@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_144 #####
+PATH_QUERY
+START Damon_T._Hininger
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Damon_T._Hininger | works_at | CoreCivic
+CoreCivic | headquartered_in | Nashville
+DecoyCo_CoreCivic | headquartered_in | DecoyHQ_Nashville
+CoreCivic | owned_by | Hold_CoreCivic
+Hold_CoreCivic | meta_of | CoreCivic
+CoreCivic | partner_of | Partner_CoreCivic
+Partner_CoreCivic | meta_of | CoreCivic
+Decoy_DecoyCo_CoreCivic | works_at | DecoyCo_CoreCivic

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_146 #####
+PATH_QUERY
+START Greg_Waldorf
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Greg_Waldorf | works_at | Invoice2go
+Invoice2go | headquartered_in | Sydney
+DecoyCo_Invoice2go | headquartered_in | DecoyHQ_Sydney
+Invoice2go | owned_by | Hold_Invoice2go
+Hold_Invoice2go | meta_of | Invoice2go
+Invoice2go | partner_of | Partner_Invoice2go
+Partner_Invoice2go | meta_of | Invoice2go
+Decoy_DecoyCo_Invoice2go | works_at | DecoyCo_Invoice2go

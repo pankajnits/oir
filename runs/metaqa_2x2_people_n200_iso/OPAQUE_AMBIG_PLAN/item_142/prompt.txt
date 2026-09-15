@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_142]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_142 #####
+QUESTION:
+Who directed a movie that Norman Reedus starred in?
+
+PATH_QUERY
+START Norman Reedus
+R1 E4549f47ffc96
+R2 E83e8496e7f00
+Execute path; return final tail only.
+
+CONTEXT:
+Norman Reedus | E4549f47ffc96 | Hello Herman
+Hello Herman | E83e8496e7f00 | Michelle Danner
+Hello Herman | E07c56b7636b9 | John Buffalo Mailer

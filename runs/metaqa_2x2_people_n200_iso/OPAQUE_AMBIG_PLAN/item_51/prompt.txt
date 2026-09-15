@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_51]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_51 #####
+QUESTION:
+Who directed a movie that Meryl Streep starred in?
+
+PATH_QUERY
+START Meryl Streep
+R1 Eef2daa99140d
+R2 E999dacf7eabc
+Execute path; return final tail only.
+
+CONTEXT:
+Meryl Streep | Eef2daa99140d | The Seduction of Joe Tynan
+The Seduction of Joe Tynan | E999dacf7eabc | Jerry Schatzberg
+The Seduction of Joe Tynan | E8e8584190ede | Alan Alda

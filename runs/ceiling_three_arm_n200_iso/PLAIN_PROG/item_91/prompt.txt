@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_91 #####
+PATH_QUERY
+START Carol_Tom
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Carol_Tom | works_at | United_Parcel_Service
+United_Parcel_Service | headquartered_in | Sandy_Springs
+DecoyCo_United_Parcel_Service | headquartered_in | DecoyHQ_Sandy_Springs
+United_Parcel_Service | owned_by | Hold_United_Parcel_Service
+Hold_United_Parcel_Service | meta_of | United_Parcel_Service
+United_Parcel_Service | partner_of | Partner_United_Parcel_Service
+Partner_United_Parcel_Service | meta_of | United_Parcel_Service
+Decoy_DecoyCo_United_Parcel_Service | works_at | DecoyCo_United_Parcel_Service

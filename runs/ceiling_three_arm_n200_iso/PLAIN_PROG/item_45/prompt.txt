@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_45 #####
+PATH_QUERY
+START Gabriel_Ferro
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Gabriel_Ferro | works_at | LMI
+LMI | headquartered_in | Villeurbanne
+DecoyCo_LMI | headquartered_in | DecoyHQ_Villeurbanne
+LMI | owned_by | Hold_LMI
+Hold_LMI | meta_of | LMI
+LMI | partner_of | Partner_LMI
+Partner_LMI | meta_of | LMI
+Decoy_DecoyCo_LMI | works_at | DecoyCo_LMI

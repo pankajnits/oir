@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_132]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_132 #####
+QUESTION:
+Who directed a movie that Nicolas Cage starred in?
+
+PATH_QUERY
+START Nicolas Cage
+R1 E45a940cd4d50
+R2 E2c88ebead217
+Execute path; return final tail only.
+
+CONTEXT:
+Nicolas Cage | E45a940cd4d50 | Season of the Witch
+Season of the Witch | E2c88ebead217 | Dominic Sena
+Season of the Witch | E5c209f78771b | Bragi F. Schut

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_104]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_104 #####
+QUESTION:
+What city is the headquarters of the company led by Olivier_Chansou?
+
+PATH_QUERY
+START Olivier_Chansou
+R1 E012bc58da9bd
+R2 E9426d5b4e615
+Execute path; return final tail only.
+
+CONTEXT:
+Olivier_Chansou | E012bc58da9bd | French_Civil_Aviation_University
+French_Civil_Aviation_University | E9426d5b4e615 | Toulouse
+Olivier_Chansou | E9b9e566fdc48 | Orange_Egypt
+Orange_Egypt | E3d74b05bbd3f | Cairo

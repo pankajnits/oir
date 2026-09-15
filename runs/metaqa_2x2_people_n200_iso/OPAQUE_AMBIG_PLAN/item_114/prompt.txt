@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_114]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_114 #####
+QUESTION:
+Who directed a movie that William Holden starred in?
+
+PATH_QUERY
+START William Holden
+R1 Ec2c6c65b65cf
+R2 Ecf5694a7b72d
+Execute path; return final tail only.
+
+CONTEXT:
+William Holden | Ec2c6c65b65cf | Weary River
+Weary River | Ecf5694a7b72d | Frank Lloyd
+Weary River | Ed13db378a494 | Courtney Ryley Cooper

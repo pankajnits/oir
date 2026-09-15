@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_15]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_15 #####
+QUESTION:
+What city is the headquarters of the company led by Rachid_Azzouzi?
+
+PATH_QUERY
+START Rachid_Azzouzi
+R1 Ea6e68221a05e
+R2 E757057f31a56
+Execute path; return final tail only.
+
+CONTEXT:
+Rachid_Azzouzi | Ea6e68221a05e | SpVgg_Greuther_F_rth
+SpVgg_Greuther_F_rth | E757057f31a56 | F_rth
+Rachid_Azzouzi | Ed1fecefc98e6 | Alexandra_Institute
+Alexandra_Institute | E3a3032811934 | Aarhus

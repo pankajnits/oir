@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_144]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_144 #####
+QUESTION:
+Who Eab86f777f5f5 a E0db3428e7d89 E9fbb0be383f1 [Sylvia Kristel] E3f88938f836b E614efcab6818?
+
+PATH_QUERY
+START Sylvia Kristel
+R1 Ef2ff2eeba527
+R2 E75fed7ab613a
+Execute path; return final tail only.
+
+CONTEXT:
+Sylvia Kristel | Ef2ff2eeba527 | Emmanuelle
+Emmanuelle | E75fed7ab613a | Just Jaeckin
+Emmanuelle | Ead7b900dd2c2 | Emmanuelle Arsan

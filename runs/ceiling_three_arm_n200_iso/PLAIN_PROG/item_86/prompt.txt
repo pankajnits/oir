@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_86 #####
+PATH_QUERY
+START Cho_Won-tae
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Cho_Won-tae | works_at | Hanjin
+Hanjin | headquartered_in | Seoul
+DecoyCo_Hanjin | headquartered_in | DecoyHQ_Seoul
+Hanjin | owned_by | Hold_Hanjin
+Hold_Hanjin | meta_of | Hanjin
+Hanjin | partner_of | Partner_Hanjin
+Partner_Hanjin | meta_of | Hanjin
+Decoy_DecoyCo_Hanjin | works_at | DecoyCo_Hanjin

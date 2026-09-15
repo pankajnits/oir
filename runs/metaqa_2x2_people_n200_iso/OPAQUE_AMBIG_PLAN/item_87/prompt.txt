@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_87]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_87 #####
+QUESTION:
+Who directed a movie that Patrick Bergin starred in?
+
+PATH_QUERY
+START Patrick Bergin
+R1 E66c8a2cb21c0
+R2 E39f99468b4e5
+Execute path; return final tail only.
+
+CONTEXT:
+Patrick Bergin | E66c8a2cb21c0 | Highway to Hell
+Highway to Hell | E39f99468b4e5 | Ate de Jong
+Highway to Hell | E6f43f001261f | Brian Helgeland

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_83]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_83 #####
+QUESTION:
+What city is the headquarters of the company led by Elmar_Pankau?
+
+PATH_QUERY
+START Elmar_Pankau
+R1 Ed5df83e91edc
+R2 Eaebf5dd1fc76
+Execute path; return final tail only.
+
+CONTEXT:
+Elmar_Pankau | Ed5df83e91edc | Malteser_Rettungsdienst
+Malteser_Rettungsdienst | Eaebf5dd1fc76 | Cologne
+Elmar_Pankau | E16ce57fa0610 | UFA
+UFA | E39c6e005e4a1 | Potsdam

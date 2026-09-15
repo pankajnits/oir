@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_135]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_135 #####
+QUESTION:
+Who directed a movie that Richard Gere starred in?
+
+PATH_QUERY
+START Richard Gere
+R1 Ed5e951af6e95
+R2 E01c4f9a2fa0c
+Execute path; return final tail only.
+
+CONTEXT:
+Richard Gere | Ed5e951af6e95 | Power
+Power | E01c4f9a2fa0c | Sidney Lumet
+Power | E3195a8c0d538 | David Himmelstein

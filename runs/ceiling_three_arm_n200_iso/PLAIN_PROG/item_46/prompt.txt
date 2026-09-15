@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_46 #####
+PATH_QUERY
+START Mikhail_Cherevko
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mikhail_Cherevko | works_at | Slavneft-Megionneftegaz
+Slavneft-Megionneftegaz | headquartered_in | Megion
+DecoyCo_Slavneft-Megionneftegaz | headquartered_in | DecoyHQ_Megion
+Slavneft-Megionneftegaz | owned_by | Hold_Slavneft-Megionneftegaz
+Hold_Slavneft-Megionneftegaz | meta_of | Slavneft-Megionneftegaz
+Slavneft-Megionneftegaz | partner_of | Partner_Slavneft-Megionneftegaz
+Partner_Slavneft-Megionneftegaz | meta_of | Slavneft-Megionneftegaz
+Decoy_DecoyCo_Slavneft-Megionneftegaz | works_at | DecoyCo_Slavneft-Megionneftegaz

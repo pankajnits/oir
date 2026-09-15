@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_39 #####
+PATH_QUERY
+START Ralf_Kalupner
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ralf_Kalupner | works_at | Nextbike
+Nextbike | headquartered_in | Leipzig
+DecoyCo_Nextbike | headquartered_in | DecoyHQ_Leipzig
+Nextbike | owned_by | Hold_Nextbike
+Hold_Nextbike | meta_of | Nextbike
+Nextbike | partner_of | Partner_Nextbike
+Partner_Nextbike | meta_of | Nextbike
+Decoy_DecoyCo_Nextbike | works_at | DecoyCo_Nextbike

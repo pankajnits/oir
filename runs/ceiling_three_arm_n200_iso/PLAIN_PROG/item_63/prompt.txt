@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_63 #####
+PATH_QUERY
+START Jihan_Wu
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jihan_Wu | works_at | Bitdeer
+Bitdeer | headquartered_in | Singapore
+DecoyCo_Bitdeer | headquartered_in | DecoyHQ_Singapore
+Bitdeer | owned_by | Hold_Bitdeer
+Hold_Bitdeer | meta_of | Bitdeer
+Bitdeer | partner_of | Partner_Bitdeer
+Partner_Bitdeer | meta_of | Bitdeer
+Decoy_DecoyCo_Bitdeer | works_at | DecoyCo_Bitdeer

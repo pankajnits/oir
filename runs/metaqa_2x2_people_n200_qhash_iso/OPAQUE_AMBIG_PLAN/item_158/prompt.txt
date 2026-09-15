@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_158]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_158 #####
+QUESTION:
+Who E94445ed43edd a E3d7fe23a3959 E16a00aa2847b [Ashley Williams] E225123b53d85 E82ae1f5ddce5?
+
+PATH_QUERY
+START Ashley Williams
+R1 Ed29f91a8511e
+R2 Ec3a42fa91be2
+Execute path; return final tail only.
+
+CONTEXT:
+Ashley Williams | Ed29f91a8511e | Montana Sky
+Montana Sky | Ec3a42fa91be2 | Mike Robe
+Montana Sky | Ecf272909d241 | Nora Roberts

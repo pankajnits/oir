@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_81]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_81 #####
+QUESTION:
+What city is the headquarters of the company led by Jeff_Miller?
+
+PATH_QUERY
+START Jeff_Miller
+R1 Ef090f867d74c
+R2 E64701cac6add
+Execute path; return final tail only.
+
+CONTEXT:
+Jeff_Miller | Ef090f867d74c | Halliburton
+Halliburton | E64701cac6add | Dubai
+Jeff_Miller | Ed5fb848bec86 | Welthungerhilfe
+Welthungerhilfe | Ee1699ec24e86 | Bonn

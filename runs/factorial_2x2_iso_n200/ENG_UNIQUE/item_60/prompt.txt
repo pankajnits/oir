@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_UNIQUE_60]: <city_or_UNKNOWN>
+ARM ENG_UNIQUE: English relations; one 2-hop from start.
+##### ID F200_ENG_UNIQUE_60 #####
+QUESTION:
+What city is the headquarters of the company led by Mark_Dubowitz?
+
+CONTEXT:
+Mark_Dubowitz | works_at | Foundation_for_Defense_of_Democracies
+Foundation_for_Defense_of_Democracies | headquartered_in | Washington_D.C.
+Hubertus_Milke | works_at | IWS
+IWS | headquartered_in | Leipzig

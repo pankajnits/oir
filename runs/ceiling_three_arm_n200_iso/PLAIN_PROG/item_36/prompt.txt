@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_36 #####
+PATH_QUERY
+START Lill_Sverresdatter_Larsen
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Lill_Sverresdatter_Larsen | works_at | Norwegian_Nurses_Organisation
+Norwegian_Nurses_Organisation | headquartered_in | Oslo
+DecoyCo_Norwegian_Nurses_Organisation | headquartered_in | DecoyHQ_Oslo
+Norwegian_Nurses_Organisation | owned_by | Hold_Norwegian_Nurses_Organisation
+Hold_Norwegian_Nurses_Organisation | meta_of | Norwegian_Nurses_Organisation
+Norwegian_Nurses_Organisation | partner_of | Partner_Norwegian_Nurses_Organisation
+Partner_Norwegian_Nurses_Organisation | meta_of | Norwegian_Nurses_Organisation
+Decoy_DecoyCo_Norwegian_Nurses_Organisation | works_at | DecoyCo_Norwegian_Nurses_Organisation

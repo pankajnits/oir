@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_192]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_192 #####
+QUESTION:
+Who directed a movie that Michael Ealy starred in?
+
+PATH_QUERY
+START Michael Ealy
+R1 E332ea2b36c91
+R2 E91e230f09b82
+Execute path; return final tail only.
+
+CONTEXT:
+Michael Ealy | E332ea2b36c91 | About Last Night
+About Last Night | E91e230f09b82 | Steve Pink
+About Last Night | E616b331d7bf1 | David Mamet

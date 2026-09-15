@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_43]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_43 #####
+QUESTION:
+Who directed a movie that Arliss Howard starred in?
+
+PATH_QUERY
+START Arliss Howard
+R1 Ee6b700412483
+R2 Ee67529ce641b
+Execute path; return final tail only.
+
+CONTEXT:
+Arliss Howard | Ee6b700412483 | CrissCross
+CrissCross | Ee67529ce641b | Chris Menges
+CrissCross | E308b2be18e8d | Scott Sommer

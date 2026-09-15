@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_82 #####
+PATH_QUERY
+START Mathias_Mogge
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mathias_Mogge | works_at | Welthungerhilfe
+Welthungerhilfe | headquartered_in | Bonn
+DecoyCo_Welthungerhilfe | headquartered_in | DecoyHQ_Bonn
+Welthungerhilfe | owned_by | Hold_Welthungerhilfe
+Hold_Welthungerhilfe | meta_of | Welthungerhilfe
+Welthungerhilfe | partner_of | Partner_Welthungerhilfe
+Partner_Welthungerhilfe | meta_of | Welthungerhilfe
+Decoy_DecoyCo_Welthungerhilfe | works_at | DecoyCo_Welthungerhilfe

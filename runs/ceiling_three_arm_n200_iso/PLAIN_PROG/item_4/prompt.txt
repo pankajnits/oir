@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_4 #####
+PATH_QUERY
+START Brian_Peddle
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Brian_Peddle | works_at | The_Salvation_Army
+The_Salvation_Army | headquartered_in | London
+DecoyCo_The_Salvation_Army | headquartered_in | DecoyHQ_London
+The_Salvation_Army | owned_by | Hold_The_Salvation_Army
+Hold_The_Salvation_Army | meta_of | The_Salvation_Army
+The_Salvation_Army | partner_of | Partner_The_Salvation_Army
+Partner_The_Salvation_Army | meta_of | The_Salvation_Army
+Decoy_DecoyCo_The_Salvation_Army | works_at | DecoyCo_The_Salvation_Army

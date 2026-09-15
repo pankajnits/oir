@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_158]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_158 #####
+QUESTION:
+Who directed a movie that Ashley Williams starred in?
+
+PATH_QUERY
+START Ashley Williams
+R1 E8371615ad53e
+R2 E4a413e41b394
+Execute path; return final tail only.
+
+CONTEXT:
+Ashley Williams | E8371615ad53e | Montana Sky
+Montana Sky | E4a413e41b394 | Mike Robe
+Montana Sky | Ee1c52e876698 | Nora Roberts

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_22 #####
+PATH_QUERY
+START Kimberly_S._Bowers
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Kimberly_S._Bowers | works_at | CST_Brands
+CST_Brands | headquartered_in | San_Antonio
+DecoyCo_CST_Brands | headquartered_in | DecoyHQ_San_Antonio
+CST_Brands | owned_by | Hold_CST_Brands
+Hold_CST_Brands | meta_of | CST_Brands
+CST_Brands | partner_of | Partner_CST_Brands
+Partner_CST_Brands | meta_of | CST_Brands
+Decoy_DecoyCo_CST_Brands | works_at | DecoyCo_CST_Brands

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_194]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_194 #####
+QUESTION:
+Who directed a movie that Dick Foran starred in?
+
+PATH_QUERY
+START Dick Foran
+R1 E78c6afc03d58
+R2 E0bcad2146278
+Execute path; return final tail only.
+
+CONTEXT:
+Dick Foran | E78c6afc03d58 | The Atomic Submarine
+The Atomic Submarine | E0bcad2146278 | Spencer Gordon Bennet
+The Atomic Submarine | E790a499577eb | Orville H. Hampton

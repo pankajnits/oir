@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_65 #####
+PATH_QUERY
+START Tim_Westergren
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Tim_Westergren | works_at | Pandora
+Pandora | headquartered_in | Oakland
+DecoyCo_Pandora | headquartered_in | DecoyHQ_Oakland
+Pandora | owned_by | Hold_Pandora
+Hold_Pandora | meta_of | Pandora
+Pandora | partner_of | Partner_Pandora
+Partner_Pandora | meta_of | Pandora
+Decoy_DecoyCo_Pandora | works_at | DecoyCo_Pandora

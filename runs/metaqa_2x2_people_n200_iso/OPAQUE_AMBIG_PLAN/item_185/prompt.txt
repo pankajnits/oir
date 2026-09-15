@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_185]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_185 #####
+QUESTION:
+Who directed a movie that Ellen Page starred in?
+
+PATH_QUERY
+START Ellen Page
+R1 Eb6847b44f5bb
+R2 E02af0eb5884e
+Execute path; return final tail only.
+
+CONTEXT:
+Ellen Page | Eb6847b44f5bb | Smart People
+Smart People | E02af0eb5884e | Noam Murro
+Smart People | Eccfdeff8559e | Mark Poirier

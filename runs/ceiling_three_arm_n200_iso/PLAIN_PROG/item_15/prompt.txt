@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_15 #####
+PATH_QUERY
+START Rachid_Azzouzi
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Rachid_Azzouzi | works_at | SpVgg_Greuther_F_rth
+SpVgg_Greuther_F_rth | headquartered_in | F_rth
+DecoyCo_SpVgg_Greuther_F_rth | headquartered_in | DecoyHQ_F_rth
+SpVgg_Greuther_F_rth | owned_by | Hold_SpVgg_Greuther_F_rth
+Hold_SpVgg_Greuther_F_rth | meta_of | SpVgg_Greuther_F_rth
+SpVgg_Greuther_F_rth | partner_of | Partner_SpVgg_Greuther_F_rth
+Partner_SpVgg_Greuther_F_rth | meta_of | SpVgg_Greuther_F_rth
+Decoy_DecoyCo_SpVgg_Greuther_F_rth | works_at | DecoyCo_SpVgg_Greuther_F_rth

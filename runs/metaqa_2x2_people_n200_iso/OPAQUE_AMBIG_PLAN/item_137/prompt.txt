@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_137]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_137 #####
+QUESTION:
+Who directed a movie that Kevin Spacey starred in?
+
+PATH_QUERY
+START Kevin Spacey
+R1 E2ae411bbc075
+R2 E0502e9532912
+Execute path; return final tail only.
+
+CONTEXT:
+Kevin Spacey | E2ae411bbc075 | The Life of David Gale
+The Life of David Gale | E0502e9532912 | Alan Parker
+The Life of David Gale | Ea0b87ac4be8e | Charles Randolph

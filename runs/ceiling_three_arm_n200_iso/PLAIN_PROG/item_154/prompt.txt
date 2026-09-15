@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_154 #####
+PATH_QUERY
+START yvind_Fylling-Jensen
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+yvind_Fylling-Jensen | works_at | Nofima
+Nofima | headquartered_in | Troms
+DecoyCo_Nofima | headquartered_in | DecoyHQ_Troms
+Nofima | owned_by | Hold_Nofima
+Hold_Nofima | meta_of | Nofima
+Nofima | partner_of | Partner_Nofima
+Partner_Nofima | meta_of | Nofima
+Decoy_DecoyCo_Nofima | works_at | DecoyCo_Nofima

@@ -1,0 +1,35 @@
+{
+  "id": "ER200_OE_AMBIG_4",
+  "arm": "OE_AMBIG",
+  "item": 4,
+  "prompt_path": "runs/entity_rel_2x2_iso_n200/OE_AMBIG/item_4/prompt.txt",
+  "pred": "E3b613a7702c5",
+  "raw": "ANSWER_SEALED[ER200_OE_AMBIG_4]: E3b613a7702c5",
+  "elapsed_s": 1.28,
+  "utc": "2026-09-15T08:53:05.007080+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJCSqFAZWAFOO2YEPEOcioO1ooGH",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462384,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 26,
+    "prompt_tokens": 184,
+    "total_tokens": 210,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

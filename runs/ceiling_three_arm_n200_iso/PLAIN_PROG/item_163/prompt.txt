@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_163 #####
+PATH_QUERY
+START Arnold_W._Donald
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Arnold_W._Donald | works_at | Carnival_Corporation
+Carnival_Corporation | headquartered_in | Southampton
+DecoyCo_Carnival_Corporation | headquartered_in | DecoyHQ_Southampton
+Carnival_Corporation | owned_by | Hold_Carnival_Corporation
+Hold_Carnival_Corporation | meta_of | Carnival_Corporation
+Carnival_Corporation | partner_of | Partner_Carnival_Corporation
+Partner_Carnival_Corporation | meta_of | Carnival_Corporation
+Decoy_DecoyCo_Carnival_Corporation | works_at | DecoyCo_Carnival_Corporation

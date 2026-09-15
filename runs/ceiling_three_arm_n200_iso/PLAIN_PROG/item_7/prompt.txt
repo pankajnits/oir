@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_7 #####
+PATH_QUERY
+START K._Anvar_Sadath
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+K._Anvar_Sadath | works_at | KITE_Kerala
+KITE_Kerala | headquartered_in | Thiruvananthapuram
+DecoyCo_KITE_Kerala | headquartered_in | DecoyHQ_Thiruvananthapuram
+KITE_Kerala | owned_by | Hold_KITE_Kerala
+Hold_KITE_Kerala | meta_of | KITE_Kerala
+KITE_Kerala | partner_of | Partner_KITE_Kerala
+Partner_KITE_Kerala | meta_of | KITE_Kerala
+Decoy_DecoyCo_KITE_Kerala | works_at | DecoyCo_KITE_Kerala

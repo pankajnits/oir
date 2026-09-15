@@ -1,0 +1,35 @@
+{
+  "id": "F200S_ENG_AMBIG_90",
+  "arm": "ENG_AMBIG",
+  "item": 90,
+  "prompt_path": "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_90/prompt.txt",
+  "pred": "Rome",
+  "raw": "ANSWER_PLAIN[F200S_ENG_AMBIG_90]: Rome",
+  "elapsed_s": 2.821,
+  "utc": "2026-09-15T08:57:57.120846+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJH8t1AUIrH1BGzre2EFqf1npAc1",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462674,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 77,
+    "prompt_tokens": 148,
+    "total_tokens": 225,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 54,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

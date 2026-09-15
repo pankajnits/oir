@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_123]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_123 #####
+QUESTION:
+Who Ef3f31d5459ab a E4769bfffc8f2 E0ef2b4e2825f [John Turturro] Ec1c3b24739dc E090d3429786c?
+
+PATH_QUERY
+START John Turturro
+R1 E6e96e9d6886f
+R2 E7f8f926d22e8
+Execute path; return final tail only.
+
+CONTEXT:
+John Turturro | E6e96e9d6886f | The Luzhin Defence
+The Luzhin Defence | E7f8f926d22e8 | Marleen Gorris
+The Luzhin Defence | E5a66112046e0 | Vladimir Nabokov

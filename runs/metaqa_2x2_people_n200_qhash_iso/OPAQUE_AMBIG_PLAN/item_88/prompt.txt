@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_88]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_88 #####
+QUESTION:
+Who Ef605efd369be a E1d3e3938745a Ebc10ad118682 [Christian Bale] Ea607991b3249 Ed50dde5625d9?
+
+PATH_QUERY
+START Christian Bale
+R1 E93e99a0cb767
+R2 E8897ae7c67e0
+Execute path; return final tail only.
+
+CONTEXT:
+Christian Bale | E93e99a0cb767 | Mio in the Land of Faraway
+Mio in the Land of Faraway | E8897ae7c67e0 | Vladimir Grammatikov
+Mio in the Land of Faraway | E4155d6ceb581 | Astrid Lindgren

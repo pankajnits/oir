@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_141]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_141 #####
+QUESTION:
+Who directed a movie that David Bowie starred in?
+
+PATH_QUERY
+START David Bowie
+R1 E13d452978732
+R2 E64a8ac0e0371
+Execute path; return final tail only.
+
+CONTEXT:
+David Bowie | E13d452978732 | Absolute Beginners
+Absolute Beginners | E64a8ac0e0371 | Julien Temple
+Absolute Beginners | E95d96c00a73b | Colin MacInnes

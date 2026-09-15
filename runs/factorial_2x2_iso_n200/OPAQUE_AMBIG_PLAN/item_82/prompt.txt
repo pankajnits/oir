@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_82]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_82 #####
+QUESTION:
+What city is the headquarters of the company led by Mathias_Mogge?
+
+PATH_QUERY
+START Mathias_Mogge
+R1 E1b82d2c1bafe
+R2 Eb9ec6593e9c8
+Execute path; return final tail only.
+
+CONTEXT:
+Mathias_Mogge | E1b82d2c1bafe | Welthungerhilfe
+Welthungerhilfe | Eb9ec6593e9c8 | Bonn
+Mathias_Mogge | Eadf49dc76d85 | Malteser_Rettungsdienst
+Malteser_Rettungsdienst | Ed0ae98392ba1 | Cologne

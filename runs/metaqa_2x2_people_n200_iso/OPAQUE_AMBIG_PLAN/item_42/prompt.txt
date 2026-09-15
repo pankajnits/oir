@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_42]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_42 #####
+QUESTION:
+Who directed a movie that Jason Rogel starred in?
+
+PATH_QUERY
+START Jason Rogel
+R1 Ef63a983ac764
+R2 Ee723b0d22dfa
+Execute path; return final tail only.
+
+CONTEXT:
+Jason Rogel | Ef63a983ac764 | Swamp Shark
+Swamp Shark | Ee723b0d22dfa | Griff Furst
+Swamp Shark | E96f7a9fcaf1f | Jennifer Iwen

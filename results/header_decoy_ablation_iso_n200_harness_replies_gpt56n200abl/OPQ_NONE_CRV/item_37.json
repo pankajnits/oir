@@ -1,0 +1,36 @@
+{
+  "id": "H200_1fb21b675a",
+  "arm": "OPQ_NONE_CRV",
+  "item": 37,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CRV/item_37/prompt.txt",
+  "pred": "Szczecin",
+  "raw": "ANSWER_PLAIN[H200_1fb21b675a]: Szczecin",
+  "elapsed_s": 3.376,
+  "utc": "2026-09-15T08:49:34.683647+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ91Mbl82g5rS4y7EgOcDlW5hICg",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462171,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 119,
+    "prompt_tokens": 158,
+    "total_tokens": 277,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 93,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

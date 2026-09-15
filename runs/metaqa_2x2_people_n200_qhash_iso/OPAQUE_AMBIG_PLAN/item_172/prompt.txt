@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_172]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_172 #####
+QUESTION:
+Who E0159e487a38a a E1716ea2e3f7f Ed54c38a42e8b [Jennifer Jason Leigh] E7ac7fc0e559c Eaab3cb73a8c2?
+
+PATH_QUERY
+START Jennifer Jason Leigh
+R1 E95451da89d31
+R2 Eaba2abf6d126
+Execute path; return final tail only.
+
+CONTEXT:
+Jennifer Jason Leigh | E95451da89d31 | Single White Female
+Single White Female | Eaba2abf6d126 | Barbet Schroeder
+Single White Female | E53ce4d69f033 | John Lutz

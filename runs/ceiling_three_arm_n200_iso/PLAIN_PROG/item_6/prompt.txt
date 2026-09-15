@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_6 #####
+PATH_QUERY
+START Mark_Cutifani
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mark_Cutifani | works_at | Anglo_American_plc
+Anglo_American_plc | headquartered_in | London
+DecoyCo_Anglo_American_plc | headquartered_in | DecoyHQ_London
+Anglo_American_plc | owned_by | Hold_Anglo_American_plc
+Hold_Anglo_American_plc | meta_of | Anglo_American_plc
+Anglo_American_plc | partner_of | Partner_Anglo_American_plc
+Partner_Anglo_American_plc | meta_of | Anglo_American_plc
+Decoy_DecoyCo_Anglo_American_plc | works_at | DecoyCo_Anglo_American_plc

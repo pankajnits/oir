@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_169]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_169 #####
+QUESTION:
+Who directed a movie that Stephen Boyd starred in?
+
+PATH_QUERY
+START Stephen Boyd
+R1 E64eb8473c6b6
+R2 E35a26f0c7c9d
+Execute path; return final tail only.
+
+CONTEXT:
+Stephen Boyd | E64eb8473c6b6 | Billy Rose's Jumbo
+Billy Rose's Jumbo | E35a26f0c7c9d | Charles Walters
+Billy Rose's Jumbo | E39aadc5af453 | Sidney Sheldon

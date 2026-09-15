@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_191 #####
+PATH_QUERY
+START John_Fish
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+John_Fish | works_at | Suffolk_Construction_Company
+Suffolk_Construction_Company | headquartered_in | Boston
+DecoyCo_Suffolk_Construction_Company | headquartered_in | DecoyHQ_Boston
+Suffolk_Construction_Company | owned_by | Hold_Suffolk_Construction_Company
+Hold_Suffolk_Construction_Company | meta_of | Suffolk_Construction_Company
+Suffolk_Construction_Company | partner_of | Partner_Suffolk_Construction_Company
+Partner_Suffolk_Construction_Company | meta_of | Suffolk_Construction_Company
+Decoy_DecoyCo_Suffolk_Construction_Company | works_at | DecoyCo_Suffolk_Construction_Company

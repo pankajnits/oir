@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_198 #####
+PATH_QUERY
+START Franck_Terner
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Franck_Terner | works_at | Air_France
+Air_France | headquartered_in | Tremblay-en-France
+DecoyCo_Air_France | headquartered_in | DecoyHQ_Tremblay-en-France
+Air_France | owned_by | Hold_Air_France
+Hold_Air_France | meta_of | Air_France
+Air_France | partner_of | Partner_Air_France
+Partner_Air_France | meta_of | Air_France
+Decoy_DecoyCo_Air_France | works_at | DecoyCo_Air_France

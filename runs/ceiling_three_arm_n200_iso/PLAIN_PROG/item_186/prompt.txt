@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_186 #####
+PATH_QUERY
+START Naguib_Sawiris
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Naguib_Sawiris | works_at | Global_Telecom_Holding
+Global_Telecom_Holding | headquartered_in | The_Hague
+DecoyCo_Global_Telecom_Holding | headquartered_in | DecoyHQ_The_Hague
+Global_Telecom_Holding | owned_by | Hold_Global_Telecom_Holding
+Hold_Global_Telecom_Holding | meta_of | Global_Telecom_Holding
+Global_Telecom_Holding | partner_of | Partner_Global_Telecom_Holding
+Partner_Global_Telecom_Holding | meta_of | Global_Telecom_Holding
+Decoy_DecoyCo_Global_Telecom_Holding | works_at | DecoyCo_Global_Telecom_Holding

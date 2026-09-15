@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_188]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_188 #####
+QUESTION:
+What city is the headquarters of the company led by Nikolai_Kotlyar?
+
+PATH_QUERY
+START Nikolai_Kotlyar
+R1 E83cbefe0cbe2
+R2 Ea6a848336346
+Execute path; return final tail only.
+
+CONTEXT:
+Nikolai_Kotlyar | E83cbefe0cbe2 | Nakhodka_Active_Marine_Fishery_Base
+Nakhodka_Active_Marine_Fishery_Base | Ea6a848336346 | Nakhodka
+Nikolai_Kotlyar | Ed860648d1ed0 | Olympstroy
+Olympstroy | E1279b2a97274 | Moscow

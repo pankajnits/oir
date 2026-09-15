@@ -1,0 +1,36 @@
+{
+  "id": "H200_92571c8ea2",
+  "arm": "OPQ_NONE_CYC",
+  "item": 61,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_61/prompt.txt",
+  "pred": "Munich",
+  "raw": "ANSWER_PLAIN[H200_92571c8ea2]: Munich",
+  "elapsed_s": 1.219,
+  "utc": "2026-09-15T08:48:39.747321+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ8AoxSi5ffSuFrvr2xTTFtMQW6M",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462118,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 159,
+    "total_tokens": 177,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

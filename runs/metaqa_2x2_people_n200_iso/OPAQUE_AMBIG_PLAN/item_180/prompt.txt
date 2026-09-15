@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_180]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_180 #####
+QUESTION:
+Who directed a movie that Frank Sinatra starred in?
+
+PATH_QUERY
+START Frank Sinatra
+R1 Ea6502f61440f
+R2 Ed51a271ace17
+Execute path; return final tail only.
+
+CONTEXT:
+Frank Sinatra | Ea6502f61440f | Robin and the 7 Hoods
+Robin and the 7 Hoods | Ed51a271ace17 | Gordon Douglas
+Robin and the 7 Hoods | E157631d314a5 | David R. Schwartz

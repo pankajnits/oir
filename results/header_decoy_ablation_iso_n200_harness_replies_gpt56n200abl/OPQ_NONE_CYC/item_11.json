@@ -1,0 +1,36 @@
+{
+  "id": "H200_3b90fd8b79",
+  "arm": "OPQ_NONE_CYC",
+  "item": 11,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_11/prompt.txt",
+  "pred": "Zug",
+  "raw": "ANSWER_PLAIN[H200_3b90fd8b79]: Zug",
+  "elapsed_s": 1.419,
+  "utc": "2026-09-15T08:48:25.716158+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ7wyTWF6Sa40fLiXVU2U638Vf6a",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462104,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 161,
+    "total_tokens": 180,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

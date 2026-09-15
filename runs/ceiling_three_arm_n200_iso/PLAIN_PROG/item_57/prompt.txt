@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_57 #####
+PATH_QUERY
+START Laurent_Gizon
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Laurent_Gizon | works_at | Max_Planck_Institute_for_Solar_System_Research
+Max_Planck_Institute_for_Solar_System_Research | headquartered_in | G_ttingen
+DecoyCo_Max_Planck_Institute_for_Solar_System_Research | headquartered_in | DecoyHQ_G_ttingen
+Max_Planck_Institute_for_Solar_System_Research | owned_by | Hold_Max_Planck_Institute_for_Solar_System_Research
+Hold_Max_Planck_Institute_for_Solar_System_Research | meta_of | Max_Planck_Institute_for_Solar_System_Research
+Max_Planck_Institute_for_Solar_System_Research | partner_of | Partner_Max_Planck_Institute_for_Solar_System_Research
+Partner_Max_Planck_Institute_for_Solar_System_Research | meta_of | Max_Planck_Institute_for_Solar_System_Research
+Decoy_DecoyCo_Max_Planck_Institute_for_Solar_System_Research | works_at | DecoyCo_Max_Planck_Institute_for_Solar_System_Research

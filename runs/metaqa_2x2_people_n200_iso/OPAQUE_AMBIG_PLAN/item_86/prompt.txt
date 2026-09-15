@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_86]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_86 #####
+QUESTION:
+Who directed a movie that Clint Eastwood starred in?
+
+PATH_QUERY
+START Clint Eastwood
+R1 Ebce20be11cee
+R2 E7761e00472ac
+Execute path; return final tail only.
+
+CONTEXT:
+Clint Eastwood | Ebce20be11cee | The Beguiled
+The Beguiled | E7761e00472ac | Don Siegel
+The Beguiled | E055a0ace9132 | Albert Maltz

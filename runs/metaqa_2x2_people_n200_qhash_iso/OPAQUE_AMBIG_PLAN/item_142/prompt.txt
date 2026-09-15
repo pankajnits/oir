@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_142]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_142 #####
+QUESTION:
+Who E33430fc5f8cb a Ef3df00c19953 Ed0c506c09392 [Norman Reedus] E9a46edd52e84 Ed9bbfa345141?
+
+PATH_QUERY
+START Norman Reedus
+R1 E213df5f08a49
+R2 E6acaf7b4b674
+Execute path; return final tail only.
+
+CONTEXT:
+Norman Reedus | E213df5f08a49 | Hello Herman
+Hello Herman | E6acaf7b4b674 | Michelle Danner
+Hello Herman | Efc2f3c70621c | John Buffalo Mailer

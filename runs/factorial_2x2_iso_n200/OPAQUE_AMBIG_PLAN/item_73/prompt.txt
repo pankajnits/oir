@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_73]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_73 #####
+QUESTION:
+What city is the headquarters of the company led by Houlin_Zhao?
+
+PATH_QUERY
+START Houlin_Zhao
+R1 Eba9fac57825e
+R2 Ef103f755845b
+Execute path; return final tail only.
+
+CONTEXT:
+Houlin_Zhao | Eba9fac57825e | International_Telecommunication_Union
+International_Telecommunication_Union | Ef103f755845b | Geneva
+Houlin_Zhao | Ec56c8bc4b2e4 | ShinAwiL
+ShinAwiL | E9951ce239cbf | Dublin

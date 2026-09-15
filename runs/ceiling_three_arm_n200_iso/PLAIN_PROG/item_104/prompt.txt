@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_104 #####
+PATH_QUERY
+START Olivier_Chansou
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Olivier_Chansou | works_at | French_Civil_Aviation_University
+French_Civil_Aviation_University | headquartered_in | Toulouse
+DecoyCo_French_Civil_Aviation_University | headquartered_in | DecoyHQ_Toulouse
+French_Civil_Aviation_University | owned_by | Hold_French_Civil_Aviation_University
+Hold_French_Civil_Aviation_University | meta_of | French_Civil_Aviation_University
+French_Civil_Aviation_University | partner_of | Partner_French_Civil_Aviation_University
+Partner_French_Civil_Aviation_University | meta_of | French_Civil_Aviation_University
+Decoy_DecoyCo_French_Civil_Aviation_University | works_at | DecoyCo_French_Civil_Aviation_University

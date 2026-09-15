@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_113 #####
+PATH_QUERY
+START Isaac_Dabah
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Isaac_Dabah | works_at | Delta_Galil_Industries_Ltd.
+Delta_Galil_Industries_Ltd. | headquartered_in | Tel_Aviv
+DecoyCo_Delta_Galil_Industries_Ltd. | headquartered_in | DecoyHQ_Tel_Aviv
+Delta_Galil_Industries_Ltd. | owned_by | Hold_Delta_Galil_Industries_Ltd.
+Hold_Delta_Galil_Industries_Ltd. | meta_of | Delta_Galil_Industries_Ltd.
+Delta_Galil_Industries_Ltd. | partner_of | Partner_Delta_Galil_Industries_Ltd.
+Partner_Delta_Galil_Industries_Ltd. | meta_of | Delta_Galil_Industries_Ltd.
+Decoy_DecoyCo_Delta_Galil_Industries_Ltd. | works_at | DecoyCo_Delta_Galil_Industries_Ltd.

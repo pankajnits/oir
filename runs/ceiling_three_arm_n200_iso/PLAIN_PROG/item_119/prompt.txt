@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_119 #####
+PATH_QUERY
+START Ed_Bastian
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ed_Bastian | works_at | Delta_Air_Lines
+Delta_Air_Lines | headquartered_in | Atlanta
+DecoyCo_Delta_Air_Lines | headquartered_in | DecoyHQ_Atlanta
+Delta_Air_Lines | owned_by | Hold_Delta_Air_Lines
+Hold_Delta_Air_Lines | meta_of | Delta_Air_Lines
+Delta_Air_Lines | partner_of | Partner_Delta_Air_Lines
+Partner_Delta_Air_Lines | meta_of | Delta_Air_Lines
+Decoy_DecoyCo_Delta_Air_Lines | works_at | DecoyCo_Delta_Air_Lines

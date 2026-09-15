@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_110]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_110 #####
+QUESTION:
+What city is the headquarters of the company led by Samuel_W._Fordyce?
+
+PATH_QUERY
+START Samuel_W._Fordyce
+R1 Ef3ab6061ae4e
+R2 E8e3d1c412fe4
+Execute path; return final tail only.
+
+CONTEXT:
+Samuel_W._Fordyce | Ef3ab6061ae4e | Kansas_City_Southern
+Kansas_City_Southern | E8e3d1c412fe4 | Kansas_City
+Samuel_W._Fordyce | Ecacdeace750b | Socialbakers
+Socialbakers | Ee98178fc2156 | Plze

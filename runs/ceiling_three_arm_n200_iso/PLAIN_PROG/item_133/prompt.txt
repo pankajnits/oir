@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_133 #####
+PATH_QUERY
+START Achim_Steiner
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Achim_Steiner | works_at | United_Nations_Environment_Programme
+United_Nations_Environment_Programme | headquartered_in | Nairobi
+DecoyCo_United_Nations_Environment_Programme | headquartered_in | DecoyHQ_Nairobi
+United_Nations_Environment_Programme | owned_by | Hold_United_Nations_Environment_Programme
+Hold_United_Nations_Environment_Programme | meta_of | United_Nations_Environment_Programme
+United_Nations_Environment_Programme | partner_of | Partner_United_Nations_Environment_Programme
+Partner_United_Nations_Environment_Programme | meta_of | United_Nations_Environment_Programme
+Decoy_DecoyCo_United_Nations_Environment_Programme | works_at | DecoyCo_United_Nations_Environment_Programme

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_2 #####
+PATH_QUERY
+START Mia_Couto
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mia_Couto | works_at | Tempogr_fica
+Tempogr_fica | headquartered_in | Maputo
+DecoyCo_Tempogr_fica | headquartered_in | DecoyHQ_Maputo
+Tempogr_fica | owned_by | Hold_Tempogr_fica
+Hold_Tempogr_fica | meta_of | Tempogr_fica
+Tempogr_fica | partner_of | Partner_Tempogr_fica
+Partner_Tempogr_fica | meta_of | Tempogr_fica
+Decoy_DecoyCo_Tempogr_fica | works_at | DecoyCo_Tempogr_fica

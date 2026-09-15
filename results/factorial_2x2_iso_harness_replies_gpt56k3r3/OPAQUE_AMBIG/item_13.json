@@ -1,0 +1,35 @@
+{
+  "id": "F22_OPAQUE_AMBIG_13",
+  "arm": "OPAQUE_AMBIG",
+  "item": 13,
+  "prompt_path": "runs/factorial_2x2_iso/OPAQUE_AMBIG/item_13/prompt.txt",
+  "pred": "Stockholm",
+  "raw": "ANSWER_PLAIN[F22_OPAQUE_AMBIG_13]: Stockholm",
+  "elapsed_s": 3.505,
+  "utc": "2026-09-15T06:33:43.089920+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOH1XcNqLwmpG30GPaNlH0HANvSpB",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789454019,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 76,
+    "prompt_tokens": 185,
+    "total_tokens": 261,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 53,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

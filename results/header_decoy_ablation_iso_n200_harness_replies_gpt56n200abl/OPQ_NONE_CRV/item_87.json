@@ -1,0 +1,36 @@
+{
+  "id": "H200_a5ef0e7222",
+  "arm": "OPQ_NONE_CRV",
+  "item": 87,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CRV/item_87/prompt.txt",
+  "pred": "Perth",
+  "raw": "ANSWER_PLAIN[H200_a5ef0e7222]: Perth",
+  "elapsed_s": 1.375,
+  "utc": "2026-09-15T08:49:46.693759+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ9FocySVn19AuSWr9F5LOv5pKvO",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462185,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 166,
+    "total_tokens": 184,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

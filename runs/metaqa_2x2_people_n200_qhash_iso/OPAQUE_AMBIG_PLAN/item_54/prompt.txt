@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_54]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_54 #####
+QUESTION:
+Who E517f6860cb34 a E37ce8b5f0391 Ef61a5e670ed0 [Amanda Crew] E0a60064fa809 E82ce895bd768?
+
+PATH_QUERY
+START Amanda Crew
+R1 Ef2c16d9ff812
+R2 Ee92e6d5631d2
+Execute path; return final tail only.
+
+CONTEXT:
+Amanda Crew | Ef2c16d9ff812 | Repeaters
+Repeaters | Ee92e6d5631d2 | Carl Bessai
+Repeaters | Ed37ba0768a27 | Arne Olsen

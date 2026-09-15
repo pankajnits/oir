@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_196]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_196 #####
+QUESTION:
+Who directed a movie that Zach Gilford starred in?
+
+PATH_QUERY
+START Zach Gilford
+R1 Ee494a44dd3d5
+R2 Ead51d25d7c0b
+Execute path; return final tail only.
+
+CONTEXT:
+Zach Gilford | Ee494a44dd3d5 | Devil's Due
+Devil's Due | Ead51d25d7c0b | Tyler Gillett
+Devil's Due | E3d2333ba51d2 | Lindsay Devlin

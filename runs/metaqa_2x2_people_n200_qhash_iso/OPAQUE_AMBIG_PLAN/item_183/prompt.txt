@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_183]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_183 #####
+QUESTION:
+Who E2bf3e9af81ae a Edc47e18f73e7 Eecca6923e29d [Richard Burton] Ea498a4817a86 E635842177d59?
+
+PATH_QUERY
+START Richard Burton
+R1 E9d3792e9febd
+R2 E6a271de1b5ea
+Execute path; return final tail only.
+
+CONTEXT:
+Richard Burton | E9d3792e9febd | Who's Afraid of Virginia Woolf?
+Who's Afraid of Virginia Woolf? | E6a271de1b5ea | Mike Nichols
+Who's Afraid of Virginia Woolf? | Ed65db69bf3a6 | Ernest Lehman

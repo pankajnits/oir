@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_58]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_58 #####
+QUESTION:
+Who E74caa9890ecd a E6cf4d87f074b Ed810cfa4bf3d [Don Ameche] Eb2ae07074fbb Ee6ec06203f35?
+
+PATH_QUERY
+START Don Ameche
+R1 E8fb54a16f718
+R2 Ea7b6634316ae
+Execute path; return final tail only.
+
+CONTEXT:
+Don Ameche | E8fb54a16f718 | A Fever in the Blood
+A Fever in the Blood | Ea7b6634316ae | Vincent Sherman
+A Fever in the Blood | E939a7956c810 | Roy Huggins

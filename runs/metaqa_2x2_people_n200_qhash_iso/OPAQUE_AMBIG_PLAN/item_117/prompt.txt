@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_117]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_117 #####
+QUESTION:
+Who Ea2e9810748aa a Efe108c1ec1d0 E33b300a0da79 [Kristen Stewart] E580bcc2dee08 E4199d475a685?
+
+PATH_QUERY
+START Kristen Stewart
+R1 E67e545eb7b60
+R2 E9d6feb029839
+Execute path; return final tail only.
+
+CONTEXT:
+Kristen Stewart | E67e545eb7b60 | Welcome to the Rileys
+Welcome to the Rileys | E9d6feb029839 | Jake Scott
+Welcome to the Rileys | Ee0fadf359860 | Ken Hixon

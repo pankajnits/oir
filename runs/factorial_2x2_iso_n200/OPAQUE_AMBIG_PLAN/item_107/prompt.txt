@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_107]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_107 #####
+QUESTION:
+What city is the headquarters of the company led by Nikesh_Arora?
+
+PATH_QUERY
+START Nikesh_Arora
+R1 Ec725f6c202f1
+R2 E67fd6b16ce8b
+Execute path; return final tail only.
+
+CONTEXT:
+Nikesh_Arora | Ec725f6c202f1 | Palo_Alto_Networks
+Palo_Alto_Networks | E67fd6b16ce8b | Santa_Clara
+Nikesh_Arora | Eb2189f4473a5 | Virgin_Voyages
+Virgin_Voyages | Edfede1cd0415 | Plantation

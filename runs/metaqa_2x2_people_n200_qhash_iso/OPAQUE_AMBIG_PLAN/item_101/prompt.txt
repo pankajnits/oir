@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_101]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_101 #####
+QUESTION:
+Who Ecf8c3d419aed a Edaeccfa40be1 Eb142f04086e4 [Kate Beckinsale] E33f991674da2 E0266605adc68?
+
+PATH_QUERY
+START Kate Beckinsale
+R1 E78ec9cbce833
+R2 Ef31c788f86cf
+Execute path; return final tail only.
+
+CONTEXT:
+Kate Beckinsale | E78ec9cbce833 | Cold Comfort Farm
+Cold Comfort Farm | Ef31c788f86cf | John Schlesinger
+Cold Comfort Farm | E2d32a230cf8a | Stella Gibbons

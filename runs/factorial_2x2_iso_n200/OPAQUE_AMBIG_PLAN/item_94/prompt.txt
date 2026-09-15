@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_94]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_94 #####
+QUESTION:
+What city is the headquarters of the company led by Carsten_Spohr?
+
+PATH_QUERY
+START Carsten_Spohr
+R1 E7956e8d3a5a3
+R2 E6a6fa692a2bb
+Execute path; return final tail only.
+
+CONTEXT:
+Carsten_Spohr | E7956e8d3a5a3 | Lufthansa
+Lufthansa | E6a6fa692a2bb | Cologne
+Carsten_Spohr | Ed3107ae55011 | International_Cricket_Council
+International_Cricket_Council | Edddb3c930ae1 | Dubai

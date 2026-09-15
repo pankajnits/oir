@@ -1,0 +1,35 @@
+{
+  "id": "H200_4067c2464e",
+  "arm": "OPQ_H5_CYC",
+  "item": 111,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_111/prompt.txt",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_PLAIN[H200_4067c2464e]: UNKNOWN",
+  "elapsed_s": 2.34,
+  "utc": "2026-09-15T08:51:44.486754+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJB8E9OyUOq8synBCDscDm69aPlZ",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462302,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 56,
+    "prompt_tokens": 176,
+    "total_tokens": 232,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 32,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

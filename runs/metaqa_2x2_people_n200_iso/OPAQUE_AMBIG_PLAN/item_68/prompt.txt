@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_68]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_68 #####
+QUESTION:
+Who directed a movie that Don Megowan starred in?
+
+PATH_QUERY
+START Don Megowan
+R1 Ec28cbbde2c16
+R2 Ef5ae2a17d090
+Execute path; return final tail only.
+
+CONTEXT:
+Don Megowan | Ec28cbbde2c16 | The Creation of the Humanoids
+The Creation of the Humanoids | Ef5ae2a17d090 | Wesley Barry
+The Creation of the Humanoids | Eb4f6b788f4b0 | Jay Simms

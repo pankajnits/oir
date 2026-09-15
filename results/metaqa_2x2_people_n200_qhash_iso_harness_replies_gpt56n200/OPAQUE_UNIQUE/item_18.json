@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_UNIQUE_18",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 18,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_18/prompt.txt",
+  "pred": "Robert Aldrich",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_UNIQUE_18]: Robert Aldrich",
+  "elapsed_s": 2.848,
+  "utc": "2026-09-15T09:17:50.942431+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJaO7LCzzMzZlTh5tXBZadFncnDm",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463868,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 72,
+    "prompt_tokens": 213,
+    "total_tokens": 285,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 44,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

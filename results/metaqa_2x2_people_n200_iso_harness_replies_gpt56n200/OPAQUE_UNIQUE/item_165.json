@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_UNIQUE_165",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 165,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_UNIQUE/item_165/prompt.txt",
+  "pred": "James Ivory",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_UNIQUE_165]: James Ivory",
+  "elapsed_s": 1.307,
+  "utc": "2026-09-15T09:15:37.459434+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJYG9YCQcCFmuAbAIe3icWakiqst",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463736,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 159,
+    "total_tokens": 179,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

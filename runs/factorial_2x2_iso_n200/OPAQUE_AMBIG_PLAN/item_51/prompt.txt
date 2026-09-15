@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_51]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_51 #####
+QUESTION:
+What city is the headquarters of the company led by Daniel_K_et_nsk?
+
+PATH_QUERY
+START Daniel_K_et_nsk
+R1 E9fd52dfedc67
+R2 E78c6a14e1373
+Execute path; return final tail only.
+
+CONTEXT:
+Daniel_K_et_nsk | E9fd52dfedc67 | EP_Heat_Power
+EP_Heat_Power | E78c6a14e1373 | Prague
+Daniel_K_et_nsk | E5da8a310736a | European_Union_Military_Committee
+European_Union_Military_Committee | E8306e9196f6a | Brussels

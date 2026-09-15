@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_35 #####
+PATH_QUERY
+START Kelli_Thomas-Drake
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Kelli_Thomas-Drake | works_at | MyPurpleFolder
+MyPurpleFolder | headquartered_in | Dallas
+DecoyCo_MyPurpleFolder | headquartered_in | DecoyHQ_Dallas
+MyPurpleFolder | owned_by | Hold_MyPurpleFolder
+Hold_MyPurpleFolder | meta_of | MyPurpleFolder
+MyPurpleFolder | partner_of | Partner_MyPurpleFolder
+Partner_MyPurpleFolder | meta_of | MyPurpleFolder
+Decoy_DecoyCo_MyPurpleFolder | works_at | DecoyCo_MyPurpleFolder

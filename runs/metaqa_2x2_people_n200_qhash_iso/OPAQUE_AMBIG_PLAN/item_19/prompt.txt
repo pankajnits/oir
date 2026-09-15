@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_19]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_19 #####
+QUESTION:
+Who E4845f9916ec8 a Ee00b11a51374 E663e4e6bbb5a [James Stewart] E21fe29fa2a18 E050e2bb73ebf?
+
+PATH_QUERY
+START James Stewart
+R1 E6bae33c871e5
+R2 E2aa0d952944b
+Execute path; return final tail only.
+
+CONTEXT:
+James Stewart | E6bae33c871e5 | No Highway in the Sky
+No Highway in the Sky | E2aa0d952944b | Henry Koster
+No Highway in the Sky | E0b8c0898d742 | Nevil Shute

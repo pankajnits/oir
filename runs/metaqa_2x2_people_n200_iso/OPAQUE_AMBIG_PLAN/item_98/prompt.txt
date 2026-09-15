@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_98]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_98 #####
+QUESTION:
+Who directed a movie that Claire Danes starred in?
+
+PATH_QUERY
+START Claire Danes
+R1 E8e51d569bf2e
+R2 Ee78583624d53
+Execute path; return final tail only.
+
+CONTEXT:
+Claire Danes | E8e51d569bf2e | Temple Grandin
+Temple Grandin | Ee78583624d53 | Mick Jackson
+Temple Grandin | E205ae3ac1424 | Temple Grandin

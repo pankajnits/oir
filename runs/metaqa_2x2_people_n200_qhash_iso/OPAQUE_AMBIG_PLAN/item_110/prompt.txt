@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_110]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_110 #####
+QUESTION:
+Who Eba4a0c29da6d a Ee6c72ccc2f4e E15a05f369851 [Zach Galifianakis] E537fb03e84fc E5d369136a96a?
+
+PATH_QUERY
+START Zach Galifianakis
+R1 Ee2c1ca7ba308
+R2 Ed51fc143cda3
+Execute path; return final tail only.
+
+CONTEXT:
+Zach Galifianakis | Ee2c1ca7ba308 | Visioneers
+Visioneers | Ed51fc143cda3 | Jared Drake
+Visioneers | Eb3394dfb1b12 | Brandon Drake

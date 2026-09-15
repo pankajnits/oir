@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_2]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_2 #####
+QUESTION:
+Who directed a movie that Adrien Brody starred in?
+
+PATH_QUERY
+START Adrien Brody
+R1 Edf33af45ddfd
+R2 Eee1d0d94c4c4
+Execute path; return final tail only.
+
+CONTEXT:
+Adrien Brody | Edf33af45ddfd | Wrecked
+Wrecked | Eee1d0d94c4c4 | Michael Greenspan
+Wrecked | E87bc451d41ab | Christopher Dodd

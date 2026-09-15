@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_64]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_64 #####
+QUESTION:
+What city is the headquarters of the company led by Keith_Creel?
+
+CONTEXT:
+Keith_Creel | works_at | Canadian_Pacific_Kansas_City
+Canadian_Pacific_Kansas_City | headquartered_in | Calgary
+Keith_Creel | partner_of | Pandora
+Pandora | located_in | Oakland

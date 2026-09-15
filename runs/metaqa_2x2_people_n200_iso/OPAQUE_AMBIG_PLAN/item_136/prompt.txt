@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_136]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_136 #####
+QUESTION:
+Who directed a movie that Laurence Fishburne starred in?
+
+PATH_QUERY
+START Laurence Fishburne
+R1 Eac70e0716065
+R2 E248777dfa618
+Execute path; return final tail only.
+
+CONTEXT:
+Laurence Fishburne | Eac70e0716065 | The Death and Life of Bobby Z
+The Death and Life of Bobby Z | E248777dfa618 | John Herzfeld
+The Death and Life of Bobby Z | Ee1fa4467df50 | Don Winslow

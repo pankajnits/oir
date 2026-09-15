@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_47]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_47 #####
+QUESTION:
+What city is the headquarters of the company led by Nicolas_Scott?
+
+PATH_QUERY
+START Nicolas_Scott
+R1 E3457785e12de
+R2 E09224b765e1e
+Execute path; return final tail only.
+
+CONTEXT:
+Nicolas_Scott | E3457785e12de | National_Cancer_Institute
+National_Cancer_Institute | E09224b765e1e | Boulogne-Billancourt
+Nicolas_Scott | Eb0d1d351848b | youngfilms
+youngfilms | Ecffe61ab3854 | Hamburg

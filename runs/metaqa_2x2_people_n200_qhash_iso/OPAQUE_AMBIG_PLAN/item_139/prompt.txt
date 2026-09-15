@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_139]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_139 #####
+QUESTION:
+Who E7caf440930f9 a E5bfae52123db E38afbc73ab13 [Barbara Stanwyck] E427c33e41bd6 Ec764d0cb05d1?
+
+PATH_QUERY
+START Barbara Stanwyck
+R1 Efcff39763da3
+R2 E107e1f1a2817
+Execute path; return final tail only.
+
+CONTEXT:
+Barbara Stanwyck | Efcff39763da3 | Stella Dallas
+Stella Dallas | E107e1f1a2817 | King Vidor
+Stella Dallas | E66182ece37b6 | Olive Higgins Prouty

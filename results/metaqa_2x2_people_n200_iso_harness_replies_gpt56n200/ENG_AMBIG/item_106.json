@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_AMBIG_106",
+  "arm": "ENG_AMBIG",
+  "item": 106,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_AMBIG/item_106/prompt.txt",
+  "pred": "Ron Howard",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_AMBIG_106]: Ron Howard",
+  "elapsed_s": 1.82,
+  "utc": "2026-09-15T09:14:36.243373+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJXG188Gvb5USbsTwIlUAYWGqVn3",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463674,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 122,
+    "total_tokens": 141,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_74]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_74 #####
+QUESTION:
+Who directed a movie that Peter Cushing starred in?
+
+PATH_QUERY
+START Peter Cushing
+R1 E3574635433d0
+R2 E94d50015058a
+Execute path; return final tail only.
+
+CONTEXT:
+Peter Cushing | E3574635433d0 | The Abominable Snowman
+The Abominable Snowman | E94d50015058a | Val Guest
+The Abominable Snowman | E4e31511c3c28 | Nigel Kneale

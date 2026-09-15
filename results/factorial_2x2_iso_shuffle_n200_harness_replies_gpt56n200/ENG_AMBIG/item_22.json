@@ -1,0 +1,35 @@
+{
+  "id": "F200S_ENG_AMBIG_22",
+  "arm": "ENG_AMBIG",
+  "item": 22,
+  "prompt_path": "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_22/prompt.txt",
+  "pred": "San_Antonio",
+  "raw": "ANSWER_PLAIN[F200S_ENG_AMBIG_22]: San_Antonio",
+  "elapsed_s": 1.566,
+  "utc": "2026-09-15T08:57:41.056585+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJGtP4lPHvRgGINjXVIU1Ud9Lp0V",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462659,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 147,
+    "total_tokens": 167,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

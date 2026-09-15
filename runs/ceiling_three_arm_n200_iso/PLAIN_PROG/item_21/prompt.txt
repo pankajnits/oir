@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_21 #####
+PATH_QUERY
+START Muzzammil_Hassan
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Muzzammil_Hassan | works_at | Bridges_TV
+Bridges_TV | headquartered_in | New_York_City
+DecoyCo_Bridges_TV | headquartered_in | DecoyHQ_New_York_City
+Bridges_TV | owned_by | Hold_Bridges_TV
+Hold_Bridges_TV | meta_of | Bridges_TV
+Bridges_TV | partner_of | Partner_Bridges_TV
+Partner_Bridges_TV | meta_of | Bridges_TV
+Decoy_DecoyCo_Bridges_TV | works_at | DecoyCo_Bridges_TV

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_24]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_24 #####
+QUESTION:
+What city is the headquarters of the company led by Robert_Swaak?
+
+PATH_QUERY
+START Robert_Swaak
+R1 E632fddc7e312
+R2 E7212f9d51e53
+Execute path; return final tail only.
+
+CONTEXT:
+Robert_Swaak | E632fddc7e312 | ABN_AMRO
+ABN_AMRO | E7212f9d51e53 | Amsterdam
+Robert_Swaak | E79dfefc12a03 | Hjo_Stenstorps_J_rnv_g
+Hjo_Stenstorps_J_rnv_g | Ee760847dbec4 | Hjo

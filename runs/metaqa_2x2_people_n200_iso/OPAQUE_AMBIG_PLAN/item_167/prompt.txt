@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_167]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_167 #####
+QUESTION:
+Who directed a movie that Anne Bancroft starred in?
+
+PATH_QUERY
+START Anne Bancroft
+R1 E040e83e0cc35
+R2 E0a57935c7e90
+Execute path; return final tail only.
+
+CONTEXT:
+Anne Bancroft | E040e83e0cc35 | 'night, Mother
+'night, Mother | E0a57935c7e90 | Tom Moore
+'night, Mother | E4043aea32e18 | Marsha Norman

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_158 #####
+PATH_QUERY
+START Patrick_Opdenh_vel
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Patrick_Opdenh_vel | works_at | Ludwig-Erhard-Stiftung
+Ludwig-Erhard-Stiftung | headquartered_in | Bonn
+DecoyCo_Ludwig-Erhard-Stiftung | headquartered_in | DecoyHQ_Bonn
+Ludwig-Erhard-Stiftung | owned_by | Hold_Ludwig-Erhard-Stiftung
+Hold_Ludwig-Erhard-Stiftung | meta_of | Ludwig-Erhard-Stiftung
+Ludwig-Erhard-Stiftung | partner_of | Partner_Ludwig-Erhard-Stiftung
+Partner_Ludwig-Erhard-Stiftung | meta_of | Ludwig-Erhard-Stiftung
+Decoy_DecoyCo_Ludwig-Erhard-Stiftung | works_at | DecoyCo_Ludwig-Erhard-Stiftung

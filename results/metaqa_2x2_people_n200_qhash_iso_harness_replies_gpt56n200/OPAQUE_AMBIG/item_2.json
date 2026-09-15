@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_AMBIG_2",
+  "arm": "OPAQUE_AMBIG",
+  "item": 2,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_2/prompt.txt",
+  "pred": "Michael Greenspan; Christopher Dodd",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_2]: Michael Greenspan; Christopher Dodd",
+  "elapsed_s": 2.749,
+  "utc": "2026-09-15T09:19:03.860162+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJbZgk3xsD1hdvuSBHv1cvoYFZuY",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463941,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 82,
+    "prompt_tokens": 194,
+    "total_tokens": 276,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 50,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

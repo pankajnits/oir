@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_114 #####
+PATH_QUERY
+START Martin_Voh_nka
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Martin_Voh_nka | works_at | W.A.G_Payment_Solutions
+W.A.G_Payment_Solutions | headquartered_in | Liverpool
+DecoyCo_W.A.G_Payment_Solutions | headquartered_in | DecoyHQ_Liverpool
+W.A.G_Payment_Solutions | owned_by | Hold_W.A.G_Payment_Solutions
+Hold_W.A.G_Payment_Solutions | meta_of | W.A.G_Payment_Solutions
+W.A.G_Payment_Solutions | partner_of | Partner_W.A.G_Payment_Solutions
+Partner_W.A.G_Payment_Solutions | meta_of | W.A.G_Payment_Solutions
+Decoy_DecoyCo_W.A.G_Payment_Solutions | works_at | DecoyCo_W.A.G_Payment_Solutions

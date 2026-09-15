@@ -1,0 +1,36 @@
+{
+  "id": "H200_6f818fa705",
+  "arm": "OPQ_K2_CYC",
+  "item": 26,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CYC/item_26/prompt.txt",
+  "pred": "Oslo",
+  "raw": "ANSWER_PLAIN[H200_6f818fa705]: Oslo",
+  "elapsed_s": 1.562,
+  "utc": "2026-09-15T08:45:15.060885+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ4rTqoRnxr0YiRzOfJ1EnEXMKZT",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461913,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 17,
+    "prompt_tokens": 165,
+    "total_tokens": 182,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

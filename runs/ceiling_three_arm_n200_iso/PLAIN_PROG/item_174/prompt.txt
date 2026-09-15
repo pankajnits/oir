@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_174 #####
+PATH_QUERY
+START Dagfinn_Neteland
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Dagfinn_Neteland | works_at | Fjord1
+Fjord1 | headquartered_in | Flor
+DecoyCo_Fjord1 | headquartered_in | DecoyHQ_Flor
+Fjord1 | owned_by | Hold_Fjord1
+Hold_Fjord1 | meta_of | Fjord1
+Fjord1 | partner_of | Partner_Fjord1
+Partner_Fjord1 | meta_of | Fjord1
+Decoy_DecoyCo_Fjord1 | works_at | DecoyCo_Fjord1

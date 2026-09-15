@@ -1,0 +1,36 @@
+{
+  "id": "H200_d503891680",
+  "arm": "ENG_NONE_CYC",
+  "item": 49,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/ENG_NONE_CYC/item_49/prompt.txt",
+  "pred": "Seattle",
+  "raw": "ANSWER_PLAIN[H200_d503891680]: Seattle",
+  "elapsed_s": 1.418,
+  "utc": "2026-09-15T08:50:31.282526+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ9ybuEdxFr53NI7Xw3zXesc360U",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462230,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 15,
+    "prompt_tokens": 115,
+    "total_tokens": 130,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

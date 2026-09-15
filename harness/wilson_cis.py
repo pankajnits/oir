@@ -111,6 +111,18 @@ def wiki_h5_from_lock() -> dict[str, tuple[int, int]]:
     ]:
         k, n = (int(x) for x in fact[arm]["score"].split("/"))
         out[name] = (k, n)
+    n200 = ROOT / "results" / "factorial_2x2_iso_n200_gpt56n200.json"
+    if n200.exists():
+        fact200 = json.loads(n200.read_text())["summary"]
+        for arm, name in [
+            ("ENG_UNIQUE", "WIKI_H5_N200_ENG_UNIQUE"),
+            ("ENG_AMBIG", "WIKI_H5_N200_ENG_AMBIG"),
+            ("OPAQUE_UNIQUE", "WIKI_H5_N200_OPAQUE_UNIQUE"),
+            ("OPAQUE_AMBIG", "WIKI_H5_N200_OPAQUE_AMBIG"),
+            ("OPAQUE_AMBIG_PLAN", "WIKI_H5_N200_OPAQUE_AMBIG_PLAN"),
+        ]:
+            k, n = (int(x) for x in fact200[arm]["score"].split("/"))
+            out[name] = (k, n)
     return out
 
 

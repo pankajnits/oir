@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_3 #####
+PATH_QUERY
+START Lars_S_ren_Rasmussen
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Lars_S_ren_Rasmussen | works_at | Coloplast
+Coloplast | headquartered_in | Humleb_k
+DecoyCo_Coloplast | headquartered_in | DecoyHQ_Humleb_k
+Coloplast | owned_by | Hold_Coloplast
+Hold_Coloplast | meta_of | Coloplast
+Coloplast | partner_of | Partner_Coloplast
+Partner_Coloplast | meta_of | Coloplast
+Decoy_DecoyCo_Coloplast | works_at | DecoyCo_Coloplast

@@ -1,0 +1,36 @@
+{
+  "id": "H200_0f4fd2f846",
+  "arm": "OPQ_K2_CRV",
+  "item": 143,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CRV/item_143/prompt.txt",
+  "pred": "Saint_Petersburg",
+  "raw": "ANSWER_PLAIN[H200_0f4fd2f846]: Saint_Petersburg",
+  "elapsed_s": 3.341,
+  "utc": "2026-09-15T08:47:53.979473+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ7PvEJaGmjgphH1xkKsulUvHa5F",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462071,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 133,
+    "prompt_tokens": 180,
+    "total_tokens": 313,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 105,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

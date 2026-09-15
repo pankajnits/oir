@@ -1,0 +1,35 @@
+{
+  "id": "F200_OPAQUE_AMBIG_53",
+  "arm": "OPAQUE_AMBIG",
+  "item": 53,
+  "prompt_path": "runs/factorial_2x2_iso_n200/OPAQUE_AMBIG/item_53/prompt.txt",
+  "pred": "Neuss",
+  "raw": "ANSWER_PLAIN[F200_OPAQUE_AMBIG_53]: Neuss",
+  "elapsed_s": 2.162,
+  "utc": "2026-09-15T08:41:25.554837+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJ19gqhoI8OXzMC7aTzRAsZ75c61",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461683,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 65,
+    "prompt_tokens": 183,
+    "total_tokens": 248,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 41,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

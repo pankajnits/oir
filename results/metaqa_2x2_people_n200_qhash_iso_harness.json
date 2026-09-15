@@ -1,0 +1,4031 @@
+{
+  "n": 200,
+  "seed": 20260915,
+  "protocol": "isolation",
+  "condition": "B",
+  "source": "WikiMovies / MetaQA; same 200 items as Condition A n=200 freeze",
+  "freeze": "data/metaqa/oir_2hop_people_n200.json",
+  "n100_untouched": "runs/metaqa_2x2_people_n100_qhash_iso/",
+  "arms": {
+    "OPAQUE_UNIQUE": {
+      "ids": [
+        "MQA200B_OPAQUE_UNIQUE_0",
+        "MQA200B_OPAQUE_UNIQUE_1",
+        "MQA200B_OPAQUE_UNIQUE_2",
+        "MQA200B_OPAQUE_UNIQUE_3",
+        "MQA200B_OPAQUE_UNIQUE_4",
+        "MQA200B_OPAQUE_UNIQUE_5",
+        "MQA200B_OPAQUE_UNIQUE_6",
+        "MQA200B_OPAQUE_UNIQUE_7",
+        "MQA200B_OPAQUE_UNIQUE_8",
+        "MQA200B_OPAQUE_UNIQUE_9",
+        "MQA200B_OPAQUE_UNIQUE_10",
+        "MQA200B_OPAQUE_UNIQUE_11",
+        "MQA200B_OPAQUE_UNIQUE_12",
+        "MQA200B_OPAQUE_UNIQUE_13",
+        "MQA200B_OPAQUE_UNIQUE_14",
+        "MQA200B_OPAQUE_UNIQUE_15",
+        "MQA200B_OPAQUE_UNIQUE_16",
+        "MQA200B_OPAQUE_UNIQUE_17",
+        "MQA200B_OPAQUE_UNIQUE_18",
+        "MQA200B_OPAQUE_UNIQUE_19",
+        "MQA200B_OPAQUE_UNIQUE_20",
+        "MQA200B_OPAQUE_UNIQUE_21",
+        "MQA200B_OPAQUE_UNIQUE_22",
+        "MQA200B_OPAQUE_UNIQUE_23",
+        "MQA200B_OPAQUE_UNIQUE_24",
+        "MQA200B_OPAQUE_UNIQUE_25",
+        "MQA200B_OPAQUE_UNIQUE_26",
+        "MQA200B_OPAQUE_UNIQUE_27",
+        "MQA200B_OPAQUE_UNIQUE_28",
+        "MQA200B_OPAQUE_UNIQUE_29",
+        "MQA200B_OPAQUE_UNIQUE_30",
+        "MQA200B_OPAQUE_UNIQUE_31",
+        "MQA200B_OPAQUE_UNIQUE_32",
+        "MQA200B_OPAQUE_UNIQUE_33",
+        "MQA200B_OPAQUE_UNIQUE_34",
+        "MQA200B_OPAQUE_UNIQUE_35",
+        "MQA200B_OPAQUE_UNIQUE_36",
+        "MQA200B_OPAQUE_UNIQUE_37",
+        "MQA200B_OPAQUE_UNIQUE_38",
+        "MQA200B_OPAQUE_UNIQUE_39",
+        "MQA200B_OPAQUE_UNIQUE_40",
+        "MQA200B_OPAQUE_UNIQUE_41",
+        "MQA200B_OPAQUE_UNIQUE_42",
+        "MQA200B_OPAQUE_UNIQUE_43",
+        "MQA200B_OPAQUE_UNIQUE_44",
+        "MQA200B_OPAQUE_UNIQUE_45",
+        "MQA200B_OPAQUE_UNIQUE_46",
+        "MQA200B_OPAQUE_UNIQUE_47",
+        "MQA200B_OPAQUE_UNIQUE_48",
+        "MQA200B_OPAQUE_UNIQUE_49",
+        "MQA200B_OPAQUE_UNIQUE_50",
+        "MQA200B_OPAQUE_UNIQUE_51",
+        "MQA200B_OPAQUE_UNIQUE_52",
+        "MQA200B_OPAQUE_UNIQUE_53",
+        "MQA200B_OPAQUE_UNIQUE_54",
+        "MQA200B_OPAQUE_UNIQUE_55",
+        "MQA200B_OPAQUE_UNIQUE_56",
+        "MQA200B_OPAQUE_UNIQUE_57",
+        "MQA200B_OPAQUE_UNIQUE_58",
+        "MQA200B_OPAQUE_UNIQUE_59",
+        "MQA200B_OPAQUE_UNIQUE_60",
+        "MQA200B_OPAQUE_UNIQUE_61",
+        "MQA200B_OPAQUE_UNIQUE_62",
+        "MQA200B_OPAQUE_UNIQUE_63",
+        "MQA200B_OPAQUE_UNIQUE_64",
+        "MQA200B_OPAQUE_UNIQUE_65",
+        "MQA200B_OPAQUE_UNIQUE_66",
+        "MQA200B_OPAQUE_UNIQUE_67",
+        "MQA200B_OPAQUE_UNIQUE_68",
+        "MQA200B_OPAQUE_UNIQUE_69",
+        "MQA200B_OPAQUE_UNIQUE_70",
+        "MQA200B_OPAQUE_UNIQUE_71",
+        "MQA200B_OPAQUE_UNIQUE_72",
+        "MQA200B_OPAQUE_UNIQUE_73",
+        "MQA200B_OPAQUE_UNIQUE_74",
+        "MQA200B_OPAQUE_UNIQUE_75",
+        "MQA200B_OPAQUE_UNIQUE_76",
+        "MQA200B_OPAQUE_UNIQUE_77",
+        "MQA200B_OPAQUE_UNIQUE_78",
+        "MQA200B_OPAQUE_UNIQUE_79",
+        "MQA200B_OPAQUE_UNIQUE_80",
+        "MQA200B_OPAQUE_UNIQUE_81",
+        "MQA200B_OPAQUE_UNIQUE_82",
+        "MQA200B_OPAQUE_UNIQUE_83",
+        "MQA200B_OPAQUE_UNIQUE_84",
+        "MQA200B_OPAQUE_UNIQUE_85",
+        "MQA200B_OPAQUE_UNIQUE_86",
+        "MQA200B_OPAQUE_UNIQUE_87",
+        "MQA200B_OPAQUE_UNIQUE_88",
+        "MQA200B_OPAQUE_UNIQUE_89",
+        "MQA200B_OPAQUE_UNIQUE_90",
+        "MQA200B_OPAQUE_UNIQUE_91",
+        "MQA200B_OPAQUE_UNIQUE_92",
+        "MQA200B_OPAQUE_UNIQUE_93",
+        "MQA200B_OPAQUE_UNIQUE_94",
+        "MQA200B_OPAQUE_UNIQUE_95",
+        "MQA200B_OPAQUE_UNIQUE_96",
+        "MQA200B_OPAQUE_UNIQUE_97",
+        "MQA200B_OPAQUE_UNIQUE_98",
+        "MQA200B_OPAQUE_UNIQUE_99",
+        "MQA200B_OPAQUE_UNIQUE_100",
+        "MQA200B_OPAQUE_UNIQUE_101",
+        "MQA200B_OPAQUE_UNIQUE_102",
+        "MQA200B_OPAQUE_UNIQUE_103",
+        "MQA200B_OPAQUE_UNIQUE_104",
+        "MQA200B_OPAQUE_UNIQUE_105",
+        "MQA200B_OPAQUE_UNIQUE_106",
+        "MQA200B_OPAQUE_UNIQUE_107",
+        "MQA200B_OPAQUE_UNIQUE_108",
+        "MQA200B_OPAQUE_UNIQUE_109",
+        "MQA200B_OPAQUE_UNIQUE_110",
+        "MQA200B_OPAQUE_UNIQUE_111",
+        "MQA200B_OPAQUE_UNIQUE_112",
+        "MQA200B_OPAQUE_UNIQUE_113",
+        "MQA200B_OPAQUE_UNIQUE_114",
+        "MQA200B_OPAQUE_UNIQUE_115",
+        "MQA200B_OPAQUE_UNIQUE_116",
+        "MQA200B_OPAQUE_UNIQUE_117",
+        "MQA200B_OPAQUE_UNIQUE_118",
+        "MQA200B_OPAQUE_UNIQUE_119",
+        "MQA200B_OPAQUE_UNIQUE_120",
+        "MQA200B_OPAQUE_UNIQUE_121",
+        "MQA200B_OPAQUE_UNIQUE_122",
+        "MQA200B_OPAQUE_UNIQUE_123",
+        "MQA200B_OPAQUE_UNIQUE_124",
+        "MQA200B_OPAQUE_UNIQUE_125",
+        "MQA200B_OPAQUE_UNIQUE_126",
+        "MQA200B_OPAQUE_UNIQUE_127",
+        "MQA200B_OPAQUE_UNIQUE_128",
+        "MQA200B_OPAQUE_UNIQUE_129",
+        "MQA200B_OPAQUE_UNIQUE_130",
+        "MQA200B_OPAQUE_UNIQUE_131",
+        "MQA200B_OPAQUE_UNIQUE_132",
+        "MQA200B_OPAQUE_UNIQUE_133",
+        "MQA200B_OPAQUE_UNIQUE_134",
+        "MQA200B_OPAQUE_UNIQUE_135",
+        "MQA200B_OPAQUE_UNIQUE_136",
+        "MQA200B_OPAQUE_UNIQUE_137",
+        "MQA200B_OPAQUE_UNIQUE_138",
+        "MQA200B_OPAQUE_UNIQUE_139",
+        "MQA200B_OPAQUE_UNIQUE_140",
+        "MQA200B_OPAQUE_UNIQUE_141",
+        "MQA200B_OPAQUE_UNIQUE_142",
+        "MQA200B_OPAQUE_UNIQUE_143",
+        "MQA200B_OPAQUE_UNIQUE_144",
+        "MQA200B_OPAQUE_UNIQUE_145",
+        "MQA200B_OPAQUE_UNIQUE_146",
+        "MQA200B_OPAQUE_UNIQUE_147",
+        "MQA200B_OPAQUE_UNIQUE_148",
+        "MQA200B_OPAQUE_UNIQUE_149",
+        "MQA200B_OPAQUE_UNIQUE_150",
+        "MQA200B_OPAQUE_UNIQUE_151",
+        "MQA200B_OPAQUE_UNIQUE_152",
+        "MQA200B_OPAQUE_UNIQUE_153",
+        "MQA200B_OPAQUE_UNIQUE_154",
+        "MQA200B_OPAQUE_UNIQUE_155",
+        "MQA200B_OPAQUE_UNIQUE_156",
+        "MQA200B_OPAQUE_UNIQUE_157",
+        "MQA200B_OPAQUE_UNIQUE_158",
+        "MQA200B_OPAQUE_UNIQUE_159",
+        "MQA200B_OPAQUE_UNIQUE_160",
+        "MQA200B_OPAQUE_UNIQUE_161",
+        "MQA200B_OPAQUE_UNIQUE_162",
+        "MQA200B_OPAQUE_UNIQUE_163",
+        "MQA200B_OPAQUE_UNIQUE_164",
+        "MQA200B_OPAQUE_UNIQUE_165",
+        "MQA200B_OPAQUE_UNIQUE_166",
+        "MQA200B_OPAQUE_UNIQUE_167",
+        "MQA200B_OPAQUE_UNIQUE_168",
+        "MQA200B_OPAQUE_UNIQUE_169",
+        "MQA200B_OPAQUE_UNIQUE_170",
+        "MQA200B_OPAQUE_UNIQUE_171",
+        "MQA200B_OPAQUE_UNIQUE_172",
+        "MQA200B_OPAQUE_UNIQUE_173",
+        "MQA200B_OPAQUE_UNIQUE_174",
+        "MQA200B_OPAQUE_UNIQUE_175",
+        "MQA200B_OPAQUE_UNIQUE_176",
+        "MQA200B_OPAQUE_UNIQUE_177",
+        "MQA200B_OPAQUE_UNIQUE_178",
+        "MQA200B_OPAQUE_UNIQUE_179",
+        "MQA200B_OPAQUE_UNIQUE_180",
+        "MQA200B_OPAQUE_UNIQUE_181",
+        "MQA200B_OPAQUE_UNIQUE_182",
+        "MQA200B_OPAQUE_UNIQUE_183",
+        "MQA200B_OPAQUE_UNIQUE_184",
+        "MQA200B_OPAQUE_UNIQUE_185",
+        "MQA200B_OPAQUE_UNIQUE_186",
+        "MQA200B_OPAQUE_UNIQUE_187",
+        "MQA200B_OPAQUE_UNIQUE_188",
+        "MQA200B_OPAQUE_UNIQUE_189",
+        "MQA200B_OPAQUE_UNIQUE_190",
+        "MQA200B_OPAQUE_UNIQUE_191",
+        "MQA200B_OPAQUE_UNIQUE_192",
+        "MQA200B_OPAQUE_UNIQUE_193",
+        "MQA200B_OPAQUE_UNIQUE_194",
+        "MQA200B_OPAQUE_UNIQUE_195",
+        "MQA200B_OPAQUE_UNIQUE_196",
+        "MQA200B_OPAQUE_UNIQUE_197",
+        "MQA200B_OPAQUE_UNIQUE_198",
+        "MQA200B_OPAQUE_UNIQUE_199"
+      ],
+      "item_paths": [
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_0/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_1/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_2/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_3/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_4/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_5/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_6/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_7/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_8/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_9/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_10/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_11/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_12/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_13/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_14/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_15/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_16/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_17/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_18/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_19/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_20/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_21/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_22/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_23/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_24/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_25/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_26/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_27/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_28/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_29/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_30/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_31/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_32/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_33/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_34/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_35/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_36/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_37/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_38/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_39/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_40/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_41/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_42/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_43/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_44/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_45/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_46/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_47/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_48/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_49/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_50/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_51/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_52/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_53/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_54/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_55/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_56/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_57/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_58/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_59/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_60/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_61/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_62/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_63/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_64/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_65/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_66/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_67/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_68/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_69/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_70/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_71/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_72/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_73/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_74/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_75/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_76/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_77/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_78/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_79/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_80/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_81/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_82/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_83/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_84/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_85/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_86/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_87/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_88/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_89/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_90/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_91/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_92/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_93/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_94/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_95/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_96/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_97/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_98/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_99/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_100/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_101/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_102/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_103/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_104/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_105/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_106/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_107/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_108/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_109/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_110/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_111/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_112/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_113/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_114/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_115/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_116/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_117/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_118/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_119/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_120/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_121/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_122/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_123/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_124/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_125/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_126/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_127/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_128/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_129/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_130/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_131/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_132/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_133/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_134/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_135/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_136/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_137/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_138/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_139/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_140/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_141/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_142/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_143/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_144/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_145/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_146/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_147/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_148/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_149/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_150/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_151/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_152/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_153/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_154/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_155/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_156/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_157/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_158/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_159/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_160/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_161/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_162/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_163/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_164/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_165/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_166/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_167/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_168/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_169/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_170/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_171/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_172/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_173/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_174/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_175/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_176/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_177/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_178/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_179/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_180/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_181/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_182/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_183/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_184/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_185/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_186/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_187/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_188/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_189/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_190/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_191/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_192/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_193/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_194/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_195/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_196/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_197/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_198/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_199/prompt.txt"
+      ]
+    },
+    "OPAQUE_AMBIG": {
+      "ids": [
+        "MQA200B_OPAQUE_AMBIG_0",
+        "MQA200B_OPAQUE_AMBIG_1",
+        "MQA200B_OPAQUE_AMBIG_2",
+        "MQA200B_OPAQUE_AMBIG_3",
+        "MQA200B_OPAQUE_AMBIG_4",
+        "MQA200B_OPAQUE_AMBIG_5",
+        "MQA200B_OPAQUE_AMBIG_6",
+        "MQA200B_OPAQUE_AMBIG_7",
+        "MQA200B_OPAQUE_AMBIG_8",
+        "MQA200B_OPAQUE_AMBIG_9",
+        "MQA200B_OPAQUE_AMBIG_10",
+        "MQA200B_OPAQUE_AMBIG_11",
+        "MQA200B_OPAQUE_AMBIG_12",
+        "MQA200B_OPAQUE_AMBIG_13",
+        "MQA200B_OPAQUE_AMBIG_14",
+        "MQA200B_OPAQUE_AMBIG_15",
+        "MQA200B_OPAQUE_AMBIG_16",
+        "MQA200B_OPAQUE_AMBIG_17",
+        "MQA200B_OPAQUE_AMBIG_18",
+        "MQA200B_OPAQUE_AMBIG_19",
+        "MQA200B_OPAQUE_AMBIG_20",
+        "MQA200B_OPAQUE_AMBIG_21",
+        "MQA200B_OPAQUE_AMBIG_22",
+        "MQA200B_OPAQUE_AMBIG_23",
+        "MQA200B_OPAQUE_AMBIG_24",
+        "MQA200B_OPAQUE_AMBIG_25",
+        "MQA200B_OPAQUE_AMBIG_26",
+        "MQA200B_OPAQUE_AMBIG_27",
+        "MQA200B_OPAQUE_AMBIG_28",
+        "MQA200B_OPAQUE_AMBIG_29",
+        "MQA200B_OPAQUE_AMBIG_30",
+        "MQA200B_OPAQUE_AMBIG_31",
+        "MQA200B_OPAQUE_AMBIG_32",
+        "MQA200B_OPAQUE_AMBIG_33",
+        "MQA200B_OPAQUE_AMBIG_34",
+        "MQA200B_OPAQUE_AMBIG_35",
+        "MQA200B_OPAQUE_AMBIG_36",
+        "MQA200B_OPAQUE_AMBIG_37",
+        "MQA200B_OPAQUE_AMBIG_38",
+        "MQA200B_OPAQUE_AMBIG_39",
+        "MQA200B_OPAQUE_AMBIG_40",
+        "MQA200B_OPAQUE_AMBIG_41",
+        "MQA200B_OPAQUE_AMBIG_42",
+        "MQA200B_OPAQUE_AMBIG_43",
+        "MQA200B_OPAQUE_AMBIG_44",
+        "MQA200B_OPAQUE_AMBIG_45",
+        "MQA200B_OPAQUE_AMBIG_46",
+        "MQA200B_OPAQUE_AMBIG_47",
+        "MQA200B_OPAQUE_AMBIG_48",
+        "MQA200B_OPAQUE_AMBIG_49",
+        "MQA200B_OPAQUE_AMBIG_50",
+        "MQA200B_OPAQUE_AMBIG_51",
+        "MQA200B_OPAQUE_AMBIG_52",
+        "MQA200B_OPAQUE_AMBIG_53",
+        "MQA200B_OPAQUE_AMBIG_54",
+        "MQA200B_OPAQUE_AMBIG_55",
+        "MQA200B_OPAQUE_AMBIG_56",
+        "MQA200B_OPAQUE_AMBIG_57",
+        "MQA200B_OPAQUE_AMBIG_58",
+        "MQA200B_OPAQUE_AMBIG_59",
+        "MQA200B_OPAQUE_AMBIG_60",
+        "MQA200B_OPAQUE_AMBIG_61",
+        "MQA200B_OPAQUE_AMBIG_62",
+        "MQA200B_OPAQUE_AMBIG_63",
+        "MQA200B_OPAQUE_AMBIG_64",
+        "MQA200B_OPAQUE_AMBIG_65",
+        "MQA200B_OPAQUE_AMBIG_66",
+        "MQA200B_OPAQUE_AMBIG_67",
+        "MQA200B_OPAQUE_AMBIG_68",
+        "MQA200B_OPAQUE_AMBIG_69",
+        "MQA200B_OPAQUE_AMBIG_70",
+        "MQA200B_OPAQUE_AMBIG_71",
+        "MQA200B_OPAQUE_AMBIG_72",
+        "MQA200B_OPAQUE_AMBIG_73",
+        "MQA200B_OPAQUE_AMBIG_74",
+        "MQA200B_OPAQUE_AMBIG_75",
+        "MQA200B_OPAQUE_AMBIG_76",
+        "MQA200B_OPAQUE_AMBIG_77",
+        "MQA200B_OPAQUE_AMBIG_78",
+        "MQA200B_OPAQUE_AMBIG_79",
+        "MQA200B_OPAQUE_AMBIG_80",
+        "MQA200B_OPAQUE_AMBIG_81",
+        "MQA200B_OPAQUE_AMBIG_82",
+        "MQA200B_OPAQUE_AMBIG_83",
+        "MQA200B_OPAQUE_AMBIG_84",
+        "MQA200B_OPAQUE_AMBIG_85",
+        "MQA200B_OPAQUE_AMBIG_86",
+        "MQA200B_OPAQUE_AMBIG_87",
+        "MQA200B_OPAQUE_AMBIG_88",
+        "MQA200B_OPAQUE_AMBIG_89",
+        "MQA200B_OPAQUE_AMBIG_90",
+        "MQA200B_OPAQUE_AMBIG_91",
+        "MQA200B_OPAQUE_AMBIG_92",
+        "MQA200B_OPAQUE_AMBIG_93",
+        "MQA200B_OPAQUE_AMBIG_94",
+        "MQA200B_OPAQUE_AMBIG_95",
+        "MQA200B_OPAQUE_AMBIG_96",
+        "MQA200B_OPAQUE_AMBIG_97",
+        "MQA200B_OPAQUE_AMBIG_98",
+        "MQA200B_OPAQUE_AMBIG_99",
+        "MQA200B_OPAQUE_AMBIG_100",
+        "MQA200B_OPAQUE_AMBIG_101",
+        "MQA200B_OPAQUE_AMBIG_102",
+        "MQA200B_OPAQUE_AMBIG_103",
+        "MQA200B_OPAQUE_AMBIG_104",
+        "MQA200B_OPAQUE_AMBIG_105",
+        "MQA200B_OPAQUE_AMBIG_106",
+        "MQA200B_OPAQUE_AMBIG_107",
+        "MQA200B_OPAQUE_AMBIG_108",
+        "MQA200B_OPAQUE_AMBIG_109",
+        "MQA200B_OPAQUE_AMBIG_110",
+        "MQA200B_OPAQUE_AMBIG_111",
+        "MQA200B_OPAQUE_AMBIG_112",
+        "MQA200B_OPAQUE_AMBIG_113",
+        "MQA200B_OPAQUE_AMBIG_114",
+        "MQA200B_OPAQUE_AMBIG_115",
+        "MQA200B_OPAQUE_AMBIG_116",
+        "MQA200B_OPAQUE_AMBIG_117",
+        "MQA200B_OPAQUE_AMBIG_118",
+        "MQA200B_OPAQUE_AMBIG_119",
+        "MQA200B_OPAQUE_AMBIG_120",
+        "MQA200B_OPAQUE_AMBIG_121",
+        "MQA200B_OPAQUE_AMBIG_122",
+        "MQA200B_OPAQUE_AMBIG_123",
+        "MQA200B_OPAQUE_AMBIG_124",
+        "MQA200B_OPAQUE_AMBIG_125",
+        "MQA200B_OPAQUE_AMBIG_126",
+        "MQA200B_OPAQUE_AMBIG_127",
+        "MQA200B_OPAQUE_AMBIG_128",
+        "MQA200B_OPAQUE_AMBIG_129",
+        "MQA200B_OPAQUE_AMBIG_130",
+        "MQA200B_OPAQUE_AMBIG_131",
+        "MQA200B_OPAQUE_AMBIG_132",
+        "MQA200B_OPAQUE_AMBIG_133",
+        "MQA200B_OPAQUE_AMBIG_134",
+        "MQA200B_OPAQUE_AMBIG_135",
+        "MQA200B_OPAQUE_AMBIG_136",
+        "MQA200B_OPAQUE_AMBIG_137",
+        "MQA200B_OPAQUE_AMBIG_138",
+        "MQA200B_OPAQUE_AMBIG_139",
+        "MQA200B_OPAQUE_AMBIG_140",
+        "MQA200B_OPAQUE_AMBIG_141",
+        "MQA200B_OPAQUE_AMBIG_142",
+        "MQA200B_OPAQUE_AMBIG_143",
+        "MQA200B_OPAQUE_AMBIG_144",
+        "MQA200B_OPAQUE_AMBIG_145",
+        "MQA200B_OPAQUE_AMBIG_146",
+        "MQA200B_OPAQUE_AMBIG_147",
+        "MQA200B_OPAQUE_AMBIG_148",
+        "MQA200B_OPAQUE_AMBIG_149",
+        "MQA200B_OPAQUE_AMBIG_150",
+        "MQA200B_OPAQUE_AMBIG_151",
+        "MQA200B_OPAQUE_AMBIG_152",
+        "MQA200B_OPAQUE_AMBIG_153",
+        "MQA200B_OPAQUE_AMBIG_154",
+        "MQA200B_OPAQUE_AMBIG_155",
+        "MQA200B_OPAQUE_AMBIG_156",
+        "MQA200B_OPAQUE_AMBIG_157",
+        "MQA200B_OPAQUE_AMBIG_158",
+        "MQA200B_OPAQUE_AMBIG_159",
+        "MQA200B_OPAQUE_AMBIG_160",
+        "MQA200B_OPAQUE_AMBIG_161",
+        "MQA200B_OPAQUE_AMBIG_162",
+        "MQA200B_OPAQUE_AMBIG_163",
+        "MQA200B_OPAQUE_AMBIG_164",
+        "MQA200B_OPAQUE_AMBIG_165",
+        "MQA200B_OPAQUE_AMBIG_166",
+        "MQA200B_OPAQUE_AMBIG_167",
+        "MQA200B_OPAQUE_AMBIG_168",
+        "MQA200B_OPAQUE_AMBIG_169",
+        "MQA200B_OPAQUE_AMBIG_170",
+        "MQA200B_OPAQUE_AMBIG_171",
+        "MQA200B_OPAQUE_AMBIG_172",
+        "MQA200B_OPAQUE_AMBIG_173",
+        "MQA200B_OPAQUE_AMBIG_174",
+        "MQA200B_OPAQUE_AMBIG_175",
+        "MQA200B_OPAQUE_AMBIG_176",
+        "MQA200B_OPAQUE_AMBIG_177",
+        "MQA200B_OPAQUE_AMBIG_178",
+        "MQA200B_OPAQUE_AMBIG_179",
+        "MQA200B_OPAQUE_AMBIG_180",
+        "MQA200B_OPAQUE_AMBIG_181",
+        "MQA200B_OPAQUE_AMBIG_182",
+        "MQA200B_OPAQUE_AMBIG_183",
+        "MQA200B_OPAQUE_AMBIG_184",
+        "MQA200B_OPAQUE_AMBIG_185",
+        "MQA200B_OPAQUE_AMBIG_186",
+        "MQA200B_OPAQUE_AMBIG_187",
+        "MQA200B_OPAQUE_AMBIG_188",
+        "MQA200B_OPAQUE_AMBIG_189",
+        "MQA200B_OPAQUE_AMBIG_190",
+        "MQA200B_OPAQUE_AMBIG_191",
+        "MQA200B_OPAQUE_AMBIG_192",
+        "MQA200B_OPAQUE_AMBIG_193",
+        "MQA200B_OPAQUE_AMBIG_194",
+        "MQA200B_OPAQUE_AMBIG_195",
+        "MQA200B_OPAQUE_AMBIG_196",
+        "MQA200B_OPAQUE_AMBIG_197",
+        "MQA200B_OPAQUE_AMBIG_198",
+        "MQA200B_OPAQUE_AMBIG_199"
+      ],
+      "item_paths": [
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_0/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_1/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_2/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_3/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_4/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_5/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_6/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_7/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_8/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_9/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_10/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_11/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_12/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_13/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_14/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_15/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_16/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_17/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_18/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_19/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_20/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_21/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_22/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_23/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_24/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_25/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_26/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_27/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_28/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_29/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_30/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_31/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_32/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_33/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_34/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_35/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_36/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_37/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_38/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_39/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_40/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_41/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_42/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_43/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_44/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_45/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_46/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_47/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_48/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_49/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_50/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_51/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_52/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_53/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_54/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_55/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_56/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_57/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_58/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_59/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_60/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_61/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_62/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_63/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_64/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_65/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_66/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_67/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_68/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_69/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_70/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_71/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_72/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_73/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_74/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_75/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_76/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_77/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_78/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_79/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_80/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_81/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_82/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_83/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_84/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_85/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_86/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_87/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_88/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_89/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_90/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_91/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_92/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_93/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_94/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_95/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_96/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_97/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_98/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_99/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_100/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_101/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_102/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_103/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_104/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_105/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_106/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_107/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_108/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_109/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_110/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_111/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_112/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_113/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_114/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_115/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_116/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_117/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_118/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_119/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_120/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_121/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_122/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_123/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_124/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_125/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_126/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_127/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_128/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_129/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_130/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_131/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_132/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_133/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_134/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_135/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_136/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_137/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_138/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_139/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_140/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_141/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_142/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_143/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_144/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_145/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_146/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_147/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_148/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_149/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_150/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_151/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_152/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_153/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_154/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_155/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_156/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_157/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_158/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_159/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_160/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_161/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_162/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_163/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_164/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_165/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_166/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_167/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_168/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_169/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_170/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_171/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_172/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_173/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_174/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_175/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_176/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_177/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_178/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_179/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_180/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_181/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_182/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_183/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_184/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_185/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_186/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_187/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_188/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_189/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_190/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_191/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_192/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_193/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_194/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_195/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_196/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_197/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_198/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_199/prompt.txt"
+      ]
+    },
+    "OPAQUE_AMBIG_PLAN": {
+      "ids": [
+        "MQA200B_OPAQUE_AMBIG_PLAN_0",
+        "MQA200B_OPAQUE_AMBIG_PLAN_1",
+        "MQA200B_OPAQUE_AMBIG_PLAN_2",
+        "MQA200B_OPAQUE_AMBIG_PLAN_3",
+        "MQA200B_OPAQUE_AMBIG_PLAN_4",
+        "MQA200B_OPAQUE_AMBIG_PLAN_5",
+        "MQA200B_OPAQUE_AMBIG_PLAN_6",
+        "MQA200B_OPAQUE_AMBIG_PLAN_7",
+        "MQA200B_OPAQUE_AMBIG_PLAN_8",
+        "MQA200B_OPAQUE_AMBIG_PLAN_9",
+        "MQA200B_OPAQUE_AMBIG_PLAN_10",
+        "MQA200B_OPAQUE_AMBIG_PLAN_11",
+        "MQA200B_OPAQUE_AMBIG_PLAN_12",
+        "MQA200B_OPAQUE_AMBIG_PLAN_13",
+        "MQA200B_OPAQUE_AMBIG_PLAN_14",
+        "MQA200B_OPAQUE_AMBIG_PLAN_15",
+        "MQA200B_OPAQUE_AMBIG_PLAN_16",
+        "MQA200B_OPAQUE_AMBIG_PLAN_17",
+        "MQA200B_OPAQUE_AMBIG_PLAN_18",
+        "MQA200B_OPAQUE_AMBIG_PLAN_19",
+        "MQA200B_OPAQUE_AMBIG_PLAN_20",
+        "MQA200B_OPAQUE_AMBIG_PLAN_21",
+        "MQA200B_OPAQUE_AMBIG_PLAN_22",
+        "MQA200B_OPAQUE_AMBIG_PLAN_23",
+        "MQA200B_OPAQUE_AMBIG_PLAN_24",
+        "MQA200B_OPAQUE_AMBIG_PLAN_25",
+        "MQA200B_OPAQUE_AMBIG_PLAN_26",
+        "MQA200B_OPAQUE_AMBIG_PLAN_27",
+        "MQA200B_OPAQUE_AMBIG_PLAN_28",
+        "MQA200B_OPAQUE_AMBIG_PLAN_29",
+        "MQA200B_OPAQUE_AMBIG_PLAN_30",
+        "MQA200B_OPAQUE_AMBIG_PLAN_31",
+        "MQA200B_OPAQUE_AMBIG_PLAN_32",
+        "MQA200B_OPAQUE_AMBIG_PLAN_33",
+        "MQA200B_OPAQUE_AMBIG_PLAN_34",
+        "MQA200B_OPAQUE_AMBIG_PLAN_35",
+        "MQA200B_OPAQUE_AMBIG_PLAN_36",
+        "MQA200B_OPAQUE_AMBIG_PLAN_37",
+        "MQA200B_OPAQUE_AMBIG_PLAN_38",
+        "MQA200B_OPAQUE_AMBIG_PLAN_39",
+        "MQA200B_OPAQUE_AMBIG_PLAN_40",
+        "MQA200B_OPAQUE_AMBIG_PLAN_41",
+        "MQA200B_OPAQUE_AMBIG_PLAN_42",
+        "MQA200B_OPAQUE_AMBIG_PLAN_43",
+        "MQA200B_OPAQUE_AMBIG_PLAN_44",
+        "MQA200B_OPAQUE_AMBIG_PLAN_45",
+        "MQA200B_OPAQUE_AMBIG_PLAN_46",
+        "MQA200B_OPAQUE_AMBIG_PLAN_47",
+        "MQA200B_OPAQUE_AMBIG_PLAN_48",
+        "MQA200B_OPAQUE_AMBIG_PLAN_49",
+        "MQA200B_OPAQUE_AMBIG_PLAN_50",
+        "MQA200B_OPAQUE_AMBIG_PLAN_51",
+        "MQA200B_OPAQUE_AMBIG_PLAN_52",
+        "MQA200B_OPAQUE_AMBIG_PLAN_53",
+        "MQA200B_OPAQUE_AMBIG_PLAN_54",
+        "MQA200B_OPAQUE_AMBIG_PLAN_55",
+        "MQA200B_OPAQUE_AMBIG_PLAN_56",
+        "MQA200B_OPAQUE_AMBIG_PLAN_57",
+        "MQA200B_OPAQUE_AMBIG_PLAN_58",
+        "MQA200B_OPAQUE_AMBIG_PLAN_59",
+        "MQA200B_OPAQUE_AMBIG_PLAN_60",
+        "MQA200B_OPAQUE_AMBIG_PLAN_61",
+        "MQA200B_OPAQUE_AMBIG_PLAN_62",
+        "MQA200B_OPAQUE_AMBIG_PLAN_63",
+        "MQA200B_OPAQUE_AMBIG_PLAN_64",
+        "MQA200B_OPAQUE_AMBIG_PLAN_65",
+        "MQA200B_OPAQUE_AMBIG_PLAN_66",
+        "MQA200B_OPAQUE_AMBIG_PLAN_67",
+        "MQA200B_OPAQUE_AMBIG_PLAN_68",
+        "MQA200B_OPAQUE_AMBIG_PLAN_69",
+        "MQA200B_OPAQUE_AMBIG_PLAN_70",
+        "MQA200B_OPAQUE_AMBIG_PLAN_71",
+        "MQA200B_OPAQUE_AMBIG_PLAN_72",
+        "MQA200B_OPAQUE_AMBIG_PLAN_73",
+        "MQA200B_OPAQUE_AMBIG_PLAN_74",
+        "MQA200B_OPAQUE_AMBIG_PLAN_75",
+        "MQA200B_OPAQUE_AMBIG_PLAN_76",
+        "MQA200B_OPAQUE_AMBIG_PLAN_77",
+        "MQA200B_OPAQUE_AMBIG_PLAN_78",
+        "MQA200B_OPAQUE_AMBIG_PLAN_79",
+        "MQA200B_OPAQUE_AMBIG_PLAN_80",
+        "MQA200B_OPAQUE_AMBIG_PLAN_81",
+        "MQA200B_OPAQUE_AMBIG_PLAN_82",
+        "MQA200B_OPAQUE_AMBIG_PLAN_83",
+        "MQA200B_OPAQUE_AMBIG_PLAN_84",
+        "MQA200B_OPAQUE_AMBIG_PLAN_85",
+        "MQA200B_OPAQUE_AMBIG_PLAN_86",
+        "MQA200B_OPAQUE_AMBIG_PLAN_87",
+        "MQA200B_OPAQUE_AMBIG_PLAN_88",
+        "MQA200B_OPAQUE_AMBIG_PLAN_89",
+        "MQA200B_OPAQUE_AMBIG_PLAN_90",
+        "MQA200B_OPAQUE_AMBIG_PLAN_91",
+        "MQA200B_OPAQUE_AMBIG_PLAN_92",
+        "MQA200B_OPAQUE_AMBIG_PLAN_93",
+        "MQA200B_OPAQUE_AMBIG_PLAN_94",
+        "MQA200B_OPAQUE_AMBIG_PLAN_95",
+        "MQA200B_OPAQUE_AMBIG_PLAN_96",
+        "MQA200B_OPAQUE_AMBIG_PLAN_97",
+        "MQA200B_OPAQUE_AMBIG_PLAN_98",
+        "MQA200B_OPAQUE_AMBIG_PLAN_99",
+        "MQA200B_OPAQUE_AMBIG_PLAN_100",
+        "MQA200B_OPAQUE_AMBIG_PLAN_101",
+        "MQA200B_OPAQUE_AMBIG_PLAN_102",
+        "MQA200B_OPAQUE_AMBIG_PLAN_103",
+        "MQA200B_OPAQUE_AMBIG_PLAN_104",
+        "MQA200B_OPAQUE_AMBIG_PLAN_105",
+        "MQA200B_OPAQUE_AMBIG_PLAN_106",
+        "MQA200B_OPAQUE_AMBIG_PLAN_107",
+        "MQA200B_OPAQUE_AMBIG_PLAN_108",
+        "MQA200B_OPAQUE_AMBIG_PLAN_109",
+        "MQA200B_OPAQUE_AMBIG_PLAN_110",
+        "MQA200B_OPAQUE_AMBIG_PLAN_111",
+        "MQA200B_OPAQUE_AMBIG_PLAN_112",
+        "MQA200B_OPAQUE_AMBIG_PLAN_113",
+        "MQA200B_OPAQUE_AMBIG_PLAN_114",
+        "MQA200B_OPAQUE_AMBIG_PLAN_115",
+        "MQA200B_OPAQUE_AMBIG_PLAN_116",
+        "MQA200B_OPAQUE_AMBIG_PLAN_117",
+        "MQA200B_OPAQUE_AMBIG_PLAN_118",
+        "MQA200B_OPAQUE_AMBIG_PLAN_119",
+        "MQA200B_OPAQUE_AMBIG_PLAN_120",
+        "MQA200B_OPAQUE_AMBIG_PLAN_121",
+        "MQA200B_OPAQUE_AMBIG_PLAN_122",
+        "MQA200B_OPAQUE_AMBIG_PLAN_123",
+        "MQA200B_OPAQUE_AMBIG_PLAN_124",
+        "MQA200B_OPAQUE_AMBIG_PLAN_125",
+        "MQA200B_OPAQUE_AMBIG_PLAN_126",
+        "MQA200B_OPAQUE_AMBIG_PLAN_127",
+        "MQA200B_OPAQUE_AMBIG_PLAN_128",
+        "MQA200B_OPAQUE_AMBIG_PLAN_129",
+        "MQA200B_OPAQUE_AMBIG_PLAN_130",
+        "MQA200B_OPAQUE_AMBIG_PLAN_131",
+        "MQA200B_OPAQUE_AMBIG_PLAN_132",
+        "MQA200B_OPAQUE_AMBIG_PLAN_133",
+        "MQA200B_OPAQUE_AMBIG_PLAN_134",
+        "MQA200B_OPAQUE_AMBIG_PLAN_135",
+        "MQA200B_OPAQUE_AMBIG_PLAN_136",
+        "MQA200B_OPAQUE_AMBIG_PLAN_137",
+        "MQA200B_OPAQUE_AMBIG_PLAN_138",
+        "MQA200B_OPAQUE_AMBIG_PLAN_139",
+        "MQA200B_OPAQUE_AMBIG_PLAN_140",
+        "MQA200B_OPAQUE_AMBIG_PLAN_141",
+        "MQA200B_OPAQUE_AMBIG_PLAN_142",
+        "MQA200B_OPAQUE_AMBIG_PLAN_143",
+        "MQA200B_OPAQUE_AMBIG_PLAN_144",
+        "MQA200B_OPAQUE_AMBIG_PLAN_145",
+        "MQA200B_OPAQUE_AMBIG_PLAN_146",
+        "MQA200B_OPAQUE_AMBIG_PLAN_147",
+        "MQA200B_OPAQUE_AMBIG_PLAN_148",
+        "MQA200B_OPAQUE_AMBIG_PLAN_149",
+        "MQA200B_OPAQUE_AMBIG_PLAN_150",
+        "MQA200B_OPAQUE_AMBIG_PLAN_151",
+        "MQA200B_OPAQUE_AMBIG_PLAN_152",
+        "MQA200B_OPAQUE_AMBIG_PLAN_153",
+        "MQA200B_OPAQUE_AMBIG_PLAN_154",
+        "MQA200B_OPAQUE_AMBIG_PLAN_155",
+        "MQA200B_OPAQUE_AMBIG_PLAN_156",
+        "MQA200B_OPAQUE_AMBIG_PLAN_157",
+        "MQA200B_OPAQUE_AMBIG_PLAN_158",
+        "MQA200B_OPAQUE_AMBIG_PLAN_159",
+        "MQA200B_OPAQUE_AMBIG_PLAN_160",
+        "MQA200B_OPAQUE_AMBIG_PLAN_161",
+        "MQA200B_OPAQUE_AMBIG_PLAN_162",
+        "MQA200B_OPAQUE_AMBIG_PLAN_163",
+        "MQA200B_OPAQUE_AMBIG_PLAN_164",
+        "MQA200B_OPAQUE_AMBIG_PLAN_165",
+        "MQA200B_OPAQUE_AMBIG_PLAN_166",
+        "MQA200B_OPAQUE_AMBIG_PLAN_167",
+        "MQA200B_OPAQUE_AMBIG_PLAN_168",
+        "MQA200B_OPAQUE_AMBIG_PLAN_169",
+        "MQA200B_OPAQUE_AMBIG_PLAN_170",
+        "MQA200B_OPAQUE_AMBIG_PLAN_171",
+        "MQA200B_OPAQUE_AMBIG_PLAN_172",
+        "MQA200B_OPAQUE_AMBIG_PLAN_173",
+        "MQA200B_OPAQUE_AMBIG_PLAN_174",
+        "MQA200B_OPAQUE_AMBIG_PLAN_175",
+        "MQA200B_OPAQUE_AMBIG_PLAN_176",
+        "MQA200B_OPAQUE_AMBIG_PLAN_177",
+        "MQA200B_OPAQUE_AMBIG_PLAN_178",
+        "MQA200B_OPAQUE_AMBIG_PLAN_179",
+        "MQA200B_OPAQUE_AMBIG_PLAN_180",
+        "MQA200B_OPAQUE_AMBIG_PLAN_181",
+        "MQA200B_OPAQUE_AMBIG_PLAN_182",
+        "MQA200B_OPAQUE_AMBIG_PLAN_183",
+        "MQA200B_OPAQUE_AMBIG_PLAN_184",
+        "MQA200B_OPAQUE_AMBIG_PLAN_185",
+        "MQA200B_OPAQUE_AMBIG_PLAN_186",
+        "MQA200B_OPAQUE_AMBIG_PLAN_187",
+        "MQA200B_OPAQUE_AMBIG_PLAN_188",
+        "MQA200B_OPAQUE_AMBIG_PLAN_189",
+        "MQA200B_OPAQUE_AMBIG_PLAN_190",
+        "MQA200B_OPAQUE_AMBIG_PLAN_191",
+        "MQA200B_OPAQUE_AMBIG_PLAN_192",
+        "MQA200B_OPAQUE_AMBIG_PLAN_193",
+        "MQA200B_OPAQUE_AMBIG_PLAN_194",
+        "MQA200B_OPAQUE_AMBIG_PLAN_195",
+        "MQA200B_OPAQUE_AMBIG_PLAN_196",
+        "MQA200B_OPAQUE_AMBIG_PLAN_197",
+        "MQA200B_OPAQUE_AMBIG_PLAN_198",
+        "MQA200B_OPAQUE_AMBIG_PLAN_199"
+      ],
+      "item_paths": [
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_0/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_1/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_2/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_3/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_4/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_5/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_6/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_7/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_8/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_9/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_10/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_11/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_12/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_13/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_14/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_15/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_16/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_17/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_18/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_19/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_20/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_21/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_22/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_23/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_24/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_25/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_26/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_27/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_28/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_29/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_30/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_31/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_32/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_33/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_34/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_35/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_36/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_37/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_38/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_39/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_40/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_41/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_42/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_43/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_44/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_45/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_46/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_47/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_48/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_49/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_50/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_51/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_52/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_53/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_54/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_55/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_56/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_57/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_58/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_59/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_60/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_61/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_62/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_63/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_64/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_65/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_66/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_67/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_68/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_69/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_70/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_71/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_72/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_73/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_74/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_75/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_76/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_77/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_78/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_79/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_80/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_81/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_82/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_83/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_84/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_85/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_86/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_87/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_88/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_89/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_90/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_91/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_92/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_93/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_94/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_95/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_96/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_97/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_98/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_99/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_100/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_101/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_102/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_103/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_104/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_105/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_106/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_107/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_108/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_109/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_110/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_111/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_112/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_113/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_114/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_115/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_116/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_117/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_118/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_119/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_120/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_121/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_122/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_123/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_124/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_125/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_126/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_127/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_128/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_129/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_130/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_131/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_132/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_133/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_134/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_135/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_136/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_137/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_138/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_139/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_140/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_141/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_142/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_143/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_144/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_145/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_146/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_147/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_148/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_149/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_150/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_151/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_152/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_153/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_154/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_155/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_156/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_157/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_158/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_159/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_160/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_161/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_162/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_163/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_164/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_165/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_166/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_167/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_168/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_169/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_170/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_171/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_172/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_173/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_174/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_175/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_176/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_177/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_178/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_179/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_180/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_181/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_182/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_183/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_184/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_185/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_186/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_187/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_188/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_189/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_190/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_191/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_192/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_193/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_194/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_195/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_196/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_197/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_198/prompt.txt",
+        "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_199/prompt.txt"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "actor": "Robert Redford",
+      "movie": "A Walk in the Woods",
+      "director": "Ken Kwapis",
+      "writer": "Bill Bryson",
+      "i": 0,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_0",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_0",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_0"
+      },
+      "gold": "Ken Kwapis",
+      "decoy_hq": "Bill Bryson"
+    },
+    {
+      "actor": "Robert Downey Jr.",
+      "movie": "Air America",
+      "director": "Roger Spottiswoode",
+      "writer": "Christopher Robbins",
+      "i": 1,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_1",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_1",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_1"
+      },
+      "gold": "Roger Spottiswoode",
+      "decoy_hq": "Christopher Robbins"
+    },
+    {
+      "actor": "Adrien Brody",
+      "movie": "Wrecked",
+      "director": "Michael Greenspan",
+      "writer": "Christopher Dodd",
+      "i": 2,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_2",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_2",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_2"
+      },
+      "gold": "Michael Greenspan",
+      "decoy_hq": "Christopher Dodd"
+    },
+    {
+      "actor": "Matt Dillon",
+      "movie": "Golden Gate",
+      "director": "John Madden",
+      "writer": "David Henry Hwang",
+      "i": 3,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_3",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_3",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_3"
+      },
+      "gold": "John Madden",
+      "decoy_hq": "David Henry Hwang"
+    },
+    {
+      "actor": "Jennifer Connelly",
+      "movie": "The Hot Spot",
+      "director": "Dennis Hopper",
+      "writer": "Charles Williams",
+      "i": 4,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_4",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_4",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_4"
+      },
+      "gold": "Dennis Hopper",
+      "decoy_hq": "Charles Williams"
+    },
+    {
+      "actor": "James Mason",
+      "movie": "A Place of One's Own",
+      "director": "Bernard Knowles",
+      "writer": "Osbert Sitwell",
+      "i": 5,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_5",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_5",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_5"
+      },
+      "gold": "Bernard Knowles",
+      "decoy_hq": "Osbert Sitwell"
+    },
+    {
+      "actor": "Madge Bellamy",
+      "movie": "White Zombie",
+      "director": "Victor Halperin",
+      "writer": "Garnett Weston",
+      "i": 6,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_6",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_6",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_6"
+      },
+      "gold": "Victor Halperin",
+      "decoy_hq": "Garnett Weston"
+    },
+    {
+      "actor": "Paul Scofield",
+      "movie": "A Man for All Seasons",
+      "director": "Fred Zinnemann",
+      "writer": "Robert Bolt",
+      "i": 7,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_7",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_7",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_7"
+      },
+      "gold": "Fred Zinnemann",
+      "decoy_hq": "Robert Bolt"
+    },
+    {
+      "actor": "Gene Tierney",
+      "movie": "Tobacco Road",
+      "director": "John Ford",
+      "writer": "Erskine Caldwell",
+      "i": 8,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_8",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_8",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_8"
+      },
+      "gold": "John Ford",
+      "decoy_hq": "Erskine Caldwell"
+    },
+    {
+      "actor": "Amy Adams",
+      "movie": "Enchanted",
+      "director": "Kevin Lima",
+      "writer": "Bill Kelly",
+      "i": 9,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_9",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_9",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_9"
+      },
+      "gold": "Kevin Lima",
+      "decoy_hq": "Bill Kelly"
+    },
+    {
+      "actor": "Kim Basinger",
+      "movie": "Fool for Love",
+      "director": "Robert Altman",
+      "writer": "Sam Shepard",
+      "i": 10,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_10",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_10",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_10"
+      },
+      "gold": "Robert Altman",
+      "decoy_hq": "Sam Shepard"
+    },
+    {
+      "actor": "Piper Perabo",
+      "movie": "Coyote Ugly",
+      "director": "David McNally",
+      "writer": "Gina Wendkos",
+      "i": 11,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_11",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_11",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_11"
+      },
+      "gold": "David McNally",
+      "decoy_hq": "Gina Wendkos"
+    },
+    {
+      "actor": "Guy Pearce",
+      "movie": "Ravenous",
+      "director": "Antonia Bird",
+      "writer": "Ted Griffin",
+      "i": 12,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_12",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_12",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_12"
+      },
+      "gold": "Antonia Bird",
+      "decoy_hq": "Ted Griffin"
+    },
+    {
+      "actor": "Steve McQueen",
+      "movie": "The Reivers",
+      "director": "Mark Rydell",
+      "writer": "William Faulkner",
+      "i": 13,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_13",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_13",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_13"
+      },
+      "gold": "Mark Rydell",
+      "decoy_hq": "William Faulkner"
+    },
+    {
+      "actor": "Marlon Brando",
+      "movie": "The Men",
+      "director": "Fred Zinnemann",
+      "writer": "Carl Foreman",
+      "i": 14,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_14",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_14",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_14"
+      },
+      "gold": "Fred Zinnemann",
+      "decoy_hq": "Carl Foreman"
+    },
+    {
+      "actor": "Ray Milland",
+      "movie": "The Uninvited",
+      "director": "Lewis Allen",
+      "writer": "Dorothy Macardle",
+      "i": 15,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_15",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_15",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_15"
+      },
+      "gold": "Lewis Allen",
+      "decoy_hq": "Dorothy Macardle"
+    },
+    {
+      "actor": "Joan Blondell",
+      "movie": "Big City Blues",
+      "director": "Mervyn LeRoy",
+      "writer": "Ward Morehouse",
+      "i": 16,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_16",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_16",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_16"
+      },
+      "gold": "Mervyn LeRoy",
+      "decoy_hq": "Ward Morehouse"
+    },
+    {
+      "actor": "John Goodman",
+      "movie": "Matinee",
+      "director": "Joe Dante",
+      "writer": "Jerico",
+      "i": 17,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_17",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_17",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_17"
+      },
+      "gold": "Joe Dante",
+      "decoy_hq": "Jerico"
+    },
+    {
+      "actor": "Burt Lancaster",
+      "movie": "Ulzana's Raid",
+      "director": "Robert Aldrich",
+      "writer": "Alan Sharp",
+      "i": 18,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_18",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_18",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_18"
+      },
+      "gold": "Robert Aldrich",
+      "decoy_hq": "Alan Sharp"
+    },
+    {
+      "actor": "James Stewart",
+      "movie": "No Highway in the Sky",
+      "director": "Henry Koster",
+      "writer": "Nevil Shute",
+      "i": 19,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_19",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_19",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_19"
+      },
+      "gold": "Henry Koster",
+      "decoy_hq": "Nevil Shute"
+    },
+    {
+      "actor": "Boris Karloff",
+      "movie": "Isle of the Dead",
+      "director": "Mark Robson",
+      "writer": "Ardel Wray",
+      "i": 20,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_20",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_20",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_20"
+      },
+      "gold": "Mark Robson",
+      "decoy_hq": "Ardel Wray"
+    },
+    {
+      "actor": "Peter O'Toole",
+      "movie": "Venus",
+      "director": "Roger Michell",
+      "writer": "Hanif Kureishi",
+      "i": 21,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_21",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_21",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_21"
+      },
+      "gold": "Roger Michell",
+      "decoy_hq": "Hanif Kureishi"
+    },
+    {
+      "actor": "Matt Damon",
+      "movie": "The Good Shepherd",
+      "director": "Robert De Niro",
+      "writer": "Eric Roth",
+      "i": 22,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_22",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_22",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_22"
+      },
+      "gold": "Robert De Niro",
+      "decoy_hq": "Eric Roth"
+    },
+    {
+      "actor": "Katie Holmes",
+      "movie": "Go",
+      "director": "Doug Liman",
+      "writer": "John August",
+      "i": 23,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_23",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_23",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_23"
+      },
+      "gold": "Doug Liman",
+      "decoy_hq": "John August"
+    },
+    {
+      "actor": "John Mills",
+      "movie": "Ice Cold in Alex",
+      "director": "J. Lee Thompson",
+      "writer": "Christopher Landon",
+      "i": 24,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_24",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_24",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_24"
+      },
+      "gold": "J. Lee Thompson",
+      "decoy_hq": "Christopher Landon"
+    },
+    {
+      "actor": "John Hurt",
+      "movie": "The Osterman Weekend",
+      "director": "Sam Peckinpah",
+      "writer": "Robert Ludlum",
+      "i": 25,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_25",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_25",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_25"
+      },
+      "gold": "Sam Peckinpah",
+      "decoy_hq": "Robert Ludlum"
+    },
+    {
+      "actor": "Jack Hawkins",
+      "movie": "Land of the Pharaohs",
+      "director": "Howard Hawks",
+      "writer": "William Faulkner",
+      "i": 26,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_26",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_26",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_26"
+      },
+      "gold": "Howard Hawks",
+      "decoy_hq": "William Faulkner"
+    },
+    {
+      "actor": "Claude Legault",
+      "movie": "7 Days",
+      "director": "Daniel Grou",
+      "writer": "Patrick Senécal",
+      "i": 27,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_27",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_27",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_27"
+      },
+      "gold": "Daniel Grou",
+      "decoy_hq": "Patrick Senécal"
+    },
+    {
+      "actor": "Dennis Quaid",
+      "movie": "The Express",
+      "director": "Gary Fleder",
+      "writer": "Charles Leavitt",
+      "i": 28,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_28",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_28",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_28"
+      },
+      "gold": "Gary Fleder",
+      "decoy_hq": "Charles Leavitt"
+    },
+    {
+      "actor": "Jeff Bridges",
+      "movie": "Arlington Road",
+      "director": "Mark Pellington",
+      "writer": "Ehren Kruger",
+      "i": 29,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_29",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_29",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_29"
+      },
+      "gold": "Mark Pellington",
+      "decoy_hq": "Ehren Kruger"
+    },
+    {
+      "actor": "Josh Hutcherson",
+      "movie": "Little Manhattan",
+      "director": "Mark Levin",
+      "writer": "Jennifer Flackett",
+      "i": 30,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_30",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_30",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_30"
+      },
+      "gold": "Mark Levin",
+      "decoy_hq": "Jennifer Flackett"
+    },
+    {
+      "actor": "Sarah Michelle Gellar",
+      "movie": "Scooby-Doo",
+      "director": "Raja Gosnell",
+      "writer": "James Gunn",
+      "i": 31,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_31",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_31",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_31"
+      },
+      "gold": "Raja Gosnell",
+      "decoy_hq": "James Gunn"
+    },
+    {
+      "actor": "Sterling Hayden",
+      "movie": "Crime of Passion",
+      "director": "Gerd Oswald",
+      "writer": "Jo Eisinger",
+      "i": 32,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_32",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_32",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_32"
+      },
+      "gold": "Gerd Oswald",
+      "decoy_hq": "Jo Eisinger"
+    },
+    {
+      "actor": "Toni Collette",
+      "movie": "Connie and Carla",
+      "director": "Michael Lembeck",
+      "writer": "Nia Vardalos",
+      "i": 33,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_33",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_33",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_33"
+      },
+      "gold": "Michael Lembeck",
+      "decoy_hq": "Nia Vardalos"
+    },
+    {
+      "actor": "Norma Shearer",
+      "movie": "A Lady of Chance",
+      "director": "Robert Z. Leonard",
+      "writer": "Leroy Scott",
+      "i": 34,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_34",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_34",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_34"
+      },
+      "gold": "Robert Z. Leonard",
+      "decoy_hq": "Leroy Scott"
+    },
+    {
+      "actor": "Denzel Washington",
+      "movie": "The Bone Collector",
+      "director": "Phillip Noyce",
+      "writer": "Jeffery Deaver",
+      "i": 35,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_35",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_35",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_35"
+      },
+      "gold": "Phillip Noyce",
+      "decoy_hq": "Jeffery Deaver"
+    },
+    {
+      "actor": "Tom Hanks",
+      "movie": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "writer": "Winston Groom",
+      "i": 36,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_36",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_36",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_36"
+      },
+      "gold": "Robert Zemeckis",
+      "decoy_hq": "Winston Groom"
+    },
+    {
+      "actor": "Gregory Peck",
+      "movie": "Designing Woman",
+      "director": "Vincente Minnelli",
+      "writer": "George Wells",
+      "i": 37,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_37",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_37",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_37"
+      },
+      "gold": "Vincente Minnelli",
+      "decoy_hq": "George Wells"
+    },
+    {
+      "actor": "Robert Duvall",
+      "movie": "Tender Mercies",
+      "director": "Bruce Beresford",
+      "writer": "Horton Foote",
+      "i": 38,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_38",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_38",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_38"
+      },
+      "gold": "Bruce Beresford",
+      "decoy_hq": "Horton Foote"
+    },
+    {
+      "actor": "Rosanna Arquette",
+      "movie": "After Hours",
+      "director": "Martin Scorsese",
+      "writer": "Joseph Minion",
+      "i": 39,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_39",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_39",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_39"
+      },
+      "gold": "Martin Scorsese",
+      "decoy_hq": "Joseph Minion"
+    },
+    {
+      "actor": "Jane Lynch",
+      "movie": "Mr. Troop Mom",
+      "director": "William Dear",
+      "writer": "Thomas Ian Griffith",
+      "i": 40,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_40",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_40",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_40"
+      },
+      "gold": "William Dear",
+      "decoy_hq": "Thomas Ian Griffith"
+    },
+    {
+      "actor": "Maureen O'Hara",
+      "movie": "The Black Swan",
+      "director": "Henry King",
+      "writer": "Rafael Sabatini",
+      "i": 41,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_41",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_41",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_41"
+      },
+      "gold": "Henry King",
+      "decoy_hq": "Rafael Sabatini"
+    },
+    {
+      "actor": "Jason Rogel",
+      "movie": "Swamp Shark",
+      "director": "Griff Furst",
+      "writer": "Jennifer Iwen",
+      "i": 42,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_42",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_42",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_42"
+      },
+      "gold": "Griff Furst",
+      "decoy_hq": "Jennifer Iwen"
+    },
+    {
+      "actor": "Arliss Howard",
+      "movie": "CrissCross",
+      "director": "Chris Menges",
+      "writer": "Scott Sommer",
+      "i": 43,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_43",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_43",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_43"
+      },
+      "gold": "Chris Menges",
+      "decoy_hq": "Scott Sommer"
+    },
+    {
+      "actor": "Keenan Wynn",
+      "movie": "The Deep Six",
+      "director": "Rudolph Maté",
+      "writer": "Martin Dibner",
+      "i": 44,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_44",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_44",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_44"
+      },
+      "gold": "Rudolph Maté",
+      "decoy_hq": "Martin Dibner"
+    },
+    {
+      "actor": "Wesley Snipes",
+      "movie": "Blade",
+      "director": "Stephen Norrington",
+      "writer": "David S. Goyer",
+      "i": 45,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_45",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_45",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_45"
+      },
+      "gold": "Stephen Norrington",
+      "decoy_hq": "David S. Goyer"
+    },
+    {
+      "actor": "Sharni Vinson",
+      "movie": "You're Next",
+      "director": "Adam Wingard",
+      "writer": "Simon Barrett",
+      "i": 46,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_46",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_46",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_46"
+      },
+      "gold": "Adam Wingard",
+      "decoy_hq": "Simon Barrett"
+    },
+    {
+      "actor": "Morgan Freeman",
+      "movie": "The Magic of Belle Isle",
+      "director": "Rob Reiner",
+      "writer": "Guy Thomas",
+      "i": 47,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_47",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_47",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_47"
+      },
+      "gold": "Rob Reiner",
+      "decoy_hq": "Guy Thomas"
+    },
+    {
+      "actor": "Harry Dean Stanton",
+      "movie": "Cockfighter",
+      "director": "Monte Hellman",
+      "writer": "Charles Willeford",
+      "i": 48,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_48",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_48",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_48"
+      },
+      "gold": "Monte Hellman",
+      "decoy_hq": "Charles Willeford"
+    },
+    {
+      "actor": "Mark Wahlberg",
+      "movie": "The Perfect Storm",
+      "director": "Wolfgang Petersen",
+      "writer": "Sebastian Junger",
+      "i": 49,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_49",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_49",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_49"
+      },
+      "gold": "Wolfgang Petersen",
+      "decoy_hq": "Sebastian Junger"
+    },
+    {
+      "actor": "Anjelica Huston",
+      "movie": "Material Girls",
+      "director": "Martha Coolidge",
+      "writer": "John Quaintance",
+      "i": 50,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_50",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_50",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_50"
+      },
+      "gold": "Martha Coolidge",
+      "decoy_hq": "John Quaintance"
+    },
+    {
+      "actor": "Meryl Streep",
+      "movie": "The Seduction of Joe Tynan",
+      "director": "Jerry Schatzberg",
+      "writer": "Alan Alda",
+      "i": 51,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_51",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_51",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_51"
+      },
+      "gold": "Jerry Schatzberg",
+      "decoy_hq": "Alan Alda"
+    },
+    {
+      "actor": "Charlie Sheen",
+      "movie": "Cadence",
+      "director": "Martin Sheen",
+      "writer": "Gordon Weaver",
+      "i": 52,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_52",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_52",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_52"
+      },
+      "gold": "Martin Sheen",
+      "decoy_hq": "Gordon Weaver"
+    },
+    {
+      "actor": "Michael Keaton",
+      "movie": "Mr. Mom",
+      "director": "Stan Dragoti",
+      "writer": "John Hughes",
+      "i": 53,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_53",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_53",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_53"
+      },
+      "gold": "Stan Dragoti",
+      "decoy_hq": "John Hughes"
+    },
+    {
+      "actor": "Amanda Crew",
+      "movie": "Repeaters",
+      "director": "Carl Bessai",
+      "writer": "Arne Olsen",
+      "i": 54,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_54",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_54",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_54"
+      },
+      "gold": "Carl Bessai",
+      "decoy_hq": "Arne Olsen"
+    },
+    {
+      "actor": "Jack Nicholson",
+      "movie": "Carnal Knowledge",
+      "director": "Mike Nichols",
+      "writer": "Jules Feiffer",
+      "i": 55,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_55",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_55",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_55"
+      },
+      "gold": "Mike Nichols",
+      "decoy_hq": "Jules Feiffer"
+    },
+    {
+      "actor": "Stanley Holloway",
+      "movie": "The Titfield Thunderbolt",
+      "director": "Charles Crichton",
+      "writer": "T.E.B. Clarke",
+      "i": 56,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_56",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_56",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_56"
+      },
+      "gold": "Charles Crichton",
+      "decoy_hq": "T.E.B. Clarke"
+    },
+    {
+      "actor": "Liam Cunningham",
+      "movie": "A Little Princess",
+      "director": "Alfonso Cuarón",
+      "writer": "Frances Hodgson Burnett",
+      "i": 57,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_57",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_57",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_57"
+      },
+      "gold": "Alfonso Cuarón",
+      "decoy_hq": "Frances Hodgson Burnett"
+    },
+    {
+      "actor": "Don Ameche",
+      "movie": "A Fever in the Blood",
+      "director": "Vincent Sherman",
+      "writer": "Roy Huggins",
+      "i": 58,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_58",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_58",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_58"
+      },
+      "gold": "Vincent Sherman",
+      "decoy_hq": "Roy Huggins"
+    },
+    {
+      "actor": "Ethan Embry",
+      "movie": "Dutch",
+      "director": "Peter Faiman",
+      "writer": "John Hughes",
+      "i": 59,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_59",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_59",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_59"
+      },
+      "gold": "Peter Faiman",
+      "decoy_hq": "John Hughes"
+    },
+    {
+      "actor": "Drew Barrymore",
+      "movie": "Boys on the Side",
+      "director": "Herbert Ross",
+      "writer": "Don Roos",
+      "i": 60,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_60",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_60",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_60"
+      },
+      "gold": "Herbert Ross",
+      "decoy_hq": "Don Roos"
+    },
+    {
+      "actor": "Kirsten Dunst",
+      "movie": "Bring It On",
+      "director": "Peyton Reed",
+      "writer": "Jessica Bendinger",
+      "i": 61,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_61",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_61",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_61"
+      },
+      "gold": "Peyton Reed",
+      "decoy_hq": "Jessica Bendinger"
+    },
+    {
+      "actor": "Michael Caine",
+      "movie": "The Ipcress File",
+      "director": "Sidney J. Furie",
+      "writer": "James Doran",
+      "i": 62,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_62",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_62",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_62"
+      },
+      "gold": "Sidney J. Furie",
+      "decoy_hq": "James Doran"
+    },
+    {
+      "actor": "Hedy Lamarr",
+      "movie": "Experiment Perilous",
+      "director": "Jacques Tourneur",
+      "writer": "Margaret Carpenter",
+      "i": 63,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_63",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_63",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_63"
+      },
+      "gold": "Jacques Tourneur",
+      "decoy_hq": "Margaret Carpenter"
+    },
+    {
+      "actor": "Peter Coyote",
+      "movie": "Jagged Edge",
+      "director": "Richard Marquand",
+      "writer": "Joe Eszterhas",
+      "i": 64,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_64",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_64",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_64"
+      },
+      "gold": "Richard Marquand",
+      "decoy_hq": "Joe Eszterhas"
+    },
+    {
+      "actor": "Kirk Douglas",
+      "movie": "The Brotherhood",
+      "director": "Martin Ritt",
+      "writer": "Lewis John Carlino",
+      "i": 65,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_65",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_65",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_65"
+      },
+      "gold": "Martin Ritt",
+      "decoy_hq": "Lewis John Carlino"
+    },
+    {
+      "actor": "Ryan Gosling",
+      "movie": "Lars and the Real Girl",
+      "director": "Craig Gillespie",
+      "writer": "Nancy Oliver",
+      "i": 66,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_66",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_66",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_66"
+      },
+      "gold": "Craig Gillespie",
+      "decoy_hq": "Nancy Oliver"
+    },
+    {
+      "actor": "Charles Laughton",
+      "movie": "It Started with Eve",
+      "director": "Henry Koster",
+      "writer": "Hanns Kräly",
+      "i": 67,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_67",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_67",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_67"
+      },
+      "gold": "Henry Koster",
+      "decoy_hq": "Hanns Kräly"
+    },
+    {
+      "actor": "Don Megowan",
+      "movie": "The Creation of the Humanoids",
+      "director": "Wesley Barry",
+      "writer": "Jay Simms",
+      "i": 68,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_68",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_68",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_68"
+      },
+      "gold": "Wesley Barry",
+      "decoy_hq": "Jay Simms"
+    },
+    {
+      "actor": "Mary Elizabeth Winstead",
+      "movie": "Make It Happen",
+      "director": "Darren Grant",
+      "writer": "Duane Adler",
+      "i": 69,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_69",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_69",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_69"
+      },
+      "gold": "Darren Grant",
+      "decoy_hq": "Duane Adler"
+    },
+    {
+      "actor": "Harrison Ford",
+      "movie": "Random Hearts",
+      "director": "Sydney Pollack",
+      "writer": "Warren Adler",
+      "i": 70,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_70",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_70",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_70"
+      },
+      "gold": "Sydney Pollack",
+      "decoy_hq": "Warren Adler"
+    },
+    {
+      "actor": "Raquel Welch",
+      "movie": "Fathom",
+      "director": "Leslie H. Martinson",
+      "writer": "Larry Forrester",
+      "i": 71,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_71",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_71",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_71"
+      },
+      "gold": "Leslie H. Martinson",
+      "decoy_hq": "Larry Forrester"
+    },
+    {
+      "actor": "Albert Finney",
+      "movie": "The Run of the Country",
+      "director": "Peter Yates",
+      "writer": "Shane Connaughton",
+      "i": 72,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_72",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_72",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_72"
+      },
+      "gold": "Peter Yates",
+      "decoy_hq": "Shane Connaughton"
+    },
+    {
+      "actor": "Marcia Gay Harden",
+      "movie": "Gaudi Afternoon",
+      "director": "Susan Seidelman",
+      "writer": "Barbara Wilson",
+      "i": 73,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_73",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_73",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_73"
+      },
+      "gold": "Susan Seidelman",
+      "decoy_hq": "Barbara Wilson"
+    },
+    {
+      "actor": "Peter Cushing",
+      "movie": "The Abominable Snowman",
+      "director": "Val Guest",
+      "writer": "Nigel Kneale",
+      "i": 74,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_74",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_74",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_74"
+      },
+      "gold": "Val Guest",
+      "decoy_hq": "Nigel Kneale"
+    },
+    {
+      "actor": "Garrett Hedlund",
+      "movie": "Unbroken",
+      "director": "Angelina Jolie",
+      "writer": "Laura Hillenbrand",
+      "i": 75,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_75",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_75",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_75"
+      },
+      "gold": "Angelina Jolie",
+      "decoy_hq": "Laura Hillenbrand"
+    },
+    {
+      "actor": "William Powell",
+      "movie": "Lawyer Man",
+      "director": "William Dieterle",
+      "writer": "Max Trell",
+      "i": 76,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_76",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_76",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_76"
+      },
+      "gold": "William Dieterle",
+      "decoy_hq": "Max Trell"
+    },
+    {
+      "actor": "Jascha Washington",
+      "movie": "The Final",
+      "director": "Joey Stewart",
+      "writer": "Jason Kabolati",
+      "i": 77,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_77",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_77",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_77"
+      },
+      "gold": "Joey Stewart",
+      "decoy_hq": "Jason Kabolati"
+    },
+    {
+      "actor": "Kåre Hedebrant",
+      "movie": "Let the Right One In",
+      "director": "Tomas Alfredson",
+      "writer": "John Ajvide Lindqvist",
+      "i": 78,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_78",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_78",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_78"
+      },
+      "gold": "Tomas Alfredson",
+      "decoy_hq": "John Ajvide Lindqvist"
+    },
+    {
+      "actor": "John Benjamin Hickey",
+      "movie": "Finding North",
+      "director": "Tanya Wexler",
+      "writer": "Kim Powers",
+      "i": 79,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_79",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_79",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_79"
+      },
+      "gold": "Tanya Wexler",
+      "decoy_hq": "Kim Powers"
+    },
+    {
+      "actor": "Antonio Banderas",
+      "movie": "The Big Bang",
+      "director": "Tony Krantz",
+      "writer": "Erik Jendresen",
+      "i": 80,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_80",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_80",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_80"
+      },
+      "gold": "Tony Krantz",
+      "decoy_hq": "Erik Jendresen"
+    },
+    {
+      "actor": "Leonardo DiCaprio",
+      "movie": "The Basketball Diaries",
+      "director": "Scott Kalvert",
+      "writer": "Jim Carroll",
+      "i": 81,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_81",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_81",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_81"
+      },
+      "gold": "Scott Kalvert",
+      "decoy_hq": "Jim Carroll"
+    },
+    {
+      "actor": "Doris Day",
+      "movie": "Starlift",
+      "director": "Roy Del Ruth",
+      "writer": "John D. Klorer",
+      "i": 82,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_82",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_82",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_82"
+      },
+      "gold": "Roy Del Ruth",
+      "decoy_hq": "John D. Klorer"
+    },
+    {
+      "actor": "Talia Shire",
+      "movie": "Prophecy",
+      "director": "John Frankenheimer",
+      "writer": "David Seltzer",
+      "i": 83,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_83",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_83",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_83"
+      },
+      "gold": "John Frankenheimer",
+      "decoy_hq": "David Seltzer"
+    },
+    {
+      "actor": "Bryce Dallas Howard",
+      "movie": "The Loss of a Teardrop Diamond",
+      "director": "Jodie Markell",
+      "writer": "Tennessee Williams",
+      "i": 84,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_84",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_84",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_84"
+      },
+      "gold": "Jodie Markell",
+      "decoy_hq": "Tennessee Williams"
+    },
+    {
+      "actor": "Jennifer Aniston",
+      "movie": "The Good Girl",
+      "director": "Miguel Arteta",
+      "writer": "Mike White",
+      "i": 85,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_85",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_85",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_85"
+      },
+      "gold": "Miguel Arteta",
+      "decoy_hq": "Mike White"
+    },
+    {
+      "actor": "Clint Eastwood",
+      "movie": "The Beguiled",
+      "director": "Don Siegel",
+      "writer": "Albert Maltz",
+      "i": 86,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_86",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_86",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_86"
+      },
+      "gold": "Don Siegel",
+      "decoy_hq": "Albert Maltz"
+    },
+    {
+      "actor": "Patrick Bergin",
+      "movie": "Highway to Hell",
+      "director": "Ate de Jong",
+      "writer": "Brian Helgeland",
+      "i": 87,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_87",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_87",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_87"
+      },
+      "gold": "Ate de Jong",
+      "decoy_hq": "Brian Helgeland"
+    },
+    {
+      "actor": "Christian Bale",
+      "movie": "Mio in the Land of Faraway",
+      "director": "Vladimir Grammatikov",
+      "writer": "Astrid Lindgren",
+      "i": 88,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_88",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_88",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_88"
+      },
+      "gold": "Vladimir Grammatikov",
+      "decoy_hq": "Astrid Lindgren"
+    },
+    {
+      "actor": "Charlton Heston",
+      "movie": "Soylent Green",
+      "director": "Richard Fleischer",
+      "writer": "Harry Harrison",
+      "i": 89,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_89",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_89",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_89"
+      },
+      "gold": "Richard Fleischer",
+      "decoy_hq": "Harry Harrison"
+    },
+    {
+      "actor": "Shia LaBeouf",
+      "movie": "Tru Confessions",
+      "director": "Paul Hoen",
+      "writer": "Janet Tashjian",
+      "i": 90,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_90",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_90",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_90"
+      },
+      "gold": "Paul Hoen",
+      "decoy_hq": "Janet Tashjian"
+    },
+    {
+      "actor": "Eddie Murphy",
+      "movie": "Daddy Day Care",
+      "director": "Steve Carr",
+      "writer": "Geoff Rodkey",
+      "i": 91,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_91",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_91",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_91"
+      },
+      "gold": "Steve Carr",
+      "decoy_hq": "Geoff Rodkey"
+    },
+    {
+      "actor": "Jean Parker",
+      "movie": "Adventures of Kitty O'Day",
+      "director": "William Beaudine",
+      "writer": "Tim Ryan",
+      "i": 92,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_92",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_92",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_92"
+      },
+      "gold": "William Beaudine",
+      "decoy_hq": "Tim Ryan"
+    },
+    {
+      "actor": "Natalie Portman",
+      "movie": "No Strings Attached",
+      "director": "Ivan Reitman",
+      "writer": "Elizabeth Meriwether",
+      "i": 93,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_93",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_93",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_93"
+      },
+      "gold": "Ivan Reitman",
+      "decoy_hq": "Elizabeth Meriwether"
+    },
+    {
+      "actor": "Dominique Sanda",
+      "movie": "A Gentle Woman",
+      "director": "Robert Bresson",
+      "writer": "Fyodor Dostoevsky",
+      "i": 94,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_94",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_94",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_94"
+      },
+      "gold": "Robert Bresson",
+      "decoy_hq": "Fyodor Dostoevsky"
+    },
+    {
+      "actor": "Melvyn Douglas",
+      "movie": "A Woman's Secret",
+      "director": "Nicholas Ray",
+      "writer": "Vicki Baum",
+      "i": 95,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_95",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_95",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_95"
+      },
+      "gold": "Nicholas Ray",
+      "decoy_hq": "Vicki Baum"
+    },
+    {
+      "actor": "Dean Martin",
+      "movie": "Toys in the Attic",
+      "director": "George Roy Hill",
+      "writer": "Lillian Hellman",
+      "i": 96,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_96",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_96",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_96"
+      },
+      "gold": "George Roy Hill",
+      "decoy_hq": "Lillian Hellman"
+    },
+    {
+      "actor": "Faith Domergue",
+      "movie": "This Island Earth",
+      "director": "Joseph M. Newman",
+      "writer": "Raymond F. Jones",
+      "i": 97,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_97",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_97",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_97"
+      },
+      "gold": "Joseph M. Newman",
+      "decoy_hq": "Raymond F. Jones"
+    },
+    {
+      "actor": "Claire Danes",
+      "movie": "Temple Grandin",
+      "director": "Mick Jackson",
+      "writer": "Temple Grandin",
+      "i": 98,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_98",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_98",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_98"
+      },
+      "gold": "Mick Jackson",
+      "decoy_hq": "Temple Grandin"
+    },
+    {
+      "actor": "Tina Fey",
+      "movie": "Admission",
+      "director": "Paul Weitz",
+      "writer": "Jean Hanff Korelitz",
+      "i": 99,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_99",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_99",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_99"
+      },
+      "gold": "Paul Weitz",
+      "decoy_hq": "Jean Hanff Korelitz"
+    },
+    {
+      "actor": "Anne Shirley",
+      "movie": "Anne of Green Gables",
+      "director": "George Nichols Jr.",
+      "writer": "Lucy Maud Montgomery",
+      "i": 100,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_100",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_100",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_100"
+      },
+      "gold": "George Nichols Jr.",
+      "decoy_hq": "Lucy Maud Montgomery"
+    },
+    {
+      "actor": "Kate Beckinsale",
+      "movie": "Cold Comfort Farm",
+      "director": "John Schlesinger",
+      "writer": "Stella Gibbons",
+      "i": 101,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_101",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_101",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_101"
+      },
+      "gold": "John Schlesinger",
+      "decoy_hq": "Stella Gibbons"
+    },
+    {
+      "actor": "Matthew McConaughey",
+      "movie": "We Are Marshall",
+      "director": "McG",
+      "writer": "Jamie Linden",
+      "i": 102,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_102",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_102",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_102"
+      },
+      "gold": "McG",
+      "decoy_hq": "Jamie Linden"
+    },
+    {
+      "actor": "Gary Oldman",
+      "movie": "Chattahoochee",
+      "director": "Mick Jackson",
+      "writer": "James Hicks",
+      "i": 103,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_103",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_103",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_103"
+      },
+      "gold": "Mick Jackson",
+      "decoy_hq": "James Hicks"
+    },
+    {
+      "actor": "Linda Blair",
+      "movie": "Hell Night",
+      "director": "Tom DeSimone",
+      "writer": "Randy Feldman",
+      "i": 104,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_104",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_104",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_104"
+      },
+      "gold": "Tom DeSimone",
+      "decoy_hq": "Randy Feldman"
+    },
+    {
+      "actor": "Adam Rayner",
+      "movie": "The Task",
+      "director": "Alex Orwell",
+      "writer": "Kenny Yakkel",
+      "i": 105,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_105",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_105",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_105"
+      },
+      "gold": "Alex Orwell",
+      "decoy_hq": "Kenny Yakkel"
+    },
+    {
+      "actor": "Robert De Niro",
+      "movie": "Backdraft",
+      "director": "Ron Howard",
+      "writer": "Gregory Widen",
+      "i": 106,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_106",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_106",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_106"
+      },
+      "gold": "Ron Howard",
+      "decoy_hq": "Gregory Widen"
+    },
+    {
+      "actor": "Lisa Kudrow",
+      "movie": "Marci X",
+      "director": "Richard Benjamin",
+      "writer": "Paul Rudnick",
+      "i": 107,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_107",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_107",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_107"
+      },
+      "gold": "Richard Benjamin",
+      "decoy_hq": "Paul Rudnick"
+    },
+    {
+      "actor": "Anna May Wong",
+      "movie": "Piccadilly",
+      "director": "Ewald André Dupont",
+      "writer": "Arnold Bennett",
+      "i": 108,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_108",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_108",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_108"
+      },
+      "gold": "Ewald André Dupont",
+      "decoy_hq": "Arnold Bennett"
+    },
+    {
+      "actor": "Russell Crowe",
+      "movie": "Virtuosity",
+      "director": "Brett Leonard",
+      "writer": "Eric Bernt",
+      "i": 109,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_109",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_109",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_109"
+      },
+      "gold": "Brett Leonard",
+      "decoy_hq": "Eric Bernt"
+    },
+    {
+      "actor": "Zach Galifianakis",
+      "movie": "Visioneers",
+      "director": "Jared Drake",
+      "writer": "Brandon Drake",
+      "i": 110,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_110",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_110",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_110"
+      },
+      "gold": "Jared Drake",
+      "decoy_hq": "Brandon Drake"
+    },
+    {
+      "actor": "George Sanders",
+      "movie": "The Jungle Book",
+      "director": "Wolfgang Reitherman",
+      "writer": "Rudyard Kipling",
+      "i": 111,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_111",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_111",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_111"
+      },
+      "gold": "Wolfgang Reitherman",
+      "decoy_hq": "Rudyard Kipling"
+    },
+    {
+      "actor": "Deborah Kerr",
+      "movie": "Tea and Sympathy",
+      "director": "Vincente Minnelli",
+      "writer": "Robert Anderson",
+      "i": 112,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_112",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_112",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_112"
+      },
+      "gold": "Vincente Minnelli",
+      "decoy_hq": "Robert Anderson"
+    },
+    {
+      "actor": "Don Cheadle",
+      "movie": "Hamburger Hill",
+      "director": "John Irvin",
+      "writer": "James Carabatsos",
+      "i": 113,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_113",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_113",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_113"
+      },
+      "gold": "John Irvin",
+      "decoy_hq": "James Carabatsos"
+    },
+    {
+      "actor": "William Holden",
+      "movie": "Weary River",
+      "director": "Frank Lloyd",
+      "writer": "Courtney Ryley Cooper",
+      "i": 114,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_114",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_114",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_114"
+      },
+      "gold": "Frank Lloyd",
+      "decoy_hq": "Courtney Ryley Cooper"
+    },
+    {
+      "actor": "Sam Elliott",
+      "movie": "The Shadow Riders",
+      "director": "Andrew V. McLaglen",
+      "writer": "Louis L'Amour",
+      "i": 115,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_115",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_115",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_115"
+      },
+      "gold": "Andrew V. McLaglen",
+      "decoy_hq": "Louis L'Amour"
+    },
+    {
+      "actor": "Sigourney Weaver",
+      "movie": "You Again",
+      "director": "Andy Fickman",
+      "writer": "Moe Jelline",
+      "i": 116,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_116",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_116",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_116"
+      },
+      "gold": "Andy Fickman",
+      "decoy_hq": "Moe Jelline"
+    },
+    {
+      "actor": "Kristen Stewart",
+      "movie": "Welcome to the Rileys",
+      "director": "Jake Scott",
+      "writer": "Ken Hixon",
+      "i": 117,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_117",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_117",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_117"
+      },
+      "gold": "Jake Scott",
+      "decoy_hq": "Ken Hixon"
+    },
+    {
+      "actor": "Joan Fontaine",
+      "movie": "Letter from an Unknown Woman",
+      "director": "Max Ophüls",
+      "writer": "Stefan Zweig",
+      "i": 118,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_118",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_118",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_118"
+      },
+      "gold": "Max Ophüls",
+      "decoy_hq": "Stefan Zweig"
+    },
+    {
+      "actor": "Alan Arkin",
+      "movie": "The In-Laws",
+      "director": "Arthur Hiller",
+      "writer": "Andrew Bergman",
+      "i": 119,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_119",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_119",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_119"
+      },
+      "gold": "Arthur Hiller",
+      "decoy_hq": "Andrew Bergman"
+    },
+    {
+      "actor": "Hugo Chávez",
+      "movie": "South of the Border",
+      "director": "Oliver Stone",
+      "writer": "Tariq Ali",
+      "i": 120,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_120",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_120",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_120"
+      },
+      "gold": "Oliver Stone",
+      "decoy_hq": "Tariq Ali"
+    },
+    {
+      "actor": "Patrick Swayze",
+      "movie": "Dirty Dancing",
+      "director": "Emile Ardolino",
+      "writer": "Eleanor Bergstein",
+      "i": 121,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_121",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_121",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_121"
+      },
+      "gold": "Emile Ardolino",
+      "decoy_hq": "Eleanor Bergstein"
+    },
+    {
+      "actor": "Barry Pepper",
+      "movie": "61*",
+      "director": "Billy Crystal",
+      "writer": "Hank Steinberg",
+      "i": 122,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_122",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_122",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_122"
+      },
+      "gold": "Billy Crystal",
+      "decoy_hq": "Hank Steinberg"
+    },
+    {
+      "actor": "John Turturro",
+      "movie": "The Luzhin Defence",
+      "director": "Marleen Gorris",
+      "writer": "Vladimir Nabokov",
+      "i": 123,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_123",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_123",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_123"
+      },
+      "gold": "Marleen Gorris",
+      "decoy_hq": "Vladimir Nabokov"
+    },
+    {
+      "actor": "Dustin Hoffman",
+      "movie": "Marathon Man",
+      "director": "John Schlesinger",
+      "writer": "William Goldman",
+      "i": 124,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_124",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_124",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_124"
+      },
+      "gold": "John Schlesinger",
+      "decoy_hq": "William Goldman"
+    },
+    {
+      "actor": "Jean Arthur",
+      "movie": "The Devil and Miss Jones",
+      "director": "Sam Wood",
+      "writer": "Norman Krasna",
+      "i": 125,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_125",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_125",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_125"
+      },
+      "gold": "Sam Wood",
+      "decoy_hq": "Norman Krasna"
+    },
+    {
+      "actor": "Robin Williams",
+      "movie": "Dead Poets Society",
+      "director": "Peter Weir",
+      "writer": "Tom Schulman",
+      "i": 126,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_126",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_126",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_126"
+      },
+      "gold": "Peter Weir",
+      "decoy_hq": "Tom Schulman"
+    },
+    {
+      "actor": "Burt Reynolds",
+      "movie": "W.W. and the Dixie Dancekings",
+      "director": "John G. Avildsen",
+      "writer": "Thomas Rickman",
+      "i": 127,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_127",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_127",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_127"
+      },
+      "gold": "John G. Avildsen",
+      "decoy_hq": "Thomas Rickman"
+    },
+    {
+      "actor": "Daniel Radcliffe",
+      "movie": "Horns",
+      "director": "Alexandre Aja",
+      "writer": "Joe Hill",
+      "i": 128,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_128",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_128",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_128"
+      },
+      "gold": "Alexandre Aja",
+      "decoy_hq": "Joe Hill"
+    },
+    {
+      "actor": "Jodie Foster",
+      "movie": "The Little Girl Who Lives Down the Lane",
+      "director": "Nicolas Gessner",
+      "writer": "Laird Koenig",
+      "i": 129,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_129",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_129",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_129"
+      },
+      "gold": "Nicolas Gessner",
+      "decoy_hq": "Laird Koenig"
+    },
+    {
+      "actor": "Andrew Keir",
+      "movie": "Blood from the Mummy's Tomb",
+      "director": "Seth Holt",
+      "writer": "Bram Stoker",
+      "i": 130,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_130",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_130",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_130"
+      },
+      "gold": "Seth Holt",
+      "decoy_hq": "Bram Stoker"
+    },
+    {
+      "actor": "Jack Black",
+      "movie": "School of Rock",
+      "director": "Richard Linklater",
+      "writer": "Mike White",
+      "i": 131,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_131",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_131",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_131"
+      },
+      "gold": "Richard Linklater",
+      "decoy_hq": "Mike White"
+    },
+    {
+      "actor": "Nicolas Cage",
+      "movie": "Season of the Witch",
+      "director": "Dominic Sena",
+      "writer": "Bragi F. Schut",
+      "i": 132,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_132",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_132",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_132"
+      },
+      "gold": "Dominic Sena",
+      "decoy_hq": "Bragi F. Schut"
+    },
+    {
+      "actor": "Matthew Goode",
+      "movie": "Belle",
+      "director": "Amma Asante",
+      "writer": "Misan Sagay",
+      "i": 133,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_133",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_133",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_133"
+      },
+      "gold": "Amma Asante",
+      "decoy_hq": "Misan Sagay"
+    },
+    {
+      "actor": "Zoe Saldana",
+      "movie": "The Losers",
+      "director": "Sylvain White",
+      "writer": "Andy Diggle",
+      "i": 134,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_134",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_134",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_134"
+      },
+      "gold": "Sylvain White",
+      "decoy_hq": "Andy Diggle"
+    },
+    {
+      "actor": "Richard Gere",
+      "movie": "Power",
+      "director": "Sidney Lumet",
+      "writer": "David Himmelstein",
+      "i": 135,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_135",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_135",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_135"
+      },
+      "gold": "Sidney Lumet",
+      "decoy_hq": "David Himmelstein"
+    },
+    {
+      "actor": "Laurence Fishburne",
+      "movie": "The Death and Life of Bobby Z",
+      "director": "John Herzfeld",
+      "writer": "Don Winslow",
+      "i": 136,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_136",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_136",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_136"
+      },
+      "gold": "John Herzfeld",
+      "decoy_hq": "Don Winslow"
+    },
+    {
+      "actor": "Kevin Spacey",
+      "movie": "The Life of David Gale",
+      "director": "Alan Parker",
+      "writer": "Charles Randolph",
+      "i": 137,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_137",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_137",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_137"
+      },
+      "gold": "Alan Parker",
+      "decoy_hq": "Charles Randolph"
+    },
+    {
+      "actor": "Van Heflin",
+      "movie": "Patterns",
+      "director": "Fielder Cook",
+      "writer": "Rod Serling",
+      "i": 138,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_138",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_138",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_138"
+      },
+      "gold": "Fielder Cook",
+      "decoy_hq": "Rod Serling"
+    },
+    {
+      "actor": "Barbara Stanwyck",
+      "movie": "Stella Dallas",
+      "director": "King Vidor",
+      "writer": "Olive Higgins Prouty",
+      "i": 139,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_139",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_139",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_139"
+      },
+      "gold": "King Vidor",
+      "decoy_hq": "Olive Higgins Prouty"
+    },
+    {
+      "actor": "George C. Scott",
+      "movie": "The New Centurions",
+      "director": "Richard Fleischer",
+      "writer": "Joseph Wambaugh",
+      "i": 140,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_140",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_140",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_140"
+      },
+      "gold": "Richard Fleischer",
+      "decoy_hq": "Joseph Wambaugh"
+    },
+    {
+      "actor": "David Bowie",
+      "movie": "Absolute Beginners",
+      "director": "Julien Temple",
+      "writer": "Colin MacInnes",
+      "i": 141,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_141",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_141",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_141"
+      },
+      "gold": "Julien Temple",
+      "decoy_hq": "Colin MacInnes"
+    },
+    {
+      "actor": "Norman Reedus",
+      "movie": "Hello Herman",
+      "director": "Michelle Danner",
+      "writer": "John Buffalo Mailer",
+      "i": 142,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_142",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_142",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_142"
+      },
+      "gold": "Michelle Danner",
+      "decoy_hq": "John Buffalo Mailer"
+    },
+    {
+      "actor": "Richard Dreyfuss",
+      "movie": "Mr. Holland's Opus",
+      "director": "Stephen Herek",
+      "writer": "Patrick Sheane Duncan",
+      "i": 143,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_143",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_143",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_143"
+      },
+      "gold": "Stephen Herek",
+      "decoy_hq": "Patrick Sheane Duncan"
+    },
+    {
+      "actor": "Sylvia Kristel",
+      "movie": "Emmanuelle",
+      "director": "Just Jaeckin",
+      "writer": "Emmanuelle Arsan",
+      "i": 144,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_144",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_144",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_144"
+      },
+      "gold": "Just Jaeckin",
+      "decoy_hq": "Emmanuelle Arsan"
+    },
+    {
+      "actor": "AJ Bowen",
+      "movie": "A Horrible Way to Die",
+      "director": "Adam Wingard",
+      "writer": "Simon Barrett",
+      "i": 145,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_145",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_145",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_145"
+      },
+      "gold": "Adam Wingard",
+      "decoy_hq": "Simon Barrett"
+    },
+    {
+      "actor": "Christopher Plummer",
+      "movie": "Crackerjack",
+      "director": "Michael Mazo",
+      "writer": "Mick Molloy",
+      "i": 146,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_146",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_146",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_146"
+      },
+      "gold": "Michael Mazo",
+      "decoy_hq": "Mick Molloy"
+    },
+    {
+      "actor": "Tim Roth",
+      "movie": "Vatel",
+      "director": "Roland Joffé",
+      "writer": "Tom Stoppard",
+      "i": 147,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_147",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_147",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_147"
+      },
+      "gold": "Roland Joffé",
+      "decoy_hq": "Tom Stoppard"
+    },
+    {
+      "actor": "William Haines",
+      "movie": "Brown of Harvard",
+      "director": "Jack Conway",
+      "writer": "Rida Johnson Young",
+      "i": 148,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_148",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_148",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_148"
+      },
+      "gold": "Jack Conway",
+      "decoy_hq": "Rida Johnson Young"
+    },
+    {
+      "actor": "Michael J. Fox",
+      "movie": "Bright Lights, Big City",
+      "director": "James Bridges",
+      "writer": "Jay McInerney",
+      "i": 149,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_149",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_149",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_149"
+      },
+      "gold": "James Bridges",
+      "decoy_hq": "Jay McInerney"
+    },
+    {
+      "actor": "Paul Newman",
+      "movie": "The Drowning Pool",
+      "director": "Stuart Rosenberg",
+      "writer": "Ross Macdonald",
+      "i": 150,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_150",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_150",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_150"
+      },
+      "gold": "Stuart Rosenberg",
+      "decoy_hq": "Ross Macdonald"
+    },
+    {
+      "actor": "Steve Guttenberg",
+      "movie": "Short Circuit",
+      "director": "John Badham",
+      "writer": "Brent Maddock",
+      "i": 151,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_151",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_151",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_151"
+      },
+      "gold": "John Badham",
+      "decoy_hq": "Brent Maddock"
+    },
+    {
+      "actor": "Arnold Schwarzenegger",
+      "movie": "Jingle All the Way",
+      "director": "Brian Levant",
+      "writer": "Randy Kornfield",
+      "i": 152,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_152",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_152",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_152"
+      },
+      "gold": "Brian Levant",
+      "decoy_hq": "Randy Kornfield"
+    },
+    {
+      "actor": "Wallace Beery",
+      "movie": "Robin Hood",
+      "director": "Ridley Scott",
+      "writer": "Douglas Fairbanks",
+      "i": 153,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_153",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_153",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_153"
+      },
+      "gold": "Ridley Scott",
+      "decoy_hq": "Douglas Fairbanks"
+    },
+    {
+      "actor": "Charles Bronson",
+      "movie": "Death Wish 3",
+      "director": "Michael Winner",
+      "writer": "Don Jakoby",
+      "i": 154,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_154",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_154",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_154"
+      },
+      "gold": "Michael Winner",
+      "decoy_hq": "Don Jakoby"
+    },
+    {
+      "actor": "Jeremy Irons",
+      "movie": "Damage",
+      "director": "Louis Malle",
+      "writer": "Josephine Hart",
+      "i": 155,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_155",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_155",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_155"
+      },
+      "gold": "Louis Malle",
+      "decoy_hq": "Josephine Hart"
+    },
+    {
+      "actor": "Paula Kelly",
+      "movie": "The Spook Who Sat by the Door",
+      "director": "Ivan Dixon",
+      "writer": "Sam Greenlee",
+      "i": 156,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_156",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_156",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_156"
+      },
+      "gold": "Ivan Dixon",
+      "decoy_hq": "Sam Greenlee"
+    },
+    {
+      "actor": "Roy Scheider",
+      "movie": "52 Pick-Up",
+      "director": "John Frankenheimer",
+      "writer": "Elmore Leonard",
+      "i": 157,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_157",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_157",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_157"
+      },
+      "gold": "John Frankenheimer",
+      "decoy_hq": "Elmore Leonard"
+    },
+    {
+      "actor": "Ashley Williams",
+      "movie": "Montana Sky",
+      "director": "Mike Robe",
+      "writer": "Nora Roberts",
+      "i": 158,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_158",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_158",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_158"
+      },
+      "gold": "Mike Robe",
+      "decoy_hq": "Nora Roberts"
+    },
+    {
+      "actor": "Paul Walker",
+      "movie": "Joy Ride",
+      "director": "John Dahl",
+      "writer": "Clay Tarver",
+      "i": 159,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_159",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_159",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_159"
+      },
+      "gold": "John Dahl",
+      "decoy_hq": "Clay Tarver"
+    },
+    {
+      "actor": "Walter Huston",
+      "movie": "Gabriel Over the White House",
+      "director": "Gregory La Cava",
+      "writer": "Carey Wilson",
+      "i": 160,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_160",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_160",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_160"
+      },
+      "gold": "Gregory La Cava",
+      "decoy_hq": "Carey Wilson"
+    },
+    {
+      "actor": "Warren Oates",
+      "movie": "Return of the Seven",
+      "director": "Burt Kennedy",
+      "writer": "Larry Cohen",
+      "i": 161,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_161",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_161",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_161"
+      },
+      "gold": "Burt Kennedy",
+      "decoy_hq": "Larry Cohen"
+    },
+    {
+      "actor": "Loretta Young",
+      "movie": "The Squall",
+      "director": "Alexander Korda",
+      "writer": "Jean Bart",
+      "i": 162,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_162",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_162",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_162"
+      },
+      "gold": "Alexander Korda",
+      "decoy_hq": "Jean Bart"
+    },
+    {
+      "actor": "Lloyd Bridges",
+      "movie": "The Sound of Fury",
+      "director": "Cy Endfield",
+      "writer": "Jo Pagano",
+      "i": 163,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_163",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_163",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_163"
+      },
+      "gold": "Cy Endfield",
+      "decoy_hq": "Jo Pagano"
+    },
+    {
+      "actor": "Richard Pryor",
+      "movie": "Some Kind of Hero",
+      "director": "Michael Pressman",
+      "writer": "Robert Boris",
+      "i": 164,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_164",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_164",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_164"
+      },
+      "gold": "Michael Pressman",
+      "decoy_hq": "Robert Boris"
+    },
+    {
+      "actor": "Chris Sarandon",
+      "movie": "Slaves of New York",
+      "director": "James Ivory",
+      "writer": "Tama Janowitz",
+      "i": 165,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_165",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_165",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_165"
+      },
+      "gold": "James Ivory",
+      "decoy_hq": "Tama Janowitz"
+    },
+    {
+      "actor": "Donald Sutherland",
+      "movie": "Virus",
+      "director": "John Bruno",
+      "writer": "Chuck Pfarrer",
+      "i": 166,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_166",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_166",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_166"
+      },
+      "gold": "John Bruno",
+      "decoy_hq": "Chuck Pfarrer"
+    },
+    {
+      "actor": "Anne Bancroft",
+      "movie": "'night, Mother",
+      "director": "Tom Moore",
+      "writer": "Marsha Norman",
+      "i": 167,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_167",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_167",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_167"
+      },
+      "gold": "Tom Moore",
+      "decoy_hq": "Marsha Norman"
+    },
+    {
+      "actor": "Robert Conrad",
+      "movie": "The Lady in Red",
+      "director": "Lewis Teague",
+      "writer": "John Sayles",
+      "i": 168,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_168",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_168",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_168"
+      },
+      "gold": "Lewis Teague",
+      "decoy_hq": "John Sayles"
+    },
+    {
+      "actor": "Stephen Boyd",
+      "movie": "Billy Rose's Jumbo",
+      "director": "Charles Walters",
+      "writer": "Sidney Sheldon",
+      "i": 169,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_169",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_169",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_169"
+      },
+      "gold": "Charles Walters",
+      "decoy_hq": "Sidney Sheldon"
+    },
+    {
+      "actor": "Graham Greene",
+      "movie": "Skins",
+      "director": "Chris Eyre",
+      "writer": "Adrian C. Louis",
+      "i": 170,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_170",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_170",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_170"
+      },
+      "gold": "Chris Eyre",
+      "decoy_hq": "Adrian C. Louis"
+    },
+    {
+      "actor": "Rafe Spall",
+      "movie": "The Chatterley Affair",
+      "director": "James Hawes",
+      "writer": "Andrew Davies",
+      "i": 171,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_171",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_171",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_171"
+      },
+      "gold": "James Hawes",
+      "decoy_hq": "Andrew Davies"
+    },
+    {
+      "actor": "Jennifer Jason Leigh",
+      "movie": "Single White Female",
+      "director": "Barbet Schroeder",
+      "writer": "John Lutz",
+      "i": 172,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_172",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_172",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_172"
+      },
+      "gold": "Barbet Schroeder",
+      "decoy_hq": "John Lutz"
+    },
+    {
+      "actor": "Ruth Gordon",
+      "movie": "Where's Poppa?",
+      "director": "Carl Reiner",
+      "writer": "Robert Klane",
+      "i": 173,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_173",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_173",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_173"
+      },
+      "gold": "Carl Reiner",
+      "decoy_hq": "Robert Klane"
+    },
+    {
+      "actor": "Jason Flemyng",
+      "movie": "The Bunker",
+      "director": "Rob Green",
+      "writer": "Clive Dawson",
+      "i": 174,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_174",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_174",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_174"
+      },
+      "gold": "Rob Green",
+      "decoy_hq": "Clive Dawson"
+    },
+    {
+      "actor": "James Caan",
+      "movie": "Lady in a Cage",
+      "director": "Walter Grauman",
+      "writer": "Luther Davis",
+      "i": 175,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_175",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_175",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_175"
+      },
+      "gold": "Walter Grauman",
+      "decoy_hq": "Luther Davis"
+    },
+    {
+      "actor": "Madonna",
+      "movie": "Body of Evidence",
+      "director": "Uli Edel",
+      "writer": "Brad Mirman",
+      "i": 176,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_176",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_176",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_176"
+      },
+      "gold": "Uli Edel",
+      "decoy_hq": "Brad Mirman"
+    },
+    {
+      "actor": "Jason Statham",
+      "movie": "Blitz",
+      "director": "Elliott Lester",
+      "writer": "Ken Bruen",
+      "i": 177,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_177",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_177",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_177"
+      },
+      "gold": "Elliott Lester",
+      "decoy_hq": "Ken Bruen"
+    },
+    {
+      "actor": "Ryan Reynolds",
+      "movie": "Buried",
+      "director": "Rodrigo Cortés",
+      "writer": "Chris Sparling",
+      "i": 178,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_178",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_178",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_178"
+      },
+      "gold": "Rodrigo Cortés",
+      "decoy_hq": "Chris Sparling"
+    },
+    {
+      "actor": "Glenn Ford",
+      "movie": "Lust for Gold",
+      "director": "S. Sylvan Simon",
+      "writer": "Barry Storm",
+      "i": 179,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_179",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_179",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_179"
+      },
+      "gold": "S. Sylvan Simon",
+      "decoy_hq": "Barry Storm"
+    },
+    {
+      "actor": "Frank Sinatra",
+      "movie": "Robin and the 7 Hoods",
+      "director": "Gordon Douglas",
+      "writer": "David R. Schwartz",
+      "i": 180,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_180",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_180",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_180"
+      },
+      "gold": "Gordon Douglas",
+      "decoy_hq": "David R. Schwartz"
+    },
+    {
+      "actor": "Howard Keel",
+      "movie": "Jupiter's Darling",
+      "director": "George Sidney",
+      "writer": "Robert E. Sherwood",
+      "i": 181,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_181",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_181",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_181"
+      },
+      "gold": "George Sidney",
+      "decoy_hq": "Robert E. Sherwood"
+    },
+    {
+      "actor": "Cate Blanchett",
+      "movie": "Charlotte Gray",
+      "director": "Gillian Armstrong",
+      "writer": "Sebastian Faulks",
+      "i": 182,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_182",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_182",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_182"
+      },
+      "gold": "Gillian Armstrong",
+      "decoy_hq": "Sebastian Faulks"
+    },
+    {
+      "actor": "Richard Burton",
+      "movie": "Who's Afraid of Virginia Woolf?",
+      "director": "Mike Nichols",
+      "writer": "Ernest Lehman",
+      "i": 183,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_183",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_183",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_183"
+      },
+      "gold": "Mike Nichols",
+      "decoy_hq": "Ernest Lehman"
+    },
+    {
+      "actor": "Jude Law",
+      "movie": "Rise of the Guardians",
+      "director": "Peter Ramsey",
+      "writer": "William Joyce",
+      "i": 184,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_184",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_184",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_184"
+      },
+      "gold": "Peter Ramsey",
+      "decoy_hq": "William Joyce"
+    },
+    {
+      "actor": "Ellen Page",
+      "movie": "Smart People",
+      "director": "Noam Murro",
+      "writer": "Mark Poirier",
+      "i": 185,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_185",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_185",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_185"
+      },
+      "gold": "Noam Murro",
+      "decoy_hq": "Mark Poirier"
+    },
+    {
+      "actor": "Rutger Hauer",
+      "movie": "Mentor",
+      "director": "David Langlitz",
+      "writer": "William Whitehurst",
+      "i": 186,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_186",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_186",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_186"
+      },
+      "gold": "David Langlitz",
+      "decoy_hq": "William Whitehurst"
+    },
+    {
+      "actor": "Kenneth Tobey",
+      "movie": "It Came from Beneath the Sea",
+      "director": "Robert Gordon",
+      "writer": "George Worthing Yates",
+      "i": 187,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_187",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_187",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_187"
+      },
+      "gold": "Robert Gordon",
+      "decoy_hq": "George Worthing Yates"
+    },
+    {
+      "actor": "Shannyn Sossamon",
+      "movie": "Road to Nowhere",
+      "director": "Monte Hellman",
+      "writer": "Steven Gaydos",
+      "i": 188,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_188",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_188",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_188"
+      },
+      "gold": "Monte Hellman",
+      "decoy_hq": "Steven Gaydos"
+    },
+    {
+      "actor": "Ai Kobayashi",
+      "movie": "Appleseed",
+      "director": "Shinji Aramaki",
+      "writer": "Masamune Shirow",
+      "i": 189,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_189",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_189",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_189"
+      },
+      "gold": "Shinji Aramaki",
+      "decoy_hq": "Masamune Shirow"
+    },
+    {
+      "actor": "Lesley Ann Warren",
+      "movie": "A Night in Heaven",
+      "director": "John G. Avildsen",
+      "writer": "Joan Tewkesbury",
+      "i": 190,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_190",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_190",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_190"
+      },
+      "gold": "John G. Avildsen",
+      "decoy_hq": "Joan Tewkesbury"
+    },
+    {
+      "actor": "Luis Guzmán",
+      "movie": "The Limey",
+      "director": "Steven Soderbergh",
+      "writer": "Lem Dobbs",
+      "i": 191,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_191",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_191",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_191"
+      },
+      "gold": "Steven Soderbergh",
+      "decoy_hq": "Lem Dobbs"
+    },
+    {
+      "actor": "Michael Ealy",
+      "movie": "About Last Night",
+      "director": "Steve Pink",
+      "writer": "David Mamet",
+      "i": 192,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_192",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_192",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_192"
+      },
+      "gold": "Steve Pink",
+      "decoy_hq": "David Mamet"
+    },
+    {
+      "actor": "Kim Novak",
+      "movie": "Pushover",
+      "director": "Richard Quine",
+      "writer": "Thomas Walsh",
+      "i": 193,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_193",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_193",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_193"
+      },
+      "gold": "Richard Quine",
+      "decoy_hq": "Thomas Walsh"
+    },
+    {
+      "actor": "Dick Foran",
+      "movie": "The Atomic Submarine",
+      "director": "Spencer Gordon Bennet",
+      "writer": "Orville H. Hampton",
+      "i": 194,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_194",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_194",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_194"
+      },
+      "gold": "Spencer Gordon Bennet",
+      "decoy_hq": "Orville H. Hampton"
+    },
+    {
+      "actor": "Forest Whitaker",
+      "movie": "Diary of a Hitman",
+      "director": "Roy London",
+      "writer": "Kenneth Pressman",
+      "i": 195,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_195",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_195",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_195"
+      },
+      "gold": "Roy London",
+      "decoy_hq": "Kenneth Pressman"
+    },
+    {
+      "actor": "Zach Gilford",
+      "movie": "Devil's Due",
+      "director": "Tyler Gillett",
+      "writer": "Lindsay Devlin",
+      "i": 196,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_196",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_196",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_196"
+      },
+      "gold": "Tyler Gillett",
+      "decoy_hq": "Lindsay Devlin"
+    },
+    {
+      "actor": "Diane Keaton",
+      "movie": "And So It Goes",
+      "director": "Rob Reiner",
+      "writer": "Mark Andrus",
+      "i": 197,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_197",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_197",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_197"
+      },
+      "gold": "Rob Reiner",
+      "decoy_hq": "Mark Andrus"
+    },
+    {
+      "actor": "John Malkovich",
+      "movie": "The Killing Fields",
+      "director": "Roland Joffé",
+      "writer": "Bruce Robinson",
+      "i": 198,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_198",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_198",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_198"
+      },
+      "gold": "Roland Joffé",
+      "decoy_hq": "Bruce Robinson"
+    },
+    {
+      "actor": "Belén Rueda",
+      "movie": "The Orphanage",
+      "director": "J.A. Bayona",
+      "writer": "Sergio G. Sánchez",
+      "i": 199,
+      "ids": {
+        "OPAQUE_UNIQUE": "MQA200B_OPAQUE_UNIQUE_199",
+        "OPAQUE_AMBIG": "MQA200B_OPAQUE_AMBIG_199",
+        "OPAQUE_AMBIG_PLAN": "MQA200B_OPAQUE_AMBIG_PLAN_199"
+      },
+      "gold": "J.A. Bayona",
+      "decoy_hq": "Sergio G. Sánchez"
+    }
+  ]
+}

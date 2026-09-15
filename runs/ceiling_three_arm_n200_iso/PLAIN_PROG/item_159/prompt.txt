@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_159 #####
+PATH_QUERY
+START Matti_Karppinen
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Matti_Karppinen | works_at | Saarioinen
+Saarioinen | headquartered_in | Tampere
+DecoyCo_Saarioinen | headquartered_in | DecoyHQ_Tampere
+Saarioinen | owned_by | Hold_Saarioinen
+Hold_Saarioinen | meta_of | Saarioinen
+Saarioinen | partner_of | Partner_Saarioinen
+Partner_Saarioinen | meta_of | Saarioinen
+Decoy_DecoyCo_Saarioinen | works_at | DecoyCo_Saarioinen

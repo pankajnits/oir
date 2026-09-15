@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_4]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_4 #####
+QUESTION:
+Who E488706428619 a E224d7a9f6a58 E0beffdafd29d [Jennifer Connelly] E25ad2e11a945 Ef7d92b20a188?
+
+PATH_QUERY
+START Jennifer Connelly
+R1 E4c8654175f97
+R2 Ee4f26ded806f
+Execute path; return final tail only.
+
+CONTEXT:
+Jennifer Connelly | E4c8654175f97 | The Hot Spot
+The Hot Spot | Ee4f26ded806f | Dennis Hopper
+The Hot Spot | E4795d2da9c1a | Charles Williams

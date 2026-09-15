@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_51 #####
+PATH_QUERY
+START Daniel_K_et_nsk
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Daniel_K_et_nsk | works_at | EP_Heat_Power
+EP_Heat_Power | headquartered_in | Prague
+DecoyCo_EP_Heat_Power | headquartered_in | DecoyHQ_Prague
+EP_Heat_Power | owned_by | Hold_EP_Heat_Power
+Hold_EP_Heat_Power | meta_of | EP_Heat_Power
+EP_Heat_Power | partner_of | Partner_EP_Heat_Power
+Partner_EP_Heat_Power | meta_of | EP_Heat_Power
+Decoy_DecoyCo_EP_Heat_Power | works_at | DecoyCo_EP_Heat_Power

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_124 #####
+PATH_QUERY
+START Libor_Witassek
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Libor_Witassek | works_at | V_tkovice
+V_tkovice | headquartered_in | Ostrava
+DecoyCo_V_tkovice | headquartered_in | DecoyHQ_Ostrava
+V_tkovice | owned_by | Hold_V_tkovice
+Hold_V_tkovice | meta_of | V_tkovice
+V_tkovice | partner_of | Partner_V_tkovice
+Partner_V_tkovice | meta_of | V_tkovice
+Decoy_DecoyCo_V_tkovice | works_at | DecoyCo_V_tkovice

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_151]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_151 #####
+QUESTION:
+What city is the headquarters of the company led by Philippe_Morin?
+
+PATH_QUERY
+START Philippe_Morin
+R1 E975ed876e206
+R2 E43d70865ba31
+Execute path; return final tail only.
+
+CONTEXT:
+Philippe_Morin | E975ed876e206 | EXFO
+EXFO | E43d70865ba31 | Quebec_City
+Philippe_Morin | E4cc1364a2310 | Magen_David_Adom
+Magen_David_Adom | E34091150c940 | Or_Yehuda

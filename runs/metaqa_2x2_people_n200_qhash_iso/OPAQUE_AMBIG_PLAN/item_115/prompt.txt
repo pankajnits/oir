@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_115]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_115 #####
+QUESTION:
+Who E04b01e856707 a Ef4600d399b0b E909cd8123c27 [Sam Elliott] Ecbd49003db07 E1a82c4515ced?
+
+PATH_QUERY
+START Sam Elliott
+R1 E76f3e6596620
+R2 Efe182828b09c
+Execute path; return final tail only.
+
+CONTEXT:
+Sam Elliott | E76f3e6596620 | The Shadow Riders
+The Shadow Riders | Efe182828b09c | Andrew V. McLaglen
+The Shadow Riders | Ee6b65abbe342 | Louis L'Amour

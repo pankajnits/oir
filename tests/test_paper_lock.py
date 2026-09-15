@@ -168,6 +168,61 @@ def test_city_subset_english_twopath():
     assert _city_ok("factorial_2x2_iso_grok45.json") == (4, 26)
 
 
+def test_k3_openai_wiki_h5_does_not_replace_august_lock():
+    """August gpt56 stays the lock; k=3 draws are extra snapshots of the alias."""
+    lock = _load("factorial_2x2_iso_gpt56.json")["summary"]
+    assert lock["OPAQUE_AMBIG"]["score"] == "6/32"
+    assert lock["OPAQUE_UNIQUE"]["score"] == "32/32"
+    r2 = _load("factorial_2x2_iso_gpt56k3r2.json")
+    r3 = _load("factorial_2x2_iso_gpt56k3r3.json")
+    assert "does not replace" in r2.get("note", "").lower()
+    assert "does not replace" in r3.get("note", "").lower()
+    assert r2["summary"]["OPAQUE_AMBIG"]["score"] == "3/32"
+    assert r3["summary"]["OPAQUE_AMBIG"]["score"] == "3/32"
+    assert r2["summary"]["OPAQUE_AMBIG_PLAN"]["score"] == "32/32"
+    assert r3["summary"]["OPAQUE_AMBIG_PLAN"]["score"] == "32/32"
+    assert r2["summary"]["ENG_UNIQUE"]["score"] == "32/32"
+    assert r3["summary"]["ENG_UNIQUE"]["score"] == "32/32"
+    sidecar = json.loads(
+        (RESULTS / "factorial_2x2_iso_harness_replies_gpt56k3r2" / "OPAQUE_AMBIG" / "item_0.json").read_text()
+    )
+    assert sidecar.get("returned_model") == "gpt-5.6-sol"
+
+
+def test_k3_header_h5_cyclic_stays_high():
+    assert _load("header_decoy_ablation_iso_gpt56abl512.json")["cells"]["OPQ_H5_CYC"]["gold"] == 20
+    r2 = _load("header_decoy_ablation_iso_gpt56h5k3r2.json")
+    r3 = _load("header_decoy_ablation_iso_gpt56h5k3r3.json")
+    assert "does not replace" in r2.get("note", "").lower()
+    assert "does not replace" in r3.get("note", "").lower()
+    assert r2["cells"]["OPQ_H5_CYC"]["gold"] == 21
+    assert r3["cells"]["OPQ_H5_CYC"]["gold"] == 22
+    assert r2["cells"]["OPQ_H5_CRV"]["missing"] == 32
+    assert r3["cells"]["OPQ_H5_CRV"]["missing"] == 32
+
+
+def test_k3_composer_grok_opaque_ambig_does_not_replace_august():
+    assert _load("factorial_2x2_iso_composer25.json")["summary"]["OPAQUE_AMBIG"]["score"] == "10/32"
+    assert _load("factorial_2x2_iso_grok45.json")["summary"]["OPAQUE_AMBIG"]["score"] == "1/32"
+    c2 = _load("factorial_2x2_iso_composer25k3r2.json")
+    c3 = _load("factorial_2x2_iso_composer25k3r3.json")
+    g2 = _load("factorial_2x2_iso_grok45k3r2.json")
+    g3 = _load("factorial_2x2_iso_grok45k3r3.json")
+    for blob in (c2, c3, g2, g3):
+        assert "does not replace" in blob.get("note", "").lower()
+        assert blob["summary"]["ENG_UNIQUE"]["score"] == "n.r."
+    assert c2["summary"]["OPAQUE_AMBIG"]["score"] == "7/32"
+    assert c3["summary"]["OPAQUE_AMBIG"]["score"] == "6/32"
+    assert g2["summary"]["OPAQUE_AMBIG"]["score"] == "0/32"
+    assert g3["summary"]["OPAQUE_AMBIG"]["score"] == "0/32"
+    for tag, model in (("composer25k3r2", "composer-2.5"), ("grok45k3r2", "grok-4.5")):
+        sidecar = json.loads(
+            (RESULTS / f"factorial_2x2_iso_harness_replies_{tag}" / "OPAQUE_AMBIG" / "item_0.json").read_text()
+        )
+        assert sidecar.get("preamble") == "cursor"
+        assert sidecar.get("model") == model
+
+
 def test_grok45pn_named_arm_english_matches_lock_and_does_not_replace():
     """Prompt-verbatim Grok named-arm English stays 4/32; August grok45 is untouched."""
     pn = _load("factorial_2x2_iso_grok45pn.json")

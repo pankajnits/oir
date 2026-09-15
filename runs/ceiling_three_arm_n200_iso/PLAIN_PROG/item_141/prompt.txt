@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_141 #####
+PATH_QUERY
+START John_Nystr_m
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+John_Nystr_m | works_at | V_sterg_tland_G_teborgs_J_rnv_gar
+V_sterg_tland_G_teborgs_J_rnv_gar | headquartered_in | Gothenburg
+DecoyCo_V_sterg_tland_G_teborgs_J_rnv_gar | headquartered_in | DecoyHQ_Gothenburg
+V_sterg_tland_G_teborgs_J_rnv_gar | owned_by | Hold_V_sterg_tland_G_teborgs_J_rnv_gar
+Hold_V_sterg_tland_G_teborgs_J_rnv_gar | meta_of | V_sterg_tland_G_teborgs_J_rnv_gar
+V_sterg_tland_G_teborgs_J_rnv_gar | partner_of | Partner_V_sterg_tland_G_teborgs_J_rnv_gar
+Partner_V_sterg_tland_G_teborgs_J_rnv_gar | meta_of | V_sterg_tland_G_teborgs_J_rnv_gar
+Decoy_DecoyCo_V_sterg_tland_G_teborgs_J_rnv_gar | works_at | DecoyCo_V_sterg_tland_G_teborgs_J_rnv_gar

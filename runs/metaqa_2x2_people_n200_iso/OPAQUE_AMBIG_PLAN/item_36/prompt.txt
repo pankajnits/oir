@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_36]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_36 #####
+QUESTION:
+Who directed a movie that Tom Hanks starred in?
+
+PATH_QUERY
+START Tom Hanks
+R1 Ece3c8f58e011
+R2 Ef9c0360554a1
+Execute path; return final tail only.
+
+CONTEXT:
+Tom Hanks | Ece3c8f58e011 | Forrest Gump
+Forrest Gump | Ef9c0360554a1 | Robert Zemeckis
+Forrest Gump | E37b2a03b7f4f | Winston Groom

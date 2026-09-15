@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_125]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_125 #####
+QUESTION:
+What city is the headquarters of the company led by Peter_William?
+
+PATH_QUERY
+START Peter_William
+R1 Ebcd7f0c40e64
+R2 E956e248cc551
+Execute path; return final tail only.
+
+CONTEXT:
+Peter_William | Ebcd7f0c40e64 | Catch_Wrestling_Association
+Catch_Wrestling_Association | E956e248cc551 | Graz
+Peter_William | E7f8839da141a | Exatel
+Exatel | E0460547e986f | Warsaw

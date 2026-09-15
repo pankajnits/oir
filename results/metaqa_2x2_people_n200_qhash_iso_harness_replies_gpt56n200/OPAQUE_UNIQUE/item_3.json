@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_UNIQUE_3",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 3,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_3/prompt.txt",
+  "pred": "John Madden",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_UNIQUE_3]: John Madden",
+  "elapsed_s": 2.787,
+  "utc": "2026-09-15T09:17:45.114610+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJaJROL1LqNDfVzTkVhsHqO9VsHv",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463863,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 71,
+    "prompt_tokens": 193,
+    "total_tokens": 264,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 44,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

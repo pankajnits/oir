@@ -1,0 +1,35 @@
+{
+  "id": "F22_ENG_AMBIG_19",
+  "arm": "ENG_AMBIG",
+  "item": 19,
+  "prompt_path": "runs/factorial_2x2_iso/ENG_AMBIG/item_19/prompt.txt",
+  "pred": "Kansas_City",
+  "raw": "ANSWER_PLAIN[F22_ENG_AMBIG_19]: Kansas_City",
+  "elapsed_s": 1.204,
+  "utc": "2026-09-15T06:26:08.500891+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOGuFO5UcghBlBwIhPBSgCVOIuKqH",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789453567,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 151,
+    "total_tokens": 169,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

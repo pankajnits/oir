@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_UNIQUE_92",
+  "arm": "ENG_UNIQUE",
+  "item": 92,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_UNIQUE/item_92/prompt.txt",
+  "pred": "William Beaudine",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_UNIQUE_92]: William Beaudine",
+  "elapsed_s": 1.301,
+  "utc": "2026-09-15T09:13:49.270953+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJWWkXe6eYkPWAdtgsMe8JIVL5ys",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463628,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 142,
+    "total_tokens": 163,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

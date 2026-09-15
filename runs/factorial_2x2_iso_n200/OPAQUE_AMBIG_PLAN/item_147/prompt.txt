@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_147]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_147 #####
+QUESTION:
+What city is the headquarters of the company led by Douglas_Steenland?
+
+PATH_QUERY
+START Douglas_Steenland
+R1 Ed06d5a99e86a
+R2 E334eebaae546
+Execute path; return final tail only.
+
+CONTEXT:
+Douglas_Steenland | Ed06d5a99e86a | Northwest_Airlines
+Northwest_Airlines | E334eebaae546 | Eagan
+Douglas_Steenland | Eb8a6da8b4c86 | Viva_Armenia
+Viva_Armenia | E9d24c752d4a0 | Yerevan

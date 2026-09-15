@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_127 #####
+PATH_QUERY
+START Laxman_Narasimhan
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Laxman_Narasimhan | works_at | Reckitt
+Reckitt | headquartered_in | Slough
+DecoyCo_Reckitt | headquartered_in | DecoyHQ_Slough
+Reckitt | owned_by | Hold_Reckitt
+Hold_Reckitt | meta_of | Reckitt
+Reckitt | partner_of | Partner_Reckitt
+Partner_Reckitt | meta_of | Reckitt
+Decoy_DecoyCo_Reckitt | works_at | DecoyCo_Reckitt

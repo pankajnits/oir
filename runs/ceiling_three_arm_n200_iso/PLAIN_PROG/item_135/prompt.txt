@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_135 #####
+PATH_QUERY
+START Chris_Hill
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Chris_Hill | works_at | Hargreaves_Lansdown
+Hargreaves_Lansdown | headquartered_in | Bristol
+DecoyCo_Hargreaves_Lansdown | headquartered_in | DecoyHQ_Bristol
+Hargreaves_Lansdown | owned_by | Hold_Hargreaves_Lansdown
+Hold_Hargreaves_Lansdown | meta_of | Hargreaves_Lansdown
+Hargreaves_Lansdown | partner_of | Partner_Hargreaves_Lansdown
+Partner_Hargreaves_Lansdown | meta_of | Hargreaves_Lansdown
+Decoy_DecoyCo_Hargreaves_Lansdown | works_at | DecoyCo_Hargreaves_Lansdown

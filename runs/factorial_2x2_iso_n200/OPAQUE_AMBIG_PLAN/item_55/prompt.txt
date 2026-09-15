@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_55]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_55 #####
+QUESTION:
+What city is the headquarters of the company led by Dick_Costolo?
+
+PATH_QUERY
+START Dick_Costolo
+R1 E0e212e1b7c98
+R2 Ed641490bcf93
+Execute path; return final tail only.
+
+CONTEXT:
+Dick_Costolo | E0e212e1b7c98 | Twitter
+Twitter | Ed641490bcf93 | San_Francisco
+Dick_Costolo | E4089e00e5015 | Pamesa_Cer_mica
+Pamesa_Cer_mica | E6b90189fd0c2 | Villarreal

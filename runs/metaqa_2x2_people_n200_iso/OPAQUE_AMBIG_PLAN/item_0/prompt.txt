@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_0]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_0 #####
+QUESTION:
+Who directed a movie that Robert Redford starred in?
+
+PATH_QUERY
+START Robert Redford
+R1 Eb2d11b263b35
+R2 Edd6ed7beed47
+Execute path; return final tail only.
+
+CONTEXT:
+Robert Redford | Eb2d11b263b35 | A Walk in the Woods
+A Walk in the Woods | Edd6ed7beed47 | Ken Kwapis
+A Walk in the Woods | E5caa85293032 | Bill Bryson

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_145]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_145 #####
+QUESTION:
+What city is the headquarters of the company led by Dan_Rosensweig?
+
+PATH_QUERY
+START Dan_Rosensweig
+R1 Ebe4e03018dab
+R2 E4420e3069983
+Execute path; return final tail only.
+
+CONTEXT:
+Dan_Rosensweig | Ebe4e03018dab | Chegg
+Chegg | E4420e3069983 | Santa_Clara
+Dan_Rosensweig | E07814fb62dff | Invoice2go
+Invoice2go | E8bb4a1034c0a | Sydney

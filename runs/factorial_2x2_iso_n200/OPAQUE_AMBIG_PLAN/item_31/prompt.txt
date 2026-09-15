@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_31]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_31 #####
+QUESTION:
+What city is the headquarters of the company led by Pieter_van_der_Does?
+
+PATH_QUERY
+START Pieter_van_der_Does
+R1 Ed4a2c5bf79ec
+R2 E116070fe9af6
+Execute path; return final tail only.
+
+CONTEXT:
+Pieter_van_der_Does | Ed4a2c5bf79ec | Adyen
+Adyen | E116070fe9af6 | Amsterdam
+Pieter_van_der_Does | E1710416577ca | Mercedes-Benz_AG
+Mercedes-Benz_AG | Ec0d5a9d8aeb1 | Stuttgart

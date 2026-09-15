@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_167]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_167 #####
+QUESTION:
+What city is the headquarters of the company led by Cheng_Wei?
+
+PATH_QUERY
+START Cheng_Wei
+R1 E868af9e83294
+R2 E2f4680808a80
+Execute path; return final tail only.
+
+CONTEXT:
+Cheng_Wei | E868af9e83294 | DiDi_Global
+DiDi_Global | E2f4680808a80 | Beijing
+Cheng_Wei | E2dfb3f3fa8ef | N_rhaven
+N_rhaven | E4a6f877d05ec | Viborg

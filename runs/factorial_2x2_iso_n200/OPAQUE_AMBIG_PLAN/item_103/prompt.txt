@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_103]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_103 #####
+QUESTION:
+What city is the headquarters of the company led by Nina_Mevold?
+
+PATH_QUERY
+START Nina_Mevold
+R1 Ebbfaa6e7ff06
+R2 Ef37651bec8ee
+Execute path; return final tail only.
+
+CONTEXT:
+Nina_Mevold | Ebbfaa6e7ff06 | Hospital_of_Southern_Norway
+Hospital_of_Southern_Norway | Ef37651bec8ee | Kristiansand
+Nina_Mevold | Eaf127c1fddd2 | French_Civil_Aviation_University
+French_Civil_Aviation_University | E3919b6bb9367 | Toulouse

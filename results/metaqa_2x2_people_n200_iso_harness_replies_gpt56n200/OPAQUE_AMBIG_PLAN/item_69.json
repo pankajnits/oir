@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_PLAN_69",
+  "arm": "OPAQUE_AMBIG_PLAN",
+  "item": 69,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG_PLAN/item_69/prompt.txt",
+  "pred": "Darren Grant",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_69]: Darren Grant",
+  "elapsed_s": 1.536,
+  "utc": "2026-09-15T09:17:13.636931+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJZoVgufmvfW0yaxV1IryTC1WGuT",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463832,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 190,
+    "total_tokens": 211,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

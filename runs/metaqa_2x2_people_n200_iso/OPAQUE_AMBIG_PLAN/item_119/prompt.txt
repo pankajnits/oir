@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_119]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_119 #####
+QUESTION:
+Who directed a movie that Alan Arkin starred in?
+
+PATH_QUERY
+START Alan Arkin
+R1 E6719171fdc7f
+R2 E03f4b391d1a9
+Execute path; return final tail only.
+
+CONTEXT:
+Alan Arkin | E6719171fdc7f | The In-Laws
+The In-Laws | E03f4b391d1a9 | Arthur Hiller
+The In-Laws | Efed1f1511e65 | Andrew Bergman

@@ -1,0 +1,35 @@
+{
+  "id": "F22_OPAQUE_UNIQUE_23",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 23,
+  "prompt_path": "runs/factorial_2x2_iso/OPAQUE_UNIQUE/item_23/prompt.txt",
+  "pred": "Bochum",
+  "raw": "ANSWER_PLAIN[F22_OPAQUE_UNIQUE_23]: Bochum",
+  "elapsed_s": 1.47,
+  "utc": "2026-09-15T06:27:27.205033+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOGvWZcs8dIgTxzecqWDtiIHetoSY",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789453646,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 166,
+    "total_tokens": 184,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

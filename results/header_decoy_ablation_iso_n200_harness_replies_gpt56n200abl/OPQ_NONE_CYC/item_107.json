@@ -1,0 +1,36 @@
+{
+  "id": "H200_680c6051a0",
+  "arm": "OPQ_NONE_CYC",
+  "item": 107,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_107/prompt.txt",
+  "pred": "Santa_Clara",
+  "raw": "ANSWER_PLAIN[H200_680c6051a0]: Santa_Clara",
+  "elapsed_s": 1.223,
+  "utc": "2026-09-15T08:48:55.070397+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ8QfVpo1mpvYE9FQtS9v8aUA5en",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462134,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 162,
+    "total_tokens": 183,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

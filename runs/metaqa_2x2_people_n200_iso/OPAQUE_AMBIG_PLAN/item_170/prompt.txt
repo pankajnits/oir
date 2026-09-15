@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_170]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_170 #####
+QUESTION:
+Who directed a movie that Graham Greene starred in?
+
+PATH_QUERY
+START Graham Greene
+R1 Ee2042c59791b
+R2 E53d011691795
+Execute path; return final tail only.
+
+CONTEXT:
+Graham Greene | Ee2042c59791b | Skins
+Skins | E53d011691795 | Chris Eyre
+Skins | E14dec98c02dc | Adrian C. Louis

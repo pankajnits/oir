@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_AMBIG_133",
+  "arm": "ENG_AMBIG",
+  "item": 133,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_AMBIG/item_133/prompt.txt",
+  "pred": "Amma Asante",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_AMBIG_133]: Amma Asante",
+  "elapsed_s": 2.619,
+  "utc": "2026-09-15T09:14:45.412095+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJXPdiEsgDNRc11d2i6ze68TKcPS",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463683,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 119,
+    "total_tokens": 139,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_77]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_77 #####
+QUESTION:
+What city is the headquarters of the company led by Raymond_N._Bickson?
+
+PATH_QUERY
+START Raymond_N._Bickson
+R1 E21dd2ff3835e
+R2 E5f4e86104b5c
+Execute path; return final tail only.
+
+CONTEXT:
+Raymond_N._Bickson | E21dd2ff3835e | Taj_Hotels_Resorts_and_Palaces
+Taj_Hotels_Resorts_and_Palaces | E5f4e86104b5c | Mumbai
+Raymond_N._Bickson | E9d92bf3243c6 | VPI
+VPI | E8d180f5b5ef3 | Brno

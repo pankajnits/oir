@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_AMBIG_152",
+  "arm": "OPAQUE_AMBIG",
+  "item": 152,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_152/prompt.txt",
+  "pred": "Brian Levant",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_152]: Brian Levant",
+  "elapsed_s": 9.34,
+  "utc": "2026-09-15T09:20:35.954449+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJcxczsObNNBNBhhw0miolXNh1Tl",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789464027,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 488,
+    "prompt_tokens": 193,
+    "total_tokens": 681,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 460,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

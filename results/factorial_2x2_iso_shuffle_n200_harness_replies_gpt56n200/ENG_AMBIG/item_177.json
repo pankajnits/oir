@@ -1,0 +1,35 @@
+{
+  "id": "F200S_ENG_AMBIG_177",
+  "arm": "ENG_AMBIG",
+  "item": 177,
+  "prompt_path": "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_177/prompt.txt",
+  "pred": "Tel_Aviv",
+  "raw": "ANSWER_PLAIN[F200S_ENG_AMBIG_177]: Tel_Aviv",
+  "elapsed_s": 1.496,
+  "utc": "2026-09-15T08:58:22.114830+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJHZ5kT4BTn5c9NIIHTHkvq8UimI",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462701,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 138,
+    "total_tokens": 157,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

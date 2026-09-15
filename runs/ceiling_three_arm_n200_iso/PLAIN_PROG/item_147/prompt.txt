@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_147 #####
+PATH_QUERY
+START Douglas_Steenland
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Douglas_Steenland | works_at | Northwest_Airlines
+Northwest_Airlines | headquartered_in | Eagan
+DecoyCo_Northwest_Airlines | headquartered_in | DecoyHQ_Eagan
+Northwest_Airlines | owned_by | Hold_Northwest_Airlines
+Hold_Northwest_Airlines | meta_of | Northwest_Airlines
+Northwest_Airlines | partner_of | Partner_Northwest_Airlines
+Partner_Northwest_Airlines | meta_of | Northwest_Airlines
+Decoy_DecoyCo_Northwest_Airlines | works_at | DecoyCo_Northwest_Airlines

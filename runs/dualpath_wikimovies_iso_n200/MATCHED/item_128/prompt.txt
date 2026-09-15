@@ -1,0 +1,45 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[DP200_MATCHED_128]: <seal_or_UNKNOWN>
+
+ARM MATCHED: demos expose gold relation seals; quiz has a decoy path.
+
+Learn the mapping from DEMOs (same encoding).
+Answer the QUIZ the same way. No English relation names. No PATH.
+If ambiguous, UNKNOWN.
+
+DEMO 0:
+START E014363b72dd6
+CONTEXT:
+E014363b72dd6 | Ec5ee133861ee | E9aa7d81f0deb
+E9aa7d81f0deb | E49d14fa08b1e | E85ddbe7b5a34
+ANSWER_SEALED: E85ddbe7b5a34
+
+DEMO 1:
+START E70f166e1197b
+CONTEXT:
+E70f166e1197b | Ec5ee133861ee | E9c010983df5b
+E9c010983df5b | E49d14fa08b1e | Ea48830b6008c
+ANSWER_SEALED: Ea48830b6008c
+
+DEMO 2:
+START E19e3f445555f
+CONTEXT:
+E19e3f445555f | Ec5ee133861ee | E9c7981a222d6
+E9c7981a222d6 | E49d14fa08b1e | E905171cf723b
+ANSWER_SEALED: E905171cf723b
+
+DEMO 3:
+START Ee2eb7e7809b4
+CONTEXT:
+Ee2eb7e7809b4 | Ec5ee133861ee | E46e4fcedd854
+E46e4fcedd854 | E49d14fa08b1e | E3573b398ad31
+ANSWER_SEALED: E3573b398ad31
+
+--- QUIZ ---
+##### ID DP200_MATCHED_128 #####
+START E11350ac63021
+CONTEXT:
+E11350ac63021 | Ec5ee133861ee | E505ff16ee55a
+E505ff16ee55a | E49d14fa08b1e | E3a88c01efbb1
+E505ff16ee55a | Edb2981a18822 | E35c4ef244881
+

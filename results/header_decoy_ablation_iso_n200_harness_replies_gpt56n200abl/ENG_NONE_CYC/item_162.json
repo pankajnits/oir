@@ -1,0 +1,36 @@
+{
+  "id": "H200_484f4b7afe",
+  "arm": "ENG_NONE_CYC",
+  "item": 162,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/ENG_NONE_CYC/item_162/prompt.txt",
+  "pred": "Frankfurt",
+  "raw": "ANSWER_PLAIN[H200_484f4b7afe]: Frankfurt",
+  "elapsed_s": 2.937,
+  "utc": "2026-09-15T08:50:56.293414+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJALFzqyIWKVEF8B2BxvU3lOWvua",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462253,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 141,
+    "total_tokens": 159,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

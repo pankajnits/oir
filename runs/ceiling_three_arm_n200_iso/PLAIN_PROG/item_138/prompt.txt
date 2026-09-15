@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_138 #####
+PATH_QUERY
+START James_Gunn
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+James_Gunn | works_at | DC_Studios
+DC_Studios | headquartered_in | Burbank
+DecoyCo_DC_Studios | headquartered_in | DecoyHQ_Burbank
+DC_Studios | owned_by | Hold_DC_Studios
+Hold_DC_Studios | meta_of | DC_Studios
+DC_Studios | partner_of | Partner_DC_Studios
+Partner_DC_Studios | meta_of | DC_Studios
+Decoy_DecoyCo_DC_Studios | works_at | DecoyCo_DC_Studios

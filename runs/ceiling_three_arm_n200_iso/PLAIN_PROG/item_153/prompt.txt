@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_153 #####
+PATH_QUERY
+START Oliver_Blume
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Oliver_Blume | works_at | Volkswagen_Group
+Volkswagen_Group | headquartered_in | Wolfsburg
+DecoyCo_Volkswagen_Group | headquartered_in | DecoyHQ_Wolfsburg
+Volkswagen_Group | owned_by | Hold_Volkswagen_Group
+Hold_Volkswagen_Group | meta_of | Volkswagen_Group
+Volkswagen_Group | partner_of | Partner_Volkswagen_Group
+Partner_Volkswagen_Group | meta_of | Volkswagen_Group
+Decoy_DecoyCo_Volkswagen_Group | works_at | DecoyCo_Volkswagen_Group

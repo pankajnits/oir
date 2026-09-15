@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_27]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_27 #####
+QUESTION:
+What city is the headquarters of the company led by Alexander_Kazakov?
+
+PATH_QUERY
+START Alexander_Kazakov
+R1 Eff389d1c5eb7
+R2 E0b405d95ccfb
+Execute path; return final tail only.
+
+CONTEXT:
+Alexander_Kazakov | Eff389d1c5eb7 | LiAZ
+LiAZ | E0b405d95ccfb | Likino-Dulyovo
+Alexander_Kazakov | E894b75df80e4 | Orlen
+Orlen | Eb9350b351681 | P_ock

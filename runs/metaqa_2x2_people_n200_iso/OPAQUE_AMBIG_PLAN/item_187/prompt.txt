@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_187]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_187 #####
+QUESTION:
+Who directed a movie that Kenneth Tobey starred in?
+
+PATH_QUERY
+START Kenneth Tobey
+R1 Ee8dad8dedece
+R2 E793eefe63c9b
+Execute path; return final tail only.
+
+CONTEXT:
+Kenneth Tobey | Ee8dad8dedece | It Came from Beneath the Sea
+It Came from Beneath the Sea | E793eefe63c9b | Robert Gordon
+It Came from Beneath the Sea | E9a361fb1cbcc | George Worthing Yates

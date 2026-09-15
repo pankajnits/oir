@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_180 #####
+PATH_QUERY
+START Boyan_Slat
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Boyan_Slat | works_at | The_Ocean_Cleanup_Foundation
+The_Ocean_Cleanup_Foundation | headquartered_in | Rotterdam
+DecoyCo_The_Ocean_Cleanup_Foundation | headquartered_in | DecoyHQ_Rotterdam
+The_Ocean_Cleanup_Foundation | owned_by | Hold_The_Ocean_Cleanup_Foundation
+Hold_The_Ocean_Cleanup_Foundation | meta_of | The_Ocean_Cleanup_Foundation
+The_Ocean_Cleanup_Foundation | partner_of | Partner_The_Ocean_Cleanup_Foundation
+Partner_The_Ocean_Cleanup_Foundation | meta_of | The_Ocean_Cleanup_Foundation
+Decoy_DecoyCo_The_Ocean_Cleanup_Foundation | works_at | DecoyCo_The_Ocean_Cleanup_Foundation

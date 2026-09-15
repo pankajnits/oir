@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_UNIQUE_104",
+  "arm": "ENG_UNIQUE",
+  "item": 104,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_UNIQUE/item_104/prompt.txt",
+  "pred": "Tom DeSimone",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_UNIQUE_104]: Tom DeSimone",
+  "elapsed_s": 1.481,
+  "utc": "2026-09-15T09:13:51.740405+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJWYAOC0THPmpFASn7VNMfIFpxBn",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463630,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 128,
+    "total_tokens": 149,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

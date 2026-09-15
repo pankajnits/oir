@@ -1,0 +1,36 @@
+{
+  "id": "H200_5c1590259e",
+  "arm": "OPQ_NONE_CRV",
+  "item": 41,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CRV/item_41/prompt.txt",
+  "pred": "Abu_Dhabi",
+  "raw": "ANSWER_PLAIN[H200_5c1590259e]: Abu_Dhabi",
+  "elapsed_s": 2.582,
+  "utc": "2026-09-15T08:49:34.717134+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ92DO3VKBh2HHDozFSJGFDwFgYQ",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462172,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 99,
+    "prompt_tokens": 185,
+    "total_tokens": 284,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 72,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

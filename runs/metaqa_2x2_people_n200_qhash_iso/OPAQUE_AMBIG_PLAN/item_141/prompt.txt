@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_141]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_141 #####
+QUESTION:
+Who Ec50e5eaabb3c a E90e4c7d5ef06 E7384ff7b268d [David Bowie] E5aef359a595d Ed980b52bb1eb?
+
+PATH_QUERY
+START David Bowie
+R1 E0da1668b5407
+R2 E9915049af1a5
+Execute path; return final tail only.
+
+CONTEXT:
+David Bowie | E0da1668b5407 | Absolute Beginners
+Absolute Beginners | E9915049af1a5 | Julien Temple
+Absolute Beginners | E5448f2a7336a | Colin MacInnes

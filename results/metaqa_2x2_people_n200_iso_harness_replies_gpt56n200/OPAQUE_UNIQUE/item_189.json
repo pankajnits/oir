@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_UNIQUE_189",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 189,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_UNIQUE/item_189/prompt.txt",
+  "pred": "Shinji Aramaki",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_UNIQUE_189]: Shinji Aramaki",
+  "elapsed_s": 1.605,
+  "utc": "2026-09-15T09:15:43.192369+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJYMbW1v0JmLny1WZt9puHPpftm3",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463742,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 23,
+    "prompt_tokens": 171,
+    "total_tokens": 194,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_91]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_91 #####
+QUESTION:
+Who directed a movie that Eddie Murphy starred in?
+
+PATH_QUERY
+START Eddie Murphy
+R1 Eb6d18314aba9
+R2 Ea0ba792f4261
+Execute path; return final tail only.
+
+CONTEXT:
+Eddie Murphy | Eb6d18314aba9 | Daddy Day Care
+Daddy Day Care | Ea0ba792f4261 | Steve Carr
+Daddy Day Care | Ec2c8a45672e4 | Geoff Rodkey

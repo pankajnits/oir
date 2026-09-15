@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_110]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_110 #####
+QUESTION:
+Who directed a movie that Zach Galifianakis starred in?
+
+PATH_QUERY
+START Zach Galifianakis
+R1 Edfe4a1fc995b
+R2 Eb79a5ed13954
+Execute path; return final tail only.
+
+CONTEXT:
+Zach Galifianakis | Edfe4a1fc995b | Visioneers
+Visioneers | Eb79a5ed13954 | Jared Drake
+Visioneers | E8caa6ada076a | Brandon Drake

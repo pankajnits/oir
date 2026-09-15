@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_129 #####
+PATH_QUERY
+START Yoav_Har-Even
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Yoav_Har-Even | works_at | Rafael_Advanced_Defense_Systems
+Rafael_Advanced_Defense_Systems | headquartered_in | Haifa
+DecoyCo_Rafael_Advanced_Defense_Systems | headquartered_in | DecoyHQ_Haifa
+Rafael_Advanced_Defense_Systems | owned_by | Hold_Rafael_Advanced_Defense_Systems
+Hold_Rafael_Advanced_Defense_Systems | meta_of | Rafael_Advanced_Defense_Systems
+Rafael_Advanced_Defense_Systems | partner_of | Partner_Rafael_Advanced_Defense_Systems
+Partner_Rafael_Advanced_Defense_Systems | meta_of | Rafael_Advanced_Defense_Systems
+Decoy_DecoyCo_Rafael_Advanced_Defense_Systems | works_at | DecoyCo_Rafael_Advanced_Defense_Systems

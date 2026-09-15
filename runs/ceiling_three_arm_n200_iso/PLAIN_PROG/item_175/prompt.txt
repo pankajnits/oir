@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_175 #####
+PATH_QUERY
+START Janet_L._Kavandi
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Janet_L._Kavandi | works_at | Sierra_Space
+Sierra_Space | headquartered_in | Broomfield
+DecoyCo_Sierra_Space | headquartered_in | DecoyHQ_Broomfield
+Sierra_Space | owned_by | Hold_Sierra_Space
+Hold_Sierra_Space | meta_of | Sierra_Space
+Sierra_Space | partner_of | Partner_Sierra_Space
+Partner_Sierra_Space | meta_of | Sierra_Space
+Decoy_DecoyCo_Sierra_Space | works_at | DecoyCo_Sierra_Space

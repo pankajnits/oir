@@ -1,0 +1,35 @@
+{
+  "id": "F22_OPAQUE_AMBIG_PLAN_26",
+  "arm": "OPAQUE_AMBIG_PLAN",
+  "item": 26,
+  "prompt_path": "runs/factorial_2x2_iso/OPAQUE_AMBIG_PLAN/item_26/prompt.txt",
+  "pred": "Fox_Plaza",
+  "raw": "ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_26]: Fox_Plaza",
+  "elapsed_s": 2.567,
+  "utc": "2026-09-15T06:29:59.436013+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOGxxg4DEXXY7Fwj1KBrATbgUf0Az",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789453797,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 105,
+    "prompt_tokens": 229,
+    "total_tokens": 334,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 79,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

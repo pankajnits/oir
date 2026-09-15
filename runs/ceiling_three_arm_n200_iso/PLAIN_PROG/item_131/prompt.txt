@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_131 #####
+PATH_QUERY
+START Arne_Schulze
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Arne_Schulze | works_at | Zoological_Society_for_the_Conservation_of_Species_and_Populatio
+Zoological_Society_for_the_Conservation_of_Species_and_Populatio | headquartered_in | Munich
+DecoyCo_Zoological_Society_for_the_Conservation_of_Species_and_Populatio | headquartered_in | DecoyHQ_Munich
+Zoological_Society_for_the_Conservation_of_Species_and_Populatio | owned_by | Hold_Zoological_Society_for_the_Conservation_of_Species_and_Populatio
+Hold_Zoological_Society_for_the_Conservation_of_Species_and_Populatio | meta_of | Zoological_Society_for_the_Conservation_of_Species_and_Populatio
+Zoological_Society_for_the_Conservation_of_Species_and_Populatio | partner_of | Partner_Zoological_Society_for_the_Conservation_of_Species_and_Populatio
+Partner_Zoological_Society_for_the_Conservation_of_Species_and_Populatio | meta_of | Zoological_Society_for_the_Conservation_of_Species_and_Populatio
+Decoy_DecoyCo_Zoological_Society_for_the_Conservation_of_Species_and_Populatio | works_at | DecoyCo_Zoological_Society_for_the_Conservation_of_Species_and_Populatio

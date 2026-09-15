@@ -1,0 +1,36 @@
+{
+  "id": "H200_a833ac3b31",
+  "arm": "OPQ_H5_CYC",
+  "item": 13,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_13/prompt.txt",
+  "pred": "New_York_City",
+  "raw": "ANSWER_PLAIN[H200_a833ac3b31]: New_York_City",
+  "elapsed_s": 2.293,
+  "utc": "2026-09-15T08:42:57.100930+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ2dNFQe5s5zqvJMIm24yYBWzEzA",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461775,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 44,
+    "prompt_tokens": 186,
+    "total_tokens": 230,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 17,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

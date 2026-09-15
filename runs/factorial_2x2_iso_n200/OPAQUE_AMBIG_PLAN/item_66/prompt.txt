@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_66]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_66 #####
+QUESTION:
+What city is the headquarters of the company led by W._Paul_Menzel?
+
+PATH_QUERY
+START W._Paul_Menzel
+R1 E58f0fd42c9f3
+R2 Eba5967edce9d
+Execute path; return final tail only.
+
+CONTEXT:
+W._Paul_Menzel | E58f0fd42c9f3 | Cooperative_Institute_for_Meteorological_Satellite_Studies
+Cooperative_Institute_for_Meteorological_Satellite_Studies | Eba5967edce9d | Madison
+W._Paul_Menzel | Ef110416fb853 | John_Wood_Group_plc
+John_Wood_Group_plc | E7de7de5f2ff4 | Aberdeen

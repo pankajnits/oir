@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_106 #####
+PATH_QUERY
+START Emil_Pick
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Emil_Pick | works_at | Kosmos_slav
+Kosmos_slav | headquartered_in | slav
+DecoyCo_Kosmos_slav | headquartered_in | DecoyHQ_slav
+Kosmos_slav | owned_by | Hold_Kosmos_slav
+Hold_Kosmos_slav | meta_of | Kosmos_slav
+Kosmos_slav | partner_of | Partner_Kosmos_slav
+Partner_Kosmos_slav | meta_of | Kosmos_slav
+Decoy_DecoyCo_Kosmos_slav | works_at | DecoyCo_Kosmos_slav

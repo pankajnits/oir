@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_162]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_162 #####
+QUESTION:
+Who directed a movie that Loretta Young starred in?
+
+PATH_QUERY
+START Loretta Young
+R1 E75ac27c9e916
+R2 E20965366e257
+Execute path; return final tail only.
+
+CONTEXT:
+Loretta Young | E75ac27c9e916 | The Squall
+The Squall | E20965366e257 | Alexander Korda
+The Squall | Edef9cac4376c | Jean Bart

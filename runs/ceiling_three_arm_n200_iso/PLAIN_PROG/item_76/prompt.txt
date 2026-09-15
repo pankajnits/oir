@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_76 #####
+PATH_QUERY
+START Stefan_Bomhard
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Stefan_Bomhard | works_at | Imperial_Brands
+Imperial_Brands | headquartered_in | Bristol
+DecoyCo_Imperial_Brands | headquartered_in | DecoyHQ_Bristol
+Imperial_Brands | owned_by | Hold_Imperial_Brands
+Hold_Imperial_Brands | meta_of | Imperial_Brands
+Imperial_Brands | partner_of | Partner_Imperial_Brands
+Partner_Imperial_Brands | meta_of | Imperial_Brands
+Decoy_DecoyCo_Imperial_Brands | works_at | DecoyCo_Imperial_Brands

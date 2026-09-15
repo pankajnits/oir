@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_31]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_31 #####
+QUESTION:
+Who E96e9b2b5787b a E38c0db712283 Ec52cb9dddac5 [Sarah Michelle Gellar] Ec03c64bea346 Ecfed439857e6?
+
+PATH_QUERY
+START Sarah Michelle Gellar
+R1 E29337cc69449
+R2 E12cefd567540
+Execute path; return final tail only.
+
+CONTEXT:
+Sarah Michelle Gellar | E29337cc69449 | Scooby-Doo
+Scooby-Doo | E12cefd567540 | Raja Gosnell
+Scooby-Doo | E7fca001be0c2 | James Gunn

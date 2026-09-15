@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_132]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_132 #####
+QUESTION:
+What city is the headquarters of the company led by Liang_Xinjun?
+
+PATH_QUERY
+START Liang_Xinjun
+R1 Ed4ee9c4bcb0b
+R2 E560dd53e3a45
+Execute path; return final tail only.
+
+CONTEXT:
+Liang_Xinjun | Ed4ee9c4bcb0b | Fosun_International_Limited
+Fosun_International_Limited | E560dd53e3a45 | Shanghai
+Liang_Xinjun | E8a03fa3950f8 | United_Nations_Environment_Programme
+United_Nations_Environment_Programme | Ec9881fd59604 | Nairobi

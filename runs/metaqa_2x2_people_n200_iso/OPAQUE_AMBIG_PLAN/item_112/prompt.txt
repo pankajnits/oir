@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_112]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_112 #####
+QUESTION:
+Who directed a movie that Deborah Kerr starred in?
+
+PATH_QUERY
+START Deborah Kerr
+R1 Eca6edd80f25f
+R2 Ef83a22349f59
+Execute path; return final tail only.
+
+CONTEXT:
+Deborah Kerr | Eca6edd80f25f | Tea and Sympathy
+Tea and Sympathy | Ef83a22349f59 | Vincente Minnelli
+Tea and Sympathy | E35aa05e52314 | Robert Anderson

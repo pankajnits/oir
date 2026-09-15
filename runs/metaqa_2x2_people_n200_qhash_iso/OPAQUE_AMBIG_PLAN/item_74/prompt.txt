@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_74]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_74 #####
+QUESTION:
+Who E5a9e7a2e7b8f a E51c6cb3174da E54bf28f9a75c [Peter Cushing] E73ce9071474f E676616e66384?
+
+PATH_QUERY
+START Peter Cushing
+R1 E63d03dd7d2a1
+R2 E7c377f475a86
+Execute path; return final tail only.
+
+CONTEXT:
+Peter Cushing | E63d03dd7d2a1 | The Abominable Snowman
+The Abominable Snowman | E7c377f475a86 | Val Guest
+The Abominable Snowman | Efef686178d61 | Nigel Kneale

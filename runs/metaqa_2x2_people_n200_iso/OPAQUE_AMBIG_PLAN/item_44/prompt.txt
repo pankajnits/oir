@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_44]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_44 #####
+QUESTION:
+Who directed a movie that Keenan Wynn starred in?
+
+PATH_QUERY
+START Keenan Wynn
+R1 Edde733b5e7a3
+R2 Ef62e907337fb
+Execute path; return final tail only.
+
+CONTEXT:
+Keenan Wynn | Edde733b5e7a3 | The Deep Six
+The Deep Six | Ef62e907337fb | Rudolph Maté
+The Deep Six | E771401620153 | Martin Dibner

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_190]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_190 #####
+QUESTION:
+Who directed a movie that Lesley Ann Warren starred in?
+
+PATH_QUERY
+START Lesley Ann Warren
+R1 Ea4b4a8feb04b
+R2 E3408410ecafb
+Execute path; return final tail only.
+
+CONTEXT:
+Lesley Ann Warren | Ea4b4a8feb04b | A Night in Heaven
+A Night in Heaven | E3408410ecafb | John G. Avildsen
+A Night in Heaven | Ea5fb067d0dc7 | Joan Tewkesbury

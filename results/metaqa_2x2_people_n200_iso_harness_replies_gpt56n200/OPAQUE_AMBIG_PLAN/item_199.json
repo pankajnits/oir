@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_PLAN_199",
+  "arm": "OPAQUE_AMBIG_PLAN",
+  "item": 199,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG_PLAN/item_199/prompt.txt",
+  "pred": "J.A. Bayona",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_199]: J.A. Bayona",
+  "elapsed_s": 1.607,
+  "utc": "2026-09-15T09:17:41.049895+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJaG2RDfMUCiv2Nyufdu4keFTEuZ",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463860,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 197,
+    "total_tokens": 221,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

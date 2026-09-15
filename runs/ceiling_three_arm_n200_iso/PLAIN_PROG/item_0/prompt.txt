@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_0 #####
+PATH_QUERY
+START Nancy_Duarte
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nancy_Duarte | works_at | Duarte_Inc.
+Duarte_Inc. | headquartered_in | San_Jose
+DecoyCo_Duarte_Inc. | headquartered_in | DecoyHQ_San_Jose
+Duarte_Inc. | owned_by | Hold_Duarte_Inc.
+Hold_Duarte_Inc. | meta_of | Duarte_Inc.
+Duarte_Inc. | partner_of | Partner_Duarte_Inc.
+Partner_Duarte_Inc. | meta_of | Duarte_Inc.
+Decoy_DecoyCo_Duarte_Inc. | works_at | DecoyCo_Duarte_Inc.

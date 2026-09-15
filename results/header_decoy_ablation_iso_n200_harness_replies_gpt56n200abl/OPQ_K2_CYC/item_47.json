@@ -1,0 +1,36 @@
+{
+  "id": "H200_a71911251d",
+  "arm": "OPQ_K2_CYC",
+  "item": 47,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CYC/item_47/prompt.txt",
+  "pred": "Hamburg",
+  "raw": "ANSWER_PLAIN[H200_a71911251d]: Hamburg",
+  "elapsed_s": 2.435,
+  "utc": "2026-09-15T08:45:24.518762+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ509gS1GxQ2YFwBbh4LLM0IwH9z",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461922,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 56,
+    "prompt_tokens": 164,
+    "total_tokens": 220,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 34,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

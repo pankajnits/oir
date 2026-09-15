@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_187 #####
+PATH_QUERY
+START Martin_Pucher
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Martin_Pucher | works_at | Commerzialbank_Mattersburg
+Commerzialbank_Mattersburg | headquartered_in | Mattersburg
+DecoyCo_Commerzialbank_Mattersburg | headquartered_in | DecoyHQ_Mattersburg
+Commerzialbank_Mattersburg | owned_by | Hold_Commerzialbank_Mattersburg
+Hold_Commerzialbank_Mattersburg | meta_of | Commerzialbank_Mattersburg
+Commerzialbank_Mattersburg | partner_of | Partner_Commerzialbank_Mattersburg
+Partner_Commerzialbank_Mattersburg | meta_of | Commerzialbank_Mattersburg
+Decoy_DecoyCo_Commerzialbank_Mattersburg | works_at | DecoyCo_Commerzialbank_Mattersburg

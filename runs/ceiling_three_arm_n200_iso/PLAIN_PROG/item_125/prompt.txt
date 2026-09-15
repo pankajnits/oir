@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_125 #####
+PATH_QUERY
+START Peter_William
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Peter_William | works_at | Catch_Wrestling_Association
+Catch_Wrestling_Association | headquartered_in | Graz
+DecoyCo_Catch_Wrestling_Association | headquartered_in | DecoyHQ_Graz
+Catch_Wrestling_Association | owned_by | Hold_Catch_Wrestling_Association
+Hold_Catch_Wrestling_Association | meta_of | Catch_Wrestling_Association
+Catch_Wrestling_Association | partner_of | Partner_Catch_Wrestling_Association
+Partner_Catch_Wrestling_Association | meta_of | Catch_Wrestling_Association
+Decoy_DecoyCo_Catch_Wrestling_Association | works_at | DecoyCo_Catch_Wrestling_Association

@@ -1,0 +1,36 @@
+{
+  "id": "H200_9d724f9605",
+  "arm": "OPQ_K2_CYC",
+  "item": 75,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CYC/item_75/prompt.txt",
+  "pred": "Dover",
+  "raw": "ANSWER_PLAIN[H200_9d724f9605]: Dover",
+  "elapsed_s": 6.186,
+  "utc": "2026-09-15T08:45:39.869337+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ5CvMXVW2OVoO6sc6uwPOwnI2G3",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461934,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 271,
+    "prompt_tokens": 163,
+    "total_tokens": 434,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 247,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

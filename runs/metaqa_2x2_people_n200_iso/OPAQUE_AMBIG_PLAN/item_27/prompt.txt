@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_27]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_27 #####
+QUESTION:
+Who directed a movie that Claude Legault starred in?
+
+PATH_QUERY
+START Claude Legault
+R1 Ea153c13f6995
+R2 Ea7b970ed1fca
+Execute path; return final tail only.
+
+CONTEXT:
+Claude Legault | Ea153c13f6995 | 7 Days
+7 Days | Ea7b970ed1fca | Daniel Grou
+7 Days | E453d16f1a4d4 | Patrick Senécal

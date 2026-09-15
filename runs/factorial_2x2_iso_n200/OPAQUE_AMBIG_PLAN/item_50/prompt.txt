@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_50]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_50 #####
+QUESTION:
+What city is the headquarters of the company led by Catherine_Havasi?
+
+PATH_QUERY
+START Catherine_Havasi
+R1 Eb2f199b94f16
+R2 E743686870a2d
+Execute path; return final tail only.
+
+CONTEXT:
+Catherine_Havasi | Eb2f199b94f16 | Luminoso
+Luminoso | E743686870a2d | Cambridge
+Catherine_Havasi | Ef9c61c3a9ad0 | EP_Heat_Power
+EP_Heat_Power | Ed5ded4853599 | Prague

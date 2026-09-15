@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_161 #####
+PATH_QUERY
+START Olga_Paksina
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Olga_Paksina | works_at | National_Media_Group
+National_Media_Group | headquartered_in | Moscow
+DecoyCo_National_Media_Group | headquartered_in | DecoyHQ_Moscow
+National_Media_Group | owned_by | Hold_National_Media_Group
+Hold_National_Media_Group | meta_of | National_Media_Group
+National_Media_Group | partner_of | Partner_National_Media_Group
+Partner_National_Media_Group | meta_of | National_Media_Group
+Decoy_DecoyCo_National_Media_Group | works_at | DecoyCo_National_Media_Group

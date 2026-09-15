@@ -1,0 +1,36 @@
+{
+  "id": "H200_a109a15764",
+  "arm": "ENG_NONE_CYC",
+  "item": 6,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/ENG_NONE_CYC/item_6/prompt.txt",
+  "pred": "London",
+  "raw": "ANSWER_PLAIN[H200_a109a15764]: London",
+  "elapsed_s": 1.413,
+  "utc": "2026-09-15T08:50:21.012631+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ9o36wi8Q5SJEL1uhx4NQU3ztS0",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462220,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 137,
+    "total_tokens": 153,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_PLAN_80",
+  "arm": "OPAQUE_AMBIG_PLAN",
+  "item": 80,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG_PLAN/item_80/prompt.txt",
+  "pred": "Tony Krantz",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_80]: Tony Krantz",
+  "elapsed_s": 1.342,
+  "utc": "2026-09-15T09:17:15.609519+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJZq46nhVuMie2YySUfND8l6vJaA",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463834,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 22,
+    "prompt_tokens": 191,
+    "total_tokens": 213,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

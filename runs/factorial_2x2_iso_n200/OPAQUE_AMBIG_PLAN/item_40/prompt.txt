@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_40]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_40 #####
+QUESTION:
+What city is the headquarters of the company led by Eliyahu_Glickman?
+
+PATH_QUERY
+START Eliyahu_Glickman
+R1 Eb328c64a8311
+R2 E5e0f5b9fbb50
+Execute path; return final tail only.
+
+CONTEXT:
+Eliyahu_Glickman | Eb328c64a8311 | Zim_Integrated_Shipping_Services_Ltd
+Zim_Integrated_Shipping_Services_Ltd | E5e0f5b9fbb50 | Haifa
+Eliyahu_Glickman | Eb5308e9e15fe | Abu_Dhabi_Investment_Authority
+Abu_Dhabi_Investment_Authority | E65322ba4abcc | Abu_Dhabi

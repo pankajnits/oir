@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_165 #####
+PATH_QUERY
+START Hannes_Androsch
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Hannes_Androsch | works_at | AIC_Androsch_International_Management_Consulting_GmbH
+AIC_Androsch_International_Management_Consulting_GmbH | headquartered_in | Vienna
+DecoyCo_AIC_Androsch_International_Management_Consulting_GmbH | headquartered_in | DecoyHQ_Vienna
+AIC_Androsch_International_Management_Consulting_GmbH | owned_by | Hold_AIC_Androsch_International_Management_Consulting_GmbH
+Hold_AIC_Androsch_International_Management_Consulting_GmbH | meta_of | AIC_Androsch_International_Management_Consulting_GmbH
+AIC_Androsch_International_Management_Consulting_GmbH | partner_of | Partner_AIC_Androsch_International_Management_Consulting_GmbH
+Partner_AIC_Androsch_International_Management_Consulting_GmbH | meta_of | AIC_Androsch_International_Management_Consulting_GmbH
+Decoy_DecoyCo_AIC_Androsch_International_Management_Consulting_GmbH | works_at | DecoyCo_AIC_Androsch_International_Management_Consulting_GmbH

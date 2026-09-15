@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_80]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_80 #####
+QUESTION:
+What city is the headquarters of the company led by Mary_Barra?
+
+PATH_QUERY
+START Mary_Barra
+R1 E5121c579636d
+R2 Ea7be259cf25a
+Execute path; return final tail only.
+
+CONTEXT:
+Mary_Barra | E5121c579636d | General_Motors
+General_Motors | Ea7be259cf25a | Detroit
+Mary_Barra | E5405aacfcc13 | Halliburton
+Halliburton | Efad53b78582a | Dubai

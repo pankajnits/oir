@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_166 #####
+PATH_QUERY
+START Patrick_F._Carr
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Patrick_F._Carr | works_at | Golden_Rule_Insurance_Company
+Golden_Rule_Insurance_Company | headquartered_in | Indianapolis
+DecoyCo_Golden_Rule_Insurance_Company | headquartered_in | DecoyHQ_Indianapolis
+Golden_Rule_Insurance_Company | owned_by | Hold_Golden_Rule_Insurance_Company
+Hold_Golden_Rule_Insurance_Company | meta_of | Golden_Rule_Insurance_Company
+Golden_Rule_Insurance_Company | partner_of | Partner_Golden_Rule_Insurance_Company
+Partner_Golden_Rule_Insurance_Company | meta_of | Golden_Rule_Insurance_Company
+Decoy_DecoyCo_Golden_Rule_Insurance_Company | works_at | DecoyCo_Golden_Rule_Insurance_Company

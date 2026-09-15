@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_173]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_173 #####
+QUESTION:
+What city is the headquarters of the company led by Henning_Lund?
+
+CONTEXT:
+Henning_Lund | works_at | Frydenlund
+Frydenlund | headquartered_in | Frederiksberg
+Henning_Lund | partner_of | Fjord1
+Fjord1 | located_in | Flor

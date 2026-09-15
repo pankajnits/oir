@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_1]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_1 #####
+QUESTION:
+What city is the headquarters of the company led by Arun_Sarin?
+
+PATH_QUERY
+START Arun_Sarin
+R1 Ede8757110a0a
+R2 E10fa862168e2
+Execute path; return final tail only.
+
+CONTEXT:
+Arun_Sarin | Ede8757110a0a | Vodafone
+Vodafone | E10fa862168e2 | London
+Arun_Sarin | E40e4ce3ea361 | Tempogr_fica
+Tempogr_fica | E6889b19897fa | Maputo

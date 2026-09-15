@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_83]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_83 #####
+QUESTION:
+What city is the headquarters of the company led by Elmar_Pankau?
+
+CONTEXT:
+Elmar_Pankau | works_at | Malteser_Rettungsdienst
+Malteser_Rettungsdienst | headquartered_in | Cologne
+Elmar_Pankau | partner_of | UFA
+UFA | located_in | Potsdam

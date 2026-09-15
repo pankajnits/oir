@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_31]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_31 #####
+QUESTION:
+What city is the headquarters of the company led by Pieter_van_der_Does?
+
+CONTEXT:
+Pieter_van_der_Does | works_at | Adyen
+Adyen | headquartered_in | Amsterdam
+Pieter_van_der_Does | partner_of | Mercedes-Benz_AG
+Mercedes-Benz_AG | located_in | Stuttgart

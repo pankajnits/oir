@@ -52,9 +52,13 @@ def load_preds(reply_root_dir: Path, arm: str) -> dict[str, str]:
     return preds
 
 
-def score(tag: str, *, force: bool = False, results_dir: Path = RESULTS) -> dict:
-    h = json.loads((results_dir / "ceiling_three_arm_n32_iso_harness.json").read_text())
-    reply = reply_root(tag, results_dir)
+def score(tag: str, *, force: bool = False, results_dir: Path = RESULTS,
+          harness_stem: str = "ceiling_three_arm_n32_iso_harness") -> dict:
+    h = json.loads((results_dir / f"{harness_stem}.json").read_text())
+    if harness_stem == "ceiling_three_arm_n32_iso_harness":
+        reply = reply_root(tag, results_dir)
+    else:
+        reply = results_dir / f"{harness_stem}_replies_{tag}"
     gold_by = {c["id_plain"]: c | {"gold": c["expect_plain"], "arm": "PLAIN_PROG"} for c in h["cases"]}
     gold_by.update({c["id_sealprog"]: c | {"gold": c["expect_seal"], "arm": "SEAL_PROG"} for c in h["cases"]})
     gold_by.update({c["id_sealnl"]: c | {"gold": c["expect_seal"], "arm": "SEAL_NL"} for c in h["cases"]})
@@ -90,7 +94,7 @@ def score(tag: str, *, force: bool = False, results_dir: Path = RESULTS) -> dict
         "rows": rows,
         "reply_dir": str(reply.relative_to(ROOT) if reply.is_relative_to(ROOT) else reply),
     }
-    path = results_dir / f"ceiling_three_arm_n32_iso_{tag}.json"
+    path = results_dir / f"{harness_stem.replace('_harness', '')}_{tag}.json"
     write_lock(path, out, force=force)
     print(json.dumps(summary, indent=2, ensure_ascii=False))
     print("wrote", path)
@@ -101,8 +105,10 @@ def main() -> None:
     force = "--force" in sys.argv
     argv = [a for a in sys.argv[1:] if a != "--force"]
     if not argv:
-        raise SystemExit("usage: score_ceiling_n32_iso.py TAG [--force]")
-    score(argv[0], force=force)
+        raise SystemExit("usage: score_ceiling_n32_iso.py TAG [harness_stem] [--force]")
+    tag = argv[0]
+    stem = argv[1] if len(argv) > 1 else "ceiling_three_arm_n32_iso_harness"
+    score(tag, force=force, harness_stem=stem)
 
 
 if __name__ == "__main__":

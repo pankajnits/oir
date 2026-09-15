@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_80 #####
+PATH_QUERY
+START Mary_Barra
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mary_Barra | works_at | General_Motors
+General_Motors | headquartered_in | Detroit
+DecoyCo_General_Motors | headquartered_in | DecoyHQ_Detroit
+General_Motors | owned_by | Hold_General_Motors
+Hold_General_Motors | meta_of | General_Motors
+General_Motors | partner_of | Partner_General_Motors
+Partner_General_Motors | meta_of | General_Motors
+Decoy_DecoyCo_General_Motors | works_at | DecoyCo_General_Motors

@@ -1,0 +1,35 @@
+{
+  "id": "CEIL200_SEALPROG_123",
+  "arm": "SEAL_PROG",
+  "item": 123,
+  "prompt_path": "runs/ceiling_three_arm_n200_iso/SEAL_PROG/item_123/prompt.txt",
+  "pred": "E55e75a5a5ebe",
+  "raw": "ANSWER_SEALED[CEIL200_SEALPROG_123]: E55e75a5a5ebe",
+  "elapsed_s": 2.429,
+  "utc": "2026-09-15T09:01:06.748577+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJKC1YhQOZ4WkmRNhs6UahTMhNv5",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462864,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 78,
+    "prompt_tokens": 318,
+    "total_tokens": 396,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 45,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

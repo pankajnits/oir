@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_95]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_95 #####
+QUESTION:
+What city is the headquarters of the company led by Geoff_Allardice?
+
+PATH_QUERY
+START Geoff_Allardice
+R1 E2a4c2a5cf66e
+R2 E3969c1edca44
+Execute path; return final tail only.
+
+CONTEXT:
+Geoff_Allardice | E2a4c2a5cf66e | International_Cricket_Council
+International_Cricket_Council | E3969c1edca44 | Dubai
+Geoff_Allardice | E8fb130794d4c | Agfa-Gevaert
+Agfa-Gevaert | E4512293fc642 | Leverkusen

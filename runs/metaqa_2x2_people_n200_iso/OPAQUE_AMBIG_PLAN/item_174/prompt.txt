@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_174]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_174 #####
+QUESTION:
+Who directed a movie that Jason Flemyng starred in?
+
+PATH_QUERY
+START Jason Flemyng
+R1 E59b95c611902
+R2 Ef4552a37164c
+Execute path; return final tail only.
+
+CONTEXT:
+Jason Flemyng | E59b95c611902 | The Bunker
+The Bunker | Ef4552a37164c | Rob Green
+The Bunker | Eddebb11430bb | Clive Dawson

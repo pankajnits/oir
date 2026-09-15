@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_131]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_131 #####
+QUESTION:
+What city is the headquarters of the company led by Arne_Schulze?
+
+PATH_QUERY
+START Arne_Schulze
+R1 Eb101201f5d59
+R2 E936600d8bce1
+Execute path; return final tail only.
+
+CONTEXT:
+Arne_Schulze | Eb101201f5d59 | Zoological_Society_for_the_Conservation_of_Species_and_Populatio
+Zoological_Society_for_the_Conservation_of_Species_and_Populatio | E936600d8bce1 | Munich
+Arne_Schulze | E37393a3eb1ed | Fosun_International_Limited
+Fosun_International_Limited | E839fcdbb2d3d | Shanghai

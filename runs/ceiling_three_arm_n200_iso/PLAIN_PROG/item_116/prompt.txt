@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_116 #####
+PATH_QUERY
+START Steven_Gunn
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Steven_Gunn | works_at | Sleep_Country_Canada
+Sleep_Country_Canada | headquartered_in | Toronto
+DecoyCo_Sleep_Country_Canada | headquartered_in | DecoyHQ_Toronto
+Sleep_Country_Canada | owned_by | Hold_Sleep_Country_Canada
+Hold_Sleep_Country_Canada | meta_of | Sleep_Country_Canada
+Sleep_Country_Canada | partner_of | Partner_Sleep_Country_Canada
+Partner_Sleep_Country_Canada | meta_of | Sleep_Country_Canada
+Decoy_DecoyCo_Sleep_Country_Canada | works_at | DecoyCo_Sleep_Country_Canada

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_88 #####
+PATH_QUERY
+START Erik_Hemmendorff
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Erik_Hemmendorff | works_at | Plattform_Produktion
+Plattform_Produktion | headquartered_in | Gothenburg
+DecoyCo_Plattform_Produktion | headquartered_in | DecoyHQ_Gothenburg
+Plattform_Produktion | owned_by | Hold_Plattform_Produktion
+Hold_Plattform_Produktion | meta_of | Plattform_Produktion
+Plattform_Produktion | partner_of | Partner_Plattform_Produktion
+Partner_Plattform_Produktion | meta_of | Plattform_Produktion
+Decoy_DecoyCo_Plattform_Produktion | works_at | DecoyCo_Plattform_Produktion

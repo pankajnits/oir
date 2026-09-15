@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_40]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_40 #####
+QUESTION:
+Who directed a movie that Jane Lynch starred in?
+
+PATH_QUERY
+START Jane Lynch
+R1 E40dc8fb9c317
+R2 Eddca53b71a33
+Execute path; return final tail only.
+
+CONTEXT:
+Jane Lynch | E40dc8fb9c317 | Mr. Troop Mom
+Mr. Troop Mom | Eddca53b71a33 | William Dear
+Mr. Troop Mom | Efbba6f9105cd | Thomas Ian Griffith

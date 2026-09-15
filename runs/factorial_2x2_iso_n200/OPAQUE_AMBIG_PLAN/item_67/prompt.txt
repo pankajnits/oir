@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_67]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_67 #####
+QUESTION:
+What city is the headquarters of the company led by Ian_Wood?
+
+PATH_QUERY
+START Ian_Wood
+R1 Ec968f5152e3f
+R2 Eec2276767b61
+Execute path; return final tail only.
+
+CONTEXT:
+Ian_Wood | Ec968f5152e3f | John_Wood_Group_plc
+John_Wood_Group_plc | Eec2276767b61 | Aberdeen
+Ian_Wood | E058616635979 | National_Choreographic_Center_of_Montpellier
+National_Choreographic_Center_of_Montpellier | Ea177cd4931ae | Montpellier

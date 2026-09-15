@@ -1,0 +1,35 @@
+{
+  "id": "F200_ENG_UNIQUE_103",
+  "arm": "ENG_UNIQUE",
+  "item": 103,
+  "prompt_path": "runs/factorial_2x2_iso_n200/ENG_UNIQUE/item_103/prompt.txt",
+  "pred": "Kristiansand",
+  "raw": "ANSWER_PLAIN[F200_ENG_UNIQUE_103]: Kristiansand",
+  "elapsed_s": 1.708,
+  "utc": "2026-09-15T08:39:24.643358+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOIzDzVv2pJRNcEmnbWzU1OkeAI3l",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461563,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 17,
+    "prompt_tokens": 155,
+    "total_tokens": 172,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

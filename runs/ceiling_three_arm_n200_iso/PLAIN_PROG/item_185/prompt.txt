@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_185 #####
+PATH_QUERY
+START David_Burritt
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+David_Burritt | works_at | U.S._Steel
+U.S._Steel | headquartered_in | Pittsburgh
+DecoyCo_U.S._Steel | headquartered_in | DecoyHQ_Pittsburgh
+U.S._Steel | owned_by | Hold_U.S._Steel
+Hold_U.S._Steel | meta_of | U.S._Steel
+U.S._Steel | partner_of | Partner_U.S._Steel
+Partner_U.S._Steel | meta_of | U.S._Steel
+Decoy_DecoyCo_U.S._Steel | works_at | DecoyCo_U.S._Steel

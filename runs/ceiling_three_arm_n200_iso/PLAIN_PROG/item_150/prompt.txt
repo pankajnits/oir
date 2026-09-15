@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_150 #####
+PATH_QUERY
+START Marc_Harrison
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Marc_Harrison | works_at | Intermountain_Health
+Intermountain_Health | headquartered_in | Salt_Lake_City
+DecoyCo_Intermountain_Health | headquartered_in | DecoyHQ_Salt_Lake_City
+Intermountain_Health | owned_by | Hold_Intermountain_Health
+Hold_Intermountain_Health | meta_of | Intermountain_Health
+Intermountain_Health | partner_of | Partner_Intermountain_Health
+Partner_Intermountain_Health | meta_of | Intermountain_Health
+Decoy_DecoyCo_Intermountain_Health | works_at | DecoyCo_Intermountain_Health

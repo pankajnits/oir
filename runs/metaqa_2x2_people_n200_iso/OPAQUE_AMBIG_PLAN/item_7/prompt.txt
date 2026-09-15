@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_7]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_7 #####
+QUESTION:
+Who directed a movie that Paul Scofield starred in?
+
+PATH_QUERY
+START Paul Scofield
+R1 Eb7a340469382
+R2 E887f05334f3c
+Execute path; return final tail only.
+
+CONTEXT:
+Paul Scofield | Eb7a340469382 | A Man for All Seasons
+A Man for All Seasons | E887f05334f3c | Fred Zinnemann
+A Man for All Seasons | Ecb9f4c671148 | Robert Bolt

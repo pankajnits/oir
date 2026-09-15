@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_67]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_67 #####
+QUESTION:
+Who directed a movie that Charles Laughton starred in?
+
+PATH_QUERY
+START Charles Laughton
+R1 Ee728413644bf
+R2 Eac46e8723477
+Execute path; return final tail only.
+
+CONTEXT:
+Charles Laughton | Ee728413644bf | It Started with Eve
+It Started with Eve | Eac46e8723477 | Henry Koster
+It Started with Eve | E7dd22ab2ae1a | Hanns Kräly

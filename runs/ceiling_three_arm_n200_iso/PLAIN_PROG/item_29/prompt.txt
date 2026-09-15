@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_29 #####
+PATH_QUERY
+START Prokopios_Tsakoumakas
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Prokopios_Tsakoumakas | works_at | Metropolis_of_Philippi_Neapolis_and_Thasos
+Metropolis_of_Philippi_Neapolis_and_Thasos | headquartered_in | Kavala
+DecoyCo_Metropolis_of_Philippi_Neapolis_and_Thasos | headquartered_in | DecoyHQ_Kavala
+Metropolis_of_Philippi_Neapolis_and_Thasos | owned_by | Hold_Metropolis_of_Philippi_Neapolis_and_Thasos
+Hold_Metropolis_of_Philippi_Neapolis_and_Thasos | meta_of | Metropolis_of_Philippi_Neapolis_and_Thasos
+Metropolis_of_Philippi_Neapolis_and_Thasos | partner_of | Partner_Metropolis_of_Philippi_Neapolis_and_Thasos
+Partner_Metropolis_of_Philippi_Neapolis_and_Thasos | meta_of | Metropolis_of_Philippi_Neapolis_and_Thasos
+Decoy_DecoyCo_Metropolis_of_Philippi_Neapolis_and_Thasos | works_at | DecoyCo_Metropolis_of_Philippi_Neapolis_and_Thasos

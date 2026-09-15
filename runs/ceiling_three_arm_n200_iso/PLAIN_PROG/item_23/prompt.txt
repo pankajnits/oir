@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_23 #####
+PATH_QUERY
+START Armando_Pego_Puigb
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Armando_Pego_Puigb | works_at | Comprendre
+Comprendre | headquartered_in | Barcelona
+DecoyCo_Comprendre | headquartered_in | DecoyHQ_Barcelona
+Comprendre | owned_by | Hold_Comprendre
+Hold_Comprendre | meta_of | Comprendre
+Comprendre | partner_of | Partner_Comprendre
+Partner_Comprendre | meta_of | Comprendre
+Decoy_DecoyCo_Comprendre | works_at | DecoyCo_Comprendre

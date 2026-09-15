@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_73]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_73 #####
+QUESTION:
+Who directed a movie that Marcia Gay Harden starred in?
+
+PATH_QUERY
+START Marcia Gay Harden
+R1 Eb60b10016aa5
+R2 E2fe62b7d3931
+Execute path; return final tail only.
+
+CONTEXT:
+Marcia Gay Harden | Eb60b10016aa5 | Gaudi Afternoon
+Gaudi Afternoon | E2fe62b7d3931 | Susan Seidelman
+Gaudi Afternoon | E2509c1e07b6f | Barbara Wilson

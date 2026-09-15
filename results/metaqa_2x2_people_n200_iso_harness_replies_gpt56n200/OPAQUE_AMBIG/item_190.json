@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_190",
+  "arm": "OPAQUE_AMBIG",
+  "item": 190,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG/item_190/prompt.txt",
+  "pred": "John G. Avildsen",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_190]: John G. Avildsen",
+  "elapsed_s": 2.476,
+  "utc": "2026-09-15T09:16:52.788274+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJZTeH4YlRCKpgX8LsvX7G0vUh1h",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463811,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 85,
+    "prompt_tokens": 158,
+    "total_tokens": 243,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 55,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

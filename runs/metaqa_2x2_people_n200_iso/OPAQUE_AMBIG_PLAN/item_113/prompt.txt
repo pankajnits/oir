@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_113]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_113 #####
+QUESTION:
+Who directed a movie that Don Cheadle starred in?
+
+PATH_QUERY
+START Don Cheadle
+R1 Eaca3c762ba9f
+R2 E438d1da4d4ef
+Execute path; return final tail only.
+
+CONTEXT:
+Don Cheadle | Eaca3c762ba9f | Hamburger Hill
+Hamburger Hill | E438d1da4d4ef | John Irvin
+Hamburger Hill | Ef7c2047888ce | James Carabatsos

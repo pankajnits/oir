@@ -1,0 +1,35 @@
+{
+  "id": "H200_82a14876f6",
+  "arm": "OPQ_H5_CYC",
+  "item": 133,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_133/prompt.txt",
+  "pred": "Nairobi",
+  "raw": "ANSWER_PLAIN[H200_82a14876f6]: Nairobi",
+  "elapsed_s": 1.903,
+  "utc": "2026-09-15T08:51:51.674887+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJBG3iD3cDL5QwhG3ysVaRRzxjlg",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462310,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 52,
+    "prompt_tokens": 200,
+    "total_tokens": 252,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 28,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

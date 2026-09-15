@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_176 #####
+PATH_QUERY
+START Scott_Etzler
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Scott_Etzler | works_at | InterCall
+InterCall | headquartered_in | Chicago
+DecoyCo_InterCall | headquartered_in | DecoyHQ_Chicago
+InterCall | owned_by | Hold_InterCall
+Hold_InterCall | meta_of | InterCall
+InterCall | partner_of | Partner_InterCall
+Partner_InterCall | meta_of | InterCall
+Decoy_DecoyCo_InterCall | works_at | DecoyCo_InterCall

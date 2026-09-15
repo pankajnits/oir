@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200S_ENG_AMBIG_5]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200S_ENG_AMBIG_5 #####
+QUESTION:
+What city is the headquarters of the company led by Jakub_Havrlant?
+
+CONTEXT:
+Jakub_Havrlant | partner_of | Anglo_American_plc
+Anglo_American_plc | located_in | London
+Jakub_Havrlant | works_at | Mall_Group
+Mall_Group | headquartered_in | Prague

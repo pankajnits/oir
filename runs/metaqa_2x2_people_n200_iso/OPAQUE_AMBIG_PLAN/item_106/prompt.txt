@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_106]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_106 #####
+QUESTION:
+Who directed a movie that Robert De Niro starred in?
+
+PATH_QUERY
+START Robert De Niro
+R1 E4d2ffedb63c6
+R2 Eaf303596c048
+Execute path; return final tail only.
+
+CONTEXT:
+Robert De Niro | E4d2ffedb63c6 | Backdraft
+Backdraft | Eaf303596c048 | Ron Howard
+Backdraft | Ebe502b23ccb2 | Gregory Widen

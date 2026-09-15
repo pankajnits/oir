@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_90]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_90 #####
+QUESTION:
+Who directed a movie that Shia LaBeouf starred in?
+
+PATH_QUERY
+START Shia LaBeouf
+R1 E4c6bc0ab0962
+R2 E9a58113476bb
+Execute path; return final tail only.
+
+CONTEXT:
+Shia LaBeouf | E4c6bc0ab0962 | Tru Confessions
+Tru Confessions | E9a58113476bb | Paul Hoen
+Tru Confessions | E125011299a5b | Janet Tashjian

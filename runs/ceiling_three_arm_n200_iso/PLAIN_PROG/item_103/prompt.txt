@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_103 #####
+PATH_QUERY
+START Nina_Mevold
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nina_Mevold | works_at | Hospital_of_Southern_Norway
+Hospital_of_Southern_Norway | headquartered_in | Kristiansand
+DecoyCo_Hospital_of_Southern_Norway | headquartered_in | DecoyHQ_Kristiansand
+Hospital_of_Southern_Norway | owned_by | Hold_Hospital_of_Southern_Norway
+Hold_Hospital_of_Southern_Norway | meta_of | Hospital_of_Southern_Norway
+Hospital_of_Southern_Norway | partner_of | Partner_Hospital_of_Southern_Norway
+Partner_Hospital_of_Southern_Norway | meta_of | Hospital_of_Southern_Norway
+Decoy_DecoyCo_Hospital_of_Southern_Norway | works_at | DecoyCo_Hospital_of_Southern_Norway

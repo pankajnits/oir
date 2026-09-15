@@ -1,0 +1,36 @@
+{
+  "id": "H200_bc5e167939",
+  "arm": "OPQ_NONE_CYC",
+  "item": 77,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_77/prompt.txt",
+  "pred": "Mumbai",
+  "raw": "ANSWER_PLAIN[H200_bc5e167939]: Mumbai",
+  "elapsed_s": 1.785,
+  "utc": "2026-09-15T08:48:44.960808+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ8FQc56OBP8g73zmSm5H4pKbN4d",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462123,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 170,
+    "total_tokens": 186,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_116]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_116 #####
+QUESTION:
+Who directed a movie that Sigourney Weaver starred in?
+
+PATH_QUERY
+START Sigourney Weaver
+R1 Ed0fa70284a70
+R2 Ed4f23e34c4bd
+Execute path; return final tail only.
+
+CONTEXT:
+Sigourney Weaver | Ed0fa70284a70 | You Again
+You Again | Ed4f23e34c4bd | Andy Fickman
+You Again | Ee2e9f9881bc1 | Moe Jelline

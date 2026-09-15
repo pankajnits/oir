@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_AMBIG_140",
+  "arm": "OPAQUE_AMBIG",
+  "item": 140,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_140/prompt.txt",
+  "pred": "Richard Fleischer or Joseph Wambaugh",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_140]: Richard Fleischer or Joseph Wambaugh",
+  "elapsed_s": 6.553,
+  "utc": "2026-09-15T09:20:26.613329+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJcqcyPs9UBAlcng31AtVnlHrS5E",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789464020,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 260,
+    "prompt_tokens": 190,
+    "total_tokens": 450,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 227,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

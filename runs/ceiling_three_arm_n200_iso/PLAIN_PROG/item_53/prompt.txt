@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_53 #####
+PATH_QUERY
+START Samantha_Power
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Samantha_Power | works_at | United_States_Agency_for_International_Development
+United_States_Agency_for_International_Development | headquartered_in | Washington_D.C.
+DecoyCo_United_States_Agency_for_International_Development | headquartered_in | DecoyHQ_Washington_D.C.
+United_States_Agency_for_International_Development | owned_by | Hold_United_States_Agency_for_International_Development
+Hold_United_States_Agency_for_International_Development | meta_of | United_States_Agency_for_International_Development
+United_States_Agency_for_International_Development | partner_of | Partner_United_States_Agency_for_International_Development
+Partner_United_States_Agency_for_International_Development | meta_of | United_States_Agency_for_International_Development
+Decoy_DecoyCo_United_States_Agency_for_International_Development | works_at | DecoyCo_United_States_Agency_for_International_Development

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_12]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_12 #####
+QUESTION:
+What city is the headquarters of the company led by Saeed_Amidi?
+
+PATH_QUERY
+START Saeed_Amidi
+R1 E92052b448528
+R2 E3918f8289c75
+Execute path; return final tail only.
+
+CONTEXT:
+Saeed_Amidi | E92052b448528 | Plug_and_Play_Tech_Center
+Plug_and_Play_Tech_Center | E3918f8289c75 | Sunnyvale
+Saeed_Amidi | E0752d934642e | Bristol-Myers_Squibb
+Bristol-Myers_Squibb | E9db93827a8bb | New_York_City

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_169]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_169 #####
+QUESTION:
+What city is the headquarters of the company led by Mike_Lindell?
+
+PATH_QUERY
+START Mike_Lindell
+R1 E194647e8082d
+R2 E1a9a447c0d6a
+Execute path; return final tail only.
+
+CONTEXT:
+Mike_Lindell | E194647e8082d | My_Pillow
+My_Pillow | E1a9a447c0d6a | Chaska
+Mike_Lindell | E9fd993a0e6ec | Air_New_Zealand
+Air_New_Zealand | Ef501cd287eaf | Auckland

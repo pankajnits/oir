@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_155]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_155 #####
+QUESTION:
+Who directed a movie that Jeremy Irons starred in?
+
+PATH_QUERY
+START Jeremy Irons
+R1 Ef1df93f32d73
+R2 Ec6ab949238cc
+Execute path; return final tail only.
+
+CONTEXT:
+Jeremy Irons | Ef1df93f32d73 | Damage
+Damage | Ec6ab949238cc | Louis Malle
+Damage | E2837318666a1 | Josephine Hart

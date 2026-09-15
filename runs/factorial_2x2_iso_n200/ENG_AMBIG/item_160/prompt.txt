@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_160]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_160 #####
+QUESTION:
+What city is the headquarters of the company led by Peter_Wilt?
+
+CONTEXT:
+Peter_Wilt | works_at | Chicago_House_AC
+Chicago_House_AC | headquartered_in | Chicago
+Peter_Wilt | partner_of | National_Media_Group
+National_Media_Group | located_in | Moscow

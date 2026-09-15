@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_30]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_30 #####
+QUESTION:
+What city is the headquarters of the company led by Ibrahim_Assane_Mayaki?
+
+PATH_QUERY
+START Ibrahim_Assane_Mayaki
+R1 E8c51f0e0e864
+R2 Eaa6d6b5d61b5
+Execute path; return final tail only.
+
+CONTEXT:
+Ibrahim_Assane_Mayaki | E8c51f0e0e864 | New_Partnership_for_Africa_s_Development
+New_Partnership_for_Africa_s_Development | Eaa6d6b5d61b5 | Midrand
+Ibrahim_Assane_Mayaki | E8923131717b9 | Adyen
+Adyen | E2c6aac5dc679 | Amsterdam

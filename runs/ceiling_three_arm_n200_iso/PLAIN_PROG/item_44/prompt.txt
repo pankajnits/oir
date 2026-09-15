@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_44 #####
+PATH_QUERY
+START Ji_Fajt
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ji_Fajt | works_at | National_Gallery_Prague
+National_Gallery_Prague | headquartered_in | Prague
+DecoyCo_National_Gallery_Prague | headquartered_in | DecoyHQ_Prague
+National_Gallery_Prague | owned_by | Hold_National_Gallery_Prague
+Hold_National_Gallery_Prague | meta_of | National_Gallery_Prague
+National_Gallery_Prague | partner_of | Partner_National_Gallery_Prague
+Partner_National_Gallery_Prague | meta_of | National_Gallery_Prague
+Decoy_DecoyCo_National_Gallery_Prague | works_at | DecoyCo_National_Gallery_Prague

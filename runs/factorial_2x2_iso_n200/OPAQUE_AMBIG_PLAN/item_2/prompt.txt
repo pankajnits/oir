@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_2]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_2 #####
+QUESTION:
+What city is the headquarters of the company led by Mia_Couto?
+
+PATH_QUERY
+START Mia_Couto
+R1 E833a1789832c
+R2 Ee386b538af5e
+Execute path; return final tail only.
+
+CONTEXT:
+Mia_Couto | E833a1789832c | Tempogr_fica
+Tempogr_fica | Ee386b538af5e | Maputo
+Mia_Couto | Ed5275bb47d46 | Coloplast
+Coloplast | E8df8c63148e6 | Humleb_k

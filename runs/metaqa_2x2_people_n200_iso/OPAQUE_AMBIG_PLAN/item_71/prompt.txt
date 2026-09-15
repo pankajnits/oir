@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_71]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_71 #####
+QUESTION:
+Who directed a movie that Raquel Welch starred in?
+
+PATH_QUERY
+START Raquel Welch
+R1 E233d3204d227
+R2 Ec7f2af6e7ba4
+Execute path; return final tail only.
+
+CONTEXT:
+Raquel Welch | E233d3204d227 | Fathom
+Fathom | Ec7f2af6e7ba4 | Leslie H. Martinson
+Fathom | Ecd4fef1e5a4b | Larry Forrester

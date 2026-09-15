@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_108 #####
+PATH_QUERY
+START Tom_McAlpin
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Tom_McAlpin | works_at | Virgin_Voyages
+Virgin_Voyages | headquartered_in | Plantation
+DecoyCo_Virgin_Voyages | headquartered_in | DecoyHQ_Plantation
+Virgin_Voyages | owned_by | Hold_Virgin_Voyages
+Hold_Virgin_Voyages | meta_of | Virgin_Voyages
+Virgin_Voyages | partner_of | Partner_Virgin_Voyages
+Partner_Virgin_Voyages | meta_of | Virgin_Voyages
+Decoy_DecoyCo_Virgin_Voyages | works_at | DecoyCo_Virgin_Voyages

@@ -1,0 +1,36 @@
+{
+  "id": "H200_e058be9a65",
+  "arm": "OPQ_K2_CRV",
+  "item": 82,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CRV/item_82/prompt.txt",
+  "pred": "Bonn",
+  "raw": "ANSWER_PLAIN[H200_e058be9a65]: Bonn",
+  "elapsed_s": 2.704,
+  "utc": "2026-09-15T08:47:22.574291+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ6uk4EPxUMa68jQTia86ySwz7tx",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462040,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 60,
+    "prompt_tokens": 174,
+    "total_tokens": 234,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 37,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

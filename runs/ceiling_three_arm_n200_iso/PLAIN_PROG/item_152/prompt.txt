@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_152 #####
+PATH_QUERY
+START Eli_Bin
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Eli_Bin | works_at | Magen_David_Adom
+Magen_David_Adom | headquartered_in | Or_Yehuda
+DecoyCo_Magen_David_Adom | headquartered_in | DecoyHQ_Or_Yehuda
+Magen_David_Adom | owned_by | Hold_Magen_David_Adom
+Hold_Magen_David_Adom | meta_of | Magen_David_Adom
+Magen_David_Adom | partner_of | Partner_Magen_David_Adom
+Partner_Magen_David_Adom | meta_of | Magen_David_Adom
+Decoy_DecoyCo_Magen_David_Adom | works_at | DecoyCo_Magen_David_Adom

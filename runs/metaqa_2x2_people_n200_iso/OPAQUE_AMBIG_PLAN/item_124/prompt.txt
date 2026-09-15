@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_124]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_124 #####
+QUESTION:
+Who directed a movie that Dustin Hoffman starred in?
+
+PATH_QUERY
+START Dustin Hoffman
+R1 E90ee960655b1
+R2 E0d32afd44c51
+Execute path; return final tail only.
+
+CONTEXT:
+Dustin Hoffman | E90ee960655b1 | Marathon Man
+Marathon Man | E0d32afd44c51 | John Schlesinger
+Marathon Man | Edb644f046764 | William Goldman

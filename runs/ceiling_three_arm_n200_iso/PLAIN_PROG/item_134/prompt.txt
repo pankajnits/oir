@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_134 #####
+PATH_QUERY
+START Avigdor_Ohana
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Avigdor_Ohana | works_at | Ma_ayan_HaChinuch_HaTorani
+Ma_ayan_HaChinuch_HaTorani | headquartered_in | Jerusalem
+DecoyCo_Ma_ayan_HaChinuch_HaTorani | headquartered_in | DecoyHQ_Jerusalem
+Ma_ayan_HaChinuch_HaTorani | owned_by | Hold_Ma_ayan_HaChinuch_HaTorani
+Hold_Ma_ayan_HaChinuch_HaTorani | meta_of | Ma_ayan_HaChinuch_HaTorani
+Ma_ayan_HaChinuch_HaTorani | partner_of | Partner_Ma_ayan_HaChinuch_HaTorani
+Partner_Ma_ayan_HaChinuch_HaTorani | meta_of | Ma_ayan_HaChinuch_HaTorani
+Decoy_DecoyCo_Ma_ayan_HaChinuch_HaTorani | works_at | DecoyCo_Ma_ayan_HaChinuch_HaTorani

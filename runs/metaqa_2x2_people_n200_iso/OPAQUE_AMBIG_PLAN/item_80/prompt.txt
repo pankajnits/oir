@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_80]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_80 #####
+QUESTION:
+Who directed a movie that Antonio Banderas starred in?
+
+PATH_QUERY
+START Antonio Banderas
+R1 E462fea2a5867
+R2 E1b35df175f75
+Execute path; return final tail only.
+
+CONTEXT:
+Antonio Banderas | E462fea2a5867 | The Big Bang
+The Big Bang | E1b35df175f75 | Tony Krantz
+The Big Bang | E0640e204d81f | Erik Jendresen

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_122]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_122 #####
+QUESTION:
+What city is the headquarters of the company led by Ivica_Todori?
+
+PATH_QUERY
+START Ivica_Todori
+R1 E6af09d89fe2e
+R2 E796219c72777
+Execute path; return final tail only.
+
+CONTEXT:
+Ivica_Todori | E6af09d89fe2e | Agrokor
+Agrokor | E796219c72777 | Zagreb
+Ivica_Todori | E152dcc538199 | Constant_Contact
+Constant_Contact | E428f2472993e | Waltham

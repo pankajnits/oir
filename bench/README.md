@@ -9,7 +9,10 @@ The **primary** isolation is the Wikidata matched $2{\times}2$ (start in $q$, re
 | Suite | n | Protocol | What it measures | Prompts | Scorer |
 |-------|---|---------|------------------|---------|--------|
 | Wikidata matched $2{\times}2$ | 32 | isolation, per-item HMAC on relations | English vs opaque relations × unique vs two paths | `runs/factorial_2x2_iso/` | `harness/score_factorial_2x2.py` |
+| Wikidata matched $2{\times}2$ n=200 | 200 | city-typed QID freeze, isolation | same $2{\times}2$ on P169/P159/P31 cities | `runs/factorial_2x2_iso_n200/` | `harness/score_factorial_2x2.py gpt56n200 factorial_2x2_iso_n200_harness` |
 | Header × decoy ablation | 32×7 | isolation, Wiki-H5 keys, arm-neutral ids | ARM header × cyclic vs constant decoy | `runs/header_decoy_ablation_iso/` | `harness/header_decoy_ablation_iso.py` |
+| Header × decoy n=200 | 200×7 | same HMAC as Wiki-H5 n=200 | 4096/medium seven-arm lock; 512 queried H5-cyclic only | `runs/header_decoy_ablation_iso_n200/` | `harness/header_decoy_ablation_iso.py score gpt56n200abl header_decoy_ablation_iso_n200_harness` |
+| WikiMovies Condition A/B n=200 | 200 | isolation; A uses Wiki-H5 topology ARM | not a resample of A100 (`ARM OPAQUE_AMBIG n=100`) | `runs/metaqa_2x2_people_n200_iso/` | `harness/score_factorial_2x2.py gpt56n200 metaqa_2x2_people_n200_iso_harness` |
 | Three-arm CEO | 32 | isolation, per-item HMAC | plaintext plan vs sealed plan vs free sealed English | `runs/ceiling_three_arm_n32_iso/` | `harness/score_ceiling_n32_iso.py` |
 | Dual-path elicitation | 32×5 | isolation | matched-relation vs novel-relation vs explicit plan | `runs/adv_induction_n32_iso/` | `harness/score_adv_n32_iso.py` |
 | Non-LLM ceilings | 200 | frozen split | SealRouter / BM25 / gold SQL | `results/oir_bench_baselines.json` | already scored |

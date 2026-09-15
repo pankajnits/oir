@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200S_ENG_AMBIG_190]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200S_ENG_AMBIG_190 #####
+QUESTION:
+What city is the headquarters of the company led by Maciej_Banach?
+
+CONTEXT:
+Maciej_Banach | partner_of | Suffolk_Construction_Company
+Suffolk_Construction_Company | located_in | Boston
+Maciej_Banach | works_at | Grupa_Handlo-Budowa
+Grupa_Handlo-Budowa | headquartered_in | Bydgoszcz

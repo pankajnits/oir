@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_48 #####
+PATH_QUERY
+START Henning_Windelband
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Henning_Windelband | works_at | youngfilms
+youngfilms | headquartered_in | Hamburg
+DecoyCo_youngfilms | headquartered_in | DecoyHQ_Hamburg
+youngfilms | owned_by | Hold_youngfilms
+Hold_youngfilms | meta_of | youngfilms
+youngfilms | partner_of | Partner_youngfilms
+Partner_youngfilms | meta_of | youngfilms
+Decoy_DecoyCo_youngfilms | works_at | DecoyCo_youngfilms

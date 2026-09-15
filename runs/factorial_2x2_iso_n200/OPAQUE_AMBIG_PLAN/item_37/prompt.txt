@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_37]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_37 #####
+QUESTION:
+What city is the headquarters of the company led by Jaros_aw_Kotarski?
+
+PATH_QUERY
+START Jaros_aw_Kotarski
+R1 E1765a390b8a5
+R2 E636de2c1ee4f
+Execute path; return final tail only.
+
+CONTEXT:
+Jaros_aw_Kotarski | E1765a390b8a5 | Unity_Line
+Unity_Line | E636de2c1ee4f | Szczecin
+Jaros_aw_Kotarski | E581c936fb7d8 | Flutter_Entertainment
+Flutter_Entertainment | E19df0e3fb215 | Dublin

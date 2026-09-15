@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_170]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_170 #####
+QUESTION:
+What city is the headquarters of the company led by Greg_Foran?
+
+PATH_QUERY
+START Greg_Foran
+R1 E74667b2c0a3e
+R2 Ead35a6201100
+Execute path; return final tail only.
+
+CONTEXT:
+Greg_Foran | E74667b2c0a3e | Air_New_Zealand
+Air_New_Zealand | Ead35a6201100 | Auckland
+Greg_Foran | E3ab90fd72b11 | RedBalloon
+RedBalloon | E82098153074b | Sydney

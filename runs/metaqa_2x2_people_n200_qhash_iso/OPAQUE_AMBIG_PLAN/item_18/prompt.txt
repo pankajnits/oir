@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_18]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_18 #####
+QUESTION:
+Who Ec06d4133c964 a E4d2ab55c6089 E8dfb4cbe7e55 [Burt Lancaster] Ea288258ed9f6 E0602655d576c?
+
+PATH_QUERY
+START Burt Lancaster
+R1 E42b7e63288b3
+R2 E4c081c3b336c
+Execute path; return final tail only.
+
+CONTEXT:
+Burt Lancaster | E42b7e63288b3 | Ulzana's Raid
+Ulzana's Raid | E4c081c3b336c | Robert Aldrich
+Ulzana's Raid | E505a4fafa1a2 | Alan Sharp

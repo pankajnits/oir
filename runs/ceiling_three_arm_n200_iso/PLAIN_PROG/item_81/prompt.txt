@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_81 #####
+PATH_QUERY
+START Jeff_Miller
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jeff_Miller | works_at | Halliburton
+Halliburton | headquartered_in | Dubai
+DecoyCo_Halliburton | headquartered_in | DecoyHQ_Dubai
+Halliburton | owned_by | Hold_Halliburton
+Hold_Halliburton | meta_of | Halliburton
+Halliburton | partner_of | Partner_Halliburton
+Partner_Halliburton | meta_of | Halliburton
+Decoy_DecoyCo_Halliburton | works_at | DecoyCo_Halliburton

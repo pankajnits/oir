@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_139 #####
+PATH_QUERY
+START Dani_le_Marcovici
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Dani_le_Marcovici | works_at | Raja_Group
+Raja_Group | headquartered_in | Tremblay-en-France
+DecoyCo_Raja_Group | headquartered_in | DecoyHQ_Tremblay-en-France
+Raja_Group | owned_by | Hold_Raja_Group
+Hold_Raja_Group | meta_of | Raja_Group
+Raja_Group | partner_of | Partner_Raja_Group
+Partner_Raja_Group | meta_of | Raja_Group
+Decoy_DecoyCo_Raja_Group | works_at | DecoyCo_Raja_Group

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_196]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_196 #####
+QUESTION:
+What city is the headquarters of the company led by Nawat_Itsaragrisil?
+
+PATH_QUERY
+START Nawat_Itsaragrisil
+R1 E93230c68e6cf
+R2 E8d3ab73b0a6e
+Execute path; return final tail only.
+
+CONTEXT:
+Nawat_Itsaragrisil | E93230c68e6cf | Miss_Grand_International_company
+Miss_Grand_International_company | E8d3ab73b0a6e | Bangkok
+Nawat_Itsaragrisil | E70727e3cc76c | Danish_Crown
+Danish_Crown | E9579e4f0b009 | Randers

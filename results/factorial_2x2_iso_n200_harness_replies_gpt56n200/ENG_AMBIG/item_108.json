@@ -1,0 +1,35 @@
+{
+  "id": "F200_ENG_AMBIG_108",
+  "arm": "ENG_AMBIG",
+  "item": 108,
+  "prompt_path": "runs/factorial_2x2_iso_n200/ENG_AMBIG/item_108/prompt.txt",
+  "pred": "Plantation",
+  "raw": "ANSWER_PLAIN[F200_ENG_AMBIG_108]: Plantation",
+  "elapsed_s": 1.455,
+  "utc": "2026-09-15T08:40:06.365002+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOIztDV98FBJNO7rAzWEDqCGzGI1k",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461605,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 141,
+    "total_tokens": 157,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

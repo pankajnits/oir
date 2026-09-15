@@ -1,0 +1,35 @@
+{
+  "id": "CEIL200_PLAIN_196",
+  "arm": "PLAIN_PROG",
+  "item": 196,
+  "prompt_path": "runs/ceiling_three_arm_n200_iso/PLAIN_PROG/item_196/prompt.txt",
+  "pred": "Bangkok",
+  "raw": "ANSWER_PLAIN[CEIL200_PLAIN_196]: Bangkok",
+  "elapsed_s": 1.402,
+  "utc": "2026-09-15T09:00:24.371732+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJJXtwQAG2yMoEHjn2g8VsZyNSbl",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462823,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 246,
+    "total_tokens": 262,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

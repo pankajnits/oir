@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_147]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_147 #####
+QUESTION:
+Who directed a movie that Tim Roth starred in?
+
+PATH_QUERY
+START Tim Roth
+R1 E675bf1b6874b
+R2 Ef9884ba59b8e
+Execute path; return final tail only.
+
+CONTEXT:
+Tim Roth | E675bf1b6874b | Vatel
+Vatel | Ef9884ba59b8e | Roland Joffé
+Vatel | Ed3b62156efd1 | Tom Stoppard

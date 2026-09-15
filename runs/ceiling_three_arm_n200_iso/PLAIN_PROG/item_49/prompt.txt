@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_49 #####
+PATH_QUERY
+START Dow_Constantine
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Dow_Constantine | works_at | Sound_Transit
+Sound_Transit | headquartered_in | Seattle
+DecoyCo_Sound_Transit | headquartered_in | DecoyHQ_Seattle
+Sound_Transit | owned_by | Hold_Sound_Transit
+Hold_Sound_Transit | meta_of | Sound_Transit
+Sound_Transit | partner_of | Partner_Sound_Transit
+Partner_Sound_Transit | meta_of | Sound_Transit
+Decoy_DecoyCo_Sound_Transit | works_at | DecoyCo_Sound_Transit

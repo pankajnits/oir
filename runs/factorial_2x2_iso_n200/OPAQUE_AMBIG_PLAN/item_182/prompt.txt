@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_182]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_182 #####
+QUESTION:
+What city is the headquarters of the company led by Peter_Sunde?
+
+PATH_QUERY
+START Peter_Sunde
+R1 Ee4fb56ebffde
+R2 E5873e9c96720
+Execute path; return final tail only.
+
+CONTEXT:
+Peter_Sunde | Ee4fb56ebffde | Flattr
+Flattr | E5873e9c96720 | Malm
+Peter_Sunde | Ed572361538db | Paradox_Interactive
+Paradox_Interactive | E6f055d718d78 | Stockholm

@@ -1,0 +1,36 @@
+{
+  "id": "H200_11e5b68448",
+  "arm": "OPQ_NONE_CYC",
+  "item": 131,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_131/prompt.txt",
+  "pred": "Shanghai",
+  "raw": "ANSWER_PLAIN[H200_11e5b68448]: Shanghai",
+  "elapsed_s": 1.894,
+  "utc": "2026-09-15T08:49:01.591117+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ8WKQyfHPuUrSZAhKh6oE2Zeocb",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462140,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 58,
+    "prompt_tokens": 189,
+    "total_tokens": 247,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 34,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

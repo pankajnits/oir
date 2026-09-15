@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_94 #####
+PATH_QUERY
+START Carsten_Spohr
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Carsten_Spohr | works_at | Lufthansa
+Lufthansa | headquartered_in | Cologne
+DecoyCo_Lufthansa | headquartered_in | DecoyHQ_Cologne
+Lufthansa | owned_by | Hold_Lufthansa
+Hold_Lufthansa | meta_of | Lufthansa
+Lufthansa | partner_of | Partner_Lufthansa
+Partner_Lufthansa | meta_of | Lufthansa
+Decoy_DecoyCo_Lufthansa | works_at | DecoyCo_Lufthansa

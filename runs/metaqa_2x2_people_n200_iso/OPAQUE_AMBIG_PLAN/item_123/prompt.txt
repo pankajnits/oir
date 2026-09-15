@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_123]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_123 #####
+QUESTION:
+Who directed a movie that John Turturro starred in?
+
+PATH_QUERY
+START John Turturro
+R1 Ef736a25e938e
+R2 E015ae8e03a5b
+Execute path; return final tail only.
+
+CONTEXT:
+John Turturro | Ef736a25e938e | The Luzhin Defence
+The Luzhin Defence | E015ae8e03a5b | Marleen Gorris
+The Luzhin Defence | E6bfcae93cc03 | Vladimir Nabokov

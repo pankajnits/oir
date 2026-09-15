@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_101]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_101 #####
+QUESTION:
+Who directed a movie that Kate Beckinsale starred in?
+
+PATH_QUERY
+START Kate Beckinsale
+R1 E354df6306893
+R2 Ed2c949597df9
+Execute path; return final tail only.
+
+CONTEXT:
+Kate Beckinsale | E354df6306893 | Cold Comfort Farm
+Cold Comfort Farm | Ed2c949597df9 | John Schlesinger
+Cold Comfort Farm | Ec92e05a86936 | Stella Gibbons

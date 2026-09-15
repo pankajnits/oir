@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_177]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_177 #####
+QUESTION:
+Who directed a movie that Jason Statham starred in?
+
+PATH_QUERY
+START Jason Statham
+R1 E1deedaa7770e
+R2 E0c92ae3025ff
+Execute path; return final tail only.
+
+CONTEXT:
+Jason Statham | E1deedaa7770e | Blitz
+Blitz | E0c92ae3025ff | Elliott Lester
+Blitz | E2405029364cf | Ken Bruen

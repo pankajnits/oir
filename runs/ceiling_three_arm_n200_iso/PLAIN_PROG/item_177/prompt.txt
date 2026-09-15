@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_177 #####
+PATH_QUERY
+START Frank_Melloul
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Frank_Melloul | works_at | i24NEWS
+i24NEWS | headquartered_in | Tel_Aviv
+DecoyCo_i24NEWS | headquartered_in | DecoyHQ_Tel_Aviv
+i24NEWS | owned_by | Hold_i24NEWS
+Hold_i24NEWS | meta_of | i24NEWS
+i24NEWS | partner_of | Partner_i24NEWS
+Partner_i24NEWS | meta_of | i24NEWS
+Decoy_DecoyCo_i24NEWS | works_at | DecoyCo_i24NEWS

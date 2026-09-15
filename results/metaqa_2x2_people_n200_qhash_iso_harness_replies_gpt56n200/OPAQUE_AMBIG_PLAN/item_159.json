@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_AMBIG_PLAN_159",
+  "arm": "OPAQUE_AMBIG_PLAN",
+  "item": 159,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG_PLAN/item_159/prompt.txt",
+  "pred": "John Dahl",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_159]: John Dahl",
+  "elapsed_s": 2.225,
+  "utc": "2026-09-15T09:21:31.832467+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJdyseHAy9xqTB3TpzFsg8LZHRT7",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789464090,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 22,
+    "prompt_tokens": 223,
+    "total_tokens": 245,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

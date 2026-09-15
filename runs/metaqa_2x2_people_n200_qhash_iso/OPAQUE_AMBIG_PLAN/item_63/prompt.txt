@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_63]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_63 #####
+QUESTION:
+Who E4672b2286d4f a E69b47d488e3c E00feea884df2 [Hedy Lamarr] Ef6a74160b75d E9cc9816a3110?
+
+PATH_QUERY
+START Hedy Lamarr
+R1 Ed2cb17d07695
+R2 Eb47893389501
+Execute path; return final tail only.
+
+CONTEXT:
+Hedy Lamarr | Ed2cb17d07695 | Experiment Perilous
+Experiment Perilous | Eb47893389501 | Jacques Tourneur
+Experiment Perilous | Ed9ae51fb8652 | Margaret Carpenter

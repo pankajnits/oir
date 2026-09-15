@@ -1,0 +1,36 @@
+{
+  "id": "H200_5f4f8be568",
+  "arm": "OPQ_NONE_CRV",
+  "item": 151,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CRV/item_151/prompt.txt",
+  "pred": "Quebec_City",
+  "raw": "ANSWER_PLAIN[H200_5f4f8be568]: Quebec_City",
+  "elapsed_s": 1.425,
+  "utc": "2026-09-15T08:50:04.716383+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ9XLAth0khpvlowDw3ikNnWGiGo",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462203,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 146,
+    "total_tokens": 167,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

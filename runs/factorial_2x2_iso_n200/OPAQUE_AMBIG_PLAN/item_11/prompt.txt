@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_11]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_11 #####
+QUESTION:
+What city is the headquarters of the company led by V_t_Vrba?
+
+PATH_QUERY
+START V_t_Vrba
+R1 Edd2fd26ee54b
+R2 E09d231ababa3
+Execute path; return final tail only.
+
+CONTEXT:
+V_t_Vrba | Edd2fd26ee54b | Webnode_AG
+Webnode_AG | E09d231ababa3 | Zug
+V_t_Vrba | E4c9f430e3e15 | Plug_and_Play_Tech_Center
+Plug_and_Play_Tech_Center | E89500a0fe6c9 | Sunnyvale

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_105 #####
+PATH_QUERY
+START Jean-Marc_Harion
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jean-Marc_Harion | works_at | Orange_Egypt
+Orange_Egypt | headquartered_in | Cairo
+DecoyCo_Orange_Egypt | headquartered_in | DecoyHQ_Cairo
+Orange_Egypt | owned_by | Hold_Orange_Egypt
+Hold_Orange_Egypt | meta_of | Orange_Egypt
+Orange_Egypt | partner_of | Partner_Orange_Egypt
+Partner_Orange_Egypt | meta_of | Orange_Egypt
+Decoy_DecoyCo_Orange_Egypt | works_at | DecoyCo_Orange_Egypt

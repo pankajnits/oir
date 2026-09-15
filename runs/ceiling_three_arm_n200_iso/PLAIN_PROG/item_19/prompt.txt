@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_19 #####
+PATH_QUERY
+START Laura_J._Alber
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Laura_J._Alber | works_at | Williams-Sonoma_Inc.
+Williams-Sonoma_Inc. | headquartered_in | San_Francisco
+DecoyCo_Williams-Sonoma_Inc. | headquartered_in | DecoyHQ_San_Francisco
+Williams-Sonoma_Inc. | owned_by | Hold_Williams-Sonoma_Inc.
+Hold_Williams-Sonoma_Inc. | meta_of | Williams-Sonoma_Inc.
+Williams-Sonoma_Inc. | partner_of | Partner_Williams-Sonoma_Inc.
+Partner_Williams-Sonoma_Inc. | meta_of | Williams-Sonoma_Inc.
+Decoy_DecoyCo_Williams-Sonoma_Inc. | works_at | DecoyCo_Williams-Sonoma_Inc.

@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_43]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_43 #####
+QUESTION:
+What city is the headquarters of the company led by Prem_Watsa?
+
+CONTEXT:
+Prem_Watsa | works_at | Fairfax_Financial
+Fairfax_Financial | headquartered_in | Toronto
+Prem_Watsa | partner_of | National_Gallery_Prague
+National_Gallery_Prague | located_in | Prague

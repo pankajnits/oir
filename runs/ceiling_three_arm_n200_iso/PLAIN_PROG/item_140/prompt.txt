@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_140 #####
+PATH_QUERY
+START Martin_Geissler
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Martin_Geissler | works_at | Mitteldeutscher_Basketball_Club
+Mitteldeutscher_Basketball_Club | headquartered_in | Wei_enfels
+DecoyCo_Mitteldeutscher_Basketball_Club | headquartered_in | DecoyHQ_Wei_enfels
+Mitteldeutscher_Basketball_Club | owned_by | Hold_Mitteldeutscher_Basketball_Club
+Hold_Mitteldeutscher_Basketball_Club | meta_of | Mitteldeutscher_Basketball_Club
+Mitteldeutscher_Basketball_Club | partner_of | Partner_Mitteldeutscher_Basketball_Club
+Partner_Mitteldeutscher_Basketball_Club | meta_of | Mitteldeutscher_Basketball_Club
+Decoy_DecoyCo_Mitteldeutscher_Basketball_Club | works_at | DecoyCo_Mitteldeutscher_Basketball_Club

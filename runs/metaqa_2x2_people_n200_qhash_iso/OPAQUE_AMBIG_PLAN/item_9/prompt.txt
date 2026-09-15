@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_9]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_9 #####
+QUESTION:
+Who E1ba8a3d71746 a E3e24e915a253 E196d66548b89 [Amy Adams] Eb88bd5e0b76d E003fc2bc53ec?
+
+PATH_QUERY
+START Amy Adams
+R1 E97e6c8299149
+R2 E34184624e593
+Execute path; return final tail only.
+
+CONTEXT:
+Amy Adams | E97e6c8299149 | Enchanted
+Enchanted | E34184624e593 | Kevin Lima
+Enchanted | E0669d3c35011 | Bill Kelly

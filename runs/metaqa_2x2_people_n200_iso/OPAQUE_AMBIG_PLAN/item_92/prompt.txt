@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_92]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_92 #####
+QUESTION:
+Who directed a movie that Jean Parker starred in?
+
+PATH_QUERY
+START Jean Parker
+R1 E46bcd391db1c
+R2 E1a550dde85eb
+Execute path; return final tail only.
+
+CONTEXT:
+Jean Parker | E46bcd391db1c | Adventures of Kitty O'Day
+Adventures of Kitty O'Day | E1a550dde85eb | William Beaudine
+Adventures of Kitty O'Day | E46c40795c817 | Tim Ryan

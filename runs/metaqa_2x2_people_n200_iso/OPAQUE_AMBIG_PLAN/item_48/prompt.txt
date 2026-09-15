@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_48]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_48 #####
+QUESTION:
+Who directed a movie that Harry Dean Stanton starred in?
+
+PATH_QUERY
+START Harry Dean Stanton
+R1 E27160611ffd2
+R2 Ecc1c845c0f7e
+Execute path; return final tail only.
+
+CONTEXT:
+Harry Dean Stanton | E27160611ffd2 | Cockfighter
+Cockfighter | Ecc1c845c0f7e | Monte Hellman
+Cockfighter | Eed025bdc1367 | Charles Willeford

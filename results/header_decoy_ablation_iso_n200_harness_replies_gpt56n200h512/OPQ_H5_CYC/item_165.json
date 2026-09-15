@@ -1,0 +1,35 @@
+{
+  "id": "H200_9a1c2b52ef",
+  "arm": "OPQ_H5_CYC",
+  "item": 165,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_165/prompt.txt",
+  "pred": "Vienna",
+  "raw": "ANSWER_PLAIN[H200_9a1c2b52ef]: Vienna",
+  "elapsed_s": 2.582,
+  "utc": "2026-09-15T08:52:02.708675+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJBQ6CH0hyHoVE7zJafjapnRjQT3",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462320,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 60,
+    "prompt_tokens": 219,
+    "total_tokens": 279,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 34,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

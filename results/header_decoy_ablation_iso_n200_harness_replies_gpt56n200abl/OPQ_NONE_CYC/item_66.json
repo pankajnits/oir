@@ -1,0 +1,36 @@
+{
+  "id": "H200_cf95d88f74",
+  "arm": "OPQ_NONE_CYC",
+  "item": 66,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_66/prompt.txt",
+  "pred": "Aberdeen",
+  "raw": "ANSWER_PLAIN[H200_cf95d88f74]: Aberdeen",
+  "elapsed_s": 3.533,
+  "utc": "2026-09-15T08:48:43.175263+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ8C8DZLpZ6cj5yJlkbESEzltMOh",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462120,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 57,
+    "prompt_tokens": 170,
+    "total_tokens": 227,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 34,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

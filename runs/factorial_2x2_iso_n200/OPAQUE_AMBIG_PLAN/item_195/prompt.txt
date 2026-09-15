@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_195]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_195 #####
+QUESTION:
+What city is the headquarters of the company led by Goh_Choon_Phong?
+
+PATH_QUERY
+START Goh_Choon_Phong
+R1 E601462a46962
+R2 E3e7ffd6353cb
+Execute path; return final tail only.
+
+CONTEXT:
+Goh_Choon_Phong | E601462a46962 | Singapore_Airlines
+Singapore_Airlines | E3e7ffd6353cb | Singapore
+Goh_Choon_Phong | Ec670f169a34e | Miss_Grand_International_company
+Miss_Grand_International_company | E631cc14e3f54 | Bangkok

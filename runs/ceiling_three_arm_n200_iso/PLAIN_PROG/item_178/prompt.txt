@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_178 #####
+PATH_QUERY
+START Tom_R_tting
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Tom_R_tting | works_at | Uninett
+Uninett | headquartered_in | Trondheim
+DecoyCo_Uninett | headquartered_in | DecoyHQ_Trondheim
+Uninett | owned_by | Hold_Uninett
+Hold_Uninett | meta_of | Uninett
+Uninett | partner_of | Partner_Uninett
+Partner_Uninett | meta_of | Uninett
+Decoy_DecoyCo_Uninett | works_at | DecoyCo_Uninett

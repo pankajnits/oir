@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_193",
+  "arm": "OPAQUE_AMBIG",
+  "item": 193,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG/item_193/prompt.txt",
+  "pred": "Richard Quine",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_193]: Richard Quine",
+  "elapsed_s": 3.557,
+  "utc": "2026-09-15T09:16:55.068535+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJZTeFJ668B5ilSminGZBHNC1h6S",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463811,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 83,
+    "prompt_tokens": 141,
+    "total_tokens": 224,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 56,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

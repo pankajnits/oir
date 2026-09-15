@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_14]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_14 #####
+QUESTION:
+Who directed a movie that Marlon Brando starred in?
+
+PATH_QUERY
+START Marlon Brando
+R1 Ed31424c01413
+R2 E3e6ee72b1bf8
+Execute path; return final tail only.
+
+CONTEXT:
+Marlon Brando | Ed31424c01413 | The Men
+The Men | E3e6ee72b1bf8 | Fred Zinnemann
+The Men | E71e9f0e42bc3 | Carl Foreman

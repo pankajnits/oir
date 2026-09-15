@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_160 #####
+PATH_QUERY
+START Peter_Wilt
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Peter_Wilt | works_at | Chicago_House_AC
+Chicago_House_AC | headquartered_in | Chicago
+DecoyCo_Chicago_House_AC | headquartered_in | DecoyHQ_Chicago
+Chicago_House_AC | owned_by | Hold_Chicago_House_AC
+Hold_Chicago_House_AC | meta_of | Chicago_House_AC
+Chicago_House_AC | partner_of | Partner_Chicago_House_AC
+Partner_Chicago_House_AC | meta_of | Chicago_House_AC
+Decoy_DecoyCo_Chicago_House_AC | works_at | DecoyCo_Chicago_House_AC

@@ -1,0 +1,35 @@
+{
+  "id": "F200_ENG_AMBIG_60",
+  "arm": "ENG_AMBIG",
+  "item": 60,
+  "prompt_path": "runs/factorial_2x2_iso_n200/ENG_AMBIG/item_60/prompt.txt",
+  "pred": "Washington_D.C.",
+  "raw": "ANSWER_PLAIN[F200_ENG_AMBIG_60]: Washington_D.C.",
+  "elapsed_s": 2.012,
+  "utc": "2026-09-15T08:39:56.876224+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOIzjjcFSkImBFeXYU78O7Q3IV003",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461595,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 146,
+    "total_tokens": 165,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

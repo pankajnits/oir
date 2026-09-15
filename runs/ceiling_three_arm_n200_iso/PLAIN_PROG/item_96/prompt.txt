@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_96 #####
+PATH_QUERY
+START Andr_Leysen
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Andr_Leysen | works_at | Agfa-Gevaert
+Agfa-Gevaert | headquartered_in | Leverkusen
+DecoyCo_Agfa-Gevaert | headquartered_in | DecoyHQ_Leverkusen
+Agfa-Gevaert | owned_by | Hold_Agfa-Gevaert
+Hold_Agfa-Gevaert | meta_of | Agfa-Gevaert
+Agfa-Gevaert | partner_of | Partner_Agfa-Gevaert
+Partner_Agfa-Gevaert | meta_of | Agfa-Gevaert
+Decoy_DecoyCo_Agfa-Gevaert | works_at | DecoyCo_Agfa-Gevaert

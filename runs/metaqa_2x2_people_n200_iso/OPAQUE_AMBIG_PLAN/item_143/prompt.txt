@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_143]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_143 #####
+QUESTION:
+Who directed a movie that Richard Dreyfuss starred in?
+
+PATH_QUERY
+START Richard Dreyfuss
+R1 Eeea56911b82b
+R2 Eda4528da3859
+Execute path; return final tail only.
+
+CONTEXT:
+Richard Dreyfuss | Eeea56911b82b | Mr. Holland's Opus
+Mr. Holland's Opus | Eda4528da3859 | Stephen Herek
+Mr. Holland's Opus | Ee94f6db95943 | Patrick Sheane Duncan

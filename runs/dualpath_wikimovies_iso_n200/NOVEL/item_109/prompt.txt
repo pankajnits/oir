@@ -1,0 +1,45 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[DP200_NOVEL_109]: <seal_or_UNKNOWN>
+
+ARM NOVEL: demo seals do not appear on the quiz gold route.
+
+Learn the mapping from DEMOs (same encoding).
+Answer the QUIZ the same way. No English relation names. No PATH.
+If ambiguous, UNKNOWN.
+
+DEMO 0:
+START E5bcea5a15403
+CONTEXT:
+E5bcea5a15403 | Ef1f67bd93105 | E9d7479b9ba0c
+E9d7479b9ba0c | E3a5c6ed96f8f | Ebcb42c5d14ab
+ANSWER_SEALED: Ebcb42c5d14ab
+
+DEMO 1:
+START E82c92d74ae93
+CONTEXT:
+E82c92d74ae93 | Ef1f67bd93105 | E96e8c0623db1
+E96e8c0623db1 | E3a5c6ed96f8f | E64513feed911
+ANSWER_SEALED: E64513feed911
+
+DEMO 2:
+START Eeecff72dc599
+CONTEXT:
+Eeecff72dc599 | Ef1f67bd93105 | E0b7f46ad154a
+E0b7f46ad154a | E3a5c6ed96f8f | E2f98770466a1
+ANSWER_SEALED: E2f98770466a1
+
+DEMO 3:
+START E8878cf52850f
+CONTEXT:
+E8878cf52850f | Ef1f67bd93105 | Ede94fca39046
+Ede94fca39046 | E3a5c6ed96f8f | E55ddc18628ee
+ANSWER_SEALED: E55ddc18628ee
+
+--- QUIZ ---
+##### ID DP200_NOVEL_109 #####
+START E5bc4072af366
+CONTEXT:
+E5bc4072af366 | E5658f124ba4f | Ea052b67f1f11
+Ea052b67f1f11 | Ef23e98a3bf4f | E01cd56712331
+Ea052b67f1f11 | E98732fe2c39a | Ec18ee554603c
+

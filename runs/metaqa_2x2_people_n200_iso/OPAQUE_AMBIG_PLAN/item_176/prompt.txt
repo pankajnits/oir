@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_176]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_176 #####
+QUESTION:
+Who directed a movie that Madonna starred in?
+
+PATH_QUERY
+START Madonna
+R1 Ef1fa1125fa49
+R2 E8b81ff1e6b29
+Execute path; return final tail only.
+
+CONTEXT:
+Madonna | Ef1fa1125fa49 | Body of Evidence
+Body of Evidence | E8b81ff1e6b29 | Uli Edel
+Body of Evidence | E780415f0ac2b | Brad Mirman

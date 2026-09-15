@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_131]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_131 #####
+QUESTION:
+Who directed a movie that Jack Black starred in?
+
+PATH_QUERY
+START Jack Black
+R1 E32f117dbf522
+R2 Eebb124ef4e84
+Execute path; return final tail only.
+
+CONTEXT:
+Jack Black | E32f117dbf522 | School of Rock
+School of Rock | Eebb124ef4e84 | Richard Linklater
+School of Rock | E1e8309e457e0 | Mike White

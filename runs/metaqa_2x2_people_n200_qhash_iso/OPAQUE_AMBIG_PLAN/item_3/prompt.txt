@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_3]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_3 #####
+QUESTION:
+Who E01ce219e72bb a E0ac16221c8ed Efe2efdce16a1 [Matt Dillon] Ed23c47e9059e Ef3d745bbaf8f?
+
+PATH_QUERY
+START Matt Dillon
+R1 Ea2e108f84442
+R2 E62704fb3463d
+Execute path; return final tail only.
+
+CONTEXT:
+Matt Dillon | Ea2e108f84442 | Golden Gate
+Golden Gate | E62704fb3463d | John Madden
+Golden Gate | Ec74d11dd8af9 | David Henry Hwang

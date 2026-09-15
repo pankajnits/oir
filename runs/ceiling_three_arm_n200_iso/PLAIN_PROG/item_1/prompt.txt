@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_1 #####
+PATH_QUERY
+START Arun_Sarin
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Arun_Sarin | works_at | Vodafone
+Vodafone | headquartered_in | London
+DecoyCo_Vodafone | headquartered_in | DecoyHQ_London
+Vodafone | owned_by | Hold_Vodafone
+Hold_Vodafone | meta_of | Vodafone
+Vodafone | partner_of | Partner_Vodafone
+Partner_Vodafone | meta_of | Vodafone
+Decoy_DecoyCo_Vodafone | works_at | DecoyCo_Vodafone

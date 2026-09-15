@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_33 #####
+PATH_QUERY
+START Abdirahman_Diriye
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Abdirahman_Diriye | works_at | Islamic_Council_Norway
+Islamic_Council_Norway | headquartered_in | Oslo
+DecoyCo_Islamic_Council_Norway | headquartered_in | DecoyHQ_Oslo
+Islamic_Council_Norway | owned_by | Hold_Islamic_Council_Norway
+Hold_Islamic_Council_Norway | meta_of | Islamic_Council_Norway
+Islamic_Council_Norway | partner_of | Partner_Islamic_Council_Norway
+Partner_Islamic_Council_Norway | meta_of | Islamic_Council_Norway
+Decoy_DecoyCo_Islamic_Council_Norway | works_at | DecoyCo_Islamic_Council_Norway

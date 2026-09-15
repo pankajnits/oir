@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_179 #####
+PATH_QUERY
+START Theodoric_Chew
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Theodoric_Chew | works_at | Intellect
+Intellect | headquartered_in | Singapore
+DecoyCo_Intellect | headquartered_in | DecoyHQ_Singapore
+Intellect | owned_by | Hold_Intellect
+Hold_Intellect | meta_of | Intellect
+Intellect | partner_of | Partner_Intellect
+Partner_Intellect | meta_of | Intellect
+Decoy_DecoyCo_Intellect | works_at | DecoyCo_Intellect

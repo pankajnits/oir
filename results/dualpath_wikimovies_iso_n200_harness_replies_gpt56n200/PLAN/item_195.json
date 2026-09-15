@@ -1,0 +1,35 @@
+{
+  "id": "DP200_PLAN_195",
+  "arm": "PLAN",
+  "item": 195,
+  "prompt_path": "runs/dualpath_wikimovies_iso_n200/PLAN/item_195/prompt.txt",
+  "pred": "E8dd57291fbe7",
+  "raw": "ANSWER_SEALED[DP200_PLAN_195]: E8dd57291fbe7",
+  "elapsed_s": 1.412,
+  "utc": "2026-09-15T09:25:08.852460+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJhTgZlQgL4THwTAu3DBQaV31WKw",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789464307,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 22,
+    "prompt_tokens": 193,
+    "total_tokens": 215,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

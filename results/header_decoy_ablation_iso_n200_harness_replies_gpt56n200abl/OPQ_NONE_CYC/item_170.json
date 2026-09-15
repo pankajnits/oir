@@ -1,0 +1,36 @@
+{
+  "id": "H200_de081bb487",
+  "arm": "OPQ_NONE_CYC",
+  "item": 170,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_170/prompt.txt",
+  "pred": "Auckland",
+  "raw": "ANSWER_PLAIN[H200_de081bb487]: Auckland",
+  "elapsed_s": 2.832,
+  "utc": "2026-09-15T08:49:12.453088+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ8g50YM5oDUYn64lZiQCFoBsPoD",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462150,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 15,
+    "prompt_tokens": 139,
+    "total_tokens": 154,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

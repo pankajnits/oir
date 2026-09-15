@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_107]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_107 #####
+QUESTION:
+Who Ece97044ebc95 a E70ef84b4cb58 E8fae2fd59671 [Lisa Kudrow] E3acaef853e33 E7ff01580db5e?
+
+PATH_QUERY
+START Lisa Kudrow
+R1 Eaa1af4f99f41
+R2 E5af34f369711
+Execute path; return final tail only.
+
+CONTEXT:
+Lisa Kudrow | Eaa1af4f99f41 | Marci X
+Marci X | E5af34f369711 | Richard Benjamin
+Marci X | Ed6c5bed9a51c | Paul Rudnick

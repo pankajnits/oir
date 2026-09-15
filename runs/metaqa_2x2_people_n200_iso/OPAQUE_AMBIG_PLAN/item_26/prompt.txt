@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_26]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_26 #####
+QUESTION:
+Who directed a movie that Jack Hawkins starred in?
+
+PATH_QUERY
+START Jack Hawkins
+R1 E66bbc38bcf7e
+R2 E0344ebb07d5c
+Execute path; return final tail only.
+
+CONTEXT:
+Jack Hawkins | E66bbc38bcf7e | Land of the Pharaohs
+Land of the Pharaohs | E0344ebb07d5c | Howard Hawks
+Land of the Pharaohs | E4e6763fc5b08 | William Faulkner

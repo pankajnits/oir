@@ -1,0 +1,36 @@
+{
+  "id": "H200_e3a00b37d9",
+  "arm": "ENG_NONE_CYC",
+  "item": 192,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/ENG_NONE_CYC/item_192/prompt.txt",
+  "pred": "Luxembourg",
+  "raw": "ANSWER_PLAIN[H200_e3a00b37d9]: Luxembourg",
+  "elapsed_s": 1.425,
+  "utc": "2026-09-15T08:51:00.876513+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJARYP40d7Wd5CxDLUCo7ufzDjYE",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462259,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 124,
+    "total_tokens": 143,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,3227 @@
+{
+  "n": 200,
+  "seed": 20260915,
+  "shuffle_seed": 20260915,
+  "protocol": "isolation",
+  "source": "data/real/wikidata_ceo_hops_n200.json",
+  "keys": "same HMAC as Wiki-H5 n=200; CONTEXT listing order shuffled",
+  "n_gold_first": 100,
+  "n_decoy_first": 100,
+  "n32_untouched": "runs/factorial_2x2_iso_shuffle/",
+  "arms": {
+    "ENG_AMBIG": {
+      "ids": [
+        "F200S_ENG_AMBIG_0",
+        "F200S_ENG_AMBIG_1",
+        "F200S_ENG_AMBIG_2",
+        "F200S_ENG_AMBIG_3",
+        "F200S_ENG_AMBIG_4",
+        "F200S_ENG_AMBIG_5",
+        "F200S_ENG_AMBIG_6",
+        "F200S_ENG_AMBIG_7",
+        "F200S_ENG_AMBIG_8",
+        "F200S_ENG_AMBIG_9",
+        "F200S_ENG_AMBIG_10",
+        "F200S_ENG_AMBIG_11",
+        "F200S_ENG_AMBIG_12",
+        "F200S_ENG_AMBIG_13",
+        "F200S_ENG_AMBIG_14",
+        "F200S_ENG_AMBIG_15",
+        "F200S_ENG_AMBIG_16",
+        "F200S_ENG_AMBIG_17",
+        "F200S_ENG_AMBIG_18",
+        "F200S_ENG_AMBIG_19",
+        "F200S_ENG_AMBIG_20",
+        "F200S_ENG_AMBIG_21",
+        "F200S_ENG_AMBIG_22",
+        "F200S_ENG_AMBIG_23",
+        "F200S_ENG_AMBIG_24",
+        "F200S_ENG_AMBIG_25",
+        "F200S_ENG_AMBIG_26",
+        "F200S_ENG_AMBIG_27",
+        "F200S_ENG_AMBIG_28",
+        "F200S_ENG_AMBIG_29",
+        "F200S_ENG_AMBIG_30",
+        "F200S_ENG_AMBIG_31",
+        "F200S_ENG_AMBIG_32",
+        "F200S_ENG_AMBIG_33",
+        "F200S_ENG_AMBIG_34",
+        "F200S_ENG_AMBIG_35",
+        "F200S_ENG_AMBIG_36",
+        "F200S_ENG_AMBIG_37",
+        "F200S_ENG_AMBIG_38",
+        "F200S_ENG_AMBIG_39",
+        "F200S_ENG_AMBIG_40",
+        "F200S_ENG_AMBIG_41",
+        "F200S_ENG_AMBIG_42",
+        "F200S_ENG_AMBIG_43",
+        "F200S_ENG_AMBIG_44",
+        "F200S_ENG_AMBIG_45",
+        "F200S_ENG_AMBIG_46",
+        "F200S_ENG_AMBIG_47",
+        "F200S_ENG_AMBIG_48",
+        "F200S_ENG_AMBIG_49",
+        "F200S_ENG_AMBIG_50",
+        "F200S_ENG_AMBIG_51",
+        "F200S_ENG_AMBIG_52",
+        "F200S_ENG_AMBIG_53",
+        "F200S_ENG_AMBIG_54",
+        "F200S_ENG_AMBIG_55",
+        "F200S_ENG_AMBIG_56",
+        "F200S_ENG_AMBIG_57",
+        "F200S_ENG_AMBIG_58",
+        "F200S_ENG_AMBIG_59",
+        "F200S_ENG_AMBIG_60",
+        "F200S_ENG_AMBIG_61",
+        "F200S_ENG_AMBIG_62",
+        "F200S_ENG_AMBIG_63",
+        "F200S_ENG_AMBIG_64",
+        "F200S_ENG_AMBIG_65",
+        "F200S_ENG_AMBIG_66",
+        "F200S_ENG_AMBIG_67",
+        "F200S_ENG_AMBIG_68",
+        "F200S_ENG_AMBIG_69",
+        "F200S_ENG_AMBIG_70",
+        "F200S_ENG_AMBIG_71",
+        "F200S_ENG_AMBIG_72",
+        "F200S_ENG_AMBIG_73",
+        "F200S_ENG_AMBIG_74",
+        "F200S_ENG_AMBIG_75",
+        "F200S_ENG_AMBIG_76",
+        "F200S_ENG_AMBIG_77",
+        "F200S_ENG_AMBIG_78",
+        "F200S_ENG_AMBIG_79",
+        "F200S_ENG_AMBIG_80",
+        "F200S_ENG_AMBIG_81",
+        "F200S_ENG_AMBIG_82",
+        "F200S_ENG_AMBIG_83",
+        "F200S_ENG_AMBIG_84",
+        "F200S_ENG_AMBIG_85",
+        "F200S_ENG_AMBIG_86",
+        "F200S_ENG_AMBIG_87",
+        "F200S_ENG_AMBIG_88",
+        "F200S_ENG_AMBIG_89",
+        "F200S_ENG_AMBIG_90",
+        "F200S_ENG_AMBIG_91",
+        "F200S_ENG_AMBIG_92",
+        "F200S_ENG_AMBIG_93",
+        "F200S_ENG_AMBIG_94",
+        "F200S_ENG_AMBIG_95",
+        "F200S_ENG_AMBIG_96",
+        "F200S_ENG_AMBIG_97",
+        "F200S_ENG_AMBIG_98",
+        "F200S_ENG_AMBIG_99",
+        "F200S_ENG_AMBIG_100",
+        "F200S_ENG_AMBIG_101",
+        "F200S_ENG_AMBIG_102",
+        "F200S_ENG_AMBIG_103",
+        "F200S_ENG_AMBIG_104",
+        "F200S_ENG_AMBIG_105",
+        "F200S_ENG_AMBIG_106",
+        "F200S_ENG_AMBIG_107",
+        "F200S_ENG_AMBIG_108",
+        "F200S_ENG_AMBIG_109",
+        "F200S_ENG_AMBIG_110",
+        "F200S_ENG_AMBIG_111",
+        "F200S_ENG_AMBIG_112",
+        "F200S_ENG_AMBIG_113",
+        "F200S_ENG_AMBIG_114",
+        "F200S_ENG_AMBIG_115",
+        "F200S_ENG_AMBIG_116",
+        "F200S_ENG_AMBIG_117",
+        "F200S_ENG_AMBIG_118",
+        "F200S_ENG_AMBIG_119",
+        "F200S_ENG_AMBIG_120",
+        "F200S_ENG_AMBIG_121",
+        "F200S_ENG_AMBIG_122",
+        "F200S_ENG_AMBIG_123",
+        "F200S_ENG_AMBIG_124",
+        "F200S_ENG_AMBIG_125",
+        "F200S_ENG_AMBIG_126",
+        "F200S_ENG_AMBIG_127",
+        "F200S_ENG_AMBIG_128",
+        "F200S_ENG_AMBIG_129",
+        "F200S_ENG_AMBIG_130",
+        "F200S_ENG_AMBIG_131",
+        "F200S_ENG_AMBIG_132",
+        "F200S_ENG_AMBIG_133",
+        "F200S_ENG_AMBIG_134",
+        "F200S_ENG_AMBIG_135",
+        "F200S_ENG_AMBIG_136",
+        "F200S_ENG_AMBIG_137",
+        "F200S_ENG_AMBIG_138",
+        "F200S_ENG_AMBIG_139",
+        "F200S_ENG_AMBIG_140",
+        "F200S_ENG_AMBIG_141",
+        "F200S_ENG_AMBIG_142",
+        "F200S_ENG_AMBIG_143",
+        "F200S_ENG_AMBIG_144",
+        "F200S_ENG_AMBIG_145",
+        "F200S_ENG_AMBIG_146",
+        "F200S_ENG_AMBIG_147",
+        "F200S_ENG_AMBIG_148",
+        "F200S_ENG_AMBIG_149",
+        "F200S_ENG_AMBIG_150",
+        "F200S_ENG_AMBIG_151",
+        "F200S_ENG_AMBIG_152",
+        "F200S_ENG_AMBIG_153",
+        "F200S_ENG_AMBIG_154",
+        "F200S_ENG_AMBIG_155",
+        "F200S_ENG_AMBIG_156",
+        "F200S_ENG_AMBIG_157",
+        "F200S_ENG_AMBIG_158",
+        "F200S_ENG_AMBIG_159",
+        "F200S_ENG_AMBIG_160",
+        "F200S_ENG_AMBIG_161",
+        "F200S_ENG_AMBIG_162",
+        "F200S_ENG_AMBIG_163",
+        "F200S_ENG_AMBIG_164",
+        "F200S_ENG_AMBIG_165",
+        "F200S_ENG_AMBIG_166",
+        "F200S_ENG_AMBIG_167",
+        "F200S_ENG_AMBIG_168",
+        "F200S_ENG_AMBIG_169",
+        "F200S_ENG_AMBIG_170",
+        "F200S_ENG_AMBIG_171",
+        "F200S_ENG_AMBIG_172",
+        "F200S_ENG_AMBIG_173",
+        "F200S_ENG_AMBIG_174",
+        "F200S_ENG_AMBIG_175",
+        "F200S_ENG_AMBIG_176",
+        "F200S_ENG_AMBIG_177",
+        "F200S_ENG_AMBIG_178",
+        "F200S_ENG_AMBIG_179",
+        "F200S_ENG_AMBIG_180",
+        "F200S_ENG_AMBIG_181",
+        "F200S_ENG_AMBIG_182",
+        "F200S_ENG_AMBIG_183",
+        "F200S_ENG_AMBIG_184",
+        "F200S_ENG_AMBIG_185",
+        "F200S_ENG_AMBIG_186",
+        "F200S_ENG_AMBIG_187",
+        "F200S_ENG_AMBIG_188",
+        "F200S_ENG_AMBIG_189",
+        "F200S_ENG_AMBIG_190",
+        "F200S_ENG_AMBIG_191",
+        "F200S_ENG_AMBIG_192",
+        "F200S_ENG_AMBIG_193",
+        "F200S_ENG_AMBIG_194",
+        "F200S_ENG_AMBIG_195",
+        "F200S_ENG_AMBIG_196",
+        "F200S_ENG_AMBIG_197",
+        "F200S_ENG_AMBIG_198",
+        "F200S_ENG_AMBIG_199"
+      ],
+      "item_paths": [
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_0/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_1/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_2/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_3/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_4/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_5/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_6/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_7/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_8/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_9/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_10/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_11/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_12/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_13/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_14/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_15/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_16/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_17/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_18/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_19/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_20/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_21/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_22/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_23/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_24/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_25/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_26/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_27/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_28/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_29/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_30/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_31/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_32/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_33/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_34/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_35/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_36/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_37/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_38/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_39/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_40/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_41/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_42/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_43/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_44/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_45/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_46/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_47/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_48/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_49/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_50/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_51/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_52/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_53/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_54/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_55/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_56/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_57/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_58/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_59/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_60/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_61/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_62/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_63/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_64/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_65/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_66/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_67/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_68/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_69/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_70/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_71/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_72/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_73/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_74/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_75/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_76/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_77/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_78/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_79/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_80/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_81/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_82/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_83/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_84/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_85/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_86/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_87/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_88/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_89/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_90/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_91/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_92/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_93/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_94/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_95/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_96/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_97/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_98/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_99/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_100/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_101/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_102/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_103/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_104/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_105/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_106/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_107/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_108/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_109/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_110/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_111/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_112/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_113/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_114/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_115/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_116/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_117/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_118/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_119/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_120/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_121/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_122/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_123/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_124/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_125/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_126/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_127/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_128/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_129/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_130/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_131/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_132/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_133/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_134/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_135/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_136/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_137/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_138/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_139/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_140/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_141/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_142/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_143/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_144/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_145/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_146/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_147/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_148/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_149/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_150/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_151/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_152/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_153/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_154/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_155/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_156/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_157/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_158/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_159/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_160/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_161/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_162/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_163/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_164/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_165/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_166/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_167/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_168/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_169/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_170/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_171/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_172/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_173/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_174/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_175/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_176/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_177/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_178/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_179/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_180/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_181/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_182/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_183/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_184/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_185/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_186/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_187/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_188/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_189/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_190/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_191/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_192/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_193/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_194/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_195/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_196/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_197/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_198/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_199/prompt.txt"
+      ]
+    },
+    "OPAQUE_AMBIG": {
+      "ids": [
+        "F200S_OPAQUE_AMBIG_0",
+        "F200S_OPAQUE_AMBIG_1",
+        "F200S_OPAQUE_AMBIG_2",
+        "F200S_OPAQUE_AMBIG_3",
+        "F200S_OPAQUE_AMBIG_4",
+        "F200S_OPAQUE_AMBIG_5",
+        "F200S_OPAQUE_AMBIG_6",
+        "F200S_OPAQUE_AMBIG_7",
+        "F200S_OPAQUE_AMBIG_8",
+        "F200S_OPAQUE_AMBIG_9",
+        "F200S_OPAQUE_AMBIG_10",
+        "F200S_OPAQUE_AMBIG_11",
+        "F200S_OPAQUE_AMBIG_12",
+        "F200S_OPAQUE_AMBIG_13",
+        "F200S_OPAQUE_AMBIG_14",
+        "F200S_OPAQUE_AMBIG_15",
+        "F200S_OPAQUE_AMBIG_16",
+        "F200S_OPAQUE_AMBIG_17",
+        "F200S_OPAQUE_AMBIG_18",
+        "F200S_OPAQUE_AMBIG_19",
+        "F200S_OPAQUE_AMBIG_20",
+        "F200S_OPAQUE_AMBIG_21",
+        "F200S_OPAQUE_AMBIG_22",
+        "F200S_OPAQUE_AMBIG_23",
+        "F200S_OPAQUE_AMBIG_24",
+        "F200S_OPAQUE_AMBIG_25",
+        "F200S_OPAQUE_AMBIG_26",
+        "F200S_OPAQUE_AMBIG_27",
+        "F200S_OPAQUE_AMBIG_28",
+        "F200S_OPAQUE_AMBIG_29",
+        "F200S_OPAQUE_AMBIG_30",
+        "F200S_OPAQUE_AMBIG_31",
+        "F200S_OPAQUE_AMBIG_32",
+        "F200S_OPAQUE_AMBIG_33",
+        "F200S_OPAQUE_AMBIG_34",
+        "F200S_OPAQUE_AMBIG_35",
+        "F200S_OPAQUE_AMBIG_36",
+        "F200S_OPAQUE_AMBIG_37",
+        "F200S_OPAQUE_AMBIG_38",
+        "F200S_OPAQUE_AMBIG_39",
+        "F200S_OPAQUE_AMBIG_40",
+        "F200S_OPAQUE_AMBIG_41",
+        "F200S_OPAQUE_AMBIG_42",
+        "F200S_OPAQUE_AMBIG_43",
+        "F200S_OPAQUE_AMBIG_44",
+        "F200S_OPAQUE_AMBIG_45",
+        "F200S_OPAQUE_AMBIG_46",
+        "F200S_OPAQUE_AMBIG_47",
+        "F200S_OPAQUE_AMBIG_48",
+        "F200S_OPAQUE_AMBIG_49",
+        "F200S_OPAQUE_AMBIG_50",
+        "F200S_OPAQUE_AMBIG_51",
+        "F200S_OPAQUE_AMBIG_52",
+        "F200S_OPAQUE_AMBIG_53",
+        "F200S_OPAQUE_AMBIG_54",
+        "F200S_OPAQUE_AMBIG_55",
+        "F200S_OPAQUE_AMBIG_56",
+        "F200S_OPAQUE_AMBIG_57",
+        "F200S_OPAQUE_AMBIG_58",
+        "F200S_OPAQUE_AMBIG_59",
+        "F200S_OPAQUE_AMBIG_60",
+        "F200S_OPAQUE_AMBIG_61",
+        "F200S_OPAQUE_AMBIG_62",
+        "F200S_OPAQUE_AMBIG_63",
+        "F200S_OPAQUE_AMBIG_64",
+        "F200S_OPAQUE_AMBIG_65",
+        "F200S_OPAQUE_AMBIG_66",
+        "F200S_OPAQUE_AMBIG_67",
+        "F200S_OPAQUE_AMBIG_68",
+        "F200S_OPAQUE_AMBIG_69",
+        "F200S_OPAQUE_AMBIG_70",
+        "F200S_OPAQUE_AMBIG_71",
+        "F200S_OPAQUE_AMBIG_72",
+        "F200S_OPAQUE_AMBIG_73",
+        "F200S_OPAQUE_AMBIG_74",
+        "F200S_OPAQUE_AMBIG_75",
+        "F200S_OPAQUE_AMBIG_76",
+        "F200S_OPAQUE_AMBIG_77",
+        "F200S_OPAQUE_AMBIG_78",
+        "F200S_OPAQUE_AMBIG_79",
+        "F200S_OPAQUE_AMBIG_80",
+        "F200S_OPAQUE_AMBIG_81",
+        "F200S_OPAQUE_AMBIG_82",
+        "F200S_OPAQUE_AMBIG_83",
+        "F200S_OPAQUE_AMBIG_84",
+        "F200S_OPAQUE_AMBIG_85",
+        "F200S_OPAQUE_AMBIG_86",
+        "F200S_OPAQUE_AMBIG_87",
+        "F200S_OPAQUE_AMBIG_88",
+        "F200S_OPAQUE_AMBIG_89",
+        "F200S_OPAQUE_AMBIG_90",
+        "F200S_OPAQUE_AMBIG_91",
+        "F200S_OPAQUE_AMBIG_92",
+        "F200S_OPAQUE_AMBIG_93",
+        "F200S_OPAQUE_AMBIG_94",
+        "F200S_OPAQUE_AMBIG_95",
+        "F200S_OPAQUE_AMBIG_96",
+        "F200S_OPAQUE_AMBIG_97",
+        "F200S_OPAQUE_AMBIG_98",
+        "F200S_OPAQUE_AMBIG_99",
+        "F200S_OPAQUE_AMBIG_100",
+        "F200S_OPAQUE_AMBIG_101",
+        "F200S_OPAQUE_AMBIG_102",
+        "F200S_OPAQUE_AMBIG_103",
+        "F200S_OPAQUE_AMBIG_104",
+        "F200S_OPAQUE_AMBIG_105",
+        "F200S_OPAQUE_AMBIG_106",
+        "F200S_OPAQUE_AMBIG_107",
+        "F200S_OPAQUE_AMBIG_108",
+        "F200S_OPAQUE_AMBIG_109",
+        "F200S_OPAQUE_AMBIG_110",
+        "F200S_OPAQUE_AMBIG_111",
+        "F200S_OPAQUE_AMBIG_112",
+        "F200S_OPAQUE_AMBIG_113",
+        "F200S_OPAQUE_AMBIG_114",
+        "F200S_OPAQUE_AMBIG_115",
+        "F200S_OPAQUE_AMBIG_116",
+        "F200S_OPAQUE_AMBIG_117",
+        "F200S_OPAQUE_AMBIG_118",
+        "F200S_OPAQUE_AMBIG_119",
+        "F200S_OPAQUE_AMBIG_120",
+        "F200S_OPAQUE_AMBIG_121",
+        "F200S_OPAQUE_AMBIG_122",
+        "F200S_OPAQUE_AMBIG_123",
+        "F200S_OPAQUE_AMBIG_124",
+        "F200S_OPAQUE_AMBIG_125",
+        "F200S_OPAQUE_AMBIG_126",
+        "F200S_OPAQUE_AMBIG_127",
+        "F200S_OPAQUE_AMBIG_128",
+        "F200S_OPAQUE_AMBIG_129",
+        "F200S_OPAQUE_AMBIG_130",
+        "F200S_OPAQUE_AMBIG_131",
+        "F200S_OPAQUE_AMBIG_132",
+        "F200S_OPAQUE_AMBIG_133",
+        "F200S_OPAQUE_AMBIG_134",
+        "F200S_OPAQUE_AMBIG_135",
+        "F200S_OPAQUE_AMBIG_136",
+        "F200S_OPAQUE_AMBIG_137",
+        "F200S_OPAQUE_AMBIG_138",
+        "F200S_OPAQUE_AMBIG_139",
+        "F200S_OPAQUE_AMBIG_140",
+        "F200S_OPAQUE_AMBIG_141",
+        "F200S_OPAQUE_AMBIG_142",
+        "F200S_OPAQUE_AMBIG_143",
+        "F200S_OPAQUE_AMBIG_144",
+        "F200S_OPAQUE_AMBIG_145",
+        "F200S_OPAQUE_AMBIG_146",
+        "F200S_OPAQUE_AMBIG_147",
+        "F200S_OPAQUE_AMBIG_148",
+        "F200S_OPAQUE_AMBIG_149",
+        "F200S_OPAQUE_AMBIG_150",
+        "F200S_OPAQUE_AMBIG_151",
+        "F200S_OPAQUE_AMBIG_152",
+        "F200S_OPAQUE_AMBIG_153",
+        "F200S_OPAQUE_AMBIG_154",
+        "F200S_OPAQUE_AMBIG_155",
+        "F200S_OPAQUE_AMBIG_156",
+        "F200S_OPAQUE_AMBIG_157",
+        "F200S_OPAQUE_AMBIG_158",
+        "F200S_OPAQUE_AMBIG_159",
+        "F200S_OPAQUE_AMBIG_160",
+        "F200S_OPAQUE_AMBIG_161",
+        "F200S_OPAQUE_AMBIG_162",
+        "F200S_OPAQUE_AMBIG_163",
+        "F200S_OPAQUE_AMBIG_164",
+        "F200S_OPAQUE_AMBIG_165",
+        "F200S_OPAQUE_AMBIG_166",
+        "F200S_OPAQUE_AMBIG_167",
+        "F200S_OPAQUE_AMBIG_168",
+        "F200S_OPAQUE_AMBIG_169",
+        "F200S_OPAQUE_AMBIG_170",
+        "F200S_OPAQUE_AMBIG_171",
+        "F200S_OPAQUE_AMBIG_172",
+        "F200S_OPAQUE_AMBIG_173",
+        "F200S_OPAQUE_AMBIG_174",
+        "F200S_OPAQUE_AMBIG_175",
+        "F200S_OPAQUE_AMBIG_176",
+        "F200S_OPAQUE_AMBIG_177",
+        "F200S_OPAQUE_AMBIG_178",
+        "F200S_OPAQUE_AMBIG_179",
+        "F200S_OPAQUE_AMBIG_180",
+        "F200S_OPAQUE_AMBIG_181",
+        "F200S_OPAQUE_AMBIG_182",
+        "F200S_OPAQUE_AMBIG_183",
+        "F200S_OPAQUE_AMBIG_184",
+        "F200S_OPAQUE_AMBIG_185",
+        "F200S_OPAQUE_AMBIG_186",
+        "F200S_OPAQUE_AMBIG_187",
+        "F200S_OPAQUE_AMBIG_188",
+        "F200S_OPAQUE_AMBIG_189",
+        "F200S_OPAQUE_AMBIG_190",
+        "F200S_OPAQUE_AMBIG_191",
+        "F200S_OPAQUE_AMBIG_192",
+        "F200S_OPAQUE_AMBIG_193",
+        "F200S_OPAQUE_AMBIG_194",
+        "F200S_OPAQUE_AMBIG_195",
+        "F200S_OPAQUE_AMBIG_196",
+        "F200S_OPAQUE_AMBIG_197",
+        "F200S_OPAQUE_AMBIG_198",
+        "F200S_OPAQUE_AMBIG_199"
+      ],
+      "item_paths": [
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_0/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_1/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_2/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_3/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_4/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_5/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_6/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_7/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_8/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_9/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_10/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_11/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_12/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_13/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_14/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_15/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_16/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_17/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_18/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_19/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_20/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_21/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_22/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_23/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_24/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_25/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_26/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_27/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_28/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_29/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_30/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_31/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_32/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_33/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_34/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_35/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_36/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_37/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_38/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_39/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_40/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_41/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_42/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_43/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_44/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_45/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_46/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_47/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_48/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_49/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_50/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_51/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_52/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_53/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_54/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_55/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_56/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_57/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_58/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_59/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_60/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_61/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_62/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_63/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_64/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_65/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_66/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_67/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_68/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_69/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_70/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_71/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_72/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_73/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_74/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_75/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_76/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_77/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_78/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_79/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_80/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_81/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_82/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_83/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_84/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_85/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_86/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_87/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_88/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_89/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_90/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_91/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_92/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_93/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_94/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_95/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_96/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_97/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_98/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_99/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_100/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_101/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_102/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_103/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_104/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_105/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_106/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_107/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_108/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_109/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_110/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_111/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_112/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_113/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_114/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_115/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_116/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_117/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_118/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_119/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_120/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_121/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_122/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_123/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_124/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_125/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_126/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_127/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_128/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_129/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_130/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_131/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_132/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_133/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_134/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_135/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_136/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_137/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_138/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_139/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_140/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_141/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_142/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_143/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_144/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_145/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_146/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_147/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_148/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_149/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_150/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_151/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_152/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_153/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_154/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_155/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_156/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_157/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_158/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_159/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_160/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_161/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_162/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_163/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_164/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_165/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_166/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_167/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_168/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_169/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_170/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_171/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_172/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_173/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_174/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_175/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_176/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_177/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_178/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_179/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_180/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_181/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_182/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_183/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_184/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_185/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_186/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_187/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_188/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_189/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_190/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_191/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_192/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_193/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_194/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_195/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_196/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_197/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_198/prompt.txt",
+        "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_199/prompt.txt"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "i": 0,
+      "person": "Nancy_Duarte",
+      "hq": "San_Jose",
+      "decoy_hq": "London",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_0",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_0"
+      },
+      "gold": "San_Jose"
+    },
+    {
+      "i": 1,
+      "person": "Arun_Sarin",
+      "hq": "London",
+      "decoy_hq": "Maputo",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_1",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_1"
+      },
+      "gold": "London"
+    },
+    {
+      "i": 2,
+      "person": "Mia_Couto",
+      "hq": "Maputo",
+      "decoy_hq": "Humleb_k",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_2",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_2"
+      },
+      "gold": "Maputo"
+    },
+    {
+      "i": 3,
+      "person": "Lars_S_ren_Rasmussen",
+      "hq": "Humleb_k",
+      "decoy_hq": "London",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_3",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_3"
+      },
+      "gold": "Humleb_k"
+    },
+    {
+      "i": 4,
+      "person": "Brian_Peddle",
+      "hq": "London",
+      "decoy_hq": "Prague",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_4",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_4"
+      },
+      "gold": "London"
+    },
+    {
+      "i": 5,
+      "person": "Jakub_Havrlant",
+      "hq": "Prague",
+      "decoy_hq": "London",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_5",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_5"
+      },
+      "gold": "Prague"
+    },
+    {
+      "i": 6,
+      "person": "Mark_Cutifani",
+      "hq": "London",
+      "decoy_hq": "Thiruvananthapuram",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_6",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_6"
+      },
+      "gold": "London"
+    },
+    {
+      "i": 7,
+      "person": "K._Anvar_Sadath",
+      "hq": "Thiruvananthapuram",
+      "decoy_hq": "Barcelona",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_7",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_7"
+      },
+      "gold": "Thiruvananthapuram"
+    },
+    {
+      "i": 8,
+      "person": "Isona_Passola_i_Vidal",
+      "hq": "Barcelona",
+      "decoy_hq": "Las_Vegas",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_8",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_8"
+      },
+      "gold": "Barcelona"
+    },
+    {
+      "i": 9,
+      "person": "Bob_Arum",
+      "hq": "Las_Vegas",
+      "decoy_hq": "New_York_City",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_9",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_9"
+      },
+      "gold": "Las_Vegas"
+    },
+    {
+      "i": 10,
+      "person": "Jane_Deeter_Rippin",
+      "hq": "New_York_City",
+      "decoy_hq": "Zug",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_10",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_10"
+      },
+      "gold": "New_York_City"
+    },
+    {
+      "i": 11,
+      "person": "V_t_Vrba",
+      "hq": "Zug",
+      "decoy_hq": "Sunnyvale",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_11",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_11"
+      },
+      "gold": "Zug"
+    },
+    {
+      "i": 12,
+      "person": "Saeed_Amidi",
+      "hq": "Sunnyvale",
+      "decoy_hq": "New_York_City",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_12",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_12"
+      },
+      "gold": "Sunnyvale"
+    },
+    {
+      "i": 13,
+      "person": "Giovanni_Caforio",
+      "hq": "New_York_City",
+      "decoy_hq": "Arlington",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_13",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_13"
+      },
+      "gold": "New_York_City"
+    },
+    {
+      "i": 14,
+      "person": "Tracie_Sharp",
+      "hq": "Arlington",
+      "decoy_hq": "F_rth",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_14",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_14"
+      },
+      "gold": "Arlington"
+    },
+    {
+      "i": 15,
+      "person": "Rachid_Azzouzi",
+      "hq": "F_rth",
+      "decoy_hq": "Aarhus",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_15",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_15"
+      },
+      "gold": "F_rth"
+    },
+    {
+      "i": 16,
+      "person": "Ole_Lehrmann_Madsen",
+      "hq": "Aarhus",
+      "decoy_hq": "Amsterdam",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_16",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_16"
+      },
+      "gold": "Aarhus"
+    },
+    {
+      "i": 17,
+      "person": "Tom_Enders",
+      "hq": "Amsterdam",
+      "decoy_hq": "Bellevue",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_17",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_17"
+      },
+      "gold": "Amsterdam"
+    },
+    {
+      "i": 18,
+      "person": "Naveen_Jain",
+      "hq": "Bellevue",
+      "decoy_hq": "San_Francisco",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_18",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_18"
+      },
+      "gold": "Bellevue"
+    },
+    {
+      "i": 19,
+      "person": "Laura_J._Alber",
+      "hq": "San_Francisco",
+      "decoy_hq": "Chicago",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_19",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_19"
+      },
+      "gold": "San_Francisco"
+    },
+    {
+      "i": 20,
+      "person": "Tracie_D._Hall",
+      "hq": "Chicago",
+      "decoy_hq": "New_York_City",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_20",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_20"
+      },
+      "gold": "Chicago"
+    },
+    {
+      "i": 21,
+      "person": "Muzzammil_Hassan",
+      "hq": "New_York_City",
+      "decoy_hq": "San_Antonio",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_21",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_21"
+      },
+      "gold": "New_York_City"
+    },
+    {
+      "i": 22,
+      "person": "Kimberly_S._Bowers",
+      "hq": "San_Antonio",
+      "decoy_hq": "Barcelona",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_22",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_22"
+      },
+      "gold": "San_Antonio"
+    },
+    {
+      "i": 23,
+      "person": "Armando_Pego_Puigb",
+      "hq": "Barcelona",
+      "decoy_hq": "Amsterdam",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_23",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_23"
+      },
+      "gold": "Barcelona"
+    },
+    {
+      "i": 24,
+      "person": "Robert_Swaak",
+      "hq": "Amsterdam",
+      "decoy_hq": "Hjo",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_24",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_24"
+      },
+      "gold": "Amsterdam"
+    },
+    {
+      "i": 25,
+      "person": "Gustaf_Sparre",
+      "hq": "Hjo",
+      "decoy_hq": "Oslo",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_25",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_25"
+      },
+      "gold": "Hjo"
+    },
+    {
+      "i": 26,
+      "person": "Kristin_Clemet",
+      "hq": "Oslo",
+      "decoy_hq": "Likino-Dulyovo",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_26",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_26"
+      },
+      "gold": "Oslo"
+    },
+    {
+      "i": 27,
+      "person": "Alexander_Kazakov",
+      "hq": "Likino-Dulyovo",
+      "decoy_hq": "P_ock",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_27",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_27"
+      },
+      "gold": "Likino-Dulyovo"
+    },
+    {
+      "i": 28,
+      "person": "Andrzej_Modrzejewski",
+      "hq": "P_ock",
+      "decoy_hq": "Kavala",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_28",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_28"
+      },
+      "gold": "P_ock"
+    },
+    {
+      "i": 29,
+      "person": "Prokopios_Tsakoumakas",
+      "hq": "Kavala",
+      "decoy_hq": "Midrand",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_29",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_29"
+      },
+      "gold": "Kavala"
+    },
+    {
+      "i": 30,
+      "person": "Ibrahim_Assane_Mayaki",
+      "hq": "Midrand",
+      "decoy_hq": "Amsterdam",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_30",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_30"
+      },
+      "gold": "Midrand"
+    },
+    {
+      "i": 31,
+      "person": "Pieter_van_der_Does",
+      "hq": "Amsterdam",
+      "decoy_hq": "Stuttgart",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_31",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_31"
+      },
+      "gold": "Amsterdam"
+    },
+    {
+      "i": 32,
+      "person": "Ola_K_llenius",
+      "hq": "Stuttgart",
+      "decoy_hq": "Oslo",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_32",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_32"
+      },
+      "gold": "Stuttgart"
+    },
+    {
+      "i": 33,
+      "person": "Abdirahman_Diriye",
+      "hq": "Oslo",
+      "decoy_hq": "Madison",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_33",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_33"
+      },
+      "gold": "Oslo"
+    },
+    {
+      "i": 34,
+      "person": "Dan_Barker",
+      "hq": "Madison",
+      "decoy_hq": "Dallas",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_34",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_34"
+      },
+      "gold": "Madison"
+    },
+    {
+      "i": 35,
+      "person": "Kelli_Thomas-Drake",
+      "hq": "Dallas",
+      "decoy_hq": "Oslo",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_35",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_35"
+      },
+      "gold": "Dallas"
+    },
+    {
+      "i": 36,
+      "person": "Lill_Sverresdatter_Larsen",
+      "hq": "Oslo",
+      "decoy_hq": "Szczecin",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_36",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_36"
+      },
+      "gold": "Oslo"
+    },
+    {
+      "i": 37,
+      "person": "Jaros_aw_Kotarski",
+      "hq": "Szczecin",
+      "decoy_hq": "Dublin",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_37",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_37"
+      },
+      "gold": "Szczecin"
+    },
+    {
+      "i": 38,
+      "person": "Peter_Jackson",
+      "hq": "Dublin",
+      "decoy_hq": "Leipzig",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_38",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_38"
+      },
+      "gold": "Dublin"
+    },
+    {
+      "i": 39,
+      "person": "Ralf_Kalupner",
+      "hq": "Leipzig",
+      "decoy_hq": "Haifa",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_39",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_39"
+      },
+      "gold": "Leipzig"
+    },
+    {
+      "i": 40,
+      "person": "Eliyahu_Glickman",
+      "hq": "Haifa",
+      "decoy_hq": "Abu_Dhabi",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_40",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_40"
+      },
+      "gold": "Haifa"
+    },
+    {
+      "i": 41,
+      "person": "Mohammed_Bin_Zayed_Al_Nahyan",
+      "hq": "Abu_Dhabi",
+      "decoy_hq": "Bnei_Brak",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_41",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_41"
+      },
+      "gold": "Abu_Dhabi"
+    },
+    {
+      "i": 42,
+      "person": "Uzi_Shavit",
+      "hq": "Bnei_Brak",
+      "decoy_hq": "Toronto",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_42",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_42"
+      },
+      "gold": "Bnei_Brak"
+    },
+    {
+      "i": 43,
+      "person": "Prem_Watsa",
+      "hq": "Toronto",
+      "decoy_hq": "Prague",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_43",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_43"
+      },
+      "gold": "Toronto"
+    },
+    {
+      "i": 44,
+      "person": "Ji_Fajt",
+      "hq": "Prague",
+      "decoy_hq": "Villeurbanne",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_44",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_44"
+      },
+      "gold": "Prague"
+    },
+    {
+      "i": 45,
+      "person": "Gabriel_Ferro",
+      "hq": "Villeurbanne",
+      "decoy_hq": "Megion",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_45",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_45"
+      },
+      "gold": "Villeurbanne"
+    },
+    {
+      "i": 46,
+      "person": "Mikhail_Cherevko",
+      "hq": "Megion",
+      "decoy_hq": "Boulogne-Billancourt",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_46",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_46"
+      },
+      "gold": "Megion"
+    },
+    {
+      "i": 47,
+      "person": "Nicolas_Scott",
+      "hq": "Boulogne-Billancourt",
+      "decoy_hq": "Hamburg",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_47",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_47"
+      },
+      "gold": "Boulogne-Billancourt"
+    },
+    {
+      "i": 48,
+      "person": "Henning_Windelband",
+      "hq": "Hamburg",
+      "decoy_hq": "Seattle",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_48",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_48"
+      },
+      "gold": "Hamburg"
+    },
+    {
+      "i": 49,
+      "person": "Dow_Constantine",
+      "hq": "Seattle",
+      "decoy_hq": "Cambridge",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_49",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_49"
+      },
+      "gold": "Seattle"
+    },
+    {
+      "i": 50,
+      "person": "Catherine_Havasi",
+      "hq": "Cambridge",
+      "decoy_hq": "Prague",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_50",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_50"
+      },
+      "gold": "Cambridge"
+    },
+    {
+      "i": 51,
+      "person": "Daniel_K_et_nsk",
+      "hq": "Prague",
+      "decoy_hq": "Brussels",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_51",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_51"
+      },
+      "gold": "Prague"
+    },
+    {
+      "i": 52,
+      "person": "Claudio_Graziano",
+      "hq": "Brussels",
+      "decoy_hq": "Washington_D.C.",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_52",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_52"
+      },
+      "gold": "Brussels"
+    },
+    {
+      "i": 53,
+      "person": "Samantha_Power",
+      "hq": "Washington_D.C.",
+      "decoy_hq": "Neuss",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_53",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_53"
+      },
+      "gold": "Washington_D.C."
+    },
+    {
+      "i": 54,
+      "person": "Moti_Ben-Moshe",
+      "hq": "Neuss",
+      "decoy_hq": "San_Francisco",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_54",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_54"
+      },
+      "gold": "Neuss"
+    },
+    {
+      "i": 55,
+      "person": "Dick_Costolo",
+      "hq": "San_Francisco",
+      "decoy_hq": "Villarreal",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_55",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_55"
+      },
+      "gold": "San_Francisco"
+    },
+    {
+      "i": 56,
+      "person": "Fernando_Roig_Alfonso",
+      "hq": "Villarreal",
+      "decoy_hq": "G_ttingen",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_56",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_56"
+      },
+      "gold": "Villarreal"
+    },
+    {
+      "i": 57,
+      "person": "Laurent_Gizon",
+      "hq": "G_ttingen",
+      "decoy_hq": "Villeurbanne",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_57",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_57"
+      },
+      "gold": "G_ttingen"
+    },
+    {
+      "i": 58,
+      "person": "Jean-Marc_Petit",
+      "hq": "Villeurbanne",
+      "decoy_hq": "Tel_Aviv",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_58",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_58"
+      },
+      "gold": "Villeurbanne"
+    },
+    {
+      "i": 59,
+      "person": "Shaqued_Morag",
+      "hq": "Tel_Aviv",
+      "decoy_hq": "Washington_D.C.",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_59",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_59"
+      },
+      "gold": "Tel_Aviv"
+    },
+    {
+      "i": 60,
+      "person": "Mark_Dubowitz",
+      "hq": "Washington_D.C.",
+      "decoy_hq": "Leipzig",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_60",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_60"
+      },
+      "gold": "Washington_D.C."
+    },
+    {
+      "i": 61,
+      "person": "Hubertus_Milke",
+      "hq": "Leipzig",
+      "decoy_hq": "Munich",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_61",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_61"
+      },
+      "gold": "Leipzig"
+    },
+    {
+      "i": 62,
+      "person": "Percy_Adlon",
+      "hq": "Munich",
+      "decoy_hq": "Singapore",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_62",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_62"
+      },
+      "gold": "Munich"
+    },
+    {
+      "i": 63,
+      "person": "Jihan_Wu",
+      "hq": "Singapore",
+      "decoy_hq": "Calgary",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_63",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_63"
+      },
+      "gold": "Singapore"
+    },
+    {
+      "i": 64,
+      "person": "Keith_Creel",
+      "hq": "Calgary",
+      "decoy_hq": "Oakland",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_64",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_64"
+      },
+      "gold": "Calgary"
+    },
+    {
+      "i": 65,
+      "person": "Tim_Westergren",
+      "hq": "Oakland",
+      "decoy_hq": "Madison",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_65",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_65"
+      },
+      "gold": "Oakland"
+    },
+    {
+      "i": 66,
+      "person": "W._Paul_Menzel",
+      "hq": "Madison",
+      "decoy_hq": "Aberdeen",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_66",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_66"
+      },
+      "gold": "Madison"
+    },
+    {
+      "i": 67,
+      "person": "Ian_Wood",
+      "hq": "Aberdeen",
+      "decoy_hq": "Montpellier",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_67",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_67"
+      },
+      "gold": "Aberdeen"
+    },
+    {
+      "i": 68,
+      "person": "Dominique_Bagouet",
+      "hq": "Montpellier",
+      "decoy_hq": "Washington_D.C.",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_68",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_68"
+      },
+      "gold": "Montpellier"
+    },
+    {
+      "i": 69,
+      "person": "Jo_Ann_Jenkins",
+      "hq": "Washington_D.C.",
+      "decoy_hq": "Beijing",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_69",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_69"
+      },
+      "gold": "Washington_D.C."
+    },
+    {
+      "i": 70,
+      "person": "Wu_Xiaohui",
+      "hq": "Beijing",
+      "decoy_hq": "San_Francisco",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_70",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_70"
+      },
+      "gold": "Beijing"
+    },
+    {
+      "i": 71,
+      "person": "Robert_Hohman",
+      "hq": "San_Francisco",
+      "decoy_hq": "Barcelona",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_71",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_71"
+      },
+      "gold": "San_Francisco"
+    },
+    {
+      "i": 72,
+      "person": "Gerardo_Salvador_Merino",
+      "hq": "Barcelona",
+      "decoy_hq": "Geneva",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_72",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_72"
+      },
+      "gold": "Barcelona"
+    },
+    {
+      "i": 73,
+      "person": "Houlin_Zhao",
+      "hq": "Geneva",
+      "decoy_hq": "Dublin",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_73",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_73"
+      },
+      "gold": "Geneva"
+    },
+    {
+      "i": 74,
+      "person": "Larry_Bass",
+      "hq": "Dublin",
+      "decoy_hq": "Dover",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_74",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_74"
+      },
+      "gold": "Dublin"
+    },
+    {
+      "i": 75,
+      "person": "Patrick_Lo",
+      "hq": "Dover",
+      "decoy_hq": "Bristol",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_75",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_75"
+      },
+      "gold": "Dover"
+    },
+    {
+      "i": 76,
+      "person": "Stefan_Bomhard",
+      "hq": "Bristol",
+      "decoy_hq": "Mumbai",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_76",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_76"
+      },
+      "gold": "Bristol"
+    },
+    {
+      "i": 77,
+      "person": "Raymond_N._Bickson",
+      "hq": "Mumbai",
+      "decoy_hq": "Brno",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_77",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_77"
+      },
+      "gold": "Mumbai"
+    },
+    {
+      "i": 78,
+      "person": "Vladim_r_Pla_il",
+      "hq": "Brno",
+      "decoy_hq": "Copenhagen",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_78",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_78"
+      },
+      "gold": "Brno"
+    },
+    {
+      "i": 79,
+      "person": "Anders_Ladekarl",
+      "hq": "Copenhagen",
+      "decoy_hq": "Detroit",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_79",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_79"
+      },
+      "gold": "Copenhagen"
+    },
+    {
+      "i": 80,
+      "person": "Mary_Barra",
+      "hq": "Detroit",
+      "decoy_hq": "Dubai",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_80",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_80"
+      },
+      "gold": "Detroit"
+    },
+    {
+      "i": 81,
+      "person": "Jeff_Miller",
+      "hq": "Dubai",
+      "decoy_hq": "Bonn",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_81",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_81"
+      },
+      "gold": "Dubai"
+    },
+    {
+      "i": 82,
+      "person": "Mathias_Mogge",
+      "hq": "Bonn",
+      "decoy_hq": "Cologne",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_82",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_82"
+      },
+      "gold": "Bonn"
+    },
+    {
+      "i": 83,
+      "person": "Elmar_Pankau",
+      "hq": "Cologne",
+      "decoy_hq": "Potsdam",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_83",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_83"
+      },
+      "gold": "Cologne"
+    },
+    {
+      "i": 84,
+      "person": "Joachim_Kosack",
+      "hq": "Potsdam",
+      "decoy_hq": "Jerusalem",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_84",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_84"
+      },
+      "gold": "Potsdam"
+    },
+    {
+      "i": 85,
+      "person": "Yehoshua_Fass",
+      "hq": "Jerusalem",
+      "decoy_hq": "Seoul",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_85",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_85"
+      },
+      "gold": "Jerusalem"
+    },
+    {
+      "i": 86,
+      "person": "Cho_Won-tae",
+      "hq": "Seoul",
+      "decoy_hq": "Perth",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_86",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_86"
+      },
+      "gold": "Seoul"
+    },
+    {
+      "i": 87,
+      "person": "Alistair_Phillips-Davies",
+      "hq": "Perth",
+      "decoy_hq": "Gothenburg",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_87",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_87"
+      },
+      "gold": "Perth"
+    },
+    {
+      "i": 88,
+      "person": "Erik_Hemmendorff",
+      "hq": "Gothenburg",
+      "decoy_hq": "Odense",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_88",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_88"
+      },
+      "gold": "Gothenburg"
+    },
+    {
+      "i": 89,
+      "person": "Anne_Engdal_Stig_Christensen",
+      "hq": "Odense",
+      "decoy_hq": "Rome",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_89",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_89"
+      },
+      "gold": "Odense"
+    },
+    {
+      "i": 90,
+      "person": "Luigi_Ferraris",
+      "hq": "Rome",
+      "decoy_hq": "Sandy_Springs",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_90",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_90"
+      },
+      "gold": "Rome"
+    },
+    {
+      "i": 91,
+      "person": "Carol_Tom",
+      "hq": "Sandy_Springs",
+      "decoy_hq": "Zhukovsky",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_91",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_91"
+      },
+      "gold": "Sandy_Springs"
+    },
+    {
+      "i": 92,
+      "person": "Aleksandr_Chesalov",
+      "hq": "Zhukovsky",
+      "decoy_hq": "Montpellier",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_92",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_92"
+      },
+      "gold": "Zhukovsky"
+    },
+    {
+      "i": 93,
+      "person": "Jean-Paul_Montanari",
+      "hq": "Montpellier",
+      "decoy_hq": "Cologne",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_93",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_93"
+      },
+      "gold": "Montpellier"
+    },
+    {
+      "i": 94,
+      "person": "Carsten_Spohr",
+      "hq": "Cologne",
+      "decoy_hq": "Dubai",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_94",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_94"
+      },
+      "gold": "Cologne"
+    },
+    {
+      "i": 95,
+      "person": "Geoff_Allardice",
+      "hq": "Dubai",
+      "decoy_hq": "Leverkusen",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_95",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_95"
+      },
+      "gold": "Dubai"
+    },
+    {
+      "i": 96,
+      "person": "Andr_Leysen",
+      "hq": "Leverkusen",
+      "decoy_hq": "Casablanca",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_96",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_96"
+      },
+      "gold": "Leverkusen"
+    },
+    {
+      "i": 97,
+      "person": "Mohamed_Hassan_Bensalah",
+      "hq": "Casablanca",
+      "decoy_hq": "Warsaw",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_97",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_97"
+      },
+      "gold": "Casablanca"
+    },
+    {
+      "i": 98,
+      "person": "Adam_Kici_ski",
+      "hq": "Warsaw",
+      "decoy_hq": "Vienna",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_98",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_98"
+      },
+      "gold": "Warsaw"
+    },
+    {
+      "i": 99,
+      "person": "Werner_Hasselblatt",
+      "hq": "Vienna",
+      "decoy_hq": "Hatfield",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_99",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_99"
+      },
+      "gold": "Vienna"
+    },
+    {
+      "i": 100,
+      "person": "Tim_Steiner",
+      "hq": "Hatfield",
+      "decoy_hq": "Salzburg",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_100",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_100"
+      },
+      "gold": "Hatfield"
+    },
+    {
+      "i": 101,
+      "person": "Josef_Dultinger",
+      "hq": "Salzburg",
+      "decoy_hq": "Agartala",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_101",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_101"
+      },
+      "gold": "Salzburg"
+    },
+    {
+      "i": 102,
+      "person": "Adison_Chakma",
+      "hq": "Agartala",
+      "decoy_hq": "Kristiansand",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_102",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_102"
+      },
+      "gold": "Agartala"
+    },
+    {
+      "i": 103,
+      "person": "Nina_Mevold",
+      "hq": "Kristiansand",
+      "decoy_hq": "Toulouse",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_103",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_103"
+      },
+      "gold": "Kristiansand"
+    },
+    {
+      "i": 104,
+      "person": "Olivier_Chansou",
+      "hq": "Toulouse",
+      "decoy_hq": "Cairo",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_104",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_104"
+      },
+      "gold": "Toulouse"
+    },
+    {
+      "i": 105,
+      "person": "Jean-Marc_Harion",
+      "hq": "Cairo",
+      "decoy_hq": "slav",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_105",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_105"
+      },
+      "gold": "Cairo"
+    },
+    {
+      "i": 106,
+      "person": "Emil_Pick",
+      "hq": "slav",
+      "decoy_hq": "Santa_Clara",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_106",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_106"
+      },
+      "gold": "slav"
+    },
+    {
+      "i": 107,
+      "person": "Nikesh_Arora",
+      "hq": "Santa_Clara",
+      "decoy_hq": "Plantation",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_107",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_107"
+      },
+      "gold": "Santa_Clara"
+    },
+    {
+      "i": 108,
+      "person": "Tom_McAlpin",
+      "hq": "Plantation",
+      "decoy_hq": "Chi_in_u",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_108",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_108"
+      },
+      "gold": "Plantation"
+    },
+    {
+      "i": 109,
+      "person": "Ilan_Shor",
+      "hq": "Chi_in_u",
+      "decoy_hq": "Kansas_City",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_109",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_109"
+      },
+      "gold": "Chi_in_u"
+    },
+    {
+      "i": 110,
+      "person": "Samuel_W._Fordyce",
+      "hq": "Kansas_City",
+      "decoy_hq": "Plze",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_110",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_110"
+      },
+      "gold": "Kansas_City"
+    },
+    {
+      "i": 111,
+      "person": "Yuval_Ben-Itzhak",
+      "hq": "Plze",
+      "decoy_hq": "Milan",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_111",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_111"
+      },
+      "gold": "Plze"
+    },
+    {
+      "i": 112,
+      "person": "Tom_Mockridge",
+      "hq": "Milan",
+      "decoy_hq": "Tel_Aviv",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_112",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_112"
+      },
+      "gold": "Milan"
+    },
+    {
+      "i": 113,
+      "person": "Isaac_Dabah",
+      "hq": "Tel_Aviv",
+      "decoy_hq": "Liverpool",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_113",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_113"
+      },
+      "gold": "Tel_Aviv"
+    },
+    {
+      "i": 114,
+      "person": "Martin_Voh_nka",
+      "hq": "Liverpool",
+      "decoy_hq": "Stockholm",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_114",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_114"
+      },
+      "gold": "Liverpool"
+    },
+    {
+      "i": 115,
+      "person": "Martina_Bonnier",
+      "hq": "Stockholm",
+      "decoy_hq": "Toronto",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_115",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_115"
+      },
+      "gold": "Stockholm"
+    },
+    {
+      "i": 116,
+      "person": "Steven_Gunn",
+      "hq": "Toronto",
+      "decoy_hq": "Colombes",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_116",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_116"
+      },
+      "gold": "Toronto"
+    },
+    {
+      "i": 117,
+      "person": "Thierry_Le_H_naff",
+      "hq": "Colombes",
+      "decoy_hq": "Goole",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_117",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_117"
+      },
+      "gold": "Colombes"
+    },
+    {
+      "i": 118,
+      "person": "Steve_Foots",
+      "hq": "Goole",
+      "decoy_hq": "Atlanta",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_118",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_118"
+      },
+      "gold": "Goole"
+    },
+    {
+      "i": 119,
+      "person": "Ed_Bastian",
+      "hq": "Atlanta",
+      "decoy_hq": "Seattle",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_119",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_119"
+      },
+      "gold": "Atlanta"
+    },
+    {
+      "i": 120,
+      "person": "Alex_Algard",
+      "hq": "Seattle",
+      "decoy_hq": "Oak_Ridge",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_120",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_120"
+      },
+      "gold": "Seattle"
+    },
+    {
+      "i": 121,
+      "person": "Thomas_Zacharia",
+      "hq": "Oak_Ridge",
+      "decoy_hq": "Zagreb",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_121",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_121"
+      },
+      "gold": "Oak_Ridge"
+    },
+    {
+      "i": 122,
+      "person": "Ivica_Todori",
+      "hq": "Zagreb",
+      "decoy_hq": "Waltham",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_122",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_122"
+      },
+      "gold": "Zagreb"
+    },
+    {
+      "i": 123,
+      "person": "Gail_F._Goodman",
+      "hq": "Waltham",
+      "decoy_hq": "Ostrava",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_123",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_123"
+      },
+      "gold": "Waltham"
+    },
+    {
+      "i": 124,
+      "person": "Libor_Witassek",
+      "hq": "Ostrava",
+      "decoy_hq": "Graz",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_124",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_124"
+      },
+      "gold": "Ostrava"
+    },
+    {
+      "i": 125,
+      "person": "Peter_William",
+      "hq": "Graz",
+      "decoy_hq": "Warsaw",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_125",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_125"
+      },
+      "gold": "Graz"
+    },
+    {
+      "i": 126,
+      "person": "Nikodem_Bo_cza-Tomaszewski",
+      "hq": "Warsaw",
+      "decoy_hq": "Slough",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_126",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_126"
+      },
+      "gold": "Warsaw"
+    },
+    {
+      "i": 127,
+      "person": "Laxman_Narasimhan",
+      "hq": "Slough",
+      "decoy_hq": "The_Hague",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_127",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_127"
+      },
+      "gold": "Slough"
+    },
+    {
+      "i": 128,
+      "person": "Herna_Verhagen",
+      "hq": "The_Hague",
+      "decoy_hq": "Haifa",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_128",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_128"
+      },
+      "gold": "The_Hague"
+    },
+    {
+      "i": 129,
+      "person": "Yoav_Har-Even",
+      "hq": "Haifa",
+      "decoy_hq": "Cologne",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_129",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_129"
+      },
+      "gold": "Haifa"
+    },
+    {
+      "i": 130,
+      "person": "Friedrich_K_ppersbusch",
+      "hq": "Cologne",
+      "decoy_hq": "Munich",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_130",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_130"
+      },
+      "gold": "Cologne"
+    },
+    {
+      "i": 131,
+      "person": "Arne_Schulze",
+      "hq": "Munich",
+      "decoy_hq": "Shanghai",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_131",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_131"
+      },
+      "gold": "Munich"
+    },
+    {
+      "i": 132,
+      "person": "Liang_Xinjun",
+      "hq": "Shanghai",
+      "decoy_hq": "Nairobi",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_132",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_132"
+      },
+      "gold": "Shanghai"
+    },
+    {
+      "i": 133,
+      "person": "Achim_Steiner",
+      "hq": "Nairobi",
+      "decoy_hq": "Jerusalem",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_133",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_133"
+      },
+      "gold": "Nairobi"
+    },
+    {
+      "i": 134,
+      "person": "Avigdor_Ohana",
+      "hq": "Jerusalem",
+      "decoy_hq": "Bristol",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_134",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_134"
+      },
+      "gold": "Jerusalem"
+    },
+    {
+      "i": 135,
+      "person": "Chris_Hill",
+      "hq": "Bristol",
+      "decoy_hq": "Moscow",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_135",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_135"
+      },
+      "gold": "Bristol"
+    },
+    {
+      "i": 136,
+      "person": "Roustam_Tariko",
+      "hq": "Moscow",
+      "decoy_hq": "Atlanta",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_136",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_136"
+      },
+      "gold": "Moscow"
+    },
+    {
+      "i": 137,
+      "person": "Jeff_Arnold",
+      "hq": "Atlanta",
+      "decoy_hq": "Burbank",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_137",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_137"
+      },
+      "gold": "Atlanta"
+    },
+    {
+      "i": 138,
+      "person": "James_Gunn",
+      "hq": "Burbank",
+      "decoy_hq": "Tremblay-en-France",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_138",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_138"
+      },
+      "gold": "Burbank"
+    },
+    {
+      "i": 139,
+      "person": "Dani_le_Marcovici",
+      "hq": "Tremblay-en-France",
+      "decoy_hq": "Wei_enfels",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_139",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_139"
+      },
+      "gold": "Tremblay-en-France"
+    },
+    {
+      "i": 140,
+      "person": "Martin_Geissler",
+      "hq": "Wei_enfels",
+      "decoy_hq": "Gothenburg",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_140",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_140"
+      },
+      "gold": "Wei_enfels"
+    },
+    {
+      "i": 141,
+      "person": "John_Nystr_m",
+      "hq": "Gothenburg",
+      "decoy_hq": "Duluth",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_141",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_141"
+      },
+      "gold": "Gothenburg"
+    },
+    {
+      "i": 142,
+      "person": "Glenn_J._Williams",
+      "hq": "Duluth",
+      "decoy_hq": "Saint_Petersburg",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_142",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_142"
+      },
+      "gold": "Duluth"
+    },
+    {
+      "i": 143,
+      "person": "Aleksey_Zemsky",
+      "hq": "Saint_Petersburg",
+      "decoy_hq": "Nashville",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_143",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_143"
+      },
+      "gold": "Saint_Petersburg"
+    },
+    {
+      "i": 144,
+      "person": "Damon_T._Hininger",
+      "hq": "Nashville",
+      "decoy_hq": "Santa_Clara",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_144",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_144"
+      },
+      "gold": "Nashville"
+    },
+    {
+      "i": 145,
+      "person": "Dan_Rosensweig",
+      "hq": "Santa_Clara",
+      "decoy_hq": "Sydney",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_145",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_145"
+      },
+      "gold": "Santa_Clara"
+    },
+    {
+      "i": 146,
+      "person": "Greg_Waldorf",
+      "hq": "Sydney",
+      "decoy_hq": "Eagan",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_146",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_146"
+      },
+      "gold": "Sydney"
+    },
+    {
+      "i": 147,
+      "person": "Douglas_Steenland",
+      "hq": "Eagan",
+      "decoy_hq": "Yerevan",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_147",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_147"
+      },
+      "gold": "Eagan"
+    },
+    {
+      "i": 148,
+      "person": "Ralph_Yirikian",
+      "hq": "Yerevan",
+      "decoy_hq": "Mexico_City",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_148",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_148"
+      },
+      "gold": "Yerevan"
+    },
+    {
+      "i": 149,
+      "person": "Manuel_Bartlett_D_az",
+      "hq": "Mexico_City",
+      "decoy_hq": "Salt_Lake_City",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_149",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_149"
+      },
+      "gold": "Mexico_City"
+    },
+    {
+      "i": 150,
+      "person": "Marc_Harrison",
+      "hq": "Salt_Lake_City",
+      "decoy_hq": "Quebec_City",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_150",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_150"
+      },
+      "gold": "Salt_Lake_City"
+    },
+    {
+      "i": 151,
+      "person": "Philippe_Morin",
+      "hq": "Quebec_City",
+      "decoy_hq": "Or_Yehuda",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_151",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_151"
+      },
+      "gold": "Quebec_City"
+    },
+    {
+      "i": 152,
+      "person": "Eli_Bin",
+      "hq": "Or_Yehuda",
+      "decoy_hq": "Wolfsburg",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_152",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_152"
+      },
+      "gold": "Or_Yehuda"
+    },
+    {
+      "i": 153,
+      "person": "Oliver_Blume",
+      "hq": "Wolfsburg",
+      "decoy_hq": "Troms",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_153",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_153"
+      },
+      "gold": "Wolfsburg"
+    },
+    {
+      "i": 154,
+      "person": "yvind_Fylling-Jensen",
+      "hq": "Troms",
+      "decoy_hq": "Wilmington",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_154",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_154"
+      },
+      "gold": "Troms"
+    },
+    {
+      "i": 155,
+      "person": "Joseph_C._Papa",
+      "hq": "Wilmington",
+      "decoy_hq": "Liverpool",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_155",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_155"
+      },
+      "gold": "Wilmington"
+    },
+    {
+      "i": 156,
+      "person": "Lesley_Douglas",
+      "hq": "Liverpool",
+      "decoy_hq": "Warsaw",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_156",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_156"
+      },
+      "gold": "Liverpool"
+    },
+    {
+      "i": 157,
+      "person": "Jean-Fran_ois_Fallacher",
+      "hq": "Warsaw",
+      "decoy_hq": "Bonn",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_157",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_157"
+      },
+      "gold": "Warsaw"
+    },
+    {
+      "i": 158,
+      "person": "Patrick_Opdenh_vel",
+      "hq": "Bonn",
+      "decoy_hq": "Tampere",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_158",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_158"
+      },
+      "gold": "Bonn"
+    },
+    {
+      "i": 159,
+      "person": "Matti_Karppinen",
+      "hq": "Tampere",
+      "decoy_hq": "Chicago",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_159",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_159"
+      },
+      "gold": "Tampere"
+    },
+    {
+      "i": 160,
+      "person": "Peter_Wilt",
+      "hq": "Chicago",
+      "decoy_hq": "Moscow",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_160",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_160"
+      },
+      "gold": "Chicago"
+    },
+    {
+      "i": 161,
+      "person": "Olga_Paksina",
+      "hq": "Moscow",
+      "decoy_hq": "Frankfurt",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_161",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_161"
+      },
+      "gold": "Moscow"
+    },
+    {
+      "i": 162,
+      "person": "Otto_Heinrich_Frank",
+      "hq": "Frankfurt",
+      "decoy_hq": "Southampton",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_162",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_162"
+      },
+      "gold": "Frankfurt"
+    },
+    {
+      "i": 163,
+      "person": "Arnold_W._Donald",
+      "hq": "Southampton",
+      "decoy_hq": "Melbourne",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_163",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_163"
+      },
+      "gold": "Southampton"
+    },
+    {
+      "i": 164,
+      "person": "Andy_Penn",
+      "hq": "Melbourne",
+      "decoy_hq": "Vienna",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_164",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_164"
+      },
+      "gold": "Melbourne"
+    },
+    {
+      "i": 165,
+      "person": "Hannes_Androsch",
+      "hq": "Vienna",
+      "decoy_hq": "Indianapolis",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_165",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_165"
+      },
+      "gold": "Vienna"
+    },
+    {
+      "i": 166,
+      "person": "Patrick_F._Carr",
+      "hq": "Indianapolis",
+      "decoy_hq": "Beijing",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_166",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_166"
+      },
+      "gold": "Indianapolis"
+    },
+    {
+      "i": 167,
+      "person": "Cheng_Wei",
+      "hq": "Beijing",
+      "decoy_hq": "Viborg",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_167",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_167"
+      },
+      "gold": "Beijing"
+    },
+    {
+      "i": 168,
+      "person": "Per_N_rhaven",
+      "hq": "Viborg",
+      "decoy_hq": "Chaska",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_168",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_168"
+      },
+      "gold": "Viborg"
+    },
+    {
+      "i": 169,
+      "person": "Mike_Lindell",
+      "hq": "Chaska",
+      "decoy_hq": "Auckland",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_169",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_169"
+      },
+      "gold": "Chaska"
+    },
+    {
+      "i": 170,
+      "person": "Greg_Foran",
+      "hq": "Auckland",
+      "decoy_hq": "Sydney",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_170",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_170"
+      },
+      "gold": "Auckland"
+    },
+    {
+      "i": 171,
+      "person": "Nick_Baker",
+      "hq": "Sydney",
+      "decoy_hq": "Nicosia",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_171",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_171"
+      },
+      "gold": "Sydney"
+    },
+    {
+      "i": 172,
+      "person": "Nasos_Ktorides",
+      "hq": "Nicosia",
+      "decoy_hq": "Frederiksberg",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_172",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_172"
+      },
+      "gold": "Nicosia"
+    },
+    {
+      "i": 173,
+      "person": "Henning_Lund",
+      "hq": "Frederiksberg",
+      "decoy_hq": "Flor",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_173",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_173"
+      },
+      "gold": "Frederiksberg"
+    },
+    {
+      "i": 174,
+      "person": "Dagfinn_Neteland",
+      "hq": "Flor",
+      "decoy_hq": "Broomfield",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_174",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_174"
+      },
+      "gold": "Flor"
+    },
+    {
+      "i": 175,
+      "person": "Janet_L._Kavandi",
+      "hq": "Broomfield",
+      "decoy_hq": "Chicago",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_175",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_175"
+      },
+      "gold": "Broomfield"
+    },
+    {
+      "i": 176,
+      "person": "Scott_Etzler",
+      "hq": "Chicago",
+      "decoy_hq": "Tel_Aviv",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_176",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_176"
+      },
+      "gold": "Chicago"
+    },
+    {
+      "i": 177,
+      "person": "Frank_Melloul",
+      "hq": "Tel_Aviv",
+      "decoy_hq": "Trondheim",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_177",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_177"
+      },
+      "gold": "Tel_Aviv"
+    },
+    {
+      "i": 178,
+      "person": "Tom_R_tting",
+      "hq": "Trondheim",
+      "decoy_hq": "Singapore",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_178",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_178"
+      },
+      "gold": "Trondheim"
+    },
+    {
+      "i": 179,
+      "person": "Theodoric_Chew",
+      "hq": "Singapore",
+      "decoy_hq": "Rotterdam",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_179",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_179"
+      },
+      "gold": "Singapore"
+    },
+    {
+      "i": 180,
+      "person": "Boyan_Slat",
+      "hq": "Rotterdam",
+      "decoy_hq": "Bengaluru",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_180",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_180"
+      },
+      "gold": "Rotterdam"
+    },
+    {
+      "i": 181,
+      "person": "Anji_Reddy",
+      "hq": "Bengaluru",
+      "decoy_hq": "Malm",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_181",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_181"
+      },
+      "gold": "Bengaluru"
+    },
+    {
+      "i": 182,
+      "person": "Peter_Sunde",
+      "hq": "Malm",
+      "decoy_hq": "Stockholm",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_182",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_182"
+      },
+      "gold": "Malm"
+    },
+    {
+      "i": 183,
+      "person": "Ebba_Ljungerud",
+      "hq": "Stockholm",
+      "decoy_hq": "Munich",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_183",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_183"
+      },
+      "gold": "Stockholm"
+    },
+    {
+      "i": 184,
+      "person": "J_rg_Sutara",
+      "hq": "Munich",
+      "decoy_hq": "Pittsburgh",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_184",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_184"
+      },
+      "gold": "Munich"
+    },
+    {
+      "i": 185,
+      "person": "David_Burritt",
+      "hq": "Pittsburgh",
+      "decoy_hq": "The_Hague",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_185",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_185"
+      },
+      "gold": "Pittsburgh"
+    },
+    {
+      "i": 186,
+      "person": "Naguib_Sawiris",
+      "hq": "The_Hague",
+      "decoy_hq": "Mattersburg",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_186",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_186"
+      },
+      "gold": "The_Hague"
+    },
+    {
+      "i": 187,
+      "person": "Martin_Pucher",
+      "hq": "Mattersburg",
+      "decoy_hq": "Nakhodka",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_187",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_187"
+      },
+      "gold": "Mattersburg"
+    },
+    {
+      "i": 188,
+      "person": "Nikolai_Kotlyar",
+      "hq": "Nakhodka",
+      "decoy_hq": "Moscow",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_188",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_188"
+      },
+      "gold": "Nakhodka"
+    },
+    {
+      "i": 189,
+      "person": "Semyon_Vainshtok",
+      "hq": "Moscow",
+      "decoy_hq": "Bydgoszcz",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_189",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_189"
+      },
+      "gold": "Moscow"
+    },
+    {
+      "i": 190,
+      "person": "Maciej_Banach",
+      "hq": "Bydgoszcz",
+      "decoy_hq": "Boston",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_190",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_190"
+      },
+      "gold": "Bydgoszcz"
+    },
+    {
+      "i": 191,
+      "person": "John_Fish",
+      "hq": "Boston",
+      "decoy_hq": "Luxembourg",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_191",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_191"
+      },
+      "gold": "Boston"
+    },
+    {
+      "i": 192,
+      "person": "Daniel_Ek",
+      "hq": "Luxembourg",
+      "decoy_hq": "Bremen",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_192",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_192"
+      },
+      "gold": "Luxembourg"
+    },
+    {
+      "i": 193,
+      "person": "Marco_Fuchs",
+      "hq": "Bremen",
+      "decoy_hq": "Vilnius",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_193",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_193"
+      },
+      "gold": "Bremen"
+    },
+    {
+      "i": 194,
+      "person": "Rimantas_Perveneckas",
+      "hq": "Vilnius",
+      "decoy_hq": "Singapore",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_194",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_194"
+      },
+      "gold": "Vilnius"
+    },
+    {
+      "i": 195,
+      "person": "Goh_Choon_Phong",
+      "hq": "Singapore",
+      "decoy_hq": "Bangkok",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_195",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_195"
+      },
+      "gold": "Singapore"
+    },
+    {
+      "i": 196,
+      "person": "Nawat_Itsaragrisil",
+      "hq": "Bangkok",
+      "decoy_hq": "Randers",
+      "gold_first": true,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_196",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_196"
+      },
+      "gold": "Bangkok"
+    },
+    {
+      "i": 197,
+      "person": "Niels_Duedahl",
+      "hq": "Randers",
+      "decoy_hq": "Tremblay-en-France",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_197",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_197"
+      },
+      "gold": "Randers"
+    },
+    {
+      "i": 198,
+      "person": "Franck_Terner",
+      "hq": "Tremblay-en-France",
+      "decoy_hq": "Gothenburg",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_198",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_198"
+      },
+      "gold": "Tremblay-en-France"
+    },
+    {
+      "i": 199,
+      "person": "Martin_Lundstedt",
+      "hq": "Gothenburg",
+      "decoy_hq": "San_Jose",
+      "gold_first": false,
+      "ids": {
+        "ENG_AMBIG": "F200S_ENG_AMBIG_199",
+        "OPAQUE_AMBIG": "F200S_OPAQUE_AMBIG_199"
+      },
+      "gold": "Gothenburg"
+    }
+  ]
+}

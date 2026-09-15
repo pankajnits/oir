@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_181 #####
+PATH_QUERY
+START Anji_Reddy
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Anji_Reddy | works_at | growtm
+growtm | headquartered_in | Bengaluru
+DecoyCo_growtm | headquartered_in | DecoyHQ_Bengaluru
+growtm | owned_by | Hold_growtm
+Hold_growtm | meta_of | growtm
+growtm | partner_of | Partner_growtm
+Partner_growtm | meta_of | growtm
+Decoy_DecoyCo_growtm | works_at | DecoyCo_growtm

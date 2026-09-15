@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_SEALED[ER200_OE_UNIQUE_16]: <token_or_UNKNOWN>
+ARM OE_UNIQUE: opaque entities, English relations; one 2-hop.
+##### ID ER200_OE_UNIQUE_16 #####
+QUESTION:
+What city is the headquarters of the company led by E8141f84b4d48?
+
+CONTEXT:
+E8141f84b4d48 | works_at | E85070507b397
+E85070507b397 | headquartered_in | Ee32617401940
+E95a819681a55 | works_at | E51a37b724209
+E51a37b724209 | headquartered_in | Ef800a294e34a

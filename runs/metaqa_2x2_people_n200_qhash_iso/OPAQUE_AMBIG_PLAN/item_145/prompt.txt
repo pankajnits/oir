@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_145]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_145 #####
+QUESTION:
+Who Ede1e824a096f a E50fbeb3a64fd Edea80e99db36 [AJ Bowen] E7064a635ae25 Ea9162f2c5cfd?
+
+PATH_QUERY
+START AJ Bowen
+R1 E7144cd791054
+R2 Eddd114fe5df5
+Execute path; return final tail only.
+
+CONTEXT:
+AJ Bowen | E7144cd791054 | A Horrible Way to Die
+A Horrible Way to Die | Eddd114fe5df5 | Adam Wingard
+A Horrible Way to Die | E404a65766acb | Simon Barrett

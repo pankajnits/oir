@@ -1,0 +1,35 @@
+{
+  "id": "F200S_OPAQUE_AMBIG_40",
+  "arm": "OPAQUE_AMBIG",
+  "item": 40,
+  "prompt_path": "runs/factorial_2x2_iso_shuffle_n200/OPAQUE_AMBIG/item_40/prompt.txt",
+  "pred": "Haifa",
+  "raw": "ANSWER_PLAIN[F200S_OPAQUE_AMBIG_40]: Haifa",
+  "elapsed_s": 2.558,
+  "utc": "2026-09-15T08:58:44.052256+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJHt2lQxZrA64JDxoaPHLtSN47oD",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462721,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 75,
+    "prompt_tokens": 205,
+    "total_tokens": 280,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 50,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_UNIQUE_9]: <city_or_UNKNOWN>
+ARM ENG_UNIQUE: English relations; one 2-hop from start.
+##### ID F200_ENG_UNIQUE_9 #####
+QUESTION:
+What city is the headquarters of the company led by Bob_Arum?
+
+CONTEXT:
+Bob_Arum | works_at | Top_Rank
+Top_Rank | headquartered_in | Las_Vegas
+Jane_Deeter_Rippin | works_at | Girl_Scouts_of_the_USA
+Girl_Scouts_of_the_USA | headquartered_in | New_York_City

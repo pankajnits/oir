@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_186]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_186 #####
+QUESTION:
+Who directed a movie that Rutger Hauer starred in?
+
+PATH_QUERY
+START Rutger Hauer
+R1 Edd89876b0fb7
+R2 Effbebbaee480
+Execute path; return final tail only.
+
+CONTEXT:
+Rutger Hauer | Edd89876b0fb7 | Mentor
+Mentor | Effbebbaee480 | David Langlitz
+Mentor | E1468f7f1343d | William Whitehurst

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_46]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_46 #####
+QUESTION:
+What city is the headquarters of the company led by Mikhail_Cherevko?
+
+PATH_QUERY
+START Mikhail_Cherevko
+R1 E0c7e55f747ca
+R2 Ebddd78b64e9f
+Execute path; return final tail only.
+
+CONTEXT:
+Mikhail_Cherevko | E0c7e55f747ca | Slavneft-Megionneftegaz
+Slavneft-Megionneftegaz | Ebddd78b64e9f | Megion
+Mikhail_Cherevko | E0caecbcc42e2 | National_Cancer_Institute
+National_Cancer_Institute | Ef1dad8bd6dda | Boulogne-Billancourt

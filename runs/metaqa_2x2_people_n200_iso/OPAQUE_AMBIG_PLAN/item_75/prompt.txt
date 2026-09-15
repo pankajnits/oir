@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_75]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_75 #####
+QUESTION:
+Who directed a movie that Garrett Hedlund starred in?
+
+PATH_QUERY
+START Garrett Hedlund
+R1 Ed7bd72aae1c7
+R2 E8dd69e71f837
+Execute path; return final tail only.
+
+CONTEXT:
+Garrett Hedlund | Ed7bd72aae1c7 | Unbroken
+Unbroken | E8dd69e71f837 | Angelina Jolie
+Unbroken | Ee4a8e23500c8 | Laura Hillenbrand

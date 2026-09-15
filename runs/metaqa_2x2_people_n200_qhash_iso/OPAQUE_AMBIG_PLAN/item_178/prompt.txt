@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_178]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_178 #####
+QUESTION:
+Who E59aa88dd88a7 a Ec209694bc348 Eb44fb4b1c967 [Ryan Reynolds] Ee4973cbf6780 Ec5c141ebc3b3?
+
+PATH_QUERY
+START Ryan Reynolds
+R1 E1ec9d88b81f0
+R2 Ebd6760581371
+Execute path; return final tail only.
+
+CONTEXT:
+Ryan Reynolds | E1ec9d88b81f0 | Buried
+Buried | Ebd6760581371 | Rodrigo Cortés
+Buried | Eb7e397f52fa0 | Chris Sparling

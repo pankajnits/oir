@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_9]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_9 #####
+QUESTION:
+Who directed a movie that Amy Adams starred in?
+
+PATH_QUERY
+START Amy Adams
+R1 E677a4831abdb
+R2 E8897d2ee3c53
+Execute path; return final tail only.
+
+CONTEXT:
+Amy Adams | E677a4831abdb | Enchanted
+Enchanted | E8897d2ee3c53 | Kevin Lima
+Enchanted | Ef78c97c914b5 | Bill Kelly

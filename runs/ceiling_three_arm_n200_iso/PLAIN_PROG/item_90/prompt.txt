@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_90 #####
+PATH_QUERY
+START Luigi_Ferraris
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Luigi_Ferraris | works_at | Terna_S.p.A.
+Terna_S.p.A. | headquartered_in | Rome
+DecoyCo_Terna_S.p.A. | headquartered_in | DecoyHQ_Rome
+Terna_S.p.A. | owned_by | Hold_Terna_S.p.A.
+Hold_Terna_S.p.A. | meta_of | Terna_S.p.A.
+Terna_S.p.A. | partner_of | Partner_Terna_S.p.A.
+Partner_Terna_S.p.A. | meta_of | Terna_S.p.A.
+Decoy_DecoyCo_Terna_S.p.A. | works_at | DecoyCo_Terna_S.p.A.

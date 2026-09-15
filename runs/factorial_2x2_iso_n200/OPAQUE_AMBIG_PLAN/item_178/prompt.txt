@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_178]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_178 #####
+QUESTION:
+What city is the headquarters of the company led by Tom_R_tting?
+
+PATH_QUERY
+START Tom_R_tting
+R1 E34a001819f0c
+R2 E9a26483d4daf
+Execute path; return final tail only.
+
+CONTEXT:
+Tom_R_tting | E34a001819f0c | Uninett
+Uninett | E9a26483d4daf | Trondheim
+Tom_R_tting | Eeb599929368e | Intellect
+Intellect | E7080e89150bc | Singapore

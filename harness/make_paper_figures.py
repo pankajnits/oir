@@ -168,7 +168,9 @@ def main():
         score_of(ident_iso["NS_SILENT"]),
     ]
     vals = [frac(s) for s in scores]
-    colors = ["#b33a3a", "#2a6f6f", "#c47a2c", "#2a6f6f", "#b33a3a"]
+    # Teal = exact-match gold (including the 6/32 silent cell). Red = 0/32.
+    # Do not reuse fig1's decoy orange here: silent 6/32 is gold, not decoy.
+    colors = ["#b33a3a", "#2a6f6f", "#2a6f6f", "#2a6f6f", "#b33a3a"]
     x = np.arange(len(labs))
     bars = ax.bar(x, vals, color=colors, width=0.72, edgecolor="#1a1a1a", linewidth=0.6)
     ax.set_xticks(x)
@@ -182,7 +184,7 @@ def main():
     plt.close()
 
     fig, ax = _one_panel("fig3_dualpath", figsize=(5.6, 3.35))
-    labs = ["Matched\nrelation", "Novel\nrelation", "Explicit\nplan"]
+    labs = ["Matched\nrelation", "Novel\n(asymmetric)", "Explicit\nplan"]
     scores = [adv["SAME_TRAP"]["score"], adv["CROSS_TRAP"]["score"], adv["PATH_TRAP"]["score"]]
     vals = [frac(s) for s in scores]
     colors = ["#2a6f6f", "#b33a3a", "#2a6f6f"]
@@ -239,13 +241,13 @@ def main():
     plt.close()
 
     fig, ax = plt.subplots(figsize=(4.8, 3.2), constrained_layout=True)
-    labs = [r"Plan under $\sigma$", r"Plan under $\sigma'$", "Both pair-correct"]
+    labs = ["Plan under key 1", "Plan under key 2", "Both pair-correct"]
     scores = [rename["SIGMA"], rename["SIGMA_PRIME"], rename["paired_both_ok"]]
     vals = [frac(s) for s in scores]
     bars = ax.bar(labs, vals, color="#2a6f6f", width=0.55, edgecolor="#1a1a1a", lw=0.6)
     set_acc_axis(ax)
     ax.set_ylabel("Exact accuracy")
-    ax.set_title(r"Join-plan rename equivariance ($\sigma$ / $\sigma'$)")
+    ax.set_title("Join-plan rename equivariance (two HMAC keys)")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     for b, s, v in zip(bars, scores, vals):

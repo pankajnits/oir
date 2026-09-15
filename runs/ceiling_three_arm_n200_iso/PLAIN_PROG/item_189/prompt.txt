@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_189 #####
+PATH_QUERY
+START Semyon_Vainshtok
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Semyon_Vainshtok | works_at | Olympstroy
+Olympstroy | headquartered_in | Moscow
+DecoyCo_Olympstroy | headquartered_in | DecoyHQ_Moscow
+Olympstroy | owned_by | Hold_Olympstroy
+Hold_Olympstroy | meta_of | Olympstroy
+Olympstroy | partner_of | Partner_Olympstroy
+Partner_Olympstroy | meta_of | Olympstroy
+Decoy_DecoyCo_Olympstroy | works_at | DecoyCo_Olympstroy

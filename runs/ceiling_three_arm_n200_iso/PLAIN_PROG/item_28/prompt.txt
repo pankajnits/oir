@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_28 #####
+PATH_QUERY
+START Andrzej_Modrzejewski
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Andrzej_Modrzejewski | works_at | Orlen
+Orlen | headquartered_in | P_ock
+DecoyCo_Orlen | headquartered_in | DecoyHQ_P_ock
+Orlen | owned_by | Hold_Orlen
+Hold_Orlen | meta_of | Orlen
+Orlen | partner_of | Partner_Orlen
+Partner_Orlen | meta_of | Orlen
+Decoy_DecoyCo_Orlen | works_at | DecoyCo_Orlen

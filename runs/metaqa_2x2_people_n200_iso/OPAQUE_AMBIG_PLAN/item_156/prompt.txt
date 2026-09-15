@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_156]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_156 #####
+QUESTION:
+Who directed a movie that Paula Kelly starred in?
+
+PATH_QUERY
+START Paula Kelly
+R1 E7336b2f3ab9c
+R2 E2ed202edc080
+Execute path; return final tail only.
+
+CONTEXT:
+Paula Kelly | E7336b2f3ab9c | The Spook Who Sat by the Door
+The Spook Who Sat by the Door | E2ed202edc080 | Ivan Dixon
+The Spook Who Sat by the Door | Ec03e194f4dc4 | Sam Greenlee

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_9 #####
+PATH_QUERY
+START Bob_Arum
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Bob_Arum | works_at | Top_Rank
+Top_Rank | headquartered_in | Las_Vegas
+DecoyCo_Top_Rank | headquartered_in | DecoyHQ_Las_Vegas
+Top_Rank | owned_by | Hold_Top_Rank
+Hold_Top_Rank | meta_of | Top_Rank
+Top_Rank | partner_of | Partner_Top_Rank
+Partner_Top_Rank | meta_of | Top_Rank
+Decoy_DecoyCo_Top_Rank | works_at | DecoyCo_Top_Rank

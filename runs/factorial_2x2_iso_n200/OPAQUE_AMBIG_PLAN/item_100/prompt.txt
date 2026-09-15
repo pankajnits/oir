@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_100]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_100 #####
+QUESTION:
+What city is the headquarters of the company led by Tim_Steiner?
+
+PATH_QUERY
+START Tim_Steiner
+R1 Ee71eb38b82e0
+R2 Eef7d62b6c953
+Execute path; return final tail only.
+
+CONTEXT:
+Tim_Steiner | Ee71eb38b82e0 | Ocado
+Ocado | Eef7d62b6c953 | Hatfield
+Tim_Steiner | E1d2c9d83d19c | Grossglockner_Hochalpenstrassen_AG
+Grossglockner_Hochalpenstrassen_AG | Effd7fe9f69dc | Salzburg

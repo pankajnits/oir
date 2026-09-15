@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_167 #####
+PATH_QUERY
+START Cheng_Wei
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Cheng_Wei | works_at | DiDi_Global
+DiDi_Global | headquartered_in | Beijing
+DecoyCo_DiDi_Global | headquartered_in | DecoyHQ_Beijing
+DiDi_Global | owned_by | Hold_DiDi_Global
+Hold_DiDi_Global | meta_of | DiDi_Global
+DiDi_Global | partner_of | Partner_DiDi_Global
+Partner_DiDi_Global | meta_of | DiDi_Global
+Decoy_DecoyCo_DiDi_Global | works_at | DecoyCo_DiDi_Global

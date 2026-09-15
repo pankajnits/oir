@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_8]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_8 #####
+QUESTION:
+What city is the headquarters of the company led by Isona_Passola_i_Vidal?
+
+PATH_QUERY
+START Isona_Passola_i_Vidal
+R1 E64ea9804bb3e
+R2 E368f220b630c
+Execute path; return final tail only.
+
+CONTEXT:
+Isona_Passola_i_Vidal | E64ea9804bb3e | Massa_d_Or_Produccions
+Massa_d_Or_Produccions | E368f220b630c | Barcelona
+Isona_Passola_i_Vidal | E0807a36ad139 | Top_Rank
+Top_Rank | Eba2fbe679657 | Las_Vegas

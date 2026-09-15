@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_184]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_184 #####
+QUESTION:
+Who E135efe10807f a Ec92c3f94b85e Ed2a6bfe82e98 [Jude Law] E3365b25777a6 Ef6c44a82cd46?
+
+PATH_QUERY
+START Jude Law
+R1 E462e3d946850
+R2 E992166c5d4cb
+Execute path; return final tail only.
+
+CONTEXT:
+Jude Law | E462e3d946850 | Rise of the Guardians
+Rise of the Guardians | E992166c5d4cb | Peter Ramsey
+Rise of the Guardians | Eaecfaccd95a9 | William Joyce

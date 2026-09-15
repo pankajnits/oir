@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_16]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_16 #####
+QUESTION:
+Who directed a movie that Joan Blondell starred in?
+
+PATH_QUERY
+START Joan Blondell
+R1 E071c8a6c0e0e
+R2 E84eff3b2dd0b
+Execute path; return final tail only.
+
+CONTEXT:
+Joan Blondell | E071c8a6c0e0e | Big City Blues
+Big City Blues | E84eff3b2dd0b | Mervyn LeRoy
+Big City Blues | E7e379521e67f | Ward Morehouse

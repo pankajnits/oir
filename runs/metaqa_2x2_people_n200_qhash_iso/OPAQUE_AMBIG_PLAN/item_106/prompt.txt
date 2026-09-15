@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_106]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_106 #####
+QUESTION:
+Who E9e1c92ffb9a2 a Ecb1e5025799e Ef8270011a76e [Robert De Niro] Eb40b304547ef Eb1bbd5c3e126?
+
+PATH_QUERY
+START Robert De Niro
+R1 Ec4b9909bc8de
+R2 E4fe9aa95ef33
+Execute path; return final tail only.
+
+CONTEXT:
+Robert De Niro | Ec4b9909bc8de | Backdraft
+Backdraft | E4fe9aa95ef33 | Ron Howard
+Backdraft | Eba2dee90545b | Gregory Widen

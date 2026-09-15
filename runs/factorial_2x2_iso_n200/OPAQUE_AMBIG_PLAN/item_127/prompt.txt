@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_127]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_127 #####
+QUESTION:
+What city is the headquarters of the company led by Laxman_Narasimhan?
+
+PATH_QUERY
+START Laxman_Narasimhan
+R1 E1d08735a77f7
+R2 E8c5a27352fc4
+Execute path; return final tail only.
+
+CONTEXT:
+Laxman_Narasimhan | E1d08735a77f7 | Reckitt
+Reckitt | E8c5a27352fc4 | Slough
+Laxman_Narasimhan | E65632990de00 | PostNL
+PostNL | Eae7620a0cde3 | The_Hague

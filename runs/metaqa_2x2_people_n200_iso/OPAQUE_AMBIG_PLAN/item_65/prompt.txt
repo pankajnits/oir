@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_65]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_65 #####
+QUESTION:
+Who directed a movie that Kirk Douglas starred in?
+
+PATH_QUERY
+START Kirk Douglas
+R1 E4adff2e5c1b7
+R2 Ee3afeb11a714
+Execute path; return final tail only.
+
+CONTEXT:
+Kirk Douglas | E4adff2e5c1b7 | The Brotherhood
+The Brotherhood | Ee3afeb11a714 | Martin Ritt
+The Brotherhood | Ea0db058bed6d | Lewis John Carlino

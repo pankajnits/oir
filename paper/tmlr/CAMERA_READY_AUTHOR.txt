@@ -1,0 +1,14 @@
+Anonymous authors
+Independent researcher, India
+mightypp.nits@gmail.com
+
+After accept, in main.tex:
+1. Change \usepackage{tmlr} to \usepackage[accepted]{tmlr}
+2. Replace the \author block with:
+
+\author{\name Pankaj Pandey \email mightypp.nits@gmail.com \\
+ \addr Independent researcher, India}
+
+3. Set \def\openreview{\url{https://openreview.net/forum?id=THE_REAL_ID}}
+4. Set \def\month{MM} and \def\year{YYYY} to the acceptance month/year.
+5. Restore pdfauthor={Pankaj Pandey} in \hypersetup.

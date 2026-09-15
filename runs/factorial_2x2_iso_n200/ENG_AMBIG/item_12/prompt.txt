@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_12]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_12 #####
+QUESTION:
+What city is the headquarters of the company led by Saeed_Amidi?
+
+CONTEXT:
+Saeed_Amidi | works_at | Plug_and_Play_Tech_Center
+Plug_and_Play_Tech_Center | headquartered_in | Sunnyvale
+Saeed_Amidi | partner_of | Bristol-Myers_Squibb
+Bristol-Myers_Squibb | located_in | New_York_City

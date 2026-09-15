@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[<id>]: <seal_or_UNKNOWN>
+
+ARM B: same PATH binder with opaque sealed atoms.
+
+##### ID CEIL200_SEALPROG_33 #####
+PATH_QUERY
+START E6ba6369e2d6a
+R1 E234036d64801
+R2 Ecc3359857f9c
+Execute path; return final tail only.
+
+CONTEXT:
+E6ba6369e2d6a | E234036d64801 | Ee6fbc34545db
+Ee6fbc34545db | Ecc3359857f9c | Ec624249c9c49
+E574dde29fc12 | Ecc3359857f9c | Ef22a4a91668c
+Ee6fbc34545db | E7b4b0cc38902 | Ebb31b49e4baa
+Ebb31b49e4baa | E647e05f64ce9 | Ee6fbc34545db
+Ee6fbc34545db | Eeb8420df8c03 | E442255c21b75
+E442255c21b75 | E647e05f64ce9 | Ee6fbc34545db
+Eec0f6fa4e527 | E234036d64801 | E574dde29fc12

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_163]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_163 #####
+QUESTION:
+Who directed a movie that Lloyd Bridges starred in?
+
+PATH_QUERY
+START Lloyd Bridges
+R1 E207f99a6e520
+R2 E5571efcc6b21
+Execute path; return final tail only.
+
+CONTEXT:
+Lloyd Bridges | E207f99a6e520 | The Sound of Fury
+The Sound of Fury | E5571efcc6b21 | Cy Endfield
+The Sound of Fury | Eea9494434d47 | Jo Pagano

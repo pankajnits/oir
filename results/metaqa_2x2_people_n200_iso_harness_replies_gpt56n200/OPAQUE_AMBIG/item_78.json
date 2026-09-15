@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_78",
+  "arm": "OPAQUE_AMBIG",
+  "item": 78,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG/item_78/prompt.txt",
+  "pred": "Tomas Alfredson",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_78]: Tomas Alfredson",
+  "elapsed_s": 2.733,
+  "utc": "2026-09-15T09:16:12.344449+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJYoQDBw7bD1cXWEwBd1MCs5v0qI",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463770,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 86,
+    "prompt_tokens": 164,
+    "total_tokens": 250,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 59,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

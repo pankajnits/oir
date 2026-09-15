@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_133]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_133 #####
+QUESTION:
+Who directed a movie that Matthew Goode starred in?
+
+PATH_QUERY
+START Matthew Goode
+R1 E0209daa48f17
+R2 E2b71d6b2e5a2
+Execute path; return final tail only.
+
+CONTEXT:
+Matthew Goode | E0209daa48f17 | Belle
+Belle | E2b71d6b2e5a2 | Amma Asante
+Belle | E8254c84284ea | Misan Sagay

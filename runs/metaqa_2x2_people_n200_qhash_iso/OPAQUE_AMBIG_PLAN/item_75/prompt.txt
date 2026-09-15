@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_75]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_75 #####
+QUESTION:
+Who E6b81e614f470 a E308eb25f6313 E150ddadb1a05 [Garrett Hedlund] E2683ad5abdcd E95bc482cac89?
+
+PATH_QUERY
+START Garrett Hedlund
+R1 E5597b3bd5af1
+R2 E70a9d31f3fa3
+Execute path; return final tail only.
+
+CONTEXT:
+Garrett Hedlund | E5597b3bd5af1 | Unbroken
+Unbroken | E70a9d31f3fa3 | Angelina Jolie
+Unbroken | E31b303628580 | Laura Hillenbrand

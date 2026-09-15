@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_168]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_168 #####
+QUESTION:
+Who Ed7c33a056b8f a E92c4dd46788b E3870d4276be5 [Robert Conrad] E8f34cdea8791 E101a09fef960?
+
+PATH_QUERY
+START Robert Conrad
+R1 E5b4906105a61
+R2 E384a01bc5115
+Execute path; return final tail only.
+
+CONTEXT:
+Robert Conrad | E5b4906105a61 | The Lady in Red
+The Lady in Red | E384a01bc5115 | Lewis Teague
+The Lady in Red | E8b62aaba672c | John Sayles

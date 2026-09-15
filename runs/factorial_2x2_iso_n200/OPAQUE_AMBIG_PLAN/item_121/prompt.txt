@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_121]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_121 #####
+QUESTION:
+What city is the headquarters of the company led by Thomas_Zacharia?
+
+PATH_QUERY
+START Thomas_Zacharia
+R1 Eab435d00337e
+R2 Ec4bfb8cc9781
+Execute path; return final tail only.
+
+CONTEXT:
+Thomas_Zacharia | Eab435d00337e | Oak_Ridge_National_Laboratory
+Oak_Ridge_National_Laboratory | Ec4bfb8cc9781 | Oak_Ridge
+Thomas_Zacharia | E64d3a4163e11 | Agrokor
+Agrokor | E0bdd02947162 | Zagreb

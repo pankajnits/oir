@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_40]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_40 #####
+QUESTION:
+Who Eb1564c4dde9f a E7fcd0dd6a802 E28d04ab75ee5 [Jane Lynch] E88d289365e1b E45ecd3ebd3cf?
+
+PATH_QUERY
+START Jane Lynch
+R1 E1412ffeef700
+R2 E057771ecdf70
+Execute path; return final tail only.
+
+CONTEXT:
+Jane Lynch | E1412ffeef700 | Mr. Troop Mom
+Mr. Troop Mom | E057771ecdf70 | William Dear
+Mr. Troop Mom | E1ae8645af960 | Thomas Ian Griffith

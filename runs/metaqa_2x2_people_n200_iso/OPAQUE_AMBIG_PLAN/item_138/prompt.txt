@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_138]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_138 #####
+QUESTION:
+Who directed a movie that Van Heflin starred in?
+
+PATH_QUERY
+START Van Heflin
+R1 E28898eaa7680
+R2 Eaeb1810554f6
+Execute path; return final tail only.
+
+CONTEXT:
+Van Heflin | E28898eaa7680 | Patterns
+Patterns | Eaeb1810554f6 | Fielder Cook
+Patterns | E34328d7a2e22 | Rod Serling

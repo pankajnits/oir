@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_138]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_138 #####
+QUESTION:
+What city is the headquarters of the company led by James_Gunn?
+
+PATH_QUERY
+START James_Gunn
+R1 Efa23a5e8efa2
+R2 E9e1139a56222
+Execute path; return final tail only.
+
+CONTEXT:
+James_Gunn | Efa23a5e8efa2 | DC_Studios
+DC_Studios | E9e1139a56222 | Burbank
+James_Gunn | Ec8f4c0480edb | Raja_Group
+Raja_Group | Ea00f2f19f3fa | Tremblay-en-France

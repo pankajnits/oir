@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_66 #####
+PATH_QUERY
+START W._Paul_Menzel
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+W._Paul_Menzel | works_at | Cooperative_Institute_for_Meteorological_Satellite_Studies
+Cooperative_Institute_for_Meteorological_Satellite_Studies | headquartered_in | Madison
+DecoyCo_Cooperative_Institute_for_Meteorological_Satellite_Studies | headquartered_in | DecoyHQ_Madison
+Cooperative_Institute_for_Meteorological_Satellite_Studies | owned_by | Hold_Cooperative_Institute_for_Meteorological_Satellite_Studies
+Hold_Cooperative_Institute_for_Meteorological_Satellite_Studies | meta_of | Cooperative_Institute_for_Meteorological_Satellite_Studies
+Cooperative_Institute_for_Meteorological_Satellite_Studies | partner_of | Partner_Cooperative_Institute_for_Meteorological_Satellite_Studies
+Partner_Cooperative_Institute_for_Meteorological_Satellite_Studies | meta_of | Cooperative_Institute_for_Meteorological_Satellite_Studies
+Decoy_DecoyCo_Cooperative_Institute_for_Meteorological_Satellite_Studies | works_at | DecoyCo_Cooperative_Institute_for_Meteorological_Satellite_Studies

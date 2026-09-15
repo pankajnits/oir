@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_82]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_82 #####
+QUESTION:
+Who directed a movie that Doris Day starred in?
+
+PATH_QUERY
+START Doris Day
+R1 E3500f4058255
+R2 E404994630e1a
+Execute path; return final tail only.
+
+CONTEXT:
+Doris Day | E3500f4058255 | Starlift
+Starlift | E404994630e1a | Roy Del Ruth
+Starlift | E8354aaa56447 | John D. Klorer

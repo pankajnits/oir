@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_184]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_184 #####
+QUESTION:
+Who directed a movie that Jude Law starred in?
+
+PATH_QUERY
+START Jude Law
+R1 E584336fc785d
+R2 E75b7eb0d71fa
+Execute path; return final tail only.
+
+CONTEXT:
+Jude Law | E584336fc785d | Rise of the Guardians
+Rise of the Guardians | E75b7eb0d71fa | Peter Ramsey
+Rise of the Guardians | Eee07e5cf5083 | William Joyce

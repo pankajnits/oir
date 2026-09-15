@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_181]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_181 #####
+QUESTION:
+What city is the headquarters of the company led by Anji_Reddy?
+
+PATH_QUERY
+START Anji_Reddy
+R1 E17fe961f4eaf
+R2 E93d2061d50da
+Execute path; return final tail only.
+
+CONTEXT:
+Anji_Reddy | E17fe961f4eaf | growtm
+growtm | E93d2061d50da | Bengaluru
+Anji_Reddy | E4f3cc743301d | Flattr
+Flattr | E2e36062b0be1 | Malm

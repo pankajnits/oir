@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_7]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_7 #####
+QUESTION:
+What city is the headquarters of the company led by K._Anvar_Sadath?
+
+PATH_QUERY
+START K._Anvar_Sadath
+R1 Ecff75eeb72a0
+R2 E8d840b38bd4f
+Execute path; return final tail only.
+
+CONTEXT:
+K._Anvar_Sadath | Ecff75eeb72a0 | KITE_Kerala
+KITE_Kerala | E8d840b38bd4f | Thiruvananthapuram
+K._Anvar_Sadath | E732f3c15b099 | Massa_d_Or_Produccions
+Massa_d_Or_Produccions | Ed79fff036d82 | Barcelona

@@ -1,0 +1,35 @@
+{
+  "id": "F22_OPAQUE_AMBIG_9",
+  "arm": "OPAQUE_AMBIG",
+  "item": 9,
+  "prompt_path": "runs/factorial_2x2_iso/OPAQUE_AMBIG/item_9/prompt.txt",
+  "pred": "Oklahoma_City",
+  "raw": "ANSWER_PLAIN[F22_OPAQUE_AMBIG_9]: Oklahoma_City",
+  "elapsed_s": 2.92,
+  "utc": "2026-09-15T06:28:07.829150+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOGw9j3d6m9DQ5MZ2tzgiro9bCyf3",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789453685,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 90,
+    "prompt_tokens": 174,
+    "total_tokens": 264,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 65,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

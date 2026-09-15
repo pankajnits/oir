@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_32]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_32 #####
+QUESTION:
+Who directed a movie that Sterling Hayden starred in?
+
+PATH_QUERY
+START Sterling Hayden
+R1 Ea674e2db18d6
+R2 E519308e8e2df
+Execute path; return final tail only.
+
+CONTEXT:
+Sterling Hayden | Ea674e2db18d6 | Crime of Passion
+Crime of Passion | E519308e8e2df | Gerd Oswald
+Crime of Passion | E20a8b5ceb22b | Jo Eisinger

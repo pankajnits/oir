@@ -1,0 +1,36 @@
+{
+  "id": "H200_f98dc6965d",
+  "arm": "OPQ_H5_CYC",
+  "item": 153,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_153/prompt.txt",
+  "pred": "Wolfsburg",
+  "raw": "ANSWER_PLAIN[H200_f98dc6965d]: Wolfsburg",
+  "elapsed_s": 2.197,
+  "utc": "2026-09-15T08:43:44.384968+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ3PPykyQ2jyIV5yhlzx9pZUnSGx",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461823,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 161,
+    "total_tokens": 179,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

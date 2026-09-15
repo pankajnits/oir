@@ -2,8 +2,8 @@
 
 This repo is a hash-pinned measurement plus an installable middle layer. Cite locked JSON and reply files; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS` (JSON summaries, reply sidecars, and per-item `.txt` replies).
 
-Paper PDF: [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf).
-Repository: https://github.com/pankajnits/oir (release tag `v1.0.6`).
+Paper: anonymous TMLR copy in [`paper/tmlr/main.pdf`](paper/tmlr/main.pdf). Named TeX lives in [`paper/arxiv_upload/`](paper/arxiv_upload/) and is not the OpenReview upload.
+Repository: https://github.com/pankajnits/oir (last release tag `v1.0.6`; city-typed n=200 OpenAI scale is in this tree). Do not put this URL on the OpenReview form.
 
 ## What you can verify without an LLM or paid API
 
@@ -31,10 +31,13 @@ Scorers: `harness/score_*.py`.
 
 | Suite | Scorer | Locked free-form JSON |
 |-------|--------|------------------------|
-| Wikidata $2{\times}2$ n=32 | `factorial_2x2_iso.py` + iso harness runners | `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json` (named-arm opaque two-path OpenAI **6/32**; snapshot `gpt56sep` **5/32**) |
+| Wikidata $2{\times}2$ n=32 | `factorial_2x2_iso.py` + iso harness runners | `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json` (city-valued named-arm opaque two-path OpenAI **5/26**; $n{=}32$ lock **6/32**; same-date hashed-id H5-cyclic **20/32**; snapshot `gpt56sep` **5/32**) |
+| Wikidata $2{\times}2$ n=200 (city-typed QID freeze) | `harness/fetch_wikidata_ceo_n200.py` + `harness/scale_n200.py` | `results/factorial_2x2_iso_n200_gpt56n200.json` (opaque two-path **38/200** UNK 151 decoy 11; unique **200/200**; hashed-id H5-cyclic 512 **134/200**). Does not rewrite n=32. Live SPARQL: `results/wikidata_ceo_hops_n200_verify.json`. OpenAI-only at n=200. |
+| Header × decoy n=200 | `header_decoy_ablation_iso.py score gpt56n200abl header_decoy_ablation_iso_n200_harness` | `results/header_decoy_ablation_iso_n200_gpt56n200abl.json` (4096/medium: H5 **129/44**, K2 **179/144**, no ARM **174/151**). `gpt56n200h512` queried **only** OPQ_H5_CYC (**134/200**); other arms in that JSON are `missing 200`, not scores. |
 | Header × decoy ablation n=32×7 | `header_decoy_ablation_iso.py` | `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json` (H5+cyclic OpenAI **20/32**, Composer **6/32**, Grok **0/32**; no ARM+cyclic **25/21/6**; English **29/26/24**). Composer/Grok used `--preamble none`. |
 | Wikidata two-path listing shuffle n=32 | `factorial_2x2_iso_shuffle.py` + `score_factorial_2x2.py gpt56 factorial_2x2_iso_shuffle_harness` | `results/factorial_2x2_iso_shuffle_gpt56.json` |
 | WikiMovies / MetaQA n=100 Condition A | `harness/metaqa_2x2_people_n100.py` | `results/metaqa_2x2_people_n100_iso_{gpt56,composer25,grok45}.json` (OpenAI two-path **96/100**; on the 32 names shared with Movie-A32, **29/32**, vs A32 **17/32**) |
+| WikiMovies n=200 Condition A/B (OpenAI) | `harness/scale_n200.py` | A `results/metaqa_2x2_people_n200_iso_gpt56n200.json` two-path **122/200** (Wiki-H5 topology ARM, not the A100 `ARM OPAQUE_AMBIG n=100` banner; not a resample of **96/100**). B `results/metaqa_2x2_people_n200_qhash_iso_gpt56n200.json` two-path **7/200**. Dual novel **2/200**. |
 | WikiMovies/MetaQA-derived n=100 Condition B (OpenAI) | `harness/metaqa_2x2_people_n100_qhash.py` | `results/metaqa_2x2_people_n100_qhash_iso_gpt56.json` (unique **100/100**, two-path **3/100**) |
 | Entity×relation n=32 | `entity_rel_2x2_iso.py` | `results/entity_rel_2x2_iso_*.json` |
 | Dual-path n=32 | `score_adv_n32_iso.py {gpt56,grok45ff,composer25ff}` | `results/adv_induction_n32_iso_*.json` |

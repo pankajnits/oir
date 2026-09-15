@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_193 #####
+PATH_QUERY
+START Marco_Fuchs
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Marco_Fuchs | works_at | OHB_SE
+OHB_SE | headquartered_in | Bremen
+DecoyCo_OHB_SE | headquartered_in | DecoyHQ_Bremen
+OHB_SE | owned_by | Hold_OHB_SE
+Hold_OHB_SE | meta_of | OHB_SE
+OHB_SE | partner_of | Partner_OHB_SE
+Partner_OHB_SE | meta_of | OHB_SE
+Decoy_DecoyCo_OHB_SE | works_at | DecoyCo_OHB_SE

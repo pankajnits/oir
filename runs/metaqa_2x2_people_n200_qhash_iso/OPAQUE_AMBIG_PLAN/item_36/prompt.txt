@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_36]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_36 #####
+QUESTION:
+Who E4a5b90dbb475 a E38b6435da20f E5591fd710ea8 [Tom Hanks] E0900cc350a3f Ef9d422d375a9?
+
+PATH_QUERY
+START Tom Hanks
+R1 E1d19eacce41c
+R2 E447c55954c6d
+Execute path; return final tail only.
+
+CONTEXT:
+Tom Hanks | E1d19eacce41c | Forrest Gump
+Forrest Gump | E447c55954c6d | Robert Zemeckis
+Forrest Gump | Ee8c9994d15a3 | Winston Groom

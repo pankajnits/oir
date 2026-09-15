@@ -1,0 +1,35 @@
+{
+  "id": "F22_OPAQUE_UNIQUE_15",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 15,
+  "prompt_path": "runs/factorial_2x2_iso/OPAQUE_UNIQUE/item_15/prompt.txt",
+  "pred": "Richmond",
+  "raw": "ANSWER_PLAIN[F22_OPAQUE_UNIQUE_15]: Richmond",
+  "elapsed_s": 1.406,
+  "utc": "2026-09-15T06:32:30.481225+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOH0PQv1DKHW3YUN5EBNBZHz4UULb",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789453949,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 17,
+    "prompt_tokens": 165,
+    "total_tokens": 182,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

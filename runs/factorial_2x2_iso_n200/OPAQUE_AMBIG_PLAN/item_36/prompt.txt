@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_36]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_36 #####
+QUESTION:
+What city is the headquarters of the company led by Lill_Sverresdatter_Larsen?
+
+PATH_QUERY
+START Lill_Sverresdatter_Larsen
+R1 E29f8a2c60604
+R2 E633fc6ac11c1
+Execute path; return final tail only.
+
+CONTEXT:
+Lill_Sverresdatter_Larsen | E29f8a2c60604 | Norwegian_Nurses_Organisation
+Norwegian_Nurses_Organisation | E633fc6ac11c1 | Oslo
+Lill_Sverresdatter_Larsen | E8337e06dfc72 | Unity_Line
+Unity_Line | E1e2340721231 | Szczecin

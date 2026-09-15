@@ -1,0 +1,35 @@
+{
+  "id": "F22_OPAQUE_AMBIG_PLAN_18",
+  "arm": "OPAQUE_AMBIG_PLAN",
+  "item": 18,
+  "prompt_path": "runs/factorial_2x2_iso/OPAQUE_AMBIG_PLAN/item_18/prompt.txt",
+  "pred": "New_York_City",
+  "raw": "ANSWER_PLAIN[F22_OPAQUE_AMBIG_PLAN_18]: New_York_City",
+  "elapsed_s": 1.57,
+  "utc": "2026-09-15T06:29:45.728821+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOGxkiiLvmYB3vy1DD0KqOEYcyfN7",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789453784,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 22,
+    "prompt_tokens": 223,
+    "total_tokens": 245,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_5 #####
+PATH_QUERY
+START Jakub_Havrlant
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jakub_Havrlant | works_at | Mall_Group
+Mall_Group | headquartered_in | Prague
+DecoyCo_Mall_Group | headquartered_in | DecoyHQ_Prague
+Mall_Group | owned_by | Hold_Mall_Group
+Hold_Mall_Group | meta_of | Mall_Group
+Mall_Group | partner_of | Partner_Mall_Group
+Partner_Mall_Group | meta_of | Mall_Group
+Decoy_DecoyCo_Mall_Group | works_at | DecoyCo_Mall_Group

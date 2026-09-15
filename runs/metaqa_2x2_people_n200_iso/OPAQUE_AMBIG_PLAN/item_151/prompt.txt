@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_151]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_151 #####
+QUESTION:
+Who directed a movie that Steve Guttenberg starred in?
+
+PATH_QUERY
+START Steve Guttenberg
+R1 E7c07a4c3af0b
+R2 E3593d84eb225
+Execute path; return final tail only.
+
+CONTEXT:
+Steve Guttenberg | E7c07a4c3af0b | Short Circuit
+Short Circuit | E3593d84eb225 | John Badham
+Short Circuit | E272ec782a5e8 | Brent Maddock

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_148]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_148 #####
+QUESTION:
+Who directed a movie that William Haines starred in?
+
+PATH_QUERY
+START William Haines
+R1 E17a8472dbbc0
+R2 Ef68743c2aba8
+Execute path; return final tail only.
+
+CONTEXT:
+William Haines | E17a8472dbbc0 | Brown of Harvard
+Brown of Harvard | Ef68743c2aba8 | Jack Conway
+Brown of Harvard | Ea9c15acbce1d | Rida Johnson Young

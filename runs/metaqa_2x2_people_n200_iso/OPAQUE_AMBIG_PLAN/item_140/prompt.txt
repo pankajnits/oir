@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_140]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_140 #####
+QUESTION:
+Who directed a movie that George C. Scott starred in?
+
+PATH_QUERY
+START George C. Scott
+R1 E2d2f55dcc4db
+R2 E83f715312487
+Execute path; return final tail only.
+
+CONTEXT:
+George C. Scott | E2d2f55dcc4db | The New Centurions
+The New Centurions | E83f715312487 | Richard Fleischer
+The New Centurions | Ef65511e99f4e | Joseph Wambaugh

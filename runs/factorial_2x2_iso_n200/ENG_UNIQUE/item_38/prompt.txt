@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_UNIQUE_38]: <city_or_UNKNOWN>
+ARM ENG_UNIQUE: English relations; one 2-hop from start.
+##### ID F200_ENG_UNIQUE_38 #####
+QUESTION:
+What city is the headquarters of the company led by Peter_Jackson?
+
+CONTEXT:
+Peter_Jackson | works_at | Flutter_Entertainment
+Flutter_Entertainment | headquartered_in | Dublin
+Ralf_Kalupner | works_at | Nextbike
+Nextbike | headquartered_in | Leipzig

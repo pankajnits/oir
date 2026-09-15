@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_75 #####
+PATH_QUERY
+START Patrick_Lo
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Patrick_Lo | works_at | Netgear
+Netgear | headquartered_in | Dover
+DecoyCo_Netgear | headquartered_in | DecoyHQ_Dover
+Netgear | owned_by | Hold_Netgear
+Hold_Netgear | meta_of | Netgear
+Netgear | partner_of | Partner_Netgear
+Partner_Netgear | meta_of | Netgear
+Decoy_DecoyCo_Netgear | works_at | DecoyCo_Netgear

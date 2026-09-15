@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_59]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_59 #####
+QUESTION:
+What city is the headquarters of the company led by Shaqued_Morag?
+
+PATH_QUERY
+START Shaqued_Morag
+R1 Ef73713624dd3
+R2 E29e464160816
+Execute path; return final tail only.
+
+CONTEXT:
+Shaqued_Morag | Ef73713624dd3 | Peace_Now
+Peace_Now | E29e464160816 | Tel_Aviv
+Shaqued_Morag | E264be3a46ad0 | Foundation_for_Defense_of_Democracies
+Foundation_for_Defense_of_Democracies | E97da66670329 | Washington_D.C.

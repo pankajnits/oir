@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_188]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_188 #####
+QUESTION:
+Who directed a movie that Shannyn Sossamon starred in?
+
+PATH_QUERY
+START Shannyn Sossamon
+R1 E110cf8386b82
+R2 Ed1e392a52fc3
+Execute path; return final tail only.
+
+CONTEXT:
+Shannyn Sossamon | E110cf8386b82 | Road to Nowhere
+Road to Nowhere | Ed1e392a52fc3 | Monte Hellman
+Road to Nowhere | Edc04bfa1671e | Steven Gaydos

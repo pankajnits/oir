@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_125]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_125 #####
+QUESTION:
+Who directed a movie that Jean Arthur starred in?
+
+PATH_QUERY
+START Jean Arthur
+R1 E814272f8f7fe
+R2 E913c0b55e6fd
+Execute path; return final tail only.
+
+CONTEXT:
+Jean Arthur | E814272f8f7fe | The Devil and Miss Jones
+The Devil and Miss Jones | E913c0b55e6fd | Sam Wood
+The Devil and Miss Jones | E30687b2b3d68 | Norman Krasna

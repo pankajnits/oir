@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_166]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_166 #####
+QUESTION:
+Who E4c8fa2f9c950 a E787540953180 Eecc01ee1a48c [Donald Sutherland] E3c86fded79c5 Ed5903d6f7984?
+
+PATH_QUERY
+START Donald Sutherland
+R1 Ed5568bbbeb9a
+R2 E5276b93537ab
+Execute path; return final tail only.
+
+CONTEXT:
+Donald Sutherland | Ed5568bbbeb9a | Virus
+Virus | E5276b93537ab | John Bruno
+Virus | Eff7afb10afb7 | Chuck Pfarrer

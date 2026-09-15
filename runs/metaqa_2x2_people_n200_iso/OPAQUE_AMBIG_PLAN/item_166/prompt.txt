@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_166]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_166 #####
+QUESTION:
+Who directed a movie that Donald Sutherland starred in?
+
+PATH_QUERY
+START Donald Sutherland
+R1 Ee57a712ec33e
+R2 E441a42e04d46
+Execute path; return final tail only.
+
+CONTEXT:
+Donald Sutherland | Ee57a712ec33e | Virus
+Virus | E441a42e04d46 | John Bruno
+Virus | E116804231155 | Chuck Pfarrer

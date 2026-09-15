@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_47 #####
+PATH_QUERY
+START Nicolas_Scott
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nicolas_Scott | works_at | National_Cancer_Institute
+National_Cancer_Institute | headquartered_in | Boulogne-Billancourt
+DecoyCo_National_Cancer_Institute | headquartered_in | DecoyHQ_Boulogne-Billancourt
+National_Cancer_Institute | owned_by | Hold_National_Cancer_Institute
+Hold_National_Cancer_Institute | meta_of | National_Cancer_Institute
+National_Cancer_Institute | partner_of | Partner_National_Cancer_Institute
+Partner_National_Cancer_Institute | meta_of | National_Cancer_Institute
+Decoy_DecoyCo_National_Cancer_Institute | works_at | DecoyCo_National_Cancer_Institute

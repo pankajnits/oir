@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_102 #####
+PATH_QUERY
+START Adison_Chakma
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Adison_Chakma | works_at | Eruk_Films
+Eruk_Films | headquartered_in | Agartala
+DecoyCo_Eruk_Films | headquartered_in | DecoyHQ_Agartala
+Eruk_Films | owned_by | Hold_Eruk_Films
+Hold_Eruk_Films | meta_of | Eruk_Films
+Eruk_Films | partner_of | Partner_Eruk_Films
+Partner_Eruk_Films | meta_of | Eruk_Films
+Decoy_DecoyCo_Eruk_Films | works_at | DecoyCo_Eruk_Films

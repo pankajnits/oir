@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_54]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_54 #####
+QUESTION:
+What city is the headquarters of the company led by Moti_Ben-Moshe?
+
+PATH_QUERY
+START Moti_Ben-Moshe
+R1 E4b1672690ea1
+R2 E7a95bb4afc9e
+Execute path; return final tail only.
+
+CONTEXT:
+Moti_Ben-Moshe | E4b1672690ea1 | ExtraEnergie
+ExtraEnergie | E7a95bb4afc9e | Neuss
+Moti_Ben-Moshe | E40e756f1a626 | Twitter
+Twitter | Eb5d9083f4403 | San_Francisco

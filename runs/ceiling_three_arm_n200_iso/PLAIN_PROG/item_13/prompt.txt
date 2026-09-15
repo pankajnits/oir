@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_13 #####
+PATH_QUERY
+START Giovanni_Caforio
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Giovanni_Caforio | works_at | Bristol-Myers_Squibb
+Bristol-Myers_Squibb | headquartered_in | New_York_City
+DecoyCo_Bristol-Myers_Squibb | headquartered_in | DecoyHQ_New_York_City
+Bristol-Myers_Squibb | owned_by | Hold_Bristol-Myers_Squibb
+Hold_Bristol-Myers_Squibb | meta_of | Bristol-Myers_Squibb
+Bristol-Myers_Squibb | partner_of | Partner_Bristol-Myers_Squibb
+Partner_Bristol-Myers_Squibb | meta_of | Bristol-Myers_Squibb
+Decoy_DecoyCo_Bristol-Myers_Squibb | works_at | DecoyCo_Bristol-Myers_Squibb

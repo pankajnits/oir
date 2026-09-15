@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_49]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_49 #####
+QUESTION:
+What city is the headquarters of the company led by Dow_Constantine?
+
+PATH_QUERY
+START Dow_Constantine
+R1 Ecddc4bf891e4
+R2 E2a35179cd364
+Execute path; return final tail only.
+
+CONTEXT:
+Dow_Constantine | Ecddc4bf891e4 | Sound_Transit
+Sound_Transit | E2a35179cd364 | Seattle
+Dow_Constantine | E1f2bc16ffd5a | Luminoso
+Luminoso | E019a959ddfd1 | Cambridge

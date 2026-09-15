@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_UNIQUE_63",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 63,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_63/prompt.txt",
+  "pred": "Jacques Tourneur",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_UNIQUE_63]: Jacques Tourneur",
+  "elapsed_s": 2.005,
+  "utc": "2026-09-15T09:18:08.536089+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJahUkyKRjFG5Y4Qu6RARUWfjUbq",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463887,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 66,
+    "prompt_tokens": 202,
+    "total_tokens": 268,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 38,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

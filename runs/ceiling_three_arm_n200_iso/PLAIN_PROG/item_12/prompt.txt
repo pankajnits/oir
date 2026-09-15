@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_12 #####
+PATH_QUERY
+START Saeed_Amidi
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Saeed_Amidi | works_at | Plug_and_Play_Tech_Center
+Plug_and_Play_Tech_Center | headquartered_in | Sunnyvale
+DecoyCo_Plug_and_Play_Tech_Center | headquartered_in | DecoyHQ_Sunnyvale
+Plug_and_Play_Tech_Center | owned_by | Hold_Plug_and_Play_Tech_Center
+Hold_Plug_and_Play_Tech_Center | meta_of | Plug_and_Play_Tech_Center
+Plug_and_Play_Tech_Center | partner_of | Partner_Plug_and_Play_Tech_Center
+Partner_Plug_and_Play_Tech_Center | meta_of | Plug_and_Play_Tech_Center
+Decoy_DecoyCo_Plug_and_Play_Tech_Center | works_at | DecoyCo_Plug_and_Play_Tech_Center

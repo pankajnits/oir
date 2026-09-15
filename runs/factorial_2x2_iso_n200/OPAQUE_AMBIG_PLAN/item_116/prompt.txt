@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_116]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_116 #####
+QUESTION:
+What city is the headquarters of the company led by Steven_Gunn?
+
+PATH_QUERY
+START Steven_Gunn
+R1 E5b8c5607926a
+R2 E868786004ecb
+Execute path; return final tail only.
+
+CONTEXT:
+Steven_Gunn | E5b8c5607926a | Sleep_Country_Canada
+Sleep_Country_Canada | E868786004ecb | Toronto
+Steven_Gunn | E0f5fe2cd141b | Arkema
+Arkema | Ec4a090d1dd08 | Colombes

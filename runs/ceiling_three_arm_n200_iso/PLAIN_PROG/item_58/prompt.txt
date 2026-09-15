@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_58 #####
+PATH_QUERY
+START Jean-Marc_Petit
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jean-Marc_Petit | works_at | LIRIS
+LIRIS | headquartered_in | Villeurbanne
+DecoyCo_LIRIS | headquartered_in | DecoyHQ_Villeurbanne
+LIRIS | owned_by | Hold_LIRIS
+Hold_LIRIS | meta_of | LIRIS
+LIRIS | partner_of | Partner_LIRIS
+Partner_LIRIS | meta_of | LIRIS
+Decoy_DecoyCo_LIRIS | works_at | DecoyCo_LIRIS

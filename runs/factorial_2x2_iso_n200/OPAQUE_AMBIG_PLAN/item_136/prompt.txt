@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_136]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_136 #####
+QUESTION:
+What city is the headquarters of the company led by Roustam_Tariko?
+
+PATH_QUERY
+START Roustam_Tariko
+R1 E7b07ad11ff87
+R2 E1fb3eb117dc2
+Execute path; return final tail only.
+
+CONTEXT:
+Roustam_Tariko | E7b07ad11ff87 | Russian_Standard_Corporation
+Russian_Standard_Corporation | E1fb3eb117dc2 | Moscow
+Roustam_Tariko | E74b9c10fc25f | Sharecare
+Sharecare | E2f5205cf073c | Atlanta

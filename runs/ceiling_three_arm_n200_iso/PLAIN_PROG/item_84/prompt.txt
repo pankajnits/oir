@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_84 #####
+PATH_QUERY
+START Joachim_Kosack
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Joachim_Kosack | works_at | UFA
+UFA | headquartered_in | Potsdam
+DecoyCo_UFA | headquartered_in | DecoyHQ_Potsdam
+UFA | owned_by | Hold_UFA
+Hold_UFA | meta_of | UFA
+UFA | partner_of | Partner_UFA
+Partner_UFA | meta_of | UFA
+Decoy_DecoyCo_UFA | works_at | DecoyCo_UFA

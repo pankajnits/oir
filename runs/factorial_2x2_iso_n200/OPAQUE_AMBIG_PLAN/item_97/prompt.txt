@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_97]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_97 #####
+QUESTION:
+What city is the headquarters of the company led by Mohamed_Hassan_Bensalah?
+
+PATH_QUERY
+START Mohamed_Hassan_Bensalah
+R1 E1c5f245ddd88
+R2 E19f5169e07bc
+Execute path; return final tail only.
+
+CONTEXT:
+Mohamed_Hassan_Bensalah | E1c5f245ddd88 | Holmarcom_Group
+Holmarcom_Group | E19f5169e07bc | Casablanca
+Mohamed_Hassan_Bensalah | E205cd98c079e | CD_Projekt
+CD_Projekt | Ee69c4a4e53b6 | Warsaw

@@ -1,0 +1,36 @@
+{
+  "id": "H200_cf3c4e6ee0",
+  "arm": "OPQ_K2_CYC",
+  "item": 17,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CYC/item_17/prompt.txt",
+  "pred": "Amsterdam",
+  "raw": "ANSWER_PLAIN[H200_cf3c4e6ee0]: Amsterdam",
+  "elapsed_s": 3.348,
+  "utc": "2026-09-15T08:45:13.498173+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ4p4zB9egTk9C8nlumRZf8Rzi1e",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461911,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 145,
+    "prompt_tokens": 159,
+    "total_tokens": 304,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 120,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

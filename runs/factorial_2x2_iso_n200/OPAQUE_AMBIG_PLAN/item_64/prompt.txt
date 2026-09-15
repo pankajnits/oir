@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_64]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_64 #####
+QUESTION:
+What city is the headquarters of the company led by Keith_Creel?
+
+PATH_QUERY
+START Keith_Creel
+R1 E810f0d797d3a
+R2 E2bd69017d3fd
+Execute path; return final tail only.
+
+CONTEXT:
+Keith_Creel | E810f0d797d3a | Canadian_Pacific_Kansas_City
+Canadian_Pacific_Kansas_City | E2bd69017d3fd | Calgary
+Keith_Creel | E29c654c917ab | Pandora
+Pandora | Ed9ac5ee96084 | Oakland

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_137 #####
+PATH_QUERY
+START Jeff_Arnold
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jeff_Arnold | works_at | Sharecare
+Sharecare | headquartered_in | Atlanta
+DecoyCo_Sharecare | headquartered_in | DecoyHQ_Atlanta
+Sharecare | owned_by | Hold_Sharecare
+Hold_Sharecare | meta_of | Sharecare
+Sharecare | partner_of | Partner_Sharecare
+Partner_Sharecare | meta_of | Sharecare
+Decoy_DecoyCo_Sharecare | works_at | DecoyCo_Sharecare

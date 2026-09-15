@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_116]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_116 #####
+QUESTION:
+What city is the headquarters of the company led by Steven_Gunn?
+
+CONTEXT:
+Steven_Gunn | works_at | Sleep_Country_Canada
+Sleep_Country_Canada | headquartered_in | Toronto
+Steven_Gunn | partner_of | Arkema
+Arkema | located_in | Colombes

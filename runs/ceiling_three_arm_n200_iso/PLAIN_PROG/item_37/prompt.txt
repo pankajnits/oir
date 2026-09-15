@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_37 #####
+PATH_QUERY
+START Jaros_aw_Kotarski
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jaros_aw_Kotarski | works_at | Unity_Line
+Unity_Line | headquartered_in | Szczecin
+DecoyCo_Unity_Line | headquartered_in | DecoyHQ_Szczecin
+Unity_Line | owned_by | Hold_Unity_Line
+Hold_Unity_Line | meta_of | Unity_Line
+Unity_Line | partner_of | Partner_Unity_Line
+Partner_Unity_Line | meta_of | Unity_Line
+Decoy_DecoyCo_Unity_Line | works_at | DecoyCo_Unity_Line

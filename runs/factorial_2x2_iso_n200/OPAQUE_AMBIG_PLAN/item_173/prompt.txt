@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_173]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_173 #####
+QUESTION:
+What city is the headquarters of the company led by Henning_Lund?
+
+PATH_QUERY
+START Henning_Lund
+R1 E29969d84dbef
+R2 E3c957a0c3dca
+Execute path; return final tail only.
+
+CONTEXT:
+Henning_Lund | E29969d84dbef | Frydenlund
+Frydenlund | E3c957a0c3dca | Frederiksberg
+Henning_Lund | E0c85455de2c7 | Fjord1
+Fjord1 | Edca5a89758af | Flor

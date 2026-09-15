@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_106]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_106 #####
+QUESTION:
+What city is the headquarters of the company led by Emil_Pick?
+
+PATH_QUERY
+START Emil_Pick
+R1 E3cc9a1ba8fd1
+R2 E6a3439dd9792
+Execute path; return final tail only.
+
+CONTEXT:
+Emil_Pick | E3cc9a1ba8fd1 | Kosmos_slav
+Kosmos_slav | E6a3439dd9792 | slav
+Emil_Pick | E306abb915a91 | Palo_Alto_Networks
+Palo_Alto_Networks | Ec27306111f1a | Santa_Clara

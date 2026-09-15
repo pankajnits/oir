@@ -218,7 +218,8 @@ if __name__ == "__main__":
         force = "--force" in sys.argv
         argv = [a for a in sys.argv[2:] if a != "--force"]
         if not argv:
-            raise SystemExit("usage: header_decoy_ablation_iso.py score TAG [--force]")
-        score(argv[0], force=force)
+            raise SystemExit("usage: header_decoy_ablation_iso.py score TAG [harness.json] [--force]")
+        harness = Path(argv[1]) if len(argv) > 1 else HARNESS
+        score(argv[0], harness_path=harness, force=force)
     else:
         raise SystemExit("usage: header_decoy_ablation_iso.py build | score TAG [--force]")

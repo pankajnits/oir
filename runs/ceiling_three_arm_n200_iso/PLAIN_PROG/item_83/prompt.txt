@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_83 #####
+PATH_QUERY
+START Elmar_Pankau
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Elmar_Pankau | works_at | Malteser_Rettungsdienst
+Malteser_Rettungsdienst | headquartered_in | Cologne
+DecoyCo_Malteser_Rettungsdienst | headquartered_in | DecoyHQ_Cologne
+Malteser_Rettungsdienst | owned_by | Hold_Malteser_Rettungsdienst
+Hold_Malteser_Rettungsdienst | meta_of | Malteser_Rettungsdienst
+Malteser_Rettungsdienst | partner_of | Partner_Malteser_Rettungsdienst
+Partner_Malteser_Rettungsdienst | meta_of | Malteser_Rettungsdienst
+Decoy_DecoyCo_Malteser_Rettungsdienst | works_at | DecoyCo_Malteser_Rettungsdienst

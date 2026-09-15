@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_85 #####
+PATH_QUERY
+START Yehoshua_Fass
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Yehoshua_Fass | works_at | Nefesh_B_Nefesh
+Nefesh_B_Nefesh | headquartered_in | Jerusalem
+DecoyCo_Nefesh_B_Nefesh | headquartered_in | DecoyHQ_Jerusalem
+Nefesh_B_Nefesh | owned_by | Hold_Nefesh_B_Nefesh
+Hold_Nefesh_B_Nefesh | meta_of | Nefesh_B_Nefesh
+Nefesh_B_Nefesh | partner_of | Partner_Nefesh_B_Nefesh
+Partner_Nefesh_B_Nefesh | meta_of | Nefesh_B_Nefesh
+Decoy_DecoyCo_Nefesh_B_Nefesh | works_at | DecoyCo_Nefesh_B_Nefesh

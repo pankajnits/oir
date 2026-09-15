@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_115 #####
+PATH_QUERY
+START Martina_Bonnier
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Martina_Bonnier | works_at | Vogue_Scandinavia
+Vogue_Scandinavia | headquartered_in | Stockholm
+DecoyCo_Vogue_Scandinavia | headquartered_in | DecoyHQ_Stockholm
+Vogue_Scandinavia | owned_by | Hold_Vogue_Scandinavia
+Hold_Vogue_Scandinavia | meta_of | Vogue_Scandinavia
+Vogue_Scandinavia | partner_of | Partner_Vogue_Scandinavia
+Partner_Vogue_Scandinavia | meta_of | Vogue_Scandinavia
+Decoy_DecoyCo_Vogue_Scandinavia | works_at | DecoyCo_Vogue_Scandinavia

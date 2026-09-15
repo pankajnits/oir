@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_58]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_58 #####
+QUESTION:
+What city is the headquarters of the company led by Jean-Marc_Petit?
+
+PATH_QUERY
+START Jean-Marc_Petit
+R1 E13c482b8c593
+R2 E94df41e833b7
+Execute path; return final tail only.
+
+CONTEXT:
+Jean-Marc_Petit | E13c482b8c593 | LIRIS
+LIRIS | E94df41e833b7 | Villeurbanne
+Jean-Marc_Petit | Efac5ab82bae3 | Peace_Now
+Peace_Now | E2ee5011a3b17 | Tel_Aviv

@@ -24,6 +24,7 @@ import json
 import os
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -93,6 +94,8 @@ def build_parser() -> argparse.ArgumentParser:
     ap.add_argument("--max-completion-tokens", type=int,
                     default=int(os.environ.get("OIR_MAX_COMPLETION_TOKENS", "512")))
     ap.add_argument("--reasoning-effort", default=os.environ.get("OIR_REASONING_EFFORT") or None)
+    ap.add_argument("--workers", type=int, default=int(os.environ.get("OIR_WORKERS", "1")),
+                    help="parallel Chat Completions (n=200); default 1 keeps n=32 sequential")
     return ap
 
 
@@ -107,8 +110,45 @@ def parse_cli(argv: list[str] | None = None) -> argparse.Namespace:
     return args
 
 
+def _load_dotenv() -> None:
+    env = ROOT / ".env"
+    if not env.exists() or os.environ.get("OPENAI_API_KEY"):
+        return
+    for line in env.read_text().splitlines():
+        if not line.strip() or line.strip().startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
+def _one(client, args, arm: str, i: int, p: str, cid: str, out: Path, sealed: bool) -> str:
+    t0 = time.time()
+    info: dict = {}
+    try:
+        raw, info = complete(
+            client, args.model, repo_abs(p).read_text(),
+            max_completion_tokens=args.max_completion_tokens,
+            reasoning_effort=args.reasoning_effort,
+        )
+    except Exception as e:
+        raw = f"ERROR: {e}"
+    pred, text = parse(cid, raw, sealed=sealed)
+    if raw.startswith("ERROR:"):
+        text = f"ERROR: {raw}\n"
+    out.write_text(text)
+    sidecar = {
+        "id": cid, "arm": arm, "item": i, "prompt_path": p, "pred": pred,
+        "raw": raw, "elapsed_s": round(time.time() - t0, 3),
+        "utc": datetime.now(timezone.utc).isoformat(), **info,
+    }
+    out.with_suffix(".json").write_text(json.dumps(sidecar, indent=2, ensure_ascii=False) + "\n")
+    fr = info.get("finish_reason")
+    return f"{arm} item_{i} {time.time() - t0:.1f}s -> {pred} (finish={fr})"
+
+
 def main() -> None:
     args = parse_cli()
+    _load_dotenv()
     if not os.environ.get("OPENAI_API_KEY"):
         raise SystemExit("Set OPENAI_API_KEY in the environment (do not commit it).")
     from openai import OpenAI
@@ -119,6 +159,7 @@ def main() -> None:
     client = OpenAI()
     reply_root = RESULTS / f"{harness_path.stem}_replies_{args.tag}"
     reply_root.mkdir(parents=True, exist_ok=True)
+    jobs = []
     for arm in arms:
         meta = h["arms"][arm]
         out_dir = reply_root / arm
@@ -131,28 +172,17 @@ def main() -> None:
                 if is_final(prev) and not (args.retry_empty and classify(prev) == "legacy_empty"):
                     print(f"skip {arm} {i}", flush=True)
                     continue
-            cid = meta["ids"][i]
-            t0 = time.time()
-            info: dict = {}
-            try:
-                raw, info = complete(client, args.model, repo_abs(p).read_text(),
-                                     max_completion_tokens=args.max_completion_tokens,
-                                     reasoning_effort=args.reasoning_effort)
-            except Exception as e:
-                raw = f"ERROR: {e}"
-            pred, text = parse(cid, raw, sealed=sealed)
-            if raw.startswith("ERROR:"):
-                text = f"ERROR: {raw}\n"
-            out.write_text(text)
-            sidecar = {
-                "id": cid, "arm": arm, "item": i, "prompt_path": p, "pred": pred,
-                "raw": raw, "elapsed_s": round(time.time() - t0, 3),
-                "utc": datetime.now(timezone.utc).isoformat(), **info,
-            }
-            out.with_suffix(".json").write_text(json.dumps(sidecar, indent=2, ensure_ascii=False) + "\n")
-            fr = info.get("finish_reason")
-            print(f"{arm} item_{i} {time.time() - t0:.1f}s -> {pred} (finish={fr})", flush=True)
-    print("done", args.model, args.tag, arms)
+            jobs.append((arm, i, p, meta["ids"][i], out, sealed))
+    workers = max(1, args.workers)
+    if workers == 1:
+        for job in jobs:
+            print(_one(client, args, *job), flush=True)
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futs = [pool.submit(_one, client, args, *job) for job in jobs]
+            for fut in as_completed(futs):
+                print(fut.result(), flush=True)
+    print("done", args.model, args.tag, arms, "jobs", len(jobs), "workers", workers)
 
 
 if __name__ == "__main__":

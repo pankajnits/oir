@@ -1,0 +1,35 @@
+{
+  "id": "F22_ENG_UNIQUE_3",
+  "arm": "ENG_UNIQUE",
+  "item": 3,
+  "prompt_path": "runs/factorial_2x2_iso/ENG_UNIQUE/item_3/prompt.txt",
+  "pred": "NRK_Marienlyst",
+  "raw": "ANSWER_PLAIN[F22_ENG_UNIQUE_3]: NRK_Marienlyst",
+  "elapsed_s": 2.004,
+  "utc": "2026-09-15T06:24:48.501192+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOGswUAJ1YGkeLe5pEi0isdzuR4Uw",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789453486,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 96,
+    "prompt_tokens": 163,
+    "total_tokens": 259,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 68,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

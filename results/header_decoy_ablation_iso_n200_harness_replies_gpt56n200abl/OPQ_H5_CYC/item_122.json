@@ -1,0 +1,36 @@
+{
+  "id": "H200_ae00672bf0",
+  "arm": "OPQ_H5_CYC",
+  "item": 122,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_122/prompt.txt",
+  "pred": "Zagreb",
+  "raw": "ANSWER_PLAIN[H200_ae00672bf0]: Zagreb",
+  "elapsed_s": 2.677,
+  "utc": "2026-09-15T08:43:35.634488+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ3Fj0NzKKIASatWZ3CTekde990n",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461813,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 61,
+    "prompt_tokens": 164,
+    "total_tokens": 225,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 38,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

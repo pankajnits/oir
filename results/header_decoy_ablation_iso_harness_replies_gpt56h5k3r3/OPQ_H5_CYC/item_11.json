@@ -1,0 +1,35 @@
+{
+  "id": "HDA_330a991dd6",
+  "arm": "OPQ_H5_CYC",
+  "item": 11,
+  "prompt_path": "runs/header_decoy_ablation_iso/OPQ_H5_CYC/item_11/prompt.txt",
+  "pred": "San_Antonio",
+  "raw": "ANSWER_PLAIN[HDA_330a991dd6]: San_Antonio",
+  "elapsed_s": 1.102,
+  "utc": "2026-09-15T06:38:14.011796+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOH5x2VMcoX5JHNFBxsjxVVWfBeZk",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789454293,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 163,
+    "total_tokens": 183,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

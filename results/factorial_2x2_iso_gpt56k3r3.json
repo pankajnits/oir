@@ -1,0 +1,1163 @@
+{
+  "model": "gpt56k3r3",
+  "n": 32,
+  "protocol": "isolation",
+  "start_in_question": true,
+  "source": "data/real/wikidata_ceo_hops_v2.json",
+  "summary": {
+    "ENG_UNIQUE": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "ENG_AMBIG": {
+      "score": "30/32",
+      "unknown": 2,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_UNIQUE": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    },
+    "OPAQUE_AMBIG": {
+      "score": "3/32",
+      "unknown": 26,
+      "missing": 0,
+      "decoy": 3
+    },
+    "OPAQUE_AMBIG_PLAN": {
+      "score": "32/32",
+      "unknown": 0,
+      "missing": 0,
+      "decoy": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_0",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_1",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_2",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_3",
+      "gold": "NRK_Marienlyst",
+      "pred": "NRK_Marienlyst",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_4",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_5",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_6",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_7",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_8",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_9",
+      "gold": "New_Jersey",
+      "pred": "New_Jersey",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_10",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_11",
+      "gold": "San_Antonio",
+      "pred": "San_Antonio",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_12",
+      "gold": "Montabaur",
+      "pred": "Montabaur",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_13",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_14",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_15",
+      "gold": "Richmond",
+      "pred": "Richmond",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_16",
+      "gold": "Helsinki",
+      "pred": "Helsinki",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_17",
+      "gold": "Rome",
+      "pred": "Rome",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_18",
+      "gold": "New_York_City",
+      "pred": "New_York_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_19",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_20",
+      "gold": "Chesapeake",
+      "pred": "Chesapeake",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_21",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_22",
+      "gold": "Coral_Gables",
+      "pred": "Coral_Gables",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_23",
+      "gold": "Bochum",
+      "pred": "Bochum",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_24",
+      "gold": "Amsterdam",
+      "pred": "Amsterdam",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_25",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_26",
+      "gold": "Fox_Plaza",
+      "pred": "Fox_Plaza",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_27",
+      "gold": "CNN_Center",
+      "pred": "CNN_Center",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_28",
+      "gold": "Swindon",
+      "pred": "Swindon",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_29",
+      "gold": "Cologne",
+      "pred": "Cologne",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_30",
+      "gold": "Hartford",
+      "pred": "Hartford",
+      "ok": true
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F22_ENG_UNIQUE_31",
+      "gold": "Lod_Railway_Station",
+      "pred": "Lod_Railway_Station",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_0",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_1",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_2",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_3",
+      "gold": "NRK_Marienlyst",
+      "pred": "NRK_Marienlyst",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_4",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_5",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_6",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_7",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_8",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_9",
+      "gold": "New_Jersey",
+      "pred": "New_Jersey",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_10",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_11",
+      "gold": "San_Antonio",
+      "pred": "San_Antonio",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_12",
+      "gold": "Montabaur",
+      "pred": "Montabaur",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_13",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_14",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_15",
+      "gold": "Richmond",
+      "pred": "Richmond",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_16",
+      "gold": "Helsinki",
+      "pred": "Helsinki",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_17",
+      "gold": "Rome",
+      "pred": "Rome",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_18",
+      "gold": "New_York_City",
+      "pred": "New_York_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_19",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_20",
+      "gold": "Chesapeake",
+      "pred": "Chesapeake",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_21",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_22",
+      "gold": "Coral_Gables",
+      "pred": "Coral_Gables",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_23",
+      "gold": "Bochum",
+      "pred": "Bochum",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_24",
+      "gold": "Amsterdam",
+      "pred": "Amsterdam",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_25",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_26",
+      "gold": "Fox_Plaza",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_27",
+      "gold": "CNN_Center",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_28",
+      "gold": "Swindon",
+      "pred": "Swindon",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_29",
+      "gold": "Cologne",
+      "pred": "Cologne",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_30",
+      "gold": "Hartford",
+      "pred": "Hartford",
+      "ok": true
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F22_ENG_AMBIG_31",
+      "gold": "Lod_Railway_Station",
+      "pred": "Lod_Railway_Station",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_0",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_1",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_2",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_3",
+      "gold": "NRK_Marienlyst",
+      "pred": "NRK_Marienlyst",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_4",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_5",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_6",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_7",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_8",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_9",
+      "gold": "New_Jersey",
+      "pred": "New_Jersey",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_10",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_11",
+      "gold": "San_Antonio",
+      "pred": "San_Antonio",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_12",
+      "gold": "Montabaur",
+      "pred": "Montabaur",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_13",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_14",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_15",
+      "gold": "Richmond",
+      "pred": "Richmond",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_16",
+      "gold": "Helsinki",
+      "pred": "Helsinki",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_17",
+      "gold": "Rome",
+      "pred": "Rome",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_18",
+      "gold": "New_York_City",
+      "pred": "New_York_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_19",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_20",
+      "gold": "Chesapeake",
+      "pred": "Chesapeake",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_21",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_22",
+      "gold": "Coral_Gables",
+      "pred": "Coral_Gables",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_23",
+      "gold": "Bochum",
+      "pred": "Bochum",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_24",
+      "gold": "Amsterdam",
+      "pred": "Amsterdam",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_25",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_26",
+      "gold": "Fox_Plaza",
+      "pred": "Fox_Plaza",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_27",
+      "gold": "CNN_Center",
+      "pred": "CNN_Center",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_28",
+      "gold": "Swindon",
+      "pred": "Swindon",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_29",
+      "gold": "Cologne",
+      "pred": "Cologne",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_30",
+      "gold": "Hartford",
+      "pred": "Hartford",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F22_OPAQUE_UNIQUE_31",
+      "gold": "Lod_Railway_Station",
+      "pred": "Lod_Railway_Station",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_0",
+      "gold": "Burbank",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_1",
+      "gold": "Kansas_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_2",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_3",
+      "gold": "NRK_Marienlyst",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_4",
+      "gold": "Warsaw",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_5",
+      "gold": "Stockholm",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_6",
+      "gold": "Burbank",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_7",
+      "gold": "Zurich",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_8",
+      "gold": "Kansas_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_9",
+      "gold": "New_Jersey",
+      "pred": "Oklahoma_City",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_10",
+      "gold": "Oklahoma_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_11",
+      "gold": "San_Antonio",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_12",
+      "gold": "Montabaur",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_13",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_14",
+      "gold": "Warsaw",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_15",
+      "gold": "Richmond",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_16",
+      "gold": "Helsinki",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_17",
+      "gold": "Rome",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_18",
+      "gold": "New_York_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_19",
+      "gold": "Kansas_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_20",
+      "gold": "Chesapeake",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_21",
+      "gold": "Oklahoma_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_22",
+      "gold": "Coral_Gables",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_23",
+      "gold": "Bochum",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_24",
+      "gold": "Amsterdam",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_25",
+      "gold": "Burbank",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_26",
+      "gold": "Fox_Plaza",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_27",
+      "gold": "CNN_Center",
+      "pred": "Swindon",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_28",
+      "gold": "Swindon",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_29",
+      "gold": "Cologne",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_30",
+      "gold": "Hartford",
+      "pred": "Hartford",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F22_OPAQUE_AMBIG_31",
+      "gold": "Lod_Railway_Station",
+      "pred": "Burbank",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_0",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_1",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_2",
+      "gold": "Broadway",
+      "pred": "Broadway",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_3",
+      "gold": "NRK_Marienlyst",
+      "pred": "NRK_Marienlyst",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_4",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_5",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_6",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_7",
+      "gold": "Zurich",
+      "pred": "Zurich",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_8",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_9",
+      "gold": "New_Jersey",
+      "pred": "New_Jersey",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_10",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_11",
+      "gold": "San_Antonio",
+      "pred": "San_Antonio",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_12",
+      "gold": "Montabaur",
+      "pred": "Montabaur",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_13",
+      "gold": "Stockholm",
+      "pred": "Stockholm",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_14",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_15",
+      "gold": "Richmond",
+      "pred": "Richmond",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_16",
+      "gold": "Helsinki",
+      "pred": "Helsinki",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_17",
+      "gold": "Rome",
+      "pred": "Rome",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_18",
+      "gold": "New_York_City",
+      "pred": "New_York_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_19",
+      "gold": "Kansas_City",
+      "pred": "Kansas_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_20",
+      "gold": "Chesapeake",
+      "pred": "Chesapeake",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_21",
+      "gold": "Oklahoma_City",
+      "pred": "Oklahoma_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_22",
+      "gold": "Coral_Gables",
+      "pred": "Coral_Gables",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_23",
+      "gold": "Bochum",
+      "pred": "Bochum",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_24",
+      "gold": "Amsterdam",
+      "pred": "Amsterdam",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_25",
+      "gold": "Burbank",
+      "pred": "Burbank",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_26",
+      "gold": "Fox_Plaza",
+      "pred": "Fox_Plaza",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_27",
+      "gold": "CNN_Center",
+      "pred": "CNN_Center",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_28",
+      "gold": "Swindon",
+      "pred": "Swindon",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_29",
+      "gold": "Cologne",
+      "pred": "Cologne",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_30",
+      "gold": "Hartford",
+      "pred": "Hartford",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F22_OPAQUE_AMBIG_PLAN_31",
+      "gold": "Lod_Railway_Station",
+      "pred": "Lod_Railway_Station",
+      "ok": true
+    }
+  ],
+  "reply_dir": "results/factorial_2x2_iso_harness_replies_gpt56k3r3",
+  "note": "15 Sep 2026 k=3 draw 3 (tag gpt56k3r3). Does not replace August gpt56. Five Wiki-H5 arms, gpt-5.6-sol, 512 tokens, reasoning_effort omitted. Sidecars store returned_model."
+}

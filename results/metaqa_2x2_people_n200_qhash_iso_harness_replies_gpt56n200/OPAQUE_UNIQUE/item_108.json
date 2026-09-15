@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_UNIQUE_108",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 108,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_108/prompt.txt",
+  "pred": "Ewald André Dupont",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_UNIQUE_108]: Ewald André Dupont",
+  "elapsed_s": 3.224,
+  "utc": "2026-09-15T09:18:27.379263+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJayGTU4ge4YECaQS8VCg7mTAMMa",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463904,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 102,
+    "prompt_tokens": 207,
+    "total_tokens": 309,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 72,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

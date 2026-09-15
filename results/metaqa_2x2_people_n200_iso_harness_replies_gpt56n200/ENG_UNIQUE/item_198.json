@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_UNIQUE_198",
+  "arm": "ENG_UNIQUE",
+  "item": 198,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_UNIQUE/item_198/prompt.txt",
+  "pred": "Roland Joffé",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_UNIQUE_198]: Roland Joffé",
+  "elapsed_s": 1.381,
+  "utc": "2026-09-15T09:14:11.244162+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJWsf6VGHvDzj5GBBgrEFL2xu20t",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463650,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 143,
+    "total_tokens": 164,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

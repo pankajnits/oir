@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_10 #####
+PATH_QUERY
+START Jane_Deeter_Rippin
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jane_Deeter_Rippin | works_at | Girl_Scouts_of_the_USA
+Girl_Scouts_of_the_USA | headquartered_in | New_York_City
+DecoyCo_Girl_Scouts_of_the_USA | headquartered_in | DecoyHQ_New_York_City
+Girl_Scouts_of_the_USA | owned_by | Hold_Girl_Scouts_of_the_USA
+Hold_Girl_Scouts_of_the_USA | meta_of | Girl_Scouts_of_the_USA
+Girl_Scouts_of_the_USA | partner_of | Partner_Girl_Scouts_of_the_USA
+Partner_Girl_Scouts_of_the_USA | meta_of | Girl_Scouts_of_the_USA
+Decoy_DecoyCo_Girl_Scouts_of_the_USA | works_at | DecoyCo_Girl_Scouts_of_the_USA

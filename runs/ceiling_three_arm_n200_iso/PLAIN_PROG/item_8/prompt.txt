@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_8 #####
+PATH_QUERY
+START Isona_Passola_i_Vidal
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Isona_Passola_i_Vidal | works_at | Massa_d_Or_Produccions
+Massa_d_Or_Produccions | headquartered_in | Barcelona
+DecoyCo_Massa_d_Or_Produccions | headquartered_in | DecoyHQ_Barcelona
+Massa_d_Or_Produccions | owned_by | Hold_Massa_d_Or_Produccions
+Hold_Massa_d_Or_Produccions | meta_of | Massa_d_Or_Produccions
+Massa_d_Or_Produccions | partner_of | Partner_Massa_d_Or_Produccions
+Partner_Massa_d_Or_Produccions | meta_of | Massa_d_Or_Produccions
+Decoy_DecoyCo_Massa_d_Or_Produccions | works_at | DecoyCo_Massa_d_Or_Produccions

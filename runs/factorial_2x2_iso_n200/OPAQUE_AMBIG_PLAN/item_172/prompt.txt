@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_172]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_172 #####
+QUESTION:
+What city is the headquarters of the company led by Nasos_Ktorides?
+
+PATH_QUERY
+START Nasos_Ktorides
+R1 E73b273255227
+R2 E87dd6d28eb20
+Execute path; return final tail only.
+
+CONTEXT:
+Nasos_Ktorides | E73b273255227 | Quantum_Corporation_Group
+Quantum_Corporation_Group | E87dd6d28eb20 | Nicosia
+Nasos_Ktorides | E94e6b6ed7896 | Frydenlund
+Frydenlund | E5a60e096978b | Frederiksberg

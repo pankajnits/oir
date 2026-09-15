@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_45]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_45 #####
+QUESTION:
+Who E1a4e610067cd a E5e4428c71007 E137fa057d8ae [Wesley Snipes] E25199dcf4f19 E2a14c3ed5378?
+
+PATH_QUERY
+START Wesley Snipes
+R1 Ed17128c4b123
+R2 Ee6369dd79385
+Execute path; return final tail only.
+
+CONTEXT:
+Wesley Snipes | Ed17128c4b123 | Blade
+Blade | Ee6369dd79385 | Stephen Norrington
+Blade | E17c0a9a2b82d | David S. Goyer

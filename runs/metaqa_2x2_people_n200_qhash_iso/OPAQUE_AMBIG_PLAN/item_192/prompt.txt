@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_192]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_192 #####
+QUESTION:
+Who Ec7faf876705c a E869c8c065910 E67299df93a1a [Michael Ealy] Ece5cace325a5 E4a261af9af03?
+
+PATH_QUERY
+START Michael Ealy
+R1 E2513618024b2
+R2 E88cd413dbd7e
+Execute path; return final tail only.
+
+CONTEXT:
+Michael Ealy | E2513618024b2 | About Last Night
+About Last Night | E88cd413dbd7e | Steve Pink
+About Last Night | Ef5a1852987fa | David Mamet

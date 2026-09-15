@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_1",
+  "arm": "OPAQUE_AMBIG",
+  "item": 1,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG/item_1/prompt.txt",
+  "pred": "Roger Spottiswoode",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_1]: Roger Spottiswoode",
+  "elapsed_s": 1.54,
+  "utc": "2026-09-15T09:15:46.467592+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJYPml6VMslbWcDSPyOlaGE50siP",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463745,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 153,
+    "total_tokens": 177,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

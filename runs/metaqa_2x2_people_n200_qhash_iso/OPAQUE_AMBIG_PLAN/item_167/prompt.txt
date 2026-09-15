@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_167]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_167 #####
+QUESTION:
+Who Ea5db5a5926e3 a E68ad9a35a6be E8984f42501ce [Anne Bancroft] E391434c3d146 Eb311f2b4a19f?
+
+PATH_QUERY
+START Anne Bancroft
+R1 Ef25fa770824d
+R2 E9caca0612737
+Execute path; return final tail only.
+
+CONTEXT:
+Anne Bancroft | Ef25fa770824d | 'night, Mother
+'night, Mother | E9caca0612737 | Tom Moore
+'night, Mother | Eee70199d7252 | Marsha Norman

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_193]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_193 #####
+QUESTION:
+Who Efba6d28e7263 a E21f37bfab66a E4f41ee06aa1e [Kim Novak] E5307ee565749 E7353be92f0d6?
+
+PATH_QUERY
+START Kim Novak
+R1 E5d64bb05ab03
+R2 E528f8ee10ae2
+Execute path; return final tail only.
+
+CONTEXT:
+Kim Novak | E5d64bb05ab03 | Pushover
+Pushover | E528f8ee10ae2 | Richard Quine
+Pushover | Edf9b5ab11b05 | Thomas Walsh

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_161]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_161 #####
+QUESTION:
+What city is the headquarters of the company led by Olga_Paksina?
+
+PATH_QUERY
+START Olga_Paksina
+R1 Ef39c95b381d7
+R2 Ee4393629c08d
+Execute path; return final tail only.
+
+CONTEXT:
+Olga_Paksina | Ef39c95b381d7 | National_Media_Group
+National_Media_Group | Ee4393629c08d | Moscow
+Olga_Paksina | E0793d991d874 | Bankhaus_Michael_Frank
+Bankhaus_Michael_Frank | E312a6274779e | Frankfurt

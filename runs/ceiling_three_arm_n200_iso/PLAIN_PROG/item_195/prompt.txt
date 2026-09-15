@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_195 #####
+PATH_QUERY
+START Goh_Choon_Phong
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Goh_Choon_Phong | works_at | Singapore_Airlines
+Singapore_Airlines | headquartered_in | Singapore
+DecoyCo_Singapore_Airlines | headquartered_in | DecoyHQ_Singapore
+Singapore_Airlines | owned_by | Hold_Singapore_Airlines
+Hold_Singapore_Airlines | meta_of | Singapore_Airlines
+Singapore_Airlines | partner_of | Partner_Singapore_Airlines
+Partner_Singapore_Airlines | meta_of | Singapore_Airlines
+Decoy_DecoyCo_Singapore_Airlines | works_at | DecoyCo_Singapore_Airlines

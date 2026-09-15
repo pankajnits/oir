@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_13]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_13 #####
+QUESTION:
+What city is the headquarters of the company led by Giovanni_Caforio?
+
+PATH_QUERY
+START Giovanni_Caforio
+R1 E6355b620e598
+R2 Ef1a4272ca7f1
+Execute path; return final tail only.
+
+CONTEXT:
+Giovanni_Caforio | E6355b620e598 | Bristol-Myers_Squibb
+Bristol-Myers_Squibb | Ef1a4272ca7f1 | New_York_City
+Giovanni_Caforio | E42f60f571b52 | State_Policy_Network
+State_Policy_Network | E5f49678bdab5 | Arlington

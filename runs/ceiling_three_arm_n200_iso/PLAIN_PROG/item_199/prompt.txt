@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_199 #####
+PATH_QUERY
+START Martin_Lundstedt
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Martin_Lundstedt | works_at | AB_Volvo
+AB_Volvo | headquartered_in | Gothenburg
+DecoyCo_AB_Volvo | headquartered_in | DecoyHQ_Gothenburg
+AB_Volvo | owned_by | Hold_AB_Volvo
+Hold_AB_Volvo | meta_of | AB_Volvo
+AB_Volvo | partner_of | Partner_AB_Volvo
+Partner_AB_Volvo | meta_of | AB_Volvo
+Decoy_DecoyCo_AB_Volvo | works_at | DecoyCo_AB_Volvo

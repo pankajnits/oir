@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_170 #####
+PATH_QUERY
+START Greg_Foran
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Greg_Foran | works_at | Air_New_Zealand
+Air_New_Zealand | headquartered_in | Auckland
+DecoyCo_Air_New_Zealand | headquartered_in | DecoyHQ_Auckland
+Air_New_Zealand | owned_by | Hold_Air_New_Zealand
+Hold_Air_New_Zealand | meta_of | Air_New_Zealand
+Air_New_Zealand | partner_of | Partner_Air_New_Zealand
+Partner_Air_New_Zealand | meta_of | Air_New_Zealand
+Decoy_DecoyCo_Air_New_Zealand | works_at | DecoyCo_Air_New_Zealand

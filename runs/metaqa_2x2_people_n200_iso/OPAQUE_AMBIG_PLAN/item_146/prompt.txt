@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_146]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_146 #####
+QUESTION:
+Who directed a movie that Christopher Plummer starred in?
+
+PATH_QUERY
+START Christopher Plummer
+R1 E27fdfa245c64
+R2 E9714fc1afcd2
+Execute path; return final tail only.
+
+CONTEXT:
+Christopher Plummer | E27fdfa245c64 | Crackerjack
+Crackerjack | E9714fc1afcd2 | Michael Mazo
+Crackerjack | E47c1bef18b18 | Mick Molloy

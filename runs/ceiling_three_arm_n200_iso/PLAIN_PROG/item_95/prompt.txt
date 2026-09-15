@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_95 #####
+PATH_QUERY
+START Geoff_Allardice
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Geoff_Allardice | works_at | International_Cricket_Council
+International_Cricket_Council | headquartered_in | Dubai
+DecoyCo_International_Cricket_Council | headquartered_in | DecoyHQ_Dubai
+International_Cricket_Council | owned_by | Hold_International_Cricket_Council
+Hold_International_Cricket_Council | meta_of | International_Cricket_Council
+International_Cricket_Council | partner_of | Partner_International_Cricket_Council
+Partner_International_Cricket_Council | meta_of | International_Cricket_Council
+Decoy_DecoyCo_International_Cricket_Council | works_at | DecoyCo_International_Cricket_Council

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_3]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_3 #####
+QUESTION:
+What city is the headquarters of the company led by Lars_S_ren_Rasmussen?
+
+PATH_QUERY
+START Lars_S_ren_Rasmussen
+R1 Ed498752a598c
+R2 E774a8d0fa71d
+Execute path; return final tail only.
+
+CONTEXT:
+Lars_S_ren_Rasmussen | Ed498752a598c | Coloplast
+Coloplast | E774a8d0fa71d | Humleb_k
+Lars_S_ren_Rasmussen | E7764ea162dba | The_Salvation_Army
+The_Salvation_Army | Eb80cdd5c04f9 | London

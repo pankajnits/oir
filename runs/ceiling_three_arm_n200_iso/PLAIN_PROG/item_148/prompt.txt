@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_148 #####
+PATH_QUERY
+START Ralph_Yirikian
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ralph_Yirikian | works_at | Viva_Armenia
+Viva_Armenia | headquartered_in | Yerevan
+DecoyCo_Viva_Armenia | headquartered_in | DecoyHQ_Yerevan
+Viva_Armenia | owned_by | Hold_Viva_Armenia
+Hold_Viva_Armenia | meta_of | Viva_Armenia
+Viva_Armenia | partner_of | Partner_Viva_Armenia
+Partner_Viva_Armenia | meta_of | Viva_Armenia
+Decoy_DecoyCo_Viva_Armenia | works_at | DecoyCo_Viva_Armenia

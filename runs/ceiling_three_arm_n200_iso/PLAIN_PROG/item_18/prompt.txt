@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_18 #####
+PATH_QUERY
+START Naveen_Jain
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Naveen_Jain | works_at | Viome
+Viome | headquartered_in | Bellevue
+DecoyCo_Viome | headquartered_in | DecoyHQ_Bellevue
+Viome | owned_by | Hold_Viome
+Hold_Viome | meta_of | Viome
+Viome | partner_of | Partner_Viome
+Partner_Viome | meta_of | Viome
+Decoy_DecoyCo_Viome | works_at | DecoyCo_Viome

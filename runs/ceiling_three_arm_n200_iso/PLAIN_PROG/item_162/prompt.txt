@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_162 #####
+PATH_QUERY
+START Otto_Heinrich_Frank
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Otto_Heinrich_Frank | works_at | Bankhaus_Michael_Frank
+Bankhaus_Michael_Frank | headquartered_in | Frankfurt
+DecoyCo_Bankhaus_Michael_Frank | headquartered_in | DecoyHQ_Frankfurt
+Bankhaus_Michael_Frank | owned_by | Hold_Bankhaus_Michael_Frank
+Hold_Bankhaus_Michael_Frank | meta_of | Bankhaus_Michael_Frank
+Bankhaus_Michael_Frank | partner_of | Partner_Bankhaus_Michael_Frank
+Partner_Bankhaus_Michael_Frank | meta_of | Bankhaus_Michael_Frank
+Decoy_DecoyCo_Bankhaus_Michael_Frank | works_at | DecoyCo_Bankhaus_Michael_Frank

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_151 #####
+PATH_QUERY
+START Philippe_Morin
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Philippe_Morin | works_at | EXFO
+EXFO | headquartered_in | Quebec_City
+DecoyCo_EXFO | headquartered_in | DecoyHQ_Quebec_City
+EXFO | owned_by | Hold_EXFO
+Hold_EXFO | meta_of | EXFO
+EXFO | partner_of | Partner_EXFO
+Partner_EXFO | meta_of | EXFO
+Decoy_DecoyCo_EXFO | works_at | DecoyCo_EXFO

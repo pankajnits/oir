@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200S_ENG_AMBIG_9]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200S_ENG_AMBIG_9 #####
+QUESTION:
+What city is the headquarters of the company led by Bob_Arum?
+
+CONTEXT:
+Bob_Arum | partner_of | Girl_Scouts_of_the_USA
+Girl_Scouts_of_the_USA | located_in | New_York_City
+Bob_Arum | works_at | Top_Rank
+Top_Rank | headquartered_in | Las_Vegas

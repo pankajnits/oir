@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_AMBIG_146",
+  "arm": "ENG_AMBIG",
+  "item": 146,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_AMBIG/item_146/prompt.txt",
+  "pred": "Michael Mazo",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_AMBIG_146]: Michael Mazo",
+  "elapsed_s": 1.736,
+  "utc": "2026-09-15T09:14:47.197531+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJXRBlDqCjXmFGSNhJb1xwAGSz7d",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463685,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 125,
+    "total_tokens": 145,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

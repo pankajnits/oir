@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_96]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_96 #####
+QUESTION:
+Who directed a movie that Dean Martin starred in?
+
+PATH_QUERY
+START Dean Martin
+R1 E44ce767c2e7f
+R2 E7df788b04b37
+Execute path; return final tail only.
+
+CONTEXT:
+Dean Martin | E44ce767c2e7f | Toys in the Attic
+Toys in the Attic | E7df788b04b37 | George Roy Hill
+Toys in the Attic | Ed120b6bd1f6b | Lillian Hellman

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_172 #####
+PATH_QUERY
+START Nasos_Ktorides
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nasos_Ktorides | works_at | Quantum_Corporation_Group
+Quantum_Corporation_Group | headquartered_in | Nicosia
+DecoyCo_Quantum_Corporation_Group | headquartered_in | DecoyHQ_Nicosia
+Quantum_Corporation_Group | owned_by | Hold_Quantum_Corporation_Group
+Hold_Quantum_Corporation_Group | meta_of | Quantum_Corporation_Group
+Quantum_Corporation_Group | partner_of | Partner_Quantum_Corporation_Group
+Partner_Quantum_Corporation_Group | meta_of | Quantum_Corporation_Group
+Decoy_DecoyCo_Quantum_Corporation_Group | works_at | DecoyCo_Quantum_Corporation_Group

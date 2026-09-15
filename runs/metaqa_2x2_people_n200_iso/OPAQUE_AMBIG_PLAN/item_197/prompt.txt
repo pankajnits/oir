@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_197]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_197 #####
+QUESTION:
+Who directed a movie that Diane Keaton starred in?
+
+PATH_QUERY
+START Diane Keaton
+R1 E08909ea5db9f
+R2 E0f8883333f64
+Execute path; return final tail only.
+
+CONTEXT:
+Diane Keaton | E08909ea5db9f | And So It Goes
+And So It Goes | E0f8883333f64 | Rob Reiner
+And So It Goes | Ea2a24b3c0a0d | Mark Andrus

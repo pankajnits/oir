@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_126 #####
+PATH_QUERY
+START Nikodem_Bo_cza-Tomaszewski
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nikodem_Bo_cza-Tomaszewski | works_at | Exatel
+Exatel | headquartered_in | Warsaw
+DecoyCo_Exatel | headquartered_in | DecoyHQ_Warsaw
+Exatel | owned_by | Hold_Exatel
+Hold_Exatel | meta_of | Exatel
+Exatel | partner_of | Partner_Exatel
+Partner_Exatel | meta_of | Exatel
+Decoy_DecoyCo_Exatel | works_at | DecoyCo_Exatel

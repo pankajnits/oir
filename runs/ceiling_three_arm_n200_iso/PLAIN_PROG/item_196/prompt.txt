@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_196 #####
+PATH_QUERY
+START Nawat_Itsaragrisil
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Nawat_Itsaragrisil | works_at | Miss_Grand_International_company
+Miss_Grand_International_company | headquartered_in | Bangkok
+DecoyCo_Miss_Grand_International_company | headquartered_in | DecoyHQ_Bangkok
+Miss_Grand_International_company | owned_by | Hold_Miss_Grand_International_company
+Hold_Miss_Grand_International_company | meta_of | Miss_Grand_International_company
+Miss_Grand_International_company | partner_of | Partner_Miss_Grand_International_company
+Partner_Miss_Grand_International_company | meta_of | Miss_Grand_International_company
+Decoy_DecoyCo_Miss_Grand_International_company | works_at | DecoyCo_Miss_Grand_International_company

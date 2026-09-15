@@ -1,0 +1,36 @@
+{
+  "id": "H200_510d201740",
+  "arm": "OPQ_K2_CRV",
+  "item": 38,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CRV/item_38/prompt.txt",
+  "pred": "Dublin",
+  "raw": "ANSWER_PLAIN[H200_510d201740]: Dublin",
+  "elapsed_s": 3.707,
+  "utc": "2026-09-15T08:46:59.900477+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ6Xl0DSK7v4zICfMUr9zy3boHSn",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462017,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 101,
+    "prompt_tokens": 162,
+    "total_tokens": 263,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 79,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

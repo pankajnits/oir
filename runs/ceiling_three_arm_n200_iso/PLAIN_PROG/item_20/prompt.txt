@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_20 #####
+PATH_QUERY
+START Tracie_D._Hall
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Tracie_D._Hall | works_at | American_Library_Association
+American_Library_Association | headquartered_in | Chicago
+DecoyCo_American_Library_Association | headquartered_in | DecoyHQ_Chicago
+American_Library_Association | owned_by | Hold_American_Library_Association
+Hold_American_Library_Association | meta_of | American_Library_Association
+American_Library_Association | partner_of | Partner_American_Library_Association
+Partner_American_Library_Association | meta_of | American_Library_Association
+Decoy_DecoyCo_American_Library_Association | works_at | DecoyCo_American_Library_Association

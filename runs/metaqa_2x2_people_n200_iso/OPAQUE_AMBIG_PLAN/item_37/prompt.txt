@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_37]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_37 #####
+QUESTION:
+Who directed a movie that Gregory Peck starred in?
+
+PATH_QUERY
+START Gregory Peck
+R1 E13a8fbc564f3
+R2 Ec14541d0212e
+Execute path; return final tail only.
+
+CONTEXT:
+Gregory Peck | E13a8fbc564f3 | Designing Woman
+Designing Woman | Ec14541d0212e | Vincente Minnelli
+Designing Woman | E92774d8054cb | George Wells

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_58]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_58 #####
+QUESTION:
+Who directed a movie that Don Ameche starred in?
+
+PATH_QUERY
+START Don Ameche
+R1 E444bc4da5154
+R2 E705a92790508
+Execute path; return final tail only.
+
+CONTEXT:
+Don Ameche | E444bc4da5154 | A Fever in the Blood
+A Fever in the Blood | E705a92790508 | Vincent Sherman
+A Fever in the Blood | E632a7ec06c73 | Roy Huggins

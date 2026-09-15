@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_14 #####
+PATH_QUERY
+START Tracie_Sharp
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Tracie_Sharp | works_at | State_Policy_Network
+State_Policy_Network | headquartered_in | Arlington
+DecoyCo_State_Policy_Network | headquartered_in | DecoyHQ_Arlington
+State_Policy_Network | owned_by | Hold_State_Policy_Network
+Hold_State_Policy_Network | meta_of | State_Policy_Network
+State_Policy_Network | partner_of | Partner_State_Policy_Network
+Partner_State_Policy_Network | meta_of | State_Policy_Network
+Decoy_DecoyCo_State_Policy_Network | works_at | DecoyCo_State_Policy_Network

@@ -1,0 +1,19 @@
+MODEL UNDER TEST. Read ONLY this file. No decrypt. No world knowledge.
+Format: ANSWER_SEALED[DP200_PLAN_13]: <seal_or_UNKNOWN>
+
+ARM PLAN: explicit sealed relation sequence on the MATCHED graph.
+
+Follow PATH over sealed CONTEXT. Output final sealed atom only.
+
+##### ID DP200_PLAN_13 #####
+PATH_QUERY
+START E70bfe7bb16ee
+R1 E97b1309c14df
+R2 E8c222a6cc79f
+Execute path; return final tail only.
+
+CONTEXT:
+E70bfe7bb16ee | E97b1309c14df | Ed494223b9fb5
+Ed494223b9fb5 | E8c222a6cc79f | E083ebbd72258
+Ed494223b9fb5 | Ef6799657f07e | E389a05bf61d0
+

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_168]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_168 #####
+QUESTION:
+Who directed a movie that Robert Conrad starred in?
+
+PATH_QUERY
+START Robert Conrad
+R1 E4f254f5f4ade
+R2 Ecb7bd96b3461
+Execute path; return final tail only.
+
+CONTEXT:
+Robert Conrad | E4f254f5f4ade | The Lady in Red
+The Lady in Red | Ecb7bd96b3461 | Lewis Teague
+The Lady in Red | E800a39117061 | John Sayles

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_100 #####
+PATH_QUERY
+START Tim_Steiner
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Tim_Steiner | works_at | Ocado
+Ocado | headquartered_in | Hatfield
+DecoyCo_Ocado | headquartered_in | DecoyHQ_Hatfield
+Ocado | owned_by | Hold_Ocado
+Hold_Ocado | meta_of | Ocado
+Ocado | partner_of | Partner_Ocado
+Partner_Ocado | meta_of | Ocado
+Decoy_DecoyCo_Ocado | works_at | DecoyCo_Ocado

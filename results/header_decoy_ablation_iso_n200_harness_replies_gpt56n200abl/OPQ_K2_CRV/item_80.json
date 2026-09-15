@@ -1,0 +1,36 @@
+{
+  "id": "H200_e90e0e1362",
+  "arm": "OPQ_K2_CRV",
+  "item": 80,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CRV/item_80/prompt.txt",
+  "pred": "Detroit",
+  "raw": "ANSWER_PLAIN[H200_e90e0e1362]: Detroit",
+  "elapsed_s": 2.717,
+  "utc": "2026-09-15T08:47:21.529542+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ6to9u2gSPQUxo6vOhVIxKfnu91",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462039,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 63,
+    "prompt_tokens": 164,
+    "total_tokens": 227,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 39,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

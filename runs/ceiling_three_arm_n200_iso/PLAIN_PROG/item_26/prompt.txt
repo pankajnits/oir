@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_26 #####
+PATH_QUERY
+START Kristin_Clemet
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Kristin_Clemet | works_at | Civita
+Civita | headquartered_in | Oslo
+DecoyCo_Civita | headquartered_in | DecoyHQ_Oslo
+Civita | owned_by | Hold_Civita
+Hold_Civita | meta_of | Civita
+Civita | partner_of | Partner_Civita
+Partner_Civita | meta_of | Civita
+Decoy_DecoyCo_Civita | works_at | DecoyCo_Civita

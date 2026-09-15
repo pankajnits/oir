@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_44]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_44 #####
+QUESTION:
+Who Eb50d1392143d a E7ce66d529e1f Ebbe1e162290a [Keenan Wynn] E2afff99c0f67 E7b98dc01dd03?
+
+PATH_QUERY
+START Keenan Wynn
+R1 Ec54f1d12b83e
+R2 E1a6cd882ec27
+Execute path; return final tail only.
+
+CONTEXT:
+Keenan Wynn | Ec54f1d12b83e | The Deep Six
+The Deep Six | E1a6cd882ec27 | Rudolph Maté
+The Deep Six | E99ff2b2d2cd8 | Martin Dibner

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_90]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_90 #####
+QUESTION:
+What city is the headquarters of the company led by Luigi_Ferraris?
+
+PATH_QUERY
+START Luigi_Ferraris
+R1 Ef452e69d257a
+R2 Eea041c547955
+Execute path; return final tail only.
+
+CONTEXT:
+Luigi_Ferraris | Ef452e69d257a | Terna_S.p.A.
+Terna_S.p.A. | Eea041c547955 | Rome
+Luigi_Ferraris | Ebf3fb8ebf5a6 | United_Parcel_Service
+United_Parcel_Service | E558ae5140828 | Sandy_Springs

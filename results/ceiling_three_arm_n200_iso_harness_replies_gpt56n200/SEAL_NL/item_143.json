@@ -1,0 +1,35 @@
+{
+  "id": "CEIL200_SEALNL_143",
+  "arm": "SEAL_NL",
+  "item": 143,
+  "prompt_path": "runs/ceiling_three_arm_n200_iso/SEAL_NL/item_143/prompt.txt",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_SEALED[CEIL200_SEALNL_143]: UNKNOWN",
+  "elapsed_s": 1.736,
+  "utc": "2026-09-15T09:02:40.158810+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJLiggMPyRlG3on0oAt5wGGq0y4Z",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462958,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 50,
+    "prompt_tokens": 367,
+    "total_tokens": 417,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 26,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

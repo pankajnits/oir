@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_133]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_133 #####
+QUESTION:
+What city is the headquarters of the company led by Achim_Steiner?
+
+PATH_QUERY
+START Achim_Steiner
+R1 Eddae8d8bd13b
+R2 E3d24c0bada1d
+Execute path; return final tail only.
+
+CONTEXT:
+Achim_Steiner | Eddae8d8bd13b | United_Nations_Environment_Programme
+United_Nations_Environment_Programme | E3d24c0bada1d | Nairobi
+Achim_Steiner | E6ee9b6d92781 | Ma_ayan_HaChinuch_HaTorani
+Ma_ayan_HaChinuch_HaTorani | E6c201df0e4db | Jerusalem

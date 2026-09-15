@@ -1,0 +1,35 @@
+{
+  "id": "F200S_ENG_AMBIG_50",
+  "arm": "ENG_AMBIG",
+  "item": 50,
+  "prompt_path": "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_50/prompt.txt",
+  "pred": "Cambridge",
+  "raw": "ANSWER_PLAIN[F200S_ENG_AMBIG_50]: Cambridge",
+  "elapsed_s": 1.298,
+  "utc": "2026-09-15T08:57:46.864650+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJH0mqXAYlW1t2WlQ3YnsBxb5lDC",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462666,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 17,
+    "prompt_tokens": 142,
+    "total_tokens": 159,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

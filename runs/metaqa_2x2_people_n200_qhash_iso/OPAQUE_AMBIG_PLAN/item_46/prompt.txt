@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_46]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_46 #####
+QUESTION:
+Who E9afd111471d3 a Ed90385f00bbc E55aa3ca9260c [Sharni Vinson] E862e8033e575 E6aeb00c8e6b7?
+
+PATH_QUERY
+START Sharni Vinson
+R1 Ec926d64c5066
+R2 E681c11a78dd2
+Execute path; return final tail only.
+
+CONTEXT:
+Sharni Vinson | Ec926d64c5066 | You're Next
+You're Next | E681c11a78dd2 | Adam Wingard
+You're Next | E10d5471956dd | Simon Barrett

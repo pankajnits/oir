@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_99 #####
+PATH_QUERY
+START Werner_Hasselblatt
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Werner_Hasselblatt | works_at | Verband_der_deutschen_Minderheiten_in_Europa
+Verband_der_deutschen_Minderheiten_in_Europa | headquartered_in | Vienna
+DecoyCo_Verband_der_deutschen_Minderheiten_in_Europa | headquartered_in | DecoyHQ_Vienna
+Verband_der_deutschen_Minderheiten_in_Europa | owned_by | Hold_Verband_der_deutschen_Minderheiten_in_Europa
+Hold_Verband_der_deutschen_Minderheiten_in_Europa | meta_of | Verband_der_deutschen_Minderheiten_in_Europa
+Verband_der_deutschen_Minderheiten_in_Europa | partner_of | Partner_Verband_der_deutschen_Minderheiten_in_Europa
+Partner_Verband_der_deutschen_Minderheiten_in_Europa | meta_of | Verband_der_deutschen_Minderheiten_in_Europa
+Decoy_DecoyCo_Verband_der_deutschen_Minderheiten_in_Europa | works_at | DecoyCo_Verband_der_deutschen_Minderheiten_in_Europa

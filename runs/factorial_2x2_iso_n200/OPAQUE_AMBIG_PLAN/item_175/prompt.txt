@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_175]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_175 #####
+QUESTION:
+What city is the headquarters of the company led by Janet_L._Kavandi?
+
+PATH_QUERY
+START Janet_L._Kavandi
+R1 E6d0fe7e41145
+R2 E0928edb8b745
+Execute path; return final tail only.
+
+CONTEXT:
+Janet_L._Kavandi | E6d0fe7e41145 | Sierra_Space
+Sierra_Space | E0928edb8b745 | Broomfield
+Janet_L._Kavandi | Ee209cc4aaabb | InterCall
+InterCall | E8a71c642bfe6 | Chicago

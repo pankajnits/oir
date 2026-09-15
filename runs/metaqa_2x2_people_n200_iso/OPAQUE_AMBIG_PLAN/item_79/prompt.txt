@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_79]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_79 #####
+QUESTION:
+Who directed a movie that John Benjamin Hickey starred in?
+
+PATH_QUERY
+START John Benjamin Hickey
+R1 E8d7c9670ce7d
+R2 Ec26a4db7f7af
+Execute path; return final tail only.
+
+CONTEXT:
+John Benjamin Hickey | E8d7c9670ce7d | Finding North
+Finding North | Ec26a4db7f7af | Tanya Wexler
+Finding North | E42bbb9080e42 | Kim Powers

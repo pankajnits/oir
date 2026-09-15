@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_190 #####
+PATH_QUERY
+START Maciej_Banach
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Maciej_Banach | works_at | Grupa_Handlo-Budowa
+Grupa_Handlo-Budowa | headquartered_in | Bydgoszcz
+DecoyCo_Grupa_Handlo-Budowa | headquartered_in | DecoyHQ_Bydgoszcz
+Grupa_Handlo-Budowa | owned_by | Hold_Grupa_Handlo-Budowa
+Hold_Grupa_Handlo-Budowa | meta_of | Grupa_Handlo-Budowa
+Grupa_Handlo-Budowa | partner_of | Partner_Grupa_Handlo-Budowa
+Partner_Grupa_Handlo-Budowa | meta_of | Grupa_Handlo-Budowa
+Decoy_DecoyCo_Grupa_Handlo-Budowa | works_at | DecoyCo_Grupa_Handlo-Budowa

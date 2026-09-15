@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_93]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_93 #####
+QUESTION:
+What city is the headquarters of the company led by Jean-Paul_Montanari?
+
+PATH_QUERY
+START Jean-Paul_Montanari
+R1 Eb4a73155524b
+R2 Ebc7273990e21
+Execute path; return final tail only.
+
+CONTEXT:
+Jean-Paul_Montanari | Eb4a73155524b | Montpellier_Dance_Festival
+Montpellier_Dance_Festival | Ebc7273990e21 | Montpellier
+Jean-Paul_Montanari | E0fd9e97d0278 | Lufthansa
+Lufthansa | E27c7f414ccbe | Cologne

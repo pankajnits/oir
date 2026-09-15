@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_149 #####
+PATH_QUERY
+START Manuel_Bartlett_D_az
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Manuel_Bartlett_D_az | works_at | Comisi_n_Federal_de_Electricidad
+Comisi_n_Federal_de_Electricidad | headquartered_in | Mexico_City
+DecoyCo_Comisi_n_Federal_de_Electricidad | headquartered_in | DecoyHQ_Mexico_City
+Comisi_n_Federal_de_Electricidad | owned_by | Hold_Comisi_n_Federal_de_Electricidad
+Hold_Comisi_n_Federal_de_Electricidad | meta_of | Comisi_n_Federal_de_Electricidad
+Comisi_n_Federal_de_Electricidad | partner_of | Partner_Comisi_n_Federal_de_Electricidad
+Partner_Comisi_n_Federal_de_Electricidad | meta_of | Comisi_n_Federal_de_Electricidad
+Decoy_DecoyCo_Comisi_n_Federal_de_Electricidad | works_at | DecoyCo_Comisi_n_Federal_de_Electricidad

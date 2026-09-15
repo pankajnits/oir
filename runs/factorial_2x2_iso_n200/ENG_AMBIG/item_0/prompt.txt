@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_0]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_0 #####
+QUESTION:
+What city is the headquarters of the company led by Nancy_Duarte?
+
+CONTEXT:
+Nancy_Duarte | works_at | Duarte_Inc.
+Duarte_Inc. | headquartered_in | San_Jose
+Nancy_Duarte | partner_of | Vodafone
+Vodafone | located_in | London

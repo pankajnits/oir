@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_60 #####
+PATH_QUERY
+START Mark_Dubowitz
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Mark_Dubowitz | works_at | Foundation_for_Defense_of_Democracies
+Foundation_for_Defense_of_Democracies | headquartered_in | Washington_D.C.
+DecoyCo_Foundation_for_Defense_of_Democracies | headquartered_in | DecoyHQ_Washington_D.C.
+Foundation_for_Defense_of_Democracies | owned_by | Hold_Foundation_for_Defense_of_Democracies
+Hold_Foundation_for_Defense_of_Democracies | meta_of | Foundation_for_Defense_of_Democracies
+Foundation_for_Defense_of_Democracies | partner_of | Partner_Foundation_for_Defense_of_Democracies
+Partner_Foundation_for_Defense_of_Democracies | meta_of | Foundation_for_Defense_of_Democracies
+Decoy_DecoyCo_Foundation_for_Defense_of_Democracies | works_at | DecoyCo_Foundation_for_Defense_of_Democracies

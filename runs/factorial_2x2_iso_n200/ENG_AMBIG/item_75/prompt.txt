@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_75]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_75 #####
+QUESTION:
+What city is the headquarters of the company led by Patrick_Lo?
+
+CONTEXT:
+Patrick_Lo | works_at | Netgear
+Netgear | headquartered_in | Dover
+Patrick_Lo | partner_of | Imperial_Brands
+Imperial_Brands | located_in | Bristol

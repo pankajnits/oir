@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_98]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_98 #####
+QUESTION:
+What city is the headquarters of the company led by Adam_Kici_ski?
+
+PATH_QUERY
+START Adam_Kici_ski
+R1 Eec7066e311a4
+R2 Ef28b4178721f
+Execute path; return final tail only.
+
+CONTEXT:
+Adam_Kici_ski | Eec7066e311a4 | CD_Projekt
+CD_Projekt | Ef28b4178721f | Warsaw
+Adam_Kici_ski | E675b42501182 | Verband_der_deutschen_Minderheiten_in_Europa
+Verband_der_deutschen_Minderheiten_in_Europa | E0df0fc6a9ff3 | Vienna

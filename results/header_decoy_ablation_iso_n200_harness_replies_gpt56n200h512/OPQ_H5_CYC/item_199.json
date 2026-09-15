@@ -1,0 +1,35 @@
+{
+  "id": "H200_164d5ff682",
+  "arm": "OPQ_H5_CYC",
+  "item": 199,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_199/prompt.txt",
+  "pred": "Gothenburg",
+  "raw": "ANSWER_PLAIN[H200_164d5ff682]: Gothenburg",
+  "elapsed_s": 2.911,
+  "utc": "2026-09-15T08:52:13.060839+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJBafWrfpoQGSfsU49zv4cD6ZHSw",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462330,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 63,
+    "prompt_tokens": 172,
+    "total_tokens": 235,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 39,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

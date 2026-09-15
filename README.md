@@ -9,8 +9,9 @@ Measurement protocol and HMAC middle layer for the paper
 **Code, isolation quizzes (`runs/`), and locked scores (`results/`):**
 [github.com/pankajnits/oir](https://github.com/pankajnits/oir)
 
-**PDF (NeurIPS preprint, 9 content pages + appendix + checklist):**
-[`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf)
+**Named preprint TeX** (not the TMLR review upload): [`paper/arxiv_upload/`](paper/arxiv_upload/).
+**Anonymous TMLR PDF + zip:** [`paper/tmlr/`](paper/tmlr/) (`main.pdf`, `oir-tmlr-supplementary.zip`).
+Do not put this GitHub URL on the OpenReview form.
 
 Pinned clone: tag [`v1.0.6`](https://github.com/pankajnits/oir/releases/tag/v1.0.6).
 
@@ -25,9 +26,10 @@ python3 -m pytest tests/ -q
 
 From a checkout you can also `pip install git+https://github.com/pankajnits/oir.git`. The import name is `oir`; the PyPI-style distribution name is `oir-layer`.
 
-Compile the paper: `cd paper/arxiv_upload && tectonic -X compile main.tex`
-(see [`paper/README.md`](paper/README.md)). arXiv upload is
-[`paper/oir-arxiv.zip`](paper/oir-arxiv.zip) (**no** PDF inside).
+Compile the named preprint: `cd paper/arxiv_upload && tectonic -X compile main.tex`
+(see [`paper/README.md`](paper/README.md)). That folder is **not** the TMLR
+upload. Anonymous review files: `python3 paper/tmlr/convert_from_arxiv.py`
+then `cd paper/tmlr && tectonic -X compile main.tex`.
 
 HMAC seals are an **instrument** (instance-wise injective renaming that preserves equality). They are not confidentiality, HIPAA, or IND-CPA. Missing cells are `n.r.`, never zeros.
 
@@ -38,10 +40,20 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 | Unique path, both-opaque (entities+relations sealed) | **32/32** all three families |
 | Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; Composer **27/32**; Grok **30/32** |
 | English Wikidata 2×2 (OpenAI; relations readable) | unique **31/32**, two-path **31/32** |
-| Opacity × two same-type paths (OpenAI Wikidata 2×2) | Locked named-arm Wiki-H5 **6/32** (UNK 24, decoy 2). Snapshot **5/32** (1 `NO_OUTPUT`). Arm-neutral OpenAI: H5 cyclic **20/32**, H5 constant decoy **10/32**, K2 cyclic **30/32**, no ARM cyclic **25/32**. Composer H5 cyclic **6/32** vs no ARM cyclic **21/32**. Grok H5/K2 **0/32**, no ARM cyclic **6/32**, English no ARM **24/32**. |
+| Opacity × two same-type paths, **26 city-valued items** (OpenAI) | Unique English/opaque and English two-path **26/26**. Named-arm opaque two-path **5/26**, **2/26**, **2/26** across three draws of the unpinned alias (August: UNK 21, decoy 0). |
+| Same cell, $n{=}32$ lockfile (OpenAI) | Named-arm Wiki-H5 **6/32** (UNK 24, decoy 2). Both decoys sit on the six non-city P159 golds. |
+| City-typed **n=200** freeze (OpenAI; every HQ is Wikidata city P31, QIDs live-checked) | Unique English/opaque **200/200**, English two-path **199/200**, named-arm opaque two-path **38/200** (UNK 151, decoy 11; Wilson [0.14, 0.25]), plan **200/200**. |
+| Same-date case-id pair, 512 tokens, cyclic (11 Sep n=32) | Named-arm **5/32** vs hashed-id H5-cyclic **20/32** (one `NO_OUTPUT` each; ARM line kept). |
+| Same contrast, city-typed n=200, 512 tokens | Named-arm **38/200** vs hashed-id H5-cyclic **134/200**. |
+| Header × decoy n=200, hashed ids, 4096/medium (OpenAI) | Cyclic/constant: no ARM **174/151**, H5 **129/44**, K2 **179/144**. English no ARM cyclic **197/200**. |
+| Header × decoy, hashed ids, 4096/medium (OpenAI) | Cyclic/constant: no ARM **25/27**, H5 **20/10**, K2 **30/26**. Composer H5 cyclic **6/32** vs no ARM cyclic **21/32**. Grok H5/K2 **0/32**, no ARM cyclic **6/32**, English no ARM **24/32**. |
 | Same graphs, Composer / Grok two-path | Composer English **26/32** → opaque **10/32**; Grok English **4/32** (UNK 28) → opaque **1/32** |
 | WikiMovies Condition A n=100 (OpenAI) | two-path **96/100**; on 32 names shared with A32, **29/32** (A32 was **17/32**) |
 | WikiMovies Condition B n=100 (OpenAI) | unique **100/100**, two-path **3/100** |
+| WikiMovies Condition A/B n=200 (OpenAI) | A two-path **122/200** (Wiki-H5 topology ARM, not the A100 `n=100` banner; not a resample of **96/100**); B unique **200/200**, two-path **7/200** |
+| Both-opaque two-path n=200 (OpenAI) | unique **200/200**, two-path **12/200**, plan **200/200** |
+| Dual n=200 (OpenAI) | matched **200/200**, novel **2/200**, plan **200/200** |
+| CEO-NL n=200 (OpenAI) | sealed plan **200/200**, free sealed English **0/200** |
 | Both-opaque two-path (OpenAI / Composer / Grok) | **1/32 / 0/32 / 0/32** |
 | Dual-path | isolation matched **32/32**, novel **0/32** (Composer isolation UNKNOWN is a sealed-demo helper; free-form `composer25ff` novel-asymmetric is decoy **32/32**) |
 | No written hop: protocol / equality recipe | **32/32** all three |

@@ -1,0 +1,36 @@
+{
+  "id": "H200_114492521d",
+  "arm": "OPQ_NONE_CYC",
+  "item": 187,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_187/prompt.txt",
+  "pred": "Mattersburg",
+  "raw": "ANSWER_PLAIN[H200_114492521d]: Mattersburg",
+  "elapsed_s": 5.76,
+  "utc": "2026-09-15T08:49:20.508533+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ8lcL3PeqbbAw1LXfrrqdx7dvYJ",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462155,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 174,
+    "prompt_tokens": 167,
+    "total_tokens": 341,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 151,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

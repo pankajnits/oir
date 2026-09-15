@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_UNIQUE_89",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 89,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_89/prompt.txt",
+  "pred": "Richard Fleischer",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_UNIQUE_89]: Richard Fleischer",
+  "elapsed_s": 4.466,
+  "utc": "2026-09-15T09:18:21.303123+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJatW4r1vxqH40hcpauLUdgQ8Ca0",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463899,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 69,
+    "prompt_tokens": 205,
+    "total_tokens": 274,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 41,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

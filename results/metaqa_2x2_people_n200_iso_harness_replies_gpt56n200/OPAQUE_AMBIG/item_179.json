@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_AMBIG_179",
+  "arm": "OPAQUE_AMBIG",
+  "item": 179,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_AMBIG/item_179/prompt.txt",
+  "pred": "S. Sylvan Simon",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_179]: S. Sylvan Simon",
+  "elapsed_s": 3.707,
+  "utc": "2026-09-15T09:16:50.542200+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJZQbYNQOEUukRD6OTb2PpiaDihD",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463808,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 79,
+    "prompt_tokens": 149,
+    "total_tokens": 228,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 50,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

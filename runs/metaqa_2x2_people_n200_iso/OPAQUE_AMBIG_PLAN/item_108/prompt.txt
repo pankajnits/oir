@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_108]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_108 #####
+QUESTION:
+Who directed a movie that Anna May Wong starred in?
+
+PATH_QUERY
+START Anna May Wong
+R1 E8eec2c86bc9d
+R2 E0fef5023b538
+Execute path; return final tail only.
+
+CONTEXT:
+Anna May Wong | E8eec2c86bc9d | Piccadilly
+Piccadilly | E0fef5023b538 | Ewald André Dupont
+Piccadilly | E9cd4942b65de | Arnold Bennett

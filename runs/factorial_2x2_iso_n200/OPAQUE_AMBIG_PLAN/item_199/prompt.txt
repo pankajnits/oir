@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_199]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_199 #####
+QUESTION:
+What city is the headquarters of the company led by Martin_Lundstedt?
+
+PATH_QUERY
+START Martin_Lundstedt
+R1 Eef6126f5208a
+R2 E9a832b23bda8
+Execute path; return final tail only.
+
+CONTEXT:
+Martin_Lundstedt | Eef6126f5208a | AB_Volvo
+AB_Volvo | E9a832b23bda8 | Gothenburg
+Martin_Lundstedt | Efa080339e99c | Duarte_Inc.
+Duarte_Inc. | Efc3e99751f30 | San_Jose

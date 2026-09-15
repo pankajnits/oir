@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_24 #####
+PATH_QUERY
+START Robert_Swaak
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Robert_Swaak | works_at | ABN_AMRO
+ABN_AMRO | headquartered_in | Amsterdam
+DecoyCo_ABN_AMRO | headquartered_in | DecoyHQ_Amsterdam
+ABN_AMRO | owned_by | Hold_ABN_AMRO
+Hold_ABN_AMRO | meta_of | ABN_AMRO
+ABN_AMRO | partner_of | Partner_ABN_AMRO
+Partner_ABN_AMRO | meta_of | ABN_AMRO
+Decoy_DecoyCo_ABN_AMRO | works_at | DecoyCo_ABN_AMRO

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_71 #####
+PATH_QUERY
+START Robert_Hohman
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Robert_Hohman | works_at | Glassdoor
+Glassdoor | headquartered_in | San_Francisco
+DecoyCo_Glassdoor | headquartered_in | DecoyHQ_San_Francisco
+Glassdoor | owned_by | Hold_Glassdoor
+Hold_Glassdoor | meta_of | Glassdoor
+Glassdoor | partner_of | Partner_Glassdoor
+Partner_Glassdoor | meta_of | Glassdoor
+Decoy_DecoyCo_Glassdoor | works_at | DecoyCo_Glassdoor

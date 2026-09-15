@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_40 #####
+PATH_QUERY
+START Eliyahu_Glickman
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Eliyahu_Glickman | works_at | Zim_Integrated_Shipping_Services_Ltd
+Zim_Integrated_Shipping_Services_Ltd | headquartered_in | Haifa
+DecoyCo_Zim_Integrated_Shipping_Services_Ltd | headquartered_in | DecoyHQ_Haifa
+Zim_Integrated_Shipping_Services_Ltd | owned_by | Hold_Zim_Integrated_Shipping_Services_Ltd
+Hold_Zim_Integrated_Shipping_Services_Ltd | meta_of | Zim_Integrated_Shipping_Services_Ltd
+Zim_Integrated_Shipping_Services_Ltd | partner_of | Partner_Zim_Integrated_Shipping_Services_Ltd
+Partner_Zim_Integrated_Shipping_Services_Ltd | meta_of | Zim_Integrated_Shipping_Services_Ltd
+Decoy_DecoyCo_Zim_Integrated_Shipping_Services_Ltd | works_at | DecoyCo_Zim_Integrated_Shipping_Services_Ltd

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_35]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_35 #####
+QUESTION:
+What city is the headquarters of the company led by Kelli_Thomas-Drake?
+
+PATH_QUERY
+START Kelli_Thomas-Drake
+R1 E235091014138
+R2 Eecfc77a9d1b8
+Execute path; return final tail only.
+
+CONTEXT:
+Kelli_Thomas-Drake | E235091014138 | MyPurpleFolder
+MyPurpleFolder | Eecfc77a9d1b8 | Dallas
+Kelli_Thomas-Drake | E7ea2185ff989 | Norwegian_Nurses_Organisation
+Norwegian_Nurses_Organisation | E1e961a762dcc | Oslo

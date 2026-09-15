@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_105]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_105 #####
+QUESTION:
+What city is the headquarters of the company led by Jean-Marc_Harion?
+
+PATH_QUERY
+START Jean-Marc_Harion
+R1 E3c1d66429864
+R2 E8b85a2625dd7
+Execute path; return final tail only.
+
+CONTEXT:
+Jean-Marc_Harion | E3c1d66429864 | Orange_Egypt
+Orange_Egypt | E8b85a2625dd7 | Cairo
+Jean-Marc_Harion | E2cb3710fead9 | Kosmos_slav
+Kosmos_slav | E03e3ba411668 | slav

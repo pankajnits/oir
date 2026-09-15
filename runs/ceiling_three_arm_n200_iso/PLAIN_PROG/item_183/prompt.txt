@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_183 #####
+PATH_QUERY
+START Ebba_Ljungerud
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ebba_Ljungerud | works_at | Paradox_Interactive
+Paradox_Interactive | headquartered_in | Stockholm
+DecoyCo_Paradox_Interactive | headquartered_in | DecoyHQ_Stockholm
+Paradox_Interactive | owned_by | Hold_Paradox_Interactive
+Hold_Paradox_Interactive | meta_of | Paradox_Interactive
+Paradox_Interactive | partner_of | Partner_Paradox_Interactive
+Partner_Paradox_Interactive | meta_of | Paradox_Interactive
+Decoy_DecoyCo_Paradox_Interactive | works_at | DecoyCo_Paradox_Interactive

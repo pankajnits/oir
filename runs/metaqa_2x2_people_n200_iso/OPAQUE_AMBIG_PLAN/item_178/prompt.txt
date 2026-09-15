@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_178]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_178 #####
+QUESTION:
+Who directed a movie that Ryan Reynolds starred in?
+
+PATH_QUERY
+START Ryan Reynolds
+R1 E0792f01b9d51
+R2 E47a532c937f9
+Execute path; return final tail only.
+
+CONTEXT:
+Ryan Reynolds | E0792f01b9d51 | Buried
+Buried | E47a532c937f9 | Rodrigo Cortés
+Buried | E9591b919e941 | Chris Sparling

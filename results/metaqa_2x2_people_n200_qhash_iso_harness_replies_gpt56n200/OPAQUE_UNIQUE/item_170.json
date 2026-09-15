@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_UNIQUE_170",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 170,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_UNIQUE/item_170/prompt.txt",
+  "pred": "Chris Eyre",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_UNIQUE_170]: Chris Eyre",
+  "elapsed_s": 4.58,
+  "utc": "2026-09-15T09:18:53.693093+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJbNFrM9SzxdK3mSvRklsXNZNjiU",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463929,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 109,
+    "prompt_tokens": 206,
+    "total_tokens": 315,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 81,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

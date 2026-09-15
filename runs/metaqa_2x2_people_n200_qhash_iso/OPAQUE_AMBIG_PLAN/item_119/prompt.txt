@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_119]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_119 #####
+QUESTION:
+Who E6fdb59649c95 a E1c64d1ae2005 E0b179cd22a5d [Alan Arkin] E7d1884c9e466 Eb5d2f5056bbb?
+
+PATH_QUERY
+START Alan Arkin
+R1 Ecebcb20f30bc
+R2 Ed67316fab401
+Execute path; return final tail only.
+
+CONTEXT:
+Alan Arkin | Ecebcb20f30bc | The In-Laws
+The In-Laws | Ed67316fab401 | Arthur Hiller
+The In-Laws | E675ff77e552d | Andrew Bergman

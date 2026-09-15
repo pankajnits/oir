@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_SEALED[ER200_OO_AMBIG_PLAN_62]: <token_or_UNKNOWN>
+ARM OO_AMBIG_PLAN: same OO_AMBIG graph plus explicit sealed relation sequence.
+##### ID ER200_OO_AMBIG_PLAN_62 #####
+QUESTION:
+What city is the headquarters of the company led by Ef0968d06cd1c?
+
+PATH_QUERY
+START Ef0968d06cd1c
+R1 E95e465affdb1
+R2 Eb3a5117305b9
+Execute path; return final tail only.
+
+CONTEXT:
+Ef0968d06cd1c | E95e465affdb1 | E77afb7c38f88
+E77afb7c38f88 | Eb3a5117305b9 | Eb3649ade0e30
+Ef0968d06cd1c | Eb7de49e6c190 | E25b0242e5000
+E25b0242e5000 | E59b1ea081234 | E71db3dde5e17

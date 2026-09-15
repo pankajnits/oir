@@ -1,0 +1,36 @@
+{
+  "id": "H200_6b47e691d4",
+  "arm": "ENG_NONE_CYC",
+  "item": 57,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/ENG_NONE_CYC/item_57/prompt.txt",
+  "pred": "G_ttingen",
+  "raw": "ANSWER_PLAIN[H200_6b47e691d4]: G_ttingen",
+  "elapsed_s": 1.427,
+  "utc": "2026-09-15T08:50:32.670404+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ9z0BZU9IuZWaKnj3W2oP4kQKsE",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462231,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 144,
+    "total_tokens": 165,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

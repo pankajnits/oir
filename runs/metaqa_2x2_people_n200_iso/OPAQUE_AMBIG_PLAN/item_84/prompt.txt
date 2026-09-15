@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_84]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_84 #####
+QUESTION:
+Who directed a movie that Bryce Dallas Howard starred in?
+
+PATH_QUERY
+START Bryce Dallas Howard
+R1 E4707e4d88c47
+R2 E407646aff300
+Execute path; return final tail only.
+
+CONTEXT:
+Bryce Dallas Howard | E4707e4d88c47 | The Loss of a Teardrop Diamond
+The Loss of a Teardrop Diamond | E407646aff300 | Jodie Markell
+The Loss of a Teardrop Diamond | E484a8f12575a | Tennessee Williams

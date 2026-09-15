@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_72]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_72 #####
+QUESTION:
+What city is the headquarters of the company led by Gerardo_Salvador_Merino?
+
+PATH_QUERY
+START Gerardo_Salvador_Merino
+R1 E1ec757dcadd5
+R2 E2e0e113e804e
+Execute path; return final tail only.
+
+CONTEXT:
+Gerardo_Salvador_Merino | E1ec757dcadd5 | Ebro
+Ebro | E2e0e113e804e | Barcelona
+Gerardo_Salvador_Merino | E7f7cb727e55a | International_Telecommunication_Union
+International_Telecommunication_Union | E24ec536fa287 | Geneva

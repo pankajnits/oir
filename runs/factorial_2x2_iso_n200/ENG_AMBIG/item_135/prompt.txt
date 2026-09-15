@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_ENG_AMBIG_135]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200_ENG_AMBIG_135 #####
+QUESTION:
+What city is the headquarters of the company led by Chris_Hill?
+
+CONTEXT:
+Chris_Hill | works_at | Hargreaves_Lansdown
+Hargreaves_Lansdown | headquartered_in | Bristol
+Chris_Hill | partner_of | Russian_Standard_Corporation
+Russian_Standard_Corporation | located_in | Moscow

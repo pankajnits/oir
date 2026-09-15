@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_62]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_62 #####
+QUESTION:
+Who directed a movie that Michael Caine starred in?
+
+PATH_QUERY
+START Michael Caine
+R1 E5a8668801aef
+R2 E14e974966dc4
+Execute path; return final tail only.
+
+CONTEXT:
+Michael Caine | E5a8668801aef | The Ipcress File
+The Ipcress File | E14e974966dc4 | Sidney J. Furie
+The Ipcress File | E2546cff2215e | James Doran

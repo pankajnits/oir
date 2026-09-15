@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_198]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_198 #####
+QUESTION:
+What city is the headquarters of the company led by Franck_Terner?
+
+PATH_QUERY
+START Franck_Terner
+R1 Ebb492fa1f7fd
+R2 Eda174a380d54
+Execute path; return final tail only.
+
+CONTEXT:
+Franck_Terner | Ebb492fa1f7fd | Air_France
+Air_France | Eda174a380d54 | Tremblay-en-France
+Franck_Terner | E14fa0a245838 | AB_Volvo
+AB_Volvo | Eb230b647c038 | Gothenburg

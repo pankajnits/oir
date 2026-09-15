@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_161]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_161 #####
+QUESTION:
+Who E075e68897263 a E90da33214a70 E04ae88f652b8 [Warren Oates] E04df06e1d971 E5fb1ffdcbb6a?
+
+PATH_QUERY
+START Warren Oates
+R1 E12921024f9e5
+R2 E2852180c52b8
+Execute path; return final tail only.
+
+CONTEXT:
+Warren Oates | E12921024f9e5 | Return of the Seven
+Return of the Seven | E2852180c52b8 | Burt Kennedy
+Return of the Seven | Ee9deadf5eef6 | Larry Cohen

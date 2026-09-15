@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_114]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_114 #####
+QUESTION:
+Who E85d1cceadbfa a E40e140f950ab E3725c0d34081 [William Holden] Eb1ab5eec3ffd E4214090da307?
+
+PATH_QUERY
+START William Holden
+R1 E54c68d064da4
+R2 Ee2b66fb0d8a1
+Execute path; return final tail only.
+
+CONTEXT:
+William Holden | E54c68d064da4 | Weary River
+Weary River | Ee2b66fb0d8a1 | Frank Lloyd
+Weary River | Ec6601a0559d8 | Courtney Ryley Cooper

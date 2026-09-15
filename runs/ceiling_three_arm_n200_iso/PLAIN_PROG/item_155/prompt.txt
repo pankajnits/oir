@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_155 #####
+PATH_QUERY
+START Joseph_C._Papa
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Joseph_C._Papa | works_at | Bausch_Health
+Bausch_Health | headquartered_in | Wilmington
+DecoyCo_Bausch_Health | headquartered_in | DecoyHQ_Wilmington
+Bausch_Health | owned_by | Hold_Bausch_Health
+Hold_Bausch_Health | meta_of | Bausch_Health
+Bausch_Health | partner_of | Partner_Bausch_Health
+Partner_Bausch_Health | meta_of | Bausch_Health
+Decoy_DecoyCo_Bausch_Health | works_at | DecoyCo_Bausch_Health

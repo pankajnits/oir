@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_122]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_122 #####
+QUESTION:
+Who directed a movie that Barry Pepper starred in?
+
+PATH_QUERY
+START Barry Pepper
+R1 E9e84e1281ed2
+R2 E7e0d0422963c
+Execute path; return final tail only.
+
+CONTEXT:
+Barry Pepper | E9e84e1281ed2 | 61*
+61* | E7e0d0422963c | Billy Crystal
+61* | E4e51b749bcda | Hank Steinberg

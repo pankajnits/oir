@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200S_ENG_AMBIG_24]: <city_or_UNKNOWN>
+ARM ENG_AMBIG: English relations; two 2-hops from start.
+##### ID F200S_ENG_AMBIG_24 #####
+QUESTION:
+What city is the headquarters of the company led by Robert_Swaak?
+
+CONTEXT:
+Robert_Swaak | partner_of | Hjo_Stenstorps_J_rnv_g
+Hjo_Stenstorps_J_rnv_g | located_in | Hjo
+Robert_Swaak | works_at | ABN_AMRO
+ABN_AMRO | headquartered_in | Amsterdam

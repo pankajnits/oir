@@ -1,0 +1,35 @@
+{
+  "id": "F200_OPAQUE_AMBIG_PLAN_76",
+  "arm": "OPAQUE_AMBIG_PLAN",
+  "item": 76,
+  "prompt_path": "runs/factorial_2x2_iso_n200/OPAQUE_AMBIG_PLAN/item_76/prompt.txt",
+  "pred": "Bristol",
+  "raw": "ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_76]: Bristol",
+  "elapsed_s": 2.086,
+  "utc": "2026-09-15T08:42:25.109875+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJ28u1aczTA3WHTVnErxGWojYz5s",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461744,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 222,
+    "total_tokens": 240,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

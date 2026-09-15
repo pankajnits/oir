@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_101 #####
+PATH_QUERY
+START Josef_Dultinger
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Josef_Dultinger | works_at | Grossglockner_Hochalpenstrassen_AG
+Grossglockner_Hochalpenstrassen_AG | headquartered_in | Salzburg
+DecoyCo_Grossglockner_Hochalpenstrassen_AG | headquartered_in | DecoyHQ_Salzburg
+Grossglockner_Hochalpenstrassen_AG | owned_by | Hold_Grossglockner_Hochalpenstrassen_AG
+Hold_Grossglockner_Hochalpenstrassen_AG | meta_of | Grossglockner_Hochalpenstrassen_AG
+Grossglockner_Hochalpenstrassen_AG | partner_of | Partner_Grossglockner_Hochalpenstrassen_AG
+Partner_Grossglockner_Hochalpenstrassen_AG | meta_of | Grossglockner_Hochalpenstrassen_AG
+Decoy_DecoyCo_Grossglockner_Hochalpenstrassen_AG | works_at | DecoyCo_Grossglockner_Hochalpenstrassen_AG

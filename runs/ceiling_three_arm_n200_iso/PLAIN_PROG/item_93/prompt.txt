@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_93 #####
+PATH_QUERY
+START Jean-Paul_Montanari
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jean-Paul_Montanari | works_at | Montpellier_Dance_Festival
+Montpellier_Dance_Festival | headquartered_in | Montpellier
+DecoyCo_Montpellier_Dance_Festival | headquartered_in | DecoyHQ_Montpellier
+Montpellier_Dance_Festival | owned_by | Hold_Montpellier_Dance_Festival
+Hold_Montpellier_Dance_Festival | meta_of | Montpellier_Dance_Festival
+Montpellier_Dance_Festival | partner_of | Partner_Montpellier_Dance_Festival
+Partner_Montpellier_Dance_Festival | meta_of | Montpellier_Dance_Festival
+Decoy_DecoyCo_Montpellier_Dance_Festival | works_at | DecoyCo_Montpellier_Dance_Festival

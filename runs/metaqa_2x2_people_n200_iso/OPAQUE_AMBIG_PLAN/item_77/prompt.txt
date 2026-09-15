@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_77]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_77 #####
+QUESTION:
+Who directed a movie that Jascha Washington starred in?
+
+PATH_QUERY
+START Jascha Washington
+R1 Ee4b67770233b
+R2 E42c0e99ace71
+Execute path; return final tail only.
+
+CONTEXT:
+Jascha Washington | Ee4b67770233b | The Final
+The Final | E42c0e99ace71 | Joey Stewart
+The Final | E546f02017f65 | Jason Kabolati

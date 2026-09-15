@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_168]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_168 #####
+QUESTION:
+What city is the headquarters of the company led by Per_N_rhaven?
+
+PATH_QUERY
+START Per_N_rhaven
+R1 E7d67964372b7
+R2 Ed2435f0d16d8
+Execute path; return final tail only.
+
+CONTEXT:
+Per_N_rhaven | E7d67964372b7 | N_rhaven
+N_rhaven | Ed2435f0d16d8 | Viborg
+Per_N_rhaven | E666982559e8c | My_Pillow
+My_Pillow | Ec2e989b81aab | Chaska

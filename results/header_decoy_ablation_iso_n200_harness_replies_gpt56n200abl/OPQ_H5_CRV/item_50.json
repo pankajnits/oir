@@ -1,0 +1,36 @@
+{
+  "id": "H200_5c3f3e8509",
+  "arm": "OPQ_H5_CRV",
+  "item": 50,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CRV/item_50/prompt.txt",
+  "pred": "Cambridge",
+  "raw": "ANSWER_PLAIN[H200_5c3f3e8509]: Cambridge",
+  "elapsed_s": 2.799,
+  "utc": "2026-09-15T08:44:17.594967+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ3vM3NiowQEFrcEpG4NaLJiPQKa",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461855,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 110,
+    "prompt_tokens": 176,
+    "total_tokens": 286,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 84,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

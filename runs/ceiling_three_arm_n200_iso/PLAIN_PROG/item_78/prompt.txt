@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_78 #####
+PATH_QUERY
+START Vladim_r_Pla_il
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Vladim_r_Pla_il | works_at | VPI
+VPI | headquartered_in | Brno
+DecoyCo_VPI | headquartered_in | DecoyHQ_Brno
+VPI | owned_by | Hold_VPI
+Hold_VPI | meta_of | VPI
+VPI | partner_of | Partner_VPI
+Partner_VPI | meta_of | VPI
+Decoy_DecoyCo_VPI | works_at | DecoyCo_VPI

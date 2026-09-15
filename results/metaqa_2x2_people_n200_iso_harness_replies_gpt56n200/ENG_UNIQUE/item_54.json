@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_UNIQUE_54",
+  "arm": "ENG_UNIQUE",
+  "item": 54,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_UNIQUE/item_54/prompt.txt",
+  "pred": "Carl Bessai",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_UNIQUE_54]: Carl Bessai",
+  "elapsed_s": 1.833,
+  "utc": "2026-09-15T09:13:41.847208+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJWOgsXNX0dNMClidSi8mKbCGd8d",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463620,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 129,
+    "total_tokens": 150,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

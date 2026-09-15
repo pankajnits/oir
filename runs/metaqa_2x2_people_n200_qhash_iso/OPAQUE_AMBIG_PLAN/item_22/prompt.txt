@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_22]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_22 #####
+QUESTION:
+Who E163421d1b0ba a E1e68e83acbd7 E8bc0da4a87dd [Matt Damon] Eeb49a772e025 E6b6d6d93c224?
+
+PATH_QUERY
+START Matt Damon
+R1 E805929c6ca0d
+R2 E04badef425a8
+Execute path; return final tail only.
+
+CONTEXT:
+Matt Damon | E805929c6ca0d | The Good Shepherd
+The Good Shepherd | E04badef425a8 | Robert De Niro
+The Good Shepherd | Ec15d13173bfb | Eric Roth

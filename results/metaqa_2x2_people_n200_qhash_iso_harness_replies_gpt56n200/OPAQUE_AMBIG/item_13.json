@@ -1,0 +1,35 @@
+{
+  "id": "MQA200B_OPAQUE_AMBIG_13",
+  "arm": "OPAQUE_AMBIG",
+  "item": 13,
+  "prompt_path": "runs/metaqa_2x2_people_n200_qhash_iso/OPAQUE_AMBIG/item_13/prompt.txt",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_13]: UNKNOWN",
+  "elapsed_s": 5.099,
+  "utc": "2026-09-15T09:19:11.642576+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJbf9gnTRCXlfq2dM695l7h4mVGa",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463947,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 218,
+    "prompt_tokens": 189,
+    "total_tokens": 407,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 192,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

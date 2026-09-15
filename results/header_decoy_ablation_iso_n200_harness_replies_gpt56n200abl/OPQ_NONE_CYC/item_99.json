@@ -1,0 +1,36 @@
+{
+  "id": "H200_48b8b1ccf5",
+  "arm": "OPQ_NONE_CYC",
+  "item": 99,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CYC/item_99/prompt.txt",
+  "pred": "Hatfield",
+  "raw": "ANSWER_PLAIN[H200_48b8b1ccf5]: Hatfield",
+  "elapsed_s": 4.783,
+  "utc": "2026-09-15T08:48:56.013408+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ8QApTsY8bqijrKWjX320fmhIXU",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462134,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 168,
+    "total_tokens": 189,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

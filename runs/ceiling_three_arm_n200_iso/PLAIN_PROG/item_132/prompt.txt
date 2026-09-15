@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_132 #####
+PATH_QUERY
+START Liang_Xinjun
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Liang_Xinjun | works_at | Fosun_International_Limited
+Fosun_International_Limited | headquartered_in | Shanghai
+DecoyCo_Fosun_International_Limited | headquartered_in | DecoyHQ_Shanghai
+Fosun_International_Limited | owned_by | Hold_Fosun_International_Limited
+Hold_Fosun_International_Limited | meta_of | Fosun_International_Limited
+Fosun_International_Limited | partner_of | Partner_Fosun_International_Limited
+Partner_Fosun_International_Limited | meta_of | Fosun_International_Limited
+Decoy_DecoyCo_Fosun_International_Limited | works_at | DecoyCo_Fosun_International_Limited

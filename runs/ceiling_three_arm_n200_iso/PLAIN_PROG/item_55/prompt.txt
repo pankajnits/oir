@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_55 #####
+PATH_QUERY
+START Dick_Costolo
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Dick_Costolo | works_at | Twitter
+Twitter | headquartered_in | San_Francisco
+DecoyCo_Twitter | headquartered_in | DecoyHQ_San_Francisco
+Twitter | owned_by | Hold_Twitter
+Hold_Twitter | meta_of | Twitter
+Twitter | partner_of | Partner_Twitter
+Partner_Twitter | meta_of | Twitter
+Decoy_DecoyCo_Twitter | works_at | DecoyCo_Twitter

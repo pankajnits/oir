@@ -1,0 +1,35 @@
+{
+  "id": "F200S_ENG_AMBIG_135",
+  "arm": "ENG_AMBIG",
+  "item": 135,
+  "prompt_path": "runs/factorial_2x2_iso_shuffle_n200/ENG_AMBIG/item_135/prompt.txt",
+  "pred": "Bristol",
+  "raw": "ANSWER_PLAIN[F200S_ENG_AMBIG_135]: Bristol",
+  "elapsed_s": 32.982,
+  "utc": "2026-09-15T08:58:41.948961+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJHskVw0PigOqtUq03vIWRsfRar6",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462720,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 17,
+    "prompt_tokens": 147,
+    "total_tokens": 164,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

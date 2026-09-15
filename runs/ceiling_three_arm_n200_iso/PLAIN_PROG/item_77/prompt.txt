@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_77 #####
+PATH_QUERY
+START Raymond_N._Bickson
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Raymond_N._Bickson | works_at | Taj_Hotels_Resorts_and_Palaces
+Taj_Hotels_Resorts_and_Palaces | headquartered_in | Mumbai
+DecoyCo_Taj_Hotels_Resorts_and_Palaces | headquartered_in | DecoyHQ_Mumbai
+Taj_Hotels_Resorts_and_Palaces | owned_by | Hold_Taj_Hotels_Resorts_and_Palaces
+Hold_Taj_Hotels_Resorts_and_Palaces | meta_of | Taj_Hotels_Resorts_and_Palaces
+Taj_Hotels_Resorts_and_Palaces | partner_of | Partner_Taj_Hotels_Resorts_and_Palaces
+Partner_Taj_Hotels_Resorts_and_Palaces | meta_of | Taj_Hotels_Resorts_and_Palaces
+Decoy_DecoyCo_Taj_Hotels_Resorts_and_Palaces | works_at | DecoyCo_Taj_Hotels_Resorts_and_Palaces

@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_69 #####
+PATH_QUERY
+START Jo_Ann_Jenkins
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Jo_Ann_Jenkins | works_at | AARP
+AARP | headquartered_in | Washington_D.C.
+DecoyCo_AARP | headquartered_in | DecoyHQ_Washington_D.C.
+AARP | owned_by | Hold_AARP
+Hold_AARP | meta_of | AARP
+AARP | partner_of | Partner_AARP
+Partner_AARP | meta_of | AARP
+Decoy_DecoyCo_AARP | works_at | DecoyCo_AARP

@@ -1,0 +1,36 @@
+{
+  "id": "H200_a51b649f1a",
+  "arm": "OPQ_K2_CRV",
+  "item": 63,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CRV/item_63/prompt.txt",
+  "pred": "Singapore",
+  "raw": "ANSWER_PLAIN[H200_a51b649f1a]: Singapore",
+  "elapsed_s": 4.236,
+  "utc": "2026-09-15T08:47:12.478194+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ6ig9ASk9zyDKEQk8bNkpMltEQN",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462028,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 143,
+    "prompt_tokens": 170,
+    "total_tokens": 313,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 119,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_152]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_152 #####
+QUESTION:
+Who directed a movie that Arnold Schwarzenegger starred in?
+
+PATH_QUERY
+START Arnold Schwarzenegger
+R1 E426079f9add9
+R2 Ecf0920f2ecc0
+Execute path; return final tail only.
+
+CONTEXT:
+Arnold Schwarzenegger | E426079f9add9 | Jingle All the Way
+Jingle All the Way | Ecf0920f2ecc0 | Brian Levant
+Jingle All the Way | E935f06755b5c | Randy Kornfield

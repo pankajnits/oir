@@ -1,0 +1,35 @@
+{
+  "id": "ER200_OE_UNIQUE_64",
+  "arm": "OE_UNIQUE",
+  "item": 64,
+  "prompt_path": "runs/entity_rel_2x2_iso_n200/OE_UNIQUE/item_64/prompt.txt",
+  "pred": "Ea3e5700a2cc3",
+  "raw": "ANSWER_SEALED[ER200_OE_UNIQUE_64]: Ea3e5700a2cc3",
+  "elapsed_s": 1.386,
+  "utc": "2026-09-15T08:52:34.013607+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJBxlYtBxqIc8v7Tz7e6Z3k2e4Rt",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462353,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 26,
+    "prompt_tokens": 182,
+    "total_tokens": 208,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

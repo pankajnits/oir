@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_145 #####
+PATH_QUERY
+START Dan_Rosensweig
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Dan_Rosensweig | works_at | Chegg
+Chegg | headquartered_in | Santa_Clara
+DecoyCo_Chegg | headquartered_in | DecoyHQ_Santa_Clara
+Chegg | owned_by | Hold_Chegg
+Hold_Chegg | meta_of | Chegg
+Chegg | partner_of | Partner_Chegg
+Partner_Chegg | meta_of | Chegg
+Decoy_DecoyCo_Chegg | works_at | DecoyCo_Chegg

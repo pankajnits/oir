@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_126]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_126 #####
+QUESTION:
+Who directed a movie that Robin Williams starred in?
+
+PATH_QUERY
+START Robin Williams
+R1 Eb64ec1b76033
+R2 Eacc7a758d73a
+Execute path; return final tail only.
+
+CONTEXT:
+Robin Williams | Eb64ec1b76033 | Dead Poets Society
+Dead Poets Society | Eacc7a758d73a | Peter Weir
+Dead Poets Society | Eceaf8a8c67ad | Tom Schulman

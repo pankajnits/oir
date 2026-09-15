@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_34 #####
+PATH_QUERY
+START Dan_Barker
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Dan_Barker | works_at | Freedom_from_Religion_Foundation
+Freedom_from_Religion_Foundation | headquartered_in | Madison
+DecoyCo_Freedom_from_Religion_Foundation | headquartered_in | DecoyHQ_Madison
+Freedom_from_Religion_Foundation | owned_by | Hold_Freedom_from_Religion_Foundation
+Hold_Freedom_from_Religion_Foundation | meta_of | Freedom_from_Religion_Foundation
+Freedom_from_Religion_Foundation | partner_of | Partner_Freedom_from_Religion_Foundation
+Partner_Freedom_from_Religion_Foundation | meta_of | Freedom_from_Religion_Foundation
+Decoy_DecoyCo_Freedom_from_Religion_Foundation | works_at | DecoyCo_Freedom_from_Religion_Foundation

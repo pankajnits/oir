@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_14]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_14 #####
+QUESTION:
+What city is the headquarters of the company led by Tracie_Sharp?
+
+PATH_QUERY
+START Tracie_Sharp
+R1 Eaeef36382886
+R2 E51c75b34f3ce
+Execute path; return final tail only.
+
+CONTEXT:
+Tracie_Sharp | Eaeef36382886 | State_Policy_Network
+State_Policy_Network | E51c75b34f3ce | Arlington
+Tracie_Sharp | Eae59195677e3 | SpVgg_Greuther_F_rth
+SpVgg_Greuther_F_rth | E6b6cc848558e | F_rth

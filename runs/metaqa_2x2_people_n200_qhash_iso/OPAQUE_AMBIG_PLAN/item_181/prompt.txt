@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_181]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_181 #####
+QUESTION:
+Who Eafb979586526 a Ea66a83a225e3 E69177616d7e4 [Howard Keel] E802aae3c4193 E9be3e541d212?
+
+PATH_QUERY
+START Howard Keel
+R1 E53851710b747
+R2 Ee348459b78e8
+Execute path; return final tail only.
+
+CONTEXT:
+Howard Keel | E53851710b747 | Jupiter's Darling
+Jupiter's Darling | Ee348459b78e8 | George Sidney
+Jupiter's Darling | E9e5f03247820 | Robert E. Sherwood

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_52]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_52 #####
+QUESTION:
+What city is the headquarters of the company led by Claudio_Graziano?
+
+PATH_QUERY
+START Claudio_Graziano
+R1 E3e04b47be89b
+R2 E331336dfe9c5
+Execute path; return final tail only.
+
+CONTEXT:
+Claudio_Graziano | E3e04b47be89b | European_Union_Military_Committee
+European_Union_Military_Committee | E331336dfe9c5 | Brussels
+Claudio_Graziano | E302ad1813723 | United_States_Agency_for_International_Development
+United_States_Agency_for_International_Development | E8f1966734cfa | Washington_D.C.

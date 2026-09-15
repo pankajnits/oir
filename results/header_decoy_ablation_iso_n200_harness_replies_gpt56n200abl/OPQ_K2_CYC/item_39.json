@@ -1,0 +1,36 @@
+{
+  "id": "H200_6e44cde5dc",
+  "arm": "OPQ_K2_CYC",
+  "item": 39,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_K2_CYC/item_39/prompt.txt",
+  "pred": "Leipzig",
+  "raw": "ANSWER_PLAIN[H200_6e44cde5dc]: Leipzig",
+  "elapsed_s": 4.731,
+  "utc": "2026-09-15T08:45:23.268927+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ4xSB1imGhh9wdWC0JbOuYHioWg",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789461919,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 134,
+    "prompt_tokens": 186,
+    "total_tokens": 320,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 109,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

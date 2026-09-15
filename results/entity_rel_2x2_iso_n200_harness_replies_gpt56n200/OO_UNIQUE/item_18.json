@@ -1,0 +1,35 @@
+{
+  "id": "ER200_OO_UNIQUE_18",
+  "arm": "OO_UNIQUE",
+  "item": 18,
+  "prompt_path": "runs/entity_rel_2x2_iso_n200/OO_UNIQUE/item_18/prompt.txt",
+  "pred": "Ec085120c14c3",
+  "raw": "ANSWER_SEALED[ER200_OO_UNIQUE_18]: Ec085120c14c3",
+  "elapsed_s": 2.726,
+  "utc": "2026-09-15T08:53:57.774032+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJDH3ZLtM7eBCuTFuUkB2YEtYawY",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462435,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 63,
+    "prompt_tokens": 196,
+    "total_tokens": 259,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 33,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

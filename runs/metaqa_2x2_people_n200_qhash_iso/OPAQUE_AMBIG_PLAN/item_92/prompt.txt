@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_92]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_92 #####
+QUESTION:
+Who Edbd64d00b720 a E2088c8c83ecb E3c3fcb0ddba6 [Jean Parker] Eae1fb2086bf5 E96caff20dd72?
+
+PATH_QUERY
+START Jean Parker
+R1 E07f68b432562
+R2 E5d6d68cf838e
+Execute path; return final tail only.
+
+CONTEXT:
+Jean Parker | E07f68b432562 | Adventures of Kitty O'Day
+Adventures of Kitty O'Day | E5d6d68cf838e | William Beaudine
+Adventures of Kitty O'Day | E3fd4aabe729a | Tim Ryan

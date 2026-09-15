@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_153]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_153 #####
+QUESTION:
+Who directed a movie that Wallace Beery starred in?
+
+PATH_QUERY
+START Wallace Beery
+R1 E4cf9626f1b2a
+R2 Eeaa914779490
+Execute path; return final tail only.
+
+CONTEXT:
+Wallace Beery | E4cf9626f1b2a | Robin Hood
+Robin Hood | Eeaa914779490 | Ridley Scott
+Robin Hood | E4eb379c6dfa1 | Douglas Fairbanks

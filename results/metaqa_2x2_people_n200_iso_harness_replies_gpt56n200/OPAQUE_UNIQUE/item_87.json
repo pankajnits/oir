@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_UNIQUE_87",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 87,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_UNIQUE/item_87/prompt.txt",
+  "pred": "Ate de Jong",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_UNIQUE_87]: Ate de Jong",
+  "elapsed_s": 2.023,
+  "utc": "2026-09-15T09:15:19.733986+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJXy6Jk6ao05oonZnivdWDTtl1hE",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463718,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 181,
+    "total_tokens": 202,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

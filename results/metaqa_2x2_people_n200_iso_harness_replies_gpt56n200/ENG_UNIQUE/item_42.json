@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_UNIQUE_42",
+  "arm": "ENG_UNIQUE",
+  "item": 42,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_UNIQUE/item_42/prompt.txt",
+  "pred": "Griff Furst",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_UNIQUE_42]: Griff Furst",
+  "elapsed_s": 2.587,
+  "utc": "2026-09-15T09:13:39.863276+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJWLArL2PPIQleawoYLx6OvzWROt",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463617,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 135,
+    "total_tokens": 155,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

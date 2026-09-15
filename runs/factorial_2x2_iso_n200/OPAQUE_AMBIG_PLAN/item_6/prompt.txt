@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_6]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_6 #####
+QUESTION:
+What city is the headquarters of the company led by Mark_Cutifani?
+
+PATH_QUERY
+START Mark_Cutifani
+R1 E809dace78af3
+R2 Ea4e3a95a9445
+Execute path; return final tail only.
+
+CONTEXT:
+Mark_Cutifani | E809dace78af3 | Anglo_American_plc
+Anglo_American_plc | Ea4e3a95a9445 | London
+Mark_Cutifani | Ed0c2f6169577 | KITE_Kerala
+KITE_Kerala | E241173310379 | Thiruvananthapuram

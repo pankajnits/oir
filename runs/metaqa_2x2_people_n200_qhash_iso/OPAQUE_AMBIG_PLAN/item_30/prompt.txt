@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_30]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_30 #####
+QUESTION:
+Who Ee39b7a5b9a7d a E3cec8c99fe69 E6bb8e948c3ba [Josh Hutcherson] E3fed7e0fcd28 E7b8818f4feb6?
+
+PATH_QUERY
+START Josh Hutcherson
+R1 Ec06586ddad07
+R2 E55e1c18adffa
+Execute path; return final tail only.
+
+CONTEXT:
+Josh Hutcherson | Ec06586ddad07 | Little Manhattan
+Little Manhattan | E55e1c18adffa | Mark Levin
+Little Manhattan | E28db8802cbc6 | Jennifer Flackett

@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_OPAQUE_UNIQUE_181",
+  "arm": "OPAQUE_UNIQUE",
+  "item": 181,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/OPAQUE_UNIQUE/item_181/prompt.txt",
+  "pred": "George Sidney",
+  "raw": "ANSWER_PLAIN[MQA200_OPAQUE_UNIQUE_181]: George Sidney",
+  "elapsed_s": 1.442,
+  "utc": "2026-09-15T09:15:41.587223+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJYKXjiSyjryporyhnO0Jakf8Ieu",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463740,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 153,
+    "total_tokens": 173,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,36 @@
+{
+  "id": "H200_9c7e34ee3b",
+  "arm": "OPQ_NONE_CRV",
+  "item": 65,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CRV/item_65/prompt.txt",
+  "pred": "Oakland",
+  "raw": "ANSWER_PLAIN[H200_9c7e34ee3b]: Oakland",
+  "elapsed_s": 1.862,
+  "utc": "2026-09-15T08:49:41.466831+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "response_id": "chatcmpl-EOJ9AX47ScRiIDPMtRmF22UFkNk24",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789462180,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 151,
+    "total_tokens": 171,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

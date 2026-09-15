@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_16 #####
+PATH_QUERY
+START Ole_Lehrmann_Madsen
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Ole_Lehrmann_Madsen | works_at | Alexandra_Institute
+Alexandra_Institute | headquartered_in | Aarhus
+DecoyCo_Alexandra_Institute | headquartered_in | DecoyHQ_Aarhus
+Alexandra_Institute | owned_by | Hold_Alexandra_Institute
+Hold_Alexandra_Institute | meta_of | Alexandra_Institute
+Alexandra_Institute | partner_of | Partner_Alexandra_Institute
+Partner_Alexandra_Institute | meta_of | Alexandra_Institute
+Decoy_DecoyCo_Alexandra_Institute | works_at | DecoyCo_Alexandra_Institute

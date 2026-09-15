@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_95]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_95 #####
+QUESTION:
+Who directed a movie that Melvyn Douglas starred in?
+
+PATH_QUERY
+START Melvyn Douglas
+R1 E4a4084be1701
+R2 Ef68d453f1626
+Execute path; return final tail only.
+
+CONTEXT:
+Melvyn Douglas | E4a4084be1701 | A Woman's Secret
+A Woman's Secret | Ef68d453f1626 | Nicholas Ray
+A Woman's Secret | E4a5ff269602d | Vicki Baum

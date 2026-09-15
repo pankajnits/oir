@@ -1,0 +1,12 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_SEALED[ER200_OE_AMBIG_44]: <token_or_UNKNOWN>
+ARM OE_AMBIG: opaque entities, English relations; two 2-hops.
+##### ID ER200_OE_AMBIG_44 #####
+QUESTION:
+What city is the headquarters of the company led by E59e77d284d5a?
+
+CONTEXT:
+E59e77d284d5a | works_at | E0607bf938c00
+E0607bf938c00 | headquartered_in | E45dc983dc50d
+E59e77d284d5a | partner_of | E73bab634fa84
+E73bab634fa84 | located_in | Ed4c112626e57

@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_158]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_158 #####
+QUESTION:
+What city is the headquarters of the company led by Patrick_Opdenh_vel?
+
+PATH_QUERY
+START Patrick_Opdenh_vel
+R1 E57ca42a29650
+R2 E6f722950d98f
+Execute path; return final tail only.
+
+CONTEXT:
+Patrick_Opdenh_vel | E57ca42a29650 | Ludwig-Erhard-Stiftung
+Ludwig-Erhard-Stiftung | E6f722950d98f | Bonn
+Patrick_Opdenh_vel | E714990aa538b | Saarioinen
+Saarioinen | E30b694a6e016 | Tampere

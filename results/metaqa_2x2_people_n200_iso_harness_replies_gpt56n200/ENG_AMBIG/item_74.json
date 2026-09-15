@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_AMBIG_74",
+  "arm": "ENG_AMBIG",
+  "item": 74,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_AMBIG/item_74/prompt.txt",
+  "pred": "Val Guest",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_AMBIG_74]: Val Guest",
+  "elapsed_s": 1.611,
+  "utc": "2026-09-15T09:14:28.837643+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJX9sKckV3GYEW0dsLiClVgIypVh",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463667,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 132,
+    "total_tokens": 151,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

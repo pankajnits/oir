@@ -1,0 +1,18 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[F200_OPAQUE_AMBIG_PLAN_192]: <city_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID F200_OPAQUE_AMBIG_PLAN_192 #####
+QUESTION:
+What city is the headquarters of the company led by Daniel_Ek?
+
+PATH_QUERY
+START Daniel_Ek
+R1 E7f3744238350
+R2 E7e3487e12fda
+Execute path; return final tail only.
+
+CONTEXT:
+Daniel_Ek | E7f3744238350 | Spotify_Technology
+Spotify_Technology | E7e3487e12fda | Luxembourg
+Daniel_Ek | E350b355e04ec | OHB_SE
+OHB_SE | Ed7586ea5bb5f | Bremen

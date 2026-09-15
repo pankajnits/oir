@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_150]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_150 #####
+QUESTION:
+Who directed a movie that Paul Newman starred in?
+
+PATH_QUERY
+START Paul Newman
+R1 E96fa09a52803
+R2 Eeb9a8a3dd3a9
+Execute path; return final tail only.
+
+CONTEXT:
+Paul Newman | E96fa09a52803 | The Drowning Pool
+The Drowning Pool | Eeb9a8a3dd3a9 | Stuart Rosenberg
+The Drowning Pool | Ef04d60f349a7 | Ross Macdonald

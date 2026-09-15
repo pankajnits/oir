@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200B_OPAQUE_AMBIG_PLAN_89]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: opaque relations, English entities; two 2-hops from start; explicit join plan.
+##### ID MQA200B_OPAQUE_AMBIG_PLAN_89 #####
+QUESTION:
+Who E66a4f29d2f04 a E1505ba9c1184 E73ede179a839 [Charlton Heston] E36094dec7976 E3adc15b68cd5?
+
+PATH_QUERY
+START Charlton Heston
+R1 E575ee23a5b95
+R2 Ed7804f534bb4
+Execute path; return final tail only.
+
+CONTEXT:
+Charlton Heston | E575ee23a5b95 | Soylent Green
+Soylent Green | Ed7804f534bb4 | Richard Fleischer
+Soylent Green | E0f3ddc81429e | Harry Harrison

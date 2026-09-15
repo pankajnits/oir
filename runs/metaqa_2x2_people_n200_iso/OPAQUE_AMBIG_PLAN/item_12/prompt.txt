@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_12]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_12 #####
+QUESTION:
+Who directed a movie that Guy Pearce starred in?
+
+PATH_QUERY
+START Guy Pearce
+R1 Ea96e1a0f8565
+R2 Ed9dc7eb430ff
+Execute path; return final tail only.
+
+CONTEXT:
+Guy Pearce | Ea96e1a0f8565 | Ravenous
+Ravenous | Ed9dc7eb430ff | Antonia Bird
+Ravenous | E484e1c479478 | Ted Griffin

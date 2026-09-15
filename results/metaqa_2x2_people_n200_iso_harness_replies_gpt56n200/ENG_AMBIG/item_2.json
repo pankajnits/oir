@@ -1,0 +1,35 @@
+{
+  "id": "MQA200_ENG_AMBIG_2",
+  "arm": "ENG_AMBIG",
+  "item": 2,
+  "prompt_path": "runs/metaqa_2x2_people_n200_iso/ENG_AMBIG/item_2/prompt.txt",
+  "pred": "Michael Greenspan",
+  "raw": "ANSWER_PLAIN[MQA200_ENG_AMBIG_2]: Michael Greenspan",
+  "elapsed_s": 1.317,
+  "utc": "2026-09-15T09:14:11.830912+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOJWsybiiS4SMmimGYqFNwgA3sFzR",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789463650,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 20,
+    "prompt_tokens": 126,
+    "total_tokens": 146,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,17 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only. No other files.
+Format: ANSWER_PLAIN[MQA200_OPAQUE_AMBIG_PLAN_181]: <answer_or_UNKNOWN>
+ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.
+##### ID MQA200_OPAQUE_AMBIG_PLAN_181 #####
+QUESTION:
+Who directed a movie that Howard Keel starred in?
+
+PATH_QUERY
+START Howard Keel
+R1 E842832657200
+R2 Edd715e852105
+Execute path; return final tail only.
+
+CONTEXT:
+Howard Keel | E842832657200 | Jupiter's Darling
+Jupiter's Darling | Edd715e852105 | George Sidney
+Jupiter's Darling | Eaf8c81ad0856 | Robert E. Sherwood

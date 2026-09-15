@@ -1,0 +1,21 @@
+MODEL UNDER TEST. Read ONLY this file. Use CONTEXT only.
+Format: ANSWER_PLAIN[<id>]: <city_or_UNKNOWN>
+
+ARM A: plaintext PATH binder (language-readable symbols).
+
+##### ID CEIL200_PLAIN_121 #####
+PATH_QUERY
+START Thomas_Zacharia
+R1 works_at
+R2 headquartered_in
+Execute path; return final tail only.
+
+CONTEXT:
+Thomas_Zacharia | works_at | Oak_Ridge_National_Laboratory
+Oak_Ridge_National_Laboratory | headquartered_in | Oak_Ridge
+DecoyCo_Oak_Ridge_National_Laboratory | headquartered_in | DecoyHQ_Oak_Ridge
+Oak_Ridge_National_Laboratory | owned_by | Hold_Oak_Ridge_National_Laboratory
+Hold_Oak_Ridge_National_Laboratory | meta_of | Oak_Ridge_National_Laboratory
+Oak_Ridge_National_Laboratory | partner_of | Partner_Oak_Ridge_National_Laboratory
+Partner_Oak_Ridge_National_Laboratory | meta_of | Oak_Ridge_National_Laboratory
+Decoy_DecoyCo_Oak_Ridge_National_Laboratory | works_at | DecoyCo_Oak_Ridge_National_Laboratory
