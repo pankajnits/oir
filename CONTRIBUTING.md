@@ -10,7 +10,7 @@ ruff check oir tests examples
 
 Python 3.10+. Do not commit API keys, `.env`, or `credentials.json`. Isolation runners use `OPENAI_API_KEY` (OpenAI Chat Completions) or `AGENT_API_KEY` / `CURSOR_API_KEY` (Composer 2.5 / Grok 4.5 via Cursor's `cursor_sdk`; optional extra `pip install -e '.[cursor]'`). Issues: https://github.com/pankajnits/oir/issues
 
-The paper affiliation is independent. Public git commits may show a work address; do not treat that as the publication affiliation.
+Paper byline: Independent researcher. Git commit emails are not the camera-ready affiliation.
 
 ## Layout
 

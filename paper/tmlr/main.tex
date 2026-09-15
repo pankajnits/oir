@@ -53,29 +53,23 @@ primitive.
 
 \textbf{Finding.} Unique sealed routes still join. Competing sealed routes
 typically yield \texttt{UNKNOWN}, not the decoy.
-With the start entity already named in the question, OpenAI opaque unique
-is $32/32$; both-opaque unique is $32/32$ for Composer~2.5, OpenAI
-\mbox{\texttt{gpt-5.6-sol}}, and Grok~4.5.
-On the 26 city-valued \textsc{Wiki-H5} items, unique English, unique
-opaque, and English two-path are $26/26$; named-arm opaque two-path is
-$5/26$, $2/26$, $2/26$ across three draws of the unpinned alias
-(August: \texttt{UNKNOWN} $21$, decoy $0$, selective accuracy $5/5$).
-The $n{=}32$ lock is $6/32$: one extra gold on a non-city P159 HQ; both
-decoys fall on items whose gold is one of those six, so the city slice has
-decoy $0$.
+With the start already in $q$, OpenAI opaque unique is $32/32$; both-opaque
+unique is $32/32$ for Composer~2.5, OpenAI \mbox{\texttt{gpt-5.6-sol}}, and
+Grok~4.5.
 A city-typed OpenAI freeze at $n{=}200$ (every HQ is Wikidata P31 city-like;
-QIDs re-checked live) repeats the pattern: unique English/opaque $200/200$,
-English two-path $199/200$, named-arm opaque two-path $38/200$
-(Wilson $[0.14,0.25]$; \texttt{UNKNOWN} $151$, decoy $11$), plan $200/200$.
+QIDs re-checked live) is unique English/opaque $200/200$, English two-path
+$199/200$, named-arm opaque two-path $38/200$ (Wilson $[0.14,0.25]$;
+\texttt{UNKNOWN} $151$, decoy $11$), plan $200/200$.
+The $n{=}26$ city slice of the $n{=}32$ lock had decoy $0$; that sample
+cannot resolve a ${\sim}5\%$ decoy rate. At $n{=}200$ the ratio is about
+$14{:}1$ \texttt{UNKNOWN} to decoy.
 Exact-match under two sealed routes is strongly sensitive to prompt
 surface form~\citep{sclar2024spurious}.
-The largest OpenAI move at 512 tokens on cyclic decoys is case-id wording
-(same-date 11~September: named-arm $5/32$ vs.\ hashed ids $20/32$; ARM line
-kept). Later same-day draws are ${+}18$ and ${+}19$ items; August vs.\
-September ${+}14$ mixes dates.
-The ARM line at 4096/medium is non-monotonic and interacts with decoy type
-(cyclic/constant: no ARM $25/27$, H5 $20/10$, K2 $30/26$).
-English relation names restore OpenAI even with anonymous entities
+At $n{=}200$, same-date 512-token case-id wording (ARM line kept) is
+named-arm $38/200$ vs.\ hashed-id H5-cyclic $134/200$.
+At 4096/medium the ARM line is non-monotonic and interacts with decoy type
+(cyclic/constant: no ARM $174/151$, H5 $129/44$, K2 $179/144$).
+English relation names restore OpenAI with anonymous entities
 (OE two-path $32/32$ vs.\ both-opaque $1/32$).
 We score the answer node, not an emitted $(r_1,r_2)$.
 Seals remove lexical cues; they are not a confidentiality proof.
@@ -93,15 +87,13 @@ The two-path decoy is a second person$\to$company$\to$city route
 Opaque two-path keeps the English question and entity names; those
 predicates become HMAC tokens (\texttt{works\_at} $\mapsto$
 \texttt{E334675310f05} on the scored Eisner item).
-Figure~\ref{fig:spine} is the OpenAI named-arm relation-only $2{\times}2$.
-On 26 city-valued items the unique-path cells are $26/26$ and named-arm
-opaque two-path is $5/26$ (all misses \texttt{UNKNOWN}).
-The $n{=}32$ bar is $6/32$: one extra gold on a non-city P159 HQ; both
-decoys fall on items whose gold is one of those six.
+Figure~\ref{fig:spine} is the $n{=}32$ OpenAI discovery $2{\times}2$.
 A city-typed OpenAI $n{=}200$ freeze (Appendix~\ref{app:protocol}) is
-unique-path $200/200$ and named-arm opaque two-path $38/200$.
-Prompt-surface packing of the same graphs is Section~\ref{sec:header}
-and Appendix~\ref{app:tokens}.
+unique-path $200/200$ and named-arm opaque two-path $38/200$
+(\texttt{UNKNOWN} $151$, decoy $11$).
+The $n{=}26$ city slice of the $n{=}32$ lock had decoy $0$; that zero is
+not the $n{=}200$ rate.
+Prompt-surface packing is Section~\ref{sec:header}.
 
 OIR measures whether a model can join after English predicate strings are
 replaced by keyed opaque tokens. We write a 2-hop as two inferred maps
@@ -141,17 +133,14 @@ underspecified and packaging-sensitive (Table~\ref{tab:inventory}).
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.92\linewidth]{fig1_matched_2x2.png}
-\caption{OpenAI \textsc{Wiki-H5} on Wikidata ($n{=}32$, start in $q$;
-relation-only). Stacked bars are gold / decoy / \texttt{UNKNOWN};
-whiskers are Wilson 95\% intervals on exact match (item-level, one August
-draw).
-English unique/two-path $31/32$; opaque unique $32/32$; named-arm opaque
-two-path $6/32$ (mostly \texttt{UNKNOWN}).
-City-valued subset: unique-path $26/26$, opaque two-path $5/26$
-(decoy $0$).
-Prompt-surface ablations of the same graphs are Section~\ref{sec:header},
-not plotted.}
+\includegraphics[width=0.78\linewidth]{fig1_matched_2x2.png}
+\caption{OpenAI \textsc{Wiki-H5} discovery plot ($n{=}32$, start in $q$).
+Stacked bars are gold / decoy / \texttt{UNKNOWN}; whiskers are Wilson 95\%
+intervals (one August draw). Named-arm opaque two-path $6/32$ (mostly
+\texttt{UNKNOWN}); city slice $5/26$ had decoy $0$.
+City-typed $n{=}200$ (not plotted): $38/200$ gold, $151$ \texttt{UNKNOWN},
+$11$ decoy.
+Prompt-surface ablations are Section~\ref{sec:header}.}
 \label{fig:spine}
 \end{figure}
 
@@ -179,9 +168,10 @@ when topology fixes the route.
 \citet{guo2025twohop} report collapse to random guessing among end entities
 when distractor two-hops have other sources. Named-arm Wiki-H5 opaque
 two-path, with \texttt{UNKNOWN} allowed, is abstention rather than guessing
-(OpenAI decoy $2/32$, \texttt{UNKNOWN} $24/32$).
-Section~\ref{sec:header} shows that this is a named-arm fact for at least
-Grok: no-ARM opaque commits are near chance.
+(OpenAI decoy $2/32$, \texttt{UNKNOWN} $24/32$; at $n{=}200$,
+$11$ vs.\ $151$).
+Section~\ref{sec:header} shows that preferring \texttt{UNKNOWN} is a
+named-arm fact for at least Grok: no-ARM opaque commits are near chance.
 A forced-choice arm is not
 in this evaluation (Section~\ref{sec:limitations}) and would put those
 protocols on the same scale.
@@ -376,14 +366,11 @@ decoys sit on city/non-city pairs; Appendix~\ref{app:protocol}).
 On Wikidata two-path graphs both intermediates are companies
 (\texttt{works\_at}/\texttt{headquartered\_in} vs.\
 \texttt{partner\_of}/\texttt{located\_in}).
-In the primary run the gold 2-hop is listed before
-the decoy 2-hop in CONTEXT; that order is the same in the English and opaque
-arms. A shuffled listing of the same 32 graphs and HMAC keys (16 gold-first,
-16 decoy-first) is a robustness check on a later endpoint snapshot
-(Appendix~\ref{app:protocol}): English two-path $29/32$, opaque two-path
-$5/32$ (\texttt{UNKNOWN} $25/32$, decoy $1/32$, other $1/32{=}\texttt{Lod}$). Opaque gold-first is $3/16$
-vs.\ decoy-first $2/16$ (decoy $0/16$ vs.\ $1/16$): putting the decoy
-route first does not raise the decoy rate.
+In the primary run the gold 2-hop is listed before the decoy 2-hop in
+CONTEXT (same order in English and opaque). Listing-order robustness is
+Section~\ref{sec:header} on the $n{=}200$ freeze (same OpenAI tag as the
+named-arm cell). The $n{=}32$ shuffle is a later snapshot
+(Appendix~\ref{app:protocol}), not that comparison.
 
 The primary two-path prompt is a single user message:
 \begin{quote}
@@ -395,11 +382,11 @@ The primary two-path prompt is a single user message:
 \end{quote}
 It does \emph{not} contain the equality-recipe line
 (Appendix~\ref{app:recipe}).
-The format token is \texttt{<city\_or\_UNKNOWN>}, but six gold HQs are not
-cities (Appendix~\ref{app:protocol}). A model that obeys the format on those
-items must emit \texttt{UNKNOWN}. The 26 city-valued items are the primary
-report in Section~\ref{sec:fact2x2}; the $n{=}32$ hash-pinned cell is the
-robustness note and the lockfile.
+The format token is \texttt{<city\_or\_UNKNOWN>}, but six $n{=}32$ gold HQs
+are not cities (Appendix~\ref{app:protocol}). A model that obeys the format
+on those items must emit \texttt{UNKNOWN}. The powered city-typed cell is
+$n{=}200$ (Section~\ref{sec:fact2x2}); the $n{=}32$ lock is the
+three-family pin.
 OpenAI English two-path is $31/32$ under that CONTEXT-only instruction, so the
 line does not by itself force abstention.
 Readable names (Eisner, Burbank) still leave OpenAI at \texttt{UNKNOWN}
@@ -517,14 +504,14 @@ Appendix~\ref{app:packaging} and do not bear on the $2{\times}2$.
 \caption{Cell inventory, listed before results.
 \textsc{Wiki-H5} is the OpenAI discovery (Composer/Grok in
 Table~\ref{tab:threeway}, not a ranking).
-Header$\times$decoy and the case-id contrast are Section~\ref{sec:header}.
-Scored output is the answer node; six P159 golds
-are not cities, so the city-valued $n{=}26$ slice is the $n{=}32$ headline
+\textsc{Wiki-H5-200} is the powered city-typed QID freeze (OpenAI).
+Header$\times$decoy is Section~\ref{sec:header}.
+Six $n{=}32$ P159 golds are not cities
 (Appendix~\ref{app:protocol}).
-\textsc{Wiki-H5-200} is a separate city-typed QID freeze (OpenAI).
 A32/A100/B share the actor$\to$movie$\to$director vs.\ writer template;
-A100 Condition~A uses a thinner ARM than A32. Isolation cells use per-item HMAC; batch
-three-arm $n{=}12$/$n{=}24$ share one key per file.}
+A100 Condition~A uses a thinner ARM than A32.
+Isolation cells use per-item HMAC; batch three-arm $n{=}12$/$n{=}24$ share
+one key per file.}
 \label{tab:inventory}
 \begin{tabular}{@{}llllll@{}}
 \toprule
@@ -560,34 +547,6 @@ lexicality (English vs.\ HMAC) and the number of 2-hops from that start
 are Table~\ref{tab:threeway} robustness, not a ranking: they used Cursor's
 agent SDK with a preamble OpenAI never received.
 
-Lead with the response mode, then the rate.
-On unique sealed routes OpenAI executes (opaque unique $32/32$; plan on
-the two-path graph $32/32$).
-On competing sealed routes the usual named-arm reply is
-\texttt{UNKNOWN}, not the decoy.
-The headline cell is the 26 city-valued items, where the format token
-\texttt{<city\_or\_UNKNOWN>} is well-posed:
-unique English, unique opaque, and English two-path are $26/26$;
-named-arm opaque two-path is $5/26$, $2/26$, $2/26$ across three draws of
-the unpinned alias ($k{=}3$ below).
-August (draw~1): \texttt{UNKNOWN} $21$, decoy $0$, selective accuracy $5/5$;
-McNemar $21$ vs.\ $0$, $p{=}9.54{\times}10^{-7}$;~\citealp{mcnemar1947}.
-Unique-path $\Delta_{\mathrm{opq}}$ is $0/26$.
-
-The hash-pinned $n{=}32$ lock is the robustness note, not the headline.
-English unique $31/32$, English two-path $31/32$, opaque unique $32/32$,
-named-arm opaque two-path $6/32$ (\texttt{UNKNOWN} $24$, decoy $2$).
-Both decoys fall on items whose gold is one of the six non-city P159 HQs
-(items 27 and 31; Appendix~\ref{app:protocol}); a model that obeys the city
-format on those items is forced toward \texttt{UNKNOWN} or a type error.
-Wilson 95\% on the August $n{=}32$ lock (item-level, one draw):
-$32/32 \Rightarrow [0.89,1.00]$,
-$31/32 \Rightarrow [0.84,0.99]$,
-$6/32 \Rightarrow [0.09,0.35]$.
-On the city slice of that same draw,
-$5/26 \Rightarrow [0.09,0.38]$.
-Figure~\ref{fig:spine} plots the $n{=}32$ OpenAI $2{\times}2$.
-
 \paragraph{City-typed $n{=}200$ (OpenAI).}
 The $n{=}32$ source file has 73 CEO rows and six non-city P159 golds.
 \textsc{Wiki-H5-200} is a new freeze: 200 unique people and companies,
@@ -600,97 +559,51 @@ OpenAI named-arm: unique English and unique opaque $200/200$, English
 two-path $199/200$, opaque two-path $38/200$ (\texttt{UNKNOWN} $151$,
 decoy $11$; Wilson $[0.14,0.25]$), plan $200/200$.
 The $38/200$ rate sits inside the $n{=}32$ Wilson band for $6/32$.
-Same-date hashed-id H5-cyclic at 512 tokens is $134/200$ vs.\ named-arm
-$38/200$ (ARM line kept): the case-id gap is not an $n{=}32$ artifact.
-Header$\times$decoy at 4096/medium on the same 200 people
-(Table~\ref{tab:headerdecoy200}): cyclic/constant no ARM $174/151$,
-H5 $129/44$, K2 $179/144$; English no ARM cyclic $197/200$.
-H5 cyclic vs.\ constant McNemar $95$ vs.\ $10$, $p{=}1.6{\times}10^{-18}$;
-no-ARM $30$ vs.\ $7$, $p{=}1.9{\times}10^{-4}$.
-Both-opaque two-path is $12/200$ (unique $200/200$; OE two-path $200/200$).
-Listing-order shuffle: opaque two-path $59/200$ (gold-first $25/100$,
-decoy-first $34/100$).
-CEO-NL free sealed English $0/200$ with plan $200/200$.
-WikiMovies Condition~A $122/200$ two-path (unique $200/200$);
-Condition~B $7/200$; Dual novel $2/200$ vs.\ matched $200/200$.
-Condition~A $n{=}200$ uses the Wiki-H5 topology ARM line, not the A100
-banner \texttt{ARM OPAQUE\_AMBIG n=100}, so $122/200$ is not a resample of
-$96/100$.
-$n{=}200$ is OpenAI-only; three-family cells stay at $n{=}32$.
+Decoy $0$ on the $n{=}26$ city slice was a small-sample artifact:
+$n{=}26$ cannot resolve a ${\sim}5\%$ decoy rate.
+At $n{=}200$ the usual reply is still \texttt{UNKNOWN}
+(${\approx}14{:}1$ vs.\ decoy).
+Prompt-surface packing of this freeze is Section~\ref{sec:header}.
+$n{=}200$ is OpenAI-only and one draw; three-family cells stay at $n{=}32$.
 
-Let $\Delta_{\mathrm{opq}}$ be opaque minus English exact-match on $n{=}32$.
-Unique path: $\Delta_{\mathrm{opq}}=+1/32$ ($32/32$ vs.\ $31/32$), one
-non-city miss.
-Two-path: $\Delta_{\mathrm{opq}}=-25/32$ ($6/32$ vs.\ $31/32$).
-The descriptive difference-in-differences is $-26/32$.
-Section~\ref{sec:method} already notes that the gold route is not
-explicitly identifiable from the sealed two-path graph, so that DiD
-substantially measures removing the disambiguating cue.
-The paired count remains: 25 items English-correct and opaque-wrong, 0
-reverse (McNemar exact two-sided $p{=}5.96{\times}10^{-8}$;~\citealp{mcnemar1947}).
-Opacity is not a randomized within-item treatment.
-Wilson intervals treat items as independent Bernoulli trials, which the
-cyclic decoy construction slightly violates (Appendix~\ref{app:protocol}).
-An optional sign-flip of the per-item interaction contrast
-is Appendix~\ref{app:signflip} (same numerical $p$, different test).
+\paragraph{$n{=}32$ discovery.}
+On unique sealed routes OpenAI executes (opaque unique $32/32$; plan
+$32/32$).
+On competing sealed routes the usual named-arm reply is
+\texttt{UNKNOWN}, not the decoy.
+On 26 city-valued items unique English, unique opaque, and English
+two-path are $26/26$; named-arm opaque two-path is $5/26$, $2/26$,
+$2/26$ across three draws.
+August: \texttt{UNKNOWN} $21$, decoy $0$, selective accuracy $5/5$.
+The lock is opaque two-path $6/32$ (\texttt{UNKNOWN} $24$, decoy $2$);
+both decoys sit on non-city P159 golds.
+Wilson: $6/32 \Rightarrow [0.09,0.35]$; city slice
+$5/26 \Rightarrow [0.09,0.38]$.
+Figure~\ref{fig:spine} plots the $n{=}32$ $2{\times}2$.
+
+Let $\Delta_{\mathrm{opq}}$ be opaque minus English exact-match on
+$n{=}32$: unique ${+}1/32$, two-path $-25/32$ (25 English-correct and
+opaque-wrong, 0 reverse; McNemar $p{=}5.96{\times}10^{-8}$).
+Opacity is not a randomized within-item treatment
+(Appendix~\ref{app:signflip}).
 
 \paragraph{OpenAI $k{=}3$.}
-Every August cell is one sample; temperature is omitted.
-The $k{=}3$ protocol reuses that August lock as draw~1 and adds two
-15~September~2026 draws on the same quiz files, same alias, 512 completion
-tokens, sidecars storing \texttt{returned\_model}
-(\texttt{factorial\_2x2\_iso\_gpt56k3r2.json},
-\texttt{factorial\_2x2\_iso\_gpt56k3r3.json}).
-Those later draws are a new snapshot of the unpinned alias, not a
-resample of a pinned checkpoint, so they do not deliver a
+Two 15~September draws of the unpinned alias
+(\texttt{gpt56k3r2}/\texttt{r3}) are a new snapshot, not a
 generation-variance interval.
-
-Named-arm opaque two-path is $6/32$, $3/32$, $3/32$
-(city-valued $5/26$, $2/26$, $2/26$).
-Draws~2 and~3 are the same day and give identical counts.
-The same shape appears in Composer ($10$, $7$, $6$) and Grok ($1$, $0$, $0$):
-August is highest in all three families.
-Within a snapshot the counts barely move; the August-to-September gap looks
-like drift in the served alias and moves all three families the same
-direction on this cell.
-The later draws stay well below the hashed-id H5-cyclic rate ($20$--$22/32$).
-Unique opaque is $32/32$, $31/32$, $32/32$; English two-path is $31/32$,
-$30/32$, $30/32$; plan is $32/32$ on every draw.
-A separate 11~September snapshot of named-arm opaque two-path only
-(\texttt{gpt56sep}) is $5/32$ (one \texttt{NO\_OUTPUT}) and is not one of
-the three draws; with hashed-id H5-cyclic $20/32$ that day it is the
-same-date case-id pair in Section~\ref{sec:header}.
-
-This pattern is \emph{not} a universal three-family exact-match rate.
-Unique-path opaque stays high on all three. On named-arm opaque two-path
-the usual reply is \texttt{UNKNOWN}, not the decoy. Named-arm English two-path is OpenAI
-$31/32$, Composer $26/32$, Grok $4/32$ (\texttt{UNKNOWN} $28$;
-English, no ARM, hashed ids $24/32$): a packaging$\times$family effect, not a ranking
-(Section~\ref{sec:header}).
-Opaque unique remains high (Composer $27/32$, Grok $30/32$);
-named-arm opaque two-path drops ($10/32$, $1/32$); a written hop recovers
-($28/32$, $32/32$). Exact-match alone hides the behavior: opaque two-path
-is mostly \texttt{UNKNOWN}, not decoy. Coverage is the fraction of items with
-a non-\texttt{UNKNOWN} parse; selective accuracy is exact match among those
-items~\citep{elyaniv2010selective,geifman2017selective}.
-Two-path coverage / selective accuracy (named-arm):
-OpenAI English $31/32$, $31/31$ and opaque $8/32$, $6/8$;
-Composer English $26/32$, $26/26$ and opaque $10/32$, $10/10$;
-Grok English $4/32$, $4/4$ and opaque $1/32$, $1/1$.
-A forced uniform guess among two routes would be $1/2$; that is not the
-relevant null once \texttt{UNKNOWN} is allowed.
-Composer English two-path $26/32$ is $26/26$ on cities (all six misses are
-those P159 golds). Grok named-arm English two-path is $4/26$: that
-named-arm abstention is not a format artifact.
-Composer named-arm opaque two-path, same Cursor preamble as the August lock:
-$10/32$, $7/32$, $6/32$.
-Grok: $1/32$, $0/32$, $0/32$.
-Unique-path cells were not resampled for those families.
-
-On the same graphs under two other opaque generators, unique-path accuracy
-exceeds two-path accuracy (permutation $31/32$ vs.\ $15/32$; alphanumeric
-$29/32$ vs.\ $12/32$; Table~\ref{tab:tokens}). Direction agrees across three
-generators; the two-path \emph{rate} is not invariant.
+Named-arm opaque two-path is $6/32$, $3/32$, $3/32$; Composer $10$, $7$,
+$6$ and Grok $1$, $0$, $0$ move the same way.
+Same-day draws~2 and~3 match; August is highest in all three families.
+The $n{=}32$ same-date case-id pair is 11~September named-arm $5/32$ vs.\
+hashed-id H5-cyclic $20/32$ (Section~\ref{sec:header}).
+Named-arm English two-path is OpenAI $31/32$, Composer $26/32$, Grok
+$4/32$: a packaging$\times$family effect, not a ranking.
+Opaque unique stays high (Composer $27/32$, Grok $30/32$); a written hop
+recovers ($28/32$, $32/32$).
+Two-path coverage / selective accuracy (named-arm): OpenAI opaque
+$8/32$, $6/8$; Composer $10/32$, $10/10$; Grok $1/32$, $1/1$.
+Two other generators still have unique $>$ two-path
+(Table~\ref{tab:tokens}).
 
 \begin{table}[t]
 \centering
@@ -743,50 +656,41 @@ The case id appears twice: in
 \texttt{Format: ANSWER\_PLAIN[id]} and in the \texttt{ID} line.
 Named-arm uses \texttt{F22\_OPAQUE\_AMBIG\_$i$};
 \texttt{OPQ\_H5\_CYC} substitutes hashes \texttt{HDA\_*}.
-ARM line and CONTEXT are identical on all 32 items.
-The clean 512-token pair is same-date 11~September: named-arm
+ARM line and CONTEXT are identical.
+On the city-typed $n{=}200$ freeze, the same 512-token contrast
+(named-arm vs.\ hashed-id H5-cyclic; tags \texttt{gpt56n200} and
+\texttt{gpt56n200h512}) is $38/200$ vs.\ $134/200$ (${+}96$ items;
+H5-cyclic has one \texttt{NO\_OUTPUT}).
+The $n{=}32$ discovery pair is same-date 11~September: named-arm
 \texttt{gpt56sep} $5/32$ vs.\ hashed-id H5-cyclic \texttt{gpt56abl512}
-$20/32$ (one \texttt{NO\_OUTPUT} each).
-That is ${+}15$ items, not a test of whether the prompt announces
-ambiguity: both prompts keep the ARM line.
-$k{=}3$ hashed-id gold is $20$, $21$, $22$.
-Against named-arm $6/3/3$ the gaps are ${+}14$, ${+}18$, ${+}19$.
-Only ${+}18$ and ${+}19$ are same-day (15~September); ${+}14$ is the
-August lock against the 11~September hashed-id cell and mixes dates.
+$20/32$ (${+}15$; one \texttt{NO\_OUTPUT} each).
+Both prompts keep the ARM line, so this is not a test of whether the
+prompt announces ambiguity.
+$k{=}3$ hashed-id gold is $20$, $21$, $22$; against named-arm $6/3/3$
+only ${+}18$ and ${+}19$ are same-day.
 
 \paragraph{ARM line, case ids held hashed.}
-Header$\times$decoy at 4096 tokens with medium reasoning effort
-(\texttt{header\_decoy\_ablation\_iso\_gpt56abl.json}) varies the ARM line
-on hashed ids (Table~\ref{tab:headerdecoy}).
-K2 is a shorter ARM that still names two hops
-(\texttt{ARM K2: opaque relations; 2 same-type 2-hop(s) from start.}).
-Cyclic gold ranges over 10 items (H5 $20$ to K2 $30$); constant over 17
-(H5 $10$ to no ARM $27$).
-Decoy type moves the Wiki-H5 header (cyclic $20$ vs.\ constant $10$;
-McNemar $14$ vs.\ $4$, $p{=}0.031$) and not no-ARM ($25$ vs.\ $27$,
+Header$\times$decoy at 4096/medium on the $n{=}200$ freeze is
+Table~\ref{tab:headerdecoy200}: cyclic/constant no ARM $174/151$,
+H5 $129/44$, K2 $179/144$; English no ARM cyclic $197/200$.
+H5 cyclic vs.\ constant McNemar $95$ vs.\ $10$,
+$p{=}1.6{\times}10^{-18}$; no-ARM $30$ vs.\ $7$, $p{=}1.9{\times}10^{-4}$.
+The $n{=}32$ discovery (Table~\ref{tab:headerdecoy}) already showed the
+H5 interaction (cyclic $20$ vs.\ constant $10$; McNemar $14$ vs.\ $4$,
+$p{=}0.031$) and not no-ARM (gold $25$ vs.\ $27$; McNemar $1$ vs.\ $3$,
 $p{=}0.625$).
-That header$\times$decoy interaction is why the ablation is named as it is.
-Those cells are not at the Wiki-H5 512-token budget; K2 and no-ARM were
-not run at 512.
+K2 is a shorter ARM that still names two hops.
+K2 and no-ARM were not run at 512.
 
-\begin{table}[htbp]
-\centering
-\small
-
-\caption{Header$\times$decoy gold counts on the same 32 people.
-English, no ARM, cyclic is $29/32$. Composer/Grok: Appendix~\ref{app:tokens}.}
-\label{tab:headerdecoy}
-\begin{tabular}{@{}lcc@{}}
-\toprule
-ARM line (OpenAI, hashed ids, 4096/medium) & Cyclic & Constant \\
-\midrule
-no ARM & $25/32$ & $27/32$ \\
-H5 & $20/32$ & $10/32$ \\
-K2 & $30/32$ & $26/32$ \\
-\bottomrule
-\end{tabular}
-
-\end{table}
+\paragraph{Listing order.}
+A shuffled CONTEXT listing of the same $n{=}200$ freeze and HMAC keys,
+same OpenAI tag as the primary named-arm cell, scores opaque two-path
+$59/200$ against $38/200$ for the gold-first listing (${+}21$ from
+reordering). Gold-first is $25/100$, decoy-first $34/100$; a
+two-proportion test is $p{\approx}0.16$ (not significant).
+The $n{=}32$ shuffle is a later snapshot
+(Appendix~\ref{app:protocol}) and was too small to read a decoy-first
+effect (decoy $0/16$ vs.\ $1/16$).
 
 \begin{table}[htbp]
 \centering
@@ -795,7 +699,9 @@ K2 & $30/32$ & $26/32$ \\
 \caption{Header$\times$decoy on the city-typed $n{=}200$ freeze (same people
 as \textsc{Wiki-H5-200}). English, no ARM, cyclic is $197/200$.
 H5 cyclic vs.\ constant McNemar $95$ vs.\ $10$ ($p{=}1.6{\times}10^{-18}$).
-Same-date 512-token hashed-id H5-cyclic is $134/200$.}
+Same-date 512-token hashed-id H5-cyclic is $134/200$ (one
+\texttt{NO\_OUTPUT}).
+$n{=}32$ golds: Table~\ref{tab:headerdecoy}.}
 \label{tab:headerdecoy200}
 \begin{tabular}{@{}lcc@{}}
 \toprule
@@ -825,17 +731,20 @@ case-id contrast).
 
 What the data support: exact-match under competing sealed routes is
 strongly sensitive to prompt surface form.
-The largest OpenAI move at the 512-token budget on cyclic decoys is case-id
-wording (same-date $5/32$ vs.\ $20/32$).
-The ARM line at 4096/medium is non-monotonic and interacts with decoy type;
-it is not uniformly smaller than the case-id gaps.
-That is narrower than ``whether the prompt flags the ambiguity,''
-and it is still worth reporting.
+At $n{=}200$, same-budget 512-token case-id wording moves cyclic gold by
+$96$ items ($38/200$ vs.\ $134/200$).
+At 4096/medium, ARM on \emph{constant} decoys moves gold by $107$ items
+(no ARM $151$ vs.\ H5 $44$); on cyclic, K2 vs.\ H5 is $50$ items
+($179$ vs.\ $129$).
+Budgets differ, so these are not a ranking of manipulations; the ARM
+effect is not a small add-on to case-id.
 
 A consequence for the contrast with \citet{guo2025twohop}.
 That work reports collapse to guessing among end entities when distractor
 two-hops have other sources. Our named-arm OpenAI cell is abstention
-(\texttt{UNKNOWN} $24/32$, decoy $2/32$), not a coin-flip onto the decoy.
+(\texttt{UNKNOWN} $24/32$, decoy $2/32$ at $n{=}32$;
+\texttt{UNKNOWN} $151$, decoy $11$ at $n{=}200$), not a coin-flip onto the
+decoy.
 That ``\texttt{UNKNOWN} rather than decoy'' pattern is not a three-family
 law. Grok no-ARM opaque commits are $6$ gold / $3$ decoy cyclic and
 $1$ / $5$ constant ($7$ vs.\ $8$ pooled): chance. For Grok, preferring
@@ -863,6 +772,8 @@ entities helps. Two-path both-opaque is OpenAI $1/32$
 ($32/32$, $28/32$, $32/32$). OpenAI OE two-path (opaque entities, English
 relations) is $32/32$: readable predicates restore end-to-end accuracy with
 anonymous nodes under this construction. Grok OE two-path remains $3/32$.
+On the $n{=}200$ freeze (OpenAI), unique both-opaque and OE two-path are
+$200/200$; both-opaque two-path is $12/200$.
 
 WikiMovies unique-path with English verbs in $q$ (\textsc{Movie-A32}) is
 $32/32$ for all three families; opaque two-path is $17/32$, $17/32$,
@@ -915,6 +826,9 @@ Condition~B hashes those verbs: OpenAI unique $100/100$, two-path $3/100$
 Coverage is $13/100$ and selective accuracy $3/13$. A written hop is
 $100/100$. Composer/Grok Condition~A two-path: $62/100$, $36/100$;
 Condition~B $n{=}100$ is OpenAI-only.
+On the $n{=}200$ freeze, Condition~A two-path is $122/200$ (Wiki-H5
+topology ARM, not A100's \texttt{ARM OPAQUE\_AMBIG n=100} banner, so not
+a resample of $96/100$); Condition~B is $7/200$.
 Movie-B's ARM names two 2-hops (Wiki-H5-style); A100 Condition~A does not.
 The $n{=}32$ MetaQA-style template cell (Appendix~\ref{app:metaqa32}) is
 not \textsc{Movie-B}.
@@ -969,6 +883,8 @@ novel-relation \texttt{UNKNOWN} (\texttt{composer25}) is a sealed-demo
 helper; free-form \texttt{composer25ff} is decoy $32/32$. Grok free-form
 (\texttt{grok45ff}) novel-relation asymmetric is \texttt{UNKNOWN} on all
 32 items. Last-demo answer-token copy is $0/32$ on every arm.
+On the $n{=}200$ freeze (OpenAI), matched is $200/200$ and novel is
+$2/200$, with plan $200/200$.
 
 On a two-path graph a forced
 uniform guess among the two complete routes is $1/2$; that null does not
@@ -985,31 +901,36 @@ cell, not the isolation of selection. Join plans score $32/32$ on both
 plaintext and sealed atoms; SealRouter given the gold sealed relation
 sequence is $32/32$; free sealed English scores $0/32$ (all
 \texttt{UNKNOWN}) for Composer~2.5, OpenAI, and Grok~4.5
-(Table~\ref{tab:primary}). We exclude a batched free-sealed cell that can
+(Table~\ref{tab:primary}).
+On the $n{=}200$ freeze, plan remains $200/200$ and free sealed English
+$0/200$.
+We exclude a batched free-sealed cell that can
 succeed by returning a unique neighbor without using $q$.
 
 \section{Discussion}
 
 A join is structurally executable when the route is unique or $(r_1,r_2)$
-is given (OpenAI unique opaque $32/32$; both-opaque unique $32/32$ on three
-families; written hop OpenAI/Grok $32/32$, Composer $28/32$). The prompt explicitly
-maps query semantics onto one relation sequence when English predicates, a
-legend, or demonstrated seals are present. When two complete routes exist
-and that mapping is absent, the usual named-arm reply is
-\texttt{UNKNOWN} rather than the decoy (Table~\ref{tab:threeway}); we do not
-claim mathematical unidentifiability.
-Exact-match under two routes also moves with prompt surface form
-(Section~\ref{sec:header}): the largest OpenAI move at 512 tokens on cyclic
-decoys is case-id wording (same-date $5/32$ vs.\ $20/32$); the ARM line at
-4096/medium is non-monotonic and interacts with decoy type
-(Table~\ref{tab:headerdecoy}).
-
-On city-valued items unique-path cells are $26/26$ and named-arm opaque
-two-path is $5/26$, $2/26$, $2/26$ (unique-path $\Delta_{\mathrm{opq}}=0/26$,
-so that two-path gap equals the descriptive DiD).
-English relations restore OpenAI
-end-to-end accuracy with anonymous entities ($32/32$); Grok still abstains
-($3/32$). Dual-path reuses demonstrated seals; novel seals do not transfer.
+is given (OpenAI unique opaque $32/32$ and $200/200$; both-opaque unique
+$32/32$ on three families; written hop OpenAI/Grok $32/32$, Composer
+$28/32$).
+The prompt explicitly maps query semantics onto one relation sequence when
+English predicates, a legend, or demonstrated seals are present.
+When two complete routes exist and that mapping is absent, the usual
+named-arm reply is \texttt{UNKNOWN} rather than the decoy
+($151$ vs.\ $11$ at $n{=}200$, about $14{:}1$; Table~\ref{tab:threeway}
+is the three-family discovery).
+We do not claim mathematical unidentifiability.
+Exact-match also moves with prompt surface (Section~\ref{sec:header}):
+at $n{=}200$, 512-token case-id wording is $38/200$ vs.\ $134/200$ on
+cyclic decoys; at 4096/medium the ARM line is non-monotonic and interacts
+with decoy type (Table~\ref{tab:headerdecoy200}; H5 McNemar $95$ vs.\
+$10$).
+A shuffled listing of the same freeze adds $21$ golds ($59/200$ vs.\
+$38/200$).
+English relations restore OpenAI with anonymous entities ($32/32$); Grok
+still abstains ($3/32$).
+Dual-path reuses demonstrated seals; novel seals do not transfer
+($2/200$ novel vs.\ $200/200$ matched).
 Unique topology with the start in $q$, English predicates, matched
 demonstrations, or a same-$\sigma$ equality recipe restore execution; a
 bare schema list does not (Table~\ref{tab:ident32}).
@@ -1022,38 +943,32 @@ paths are withheld; PrivGemo keeps those paths and answers locally
 \section{Limitations}
 \label{sec:limitations}
 
-OpenAI is the primary family. Composer/Grok used a different harness
-(Appendix~\ref{app:protocol}); Table~\ref{tab:threeway} is not a ranking.
-The format token \texttt{<city\_or\_UNKNOWN>} makes six P159 golds ill-posed;
-the 26 city items ($26/26$ vs.\ $5/26$, $2/26$, $2/26$) are the headline,
-$n{=}32$ the lockfile.
-The suite is $n{=}32$ of 73 records, one template, one seed; later Wiki
-suites reuse those records. Decoys are cyclic, so Wilson intervals are
-slightly optimistic (McNemar is not).
-Wilson intervals are item-level on a single draw; they are not generation
-variance. OpenAI \textsc{Wiki-H5} $k{=}3$ mixes the August lock with two
-later draws of the unpinned \texttt{gpt-5.6-sol} alias
-(Section~\ref{sec:fact2x2}): same-day draws~2 and~3 match, and August is
-the high cell in all three families, so the useful reading is alias drift,
-not a generation-variance CI. Composer/Grok $k{=}3$ covers only the named-arm
-opaque two-path drop cell.
-English entities leave parametric cues; HMAC two-path rates vary by generator
-($6/32$, $15/32$, $12/32$); short pronounceable symbols are not run.
+OpenAI is the primary family. The $n{=}200$ freeze is OpenAI-only and one
+draw; Composer/Grok stay at $n{=}32$ (Table~\ref{tab:threeway} is not a
+ranking).
+Decoy $0$ on the $n{=}26$ city slice was underpowered for a ${\sim}5\%$
+decoy rate; $n{=}200$ is decoy $11$ vs.\ \texttt{UNKNOWN} $151$.
+The $n{=}32$ format token makes six P159 golds ill-posed; $n{=}200$ does
+not use those golds.
+The $n{=}32$ suite is 32 of 73 records, one template, one seed; decoys are
+cyclic, so Wilson intervals are slightly optimistic (McNemar is not).
+$k{=}3$ mixes the August lock with later alias draws
+(Section~\ref{sec:fact2x2}): same-day draws match, August is high in all
+three families, and this is not a generation-variance CI.
+English entities leave parametric cues; HMAC two-path rates vary by
+generator ($6/32$, $15/32$, $12/32$).
 Selection is inferred from the answer node.
-Named-arm selective accuracy stays high ($6/8$, $10/10$, $1/1$); Grok
-no-ARM opaque commits are near chance when pooled (Section~\ref{sec:header}).
-Header$\times$decoy at 4096/medium is Table~\ref{tab:headerdecoy}:
-non-monotonic in the ARM line, with a header$\times$decoy interaction
-(H5 $20$ vs.\ $10$; no-ARM $25$ vs.\ $27$).
-At the Wiki-H5 512-token budget the same-date case-id pair is named-arm
-$5/32$ vs.\ hashed-id H5-cyclic $20/32$; August named-arm $6/32$ vs.\ that
-$20/32$ mixes dates. K2 and no-ARM were not run at 512.
-\textsc{Movie-A32} vs.\ \textsc{Movie-A100} ($17/32$ vs.\
-$29/32$) is a thinner ARM on WikiMovies, not that band.
-Dual novel OpenAI \texttt{UNKNOWN} includes empty completions (24/32
-balanced, 17/32 asymmetric).
+Named-arm selective accuracy stays high; Grok no-ARM opaque commits are
+near chance (Section~\ref{sec:header}).
+Header$\times$decoy at $n{=}200$ is Table~\ref{tab:headerdecoy200};
+Table~\ref{tab:headerdecoy} is the $n{=}32$ discovery.
+K2 and no-ARM were not run at 512.
+\textsc{Movie-A32} vs.\ \textsc{Movie-A100} ($17/32$ vs.\ $29/32$) is a
+thinner ARM on WikiMovies; $n{=}200$ Condition~A uses the Wiki-H5 topology
+ARM, not that banner.
+Dual novel OpenAI \texttt{UNKNOWN} includes empty completions.
 Forced-choice, scored $(r_1,r_2)$, and an HQ-city swap are not in this
-evaluation. \textsc{Movie-B} and \textsc{Wiki-Shuf} are OpenAI-only.
+evaluation.
 The ARM line was not randomized independently of case-id wording on the
 original lock. Composer hashed-id H5-cyclic used \texttt{--preamble none};
 the named-arm Composer lock used the Cursor preamble, so that sign reversal
@@ -1061,39 +976,26 @@ is uninterpretable.
 
 \subsubsection*{Broader Impact Statement}
 
-Instances use public Wikidata CEO records (CC0;~\citealp{vrandecic2014wikidata})
-and the MetaQA/WikiMovies movie graph as publicly released with
-WikiMovies~\citep{miller2016wikimovies} and MetaQA~\citep{zhang2018metaqa}
-(upstream papers do not name a license string).
-Appendix cells additionally use 2WikiMultihopQA (Apache-2.0;
-\citealp{ho2020constructing}) and Spider (CC-BY-SA-4.0;
-\citealp{yu2018spider}).
-No personally sensitive information is used. Per-item replies are
-hash-pinned in the repository, not released as a training corpus.
-OIR is a diagnostic, not a deployed anonymizer: treating HMAC seals as a
-confidentiality mechanism would over-trust prompts that still contain
-English names on the primary $2{\times}2$.
+Public Wikidata CEO records (CC0;~\citealp{vrandecic2014wikidata}) and the
+WikiMovies/MetaQA graph as released~\citep{miller2016wikimovies,zhang2018metaqa}.
+Appendix cells use 2WikiMultihopQA (Apache-2.0;~\citealp{ho2020constructing})
+and Spider (CC-BY-SA-4.0;~\citealp{yu2018spider}).
+No personally sensitive information. Replies are hash-pinned, not a training
+dump. OIR is a diagnostic, not a confidentiality mechanism (English names
+remain on the primary $2{\times}2$).
 
 \section{Conclusion}
 
 Unique-route sealed execution succeeds with the start in $q$ (opaque unique
-OpenAI $32/32$; both-opaque unique $32/32$ on three families).
-On the 26 city-valued items, unique-path cells are $26/26$ and named-arm
-opaque two-path is $5/26$, $2/26$, $2/26$ across three draws of the
-unpinned alias (August: \texttt{UNKNOWN} $21$, decoy $0$).
-The $n{=}32$ lock is $6/32$ (\texttt{UNKNOWN} $24$, decoy $2$).
-City-typed OpenAI $n{=}200$: unique-path $200/200$, named-arm opaque
-two-path $38/200$ (\texttt{UNKNOWN} $151$, decoy $11$), hashed-id H5-cyclic
-at 512 tokens $134/200$, both-opaque two-path $12/200$, CEO-NL $0/200$.
-Same-day September draws match each other; August is highest on this cell
-in all three families. Within-snapshot variance looks small relative to
-alias drift, and $k{=}3$ is not a generation-variance interval.
+OpenAI $32/32$ and $200/200$; both-opaque unique $32/32$ on three
+families).
+On the city-typed $n{=}200$ freeze, named-arm opaque two-path is $38/200$
+(\texttt{UNKNOWN} $151$, decoy $11$); hashed-id H5-cyclic at 512 tokens is
+$134/200$ (one \texttt{NO\_OUTPUT}).
+The $n{=}26$ decoy-$0$ slice was too small to see that rare decoy rate.
 Exact-match under two sealed routes is strongly sensitive to prompt
-surface form: the largest OpenAI move at 512 tokens on cyclic decoys is
-case-id wording (same-date $5/32$ vs.\ $20/32$); the ARM line at
-4096/medium is non-monotonic and interacts with decoy type
-(H5 $20/10$ vs.\ no ARM $25/27$).
-OpenAI both-opaque two-path is $1/32$.
+surface: case-id wording moves $96$ cyclic golds at 512 tokens; at
+4096/medium, ARM on constant decoys moves $107$ golds (Table~\ref{tab:headerdecoy200}).
 Grok no-ARM opaque commits are near chance, so
 ``\texttt{UNKNOWN} rather than decoy'' is not a three-family law.
 
@@ -1262,6 +1164,8 @@ The August runner stores the parsed
 answer, not the API \texttt{model} string or \texttt{usage} (including
 reasoning-token counts); $k{=}3$ sidecars store \texttt{returned\_model}.
 \textsc{Wiki-Shuf} is a 7~September 2026 snapshot on the same 32 keys.
+The $n{=}200$ listing shuffle uses the same OpenAI tag as named-arm
+\texttt{gpt56n200} (not a new snapshot).
 Composer~2.5 and Grok~4.5 used the same quiz files through Cursor's agent
 SDK with a reply-only preamble OpenAI never received; settings are not
 equated. Composer Wiki-OO unique/two-path, Composer/Grok CEO, Dual
@@ -1289,7 +1193,8 @@ rewritten. Header$\times$decoy, Wiki-OO, shuffle, and CEO-NL $n{=}200$ use
 that freeze. WikiMovies $n{=}200$ keeps the $n{=}100$ people prefix and
 adds 100 new unique actors from \texttt{wiki\_entities\_kb.txt}.
 OpenAI $n{=}200$ tag is \texttt{gpt56n200} (header 4096/medium:
-\texttt{gpt56n200abl}; 512-token H5-cyclic: \texttt{gpt56n200h512}).
+\texttt{gpt56n200abl}; 512-token H5-cyclic: \texttt{gpt56n200h512}, gold
+$134$, \texttt{UNKNOWN} $44$, decoy $20$, other $1$, \texttt{NO\_OUTPUT} $1$).
 A SHA-256 lockfile over git-tracked JSON summaries and per-item reply files
 in \texttt{results/} is \texttt{results/SHA256SUMS} (regenerate with
 \texttt{harness/write\_sha256sums.py}; ignored packs such as
@@ -1320,7 +1225,8 @@ P159 gold HQs that are not cities:
 OpenAI opaque two-path decoys are items 27 and 31
 (\texttt{CNN\_Center} vs.\ Swindon; \texttt{Lod\_Railway\_Station} vs.\ Burbank).
 Both decoys are on the non-city subset; city-valued OpenAI opaque two-path is
-gold $5/26$, decoy $0$, \texttt{UNKNOWN} $21$.
+gold $5/26$, decoy $0$, \texttt{UNKNOWN} $21$ (too small for a ${\sim}5\%$
+decoy rate; $n{=}200$ is decoy $11$, \texttt{UNKNOWN} $151$).
 Every non-two-path miss in Table~\ref{tab:threeway} for all three families
 falls on those six golds. Composer ``other'' on that table is truncated
 \texttt{Lod} (item 31) plus \texttt{Fox\_Plaza}$\to$Los Angeles.
@@ -1384,8 +1290,29 @@ Cells are named by header and decoy:
 H5 keeps the Wiki-H5 ARM line, K2 keeps a shorter two-hop ARM, and
 ``no ARM'' deletes the line; cyclic decoys attach record $i{+}1$, constant
 decoys reuse Cogent Communications $\to$ Washington, DC.
-Composer/Grok slash pairs below are cyclic / constant gold counts.
-OpenAI 4096/medium gold counts are Table~\ref{tab:headerdecoy}.
+OpenAI 4096/medium $n{=}32$ golds:
+
+\begin{table}[h]
+\centering
+\small
+
+\caption{Header$\times$decoy gold counts on the same 32 people.
+English, no ARM, cyclic is $29/32$. H5 McNemar $14$ vs.\ $4$, $p{=}0.031$;
+no-ARM gold $25$ vs.\ $27$, McNemar $1$ vs.\ $3$, $p{=}0.625$.
+Body Table~\ref{tab:headerdecoy200} is the $n{=}200$ lock.}
+\label{tab:headerdecoy}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+ARM line (OpenAI, hashed ids, 4096/medium) & Cyclic & Constant \\
+\midrule
+no ARM & $25/32$ & $27/32$ \\
+H5 & $20/32$ & $10/32$ \\
+K2 & $30/32$ & $26/32$ \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
 Composer and Grok the same day, Cursor SDK, prompt file verbatim
 (\texttt{--preamble none}), $224/224$ finished:
 H5 $6/2$ and $0/0$; K2 $20/13$ and $0/0$;
@@ -1415,10 +1342,10 @@ Constant decoy does not raise the Wiki-H5-header cell on any family.
 \footnotesize
 \setlength{\tabcolsep}{4pt}
 
-\caption{\textsc{Wiki-H5} maps on city-valued items (OpenAI unless noted).
-Exact match on the answer node, not $(r_1,r_2)$.
-City-valued $n{=}26$ is the headline (August opaque two-path $5/26$);
-the lockfile $n{=}32$ opaque two-path is $6/32$ (Section~\ref{sec:fact2x2}).
+\caption{\textsc{Wiki-H5} maps on the $n{=}32$ city-valued discovery slice
+(OpenAI unless noted). Exact match on the answer node, not $(r_1,r_2)$.
+August opaque two-path $5/26$; lockfile $6/32$; powered freeze $38/200$
+(Section~\ref{sec:fact2x2}).
 Plan is $26/26$ on this slice ($32/32$ on $n{=}32$).
 Last row is \textsc{CEO-NL} ($n{=}32$).}
 \label{tab:story}
@@ -1465,7 +1392,7 @@ H4. Matched demos restore shown seals & dual-path matched vs.\ novel & OpenAI $3
 H5. End-to-end accuracy degrades when opaque relations meet path ambiguity & matched $2{\times}2$, start in $q$ & named-arm 25 vs.\ 0 (city 21 vs.\ 0); Sec.~\ref{sec:fact2x2} \\
 H6. Movie KB, hashed verbs (check) & WikiMovies Cond.\ B $n{=}100$ & OpenAI two-path $3/100$ \\
 H7. Readable relations with opaque entities & Wikidata OE vs.\ OO & supported for OpenAI here \\
-H8. Prompt surface moves two-path exact match & case-id at 512 cyclic; ARM$\times$decoy at 4096 & same-date case-id ${+}15$; H5 decoy $20$ vs.\ $10$; Sec.~\ref{sec:header} \\
+H8. Prompt surface moves two-path exact match & case-id at 512 cyclic; ARM$\times$decoy at 4096 & $n{=}200$ case-id ${+}96$; H5 McNemar $95$ vs.\ $10$; Sec.~\ref{sec:header} \\
 \bottomrule
 \end{tabularx}
 

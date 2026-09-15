@@ -120,6 +120,11 @@ and per-item replies. `results/SHA256SUMS` is the hash pin cited in the paper.
 Ignored megabyte packs (`longctx_1m*`) and local weight files (`*.pt`) are
 not in this zip.
 
+Primary OpenAI n=200 locks: `results/factorial_2x2_iso_n200_gpt56n200.json`
+and `results/header_decoy_ablation_iso_n200_gpt56n200abl.json`. The 512-token
+H5-cyclic arm is `gpt56n200h512` (other arms in that file are missing, not
+scores). n=32 August locks are unchanged.
+
 The manuscript PDF is the OpenReview submission file, not this zip.
 Named preprint sources (`paper/arxiv_upload/`) and citation files are
 omitted on purpose.
