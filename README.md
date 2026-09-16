@@ -35,14 +35,14 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 
 ## Headline (n=200 OpenAI; n=32 three families)
 
-**n=200 is OpenAI-only, one city-typed draw.** Composer/Grok stay at n=32. The n=26 city slice with decoy 0 is a discovery note, not the powered rate.
+**n=200 is OpenAI-only, one city-typed freeze of people** (alias $k{=}3$ of named-arm and hashed-id below). Composer/Grok stay at n=32. The n=26 city slice with decoy 0 is a discovery note, not the powered rate.
 
 | Cell | Result |
 |------|--------|
 | Unique path, both-opaque (entities+relations sealed) | **32/32** all three families |
 | Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; Composer **27/32**; Grok **30/32** |
 | City-typed **n=200** freeze (OpenAI; every HQ is Wikidata city P31, QIDs live-checked) | Unique English/opaque **200/200**, English two-path **199/200**, named-arm opaque two-path **38/200** (UNK 151, decoy 11; Wilson [0.14, 0.25]), plan **200/200**. |
-| Same freeze, 512-token case-id (ARM kept) | Named-arm **38/200** vs hashed-id H5-cyclic **134/200** (UNK 44, decoy 20, other 1, `NO_OUTPUT` 1). |
+| Same freeze, 512-token case-id (ARM kept) | Named-arm **38/200** vs hashed-id H5-cyclic **134/200** (UNK 44, decoy 20, other 1, `NO_OUTPUT` 1). Alias k=3 (does not replace those locks): named-arm **38/46/43** vs hashed-id **134/130/127**. |
 | Same freeze, listing shuffle (OpenAI) | Opaque two-path **59/200** (gold-first **25/100** vs decoy-first **34/100**, two-proportion $p{\approx}0.16$). |
 | Header × decoy n=200, hashed ids, 4096/medium (OpenAI) | Cyclic/constant: no ARM **174/151**, H5 **129/44**, K2 **179/144**. English no ARM cyclic **197/200**. |
 | WikiMovies Condition A/B n=200 (OpenAI) | A two-path **122/200** (Wiki-H5 topology ARM, not the A100 `n=100` banner; not a resample of **96/100**); B unique **200/200**, two-path **7/200** |

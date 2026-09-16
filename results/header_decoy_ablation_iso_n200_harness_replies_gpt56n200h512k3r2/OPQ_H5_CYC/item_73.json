@@ -1,0 +1,38 @@
+{
+  "id": "H200_63a8f444cf",
+  "arm": "OPQ_H5_CYC",
+  "item": 73,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_73/prompt.txt",
+  "pred": "Geneva",
+  "raw": "ANSWER_PLAIN[H200_63a8f444cf]: Geneva",
+  "elapsed_s": 2.903,
+  "utc": "2026-09-16T08:42:15.032676+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfVUP5n2jqTINREwpbbCmuIQEi7u",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548132,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 76,
+    "prompt_tokens": 173,
+    "total_tokens": 249,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 52,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

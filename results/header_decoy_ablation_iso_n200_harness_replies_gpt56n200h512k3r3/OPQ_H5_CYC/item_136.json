@@ -1,0 +1,38 @@
+{
+  "id": "H200_f99baa132a",
+  "arm": "OPQ_H5_CYC",
+  "item": 136,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_136/prompt.txt",
+  "pred": "Moscow",
+  "raw": "ANSWER_PLAIN[H200_f99baa132a]: Moscow",
+  "elapsed_s": 2.519,
+  "utc": "2026-09-16T08:44:41.258323+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfXrP1L2T14nPhh529tvkB0ZComS",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548279,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 77,
+    "prompt_tokens": 173,
+    "total_tokens": 250,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 55,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

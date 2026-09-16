@@ -1,9 +1,6 @@
 # For scientists and reviewers
 
-This repo is a hash-pinned measurement plus an installable middle layer. Cite locked JSON and reply files; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS` (JSON summaries, reply sidecars, and per-item `.txt` replies).
-
-Paper: anonymous TMLR copy in [`paper/tmlr/main.pdf`](paper/tmlr/main.pdf). Named TeX lives in [`paper/arxiv_upload/`](paper/arxiv_upload/) and is not the OpenReview upload.
-Repository: https://github.com/pankajnits/oir (last release tag `v1.0.6`; city-typed n=200 OpenAI scale is in this tree). Do not put this URL on the OpenReview form.
+This repo is a hash-pinned measurement plus an installable middle layer. Cite locked JSON and reply files; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS` (JSON summaries, reply sidecars, and per-item `.txt` replies). Named preprint TeX, when present in a clone, is `paper/arxiv_upload/`; the supplementary zip omits `paper/`. Alias k=3 does not replace `gpt56n200` / `gpt56n200h512`. Repository: https://github.com/pankajnits/oir.
 
 ## What you can verify without an LLM or paid API
 
@@ -31,7 +28,7 @@ Scorers: `harness/score_*.py`.
 
 | Suite | Scorer | Locked free-form JSON |
 |-------|--------|------------------------|
-| Wikidata $2{\times}2$ n=200 (city-typed QID freeze) | `harness/fetch_wikidata_ceo_n200.py` + `harness/scale_n200.py` | `results/factorial_2x2_iso_n200_gpt56n200.json` (opaque two-path **38/200** UNK 151 decoy 11; unique **200/200**; hashed-id H5-cyclic 512 **134/200**, UNK 44, decoy 20, other 1, `NO_OUTPUT` 1). Does not rewrite n=32. Live SPARQL: `results/wikidata_ceo_hops_n200_verify.json`. OpenAI-only at n=200. |
+| Wikidata $2{\times}2$ n=200 (city-typed QID freeze) | `harness/fetch_wikidata_ceo_n200.py` + `harness/scale_n200.py` | `results/factorial_2x2_iso_n200_gpt56n200.json` (opaque two-path **38/200** UNK 151 decoy 11; unique **200/200**; hashed-id H5-cyclic 512 **134/200**, UNK 44, decoy 20, other 1, `NO_OUTPUT` 1). Does not rewrite n=32. Live SPARQL: `results/wikidata_ceo_hops_n200_verify.json`. OpenAI-only at n=200. Alias k=3 (does not replace those locks): named-arm `gpt56n200k3r2`/`r3` **46/200**, **43/200**; hashed-id `gpt56n200h512k3r2`/`r3` **130/200**, **127/200**. |
 | Wikidata $2{\times}2$ n=32 (discovery) | `factorial_2x2_iso.py` + iso harness runners | `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json` ($n{=}32$ lock **6/32**; city-valued **5/26** decoy 0 is underpowered for a ~5% decoy rate; same-date hashed-id H5-cyclic **20/32**; snapshot `gpt56sep` **5/32**) |
 | Header × decoy n=200 | `header_decoy_ablation_iso.py score gpt56n200abl header_decoy_ablation_iso_n200_harness` | `results/header_decoy_ablation_iso_n200_gpt56n200abl.json` (4096/medium: H5 **129/44**, K2 **179/144**, no ARM **174/151**). `gpt56n200h512` queried **only** OPQ_H5_CYC (**134/200**); other arms in that JSON are `missing 200`, not scores. |
 | Header × decoy ablation n=32×7 | `header_decoy_ablation_iso.py` | `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json` (H5+cyclic OpenAI **20/32**, Composer **6/32**, Grok **0/32**; no ARM+cyclic **25/21/6**; English **29/26/24**). Composer/Grok used `--preamble none`. |

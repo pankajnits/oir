@@ -1,0 +1,38 @@
+{
+  "id": "F200_OPAQUE_AMBIG_96",
+  "arm": "OPAQUE_AMBIG",
+  "item": 96,
+  "prompt_path": "runs/factorial_2x2_iso_n200/OPAQUE_AMBIG/item_96/prompt.txt",
+  "pred": "UNKNOWN",
+  "raw": "ANSWER_PLAIN[F200_OPAQUE_AMBIG_96]: UNKNOWN",
+  "elapsed_s": 2.762,
+  "utc": "2026-09-16T08:41:16.955809+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfUYyeh8zgOcLAg4QpYli8uAsyKe",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548074,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 49,
+    "prompt_tokens": 180,
+    "total_tokens": 229,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 26,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

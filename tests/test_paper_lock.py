@@ -256,6 +256,18 @@ def test_sha256sums_lists_tracked_json_and_replies():
         assert hashlib.sha256(path.read_bytes()).hexdigest() == digest, rel
     assert "results/longctx_1m_harness.json" not in listed
     assert "results/longctx_1m_results.json" not in listed
+    for rel in (
+        "results/factorial_2x2_iso_n200_gpt56n200k3r2.json",
+        "results/factorial_2x2_iso_n200_gpt56n200k3r3.json",
+        "results/header_decoy_ablation_iso_n200_gpt56n200h512k3r2.json",
+        "results/header_decoy_ablation_iso_n200_gpt56n200h512k3r3.json",
+        "results/factorial_2x2_iso_n200_gpt56n200.json",
+        "results/header_decoy_ablation_iso_n200_gpt56n200h512.json",
+    ):
+        assert rel in listed, rel
+    git_dir = ROOT / ".git"
+    if not git_dir.exists():
+        pytest.skip("no .git (zip/export); SHA256SUMS hashes already checked")
     tracked = subprocess.check_output(
         ["git", "-C", str(ROOT), "ls-files", "-z", "--", "results/"],
     )

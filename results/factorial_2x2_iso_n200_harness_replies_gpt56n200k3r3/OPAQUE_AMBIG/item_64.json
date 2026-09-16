@@ -1,0 +1,38 @@
+{
+  "id": "F200_OPAQUE_AMBIG_64",
+  "arm": "OPAQUE_AMBIG",
+  "item": 64,
+  "prompt_path": "runs/factorial_2x2_iso_n200/OPAQUE_AMBIG/item_64/prompt.txt",
+  "pred": "Calgary",
+  "raw": "ANSWER_PLAIN[F200_OPAQUE_AMBIG_64]: Calgary",
+  "elapsed_s": 3.36,
+  "utc": "2026-09-16T08:43:19.681354+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfWWpa3Pyi2vA5DVqoXRJpsR1tWr",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548196,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 87,
+    "prompt_tokens": 169,
+    "total_tokens": 256,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 64,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,7043 @@
+{
+  "model": "gpt56n200k3r2",
+  "n": 200,
+  "protocol": "isolation",
+  "start_in_question": true,
+  "source": "data/real/wikidata_ceo_hops_n200.json",
+  "summary": {
+    "ENG_UNIQUE": {
+      "score": "n.r.",
+      "unknown": 0,
+      "missing": 200,
+      "decoy": 0
+    },
+    "ENG_AMBIG": {
+      "score": "n.r.",
+      "unknown": 0,
+      "missing": 200,
+      "decoy": 0
+    },
+    "OPAQUE_UNIQUE": {
+      "score": "n.r.",
+      "unknown": 0,
+      "missing": 200,
+      "decoy": 0
+    },
+    "OPAQUE_AMBIG": {
+      "score": "46/200",
+      "unknown": 144,
+      "missing": 0,
+      "decoy": 10
+    },
+    "OPAQUE_AMBIG_PLAN": {
+      "score": "n.r.",
+      "unknown": 0,
+      "missing": 200,
+      "decoy": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_0",
+      "gold": "San_Jose",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_1",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_2",
+      "gold": "Maputo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_3",
+      "gold": "Humleb_k",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_4",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_5",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_6",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_7",
+      "gold": "Thiruvananthapuram",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_8",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_9",
+      "gold": "Las_Vegas",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_10",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_11",
+      "gold": "Zug",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_12",
+      "gold": "Sunnyvale",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_13",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_14",
+      "gold": "Arlington",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_15",
+      "gold": "F_rth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_16",
+      "gold": "Aarhus",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_17",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_18",
+      "gold": "Bellevue",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_19",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_20",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_21",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_22",
+      "gold": "San_Antonio",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_23",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_24",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_25",
+      "gold": "Hjo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_26",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_27",
+      "gold": "Likino-Dulyovo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_28",
+      "gold": "P_ock",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_29",
+      "gold": "Kavala",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_30",
+      "gold": "Midrand",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_31",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_32",
+      "gold": "Stuttgart",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_33",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_34",
+      "gold": "Madison",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_35",
+      "gold": "Dallas",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_36",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_37",
+      "gold": "Szczecin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_38",
+      "gold": "Dublin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_39",
+      "gold": "Leipzig",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_40",
+      "gold": "Haifa",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_41",
+      "gold": "Abu_Dhabi",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_42",
+      "gold": "Bnei_Brak",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_43",
+      "gold": "Toronto",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_44",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_45",
+      "gold": "Villeurbanne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_46",
+      "gold": "Megion",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_47",
+      "gold": "Boulogne-Billancourt",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_48",
+      "gold": "Hamburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_49",
+      "gold": "Seattle",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_50",
+      "gold": "Cambridge",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_51",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_52",
+      "gold": "Brussels",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_53",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_54",
+      "gold": "Neuss",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_55",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_56",
+      "gold": "Villarreal",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_57",
+      "gold": "G_ttingen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_58",
+      "gold": "Villeurbanne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_59",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_60",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_61",
+      "gold": "Leipzig",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_62",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_63",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_64",
+      "gold": "Calgary",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_65",
+      "gold": "Oakland",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_66",
+      "gold": "Madison",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_67",
+      "gold": "Aberdeen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_68",
+      "gold": "Montpellier",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_69",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_70",
+      "gold": "Beijing",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_71",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_72",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_73",
+      "gold": "Geneva",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_74",
+      "gold": "Dublin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_75",
+      "gold": "Dover",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_76",
+      "gold": "Bristol",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_77",
+      "gold": "Mumbai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_78",
+      "gold": "Brno",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_79",
+      "gold": "Copenhagen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_80",
+      "gold": "Detroit",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_81",
+      "gold": "Dubai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_82",
+      "gold": "Bonn",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_83",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_84",
+      "gold": "Potsdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_85",
+      "gold": "Jerusalem",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_86",
+      "gold": "Seoul",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_87",
+      "gold": "Perth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_88",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_89",
+      "gold": "Odense",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_90",
+      "gold": "Rome",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_91",
+      "gold": "Sandy_Springs",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_92",
+      "gold": "Zhukovsky",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_93",
+      "gold": "Montpellier",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_94",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_95",
+      "gold": "Dubai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_96",
+      "gold": "Leverkusen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_97",
+      "gold": "Casablanca",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_98",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_99",
+      "gold": "Vienna",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_100",
+      "gold": "Hatfield",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_101",
+      "gold": "Salzburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_102",
+      "gold": "Agartala",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_103",
+      "gold": "Kristiansand",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_104",
+      "gold": "Toulouse",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_105",
+      "gold": "Cairo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_106",
+      "gold": "slav",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_107",
+      "gold": "Santa_Clara",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_108",
+      "gold": "Plantation",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_109",
+      "gold": "Chi_in_u",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_110",
+      "gold": "Kansas_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_111",
+      "gold": "Plze",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_112",
+      "gold": "Milan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_113",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_114",
+      "gold": "Liverpool",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_115",
+      "gold": "Stockholm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_116",
+      "gold": "Toronto",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_117",
+      "gold": "Colombes",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_118",
+      "gold": "Goole",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_119",
+      "gold": "Atlanta",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_120",
+      "gold": "Seattle",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_121",
+      "gold": "Oak_Ridge",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_122",
+      "gold": "Zagreb",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_123",
+      "gold": "Waltham",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_124",
+      "gold": "Ostrava",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_125",
+      "gold": "Graz",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_126",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_127",
+      "gold": "Slough",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_128",
+      "gold": "The_Hague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_129",
+      "gold": "Haifa",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_130",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_131",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_132",
+      "gold": "Shanghai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_133",
+      "gold": "Nairobi",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_134",
+      "gold": "Jerusalem",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_135",
+      "gold": "Bristol",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_136",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_137",
+      "gold": "Atlanta",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_138",
+      "gold": "Burbank",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_139",
+      "gold": "Tremblay-en-France",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_140",
+      "gold": "Wei_enfels",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_141",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_142",
+      "gold": "Duluth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_143",
+      "gold": "Saint_Petersburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_144",
+      "gold": "Nashville",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_145",
+      "gold": "Santa_Clara",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_146",
+      "gold": "Sydney",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_147",
+      "gold": "Eagan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_148",
+      "gold": "Yerevan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_149",
+      "gold": "Mexico_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_150",
+      "gold": "Salt_Lake_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_151",
+      "gold": "Quebec_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_152",
+      "gold": "Or_Yehuda",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_153",
+      "gold": "Wolfsburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_154",
+      "gold": "Troms",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_155",
+      "gold": "Wilmington",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_156",
+      "gold": "Liverpool",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_157",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_158",
+      "gold": "Bonn",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_159",
+      "gold": "Tampere",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_160",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_161",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_162",
+      "gold": "Frankfurt",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_163",
+      "gold": "Southampton",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_164",
+      "gold": "Melbourne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_165",
+      "gold": "Vienna",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_166",
+      "gold": "Indianapolis",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_167",
+      "gold": "Beijing",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_168",
+      "gold": "Viborg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_169",
+      "gold": "Chaska",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_170",
+      "gold": "Auckland",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_171",
+      "gold": "Sydney",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_172",
+      "gold": "Nicosia",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_173",
+      "gold": "Frederiksberg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_174",
+      "gold": "Flor",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_175",
+      "gold": "Broomfield",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_176",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_177",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_178",
+      "gold": "Trondheim",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_179",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_180",
+      "gold": "Rotterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_181",
+      "gold": "Bengaluru",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_182",
+      "gold": "Malm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_183",
+      "gold": "Stockholm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_184",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_185",
+      "gold": "Pittsburgh",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_186",
+      "gold": "The_Hague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_187",
+      "gold": "Mattersburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_188",
+      "gold": "Nakhodka",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_189",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_190",
+      "gold": "Bydgoszcz",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_191",
+      "gold": "Boston",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_192",
+      "gold": "Luxembourg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_193",
+      "gold": "Bremen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_194",
+      "gold": "Vilnius",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_195",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_196",
+      "gold": "Bangkok",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_197",
+      "gold": "Randers",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_198",
+      "gold": "Tremblay-en-France",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_UNIQUE",
+      "id": "F200_ENG_UNIQUE_199",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_0",
+      "gold": "San_Jose",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_1",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_2",
+      "gold": "Maputo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_3",
+      "gold": "Humleb_k",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_4",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_5",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_6",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_7",
+      "gold": "Thiruvananthapuram",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_8",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_9",
+      "gold": "Las_Vegas",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_10",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_11",
+      "gold": "Zug",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_12",
+      "gold": "Sunnyvale",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_13",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_14",
+      "gold": "Arlington",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_15",
+      "gold": "F_rth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_16",
+      "gold": "Aarhus",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_17",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_18",
+      "gold": "Bellevue",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_19",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_20",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_21",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_22",
+      "gold": "San_Antonio",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_23",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_24",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_25",
+      "gold": "Hjo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_26",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_27",
+      "gold": "Likino-Dulyovo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_28",
+      "gold": "P_ock",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_29",
+      "gold": "Kavala",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_30",
+      "gold": "Midrand",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_31",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_32",
+      "gold": "Stuttgart",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_33",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_34",
+      "gold": "Madison",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_35",
+      "gold": "Dallas",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_36",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_37",
+      "gold": "Szczecin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_38",
+      "gold": "Dublin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_39",
+      "gold": "Leipzig",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_40",
+      "gold": "Haifa",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_41",
+      "gold": "Abu_Dhabi",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_42",
+      "gold": "Bnei_Brak",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_43",
+      "gold": "Toronto",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_44",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_45",
+      "gold": "Villeurbanne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_46",
+      "gold": "Megion",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_47",
+      "gold": "Boulogne-Billancourt",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_48",
+      "gold": "Hamburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_49",
+      "gold": "Seattle",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_50",
+      "gold": "Cambridge",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_51",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_52",
+      "gold": "Brussels",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_53",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_54",
+      "gold": "Neuss",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_55",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_56",
+      "gold": "Villarreal",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_57",
+      "gold": "G_ttingen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_58",
+      "gold": "Villeurbanne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_59",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_60",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_61",
+      "gold": "Leipzig",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_62",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_63",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_64",
+      "gold": "Calgary",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_65",
+      "gold": "Oakland",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_66",
+      "gold": "Madison",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_67",
+      "gold": "Aberdeen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_68",
+      "gold": "Montpellier",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_69",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_70",
+      "gold": "Beijing",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_71",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_72",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_73",
+      "gold": "Geneva",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_74",
+      "gold": "Dublin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_75",
+      "gold": "Dover",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_76",
+      "gold": "Bristol",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_77",
+      "gold": "Mumbai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_78",
+      "gold": "Brno",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_79",
+      "gold": "Copenhagen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_80",
+      "gold": "Detroit",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_81",
+      "gold": "Dubai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_82",
+      "gold": "Bonn",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_83",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_84",
+      "gold": "Potsdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_85",
+      "gold": "Jerusalem",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_86",
+      "gold": "Seoul",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_87",
+      "gold": "Perth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_88",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_89",
+      "gold": "Odense",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_90",
+      "gold": "Rome",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_91",
+      "gold": "Sandy_Springs",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_92",
+      "gold": "Zhukovsky",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_93",
+      "gold": "Montpellier",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_94",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_95",
+      "gold": "Dubai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_96",
+      "gold": "Leverkusen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_97",
+      "gold": "Casablanca",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_98",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_99",
+      "gold": "Vienna",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_100",
+      "gold": "Hatfield",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_101",
+      "gold": "Salzburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_102",
+      "gold": "Agartala",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_103",
+      "gold": "Kristiansand",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_104",
+      "gold": "Toulouse",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_105",
+      "gold": "Cairo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_106",
+      "gold": "slav",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_107",
+      "gold": "Santa_Clara",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_108",
+      "gold": "Plantation",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_109",
+      "gold": "Chi_in_u",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_110",
+      "gold": "Kansas_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_111",
+      "gold": "Plze",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_112",
+      "gold": "Milan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_113",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_114",
+      "gold": "Liverpool",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_115",
+      "gold": "Stockholm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_116",
+      "gold": "Toronto",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_117",
+      "gold": "Colombes",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_118",
+      "gold": "Goole",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_119",
+      "gold": "Atlanta",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_120",
+      "gold": "Seattle",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_121",
+      "gold": "Oak_Ridge",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_122",
+      "gold": "Zagreb",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_123",
+      "gold": "Waltham",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_124",
+      "gold": "Ostrava",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_125",
+      "gold": "Graz",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_126",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_127",
+      "gold": "Slough",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_128",
+      "gold": "The_Hague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_129",
+      "gold": "Haifa",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_130",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_131",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_132",
+      "gold": "Shanghai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_133",
+      "gold": "Nairobi",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_134",
+      "gold": "Jerusalem",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_135",
+      "gold": "Bristol",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_136",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_137",
+      "gold": "Atlanta",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_138",
+      "gold": "Burbank",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_139",
+      "gold": "Tremblay-en-France",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_140",
+      "gold": "Wei_enfels",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_141",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_142",
+      "gold": "Duluth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_143",
+      "gold": "Saint_Petersburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_144",
+      "gold": "Nashville",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_145",
+      "gold": "Santa_Clara",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_146",
+      "gold": "Sydney",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_147",
+      "gold": "Eagan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_148",
+      "gold": "Yerevan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_149",
+      "gold": "Mexico_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_150",
+      "gold": "Salt_Lake_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_151",
+      "gold": "Quebec_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_152",
+      "gold": "Or_Yehuda",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_153",
+      "gold": "Wolfsburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_154",
+      "gold": "Troms",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_155",
+      "gold": "Wilmington",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_156",
+      "gold": "Liverpool",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_157",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_158",
+      "gold": "Bonn",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_159",
+      "gold": "Tampere",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_160",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_161",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_162",
+      "gold": "Frankfurt",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_163",
+      "gold": "Southampton",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_164",
+      "gold": "Melbourne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_165",
+      "gold": "Vienna",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_166",
+      "gold": "Indianapolis",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_167",
+      "gold": "Beijing",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_168",
+      "gold": "Viborg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_169",
+      "gold": "Chaska",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_170",
+      "gold": "Auckland",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_171",
+      "gold": "Sydney",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_172",
+      "gold": "Nicosia",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_173",
+      "gold": "Frederiksberg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_174",
+      "gold": "Flor",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_175",
+      "gold": "Broomfield",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_176",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_177",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_178",
+      "gold": "Trondheim",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_179",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_180",
+      "gold": "Rotterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_181",
+      "gold": "Bengaluru",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_182",
+      "gold": "Malm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_183",
+      "gold": "Stockholm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_184",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_185",
+      "gold": "Pittsburgh",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_186",
+      "gold": "The_Hague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_187",
+      "gold": "Mattersburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_188",
+      "gold": "Nakhodka",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_189",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_190",
+      "gold": "Bydgoszcz",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_191",
+      "gold": "Boston",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_192",
+      "gold": "Luxembourg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_193",
+      "gold": "Bremen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_194",
+      "gold": "Vilnius",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_195",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_196",
+      "gold": "Bangkok",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_197",
+      "gold": "Randers",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_198",
+      "gold": "Tremblay-en-France",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "ENG_AMBIG",
+      "id": "F200_ENG_AMBIG_199",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_0",
+      "gold": "San_Jose",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_1",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_2",
+      "gold": "Maputo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_3",
+      "gold": "Humleb_k",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_4",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_5",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_6",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_7",
+      "gold": "Thiruvananthapuram",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_8",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_9",
+      "gold": "Las_Vegas",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_10",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_11",
+      "gold": "Zug",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_12",
+      "gold": "Sunnyvale",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_13",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_14",
+      "gold": "Arlington",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_15",
+      "gold": "F_rth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_16",
+      "gold": "Aarhus",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_17",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_18",
+      "gold": "Bellevue",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_19",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_20",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_21",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_22",
+      "gold": "San_Antonio",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_23",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_24",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_25",
+      "gold": "Hjo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_26",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_27",
+      "gold": "Likino-Dulyovo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_28",
+      "gold": "P_ock",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_29",
+      "gold": "Kavala",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_30",
+      "gold": "Midrand",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_31",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_32",
+      "gold": "Stuttgart",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_33",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_34",
+      "gold": "Madison",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_35",
+      "gold": "Dallas",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_36",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_37",
+      "gold": "Szczecin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_38",
+      "gold": "Dublin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_39",
+      "gold": "Leipzig",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_40",
+      "gold": "Haifa",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_41",
+      "gold": "Abu_Dhabi",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_42",
+      "gold": "Bnei_Brak",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_43",
+      "gold": "Toronto",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_44",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_45",
+      "gold": "Villeurbanne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_46",
+      "gold": "Megion",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_47",
+      "gold": "Boulogne-Billancourt",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_48",
+      "gold": "Hamburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_49",
+      "gold": "Seattle",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_50",
+      "gold": "Cambridge",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_51",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_52",
+      "gold": "Brussels",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_53",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_54",
+      "gold": "Neuss",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_55",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_56",
+      "gold": "Villarreal",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_57",
+      "gold": "G_ttingen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_58",
+      "gold": "Villeurbanne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_59",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_60",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_61",
+      "gold": "Leipzig",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_62",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_63",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_64",
+      "gold": "Calgary",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_65",
+      "gold": "Oakland",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_66",
+      "gold": "Madison",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_67",
+      "gold": "Aberdeen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_68",
+      "gold": "Montpellier",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_69",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_70",
+      "gold": "Beijing",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_71",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_72",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_73",
+      "gold": "Geneva",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_74",
+      "gold": "Dublin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_75",
+      "gold": "Dover",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_76",
+      "gold": "Bristol",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_77",
+      "gold": "Mumbai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_78",
+      "gold": "Brno",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_79",
+      "gold": "Copenhagen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_80",
+      "gold": "Detroit",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_81",
+      "gold": "Dubai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_82",
+      "gold": "Bonn",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_83",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_84",
+      "gold": "Potsdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_85",
+      "gold": "Jerusalem",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_86",
+      "gold": "Seoul",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_87",
+      "gold": "Perth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_88",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_89",
+      "gold": "Odense",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_90",
+      "gold": "Rome",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_91",
+      "gold": "Sandy_Springs",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_92",
+      "gold": "Zhukovsky",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_93",
+      "gold": "Montpellier",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_94",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_95",
+      "gold": "Dubai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_96",
+      "gold": "Leverkusen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_97",
+      "gold": "Casablanca",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_98",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_99",
+      "gold": "Vienna",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_100",
+      "gold": "Hatfield",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_101",
+      "gold": "Salzburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_102",
+      "gold": "Agartala",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_103",
+      "gold": "Kristiansand",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_104",
+      "gold": "Toulouse",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_105",
+      "gold": "Cairo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_106",
+      "gold": "slav",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_107",
+      "gold": "Santa_Clara",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_108",
+      "gold": "Plantation",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_109",
+      "gold": "Chi_in_u",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_110",
+      "gold": "Kansas_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_111",
+      "gold": "Plze",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_112",
+      "gold": "Milan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_113",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_114",
+      "gold": "Liverpool",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_115",
+      "gold": "Stockholm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_116",
+      "gold": "Toronto",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_117",
+      "gold": "Colombes",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_118",
+      "gold": "Goole",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_119",
+      "gold": "Atlanta",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_120",
+      "gold": "Seattle",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_121",
+      "gold": "Oak_Ridge",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_122",
+      "gold": "Zagreb",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_123",
+      "gold": "Waltham",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_124",
+      "gold": "Ostrava",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_125",
+      "gold": "Graz",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_126",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_127",
+      "gold": "Slough",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_128",
+      "gold": "The_Hague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_129",
+      "gold": "Haifa",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_130",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_131",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_132",
+      "gold": "Shanghai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_133",
+      "gold": "Nairobi",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_134",
+      "gold": "Jerusalem",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_135",
+      "gold": "Bristol",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_136",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_137",
+      "gold": "Atlanta",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_138",
+      "gold": "Burbank",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_139",
+      "gold": "Tremblay-en-France",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_140",
+      "gold": "Wei_enfels",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_141",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_142",
+      "gold": "Duluth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_143",
+      "gold": "Saint_Petersburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_144",
+      "gold": "Nashville",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_145",
+      "gold": "Santa_Clara",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_146",
+      "gold": "Sydney",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_147",
+      "gold": "Eagan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_148",
+      "gold": "Yerevan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_149",
+      "gold": "Mexico_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_150",
+      "gold": "Salt_Lake_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_151",
+      "gold": "Quebec_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_152",
+      "gold": "Or_Yehuda",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_153",
+      "gold": "Wolfsburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_154",
+      "gold": "Troms",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_155",
+      "gold": "Wilmington",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_156",
+      "gold": "Liverpool",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_157",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_158",
+      "gold": "Bonn",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_159",
+      "gold": "Tampere",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_160",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_161",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_162",
+      "gold": "Frankfurt",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_163",
+      "gold": "Southampton",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_164",
+      "gold": "Melbourne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_165",
+      "gold": "Vienna",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_166",
+      "gold": "Indianapolis",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_167",
+      "gold": "Beijing",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_168",
+      "gold": "Viborg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_169",
+      "gold": "Chaska",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_170",
+      "gold": "Auckland",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_171",
+      "gold": "Sydney",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_172",
+      "gold": "Nicosia",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_173",
+      "gold": "Frederiksberg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_174",
+      "gold": "Flor",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_175",
+      "gold": "Broomfield",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_176",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_177",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_178",
+      "gold": "Trondheim",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_179",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_180",
+      "gold": "Rotterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_181",
+      "gold": "Bengaluru",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_182",
+      "gold": "Malm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_183",
+      "gold": "Stockholm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_184",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_185",
+      "gold": "Pittsburgh",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_186",
+      "gold": "The_Hague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_187",
+      "gold": "Mattersburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_188",
+      "gold": "Nakhodka",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_189",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_190",
+      "gold": "Bydgoszcz",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_191",
+      "gold": "Boston",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_192",
+      "gold": "Luxembourg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_193",
+      "gold": "Bremen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_194",
+      "gold": "Vilnius",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_195",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_196",
+      "gold": "Bangkok",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_197",
+      "gold": "Randers",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_198",
+      "gold": "Tremblay-en-France",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_UNIQUE",
+      "id": "F200_OPAQUE_UNIQUE_199",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_0",
+      "gold": "San_Jose",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_1",
+      "gold": "London",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_2",
+      "gold": "Maputo",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_3",
+      "gold": "Humleb_k",
+      "pred": "Humleb_k",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_4",
+      "gold": "London",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_5",
+      "gold": "Prague",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_6",
+      "gold": "London",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_7",
+      "gold": "Thiruvananthapuram",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_8",
+      "gold": "Barcelona",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_9",
+      "gold": "Las_Vegas",
+      "pred": "Las_Vegas",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_10",
+      "gold": "New_York_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_11",
+      "gold": "Zug",
+      "pred": "Zug",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_12",
+      "gold": "Sunnyvale",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_13",
+      "gold": "New_York_City",
+      "pred": "New_York_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_14",
+      "gold": "Arlington",
+      "pred": "Arlington",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_15",
+      "gold": "F_rth",
+      "pred": "F_rth",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_16",
+      "gold": "Aarhus",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_17",
+      "gold": "Amsterdam",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_18",
+      "gold": "Bellevue",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_19",
+      "gold": "San_Francisco",
+      "pred": "San_Francisco",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_20",
+      "gold": "Chicago",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_21",
+      "gold": "New_York_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_22",
+      "gold": "San_Antonio",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_23",
+      "gold": "Barcelona",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_24",
+      "gold": "Amsterdam",
+      "pred": "Amsterdam",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_25",
+      "gold": "Hjo",
+      "pred": "Hjo",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_26",
+      "gold": "Oslo",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_27",
+      "gold": "Likino-Dulyovo",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_28",
+      "gold": "P_ock",
+      "pred": "P_ock",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_29",
+      "gold": "Kavala",
+      "pred": "Kavala",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_30",
+      "gold": "Midrand",
+      "pred": "Amsterdam",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_31",
+      "gold": "Amsterdam",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_32",
+      "gold": "Stuttgart",
+      "pred": "Stuttgart",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_33",
+      "gold": "Oslo",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_34",
+      "gold": "Madison",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_35",
+      "gold": "Dallas",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_36",
+      "gold": "Oslo",
+      "pred": "Szczecin",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_37",
+      "gold": "Szczecin",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_38",
+      "gold": "Dublin",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_39",
+      "gold": "Leipzig",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_40",
+      "gold": "Haifa",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_41",
+      "gold": "Abu_Dhabi",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_42",
+      "gold": "Bnei_Brak",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_43",
+      "gold": "Toronto",
+      "pred": "Toronto",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_44",
+      "gold": "Prague",
+      "pred": "Villeurbanne",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_45",
+      "gold": "Villeurbanne",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_46",
+      "gold": "Megion",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_47",
+      "gold": "Boulogne-Billancourt",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_48",
+      "gold": "Hamburg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_49",
+      "gold": "Seattle",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_50",
+      "gold": "Cambridge",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_51",
+      "gold": "Prague",
+      "pred": "Prague",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_52",
+      "gold": "Brussels",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_53",
+      "gold": "Washington_D.C.",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_54",
+      "gold": "Neuss",
+      "pred": "Neuss",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_55",
+      "gold": "San_Francisco",
+      "pred": "San_Francisco",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_56",
+      "gold": "Villarreal",
+      "pred": "Villarreal",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_57",
+      "gold": "G_ttingen",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_58",
+      "gold": "Villeurbanne",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_59",
+      "gold": "Tel_Aviv",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_60",
+      "gold": "Washington_D.C.",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_61",
+      "gold": "Leipzig",
+      "pred": "Munich",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_62",
+      "gold": "Munich",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_63",
+      "gold": "Singapore",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_64",
+      "gold": "Calgary",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_65",
+      "gold": "Oakland",
+      "pred": "Oakland",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_66",
+      "gold": "Madison",
+      "pred": "Aberdeen",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_67",
+      "gold": "Aberdeen",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_68",
+      "gold": "Montpellier",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_69",
+      "gold": "Washington_D.C.",
+      "pred": "Washington_D.C.",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_70",
+      "gold": "Beijing",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_71",
+      "gold": "San_Francisco",
+      "pred": "San_Francisco",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_72",
+      "gold": "Barcelona",
+      "pred": "Barcelona",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_73",
+      "gold": "Geneva",
+      "pred": "Geneva",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_74",
+      "gold": "Dublin",
+      "pred": "Dublin",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_75",
+      "gold": "Dover",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_76",
+      "gold": "Bristol",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_77",
+      "gold": "Mumbai",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_78",
+      "gold": "Brno",
+      "pred": "Brno",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_79",
+      "gold": "Copenhagen",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_80",
+      "gold": "Detroit",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_81",
+      "gold": "Dubai",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_82",
+      "gold": "Bonn",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_83",
+      "gold": "Cologne",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_84",
+      "gold": "Potsdam",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_85",
+      "gold": "Jerusalem",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_86",
+      "gold": "Seoul",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_87",
+      "gold": "Perth",
+      "pred": "Perth",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_88",
+      "gold": "Gothenburg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_89",
+      "gold": "Odense",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_90",
+      "gold": "Rome",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_91",
+      "gold": "Sandy_Springs",
+      "pred": "Sandy_Springs",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_92",
+      "gold": "Zhukovsky",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_93",
+      "gold": "Montpellier",
+      "pred": "Cologne",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_94",
+      "gold": "Cologne",
+      "pred": "Cologne",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_95",
+      "gold": "Dubai",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_96",
+      "gold": "Leverkusen",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_97",
+      "gold": "Casablanca",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_98",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_99",
+      "gold": "Vienna",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_100",
+      "gold": "Hatfield",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_101",
+      "gold": "Salzburg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_102",
+      "gold": "Agartala",
+      "pred": "Agartala",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_103",
+      "gold": "Kristiansand",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_104",
+      "gold": "Toulouse",
+      "pred": "Cairo",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_105",
+      "gold": "Cairo",
+      "pred": "Cairo",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_106",
+      "gold": "slav",
+      "pred": "Santa_Clara",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_107",
+      "gold": "Santa_Clara",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_108",
+      "gold": "Plantation",
+      "pred": "Plantation",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_109",
+      "gold": "Chi_in_u",
+      "pred": "Kansas_City",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_110",
+      "gold": "Kansas_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_111",
+      "gold": "Plze",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_112",
+      "gold": "Milan",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_113",
+      "gold": "Tel_Aviv",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_114",
+      "gold": "Liverpool",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_115",
+      "gold": "Stockholm",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_116",
+      "gold": "Toronto",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_117",
+      "gold": "Colombes",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_118",
+      "gold": "Goole",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_119",
+      "gold": "Atlanta",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_120",
+      "gold": "Seattle",
+      "pred": "Seattle",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_121",
+      "gold": "Oak_Ridge",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_122",
+      "gold": "Zagreb",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_123",
+      "gold": "Waltham",
+      "pred": "Waltham",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_124",
+      "gold": "Ostrava",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_125",
+      "gold": "Graz",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_126",
+      "gold": "Warsaw",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_127",
+      "gold": "Slough",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_128",
+      "gold": "The_Hague",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_129",
+      "gold": "Haifa",
+      "pred": "Haifa",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_130",
+      "gold": "Cologne",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_131",
+      "gold": "Munich",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_132",
+      "gold": "Shanghai",
+      "pred": "Shanghai",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_133",
+      "gold": "Nairobi",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_134",
+      "gold": "Jerusalem",
+      "pred": "Bristol",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_135",
+      "gold": "Bristol",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_136",
+      "gold": "Moscow",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_137",
+      "gold": "Atlanta",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_138",
+      "gold": "Burbank",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_139",
+      "gold": "Tremblay-en-France",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_140",
+      "gold": "Wei_enfels",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_141",
+      "gold": "Gothenburg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_142",
+      "gold": "Duluth",
+      "pred": "Duluth",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_143",
+      "gold": "Saint_Petersburg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_144",
+      "gold": "Nashville",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_145",
+      "gold": "Santa_Clara",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_146",
+      "gold": "Sydney",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_147",
+      "gold": "Eagan",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_148",
+      "gold": "Yerevan",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_149",
+      "gold": "Mexico_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_150",
+      "gold": "Salt_Lake_City",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_151",
+      "gold": "Quebec_City",
+      "pred": "Quebec_City",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_152",
+      "gold": "Or_Yehuda",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_153",
+      "gold": "Wolfsburg",
+      "pred": "Wolfsburg",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_154",
+      "gold": "Troms",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_155",
+      "gold": "Wilmington",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_156",
+      "gold": "Liverpool",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_157",
+      "gold": "Warsaw",
+      "pred": "Warsaw",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_158",
+      "gold": "Bonn",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_159",
+      "gold": "Tampere",
+      "pred": "Tampere",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_160",
+      "gold": "Chicago",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_161",
+      "gold": "Moscow",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_162",
+      "gold": "Frankfurt",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_163",
+      "gold": "Southampton",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_164",
+      "gold": "Melbourne",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_165",
+      "gold": "Vienna",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_166",
+      "gold": "Indianapolis",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_167",
+      "gold": "Beijing",
+      "pred": "Beijing",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_168",
+      "gold": "Viborg",
+      "pred": "Viborg",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_169",
+      "gold": "Chaska",
+      "pred": "Chaska",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_170",
+      "gold": "Auckland",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_171",
+      "gold": "Sydney",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_172",
+      "gold": "Nicosia",
+      "pred": "Nicosia",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_173",
+      "gold": "Frederiksberg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_174",
+      "gold": "Flor",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_175",
+      "gold": "Broomfield",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_176",
+      "gold": "Chicago",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_177",
+      "gold": "Tel_Aviv",
+      "pred": "Tel_Aviv",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_178",
+      "gold": "Trondheim",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_179",
+      "gold": "Singapore",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_180",
+      "gold": "Rotterdam",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_181",
+      "gold": "Bengaluru",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_182",
+      "gold": "Malm",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_183",
+      "gold": "Stockholm",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_184",
+      "gold": "Munich",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_185",
+      "gold": "Pittsburgh",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_186",
+      "gold": "The_Hague",
+      "pred": "The_Hague",
+      "ok": true
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_187",
+      "gold": "Mattersburg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_188",
+      "gold": "Nakhodka",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_189",
+      "gold": "Moscow",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_190",
+      "gold": "Bydgoszcz",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_191",
+      "gold": "Boston",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_192",
+      "gold": "Luxembourg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_193",
+      "gold": "Bremen",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_194",
+      "gold": "Vilnius",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_195",
+      "gold": "Singapore",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_196",
+      "gold": "Bangkok",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_197",
+      "gold": "Randers",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_198",
+      "gold": "Tremblay-en-France",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG",
+      "id": "F200_OPAQUE_AMBIG_199",
+      "gold": "Gothenburg",
+      "pred": "UNKNOWN",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_0",
+      "gold": "San_Jose",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_1",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_2",
+      "gold": "Maputo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_3",
+      "gold": "Humleb_k",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_4",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_5",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_6",
+      "gold": "London",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_7",
+      "gold": "Thiruvananthapuram",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_8",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_9",
+      "gold": "Las_Vegas",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_10",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_11",
+      "gold": "Zug",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_12",
+      "gold": "Sunnyvale",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_13",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_14",
+      "gold": "Arlington",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_15",
+      "gold": "F_rth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_16",
+      "gold": "Aarhus",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_17",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_18",
+      "gold": "Bellevue",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_19",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_20",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_21",
+      "gold": "New_York_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_22",
+      "gold": "San_Antonio",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_23",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_24",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_25",
+      "gold": "Hjo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_26",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_27",
+      "gold": "Likino-Dulyovo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_28",
+      "gold": "P_ock",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_29",
+      "gold": "Kavala",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_30",
+      "gold": "Midrand",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_31",
+      "gold": "Amsterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_32",
+      "gold": "Stuttgart",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_33",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_34",
+      "gold": "Madison",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_35",
+      "gold": "Dallas",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_36",
+      "gold": "Oslo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_37",
+      "gold": "Szczecin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_38",
+      "gold": "Dublin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_39",
+      "gold": "Leipzig",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_40",
+      "gold": "Haifa",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_41",
+      "gold": "Abu_Dhabi",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_42",
+      "gold": "Bnei_Brak",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_43",
+      "gold": "Toronto",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_44",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_45",
+      "gold": "Villeurbanne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_46",
+      "gold": "Megion",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_47",
+      "gold": "Boulogne-Billancourt",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_48",
+      "gold": "Hamburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_49",
+      "gold": "Seattle",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_50",
+      "gold": "Cambridge",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_51",
+      "gold": "Prague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_52",
+      "gold": "Brussels",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_53",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_54",
+      "gold": "Neuss",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_55",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_56",
+      "gold": "Villarreal",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_57",
+      "gold": "G_ttingen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_58",
+      "gold": "Villeurbanne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_59",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_60",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_61",
+      "gold": "Leipzig",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_62",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_63",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_64",
+      "gold": "Calgary",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_65",
+      "gold": "Oakland",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_66",
+      "gold": "Madison",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_67",
+      "gold": "Aberdeen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_68",
+      "gold": "Montpellier",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_69",
+      "gold": "Washington_D.C.",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_70",
+      "gold": "Beijing",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_71",
+      "gold": "San_Francisco",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_72",
+      "gold": "Barcelona",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_73",
+      "gold": "Geneva",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_74",
+      "gold": "Dublin",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_75",
+      "gold": "Dover",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_76",
+      "gold": "Bristol",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_77",
+      "gold": "Mumbai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_78",
+      "gold": "Brno",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_79",
+      "gold": "Copenhagen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_80",
+      "gold": "Detroit",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_81",
+      "gold": "Dubai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_82",
+      "gold": "Bonn",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_83",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_84",
+      "gold": "Potsdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_85",
+      "gold": "Jerusalem",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_86",
+      "gold": "Seoul",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_87",
+      "gold": "Perth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_88",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_89",
+      "gold": "Odense",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_90",
+      "gold": "Rome",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_91",
+      "gold": "Sandy_Springs",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_92",
+      "gold": "Zhukovsky",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_93",
+      "gold": "Montpellier",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_94",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_95",
+      "gold": "Dubai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_96",
+      "gold": "Leverkusen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_97",
+      "gold": "Casablanca",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_98",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_99",
+      "gold": "Vienna",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_100",
+      "gold": "Hatfield",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_101",
+      "gold": "Salzburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_102",
+      "gold": "Agartala",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_103",
+      "gold": "Kristiansand",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_104",
+      "gold": "Toulouse",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_105",
+      "gold": "Cairo",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_106",
+      "gold": "slav",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_107",
+      "gold": "Santa_Clara",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_108",
+      "gold": "Plantation",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_109",
+      "gold": "Chi_in_u",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_110",
+      "gold": "Kansas_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_111",
+      "gold": "Plze",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_112",
+      "gold": "Milan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_113",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_114",
+      "gold": "Liverpool",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_115",
+      "gold": "Stockholm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_116",
+      "gold": "Toronto",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_117",
+      "gold": "Colombes",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_118",
+      "gold": "Goole",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_119",
+      "gold": "Atlanta",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_120",
+      "gold": "Seattle",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_121",
+      "gold": "Oak_Ridge",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_122",
+      "gold": "Zagreb",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_123",
+      "gold": "Waltham",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_124",
+      "gold": "Ostrava",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_125",
+      "gold": "Graz",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_126",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_127",
+      "gold": "Slough",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_128",
+      "gold": "The_Hague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_129",
+      "gold": "Haifa",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_130",
+      "gold": "Cologne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_131",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_132",
+      "gold": "Shanghai",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_133",
+      "gold": "Nairobi",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_134",
+      "gold": "Jerusalem",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_135",
+      "gold": "Bristol",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_136",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_137",
+      "gold": "Atlanta",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_138",
+      "gold": "Burbank",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_139",
+      "gold": "Tremblay-en-France",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_140",
+      "gold": "Wei_enfels",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_141",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_142",
+      "gold": "Duluth",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_143",
+      "gold": "Saint_Petersburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_144",
+      "gold": "Nashville",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_145",
+      "gold": "Santa_Clara",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_146",
+      "gold": "Sydney",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_147",
+      "gold": "Eagan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_148",
+      "gold": "Yerevan",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_149",
+      "gold": "Mexico_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_150",
+      "gold": "Salt_Lake_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_151",
+      "gold": "Quebec_City",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_152",
+      "gold": "Or_Yehuda",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_153",
+      "gold": "Wolfsburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_154",
+      "gold": "Troms",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_155",
+      "gold": "Wilmington",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_156",
+      "gold": "Liverpool",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_157",
+      "gold": "Warsaw",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_158",
+      "gold": "Bonn",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_159",
+      "gold": "Tampere",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_160",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_161",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_162",
+      "gold": "Frankfurt",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_163",
+      "gold": "Southampton",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_164",
+      "gold": "Melbourne",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_165",
+      "gold": "Vienna",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_166",
+      "gold": "Indianapolis",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_167",
+      "gold": "Beijing",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_168",
+      "gold": "Viborg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_169",
+      "gold": "Chaska",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_170",
+      "gold": "Auckland",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_171",
+      "gold": "Sydney",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_172",
+      "gold": "Nicosia",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_173",
+      "gold": "Frederiksberg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_174",
+      "gold": "Flor",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_175",
+      "gold": "Broomfield",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_176",
+      "gold": "Chicago",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_177",
+      "gold": "Tel_Aviv",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_178",
+      "gold": "Trondheim",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_179",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_180",
+      "gold": "Rotterdam",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_181",
+      "gold": "Bengaluru",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_182",
+      "gold": "Malm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_183",
+      "gold": "Stockholm",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_184",
+      "gold": "Munich",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_185",
+      "gold": "Pittsburgh",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_186",
+      "gold": "The_Hague",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_187",
+      "gold": "Mattersburg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_188",
+      "gold": "Nakhodka",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_189",
+      "gold": "Moscow",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_190",
+      "gold": "Bydgoszcz",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_191",
+      "gold": "Boston",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_192",
+      "gold": "Luxembourg",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_193",
+      "gold": "Bremen",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_194",
+      "gold": "Vilnius",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_195",
+      "gold": "Singapore",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_196",
+      "gold": "Bangkok",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_197",
+      "gold": "Randers",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_198",
+      "gold": "Tremblay-en-France",
+      "pred": "MISSING",
+      "ok": false
+    },
+    {
+      "arm": "OPAQUE_AMBIG_PLAN",
+      "id": "F200_OPAQUE_AMBIG_PLAN_199",
+      "gold": "Gothenburg",
+      "pred": "MISSING",
+      "ok": false
+    }
+  ],
+  "reply_dir": "results/factorial_2x2_iso_n200_harness_replies_gpt56n200k3r2",
+  "note": "16 Sep 2026 k=3 draw 2 (tag gpt56n200k3r2). Does not replace gpt56n200. Named-arm OPAQUE_AMBIG only, gpt-5.6-sol, 512 tokens, reasoning_effort omitted. Other factorial arms n.r. Sidecars store returned_model."
+}

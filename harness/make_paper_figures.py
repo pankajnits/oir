@@ -97,67 +97,68 @@ def main():
             ax.set_ylabel("Exact accuracy")
         return fig, ax
 
-    fig, ax = _one_panel("fig1_matched_2x2", figsize=(7.2, 3.55))
+    fact200 = json.loads((RESULTS / "factorial_2x2_iso_n200_gpt56n200.json").read_text())["summary"]
     labels = ["English\nunique", "English\ntwo-path", "Opaque\nunique", "Opaque\ntwo-path"]
     arms = ["ENG_UNIQUE", "ENG_AMBIG", "OPAQUE_UNIQUE", "OPAQUE_AMBIG"]
-    golds, decoys, unks = [], [], []
-    for a in arms:
-        row = fact[a]
-        n = int(score_of(row).split("/")[1])
-        g = int(score_of(row).split("/")[0])
-        d = int(row.get("decoy", 0) or 0)
-        u = int(row.get("unknown", 0) or 0)
-        golds.append(g / n)
-        decoys.append(d / n)
-        unks.append(u / n)
-    x = np.arange(len(labels))
-    ax.bar(x, golds, color="#2a6f6f", width=0.72, edgecolor="#1a1a1a", linewidth=0.6, label="Gold")
-    ax.bar(x, decoys, bottom=golds, color="#c47a2c", width=0.72, edgecolor="#1a1a1a", linewidth=0.6, label="Decoy")
-    ax.bar(
-        x,
-        unks,
-        bottom=np.array(golds) + np.array(decoys),
-        color="#c8c8c8",
-        width=0.72,
-        edgecolor="#1a1a1a",
-        linewidth=0.6,
-        label="UNKNOWN",
-    )
-    for i, a in enumerate(arms):
-        k_i, n_i = (int(part) for part in score_of(fact[a]).split("/"))
-        lo, hi = wilson_interval(k_i, n_i)
-        ax.errorbar(
-            x[i],
-            golds[i],
-            yerr=[[golds[i] - lo], [hi - golds[i]]],
-            fmt="none",
-            ecolor="#111",
-            capsize=3,
-            elinewidth=0.9,
-            zorder=4,
+
+    def stacked_2x2(ax, summary, title, *, ylabel: bool, legend: bool) -> None:
+        golds, decoys, unks = [], [], []
+        for a in arms:
+            row = summary[a]
+            n = int(score_of(row).split("/")[1])
+            g = int(score_of(row).split("/")[0])
+            d = int(row.get("decoy", 0) or 0)
+            u = int(row.get("unknown", 0) or 0)
+            golds.append(g / n)
+            decoys.append(d / n)
+            unks.append(u / n)
+        x = np.arange(len(labels))
+        ax.bar(x, golds, color="#2a6f6f", width=0.72, edgecolor="#1a1a1a", linewidth=0.6, label="Gold")
+        ax.bar(x, decoys, bottom=golds, color="#c47a2c", width=0.72, edgecolor="#1a1a1a", linewidth=0.6, label="Decoy")
+        ax.bar(
+            x,
+            unks,
+            bottom=np.array(golds) + np.array(decoys),
+            color="#c8c8c8",
+            width=0.72,
+            edgecolor="#1a1a1a",
+            linewidth=0.6,
+            label="UNKNOWN",
         )
-        if golds[i] < 0.5:
-            # Exact-match rate on the gold stack, not in the UNKNOWN band.
-            y_txt, va, col = max(golds[i] * 0.52, 0.03), "center", "white"
-        elif golds[i] < 0.88:
-            y_txt, va, col = min(golds[i] + 0.06, 0.92), "bottom", "#111"
-        else:
-            y_txt, va, col = golds[i] - 0.08, "top", "white"
-        ax.text(
-            x[i],
-            y_txt,
-            f"{k_i}/{n_i}",
-            ha="center",
-            va=va,
-            fontsize=8,
-            color=col,
-            zorder=5,
-        )
-    ax.set_xticks(x)
-    ax.set_xticklabels(labels)
-    set_acc_axis(ax)
-    ax.set_title("OpenAI Wikidata 2×2 (n=32, start in q)")
-    ax.legend(frameon=False, loc="center left", bbox_to_anchor=(1.01, 0.55), fontsize=8)
+        for i, a in enumerate(arms):
+            k_i, n_i = (int(part) for part in score_of(summary[a]).split("/"))
+            lo, hi = wilson_interval(k_i, n_i)
+            ax.errorbar(
+                x[i],
+                golds[i],
+                yerr=[[golds[i] - lo], [hi - golds[i]]],
+                fmt="none",
+                ecolor="#111",
+                capsize=3,
+                elinewidth=0.9,
+                zorder=4,
+            )
+            if golds[i] < 0.5:
+                y_txt, va, col = max(golds[i] * 0.52, 0.03), "center", "white"
+            elif golds[i] < 0.88:
+                y_txt, va, col = min(golds[i] + 0.06, 0.92), "bottom", "#111"
+            else:
+                y_txt, va, col = golds[i] - 0.08, "top", "white"
+            ax.text(x[i], y_txt, f"{k_i}/{n_i}", ha="center", va=va, fontsize=7.5, color=col, zorder=5)
+        ax.set_xticks(x)
+        ax.set_xticklabels(labels, fontsize=8)
+        set_acc_axis(ax)
+        ax.set_title(title, fontsize=10)
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+        if ylabel:
+            ax.set_ylabel("Exact accuracy")
+        if legend:
+            ax.legend(frameon=False, loc="upper right", fontsize=7.5)
+
+    fig, axes = plt.subplots(1, 2, figsize=(9.6, 3.35), constrained_layout=True, sharey=True)
+    stacked_2x2(axes[0], fact, "n=32 discovery", ylabel=True, legend=False)
+    stacked_2x2(axes[1], fact200, "n=200 city-typed", ylabel=False, legend=True)
     fig.savefig(OUT / "fig1_matched_2x2.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig1_matched_2x2.png", dpi=200, bbox_inches="tight")
     plt.close()

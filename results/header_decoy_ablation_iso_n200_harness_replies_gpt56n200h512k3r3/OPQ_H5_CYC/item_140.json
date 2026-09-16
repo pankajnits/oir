@@ -1,0 +1,38 @@
+{
+  "id": "H200_84f8e7e865",
+  "arm": "OPQ_H5_CYC",
+  "item": 140,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_140/prompt.txt",
+  "pred": "Wei_enfels",
+  "raw": "ANSWER_PLAIN[H200_84f8e7e865]: Wei_enfels",
+  "elapsed_s": 3.467,
+  "utc": "2026-09-16T08:44:43.387075+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfXsN6kAFiElW3zX5TkUOMehuCy2",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548280,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 90,
+    "prompt_tokens": 210,
+    "total_tokens": 300,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 63,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

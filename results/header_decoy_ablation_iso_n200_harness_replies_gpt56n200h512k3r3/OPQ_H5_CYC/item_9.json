@@ -1,0 +1,38 @@
+{
+  "id": "H200_d09fbb132a",
+  "arm": "OPQ_H5_CYC",
+  "item": 9,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_9/prompt.txt",
+  "pred": "Las_Vegas",
+  "raw": "ANSWER_PLAIN[H200_d09fbb132a]: Las_Vegas",
+  "elapsed_s": 1.534,
+  "utc": "2026-09-16T08:43:58.275223+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfXBAK00Nx8cVufwZnBkiiazoXrz",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548237,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 48,
+    "prompt_tokens": 183,
+    "total_tokens": 231,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 22,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,105 @@
+{
+  "tag": "gpt56n200h512k3r3",
+  "harness": "results/header_decoy_ablation_iso_n200_harness.json",
+  "cells": {
+    "OPQ_H5_CYC": {
+      "gold": 127,
+      "unknown": 55,
+      "decoy": 17,
+      "other": 1
+    },
+    "OPQ_H5_CRV": {
+      "missing": 200
+    },
+    "OPQ_K2_CYC": {
+      "missing": 200
+    },
+    "OPQ_K2_CRV": {
+      "missing": 200
+    },
+    "OPQ_NONE_CYC": {
+      "missing": 200
+    },
+    "OPQ_NONE_CRV": {
+      "missing": 200
+    },
+    "ENG_NONE_CYC": {
+      "missing": 200
+    }
+  },
+  "contrasts": [
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_NONE_CYC",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_K2_CYC",
+      "b": "OPQ_NONE_CYC",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_K2_CYC",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CRV",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_K2_CRV",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CRV",
+      "b": "OPQ_K2_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_H5_CYC",
+      "b": "OPQ_H5_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_K2_CYC",
+      "b": "OPQ_K2_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "a": "OPQ_NONE_CYC",
+      "b": "OPQ_NONE_CRV",
+      "n_paired": 0,
+      "a_only": 0,
+      "b_only": 0,
+      "mcnemar_exact_p": 1.0
+    }
+  ],
+  "note": "16 Sep 2026 k=3 draw 3 of OPQ_H5_CYC only (tag gpt56n200h512k3r3, 512 tokens, reasoning_effort omitted). Other arms were not queried; missing 200 is not a score. Does not replace gpt56n200h512."
+}

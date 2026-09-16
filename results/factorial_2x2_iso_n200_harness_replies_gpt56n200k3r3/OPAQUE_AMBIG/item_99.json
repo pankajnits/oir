@@ -1,0 +1,38 @@
+{
+  "id": "F200_OPAQUE_AMBIG_99",
+  "arm": "OPAQUE_AMBIG",
+  "item": 99,
+  "prompt_path": "runs/factorial_2x2_iso_n200/OPAQUE_AMBIG/item_99/prompt.txt",
+  "pred": "Hatfield",
+  "raw": "ANSWER_PLAIN[F200_OPAQUE_AMBIG_99]: Hatfield",
+  "elapsed_s": 2.121,
+  "utc": "2026-09-16T08:43:28.776841+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfWh5qkWth5S0AFt0PyHqOj05Elq",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548207,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 62,
+    "prompt_tokens": 184,
+    "total_tokens": 246,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 38,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

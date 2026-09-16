@@ -1,0 +1,38 @@
+{
+  "id": "H200_3b3d6c84f3",
+  "arm": "OPQ_H5_CYC",
+  "item": 116,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_116/prompt.txt",
+  "pred": "Toronto",
+  "raw": "ANSWER_PLAIN[H200_3b3d6c84f3]: Toronto",
+  "elapsed_s": 2.061,
+  "utc": "2026-09-16T08:44:33.704516+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfXkrbjSmKOfWK6y6UrxDCA2pxxV",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548272,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 58,
+    "prompt_tokens": 174,
+    "total_tokens": 232,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 31,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

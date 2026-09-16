@@ -1,0 +1,38 @@
+{
+  "id": "H200_6d2533838f",
+  "arm": "OPQ_H5_CYC",
+  "item": 71,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_71/prompt.txt",
+  "pred": "San_Francisco",
+  "raw": "ANSWER_PLAIN[H200_6d2533838f]: San_Francisco",
+  "elapsed_s": 1.236,
+  "utc": "2026-09-16T08:44:19.598185+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfXWOkvLMvlgQjbqFavG9kvAagja",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548258,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 165,
+    "total_tokens": 186,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

@@ -135,3 +135,64 @@ def test_shuffle_n200_openai_gold_first_split():
     gf = sum(1 for r in oa if r["ok"] and int(r["id"].rsplit("_", 1)[1]) in gold_first)
     df = sum(1 for r in oa if r["ok"] and int(r["id"].rsplit("_", 1)[1]) not in gold_first)
     assert gf == 25 and df == 34
+
+
+def test_k3_n200_does_not_replace_locks():
+    """Headline n=200 tags stay 38/200 and 134; k=3 is extra snapshots."""
+    lock = json.loads((ROOT / "results/factorial_2x2_iso_n200_gpt56n200.json").read_text())
+    assert lock["summary"]["OPAQUE_AMBIG"]["score"] == "38/200"
+    hdr = json.loads((ROOT / "results/header_decoy_ablation_iso_n200_gpt56n200h512.json").read_text())
+    assert hdr["cells"]["OPQ_H5_CYC"]["gold"] == 134
+    r2 = json.loads((ROOT / "results/factorial_2x2_iso_n200_gpt56n200k3r2.json").read_text())
+    r3 = json.loads((ROOT / "results/factorial_2x2_iso_n200_gpt56n200k3r3.json").read_text())
+    assert "does not replace" in r2.get("note", "").lower()
+    assert "does not replace" in r3.get("note", "").lower()
+    assert r2["summary"]["OPAQUE_AMBIG"]["score"] == "46/200"
+    assert r3["summary"]["OPAQUE_AMBIG"]["score"] == "43/200"
+    assert r2["summary"]["OPAQUE_AMBIG"]["unknown"] == 144
+    assert r3["summary"]["OPAQUE_AMBIG"]["unknown"] == 142
+    assert r2["summary"]["OPAQUE_AMBIG"]["decoy"] == 10
+    assert r3["summary"]["OPAQUE_AMBIG"]["decoy"] == 15
+    assert r2["summary"]["OPAQUE_UNIQUE"]["score"] == "n.r."
+    h2 = json.loads((ROOT / "results/header_decoy_ablation_iso_n200_gpt56n200h512k3r2.json").read_text())
+    h3 = json.loads((ROOT / "results/header_decoy_ablation_iso_n200_gpt56n200h512k3r3.json").read_text())
+    assert "does not replace" in h2.get("note", "").lower()
+    assert "does not replace" in h3.get("note", "").lower()
+    assert h2["cells"]["OPQ_H5_CYC"]["gold"] == 130
+    assert h3["cells"]["OPQ_H5_CYC"]["gold"] == 127
+    assert h2["cells"]["OPQ_H5_CYC"].get("no_output", 0) == 0
+    assert h3["cells"]["OPQ_H5_CYC"].get("no_output", 0) == 0
+    assert h3["cells"]["OPQ_H5_CYC"].get("other", 0) == 1
+    for arm, cell in h2["cells"].items():
+        if arm != "OPQ_H5_CYC":
+            assert cell.get("missing") == 200, arm
+    sidecar = json.loads(
+        (ROOT / "results/factorial_2x2_iso_n200_harness_replies_gpt56n200k3r2" / "OPAQUE_AMBIG" / "item_0.json").read_text()
+    )
+    assert sidecar.get("returned_model") == "gpt-5.6-sol"
+    n32 = json.loads((ROOT / "results/factorial_2x2_iso_gpt56.json").read_text())
+    assert n32["summary"]["OPAQUE_AMBIG"]["score"] == "6/32"
+
+
+def test_n200_constant_decoy_is_curve_not_cogent():
+    """n=200 CRV is curve_decoy (San_Jose x199, London x1), not Cogent→DC."""
+    h = json.loads((ROOT / "results/header_decoy_ablation_iso_n200_harness.json").read_text())
+    tails = Counter(c["decoy_hq"]["CRV"] for c in h["cases"])
+    assert tails == {"San_Jose": 199, "London": 1}
+    assert all(c["gold"] != c["decoy_hq"]["CRV"] for c in h["cases"])
+    n32_prompt = (ROOT / "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_0/prompt.txt").read_text()
+    assert "Cogent_Communications" in n32_prompt
+    n200_prompt = (ROOT / "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CRV/item_0/prompt.txt").read_text()
+    assert "Cogent" not in n200_prompt
+    tex_path = ROOT / "paper/arxiv_upload/main.tex"
+    if tex_path.is_file():
+        tex = tex_path.read_text()
+        assert r"San\_Jose ${\times}199$" in tex
+        assert r"constant $=$ one Cogent" not in tex
+
+
+def test_openai_k_sweep_is_29_29_28_27_28():
+    s = json.loads((ROOT / "results/ambig_curve_iso_gpt56.json").read_text())["summary"]
+    assert [s[f"K{k}"]["score"] for k in range(1, 6)] == [
+        "29/32", "29/32", "28/32", "27/32", "28/32",
+    ]

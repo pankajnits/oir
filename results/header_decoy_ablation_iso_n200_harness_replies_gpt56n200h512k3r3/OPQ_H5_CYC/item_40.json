@@ -1,0 +1,38 @@
+{
+  "id": "H200_bafef7bc56",
+  "arm": "OPQ_H5_CYC",
+  "item": 40,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_40/prompt.txt",
+  "pred": "Haifa",
+  "raw": "ANSWER_PLAIN[H200_bafef7bc56]: Haifa",
+  "elapsed_s": 2.391,
+  "utc": "2026-09-16T08:44:10.306379+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfXMDg9aq3Rnf4h5W1StuaI8CZ1y",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548248,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 65,
+    "prompt_tokens": 202,
+    "total_tokens": 267,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 41,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

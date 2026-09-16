@@ -1,0 +1,38 @@
+{
+  "id": "H200_1648c044c0",
+  "arm": "OPQ_H5_CYC",
+  "item": 81,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_81/prompt.txt",
+  "pred": "Dubai",
+  "raw": "ANSWER_PLAIN[H200_1648c044c0]: Dubai",
+  "elapsed_s": 2.851,
+  "utc": "2026-09-16T08:42:18.139958+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfVXyvmGmBFi0JN5kxMhmSuhwABZ",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548135,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 80,
+    "prompt_tokens": 159,
+    "total_tokens": 239,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 56,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,38 @@
+{
+  "id": "H200_c7e48de0db",
+  "arm": "OPQ_H5_CYC",
+  "item": 53,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_53/prompt.txt",
+  "pred": "Neuss",
+  "raw": "ANSWER_PLAIN[H200_c7e48de0db]: Neuss",
+  "elapsed_s": 2.539,
+  "utc": "2026-09-16T08:42:07.340249+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfVNAkuTBrAbmgM8nCGKRX68Brl7",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548125,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 60,
+    "prompt_tokens": 184,
+    "total_tokens": 244,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 35,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

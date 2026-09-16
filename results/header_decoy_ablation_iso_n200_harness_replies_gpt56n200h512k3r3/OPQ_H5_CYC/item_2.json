@@ -1,0 +1,38 @@
+{
+  "id": "H200_938363cb4d",
+  "arm": "OPQ_H5_CYC",
+  "item": 2,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_2/prompt.txt",
+  "pred": "Maputo",
+  "raw": "ANSWER_PLAIN[H200_938363cb4d]: Maputo",
+  "elapsed_s": 6.14,
+  "utc": "2026-09-16T08:44:01.028871+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfX9wlqO7CLY8s2FtJ0wBzL4CGSA",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548235,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 204,
+    "prompt_tokens": 167,
+    "total_tokens": 371,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 180,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

@@ -1,0 +1,38 @@
+{
+  "id": "H200_16e2a18f68",
+  "arm": "OPQ_H5_CYC",
+  "item": 15,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_15/prompt.txt",
+  "pred": "F_rth",
+  "raw": "ANSWER_PLAIN[H200_16e2a18f68]: F_rth",
+  "elapsed_s": 2.721,
+  "utc": "2026-09-16T08:44:01.738728+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfXDcI0hfSJmZ0iolx1fFLj2WsY9",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548239,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 88,
+    "prompt_tokens": 191,
+    "total_tokens": 279,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 61,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}

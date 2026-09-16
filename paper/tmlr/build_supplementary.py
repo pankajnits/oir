@@ -123,9 +123,12 @@ Ignored megabyte packs (`longctx_1m*`) and local weight files (`*.pt`) are
 not in this zip.
 
 Primary OpenAI n=200 locks: `results/factorial_2x2_iso_n200_gpt56n200.json`
-and `results/header_decoy_ablation_iso_n200_gpt56n200abl.json`. The 512-token
-H5-cyclic arm is `gpt56n200h512` (other arms in that file are missing, not
-scores). n=32 August locks are unchanged.
+(named-arm **38/200**) and `results/header_decoy_ablation_iso_n200_gpt56n200abl.json`.
+The 512-token H5-cyclic arm is `gpt56n200h512` (**134/200**; other arms in that
+file are missing, not scores). Alias k=3 does not replace those locks:
+`gpt56n200k3r2` / `gpt56n200k3r3` (**46/200**, **43/200**) and
+`gpt56n200h512k3r2` / `gpt56n200h512k3r3` (**130/200**, **127/200**).
+n=32 August locks are unchanged. Verify with `shasum -c results/SHA256SUMS`.
 
 Reproduce without an API: `SCIENTIST.md` and `bench/README.md`.
 Composer/Grok cells used a vendor agent SDK, not the OpenAI API.

@@ -1,0 +1,38 @@
+{
+  "id": "H200_2c1d7cf2fe",
+  "arm": "OPQ_H5_CYC",
+  "item": 89,
+  "prompt_path": "runs/header_decoy_ablation_iso_n200/OPQ_H5_CYC/item_89/prompt.txt",
+  "pred": "Odense",
+  "raw": "ANSWER_PLAIN[H200_2c1d7cf2fe]: Odense",
+  "elapsed_s": 1.75,
+  "utc": "2026-09-16T08:44:25.599992+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOfXcDIxPdIHa5HCKqrHbTLOI4TDB",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789548264,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 57,
+    "prompt_tokens": 199,
+    "total_tokens": 256,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 30,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "attempts": 1
+}
