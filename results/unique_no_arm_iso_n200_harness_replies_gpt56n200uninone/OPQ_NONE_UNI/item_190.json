@@ -1,0 +1,35 @@
+{
+  "id": "UNA_f9deb790e7",
+  "arm": "OPQ_NONE_UNI",
+  "item": 190,
+  "prompt_path": "runs/unique_no_arm_iso_n200/OPQ_NONE_UNI/item_190/prompt.txt",
+  "pred": "Bydgoszcz",
+  "raw": "ANSWER_PLAIN[UNA_f9deb790e7]: Bydgoszcz",
+  "elapsed_s": 1.87,
+  "utc": "2026-09-16T10:42:57.633358+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOhOKJmmODVzlDuvhox8hIWFKW3LI",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789555376,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 157,
+    "total_tokens": 176,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

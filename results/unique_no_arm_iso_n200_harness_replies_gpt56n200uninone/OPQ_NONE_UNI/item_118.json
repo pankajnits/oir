@@ -1,0 +1,35 @@
+{
+  "id": "UNA_141d730db6",
+  "arm": "OPQ_NONE_UNI",
+  "item": 118,
+  "prompt_path": "runs/unique_no_arm_iso_n200/OPQ_NONE_UNI/item_118/prompt.txt",
+  "pred": "Goole",
+  "raw": "ANSWER_PLAIN[UNA_141d730db6]: Goole",
+  "elapsed_s": 2.274,
+  "utc": "2026-09-16T10:42:42.788157+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOhO42iKd45Ifsy1oxdVhMp3ua586",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789555360,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 17,
+    "prompt_tokens": 143,
+    "total_tokens": 160,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

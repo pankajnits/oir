@@ -180,6 +180,11 @@ def test_n200_constant_decoy_is_curve_not_cogent():
     tails = Counter(c["decoy_hq"]["CRV"] for c in h["cases"])
     assert tails == {"San_Jose": 199, "London": 1}
     assert all(c["gold"] != c["decoy_hq"]["CRV"] for c in h["cases"])
+    assert all(c["gold"] != c["decoy_hq"]["CYC"] for c in h["cases"])
+    n32 = json.loads((ROOT / "results/header_decoy_ablation_iso_harness.json").read_text())
+    assert all(c["gold"] != c["decoy_hq"]["CYC"] for c in n32["cases"])
+    assert all(c["gold"] != c["decoy_hq"]["CRV"] for c in n32["cases"])
+    assert {c["decoy_hq"]["CRV"] for c in n32["cases"]} == {"Washington_DC"}
     n32_prompt = (ROOT / "runs/header_decoy_ablation_iso/OPQ_NONE_CRV/item_0/prompt.txt").read_text()
     assert "Cogent_Communications" in n32_prompt
     n200_prompt = (ROOT / "runs/header_decoy_ablation_iso_n200/OPQ_NONE_CRV/item_0/prompt.txt").read_text()
@@ -196,3 +201,134 @@ def test_openai_k_sweep_is_29_29_28_27_28():
     assert [s[f"K{k}"]["score"] for k in range(1, 6)] == [
         "29/32", "29/32", "28/32", "27/32", "28/32",
     ]
+
+
+ARM_LINES = {
+    "ENG_UNIQUE": "ARM ENG_UNIQUE: English relations; one 2-hop from start.",
+    "ENG_AMBIG": "ARM ENG_AMBIG: English relations; two 2-hops from start.",
+    "OPAQUE_UNIQUE": "ARM OPAQUE_UNIQUE: opaque relations, English entities; one 2-hop from start.",
+    "OPAQUE_AMBIG": "ARM OPAQUE_AMBIG: opaque relations, English entities; two 2-hops from start.",
+    "OPAQUE_AMBIG_PLAN": "ARM OPAQUE_AMBIG_PLAN: same graph as OPAQUE_AMBIG plus explicit relation sequence.",
+}
+
+
+def test_wiki_h5_named_arm_lines_match_harness():
+    for stem in ("factorial_2x2_iso", "factorial_2x2_iso_n200"):
+        for arm, line in ARM_LINES.items():
+            text = (ROOT / "runs" / stem / arm / "item_0" / "prompt.txt").read_text()
+            assert line in text, (stem, arm)
+
+
+def test_curve_decoy_skips_same_company_hq_person():
+    import sys
+
+    sys.path.insert(0, str(ROOT / "harness"))
+    from header_decoy_ablation_iso import curve_decoy  # noqa: E402
+
+    recs = load_json_records(WIKI)
+    gold = recs[0]
+    decoy = curve_decoy(gold, recs)
+    assert decoy["company"] != gold["company"]
+    assert decoy["hq"] != gold["hq"]
+    assert decoy["person"] != gold["person"]
+    assert decoy["hq"] == "London"
+
+
+def test_n200_no_arm_cyclic_english_vs_opaque_mcnemar_25_vs_2():
+    import sys
+    from math import comb
+
+    sys.path.insert(0, str(ROOT / "harness"))
+    from header_decoy_ablation_iso import classify, first_pred  # noqa: E402
+
+    h = json.loads((ROOT / "results/header_decoy_ablation_iso_n200_harness.json").read_text())
+    reply = ROOT / "results/header_decoy_ablation_iso_n200_harness_replies_gpt56n200abl"
+    eng_only = opq_only = 0
+    for i, case in enumerate(h["cases"]):
+        hits = {}
+        for arm in ("ENG_NONE_CYC", "OPQ_NONE_CYC"):
+            text = (reply / arm / f"item_{i}.txt").read_text()
+            kind, pred = classify(text), first_pred(text)
+            incomplete = kind in ("error", "no_output", "legacy_empty")
+            assert not incomplete
+            hits[arm] = pred == case["gold"]
+        if hits["ENG_NONE_CYC"] and not hits["OPQ_NONE_CYC"]:
+            eng_only += 1
+        elif hits["OPQ_NONE_CYC"] and not hits["ENG_NONE_CYC"]:
+            opq_only += 1
+    assert (eng_only, opq_only) == (25, 2)
+    n = eng_only + opq_only
+    p = min(1.0, 2 * sum(comb(n, j) for j in range(min(eng_only, opq_only) + 1)) / 2**n)
+    assert abs(p - 5.65e-6) < 2e-8
+
+
+def test_paper_tex_named_arm_vs_no_arm_wording():
+    tex_path = ROOT / "paper/arxiv_upload/main.tex"
+    if not tex_path.is_file():
+        return
+    tex = tex_path.read_text()
+    assert "varies only relation" not in tex
+    assert "recover joins rather than guesses" not in tex
+    assert r"McNemar $25$ vs.\ $2$" in tex
+    assert r"H5 vs.\ no-ARM constant McNemar $4$ vs.\ $111$" in tex
+    assert r"does not share company" in tex
+    assert "ARM ENG\\_UNIQUE" in tex or r"\texttt{ENG\_UNIQUE}" in tex
+    assert "512 tokens" in tex
+    assert "cyclic-decoy English two-path" in tex
+    h8 = tex[tex.find("H8. Prompt surface") : tex.find("H8. Prompt surface") + 400]
+    assert "95" not in h8
+    assert "4" in h8 and "111" in h8
+    assert "Without Relation Names" in tex
+    assert "Without Lexical Cues" not in tex
+    assert "74 become" in tex and "21 take the constant decoy" in tex
+    assert r"Two-path K2 and no-ARM were not run at 512" in tex
+    assert tex.count("Two-path K2 and no-ARM were not run at 512") == 2
+    assert "K2 and no-ARM were not run at 512" in tex
+    assert r"hashed-id no-ARM $200/200$ at 512 tokens" in tex
+    assert r"hashed-id no-ARM unique $200/200$ at 512 tokens" in tex
+    assert "municipality of the Czech Republic" in tex
+    assert "place with town rights" in tex
+    assert "city of Japan" not in tex
+    assert "city in Canada" not in tex
+
+
+def test_unique_no_arm_same_context_and_openai_lock():
+    def ctx(path: Path) -> str:
+        return path.read_text().split("CONTEXT:\n", 1)[1].rstrip("\n")
+
+    n32_named = ROOT / "runs/factorial_2x2_iso/OPAQUE_UNIQUE/item_0/prompt.txt"
+    n32_none = ROOT / "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_0/prompt.txt"
+    assert ctx(n32_named) == ctx(n32_none)
+    body = n32_none.read_text()
+    assert "ARM " not in body
+    assert "OPAQUE_UNIQUE" not in body
+    n200_named = ROOT / "runs/factorial_2x2_iso_n200/OPAQUE_UNIQUE/item_0/prompt.txt"
+    n200_none = ROOT / "runs/unique_no_arm_iso_n200/OPQ_NONE_UNI/item_0/prompt.txt"
+    assert ctx(n200_named) == ctx(n200_none)
+    n32 = json.loads((ROOT / "results/unique_no_arm_iso_gpt56uninone.json").read_text())
+    assert n32["summary"]["OPQ_NONE_UNI"]["score"] == "27/32"
+    assert n32["summary"]["OPQ_NONE_UNI"]["unknown"] == 3
+    noncity = {
+        "Broadway",
+        "NRK_Marienlyst",
+        "Fox_Plaza",
+        "CNN_Center",
+        "Lod_Railway_Station",
+        "New_Jersey",
+    }
+    city = [r for r in n32["rows"] if r["gold"] not in noncity]
+    assert len(city) == 26 and all(r["ok"] for r in city)
+    n200 = json.loads((ROOT / "results/unique_no_arm_iso_n200_gpt56n200uninone.json").read_text())
+    assert n200["summary"]["OPQ_NONE_UNI"]["score"] == "200/200"
+    sidecar = json.loads(
+        (
+            ROOT
+            / "results/unique_no_arm_iso_n200_harness_replies_gpt56n200uninone"
+            / "OPQ_NONE_UNI"
+            / "item_0.json"
+        ).read_text()
+    )
+    assert sidecar["request"]["max_completion_tokens"] == 512
+    assert "reasoning_effort" not in sidecar["request"]
+    named = json.loads((ROOT / "results/factorial_2x2_iso_n200_gpt56n200.json").read_text())
+    assert named["summary"]["OPAQUE_UNIQUE"]["score"] == "200/200"

@@ -157,7 +157,7 @@ def main():
             ax.legend(frameon=False, loc="upper right", fontsize=7.5)
 
     fig, axes = plt.subplots(1, 2, figsize=(9.6, 3.35), constrained_layout=True, sharey=True)
-    stacked_2x2(axes[0], fact, "n=32 discovery", ylabel=True, legend=False)
+    stacked_2x2(axes[0], fact, "n=32 named-arm lock", ylabel=True, legend=False)
     stacked_2x2(axes[1], fact200, "n=200 city-typed", ylabel=False, legend=True)
     fig.savefig(OUT / "fig1_matched_2x2.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig1_matched_2x2.png", dpi=200, bbox_inches="tight")
@@ -299,7 +299,7 @@ def main():
     fig, axes = plt.subplots(1, 3, figsize=(11.4, 3.5), constrained_layout=True)
 
     ax = axes[0]
-    labs = ["Plain\nNL", "Opaque-rel\nNL", "Sealed\nplan", "Legend\nNL"]
+    labs = ["Plain\nNL", "Free sealed\nEnglish", "Sealed\nplan", "Legend\nNL"]
     keys = ["PLAIN_NL", "SPAN_NL", "SEAL_PROG", "LEGEND_NL"]
     texts = [opa[k]["score"] for k in keys]
     vals = [frac(t) for t in texts]

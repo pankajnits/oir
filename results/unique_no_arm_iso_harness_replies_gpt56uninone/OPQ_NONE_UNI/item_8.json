@@ -1,0 +1,35 @@
+{
+  "id": "UNA_caa921d107",
+  "arm": "OPQ_NONE_UNI",
+  "item": 8,
+  "prompt_path": "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_8/prompt.txt",
+  "pred": "Kansas_City",
+  "raw": "ANSWER_PLAIN[UNA_caa921d107]: Kansas_City",
+  "elapsed_s": 1.552,
+  "utc": "2026-09-16T10:41:39.994496+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOhN4lYVNhIILn2OCzCiuxGMePWJA",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789555298,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 17,
+    "prompt_tokens": 165,
+    "total_tokens": 182,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

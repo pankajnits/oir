@@ -1,0 +1,35 @@
+{
+  "id": "UNA_26e7dfca48",
+  "arm": "OPQ_NONE_UNI",
+  "item": 45,
+  "prompt_path": "runs/unique_no_arm_iso_n200/OPQ_NONE_UNI/item_45/prompt.txt",
+  "pred": "Villeurbanne",
+  "raw": "ANSWER_PLAIN[UNA_26e7dfca48]: Villeurbanne",
+  "elapsed_s": 2.118,
+  "utc": "2026-09-16T10:42:27.264043+00:00",
+  "request": {
+    "model": "gpt-5.6-sol",
+    "max_completion_tokens": 512
+  },
+  "response_id": "chatcmpl-EOhNpIVIjQkylngSRE32WfcBz3jVw",
+  "returned_model": "gpt-5.6-sol",
+  "created": 1789555345,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 157,
+    "total_tokens": 176,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    }
+  },
+  "attempts": 1
+}

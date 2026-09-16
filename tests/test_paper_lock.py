@@ -263,6 +263,8 @@ def test_sha256sums_lists_tracked_json_and_replies():
         "results/header_decoy_ablation_iso_n200_gpt56n200h512k3r3.json",
         "results/factorial_2x2_iso_n200_gpt56n200.json",
         "results/header_decoy_ablation_iso_n200_gpt56n200h512.json",
+        "results/unique_no_arm_iso_gpt56uninone.json",
+        "results/unique_no_arm_iso_n200_gpt56n200uninone.json",
     ):
         assert rel in listed, rel
     git_dir = ROOT / ".git"
@@ -278,3 +280,24 @@ def test_sha256sums_lists_tracked_json_and_replies():
     }
     assert set(listed) == tracked_evidence
     # git ls-files already omits gitignored paths; do not spawn check-ignore per file.
+
+
+def test_arxiv_tex_does_not_collapse_h8_or_named_arm():
+    tex_path = ROOT / "paper/arxiv_upload/main.tex"
+    if not tex_path.is_file():
+        pytest.skip("named TeX omitted from supplementary zip")
+    tex = tex_path.read_text()
+    assert "varies only relation" not in tex
+    assert "recover joins rather than guesses" not in tex
+    assert r"McNemar $25$ vs.\ $2$" in tex
+    start = tex.find("H8. Prompt surface")
+    assert start != -1
+    h8 = tex[start : start + 450]
+    assert "95" not in h8
+    assert r"$4$ vs.\ $111$" in h8
+    assert "Without Relation Names" in tex
+    assert "Without Lexical Cues" not in tex
+    assert r"Two-path K2 and no-ARM were not run at 512" in tex
+    assert r"hashed-id no-ARM $200/200$ at 512 tokens" in tex
+    assert "municipality of the Czech Republic" in tex
+    assert "city of Japan" not in tex

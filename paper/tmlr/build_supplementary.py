@@ -125,7 +125,9 @@ not in this zip.
 Primary OpenAI n=200 locks: `results/factorial_2x2_iso_n200_gpt56n200.json`
 (named-arm **38/200**) and `results/header_decoy_ablation_iso_n200_gpt56n200abl.json`.
 The 512-token H5-cyclic arm is `gpt56n200h512` (**134/200**; other arms in that
-file are missing, not scores). Alias k=3 does not replace those locks:
+file are missing, not scores). Hashed-id unique-path no ARM (16 Sep, 512 tokens):
+`gpt56n200uninone` (**200/200**); n=32 `gpt56uninone` (**27/32**, city **26/26**).
+Alias k=3 does not replace those locks:
 `gpt56n200k3r2` / `gpt56n200k3r3` (**46/200**, **43/200**) and
 `gpt56n200h512k3r2` / `gpt56n200h512k3r3` (**130/200**, **127/200**).
 n=32 August locks are unchanged. Verify with `shasum -c results/SHA256SUMS`.

@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 Measurement protocol and HMAC middle layer for the paper
-*When Can Language Models Join Without Lexical Cues?*
+*When Can Language Models Join Without Relation Names?*
 
 **Code, isolation quizzes (`runs/`), and locked scores (`results/`):**
 [github.com/pankajnits/oir](https://github.com/pankajnits/oir)
@@ -41,10 +41,10 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 |------|--------|
 | Unique path, both-opaque (entities+relations sealed) | **32/32** all three families |
 | Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; Composer **27/32**; Grok **30/32** |
-| City-typed **n=200** freeze (OpenAI; every HQ is Wikidata city P31, QIDs live-checked) | Unique English/opaque **200/200**, English two-path **199/200**, named-arm opaque two-path **38/200** (UNK 151, decoy 11; Wilson [0.14, 0.25]), plan **200/200**. |
+| City-typed **n=200** freeze (OpenAI; every HQ is Wikidata city P31, QIDs live-checked) | Unique English/opaque **200/200**, English two-path **199/200**, named-arm opaque two-path **38/200** (UNK 151, decoy 11; Wilson [0.14, 0.25]), plan **200/200**. Hashed-id unique-path no ARM **200/200** at 512 tokens (not matched to two-path no-ARM at 4096/medium). |
 | Same freeze, 512-token case-id (ARM kept) | Named-arm **38/200** vs hashed-id H5-cyclic **134/200** (UNK 44, decoy 20, other 1, `NO_OUTPUT` 1). Alias k=3 (does not replace those locks): named-arm **38/46/43** vs hashed-id **134/130/127**. |
 | Same freeze, listing shuffle (OpenAI) | Opaque two-path **59/200** (gold-first **25/100** vs decoy-first **34/100**, two-proportion $p{\approx}0.16$). |
-| Header × decoy n=200, hashed ids, 4096/medium (OpenAI) | Cyclic/constant: no ARM **174/151**, H5 **129/44**, K2 **179/144**. English no ARM cyclic **197/200**. |
+| Header × decoy n=200, hashed ids, 4096/medium (OpenAI) | Cyclic/constant: no ARM **174/151**, H5 **129/44**, K2 **179/144**. English no ARM cyclic **197/200** (McNemar vs opaque **25 vs 2**). H5 vs no-ARM constant McNemar **4 vs 111**. |
 | WikiMovies Condition A/B n=200 (OpenAI) | A two-path **122/200** (Wiki-H5 topology ARM, not the A100 `n=100` banner; not a resample of **96/100**); B unique **200/200**, two-path **7/200** |
 | Both-opaque two-path n=200 (OpenAI) | unique **200/200**, two-path **12/200**, plan **200/200** |
 | Dual / CEO-NL n=200 (OpenAI) | Dual matched **200/200**, novel **2/200**, plan **200/200**. CEO-NL sealed plan **200/200**, free sealed English **0/200**. |
@@ -54,9 +54,9 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 | Header × decoy n=32, hashed ids, 4096/medium | Cyclic/constant: no ARM **25/27**, H5 **20/10**, K2 **30/26**. Composer H5 cyclic **6/32** vs no ARM cyclic **21/32**. Grok H5/K2 **0/32**, no ARM cyclic **6/32**, English no ARM **24/32**. |
 | Same graphs, Composer / Grok two-path | Composer English **26/32** → opaque **10/32**; Grok English **4/32** (UNK 28) → opaque **1/32** |
 | WikiMovies Condition A n=100 (OpenAI) | two-path **96/100**; on 32 names shared with A32, **29/32** (A32 was **17/32**) |
-| WikiMovies Condition B n=100 (OpenAI) | unique **100/100**, two-path **3/100** |
+| WikiMovies Condition B n=100 (OpenAI) | unique **100/100**, two-path **3/100** (hashed verbs + two-hop ARM; archived banner **25/100**) |
 | Both-opaque two-path (OpenAI / Composer / Grok) | **1/32 / 0/32 / 0/32** |
-| Dual-path | isolation matched **32/32**, novel **0/32** (Composer isolation UNKNOWN is a sealed-demo helper; free-form `composer25ff` novel-asymmetric is decoy **32/32**) |
+| Dual-path | isolation matched **32/32** under both noise regimes; novel asymmetric **0/32** (decoy 8); novel balanced **0/32** (decoy 0). Composer isolation UNKNOWN is a sealed-demo helper; free-form `composer25ff` novel-asymmetric is decoy **32/32**. |
 | No written hop: protocol / equality recipe | **32/32** all three |
 | No written hop: schema list / broken match | **0/32** all three |
 | Written hop (LLM) | OpenAI/Grok **32/32**; Composer **28/32** (control) |

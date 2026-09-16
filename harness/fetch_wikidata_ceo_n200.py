@@ -46,8 +46,8 @@ CITY_QIDS = (
     "Q1637706",  # city with millions of inhabitants
     "Q3957",     # town
     "Q5119",     # capital city
-    "Q13539802", # city of Japan
-    "Q5153359",  # city in Canada
+    "Q13539802", # place with town rights and privileges
+    "Q5153359",  # municipality of the Czech Republic
     "Q7930989",  # city/town
     "Q1549591",
 )

@@ -29,7 +29,7 @@ PREAMBLE = r"""\documentclass[10pt]{article} % For LaTeX2e
 \usepackage{url}
 
 \hypersetup{
-  pdftitle={When Can Language Models Join Without Lexical Cues?},
+  pdftitle={When Can Language Models Join Without Relation Names?},
   pdfauthor={Anonymous authors},
   pdfsubject={Unique-Path Traversal versus End-to-End Accuracy under Path Ambiguity},
   colorlinks=false,
@@ -40,7 +40,7 @@ PREAMBLE = r"""\documentclass[10pt]{article} % For LaTeX2e
 \emergencystretch=2em
 
 \title{When Can Language Models Join\\
-Without Lexical Cues?\\
+Without Relation Names?\\
 Unique-Path Traversal versus End-to-End Accuracy\\
 under Path Ambiguity%
 \thanks{Large language models were used as writing assistants for grammar

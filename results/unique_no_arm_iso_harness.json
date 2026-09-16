@@ -1,0 +1,403 @@
+{
+  "n": 32,
+  "protocol": "isolation",
+  "suite": "unique_no_arm_iso",
+  "source": "data/real/wikidata_ceo_hops_v2.json",
+  "keys": "per-item HMAC on relation atoms only; entities remain English",
+  "start_in_question": true,
+  "note": "Unique-path opaque graphs; hashed ids; no ARM. Same HMAC CONTEXT as OPAQUE_UNIQUE. Does not rewrite factorial prompts or scores.",
+  "arms": {
+    "OPQ_NONE_UNI": {
+      "ids": [
+        "UNA_c2227f8649",
+        "UNA_5c0910a8d0",
+        "UNA_b894592e27",
+        "UNA_93fdcfaf12",
+        "UNA_8a70ca64f4",
+        "UNA_1b8127bc31",
+        "UNA_8d969ccbd4",
+        "UNA_f150cc61dc",
+        "UNA_caa921d107",
+        "UNA_2a1b86c83c",
+        "UNA_fe16056e1f",
+        "UNA_2e035a1aeb",
+        "UNA_01a1035d33",
+        "UNA_386fe89c6c",
+        "UNA_f805a91849",
+        "UNA_7142d5a47d",
+        "UNA_6dcfc5774c",
+        "UNA_79b52ddac4",
+        "UNA_04fd7f5fc1",
+        "UNA_929ab729fe",
+        "UNA_abf1c3f5f1",
+        "UNA_2dceea5ad4",
+        "UNA_39d637b927",
+        "UNA_91f1e834d0",
+        "UNA_9bd90d9393",
+        "UNA_9c746f5952",
+        "UNA_c9c1a8e996",
+        "UNA_55d430234e",
+        "UNA_fd26c03e78",
+        "UNA_97214bb69b",
+        "UNA_5734d3cea2",
+        "UNA_b61e784146"
+      ],
+      "item_paths": [
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_0/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_1/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_2/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_3/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_4/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_5/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_6/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_7/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_8/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_9/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_10/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_11/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_12/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_13/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_14/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_15/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_16/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_17/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_18/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_19/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_20/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_21/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_22/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_23/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_24/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_25/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_26/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_27/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_28/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_29/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_30/prompt.txt",
+        "runs/unique_no_arm_iso/OPQ_NONE_UNI/item_31/prompt.txt"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "i": 0,
+      "person": "Michael_Eisner",
+      "company": "The_Walt_Disney_Company",
+      "gold": "Burbank",
+      "decoy_hq": "Kansas_City",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_c2227f8649"
+      }
+    },
+    {
+      "i": 1,
+      "person": "Landon_H_Rowland",
+      "company": "Kansas_City_Southern",
+      "gold": "Kansas_City",
+      "decoy_hq": "Broadway",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_5c0910a8d0"
+      }
+    },
+    {
+      "i": 2,
+      "person": "Lucian_Grainge",
+      "company": "Universal_Music_Group",
+      "gold": "Broadway",
+      "decoy_hq": "NRK_Marienlyst",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_b894592e27"
+      }
+    },
+    {
+      "i": 3,
+      "person": "Vibeke_Frst_Haugen",
+      "company": "Norwegian_Broadcasting_Corporation",
+      "gold": "NRK_Marienlyst",
+      "decoy_hq": "Warsaw",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_93fdcfaf12"
+      }
+    },
+    {
+      "i": 4,
+      "person": "Krzysztof_Mamiski",
+      "company": "Polish_State_Railways",
+      "gold": "Warsaw",
+      "decoy_hq": "Stockholm",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_8a70ca64f4"
+      }
+    },
+    {
+      "i": 5,
+      "person": "David_Lagerholm",
+      "company": "Storstockholms_Lokaltrafik",
+      "gold": "Stockholm",
+      "decoy_hq": "Burbank",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_1b8127bc31"
+      }
+    },
+    {
+      "i": 6,
+      "person": "Bob_Iger",
+      "company": "The_Walt_Disney_Company",
+      "gold": "Burbank",
+      "decoy_hq": "Zurich",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_8d969ccbd4"
+      }
+    },
+    {
+      "i": 7,
+      "person": "Sergio_Ermotti",
+      "company": "UBS",
+      "gold": "Zurich",
+      "decoy_hq": "Kansas_City",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_f150cc61dc"
+      }
+    },
+    {
+      "i": 8,
+      "person": "Samuel_W_Fordyce",
+      "company": "Kansas_City_Southern",
+      "gold": "Kansas_City",
+      "decoy_hq": "New_Jersey",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_caa921d107"
+      }
+    },
+    {
+      "i": 9,
+      "person": "Steve_Weed",
+      "company": "WaveDivision_Holdings_LLC",
+      "gold": "New_Jersey",
+      "decoy_hq": "Oklahoma_City",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_2a1b86c83c"
+      }
+    },
+    {
+      "i": 10,
+      "person": "David_Green",
+      "company": "Hobby_Lobby",
+      "gold": "Oklahoma_City",
+      "decoy_hq": "San_Antonio",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_fe16056e1f"
+      }
+    },
+    {
+      "i": 11,
+      "person": "Stuart_Parker",
+      "company": "USAA",
+      "gold": "San_Antonio",
+      "decoy_hq": "Montabaur",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_2e035a1aeb"
+      }
+    },
+    {
+      "i": 12,
+      "person": "Achim_Wei",
+      "company": "Ionos",
+      "gold": "Montabaur",
+      "decoy_hq": "Stockholm",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_01a1035d33"
+      }
+    },
+    {
+      "i": 13,
+      "person": "Anne_Lagercrantz",
+      "company": "Sveriges_Television",
+      "gold": "Stockholm",
+      "decoy_hq": "Warsaw",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_386fe89c6c"
+      }
+    },
+    {
+      "i": 14,
+      "person": "Beata_KozowskaChya",
+      "company": "Powszechny_Zakad_Ubezpiecze",
+      "gold": "Warsaw",
+      "decoy_hq": "Richmond",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_f805a91849"
+      }
+    },
+    {
+      "i": 15,
+      "person": "David_J_Wright",
+      "company": "Globcal_International",
+      "gold": "Richmond",
+      "decoy_hq": "Helsinki",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_7142d5a47d"
+      }
+    },
+    {
+      "i": 16,
+      "person": "Topi_Manner",
+      "company": "Elisa",
+      "gold": "Helsinki",
+      "decoy_hq": "Rome",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_6dcfc5774c"
+      }
+    },
+    {
+      "i": 17,
+      "person": "Luigi_Ferraris",
+      "company": "Ferrovie_dello_Stato_Italiane",
+      "gold": "Rome",
+      "decoy_hq": "New_York_City",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_79b52ddac4"
+      }
+    },
+    {
+      "i": 18,
+      "person": "David_Zaslav",
+      "company": "Warner_Bros_Discovery",
+      "gold": "New_York_City",
+      "decoy_hq": "Kansas_City",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_04fd7f5fc1"
+      }
+    },
+    {
+      "i": 19,
+      "person": "William_N_Deramus_Jr",
+      "company": "Kansas_City_Southern",
+      "gold": "Kansas_City",
+      "decoy_hq": "Chesapeake",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_929ab729fe"
+      }
+    },
+    {
+      "i": 20,
+      "person": "Macon_Foscue_Brock_Jr",
+      "company": "Dollar_Tree",
+      "gold": "Chesapeake",
+      "decoy_hq": "Oklahoma_City",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_abf1c3f5f1"
+      }
+    },
+    {
+      "i": 21,
+      "person": "Frank_Love",
+      "company": "Loves_Travel_Stops__Country_Stores",
+      "gold": "Oklahoma_City",
+      "decoy_hq": "Coral_Gables",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_2dceea5ad4"
+      }
+    },
+    {
+      "i": 22,
+      "person": "Robert_E_Sanchez",
+      "company": "Ryder",
+      "gold": "Coral_Gables",
+      "decoy_hq": "Bochum",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_39d637b927"
+      }
+    },
+    {
+      "i": 23,
+      "person": "Luka_Mucic",
+      "company": "Vonovia",
+      "gold": "Bochum",
+      "decoy_hq": "Amsterdam",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_91f1e834d0"
+      }
+    },
+    {
+      "i": 24,
+      "person": "Freddy_Heineken",
+      "company": "Heineken_International",
+      "gold": "Amsterdam",
+      "decoy_hq": "Burbank",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_9bd90d9393"
+      }
+    },
+    {
+      "i": 25,
+      "person": "Raymond_Watson",
+      "company": "The_Walt_Disney_Company",
+      "gold": "Burbank",
+      "decoy_hq": "Fox_Plaza",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_9c746f5952"
+      }
+    },
+    {
+      "i": 26,
+      "person": "Stacey_Snider",
+      "company": "20th_Century_Studios",
+      "gold": "Fox_Plaza",
+      "decoy_hq": "CNN_Center",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_c9c1a8e996"
+      }
+    },
+    {
+      "i": 27,
+      "person": "John_K_Martin_Jr",
+      "company": "Turner_Broadcasting_System",
+      "gold": "CNN_Center",
+      "decoy_hq": "Swindon",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_55d430234e"
+      }
+    },
+    {
+      "i": 28,
+      "person": "Richard_Gordon_Handover",
+      "company": "WHSmith",
+      "gold": "Swindon",
+      "decoy_hq": "Cologne",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_fd26c03e78"
+      }
+    },
+    {
+      "i": 29,
+      "person": "Tom_Buhrow",
+      "company": "Westdeutscher_Rundfunk",
+      "gold": "Cologne",
+      "decoy_hq": "Hartford",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_97214bb69b"
+      }
+    },
+    {
+      "i": 30,
+      "person": "Mark_T_Bertolini",
+      "company": "Aetna",
+      "gold": "Hartford",
+      "decoy_hq": "Lod_Railway_Station",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_5734d3cea2"
+      }
+    },
+    {
+      "i": 31,
+      "person": "Moshe_Zana",
+      "company": "Israel_Railways",
+      "gold": "Lod_Railway_Station",
+      "decoy_hq": "Burbank",
+      "ids": {
+        "OPQ_NONE_UNI": "UNA_b61e784146"
+      }
+    }
+  ]
+}
