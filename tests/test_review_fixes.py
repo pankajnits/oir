@@ -277,3 +277,20 @@ def test_header_decoy_composer_grok_replies_are_not_errors():
         kinds = {rp.classify(p.read_text()) for p in files}
         assert "error" not in kinds, (tag, kinds)
 
+
+def test_tmlr_zip_anonymizer_does_not_glue_issues_path():
+    """Longer GitHub URLs must be replaced before the repo root, or /issues glues on."""
+    src = (ROOT / "paper/tmlr/build_supplementary.py").read_text()
+    issues = src.find("https://github.com/pankajnits/oir/issues")
+    root = src.find('("https://github.com/pankajnits/oir"')
+    assert 0 <= issues < root
+    glued = "(this supplementary archive)" + "/issues"
+    assert glued in src
+    sample = "Issues: https://github.com/pankajnits/oir/issues"
+    fixed = sample.replace(
+        "https://github.com/pankajnits/oir/issues",
+        "this archive has no public issue tracker",
+    )
+    assert "this archive has no public issue tracker" in fixed
+    assert "/issues" not in fixed
+

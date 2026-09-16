@@ -309,7 +309,8 @@ def test_arxiv_tex_does_not_collapse_h8_or_named_arm():
     assert "OO\\_AMBIG" in tex
     assert r"\texttt{F200\_}" in tex
     assert "vendor alias" in tex
-    assert "Hypothesis H5 in this table" in tex
+    assert "Hypothesis H5 in this table" not in tex
+    assert "row H5 is the opacity" in tex
     assert "2 same-type 2-hop(s) from start" in tex
     assert "Sign-flip of the H5 interaction" not in tex
     assert r"$n{=}6$ batch" in tex

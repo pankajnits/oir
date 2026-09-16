@@ -57,6 +57,10 @@ SKIP_FILE_NAMES = {
 REPLACEMENTS = [
     ("Pankaj Pandey", "Anonymous authors"),
     ("mightypp.nits@gmail.com", "anonymous@openreview"),
+    (
+        "https://github.com/pankajnits/oir/issues",
+        "this archive has no public issue tracker",
+    ),
     ("https://github.com/pankajnits/oir", "(this supplementary archive)"),
     ("github.com/pankajnits/oir", "(this supplementary archive)"),
     ("pankajnits", "anonymous"),
@@ -194,6 +198,7 @@ def main() -> None:
                     "github.com/pankaj",
                     "/Users/",
                     "Pankaj",
+                    "(this supplementary archive)/issues",
                 ):
                     if n in text:
                         leaks.append(f"{arc}: {n}")

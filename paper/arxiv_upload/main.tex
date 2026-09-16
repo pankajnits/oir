@@ -95,12 +95,11 @@ uses readable case ids (named-arm) usually yields \texttt{UNKNOWN}, not
 the decoy: OpenAI $38/200$ gold, \texttt{UNKNOWN} $151$, decoy $11$.
 The same graphs with hashed case ids (ARM line kept) are $134/200$
 (\texttt{UNKNOWN} $44$, decoy $20$).
-Two-path exact-match cannot be attributed to a join over CONTEXT.
+Entity names stay English and we score the answer node, not $(r_1,r_2)$,
+so two-path exact-match cannot be attributed to a join over CONTEXT.
 Dropping the condition header, at 4096 tokens and reasoning effort medium,
 cyclic-decoy English two-path is $197/200$ and opaque two-path is
 $174/200$.
-Unique no-ARM at 512 is not a matched-budget contrast with two-path no-ARM
-at 4096/medium.
 English relation names restore OpenAI with anonymous entities
 (opaque-entity two-path $32/32$ vs.\ both-opaque $1/32$).
 On the primary $2{\times}2$, seals hide relation strings; entity names
@@ -1067,6 +1066,8 @@ $7$ gold / $15$ (Wilson $[0.25,0.70]$; Section~\ref{sec:header}).
 Header$\times$decoy at $n{=}200$ is Table~\ref{tab:headerdecoy200};
 Table~\ref{tab:headerdecoy} is the $n{=}32$ header$\times$decoy cell.
 Two-path K2 and no-ARM were not run at 512.
+Unique no-ARM at 512 is not a matched-budget contrast with two-path no-ARM
+at 4096/medium.
 \textsc{Movie-A32} vs.\ \textsc{Movie-A100} ($17/32$ vs.\ $29/32$) is a
 thinner ARM on WikiMovies; $n{=}200$ Condition~A uses the Wiki-H5 topology
 ARM, not that banner.
@@ -1506,9 +1507,10 @@ not cyclic vs.\ constant (which changes CONTEXT).}
 \label{tab:hyp}
 \end{table}
 
-Hypothesis H5 in this table reports the named-arm \textsc{Wiki-H5} McNemar
-and the no-ARM hashed cyclic contrast; H5 in Section~\ref{sec:header} is
-the ARM header.
+In this table, row H5 is the opacity$\times$ambiguity hypothesis
+(named-arm \textsc{Wiki-H5} McNemar and the no-ARM hashed cyclic contrast).
+The H5 label in Section~\ref{sec:header} is the Wiki-H5 ARM line, not that
+row.
 
 Table~\ref{tab:primary} is the missing-start CEO-NL control, not
 \textsc{Wiki-H5}.

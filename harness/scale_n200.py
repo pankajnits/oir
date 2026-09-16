@@ -197,7 +197,7 @@ def build_header() -> dict:
         "suite": "header_decoy_ablation_iso_n200",
         "source": str(WIKI.relative_to(ROOT)),
         "keys": "same per-item HMAC as Wiki-H5 n=200 (oir-fact-2x2-iso-n200-v1)",
-        "case_ids": "arm-neutral hashes (H200_…); no arm names in Format/ID lines",
+        "case_ids": "hashed case ids (H200_…); no arm names in Format/ID lines",
         "factors": {"header": list(HEADERS), "decoy": ["CYC", "CRV"]},
         "n32_untouched": "runs/header_decoy_ablation_iso/",
         "arms": arms, "cases": cases,

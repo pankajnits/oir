@@ -9,7 +9,7 @@ i+1 in WIKI-H5, but the *first eligible pool record* in K2, which is the same
 route (Cogent_Communications -> Washington_DC) for all 32 items -- (c) the HMAC
 key, and (d) case ids that name the arm (F22_OPAQUE_AMBIG_i, CURVE_K2_i).
 
-This suite holds (c) at the WIKI-H5 per-item key, replaces (d) with arm-neutral
+This suite holds (c) at the WIKI-H5 per-item key, replaces (d) with hashed case
 ids, and crosses (a) x (b):
 
   header  H5    ARM OPAQUE_AMBIG: opaque relations, English entities; two 2-hops from start.
@@ -139,7 +139,7 @@ def build(runs: Path = RUNS, harness_path: Path = HARNESS) -> dict:
         "n": N, "seed": SEED, "protocol": "isolation", "suite": "header_decoy_ablation_iso",
         "source": str(SOURCE.relative_to(ROOT)),
         "keys": "WIKI-H5 per-item HMAC (oir-fact-2x2-iso-v1) on relation atoms; entities English",
-        "case_ids": "arm-neutral hashes (no arm names in Format/ID lines)",
+        "case_ids": "hashed case ids (no arm names in Format/ID lines)",
         "factors": {"header": list(HEADERS), "decoy": ["CYC", "CRV"]},
         "arms": arms, "cases": cases,
     }

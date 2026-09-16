@@ -291,7 +291,8 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "city of Japan" not in tex
     assert "city in Canada" not in tex
     assert r"\texttt{OE\_UNIQUE}" in tex or "ARM OE\\_UNIQUE" in tex
-    assert "Hypothesis H5 in this table" in tex
+    assert "Hypothesis H5 in this table" not in tex
+    assert "row H5 is the opacity" in tex
     assert "2 same-type 2-hop(s) from start" in tex
     assert "Sign-flip of the two-path opacity contrast" in tex
     assert "Sign-flip of the H5 interaction" not in tex
@@ -304,6 +305,7 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert r"$6/3/23$" in tex
     assert "non-exchangeable" not in tex
     assert "cannot be attributed to a join over CONTEXT" in tex
+    assert "Entity names stay English" in tex
     assert "not identified as a sealed join" not in tex
     assert "measurably informed" not in tex
     assert "headline lock plus two later" in tex
@@ -351,11 +353,14 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert r"\citet[§2.2]" not in tex
     assert r"\citet[section 2.2]" in tex
     assert "ARM line kept" in abs_
+    assert "matched-budget" not in abs_
+    assert "Entity names stay English" in abs_
     assert r"gold-first $3/16$" in tex
     conc = tex.split(r"\section{Conclusion}", 1)[1].split(r"\begin{thebibliography}", 1)[0]
     assert "consistent with chance" not in conc
     lim = tex.split(r"\section{Limitations}", 1)[1].split(r"\section{Conclusion}", 1)[0]
     assert "inadmissible" in lim
+    assert "matched-budget" in lim
     assert r"\texttt{LEGEND}" in tex
     assert r"\texttt{ISO\_SILENT}" in tex
     assert "Composer n=12 packaging" not in tex  # title lives in the PNG

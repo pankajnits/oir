@@ -19,7 +19,7 @@
       "n": 32,
       "arms": 7,
       "protocol": "isolation",
-      "keys": "WIKI-H5 per-item HMAC on relations; arm-neutral case ids",
+      "keys": "WIKI-H5 per-item HMAC on relations; hashed case ids",
       "prompts": "runs/header_decoy_ablation_iso",
       "harness": "results/header_decoy_ablation_iso_harness.json",
       "scorer": "harness/header_decoy_ablation_iso.py",
