@@ -62,7 +62,7 @@ def test_wiki_h5_n200_prompts_and_ceiling():
     case0 = h["cases"][0]
     assert case0["person"] in prompt
     assert case0["gold"] in prompt  # English entity in CONTEXT
-    assert f"F200_OPAQUE_AMBIG_0" in prompt
+    assert "F200_OPAQUE_AMBIG_0" in prompt
     assert "two 2-hops from start" in prompt
     for arm in h["arms"]:
         assert len(list((ROOT / "runs/factorial_2x2_iso_n200" / arm).glob("item_*/prompt.txt"))) == 200
@@ -290,7 +290,7 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "place with town rights" in tex
     assert "city of Japan" not in tex
     assert "city in Canada" not in tex
-    assert r"\texttt{OE\_UNIQUE}" in tex
+    assert r"\texttt{OE\_UNIQUE}" in tex or "ARM OE\\_UNIQUE" in tex
     assert "Hypothesis H5 in this table" in tex
     assert "2 same-type 2-hop(s) from start" in tex
     assert "Sign-flip of the two-path opacity contrast" in tex
@@ -302,6 +302,13 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "is not a three-family law" not in tex
     assert "item-level interaction contrast" in tex
     assert r"$6/3/23$" in tex
+    assert "non-exchangeable" not in tex
+    assert "not identified as a sealed join" in tex
+    assert "negative control" in tex
+    assert "no-ARM hashed cyclic 25 vs" in tex
+    assert r"decoy $17$" in tex
+    assert r"$84$--$96$" in tex
+    assert "kadavath" not in tex.lower()
     assert "graph size fixed" not in tex
     assert r"$n{=}6$ batch" in tex
     assert ("/" + "Users/") not in tex
