@@ -317,6 +317,17 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     cap = tex[tex.find("fig3_dualpath.png") : tex.find(r"\label{fig:dualpath}")]
     assert "balanced" not in cap.lower()
     assert "matched" in cap
+    assert tex.count(r"$38/46/43$ vs.\ $134/130/127$") == 1
+    assert tex.count(r"$6/3/3$") == 1
+    assert tex.count(r"$20/21/22$") == 1
+    assert tex.count(r"gaps $96$, $84$, $84$") == 1
+    body, _, app = tex.partition(r"\appendix")
+    assert "gpt56n200" not in body
+    assert "Run-tag manifest" in app
+    assert "headquarters location" in tex
+    assert "chief executive officer" in tex
+    assert "4096 completion tokens" in tex
+    assert "instance of" in tex
 
 
 def test_unique_no_arm_same_context_and_openai_lock():
