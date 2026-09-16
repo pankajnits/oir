@@ -301,3 +301,8 @@ def test_arxiv_tex_does_not_collapse_h8_or_named_arm():
     assert r"hashed-id no-ARM $200/200$ at 512 tokens" in tex
     assert "municipality of the Czech Republic" in tex
     assert "city of Japan" not in tex
+    assert r"\texttt{OE\_UNIQUE}" in tex
+    assert r"\texttt{OO\_AMBIG}" in tex
+    assert r"\texttt{F200\_}" in tex
+    assert "vendor alias" in tex
+    assert "Hypothesis H5 in this table" in tex

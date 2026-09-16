@@ -366,6 +366,13 @@ Named-arm ARM lines:
 \texttt{OPAQUE\_UNIQUE} opaque one 2-hop;
 \texttt{OPAQUE\_AMBIG} two 2-hops (quoted);
 \texttt{OPAQUE\_AMBIG\_PLAN} same graph plus the sealed sequence.
+OE/OO ARM lines (same 32 graphs; start seal in $q$):
+\texttt{OE\_UNIQUE} opaque entities, English relations, one 2-hop;
+\texttt{OE\_AMBIG} two 2-hops;
+\texttt{OO\_UNIQUE} opaque entities and relations, one 2-hop;
+\texttt{OO\_AMBIG} two 2-hops.
+$n{=}200$ named-arm ids are \texttt{F200\_}$\langle$arm$\rangle$\texttt{\_$i$};
+hashed-id ids are \texttt{H200\_} plus 10 hex (Section~\ref{sec:header}).
 That primary prompt does \emph{not} contain the equality-recipe line
 (Appendix~\ref{app:recipe}).
 The format token is \texttt{<city\_or\_UNKNOWN>}, but six $n{=}32$ gold HQs
@@ -1194,10 +1201,13 @@ Quizzes (\texttt{runs/}) and locks (\texttt{results/}):
 the supplementary archive
 (Python $\ge 3.10$; hash-pin \texttt{results/SHA256SUMS}, not \texttt{HEAD}).
 OpenAI: \texttt{gpt-5.6-sol}, no tools, temperature omitted.
+Named-arm, 512-token hashed-id, and unique no-ARM sidecars store
+\texttt{returned\_model} \texttt{gpt-5.6-sol} (vendor alias, not a dated
+snapshot pin). August $n{=}32$ stores the parsed answer, not
+\texttt{model}/\texttt{usage}.
 Named-arm and 512-token hashed-id omit \texttt{reasoning\_effort}.
 Header$\times$decoy at 4096 sets \texttt{reasoning\_effort} medium.
-August stores the parsed answer, not \texttt{model}/\texttt{usage};
-$k{=}3$ sidecars store \texttt{returned\_model}.
+$k{=}3$ sidecars also store \texttt{returned\_model}.
 Composer/Grok: Cursor agent SDK and a reply-only preamble OpenAI never
 received. Cite Dual free-form as \texttt{*ff}.
 Empty Dual/no-hop completions were stored as \texttt{UNKNOWN}; Wiki-H5 and
@@ -1410,6 +1420,9 @@ H8. Prompt surface moves two-path exact match on the same graphs & case-id at 51
 \end{tabularx}
 
 \end{table}
+
+Hypothesis H5 in this table is the named-arm \textsc{Wiki-H5} claim, not the
+H5 ARM header of Section~\ref{sec:header}.
 
 Table~\ref{tab:primary} is the missing-start CEO-NL control, not
 \textsc{Wiki-H5}.

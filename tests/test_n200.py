@@ -290,6 +290,8 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "place with town rights" in tex
     assert "city of Japan" not in tex
     assert "city in Canada" not in tex
+    assert r"\texttt{OE\_UNIQUE}" in tex
+    assert "Hypothesis H5 in this table" in tex
 
 
 def test_unique_no_arm_same_context_and_openai_lock():
