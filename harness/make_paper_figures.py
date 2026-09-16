@@ -306,7 +306,7 @@ def main():
     cols = ["#2a6f6f", "#b33a3a", "#2a6f6f", "#2a6f6f"]
     bars = ax.bar(labs, vals, color=cols, width=0.7, edgecolor="#1a1a1a", lw=0.5)
     set_acc_axis(ax)
-    ax.set_title("A. Opaque relations (Composer 2.5, n=12)", fontsize=10)
+    ax.set_title("A. Composer n=12 packaging", fontsize=10)
     ax.set_ylabel("Exact accuracy")
     for b, t, v in zip(bars, texts, vals):
         label_bar(ax, b, t, v, fontsize=8)

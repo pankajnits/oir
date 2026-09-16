@@ -303,7 +303,13 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "item-level interaction contrast" in tex
     assert r"$6/3/23$" in tex
     assert "non-exchangeable" not in tex
-    assert "not identified as a sealed join" in tex
+    assert "cannot be attributed to a join over CONTEXT" in tex
+    assert "not identified as a sealed join" not in tex
+    assert "measurably informed" not in tex
+    assert "headline lock plus two later" in tex
+    assert r"\texttt{HDA\_}" in tex
+    assert "Those runs are undated" in tex
+    assert r"still score at ceiling" in tex
     assert "negative control" in tex
     assert "no-ARM hashed cyclic 25 vs" in tex
     assert r"decoy $17$" in tex
@@ -328,6 +334,21 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "chief executive officer" in tex
     assert "4096 completion tokens" in tex
     assert "instance of" in tex
+    abs_ = tex.split(r"\begin{abstract}", 1)[1].split(r"\end{abstract}", 1)[0]
+    assert "A \\textbf{lock} is a scored JSON" not in abs_
+    assert "Finding." not in abs_
+    assert r"$3{=}3$" not in tex
+    assert "later OpenAI named-arm draws are both" in tex
+    assert r"Hashed-id $n{=}32$ 11~Sep 512 & \texttt{gpt56sep}" not in tex
+    assert r"Named-arm $n{=}32$ 11~Sep 512" in tex
+    assert r"\texttt{gpt56abl512}" in tex
+    assert "index tail" in tex
+    assert r"\texttt{LEGEND}" in tex
+    assert r"\texttt{ISO\_SILENT}" in tex
+    assert "Composer n=12 packaging" not in tex  # title lives in the PNG
+    fig_py = (ROOT / "harness/make_paper_figures.py").read_text()
+    assert 'A. Composer n=12 packaging' in fig_py
+    assert "A. Opaque relations (Composer 2.5, n=12)" not in fig_py
 
 
 def test_unique_no_arm_same_context_and_openai_lock():

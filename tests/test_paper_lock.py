@@ -313,3 +313,10 @@ def test_arxiv_tex_does_not_collapse_h8_or_named_arm():
     assert "2 same-type 2-hop(s) from start" in tex
     assert "Sign-flip of the H5 interaction" not in tex
     assert r"$n{=}6$ batch" in tex
+    abs_ = tex.split(r"\begin{abstract}", 1)[1].split(r"\end{abstract}", 1)[0]
+    assert "A \\textbf{lock} is a scored JSON" not in abs_
+    assert r"$3{=}3$" not in tex
+    assert r"Hashed-id $n{=}32$ 11~Sep 512 & \texttt{gpt56sep}" not in tex
+    assert r"\texttt{gpt56abl512}" in tex
+    assert "index tail" in tex
+    assert r"\texttt{LEGEND}" in tex
