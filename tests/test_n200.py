@@ -311,7 +311,7 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "Those runs are undated" in tex
     assert r"still score at ceiling" in tex
     assert "negative control" in tex
-    assert "no-ARM hashed cyclic 25 vs" in tex
+    assert "no-ARM hashed cyclic English vs" in tex
     assert r"decoy $17$" in tex
     assert r"$84$--$96$" in tex
     assert "kadavath" not in tex.lower()
@@ -343,6 +343,19 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert r"Named-arm $n{=}32$ 11~Sep 512" in tex
     assert r"\texttt{gpt56abl512}" in tex
     assert "index tail" in tex
+    assert r"$29/32$ that is $96/100$" not in tex
+    assert r"index $41$" in tex
+    assert r"named-arm $n{=}32$ McNemar" in tex
+    assert r"$n{=}200$ no-ARM hashed cyclic" in tex
+    assert r"case-id ${+}96$ is Table~\ref{tab:modes}" in tex
+    assert r"\citet[§2.2]" not in tex
+    assert r"\citet[section 2.2]" in tex
+    assert "ARM line kept" in abs_
+    assert r"gold-first $3/16$" in tex
+    conc = tex.split(r"\section{Conclusion}", 1)[1].split(r"\begin{thebibliography}", 1)[0]
+    assert "consistent with chance" not in conc
+    lim = tex.split(r"\section{Limitations}", 1)[1].split(r"\section{Conclusion}", 1)[0]
+    assert "inadmissible" in lim
     assert r"\texttt{LEGEND}" in tex
     assert r"\texttt{ISO\_SILENT}" in tex
     assert "Composer n=12 packaging" not in tex  # title lives in the PNG

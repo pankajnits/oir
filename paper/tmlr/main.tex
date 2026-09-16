@@ -58,7 +58,7 @@ both-opaque unique $32/32$ on three families).
 Under two competing sealed routes, a prompt that names the condition and
 uses readable case ids (named-arm) usually yields \texttt{UNKNOWN}, not
 the decoy: OpenAI $38/200$ gold, \texttt{UNKNOWN} $151$, decoy $11$.
-The same graphs with hashed case ids are $134/200$
+The same graphs with hashed case ids (ARM line kept) are $134/200$
 (\texttt{UNKNOWN} $44$, decoy $20$).
 Two-path exact-match cannot be attributed to a join over CONTEXT.
 Dropping the condition header, at 4096 tokens and reasoning effort medium,
@@ -157,7 +157,7 @@ beyond opaque IDs --- CoR's opaque-entity hide-set, not relation-only
 symbols (\texttt{r1}) and rules must carry deduction; OpenAI unique-path
 opaque $32/32$ is the complementary case: sealed relations still traverse
 when topology fixes the route.
-\citet[§2.2]{guo2025twohop} report collapse to random guessing among end entities
+\citet[section 2.2]{guo2025twohop} report collapse to random guessing among end entities
 when distractor two-hops have other sources. Named-arm Wiki-H5 opaque
 two-path, with \texttt{UNKNOWN} allowed, is abstention rather than guessing
 (Section~\ref{sec:fact2x2}, Table~\ref{tab:modes}).
@@ -742,8 +742,8 @@ Overall $59/200$ versus the primary named-arm cell (Table~\ref{tab:modes}) is a 
 (case ids \texttt{F200S\_} rather than \texttt{F200\_}), not a within-run
 reordering effect; we do not read ${+}21$ as a listing-order gain.
 The $n{=}32$ shuffle is a later snapshot
-(Appendix~\ref{app:protocol}) and was too small to
-read a decoy-first effect (decoy $0/16$ vs.\ $1/16$).
+(Appendix~\ref{app:protocol}): opaque two-path $5/32$
+(gold-first $3/16$, decoy-first $2/16$); decoy $0/16$ vs.\ $1/16$.
 
 \begin{table}[htbp]
 \centering
@@ -795,7 +795,7 @@ any, is not identified here
 (paragraphs above; Table~\ref{tab:headerdecoy200}).
 Budgets differ, so these are not a ranking of manipulations.
 
-A consequence for the contrast with \citet[§2.2]{guo2025twohop}.
+A consequence for the contrast with \citet[section 2.2]{guo2025twohop}.
 That work reports collapse to guessing among end entities when distractor
 two-hops have other sources. Our named-arm OpenAI cell is abstention
 (\texttt{UNKNOWN} $24/32$, decoy $2/32$ at $n{=}32$;
@@ -870,10 +870,12 @@ plan $32/32$.
 A32's ARM names two 2-hops; A100's is \texttt{OPAQUE\_AMBIG n=100}.
 On 32 A32 items matched by gold name (31 unique names) OpenAI is $17/32$
 vs.\ $29/32$ under A100's thinner ARM.
-A100 items $32$--$99$ are $67/68$ (index tail, not the name-complement of
-those 32 rows; Gene Tierney is duplicated in A32). Together with
-$29/32$ that is $96/100$. Keys differ; they cannot explain an English-name
-lookup.
+A100 opaque two-path is $96/100$ overall.
+A100 items $32$--$99$ are $67/68$ (index tail).
+That tail is not the name-complement of the 32 matched rows:
+A32 maps onto A100 indices $0$--$30$ plus $41$ (Gene Tierney is duplicated
+in A32), so index $41$ sits in both counts and must not be added to
+$29/32$. Keys differ; they cannot explain an English-name lookup.
 Director is always the first person-tail, so parametric knowledge and a
 listing-slot heuristic are not separated.
 Condition~A leaves \emph{directed}/\emph{starred} in $q$; we do not treat
@@ -983,7 +985,7 @@ That surface move is large; it does not make abstention the wrong
 description of the \emph{named-arm} cell.
 Grok no-ARM opaque still prefers \texttt{UNKNOWN} over the decoy
 ($23$ vs.\ $3$ cyclic); among $15$ commits gold is $7$
-(Wilson $[0.25,0.70]$), consistent with chance.
+(Wilson $[0.25,0.70]$).
 OpenAI's higher no-ARM gold rate is not a CONTEXT join
 (Section~\ref{sec:header}).
 English predicates restore OpenAI with anonymous nodes ($32/32$ vs.\
@@ -1025,7 +1027,9 @@ August named-arm is the highest draw in all three families.
 This is not a generation-variance CI.
 English entities leave parametric cues. Named-arm opaque two-path keeps
 those names and is still mostly \texttt{UNKNOWN} ($24/32$, $151/200$), not
-a dump of the headquarters city. 2Wiki-CF Wikipedia leak is $75/200$ and OpenAI
+a dump of the headquarters city. We cannot separate a recalled HQ treated
+as inadmissible from a verb that does not map onto one seal. 2Wiki-CF
+Wikipedia leak is $75/200$ and OpenAI
 overlap leak $50/200$ (Appendix~\ref{app:packaging}). Both-opaque unique
 is $200/200$ with names sealed.
 HMAC two-path rates vary by generator ($6/32$, $15/32$, $12/32$).
@@ -1075,8 +1079,7 @@ surface: case-id wording at 512 tokens; H5 vs.\ no-ARM McNemar at
 4096/medium is Table~\ref{tab:headerdecoy200} (cyclic and constant).
 Grok no-ARM opaque still prefers \texttt{UNKNOWN} over the decoy
 ($23$ vs.\ $3$ cyclic); among $15$ commits gold is $7$
-(Wilson $[0.25,0.70]$), consistent with chance
-(Section~\ref{sec:header}).
+(Wilson $[0.25,0.70]$; Section~\ref{sec:header}).
 
 \FloatBarrier
 \begin{thebibliography}{99}
@@ -1463,8 +1466,9 @@ Constant decoy does not raise the Wiki-H5-header cell on any family.
 novel is decoy $32/32$ (\texttt{composer25ff}). H5 is named-arm \textsc{Wiki-H5}
 (OpenAI). H6 hashes verbs \emph{and} uses a two-hop ARM; an archived banner
 is $25/100$. H7 is OpenAI-specific (OE vs.\ \textsc{Wiki-OO}).
-H8 is prompt surface on the same graphs (Table~\ref{tab:headerdecoy200};
-case-id ${+}96$),
+H8 is prompt surface on the same graphs
+(case-id ${+}96$ is Table~\ref{tab:modes};
+ARM-line McNemar is Table~\ref{tab:headerdecoy200}),
 not cyclic vs.\ constant (which changes CONTEXT).}
 \label{tab:hyp}
 \begin{tabularx}{\linewidth}{@{}
@@ -1478,7 +1482,7 @@ H1. Opacity alone blocks traversal & unique-path, start in $q$ & not supported (
 H2. Written hop restores e2e (control) & two-path $+$ plan; SealRouter & control ($32/32$) \\
 H3. Input-binding control (CEO piecewise $q$) & CEO isolation NL & control ($0/32$); not selection \\
 H4. Matched demos restore shown seals & dual-path matched vs.\ novel & OpenAI $32/32$ vs.\ $0/32$ \\
-H5. End-to-end accuracy degrades when opaque relations meet path ambiguity & matched $2{\times}2$, start in $q$ & named-arm 25 vs.\ 0 (city 21 vs.\ 0); no-ARM hashed cyclic 25 vs.\ 2 (4096/medium); Secs.~\ref{sec:fact2x2},~\ref{sec:header} \\
+H5. End-to-end accuracy degrades when opaque relations meet path ambiguity & matched $2{\times}2$, start in $q$ & named-arm $n{=}32$ McNemar 25 vs.\ 0 (city 21 vs.\ 0); $n{=}200$ no-ARM hashed cyclic English vs.\ opaque McNemar 25 vs.\ 2 (4096/medium); Secs.~\ref{sec:fact2x2},~\ref{sec:header} \\
 H6. Movie KB, hashed verbs $+$ two-hop ARM (two-factor check) & WikiMovies Cond.\ B $n{=}100$ & OpenAI two-path $3/100$; archived banner $25/100$ \\
 H7. Readable relations with opaque entities & Wikidata OE vs.\ OO & supported for OpenAI here \\
 H8. Prompt surface moves two-path exact match on the same graphs & case-id at 512 cyclic; ARM at 4096 cyclic and constant & $n{=}200$ case-id ${+}96$; H5 vs.\ no-ARM McNemar cyclic $6$ vs.\ $51$, constant $4$ vs.\ $111$; Sec.~\ref{sec:header} \\
