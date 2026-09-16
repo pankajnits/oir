@@ -75,11 +75,17 @@ def skip_path(path: Path) -> bool:
     return False
 
 
+# Collapse machine-local checkouts to repo-relative paths
+# (/Users/<name>/.../oir/results/... → results/...).
+_ABS_OIR = re.compile(r"/Users/[^/\"'\s]+(?:/[^/\"'\s]+)*?/oir/")
+
+
 def anonymize_bytes(data: bytes, rel: str) -> bytes:
     if path_is_text(rel):
         text = data.decode("utf-8", errors="replace")
         for a, b in REPLACEMENTS:
             text = text.replace(a, b)
+        text = _ABS_OIR.sub("", text)
         return text.encode("utf-8")
     return data
 
@@ -184,6 +190,8 @@ def main() -> None:
                     "pankajnits",
                     "mightypp",
                     "github.com/pankaj",
+                    "/Users/",
+                    "Pankaj",
                 ):
                     if n in text:
                         leaks.append(f"{arc}: {n}")

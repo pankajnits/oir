@@ -270,7 +270,7 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "varies only relation" not in tex
     assert "recover joins rather than guesses" not in tex
     assert r"McNemar $25$ vs.\ $2$" in tex
-    assert r"H5 vs.\ no-ARM constant McNemar $4$ vs.\ $111$" in tex
+    assert r"H5 vs.\ no-ARM on constant decoys is McNemar $4$ vs.\ $111$" in tex
     assert r"does not share company" in tex
     assert "ARM ENG\\_UNIQUE" in tex or r"\texttt{ENG\_UNIQUE}" in tex
     assert "512 tokens" in tex
@@ -292,6 +292,24 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "city in Canada" not in tex
     assert r"\texttt{OE\_UNIQUE}" in tex
     assert "Hypothesis H5 in this table" in tex
+    assert "2 same-type 2-hop(s) from start" in tex
+    assert "Sign-flip of the two-path opacity contrast" in tex
+    assert "Sign-flip of the H5 interaction" not in tex
+    assert r"H5 vs.\ no-ARM on cyclic decoys is McNemar $6$ vs.\ $51$" in tex
+    assert r"$p{=}5.7{\times}10^{-10}$" in tex
+    assert "announcing two 2-hops is not what" in tex
+    assert "named-arm phenomenon" not in tex
+    assert "is not a three-family law" not in tex
+    assert "item-level interaction contrast" in tex
+    assert r"$6/3/23$" in tex
+    assert "graph size fixed" not in tex
+    assert r"$n{=}6$ batch" in tex
+    assert ("/" + "Users/") not in tex
+    assert "15~September named-arm lock" in tex
+    assert r"Headline $n{=}200$ is the \texttt{gpt56n200}/\texttt{gpt56n200h512} lock" not in tex
+    cap = tex[tex.find("fig3_dualpath.png") : tex.find(r"\label{fig:dualpath}")]
+    assert "balanced" not in cap.lower()
+    assert "matched" in cap
 
 
 def test_unique_no_arm_same_context_and_openai_lock():

@@ -153,6 +153,10 @@ def test_composer25tx_does_not_replace_august_lock():
     assert ceil["summary"]["SEAL_NL"]["score"] == "0/32"
     assert ceil["summary"]["PLAIN_PROG"]["score"] == "n.r."
     assert ceil["summary"]["SEAL_PROG"]["score"] == "n.r."
+    rd = ceil.get("reply_dir", "")
+    assert not rd.startswith("/"), rd
+    assert "pankaj" not in rd.lower()
+    assert rd.endswith("ceiling_three_arm_n32_iso_harness_replies_composer25tx")
     assert _load("ceiling_three_arm_n32_iso_composer25.json")["summary"]["SEAL_NL"]["score"] == "0/32"
 
 
@@ -306,3 +310,6 @@ def test_arxiv_tex_does_not_collapse_h8_or_named_arm():
     assert r"\texttt{F200\_}" in tex
     assert "vendor alias" in tex
     assert "Hypothesis H5 in this table" in tex
+    assert "2 same-type 2-hop(s) from start" in tex
+    assert "Sign-flip of the H5 interaction" not in tex
+    assert r"$n{=}6$ batch" in tex
