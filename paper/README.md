@@ -29,7 +29,6 @@ Rebuild figures from locked JSON:
 ```bash
 python3 harness/make_paper_figures.py
 cp paper/figures/fig1_matched_2x2.png paper/figures/fig3_dualpath.png \
-   paper/figures/fig4_binding.png paper/figures/fig6_rename_equivariance.png \
    paper/figures/fig7_opaque_rel_n200.png paper/arxiv_upload/
 ```
 

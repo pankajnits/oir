@@ -11,8 +11,6 @@ SRC = ROOT.parent / "arxiv_upload" / "main.tex"
 FIGS = [
     "fig1_matched_2x2.png",
     "fig3_dualpath.png",
-    "fig4_binding.png",
-    "fig6_rename_equivariance.png",
     "fig7_opaque_rel_n200.png",
 ]
 
@@ -72,16 +70,12 @@ def extract_abstract_and_body(src: str) -> tuple[str, str]:
         r"\subsubsection*{Broader Impact Statement}",
     )
     body = body.replace(
-        r"are at \url{https://github.com/pankajnits/oir}. Inference settings are",
-        "are in the supplementary archive. Inference settings are",
+        r"\url{https://github.com/pankajnits/oir/releases/tag/v1.0.6}",
+        "the supplementary archive",
     )
     body = body.replace(
-        r"are at \url{https://github.com/pankajnits/oir/releases/tag/v1.0.6} (Python $\ge 3.10$). OpenAI cells:",
-        r"are in the supplementary archive (Python $\ge 3.10$). OpenAI cells:",
-    )
-    body = body.replace(
-        r"Cite GitHub release tag \texttt{v1.0.6} rather than branch \texttt{HEAD}.",
-        r"Cite the supplementary lockfile \texttt{results/SHA256SUMS} rather than a mutable checkout.",
+        r"\url{https://github.com/pankajnits/oir}",
+        "the supplementary archive",
     )
     leaks = [
         "pankajnits",

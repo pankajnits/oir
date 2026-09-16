@@ -33,7 +33,7 @@ then `cd paper/tmlr && tectonic -X compile main.tex`.
 
 HMAC seals are an **instrument** (instance-wise injective renaming that preserves equality). They are not confidentiality, HIPAA, or IND-CPA. Missing cells are `n.r.`, never zeros.
 
-## Headline (Composer 2.5, OpenAI `gpt-5.6-sol`, Grok 4.5)
+## Headline (n=200 OpenAI; n=32 three families)
 
 **n=200 is OpenAI-only, one city-typed draw.** Composer/Grok stay at n=32. The n=26 city slice with decoy 0 is a discovery note, not the powered rate.
 
@@ -42,7 +42,8 @@ HMAC seals are an **instrument** (instance-wise injective renaming that preserve
 | Unique path, both-opaque (entities+relations sealed) | **32/32** all three families |
 | Unique path, relation-opaque Wikidata 2×2 | OpenAI **32/32**; Composer **27/32**; Grok **30/32** |
 | City-typed **n=200** freeze (OpenAI; every HQ is Wikidata city P31, QIDs live-checked) | Unique English/opaque **200/200**, English two-path **199/200**, named-arm opaque two-path **38/200** (UNK 151, decoy 11; Wilson [0.14, 0.25]), plan **200/200**. |
-| Same freeze, 512-token case-id (ARM kept) | Named-arm **38/200** vs hashed-id H5-cyclic **134/200** (one `NO_OUTPUT` on H5-cyclic). |
+| Same freeze, 512-token case-id (ARM kept) | Named-arm **38/200** vs hashed-id H5-cyclic **134/200** (UNK 44, decoy 20, other 1, `NO_OUTPUT` 1). |
+| Same freeze, listing shuffle (OpenAI) | Opaque two-path **59/200** (gold-first **25/100** vs decoy-first **34/100**, two-proportion $p{\approx}0.16$). |
 | Header × decoy n=200, hashed ids, 4096/medium (OpenAI) | Cyclic/constant: no ARM **174/151**, H5 **129/44**, K2 **179/144**. English no ARM cyclic **197/200**. |
 | WikiMovies Condition A/B n=200 (OpenAI) | A two-path **122/200** (Wiki-H5 topology ARM, not the A100 `n=100` banner; not a resample of **96/100**); B unique **200/200**, two-path **7/200** |
 | Both-opaque two-path n=200 (OpenAI) | unique **200/200**, two-path **12/200**, plan **200/200** |
@@ -198,7 +199,7 @@ arXiv zip: [`paper/oir-arxiv.zip`](paper/oir-arxiv.zip).
 Compile: **[`paper/README.md`](paper/README.md)**.
 Reproduce and swap datasets: **[`SCIENTIST.md`](SCIENTIST.md)**.
 
-The table at the top of this README is the public spine. Cite `results/factorial_2x2_iso_*.json`, `results/factorial_2x2_iso_shuffle_gpt56.json` (listing order), `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json` (header×decoy, 11 Sep 2026; `--preamble none` for Composer/Grok), `results/entity_rel_2x2_iso_*.json`, `results/adv_induction_n32_iso_*.json`, and the identifiability harnesses (`seal_layer_legend_small_n32_harness_*.json`, `opaque_iso_json_n32_harness_*.json`). The CEO three-arm (`ceiling_three_arm_n32_iso_*.json`) is a missing-start / execution-bound cell, not the $2{\times}2$. Missing cells are `n.r.`, not 0. Verify evidence with `shasum -c results/SHA256SUMS`.
+The table at the top of this README is the public spine. Cite `results/factorial_2x2_iso_*.json`, `results/factorial_2x2_iso_n200_gpt56n200.json`, `results/factorial_2x2_iso_shuffle_gpt56.json` and `results/factorial_2x2_iso_shuffle_n200_gpt56n200.json` (listing order), `results/header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json` (header×decoy, 11 Sep 2026; `--preamble none` for Composer/Grok), `results/header_decoy_ablation_iso_n200_{gpt56n200abl,gpt56n200h512}.json`, `results/entity_rel_2x2_iso_*.json`, `results/adv_induction_n32_iso_*.json`, and the identifiability harnesses (`seal_layer_legend_small_n32_harness_*.json`, `opaque_iso_json_n32_harness_*.json`). The CEO three-arm (`ceiling_three_arm_n32_iso_*.json`) is a missing-start / execution-bound cell, not the $2{\times}2$. Missing cells are `n.r.`, not 0. Verify evidence with `shasum -c results/SHA256SUMS`.
 
 ## Layout
 

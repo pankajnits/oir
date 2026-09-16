@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Build main paper figures from locked results/*.json."""
+"""Build paper figures from locked results/*.json.
+
+TeX ships fig1, fig3, and fig7. fig2/fig4/fig5/fig6 are written here for
+the figures/ archive and are not included in main.tex.
+"""
 from __future__ import annotations
 
 import json
@@ -181,6 +185,7 @@ def main():
         label_bar(ax, b, s, v, fontsize=7)
     fig.savefig(OUT / "fig4_binding.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig4_binding.png", dpi=200, bbox_inches="tight")
+    # Not included in main.tex (OpenAI row of Table tab:ident32).
     plt.close()
 
     fig, ax = _one_panel("fig3_dualpath", figsize=(5.6, 3.35))
@@ -256,6 +261,7 @@ def main():
         ax.text(0.5, -0.22, "Gold answers differ on every pair", transform=ax.transAxes, ha="center", fontsize=8, color="#444")
     fig.savefig(OUT / "fig6_rename_equivariance.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig6_rename_equivariance.png", dpi=200, bbox_inches="tight")
+    # Not included in main.tex (rename 12/12 is packaging prose).
     plt.close()
 
     # Fig 5: opacity × binder 2×2 (real Q)

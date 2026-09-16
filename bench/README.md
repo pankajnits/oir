@@ -12,7 +12,7 @@ The **primary** isolation is the Wikidata matched $2{\times}2$ (start in $q$, re
 | Wikidata matched $2{\times}2$ n=200 | 200 | city-typed QID freeze, isolation | same $2{\times}2$ on P169/P159/P31 cities | `runs/factorial_2x2_iso_n200/` | `harness/score_factorial_2x2.py gpt56n200 factorial_2x2_iso_n200_harness` |
 | Header × decoy ablation | 32×7 | isolation, Wiki-H5 keys, arm-neutral ids | ARM header × cyclic vs constant decoy | `runs/header_decoy_ablation_iso/` | `harness/header_decoy_ablation_iso.py` |
 | Header × decoy n=200 | 200×7 | same HMAC as Wiki-H5 n=200 | 4096/medium seven-arm lock; 512 queried H5-cyclic only | `runs/header_decoy_ablation_iso_n200/` | `harness/header_decoy_ablation_iso.py score gpt56n200abl header_decoy_ablation_iso_n200_harness` |
-| WikiMovies Condition A/B n=200 | 200 | isolation; A uses Wiki-H5 topology ARM | not a resample of A100 (`ARM OPAQUE_AMBIG n=100`) | `runs/metaqa_2x2_people_n200_iso/` | `harness/score_factorial_2x2.py gpt56n200 metaqa_2x2_people_n200_iso_harness` |
+| Wikidata listing shuffle n=200 | 200 | isolation; gold vs decoy listed first | listing-order check (OA **59/200**, 25/100 vs 34/100 ns) | `runs/factorial_2x2_iso_n200/` | `harness/score_factorial_2x2.py gpt56n200 factorial_2x2_iso_shuffle_n200_harness` |
 | Three-arm CEO | 32 | isolation, per-item HMAC | plaintext plan vs sealed plan vs free sealed English | `runs/ceiling_three_arm_n32_iso/` | `harness/score_ceiling_n32_iso.py` |
 | Dual-path elicitation | 32×5 | isolation | matched-relation vs novel-relation vs explicit plan | `runs/adv_induction_n32_iso/` | `harness/score_adv_n32_iso.py` |
 | Non-LLM ceilings | 200 | frozen split | SealRouter / BM25 / gold SQL | `results/oir_bench_baselines.json` | already scored |
@@ -22,7 +22,7 @@ Manifest: `bench/MANIFEST.json`.
 
 ## Wikidata $2{\times}2$ (primary)
 
-Arms: `ENG_UNIQUE`, `ENG_AMBIG`, `OPAQUE_UNIQUE`, `OPAQUE_AMBIG` (+ plan control). Powered OpenAI freeze (`factorial_2x2_iso_n200_gpt56n200.json`): unique **200/200**, English two-path **199/200**, named-arm opaque two-path **38/200** (UNK 151, decoy 11). Header×decoy n=200 (`gpt56n200abl`): cyclic/constant no ARM **174/151**, H5 **129/44**, K2 **179/144**. Hashed-id H5-cyclic at 512 tokens **134/200** (one `NO_OUTPUT`; other arms in `gpt56n200h512` are missing, not scores). n=32 discovery lock: English unique/two-path **31/32**, opaque unique **32/32**, opaque two-path **6/32** (UNK 24, decoy 2). Same-snapshot rerun: **5/32** (`factorial_2x2_iso_gpt56sep.json`). Arm-neutral header×decoy n=32 (`header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json`): H5+cyclic **20/6/0**; no ARM+cyclic **25/21/6**; English no ARM **29/26/24**. Composer English two-path **26/32** → opaque **10/32**; Grok **4/32** → **1/32**. JSON: `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json`. n=200 does not rewrite n=32.
+Arms: `ENG_UNIQUE`, `ENG_AMBIG`, `OPAQUE_UNIQUE`, `OPAQUE_AMBIG` (+ plan control). Powered OpenAI freeze (`factorial_2x2_iso_n200_gpt56n200.json`): unique **200/200**, English two-path **199/200**, named-arm opaque two-path **38/200** (UNK 151, decoy 11). Header×decoy n=200 (`gpt56n200abl`): cyclic/constant no ARM **174/151**, H5 **129/44**, K2 **179/144**. Hashed-id H5-cyclic at 512 tokens **134/200** (UNK 44, decoy 20, other 1, `NO_OUTPUT` 1; other arms in `gpt56n200h512` are missing, not scores). n=32 discovery lock: English unique/two-path **31/32**, opaque unique **32/32**, opaque two-path **6/32** (UNK 24, decoy 2). Same-snapshot rerun: **5/32** (`factorial_2x2_iso_gpt56sep.json`). Arm-neutral header×decoy n=32 (`header_decoy_ablation_iso_{gpt56abl,composer25abl,grok45abl}.json`): H5+cyclic **20/6/0**; no ARM+cyclic **25/21/6**; English no ARM **29/26/24**. Composer English two-path **26/32** → opaque **10/32**; Grok **4/32** → **1/32**. JSON: `results/factorial_2x2_iso_{gpt56,composer25,grok45}.json`. n=200 does not rewrite n=32.
 
 ## Three-arm (missing-start / execution bound)
 
@@ -63,6 +63,6 @@ python3 harness/score_adv_n32_iso.py gpt56
 python3 harness/score_copy_vs_bind_n32.py gpt56
 ```
 
-OpenAI isolation three-arm: `OPENAI_API_KEY python3 harness/run_openai_ceiling_n32_iso.py`
+OpenAI isolation three-arm: `OPENAI_API_KEY=... python3 harness/run_openai_ceiling_n32_iso.py`
 
 Do not commit API keys.
