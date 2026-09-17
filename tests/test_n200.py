@@ -360,6 +360,13 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert r"\texttt{{-}{-}force}" not in tex
     assert "ambig_edges" not in tex
     assert "random.Random" not in tex
+    assert "packaging-only Claude probe" not in tex
+    assert "Isolation quizzes and locked scores are in" not in tex
+    tmlr_path = ROOT / "paper/tmlr/main.tex"
+    if tmlr_path.is_file():
+        tmlr = tmlr_path.read_text()
+        assert "packaging-only Claude probe" not in tmlr
+        assert "Isolation quizzes and locked scores are in" not in tmlr
     assert "Finding." not in abs_
     assert r"$3{=}3$" not in tex
     assert "later OpenAI named-arm draws are both" in tex

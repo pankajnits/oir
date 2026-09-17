@@ -320,6 +320,8 @@ def test_arxiv_tex_does_not_collapse_h8_or_named_arm():
     assert r"$n{=}6$ batch" in tex
     abs_ = tex.split(r"\begin{abstract}", 1)[1].split(r"\end{abstract}", 1)[0]
     assert "A \\textbf{lock} is a scored JSON" not in abs_
+    assert "packaging-only Claude probe" not in tex
+    assert "Isolation quizzes and locked scores are in" not in tex
     assert r"$3{=}3$" not in tex
     assert r"Hashed-id $n{=}32$ 11~Sep 512 & \texttt{gpt56sep}" not in tex
     assert r"\texttt{gpt56abl512}" in tex
