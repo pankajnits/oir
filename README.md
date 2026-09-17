@@ -33,11 +33,11 @@ then `cd paper/tmlr && tectonic -X compile main.tex`.
 
 HMAC seals are an **instrument** (instance-wise injective renaming that preserves equality). They are not confidentiality, HIPAA, or IND-CPA. Missing cells are `n.r.`, never zeros.
 
-**Finding (OpenAI n=200 city-typed freeze; Composer/Grok stay at n=32).** Unique sealed routes still execute (English/opaque **200/200**). Under two competing sealed routes, named-arm OpenAI usually answers UNKNOWN (**38/200** gold, UNKNOWN 151, decoy 11), not the decoy: CONTEXT-only, two same-type 2-hops, no written hop. Hashed case ids on the same graphs reduce abstention (UNKNOWN 151→44, gold **134/200**). Exact-match is packing-sensitive, not a packaging-free opacity law (no-ARM English/opaque at 4096/medium is two-path only). The table is the lock inventory; later alias draws do not replace those cells.
+**Finding (OpenAI n=200 city-typed freeze; Composer/Grok Wiki-H5 stays at n=32).** Unique sealed routes still execute (English/opaque **200/200**). Under two competing sealed routes, named-arm OpenAI usually answers UNKNOWN (**38/200** gold, UNKNOWN 151, decoy 11), not the decoy: CONTEXT-only, two same-type 2-hops, no written hop. Hashed case ids on the same graphs reduce abstention (UNKNOWN 151→44, gold **134/200**). Exact-match is packing-sensitive, not a packaging-free opacity law (no-ARM English/opaque at 4096/medium is two-path only). The table is the lock inventory; later alias draws do not replace those cells.
 
 ## Headline locks
 
-**n=200 is OpenAI-only, one city-typed freeze of people** (alias $k{=}3$ of named-arm and hashed-id below). Composer/Grok stay at n=32. The n=26 city slice with decoy 0 is a discovery note, not the powered rate.
+**n=200 is OpenAI-only, one city-typed freeze of people** (alias $k{=}3$ of named-arm and hashed-id below). Composer/Grok Wiki-H5 stays at n=32; Movie-A100 Condition A is n=100. The n=26 city slice with decoy 0 is a discovery note, not the powered rate.
 
 | Cell | Result |
 |------|--------|

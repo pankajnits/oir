@@ -27,6 +27,7 @@ PREAMBLE = r"""\documentclass[10pt]{article} % For LaTeX2e
 \usepackage{placeins}
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{microtype}
 
 \hypersetup{
   pdftitle={When Can Language Models Join Without Relation Names?},
@@ -38,6 +39,13 @@ PREAMBLE = r"""\documentclass[10pt]{article} % For LaTeX2e
 }
 \graphicspath{{./}}
 \emergencystretch=2em
+\setlength{\textfloatsep}{8pt plus 2pt minus 4pt}
+\setlength{\floatsep}{8pt plus 2pt minus 4pt}
+\setlength{\intextsep}{8pt plus 2pt minus 4pt}
+\setlength{\abovedisplayskip}{6pt plus 2pt minus 3pt}
+\setlength{\belowdisplayskip}{6pt plus 2pt minus 3pt}
+\setlength{\abovedisplayshortskip}{4pt plus 1pt minus 2pt}
+\setlength{\belowdisplayshortskip}{4pt plus 1pt minus 2pt}
 
 \title{When Can Language Models Join\\
 Without Relation Names?\\

@@ -304,11 +304,14 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "named-arm vs.\\ hashed-id" in tex or "hashed case ids" in cap1
     assert "the usual named-arm reply is" in cap1.lower()
     assert "named-arm claim is the mode" not in cap1
+    assert "gold is the remainder" not in cap1
+    assert "the gold rate is the remainder" not in tex
     oa = tex[tex.find("OA. ") : tex.find("H6. ")]
     assert "no-ARM" not in oa
     assert r"\texttt{UNKNOWN}" in oa
     assert r"$38/200$" in oa
-    assert "named-arm packing" in oa
+    assert "OPAQUE" in oa and "condition label" in oa
+    assert "named-arm packing" not in oa
     assert oa.find(r"\texttt{UNKNOWN} $151$") < oa.find("McNemar")
     assert "2 same-type 2-hop(s) from start" in tex
     assert "Sign-flip of the two-path opacity contrast" in tex
@@ -388,6 +391,9 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "CONTEXT does not determine one city" not in tex
     assert "gain is not only more guessing" not in tex
     assert "less abstention, not a better join" in tex
+    assert "What the data support" not in tex
+    assert "does not make the cells meet" not in tex
+    assert "Headline $n{=}200$ is one lock each" not in tex
     assert r"$199/200$" in abs_
     assert r"\texttt{UNKNOWN} $188$" in tex
     assert r"\texttt{UNKNOWN} $30$, decoy $1$" in tex
