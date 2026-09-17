@@ -310,7 +310,8 @@ def test_arxiv_tex_does_not_collapse_h8_or_named_arm():
     assert r"\texttt{F200\_}" in tex
     assert "vendor alias" in tex
     assert "Hypothesis H5 in this table" not in tex
-    assert "row OA is the opacity" in tex
+    assert "row OA is the named-arm" in tex
+    assert "row OA is the opacity" not in tex
     assert "row H5 is the opacity" not in tex
     assert "Call it English" not in tex
     assert "arm-neutral English" not in tex

@@ -100,6 +100,8 @@ def test_wiki_h5_n200_openai_lock():
     oo = json.loads((ROOT / "results/entity_rel_2x2_iso_n200_gpt56n200.json").read_text())
     assert oo["summary"]["OO_UNIQUE"]["score"] == "200/200"
     assert oo["summary"]["OO_AMBIG"]["score"] == "12/200"
+    assert oo["summary"]["OO_AMBIG"]["unknown"] == 188
+    assert oo["summary"]["OO_AMBIG"]["decoy"] == 0
     ceil = json.loads((ROOT / "results/ceiling_three_arm_n200_iso_gpt56n200.json").read_text())
     assert ceil["summary"]["SEAL_PROG"]["score"] == "200/200"
     assert ceil["summary"]["SEAL_NL"]["score"] == "0/200"
@@ -292,13 +294,22 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "city in Canada" not in tex
     assert r"\texttt{OE\_UNIQUE}" in tex or "ARM OE\\_UNIQUE" in tex
     assert "Hypothesis H5 in this table" not in tex
-    assert "row OA is the opacity" in tex
+    assert "row OA is the named-arm" in tex
+    assert "row OA is the opacity" not in tex
     assert "row H5 is the opacity" not in tex
     assert "Call it English" not in tex
     assert "arm-neutral English" not in tex
     cap1 = tex[tex.find("fig1_matched_2x2.png") : tex.find(r"\label{fig:spine}")]
     assert r"$134/200$" in cap1
     assert "named-arm vs.\\ hashed-id" in tex or "hashed case ids" in cap1
+    assert "the usual named-arm reply is" in cap1.lower()
+    assert "named-arm claim is the mode" not in cap1
+    oa = tex[tex.find("OA. ") : tex.find("H6. ")]
+    assert "no-ARM" not in oa
+    assert r"\texttt{UNKNOWN}" in oa
+    assert r"$38/200$" in oa
+    assert "named-arm packing" in oa
+    assert oa.find(r"\texttt{UNKNOWN} $151$") < oa.find("McNemar")
     assert "2 same-type 2-hop(s) from start" in tex
     assert "Sign-flip of the two-path opacity contrast" in tex
     assert "Sign-flip of the H5 interaction" not in tex
@@ -344,6 +355,11 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "instance of" in tex
     abs_ = tex.split(r"\begin{abstract}", 1)[1].split(r"\end{abstract}", 1)[0]
     assert "A \\textbf{lock} is a scored JSON" not in abs_
+    intro = tex.split(r"\section{Introduction}", 1)[1].split(r"\section{Related Work}", 1)[0]
+    assert "scored JSON" not in intro
+    assert r"\texttt{{-}{-}force}" not in tex
+    assert "ambig_edges" not in tex
+    assert "random.Random" not in tex
     assert "Finding." not in abs_
     assert r"$3{=}3$" not in tex
     assert "later OpenAI named-arm draws are both" in tex
@@ -360,6 +376,14 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert r"\citet[section 2.2]" in tex
     assert "ARM line kept" in abs_
     assert "packaging-free opacity law" in abs_
+    assert "CONTEXT gives no explicit cue for one city" in abs_
+    assert "does not force abstention" in abs_
+    assert "CONTEXT does not determine one city" not in tex
+    assert "gain is not only more guessing" not in tex
+    assert "less abstention, not a better join" in tex
+    assert r"$199/200$" in abs_
+    assert r"\texttt{UNKNOWN} $188$" in tex
+    assert r"\texttt{UNKNOWN} $30$, decoy $1$" in tex
     assert "matched-budget" not in abs_
     assert "Entity names stay English" in abs_
     assert r"gold-first $3/16$" in tex
@@ -374,6 +398,8 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     fig_py = (ROOT / "harness/make_paper_figures.py").read_text()
     assert 'A. Composer n=12 packaging' in fig_py
     assert "A. Opaque relations (Composer 2.5, n=12)" not in fig_py
+    assert 'ax.set_ylabel("Share of replies")' in fig_py
+    assert fig_py.count('ax.set_ylabel("Exact accuracy")') >= 1
 
 
 def test_unique_no_arm_same_context_and_openai_lock():

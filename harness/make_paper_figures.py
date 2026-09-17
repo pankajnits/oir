@@ -155,7 +155,7 @@ def main():
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
         if ylabel:
-            ax.set_ylabel("Exact accuracy")
+            ax.set_ylabel("Share of replies")
         if legend:
             ax.legend(frameon=False, loc="upper right", fontsize=7.5)
 
@@ -233,7 +233,7 @@ def main():
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
         if ylabel:
-            ax.set_ylabel("Exact accuracy")
+            ax.set_ylabel("Share of replies")
         if legend:
             ax.legend(frameon=False, loc="upper right", fontsize=7)
 
