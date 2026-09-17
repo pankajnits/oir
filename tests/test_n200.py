@@ -292,7 +292,13 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert "city in Canada" not in tex
     assert r"\texttt{OE\_UNIQUE}" in tex or "ARM OE\\_UNIQUE" in tex
     assert "Hypothesis H5 in this table" not in tex
-    assert "row H5 is the opacity" in tex
+    assert "row OA is the opacity" in tex
+    assert "row H5 is the opacity" not in tex
+    assert "Call it English" not in tex
+    assert "arm-neutral English" not in tex
+    cap1 = tex[tex.find("fig1_matched_2x2.png") : tex.find(r"\label{fig:spine}")]
+    assert r"$134/200$" in cap1
+    assert "named-arm vs.\\ hashed-id" in tex or "hashed case ids" in cap1
     assert "2 same-type 2-hop(s) from start" in tex
     assert "Sign-flip of the two-path opacity contrast" in tex
     assert "Sign-flip of the H5 interaction" not in tex
@@ -353,6 +359,7 @@ def test_paper_tex_named_arm_vs_no_arm_wording():
     assert r"\citet[§2.2]" not in tex
     assert r"\citet[section 2.2]" in tex
     assert "ARM line kept" in abs_
+    assert "packaging-free opacity law" in abs_
     assert "matched-budget" not in abs_
     assert "Entity names stay English" in abs_
     assert r"gold-first $3/16$" in tex

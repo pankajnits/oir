@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Clone-and-run demo of the paper's Findings spine (H1–H7 + controls).
+"""Clone-and-run demo of the paper's Findings spine (H1–H4, OA, H6–H8 + controls).
 
 No network. Does not rewrite ``runs/``. Does not re-score n=32.
 

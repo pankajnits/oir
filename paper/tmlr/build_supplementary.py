@@ -61,6 +61,14 @@ REPLACEMENTS = [
         "https://github.com/pankajnits/oir/issues",
         "this archive has no public issue tracker",
     ),
+    (
+        "https://github.com/pankajnits/oir/blob/v1.0.6/paper/arxiv_upload/main.pdf",
+        "omitted from this archive",
+    ),
+    (
+        "https://github.com/pankajnits/oir/blob/v1.0.6/SCIENTIST.md",
+        "SCIENTIST.md in this archive",
+    ),
     ("https://github.com/pankajnits/oir", "(this supplementary archive)"),
     ("github.com/pankajnits/oir", "(this supplementary archive)"),
     ("pankajnits", "anonymous"),
@@ -199,6 +207,7 @@ def main() -> None:
                     "/Users/",
                     "Pankaj",
                     "(this supplementary archive)/issues",
+                    "(this supplementary archive)/blob",
                 ):
                     if n in text:
                         leaks.append(f"{arc}: {n}")

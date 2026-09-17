@@ -98,6 +98,9 @@ def main():
         return fig, ax
 
     fact200 = json.loads((RESULTS / "factorial_2x2_iso_n200_gpt56n200.json").read_text())["summary"]
+    hashed200 = json.loads(
+        (RESULTS / "header_decoy_ablation_iso_n200_gpt56n200h512.json").read_text()
+    )["cells"]["OPQ_H5_CYC"]
     labels = ["English\nunique", "English\ntwo-path", "Opaque\nunique", "Opaque\ntwo-path"]
     arms = ["ENG_UNIQUE", "ENG_AMBIG", "OPAQUE_UNIQUE", "OPAQUE_AMBIG"]
 
@@ -156,9 +159,95 @@ def main():
         if legend:
             ax.legend(frameon=False, loc="upper right", fontsize=7.5)
 
-    fig, axes = plt.subplots(1, 2, figsize=(9.6, 3.35), constrained_layout=True, sharey=True)
+    def stacked_twopath_pack(ax, named_row, hashed_cell, title, *, ylabel: bool, legend: bool) -> None:
+        n = 200
+        packs = [
+            (
+                "Named-arm",
+                int(score_of(named_row).split("/")[0]),
+                int(named_row.get("decoy", 0) or 0),
+                int(named_row.get("unknown", 0) or 0),
+                0,
+            ),
+            (
+                "Hashed-id",
+                int(hashed_cell.get("gold", 0)),
+                int(hashed_cell.get("decoy", 0) or 0),
+                int(hashed_cell.get("unknown", 0) or 0),
+                int(hashed_cell.get("other", 0) or 0) + int(hashed_cell.get("no_output", 0) or 0),
+            ),
+        ]
+        x = np.arange(len(packs))
+        golds = np.array([p[1] / n for p in packs])
+        decoys = np.array([p[2] / n for p in packs])
+        unks = np.array([p[3] / n for p in packs])
+        other = np.array([p[4] / n for p in packs])
+        ax.bar(x, golds, color="#2a6f6f", width=0.62, edgecolor="#1a1a1a", linewidth=0.6, label="Gold")
+        ax.bar(x, decoys, bottom=golds, color="#c47a2c", width=0.62, edgecolor="#1a1a1a", linewidth=0.6, label="Decoy")
+        ax.bar(
+            x,
+            unks,
+            bottom=golds + decoys,
+            color="#c8c8c8",
+            width=0.62,
+            edgecolor="#1a1a1a",
+            linewidth=0.6,
+            label="UNKNOWN",
+        )
+        ax.bar(
+            x,
+            other,
+            bottom=golds + decoys + unks,
+            color="#7a7a7a",
+            width=0.62,
+            edgecolor="#1a1a1a",
+            linewidth=0.6,
+            label="other / empty",
+        )
+        for i, (_lab, g, _d, _u, _oth) in enumerate(packs):
+            lo, hi = wilson_interval(g, n)
+            ax.errorbar(
+                x[i],
+                golds[i],
+                yerr=[[golds[i] - lo], [hi - golds[i]]],
+                fmt="none",
+                ecolor="#111",
+                capsize=3,
+                elinewidth=0.9,
+                zorder=4,
+            )
+            ax.text(
+                x[i],
+                max(golds[i] * 0.52, 0.03),
+                f"{g}/{n}",
+                ha="center",
+                va="center",
+                fontsize=7.5,
+                color="white",
+                zorder=5,
+            )
+        ax.set_xticks(x)
+        ax.set_xticklabels([p[0] for p in packs], fontsize=8)
+        set_acc_axis(ax)
+        ax.set_title(title, fontsize=10)
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+        if ylabel:
+            ax.set_ylabel("Exact accuracy")
+        if legend:
+            ax.legend(frameon=False, loc="upper right", fontsize=7)
+
+    fig, axes = plt.subplots(1, 3, figsize=(11.2, 3.35), constrained_layout=True, sharey=True)
     stacked_2x2(axes[0], fact, "n=32 named-arm lock", ylabel=True, legend=False)
-    stacked_2x2(axes[1], fact200, "n=200 city-typed", ylabel=False, legend=True)
+    stacked_2x2(axes[1], fact200, "n=200 named-arm", ylabel=False, legend=False)
+    stacked_twopath_pack(
+        axes[2],
+        fact200["OPAQUE_AMBIG"],
+        hashed200,
+        "n=200 two-path packing",
+        ylabel=False,
+        legend=True,
+    )
     fig.savefig(OUT / "fig1_matched_2x2.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig1_matched_2x2.png", dpi=200, bbox_inches="tight")
     plt.close()
@@ -342,6 +431,12 @@ def main():
     fig.savefig(OUT / "fig7_opaque_rel_n200.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig7_opaque_rel_n200.png", dpi=200, bbox_inches="tight")
     plt.close()
+    ship = ROOT / "paper" / "arxiv_upload"
+    if ship.is_dir():
+        for name in ("fig1_matched_2x2.png", "fig3_dualpath.png", "fig7_opaque_rel_n200.png"):
+            src = OUT / name
+            if src.is_file():
+                (ship / name).write_bytes(src.read_bytes())
     print("wrote", OUT)
 
 

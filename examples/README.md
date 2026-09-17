@@ -4,7 +4,7 @@ All of these run from the repository root after `pip install -e .`.
 None need a paid API unless you pass `--openai` or run `openai_bridge.py`.
 
 ```bash
-python3 examples/paper_spine.py        # paper H1–H7 cells: engine + locked JSON (no network)
+python3 examples/paper_spine.py        # paper H1–H4, OA, H6–H8: engine + locked JSON (no network)
 python3 examples/middleware_hr.py      # app → MiddleLayer → SealRouter stand-in → unseal
 python3 examples/layer_app.py          # pack + engine unseal (no SealedChat)
 python3 examples/custom_three_arm.py examples/custom_graph.example.json

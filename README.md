@@ -33,7 +33,7 @@ then `cd paper/tmlr && tectonic -X compile main.tex`.
 
 HMAC seals are an **instrument** (instance-wise injective renaming that preserves equality). They are not confidentiality, HIPAA, or IND-CPA. Missing cells are `n.r.`, never zeros.
 
-**Finding (OpenAI n=200 city-typed freeze; Composer/Grok stay at n=32).** Unique sealed routes still join (English/opaque **200/200**). Under two competing sealed routes, named-arm OpenAI usually answers UNKNOWN (**38/200** gold, UNKNOWN 151, decoy 11), not the decoy. Hashed case ids on the same graphs are **134/200**. The table is the lock inventory; later alias draws do not replace those cells.
+**Finding (OpenAI n=200 city-typed freeze; Composer/Grok stay at n=32).** Unique sealed routes still execute (English/opaque **200/200**). Under two competing sealed routes, named-arm OpenAI usually answers UNKNOWN (**38/200** gold, UNKNOWN 151, decoy 11), not the decoy. Hashed case ids on the same graphs are **134/200**. Exact-match is packing-sensitive, not a packaging-free opacity law. The table is the lock inventory; later alias draws do not replace those cells.
 
 ## Headline locks
 
@@ -136,7 +136,7 @@ Send `call.messages` / `pack_messages()`. Isolation quiz files (`llm_prompt` / `
 Runnable copies:
 
 ```bash
-python3 examples/paper_spine.py        # paper H1–H7: engine + locked JSON (no network)
+python3 examples/paper_spine.py        # paper H1–H4, OA, H6–H8: engine + locked JSON (no network)
 python3 examples/middleware_hr.py      # app → layer → SealRouter stand-in (no network)
 python3 examples/layer_app.py          # no network; SealRouter engine ceiling
 python3 examples/custom_three_arm.py examples/custom_graph.example.json
