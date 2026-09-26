@@ -9,7 +9,7 @@ Measurement protocol and HMAC middle layer for the paper
 **Code, isolation quizzes (`runs/`), and locked scores (`results/`):**
 [github.com/pankajnits/oir](https://github.com/pankajnits/oir)
 
-**Public preprint PDF:** [`paper/zenodo/oir-preprint.pdf`](paper/zenodo/oir-preprint.pdf) (named, TMLR style).
+**Preprint:** [10.5281/zenodo.22975686](https://doi.org/10.5281/zenodo.22975686). PDF in this repo: [`paper/zenodo/oir-preprint.pdf`](paper/zenodo/oir-preprint.pdf).
 **Science TeX** (NeurIPS class, includes the NeurIPS checklist): [`paper/arxiv_upload/`](paper/arxiv_upload/).
 **Anonymous TMLR review files:** [`paper/tmlr/`](paper/tmlr/) (`main.pdf`, `oir-tmlr-supplementary.zip`).
 
@@ -194,6 +194,7 @@ chat = SealedChat(MiddleLayer(), Echo())
 ## Paper
 
 Repository: https://github.com/pankajnits/oir
+Preprint: [10.5281/zenodo.22975686](https://doi.org/10.5281/zenodo.22975686).
 PDF: [`paper/zenodo/oir-preprint.pdf`](paper/zenodo/oir-preprint.pdf).
 NeurIPS-style source, for a later arXiv upload: [`paper/arxiv_upload/`](paper/arxiv_upload/) and [`paper/oir-arxiv.zip`](paper/oir-arxiv.zip).
 Compile: **[`paper/README.md`](paper/README.md)**.

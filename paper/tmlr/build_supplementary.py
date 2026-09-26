@@ -70,6 +70,14 @@ REPLACEMENTS = [
         "omitted from this archive",
     ),
     (
+        "https://doi.org/10.5281/zenodo.22975686",
+        "omitted from this archive",
+    ),
+    (
+        "10.5281/zenodo.22975686",
+        "omitted from this archive",
+    ),
+    (
         "https://github.com/pankajnits/oir/blob/v1.0.6/SCIENTIST.md",
         "SCIENTIST.md in this archive",
     ),
