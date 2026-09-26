@@ -18,7 +18,7 @@ Paper byline: Independent researcher. Git commit emails are not the camera-ready
 - `tests/` — no-network unit tests (CI).
 - `examples/` — developer + bring-your-own-graph scripts. `paper_spine.py` walks the paper cells (engine + locked JSON, no LLM).
 - `harness/` + `runs/` + `results/` — paper measurement. Do not treat `n.r.` / missing as 0.
-- `paper/` — public PDF (`paper/zenodo/main.pdf`) and science TeX. Rebuild with `python3 paper/zenodo/build.py` (see `paper/README.md`).
+- `paper/` — public PDF (`paper/zenodo/oir-preprint.pdf`) and science TeX. Rebuild with `python3 paper/zenodo/build.py` (see `paper/README.md`).
 
 ## Protocol if you add a quiz
 

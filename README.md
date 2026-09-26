@@ -9,7 +9,7 @@ Measurement protocol and HMAC middle layer for the paper
 **Code, isolation quizzes (`runs/`), and locked scores (`results/`):**
 [github.com/pankajnits/oir](https://github.com/pankajnits/oir)
 
-**Public preprint PDF:** [`paper/zenodo/main.pdf`](paper/zenodo/main.pdf) (named, TMLR style).
+**Public preprint PDF:** [`paper/zenodo/oir-preprint.pdf`](paper/zenodo/oir-preprint.pdf) (named, TMLR style).
 **Science TeX** (NeurIPS class, includes the NeurIPS checklist): [`paper/arxiv_upload/`](paper/arxiv_upload/).
 **Anonymous TMLR review files:** [`paper/tmlr/`](paper/tmlr/) (`main.pdf`, `oir-tmlr-supplementary.zip`).
 
@@ -194,7 +194,7 @@ chat = SealedChat(MiddleLayer(), Echo())
 ## Paper
 
 Repository: https://github.com/pankajnits/oir
-PDF: [`paper/zenodo/main.pdf`](paper/zenodo/main.pdf).
+PDF: [`paper/zenodo/oir-preprint.pdf`](paper/zenodo/oir-preprint.pdf).
 NeurIPS-style source, for a later arXiv upload: [`paper/arxiv_upload/`](paper/arxiv_upload/) and [`paper/oir-arxiv.zip`](paper/oir-arxiv.zip).
 Compile: **[`paper/README.md`](paper/README.md)**.
 Reproduce and swap datasets: **[`SCIENTIST.md`](SCIENTIST.md)**.
@@ -207,7 +207,7 @@ The table at the top of this README is the public spine. Cite `results/factorial
 oir/            installable library (MiddleLayer, SealedChat)
 examples/       app demos (engine ceiling, OpenAI bridge, bring-your-own graph)
 tests/          no-network unit tests
-paper/          public PDF (`zenodo/main.pdf`), science TeX, figures
+paper/          public PDF (`zenodo/oir-preprint.pdf`), science TeX, figures
 bench/          public OIR-Bench map
 harness/        builders and scorers
 tools/          harness shim (SealRouter re-export; older compilers)

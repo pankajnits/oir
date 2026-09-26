@@ -95,7 +95,9 @@ def main() -> None:
     for name in FIGS:
         link_to(name, Path("..") / "arxiv_upload" / name)
     subprocess.run(["tectonic", "-X", "compile", "main.tex"], cwd=ROOT, check=True)
-    print(f"wrote {(ROOT / 'main.pdf').relative_to(ROOT.parent.parent)}")
+    public = ROOT / "oir-preprint.pdf"
+    (ROOT / "main.pdf").replace(public)
+    print(f"wrote {public.relative_to(ROOT.parent.parent)}")
 
 
 if __name__ == "__main__":
