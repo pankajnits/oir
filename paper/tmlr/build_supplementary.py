@@ -66,6 +66,10 @@ REPLACEMENTS = [
         "omitted from this archive",
     ),
     (
+        "https://github.com/pankajnits/oir/blob/v1.0.6/paper/zenodo/main.pdf",
+        "omitted from this archive",
+    ),
+    (
         "https://github.com/pankajnits/oir/blob/v1.0.6/SCIENTIST.md",
         "SCIENTIST.md in this archive",
     ),

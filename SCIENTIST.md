@@ -1,6 +1,6 @@
 # For scientists and reviewers
 
-This repo is a hash-pinned measurement plus an installable middle layer. Cite locked JSON and reply files; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS` (JSON summaries, reply sidecars, and per-item `.txt` replies). Named preprint TeX, when present in a clone, is `paper/arxiv_upload/`; the supplementary zip omits `paper/`. Alias k=3 does not replace `gpt56n200` / `gpt56n200h512`. Repository: https://github.com/pankajnits/oir.
+This repo is a hash-pinned measurement plus an installable middle layer. Cite locked JSON and reply files; do not treat `missing` or `n.r.` as 0. Check hashes: `shasum -c results/SHA256SUMS` (JSON summaries, reply sidecars, and per-item `.txt` replies). The public PDF is `paper/zenodo/main.pdf`. Science TeX is `paper/arxiv_upload/`. The supplementary zip omits `paper/`. Alias k=3 does not replace `gpt56n200` / `gpt56n200h512`. Repository: https://github.com/pankajnits/oir.
 
 ## What you can verify without an LLM or paid API
 

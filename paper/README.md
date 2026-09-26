@@ -1,13 +1,14 @@
 # Paper
 
-Two copies of the same science TeX, for two jobs.
+Science TeX is `arxiv_upload/main.tex`. Three builds come from it.
 
 | Path | Role |
 |------|------|
-| [`tmlr/`](tmlr/) | **TMLR review upload.** Anonymous PDF (`main.pdf`) and `oir-tmlr-supplementary.zip`. Header: “Under review as submission to TMLR.” Do not put GitHub on the OpenReview form. |
-| [`arxiv_upload/`](arxiv_upload/) | **Named preprint source.** Keep this folder. It is not the OpenReview package. Compile here only when you want a named PDF. |
+| [`zenodo/`](zenodo/) | **Public preprint.** Named PDF (`main.pdf`), TMLR style, no NeurIPS checklist. Rebuild with `python3 paper/zenodo/build.py`. |
+| [`arxiv_upload/`](arxiv_upload/) | **NeurIPS-style source.** Author, GitHub, and the NeurIPS checklist. This is the arXiv source bundle, not the public PDF. |
+| [`tmlr/`](tmlr/) | **Anonymous review files.** `main.pdf` and `oir-tmlr-supplementary.zip`. Header: “Under review as submission to TMLR.” |
 
-Science source is `arxiv_upload/main.tex`. The TMLR file is built from it:
+The TMLR review file is built from the science TeX:
 
 ```bash
 python3 paper/tmlr/convert_from_arxiv.py
@@ -15,9 +16,15 @@ cd paper/tmlr && tectonic -X compile main.tex
 python3 paper/tmlr/build_supplementary.py
 ```
 
-That zip excludes `paper/`, `CITATION.cff`, `.git/`, and PDFs. Upload only `paper/tmlr/main.pdf` and `paper/tmlr/oir-tmlr-supplementary.zip`.
+That zip excludes `paper/`, `CITATION.cff`, `.git/`, and PDFs. It is the anonymous review archive, not the public PDF.
 
-Named preprint later (endorsement is a separate arXiv account issue):
+Public PDF:
+
+```bash
+python3 paper/zenodo/build.py
+```
+
+NeurIPS-style PDF (checklist included; arXiv still needs a `cs.CL` endorsement):
 
 ```bash
 cd paper/arxiv_upload

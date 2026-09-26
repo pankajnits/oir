@@ -9,9 +9,9 @@ Measurement protocol and HMAC middle layer for the paper
 **Code, isolation quizzes (`runs/`), and locked scores (`results/`):**
 [github.com/pankajnits/oir](https://github.com/pankajnits/oir)
 
-**Named preprint TeX** (not the TMLR review upload): [`paper/arxiv_upload/`](paper/arxiv_upload/).
-**Anonymous TMLR PDF + zip:** [`paper/tmlr/`](paper/tmlr/) (`main.pdf`, `oir-tmlr-supplementary.zip`).
-Do not put this GitHub URL on the OpenReview form.
+**Public preprint PDF:** [`paper/zenodo/main.pdf`](paper/zenodo/main.pdf) (named, TMLR style).
+**Science TeX** (NeurIPS class, includes the NeurIPS checklist): [`paper/arxiv_upload/`](paper/arxiv_upload/).
+**Anonymous TMLR review files:** [`paper/tmlr/`](paper/tmlr/) (`main.pdf`, `oir-tmlr-supplementary.zip`).
 
 Pinned clone: tag [`v1.0.6`](https://github.com/pankajnits/oir/releases/tag/v1.0.6).
 
@@ -26,10 +26,8 @@ python3 -m pytest tests/ -q
 
 From a checkout you can also `pip install git+https://github.com/pankajnits/oir.git`. The import name is `oir`; the PyPI-style distribution name is `oir-layer`.
 
-Compile the named preprint: `cd paper/arxiv_upload && tectonic -X compile main.tex`
-(see [`paper/README.md`](paper/README.md)). That folder is **not** the TMLR
-upload. Anonymous review files: `python3 paper/tmlr/convert_from_arxiv.py`
-then `cd paper/tmlr && tectonic -X compile main.tex`.
+Rebuild the public PDF: `python3 paper/zenodo/build.py`
+(see [`paper/README.md`](paper/README.md)).
 
 HMAC seals are an **instrument** (instance-wise injective renaming that preserves equality). They are not confidentiality, HIPAA, or IND-CPA. Missing cells are `n.r.`, never zeros.
 
@@ -196,8 +194,8 @@ chat = SealedChat(MiddleLayer(), Echo())
 ## Paper
 
 Repository: https://github.com/pankajnits/oir
-PDF: [`paper/arxiv_upload/main.pdf`](paper/arxiv_upload/main.pdf).
-arXiv zip: [`paper/oir-arxiv.zip`](paper/oir-arxiv.zip).
+PDF: [`paper/zenodo/main.pdf`](paper/zenodo/main.pdf).
+NeurIPS-style source, for a later arXiv upload: [`paper/arxiv_upload/`](paper/arxiv_upload/) and [`paper/oir-arxiv.zip`](paper/oir-arxiv.zip).
 Compile: **[`paper/README.md`](paper/README.md)**.
 Reproduce and swap datasets: **[`SCIENTIST.md`](SCIENTIST.md)**.
 
@@ -209,7 +207,7 @@ The table at the top of this README is the public spine. Cite `results/factorial
 oir/            installable library (MiddleLayer, SealedChat)
 examples/       app demos (engine ceiling, OpenAI bridge, bring-your-own graph)
 tests/          no-network unit tests
-paper/          preprint TeX, PDF (`arxiv_upload/main.pdf`), figures
+paper/          public PDF (`zenodo/main.pdf`), science TeX, figures
 bench/          public OIR-Bench map
 harness/        builders and scorers
 tools/          harness shim (SealRouter re-export; older compilers)
